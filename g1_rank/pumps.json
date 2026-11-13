@@ -1,0 +1,322 @@
+{
+  "choice": "parametric optical stiffness modulation for the self-sustained branch; resonant mid-IR response calibrates coupling and loss first",
+  "chemical": {
+    "material": "matched PdH from PdD force-constant reference",
+    "isotope_mode_eV": 0.05662611954702793,
+    "passive_energy_decay_s_inv": 683541474221.289,
+    "solution_heat_eV_per_H": 0.1,
+    "atomic_H_extra_energy_eV_per_H": 2.24,
+    "energy_reference": "0.1eV heat of solution is already relative to half H2; do not add H2 dissociation again. Prepared atomic H can release an additional2.24eV/H; preparing it paid that energy.",
+    "chemical_inversion_status": "optimistic hot-arrival/recycled finite-level bound; thermalizing a harmonic ladder alone never inverts it",
+    "sticking_and_hot_branching_scaling": "actual threshold divides by hot-state branching and sticking probabilities",
+    "rows": [
+      {
+        "layer": "monolayer",
+        "thickness_nm": 0.28878240943658595,
+        "H_arrival_flux_inversion_lower_bound_m2_s": 5.79573342333191e+30,
+        "chemical_power_energy_only_flux_bound_m2_s": 3.281898936922982e+30,
+        "ideal_H2_pressure_at300K_bar": 270.38618585738664,
+        "chemical_power_W_m2": 92857886677.55217
+      },
+      {
+        "layer": "gain_length_patch",
+        "thickness_nm": 5.325333977108139,
+        "H_arrival_flux_inversion_lower_bound_m2_s": 1.0687706422890066e+32,
+        "chemical_power_energy_only_flux_bound_m2_s": 6.0520334158611115e+31,
+        "ideal_H2_pressure_at300K_bar": 4986.095743491625,
+        "chemical_power_W_m2": 1712359350180.6187
+      }
+    ]
+  },
+  "optical": [
+    {
+      "material": "NiH",
+      "carrier_THz": 23.43701436379206,
+      "coherent_resonant_onset_field_V_m": 0.0,
+      "target_displacement_A": 0.02159370022548665,
+      "target_internal_effective_field_V_m": 5459127.676479389,
+      "incident_field_scaling": "divide by abs(Z_mode/e * internal_field_transmission)",
+      "target_unit_coupling_intensity_W_m2": 39553593017.53917,
+      "target_pulse_duration_ps": 4.7646890962402955,
+      "target_unit_coupling_fluence_mJ_cm2": 0.018846057336779517,
+      "parametric_pump_THz": 46.87402872758412,
+      "parametric_fractional_effective_stiffness_threshold": 0.01710269394466913,
+      "parametric_fractional_bare_stiffness_threshold": 0.01711649442871881,
+      "parametric_reduced_delta_k_threshold": 0.021802435377786953,
+      "reference_strain_derivative_dlnK_deps": 5.0,
+      "parametric_strain_threshold_for_derivative5": 0.003423298885743762,
+      "parametric_threshold_field_V_m": null,
+      "missing_field_conversion": "mode symmetry and Raman/IR/strain derivative mapping pump into stiffness modulation",
+      "parametric_phase": "frequency locked to half pump; two phase states, not a free-phase laser linewidth"
+    },
+    {
+      "material": "delta-TiH2_reference",
+      "carrier_THz": 39.365280151643404,
+      "coherent_resonant_onset_field_V_m": 0.0,
+      "target_displacement_A": 0.016688947063490094,
+      "target_internal_effective_field_V_m": 11850232.72340738,
+      "incident_field_scaling": "divide by abs(Z_mode/e * internal_field_transmission)",
+      "target_unit_coupling_intensity_W_m2": 186377377396.62137,
+      "target_pulse_duration_ps": 2.732610228972925,
+      "target_unit_coupling_fluence_mJ_cm2": 0.05092967279231547,
+      "parametric_pump_THz": 78.73056030328681,
+      "parametric_fractional_effective_stiffness_threshold": 0.01775457747789584,
+      "parametric_fractional_bare_stiffness_threshold": 0.01776067696951377,
+      "parametric_reduced_delta_k_threshold": 0.02186854205050467,
+      "reference_strain_derivative_dlnK_deps": 5.0,
+      "parametric_strain_threshold_for_derivative5": 0.0035521353939027543,
+      "parametric_threshold_field_V_m": null,
+      "missing_field_conversion": "mode symmetry and Raman/IR/strain derivative mapping pump into stiffness modulation",
+      "parametric_phase": "frequency locked to half pump; two phase states, not a free-phase laser linewidth"
+    },
+    {
+      "material": "PdD",
+      "carrier_THz": 9.68420454703688,
+      "coherent_resonant_onset_field_V_m": 0.0,
+      "target_displacement_A": 0.023687214747688118,
+      "target_internal_effective_field_V_m": 2061642.2378447067,
+      "incident_field_scaling": "divide by abs(Z_mode/e * internal_field_transmission)",
+      "target_unit_coupling_intensity_W_m2": 5641129165.284047,
+      "target_pulse_duration_ps": 12.410623239625469,
+      "target_unit_coupling_fluence_mJ_cm2": 0.007000992871640322,
+      "parametric_pump_THz": 19.36840909407376,
+      "parametric_fractional_effective_stiffness_threshold": 0.01589072940079715,
+      "parametric_fractional_bare_stiffness_threshold": 0.0159168884934091,
+      "parametric_reduced_delta_k_threshold": 0.02169121491181336,
+      "reference_strain_derivative_dlnK_deps": 5.0,
+      "parametric_strain_threshold_for_derivative5": 0.0031833776986818197,
+      "parametric_threshold_field_V_m": null,
+      "missing_field_conversion": "mode symmetry and Raman/IR/strain derivative mapping pump into stiffness modulation",
+      "parametric_phase": "frequency locked to half pump; two phase states, not a free-phase laser linewidth"
+    }
+  ],
+  "pulsed_or_constriction_current": [
+    {
+      "material": "NiH",
+      "existing_optic_drift_floor_A_m2": 305024268720256.3,
+      "requested_pulse_range_A_m2": [
+        1000000000000.0,
+        10000000000000.0
+      ],
+      "largest_pulse_over_drift_floor": 0.03278427661495746,
+      "result": "below necessary finite-q optic drift condition; no new steady-current gain model"
+    },
+    {
+      "material": "delta-TiH2_reference",
+      "existing_optic_drift_floor_A_m2": 254339200556452.2,
+      "requested_pulse_range_A_m2": [
+        1000000000000.0,
+        10000000000000.0
+      ],
+      "largest_pulse_over_drift_floor": 0.03931757266721626,
+      "result": "below necessary finite-q optic drift condition; no new steady-current gain model"
+    },
+    {
+      "material": "PdD",
+      "existing_optic_drift_floor_A_m2": 105246549308855.77,
+      "requested_pulse_range_A_m2": [
+        1000000000000.0,
+        10000000000000.0
+      ],
+      "largest_pulse_over_drift_floor": 0.09501499161415802,
+      "result": "below necessary finite-q optic drift condition; no new steady-current gain model"
+    }
+  ],
+  "corrected_hybrid_gain": [
+    {
+      "material": "NiH",
+      "q_m_inv": 5952415512.002097,
+      "mode_frequency_THz": 23.43701436379206,
+      "phase_velocity_m_s": 24739.385884236523,
+      "group_velocity_m_s": 3048.374414720968,
+      "passive_energy_decay_s_inv": 1259263695659.4836,
+      "current_kinematic_A_m2": 305024268720256.3,
+      "current_threshold_A_m2": 325199897412557.44,
+      "H_flux_threshold_m2_s": 1.2592636956594837e+32,
+      "temperature_gradient_threshold_K_m": 195557734994.59558,
+      "loading_gradient_threshold_m_inv": 16363703313.51162,
+      "after_pump_amplitude_decay_ps": 1.5882296987467652,
+      "pump_ratio": 2.0,
+      "coefficients": {
+        "gamma": 0.01,
+        "gradient": 0.1,
+        "saturation_q": 0.1,
+        "pump_ratio": 2.0,
+        "sigma_e": 1e-20,
+        "sigma_H": 1e-20,
+        "sigma_Q": 1e-20,
+        "thermal_W_mK": 10.0,
+        "diffusion_m2_s": 1e-07,
+        "T_K": 300.0,
+        "qd": 1.5707963267948966
+      },
+      "state": "self_sustained_limit_cycle",
+      "gain_length_nm": 4.84151877835963,
+      "coherent_isotopes": 4572.761707950457,
+      "phonon_number": 26.762775029869815,
+      "hybrid_action_metric": 1.0747925649648207,
+      "linewidth_FWHM_GHz": 8.407987930039194,
+      "linewidth_regime": "large-occupation phase diffusion",
+      "locked_frequency_THz": 23.50595782297939,
+      "nonlinear_frequency_shift_GHz": 68.94345918732807,
+      "radial_relaxation_ps": 0.7941148493733826,
+      "logistic_time_ps": [
+        0.0,
+        0.7941148493733826,
+        3.9705742468669136,
+        7.941148493733827
+      ],
+      "logistic_phonons": [
+        0.2676277502986981,
+        0.7151985241504417,
+        16.053907572829537,
+        26.64302547284223
+      ],
+      "after_stop_time_ps": [
+        0.0,
+        1.5882296987467652,
+        3.1764593974935305,
+        7.941148493733827
+      ],
+      "after_stop_phonons": [
+        26.762775029869815,
+        1.9424123309159913,
+        0.24735388376010178,
+        0.0006075278441633635
+      ]
+    },
+    {
+      "material": "delta-TiH2_reference",
+      "q_m_inv": 7053418620.542868,
+      "mode_frequency_THz": 39.365280151643404,
+      "phase_velocity_m_s": 35066.59155908394,
+      "group_velocity_m_s": 4472.022122451134,
+      "passive_energy_decay_s_inv": 2195702825226.9817,
+      "current_kinematic_A_m2": 254339200556452.2,
+      "current_threshold_A_m2": 289518238174316.75,
+      "H_flux_threshold_m2_s": 2.1957028252269818e+32,
+      "temperature_gradient_threshold_K_m": 572720774386.5975,
+      "loading_gradient_threshold_m_inv": 48502509282.42179,
+      "after_pump_amplitude_decay_ps": 0.9108700763243083,
+      "pump_ratio": 2.0,
+      "coefficients": {
+        "gamma": 0.01,
+        "gradient": 0.1,
+        "saturation_q": 0.1,
+        "pump_ratio": 2.0,
+        "sigma_e": 1e-20,
+        "sigma_H": 1e-20,
+        "sigma_Q": 1e-20,
+        "thermal_W_mK": 10.0,
+        "diffusion_m2_s": 1e-07,
+        "T_K": 300.0,
+        "qd": 1.5707963267948966
+      },
+      "state": "self_sustained_limit_cycle",
+      "gain_length_nm": 4.073431132001059,
+      "coherent_isotopes": 3204.196236365588,
+      "phonon_number": 18.060338468721543,
+      "hybrid_action_metric": 1.031725253952271,
+      "linewidth_FWHM_GHz": 21.365959959004254,
+      "linewidth_regime": "large-occupation phase diffusion",
+      "locked_frequency_THz": 39.48512934782735,
+      "nonlinear_frequency_shift_GHz": 119.84919618394827,
+      "radial_relaxation_ps": 0.45543503816215414,
+      "logistic_time_ps": [
+        0.0,
+        0.45543503816215414,
+        2.2771751908107705,
+        4.554350381621541
+      ],
+      "logistic_phonons": [
+        0.18060338468721543,
+        0.4826378207816937,
+        10.833667442455939,
+        17.979527808056353
+      ],
+      "after_stop_time_ps": [
+        0.0,
+        0.9108700763243083,
+        1.8217401526486166,
+        4.554350381621541
+      ],
+      "after_stop_phonons": [
+        18.060338468721543,
+        1.3107992016152221,
+        0.1669219599714273,
+        0.0004099783554776021
+      ]
+    },
+    {
+      "material": "PdD",
+      "q_m_inv": 5439376760.72278,
+      "mode_frequency_THz": 9.68420454703688,
+      "phase_velocity_m_s": 11186.511690280204,
+      "group_velocity_m_s": 1287.2844193928286,
+      "passive_energy_decay_s_inv": 483456784091.45465,
+      "current_kinematic_A_m2": 105246549308855.77,
+      "current_threshold_A_m2": 112992380939056.88,
+      "H_flux_threshold_m2_s": 4.834567840914547e+31,
+      "temperature_gradient_threshold_K_m": 31022560639.3909,
+      "loading_gradient_threshold_m_inv": 8232938433.725548,
+      "after_pump_amplitude_decay_ps": 4.136874413208489,
+      "pump_ratio": 2.0,
+      "coefficients": {
+        "gamma": 0.01,
+        "gradient": 0.1,
+        "saturation_q": 0.1,
+        "pump_ratio": 2.0,
+        "sigma_e": 1e-20,
+        "sigma_H": 1e-20,
+        "sigma_Q": 1e-20,
+        "thermal_W_mK": 10.0,
+        "diffusion_m2_s": 1e-07,
+        "T_K": 300.0,
+        "qd": 1.5707963267948966
+      },
+      "state": "self_sustained_limit_cycle",
+      "gain_length_nm": 5.325333977108139,
+      "coherent_isotopes": 4643.4627110039155,
+      "phonon_number": 29.278184700619978,
+      "hybrid_action_metric": 1.1649956775659116,
+      "linewidth_FWHM_GHz": 3.4374623597838387,
+      "linewidth_regime": "large-occupation phase diffusion",
+      "locked_frequency_THz": 9.710809051650482,
+      "nonlinear_frequency_shift_GHz": 26.604504613603176,
+      "radial_relaxation_ps": 2.0684372066042447,
+      "logistic_time_ps": [
+        0.0,
+        2.0684372066042447,
+        10.342186033021225,
+        20.68437206604245
+      ],
+      "logistic_phonons": [
+        0.2927818470061998,
+        0.782419403978725,
+        17.562800216322387,
+        29.147179988120698
+      ],
+      "after_stop_time_ps": [
+        0.0,
+        4.136874413208489,
+        8.273748826416979,
+        20.68437206604245
+      ],
+      "after_stop_phonons": [
+        29.278184700619978,
+        2.1249779563534603,
+        0.27060245759496554,
+        0.0006646288515421919
+      ]
+    }
+  ],
+  "source_benchmark": {
+    "material": "LiNbO3, not metal hydride",
+    "carrier_THz": 20.0,
+    "duration_fs": 150.0,
+    "peak_field_MV_cm": 30.0,
+    "max_fluence_mJ_cm2": 200.0,
+    "url": "https://doi.org/10.1038/s41567-022-01512-3"
+  },
+  "missing_physical_inputs": "loaded-hydride mode effective charge/field penetration, stiffness-modulation derivative, hot-arrival branching, and actual linewidth; none is replaced by a geometric gain cross section"
+}

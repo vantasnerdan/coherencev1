@@ -24,18 +24,29 @@ A proton optic mode with gain `G`, loss `kappa` and saturation settles into a se
 
 | Material | Frequency | Linewidth | Gain length | Decay after pump stops |
 |---|---:|---:|---:|---:|
-| NiH | 23.5 THz | 7.6 GHz | 5.2 nm | 1.6 ps |
-| TiH2 | 39.5 THz | 20.5 GHz | 4.2 nm | 0.9 ps |
-| PdD | 9.7 THz | 2.8 GHz | 6.2 nm | 4.1 ps |
+| NiH | 23.5 THz | 8.4 GHz | 4.8 nm | 1.6 ps |
+| TiH2 | 39.5 THz | 21.4 GHz | 4.1 nm | 0.9 ps |
+| PdD | 9.7 THz | 3.4 GHz | 5.3 nm | 4.1 ps |
 
-What is not known is how any physical pump turns into gain. With a placeholder gain cross-section of 1e-20 m^2 the thresholds are far out of reach: current density above 1e14 A/m^2 (the electron drift must exceed the mode's phase velocity before any gain is possible), hydrogen flux near 1e32 per m^2 per second, temperature gradient above 1e10 K/m. A steady bulk current cannot pump this mode. The gain coefficient is the missing microscopic quantity.
+## Which pump (`pumps.py`)
+
+    PYTHONPATH=../g0_model python3 pumps.py > pumps.json
+
+| Pump | Threshold | Reachable |
+|---|---|---|
+| Steady or pulsed current | electron drift must exceed the mode's phase velocity: above 1e14 A/m^2; a 1e13 A/m^2 pulse reaches 3 to 10 percent of that | no |
+| Hot protons arriving during loading (PdH) | arrival flux above 6e30 per m^2 per second for one atomic layer, equivalent to about 270 bar of H2 striking with every atom sticking hot; about 5000 bar for a 5 nm layer | no, and heating a harmonic mode does not invert it |
+| Resonant light at the mode frequency | none: a forced response at any strength. An internal field of 2 to 12 MV/m gives a 0.02 Angstrom amplitude | yes, as a probe |
+| Parametric drive at twice the mode frequency | well stiffness modulated by 1.6 to 1.8 percent (a strain near 0.3 percent) | yes, with existing mid-infrared pulsed lasers |
+
+The parametric drive is the one carried forward. The mode locks to half the pump frequency (pump at 46.9 THz for NiH, 78.7 THz for TiH2, 19.4 THz for PdD), with a threshold, saturation and two possible phases. What is still needed is how strongly a pump field or strain changes the well stiffness in the loaded hydride.
 
 ## What an experiment could see
 
 - Static branch: a proton vibration that softens as loading approaches the threshold, then a static distortion, with a mode that hardens as the square root of the excess loading.
-- Pumped branch: a pump threshold, a narrow line at the frequencies above whose strength grows with pump excess, and picosecond decay when the pump stops.
+- Pumped branch: under a pump at twice the mode frequency, a threshold in pump strength, then oscillation at exactly half the pump frequency that saturates, with picosecond decay when the pump stops.
 - Isotope: at the same host, the D frequency is close to the H frequency divided by root 2, while the static threshold and ordering energy do not change.
 
 ## Inputs to compute next
 
-The screened proton-proton force constant at finite wavevector (decides the static branch), and the sign and size of current-induced gain on the proton mode (decides the pumped branch).
+The screened proton-proton force constant at finite wavevector (decides the static branch), and how much a pump field or strain changes the proton well stiffness (decides the pumped branch).

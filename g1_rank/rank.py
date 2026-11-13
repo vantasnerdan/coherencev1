@@ -1,3 +1,4 @@
+# g1_rank/rank.py (replacement with same-mode metric)
 """Selected screened-dipole + quartic mechanism, using domain.py unchanged.
 Local: python rank.py > rank.json. Published node directories:
 PYTHONPATH=../g0_model python rank.py > rank.json
@@ -94,8 +95,13 @@ def gain_branch(m, changes=None):
                key=lambda v:v.imag)
     Omega0 = m['E']/HBAR
     Omega, kappa = pole.imag*Omega0, -2*pole.real*Omega0
-    # Optical nearest-neighbour dispersion, not an acoustic sound-speed claim.
-    vg = Omega0*p['gradient']*d*np.sin(p['qd'])/pole.imag
+    # Differentiate the SAME hybrid-mode dispersion D(nu,q)=0.
+    # M_dyn=-dD/d(nu^2); it also normalizes the mode action.
+    nu2 = pole.imag**2
+    Mdyn = (1+z['g']**2*base['photon_ratio']**2/
+            (base['photon_ratio']**2-nu2)**2+
+            base['electron_strength']*z['we']**2/(z['we']**2-nu2)**2)
+    vg = Omega0*p['gradient']*d*np.sin(p['qd'])/(pole.imag*Mdyn)
     vphase = Omega/q
     ne = z['nm']*1e30  # one-electron host scenario, NOT measured n_e
     charge = 1.602176634e-19
@@ -122,22 +128,22 @@ def gain_branch(m, changes=None):
                           phonon_number=0., linewidth_FWHM_GHz=None, locked_frequency_THz=None)
     length = 2*vg/(kappa*mu)  # amplitude spatial e-fold length
     Nc = z['nm']*z['x']*1e30*np.pi*length**3/6
-    nstar = .5*Nc*pole.imag*p['saturation_q']**2*mu
+    nstar = .5*Nc*pole.imag*Mdyn*p['saturation_q']**2*mu
     nth = 1/np.expm1(HBAR*Omega/(KB*p['T_K']))
     G = p['pump_ratio']*kappa
     noise = kappa*(nth+.5)/2+G/4
     # Duffing amplitude-to-phase conversion, with nonlinear damping saturation.
-    henry = 3*base['beta']*p['saturation_q']**2*Omega0/(4*kappa*pole.imag)
+    henry = 3*base['beta']*p['saturation_q']**2*Omega0/(4*kappa*pole.imag*Mdyn)
     fwhm = noise*(1+henry**2)/(2*np.pi*nstar)
     # Analytic logistic growth from nstar/100, sampled over 10 gain times.
     times = np.array([0.,1.,5.,10.])/(kappa*mu)
     growth = nstar/(1+99*np.exp(-kappa*mu*times))
-    shift = 3*base['beta']*Omega0*p['saturation_q']**2*mu/(8*pole.imag)
+    shift = 3*base['beta']*Omega0*p['saturation_q']**2*mu/(8*pole.imag*Mdyn)
     stop_t = np.array([0.,1.,2.,5.])*2/kappa
     stop_n = nstar*np.exp(-kappa*stop_t)/(1+mu*(1-np.exp(-kappa*stop_t)))
     return ans | dict(state='self_sustained_limit_cycle',
         gain_length_nm=float(length/1e-9), coherent_isotopes=float(Nc),
-        phonon_number=float(nstar),
+        phonon_number=float(nstar), hybrid_action_metric=float(Mdyn),
         linewidth_FWHM_GHz=float(fwhm/1e9) if nstar>=10 else None,
         linewidth_regime='large-occupation phase diffusion' if nstar>=10 else 'occupation<10; no semiclassical linewidth assigned',
         locked_frequency_THz=float((Omega+shift)/(2*np.pi*1e12)),
