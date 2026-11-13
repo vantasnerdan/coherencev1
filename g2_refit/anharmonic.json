@@ -1,0 +1,212 @@
+{
+  "assumption": "One-isotope frozen-site cubic well from401, onsite-quartic lattice/RPA projection; nonlocal quartics and lattice self-consistency omitted.",
+  "potential": "K2 sum(u_i^2)/2 + A sum(u_i^4)/4 + B sum_i<j(u_i^2 u_j^2)/2; B=(3 K4_111-A)/2",
+  "coordinate_meaning": "physical single-isotope displacement in A; mass in eV/c^2",
+  "rows": [
+    {
+      "material": "NiH",
+      "K2_eV_A2": 1.467942406443983,
+      "K4_100_eV_A4": 18.318329806370457,
+      "K4_111_eV_A4": 1.1283657157232418,
+      "cross_quartic_eV_A4": -7.466616329600366,
+      "harmonic_quantum_meV": 78.05065997078907,
+      "basis_change_zero_to_one_meV": -1.5666942232428482e-06,
+      "basis_change_parallel_12_meV": [
+        -0.00020716815663490706,
+        -0.0002150530879418966
+      ],
+      "basis_change_cross_shift_meV": -3.5539594591682544e-06,
+      "spectrum": {
+        "parity_basis_per_axis": 10,
+        "largest_block": 1000,
+        "basis_quantum_eV": 0.0980196172314329,
+        "ground_energy_eV": 0.13288825496207263,
+        "zero_to_one_meV": 95.95423809201142,
+        "zero_to_one_THz": 23.201631545688276,
+        "parametric_stiffness_clock_THz": 46.40326309137655,
+        "raw_zero_to_one_x_strength_A2": 0.02152787082119844,
+        "zero_to_one_oscillator_strength": 0.9955225300469246,
+        "single_pole_effective_spring_eV_A2": 2.228604930068735,
+        "dE01_dKx_A2": 0.018155088605357063,
+        "dE01_dKy_A2": 0.0006206267266114836,
+        "dE01_dKz_A2": 0.0006206267266114802,
+        "dlnE01_dlnK_fixed_quartic": 0.2967322090596963,
+        "single_pole_mass_over_bare": 1.0044976078571164,
+        "parallel_one_to_two_lines": [
+          {
+            "energy_eV": 0.33575341974138895,
+            "raw_strength_A2": 0.01290534663113835,
+            "block_degeneracy": 1,
+            "one_to_two_meV": 106.9109266873049,
+            "spacing_change_meV": 10.956688595293471
+          },
+          {
+            "energy_eV": 0.3461255099480863,
+            "raw_strength_A2": 0.02338312993525193,
+            "block_degeneracy": 2,
+            "one_to_two_meV": 117.28301689400223,
+            "spacing_change_meV": 21.328778801990808
+          }
+        ],
+        "perpendicular_one_to_two_lines": [
+          {
+            "energy_eV": 0.31948091973261394,
+            "raw_strength_A2": 0.022759910187986385,
+            "block_degeneracy": 1,
+            "one_to_two_meV": 90.6384266785299,
+            "spacing_change_meV": -5.315811413481526
+          }
+        ],
+        "total_parallel_upward_strength_A2": 0.03633790094069045,
+        "reported_parallel_strength_A2": 0.03628847656639028,
+        "local_static_susceptibility_A2_eV": 0.44887693989829436,
+        "RPA_static_denominator": 0.8948714535496738,
+        "RPA_critical_J_eV_A2": 2.2277820736939127,
+        "RPA_Gamma_quantum_eV": 0.09077219518693976,
+        "RPA_Gamma_residue_eV_A2": 0.004131725647455948,
+        "RPA_Gamma_x_strength_A2": 0.0227587624103775,
+        "RPA_Gamma_oscillator_strength": 0.995605606146255,
+        "local_mean_square_axis_A2_T0": 0.021555594630382757,
+        "local_mean_square_axis_A2_T300": 0.022514345338770725,
+        "cross_manifold_shift_meV": -5.31581141348153
+      }
+    },
+    {
+      "material": "PdH",
+      "K2_eV_A2": 1.0917228165401551,
+      "K4_100_eV_A4": 9.833945608919885,
+      "K4_111_eV_A4": 1.368619619144121,
+      "cross_quartic_eV_A4": -2.864043375743761,
+      "harmonic_quantum_meV": 67.30979452419525,
+      "basis_change_zero_to_one_meV": -6.028983960959522e-07,
+      "basis_change_parallel_12_meV": [
+        -8.399825162541674e-05,
+        -8.649831056573021e-05
+      ],
+      "basis_change_cross_shift_meV": -1.098299617918741e-06,
+      "spectrum": {
+        "parity_basis_per_axis": 10,
+        "largest_block": 1000,
+        "basis_quantum_eV": 0.08355127798822098,
+        "ground_energy_eV": 0.11390385190673814,
+        "zero_to_one_meV": 82.26124415675783,
+        "zero_to_one_THz": 19.890680342694484,
+        "parametric_stiffness_clock_THz": 39.78136068538897,
+        "raw_zero_to_one_x_strength_A2": 0.025140423436206132,
+        "zero_to_one_oscillator_strength": 0.9966753444458207,
+        "single_pole_effective_spring_eV_A2": 1.636035374771946,
+        "dE01_dKx_A2": 0.021552232916304537,
+        "dE01_dKy_A2": 0.0004358986255057016,
+        "dE01_dKz_A2": 0.00043589862550568945,
+        "dlnE01_dlnK_fixed_quartic": 0.29759853043059564,
+        "single_pole_mass_over_bare": 1.003335745759847,
+        "parallel_one_to_two_lines": [
+          {
+            "energy_eV": 0.28853820469531033,
+            "raw_strength_A2": 0.014930769668545214,
+            "block_degeneracy": 1,
+            "one_to_two_meV": 92.37310863181436,
+            "spacing_change_meV": 10.111864475056535
+          },
+          {
+            "energy_eV": 0.2938212628218879,
+            "raw_strength_A2": 0.02815132759884193,
+            "block_degeneracy": 2,
+            "one_to_two_meV": 97.65616675839195,
+            "spacing_change_meV": 15.394922601634121
+          }
+        ],
+        "perpendicular_one_to_two_lines": [
+          {
+            "energy_eV": 0.2756363511021949,
+            "raw_strength_A2": 0.026007290141887206,
+            "block_degeneracy": 1,
+            "one_to_two_meV": 79.47125503869896,
+            "spacing_change_meV": -2.7899891180588696
+          }
+        ],
+        "total_parallel_upward_strength_A2": 0.043128764997880015,
+        "reported_parallel_strength_A2": 0.04308209726738715,
+        "local_static_susceptibility_A2_eV": 0.6114050321597165,
+        "RPA_static_denominator": 0.9610488641881381,
+        "RPA_critical_J_eV_A2": 1.6355769864497474,
+        "RPA_Gamma_quantum_eV": 0.08064368599991288,
+        "RPA_Gamma_residue_eV_A2": 0.004136263079328295,
+        "RPA_Gamma_x_strength_A2": 0.025645300236727543,
+        "RPA_Gamma_oscillator_strength": 0.9966989731785982,
+        "local_mean_square_axis_A2_T0": 0.025164722653517328,
+        "local_mean_square_axis_A2_T300": 0.027052210810606613,
+        "cross_manifold_shift_meV": -2.789989118058875
+      }
+    },
+    {
+      "material": "PdD",
+      "K2_eV_A2": 1.0917228165401551,
+      "K4_100_eV_A4": 9.833945608919885,
+      "K4_111_eV_A4": 1.368619619144121,
+      "cross_quartic_eV_A4": -2.864043375743761,
+      "harmonic_quantum_meV": 47.60702609244912,
+      "basis_change_zero_to_one_meV": -2.2227145279885008e-07,
+      "basis_change_parallel_12_meV": [
+        -1.5966415830348524e-05,
+        -1.6772405103893107e-05
+      ],
+      "basis_change_cross_shift_meV": -2.872034832179793e-07,
+      "spectrum": {
+        "parity_basis_per_axis": 10,
+        "largest_block": 1000,
+        "basis_quantum_eV": 0.0563519525591669,
+        "ground_energy_eV": 0.0782818979825353,
+        "zero_to_one_meV": 55.733570843915935,
+        "zero_to_one_THz": 13.476317473398904,
+        "parametric_stiffness_clock_THz": 26.952634946797808,
+        "raw_zero_to_one_x_strength_A2": 0.018579885184104424,
+        "zero_to_one_oscillator_strength": 0.9976085713810732,
+        "single_pole_effective_spring_eV_A2": 1.4998362554898201,
+        "dE01_dKx_A2": 0.016296018742988968,
+        "dE01_dKy_A2": 0.0002693331126034891,
+        "dE01_dKz_A2": 0.00026933311260349084,
+        "dlnE01_dlnK_fixed_quartic": 0.3297619264431428,
+        "single_pole_mass_over_bare": 1.0023971612589657,
+        "parallel_one_to_two_lines": [
+          {
+            "energy_eV": 0.19558692432608515,
+            "raw_strength_A2": 0.011212420595847771,
+            "block_degeneracy": 1,
+            "one_to_two_meV": 61.57145549963391,
+            "spacing_change_meV": 5.837884655717978
+          },
+          {
+            "energy_eV": 0.19848842496858657,
+            "raw_strength_A2": 0.021365349514013053,
+            "block_degeneracy": 2,
+            "one_to_two_meV": 64.47295614213533,
+            "spacing_change_meV": 8.739385298219396
+          }
+        ],
+        "perpendicular_one_to_two_lines": [
+          {
+            "energy_eV": 0.18816433013302797,
+            "raw_strength_A2": 0.01911615910280755,
+            "block_degeneracy": 1,
+            "one_to_two_meV": 54.14886130657673,
+            "spacing_change_meV": -1.584709537339208
+          }
+        ],
+        "total_parallel_upward_strength_A2": 0.03260520100045004,
+        "reported_parallel_strength_A2": 0.03257777010986082,
+        "local_static_susceptibility_A2_eV": 0.6668791368826521,
+        "RPA_static_denominator": 0.957514743149795,
+        "RPA_critical_J_eV_A2": 1.4995220943251157,
+        "RPA_Gamma_quantum_eV": 0.054537035688243835,
+        "RPA_Gamma_residue_eV_A2": 0.0020710868477609697,
+        "RPA_Gamma_x_strength_A2": 0.01898789347114643,
+        "RPA_Gamma_oscillator_strength": 0.9976279129907389,
+        "local_mean_square_axis_A2_T0": 0.018593048712592007,
+        "local_mean_square_axis_A2_T300": 0.022732028024111457,
+        "cross_manifold_shift_meV": -1.5847095373392044
+      }
+    }
+  ],
+  "Pd_H_over_D": 1.4759729712480416
+}
