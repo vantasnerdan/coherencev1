@@ -1,18 +1,18 @@
 {
   "K0_eV_A2": 0.18105969055575036,
   "coefficients_eV_A2": [
-    -12.957209890251187,
-    -3.7713577661071254,
-    -2.3195868899382437,
-    33.61367292728619,
-    -7.3223666666402085,
-    29.883784579567116,
-    9.833270552002292,
-    -27.28809278355391,
-    -19.198724633877706,
-    18.27922674417578,
-    205.57349122285822,
-    9.993655787059868
+    -12.957209890251177,
+    -3.7713577661071187,
+    -2.3195868899382903,
+    33.61367292728641,
+    -7.322366666640059,
+    29.88378457956705,
+    9.833270552002215,
+    -27.288092783554152,
+    -19.198724633878168,
+    18.279226744146694,
+    205.57349122300224,
+    9.993655787060478
   ],
   "calibration_box": {
     "normal_min": -0.040000000000000036,
@@ -36,24 +36,24 @@
   ],
   "conditioning": {
     "rank": 12,
-    "scaled_condition": 39.072099216572425,
+    "scaled_condition": 39.072099216572326,
     "scaled_singular_values": [
-      1.6444977476180858,
-      1.5892446111200105,
-      1.5812028002025549,
-      1.08481409442899,
-      1.0017738500191922,
-      0.9075504758053203,
-      0.6693835816361683,
-      0.6582496183719577,
-      0.5765502013175811,
-      0.1935411050833974,
-      0.11269159712553048,
-      0.04208879943979494
+      1.6444977476180846,
+      1.5892446111200136,
+      1.5812028002025535,
+      1.0848140944289888,
+      1.001773850019192,
+      0.9075504758053221,
+      0.669383581636168,
+      0.6582496183719575,
+      0.5765502013175812,
+      0.19354110508339725,
+      0.11269159712553056,
+      0.042088799439795016
     ]
   },
-  "rms_independent_entry_error_eV_A2": 0.008057042725003733,
-  "max_abs_entry_error_eV_A2": 0.043972615764027057,
+  "rms_independent_entry_error_eV_A2": 0.00805704272500374,
+  "max_abs_entry_error_eV_A2": 0.04397261576402617,
   "residuals": [
     {
       "name": "cubic_zero",
@@ -63,145 +63,145 @@
     },
     {
       "name": "hydro_minus",
-      "max_abs_entry_eV_A2": 0.002409177214606817,
-      "operator_norm_eV_A2": 0.002409177214606817,
-      "max_eigenvalue_error_eV_A2": 0.002409177214606817
+      "max_abs_entry_eV_A2": 0.002409177214607039,
+      "operator_norm_eV_A2": 0.002409177214607039,
+      "max_eigenvalue_error_eV_A2": 0.002409177214607039
     },
     {
       "name": "uniaxial_minus",
-      "max_abs_entry_eV_A2": 0.02511083156680244,
-      "operator_norm_eV_A2": 0.02511083156680244,
-      "max_eigenvalue_error_eV_A2": 0.02511083156680244
+      "max_abs_entry_eV_A2": 0.025110831566802494,
+      "operator_norm_eV_A2": 0.025110831566802494,
+      "max_eigenvalue_error_eV_A2": 0.025110831566802494
     },
     {
       "name": "hydro_plus",
-      "max_abs_entry_eV_A2": 0.0021028540798625137,
-      "operator_norm_eV_A2": 0.0021028540798625137,
-      "max_eigenvalue_error_eV_A2": 0.0021028540798625137
+      "max_abs_entry_eV_A2": 0.002102854079862264,
+      "operator_norm_eV_A2": 0.002102854079862264,
+      "max_eigenvalue_error_eV_A2": 0.002102854079862264
     },
     {
       "name": "uniaxial_plus",
-      "max_abs_entry_eV_A2": 0.008581708975723495,
-      "operator_norm_eV_A2": 0.008581708975723495,
-      "max_eigenvalue_error_eV_A2": 0.008581708975723495
+      "max_abs_entry_eV_A2": 0.008581708975723634,
+      "operator_norm_eV_A2": 0.008581708975723634,
+      "max_eigenvalue_error_eV_A2": 0.008581708975723634
     },
     {
       "name": "g3_shear100_g002",
-      "max_abs_entry_eV_A2": 0.001284212190268419,
-      "operator_norm_eV_A2": 0.0013014130434983984,
-      "max_eigenvalue_error_eV_A2": 0.00036239618574976373
+      "max_abs_entry_eV_A2": 0.0012842121902684467,
+      "operator_norm_eV_A2": 0.0013014130434985133,
+      "max_eigenvalue_error_eV_A2": 0.000362396185749736
     },
     {
       "name": "g3_shear100_g004",
-      "max_abs_entry_eV_A2": 0.003997423190952698,
-      "operator_norm_eV_A2": 0.003997423190952699,
-      "max_eigenvalue_error_eV_A2": 0.0039974231909526425
+      "max_abs_entry_eV_A2": 0.003997423190952892,
+      "operator_norm_eV_A2": 0.003997423190952892,
+      "max_eigenvalue_error_eV_A2": 0.003997423190952892
     },
     {
       "name": "g3_shear100_g006",
-      "max_abs_entry_eV_A2": 0.0029695451719807253,
-      "operator_norm_eV_A2": 0.0029862201782294945,
-      "max_eigenvalue_error_eV_A2": 0.0014384313032380636
+      "max_abs_entry_eV_A2": 0.002969545171980531,
+      "operator_norm_eV_A2": 0.002986220178229025,
+      "max_eigenvalue_error_eV_A2": 0.0014384313032357043
     },
     {
       "name": "g3_shear100_g008",
-      "max_abs_entry_eV_A2": 0.0065865042475619084,
-      "operator_norm_eV_A2": 0.006588021505203535,
-      "max_eigenvalue_error_eV_A2": 0.0040759789636348465
+      "max_abs_entry_eV_A2": 0.006586504247562269,
+      "operator_norm_eV_A2": 0.006588021505204014,
+      "max_eigenvalue_error_eV_A2": 0.004075978963631516
     },
     {
       "name": "g3_shear110_g110008",
-      "max_abs_entry_eV_A2": 0.00619348332478771,
-      "operator_norm_eV_A2": 0.006194084488630282,
-      "max_eigenvalue_error_eV_A2": 0.0035283213347377697
+      "max_abs_entry_eV_A2": 0.0061934833247873355,
+      "operator_norm_eV_A2": 0.006194084488629903,
+      "max_eigenvalue_error_eV_A2": 0.0035283213347310875
     },
     {
       "name": "g3_biax_m0p0400",
-      "max_abs_entry_eV_A2": 0.020114881137320684,
-      "operator_norm_eV_A2": 0.020114881137320684,
-      "max_eigenvalue_error_eV_A2": 0.020114881137320628
+      "max_abs_entry_eV_A2": 0.020114881137322127,
+      "operator_norm_eV_A2": 0.02011488113732213,
+      "max_eigenvalue_error_eV_A2": 0.02011488113732207
     },
     {
       "name": "g3_biax_m0p0200",
-      "max_abs_entry_eV_A2": 0.043972615764027057,
-      "operator_norm_eV_A2": 0.04397261576402705,
-      "max_eigenvalue_error_eV_A2": 0.043972615764027057
+      "max_abs_entry_eV_A2": 0.04397261576402617,
+      "operator_norm_eV_A2": 0.04397261576402616,
+      "max_eigenvalue_error_eV_A2": 0.04397261576402617
     },
     {
       "name": "g3_biax_0p0000",
-      "max_abs_entry_eV_A2": 0.023464799162828454,
-      "operator_norm_eV_A2": 0.023464799162828454,
-      "max_eigenvalue_error_eV_A2": 0.02346479916282848
+      "max_abs_entry_eV_A2": 0.0234647991628279,
+      "operator_norm_eV_A2": 0.0234647991628279,
+      "max_eigenvalue_error_eV_A2": 0.023464799162827926
     },
     {
       "name": "g3_biax_0p0200",
-      "max_abs_entry_eV_A2": 0.004324645453325365,
-      "operator_norm_eV_A2": 0.004324645453325365,
-      "max_eigenvalue_error_eV_A2": 0.004324645453325365
+      "max_abs_entry_eV_A2": 0.004324645453324866,
+      "operator_norm_eV_A2": 0.004324645453324866,
+      "max_eigenvalue_error_eV_A2": 0.004324645453324866
     },
     {
       "name": "g3_biax_0p0400",
-      "max_abs_entry_eV_A2": 0.013135792912557509,
-      "operator_norm_eV_A2": 0.013135792912557509,
-      "max_eigenvalue_error_eV_A2": 0.013135792912557509
+      "max_abs_entry_eV_A2": 0.013135792912558397,
+      "operator_norm_eV_A2": 0.013135792912558397,
+      "max_eigenvalue_error_eV_A2": 0.013135792912558397
     }
   ],
   "leave_one_case_out": [
     {
       "name": "hydro_minus",
       "identified": true,
-      "max_abs_entry_eV_A2": 0.013928578058525598,
-      "operator_norm_eV_A2": 0.013928578058525598,
-      "max_eigenvalue_error_eV_A2": 0.013928578058525598
+      "max_abs_entry_eV_A2": 0.013928578058525765,
+      "operator_norm_eV_A2": 0.013928578058525765,
+      "max_eigenvalue_error_eV_A2": 0.013928578058525765
     },
     {
       "name": "uniaxial_minus",
       "identified": true,
-      "max_abs_entry_eV_A2": 0.058034176545871174,
-      "operator_norm_eV_A2": 0.058034176545871174,
-      "max_eigenvalue_error_eV_A2": 0.058034176545871174
+      "max_abs_entry_eV_A2": 0.05803417654587084,
+      "operator_norm_eV_A2": 0.05803417654587084,
+      "max_eigenvalue_error_eV_A2": 0.05803417654587084
     },
     {
       "name": "hydro_plus",
       "identified": true,
-      "max_abs_entry_eV_A2": 0.0024321531203585142,
-      "operator_norm_eV_A2": 0.0024321531203585142,
-      "max_eigenvalue_error_eV_A2": 0.0024321531203585142
+      "max_abs_entry_eV_A2": 0.0024321531203586808,
+      "operator_norm_eV_A2": 0.0024321531203586808,
+      "max_eigenvalue_error_eV_A2": 0.0024321531203586808
     },
     {
       "name": "uniaxial_plus",
       "identified": true,
-      "max_abs_entry_eV_A2": 0.010607451233235574,
-      "operator_norm_eV_A2": 0.010607451233235574,
-      "max_eigenvalue_error_eV_A2": 0.010607451233235574
+      "max_abs_entry_eV_A2": 0.010607451233235726,
+      "operator_norm_eV_A2": 0.010607451233235726,
+      "max_eigenvalue_error_eV_A2": 0.010607451233235726
     },
     {
       "name": "g3_shear100_g002",
       "identified": true,
-      "max_abs_entry_eV_A2": 0.0012848680470012863,
-      "operator_norm_eV_A2": 0.0013114314297086674,
-      "max_eigenvalue_error_eV_A2": 0.00039890071181336584
+      "max_abs_entry_eV_A2": 0.001284868047001314,
+      "operator_norm_eV_A2": 0.001311431429708741,
+      "max_eigenvalue_error_eV_A2": 0.00039890071181361564
     },
     {
       "name": "g3_shear100_g004",
       "identified": true,
-      "max_abs_entry_eV_A2": 0.004154005815713263,
-      "operator_norm_eV_A2": 0.004154005815713264,
-      "max_eigenvalue_error_eV_A2": 0.004154005815713208
+      "max_abs_entry_eV_A2": 0.004154005815713319,
+      "operator_norm_eV_A2": 0.004154005815713319,
+      "max_eigenvalue_error_eV_A2": 0.004154005815713263
     },
     {
       "name": "g3_shear100_g006",
       "identified": true,
-      "max_abs_entry_eV_A2": 0.003178906751697075,
-      "operator_norm_eV_A2": 0.003224433912208693,
-      "max_eigenvalue_error_eV_A2": 0.0018090463756609276
+      "max_abs_entry_eV_A2": 0.0031789067516970193,
+      "operator_norm_eV_A2": 0.003224433912208669,
+      "max_eigenvalue_error_eV_A2": 0.001809046375661011
     },
     {
       "name": "g3_shear100_g008",
       "identified": true,
       "max_abs_entry_eV_A2": 0.011129012151431694,
-      "operator_norm_eV_A2": 0.011406066695643986,
-      "max_eigenvalue_error_eV_A2": 0.008855517399844352
+      "operator_norm_eV_A2": 0.011406066695643915,
+      "max_eigenvalue_error_eV_A2": 0.008855517399844193
     },
     {
       "name": "g3_shear110_g110008",
@@ -211,37 +211,37 @@
     {
       "name": "g3_biax_m0p0400",
       "identified": true,
-      "max_abs_entry_eV_A2": 0.16059596849889804,
-      "operator_norm_eV_A2": 0.160595968498898,
-      "max_eigenvalue_error_eV_A2": 0.16059596849889798
+      "max_abs_entry_eV_A2": 0.16059596849889837,
+      "operator_norm_eV_A2": 0.16059596849889837,
+      "max_eigenvalue_error_eV_A2": 0.16059596849889832
     },
     {
       "name": "g3_biax_m0p0200",
       "identified": true,
-      "max_abs_entry_eV_A2": 0.06329528132954171,
-      "operator_norm_eV_A2": 0.06329528132954171,
-      "max_eigenvalue_error_eV_A2": 0.06329528132954171
+      "max_abs_entry_eV_A2": 0.06329528132954093,
+      "operator_norm_eV_A2": 0.06329528132954093,
+      "max_eigenvalue_error_eV_A2": 0.06329528132954093
     },
     {
       "name": "g3_biax_0p0000",
       "identified": true,
-      "max_abs_entry_eV_A2": 0.02571169447612104,
-      "operator_norm_eV_A2": 0.02571169447612104,
-      "max_eigenvalue_error_eV_A2": 0.025711694476121066
+      "max_abs_entry_eV_A2": 0.02571169447612137,
+      "operator_norm_eV_A2": 0.02571169447612137,
+      "max_eigenvalue_error_eV_A2": 0.0257116944761214
     },
     {
       "name": "g3_biax_0p0200",
       "identified": true,
-      "max_abs_entry_eV_A2": 0.00527766397634663,
-      "operator_norm_eV_A2": 0.00527766397634663,
-      "max_eigenvalue_error_eV_A2": 0.00527766397634663
+      "max_abs_entry_eV_A2": 0.005277663976347019,
+      "operator_norm_eV_A2": 0.005277663976347019,
+      "max_eigenvalue_error_eV_A2": 0.005277663976347019
     },
     {
       "name": "g3_biax_0p0400",
       "identified": true,
-      "max_abs_entry_eV_A2": 0.15161183502066933,
-      "operator_norm_eV_A2": 0.15161183502066933,
-      "max_eigenvalue_error_eV_A2": 0.15161183502066933
+      "max_abs_entry_eV_A2": 0.15161183502066877,
+      "operator_norm_eV_A2": 0.15161183502066877,
+      "max_eigenvalue_error_eV_A2": 0.15161183502066877
     }
   ],
   "reference_a_A": 4.084,
@@ -256,13 +256,13 @@
   "alternatives": [
     {
       "degree": 1,
-      "max_abs_entry_error_eV_A2": 0.39049735743095876,
-      "rms_independent_entry_error_eV_A2": 0.07840032671846267
+      "max_abs_entry_error_eV_A2": 0.390497357430959,
+      "rms_independent_entry_error_eV_A2": 0.07840032671846268
     },
     {
       "degree": 2,
-      "max_abs_entry_error_eV_A2": 0.043972615764027057,
-      "rms_independent_entry_error_eV_A2": 0.008057042725003733
+      "max_abs_entry_error_eV_A2": 0.04397261576402617,
+      "rms_independent_entry_error_eV_A2": 0.00805704272500374
     }
   ],
   "source_table": {
