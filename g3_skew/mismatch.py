@@ -297,9 +297,6 @@ def export_fcc(out, d, a, n):
             'source':'octahedral_maps.npz, not metal_maps.npz'}
 
 def maps():
-    import matplotlib
-    matplotlib.use('Agg')
-    import matplotlib.pyplot as plt
     source_path = ROOT/'adopted-strains.json'
     source = json.loads(source_path.read_text())
     row = next(v for v in source['model_inputs'] if v['material'] == 'PdD')
@@ -317,9 +314,6 @@ def maps():
                'frozen_J_contrast_contract':'For source bulk a0=4.084 A: Kii_effective=Kii_source+DeltaK_law_bulk, J unchanged. DeltaK_matched_bulk isolates contrast about same-aPd cubic baseline; background compression is separately explicit.',
                'missing_physics':['independent cubic shear-response coefficient','strained onsite/inter-site split','hydride metal geometry response','part A law'],
                'shear_response_coefficient': None, 'affine_rigid_motion_check': affine_check(), 'cases': {}}
-    fig, axes = plt.subplots(2,4,figsize=(11,5.4),constrained_layout=True)
-    softfig, softaxes = plt.subplots(2,4,figsize=(11,5.4),constrained_layout=True)
-    depthfig, daxes = plt.subplots(1,2,figsize=(8,3.4),constrained_layout=True)
     for ci, (case,(a,n,m)) in enumerate(CASES.items()):
         out = ROOT/case
         reference, atoms = read(out/'reference.extxyz'), read(out/'relaxed.extxyz')
@@ -361,27 +355,8 @@ def maps():
                            'fixed': li < 2, 'mean_strain_geometry': (stretch-np.eye(3)).mean(axis=0).tolist(),
                            'nonaffinity_RMS_A': float(np.sqrt(np.mean(residual[select]**2)))})
             layers.append(metric)
-        for li in range(4):
-            mask = (5-layer) == li
-            xy = reference.positions[ids[mask],:2]
-            shown_depth = 0 if li < 2 else 3
-            shown = (5-layer) == shown_depth
-            shown_xy = reference.positions[ids[shown],:2]
-            strain = result['strain_geometry'][shown]
-            shear = np.sqrt(2*np.sum(strain[:,np.triu_indices(3,1)[0],np.triu_indices(3,1)[1]]**2,axis=1))
-            strain_scalar = shear if li % 2 else np.trace(strain,axis1=1,axis2=2)
-            label = 'shear Frobenius' if li % 2 else 'tr(U-I)'
-            artist=axes[ci,li].scatter(shown_xy[:,0],shown_xy[:,1],c=strain_scalar,s=9,cmap='coolwarm')
-            fig.colorbar(artist,ax=axes[ci,li],label=label)
-            axes[ci,li].set(title=f'{case}, depth {shown_depth}',xlabel='[100] Å',ylabel='[010] Å',aspect='equal')
-            artist=softaxes[ci,li].scatter(xy[:,0],xy[:,1],c=Kmin[mask],s=9,cmap='viridis',vmin=Kmin.min(),vmax=Kmin.max())
-            softfig.colorbar(artist,ax=softaxes[ci,li],label='Kmin eV/A²')
-            softaxes[ci,li].set(title=f'{case}, Pd depth {li}',xlabel='[100] Å',ylabel='[010] Å',aspect='equal')
         layers.sort(key=lambda x:x['layer_from_interface'])
-        depth = np.array([v['nominal_depth_A'] for v in layers])
         rms = np.array([v['rms_modulation_Frobenius'] for v in layers])
-        daxes[0].plot(depth,rms,'o-',label=case)
-        daxes[1].plot(depth,[v['nonaffinity_RMS_A'] for v in layers],'o-',label=case)
         low = int(Kmin.argmin())
         normal_law = np.diagonal(result['strain_law'],axis1=1,axis2=2)
         result['shear_magnitude_geometry'] = np.sqrt(2*np.sum(result['strain_geometry'][:,np.triu_indices(3,1)[0],np.triu_indices(3,1)[1]]**2,axis=1))
@@ -418,6 +393,60 @@ def maps():
                    'relaxation': json.loads((out/'relaxation.json').read_text())}
         summary['cases'][case]=details
         print(case,json.dumps({k:v for k,v in details.items() if k not in ('layers','relaxation')}),flush=True)
+    dump(ROOT/'summary.json',summary)
+    plots()
+
+def plots():
+    """Render only saved arrays/statistics; never rewrite numerical outputs or geometry."""
+    import matplotlib
+    matplotlib.use('Agg')
+    import matplotlib.pyplot as plt
+    summary = json.loads((ROOT/'summary.json').read_text())
+    fig, axes = plt.subplots(2,4,figsize=(11,5.4),constrained_layout=True)
+    softfig, softaxes = plt.subplots(2,4,figsize=(11,6.0),sharey='row',constrained_layout=True)
+    depthfig, daxes = plt.subplots(1,2,figsize=(8,3.4),constrained_layout=True)
+    softfig.suptitle(
+        'Collective Γ stiffness at Pd-metal sites: normal-strain-only estimate\n'
+        'Extrapolated source464 law on EMT geometry; shear response unknown',
+        fontsize=11)
+    softfig.supxlabel(
+        'Negative estimates are retained; not established PdD instabilities.',
+        fontsize=9)
+    for ci, (case,(a,n,m)) in enumerate(CASES.items()):
+        with np.load(ROOT/case/'metal_maps.npz') as data:
+            xy = data['reference_positions_A'][:,:2]
+            depths = data['depth_layer_from_interface']
+            strain = data['strain_geometry']
+            shear = data['shear_magnitude_geometry']
+            Kmin = data['lowest_eigenvalue_eV_A2']
+            for li in range(4):
+                shown_depth = 0 if li < 2 else 3
+                shown = depths == shown_depth
+                strain_scalar = shear[shown] if li % 2 else np.trace(strain[shown],axis1=1,axis2=2)
+                label = 'shear Frobenius' if li % 2 else 'tr(U-I)'
+                artist = axes[ci,li].scatter(
+                    xy[shown,0],xy[shown,1],c=strain_scalar,s=9,cmap='coolwarm')
+                fig.colorbar(artist,ax=axes[ci,li],label=label)
+                axes[ci,li].set(
+                    title=f'{case}, depth {shown_depth}',
+                    xlabel='[100] Å',ylabel='[010] Å',aspect='equal')
+                mask = depths == li
+                soft_artist = softaxes[ci,li].scatter(
+                    xy[mask,0],xy[mask,1],c=Kmin[mask],s=9,cmap='viridis',
+                    vmin=Kmin.min(),vmax=Kmin.max())
+                softaxes[ci,li].set(
+                    xlabel='[100] (Å)',aspect='equal')
+                softaxes[ci,li].set_title(f'Pd {a:.3f} Å, depth {li}',fontsize=10)
+            softaxes[ci,0].set_ylabel('[010] (Å)')
+            softfig.colorbar(
+                soft_artist,ax=list(softaxes[ci]),label='Lowest Γ stiffness (eV/Å²)',
+                shrink=.86,pad=.025,fraction=.035)
+        layers = summary['cases'][case]['layers']
+        depth = [row['nominal_depth_A'] for row in layers]
+        daxes[0].plot(
+            depth,[row['rms_modulation_Frobenius'] for row in layers],'o-',label=case)
+        daxes[1].plot(
+            depth,[row['nonaffinity_RMS_A'] for row in layers],'o-',label=case)
     for ax in daxes:
         ax.set(xlabel='Nominal depth below top Pd layer (Å)')
         ax.legend()
@@ -427,15 +456,16 @@ def maps():
     softfig.savefig(ROOT/'stiffness_maps.png',dpi=130)
     depthfig.savefig(ROOT/'penetration.png',dpi=130)
     plt.close('all')
-    dump(ROOT/'summary.json',summary)
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('action',choices=['relax','maps'])
+    parser.add_argument('action',choices=['relax','maps','plots'])
     parser.add_argument('--case',choices=CASES,default='pd389')
     parser.add_argument('--steps',type=int,default=1200)
     args=parser.parse_args()
     if args.action=='relax':
         relax(args.case,args.steps)
-    else:
+    elif args.action=='maps':
         maps()
+    else:
+        plots()
