@@ -1,0 +1,958 @@
+{
+  "law_source": "Fleet entry_464",
+  "source_sha256": "9748a47d0fe9e759a61cafcaaddfc2d4c2d844b44d4dd84925dcc1d92d942af8",
+  "law_reference_a_A": 4.084,
+  "K0_Gamma_eV_A2": 0.18105969055575036,
+  "normal_closure_A_B_eV_A2": [
+    -14.641836917377493,
+    -2.8851060004851354
+  ],
+  "predicted_hydro_derivative_eV_A2": -20.412048918347764,
+  "source_hydro_derivative_eV_A2": -20.51524157920267,
+  "units": {
+    "coordinates": "angstrom",
+    "strain": "dimensionless Biot stretch minus identity",
+    "stiffness": "eV/angstrom^2"
+  },
+  "crystal_and_lab_frame": [
+    "[100]",
+    "[010]",
+    "[001]"
+  ],
+  "site_kind": {
+    "metal_maps.npz": "Pd metal nuclei",
+    "octahedral_maps.npz": "registered octahedral interstitial centers, NOT metal nuclei"
+  },
+  "frozen_J_contrast_contract": "For source bulk a0=4.084 A: Kii_effective=Kii_source+DeltaK_law_bulk, J unchanged. DeltaK_matched_bulk isolates contrast about same-aPd cubic baseline; background compression is separately explicit.",
+  "missing_physics": [
+    "independent cubic shear-response coefficient",
+    "strained onsite/inter-site split",
+    "hydride metal geometry response",
+    "part A law"
+  ],
+  "shear_response_coefficient": null,
+  "affine_rigid_motion_check": {
+    "affine_F_max_error": 1.9984014443252818e-15,
+    "stretch_max_error": 1.9984014443252818e-15,
+    "rotation_max_error": 1.0685762842304188e-15,
+    "rigid_strain_max_error": 1.9984014443252818e-15,
+    "affine_neighbour_residual_A": 4.166723845055613e-15
+  },
+  "cases": {
+    "pd389": {
+      "metal_sites": 800,
+      "octahedral_sites": 800,
+      "K_matched_cubic_bulk_eV_A2": 1.150681994708408,
+      "uniform_law_reference_linear_offset": -0.04750244857982355,
+      "Kmin_range_eV_A2": [
+        0.3708719617124759,
+        1.370522600719998
+      ],
+      "fraction_below_half_law_bulk": 0.0,
+      "fraction_below_half_matched_bulk": 0.035,
+      "fraction_negative": 0.0,
+      "octahedral_fraction_below_half_law_bulk": 0.0,
+      "octahedral_Kmin_range_eV_A2": [
+        0.4507399934706752,
+        1.3579744115557948
+      ],
+      "normal_law_strain_component_range": [
+        -0.0853779760174671,
+        0.005369005936986193
+      ],
+      "fraction_outside_1percent_normal_component_box": 1.0,
+      "max_abs_geometry_shear_Biot": 0.0455691605060764,
+      "degenerate_lowest_fraction": 0.09,
+      "softest_metal_atom_index": 1101,
+      "softest_reference_position_A": [
+        19.45,
+        1.945,
+        19.725
+      ],
+      "softest_direction_lab": [
+        -0.0,
+        0.9988940693731424,
+        -0.04701742412301569
+      ],
+      "imposed_square_period_A": 38.9,
+      "coincidence_primitive_diagonal_translation_A": 27.506453788156694,
+      "layers": [
+        {
+          "rms_modulation_Frobenius": 0.06658670957317145,
+          "dominant_mode_mx_my": [
+            1,
+            -1
+          ],
+          "dominant_mode_amplitude": 0.025226984377642665,
+          "dominant_mode_wavelength_A": 27.506453788156694,
+          "layer_from_interface": 0,
+          "nominal_depth_A": 0.0,
+          "fixed": false,
+          "mean_strain_geometry": [
+            [
+              -6.580096495637899e-05,
+              3.3306690738754695e-18,
+              5.776629175002767e-17
+            ],
+            [
+              4.917941054394248e-18,
+              -6.580096495622911e-05,
+              8.368306048112118e-17
+            ],
+            [
+              5.776629175002767e-17,
+              8.271161533457416e-17,
+              -0.0007795383510980691
+            ]
+          ],
+          "nonaffinity_RMS_A": 0.08183155236487855
+        },
+        {
+          "rms_modulation_Frobenius": 0.03390706157723193,
+          "dominant_mode_mx_my": [
+            1,
+            1
+          ],
+          "dominant_mode_amplitude": 0.014322879066516673,
+          "dominant_mode_wavelength_A": 27.506453788156694,
+          "layer_from_interface": 1,
+          "nominal_depth_A": 1.945,
+          "fixed": false,
+          "mean_strain_geometry": [
+            [
+              0.000156706733382066,
+              -2.7430314963883262e-17,
+              2.1788126858268698e-17
+            ],
+            [
+              -2.979387569990166e-17,
+              0.00015670673338202267,
+              -2.498001805406602e-18
+            ],
+            [
+              2.4858587410747646e-17,
+              -7.632783294297951e-19,
+              -0.0025211579438790665
+            ]
+          ],
+          "nonaffinity_RMS_A": 0.07511010784523735
+        },
+        {
+          "rms_modulation_Frobenius": 0.020992322342667923,
+          "dominant_mode_mx_my": [
+            1,
+            1
+          ],
+          "dominant_mode_amplitude": 0.008951832136423886,
+          "dominant_mode_wavelength_A": 27.506453788156694,
+          "layer_from_interface": 2,
+          "nominal_depth_A": 3.89,
+          "fixed": false,
+          "mean_strain_geometry": [
+            [
+              0.00013952242899411272,
+              1.0438698516690437e-17,
+              -3.12423698023423e-17
+            ],
+            [
+              6.2753621743461e-18,
+              0.00013952242899403,
+              -5.637851296924623e-18
+            ],
+            [
+              -2.835405521484091e-17,
+              -2.0643209364124003e-18,
+              -0.0029829102005347447
+            ]
+          ],
+          "nonaffinity_RMS_A": 0.040357293638241476
+        },
+        {
+          "rms_modulation_Frobenius": 0.025774534735708027,
+          "dominant_mode_mx_my": [
+            1,
+            1
+          ],
+          "dominant_mode_amplitude": 0.01159534962982064,
+          "dominant_mode_wavelength_A": 27.506453788156694,
+          "layer_from_interface": 3,
+          "nominal_depth_A": 5.835,
+          "fixed": false,
+          "mean_strain_geometry": [
+            [
+              2.4361023435049978e-05,
+              -8.428587688902311e-18,
+              8.68229099726392e-18
+            ],
+            [
+              -1.3918987490368905e-17,
+              2.436102343490787e-05,
+              5.80265002714242e-18
+            ],
+            [
+              9.84455572616838e-18,
+              3.937822290467352e-18,
+              -0.0033918182242686644
+            ]
+          ],
+          "nonaffinity_RMS_A": 0.02744853534259064
+        },
+        {
+          "rms_modulation_Frobenius": 0.013388635326364782,
+          "dominant_mode_mx_my": [
+            1,
+            1
+          ],
+          "dominant_mode_amplitude": 0.00627490793552947,
+          "dominant_mode_wavelength_A": 27.506453788156694,
+          "layer_from_interface": 4,
+          "nominal_depth_A": 7.78,
+          "fixed": true,
+          "mean_strain_geometry": [
+            [
+              -3.2091718156668225e-06,
+              -4.289103794352656e-18,
+              3.696695727306576e-17
+            ],
+            [
+              1.5742615544489524e-18,
+              -3.209171816430101e-06,
+              2.105954299835844e-17
+            ],
+            [
+              3.7660846663456483e-17,
+              2.248201624865942e-17,
+              -0.0019200815079179383
+            ]
+          ],
+          "nonaffinity_RMS_A": 0.023295438479628772
+        },
+        {
+          "rms_modulation_Frobenius": 5.880265600230737e-16,
+          "dominant_mode_mx_my": [
+            1,
+            0
+          ],
+          "dominant_mode_amplitude": 8.482814707935025e-17,
+          "dominant_mode_wavelength_A": 38.9,
+          "layer_from_interface": 5,
+          "nominal_depth_A": 9.725,
+          "fixed": true,
+          "mean_strain_geometry": [
+            [
+              2.7977620220553945e-16,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0824674490095276e-16,
+              -1.2290515827295701e-17
+            ],
+            [
+              0.0,
+              -9.653736143810955e-18,
+              6.050715484207104e-17
+            ]
+          ],
+          "nonaffinity_RMS_A": 1.0086252015871858e-15
+        }
+      ],
+      "mobile_layer3_to_interface_modulation_ratio": 0.3870822706351732,
+      "threshold_morphology_by_depth": [
+        {
+          "depth_layer_from_interface": 0,
+          "half_law_bulk": {
+            "fraction": 0.0,
+            "classification": "none",
+            "components": []
+          },
+          "half_matched_bulk": {
+            "fraction": 0.12,
+            "classification": "isolated spots or finite patches",
+            "components": [
+              {
+                "sites": 12,
+                "winding_rank": 0
+              },
+              {
+                "sites": 12,
+                "winding_rank": 0
+              }
+            ]
+          },
+          "octahedral_half_law_bulk": {
+            "fraction": 0.0,
+            "classification": "none",
+            "components": []
+          }
+        },
+        {
+          "depth_layer_from_interface": 1,
+          "half_law_bulk": {
+            "fraction": 0.0,
+            "classification": "none",
+            "components": []
+          },
+          "half_matched_bulk": {
+            "fraction": 0.01,
+            "classification": "isolated spots or finite patches",
+            "components": [
+              {
+                "sites": 1,
+                "winding_rank": 0
+              },
+              {
+                "sites": 1,
+                "winding_rank": 0
+              }
+            ]
+          },
+          "octahedral_half_law_bulk": {
+            "fraction": 0.0,
+            "classification": "none",
+            "components": []
+          }
+        },
+        {
+          "depth_layer_from_interface": 2,
+          "half_law_bulk": {
+            "fraction": 0.0,
+            "classification": "none",
+            "components": []
+          },
+          "half_matched_bulk": {
+            "fraction": 0.0,
+            "classification": "none",
+            "components": []
+          },
+          "octahedral_half_law_bulk": {
+            "fraction": 0.0,
+            "classification": "none",
+            "components": []
+          }
+        },
+        {
+          "depth_layer_from_interface": 3,
+          "half_law_bulk": {
+            "fraction": 0.0,
+            "classification": "none",
+            "components": []
+          },
+          "half_matched_bulk": {
+            "fraction": 0.01,
+            "classification": "isolated spots or finite patches",
+            "components": [
+              {
+                "sites": 1,
+                "winding_rank": 0
+              },
+              {
+                "sites": 1,
+                "winding_rank": 0
+              }
+            ]
+          },
+          "octahedral_half_law_bulk": {
+            "fraction": 0.0,
+            "classification": "none",
+            "components": []
+          }
+        }
+      ],
+      "fcc_consumer_contract": {
+        "shape_tensor": [
+          3,
+          3,
+          10,
+          10,
+          4
+        ],
+        "origin_D_A": [
+          1.945,
+          0.0,
+          13.89
+        ],
+        "CELL_dimensionless": [
+          [
+            0.5,
+            -0.5,
+            0.5
+          ],
+          [
+            0.5,
+            0.5,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.5
+          ]
+        ],
+        "O_to_cubic_lab": [
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "k_to_original_Pd_layer": "k+2; k=3 is interface; k=0 deepest mobile plane",
+        "duplicate_copy_max_abs_disagreement": {
+          "K_Gamma_eV_A2": 5.6621374255882984e-14,
+          "DeltaK_law_bulk_eV_A2": 5.6621374255882984e-14,
+          "DeltaK_matched_bulk_eV_A2": 5.6621374255882984e-14,
+          "F": 1.5681900222830336e-15,
+          "R": 5.52881792785456e-15,
+          "strain_geometry": 4.895255971567855e-15,
+          "strain_law": 4.6627193264933795e-15,
+          "shear_magnitude_geometry": 1.700029006457271e-15
+        },
+        "registration": "r_D=origin_D+aPd*CELL@(i,j,k); periodic i,j of length n; open k",
+        "source": "octahedral_maps.npz, not metal_maps.npz"
+      },
+      "penetration_interpretation": "finite slab, bottom two layers fixed; layer-resolved RMS is evidence, not a bulk penetration constant",
+      "relaxation": [
+        {
+          "case": "pd389",
+          "atoms": 2168,
+          "Pd_atoms": 1200,
+          "Ni_atoms": 968,
+          "Pd_a_A": 3.89,
+          "Ni_natural_a_A": 3.52,
+          "Ni_imposed_a_A": 3.536363636363636,
+          "Ni_residual_inplane_strain": 0.004648760330578483,
+          "cell_A": [
+            [
+              38.9,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              38.9,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              36.8575
+            ]
+          ],
+          "pbc": [
+            true,
+            true,
+            false
+          ],
+          "frame": [
+            "[100]",
+            "[010]",
+            "[001]"
+          ],
+          "layers_Pd_Ni": [
+            6,
+            4
+          ],
+          "fixed_Pd_layers_from_bottom": [
+            0,
+            1
+          ],
+          "registry": "zero lateral offset; alternating conventional fcc(001) bases; no twist",
+          "optimizer": "ASE FIRE, maxstep=0.10 A; fixed cell",
+          "fmax_target_eV_A": 0.02,
+          "converged": true,
+          "steps_this_segment": 189,
+          "max_mobile_force_eV_A": 0.016924334053918834,
+          "initial_energy_this_segment_eV": 552.9534111085982,
+          "final_energy_eV": 301.49562425679846,
+          "wall_seconds": 44.25840993109159,
+          "cpu_seconds": 44.236786617,
+          "peak_process_RSS_MiB": 130.578125,
+          "threads": 1,
+          "status": "local minimum candidate only; no global-minimum or deposition-kinetics claim"
+        }
+      ]
+    },
+    "pd4084": {
+      "metal_sites": 288,
+      "octahedral_sites": 288,
+      "K_matched_cubic_bulk_eV_A2": 0.18105969055575036,
+      "uniform_law_reference_linear_offset": 0.0,
+      "Kmin_range_eV_A2": [
+        -0.8118782127142518,
+        1.254319604768089
+      ],
+      "fraction_below_half_law_bulk": 0.14583333333333334,
+      "fraction_below_half_matched_bulk": 0.14583333333333334,
+      "fraction_negative": 0.0625,
+      "octahedral_fraction_below_half_law_bulk": 0.0625,
+      "octahedral_Kmin_range_eV_A2": [
+        -0.7544747986781447,
+        1.2556734845298583
+      ],
+      "normal_law_strain_component_range": [
+        -0.17739317335945248,
+        0.08346152396665074
+      ],
+      "fraction_outside_1percent_normal_component_box": 1.0,
+      "max_abs_geometry_shear_Biot": 0.09971790540061348,
+      "degenerate_lowest_fraction": 0.2777777777777778,
+      "softest_metal_atom_index": 367,
+      "softest_reference_position_A": [
+        0.0,
+        14.294,
+        20.21
+      ],
+      "softest_direction_lab": [
+        5.885305247495589e-17,
+        0.9909802726850383,
+        -0.13400783241694347
+      ],
+      "imposed_square_period_A": 24.503999999999998,
+      "coincidence_primitive_diagonal_translation_A": 17.32694456619516,
+      "layers": [
+        {
+          "rms_modulation_Frobenius": 0.12439689914143781,
+          "dominant_mode_mx_my": [
+            1,
+            -1
+          ],
+          "dominant_mode_amplitude": 0.05041183899043306,
+          "dominant_mode_wavelength_A": 17.32694456619516,
+          "layer_from_interface": 0,
+          "nominal_depth_A": 0.0,
+          "fixed": false,
+          "mean_strain_geometry": [
+            [
+              -0.0004811445052609886,
+              1.3588667228484988e-17,
+              -3.0839528461809905e-17
+            ],
+            [
+              1.455240249291655e-17,
+              -0.00048114450526098553,
+              -3.39234813079909e-17
+            ],
+            [
+              -3.642919299551295e-17,
+              -3.5850951836854015e-17,
+              -0.11221132128882101
+            ]
+          ],
+          "nonaffinity_RMS_A": 0.20129821677623586
+        },
+        {
+          "rms_modulation_Frobenius": 0.06100005151765764,
+          "dominant_mode_mx_my": [
+            1,
+            -1
+          ],
+          "dominant_mode_amplitude": 0.026997225566688696,
+          "dominant_mode_wavelength_A": 17.32694456619516,
+          "layer_from_interface": 1,
+          "nominal_depth_A": 2.042,
+          "fixed": false,
+          "mean_strain_geometry": [
+            [
+              0.000447001946951535,
+              9.27595192015376e-18,
+              -2.7948322668515226e-18
+            ],
+            [
+              1.2335811384723961e-17,
+              0.0004470019469514487,
+              2.1202175817494308e-17
+            ],
+            [
+              -1.6383499495336511e-18,
+              2.1973164029039556e-17,
+              -0.12292913987139986
+            ]
+          ],
+          "nonaffinity_RMS_A": 0.17704254732113248
+        },
+        {
+          "rms_modulation_Frobenius": 0.025477528254084243,
+          "dominant_mode_mx_my": [
+            1,
+            1
+          ],
+          "dominant_mode_amplitude": 0.009573467146713862,
+          "dominant_mode_wavelength_A": 17.32694456619516,
+          "layer_from_interface": 2,
+          "nominal_depth_A": 4.084,
+          "fixed": false,
+          "mean_strain_geometry": [
+            [
+              0.00048116605453283706,
+              -2.1238315889910492e-17,
+              2.5201677164885282e-17
+            ],
+            [
+              -2.576787163273882e-17,
+              0.000481166054532763,
+              1.5727858348252916e-16
+            ],
+            [
+              2.4864369822334236e-17,
+              1.5766407758830177e-16,
+              -0.12689935351048065
+            ]
+          ],
+          "nonaffinity_RMS_A": 0.11248875873556671
+        },
+        {
+          "rms_modulation_Frobenius": 0.03688304186660953,
+          "dominant_mode_mx_my": [
+            1,
+            -1
+          ],
+          "dominant_mode_amplitude": 0.01632446343480172,
+          "dominant_mode_wavelength_A": 17.32694456619516,
+          "layer_from_interface": 3,
+          "nominal_depth_A": 6.1259999999999994,
+          "fixed": false,
+          "mean_strain_geometry": [
+            [
+              8.3441775456798e-05,
+              -1.6293149314296052e-17,
+              -1.4456028966473393e-18
+            ],
+            [
+              -7.860465750519907e-18,
+              8.344177545674248e-05,
+              -7.611099250848241e-17
+            ],
+            [
+              -5.782411586589357e-19,
+              -7.652057999586583e-17,
+              -0.13083099217745364
+            ]
+          ],
+          "nonaffinity_RMS_A": 0.06920644075538042
+        },
+        {
+          "rms_modulation_Frobenius": 0.018018810740371847,
+          "dominant_mode_mx_my": [
+            1,
+            1
+          ],
+          "dominant_mode_amplitude": 0.008521851646938063,
+          "dominant_mode_wavelength_A": 17.32694456619516,
+          "layer_from_interface": 4,
+          "nominal_depth_A": 8.168,
+          "fixed": true,
+          "mean_strain_geometry": [
+            [
+              -8.542271858674733e-06,
+              -4.2042950910826784e-18,
+              -4.1922484002772836e-18
+            ],
+            [
+              -1.1444356265124769e-18,
+              -8.542271858833556e-06,
+              1.4022348097479192e-17
+            ],
+            [
+              -3.9995013473909716e-18,
+              1.4600589256138125e-17,
+              -0.06820193016950621
+            ]
+          ],
+          "nonaffinity_RMS_A": 0.11961077074273964
+        },
+        {
+          "rms_modulation_Frobenius": 6.714119235044207e-16,
+          "dominant_mode_mx_my": [
+            4,
+            1
+          ],
+          "dominant_mode_amplitude": 1.3218369456189622e-16,
+          "dominant_mode_wavelength_A": 5.943092955890303,
+          "layer_from_interface": 5,
+          "nominal_depth_A": 10.209999999999999,
+          "fixed": true,
+          "mean_strain_geometry": [
+            [
+              7.709882115452476e-18,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              -2.7755575615628914e-17,
+              -1.8229654861263217e-17
+            ],
+            [
+              0.0,
+              -1.5154737033186272e-17,
+              -1.3877787807814457e-17
+            ]
+          ],
+          "nonaffinity_RMS_A": 1.0863361734572834e-15
+        }
+      ],
+      "mobile_layer3_to_interface_modulation_ratio": 0.2964948653959127,
+      "threshold_morphology_by_depth": [
+        {
+          "depth_layer_from_interface": 0,
+          "half_law_bulk": {
+            "fraction": 0.3333333333333333,
+            "classification": "isolated spots or finite patches",
+            "components": [
+              {
+                "sites": 12,
+                "winding_rank": 0
+              },
+              {
+                "sites": 12,
+                "winding_rank": 0
+              }
+            ]
+          },
+          "half_matched_bulk": {
+            "fraction": 0.3333333333333333,
+            "classification": "isolated spots or finite patches",
+            "components": [
+              {
+                "sites": 12,
+                "winding_rank": 0
+              },
+              {
+                "sites": 12,
+                "winding_rank": 0
+              }
+            ]
+          },
+          "octahedral_half_law_bulk": {
+            "fraction": 0.1388888888888889,
+            "classification": "isolated spots or finite patches",
+            "components": [
+              {
+                "sites": 5,
+                "winding_rank": 0
+              },
+              {
+                "sites": 5,
+                "winding_rank": 0
+              }
+            ]
+          }
+        },
+        {
+          "depth_layer_from_interface": 1,
+          "half_law_bulk": {
+            "fraction": 0.25,
+            "classification": "isolated spots or finite patches",
+            "components": [
+              {
+                "sites": 9,
+                "winding_rank": 0
+              },
+              {
+                "sites": 9,
+                "winding_rank": 0
+              }
+            ]
+          },
+          "half_matched_bulk": {
+            "fraction": 0.25,
+            "classification": "isolated spots or finite patches",
+            "components": [
+              {
+                "sites": 9,
+                "winding_rank": 0
+              },
+              {
+                "sites": 9,
+                "winding_rank": 0
+              }
+            ]
+          },
+          "octahedral_half_law_bulk": {
+            "fraction": 0.1111111111111111,
+            "classification": "isolated spots or finite patches",
+            "components": [
+              {
+                "sites": 4,
+                "winding_rank": 0
+              },
+              {
+                "sites": 4,
+                "winding_rank": 0
+              }
+            ]
+          }
+        },
+        {
+          "depth_layer_from_interface": 2,
+          "half_law_bulk": {
+            "fraction": 0.0,
+            "classification": "none",
+            "components": []
+          },
+          "half_matched_bulk": {
+            "fraction": 0.0,
+            "classification": "none",
+            "components": []
+          },
+          "octahedral_half_law_bulk": {
+            "fraction": 0.0,
+            "classification": "none",
+            "components": []
+          }
+        },
+        {
+          "depth_layer_from_interface": 3,
+          "half_law_bulk": {
+            "fraction": 0.0,
+            "classification": "none",
+            "components": []
+          },
+          "half_matched_bulk": {
+            "fraction": 0.0,
+            "classification": "none",
+            "components": []
+          },
+          "octahedral_half_law_bulk": {
+            "fraction": 0.0,
+            "classification": "none",
+            "components": []
+          }
+        }
+      ],
+      "fcc_consumer_contract": {
+        "shape_tensor": [
+          3,
+          3,
+          6,
+          6,
+          4
+        ],
+        "origin_D_A": [
+          2.042,
+          0.0,
+          14.084
+        ],
+        "CELL_dimensionless": [
+          [
+            0.5,
+            -0.5,
+            0.5
+          ],
+          [
+            0.5,
+            0.5,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.5
+          ]
+        ],
+        "O_to_cubic_lab": [
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "k_to_original_Pd_layer": "k+2; k=3 is interface; k=0 deepest mobile plane",
+        "duplicate_copy_max_abs_disagreement": {
+          "K_Gamma_eV_A2": 3.913536161803677e-14,
+          "DeltaK_law_bulk_eV_A2": 3.913536161803677e-14,
+          "DeltaK_matched_bulk_eV_A2": 3.913536161803677e-14,
+          "F": 7.771561172376096e-16,
+          "R": 2.467872416158092e-15,
+          "strain_geometry": 2.6645352591003757e-15,
+          "strain_law": 2.6645352591003757e-15,
+          "shear_magnitude_geometry": 1.1657341758564144e-15
+        },
+        "registration": "r_D=origin_D+aPd*CELL@(i,j,k); periodic i,j of length n; open k",
+        "source": "octahedral_maps.npz, not metal_maps.npz"
+      },
+      "penetration_interpretation": "finite slab, bottom two layers fixed; layer-resolved RMS is evidence, not a bulk penetration constant",
+      "relaxation": [
+        {
+          "case": "pd4084",
+          "atoms": 824,
+          "Pd_atoms": 432,
+          "Ni_atoms": 392,
+          "Pd_a_A": 4.084,
+          "Ni_natural_a_A": 3.52,
+          "Ni_imposed_a_A": 3.5005714285714284,
+          "Ni_residual_inplane_strain": -0.005519480519480591,
+          "cell_A": [
+            [
+              24.503999999999998,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              24.503999999999998,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              37.391000000000005
+            ]
+          ],
+          "pbc": [
+            true,
+            true,
+            false
+          ],
+          "frame": [
+            "[100]",
+            "[010]",
+            "[001]"
+          ],
+          "layers_Pd_Ni": [
+            6,
+            4
+          ],
+          "fixed_Pd_layers_from_bottom": [
+            0,
+            1
+          ],
+          "registry": "zero lateral offset; alternating conventional fcc(001) bases; no twist",
+          "optimizer": "ASE FIRE, maxstep=0.10 A; fixed cell",
+          "fmax_target_eV_A": 0.02,
+          "converged": true,
+          "steps_this_segment": 286,
+          "max_mobile_force_eV_A": 0.01992976146553225,
+          "initial_energy_this_segment_eV": 259.01503767545387,
+          "final_energy_eV": 151.99541112017062,
+          "wall_seconds": 25.96605015010573,
+          "cpu_seconds": 25.960142383,
+          "peak_process_RSS_MiB": 113.19921875,
+          "threads": 1,
+          "status": "local minimum candidate only; no global-minimum or deposition-kinetics claim"
+        }
+      ]
+    }
+  }
+}

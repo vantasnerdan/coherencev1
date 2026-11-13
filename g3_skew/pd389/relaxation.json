@@ -1,0 +1,60 @@
+[
+  {
+    "case": "pd389",
+    "atoms": 2168,
+    "Pd_atoms": 1200,
+    "Ni_atoms": 968,
+    "Pd_a_A": 3.89,
+    "Ni_natural_a_A": 3.52,
+    "Ni_imposed_a_A": 3.536363636363636,
+    "Ni_residual_inplane_strain": 0.004648760330578483,
+    "cell_A": [
+      [
+        38.9,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        38.9,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        36.8575
+      ]
+    ],
+    "pbc": [
+      true,
+      true,
+      false
+    ],
+    "frame": [
+      "[100]",
+      "[010]",
+      "[001]"
+    ],
+    "layers_Pd_Ni": [
+      6,
+      4
+    ],
+    "fixed_Pd_layers_from_bottom": [
+      0,
+      1
+    ],
+    "registry": "zero lateral offset; alternating conventional fcc(001) bases; no twist",
+    "optimizer": "ASE FIRE, maxstep=0.10 A; fixed cell",
+    "fmax_target_eV_A": 0.02,
+    "converged": true,
+    "steps_this_segment": 189,
+    "max_mobile_force_eV_A": 0.016924334053918834,
+    "initial_energy_this_segment_eV": 552.9534111085982,
+    "final_energy_eV": 301.49562425679846,
+    "wall_seconds": 44.25840993109159,
+    "cpu_seconds": 44.236786617,
+    "peak_process_RSS_MiB": 130.578125,
+    "threads": 1,
+    "status": "local minimum candidate only; no global-minimum or deposition-kinetics claim"
+  }
+]
