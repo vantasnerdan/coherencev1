@@ -32,3 +32,9 @@ It is an illustration of where soft sites would sit, not a prediction that they 
 ## Files
 
 `pd389/`, `pd4084/`: reference and relaxed structures, per-site strain and stiffness maps for metal sites and for deuterium sites, and the same on the grid the lattice simulation uses. `summary.json`: all numbers. `strain_maps.png`, `stiffness_maps.png`, `penetration.png`.
+
+The arrays and figures here are the originals from the machine that ran the lattice simulation, so the two stay consistent. A rerun on a second machine reproduced the PdD-spacing case exactly and the bare-Pd case to within 1 percent (the relaxation path differs slightly).
+
+## First measured shear point
+
+GPAW, two-atom PdD cell sheared by 4 percent: the collective stiffness splits into 0.119, 0.176 and 0.212 eV/A^2 (0.181 unsheared). Shear softens one direction by a third but leaves the well stable; a 1 percent expansion has a much larger effect. The full shear and thin-film table is in progress.

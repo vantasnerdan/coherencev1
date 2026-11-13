@@ -32,11 +32,11 @@
   ],
   "shear_response_coefficient": null,
   "affine_rigid_motion_check": {
-    "affine_F_max_error": 1.9984014443252818e-15,
-    "stretch_max_error": 1.9984014443252818e-15,
-    "rotation_max_error": 1.0685762842304188e-15,
-    "rigid_strain_max_error": 1.9984014443252818e-15,
-    "affine_neighbour_residual_A": 4.166723845055613e-15
+    "affine_F_max_error": 1.7763568394002505e-15,
+    "stretch_max_error": 1.7763568394002505e-15,
+    "rotation_max_error": 8.987737993603978e-16,
+    "rigid_strain_max_error": 1.7763568394002505e-15,
+    "affine_neighbour_residual_A": 4.904383880158763e-15
   },
   "cases": {
     "pd389": {
@@ -45,220 +45,220 @@
       "K_matched_cubic_bulk_eV_A2": 1.150681994708408,
       "uniform_law_reference_linear_offset": -0.04750244857982355,
       "Kmin_range_eV_A2": [
-        0.3708719617124759,
-        1.370522600719998
+        0.36753537545147275,
+        1.391003453452072
       ],
       "fraction_below_half_law_bulk": 0.0,
       "fraction_below_half_matched_bulk": 0.035,
       "fraction_negative": 0.0,
       "octahedral_fraction_below_half_law_bulk": 0.0,
       "octahedral_Kmin_range_eV_A2": [
-        0.4507399934706752,
-        1.3579744115557948
+        0.44787875288483225,
+        1.380287888301782
       ],
       "normal_law_strain_component_range": [
-        -0.0853779760174671,
-        0.005369005936986193
+        -0.08364067439587008,
+        0.005276690438212661
       ],
       "fraction_outside_1percent_normal_component_box": 1.0,
-      "max_abs_geometry_shear_Biot": 0.0455691605060764,
-      "degenerate_lowest_fraction": 0.09,
-      "softest_metal_atom_index": 1101,
+      "max_abs_geometry_shear_Biot": 0.046088802836233234,
+      "degenerate_lowest_fraction": 0.0925,
+      "softest_metal_atom_index": 1009,
       "softest_reference_position_A": [
-        19.45,
-        1.945,
+        0.0,
+        17.505,
         19.725
       ],
       "softest_direction_lab": [
-        -0.0,
-        0.9988940693731424,
-        -0.04701742412301569
+        0.0,
+        -0.9988112255397722,
+        -0.048745622734133076
       ],
       "imposed_square_period_A": 38.9,
       "coincidence_primitive_diagonal_translation_A": 27.506453788156694,
       "layers": [
         {
-          "rms_modulation_Frobenius": 0.06658670957317145,
+          "rms_modulation_Frobenius": 0.06636245315925786,
           "dominant_mode_mx_my": [
             1,
             -1
           ],
-          "dominant_mode_amplitude": 0.025226984377642665,
+          "dominant_mode_amplitude": 0.02487556304746167,
           "dominant_mode_wavelength_A": 27.506453788156694,
           "layer_from_interface": 0,
           "nominal_depth_A": 0.0,
           "fixed": false,
           "mean_strain_geometry": [
             [
-              -6.580096495637899e-05,
-              3.3306690738754695e-18,
-              5.776629175002767e-17
+              -4.723538829976226e-05,
+              1.205632815803881e-17,
+              2.9524993561125256e-17
             ],
             [
-              4.917941054394248e-18,
-              -6.580096495622911e-05,
-              8.368306048112118e-17
+              1.0321604682062003e-17,
+              -4.7235388299810556e-05,
+              3.2612801348363975e-17
             ],
             [
-              5.776629175002767e-17,
-              8.271161533457416e-17,
-              -0.0007795383510980691
+              2.7304547511874944e-17,
+              3.566591466608315e-17,
+              -0.0011712260866930458
             ]
           ],
-          "nonaffinity_RMS_A": 0.08183155236487855
+          "nonaffinity_RMS_A": 0.08387500180267266
         },
         {
-          "rms_modulation_Frobenius": 0.03390706157723193,
+          "rms_modulation_Frobenius": 0.03325872941904441,
           "dominant_mode_mx_my": [
             1,
             1
           ],
-          "dominant_mode_amplitude": 0.014322879066516673,
+          "dominant_mode_amplitude": 0.013949621855870595,
           "dominant_mode_wavelength_A": 27.506453788156694,
           "layer_from_interface": 1,
           "nominal_depth_A": 1.945,
           "fixed": false,
           "mean_strain_geometry": [
             [
-              0.000156706733382066,
-              -2.7430314963883262e-17,
-              2.1788126858268698e-17
+              0.00017486031593338892,
+              1.2732870313669764e-17,
+              2.7582103268031233e-17
             ],
             [
-              -2.979387569990166e-17,
-              0.00015670673338202267,
-              -2.498001805406602e-18
+              6.973588373426764e-18,
+              0.00017486031593344885,
+              1.8943180357666733e-17
             ],
             [
-              2.4858587410747646e-17,
-              -7.632783294297951e-19,
-              -0.0025211579438790665
+              2.5708601913976282e-17,
+              2.0886070650760756e-17,
+              -0.002856634877681238
             ]
           ],
-          "nonaffinity_RMS_A": 0.07511010784523735
+          "nonaffinity_RMS_A": 0.07723667940380834
         },
         {
-          "rms_modulation_Frobenius": 0.020992322342667923,
+          "rms_modulation_Frobenius": 0.02179872757607144,
           "dominant_mode_mx_my": [
             1,
-            1
+            -1
           ],
-          "dominant_mode_amplitude": 0.008951832136423886,
+          "dominant_mode_amplitude": 0.009277326396736943,
           "dominant_mode_wavelength_A": 27.506453788156694,
           "layer_from_interface": 2,
           "nominal_depth_A": 3.89,
           "fixed": false,
           "mean_strain_geometry": [
             [
-              0.00013952242899411272,
-              1.0438698516690437e-17,
-              -3.12423698023423e-17
+              0.00014589878583220916,
+              1.0460382560140147e-17,
+              -1.807581861967833e-17
             ],
             [
-              6.2753621743461e-18,
-              0.00013952242899403,
-              -5.637851296924623e-18
+              4.250072516143178e-18,
+              0.00014589878583225356,
+              -3.9777209304148186e-17
             ],
             [
-              -2.835405521484091e-17,
-              -2.0643209364124003e-18,
-              -0.0029829102005347447
+              -1.800642968063926e-17,
+              -3.668940151690947e-17,
+              -0.003225361835501091
             ]
           ],
-          "nonaffinity_RMS_A": 0.040357293638241476
+          "nonaffinity_RMS_A": 0.0409405788377694
         },
         {
-          "rms_modulation_Frobenius": 0.025774534735708027,
+          "rms_modulation_Frobenius": 0.026557600718724192,
           "dominant_mode_mx_my": [
             1,
-            1
+            -1
           ],
-          "dominant_mode_amplitude": 0.01159534962982064,
+          "dominant_mode_amplitude": 0.012009548627417788,
           "dominant_mode_wavelength_A": 27.506453788156694,
           "layer_from_interface": 3,
           "nominal_depth_A": 5.835,
           "fixed": false,
           "mean_strain_geometry": [
             [
-              2.4361023435049978e-05,
-              -8.428587688902311e-18,
-              8.68229099726392e-18
+              2.3510475647754436e-05,
+              -2.0235549347269453e-17,
+              1.476900199359754e-17
             ],
             [
-              -1.3918987490368905e-17,
-              2.436102343490787e-05,
-              5.80265002714242e-18
+              -2.4080130250903053e-17,
+              2.3510475647049444e-05,
+              1.8082323832713243e-17
             ],
             [
-              9.84455572616838e-18,
-              3.937822290467352e-18,
-              -0.0033918182242686644
+              1.4075112603206818e-17,
+              1.5306766271150352e-17,
+              -0.0032674229634041415
             ]
           ],
-          "nonaffinity_RMS_A": 0.02744853534259064
+          "nonaffinity_RMS_A": 0.02779027320503341
         },
         {
-          "rms_modulation_Frobenius": 0.013388635326364782,
+          "rms_modulation_Frobenius": 0.013684181303228677,
           "dominant_mode_mx_my": [
             1,
-            1
+            -1
           ],
-          "dominant_mode_amplitude": 0.00627490793552947,
+          "dominant_mode_amplitude": 0.0064357265931146495,
           "dominant_mode_wavelength_A": 27.506453788156694,
           "layer_from_interface": 4,
           "nominal_depth_A": 7.78,
           "fixed": true,
           "mean_strain_geometry": [
             [
-              -3.2091718156668225e-06,
-              -4.289103794352656e-18,
-              3.696695727306576e-17
+              -3.7844033979178573e-06,
+              -4.917941054394248e-18,
+              2.8328034362701257e-17
             ],
             [
-              1.5742615544489524e-18,
-              -3.209171816430101e-06,
-              2.105954299835844e-17
+              1.7932703932910242e-18,
+              -3.7844033983985836e-06,
+              6.574601973952099e-17
             ],
             [
-              3.7660846663456483e-17,
-              2.248201624865942e-17,
-              -0.0019200815079179383
+              3.16760506713365e-17,
+              6.130512764102037e-17,
+              -0.001660775200593434
             ]
           ],
-          "nonaffinity_RMS_A": 0.023295438479628772
+          "nonaffinity_RMS_A": 0.02382336978114079
         },
         {
-          "rms_modulation_Frobenius": 5.880265600230737e-16,
+          "rms_modulation_Frobenius": 6.20773907320169e-16,
           "dominant_mode_mx_my": [
             1,
             0
           ],
-          "dominant_mode_amplitude": 8.482814707935025e-17,
+          "dominant_mode_amplitude": 1.0058741397397686e-16,
           "dominant_mode_wavelength_A": 38.9,
           "layer_from_interface": 5,
           "nominal_depth_A": 9.725,
           "fixed": true,
           "mean_strain_geometry": [
             [
-              2.7977620220553945e-16,
+              2.5424107263916085e-16,
               0.0,
               0.0
             ],
             [
               0.0,
-              1.0824674490095276e-16,
-              -1.2290515827295701e-17
+              6.272760089132134e-17,
+              1.2819606487468608e-17
             ],
             [
               0.0,
-              -9.653736143810955e-18,
-              6.050715484207104e-17
+              1.2923689896027216e-17,
+              1.9428902930940238e-17
             ]
           ],
-          "nonaffinity_RMS_A": 1.0086252015871858e-15
+          "nonaffinity_RMS_A": 9.74264999494376e-16
         }
       ],
-      "mobile_layer3_to_interface_modulation_ratio": 0.3870822706351732,
+      "mobile_layer3_to_interface_modulation_ratio": 0.4001901595619252,
       "threshold_morphology_by_depth": [
         {
           "depth_layer_from_interface": 0,
@@ -409,14 +409,14 @@
         ],
         "k_to_original_Pd_layer": "k+2; k=3 is interface; k=0 deepest mobile plane",
         "duplicate_copy_max_abs_disagreement": {
-          "K_Gamma_eV_A2": 5.6621374255882984e-14,
-          "DeltaK_law_bulk_eV_A2": 5.6621374255882984e-14,
-          "DeltaK_matched_bulk_eV_A2": 5.6621374255882984e-14,
-          "F": 1.5681900222830336e-15,
-          "R": 5.52881792785456e-15,
-          "strain_geometry": 4.895255971567855e-15,
-          "strain_law": 4.6627193264933795e-15,
-          "shear_magnitude_geometry": 1.700029006457271e-15
+          "K_Gamma_eV_A2": 4.9960036108132044e-14,
+          "DeltaK_law_bulk_eV_A2": 4.9960036108132044e-14,
+          "DeltaK_matched_bulk_eV_A2": 4.9960036108132044e-14,
+          "F": 1.3322676295501878e-15,
+          "R": 1.5543122344752192e-15,
+          "strain_geometry": 3.3306690738754696e-15,
+          "strain_law": 3.219646771412954e-15,
+          "shear_magnitude_geometry": 1.7486012637846216e-15
         },
         "registration": "r_D=origin_D+aPd*CELL@(i,j,k); periodic i,j of length n; open k",
         "source": "octahedral_maps.npz, not metal_maps.npz"
@@ -470,14 +470,72 @@
           "registry": "zero lateral offset; alternating conventional fcc(001) bases; no twist",
           "optimizer": "ASE FIRE, maxstep=0.10 A; fixed cell",
           "fmax_target_eV_A": 0.02,
-          "converged": true,
-          "steps_this_segment": 189,
-          "max_mobile_force_eV_A": 0.016924334053918834,
+          "converged": false,
+          "steps_this_segment": 5,
+          "max_mobile_force_eV_A": 11.47215446092985,
           "initial_energy_this_segment_eV": 552.9534111085982,
-          "final_energy_eV": 301.49562425679846,
-          "wall_seconds": 44.25840993109159,
-          "cpu_seconds": 44.236786617,
-          "peak_process_RSS_MiB": 130.578125,
+          "final_energy_eV": 478.7130409648894,
+          "wall_seconds": 2.5952581691090018,
+          "cpu_seconds": 2.594065568,
+          "peak_process_RSS_MiB": 645.70703125,
+          "threads": 1,
+          "status": "local minimum candidate only; no global-minimum or deposition-kinetics claim"
+        },
+        {
+          "case": "pd389",
+          "atoms": 2168,
+          "Pd_atoms": 1200,
+          "Ni_atoms": 968,
+          "Pd_a_A": 3.89,
+          "Ni_natural_a_A": 3.52,
+          "Ni_imposed_a_A": 3.536363636363636,
+          "Ni_residual_inplane_strain": 0.004648760330578483,
+          "cell_A": [
+            [
+              38.9,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              38.9,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              36.8575
+            ]
+          ],
+          "pbc": [
+            true,
+            true,
+            false
+          ],
+          "frame": [
+            "[100]",
+            "[010]",
+            "[001]"
+          ],
+          "layers_Pd_Ni": [
+            6,
+            4
+          ],
+          "fixed_Pd_layers_from_bottom": [
+            0,
+            1
+          ],
+          "registry": "zero lateral offset; alternating conventional fcc(001) bases; no twist",
+          "optimizer": "ASE FIRE, maxstep=0.10 A; fixed cell",
+          "fmax_target_eV_A": 0.02,
+          "converged": true,
+          "steps_this_segment": 183,
+          "max_mobile_force_eV_A": 0.016439339627650786,
+          "initial_energy_this_segment_eV": 478.7130397989771,
+          "final_energy_eV": 301.4752901973021,
+          "wall_seconds": 68.78039072686806,
+          "cpu_seconds": 68.766554065,
+          "peak_process_RSS_MiB": 645.70703125,
           "threads": 1,
           "status": "local minimum candidate only; no global-minimum or deposition-kinetics claim"
         }
@@ -489,23 +547,23 @@
       "K_matched_cubic_bulk_eV_A2": 0.18105969055575036,
       "uniform_law_reference_linear_offset": 0.0,
       "Kmin_range_eV_A2": [
-        -0.8118782127142518,
-        1.254319604768089
+        -0.8118782127142412,
+        1.2543196047680862
       ],
       "fraction_below_half_law_bulk": 0.14583333333333334,
       "fraction_below_half_matched_bulk": 0.14583333333333334,
       "fraction_negative": 0.0625,
       "octahedral_fraction_below_half_law_bulk": 0.0625,
       "octahedral_Kmin_range_eV_A2": [
-        -0.7544747986781447,
-        1.2556734845298583
+        -0.7544747986781628,
+        1.2556734845298627
       ],
       "normal_law_strain_component_range": [
-        -0.17739317335945248,
-        0.08346152396665074
+        -0.17739317335945148,
+        0.08346152396665008
       ],
       "fraction_outside_1percent_normal_component_box": 1.0,
-      "max_abs_geometry_shear_Biot": 0.09971790540061348,
+      "max_abs_geometry_shear_Biot": 0.09971790540061376,
       "degenerate_lowest_fraction": 0.2777777777777778,
       "softest_metal_atom_index": 367,
       "softest_reference_position_A": [
@@ -514,195 +572,195 @@
         20.21
       ],
       "softest_direction_lab": [
-        5.885305247495589e-17,
-        0.9909802726850383,
-        -0.13400783241694347
+        0.0,
+        0.9909802726850381,
+        -0.13400783241694358
       ],
       "imposed_square_period_A": 24.503999999999998,
       "coincidence_primitive_diagonal_translation_A": 17.32694456619516,
       "layers": [
         {
-          "rms_modulation_Frobenius": 0.12439689914143781,
+          "rms_modulation_Frobenius": 0.12439689914143787,
           "dominant_mode_mx_my": [
             1,
-            -1
+            1
           ],
-          "dominant_mode_amplitude": 0.05041183899043306,
+          "dominant_mode_amplitude": 0.050411838990433125,
           "dominant_mode_wavelength_A": 17.32694456619516,
           "layer_from_interface": 0,
           "nominal_depth_A": 0.0,
           "fixed": false,
           "mean_strain_geometry": [
             [
-              -0.0004811445052609886,
-              1.3588667228484988e-17,
-              -3.0839528461809905e-17
+              -0.000481144505260947,
+              9.926473223645063e-18,
+              -7.709882115452476e-18
             ],
             [
-              1.455240249291655e-17,
-              -0.00048114450526098553,
-              -3.39234813079909e-17
+              -6.3606527452482924e-18,
+              -0.0004811445052610179,
+              -1.3106799596269209e-17
             ],
             [
-              -3.642919299551295e-17,
-              -3.5850951836854015e-17,
+              -2.5057116875220546e-18,
+              -1.3877787807814457e-17,
               -0.11221132128882101
             ]
           ],
           "nonaffinity_RMS_A": 0.20129821677623586
         },
         {
-          "rms_modulation_Frobenius": 0.06100005151765764,
+          "rms_modulation_Frobenius": 0.061000051517657625,
           "dominant_mode_mx_my": [
             1,
             -1
           ],
-          "dominant_mode_amplitude": 0.026997225566688696,
+          "dominant_mode_amplitude": 0.02699722556668867,
           "dominant_mode_wavelength_A": 17.32694456619516,
           "layer_from_interface": 1,
           "nominal_depth_A": 2.042,
           "fixed": false,
           "mean_strain_geometry": [
             [
-              0.000447001946951535,
-              9.27595192015376e-18,
-              -2.7948322668515226e-18
+              0.0004470019469515412,
+              -5.059610138265687e-18,
+              1.09383952512982e-17
             ],
             [
-              1.2335811384723961e-17,
-              0.0004470019469514487,
-              2.1202175817494308e-17
+              -4.674116032493064e-18,
+              0.0004470019469515181,
+              2.216591108192587e-17
             ],
             [
-              -1.6383499495336511e-18,
-              2.1973164029039556e-17,
-              -0.12292913987139986
+              1.0360154092639265e-17,
+              2.216591108192587e-17,
+              -0.12292913987139989
             ]
           ],
-          "nonaffinity_RMS_A": 0.17704254732113248
+          "nonaffinity_RMS_A": 0.17704254732113245
         },
         {
-          "rms_modulation_Frobenius": 0.025477528254084243,
+          "rms_modulation_Frobenius": 0.0254775282540843,
           "dominant_mode_mx_my": [
             1,
-            1
+            -1
           ],
-          "dominant_mode_amplitude": 0.009573467146713862,
+          "dominant_mode_amplitude": 0.009573467146713883,
           "dominant_mode_wavelength_A": 17.32694456619516,
           "layer_from_interface": 2,
           "nominal_depth_A": 4.084,
           "fixed": false,
           "mean_strain_geometry": [
             [
-              0.00048116605453283706,
-              -2.1238315889910492e-17,
-              2.5201677164885282e-17
+              0.0004811660545327553,
+              -5.312590645178972e-18,
+              2.976737298012979e-17
             ],
             [
-              -2.576787163273882e-17,
-              0.000481166054532763,
-              1.5727858348252916e-16
+              1.6503966403390456e-18,
+              0.00048116605453278464,
+              1.306102217120871e-16
             ],
             [
-              2.4864369822334236e-17,
-              1.5766407758830177e-16,
-              -0.12689935351048065
+              2.95384858548273e-17,
+              1.3121255625235682e-16,
+              -0.12689935351048073
             ]
           ],
           "nonaffinity_RMS_A": 0.11248875873556671
         },
         {
-          "rms_modulation_Frobenius": 0.03688304186660953,
+          "rms_modulation_Frobenius": 0.03688304186660949,
           "dominant_mode_mx_my": [
             1,
             -1
           ],
-          "dominant_mode_amplitude": 0.01632446343480172,
+          "dominant_mode_amplitude": 0.0163244634348017,
           "dominant_mode_wavelength_A": 17.32694456619516,
           "layer_from_interface": 3,
           "nominal_depth_A": 6.1259999999999994,
           "fixed": false,
           "mean_strain_geometry": [
             [
-              8.3441775456798e-05,
-              -1.6293149314296052e-17,
-              -1.4456028966473393e-18
+              8.344177545670548e-05,
+              7.065384157363871e-18,
+              -1.0601087908747155e-18
             ],
             [
-              -7.860465750519907e-18,
-              8.344177545674248e-05,
-              -7.611099250848241e-17
+              3.2104430996376325e-18,
+              8.344177545670548e-05,
+              -2.4936649967166602e-17
             ],
             [
-              -5.782411586589357e-19,
-              -7.652057999586583e-17,
-              -0.13083099217745364
+              -1.2046690805394494e-19,
+              -2.5828105086765795e-17,
+              -0.13083099217745375
             ]
           ],
           "nonaffinity_RMS_A": 0.06920644075538042
         },
         {
-          "rms_modulation_Frobenius": 0.018018810740371847,
+          "rms_modulation_Frobenius": 0.018018810740371764,
           "dominant_mode_mx_my": [
             1,
             1
           ],
-          "dominant_mode_amplitude": 0.008521851646938063,
+          "dominant_mode_amplitude": 0.008521851646938007,
           "dominant_mode_wavelength_A": 17.32694456619516,
           "layer_from_interface": 4,
           "nominal_depth_A": 8.168,
           "fixed": true,
           "mean_strain_geometry": [
             [
-              -8.542271858674733e-06,
-              -4.2042950910826784e-18,
-              -4.1922484002772836e-18
+              -8.542271858782672e-06,
+              4.505462361217541e-18,
+              -2.0864868474943264e-17
             ],
             [
-              -1.1444356265124769e-18,
-              -8.542271858833556e-06,
-              1.4022348097479192e-17
+              9.107298248878237e-18,
+              -8.542271858872105e-06,
+              -3.5079963625308764e-17
             ],
             [
-              -3.9995013473909716e-18,
-              1.4600589256138125e-17,
-              -0.06820193016950621
+              -2.0045693500176437e-17,
+              -3.5272710678195076e-17,
+              -0.06820193016950629
             ]
           ],
           "nonaffinity_RMS_A": 0.11961077074273964
         },
         {
-          "rms_modulation_Frobenius": 6.714119235044207e-16,
+          "rms_modulation_Frobenius": 6.566361957866782e-16,
           "dominant_mode_mx_my": [
-            4,
-            1
+            3,
+            0
           ],
-          "dominant_mode_amplitude": 1.3218369456189622e-16,
-          "dominant_mode_wavelength_A": 5.943092955890303,
+          "dominant_mode_amplitude": 1.6986546580286042e-16,
+          "dominant_mode_wavelength_A": 8.168,
           "layer_from_interface": 5,
           "nominal_depth_A": 10.209999999999999,
           "fixed": true,
           "mean_strain_geometry": [
             [
-              7.709882115452476e-18,
+              1.0022846750088219e-16,
               0.0,
               0.0
             ],
             [
               0.0,
-              -2.7755575615628914e-17,
-              -1.8229654861263217e-17
+              4.9343245538895844e-17,
+              -2.043118760594906e-17
             ],
             [
               0.0,
-              -1.5154737033186272e-17,
-              -1.3877787807814457e-17
+              -2.119615247209161e-17,
+              -4.3175339846533866e-17
             ]
           ],
-          "nonaffinity_RMS_A": 1.0863361734572834e-15
+          "nonaffinity_RMS_A": 1.0864220430026896e-15
         }
       ],
-      "mobile_layer3_to_interface_modulation_ratio": 0.2964948653959127,
+      "mobile_layer3_to_interface_modulation_ratio": 0.29649486539591224,
       "threshold_morphology_by_depth": [
         {
           "depth_layer_from_interface": 0,
@@ -880,14 +938,14 @@
         ],
         "k_to_original_Pd_layer": "k+2; k=3 is interface; k=0 deepest mobile plane",
         "duplicate_copy_max_abs_disagreement": {
-          "K_Gamma_eV_A2": 3.913536161803677e-14,
-          "DeltaK_law_bulk_eV_A2": 3.913536161803677e-14,
-          "DeltaK_matched_bulk_eV_A2": 3.913536161803677e-14,
-          "F": 7.771561172376096e-16,
-          "R": 2.467872416158092e-15,
-          "strain_geometry": 2.6645352591003757e-15,
-          "strain_law": 2.6645352591003757e-15,
-          "shear_magnitude_geometry": 1.1657341758564144e-15
+          "K_Gamma_eV_A2": 3.297362383136715e-14,
+          "DeltaK_law_bulk_eV_A2": 3.297362383136715e-14,
+          "DeltaK_matched_bulk_eV_A2": 3.297362383136715e-14,
+          "F": 8.604228440844963e-16,
+          "R": 2.665776001083224e-15,
+          "strain_geometry": 2.272458423023752e-15,
+          "strain_law": 2.272458423023752e-15,
+          "shear_magnitude_geometry": 1.2628786905111156e-15
         },
         "registration": "r_D=origin_D+aPd*CELL@(i,j,k); periodic i,j of length n; open k",
         "source": "octahedral_maps.npz, not metal_maps.npz"
@@ -943,12 +1001,12 @@
           "fmax_target_eV_A": 0.02,
           "converged": true,
           "steps_this_segment": 286,
-          "max_mobile_force_eV_A": 0.01992976146553225,
+          "max_mobile_force_eV_A": 0.019929761465533165,
           "initial_energy_this_segment_eV": 259.01503767545387,
-          "final_energy_eV": 151.99541112017062,
-          "wall_seconds": 25.96605015010573,
-          "cpu_seconds": 25.960142383,
-          "peak_process_RSS_MiB": 113.19921875,
+          "final_energy_eV": 151.99541112017073,
+          "wall_seconds": 40.53479907894507,
+          "cpu_seconds": 40.530165256000004,
+          "peak_process_RSS_MiB": 645.70703125,
           "threads": 1,
           "status": "local minimum candidate only; no global-minimum or deposition-kinetics claim"
         }
