@@ -1,0 +1,25 @@
+{
+  "cases": [
+    {
+      "label": "tensor_harmonic_control",
+      "L": 24,
+      "x": 1.0,
+      "strain": 0.0,
+      "temperature_K": 0.0,
+      "steps": 128,
+      "dt": 0.15,
+      "harmonic_control": true,
+      "tensor_input": "control_tensor.npz",
+      "tensor_kind": "delta_collective_curvature"
+    },
+    {
+      "label": "million_site_scalability",
+      "L": 100,
+      "x": 1.0,
+      "steps": 32,
+      "dt": 0.15,
+      "scalability_only": true
+    }
+  ],
+  "representatives": []
+}

@@ -1,0 +1,174 @@
+{
+  "cases": [
+    {
+      "label": "Ni_x0.5_e0_random",
+      "L": 24,
+      "x": 0.5,
+      "strain": 0.0,
+      "arrangement": "random",
+      "temperature_K": 0.0,
+      "steps": 2048,
+      "dt": 0.3
+    },
+    {
+      "label": "Ni_x0.5_e0.085_random",
+      "L": 24,
+      "x": 0.5,
+      "strain": 0.085,
+      "arrangement": "random",
+      "temperature_K": 0.0,
+      "steps": 2048,
+      "dt": 0.3
+    },
+    {
+      "label": "Ni_x0.5_e0.1_random",
+      "L": 24,
+      "x": 0.5,
+      "strain": 0.1,
+      "arrangement": "random",
+      "temperature_K": 0.0,
+      "steps": 2048,
+      "dt": 0.3
+    },
+    {
+      "label": "Ni_x0.75_e0_random",
+      "L": 24,
+      "x": 0.75,
+      "strain": 0.0,
+      "arrangement": "random",
+      "temperature_K": 0.0,
+      "steps": 2048,
+      "dt": 0.3
+    },
+    {
+      "label": "Ni_x0.75_e0.085_random",
+      "L": 24,
+      "x": 0.75,
+      "strain": 0.085,
+      "arrangement": "random",
+      "temperature_K": 0.0,
+      "steps": 2048,
+      "dt": 0.3
+    },
+    {
+      "label": "Ni_x0.75_e0.1_random",
+      "L": 24,
+      "x": 0.75,
+      "strain": 0.1,
+      "arrangement": "random",
+      "temperature_K": 0.0,
+      "steps": 2048,
+      "dt": 0.3
+    },
+    {
+      "label": "Ni_x1_e0_random",
+      "L": 24,
+      "x": 1.0,
+      "strain": 0.0,
+      "arrangement": "random",
+      "temperature_K": 0.0,
+      "steps": 2048,
+      "dt": 0.3
+    },
+    {
+      "label": "Ni_x1_e0.085_random",
+      "L": 24,
+      "x": 1.0,
+      "strain": 0.085,
+      "arrangement": "random",
+      "temperature_K": 0.0,
+      "steps": 2048,
+      "dt": 0.3
+    },
+    {
+      "label": "Ni_x1_e0.1_random",
+      "L": 24,
+      "x": 1.0,
+      "strain": 0.1,
+      "arrangement": "random",
+      "temperature_K": 0.0,
+      "steps": 2048,
+      "dt": 0.3
+    },
+    {
+      "label": "Ni_x0.75_e0.085_clustered",
+      "L": 24,
+      "x": 0.75,
+      "strain": 0.085,
+      "arrangement": "clustered",
+      "steps": 2048,
+      "dt": 0.3
+    },
+    {
+      "label": "Ni_x0.75_e0.085_ordered",
+      "L": 24,
+      "x": 0.75,
+      "strain": 0.085,
+      "arrangement": "ordered",
+      "steps": 2048,
+      "dt": 0.3
+    },
+    {
+      "label": "Ni_pump_cold",
+      "L": 24,
+      "x": 1.0,
+      "temperature_K": 0.0,
+      "pump_h": 0.08,
+      "pump_ratio": 1.0,
+      "steps": 2048,
+      "dt": 0.3
+    },
+    {
+      "label": "Ni_thermal_no_pump",
+      "L": 24,
+      "x": 1.0,
+      "temperature_K": 300.0,
+      "pump_h": 0.0,
+      "pump_ratio": 1.0,
+      "steps": 2048,
+      "dt": 0.3
+    },
+    {
+      "label": "Ni_pump_hot_coldclock",
+      "L": 24,
+      "x": 1.0,
+      "temperature_K": 300.0,
+      "pump_h": 0.08,
+      "pump_ratio": 1.0,
+      "steps": 2048,
+      "dt": 0.3
+    },
+    {
+      "label": "Ni_pump_hot_raisedclock",
+      "L": 24,
+      "x": 1.0,
+      "temperature_K": 300.0,
+      "pump_h": 0.08,
+      "pump_ratio": 1.1,
+      "steps": 2048,
+      "dt": 0.3
+    },
+    {
+      "label": "Ni_gradient",
+      "L": 24,
+      "x": 0.75,
+      "strain": 0.085,
+      "strain_gradient_per_nm": 0.005,
+      "steps": 2048,
+      "dt": 0.3
+    },
+    {
+      "label": "Ni_pump_cold_L32",
+      "L": 32,
+      "x": 1.0,
+      "pump_h": 0.08,
+      "steps": 2048,
+      "dt": 0.3
+    }
+  ],
+  "representatives": [
+    "Ni_x0.75_e0.085_random",
+    "Ni_x0.75_e0.085_clustered",
+    "Ni_x0.75_e0.085_ordered"
+  ]
+}
