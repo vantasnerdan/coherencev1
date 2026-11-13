@@ -1,0 +1,104 @@
+{
+  "metal": "Ni",
+  "name": "k08_pw600",
+  "K_Gamma_eV_A2": 0.991525353045487,
+  "deformation": [
+    [
+      1.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "reference_positions_A": [
+    [
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      1.866,
+      0.0,
+      0.0
+    ]
+  ],
+  "cell_A": [
+    [
+      0.0,
+      1.866,
+      1.866
+    ],
+    [
+      1.866,
+      0.0,
+      1.866
+    ],
+    [
+      1.866,
+      1.866,
+      0.0
+    ]
+  ],
+  "displacement_axis": 0,
+  "cutoff_eV": 600,
+  "kmesh": 8,
+  "step_A": 0.01,
+  "smearing_eV": 0.1,
+  "point_group": "Actual displaced-cell subgroup; not undisplaced crystal symmetry.",
+  "n_ibz_kpoints": 59,
+  "producer_bytes": 2942,
+  "producer_sha256": "b63f5dddf9877507d4544966476718db1a44840226869afe73bd91f7c6a5e31a",
+  "points": [
+    {
+      "displacement_A": -0.01,
+      "energy_free_eV": -10.576819403961728,
+      "forces_eV_A": [
+        [
+          -0.009919048507087786,
+          -3.484494803324655e-19,
+          -3.484494803324655e-19
+        ],
+        [
+          0.009923711919286565,
+          1.7422474016623274e-19,
+          6.097865905818146e-19
+        ]
+      ],
+      "force_parallel_eV_A": 0.009923711919286565,
+      "elapsed_s": 29.95772838499397,
+      "cpu_s": 29.926777197
+    },
+    {
+      "displacement_A": 0.01,
+      "energy_free_eV": -10.576819404501926,
+      "forces_eV_A": [
+        [
+          0.009974009568559875,
+          3.484494803324655e-19,
+          -3.484494803324655e-19
+        ],
+        [
+          -0.009906795141623174,
+          -1.7422474016623274e-19,
+          -2.613371102493491e-19
+        ]
+      ],
+      "force_parallel_eV_A": -0.009906795141623174,
+      "elapsed_s": 16.729628471657634,
+      "cpu_s": 16.712423892
+    }
+  ],
+  "harmonic_quantum_meV": 64.14665037036058,
+  "imaginary_magnitude_meV": null,
+  "measured_peak_meV": 89.0,
+  "mass_kg": 1.67262192595e-27
+}

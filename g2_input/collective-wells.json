@@ -1,0 +1,390 @@
+{
+  "definition": "Uniform collective displacement energy per primitive formula unit, fixed metal; not an isolated-ion potential.",
+  "fit": "K2 fixed by +/-0.01A central force response; one-parameter least-squares quartic fit to energies through0.30A. Forces are an independent prediction check. Ideal reference-site inversion supplies V(-u)=V(u).",
+  "normalization": "For N uniformly displaced formula units, total energy and collective-coordinate mass both scale with N; any single-ion/Einstein quantization is a separate model closure.",
+  "states": [
+    {
+      "metal": "Pd",
+      "kmesh": 12,
+      "strain_case": "zero",
+      "deformation": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "K2_force_eV_A2": 0.18105969055575036,
+      "zero_energy_free_eV": -7.094015083871104,
+      "directions": {
+        "100": {
+          "K2_force_eV_A2": 0.18105969055575036,
+          "K4_eV_A4": 11.1603734345428,
+          "energy_RMS_meV": 0.16826356700836786,
+          "energy_max_error_meV": 0.28819939099357716,
+          "force_prediction_RMS_eV_A": 0.007722449538612984,
+          "finite_step_quartic_curvature_estimate_eV_A2": 0.00111603734345428,
+          "points": [
+            {
+              "u_A": 0.0,
+              "energy_free_eV": -7.094015083871104,
+              "energy_relative_eV": 0.0,
+              "force_parallel_eV_A": 5.59620579615291e-06
+            },
+            {
+              "u_A": 0.06,
+              "energy_free_eV": -7.0936579421560255,
+              "energy_relative_eV": 0.0003571417150780576,
+              "force_parallel_eV_A": -0.013023987639114588
+            },
+            {
+              "u_A": 0.12,
+              "energy_free_eV": -7.092186760524668,
+              "energy_relative_eV": 0.0018283233464355675,
+              "force_parallel_eV_A": -0.039522086027037245
+            },
+            {
+              "u_A": 0.18,
+              "energy_free_eV": -7.088339914230776,
+              "energy_relative_eV": 0.00567516964032766,
+              "force_parallel_eV_A": -0.09502132990164242
+            },
+            {
+              "u_A": 0.24,
+              "energy_free_eV": -7.079831904032544,
+              "energy_relative_eV": 0.014183179838559212,
+              "force_parallel_eV_A": -0.19835619288324258
+            },
+            {
+              "u_A": 0.3,
+              "energy_free_eV": -7.063123982842025,
+              "energy_relative_eV": 0.030891101029078882,
+              "force_parallel_eV_A": -0.37263193000556766
+            }
+          ]
+        },
+        "111": {
+          "K2_force_eV_A2": 0.18105969055575036,
+          "K4_eV_A4": 3.2894617238457187,
+          "energy_RMS_meV": 0.06010681331911697,
+          "energy_max_error_meV": 0.1063044399352911,
+          "force_prediction_RMS_eV_A": 0.002945809502665522,
+          "finite_step_quartic_curvature_estimate_eV_A2": 0.0003289461723845719,
+          "points": [
+            {
+              "u_A": 0.06,
+              "energy_free_eV": -7.093679785132103,
+              "energy_relative_eV": 0.0003352987390004003,
+              "force_parallel_eV_A": -0.011613371431896962
+            },
+            {
+              "u_A": 0.12,
+              "energy_free_eV": -7.09252759731998,
+              "energy_relative_eV": 0.001487486551123851,
+              "force_parallel_eV_A": -0.02793229749418066
+            },
+            {
+              "u_A": 0.18,
+              "energy_free_eV": -7.090156305118088,
+              "energy_relative_eV": 0.00385877875301599,
+              "force_parallel_eV_A": -0.052793786829032824
+            },
+            {
+              "u_A": 0.24,
+              "energy_free_eV": -7.085965849210936,
+              "energy_relative_eV": 0.008049234660167492,
+              "force_parallel_eV_A": -0.08883966437483116
+            },
+            {
+              "u_A": 0.3,
+              "energy_free_eV": -7.079258196729027,
+              "energy_relative_eV": 0.014756887142076458,
+              "force_parallel_eV_A": -0.1366472264490425
+            }
+          ]
+        }
+      }
+    },
+    {
+      "metal": "Pd",
+      "kmesh": 12,
+      "strain_case": "hydro_plus",
+      "deformation": [
+        [
+          1.01,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.01,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.01
+        ]
+      ],
+      "K2_force_eV_A2": -0.012979731658527428,
+      "zero_energy_free_eV": -7.109287852181629,
+      "directions": {
+        "100": {
+          "K2_force_eV_A2": -0.012979731658527428,
+          "K4_eV_A4": 9.877672624038526,
+          "energy_RMS_meV": 0.1597477945864267,
+          "energy_max_error_meV": 0.2743416904239342,
+          "force_prediction_RMS_eV_A": 0.007367197844411994,
+          "finite_step_quartic_curvature_estimate_eV_A2": 0.0009877672624038526,
+          "points": [
+            {
+              "u_A": 0.0,
+              "energy_free_eV": -7.109287852181629,
+              "energy_relative_eV": 0.0,
+              "force_parallel_eV_A": 1.4082557698603681e-05
+            },
+            {
+              "u_A": 0.06,
+              "energy_free_eV": -7.109283300143115,
+              "energy_relative_eV": 4.552038514127332e-06,
+              "force_parallel_eV_A": -0.001124780469124273
+            },
+            {
+              "u_A": 0.12,
+              "energy_free_eV": -7.1089188301730095,
+              "energy_relative_eV": 0.0003690220086198792,
+              "force_parallel_eV_A": -0.014070435568265028
+            },
+            {
+              "u_A": 0.18,
+              "energy_free_eV": -7.107082502860175,
+              "energy_relative_eV": 0.0022053493214544417,
+              "force_parallel_eV_A": -0.05267946745813018
+            },
+            {
+              "u_A": 0.24,
+              "energy_free_eV": -7.101743073362536,
+              "energy_relative_eV": 0.00754477881909299,
+              "force_parallel_eV_A": -0.13399491911666683
+            },
+            {
+              "u_A": 0.3,
+              "energy_free_eV": -7.089733109698316,
+              "energy_relative_eV": 0.019554742483313348,
+              "force_parallel_eV_A": -0.2789965369951389
+            }
+          ]
+        },
+        "111": {
+          "K2_force_eV_A2": -0.012979731658527428,
+          "K4_eV_A4": 3.256757166313512,
+          "energy_RMS_meV": 0.05666941999782285,
+          "energy_max_error_meV": 0.09903556384717199,
+          "force_prediction_RMS_eV_A": 0.0027268529875170556,
+          "finite_step_quartic_curvature_estimate_eV_A2": 0.00032567571663135125,
+          "points": [
+            {
+              "u_A": 0.06,
+              "energy_free_eV": -7.109300213609704,
+              "energy_relative_eV": -1.236142807492513e-05,
+              "force_parallel_eV_A": 4.663793936469064e-06
+            },
+            {
+              "u_A": 0.12,
+              "energy_free_eV": -7.1091974460271805,
+              "energy_relative_eV": 9.040615444888545e-05,
+              "force_parallel_eV_A": -0.004536924227355247
+            },
+            {
+              "u_A": 0.18,
+              "energy_free_eV": -7.108583054293398,
+              "energy_relative_eV": 0.0007047978882317452,
+              "force_parallel_eV_A": -0.017580293848566547
+            },
+            {
+              "u_A": 0.24,
+              "energy_free_eV": -7.106861348225521,
+              "energy_relative_eV": 0.002426503956108661,
+              "force_parallel_eV_A": -0.04180935934690948
+            },
+            {
+              "u_A": 0.3,
+              "energy_free_eV": -7.103325780756246,
+              "energy_relative_eV": 0.005962071425383186,
+              "force_parallel_eV_A": -0.07803069862634425
+            }
+          ]
+        }
+      }
+    },
+    {
+      "metal": "Ni",
+      "kmesh": 8,
+      "strain_case": "zero",
+      "deformation": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "K2_force_eV_A2": 1.049783279069515,
+      "zero_energy_free_eV": -10.303597907835286,
+      "directions": {
+        "100": {
+          "K2_force_eV_A2": 1.049783279069515,
+          "K4_eV_A4": 16.21635847137527,
+          "energy_RMS_meV": 0.29062589241209824,
+          "energy_max_error_meV": 0.5161525568663019,
+          "force_prediction_RMS_eV_A": 0.014080273344507515,
+          "finite_step_quartic_curvature_estimate_eV_A2": 0.001621635847137527,
+          "points": [
+            {
+              "u_A": 0.0,
+              "energy_free_eV": -10.303597907835286,
+              "energy_relative_eV": 0.0,
+              "force_parallel_eV_A": -2.5586266227380953e-05
+            },
+            {
+              "u_A": 0.06,
+              "energy_free_eV": -10.30166303852716,
+              "energy_relative_eV": 0.0019348693081262525,
+              "force_parallel_eV_A": -0.06611630896213061
+            },
+            {
+              "u_A": 0.12,
+              "energy_free_eV": -10.295273151311267,
+              "energy_relative_eV": 0.00832475652401854,
+              "force_parallel_eV_A": -0.15175969000944645
+            },
+            {
+              "u_A": 0.18,
+              "energy_free_eV": -10.282630621112803,
+              "energy_relative_eV": 0.020967286722482825,
+              "force_parallel_eV_A": -0.2785829503355964
+            },
+            {
+              "u_A": 0.24,
+              "energy_free_eV": -10.260429805584453,
+              "energy_relative_eV": 0.04316810225083323,
+              "force_parallel_eV_A": -0.47647728558481584
+            },
+            {
+              "u_A": 0.3,
+              "energy_free_eV": -10.22326796850597,
+              "energy_relative_eV": 0.08032993932931554,
+              "force_parallel_eV_A": -0.7837844722540789
+            }
+          ]
+        },
+        "111": {
+          "K2_force_eV_A2": 1.049783279069515,
+          "K4_eV_A4": 1.3496779383670552,
+          "energy_RMS_meV": 0.07256079770007444,
+          "energy_max_error_meV": 0.12186234851088024,
+          "force_prediction_RMS_eV_A": 0.0032542549722117536,
+          "finite_step_quartic_curvature_estimate_eV_A2": 0.00013496779383670551,
+          "points": [
+            {
+              "u_A": 0.06,
+              "energy_free_eV": -10.301685197785247,
+              "energy_relative_eV": 0.0019127100500391236,
+              "force_parallel_eV_A": -0.06332468492980568
+            },
+            {
+              "u_A": 0.12,
+              "energy_free_eV": -10.295938484692707,
+              "energy_relative_eV": 0.007659423142579058,
+              "force_parallel_eV_A": -0.1287781305160759
+            },
+            {
+              "u_A": 0.18,
+              "energy_free_eV": -10.286157049237346,
+              "energy_relative_eV": 0.01744085859793998,
+              "force_parallel_eV_A": -0.19788681143853915
+            },
+            {
+              "u_A": 0.24,
+              "energy_free_eV": -10.272122810180374,
+              "energy_relative_eV": 0.031475097654912076,
+              "force_parallel_eV_A": -0.2703575276080502
+            },
+            {
+              "u_A": 0.3,
+              "energy_free_eV": -10.253685689984735,
+              "energy_relative_eV": 0.04991221785055089,
+              "force_parallel_eV_A": -0.3441962889065124
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "source_files": [
+    {
+      "path": "primitive_Pd/k12_pw500/result.json",
+      "bytes": 1923,
+      "sha256": "308693c43fbaaa636acdee320aae7c92aeb246024f8fbe1a0171978ac865e318"
+    },
+    {
+      "path": "collective_Pd/k12_zero_100/result.json",
+      "bytes": 3995,
+      "sha256": "17e528cb19770a26b3a2a1d22e3658d662eb16143362b0b10afb02ad7f5d0a63"
+    },
+    {
+      "path": "collective_Pd/k12_zero_111/result.json",
+      "bytes": 3466,
+      "sha256": "db146dd4e6df49bac565b14022244fd186a2e45357dcb452acc84711646a48dd"
+    },
+    {
+      "path": "primitive_Pd/k12_pw500_hydro_plus/result.json",
+      "bytes": 1794,
+      "sha256": "19f9203d97038bb279f2abd901a2cdb61959d603daa4f36782f7308b483f0abc"
+    },
+    {
+      "path": "collective_Pd/k12_hydro_plus_100/result.json",
+      "bytes": 3976,
+      "sha256": "e9c5795577c3c4513e136152c3a7148fa18ced73458b3c2eadb3eaa2bc83d311"
+    },
+    {
+      "path": "collective_Pd/k12_hydro_plus_111/result.json",
+      "bytes": 3514,
+      "sha256": "b92d12e8177a9c05392cb78c0841de1889dfd49cee6d7b9fe2f5137bc6c20413"
+    },
+    {
+      "path": "primitive_Ni/k08_pw500/result.json",
+      "bytes": 1948,
+      "sha256": "65213877cfe5ffc0503a2f6d82e12137456a744ade71abd52f4976e826d1f27c"
+    },
+    {
+      "path": "collective_Ni/k8_zero_100/result.json",
+      "bytes": 4077,
+      "sha256": "0f019027f632552a2d39adc49a71b6f84ce5b8ff9d77150c2bad037447c622d5"
+    },
+    {
+      "path": "collective_Ni/k8_zero_111/result.json",
+      "bytes": 3458,
+      "sha256": "e29204787d2fb53f8c735e73feba69cbc4a17bf824aaec1c09eac6a650ebded1"
+    }
+  ]
+}

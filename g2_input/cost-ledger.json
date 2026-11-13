@@ -1,0 +1,388 @@
+{
+  "materials": {
+    "Ni": {
+      "cpu_core_minutes": 79.67528173333334,
+      "parts": [
+        {
+          "cpu_s": 599.469641,
+          "source": "receipts/pilot-native-final.txt",
+          "kind": "timed-out LCAO pilot"
+        },
+        {
+          "cpu_s": 1425.0,
+          "observed_cpu_s": 1423.799429,
+          "source": "receipts/lcao-gamma-prestop.txt",
+          "kind": "stopped LCAO run; conservative charge includes stop interval"
+        },
+        {
+          "cpu_s": 299.977263,
+          "source": "receipts/strain-Ni-native-final.txt",
+          "kind": "timed-out LCAO strain"
+        },
+        {
+          "cpu_s": 1237.3400000000001,
+          "source": "pw-Ni.time",
+          "kind": "GPAW process, imports and checkpoint I/O included"
+        },
+        {
+          "cpu_s": 135.70999999999998,
+          "source": "pw-strain-Ni.time",
+          "kind": "GPAW process, imports and checkpoint I/O included"
+        },
+        {
+          "cpu_s": 142.78,
+          "source": "mesh-Ni-k12-pw500.time",
+          "kind": "GPAW process, imports and checkpoint I/O included"
+        },
+        {
+          "cpu_s": 245.99,
+          "source": "mesh-Ni-k16-pw500.time",
+          "kind": "GPAW process, imports and checkpoint I/O included"
+        },
+        {
+          "cpu_s": 24.46,
+          "source": "mesh-Ni-k6-pw500.time",
+          "kind": "GPAW process, imports and checkpoint I/O included"
+        },
+        {
+          "cpu_s": 45.49,
+          "source": "mesh-Ni-k8-pw500.time",
+          "kind": "GPAW process, imports and checkpoint I/O included"
+        },
+        {
+          "cpu_s": 47.97,
+          "source": "mesh-Ni-k8-pw600.time",
+          "kind": "GPAW process, imports and checkpoint I/O included"
+        },
+        {
+          "cpu_s": 48.69,
+          "source": "strain-Ni-k8-hydro_minus-pw500.time",
+          "kind": "GPAW process, imports and checkpoint I/O included"
+        },
+        {
+          "cpu_s": 50.01,
+          "source": "strain-Ni-k8-hydro_plus-pw500.time",
+          "kind": "GPAW process, imports and checkpoint I/O included"
+        },
+        {
+          "cpu_s": 46.01,
+          "source": "strain-Ni-k8-parallel_minus-pw500.time",
+          "kind": "GPAW process, imports and checkpoint I/O included"
+        },
+        {
+          "cpu_s": 56.99,
+          "source": "strain-Ni-k8-parallel_plus-pw500.time",
+          "kind": "GPAW process, imports and checkpoint I/O included"
+        },
+        {
+          "cpu_s": 67.22999999999999,
+          "source": "strain-Ni-k8-perpendicular_minus-pw500.time",
+          "kind": "GPAW process, imports and checkpoint I/O included"
+        },
+        {
+          "cpu_s": 67.4,
+          "source": "strain-Ni-k8-perpendicular_plus-pw500.time",
+          "kind": "GPAW process, imports and checkpoint I/O included"
+        },
+        {
+          "cpu_s": 115.78,
+          "source": "collective-Ni-k8-zero-100-pw500.time",
+          "kind": "GPAW process, imports and checkpoint I/O included"
+        },
+        {
+          "cpu_s": 124.22,
+          "source": "collective-Ni-k8-zero-111-pw500.time",
+          "kind": "GPAW process, imports and checkpoint I/O included"
+        }
+      ]
+    },
+    "Pd": {
+      "cpu_core_minutes": 84.72797493333333,
+      "parts": [
+        {
+          "cpu_s": 16.578496,
+          "source": "mpi-prep-cost.json",
+          "kind": "failed MPI restart API qualification; Native cgroup accounting, not launcher rusage"
+        },
+        {
+          "cpu_s": 1230.42,
+          "source": "pw-Pd.time",
+          "kind": "GPAW process, imports and checkpoint I/O included"
+        },
+        {
+          "cpu_s": 132.82,
+          "source": "pw-strain-Pd.time",
+          "kind": "GPAW process, imports and checkpoint I/O included"
+        },
+        {
+          "cpu_s": 141.29,
+          "source": "mesh-Pd-k12-pw500.time",
+          "kind": "GPAW process, imports and checkpoint I/O included"
+        },
+        {
+          "cpu_s": 155.95999999999998,
+          "source": "mesh-Pd-k12-pw600.time",
+          "kind": "GPAW process, imports and checkpoint I/O included"
+        },
+        {
+          "cpu_s": 300.28,
+          "source": "mesh-Pd-k16-pw500.time",
+          "kind": "GPAW process, imports and checkpoint I/O included"
+        },
+        {
+          "cpu_s": 27.779999999999998,
+          "source": "mesh-Pd-k6-pw500.time",
+          "kind": "GPAW process, imports and checkpoint I/O included"
+        },
+        {
+          "cpu_s": 64.0,
+          "source": "mesh-Pd-k8-pw500.time",
+          "kind": "GPAW process, imports and checkpoint I/O included"
+        },
+        {
+          "cpu_s": 140.51,
+          "source": "strain-Pd-k12-hydro_minus-pw500.time",
+          "kind": "GPAW process, imports and checkpoint I/O included"
+        },
+        {
+          "cpu_s": 133.39,
+          "source": "strain-Pd-k12-hydro_plus-pw500.time",
+          "kind": "GPAW process, imports and checkpoint I/O included"
+        },
+        {
+          "cpu_s": 136.69,
+          "source": "strain-Pd-k12-parallel_minus-pw500.time",
+          "kind": "GPAW process, imports and checkpoint I/O included"
+        },
+        {
+          "cpu_s": 130.5,
+          "source": "strain-Pd-k12-parallel_plus-pw500.time",
+          "kind": "GPAW process, imports and checkpoint I/O included"
+        },
+        {
+          "cpu_s": 259.68,
+          "source": "strain-Pd-k12-perpendicular_minus-pw500.time",
+          "kind": "GPAW process, imports and checkpoint I/O included"
+        },
+        {
+          "cpu_s": 259.35,
+          "source": "strain-Pd-k12-perpendicular_plus-pw500.time",
+          "kind": "GPAW process, imports and checkpoint I/O included"
+        },
+        {
+          "cpu_s": 272.29999999999995,
+          "source": "strain-Pd-k16-hydro_plus-pw500.time",
+          "kind": "GPAW process, imports and checkpoint I/O included"
+        },
+        {
+          "cpu_s": 384.61,
+          "source": "collective-Pd-k12-hydro_plus-100-pw500.time",
+          "kind": "GPAW process, imports and checkpoint I/O included"
+        },
+        {
+          "cpu_s": 490.99,
+          "source": "collective-Pd-k12-hydro_plus-111-pw500.time",
+          "kind": "GPAW process, imports and checkpoint I/O included"
+        },
+        {
+          "cpu_s": 392.80999999999995,
+          "source": "collective-Pd-k12-zero-100-pw500.time",
+          "kind": "GPAW process, imports and checkpoint I/O included"
+        },
+        {
+          "cpu_s": 413.72,
+          "source": "collective-Pd-k12-zero-111-pw500.time",
+          "kind": "GPAW process, imports and checkpoint I/O included"
+        }
+      ]
+    }
+  },
+  "native_source_bindings": [
+    {
+      "path": "receipts/pilot-native-final.txt",
+      "bytes": 115,
+      "sha256": "54d63fe98bb38947ccbd9a2e4593b30140745abfdeb2b66d986a758badfd3e7e"
+    },
+    {
+      "path": "receipts/lcao-gamma-prestop.txt",
+      "bytes": 63,
+      "sha256": "bc099a40823b4f9ae41c5a18c1de6c032b94c77bef4b55f4b12006375a70f053"
+    },
+    {
+      "path": "receipts/strain-Ni-native-final.txt",
+      "bytes": 94,
+      "sha256": "cc36aa4eccb36ab5434b2fc46a7804a88bf128540c61823f8e08b81aa802b622"
+    },
+    {
+      "path": "pw-Ni.time",
+      "bytes": 807,
+      "sha256": "6443915e56f5ad6c9ff15fb6710e2fe7a517ca9d10706c7d715aec556a6760a1"
+    },
+    {
+      "path": "pw-strain-Ni.time",
+      "bytes": 800,
+      "sha256": "df33060d5410d1e8a518cc92f82e8274e0eca86f429a2a5e9a300386233dbb50"
+    },
+    {
+      "path": "mesh-Ni-k12-pw500.time",
+      "bytes": 818,
+      "sha256": "2c79996179de95c26f57a7218eb49177d51e8a216d17b2c820cee8c2cc20af0d"
+    },
+    {
+      "path": "mesh-Ni-k16-pw500.time",
+      "bytes": 820,
+      "sha256": "4497e43bb1cb9c1b5e0a1c1a0dc6e0fa641b6371d16fb1488f673f7570b623b6"
+    },
+    {
+      "path": "mesh-Ni-k6-pw500.time",
+      "bytes": 816,
+      "sha256": "cc71caff1a2335b1c1e2978e9d3699fca94a3952692145af6e06743a723521c8"
+    },
+    {
+      "path": "mesh-Ni-k8-pw500.time",
+      "bytes": 815,
+      "sha256": "d86d706f9787ce8860f842d0dbe48c72d5ce5c328d2f76f03a2fc4d27e5a7ad5"
+    },
+    {
+      "path": "mesh-Ni-k8-pw600.time",
+      "bytes": 816,
+      "sha256": "f795544acc2206e1dcefe117997d85ab5d3c2c7b6d412732ee1070278c910e2f"
+    },
+    {
+      "path": "strain-Ni-k8-hydro_minus-pw500.time",
+      "bytes": 826,
+      "sha256": "7fc05fb6dfa8fba3f7c9c1f078a0d57d6439f28560942531dc29e08aefe44049"
+    },
+    {
+      "path": "strain-Ni-k8-hydro_plus-pw500.time",
+      "bytes": 825,
+      "sha256": "37805b2a23c9f1bac6811679af756db69a5b5553182e43f9b31d95470694eebe"
+    },
+    {
+      "path": "strain-Ni-k8-parallel_minus-pw500.time",
+      "bytes": 829,
+      "sha256": "073a1cbd69c9a4a273ba52233fd06897b8a0ed15579bf8c1886c68fd3e3ee5e7"
+    },
+    {
+      "path": "strain-Ni-k8-parallel_plus-pw500.time",
+      "bytes": 828,
+      "sha256": "9ef4003454c91f1f3e87608d5db1d06bd71d2a9156d25b0a7b73bb9ad60c5166"
+    },
+    {
+      "path": "strain-Ni-k8-perpendicular_minus-pw500.time",
+      "bytes": 834,
+      "sha256": "3b82165e969d51b7a51da44c8b2a11669137a4d2f797721003f0a3ba0696a7dd"
+    },
+    {
+      "path": "strain-Ni-k8-perpendicular_plus-pw500.time",
+      "bytes": 833,
+      "sha256": "cd194938310f166a50532a22a2cc78ec5a22b41e43da6b62a45cffe59f93e9ef"
+    },
+    {
+      "path": "collective-Ni-k8-zero-100-pw500.time",
+      "bytes": 815,
+      "sha256": "ae8285724243e9da754ab420a03e364b7e739132258fa71e16c4b735cafba9f3"
+    },
+    {
+      "path": "collective-Ni-k8-zero-111-pw500.time",
+      "bytes": 815,
+      "sha256": "c420245689362d1421bc107db192551e67272f555b0401de50f9032d8b953909"
+    },
+    {
+      "path": "mpi-prep-cost.json",
+      "bytes": 851,
+      "sha256": "78c0d7c305d90b6009b16e85bb9c3fb6cc971cff8e8a7a5b8bec8539d8f24794"
+    },
+    {
+      "path": "pw-Pd.time",
+      "bytes": 807,
+      "sha256": "3e59caed2c2af21b4cad33b1107b4ac1a25491b01138eadccdb313364cfadf02"
+    },
+    {
+      "path": "pw-strain-Pd.time",
+      "bytes": 798,
+      "sha256": "411a2e26a56b9be368bac78693e127aba5a32ba01b80c4c522dc8ec9a54b1c09"
+    },
+    {
+      "path": "mesh-Pd-k12-pw500.time",
+      "bytes": 818,
+      "sha256": "477ae36441e659854ac9e74ea8bc75899f309a47b9630728a9323ab39501ee02"
+    },
+    {
+      "path": "mesh-Pd-k12-pw600.time",
+      "bytes": 818,
+      "sha256": "cf63723e91b15c1370b9000061ea171e6b95089e50d43d5ea823d1ad6bebd4c5"
+    },
+    {
+      "path": "mesh-Pd-k16-pw500.time",
+      "bytes": 820,
+      "sha256": "54a17cccd1a8b1115003e5886009132ffbe8a92c09e6ac887b02e1e9d569620e"
+    },
+    {
+      "path": "mesh-Pd-k6-pw500.time",
+      "bytes": 817,
+      "sha256": "7bc65d382def23a0f59beb50b47a55d13e0df14f5031d35e17bf25e314690814"
+    },
+    {
+      "path": "mesh-Pd-k8-pw500.time",
+      "bytes": 816,
+      "sha256": "6ba5e23975e2d672e4e69f914348dedb7c33eb7bf4fdca0c1867a257d17a0f50"
+    },
+    {
+      "path": "strain-Pd-k12-hydro_minus-pw500.time",
+      "bytes": 828,
+      "sha256": "02f2046957d13465908a8135870e91c647241573dfac9cdd4c788055411c56b2"
+    },
+    {
+      "path": "strain-Pd-k12-hydro_plus-pw500.time",
+      "bytes": 827,
+      "sha256": "c23f4af9a94b2a5ad0b46ffa8dbeb78adaaa412d776ab88dbe48abfb4684f1db"
+    },
+    {
+      "path": "strain-Pd-k12-parallel_minus-pw500.time",
+      "bytes": 831,
+      "sha256": "c238d514c56e1168a330bb2ffa163f80f36a74d4d1f124a848931282a62f5c78"
+    },
+    {
+      "path": "strain-Pd-k12-parallel_plus-pw500.time",
+      "bytes": 830,
+      "sha256": "f122677e32540cab56665b7463ed2e77a2f750b9d8cc3032736f6a4e3728909e"
+    },
+    {
+      "path": "strain-Pd-k12-perpendicular_minus-pw500.time",
+      "bytes": 837,
+      "sha256": "539abeea8a65903e1e559008f585327bb28f93cfb85b386ba42eb6c8009858b6"
+    },
+    {
+      "path": "strain-Pd-k12-perpendicular_plus-pw500.time",
+      "bytes": 836,
+      "sha256": "bc80b59935793a8c4dbc318c74e4fe403325c914dc20ed7ef9bebb2b1d692a45"
+    },
+    {
+      "path": "strain-Pd-k16-hydro_plus-pw500.time",
+      "bytes": 828,
+      "sha256": "6558845d7e700b4dea50a60cb3ec798049031d1cee4c84684b29da0dbab1caaa"
+    },
+    {
+      "path": "collective-Pd-k12-hydro_plus-100-pw500.time",
+      "bytes": 823,
+      "sha256": "d83724823ecc3bc35e70eaf24c4960bb6c01ed9c4ee07aa19a7551106bbde153"
+    },
+    {
+      "path": "collective-Pd-k12-hydro_plus-111-pw500.time",
+      "bytes": 824,
+      "sha256": "42b18eebcf68f2c95e6db8d6583a38225736c3081704d624463a3201bded5aec"
+    },
+    {
+      "path": "collective-Pd-k12-zero-100-pw500.time",
+      "bytes": 818,
+      "sha256": "b0d5c53da8bb87f29b5d7ac09243566fdeb5be7c35a0fb60b2c7a1e6b9c3c138"
+    },
+    {
+      "path": "collective-Pd-k12-zero-111-pw500.time",
+      "bytes": 817,
+      "sha256": "42b09ef54111ae092ebc6fd15bd23e997e5d6782d8ca9bbece54f9c399d45662"
+    }
+  ],
+  "definition": "Actual measured CPU where available; conservative stopped-LCAO charge retained. MPI uses Native cgroup CPU; its180s reservation is not charged as observed work."
+}

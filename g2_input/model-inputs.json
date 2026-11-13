@@ -1,0 +1,1915 @@
+{
+  "model_inputs": [
+    {
+      "material": "NiH",
+      "accepted_kmesh": 8,
+      "cutoff_eV": 500,
+      "K_Gamma_eV_A2": 1.049783279069515,
+      "harmonic_quantum_meV": 66.0042494515322,
+      "measured_peak_meV": 89.0,
+      "relative_frequency_difference": -0.25837921964570554,
+      "cutoff_check": {
+        "K_PW600_eV_A2": 0.991525353045487,
+        "quantum_PW600_meV": 64.14665037036058,
+        "relative_K_change": -0.055495193327584236,
+        "within_5percent": false
+      },
+      "strain": {
+        "hydro": {
+          "K_minus_eV_A2": 1.2951275143909535,
+          "K_plus_eV_A2": 0.8339846724724064,
+          "dK_depsilon_eV_A2": -23.057142095927357,
+          "dlnK_depsilon": -21.963716279005954,
+          "finite_interval_log_secant": -22.007470606892774,
+          "dlnK_dlnV": -7.321238759668652
+        },
+        "parallel": {
+          "K_minus_eV_A2": 1.3144172248005213,
+          "K_plus_eV_A2": 0.8124779047381576,
+          "dK_depsilon_eV_A2": -25.09696600311818,
+          "dlnK_depsilon": -23.906806770025053,
+          "finite_interval_log_secant": -24.052997582921762
+        },
+        "perpendicular": {
+          "K_minus_eV_A2": 1.032908887072414,
+          "K_plus_eV_A2": 1.0571564950988086,
+          "dK_depsilon_eV_A2": 1.2123804013197348,
+          "dlnK_depsilon": 1.1548863708272619,
+          "finite_interval_log_secant": 1.1601883923257688
+        }
+      },
+      "saturation_estimates": {
+        "100": {
+          "k2_eV_A2": 1.467942406443983,
+          "k4_eV_A4": 18.318329806370457,
+          "coefficient_of_u2_eV_A2": 0.7339712032219915,
+          "coefficient_of_u4_eV_A4": 4.579582451592614,
+          "harmonic_quantum_eV": 0.07805065999431804,
+          "imaginary_harmonic_magnitude_eV": null,
+          "energy_fit_RMS_eV": 0.0003374083899604715,
+          "force_fit_RMS_eV_A": 0.0021603193937224647,
+          "sampled_positive_range_A": [
+            0.12,
+            0.24
+          ],
+          "inversion_assumption": "Ideal centrosymmetric rocksalt O site; V(-u)=V(u)."
+        },
+        "111": {
+          "k2_eV_A2": 1.467942406443983,
+          "k4_eV_A4": 1.1283657157232418,
+          "coefficient_of_u2_eV_A2": 0.7339712032219915,
+          "coefficient_of_u4_eV_A4": 0.28209142893081046,
+          "harmonic_quantum_eV": 0.07805065999431804,
+          "imaginary_harmonic_magnitude_eV": null,
+          "energy_fit_RMS_eV": 3.5959630070683594e-05,
+          "force_fit_RMS_eV_A": 0.00033850904300273583,
+          "sampled_positive_range_A": [
+            0.12,
+            0.24
+          ],
+          "inversion_assumption": "Ideal centrosymmetric rocksalt O site; V(-u)=V(u)."
+        }
+      },
+      "saturation_method": "LOCAL one-H/D displacement in a64-atom PW400 Gamma-only cell; all other nuclei fixed. Rough saturation estimate, distinct from the primitive collective potential.",
+      "local_reference": {
+        "onsite_K2_eV_A2": 1.467942406443983,
+        "sum_neighbour_Jxx_eV_A2": 0.2342034912155344,
+        "same_matrix_H_K_Gamma_eV_A2": 1.2337389152284486,
+        "method": "GPAW PBE PAW,10-valence Ni/Pd setups,PW400eV,Gamma-only,Fermi0.1eV,nonmagnetic,frozen host."
+      },
+      "cost": {
+        "cpu_core_minutes": 79.67528173333334,
+        "parts": [
+          {
+            "cpu_s": 599.469641,
+            "source": "receipts/pilot-native-final.txt",
+            "kind": "timed-out LCAO pilot"
+          },
+          {
+            "cpu_s": 1425.0,
+            "observed_cpu_s": 1423.799429,
+            "source": "receipts/lcao-gamma-prestop.txt",
+            "kind": "stopped LCAO run; conservative charge includes stop interval"
+          },
+          {
+            "cpu_s": 299.977263,
+            "source": "receipts/strain-Ni-native-final.txt",
+            "kind": "timed-out LCAO strain"
+          },
+          {
+            "cpu_s": 1237.3400000000001,
+            "source": "pw-Ni.time",
+            "kind": "GPAW process, imports and checkpoint I/O included"
+          },
+          {
+            "cpu_s": 135.70999999999998,
+            "source": "pw-strain-Ni.time",
+            "kind": "GPAW process, imports and checkpoint I/O included"
+          },
+          {
+            "cpu_s": 142.78,
+            "source": "mesh-Ni-k12-pw500.time",
+            "kind": "GPAW process, imports and checkpoint I/O included"
+          },
+          {
+            "cpu_s": 245.99,
+            "source": "mesh-Ni-k16-pw500.time",
+            "kind": "GPAW process, imports and checkpoint I/O included"
+          },
+          {
+            "cpu_s": 24.46,
+            "source": "mesh-Ni-k6-pw500.time",
+            "kind": "GPAW process, imports and checkpoint I/O included"
+          },
+          {
+            "cpu_s": 45.49,
+            "source": "mesh-Ni-k8-pw500.time",
+            "kind": "GPAW process, imports and checkpoint I/O included"
+          },
+          {
+            "cpu_s": 47.97,
+            "source": "mesh-Ni-k8-pw600.time",
+            "kind": "GPAW process, imports and checkpoint I/O included"
+          },
+          {
+            "cpu_s": 48.69,
+            "source": "strain-Ni-k8-hydro_minus-pw500.time",
+            "kind": "GPAW process, imports and checkpoint I/O included"
+          },
+          {
+            "cpu_s": 50.01,
+            "source": "strain-Ni-k8-hydro_plus-pw500.time",
+            "kind": "GPAW process, imports and checkpoint I/O included"
+          },
+          {
+            "cpu_s": 46.01,
+            "source": "strain-Ni-k8-parallel_minus-pw500.time",
+            "kind": "GPAW process, imports and checkpoint I/O included"
+          },
+          {
+            "cpu_s": 56.99,
+            "source": "strain-Ni-k8-parallel_plus-pw500.time",
+            "kind": "GPAW process, imports and checkpoint I/O included"
+          },
+          {
+            "cpu_s": 67.22999999999999,
+            "source": "strain-Ni-k8-perpendicular_minus-pw500.time",
+            "kind": "GPAW process, imports and checkpoint I/O included"
+          },
+          {
+            "cpu_s": 67.4,
+            "source": "strain-Ni-k8-perpendicular_plus-pw500.time",
+            "kind": "GPAW process, imports and checkpoint I/O included"
+          },
+          {
+            "cpu_s": 115.78,
+            "source": "collective-Ni-k8-zero-100-pw500.time",
+            "kind": "GPAW process, imports and checkpoint I/O included"
+          },
+          {
+            "cpu_s": 124.22,
+            "source": "collective-Ni-k8-zero-111-pw500.time",
+            "kind": "GPAW process, imports and checkpoint I/O included"
+          }
+        ]
+      }
+    },
+    {
+      "material": "PdD",
+      "accepted_kmesh": 12,
+      "cutoff_eV": 500,
+      "K_Gamma_eV_A2": 0.18105969055575036,
+      "harmonic_quantum_meV": 19.387675691687594,
+      "measured_peak_meV": 37.0,
+      "relative_frequency_difference": -0.4760087650895245,
+      "cutoff_check": {
+        "K_PW600_eV_A2": 0.18428625414289332,
+        "quantum_PW600_meV": 19.559661328485365,
+        "relative_K_change": 0.017820441298884715,
+        "within_5percent": true
+      },
+      "strain": {
+        "hydro": {
+          "K_minus_eV_A2": 0.39732509992552595,
+          "K_plus_eV_A2": -0.012979731658527428,
+          "dK_depsilon_eV_A2": -20.51524157920267,
+          "dlnK_depsilon": -113.30650967221106,
+          "finite_interval_log_secant": null,
+          "dlnK_dlnV": -37.76883655740369
+        },
+        "parallel": {
+          "K_minus_eV_A2": 0.33910398831779337,
+          "K_plus_eV_A2": 0.04626724997024351,
+          "dK_depsilon_eV_A2": -14.641836917377493,
+          "dlnK_depsilon": -80.86745797717523,
+          "finite_interval_log_secant": -99.59362218955366
+        },
+        "perpendicular": {
+          "K_minus_eV_A2": 0.20931388442582055,
+          "K_plus_eV_A2": 0.15161176441611784,
+          "dK_depsilon_eV_A2": -2.8851060004851354,
+          "dlnK_depsilon": -15.9345572260148,
+          "finite_interval_log_secant": -16.125594640155054
+        }
+      },
+      "saturation_estimates": {
+        "100": {
+          "k2_eV_A2": 1.0917228165401551,
+          "k4_eV_A4": 9.833945608919885,
+          "coefficient_of_u2_eV_A2": 0.5458614082700776,
+          "coefficient_of_u4_eV_A4": 2.4584864022299713,
+          "harmonic_quantum_eV": 0.047607026106499126,
+          "imaginary_harmonic_magnitude_eV": null,
+          "energy_fit_RMS_eV": 0.00038881217228551646,
+          "force_fit_RMS_eV_A": 0.0023064838397580307,
+          "sampled_positive_range_A": [
+            0.12,
+            0.24
+          ],
+          "inversion_assumption": "Ideal centrosymmetric rocksalt O site; V(-u)=V(u)."
+        },
+        "111": {
+          "k2_eV_A2": 1.0917228165401551,
+          "k4_eV_A4": 1.368619619144121,
+          "coefficient_of_u2_eV_A2": 0.5458614082700776,
+          "coefficient_of_u4_eV_A4": 0.3421549047860302,
+          "harmonic_quantum_eV": 0.047607026106499126,
+          "imaginary_harmonic_magnitude_eV": null,
+          "energy_fit_RMS_eV": 0.00015633890122173893,
+          "force_fit_RMS_eV_A": 0.0010836991773165575,
+          "sampled_positive_range_A": [
+            0.12,
+            0.24
+          ],
+          "inversion_assumption": "Ideal centrosymmetric rocksalt O site; V(-u)=V(u)."
+        }
+      },
+      "saturation_method": "LOCAL one-H/D displacement in a64-atom PW400 Gamma-only cell; all other nuclei fixed. Rough saturation estimate, distinct from the primitive collective potential.",
+      "local_reference": {
+        "onsite_K2_eV_A2": 1.0917228165401551,
+        "sum_neighbour_Jxx_eV_A2": 0.0637075813299599,
+        "same_matrix_H_K_Gamma_eV_A2": 1.0280152352101952,
+        "method": "GPAW PBE PAW,10-valence Ni/Pd setups,PW400eV,Gamma-only,Fermi0.1eV,nonmagnetic,frozen host."
+      },
+      "cost": {
+        "cpu_core_minutes": 84.72797493333333,
+        "parts": [
+          {
+            "cpu_s": 16.578496,
+            "source": "mpi-prep-cost.json",
+            "kind": "failed MPI restart API qualification; Native cgroup accounting, not launcher rusage"
+          },
+          {
+            "cpu_s": 1230.42,
+            "source": "pw-Pd.time",
+            "kind": "GPAW process, imports and checkpoint I/O included"
+          },
+          {
+            "cpu_s": 132.82,
+            "source": "pw-strain-Pd.time",
+            "kind": "GPAW process, imports and checkpoint I/O included"
+          },
+          {
+            "cpu_s": 141.29,
+            "source": "mesh-Pd-k12-pw500.time",
+            "kind": "GPAW process, imports and checkpoint I/O included"
+          },
+          {
+            "cpu_s": 155.95999999999998,
+            "source": "mesh-Pd-k12-pw600.time",
+            "kind": "GPAW process, imports and checkpoint I/O included"
+          },
+          {
+            "cpu_s": 300.28,
+            "source": "mesh-Pd-k16-pw500.time",
+            "kind": "GPAW process, imports and checkpoint I/O included"
+          },
+          {
+            "cpu_s": 27.779999999999998,
+            "source": "mesh-Pd-k6-pw500.time",
+            "kind": "GPAW process, imports and checkpoint I/O included"
+          },
+          {
+            "cpu_s": 64.0,
+            "source": "mesh-Pd-k8-pw500.time",
+            "kind": "GPAW process, imports and checkpoint I/O included"
+          },
+          {
+            "cpu_s": 140.51,
+            "source": "strain-Pd-k12-hydro_minus-pw500.time",
+            "kind": "GPAW process, imports and checkpoint I/O included"
+          },
+          {
+            "cpu_s": 133.39,
+            "source": "strain-Pd-k12-hydro_plus-pw500.time",
+            "kind": "GPAW process, imports and checkpoint I/O included"
+          },
+          {
+            "cpu_s": 136.69,
+            "source": "strain-Pd-k12-parallel_minus-pw500.time",
+            "kind": "GPAW process, imports and checkpoint I/O included"
+          },
+          {
+            "cpu_s": 130.5,
+            "source": "strain-Pd-k12-parallel_plus-pw500.time",
+            "kind": "GPAW process, imports and checkpoint I/O included"
+          },
+          {
+            "cpu_s": 259.68,
+            "source": "strain-Pd-k12-perpendicular_minus-pw500.time",
+            "kind": "GPAW process, imports and checkpoint I/O included"
+          },
+          {
+            "cpu_s": 259.35,
+            "source": "strain-Pd-k12-perpendicular_plus-pw500.time",
+            "kind": "GPAW process, imports and checkpoint I/O included"
+          },
+          {
+            "cpu_s": 272.29999999999995,
+            "source": "strain-Pd-k16-hydro_plus-pw500.time",
+            "kind": "GPAW process, imports and checkpoint I/O included"
+          },
+          {
+            "cpu_s": 384.61,
+            "source": "collective-Pd-k12-hydro_plus-100-pw500.time",
+            "kind": "GPAW process, imports and checkpoint I/O included"
+          },
+          {
+            "cpu_s": 490.99,
+            "source": "collective-Pd-k12-hydro_plus-111-pw500.time",
+            "kind": "GPAW process, imports and checkpoint I/O included"
+          },
+          {
+            "cpu_s": 392.80999999999995,
+            "source": "collective-Pd-k12-zero-100-pw500.time",
+            "kind": "GPAW process, imports and checkpoint I/O included"
+          },
+          {
+            "cpu_s": 413.72,
+            "source": "collective-Pd-k12-zero-111-pw500.time",
+            "kind": "GPAW process, imports and checkpoint I/O included"
+          }
+        ]
+      }
+    }
+  ],
+  "convergence": {
+    "criterion": "5% K agreement with next denser mesh; reject an apparent plateau contradicted by later requested meshes.",
+    "method": "PW500, PBE PAW10, Fermi0.1eV, Gamma-centred meshes, +/-0.01A H displacement; frozen metal.",
+    "materials": [
+      {
+        "metal": "Ni",
+        "status": "accepted",
+        "accepted_kmesh": 8,
+        "accepted_K_Gamma_eV_A2": 1.049783279069515,
+        "accepted_quantum_meV": 66.0042494515322,
+        "measured_peak_meV": 89.0,
+        "relative_frequency_mismatch": 0.25837921964570554,
+        "PW600_check_required": true,
+        "adjacent_comparisons": [
+          {
+            "mesh": 6,
+            "next_mesh": 8,
+            "relative_K_difference": 0.11785346597634272,
+            "passes": false
+          },
+          {
+            "mesh": 8,
+            "next_mesh": 12,
+            "relative_K_difference": 0.02164652572727076,
+            "passes": true
+          },
+          {
+            "mesh": 12,
+            "next_mesh": 16,
+            "relative_K_difference": 0.010199615488391496,
+            "passes": true
+          }
+        ],
+        "cases": [
+          {
+            "metal": "Ni",
+            "name": "k06_pw500",
+            "K_Gamma_eV_A2": 1.1735038770318675,
+            "deformation": [
+              [
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "reference_positions_A": [
+              [
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                1.866,
+                0.0,
+                0.0
+              ]
+            ],
+            "cell_A": [
+              [
+                0.0,
+                1.866,
+                1.866
+              ],
+              [
+                1.866,
+                0.0,
+                1.866
+              ],
+              [
+                1.866,
+                1.866,
+                0.0
+              ]
+            ],
+            "displacement_axis": 0,
+            "cutoff_eV": 500,
+            "kmesh": 6,
+            "step_A": 0.01,
+            "smearing_eV": 0.1,
+            "point_group": "Actual displaced-cell subgroup; not undisplaced crystal symmetry.",
+            "n_ibz_kpoints": 30,
+            "producer_bytes": 2942,
+            "producer_sha256": "b63f5dddf9877507d4544966476718db1a44840226869afe73bd91f7c6a5e31a",
+            "points": [
+              {
+                "displacement_A": -0.01,
+                "energy_free_eV": -10.280893370143199,
+                "forces_eV_A": [
+                  [
+                    -0.011729733867012239,
+                    0.0,
+                    1.393797921329862e-18
+                  ],
+                  [
+                    0.011743795335533604,
+                    5.226742204986982e-19,
+                    5.226742204986982e-19
+                  ]
+                ],
+                "force_parallel_eV_A": 0.011743795335533604,
+                "elapsed_s": 14.947713997215033,
+                "cpu_s": 14.924807998000002
+              },
+              {
+                "displacement_A": 0.01,
+                "energy_free_eV": -10.280893369587158,
+                "forces_eV_A": [
+                  [
+                    0.011665773653701162,
+                    3.484494803324655e-19,
+                    3.484494803324655e-19
+                  ],
+                  [
+                    -0.011726282205103751,
+                    -6.097865905818146e-19,
+                    -2.613371102493491e-19
+                  ]
+                ],
+                "force_parallel_eV_A": -0.011726282205103751,
+                "elapsed_s": 8.168070221319795,
+                "cpu_s": 8.153161475999998
+              }
+            ],
+            "harmonic_quantum_meV": 69.78536202416167,
+            "imaginary_magnitude_meV": null,
+            "measured_peak_meV": 89.0,
+            "mass_kg": 1.67262192595e-27
+          },
+          {
+            "metal": "Ni",
+            "name": "k08_pw500",
+            "K_Gamma_eV_A2": 1.049783279069515,
+            "deformation": [
+              [
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "reference_positions_A": [
+              [
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                1.866,
+                0.0,
+                0.0
+              ]
+            ],
+            "cell_A": [
+              [
+                0.0,
+                1.866,
+                1.866
+              ],
+              [
+                1.866,
+                0.0,
+                1.866
+              ],
+              [
+                1.866,
+                1.866,
+                0.0
+              ]
+            ],
+            "displacement_axis": 0,
+            "cutoff_eV": 500,
+            "kmesh": 8,
+            "step_A": 0.01,
+            "smearing_eV": 0.1,
+            "point_group": "Actual displaced-cell subgroup; not undisplaced crystal symmetry.",
+            "n_ibz_kpoints": 59,
+            "producer_bytes": 2942,
+            "producer_sha256": "b63f5dddf9877507d4544966476718db1a44840226869afe73bd91f7c6a5e31a",
+            "points": [
+              {
+                "displacement_A": -0.01,
+                "energy_free_eV": -10.30354546784668,
+                "forces_eV_A": [
+                  [
+                    -0.01053418734320806,
+                    0.0,
+                    -6.96898960664931e-19
+                  ],
+                  [
+                    0.010501645930548935,
+                    1.7422474016623274e-19,
+                    6.097865905818146e-19
+                  ]
+                ],
+                "force_parallel_eV_A": 0.010501645930548935,
+                "elapsed_s": 26.91041188314557,
+                "cpu_s": 26.878812653
+              },
+              {
+                "displacement_A": 0.01,
+                "energy_free_eV": -10.303545471436466,
+                "forces_eV_A": [
+                  [
+                    0.01052722059848902,
+                    3.484494803324655e-19,
+                    3.484494803324655e-19
+                  ],
+                  [
+                    -0.010494019650841365,
+                    -1.7422474016623274e-19,
+                    -6.097865905818146e-19
+                  ]
+                ],
+                "force_parallel_eV_A": -0.010494019650841365,
+                "elapsed_s": 17.20004075486213,
+                "cpu_s": 17.181448710999998
+              }
+            ],
+            "harmonic_quantum_meV": 66.0042494515322,
+            "imaginary_magnitude_meV": null,
+            "measured_peak_meV": 89.0,
+            "mass_kg": 1.67262192595e-27
+          },
+          {
+            "metal": "Ni",
+            "name": "k12_pw500",
+            "K_Gamma_eV_A2": 1.0275405951409806,
+            "deformation": [
+              [
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "reference_positions_A": [
+              [
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                1.866,
+                0.0,
+                0.0
+              ]
+            ],
+            "cell_A": [
+              [
+                0.0,
+                1.866,
+                1.866
+              ],
+              [
+                1.866,
+                0.0,
+                1.866
+              ],
+              [
+                1.866,
+                1.866,
+                0.0
+              ]
+            ],
+            "displacement_axis": 0,
+            "cutoff_eV": 500,
+            "kmesh": 12,
+            "step_A": 0.01,
+            "smearing_eV": 0.1,
+            "point_group": "Actual displaced-cell subgroup; not undisplaced crystal symmetry.",
+            "n_ibz_kpoints": 163,
+            "producer_bytes": 2942,
+            "producer_sha256": "b63f5dddf9877507d4544966476718db1a44840226869afe73bd91f7c6a5e31a",
+            "points": [
+              {
+                "displacement_A": -0.01,
+                "energy_free_eV": -10.304385609900224,
+                "forces_eV_A": [
+                  [
+                    -0.010312584848280808,
+                    -3.484494803324655e-19,
+                    -3.484494803324655e-19
+                  ],
+                  [
+                    0.01028679972259796,
+                    0.0,
+                    8.711237008311637e-20
+                  ]
+                ],
+                "force_parallel_eV_A": 0.01028679972259796,
+                "elapsed_s": 103.07795835193247,
+                "cpu_s": 102.92846661
+              },
+              {
+                "displacement_A": 0.01,
+                "energy_free_eV": -10.30438561302597,
+                "forces_eV_A": [
+                  [
+                    0.010178320928790308,
+                    3.484494803324655e-19,
+                    -3.484494803324655e-19
+                  ],
+                  [
+                    -0.010264012180221653,
+                    -1.7422474016623274e-19,
+                    8.711237008311637e-20
+                  ]
+                ],
+                "force_parallel_eV_A": -0.010264012180221653,
+                "elapsed_s": 38.52024403773248,
+                "cpu_s": 38.485446188
+              }
+            ],
+            "harmonic_quantum_meV": 65.30126069013195,
+            "imaginary_magnitude_meV": null,
+            "measured_peak_meV": 89.0,
+            "mass_kg": 1.67262192595e-27
+          },
+          {
+            "metal": "Ni",
+            "name": "k16_pw500",
+            "K_Gamma_eV_A2": 1.017165894132919,
+            "deformation": [
+              [
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "reference_positions_A": [
+              [
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                1.866,
+                0.0,
+                0.0
+              ]
+            ],
+            "cell_A": [
+              [
+                0.0,
+                1.866,
+                1.866
+              ],
+              [
+                1.866,
+                0.0,
+                1.866
+              ],
+              [
+                1.866,
+                1.866,
+                0.0
+              ]
+            ],
+            "displacement_axis": 0,
+            "cutoff_eV": 500,
+            "kmesh": 16,
+            "step_A": 0.01,
+            "smearing_eV": 0.1,
+            "point_group": "Actual displaced-cell subgroup; not undisplaced crystal symmetry.",
+            "n_ibz_kpoints": 349,
+            "producer_bytes": 2942,
+            "producer_sha256": "b63f5dddf9877507d4544966476718db1a44840226869afe73bd91f7c6a5e31a",
+            "points": [
+              {
+                "displacement_A": -0.01,
+                "energy_free_eV": -10.303753531088446,
+                "forces_eV_A": [
+                  [
+                    -0.010193242984242621,
+                    -3.484494803324655e-19,
+                    3.484494803324655e-19
+                  ],
+                  [
+                    0.010180415642034372,
+                    6.097865905818146e-19,
+                    4.355618504155818e-19
+                  ]
+                ],
+                "force_parallel_eV_A": 0.010180415642034372,
+                "elapsed_s": 157.9919585455209,
+                "cpu_s": 157.83831785
+              },
+              {
+                "displacement_A": 0.01,
+                "energy_free_eV": -10.303753530447604,
+                "forces_eV_A": [
+                  [
+                    0.01019391407612396,
+                    1.0453484409973964e-18,
+                    1.0453484409973964e-18
+                  ],
+                  [
+                    -0.010162902240624007,
+                    -6.96898960664931e-19,
+                    -6.96898960664931e-19
+                  ]
+                ],
+                "force_parallel_eV_A": -0.010162902240624007,
+                "elapsed_s": 86.36003448907286,
+                "cpu_s": 86.27070352999999
+              }
+            ],
+            "harmonic_quantum_meV": 64.97076289000913,
+            "imaginary_magnitude_meV": null,
+            "measured_peak_meV": 89.0,
+            "mass_kg": 1.67262192595e-27
+          }
+        ]
+      },
+      {
+        "metal": "Pd",
+        "status": "accepted",
+        "accepted_kmesh": 12,
+        "accepted_K_Gamma_eV_A2": 0.18105969055575036,
+        "accepted_quantum_meV": 19.387675691687594,
+        "measured_peak_meV": 37.0,
+        "relative_frequency_mismatch": 0.4760087650895245,
+        "PW600_check_required": true,
+        "adjacent_comparisons": [
+          {
+            "mesh": 6,
+            "next_mesh": 8,
+            "relative_K_difference": 0.902744137321649,
+            "passes": false
+          },
+          {
+            "mesh": 8,
+            "next_mesh": 12,
+            "relative_K_difference": 0.22081639955541404,
+            "passes": false
+          },
+          {
+            "mesh": 12,
+            "next_mesh": 16,
+            "relative_K_difference": 0.032050136023740815,
+            "passes": true
+          }
+        ],
+        "cases": [
+          {
+            "metal": "Pd",
+            "name": "k06_pw500",
+            "K_Gamma_eV_A2": 0.42058378097342064,
+            "deformation": [
+              [
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "reference_positions_A": [
+              [
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                2.042,
+                0.0,
+                0.0
+              ]
+            ],
+            "cell_A": [
+              [
+                0.0,
+                2.042,
+                2.042
+              ],
+              [
+                2.042,
+                0.0,
+                2.042
+              ],
+              [
+                2.042,
+                2.042,
+                0.0
+              ]
+            ],
+            "displacement_axis": 0,
+            "cutoff_eV": 500,
+            "kmesh": 6,
+            "step_A": 0.01,
+            "smearing_eV": 0.1,
+            "point_group": "Actual displaced-cell subgroup; not undisplaced crystal symmetry.",
+            "n_ibz_kpoints": 30,
+            "producer_bytes": 2942,
+            "producer_sha256": "b63f5dddf9877507d4544966476718db1a44840226869afe73bd91f7c6a5e31a",
+            "points": [
+              {
+                "displacement_A": -0.01,
+                "energy_free_eV": -7.072803968163844,
+                "forces_eV_A": [
+                  [
+                    -0.004158549027477211,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.004210722335170937,
+                    8.711237008311637e-20,
+                    8.711237008311637e-20
+                  ]
+                ],
+                "force_parallel_eV_A": 0.004210722335170937,
+                "elapsed_s": 17.347407100722194,
+                "cpu_s": 17.313446396
+              },
+              {
+                "displacement_A": 0.01,
+                "energy_free_eV": -7.072803967845113,
+                "forces_eV_A": [
+                  [
+                    0.003990358673520649,
+                    -3.484494803324655e-19,
+                    3.484494803324655e-19
+                  ],
+                  [
+                    -0.004200953284297476,
+                    0.0,
+                    0.0
+                  ]
+                ],
+                "force_parallel_eV_A": -0.004200953284297476,
+                "elapsed_s": 9.157047868706286,
+                "cpu_s": 9.151049461000003
+              }
+            ],
+            "harmonic_quantum_meV": 29.548886508270268,
+            "imaginary_magnitude_meV": null,
+            "measured_peak_meV": 37.0,
+            "mass_kg": 3.3435837768e-27
+          },
+          {
+            "metal": "Pd",
+            "name": "k08_pw500",
+            "K_Gamma_eV_A2": 0.22104063952888856,
+            "deformation": [
+              [
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "reference_positions_A": [
+              [
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                2.042,
+                0.0,
+                0.0
+              ]
+            ],
+            "cell_A": [
+              [
+                0.0,
+                2.042,
+                2.042
+              ],
+              [
+                2.042,
+                0.0,
+                2.042
+              ],
+              [
+                2.042,
+                2.042,
+                0.0
+              ]
+            ],
+            "displacement_axis": 0,
+            "cutoff_eV": 500,
+            "kmesh": 8,
+            "step_A": 0.01,
+            "smearing_eV": 0.1,
+            "point_group": "Actual displaced-cell subgroup; not undisplaced crystal symmetry.",
+            "n_ibz_kpoints": 59,
+            "producer_bytes": 2942,
+            "producer_sha256": "b63f5dddf9877507d4544966476718db1a44840226869afe73bd91f7c6a5e31a",
+            "points": [
+              {
+                "displacement_A": -0.01,
+                "energy_free_eV": -7.097617970763222,
+                "forces_eV_A": [
+                  [
+                    -0.002177307310309189,
+                    0.0,
+                    6.96898960664931e-19
+                  ],
+                  [
+                    0.0022090166038919563,
+                    1.7422474016623274e-19,
+                    4.355618504155818e-19
+                  ]
+                ],
+                "force_parallel_eV_A": 0.0022090166038919563,
+                "elapsed_s": 44.49867179058492,
+                "cpu_s": 44.461108454
+              },
+              {
+                "displacement_A": 0.01,
+                "energy_free_eV": -7.097617970398034,
+                "forces_eV_A": [
+                  [
+                    0.002132775907951169,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    -0.0022117961866858146,
+                    0.0,
+                    0.0
+                  ]
+                ],
+                "force_parallel_eV_A": -0.0022117961866858146,
+                "elapsed_s": 18.252419215627015,
+                "cpu_s": 18.234571063999994
+              }
+            ],
+            "harmonic_quantum_meV": 21.421551571208425,
+            "imaginary_magnitude_meV": null,
+            "measured_peak_meV": 37.0,
+            "mass_kg": 3.3435837768e-27
+          },
+          {
+            "metal": "Pd",
+            "name": "k12_pw500",
+            "K_Gamma_eV_A2": 0.18105969055575036,
+            "deformation": [
+              [
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "reference_positions_A": [
+              [
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                2.042,
+                0.0,
+                0.0
+              ]
+            ],
+            "cell_A": [
+              [
+                0.0,
+                2.042,
+                2.042
+              ],
+              [
+                2.042,
+                0.0,
+                2.042
+              ],
+              [
+                2.042,
+                2.042,
+                0.0
+              ]
+            ],
+            "displacement_axis": 0,
+            "cutoff_eV": 500,
+            "kmesh": 12,
+            "step_A": 0.01,
+            "smearing_eV": 0.1,
+            "point_group": "Actual displaced-cell subgroup; not undisplaced crystal symmetry.",
+            "n_ibz_kpoints": 163,
+            "producer_bytes": 2942,
+            "producer_sha256": "b63f5dddf9877507d4544966476718db1a44840226869afe73bd91f7c6a5e31a",
+            "points": [
+              {
+                "displacement_A": -0.01,
+                "energy_free_eV": -7.09400604298192,
+                "forces_eV_A": [
+                  [
+                    -0.0017912221270956225,
+                    -3.484494803324655e-19,
+                    -3.484494803324655e-19
+                  ],
+                  [
+                    0.0018121929218534306,
+                    0.0,
+                    -1.7422474016623274e-19
+                  ]
+                ],
+                "force_parallel_eV_A": 0.0018121929218534306,
+                "elapsed_s": 90.56554682087153,
+                "cpu_s": 90.370469858
+              },
+              {
+                "displacement_A": 0.01,
+                "energy_free_eV": -7.094006042805977,
+                "forces_eV_A": [
+                  [
+                    0.001695137110762879,
+                    0.0,
+                    6.96898960664931e-19
+                  ],
+                  [
+                    -0.0018090008892615765,
+                    0.0,
+                    -1.7422474016623274e-19
+                  ]
+                ],
+                "force_parallel_eV_A": -0.0018090008892615765,
+                "elapsed_s": 49.59561194572598,
+                "cpu_s": 49.474083515000004
+              }
+            ],
+            "harmonic_quantum_meV": 19.387675691687594,
+            "imaginary_magnitude_meV": null,
+            "measured_peak_meV": 37.0,
+            "mass_kg": 3.3435837768e-27
+          },
+          {
+            "metal": "Pd",
+            "name": "k16_pw500",
+            "K_Gamma_eV_A2": 0.17543691361093464,
+            "deformation": [
+              [
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "reference_positions_A": [
+              [
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                2.042,
+                0.0,
+                0.0
+              ]
+            ],
+            "cell_A": [
+              [
+                0.0,
+                2.042,
+                2.042
+              ],
+              [
+                2.042,
+                0.0,
+                2.042
+              ],
+              [
+                2.042,
+                2.042,
+                0.0
+              ]
+            ],
+            "displacement_axis": 0,
+            "cutoff_eV": 500,
+            "kmesh": 16,
+            "step_A": 0.01,
+            "smearing_eV": 0.1,
+            "point_group": "Actual displaced-cell subgroup; not undisplaced crystal symmetry.",
+            "n_ibz_kpoints": 349,
+            "producer_bytes": 2942,
+            "producer_sha256": "b63f5dddf9877507d4544966476718db1a44840226869afe73bd91f7c6a5e31a",
+            "points": [
+              {
+                "displacement_A": -0.01,
+                "energy_free_eV": -7.092322040095713,
+                "forces_eV_A": [
+                  [
+                    -0.0018840171938176737,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0017831467217027377,
+                    0.0,
+                    -8.711237008311637e-20
+                  ]
+                ],
+                "force_parallel_eV_A": 0.0017831467217027377,
+                "elapsed_s": 136.5331349633634,
+                "cpu_s": 136.4222593
+              },
+              {
+                "displacement_A": 0.01,
+                "energy_free_eV": -7.092322040078297,
+                "forces_eV_A": [
+                  [
+                    0.0016955420269174903,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    -0.0017255915505159554,
+                    0.0,
+                    -8.711237008311637e-20
+                  ]
+                ],
+                "force_parallel_eV_A": -0.0017255915505159554,
+                "elapsed_s": 162.3861275697127,
+                "cpu_s": 162.23571364199998
+              }
+            ],
+            "harmonic_quantum_meV": 19.084261056982587,
+            "imaginary_magnitude_meV": null,
+            "measured_peak_meV": 37.0,
+            "mass_kg": 3.3435837768e-27
+          }
+        ]
+      }
+    ],
+    "source_files": [
+      {
+        "path": "primitive_Ni/k06_pw500/result.json",
+        "bytes": 1957,
+        "sha256": "90b17b90bb9021815d0b8eac071bcaa06e9a8a5d42f69a359347dea3ee7400f0"
+      },
+      {
+        "path": "primitive_Ni/k08_pw500/result.json",
+        "bytes": 1948,
+        "sha256": "65213877cfe5ffc0503a2f6d82e12137456a744ade71abd52f4976e826d1f27c"
+      },
+      {
+        "path": "primitive_Ni/k12_pw500/result.json",
+        "bytes": 1948,
+        "sha256": "905130c165b07597593d740e25fb36cc960552006e664c56db25d97513d277a6"
+      },
+      {
+        "path": "primitive_Ni/k16_pw500/result.json",
+        "bytes": 1969,
+        "sha256": "9e175cf4f75c2d3672bac7b0d9ded995c5587d210e8f8b767ef0b43dccc05d04"
+      },
+      {
+        "path": "primitive_Pd/k06_pw500/result.json",
+        "bytes": 1895,
+        "sha256": "c4947d0011ba997db0350c3eaddb27cb60accfe77b39ef774aa618ae3af49f83"
+      },
+      {
+        "path": "primitive_Pd/k08_pw500/result.json",
+        "bytes": 1881,
+        "sha256": "880380b7ba0d40f6004fc582126646176e679fe305df62b17c3f6570543f8e38"
+      },
+      {
+        "path": "primitive_Pd/k12_pw500/result.json",
+        "bytes": 1923,
+        "sha256": "308693c43fbaaa636acdee320aae7c92aeb246024f8fbe1a0171978ac865e318"
+      },
+      {
+        "path": "primitive_Pd/k16_pw500/result.json",
+        "bytes": 1867,
+        "sha256": "1b99c88cc4b3c33acd5079d8c36cb0f4ce1dadf147b947940d7134d780ab0c34"
+      }
+    ]
+  },
+  "collective_potentials": {
+    "definition": "Uniform collective displacement energy per primitive formula unit, fixed metal; not an isolated-ion potential.",
+    "fit": "K2 fixed by +/-0.01A central force response; one-parameter least-squares quartic fit to energies through0.30A. Forces are an independent prediction check. Ideal reference-site inversion supplies V(-u)=V(u).",
+    "normalization": "For N uniformly displaced formula units, total energy and collective-coordinate mass both scale with N; any single-ion/Einstein quantization is a separate model closure.",
+    "states": [
+      {
+        "metal": "Pd",
+        "kmesh": 12,
+        "strain_case": "zero",
+        "deformation": [
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "K2_force_eV_A2": 0.18105969055575036,
+        "zero_energy_free_eV": -7.094015083871104,
+        "directions": {
+          "100": {
+            "K2_force_eV_A2": 0.18105969055575036,
+            "K4_eV_A4": 11.1603734345428,
+            "energy_RMS_meV": 0.16826356700836786,
+            "energy_max_error_meV": 0.28819939099357716,
+            "force_prediction_RMS_eV_A": 0.007722449538612984,
+            "finite_step_quartic_curvature_estimate_eV_A2": 0.00111603734345428,
+            "points": [
+              {
+                "u_A": 0.0,
+                "energy_free_eV": -7.094015083871104,
+                "energy_relative_eV": 0.0,
+                "force_parallel_eV_A": 5.59620579615291e-06
+              },
+              {
+                "u_A": 0.06,
+                "energy_free_eV": -7.0936579421560255,
+                "energy_relative_eV": 0.0003571417150780576,
+                "force_parallel_eV_A": -0.013023987639114588
+              },
+              {
+                "u_A": 0.12,
+                "energy_free_eV": -7.092186760524668,
+                "energy_relative_eV": 0.0018283233464355675,
+                "force_parallel_eV_A": -0.039522086027037245
+              },
+              {
+                "u_A": 0.18,
+                "energy_free_eV": -7.088339914230776,
+                "energy_relative_eV": 0.00567516964032766,
+                "force_parallel_eV_A": -0.09502132990164242
+              },
+              {
+                "u_A": 0.24,
+                "energy_free_eV": -7.079831904032544,
+                "energy_relative_eV": 0.014183179838559212,
+                "force_parallel_eV_A": -0.19835619288324258
+              },
+              {
+                "u_A": 0.3,
+                "energy_free_eV": -7.063123982842025,
+                "energy_relative_eV": 0.030891101029078882,
+                "force_parallel_eV_A": -0.37263193000556766
+              }
+            ]
+          },
+          "111": {
+            "K2_force_eV_A2": 0.18105969055575036,
+            "K4_eV_A4": 3.2894617238457187,
+            "energy_RMS_meV": 0.06010681331911697,
+            "energy_max_error_meV": 0.1063044399352911,
+            "force_prediction_RMS_eV_A": 0.002945809502665522,
+            "finite_step_quartic_curvature_estimate_eV_A2": 0.0003289461723845719,
+            "points": [
+              {
+                "u_A": 0.06,
+                "energy_free_eV": -7.093679785132103,
+                "energy_relative_eV": 0.0003352987390004003,
+                "force_parallel_eV_A": -0.011613371431896962
+              },
+              {
+                "u_A": 0.12,
+                "energy_free_eV": -7.09252759731998,
+                "energy_relative_eV": 0.001487486551123851,
+                "force_parallel_eV_A": -0.02793229749418066
+              },
+              {
+                "u_A": 0.18,
+                "energy_free_eV": -7.090156305118088,
+                "energy_relative_eV": 0.00385877875301599,
+                "force_parallel_eV_A": -0.052793786829032824
+              },
+              {
+                "u_A": 0.24,
+                "energy_free_eV": -7.085965849210936,
+                "energy_relative_eV": 0.008049234660167492,
+                "force_parallel_eV_A": -0.08883966437483116
+              },
+              {
+                "u_A": 0.3,
+                "energy_free_eV": -7.079258196729027,
+                "energy_relative_eV": 0.014756887142076458,
+                "force_parallel_eV_A": -0.1366472264490425
+              }
+            ]
+          }
+        }
+      },
+      {
+        "metal": "Pd",
+        "kmesh": 12,
+        "strain_case": "hydro_plus",
+        "deformation": [
+          [
+            1.01,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.01,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.01
+          ]
+        ],
+        "K2_force_eV_A2": -0.012979731658527428,
+        "zero_energy_free_eV": -7.109287852181629,
+        "directions": {
+          "100": {
+            "K2_force_eV_A2": -0.012979731658527428,
+            "K4_eV_A4": 9.877672624038526,
+            "energy_RMS_meV": 0.1597477945864267,
+            "energy_max_error_meV": 0.2743416904239342,
+            "force_prediction_RMS_eV_A": 0.007367197844411994,
+            "finite_step_quartic_curvature_estimate_eV_A2": 0.0009877672624038526,
+            "points": [
+              {
+                "u_A": 0.0,
+                "energy_free_eV": -7.109287852181629,
+                "energy_relative_eV": 0.0,
+                "force_parallel_eV_A": 1.4082557698603681e-05
+              },
+              {
+                "u_A": 0.06,
+                "energy_free_eV": -7.109283300143115,
+                "energy_relative_eV": 4.552038514127332e-06,
+                "force_parallel_eV_A": -0.001124780469124273
+              },
+              {
+                "u_A": 0.12,
+                "energy_free_eV": -7.1089188301730095,
+                "energy_relative_eV": 0.0003690220086198792,
+                "force_parallel_eV_A": -0.014070435568265028
+              },
+              {
+                "u_A": 0.18,
+                "energy_free_eV": -7.107082502860175,
+                "energy_relative_eV": 0.0022053493214544417,
+                "force_parallel_eV_A": -0.05267946745813018
+              },
+              {
+                "u_A": 0.24,
+                "energy_free_eV": -7.101743073362536,
+                "energy_relative_eV": 0.00754477881909299,
+                "force_parallel_eV_A": -0.13399491911666683
+              },
+              {
+                "u_A": 0.3,
+                "energy_free_eV": -7.089733109698316,
+                "energy_relative_eV": 0.019554742483313348,
+                "force_parallel_eV_A": -0.2789965369951389
+              }
+            ]
+          },
+          "111": {
+            "K2_force_eV_A2": -0.012979731658527428,
+            "K4_eV_A4": 3.256757166313512,
+            "energy_RMS_meV": 0.05666941999782285,
+            "energy_max_error_meV": 0.09903556384717199,
+            "force_prediction_RMS_eV_A": 0.0027268529875170556,
+            "finite_step_quartic_curvature_estimate_eV_A2": 0.00032567571663135125,
+            "points": [
+              {
+                "u_A": 0.06,
+                "energy_free_eV": -7.109300213609704,
+                "energy_relative_eV": -1.236142807492513e-05,
+                "force_parallel_eV_A": 4.663793936469064e-06
+              },
+              {
+                "u_A": 0.12,
+                "energy_free_eV": -7.1091974460271805,
+                "energy_relative_eV": 9.040615444888545e-05,
+                "force_parallel_eV_A": -0.004536924227355247
+              },
+              {
+                "u_A": 0.18,
+                "energy_free_eV": -7.108583054293398,
+                "energy_relative_eV": 0.0007047978882317452,
+                "force_parallel_eV_A": -0.017580293848566547
+              },
+              {
+                "u_A": 0.24,
+                "energy_free_eV": -7.106861348225521,
+                "energy_relative_eV": 0.002426503956108661,
+                "force_parallel_eV_A": -0.04180935934690948
+              },
+              {
+                "u_A": 0.3,
+                "energy_free_eV": -7.103325780756246,
+                "energy_relative_eV": 0.005962071425383186,
+                "force_parallel_eV_A": -0.07803069862634425
+              }
+            ]
+          }
+        }
+      },
+      {
+        "metal": "Ni",
+        "kmesh": 8,
+        "strain_case": "zero",
+        "deformation": [
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "K2_force_eV_A2": 1.049783279069515,
+        "zero_energy_free_eV": -10.303597907835286,
+        "directions": {
+          "100": {
+            "K2_force_eV_A2": 1.049783279069515,
+            "K4_eV_A4": 16.21635847137527,
+            "energy_RMS_meV": 0.29062589241209824,
+            "energy_max_error_meV": 0.5161525568663019,
+            "force_prediction_RMS_eV_A": 0.014080273344507515,
+            "finite_step_quartic_curvature_estimate_eV_A2": 0.001621635847137527,
+            "points": [
+              {
+                "u_A": 0.0,
+                "energy_free_eV": -10.303597907835286,
+                "energy_relative_eV": 0.0,
+                "force_parallel_eV_A": -2.5586266227380953e-05
+              },
+              {
+                "u_A": 0.06,
+                "energy_free_eV": -10.30166303852716,
+                "energy_relative_eV": 0.0019348693081262525,
+                "force_parallel_eV_A": -0.06611630896213061
+              },
+              {
+                "u_A": 0.12,
+                "energy_free_eV": -10.295273151311267,
+                "energy_relative_eV": 0.00832475652401854,
+                "force_parallel_eV_A": -0.15175969000944645
+              },
+              {
+                "u_A": 0.18,
+                "energy_free_eV": -10.282630621112803,
+                "energy_relative_eV": 0.020967286722482825,
+                "force_parallel_eV_A": -0.2785829503355964
+              },
+              {
+                "u_A": 0.24,
+                "energy_free_eV": -10.260429805584453,
+                "energy_relative_eV": 0.04316810225083323,
+                "force_parallel_eV_A": -0.47647728558481584
+              },
+              {
+                "u_A": 0.3,
+                "energy_free_eV": -10.22326796850597,
+                "energy_relative_eV": 0.08032993932931554,
+                "force_parallel_eV_A": -0.7837844722540789
+              }
+            ]
+          },
+          "111": {
+            "K2_force_eV_A2": 1.049783279069515,
+            "K4_eV_A4": 1.3496779383670552,
+            "energy_RMS_meV": 0.07256079770007444,
+            "energy_max_error_meV": 0.12186234851088024,
+            "force_prediction_RMS_eV_A": 0.0032542549722117536,
+            "finite_step_quartic_curvature_estimate_eV_A2": 0.00013496779383670551,
+            "points": [
+              {
+                "u_A": 0.06,
+                "energy_free_eV": -10.301685197785247,
+                "energy_relative_eV": 0.0019127100500391236,
+                "force_parallel_eV_A": -0.06332468492980568
+              },
+              {
+                "u_A": 0.12,
+                "energy_free_eV": -10.295938484692707,
+                "energy_relative_eV": 0.007659423142579058,
+                "force_parallel_eV_A": -0.1287781305160759
+              },
+              {
+                "u_A": 0.18,
+                "energy_free_eV": -10.286157049237346,
+                "energy_relative_eV": 0.01744085859793998,
+                "force_parallel_eV_A": -0.19788681143853915
+              },
+              {
+                "u_A": 0.24,
+                "energy_free_eV": -10.272122810180374,
+                "energy_relative_eV": 0.031475097654912076,
+                "force_parallel_eV_A": -0.2703575276080502
+              },
+              {
+                "u_A": 0.3,
+                "energy_free_eV": -10.253685689984735,
+                "energy_relative_eV": 0.04991221785055089,
+                "force_parallel_eV_A": -0.3441962889065124
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "source_files": [
+      {
+        "path": "primitive_Pd/k12_pw500/result.json",
+        "bytes": 1923,
+        "sha256": "308693c43fbaaa636acdee320aae7c92aeb246024f8fbe1a0171978ac865e318"
+      },
+      {
+        "path": "collective_Pd/k12_zero_100/result.json",
+        "bytes": 3995,
+        "sha256": "17e528cb19770a26b3a2a1d22e3658d662eb16143362b0b10afb02ad7f5d0a63"
+      },
+      {
+        "path": "collective_Pd/k12_zero_111/result.json",
+        "bytes": 3466,
+        "sha256": "db146dd4e6df49bac565b14022244fd186a2e45357dcb452acc84711646a48dd"
+      },
+      {
+        "path": "primitive_Pd/k12_pw500_hydro_plus/result.json",
+        "bytes": 1794,
+        "sha256": "19f9203d97038bb279f2abd901a2cdb61959d603daa4f36782f7308b483f0abc"
+      },
+      {
+        "path": "collective_Pd/k12_hydro_plus_100/result.json",
+        "bytes": 3976,
+        "sha256": "e9c5795577c3c4513e136152c3a7148fa18ced73458b3c2eadb3eaa2bc83d311"
+      },
+      {
+        "path": "collective_Pd/k12_hydro_plus_111/result.json",
+        "bytes": 3514,
+        "sha256": "b92d12e8177a9c05392cb78c0841de1889dfd49cee6d7b9fe2f5137bc6c20413"
+      },
+      {
+        "path": "primitive_Ni/k08_pw500/result.json",
+        "bytes": 1948,
+        "sha256": "65213877cfe5ffc0503a2f6d82e12137456a744ade71abd52f4976e826d1f27c"
+      },
+      {
+        "path": "collective_Ni/k8_zero_100/result.json",
+        "bytes": 4077,
+        "sha256": "0f019027f632552a2d39adc49a71b6f84ce5b8ff9d77150c2bad037447c622d5"
+      },
+      {
+        "path": "collective_Ni/k8_zero_111/result.json",
+        "bytes": 3458,
+        "sha256": "e29204787d2fb53f8c735e73feba69cbc4a17bf824aaec1c09eac6a650ebded1"
+      }
+    ]
+  },
+  "strained_PdD_k16_sign_control_eV_A2": -0.018156949069980652,
+  "strain_definition": "Centre-normalized central differences [K(+1%)-K(-1%)]/(0.02*K(0)). Hydro epsilon=delta a/a; uniaxial epsilon=epsilon_xx, H displaced parallel x or perpendicular y. Metals fixed, electrons self-consistent.",
+  "source_files": [
+    {
+      "path": "primitive_Ni/k06_pw500/result.json",
+      "bytes": 1957,
+      "sha256": "90b17b90bb9021815d0b8eac071bcaa06e9a8a5d42f69a359347dea3ee7400f0"
+    },
+    {
+      "path": "primitive_Ni/k08_pw500/result.json",
+      "bytes": 1948,
+      "sha256": "65213877cfe5ffc0503a2f6d82e12137456a744ade71abd52f4976e826d1f27c"
+    },
+    {
+      "path": "primitive_Ni/k12_pw500/result.json",
+      "bytes": 1948,
+      "sha256": "905130c165b07597593d740e25fb36cc960552006e664c56db25d97513d277a6"
+    },
+    {
+      "path": "primitive_Ni/k16_pw500/result.json",
+      "bytes": 1969,
+      "sha256": "9e175cf4f75c2d3672bac7b0d9ded995c5587d210e8f8b767ef0b43dccc05d04"
+    },
+    {
+      "path": "primitive_Pd/k06_pw500/result.json",
+      "bytes": 1895,
+      "sha256": "c4947d0011ba997db0350c3eaddb27cb60accfe77b39ef774aa618ae3af49f83"
+    },
+    {
+      "path": "primitive_Pd/k08_pw500/result.json",
+      "bytes": 1881,
+      "sha256": "880380b7ba0d40f6004fc582126646176e679fe305df62b17c3f6570543f8e38"
+    },
+    {
+      "path": "primitive_Pd/k12_pw500/result.json",
+      "bytes": 1923,
+      "sha256": "308693c43fbaaa636acdee320aae7c92aeb246024f8fbe1a0171978ac865e318"
+    },
+    {
+      "path": "primitive_Pd/k16_pw500/result.json",
+      "bytes": 1867,
+      "sha256": "1b99c88cc4b3c33acd5079d8c36cb0f4ce1dadf147b947940d7134d780ab0c34"
+    },
+    {
+      "path": "primitive_Ni/k08_pw500_hydro_minus/result.json",
+      "bytes": 1911,
+      "sha256": "1f8f3ccbcfea6bb818516b23cc1597b3e1cffdeaffc27576eeda210f4b225843"
+    },
+    {
+      "path": "primitive_Ni/k08_pw500_hydro_plus/result.json",
+      "bytes": 1996,
+      "sha256": "b26644df58c51304ffcb1ff1333c1db941c5718915544dedebc4173e6031ec18"
+    },
+    {
+      "path": "primitive_Ni/k08_pw500_parallel_minus/result.json",
+      "bytes": 1850,
+      "sha256": "0616018b5d48c96e6ecad521b407578dd47cf25194e69fa1f643827407bde41b"
+    },
+    {
+      "path": "primitive_Ni/k08_pw500_parallel_plus/result.json",
+      "bytes": 1969,
+      "sha256": "48feb2c7e344e2d6850dec52316a5f7dada7a38c69acf017fade550dc0ab6a9f"
+    },
+    {
+      "path": "primitive_Ni/k08_pw500_perpendicular_minus/result.json",
+      "bytes": 1863,
+      "sha256": "86a945b62d9d6d9ac1d9321aea756fce34abf294712a647054a9784e5207be12"
+    },
+    {
+      "path": "primitive_Ni/k08_pw500_perpendicular_plus/result.json",
+      "bytes": 1901,
+      "sha256": "9f421e2386021240f9d71b42b3da35a5c18f5fd96d3c8b4faca569206219ff37"
+    },
+    {
+      "path": "primitive_Ni/k08_pw600/result.json",
+      "bytes": 1968,
+      "sha256": "467c80f00ace40afdd86b9d71557760e8e4eb1b94072e355768bf83f40f46b11"
+    },
+    {
+      "path": "primitive_Pd/k12_pw500_hydro_minus/result.json",
+      "bytes": 1867,
+      "sha256": "dbb159d37ef9efb806da82d4941dcc4a22388e20e374eff18a2d0d91014d333b"
+    },
+    {
+      "path": "primitive_Pd/k12_pw500_hydro_plus/result.json",
+      "bytes": 1794,
+      "sha256": "19f9203d97038bb279f2abd901a2cdb61959d603daa4f36782f7308b483f0abc"
+    },
+    {
+      "path": "primitive_Pd/k12_pw500_parallel_minus/result.json",
+      "bytes": 1798,
+      "sha256": "fa699cfd4f38eb520a9b3871cf65ddcafb30cc22ea9768b5681ed4b5f23f83d2"
+    },
+    {
+      "path": "primitive_Pd/k12_pw500_parallel_plus/result.json",
+      "bytes": 1788,
+      "sha256": "7a4bb26a087d7497ac71a0d87d48ae4e31e2f69179ad58da44eb525b3cb8513f"
+    },
+    {
+      "path": "primitive_Pd/k12_pw500_perpendicular_minus/result.json",
+      "bytes": 1863,
+      "sha256": "9504cd86d17269a7d63a39d9dae86d6c72e0ce6b96cf513abd1871784b7e791b"
+    },
+    {
+      "path": "primitive_Pd/k12_pw500_perpendicular_plus/result.json",
+      "bytes": 1836,
+      "sha256": "0f266da76423ab56cfa127897ec989975e27a186abbce8a680e29a0d637ba242"
+    },
+    {
+      "path": "primitive_Pd/k12_pw600/result.json",
+      "bytes": 1922,
+      "sha256": "9997b502775e9c9ba3a27f9d0a9b2fb2c405b9f37c4a1c6cfcdeb022b0f7abf1"
+    },
+    {
+      "path": "primitive_Pd/k16_pw500_hydro_plus/result.json",
+      "bytes": 1994,
+      "sha256": "9911558f49bed055fe5851f1b2118be02a113e5f71109e77023bbc57894a9114"
+    },
+    {
+      "path": "collective_Pd/k12_zero_100/result.json",
+      "bytes": 3995,
+      "sha256": "17e528cb19770a26b3a2a1d22e3658d662eb16143362b0b10afb02ad7f5d0a63"
+    },
+    {
+      "path": "collective_Pd/k12_zero_111/result.json",
+      "bytes": 3466,
+      "sha256": "db146dd4e6df49bac565b14022244fd186a2e45357dcb452acc84711646a48dd"
+    },
+    {
+      "path": "collective_Pd/k12_hydro_plus_100/result.json",
+      "bytes": 3976,
+      "sha256": "e9c5795577c3c4513e136152c3a7148fa18ced73458b3c2eadb3eaa2bc83d311"
+    },
+    {
+      "path": "collective_Pd/k12_hydro_plus_111/result.json",
+      "bytes": 3514,
+      "sha256": "b92d12e8177a9c05392cb78c0841de1889dfd49cee6d7b9fe2f5137bc6c20413"
+    },
+    {
+      "path": "collective_Ni/k8_zero_100/result.json",
+      "bytes": 4077,
+      "sha256": "0f019027f632552a2d39adc49a71b6f84ce5b8ff9d77150c2bad037447c622d5"
+    },
+    {
+      "path": "collective_Ni/k8_zero_111/result.json",
+      "bytes": 3458,
+      "sha256": "e29204787d2fb53f8c735e73feba69cbc4a17bf824aaec1c09eac6a650ebded1"
+    },
+    {
+      "path": "convergence.json",
+      "bytes": 25346,
+      "sha256": "67fc00f897ce9c860886d1a079e9fe0aa9c93530b98cb948608180a58473b9e7"
+    },
+    {
+      "path": "wells.json",
+      "bytes": 66158,
+      "sha256": "6ad2439805edc89d2da0013fb027bda36532e719ea3bdf971f5f1829deb98a26"
+    },
+    {
+      "path": "primitive.py",
+      "bytes": 2771,
+      "sha256": "4aabcab9887dddeffc551e3b264b5ef0de9575ba20dfebc9aac5aef283167b06"
+    },
+    {
+      "path": "gpaw_model.py",
+      "bytes": 591,
+      "sha256": "117779df0a231bba1269850b3053386eba691b51b1f428b8207708c5842bfb2a"
+    },
+    {
+      "path": "converge.py",
+      "bytes": 1471,
+      "sha256": "0bc4704fcd476c4039690727b90b46ac40fc04c445e1f17c25c0a182f88ee449"
+    },
+    {
+      "path": "strain.py",
+      "bytes": 1241,
+      "sha256": "547d6902a468c9b1fe9c727f683ee5a7d98757bd2e7d2e933c5a5b3320cc4688"
+    },
+    {
+      "path": "mesh_readout.py",
+      "bytes": 4199,
+      "sha256": "6b42b0556e921349aa889473892ce1656cd65f986048d26180cddeb133bb24f6"
+    },
+    {
+      "path": "report.py",
+      "bytes": 9798,
+      "sha256": "c88362c1e0cddb726f38a6afdaefcfce8e5fe3659d2472fc34dc21bd4b44439e"
+    },
+    {
+      "path": "receipts/primitive-mesh-source.py",
+      "bytes": 2942,
+      "sha256": "b63f5dddf9877507d4544966476718db1a44840226869afe73bd91f7c6a5e31a"
+    },
+    {
+      "path": "cost-ledger.json",
+      "bytes": 12966,
+      "sha256": "8b852b4828f864ca5b1f84c5c6d3c048e2cd2341c269faf71741920c630327ae"
+    },
+    {
+      "path": "mpi-prep-cost.json",
+      "bytes": 851,
+      "sha256": "78c0d7c305d90b6009b16e85bb9c3fb6cc971cff8e8a7a5b8bec8539d8f24794"
+    },
+    {
+      "path": "accounting.py",
+      "bytes": 2464,
+      "sha256": "f98c99ecf020dbe2d16a5afd4d8d86efb1e01eb58809a82f7a8870ed95d8db1a"
+    },
+    {
+      "path": "collective-wells.json",
+      "bytes": 13188,
+      "sha256": "2ba112cb97342e5cfacbfa492a02878af9985c6e8b721cc104d209aea6a2c55f"
+    },
+    {
+      "path": "collective.py",
+      "bytes": 5008,
+      "sha256": "ec62e3101d36055a737bb2c0f3e9c8bb41805cf92247c524a56a60f742254a98"
+    },
+    {
+      "path": "collective_readout.py",
+      "bytes": 4182,
+      "sha256": "9ebb5d9eb50d0e21ca439d37d58ca4ea1fa0b0c92514aefb897a030ffe8b997d"
+    }
+  ],
+  "total_cpu_core_minutes": 164.40325666666666
+}
