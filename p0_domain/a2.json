@@ -1,0 +1,513 @@
+{
+  "comparison": [
+    {
+      "rho": 0.8,
+      "off": {
+        "inputs": {
+          "density_m3": 8.522640444014146e+27,
+          "species": "H",
+          "Ec_eV": 0.1,
+          "gap_H_eV": 0.1,
+          "gap_eV": null,
+          "T_K": 290.11295303875204,
+          "kappa": 0.15,
+          "gamma": 0.1,
+          "f": 1.0,
+          "a2": false
+        },
+        "rho": 0.8,
+        "r": 1.0,
+        "theta": 0.25,
+        "g": 0.4,
+        "d": 0.0,
+        "rho_threshold": 1.0184864852945021,
+        "threshold_status": "f*rho^2*tanh(1/(2*theta))>1",
+        "normal_seed_exponent_per_tau": -0.1056832792715969,
+        "ordered": false,
+        "equilibrium_q": 0.0,
+        "locked_omega_over_omega_c": null,
+        "frequency_status": "no ordered state",
+        "domain_size_m": null,
+        "size_status": "no selected geometry/propagation law",
+        "bare_vacuum_wavelength_m_NOT_domain_size": 1.2398419843320026e-05,
+        "delta_U_eV_per_oscillator": 0.0,
+        "delta_F_eV_per_oscillator": 0.0,
+        "domain_lifetime_s": null,
+        "lifetime_status": "no domain to decay",
+        "normal_seed_ringdown_s_NOT_domain_lifetime": 6.228156066763964e-14,
+        "normal_lossless_mode_omega_over_omega_c": [
+          0.46316384853882275,
+          1.3362182641345337
+        ],
+        "normal_damped_poles_per_tau": [
+          [
+            -0.14431672072840293,
+            1.3313302634190367
+          ],
+          [
+            -0.14431672072840293,
+            -1.3313302634190367
+          ],
+          [
+            -0.1056832792715969,
+            0.45227867637552643
+          ],
+          [
+            -0.1056832792715969,
+            -0.45227867637552643
+          ]
+        ],
+        "normal_damped_mode_omega_over_omega_c": [
+          0.45227867637552643,
+          1.3313302634190367
+        ]
+      },
+      "on": {
+        "inputs": {
+          "density_m3": 8.522640444014146e+27,
+          "species": "H",
+          "Ec_eV": 0.1,
+          "gap_H_eV": 0.1,
+          "gap_eV": null,
+          "T_K": 290.11295303875204,
+          "kappa": 0.15,
+          "gamma": 0.1,
+          "f": 1.0,
+          "a2": true
+        },
+        "rho": 0.8,
+        "r": 1.0,
+        "theta": 0.25,
+        "g": 0.4,
+        "d": 0.16000000000000003,
+        "rho_threshold": null,
+        "threshold_status": "none at finite density under TRK",
+        "normal_seed_exponent_per_tau": -0.09756173151716188,
+        "ordered": false,
+        "equilibrium_q": 0.0,
+        "locked_omega_over_omega_c": null,
+        "frequency_status": "no ordered state",
+        "domain_size_m": null,
+        "size_status": "no selected geometry/propagation law",
+        "bare_vacuum_wavelength_m_NOT_domain_size": 1.2398419843320026e-05,
+        "delta_U_eV_per_oscillator": 0.0,
+        "delta_F_eV_per_oscillator": 0.0,
+        "domain_lifetime_s": null,
+        "lifetime_status": "no domain to decay",
+        "normal_seed_ringdown_s_NOT_domain_lifetime": 6.746620285589354e-14,
+        "normal_lossless_mode_omega_over_omega_c": [
+          0.6869051349170348,
+          1.4724677706573446
+        ],
+        "normal_damped_poles_per_tau": [
+          [
+            -0.15243826848283815,
+            1.467086174621678
+          ],
+          [
+            -0.15243826848283815,
+            -1.467086174621678
+          ],
+          [
+            -0.09756173151716188,
+            0.6822124840462837
+          ],
+          [
+            -0.09756173151716188,
+            -0.6822124840462837
+          ]
+        ],
+        "normal_damped_mode_omega_over_omega_c": [
+          0.6822124840462837,
+          1.467086174621678
+        ],
+        "observed_seed_exponent_per_tau": -0.09756164116934879,
+        "linear_seed_exponent_per_tau": -0.09756173151716188,
+        "modal_amplitude_ratio_at_tau8": 0.4581800135722745,
+        "rhs_evaluations": 86
+      }
+    },
+    {
+      "rho": 0.98,
+      "off": {
+        "inputs": {
+          "density_m3": 1.2789287316298722e+28,
+          "species": "H",
+          "Ec_eV": 0.1,
+          "gap_H_eV": 0.1,
+          "gap_eV": null,
+          "T_K": 290.11295303875204,
+          "kappa": 0.15,
+          "gamma": 0.1,
+          "f": 1.0,
+          "a2": false
+        },
+        "rho": 0.9799999999999998,
+        "r": 1.0,
+        "theta": 0.25,
+        "g": 0.4899999999999999,
+        "d": 0.0,
+        "rho_threshold": 1.0184864852945021,
+        "threshold_status": "f*rho^2*tanh(1/(2*theta))>1",
+        "normal_seed_exponent_per_tau": -0.10120586450814861,
+        "ordered": false,
+        "equilibrium_q": 0.0,
+        "locked_omega_over_omega_c": null,
+        "frequency_status": "no ordered state",
+        "domain_size_m": null,
+        "size_status": "no selected geometry/propagation law",
+        "bare_vacuum_wavelength_m_NOT_domain_size": 1.2398419843320026e-05,
+        "delta_U_eV_per_oscillator": 0.0,
+        "delta_F_eV_per_oscillator": 0.0,
+        "domain_lifetime_s": null,
+        "lifetime_status": "no domain to decay",
+        "normal_seed_ringdown_s_NOT_domain_lifetime": 6.503693833848043e-14,
+        "normal_lossless_mode_omega_over_omega_c": [
+          0.1943911507162426,
+          1.400789805974906
+        ],
+        "normal_damped_poles_per_tau": [
+          [
+            -0.14879413549185153,
+            1.3962966827493088
+          ],
+          [
+            -0.14879413549185153,
+            -1.3962966827493088
+          ],
+          [
+            -0.10120586450814861,
+            0.16654697688906228
+          ],
+          [
+            -0.10120586450814861,
+            -0.16654697688906228
+          ]
+        ],
+        "normal_damped_mode_omega_over_omega_c": [
+          0.16654697688906228,
+          1.3962966827493088
+        ]
+      },
+      "on": {
+        "inputs": {
+          "density_m3": 1.2789287316298722e+28,
+          "species": "H",
+          "Ec_eV": 0.1,
+          "gap_H_eV": 0.1,
+          "gap_eV": null,
+          "T_K": 290.11295303875204,
+          "kappa": 0.15,
+          "gamma": 0.1,
+          "f": 1.0,
+          "a2": true
+        },
+        "rho": 0.9799999999999998,
+        "r": 1.0,
+        "theta": 0.25,
+        "g": 0.4899999999999999,
+        "d": 0.24009999999999987,
+        "rho_threshold": null,
+        "threshold_status": "none at finite density under TRK",
+        "normal_seed_exponent_per_tau": -0.09242702703020907,
+        "ordered": false,
+        "equilibrium_q": 0.0,
+        "locked_omega_over_omega_c": null,
+        "frequency_status": "no ordered state",
+        "domain_size_m": null,
+        "size_status": "no selected geometry/propagation law",
+        "bare_vacuum_wavelength_m_NOT_domain_size": 1.2398419843320026e-05,
+        "delta_U_eV_per_oscillator": 0.0,
+        "delta_F_eV_per_oscillator": 0.0,
+        "domain_lifetime_s": null,
+        "lifetime_status": "no domain to decay",
+        "normal_seed_ringdown_s_NOT_domain_lifetime": 7.121423009048804e-14,
+        "normal_lossless_mode_omega_over_omega_c": [
+          0.6362539412577463,
+          1.5986184417283518
+        ],
+        "normal_damped_poles_per_tau": [
+          [
+            -0.15757297296979103,
+            1.5937085734285905
+          ],
+          [
+            -0.15757297296979103,
+            -1.5937085734285905
+          ],
+          [
+            -0.09242702703020907,
+            0.6315575825816602
+          ],
+          [
+            -0.09242702703020907,
+            -0.6315575825816602
+          ]
+        ],
+        "normal_damped_mode_omega_over_omega_c": [
+          0.6315575825816602,
+          1.5937085734285905
+        ],
+        "observed_seed_exponent_per_tau": -0.09242695490657764,
+        "linear_seed_exponent_per_tau": -0.09242702703020907,
+        "modal_amplitude_ratio_at_tau8": 0.47739280364299264,
+        "rhs_evaluations": 74
+      }
+    },
+    {
+      "rho": 1.05,
+      "off": {
+        "inputs": {
+          "density_m3": 1.468157982738374e+28,
+          "species": "H",
+          "Ec_eV": 0.1,
+          "gap_H_eV": 0.1,
+          "gap_eV": null,
+          "T_K": 290.11295303875204,
+          "kappa": 0.15,
+          "gamma": 0.1,
+          "f": 1.0,
+          "a2": false
+        },
+        "rho": 1.05,
+        "r": 1.0,
+        "theta": 0.25,
+        "g": 0.525,
+        "d": 0.0,
+        "rho_threshold": 1.0184864852945021,
+        "threshold_status": "f*rho^2*tanh(1/(2*theta))>1",
+        "normal_seed_exponent_per_tau": 0.10298520597094471,
+        "ordered": true,
+        "equilibrium_q": 0.18486754104721237,
+        "locked_omega_over_omega_c": 0.0,
+        "frequency_status": "static Z2 order",
+        "domain_size_m": null,
+        "size_status": "no selected geometry/propagation law",
+        "bare_vacuum_wavelength_m_NOT_domain_size": 1.2398419843320026e-05,
+        "delta_U_eV_per_oscillator": -0.0005676956923959143,
+        "delta_F_eV_per_oscillator": -0.00010437807325962972,
+        "domain_lifetime_s": null,
+        "lifetime_status": "no finite deterministic decay of bath-stabilized equilibrium",
+        "normal_seed_ringdown_s_NOT_domain_lifetime": null,
+        "normal_lossless_mode_omega_over_omega_c": [
+          null,
+          1.4251110535134803
+        ],
+        "normal_damped_poles_per_tau": [
+          [
+            -0.1505298652929486,
+            1.4207539241588583
+          ],
+          [
+            -0.1505298652929486,
+            -1.4207539241588583
+          ],
+          [
+            0.10298520597094471,
+            0.0
+          ],
+          [
+            -0.30192547538504727,
+            0.0
+          ]
+        ],
+        "normal_damped_mode_omega_over_omega_c": [
+          1.4207539241588583
+        ]
+      },
+      "on": {
+        "inputs": {
+          "density_m3": 1.468157982738374e+28,
+          "species": "H",
+          "Ec_eV": 0.1,
+          "gap_H_eV": 0.1,
+          "gap_eV": null,
+          "T_K": 290.11295303875204,
+          "kappa": 0.15,
+          "gamma": 0.1,
+          "f": 1.0,
+          "a2": true
+        },
+        "rho": 1.05,
+        "r": 1.0,
+        "theta": 0.25,
+        "g": 0.525,
+        "d": 0.275625,
+        "rho_threshold": null,
+        "threshold_status": "none at finite density under TRK",
+        "normal_seed_exponent_per_tau": -0.09057903107908714,
+        "ordered": false,
+        "equilibrium_q": 0.0,
+        "locked_omega_over_omega_c": null,
+        "frequency_status": "no ordered state",
+        "domain_size_m": null,
+        "size_status": "no selected geometry/propagation law",
+        "bare_vacuum_wavelength_m_NOT_domain_size": 1.2398419843320026e-05,
+        "delta_U_eV_per_oscillator": 0.0,
+        "delta_F_eV_per_oscillator": 0.0,
+        "domain_lifetime_s": null,
+        "lifetime_status": "no domain to decay",
+        "normal_seed_ringdown_s_NOT_domain_lifetime": 7.266714482474458e-14,
+        "normal_lossless_mode_omega_over_omega_c": [
+          0.6182097469620379,
+          1.649338263898929
+        ],
+        "normal_damped_poles_per_tau": [
+          [
+            -0.15942096892091254,
+            1.6445987753008395
+          ],
+          [
+            -0.15942096892091254,
+            -1.6445987753008395
+          ],
+          [
+            -0.09057903107908714,
+            0.6135262622593142
+          ],
+          [
+            -0.09057903107908714,
+            -0.6135262622593142
+          ]
+        ],
+        "normal_damped_mode_omega_over_omega_c": [
+          0.6135262622593142,
+          1.6445987753008395
+        ],
+        "observed_seed_exponent_per_tau": -0.09057895775532518,
+        "linear_seed_exponent_per_tau": -0.09057903107908714,
+        "modal_amplitude_ratio_at_tau8": 0.4845029969366912,
+        "rhs_evaluations": 74
+      }
+    },
+    {
+      "rho": 1.3,
+      "off": {
+        "inputs": {
+          "density_m3": 2.250509742247485e+28,
+          "species": "H",
+          "Ec_eV": 0.1,
+          "gap_H_eV": 0.1,
+          "gap_eV": null,
+          "T_K": 290.11295303875204,
+          "kappa": 0.15,
+          "gamma": 0.1,
+          "f": 1.0,
+          "a2": false
+        },
+        "rho": 1.3000000000000003,
+        "r": 1.0,
+        "theta": 0.25,
+        "g": 0.6500000000000001,
+        "d": 0.0,
+        "rho_threshold": 1.0184864852945021,
+        "threshold_status": "f*rho^2*tanh(1/(2*theta))>1",
+        "normal_seed_exponent_per_tau": 0.44179968566171707,
+        "ordered": true,
+        "equilibrium_q": 0.5220969067578929,
+        "locked_omega_over_omega_c": 0.0,
+        "frequency_status": "static Z2 order",
+        "domain_size_m": null,
+        "size_status": "no selected geometry/propagation law",
+        "bare_vacuum_wavelength_m_NOT_domain_size": 1.2398419843320026e-05,
+        "delta_U_eV_per_oscillator": -0.008642937817393082,
+        "delta_F_eV_per_oscillator": -0.006618345352255534,
+        "domain_lifetime_s": null,
+        "lifetime_status": "no finite deterministic decay of bath-stabilized equilibrium",
+        "normal_seed_ringdown_s_NOT_domain_lifetime": null,
+        "normal_lossless_mode_omega_over_omega_c": [
+          null,
+          1.5087755897700288
+        ],
+        "normal_damped_poles_per_tau": [
+          [
+            -0.15671349677757226,
+            1.5048517273440194
+          ],
+          [
+            -0.15671349677757226,
+            -1.5048517273440194
+          ],
+          [
+            0.44179968566171707,
+            0.0
+          ],
+          [
+            -0.6283726921065719,
+            0.0
+          ]
+        ],
+        "normal_damped_mode_omega_over_omega_c": [
+          1.5048517273440194
+        ]
+      },
+      "on": {
+        "inputs": {
+          "density_m3": 2.250509742247485e+28,
+          "species": "H",
+          "Ec_eV": 0.1,
+          "gap_H_eV": 0.1,
+          "gap_eV": null,
+          "T_K": 290.11295303875204,
+          "kappa": 0.15,
+          "gamma": 0.1,
+          "f": 1.0,
+          "a2": true
+        },
+        "rho": 1.3000000000000003,
+        "r": 1.0,
+        "theta": 0.25,
+        "g": 0.6500000000000001,
+        "d": 0.42250000000000015,
+        "rho_threshold": null,
+        "threshold_status": "none at finite density under TRK",
+        "normal_seed_exponent_per_tau": -0.08464116269435627,
+        "ordered": false,
+        "equilibrium_q": 0.0,
+        "locked_omega_over_omega_c": null,
+        "frequency_status": "no ordered state",
+        "domain_size_m": null,
+        "size_status": "no selected geometry/propagation law",
+        "bare_vacuum_wavelength_m_NOT_domain_size": 1.2398419843320026e-05,
+        "delta_U_eV_per_oscillator": 0.0,
+        "delta_F_eV_per_oscillator": 0.0,
+        "domain_lifetime_s": null,
+        "lifetime_status": "no domain to decay",
+        "normal_seed_ringdown_s_NOT_domain_lifetime": 7.776499471394844e-14,
+        "normal_lossless_mode_omega_over_omega_c": [
+          0.5605695545435371,
+          1.8373246241529724
+        ],
+        "normal_damped_poles_per_tau": [
+          [
+            -0.16535883730564382,
+            1.8331435057451164
+          ],
+          [
+            -0.16535883730564382,
+            -1.8331435057451164
+          ],
+          [
+            -0.08464116269435627,
+            0.555960932837764
+          ],
+          [
+            -0.08464116269435627,
+            -0.555960932837764
+          ]
+        ],
+        "normal_damped_mode_omega_over_omega_c": [
+          0.555960932837764,
+          1.8331435057451164
+        ],
+        "observed_seed_exponent_per_tau": -0.08464108112112716,
+        "linear_seed_exponent_per_tau": -0.08464116269435627,
+        "modal_amplitude_ratio_at_tau8": 0.5080737580308518,
+        "rhs_evaluations": 74
+      }
+    }
+  ],
+  "criterion": "off: f*rho^2*w>1; on: (f*w-1)*rho^2>1, impossible for f,w<=1",
+  "density_relation": "n=rho^2*epsilon0*m*omega_c^2/e^2",
+  "elapsed_s": 0.028414187021553516
+}
