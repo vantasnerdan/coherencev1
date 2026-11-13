@@ -45,3 +45,7 @@ The per-site stiffness map from the mismatch pattern was applied as a change rel
 It shows that the model forms spatial patterns, that vacancy arrangement changes the outcome at fixed loading, that a pump produces a half-frequency oscillation, and that an interface pattern localises the pumped response. It does not show a large phase-coherent domain, and the PdD inputs remain provisional.
 
 Figures: `results/*.png` (occupied sites and displacement in one layer), `map_results/*.png` (stiffness contrast and pumped response at the interface and in depth). `delivery.json` holds all 33 cases with spectra.
+
+## The decay rate is not measured (`loss_table.py`, `loss_table.json`)
+
+The pump threshold is proportional to how fast the vibration decays. No measured decay rate for a single hydrogen vibration was found for NiH, PdH or PdD: the published neutron data give the width of a whole band of vibrations, or the instrument resolution, and neither is a lifetime. The threshold is therefore unknown. Two labelled scenarios show how far it could range, without implying the real value lies between them: the exploratory loss used in these runs gives a stiffness-modulation threshold of 1.7 percent; a published calculated value for PdH at 295 K (Paulatto et al., arXiv:1411.5628; calculated, not measured) gives about 23 percent.

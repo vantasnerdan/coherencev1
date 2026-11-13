@@ -1,0 +1,74 @@
+{
+  "measured_rows": [
+    {
+      "material": "NiH",
+      "eligible_measured_loss": null,
+      "status": "not established in sources examined",
+      "positive_control": {
+        "type": "measured optical INS band; peak position, not linewidth",
+        "material_phase_loading": "bulk polycrystalline textured fcc NiH with octahedral H; hot-extracted H/Ni = 1.05 +/- 0.05",
+        "temperature_K": 5,
+        "mode_wavevector_polarization": "first optical H band; measured incoherent INS spectrum, not a single resolved crystal wavevector; paper usually assigns main peak to weakly dispersed transverse optic modes and shoulder to longitudinal modes",
+        "observed": "main band peak at 89 meV, with high-energy shoulder to about 130 meV; 89 meV is the peak energy, not an FWHM, HWHM or lifetime",
+        "instrument_resolution": "IN1 Be-filter neutron spectrometer, reported relative energy resolution 6\u20138% over the measurement range; this is instrument resolution, not intrinsic linewidth; no target-mode resolution-deconvolved homogeneous damping reported in the source",
+        "source": "V. E. Antonov et al., Europhys. Lett. 51, 140\u2013146 (2000), pp. 142\u2013143, Results and Fig. 2: http://www.issp.ac.ru/lhpp/PapersAntonov/127.pdf"
+      },
+      "why_not_eligible": "The reported first-band position, spread and instrument resolution cannot determine a homogeneous single-mode linewidth or lifetime. Peak and shoulder combine q/mode dispersion and the paper does not supply a separated lifetime."
+    },
+    {
+      "material": "PdH",
+      "eligible_measured_loss": null,
+      "status": "not established in sources examined",
+      "positive_control": {
+        "type": "measured Gaussian component width of an incoherent optic band, NOT a homogeneous mode linewidth",
+        "material_phase_loading": "bulk fcc beta PdH0.99 +/- 0.03, powder and textured plates; H in octahedral interstices",
+        "temperature_K": 25,
+        "mode_wavevector_polarization": "multiphonon-corrected first optical band; powder/plate incoherent spectral distribution, no single q; main component predominantly associated with transverse modes rather than an isolated q-resolved mode",
+        "observed": "Gaussian peak position 55.8 meV with Gaussian FWHM 4.8 meV, fitted as one component of a three-Gaussian band",
+        "instrument_resolution": "TFXA at ISIS; paper reports about 2\u20133% relative energy resolution. Multiphonon contributions were iteratively subtracted, which is NOT an instrumental resolution deconvolution or removal of dispersion. No intrinsic-mode Lorentzian width or lifetime is extracted.",
+        "source": "D. K. Ross et al., Phys. Rev. B 58, 2591\u20132595 (1998), pp. 2591\u20132592, Secs. II\u2013III, Fig. 2 and Table I: http://www.issp.ac.ru/lhpp/PapersAntonov/116.pdf"
+      },
+      "why_not_eligible": "4.8 meV is a Gaussian band-fit FWHM, not a measured homogeneous Lorentzian FWHM. Phonon dispersion and instrument response are not disentangled; do not convert this raw band width to kappa."
+    },
+    {
+      "material": "PdD",
+      "eligible_measured_loss": null,
+      "status": "not established in sources examined",
+      "positive_control": {
+        "type": "measured bulk powder optic spectrum; matrix spectrum extracted by isotope-mixture analysis, not intrinsic linewidth",
+        "material_phase_loading": "bulk fcc PdD(1-x)H(x), total (D+H)/Pd = 1.00 +/- 0.03; isotope fractions x = 0.050, 0.072, 0.091. The reported undisturbed-PdD spectrum is extracted from mixtures, not a direct isotopically pure PdD sample.",
+        "temperature_K": 5,
+        "mode_wavevector_polarization": "optical D band integrated over powder scattering; no single q or polarization assigned to the quoted maximum",
+        "observed": "first optic band has a maximum at 37 meV and a shoulder extending to about 65 meV; neither 37 meV nor the shoulder span is FWHM, HWHM or lifetime",
+        "instrument_resolution": "IN1-BeF, reported energy-transfer resolution 5\u20138% for 30\u2013180 meV. Mixture decomposition separates a modeled impurity contribution; it does not resolve q or provide homogeneous/instrument-deconvolved mode damping.",
+        "source": "V. E. Antonov et al., Phys. Rev. B 80, 134302 (2009), pp. 134302-1\u20134, Secs. II\u2013III and Figs. 1\u20135: http://www.issp.ac.ru/lhpp/PapersAntonov/163.pdf"
+      },
+      "independent_line_shape_evidence": {
+        "material_conditions": "single-crystal PdD0.63 at 80 K, coherent inelastic neutron scattering, optical phonon line shapes",
+        "finding": "Authors report substantial broadening and subsidiary structure and attribute predominant broadening to nonstoichiometry based on comparison to a disorder model. This is evidence against silently interpreting the complex line as homogeneous lifetime loss. Specific q, numerical widths, instrument deconvolution and tables are unavailable from the author abstract read; full text returned HTTP 401.",
+        "source": "C. J. Glinka et al., Phys. Rev. B 17, 488 (1978), author abstract: https://journals.aps.org/prb/abstract/10.1103/PhysRevB.17.488"
+      },
+      "why_not_eligible": "The near-stoichiometric PdD matrix result is a q-integrated band, while the mode-resolved PdD0.63 line shape contains substantial nonstoichiometric structure; neither available source gives a matching isolated homogeneous loss value. Neither may be replaced by a PdH number."
+    }
+  ],
+  "legacy_exploratory": {
+    "source": "accepted pumps.json/rank.py/domain.py; gamma is a bare dimensionless viscous coefficient in time E0*t/hbar",
+    "material": "NiH",
+    "gamma_input": 0.01,
+    "reference_energy_eV": 0.089,
+    "mode": "hybrid optic mode at q*d=pi/2; not the current lattice Gamma reference",
+    "frequency_THz": 23.43701436379206,
+    "kappa_per_second": 1259263695659.4858,
+    "hybrid_metric": 1.0747925649648207,
+    "h_bare": 0.017116494428718834
+  },
+  "calculated_PdH": {
+    "source": "https://arxiv.org/html/1411.5628v1#S2.T1",
+    "mode": "PdH x=1,L optic4/5,295K; on-shell constant-self-energy surrogate, not a measured Lorentzian",
+    "electron_HWHM_cm_inverse": 2.498,
+    "phonon_HWHM_cm_inverse": 30.59,
+    "frequency_cm_inverse_approx": 565.0,
+    "frequency_qualification": "Approximate shifted branch in Fig2d, not the tabulated on-shell SSCHA reference; threshold approximate."
+  },
+  "width_ceiling_assumption": "Only IF selected-mode homogeneous Lorentzian FWHM is <= fitted PdH Gaussian-band-component4.8meV. The source does not establish this identification or a universal mode-wise bound. No numeric NiH/PdD lifetime bound follows from quoted energies/resolution."
+}
