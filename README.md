@@ -38,6 +38,24 @@ Passes 0 to 2 are complete. Each directory holds a small script, its output and 
 - **Method checks.** Symbolic regression recovered the known threshold law exactly once the target was re-expressed without its singularity, and failed on the raw singular target. It found a compact approximate law for the coherent fraction and no reliable law for heat. The reduced order-parameter equation reproduces end states of the full model to a fraction of a percent near threshold.
 - **Folding in real inputs.** Heat capacity by lookup collapsed a hundredfold placeholder range to about 20 percent and dropped it to the bottom of the ranking. A computed bare gap 27 percent below the measured value moved the output by 4 percent with the diamagnetic term off, and switched it off entirely in the case that had been just inside the threshold.
 
+## Validity: this is not yet a model of the Gamberale-Modanese theory
+
+After the loop closed, the pass 0 model was checked against the published theory it is meant to approximate: Gamberale and Modanese, "Coherent Plasma in a Lattice" (arXiv:2205.14015); Gamberale, "Neutron Production via Electron Capture by Coherent Protons" (arXiv:2209.06139); "Spectral Analysis of Proton Eigenfunctions in Crystalline Environments" (arXiv:2403.15487); Modanese, "Coherent Oscillations of Protons in Hydrogen-loaded Metals" (arXiv:2608.21452). It does not represent that theory. The results above are results about a single-mode two-level model and should not be read as tests of the published one.
+
+| | This repository | Published theory |
+|---|---|---|
+| Matter | two-level systems | harmonic oscillators with about 11 bound levels in a 4.8 eV well |
+| Field | one mode | all propagation directions and both polarizations |
+| Diamagnetic term | a free knob `eta` | kept in full; ordering is attributed to the all-directions mode sum |
+| Energy scale | 0.037 eV optic phonon | 0.41 eV dressed oscillator, proton plasma frequency 0.2 to 0.3 eV |
+| Gap per particle | 0.1 eV or less | 0.37 to 1 eV, far above thermal energy |
+| Electrons | absent | a second coherent plasma; capture uses the electron density at the proton |
+| Nuclear step | free per-site rate, steady, no drive | electron capture with a 782 keV threshold, rate proportional to N squared per domain, needs pumped excitation |
+| Domain size | none | 1 to 10 micrometres, 1e10 to 1e13 protons |
+| Material | Pd/D central case | Ni/H and Ti/H; Pd/D is stated to be a different mechanism |
+
+One point of agreement: the published paper's single-direction comparison (its Eq. 32) shows no instability, which is what this model finds at `eta = 1`. The two-atom GPAW cell is a periodic crystal and is adequate for a phonon frequency, but that frequency is not an input the published theory uses.
+
 ## Reproducibility
 
 NumPy and SciPy are enough for everything except `p1_pysr/` (PySR), `p1_sindy/` (PySINDy) and `p2_input/frozen_phonon.py` (GPAW). Those three were run on one machine only; all other outputs were reproduced on a second.
