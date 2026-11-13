@@ -1,4 +1,3 @@
-# g1_rank/pumps.py
 """Physical pump feasibility, no arbitrary stimulated-gain cross section.
 Reuses hybrid-normalized rank.py and domain.py. Run: python pumps.py > pumps.json
 Decision: chemical arrival, coherent resonant/parametric light, or pulsed current?
@@ -6,7 +5,7 @@ NumPy and standard library; negligible compute, one thread.
 """
 import json
 import numpy as np
-from domain import DEFAULT, HBAR, HC, MH, KB, impedance, parameters
+from domain import DEFAULT, HBAR, HC, MH, KB, impedance, parameters, canonical
 from rank import MATS, gain_branch
 
 CHARGE = 1.602176634e-19
@@ -22,21 +21,30 @@ def optical(m):
     nu = g['mode_frequency_THz']*2*np.pi*1e12*HBAR/m['E']
     qd = np.pi/2
     kq = z['onsite']-z['Jperx']*z['x']+4*DEFAULT['gradient']*np.sin(qd/2)**2
-    D = impedance(nu,kq,z['g'],DEFAULT['photon_ratio'],
+    # Far-field one-phonon IR drive has q~0. The finite-q parametric branch
+    # can instead create a momentum-conserving (+q,-q) phonon pair.
+    kGamma = z['onsite']-z['Jperx']*z['x']
+    _, LGamma = canonical(kGamma,z['g'],DEFAULT['photon_ratio'],
+                         DEFAULT['electron_strength'],z['we'],DEFAULT['gamma'])
+    poleGamma = min([v for v in np.linalg.eigvals(LGamma) if v.imag>1e-8],
+                    key=lambda v:v.imag)
+    D = impedance(poleGamma.imag,kGamma,z['g'],DEFAULT['photon_ratio'],
                   DEFAULT['electron_strength'],z['we'],DEFAULT['gamma'])
     target = .1
     force = target*abs(D+.75*DEFAULT['beta']*target*target)
     l0 = HC/np.sqrt(m['mass']*m['E'])
     Eeff = force*m['E']/l0*1e10  # V/m for effective charge +e
     Iref = .5*EPS0*C*Eeff*Eeff
-    duration = 3*g['after_pump_amplitude_decay_ps']*1e-12
+    duration = -3*HBAR/(m['E']*poleGamma.real)
     Omega = g['mode_frequency_THz']*2*np.pi*1e12
     kappa = g['passive_energy_decay_s_inv']
     metric = g['hybrid_action_metric']
     # Modulation of the ACTUAL potential kq, not an independently scaled spring.
     delta_k_th = 2*kappa*nu*metric/(m['E']/HBAR)
     hbare = delta_k_th/kq
-    return dict(material=m['name'], carrier_THz=g['mode_frequency_THz'],
+    return dict(material=m['name'], carrier_THz=float(poleGamma.imag*m['E']/(2*np.pi*HBAR)/1e12),
+        resonant_wavevector='Gamma/far-field IR, not the zone-scale drift-gain wavevector',
+        parametric_wavevectors='pair +q and -q at qd=pi/2; total pump momentum~0',
         coherent_resonant_onset_field_V_m=0., target_displacement_A=target*l0,
         target_internal_effective_field_V_m=float(Eeff),
         incident_field_scaling='divide by abs(Z_mode/e * internal_field_transmission)',

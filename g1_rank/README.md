@@ -36,7 +36,7 @@ A proton optic mode with gain `G`, loss `kappa` and saturation settles into a se
 |---|---|---|
 | Steady or pulsed current | electron drift must exceed the mode's phase velocity: above 1e14 A/m^2; a 1e13 A/m^2 pulse reaches 3 to 10 percent of that | no |
 | Hot protons arriving during loading (PdH) | arrival flux above 6e30 per m^2 per second for one atomic layer, equivalent to about 270 bar of H2 striking with every atom sticking hot; about 5000 bar for a 5 nm layer | no, and heating a harmonic mode does not invert it |
-| Resonant light at the mode frequency | none: a forced response at any strength. An internal field of 2 to 12 MV/m gives a 0.02 Angstrom amplitude | yes, as a probe |
+| Resonant light at the mode frequency | none: a forced response at any strength. At the zone-centre frequencies (21.5, 36.0, 8.9 THz for NiH, TiH2, PdD) an internal field of 2 to 11 MV/m gives a 0.02 Angstrom amplitude | yes, as a probe |
 | Parametric drive at twice the mode frequency | well stiffness modulated by 1.6 to 1.8 percent (a strain near 0.3 percent) | yes, with existing mid-infrared pulsed lasers |
 
 The parametric drive is the one carried forward. The mode locks to half the pump frequency (pump at 46.9 THz for NiH, 78.7 THz for TiH2, 19.4 THz for PdD), with a threshold, saturation and two possible phases. What is still needed is how strongly a pump field or strain changes the well stiffness in the loaded hydride.
