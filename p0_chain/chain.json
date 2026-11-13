@@ -1,0 +1,620 @@
+{
+  "material_source_links": [
+    "https://www.issp.ac.ru/lhpp/PapersAntonov/127.pdf",
+    "https://www.issp.ac.ru/lhpp/PapersAntonov/163.pdf"
+  ],
+  "examples": {
+    "Ni/H": {
+      "0": {
+        "initial_domain": {
+          "inputs": {
+            "density_m3": 6.156375101813053e+28,
+            "species": "H",
+            "Ec_eV": 0.089,
+            "gap_H_eV": 0.1,
+            "gap_eV": 0.089,
+            "T_K": 300.0,
+            "kappa": 0.15,
+            "gamma": 0.1,
+            "f": 1.0,
+            "eta": 0
+          },
+          "rho": 2.4158804175708624,
+          "r": 1.0,
+          "theta": 0.2904719077127589,
+          "g": 1.2079402087854312,
+          "d": 0.0,
+          "rho_threshold": 1.0325071555321887,
+          "threshold_status": "(f*tanh(1/(2*theta))-eta)*rho^2>1",
+          "normal_seed_exponent_per_tau": 1.0943144821602946,
+          "ordered": true,
+          "equilibrium_q": 1.1900779330856097,
+          "locked_omega_over_omega_c": 0.0,
+          "frequency_status": "static Z2 order",
+          "domain_size_m": null,
+          "size_status": "no selected geometry/propagation law",
+          "bare_vacuum_wavelength_m_NOT_domain_size": 1.3930808812719133e-05,
+          "delta_U_eV_per_oscillator": -0.09193180996141541,
+          "delta_F_eV_per_oscillator": -0.08836009111169309,
+          "domain_lifetime_s": null,
+          "lifetime_status": "no finite deterministic decay of bath-stabilized equilibrium",
+          "normal_seed_ringdown_s_NOT_domain_lifetime": null,
+          "normal_lossless_mode_omega_over_omega_c": [
+            null,
+            1.8275173158881481
+          ],
+          "normal_damped_poles_per_tau": [
+            [
+              1.0943144821602946,
+              0.0
+            ],
+            [
+              -0.18338867684574323,
+              1.825052656942487
+            ],
+            [
+              -0.18338867684574323,
+              -1.825052656942487
+            ],
+            [
+              -1.227537128468807,
+              0.0
+            ]
+          ],
+          "normal_damped_mode_omega_over_omega_c": [
+            1.825052656942487
+          ]
+        },
+        "knobs": {
+          "per_site_s": 1e-09,
+          "Q_eV": 1000000.0,
+          "heat_fraction": 0.8,
+          "escape_fraction": 0.1,
+          "refill_s": 1000.0,
+          "thermal_s": 1000.0
+        },
+        "heat_capacity_J_m3_K": 3000000.0,
+        "dimensionless_slow_groups": {
+          "k_site_over_omega_c": 7.395639965740526e-24,
+          "Q_over_Ec": 11235955.056179775,
+          "refill_times_omega_c": 1.3521480286119768e+17,
+          "thermal_times_omega_c": 1.3521480286119768e+17,
+          "CvT0_over_n0Ec": 1.0252199200866374,
+          "k_site_times_refill": 1.0000000000000002e-06
+        },
+        "rows": [
+          {
+            "time_s": 0.0,
+            "time_over_refill": 0.0,
+            "availability_n_over_n0": 1.0,
+            "T_K": 300.0,
+            "coherent_proxy": 0.9706438987525258,
+            "event_rate_m3_s": 5.9756479310068e+19,
+            "heat_W_m3": 7659234.790455631,
+            "radiation_W_m3": 1914808.6976139073,
+            "escaped_event_tokens_m3_s": 5.9756479310068e+18,
+            "retained_event_tokens_m3_s": 5.37808313790612e+19,
+            "cumulative_events_m3": 0.0,
+            "cumulative_escape_tokens_m3": 0.0,
+            "cumulative_heat_J_m3": 0.0,
+            "cumulative_radiation_J_m3": 0.0,
+            "thermal_energy_above_bath_J_m3": 0.0
+          },
+          {
+            "time_s": 100.0,
+            "time_over_refill": 0.1,
+            "availability_n_over_n0": 0.9999999076320845,
+            "T_K": 542.9547209033317,
+            "coherent_proxy": 0.9705835587276447,
+            "event_rate_m3_s": 5.975275903256148e+19,
+            "heat_W_m3": 7658757.947120196,
+            "radiation_W_m3": 1914689.4867800486,
+            "escaped_event_tokens_m3_s": 5.975275903256149e+18,
+            "retained_event_tokens_m3_s": 5.377748312930533e+19,
+            "cumulative_events_m3": 5.975581408764549e+21,
+            "cumulative_escape_tokens_m3": 5.97558140876455e+20,
+            "cumulative_heat_J_m3": 765914952.614989,
+            "cumulative_radiation_J_m3": 191478738.1537472,
+            "thermal_energy_above_bath_J_m3": 728864162.709995
+          },
+          {
+            "time_s": 1000.0,
+            "time_over_refill": 1.0,
+            "availability_n_over_n0": 0.9999994329717645,
+            "T_K": 1791.4506387692172,
+            "coherent_proxy": 0.8002634569555186,
+            "event_rate_m3_s": 4.926719227701302e+19,
+            "heat_W_m3": 6314779.543121241,
+            "radiation_W_m3": 1578694.8857803098,
+            "escaped_event_tokens_m3_s": 4.926719227701302e+18,
+            "retained_event_tokens_m3_s": 4.434047304931172e+19,
+            "cumulative_events_m3": 5.619743757905348e+22,
+            "cumulative_escape_tokens_m3": 5.619743757905349e+21,
+            "cumulative_heat_J_m3": 7203057710.3866415,
+            "cumulative_radiation_J_m3": 1800764427.59666,
+            "thermal_energy_above_bath_J_m3": 4474351916.3076515
+          },
+          {
+            "time_s": 10000.0,
+            "time_over_refill": 10.0,
+            "availability_n_over_n0": 0.999999324960172,
+            "T_K": 2075.552819950153,
+            "coherent_proxy": 0.6750402837312933,
+            "event_rate_m3_s": 4.1557983901528285e+19,
+            "heat_W_m3": 5326658.461054142,
+            "radiation_W_m3": 1331664.615263535,
+            "escaped_event_tokens_m3_s": 4.155798390152829e+18,
+            "retained_event_tokens_m3_s": 3.7402185511375454e+19,
+            "cumulative_events_m3": 4.3391263328535696e+23,
+            "cumulative_escape_tokens_m3": 4.33912633285357e+22,
+            "cumulative_heat_J_m3": 55616374579.776764,
+            "cumulative_radiation_J_m3": 13904093644.944187,
+            "thermal_energy_above_bath_J_m3": 5326658459.850459
+          }
+        ],
+        "relative_energy_partition_residual": 0.0,
+        "rhs_evaluations": 230,
+        "limit": "Q assumes an unspecified reservoir; product tokens are not identified particles"
+      },
+      "1": {
+        "initial_domain": {
+          "inputs": {
+            "density_m3": 6.156375101813053e+28,
+            "species": "H",
+            "Ec_eV": 0.089,
+            "gap_H_eV": 0.1,
+            "gap_eV": 0.089,
+            "T_K": 300.0,
+            "kappa": 0.15,
+            "gamma": 0.1,
+            "f": 1.0,
+            "eta": 1
+          },
+          "rho": 2.4158804175708624,
+          "r": 1.0,
+          "theta": 0.2904719077127589,
+          "g": 1.2079402087854312,
+          "d": 1.459119548000591,
+          "rho_threshold": null,
+          "threshold_status": "none at finite density for this eta",
+          "normal_seed_exponent_per_tau": -0.06889906059916075,
+          "ordered": false,
+          "equilibrium_q": 0.0,
+          "locked_omega_over_omega_c": null,
+          "frequency_status": "no ordered state",
+          "domain_size_m": null,
+          "size_status": "no selected geometry/propagation law",
+          "bare_vacuum_wavelength_m_NOT_domain_size": 1.3930808812719133e-05,
+          "delta_U_eV_per_oscillator": 0.0,
+          "delta_F_eV_per_oscillator": 0.0,
+          "domain_lifetime_s": null,
+          "lifetime_status": "no domain to decay",
+          "normal_seed_ringdown_s_NOT_domain_lifetime": 1.0734021482189281e-13,
+          "normal_lossless_mode_omega_over_omega_c": [
+            0.4216649151755999,
+            2.7674314609963364
+          ],
+          "normal_damped_poles_per_tau": [
+            [
+              -0.18110093940083916,
+              2.764892250775138
+            ],
+            [
+              -0.18110093940083916,
+              -2.764892250775138
+            ],
+            [
+              -0.06889906059916075,
+              0.41760467479335883
+            ],
+            [
+              -0.06889906059916075,
+              -0.41760467479335883
+            ]
+          ],
+          "normal_damped_mode_omega_over_omega_c": [
+            0.41760467479335883,
+            2.764892250775138
+          ]
+        },
+        "knobs": {
+          "per_site_s": 1e-09,
+          "Q_eV": 1000000.0,
+          "heat_fraction": 0.8,
+          "escape_fraction": 0.1,
+          "refill_s": 1000.0,
+          "thermal_s": 1000.0
+        },
+        "heat_capacity_J_m3_K": 3000000.0,
+        "dimensionless_slow_groups": {
+          "k_site_over_omega_c": 7.395639965740526e-24,
+          "Q_over_Ec": 11235955.056179775,
+          "refill_times_omega_c": 1.3521480286119768e+17,
+          "thermal_times_omega_c": 1.3521480286119768e+17,
+          "CvT0_over_n0Ec": 1.0252199200866374,
+          "k_site_times_refill": 1.0000000000000002e-06
+        },
+        "rows": [
+          {
+            "time_s": 0.0,
+            "time_over_refill": 0.0,
+            "availability_n_over_n0": 1.0,
+            "T_K": 300.0,
+            "coherent_proxy": 0.0,
+            "event_rate_m3_s": 0.0,
+            "heat_W_m3": 0.0,
+            "radiation_W_m3": 0.0,
+            "escaped_event_tokens_m3_s": 0.0,
+            "retained_event_tokens_m3_s": 0.0,
+            "cumulative_events_m3": 0.0,
+            "cumulative_escape_tokens_m3": 0.0,
+            "cumulative_heat_J_m3": 0.0,
+            "cumulative_radiation_J_m3": 0.0,
+            "thermal_energy_above_bath_J_m3": 0.0
+          },
+          {
+            "time_s": 100.0,
+            "time_over_refill": 0.1,
+            "availability_n_over_n0": 1.0,
+            "T_K": 300.0,
+            "coherent_proxy": 0.0,
+            "event_rate_m3_s": 0.0,
+            "heat_W_m3": 0.0,
+            "radiation_W_m3": 0.0,
+            "escaped_event_tokens_m3_s": 0.0,
+            "retained_event_tokens_m3_s": 0.0,
+            "cumulative_events_m3": 0.0,
+            "cumulative_escape_tokens_m3": 0.0,
+            "cumulative_heat_J_m3": 0.0,
+            "cumulative_radiation_J_m3": 0.0,
+            "thermal_energy_above_bath_J_m3": 0.0
+          },
+          {
+            "time_s": 1000.0,
+            "time_over_refill": 1.0,
+            "availability_n_over_n0": 1.0,
+            "T_K": 300.0,
+            "coherent_proxy": 0.0,
+            "event_rate_m3_s": 0.0,
+            "heat_W_m3": 0.0,
+            "radiation_W_m3": 0.0,
+            "escaped_event_tokens_m3_s": 0.0,
+            "retained_event_tokens_m3_s": 0.0,
+            "cumulative_events_m3": 0.0,
+            "cumulative_escape_tokens_m3": 0.0,
+            "cumulative_heat_J_m3": 0.0,
+            "cumulative_radiation_J_m3": 0.0,
+            "thermal_energy_above_bath_J_m3": 0.0
+          },
+          {
+            "time_s": 10000.0,
+            "time_over_refill": 10.0,
+            "availability_n_over_n0": 1.0,
+            "T_K": 300.0,
+            "coherent_proxy": 0.0,
+            "event_rate_m3_s": 0.0,
+            "heat_W_m3": 0.0,
+            "radiation_W_m3": 0.0,
+            "escaped_event_tokens_m3_s": 0.0,
+            "retained_event_tokens_m3_s": 0.0,
+            "cumulative_events_m3": 0.0,
+            "cumulative_escape_tokens_m3": 0.0,
+            "cumulative_heat_J_m3": 0.0,
+            "cumulative_radiation_J_m3": 0.0,
+            "thermal_energy_above_bath_J_m3": 0.0
+          }
+        ],
+        "relative_energy_partition_residual": 0.0,
+        "rhs_evaluations": 110,
+        "limit": "Q assumes an unspecified reservoir; product tokens are not identified particles"
+      }
+    },
+    "Pd/D": {
+      "0": {
+        "initial_domain": {
+          "inputs": {
+            "density_m3": 4.6977811189357545e+28,
+            "species": "D",
+            "Ec_eV": 0.037,
+            "gap_H_eV": 0.1,
+            "gap_eV": 0.037,
+            "T_K": 300.0,
+            "kappa": 0.15,
+            "gamma": 0.1,
+            "f": 1.0,
+            "eta": 0
+          },
+          "rho": 3.590379509575204,
+          "r": 1.0,
+          "theta": 0.6987026969306902,
+          "g": 1.795189754787602,
+          "d": 0.0,
+          "rho_threshold": 1.2760003444252324,
+          "threshold_status": "(f*tanh(1/(2*theta))-eta)*rho^2>1",
+          "normal_seed_exponent_per_tau": 1.2944278127956599,
+          "ordered": true,
+          "equilibrium_q": 1.7897800121811929,
+          "locked_omega_over_omega_c": 0.0,
+          "frequency_status": "static Z2 order",
+          "domain_size_m": null,
+          "size_status": "no selected geometry/propagation law",
+          "bare_vacuum_wavelength_m_NOT_domain_size": 3.350924281978386e-05,
+          "delta_U_eV_per_oscillator": -0.10859528958929607,
+          "delta_F_eV_per_oscillator": -0.09591715555316752,
+          "domain_lifetime_s": null,
+          "lifetime_status": "no finite deterministic decay of bath-stabilized equilibrium",
+          "normal_seed_ringdown_s_NOT_domain_lifetime": null,
+          "normal_lossless_mode_omega_over_omega_c": [
+            null,
+            1.9528892148841963
+          ],
+          "normal_damped_poles_per_tau": [
+            [
+              1.2944278127956599,
+              0.0
+            ],
+            [
+              -0.1952556883737148,
+              1.9509964492061351
+            ],
+            [
+              -0.1952556883737148,
+              -1.9509964492061351
+            ],
+            [
+              -1.4039164360482292,
+              0.0
+            ]
+          ],
+          "normal_damped_mode_omega_over_omega_c": [
+            1.9509964492061351
+          ]
+        },
+        "knobs": {
+          "per_site_s": 1e-09,
+          "Q_eV": 1000000.0,
+          "heat_fraction": 0.8,
+          "escape_fraction": 0.1,
+          "refill_s": 1000.0,
+          "thermal_s": 1000.0
+        },
+        "heat_capacity_J_m3_K": 3000000.0,
+        "dimensionless_slow_groups": {
+          "k_site_over_omega_c": 1.7789512350024508e-23,
+          "Q_over_Ec": 27027027.02702703,
+          "refill_times_omega_c": 5.621289557150916e+16,
+          "thermal_times_omega_c": 5.621289557150916e+16,
+          "CvT0_over_n0Ec": 3.231748929051652,
+          "k_site_times_refill": 1.0000000000000002e-06
+        },
+        "rows": [
+          {
+            "time_s": 0.0,
+            "time_over_refill": 0.0,
+            "availability_n_over_n0": 1.0,
+            "T_K": 300.0,
+            "coherent_proxy": 0.9939821497361754,
+            "event_rate_m3_s": 4.669510575589777e+19,
+            "heat_W_m3": 5985104.589140666,
+            "radiation_W_m3": 1496276.147285166,
+            "escaped_event_tokens_m3_s": 4.669510575589777e+18,
+            "retained_event_tokens_m3_s": 4.2025595180308e+19,
+            "cumulative_events_m3": 0.0,
+            "cumulative_escape_tokens_m3": 0.0,
+            "cumulative_heat_J_m3": 0.0,
+            "cumulative_radiation_J_m3": 0.0,
+            "thermal_energy_above_bath_J_m3": 0.0
+          },
+          {
+            "time_s": 100.0,
+            "time_over_refill": 0.1,
+            "availability_n_over_n0": 0.9999999054110784,
+            "T_K": 489.8506894030365,
+            "coherent_proxy": 0.9939326410451192,
+            "event_rate_m3_s": 4.6692775529337405e+19,
+            "heat_W_m3": 5984805.914376911,
+            "radiation_W_m3": 1496201.4785942272,
+            "escaped_event_tokens_m3_s": 4.669277552933741e+18,
+            "retained_event_tokens_m3_s": 4.2023497976403665e+19,
+            "cumulative_events_m3": 4.6694634353755134e+21,
+            "cumulative_escape_tokens_m3": 4.669463435375514e+20,
+            "cumulative_heat_J_m3": 598504416.7580813,
+            "cumulative_radiation_J_m3": 149626104.18952027,
+            "thermal_energy_above_bath_J_m3": 569552068.2091094
+          },
+          {
+            "time_s": 1000.0,
+            "time_over_refill": 1.0,
+            "availability_n_over_n0": 0.9999994023168606,
+            "T_K": 1499.6178205275805,
+            "coherent_proxy": 0.8766466279577056,
+            "event_rate_m3_s": 4.118291515363534e+19,
+            "heat_W_m3": 5278584.350332724,
+            "radiation_W_m3": 1319646.0875831805,
+            "escaped_event_tokens_m3_s": 4.118291515363534e+18,
+            "retained_event_tokens_m3_s": 3.70646236382718e+19,
+            "cumulative_events_m3": 4.4917832470986024e+22,
+            "cumulative_escape_tokens_m3": 4.4917832470986023e+21,
+            "cumulative_heat_J_m3": 5757304130.795223,
+            "cumulative_radiation_J_m3": 1439326032.6988053,
+            "thermal_energy_above_bath_J_m3": 3598853461.5827417
+          },
+          {
+            "time_s": 10000.0,
+            "time_over_refill": 10.0,
+            "availability_n_over_n0": 0.9999992493678781,
+            "T_K": 1806.603768141972,
+            "coherent_proxy": 0.7506326902183238,
+            "event_rate_m3_s": 3.5263054324034765e+19,
+            "heat_W_m3": 4519811.334515293,
+            "radiation_W_m3": 1129952.833628823,
+            "escaped_event_tokens_m3_s": 3.5263054324034765e+18,
+            "retained_event_tokens_m3_s": 3.173674889163129e+19,
+            "cumulative_events_m3": 3.657077175185928e+23,
+            "cumulative_escape_tokens_m3": 3.6570771751859284e+22,
+            "cumulative_heat_J_m3": 46874268790.54095,
+            "cumulative_radiation_J_m3": 11718567197.635233,
+            "thermal_energy_above_bath_J_m3": 4519811304.425917
+          }
+        ],
+        "relative_energy_partition_residual": 0.0,
+        "rhs_evaluations": 206,
+        "limit": "Q assumes an unspecified reservoir; product tokens are not identified particles"
+      },
+      "1": {
+        "initial_domain": {
+          "inputs": {
+            "density_m3": 4.6977811189357545e+28,
+            "species": "D",
+            "Ec_eV": 0.037,
+            "gap_H_eV": 0.1,
+            "gap_eV": 0.037,
+            "T_K": 300.0,
+            "kappa": 0.15,
+            "gamma": 0.1,
+            "f": 1.0,
+            "eta": 1
+          },
+          "rho": 3.590379509575204,
+          "r": 1.0,
+          "theta": 0.6987026969306902,
+          "g": 1.795189754787602,
+          "d": 3.22270625569437,
+          "rho_threshold": null,
+          "threshold_status": "none at finite density for this eta",
+          "normal_seed_exponent_per_tau": -0.07392930437675765,
+          "ordered": false,
+          "equilibrium_q": 0.0,
+          "locked_omega_over_omega_c": null,
+          "frequency_status": "no ordered state",
+          "domain_size_m": null,
+          "size_status": "no selected geometry/propagation law",
+          "bare_vacuum_wavelength_m_NOT_domain_size": 3.350924281978386e-05,
+          "delta_U_eV_per_oscillator": 0.0,
+          "delta_F_eV_per_oscillator": 0.0,
+          "domain_lifetime_s": null,
+          "lifetime_status": "no domain to decay",
+          "normal_seed_ringdown_s_NOT_domain_lifetime": 2.406286992687744e-13,
+          "normal_lossless_mode_omega_over_omega_c": [
+            0.6423268780159477,
+            3.8050284104794496
+          ],
+          "normal_damped_poles_per_tau": [
+            [
+              -0.17607069562324235,
+              3.802822122388408
+            ],
+            [
+              -0.17607069562324235,
+              -3.802822122388408
+            ],
+            [
+              -0.07392930437675765,
+              0.6409643985071841
+            ],
+            [
+              -0.07392930437675765,
+              -0.6409643985071841
+            ]
+          ],
+          "normal_damped_mode_omega_over_omega_c": [
+            0.6409643985071841,
+            3.802822122388408
+          ]
+        },
+        "knobs": {
+          "per_site_s": 1e-09,
+          "Q_eV": 1000000.0,
+          "heat_fraction": 0.8,
+          "escape_fraction": 0.1,
+          "refill_s": 1000.0,
+          "thermal_s": 1000.0
+        },
+        "heat_capacity_J_m3_K": 3000000.0,
+        "dimensionless_slow_groups": {
+          "k_site_over_omega_c": 1.7789512350024508e-23,
+          "Q_over_Ec": 27027027.02702703,
+          "refill_times_omega_c": 5.621289557150916e+16,
+          "thermal_times_omega_c": 5.621289557150916e+16,
+          "CvT0_over_n0Ec": 3.231748929051652,
+          "k_site_times_refill": 1.0000000000000002e-06
+        },
+        "rows": [
+          {
+            "time_s": 0.0,
+            "time_over_refill": 0.0,
+            "availability_n_over_n0": 1.0,
+            "T_K": 300.0,
+            "coherent_proxy": 0.0,
+            "event_rate_m3_s": 0.0,
+            "heat_W_m3": 0.0,
+            "radiation_W_m3": 0.0,
+            "escaped_event_tokens_m3_s": 0.0,
+            "retained_event_tokens_m3_s": 0.0,
+            "cumulative_events_m3": 0.0,
+            "cumulative_escape_tokens_m3": 0.0,
+            "cumulative_heat_J_m3": 0.0,
+            "cumulative_radiation_J_m3": 0.0,
+            "thermal_energy_above_bath_J_m3": 0.0
+          },
+          {
+            "time_s": 100.0,
+            "time_over_refill": 0.1,
+            "availability_n_over_n0": 1.0,
+            "T_K": 300.0,
+            "coherent_proxy": 0.0,
+            "event_rate_m3_s": 0.0,
+            "heat_W_m3": 0.0,
+            "radiation_W_m3": 0.0,
+            "escaped_event_tokens_m3_s": 0.0,
+            "retained_event_tokens_m3_s": 0.0,
+            "cumulative_events_m3": 0.0,
+            "cumulative_escape_tokens_m3": 0.0,
+            "cumulative_heat_J_m3": 0.0,
+            "cumulative_radiation_J_m3": 0.0,
+            "thermal_energy_above_bath_J_m3": 0.0
+          },
+          {
+            "time_s": 1000.0,
+            "time_over_refill": 1.0,
+            "availability_n_over_n0": 1.0,
+            "T_K": 300.0,
+            "coherent_proxy": 0.0,
+            "event_rate_m3_s": 0.0,
+            "heat_W_m3": 0.0,
+            "radiation_W_m3": 0.0,
+            "escaped_event_tokens_m3_s": 0.0,
+            "retained_event_tokens_m3_s": 0.0,
+            "cumulative_events_m3": 0.0,
+            "cumulative_escape_tokens_m3": 0.0,
+            "cumulative_heat_J_m3": 0.0,
+            "cumulative_radiation_J_m3": 0.0,
+            "thermal_energy_above_bath_J_m3": 0.0
+          },
+          {
+            "time_s": 10000.0,
+            "time_over_refill": 10.0,
+            "availability_n_over_n0": 1.0,
+            "T_K": 300.0,
+            "coherent_proxy": 0.0,
+            "event_rate_m3_s": 0.0,
+            "heat_W_m3": 0.0,
+            "radiation_W_m3": 0.0,
+            "escaped_event_tokens_m3_s": 0.0,
+            "retained_event_tokens_m3_s": 0.0,
+            "cumulative_events_m3": 0.0,
+            "cumulative_escape_tokens_m3": 0.0,
+            "cumulative_heat_J_m3": 0.0,
+            "cumulative_radiation_J_m3": 0.0,
+            "thermal_energy_above_bath_J_m3": 0.0
+          }
+        ],
+        "relative_energy_partition_residual": 0.0,
+        "rhs_evaluations": 110,
+        "limit": "Q assumes an unspecified reservoir; product tokens are not identified particles"
+      }
+    }
+  },
+  "interpretation": "Exploratory thermal/fuel feedback; eta=1 gives zero. Temperatures outside the reference phase regime are not material predictions.",
+  "elapsed_s": 0.07198148011229932
+}
