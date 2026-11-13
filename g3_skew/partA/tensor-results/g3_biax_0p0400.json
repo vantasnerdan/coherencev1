@@ -1,0 +1,158 @@
+{
+  "spec": {
+    "name": "g3_biax_0p0400",
+    "family": "biaxial_relaxed",
+    "inplane_strain": 0.04,
+    "deformation": [
+      [
+        1.04,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.04,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.9711585943664419
+      ]
+    ],
+    "reference_a_A": 4.084,
+    "cz_ratio": 0.9711585943664419,
+    "stress_zz_eV_A3": 6.480039506829991e-07,
+    "constraint": "Fixed x/y lengths and reference fractional sites; c_z zero-stress stationary state, not a global phase search."
+  },
+  "K_raw_lab_eV_A2": [
+    [
+      -0.28059003847026015,
+      -0.0,
+      -0.0
+    ],
+    [
+      -0.0,
+      -0.28060599476345316,
+      -0.0
+    ],
+    [
+      -0.0,
+      -0.0,
+      0.42063156495110676
+    ]
+  ],
+  "K_lab_eV_A2": [
+    [
+      -0.28059003847026015,
+      -0.0,
+      -0.0
+    ],
+    [
+      -0.0,
+      -0.28060599476345316,
+      -0.0
+    ],
+    [
+      -0.0,
+      -0.0,
+      0.42063156495110676
+    ]
+  ],
+  "K_material_eV_A2": [
+    [
+      -0.28059003847026015,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      -0.28060599476345316,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.42063156495110676
+    ]
+  ],
+  "eigenvalues_eV_A2": [
+    -0.28060599476345316,
+    -0.28059003847026015,
+    0.42063156495110676
+  ],
+  "R": [
+    [
+      1.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "U": [
+    [
+      1.04,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.04,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.9711585943664419
+    ]
+  ],
+  "Biot_strain": [
+    [
+      0.040000000000000036,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.040000000000000036,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      -0.02884140563355808
+    ]
+  ],
+  "max_antisymmetry_eV_A2": 0.0,
+  "frame_residuals": {
+    "polar": 0.0,
+    "frame_roundtrip": 0.0
+  },
+  "source_files": [
+    {
+      "path": "primitive_Pd/g3_biax_0p0400_axis0/result.json",
+      "bytes": 1873,
+      "sha256": "412c70feea6124175ab36e0ca9343a27ae02f33855ed5441960cd095ba2bcafe"
+    },
+    {
+      "path": "primitive_Pd/g3_biax_0p0400_axis1/result.json",
+      "bytes": 1864,
+      "sha256": "d81eed207f45aadf8f3af338e043b69041560d742a324a7d15248abe993e081d"
+    },
+    {
+      "path": "primitive_Pd/g3_biax_0p0400_axis2/result.json",
+      "bytes": 1887,
+      "sha256": "48465ac46af9246caef1fa6b29c560796aa00aa4f8143c4aee31241be8850954"
+    }
+  ],
+  "convention": "Collective Gamma central force Jacobian, fixed metal, self-consistent electrons; not local Kii."
+}

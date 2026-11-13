@@ -1,0 +1,92 @@
+{
+  "spec": {
+    "name": "g3_biax_0p0200",
+    "family": "biaxial_relaxed",
+    "inplane_strain": 0.02,
+    "deformation": [
+      [
+        1.02,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.02,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "reference_a_A": 4.084,
+    "cz_ratio": 1.0,
+    "stress_zz_eV_A3": -0.00015579172387773904,
+    "constraint": "Fixed x/y lengths and reference fractional sites; c_z zero-stress stationary state, not a global phase search."
+  },
+  "points": [
+    {
+      "cz_ratio": 1.0,
+      "deformation": [
+        [
+          1.02,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.02,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "energy_free_eV": -7.109649359655438,
+      "stress_eV_A3": [
+        [
+          0.0043584190980281235,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.004358419098028124,
+          6.221678422403653e-19
+        ],
+        [
+          0.0,
+          6.221678422403653e-19,
+          -0.00015579172387773904
+        ]
+      ],
+      "stress_zz_eV_A3": -0.00015579172387773904,
+      "scf_cpu_s": 68.376016421,
+      "scf_elapsed_s": 68.56780052557588
+    }
+  ],
+  "source_files": {
+    "film_relax.py": {
+      "bytes": 3867,
+      "sha256": "4f358b80c6f167c1e158dab355b1455ef7ce02a443490f054a95454e38d1ef55"
+    },
+    "gpaw_model.py": {
+      "bytes": 591,
+      "sha256": "117779df0a231bba1269850b3053386eba691b51b1f428b8207708c5842bfb2a"
+    },
+    "primitive.py": {
+      "bytes": 2771,
+      "sha256": "4aabcab9887dddeffc551e3b264b5ef0de9575ba20dfebc9aac5aef283167b06"
+    }
+  },
+  "profile": {
+    "metal": "Pd",
+    "kmesh": 12,
+    "cutoff_eV": 500,
+    "smearing_eV": 0.1
+  },
+  "stress_tolerance_eV_A3": 0.0005
+}

@@ -1,0 +1,102 @@
+{
+  "metal": "Pd",
+  "name": "g3_biax_0p0200_axis1",
+  "K_Gamma_eV_A2": -0.12671698078200555,
+  "deformation": [
+    [
+      1.02,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.02,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "reference_positions_A": [
+    [
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      2.08284,
+      0.0,
+      0.0
+    ]
+  ],
+  "cell_A": [
+    [
+      0.0,
+      2.08284,
+      2.042
+    ],
+    [
+      2.08284,
+      0.0,
+      2.042
+    ],
+    [
+      2.08284,
+      2.08284,
+      0.0
+    ]
+  ],
+  "displacement_axis": 1,
+  "cutoff_eV": 500,
+  "kmesh": 12,
+  "step_A": 0.01,
+  "smearing_eV": 0.1,
+  "point_group": "Actual displaced-cell subgroup; not undisplaced crystal symmetry.",
+  "n_ibz_kpoints": 280,
+  "producer_bytes": 2771,
+  "producer_sha256": "4aabcab9887dddeffc551e3b264b5ef0de9575ba20dfebc9aac5aef283167b06",
+  "points": [
+    {
+      "displacement_A": -0.01,
+      "energy_free_eV": -7.109655690884593,
+      "forces_eV_A": [
+        [
+          0.0,
+          0.0013034995113035078,
+          0.0
+        ],
+        [
+          0.0,
+          -0.001267951982830879,
+          0.0
+        ]
+      ],
+      "force_parallel_eV_A": -0.001267951982830879,
+      "elapsed_s": 158.11425753403455,
+      "cpu_s": 157.526623865
+    },
+    {
+      "displacement_A": 0.01,
+      "energy_free_eV": -7.109655690970989,
+      "forces_eV_A": [
+        [
+          0.0,
+          -0.001302193740868194,
+          0.0
+        ],
+        [
+          0.0,
+          0.0012663876328092322,
+          0.0
+        ]
+      ],
+      "force_parallel_eV_A": 0.0012663876328092322,
+      "elapsed_s": 86.237971579656,
+      "cpu_s": 86.070987884
+    }
+  ],
+  "calculator_bytes": 591,
+  "calculator_sha256": "117779df0a231bba1269850b3053386eba691b51b1f428b8207708c5842bfb2a"
+}

@@ -1,0 +1,1089 @@
+{
+  "K0_eV_A2": 0.18105969055575036,
+  "rows": [
+    {
+      "name": "cubic_zero",
+      "family": "cubic_reference",
+      "strain": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "K_material_eV_A2": [
+        [
+          0.18105969055575036,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.18105969055575036,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.18105969055575036
+        ]
+      ],
+      "construction": "Cubic equivalence of the measured x column"
+    },
+    {
+      "name": "hydro_minus",
+      "family": "hydrostatic",
+      "strain": [
+        [
+          -0.010000000000000009,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          -0.010000000000000009,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          -0.010000000000000009
+        ]
+      ],
+      "K_material_eV_A2": [
+        [
+          0.39732509992552595,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.39732509992552595,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.39732509992552595
+        ]
+      ],
+      "construction": "Cubic equivalence of the measured x column"
+    },
+    {
+      "name": "uniaxial_minus",
+      "family": "uniaxial_normal",
+      "strain": [
+        [
+          -0.010000000000000009,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "K_material_eV_A2": [
+        [
+          0.33910398831779337,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.20931388442582055,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.20931388442582055
+        ]
+      ],
+      "construction": "Measured parallel x/perpendicular y; z=y by residual tetragonal symmetry"
+    },
+    {
+      "name": "hydro_plus",
+      "family": "hydrostatic",
+      "strain": [
+        [
+          0.010000000000000009,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.010000000000000009,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.010000000000000009
+        ]
+      ],
+      "K_material_eV_A2": [
+        [
+          -0.012979731658527428,
+          -0.0,
+          -0.0
+        ],
+        [
+          -0.0,
+          -0.012979731658527428,
+          -0.0
+        ],
+        [
+          -0.0,
+          -0.0,
+          -0.012979731658527428
+        ]
+      ],
+      "construction": "Cubic equivalence of the measured x column"
+    },
+    {
+      "name": "uniaxial_plus",
+      "family": "uniaxial_normal",
+      "strain": [
+        [
+          0.010000000000000009,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "K_material_eV_A2": [
+        [
+          0.04626724997024351,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.15161176441611784,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.15161176441611784
+        ]
+      ],
+      "construction": "Measured parallel x/perpendicular y; z=y by residual tetragonal symmetry"
+    },
+    {
+      "name": "g3_shear100_g002",
+      "family": "shear100",
+      "strain": [
+        [
+          -4.999625031232302e-05,
+          0.0,
+          0.00999950003749677
+        ],
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.00999950003749678,
+          0.0,
+          0.00014999375043744934
+        ]
+      ],
+      "K_material_eV_A2": [
+        [
+          0.17969830939679676,
+          8.536585449543127e-18,
+          -0.022984899989793525
+        ],
+        [
+          8.536585449543127e-18,
+          0.17840116081243068,
+          1.7508710973042533e-17
+        ],
+        [
+          -0.022984899989793525,
+          1.7508710973042533e-17,
+          0.1757458064272288
+        ]
+      ],
+      "spec": {
+        "name": "g3_shear100_g002",
+        "family": "shear100",
+        "engineering_gamma": 0.02,
+        "deformation": [
+          [
+            1,
+            0,
+            0.02
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "reference_a_A": 4.084,
+        "frame": "Cartesian100/010/001; F=I+gamma*d tensor ez; d unit100 or unit110"
+      },
+      "max_antisymmetry_eV_A2": 6.299811034935279e-05,
+      "construction": "All three actual central displacement columns"
+    },
+    {
+      "name": "g3_shear100_g004",
+      "family": "shear100",
+      "strain": [
+        [
+          -0.0001999400199930168,
+          0.0,
+          0.019996001199600055
+        ],
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.019996001199600034,
+          0.0,
+          0.0005999000279910405
+        ]
+      ],
+      "K_material_eV_A2": [
+        [
+          0.17021257682958393,
+          -2.177373820852508e-18,
+          -0.046125897805139864
+        ],
+        [
+          -2.177373820852508e-18,
+          0.1758830719487515,
+          -4.354747641705021e-20
+        ],
+        [
+          -0.046125897805139864,
+          -4.354747641705021e-20,
+          0.1600252980201433
+        ]
+      ],
+      "spec": {
+        "name": "g3_shear100_g004",
+        "family": "shear100",
+        "engineering_gamma": 0.04,
+        "deformation": [
+          [
+            1,
+            0,
+            0.04
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "reference_a_A": 4.084,
+        "frame": "Cartesian x100,y010,z001; F=I+gamma ex tensor ez"
+      },
+      "max_antisymmetry_eV_A2": 0.00024155306732973753,
+      "construction": "All three actual central displacement columns"
+    },
+    {
+      "name": "g3_shear100_g006",
+      "family": "shear100",
+      "strain": [
+        [
+          -0.0004496964776331547,
+          0.0,
+          0.02998650910567096
+        ],
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.02998650910567106,
+          0.0,
+          0.0013494940687071022
+        ]
+      ],
+      "K_material_eV_A2": [
+        [
+          0.15848989943324476,
+          -8.707319595713172e-18,
+          -0.06932618685917559
+        ],
+        [
+          -8.707319595713172e-18,
+          0.16160737780088313,
+          -2.6121958787139503e-19
+        ],
+        [
+          -0.06932618685917559,
+          -2.6121958787139503e-19,
+          0.1378349357559624
+        ]
+      ],
+      "spec": {
+        "name": "g3_shear100_g006",
+        "family": "shear100",
+        "engineering_gamma": 0.06,
+        "deformation": [
+          [
+            1,
+            0,
+            0.06
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "reference_a_A": 4.084,
+        "frame": "Cartesian100/010/001; F=I+gamma*d tensor ez; d unit100 or unit110"
+      },
+      "max_antisymmetry_eV_A2": 0.00011654633312981055,
+      "construction": "All three actual central displacement columns"
+    },
+    {
+      "name": "g3_shear100_g008",
+      "family": "shear100",
+      "strain": [
+        [
+          -0.0007990412782103995,
+          0.0,
+          0.03996803834887172
+        ],
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.039968038348871686,
+          0.0,
+          0.0023984017896994114
+        ]
+      ],
+      "K_material_eV_A2": [
+        [
+          0.14557050199987076,
+          1.4536141538497393e-17,
+          -0.09144662953469268
+        ],
+        [
+          1.4536141538497393e-17,
+          0.14219656668849437,
+          1.801785208664048e-17
+        ],
+        [
+          -0.09144662953469268,
+          1.801785208664048e-17,
+          0.11036645082702558
+        ]
+      ],
+      "spec": {
+        "name": "g3_shear100_g008",
+        "family": "shear100",
+        "engineering_gamma": 0.08,
+        "deformation": [
+          [
+            1,
+            0,
+            0.08
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "reference_a_A": 4.084,
+        "frame": "Cartesian100/010/001; F=I+gamma ex tensor ez"
+      },
+      "max_antisymmetry_eV_A2": 0.00011156089642735956,
+      "construction": "All three actual central displacement columns"
+    },
+    {
+      "name": "g3_shear110_g110008",
+      "family": "shear110",
+      "strain": [
+        [
+          -0.00039952063910564384,
+          -0.00039952063910500817,
+          0.028261670947211298
+        ],
+        [
+          -0.0003995206391050159,
+          -0.0003995206391060879,
+          0.028261670947210788
+        ],
+        [
+          0.028261670947211343,
+          0.028261670947210823,
+          0.002398401789698079
+        ]
+      ],
+      "K_material_eV_A2": [
+        [
+          0.1421041157671726,
+          0.008717728578628611,
+          -0.06700226828533332
+        ],
+        [
+          0.008717728578628613,
+          0.14279984405120982,
+          -0.06691127399298416
+        ],
+        [
+          -0.06700226828533333,
+          -0.06691127399298416,
+          0.10342731458490327
+        ]
+      ],
+      "spec": {
+        "name": "g3_shear110_g110008",
+        "family": "shear110",
+        "engineering_gamma": 0.08,
+        "deformation": [
+          [
+            1,
+            0,
+            0.056568542494923796
+          ],
+          [
+            0,
+            1,
+            0.056568542494923796
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "reference_a_A": 4.084,
+        "frame": "Cartesian100/010/001; F=I+gamma*d tensor ez; d unit100 or unit110"
+      },
+      "max_antisymmetry_eV_A2": 0.00019094749029220648,
+      "construction": "All three actual central displacement columns"
+    },
+    {
+      "name": "g3_biax_m0p0400",
+      "family": "biaxial_relaxed",
+      "strain": [
+        [
+          -0.040000000000000036,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          -0.040000000000000036,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.10251998409292518
+        ]
+      ],
+      "K_material_eV_A2": [
+        [
+          0.8684012758994606,
+          0.0,
+          1.7422474016623273e-17
+        ],
+        [
+          0.0,
+          0.8683085708314837,
+          -1.7422474016623273e-17
+        ],
+        [
+          1.7422474016623273e-17,
+          -1.7422474016623273e-17,
+          -0.34101169339463017
+        ]
+      ],
+      "spec": {
+        "name": "g3_biax_m0p0400",
+        "family": "biaxial_relaxed",
+        "inplane_strain": -0.04,
+        "deformation": [
+          [
+            0.96,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.96,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.1025199840929252
+          ]
+        ],
+        "reference_a_A": 4.084,
+        "cz_ratio": 1.1025199840929252,
+        "stress_zz_eV_A3": 2.868068493619182e-06,
+        "constraint": "Fixed x/y lengths and reference fractional sites; c_z zero-stress stationary state, not a global phase search."
+      },
+      "max_antisymmetry_eV_A2": 3.4844948033246546e-17,
+      "construction": "All three actual central displacement columns"
+    },
+    {
+      "name": "g3_biax_m0p0200",
+      "family": "biaxial_relaxed",
+      "strain": [
+        [
+          -0.020000000000000018,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          -0.020000000000000018,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.06646943375954506
+        ]
+      ],
+      "K_material_eV_A2": [
+        [
+          0.39489337024636234,
+          0.0,
+          -4.355618504155818e-18
+        ],
+        [
+          0.0,
+          0.3949375505469876,
+          1.3066855512467455e-17
+        ],
+        [
+          -4.355618504155818e-18,
+          1.3066855512467455e-17,
+          -0.2895514625078555
+        ]
+      ],
+      "spec": {
+        "name": "g3_biax_m0p0200",
+        "family": "biaxial_relaxed",
+        "inplane_strain": -0.02,
+        "deformation": [
+          [
+            0.98,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.98,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.066469433759545
+          ]
+        ],
+        "reference_a_A": 4.084,
+        "cz_ratio": 1.066469433759545,
+        "stress_zz_eV_A3": 4.389780321502023e-06,
+        "constraint": "Fixed x/y lengths and reference fractional sites; c_z zero-stress stationary state, not a global phase search."
+      },
+      "max_antisymmetry_eV_A2": 4.355618504155818e-17,
+      "construction": "All three actual central displacement columns"
+    },
+    {
+      "name": "g3_biax_0p0000",
+      "family": "biaxial_relaxed",
+      "strain": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.03246153273417707
+        ]
+      ],
+      "K_material_eV_A2": [
+        [
+          0.08389307398256204,
+          0.0,
+          8.711237008311636e-18
+        ],
+        [
+          0.0,
+          0.08473493251258385,
+          4.355618504155818e-18
+        ],
+        [
+          8.711237008311636e-18,
+          4.355618504155818e-18,
+          -0.18066595820475415
+        ]
+      ],
+      "spec": {
+        "name": "g3_biax_0p0000",
+        "family": "biaxial_relaxed",
+        "inplane_strain": 0.0,
+        "deformation": [
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.032461532734177
+          ]
+        ],
+        "reference_a_A": 4.084,
+        "cz_ratio": 1.032461532734177,
+        "stress_zz_eV_A3": 4.048317294237295e-06,
+        "constraint": "Fixed x/y lengths and reference fractional sites; c_z zero-stress stationary state, not a global phase search."
+      },
+      "max_antisymmetry_eV_A2": 1.7422474016623273e-17,
+      "construction": "All three actual central displacement columns"
+    },
+    {
+      "name": "g3_biax_0p0200",
+      "family": "biaxial_relaxed",
+      "strain": [
+        [
+          0.020000000000000018,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.020000000000000018,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "K_material_eV_A2": [
+        [
+          -0.1269342929521637,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          -0.12671698078200555,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.057068663903223765
+        ]
+      ],
+      "spec": {
+        "name": "g3_biax_0p0200",
+        "family": "biaxial_relaxed",
+        "inplane_strain": 0.02,
+        "deformation": [
+          [
+            1.02,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.02,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "reference_a_A": 4.084,
+        "cz_ratio": 1.0,
+        "stress_zz_eV_A3": -0.00015579172387773904,
+        "constraint": "Fixed x/y lengths and reference fractional sites; c_z zero-stress stationary state, not a global phase search."
+      },
+      "max_antisymmetry_eV_A2": 0.0,
+      "construction": "All three actual central displacement columns"
+    },
+    {
+      "name": "g3_biax_0p0400",
+      "family": "biaxial_relaxed",
+      "strain": [
+        [
+          0.040000000000000036,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.040000000000000036,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          -0.02884140563355808
+        ]
+      ],
+      "K_material_eV_A2": [
+        [
+          -0.28059003847026015,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          -0.28060599476345316,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.42063156495110676
+        ]
+      ],
+      "spec": {
+        "name": "g3_biax_0p0400",
+        "family": "biaxial_relaxed",
+        "inplane_strain": 0.04,
+        "deformation": [
+          [
+            1.04,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.04,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.9711585943664419
+          ]
+        ],
+        "reference_a_A": 4.084,
+        "cz_ratio": 0.9711585943664419,
+        "stress_zz_eV_A3": 6.480039506829991e-07,
+        "constraint": "Fixed x/y lengths and reference fractional sites; c_z zero-stress stationary state, not a global phase search."
+      },
+      "max_antisymmetry_eV_A2": 0.0,
+      "construction": "All three actual central displacement columns"
+    }
+  ],
+  "source_files": [
+    {
+      "path": "primitive_Pd/k12_pw500/result.json",
+      "bytes": 1923,
+      "sha256": "308693c43fbaaa636acdee320aae7c92aeb246024f8fbe1a0171978ac865e318"
+    },
+    {
+      "path": "primitive_Pd/k12_pw500_hydro_minus/result.json",
+      "bytes": 1867,
+      "sha256": "dbb159d37ef9efb806da82d4941dcc4a22388e20e374eff18a2d0d91014d333b"
+    },
+    {
+      "path": "primitive_Pd/k12_pw500_parallel_minus/result.json",
+      "bytes": 1798,
+      "sha256": "fa699cfd4f38eb520a9b3871cf65ddcafb30cc22ea9768b5681ed4b5f23f83d2"
+    },
+    {
+      "path": "primitive_Pd/k12_pw500_perpendicular_minus/result.json",
+      "bytes": 1863,
+      "sha256": "9504cd86d17269a7d63a39d9dae86d6c72e0ce6b96cf513abd1871784b7e791b"
+    },
+    {
+      "path": "primitive_Pd/k12_pw500_hydro_plus/result.json",
+      "bytes": 1794,
+      "sha256": "19f9203d97038bb279f2abd901a2cdb61959d603daa4f36782f7308b483f0abc"
+    },
+    {
+      "path": "primitive_Pd/k12_pw500_parallel_plus/result.json",
+      "bytes": 1788,
+      "sha256": "7a4bb26a087d7497ac71a0d87d48ae4e31e2f69179ad58da44eb525b3cb8513f"
+    },
+    {
+      "path": "primitive_Pd/k12_pw500_perpendicular_plus/result.json",
+      "bytes": 1836,
+      "sha256": "0f266da76423ab56cfa127897ec989975e27a186abbce8a680e29a0d637ba242"
+    },
+    {
+      "path": "tensor-results/g3_shear100_g002.json",
+      "bytes": 2913,
+      "sha256": "add8b750bf950f48b1fcbb0006c7501700d937824500b20acd1e18cb98592d10"
+    },
+    {
+      "path": "primitive_Pd/g3_shear100_g002_axis0/result.json",
+      "bytes": 1926,
+      "sha256": "5ec922cdf3bd96c72835aee5bb9cb1d1a143b7a60e4bd59cb0c3110b5866a57b"
+    },
+    {
+      "path": "primitive_Pd/g3_shear100_g002_axis1/result.json",
+      "bytes": 1989,
+      "sha256": "07e668140ad361c241a3c592b941745b614088ce0bf392a55759a1f3d8eb0a90"
+    },
+    {
+      "path": "primitive_Pd/g3_shear100_g002_axis2/result.json",
+      "bytes": 1910,
+      "sha256": "1470b8928a9aa242d9a2a55aed4e41f3ccd9511247ed00da92a2f27dea7961db"
+    },
+    {
+      "path": "tensor-results/g3_shear100_g004.json",
+      "bytes": 2845,
+      "sha256": "a72e9716bfa920a2f5794dda2c8d4e43b73625bbc721b3cc2a3fef0802c363d9"
+    },
+    {
+      "path": "primitive_Pd/g3_shear100_g004_axis0/result.json",
+      "bytes": 1917,
+      "sha256": "1166dd1107225e43d6ae8ed3163452981e92ca83c876fbdd562a9eee957f68dd"
+    },
+    {
+      "path": "primitive_Pd/g3_shear100_g004_axis1/result.json",
+      "bytes": 1885,
+      "sha256": "0f073b2ea5b3b7bb5c6c3dadce5692b1b48e7c5f25b3268c4248508bbeb09534"
+    },
+    {
+      "path": "primitive_Pd/g3_shear100_g004_axis2/result.json",
+      "bytes": 1911,
+      "sha256": "7e1f4c51db9cc802abebbcfb5544ad0a7948477f002ac2bc42198740a24bcac2"
+    },
+    {
+      "path": "tensor-results/g3_shear100_g006.json",
+      "bytes": 2862,
+      "sha256": "b1f972c86dced342187c3dc3fb58b74dfbb16cdc42f927b37ec0254734f8208e"
+    },
+    {
+      "path": "primitive_Pd/g3_shear100_g006_axis0/result.json",
+      "bytes": 1909,
+      "sha256": "39d1c6ec1e62c908deb1f392a37c82f62bae21f366b075dcff00ca041a47d000"
+    },
+    {
+      "path": "primitive_Pd/g3_shear100_g006_axis1/result.json",
+      "bytes": 1877,
+      "sha256": "5ad2dfa79266e97c9d10e7bcb7c530aa8313aabb59560a3bfb7fc847076aa0d6"
+    },
+    {
+      "path": "primitive_Pd/g3_shear100_g006_axis2/result.json",
+      "bytes": 1913,
+      "sha256": "c290dc16df2891531818edfb4ca2c0332837cc6b6feda29f8e3e09dfd972b92a"
+    },
+    {
+      "path": "tensor-results/g3_shear100_g008.json",
+      "bytes": 2891,
+      "sha256": "59fcdd6f953a7afe4a5d3a1c6243ce2702c42dd9a349e18dcf6d74a97aeab782"
+    },
+    {
+      "path": "primitive_Pd/g3_shear100_g008_axis0/result.json",
+      "bytes": 1925,
+      "sha256": "3965ce8764ca069919ec693a074072483213f9d78b82d438c25168a6654df9d5"
+    },
+    {
+      "path": "primitive_Pd/g3_shear100_g008_axis1/result.json",
+      "bytes": 1997,
+      "sha256": "d9ebd6ed4cf4c75917a13c401672d405e548784371ac2c1dfcf550e50a7ca2d8"
+    },
+    {
+      "path": "primitive_Pd/g3_shear100_g008_axis2/result.json",
+      "bytes": 1929,
+      "sha256": "4f59b944930ecbdbd12d2377be7f89dde83a8345980701af515b87013b6cf1f9"
+    },
+    {
+      "path": "tensor-results/g3_shear110_g110008.json",
+      "bytes": 3245,
+      "sha256": "e37ed8f4f6f34b5ecc894c2527b439b12fbef9df04ef8e999471c0bf59634c10"
+    },
+    {
+      "path": "primitive_Pd/g3_shear110_g110008_axis0/result.json",
+      "bytes": 2082,
+      "sha256": "7174d7d69840127e09e4a48982822c3706b9cbe234ec1b37ae0584aeee2d3063"
+    },
+    {
+      "path": "primitive_Pd/g3_shear110_g110008_axis1/result.json",
+      "bytes": 2082,
+      "sha256": "2b50c1d9cb1d8e33e14b1e8588c139af9ea6320846752249fade022bea8efc6f"
+    },
+    {
+      "path": "primitive_Pd/g3_shear110_g110008_axis2/result.json",
+      "bytes": 2078,
+      "sha256": "3894b10ae7c4eecff52fa2e8070e138de44f7f34ed64ee4164574157c4b177a8"
+    },
+    {
+      "path": "tensor-results/g3_biax_m0p0400.json",
+      "bytes": 2820,
+      "sha256": "52e64df0f5059c2be3d5e1d964390d1c4eb6b757a4d796945c7e004dee779c9f"
+    },
+    {
+      "path": "primitive_Pd/g3_biax_m0p0400_axis0/result.json",
+      "bytes": 1974,
+      "sha256": "f87cabd1d100586eec234758208aee68649b4c6fa1c1d5af32e7a7822acf533d"
+    },
+    {
+      "path": "primitive_Pd/g3_biax_m0p0400_axis1/result.json",
+      "bytes": 1976,
+      "sha256": "e10869517b692f8d8ef4baea5495839939cb65ff1abd4b28584c02019986e122"
+    },
+    {
+      "path": "primitive_Pd/g3_biax_m0p0400_axis2/result.json",
+      "bytes": 1926,
+      "sha256": "918edbb533c2be74eae8b59728155687ba1021afcec00e2a72910c79ba1282f2"
+    },
+    {
+      "path": "tensor-results/g3_biax_m0p0200.json",
+      "bytes": 2830,
+      "sha256": "25c1c67dfd6e88f71f8615da20e4a3009d3c8782a7e201083fa9f52b12b0429c"
+    },
+    {
+      "path": "primitive_Pd/g3_biax_m0p0200_axis0/result.json",
+      "bytes": 1955,
+      "sha256": "6a9f65ba812e147294467f60fe31136cb73e0858c26b3d8038a79e274b449991"
+    },
+    {
+      "path": "primitive_Pd/g3_biax_m0p0200_axis1/result.json",
+      "bytes": 1959,
+      "sha256": "9379008312b8182d3595df1ed4a3bc10353fbf20b1b11978222d4627f23409aa"
+    },
+    {
+      "path": "primitive_Pd/g3_biax_m0p0200_axis2/result.json",
+      "bytes": 1941,
+      "sha256": "98987c31667ed3740475d9d2db2fbdcfab50c9a0455b5c4313dbf2ebedce7d16"
+    },
+    {
+      "path": "tensor-results/g3_biax_0p0000.json",
+      "bytes": 2766,
+      "sha256": "e27298969d525663c75207b257f74acb03252bb7bc5da9daf73529d140e3892f"
+    },
+    {
+      "path": "primitive_Pd/g3_biax_0p0000_axis0/result.json",
+      "bytes": 1890,
+      "sha256": "54be64e14bb2ba1fcd7fd0f84307012c262b9b442c04398f4605b5531c29b522"
+    },
+    {
+      "path": "primitive_Pd/g3_biax_0p0000_axis1/result.json",
+      "bytes": 1858,
+      "sha256": "24b7411047acaf6994fe470fec08c5aa402d0d1e6c7788731d06dc5c3c357f87"
+    },
+    {
+      "path": "primitive_Pd/g3_biax_0p0000_axis2/result.json",
+      "bytes": 1870,
+      "sha256": "f7d7b9171f400e2887b9b50e8731ee0650b57d6df45caf28226fc38066a55cd1"
+    },
+    {
+      "path": "tensor-results/g3_biax_0p0200.json",
+      "bytes": 2559,
+      "sha256": "e4b8253bb8b07f71f8c0d5883dfe9782126a9261034a3c969c017bd5096fdaad"
+    },
+    {
+      "path": "primitive_Pd/g3_biax_0p0200_axis0/result.json",
+      "bytes": 1825,
+      "sha256": "aaf7bfc8709c888d705f1815d679d5fa4ea0cf68b78b445f0cb1a10f18e8572c"
+    },
+    {
+      "path": "primitive_Pd/g3_biax_0p0200_axis1/result.json",
+      "bytes": 1822,
+      "sha256": "3fd85c09d63b029b0b00e9619bf0307b6a81c3e0e05083a0b0768c8cd17389af"
+    },
+    {
+      "path": "primitive_Pd/g3_biax_0p0200_axis2/result.json",
+      "bytes": 1845,
+      "sha256": "02875a65ac99f5902b1689288e5b3e8a6cbc9e43cdcc0f92239f14c1bf6e13c1"
+    },
+    {
+      "path": "tensor-results/g3_biax_0p0400.json",
+      "bytes": 2619,
+      "sha256": "d2c8cf57c3b02eb3980036ceb1e545ce135ff64593bfdf6846db755c11ba21ca"
+    },
+    {
+      "path": "primitive_Pd/g3_biax_0p0400_axis0/result.json",
+      "bytes": 1873,
+      "sha256": "412c70feea6124175ab36e0ca9343a27ae02f33855ed5441960cd095ba2bcafe"
+    },
+    {
+      "path": "primitive_Pd/g3_biax_0p0400_axis1/result.json",
+      "bytes": 1864,
+      "sha256": "d81eed207f45aadf8f3af338e043b69041560d742a324a7d15248abe993e081d"
+    },
+    {
+      "path": "primitive_Pd/g3_biax_0p0400_axis2/result.json",
+      "bytes": 1887,
+      "sha256": "48465ac46af9246caef1fa6b29c560796aa00aa4f8143c4aee31241be8850954"
+    }
+  ],
+  "strain": "Material-frame Biot U-I",
+  "operator": "Fixed-metal collective Gamma central force Jacobian"
+}

@@ -35,6 +35,29 @@ It is an illustration of where soft sites would sit, not a prediction that they 
 
 The arrays and figures here are the originals from the machine that ran the lattice simulation, so the two stay consistent. A rerun on a second machine reproduced the PdD-spacing case exactly and the bare-Pd case to within 1 percent (the relaxation path differs slightly).
 
-## First measured shear point
+## Strain and shear laws from GPAW (`partA/`)
 
-GPAW, two-atom PdD cell sheared by 4 percent: the collective stiffness splits into 0.119, 0.176 and 0.212 eV/A^2 (0.181 unsheared). Shear softens one direction by a third but leaves the well stable; a 1 percent expansion has a much larger effect. The full shear and thin-film table is in progress.
+Two-atom PdD cell at 4.084 Angstrom, 500 eV, k = 12, metal held fixed. These are stiffnesses for all deuterium moving together. 200 core-minutes.
+
+**Shear.** Lowest stiffness as the cell is sheared along [100]:
+
+| Shear | 0 | 2% | 4% | 6% | 8% |
+|---|---:|---:|---:|---:|---:|
+| Lowest stiffness (eV/A^2) | 0.181 | 0.155 | 0.119 | 0.078 | 0.035 |
+
+Shear along [110] at 8 percent gives 0.030. Shear softens steadily and would reach zero near 9 to 10 percent.
+
+**Thin film.** In-plane strain imposed, layer free to relax its height:
+
+| In-plane strain | Height / reference | In-plane stiffness | Across-layer stiffness |
+|---:|---:|---:|---:|
+| -4% | 1.103 | 0.868 | -0.341 |
+| -2% | 1.066 | 0.395 | -0.290 |
+| 0 | 1.032 | 0.084 | -0.181 |
+| +2% | 1.000 | -0.127 | 0.057 |
+| +4% | 0.971 | -0.281 | 0.421 |
+
+A compressed film softens the motion across the layer; a stretched film softens the motion within it. Between them, at every strain in this range, one direction has a negative bare stiffness. These are small-vibration values at the site centre: zero-point motion and the anharmonic part of the well add stiffness, so a negative entry marks a direction where the well is flat or double-bottomed, not a demonstrated instability. The film with no imposed strain still grows 3.2 percent taller, because this method's own preferred spacing is larger than 4.084 Angstrom.
+
+`strain_tensor_law.py` with `strain-law.json` returns the stiffness tensor for a given strain inside the computed range and refuses outside it unless asked to extrapolate. None of the sites in the EMT mismatch maps above fall inside that range, so the well map there remains an extrapolation. `strain-family.png` shows both families.
+

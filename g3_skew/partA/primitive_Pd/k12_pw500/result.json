@@ -1,0 +1,104 @@
+{
+  "metal": "Pd",
+  "name": "k12_pw500",
+  "K_Gamma_eV_A2": 0.18105969055575036,
+  "deformation": [
+    [
+      1.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "reference_positions_A": [
+    [
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      2.042,
+      0.0,
+      0.0
+    ]
+  ],
+  "cell_A": [
+    [
+      0.0,
+      2.042,
+      2.042
+    ],
+    [
+      2.042,
+      0.0,
+      2.042
+    ],
+    [
+      2.042,
+      2.042,
+      0.0
+    ]
+  ],
+  "displacement_axis": 0,
+  "cutoff_eV": 500,
+  "kmesh": 12,
+  "step_A": 0.01,
+  "smearing_eV": 0.1,
+  "point_group": "Actual displaced-cell subgroup; not undisplaced crystal symmetry.",
+  "n_ibz_kpoints": 163,
+  "producer_bytes": 2942,
+  "producer_sha256": "b63f5dddf9877507d4544966476718db1a44840226869afe73bd91f7c6a5e31a",
+  "points": [
+    {
+      "displacement_A": -0.01,
+      "energy_free_eV": -7.09400604298192,
+      "forces_eV_A": [
+        [
+          -0.0017912221270956225,
+          -3.484494803324655e-19,
+          -3.484494803324655e-19
+        ],
+        [
+          0.0018121929218534306,
+          0.0,
+          -1.7422474016623274e-19
+        ]
+      ],
+      "force_parallel_eV_A": 0.0018121929218534306,
+      "elapsed_s": 90.56554682087153,
+      "cpu_s": 90.370469858
+    },
+    {
+      "displacement_A": 0.01,
+      "energy_free_eV": -7.094006042805977,
+      "forces_eV_A": [
+        [
+          0.001695137110762879,
+          0.0,
+          6.96898960664931e-19
+        ],
+        [
+          -0.0018090008892615765,
+          0.0,
+          -1.7422474016623274e-19
+        ]
+      ],
+      "force_parallel_eV_A": -0.0018090008892615765,
+      "elapsed_s": 49.59561194572598,
+      "cpu_s": 49.474083515000004
+    }
+  ],
+  "harmonic_quantum_meV": 19.387675691687594,
+  "imaginary_magnitude_meV": null,
+  "measured_peak_meV": 37.0,
+  "mass_kg": 3.3435837768e-27
+}

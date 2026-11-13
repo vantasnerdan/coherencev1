@@ -1,0 +1,102 @@
+{
+  "metal": "Pd",
+  "name": "g3_biax_m0p0400_axis1",
+  "K_Gamma_eV_A2": 0.8683085708314837,
+  "deformation": [
+    [
+      0.96,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.96,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.1025199840929252
+    ]
+  ],
+  "reference_positions_A": [
+    [
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      1.96032,
+      0.0,
+      0.0
+    ]
+  ],
+  "cell_A": [
+    [
+      0.0,
+      1.9603199999999998,
+      2.251345807517753
+    ],
+    [
+      1.9603199999999998,
+      0.0,
+      2.251345807517753
+    ],
+    [
+      1.9603199999999998,
+      1.9603199999999998,
+      0.0
+    ]
+  ],
+  "displacement_axis": 1,
+  "cutoff_eV": 500,
+  "kmesh": 12,
+  "step_A": 0.01,
+  "smearing_eV": 0.1,
+  "point_group": "Actual displaced-cell subgroup; not undisplaced crystal symmetry.",
+  "n_ibz_kpoints": 280,
+  "producer_bytes": 2771,
+  "producer_sha256": "4aabcab9887dddeffc551e3b264b5ef0de9575ba20dfebc9aac5aef283167b06",
+  "points": [
+    {
+      "displacement_A": -0.01,
+      "energy_free_eV": -7.058250414916193,
+      "forces_eV_A": [
+        [
+          0.0,
+          -0.008693788022031919,
+          6.96898960664931e-19
+        ],
+        [
+          0.0,
+          0.008693202968394846,
+          -5.226742204986982e-19
+        ]
+      ],
+      "force_parallel_eV_A": 0.008693202968394846,
+      "elapsed_s": 135.60252865217626,
+      "cpu_s": 135.417654915
+    },
+    {
+      "displacement_A": 0.01,
+      "energy_free_eV": -7.0582504148893195,
+      "forces_eV_A": [
+        [
+          0.0,
+          0.00859634467947853,
+          -2.090696881994793e-18
+        ],
+        [
+          0.0,
+          -0.008672968448234829,
+          1.7422474016623274e-19
+        ]
+      ],
+      "force_parallel_eV_A": -0.008672968448234829,
+      "elapsed_s": 80.19108693487942,
+      "cpu_s": 80.09299855
+    }
+  ],
+  "calculator_bytes": 591,
+  "calculator_sha256": "117779df0a231bba1269850b3053386eba691b51b1f428b8207708c5842bfb2a"
+}

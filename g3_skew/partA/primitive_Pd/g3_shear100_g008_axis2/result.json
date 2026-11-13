@@ -1,0 +1,102 @@
+{
+  "metal": "Pd",
+  "name": "g3_shear100_g008_axis2",
+  "K_Gamma_eV_A2": 0.1177267312230439,
+  "deformation": [
+    [
+      1.0,
+      0.0,
+      0.08
+    ],
+    [
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "reference_positions_A": [
+    [
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      2.042,
+      0.0,
+      0.0
+    ]
+  ],
+  "cell_A": [
+    [
+      0.16335999999999998,
+      2.042,
+      2.042
+    ],
+    [
+      2.2053599999999998,
+      0.0,
+      2.042
+    ],
+    [
+      2.042,
+      2.042,
+      0.0
+    ]
+  ],
+  "displacement_axis": 2,
+  "cutoff_eV": 500,
+  "kmesh": 12,
+  "step_A": 0.01,
+  "smearing_eV": 0.1,
+  "point_group": "Actual displaced-cell subgroup; not undisplaced crystal symmetry.",
+  "n_ibz_kpoints": 476,
+  "producer_bytes": 2771,
+  "producer_sha256": "4aabcab9887dddeffc551e3b264b5ef0de9575ba20dfebc9aac5aef283167b06",
+  "points": [
+    {
+      "displacement_A": -0.01,
+      "energy_free_eV": -7.070483956040814,
+      "forces_eV_A": [
+        [
+          0.0008988715353907843,
+          0.0,
+          -0.0012536137594008356
+        ],
+        [
+          -0.0009227185956609635,
+          0.0,
+          0.0011886344282019843
+        ]
+      ],
+      "force_parallel_eV_A": 0.0011886344282019843,
+      "elapsed_s": 231.85577136930078,
+      "cpu_s": 231.34222435299998
+    },
+    {
+      "displacement_A": 0.01,
+      "energy_free_eV": -7.070483955663898,
+      "forces_eV_A": [
+        [
+          -0.0009378358818099135,
+          0.0,
+          0.001075304761538296
+        ],
+        [
+          0.0009273734026900782,
+          0.0,
+          -0.0011659001962588938
+        ]
+      ],
+      "force_parallel_eV_A": -0.0011659001962588938,
+      "elapsed_s": 139.5375665742904,
+      "cpu_s": 139.34583027399998
+    }
+  ],
+  "calculator_bytes": 591,
+  "calculator_sha256": "117779df0a231bba1269850b3053386eba691b51b1f428b8207708c5842bfb2a"
+}
