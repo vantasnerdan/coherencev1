@@ -61,3 +61,9 @@ A compressed film softens the motion across the layer; a stretched film softens 
 
 `strain_tensor_law.py` with `strain-law.json` returns the stiffness tensor for a given strain inside the computed range and refuses outside it unless asked to extrapolate. None of the sites in the EMT mismatch maps above fall inside that range, so the well map there remains an extrapolation. `strain-family.png` shows both families.
 
+
+## The spacing the method itself prefers
+
+All PdD numbers here use a lattice constant of 4.084 Angstrom (an extrapolation of measurements at loadings 0.80 to 0.98 to full loading; Schirber and Morosin, Phys. Rev. B 12, 117 (1975)). With the cell free to relax, the same GPAW setup settles at 4.134 Angstrom, 1.2 percent larger. There the collective small-vibration stiffness is -0.055 eV/A^2, against +0.181 at 4.084. So the PdD inputs describe a crystal this method regards as slightly compressed, and at the method's own spacing the bottom of the well is flat to slightly humped: the deuterium is held by the anharmonic walls and its zero-point motion. Strain thresholds quoted from 4.084 Angstrom would be about 1.2 percentage points smaller if counted from 4.134.
+
+This point was not used in fitting the strain law above. The law predicts -0.058 for it, an error of 0.003 eV/A^2, which is a fair independent check of the law for uniform expansion.
