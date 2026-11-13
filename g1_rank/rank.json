@@ -1,0 +1,4444 @@
+{
+  "selected": "screened dipole plus quartic; force off for autonomous branch",
+  "five_number_meanings": {
+    "threshold": "xcrit,ncrit",
+    "frequency": "static lock0; amplitude mode separate",
+    "domain_size": "not selected; correlation length ranked separately",
+    "energy": "static minimum relative to disordered",
+    "lifetime": "infinite deterministic persistence; ringdown ranked separately"
+  },
+  "inactive_controls": {
+    "force": 0.0,
+    "switch_mask": 31
+  },
+  "ranking": [
+    {
+      "input": "screen_A",
+      "classification": "electronic-structure-computable",
+      "max_finite_decades": 5.029361787186423,
+      "phase_crossing": true
+    },
+    {
+      "input": "beta",
+      "classification": "electronic-structure-computable",
+      "max_finite_decades": 2.0,
+      "phase_crossing": false
+    },
+    {
+      "input": "gamma",
+      "classification": "lookup",
+      "max_finite_decades": 1.9999999626103144,
+      "phase_crossing": false
+    },
+    {
+      "input": "E",
+      "classification": "lookup",
+      "max_finite_decades": 1.5769650846913663,
+      "phase_crossing": true
+    },
+    {
+      "input": "gradient",
+      "classification": "electronic-structure-computable",
+      "max_finite_decades": 1.0,
+      "phase_crossing": false
+    },
+    {
+      "input": "loading",
+      "classification": "lookup",
+      "max_finite_decades": 0.7441989793904022,
+      "phase_crossing": true
+    },
+    {
+      "input": "photon_ratio",
+      "classification": "neither",
+      "max_finite_decades": 0.2768297772374725,
+      "phase_crossing": false
+    },
+    {
+      "input": "electron_count",
+      "classification": "electronic-structure-computable",
+      "max_finite_decades": 0.1008171098075708,
+      "phase_crossing": false
+    },
+    {
+      "input": "a",
+      "classification": "lookup",
+      "max_finite_decades": 0.01726696087683465,
+      "phase_crossing": false
+    },
+    {
+      "input": "electron_strength",
+      "classification": "electronic-structure-computable",
+      "max_finite_decades": 0.0014571838679784312,
+      "phase_crossing": false
+    },
+    {
+      "input": "T_K",
+      "classification": "lookup",
+      "max_finite_decades": 0,
+      "phase_crossing": false
+    }
+  ],
+  "scans": [
+    {
+      "material": "NiH",
+      "input": "screen_A",
+      "range": [
+        0.2,
+        5.0
+      ],
+      "classification": "electronic-structure-computable",
+      "range_origin": "exploratory finite-q screening proxy",
+      "states": [
+        "disordered",
+        "static_order"
+      ],
+      "phase_crossing": true,
+      "metrics": {
+        "threshold_loading": {
+          "decades": 4.533072076747733,
+          "min_abs": 0.5476494523207872,
+          "max_abs": 18688.512459882008
+        },
+        "threshold_density_m3": {
+          "decades": 4.533072076747733,
+          "min_abs": 4.214419315986561e+28,
+          "max_abs": 1.4381686599742574e+33
+        },
+        "amplitude_mode_THz": {
+          "decades": 0.8031908289509688,
+          "min_abs": 4.599535554839203,
+          "max_abs": 29.235115186205828
+        },
+        "static_displacement_A": {
+          "decades": null,
+          "reason": "zero/phase boundary; no log floor"
+        },
+        "energy_per_isotope_eV": {
+          "decades": null,
+          "reason": "zero/phase boundary; no log floor"
+        },
+        "correlation_length_nm": {
+          "decades": 0.8033608549059875,
+          "min_abs": 0.059262526871945,
+          "max_abs": 0.37682613868106535
+        },
+        "ringdown_ps": {
+          "decades": 0.0005003997639823421,
+          "min_abs": 1.5870769082910383,
+          "max_abs": 1.588906612897951
+        }
+      },
+      "max_finite_decades": 4.533072076747733
+    },
+    {
+      "material": "NiH",
+      "input": "beta",
+      "range": [
+        0.1,
+        10.0
+      ],
+      "classification": "electronic-structure-computable",
+      "range_origin": "exploratory quartic",
+      "states": [
+        "static_order"
+      ],
+      "phase_crossing": false,
+      "metrics": {
+        "threshold_loading": {
+          "decades": 0.0,
+          "min_abs": 0.5476494523207872,
+          "max_abs": 0.5476494523207872
+        },
+        "threshold_density_m3": {
+          "decades": 0.0,
+          "min_abs": 4.214419315986561e+28,
+          "max_abs": 4.214419315986561e+28
+        },
+        "amplitude_mode_THz": {
+          "decades": 0.0,
+          "min_abs": 29.235115186205828,
+          "max_abs": 29.235115186205828
+        },
+        "static_displacement_A": {
+          "decades": 1.0,
+          "min_abs": 0.06799211364683351,
+          "max_abs": 0.6799211364683351
+        },
+        "energy_per_isotope_eV": {
+          "decades": 2.0,
+          "min_abs": 0.0021870358997221084,
+          "max_abs": 0.21870358997221082
+        },
+        "correlation_length_nm": {
+          "decades": 0.0,
+          "min_abs": 0.059262526871945,
+          "max_abs": 0.059262526871945
+        },
+        "ringdown_ps": {
+          "decades": 0.0,
+          "min_abs": 1.588906612897951,
+          "max_abs": 1.588906612897951
+        }
+      },
+      "max_finite_decades": 2.0
+    },
+    {
+      "material": "NiH",
+      "input": "gamma",
+      "range": [
+        0.001,
+        0.1
+      ],
+      "classification": "lookup",
+      "range_origin": "exploratory; actual mode linewidth/ringdown needed",
+      "states": [
+        "static_order"
+      ],
+      "phase_crossing": false,
+      "metrics": {
+        "threshold_loading": {
+          "decades": 0.0,
+          "min_abs": 0.5476494523207872,
+          "max_abs": 0.5476494523207872
+        },
+        "threshold_density_m3": {
+          "decades": 0.0,
+          "min_abs": 4.214419315986561e+28,
+          "max_abs": 4.214419315986561e+28
+        },
+        "amplitude_mode_THz": {
+          "decades": 0.000255130088057113,
+          "min_abs": 29.218115651763842,
+          "max_abs": 29.235285131784515
+        },
+        "static_displacement_A": {
+          "decades": 0.0,
+          "min_abs": 0.2150099420530112,
+          "max_abs": 0.2150099420530112
+        },
+        "energy_per_isotope_eV": {
+          "decades": 0.0,
+          "min_abs": 0.021870358997221083,
+          "max_abs": 0.021870358997221083
+        },
+        "correlation_length_nm": {
+          "decades": 0.0,
+          "min_abs": 0.059262526871945,
+          "max_abs": 0.059262526871945
+        },
+        "ringdown_ps": {
+          "decades": 1.9999998041844351,
+          "min_abs": 0.15889073222144257,
+          "max_abs": 15.889066058048751
+        }
+      },
+      "max_finite_decades": 1.9999998041844351
+    },
+    {
+      "material": "NiH",
+      "input": "gradient",
+      "range": [
+        0.01,
+        1.0
+      ],
+      "classification": "electronic-structure-computable",
+      "range_origin": "exploratory dispersion stiffness",
+      "states": [
+        "static_order"
+      ],
+      "phase_crossing": false,
+      "metrics": {
+        "threshold_loading": {
+          "decades": 0.0,
+          "min_abs": 0.5476494523207872,
+          "max_abs": 0.5476494523207872
+        },
+        "threshold_density_m3": {
+          "decades": 0.0,
+          "min_abs": 4.214419315986561e+28,
+          "max_abs": 4.214419315986561e+28
+        },
+        "amplitude_mode_THz": {
+          "decades": 0.0,
+          "min_abs": 29.235115186205828,
+          "max_abs": 29.235115186205828
+        },
+        "static_displacement_A": {
+          "decades": 0.0,
+          "min_abs": 0.2150099420530112,
+          "max_abs": 0.2150099420530112
+        },
+        "energy_per_isotope_eV": {
+          "decades": 0.0,
+          "min_abs": 0.021870358997221083,
+          "max_abs": 0.021870358997221083
+        },
+        "correlation_length_nm": {
+          "decades": 0.9999999999999999,
+          "min_abs": 0.018740456481227998,
+          "max_abs": 0.18740456481227993
+        },
+        "ringdown_ps": {
+          "decades": 0.0,
+          "min_abs": 1.588906612897951,
+          "max_abs": 1.588906612897951
+        }
+      },
+      "max_finite_decades": 0.9999999999999999
+    },
+    {
+      "material": "NiH",
+      "input": "electron_strength",
+      "range": [
+        0.0,
+        4.0
+      ],
+      "classification": "electronic-structure-computable",
+      "range_origin": "exploratory passive response strength",
+      "states": [
+        "static_order"
+      ],
+      "phase_crossing": false,
+      "metrics": {
+        "threshold_loading": {
+          "decades": 0.00010804124026409897,
+          "min_abs": 0.5476153899458547,
+          "max_abs": 0.5477516394455845
+        },
+        "threshold_density_m3": {
+          "decades": 0.00010804124026400256,
+          "min_abs": 4.214157190040383e+28,
+          "max_abs": 4.215205693825096e+28
+        },
+        "amplitude_mode_THz": {
+          "decades": 0.0001256028273704544,
+          "min_abs": 29.228774512311183,
+          "max_abs": 29.237229023712995
+        },
+        "static_displacement_A": {
+          "decades": 6.54104020798035e-05,
+          "min_abs": 0.21498565503835615,
+          "max_abs": 0.21501803711494058
+        },
+        "energy_per_isotope_eV": {
+          "decades": 0.0002616416083191403,
+          "min_abs": 0.021860478975258456,
+          "max_abs": 0.021873652833913942
+        },
+        "correlation_length_nm": {
+          "decades": 6.541040207970709e-05,
+          "min_abs": 0.059260295739005854,
+          "max_abs": 0.059269221783093275
+        },
+        "ringdown_ps": {
+          "decades": 9.248835525341341e-06,
+          "min_abs": 1.5888812366887093,
+          "max_abs": 1.5889150742305576
+        }
+      },
+      "max_finite_decades": 0.0002616416083191403
+    },
+    {
+      "material": "NiH",
+      "input": "photon_ratio",
+      "range": [
+        5.0,
+        20.0
+      ],
+      "classification": "neither",
+      "range_origin": "exploratory EM boundary-mode choice",
+      "states": [
+        "static_order"
+      ],
+      "phase_crossing": false,
+      "metrics": {
+        "threshold_loading": {
+          "decades": 0.09675069876527055,
+          "min_abs": 0.522368919924774,
+          "max_abs": 0.652721665091717
+        },
+        "threshold_density_m3": {
+          "decades": 0.09675069876527047,
+          "min_abs": 4.019873765732319e+28,
+          "max_abs": 5.022999259230756e+28
+        },
+        "amplitude_mode_THz": {
+          "decades": 0.12324634894066629,
+          "min_abs": 23.232171294973192,
+          "max_abs": 30.855753053632984
+        },
+        "static_displacement_A": {
+          "decades": 0.0692074443093681,
+          "min_abs": 0.18839085935018965,
+          "max_abs": 0.2209363991188615
+        },
+        "energy_per_isotope_eV": {
+          "decades": 0.2768297772374725,
+          "min_abs": 0.012890241443009534,
+          "max_abs": 0.024383207207797096
+        },
+        "correlation_length_nm": {
+          "decades": 0.0692074443093681,
+          "min_abs": 0.057672852999640103,
+          "max_abs": 0.06763615024955343
+        },
+        "ringdown_ps": {
+          "decades": 0.10657482671500468,
+          "min_abs": 1.506240578971687,
+          "max_abs": 1.9251703761132677
+        }
+      },
+      "max_finite_decades": 0.2768297772374725
+    },
+    {
+      "material": "NiH",
+      "input": "electron_count",
+      "range": [
+        0.5,
+        2.0
+      ],
+      "classification": "electronic-structure-computable",
+      "range_origin": "exploratory one-band effective count",
+      "states": [
+        "static_order"
+      ],
+      "phase_crossing": false,
+      "metrics": {
+        "threshold_loading": {
+          "decades": 0.04095270837089658,
+          "min_abs": 0.5256649796665086,
+          "max_abs": 0.5776459772102638
+        },
+        "threshold_density_m3": {
+          "decades": 0.04095270837089667,
+          "min_abs": 4.0452384908924475e+28,
+          "max_abs": 4.445256639699673e+28
+        },
+        "amplitude_mode_THz": {
+          "decades": 0.0251947812770549,
+          "min_abs": 28.24938482386748,
+          "max_abs": 29.93668971743305
+        },
+        "static_displacement_A": {
+          "decades": 0.025204277451892798,
+          "min_abs": 0.20775873841390155,
+          "max_abs": 0.22017275507646086
+        },
+        "energy_per_isotope_eV": {
+          "decades": 0.1008171098075708,
+          "min_abs": 0.019065971571106465,
+          "max_abs": 0.02404783873809859
+        },
+        "correlation_length_nm": {
+          "decades": 0.025204277451892708,
+          "min_abs": 0.05787288470013878,
+          "max_abs": 0.06133090990987322
+        },
+        "ringdown_ps": {
+          "decades": 6.315516007796086e-05,
+          "min_abs": 1.5887722589745175,
+          "max_abs": 1.5890033152428915
+        }
+      },
+      "max_finite_decades": 0.1008171098075708
+    },
+    {
+      "material": "NiH",
+      "input": "loading",
+      "range": [
+        0.01,
+        1.0
+      ],
+      "classification": "lookup",
+      "range_origin": "Ni phase endpoints, Ti entry313 range, Pd entry101 scenario; fixed-cell interpolation",
+      "states": [
+        "disordered",
+        "static_order"
+      ],
+      "phase_crossing": true,
+      "metrics": {
+        "threshold_loading": {
+          "decades": 0.0,
+          "min_abs": 0.5476494523207872,
+          "max_abs": 0.5476494523207872
+        },
+        "threshold_density_m3": {
+          "decades": 0.0,
+          "min_abs": 4.214419315986561e+28,
+          "max_abs": 4.214419315986561e+28
+        },
+        "amplitude_mode_THz": {
+          "decades": 0.7374456269649565,
+          "min_abs": 5.351298566079239,
+          "max_abs": 29.235115186205828
+        },
+        "static_displacement_A": {
+          "decades": null,
+          "reason": "zero/phase boundary; no log floor"
+        },
+        "energy_per_isotope_eV": {
+          "decades": null,
+          "reason": "zero/phase boundary; no log floor"
+        },
+        "correlation_length_nm": {
+          "decades": 0.7441989793904022,
+          "min_abs": 0.059262526871945,
+          "max_abs": 0.32883583939439953
+        },
+        "ringdown_ps": {
+          "decades": 0.030772142405573907,
+          "min_abs": 1.4802198713363868,
+          "max_abs": 1.588906612897951
+        }
+      },
+      "max_finite_decades": 0.7441989793904022
+    },
+    {
+      "material": "NiH",
+      "input": "a",
+      "range": [
+        3.726,
+        3.738
+      ],
+      "classification": "lookup",
+      "range_origin": "Ni/Ti reported lattice precision; Pd reference-cell spread scenario",
+      "states": [
+        "static_order"
+      ],
+      "phase_crossing": false,
+      "metrics": {
+        "threshold_loading": {
+          "decades": 0.0034604198950355727,
+          "min_abs": 0.5454722133400707,
+          "max_abs": 0.5498358489783344
+        },
+        "threshold_density_m3": {
+          "decades": 0.000728919552732799,
+          "min_abs": 4.2109021759109235e+28,
+          "max_abs": 4.2179756855852875e+28
+        },
+        "amplitude_mode_THz": {
+          "decades": 0.004166606968101458,
+          "min_abs": 29.094932153202954,
+          "max_abs": 29.37541127723047
+        },
+        "static_displacement_A": {
+          "decades": 0.00431674021920864,
+          "min_abs": 0.21394210100712635,
+          "max_abs": 0.21607921661811985
+        },
+        "energy_per_isotope_eV": {
+          "decades": 0.01726696087683465,
+          "min_abs": 0.021439110820952748,
+          "max_abs": 0.022308672610354914
+        },
+        "correlation_length_nm": {
+          "decades": 0.005713186701798025,
+          "min_abs": 0.05887445856668331,
+          "max_abs": 0.05965407458989956
+        },
+        "ringdown_ps": {
+          "decades": 0.0002990557624790479,
+          "min_abs": 1.5883613820591242,
+          "max_abs": 1.5894555065008051
+        }
+      },
+      "max_finite_decades": 0.01726696087683465
+    },
+    {
+      "material": "NiH",
+      "input": "E",
+      "range": [
+        0.089,
+        0.13
+      ],
+      "classification": "lookup",
+      "range_origin": "Ni/Pd peak-to-shoulder MODE CHOICE, not uncertainty; Ti fitted-intercept interval",
+      "states": [
+        "disordered",
+        "static_order"
+      ],
+      "phase_crossing": true,
+      "metrics": {
+        "threshold_loading": {
+          "decades": 0.28883568737790905,
+          "min_abs": 0.5476494523207872,
+          "max_abs": 1.0649723813440477
+        },
+        "threshold_density_m3": {
+          "decades": 0.28883568737790916,
+          "min_abs": 4.214419315986561e+28,
+          "max_abs": 8.195461815781315e+28
+        },
+        "amplitude_mode_THz": {
+          "decades": 0.9467825530325702,
+          "min_abs": 3.304625549534156,
+          "max_abs": 29.235115186205828
+        },
+        "static_displacement_A": {
+          "decades": null,
+          "reason": "zero/phase boundary; no log floor"
+        },
+        "energy_per_isotope_eV": {
+          "decades": null,
+          "reason": "zero/phase boundary; no log floor"
+        },
+        "correlation_length_nm": {
+          "decades": 1.1063956970942557,
+          "min_abs": 0.059262526871945,
+          "max_abs": 0.757139427493744
+        },
+        "ringdown_ps": {
+          "decades": 0.18103714017652803,
+          "min_abs": 1.047276195971462,
+          "max_abs": 1.588906612897951
+        }
+      },
+      "max_finite_decades": 1.1063956970942557
+    },
+    {
+      "material": "NiH",
+      "input": "T_K",
+      "range": [
+        5.0,
+        600.0
+      ],
+      "classification": "lookup",
+      "range_origin": "temperature scenario; fixed force/loss coefficients",
+      "states": [
+        "static_order"
+      ],
+      "phase_crossing": false,
+      "metrics": {
+        "threshold_loading": {
+          "decades": 0.0,
+          "min_abs": 0.5476494523207872,
+          "max_abs": 0.5476494523207872
+        },
+        "threshold_density_m3": {
+          "decades": 0.0,
+          "min_abs": 4.214419315986561e+28,
+          "max_abs": 4.214419315986561e+28
+        },
+        "amplitude_mode_THz": {
+          "decades": 0.0,
+          "min_abs": 29.235115186205828,
+          "max_abs": 29.235115186205828
+        },
+        "static_displacement_A": {
+          "decades": 0.0,
+          "min_abs": 0.2150099420530112,
+          "max_abs": 0.2150099420530112
+        },
+        "energy_per_isotope_eV": {
+          "decades": 0.0,
+          "min_abs": 0.021870358997221083,
+          "max_abs": 0.021870358997221083
+        },
+        "correlation_length_nm": {
+          "decades": 0.0,
+          "min_abs": 0.059262526871945,
+          "max_abs": 0.059262526871945
+        },
+        "ringdown_ps": {
+          "decades": 0.0,
+          "min_abs": 1.588906612897951,
+          "max_abs": 1.588906612897951
+        }
+      },
+      "max_finite_decades": 0.0
+    },
+    {
+      "material": "delta-TiH2_reference",
+      "input": "screen_A",
+      "range": [
+        0.2,
+        5.0
+      ],
+      "classification": "electronic-structure-computable",
+      "range_origin": "exploratory finite-q screening proxy",
+      "states": [
+        "disordered"
+      ],
+      "phase_crossing": false,
+      "metrics": {
+        "threshold_loading": {
+          "decades": 3.7183825634670336,
+          "min_abs": 2.4480235121593887,
+          "max_abs": 12799.651589058016
+        },
+        "threshold_density_m3": {
+          "decades": 3.7183825634670336,
+          "min_abs": 1.1082173317202985e+29,
+          "max_abs": 5.794387047558633e+32
+        },
+        "amplitude_mode_THz": {
+          "decades": 0.3686838855454113,
+          "min_abs": 16.32544351231923,
+          "max_abs": 38.154773001790346
+        },
+        "static_displacement_A": {
+          "decades": 0.0,
+          "reason": "identically zero"
+        },
+        "energy_per_isotope_eV": {
+          "decades": 0.0,
+          "reason": "identically zero"
+        },
+        "correlation_length_nm": {
+          "decades": 0.3687234563869704,
+          "min_abs": 0.0654800540814082,
+          "max_abs": 0.1530497011162311
+        },
+        "ringdown_ps": {
+          "decades": 0.00011599341937646292,
+          "min_abs": 0.9106074618352364,
+          "max_abs": 0.9108507036543408
+        }
+      },
+      "max_finite_decades": 3.7183825634670336
+    },
+    {
+      "material": "delta-TiH2_reference",
+      "input": "beta",
+      "range": [
+        0.1,
+        10.0
+      ],
+      "classification": "electronic-structure-computable",
+      "range_origin": "exploratory quartic",
+      "states": [
+        "disordered"
+      ],
+      "phase_crossing": false,
+      "metrics": {
+        "threshold_loading": {
+          "decades": 0.0,
+          "min_abs": 2.4480235121593887,
+          "max_abs": 2.4480235121593887
+        },
+        "threshold_density_m3": {
+          "decades": 0.0,
+          "min_abs": 1.1082173317202985e+29,
+          "max_abs": 1.1082173317202985e+29
+        },
+        "amplitude_mode_THz": {
+          "decades": 0.0,
+          "min_abs": 16.32544351231923,
+          "max_abs": 16.32544351231923
+        },
+        "static_displacement_A": {
+          "decades": 0.0,
+          "reason": "identically zero"
+        },
+        "energy_per_isotope_eV": {
+          "decades": 0.0,
+          "reason": "identically zero"
+        },
+        "correlation_length_nm": {
+          "decades": 0.0,
+          "min_abs": 0.1530497011162311,
+          "max_abs": 0.1530497011162311
+        },
+        "ringdown_ps": {
+          "decades": 0.0,
+          "min_abs": 0.9106074618352364,
+          "max_abs": 0.9106074618352364
+        }
+      },
+      "max_finite_decades": 0.0
+    },
+    {
+      "material": "delta-TiH2_reference",
+      "input": "gamma",
+      "range": [
+        0.001,
+        0.1
+      ],
+      "classification": "lookup",
+      "range_origin": "exploratory; actual mode linewidth/ringdown needed",
+      "states": [
+        "disordered"
+      ],
+      "phase_crossing": false,
+      "metrics": {
+        "threshold_loading": {
+          "decades": 0.0,
+          "min_abs": 2.4480235121593887,
+          "max_abs": 2.4480235121593887
+        },
+        "threshold_density_m3": {
+          "decades": 0.0,
+          "min_abs": 1.1082173317202985e+29,
+          "max_abs": 1.1082173317202985e+29
+        },
+        "amplitude_mode_THz": {
+          "decades": 0.0025027242005747404,
+          "min_abs": 16.232555744195135,
+          "max_abs": 16.326369721343085
+        },
+        "static_displacement_A": {
+          "decades": 0.0,
+          "reason": "identically zero"
+        },
+        "energy_per_isotope_eV": {
+          "decades": 0.0,
+          "reason": "identically zero"
+        },
+        "correlation_length_nm": {
+          "decades": 0.0,
+          "min_abs": 0.1530497011162311,
+          "max_abs": 0.1530497011162311
+        },
+        "ringdown_ps": {
+          "decades": 1.9999999626103144,
+          "min_abs": 0.09106075394559036,
+          "max_abs": 9.106074610590335
+        }
+      },
+      "max_finite_decades": 1.9999999626103144
+    },
+    {
+      "material": "delta-TiH2_reference",
+      "input": "gradient",
+      "range": [
+        0.01,
+        1.0
+      ],
+      "classification": "electronic-structure-computable",
+      "range_origin": "exploratory dispersion stiffness",
+      "states": [
+        "disordered"
+      ],
+      "phase_crossing": false,
+      "metrics": {
+        "threshold_loading": {
+          "decades": 0.0,
+          "min_abs": 2.4480235121593887,
+          "max_abs": 2.4480235121593887
+        },
+        "threshold_density_m3": {
+          "decades": 0.0,
+          "min_abs": 1.1082173317202985e+29,
+          "max_abs": 1.1082173317202985e+29
+        },
+        "amplitude_mode_THz": {
+          "decades": 0.0,
+          "min_abs": 16.32544351231923,
+          "max_abs": 16.32544351231923
+        },
+        "static_displacement_A": {
+          "decades": 0.0,
+          "reason": "identically zero"
+        },
+        "energy_per_isotope_eV": {
+          "decades": 0.0,
+          "reason": "identically zero"
+        },
+        "correlation_length_nm": {
+          "decades": 1.0,
+          "min_abs": 0.0483985650735305,
+          "max_abs": 0.483985650735305
+        },
+        "ringdown_ps": {
+          "decades": 0.0,
+          "min_abs": 0.9106074618352364,
+          "max_abs": 0.9106074618352364
+        }
+      },
+      "max_finite_decades": 1.0
+    },
+    {
+      "material": "delta-TiH2_reference",
+      "input": "electron_strength",
+      "range": [
+        0.0,
+        4.0
+      ],
+      "classification": "electronic-structure-computable",
+      "range_origin": "exploratory passive response strength",
+      "states": [
+        "disordered"
+      ],
+      "phase_crossing": false,
+      "metrics": {
+        "threshold_loading": {
+          "decades": 0.000534101320937039,
+          "min_abs": 2.447270627539704,
+          "max_abs": 2.4502821660184444
+        },
+        "threshold_density_m3": {
+          "decades": 0.000534101320937039,
+          "min_abs": 1.107876501748619e+29,
+          "max_abs": 1.109239821635338e+29
+        },
+        "amplitude_mode_THz": {
+          "decades": 0.0011576942306611292,
+          "min_abs": 16.31453446958003,
+          "max_abs": 16.358081968718334
+        },
+        "static_displacement_A": {
+          "decades": 0.0,
+          "reason": "identically zero"
+        },
+        "energy_per_isotope_eV": {
+          "decades": 0.0,
+          "reason": "identically zero"
+        },
+        "correlation_length_nm": {
+          "decades": 0.0014571838679784312,
+          "min_abs": 0.15266536334667669,
+          "max_abs": 0.15317846020406026
+        },
+        "ringdown_ps": {
+          "decades": 1.8233479766645682e-05,
+          "min_abs": 0.9105787989514683,
+          "max_abs": 0.9106170296205998
+        }
+      },
+      "max_finite_decades": 0.0014571838679784312
+    },
+    {
+      "material": "delta-TiH2_reference",
+      "input": "photon_ratio",
+      "range": [
+        5.0,
+        20.0
+      ],
+      "classification": "neither",
+      "range_origin": "exploratory EM boundary-mode choice",
+      "states": [
+        "disordered"
+      ],
+      "phase_crossing": false,
+      "metrics": {
+        "threshold_loading": {
+          "decades": 0.04367315315367652,
+          "min_abs": 2.398806966740126,
+          "max_abs": 2.6525797790582004
+        },
+        "threshold_density_m3": {
+          "decades": 0.04367315315367652,
+          "min_abs": 1.0859370601583174e+29,
+          "max_abs": 1.2008197103997835e+29
+        },
+        "amplitude_mode_THz": {
+          "decades": 0.0832574927740998,
+          "min_abs": 15.577477558756415,
+          "max_abs": 18.869249501761857
+        },
+        "static_displacement_A": {
+          "decades": 0.0,
+          "reason": "identically zero"
+        },
+        "energy_per_isotope_eV": {
+          "decades": 0.0,
+          "reason": "identically zero"
+        },
+        "correlation_length_nm": {
+          "decades": 0.10693543808303196,
+          "min_abs": 0.1268136733357818,
+          "max_abs": 0.16221892563160248
+        },
+        "ringdown_ps": {
+          "decades": 0.04731610060378606,
+          "min_abs": 0.8902710035089056,
+          "max_abs": 0.9927464187582392
+        }
+      },
+      "max_finite_decades": 0.10693543808303196
+    },
+    {
+      "material": "delta-TiH2_reference",
+      "input": "electron_count",
+      "range": [
+        0.5,
+        2.0
+      ],
+      "classification": "electronic-structure-computable",
+      "range_origin": "exploratory one-band effective count",
+      "states": [
+        "disordered"
+      ],
+      "phase_crossing": false,
+      "metrics": {
+        "threshold_loading": {
+          "decades": 0.031015590010194122,
+          "min_abs": 2.368688473267349,
+          "max_abs": 2.544037663931773
+        },
+        "threshold_density_m3": {
+          "decades": 0.031015590010194122,
+          "min_abs": 1.0723024539929568e+29,
+          "max_abs": 1.1516828240066536e+29
+        },
+        "amplitude_mode_THz": {
+          "decades": 0.084376864786822,
+          "min_abs": 14.810810624662599,
+          "max_abs": 17.986874056209192
+        },
+        "static_displacement_A": {
+          "decades": 0.0,
+          "reason": "identically zero"
+        },
+        "energy_per_isotope_eV": {
+          "decades": 0.0,
+          "reason": "identically zero"
+        },
+        "correlation_length_nm": {
+          "decades": 0.08448470356979927,
+          "min_abs": 0.13888917729656605,
+          "max_abs": 0.16871477184445502
+        },
+        "ringdown_ps": {
+          "decades": 3.2021871350348224e-06,
+          "min_abs": 0.9106027200823623,
+          "max_abs": 0.9106094342617657
+        }
+      },
+      "max_finite_decades": 0.08448470356979927
+    },
+    {
+      "material": "delta-TiH2_reference",
+      "input": "loading",
+      "range": [
+        1.74,
+        2.0
+      ],
+      "classification": "lookup",
+      "range_origin": "Ni phase endpoints, Ti entry313 range, Pd entry101 scenario; fixed-cell interpolation",
+      "states": [
+        "disordered"
+      ],
+      "phase_crossing": false,
+      "metrics": {
+        "threshold_loading": {
+          "decades": 0.0,
+          "min_abs": 2.4480235121593887,
+          "max_abs": 2.4480235121593887
+        },
+        "threshold_density_m3": {
+          "decades": 0.0,
+          "min_abs": 1.1082173317202985e+29,
+          "max_abs": 1.1082173317202985e+29
+        },
+        "amplitude_mode_THz": {
+          "decades": 0.10021752908861781,
+          "min_abs": 16.32544351231923,
+          "max_abs": 20.56281260338228
+        },
+        "static_displacement_A": {
+          "decades": 0.0,
+          "reason": "identically zero"
+        },
+        "energy_per_isotope_eV": {
+          "decades": 0.0,
+          "reason": "identically zero"
+        },
+        "correlation_length_nm": {
+          "decades": 0.0993734368955412,
+          "min_abs": 0.12174721879194077,
+          "max_abs": 0.1530497011162311
+        },
+        "ringdown_ps": {
+          "decades": 0.0016702047859603938,
+          "min_abs": 0.9071121833599133,
+          "max_abs": 0.9106074618352364
+        }
+      },
+      "max_finite_decades": 0.10021752908861781
+    },
+    {
+      "material": "delta-TiH2_reference",
+      "input": "a",
+      "range": [
+        4.453,
+        4.455
+      ],
+      "classification": "lookup",
+      "range_origin": "Ni/Ti reported lattice precision; Pd reference-cell spread scenario",
+      "states": [
+        "disordered"
+      ],
+      "phase_crossing": false,
+      "metrics": {
+        "threshold_loading": {
+          "decades": 0.0005027290022897044,
+          "min_abs": 2.446607011282248,
+          "max_abs": 2.449440785428266
+        },
+        "threshold_density_m3": {
+          "decades": 8.23107227221491e-05,
+          "min_abs": 1.108112390891477e+29,
+          "max_abs": 1.1083224285029444e+29
+        },
+        "amplitude_mode_THz": {
+          "decades": 0.0010762303796152807,
+          "min_abs": 16.305194677426375,
+          "max_abs": 16.34565088328888
+        },
+        "static_displacement_A": {
+          "decades": 0.0,
+          "reason": "identically zero"
+        },
+        "energy_per_isotope_eV": {
+          "decades": 0.0,
+          "reason": "identically zero"
+        },
+        "correlation_length_nm": {
+          "decades": 0.0008725561319212906,
+          "min_abs": 0.15289633653310203,
+          "max_abs": 0.1532038346739412
+        },
+        "ringdown_ps": {
+          "decades": 1.728929178010157e-05,
+          "min_abs": 0.9105893442211134,
+          "max_abs": 0.9106255955641492
+        }
+      },
+      "max_finite_decades": 0.0010762303796152807
+    },
+    {
+      "material": "delta-TiH2_reference",
+      "input": "E",
+      "range": [
+        0.1493,
+        0.1495
+      ],
+      "classification": "lookup",
+      "range_origin": "Ni/Pd peak-to-shoulder MODE CHOICE, not uncertainty; Ti fitted-intercept interval",
+      "states": [
+        "disordered"
+      ],
+      "phase_crossing": false,
+      "metrics": {
+        "threshold_loading": {
+          "decades": 0.001006532409397018,
+          "min_abs": 2.456559168569428,
+          "max_abs": 2.4622591579219626
+        },
+        "threshold_density_m3": {
+          "decades": 0.001006532409397018,
+          "min_abs": 1.1120814132228783e+29,
+          "max_abs": 1.1146617916219108e+29
+        },
+        "amplitude_mode_THz": {
+          "decades": 0.0027113440905822683,
+          "min_abs": 16.481203847026293,
+          "max_abs": 16.584419516407156
+        },
+        "static_displacement_A": {
+          "decades": 0.0,
+          "reason": "identically zero"
+        },
+        "energy_per_isotope_eV": {
+          "decades": 0.0,
+          "reason": "identically zero"
+        },
+        "correlation_length_nm": {
+          "decades": 0.00211284264807151,
+          "min_abs": 0.15118024725242188,
+          "max_abs": 0.1519175311419543
+        },
+        "ringdown_ps": {
+          "decades": 0.0006155664834064675,
+          "min_abs": 0.9073828692691863,
+          "max_abs": 0.9086699003926839
+        }
+      },
+      "max_finite_decades": 0.0027113440905822683
+    },
+    {
+      "material": "delta-TiH2_reference",
+      "input": "T_K",
+      "range": [
+        5.0,
+        600.0
+      ],
+      "classification": "lookup",
+      "range_origin": "temperature scenario; fixed force/loss coefficients",
+      "states": [
+        "disordered"
+      ],
+      "phase_crossing": false,
+      "metrics": {
+        "threshold_loading": {
+          "decades": 0.0,
+          "min_abs": 2.4480235121593887,
+          "max_abs": 2.4480235121593887
+        },
+        "threshold_density_m3": {
+          "decades": 0.0,
+          "min_abs": 1.1082173317202985e+29,
+          "max_abs": 1.1082173317202985e+29
+        },
+        "amplitude_mode_THz": {
+          "decades": 0.0,
+          "min_abs": 16.32544351231923,
+          "max_abs": 16.32544351231923
+        },
+        "static_displacement_A": {
+          "decades": 0.0,
+          "reason": "identically zero"
+        },
+        "energy_per_isotope_eV": {
+          "decades": 0.0,
+          "reason": "identically zero"
+        },
+        "correlation_length_nm": {
+          "decades": 0.0,
+          "min_abs": 0.1530497011162311,
+          "max_abs": 0.1530497011162311
+        },
+        "ringdown_ps": {
+          "decades": 0.0,
+          "min_abs": 0.9106074618352364,
+          "max_abs": 0.9106074618352364
+        }
+      },
+      "max_finite_decades": 0.0
+    },
+    {
+      "material": "PdD",
+      "input": "screen_A",
+      "range": [
+        0.2,
+        5.0
+      ],
+      "classification": "electronic-structure-computable",
+      "range_origin": "exploratory finite-q screening proxy",
+      "states": [
+        "disordered",
+        "static_order"
+      ],
+      "phase_crossing": true,
+      "metrics": {
+        "threshold_loading": {
+          "decades": 5.029361787186423,
+          "min_abs": 0.2936229962565946,
+          "max_abs": 31416.06980665314
+        },
+        "threshold_density_m3": {
+          "decades": 5.029361787186423,
+          "min_abs": 1.7242207098744672e+28,
+          "max_abs": 1.8448227446107845e+33
+        },
+        "amplitude_mode_THz": {
+          "decades": 1.2056500960420313,
+          "min_abs": 1.334686131466808,
+          "max_abs": 21.430349005871722
+        },
+        "static_displacement_A": {
+          "decades": null,
+          "reason": "zero/phase boundary; no log floor"
+        },
+        "energy_per_isotope_eV": {
+          "decades": null,
+          "reason": "zero/phase boundary; no log floor"
+        },
+        "correlation_length_nm": {
+          "decades": 1.2072898192308426,
+          "min_abs": 0.035231061365404846,
+          "max_abs": 0.5678263552161132
+        },
+        "ringdown_ps": {
+          "decades": 0.0029884893692196258,
+          "min_abs": 4.131303708606114,
+          "max_abs": 4.159830283377031
+        }
+      },
+      "max_finite_decades": 5.029361787186423
+    },
+    {
+      "material": "PdD",
+      "input": "beta",
+      "range": [
+        0.1,
+        10.0
+      ],
+      "classification": "electronic-structure-computable",
+      "range_origin": "exploratory quartic",
+      "states": [
+        "static_order"
+      ],
+      "phase_crossing": false,
+      "metrics": {
+        "threshold_loading": {
+          "decades": 0.0,
+          "min_abs": 0.2936229962565946,
+          "max_abs": 0.2936229962565946
+        },
+        "threshold_density_m3": {
+          "decades": 0.0,
+          "min_abs": 1.7242207098744672e+28,
+          "max_abs": 1.7242207098744672e+28
+        },
+        "amplitude_mode_THz": {
+          "decades": 0.0,
+          "min_abs": 21.430349005871722,
+          "max_abs": 21.430349005871722
+        },
+        "static_displacement_A": {
+          "decades": 1.0000000000000002,
+          "min_abs": 0.13729161325317144,
+          "max_abs": 1.3729161325317147
+        },
+        "energy_per_isotope_eV": {
+          "decades": 2.0,
+          "min_abs": 0.010439069194521271,
+          "max_abs": 1.043906919452127
+        },
+        "correlation_length_nm": {
+          "decades": 0.0,
+          "min_abs": 0.035231061365404846,
+          "max_abs": 0.035231061365404846
+        },
+        "ringdown_ps": {
+          "decades": 0.0,
+          "min_abs": 4.159830283377031,
+          "max_abs": 4.159830283377031
+        }
+      },
+      "max_finite_decades": 2.0
+    },
+    {
+      "material": "PdD",
+      "input": "gamma",
+      "range": [
+        0.001,
+        0.1
+      ],
+      "classification": "lookup",
+      "range_origin": "exploratory; actual mode linewidth/ringdown needed",
+      "states": [
+        "static_order"
+      ],
+      "phase_crossing": false,
+      "metrics": {
+        "threshold_loading": {
+          "decades": 0.0,
+          "min_abs": 0.2936229962565946,
+          "max_abs": 0.2936229962565946
+        },
+        "threshold_density_m3": {
+          "decades": 0.0,
+          "min_abs": 1.7242207098744672e+28,
+          "max_abs": 1.7242207098744672e+28
+        },
+        "amplitude_mode_THz": {
+          "decades": 6.962458452460752e-05,
+          "min_abs": 21.42694764757883,
+          "max_abs": 21.43038301684933
+        },
+        "static_displacement_A": {
+          "decades": 0.0,
+          "min_abs": 0.4341542015189811,
+          "max_abs": 0.4341542015189811
+        },
+        "energy_per_isotope_eV": {
+          "decades": 0.0,
+          "min_abs": 0.10439069194521271,
+          "max_abs": 0.10439069194521271
+        },
+        "correlation_length_nm": {
+          "decades": 0.0,
+          "min_abs": 0.035231061365404846,
+          "max_abs": 0.035231061365404846
+        },
+        "ringdown_ps": {
+          "decades": 1.9999991977048146,
+          "min_abs": 0.41598378919743406,
+          "max_abs": 41.59830207292704
+        }
+      },
+      "max_finite_decades": 1.9999991977048146
+    },
+    {
+      "material": "PdD",
+      "input": "gradient",
+      "range": [
+        0.01,
+        1.0
+      ],
+      "classification": "electronic-structure-computable",
+      "range_origin": "exploratory dispersion stiffness",
+      "states": [
+        "static_order"
+      ],
+      "phase_crossing": false,
+      "metrics": {
+        "threshold_loading": {
+          "decades": 0.0,
+          "min_abs": 0.2936229962565946,
+          "max_abs": 0.2936229962565946
+        },
+        "threshold_density_m3": {
+          "decades": 0.0,
+          "min_abs": 1.7242207098744672e+28,
+          "max_abs": 1.7242207098744672e+28
+        },
+        "amplitude_mode_THz": {
+          "decades": 0.0,
+          "min_abs": 21.430349005871722,
+          "max_abs": 21.430349005871722
+        },
+        "static_displacement_A": {
+          "decades": 0.0,
+          "min_abs": 0.4341542015189811,
+          "max_abs": 0.4341542015189811
+        },
+        "energy_per_isotope_eV": {
+          "decades": 0.0,
+          "min_abs": 0.10439069194521271,
+          "max_abs": 0.10439069194521271
+        },
+        "correlation_length_nm": {
+          "decades": 0.9999999999999999,
+          "min_abs": 0.011141039829984102,
+          "max_abs": 0.11141039829984101
+        },
+        "ringdown_ps": {
+          "decades": 0.0,
+          "min_abs": 4.159830283377031,
+          "max_abs": 4.159830283377031
+        }
+      },
+      "max_finite_decades": 0.9999999999999999
+    },
+    {
+      "material": "PdD",
+      "input": "electron_strength",
+      "range": [
+        0.0,
+        4.0
+      ],
+      "classification": "electronic-structure-computable",
+      "range_origin": "exploratory passive response strength",
+      "states": [
+        "static_order"
+      ],
+      "phase_crossing": false,
+      "metrics": {
+        "threshold_loading": {
+          "decades": 2.1033856806281696e-05,
+          "min_abs": 0.2936194410083155,
+          "max_abs": 0.293633662001432
+        },
+        "threshold_density_m3": {
+          "decades": 2.1033856806281696e-05,
+          "min_abs": 1.7241998326516691e+28,
+          "max_abs": 1.7242833415428628e+28
+        },
+        "amplitude_mode_THz": {
+          "decades": 1.676556965843847e-05,
+          "min_abs": 21.429728542317587,
+          "max_abs": 21.430555834757577
+        },
+        "static_displacement_A": {
+          "decades": 4.3716952066913514e-06,
+          "min_abs": 0.4341509238107682,
+          "max_abs": 0.4341552940828864
+        },
+        "energy_per_isotope_eV": {
+          "decades": 1.748678082678029e-05,
+          "min_abs": 0.10438753953206222,
+          "max_abs": 0.10439174276017384
+        },
+        "correlation_length_nm": {
+          "decades": 4.3716952066913514e-06,
+          "min_abs": 0.035230972705456394,
+          "max_abs": 0.03523132734926634
+        },
+        "ringdown_ps": {
+          "decades": 4.446229952031641e-06,
+          "min_abs": 4.1597983433082,
+          "max_abs": 4.159840930804555
+        }
+      },
+      "max_finite_decades": 2.1033856806281696e-05
+    },
+    {
+      "material": "PdD",
+      "input": "photon_ratio",
+      "range": [
+        5.0,
+        20.0
+      ],
+      "classification": "neither",
+      "range_origin": "exploratory EM boundary-mode choice",
+      "states": [
+        "static_order"
+      ],
+      "phase_crossing": false,
+      "metrics": {
+        "threshold_loading": {
+          "decades": 0.17472455776277418,
+          "min_abs": 0.26789058875115285,
+          "max_abs": 0.4005733149510869
+        },
+        "threshold_density_m3": {
+          "decades": 0.17472455776277412,
+          "min_abs": 1.573114187219686e+28,
+          "max_abs": 2.3522571946584014e+28
+        },
+        "amplitude_mode_THz": {
+          "decades": 0.15518077923814338,
+          "min_abs": 16.18701870467265,
+          "max_abs": 23.139163127304947
+        },
+        "static_displacement_A": {
+          "decades": 0.043419958469030004,
+          "min_abs": 0.39993901119856246,
+          "max_abs": 0.4419913061713026
+        },
+        "energy_per_isotope_eV": {
+          "decades": 0.17367983387612,
+          "min_abs": 0.0751728156541885,
+          "max_abs": 0.11213486156936361
+        },
+        "correlation_length_nm": {
+          "decades": 0.04341995846902983,
+          "min_abs": 0.034606366917623047,
+          "max_abs": 0.03824511459865944
+        },
+        "ringdown_ps": {
+          "decades": 0.20453576971176743,
+          "min_abs": 3.7035621078165204,
+          "max_abs": 5.931375265228302
+        }
+      },
+      "max_finite_decades": 0.20453576971176743
+    },
+    {
+      "material": "PdD",
+      "input": "electron_count",
+      "range": [
+        0.5,
+        2.0
+      ],
+      "classification": "electronic-structure-computable",
+      "range_origin": "exploratory one-band effective count",
+      "states": [
+        "static_order"
+      ],
+      "phase_crossing": false,
+      "metrics": {
+        "threshold_loading": {
+          "decades": 0.06830305425877768,
+          "min_abs": 0.27415378192774154,
+          "max_abs": 0.3208464922317494
+        },
+        "threshold_density_m3": {
+          "decades": 0.0683030542587776,
+          "min_abs": 1.6098930755312183e+28,
+          "max_abs": 1.8840832416038495e+28
+        },
+        "amplitude_mode_THz": {
+          "decades": 0.014316681618232813,
+          "min_abs": 21.01674152370584,
+          "max_abs": 21.721112486492867
+        },
+        "static_displacement_A": {
+          "decades": 0.014438335104039414,
+          "min_abs": 0.425705936213299,
+          "max_abs": 0.44009662827090784
+        },
+        "energy_per_isotope_eV": {
+          "decades": 0.057753340416157886,
+          "min_abs": 0.09649938999634099,
+          "max_abs": 0.11022444187848952
+        },
+        "correlation_length_nm": {
+          "decades": 0.014438335104039508,
+          "min_abs": 0.03475535219585474,
+          "max_abs": 0.03593023261977649
+        },
+        "ringdown_ps": {
+          "decades": 0.00020465837082868038,
+          "min_abs": 4.158686931303218,
+          "max_abs": 4.160647146546781
+        }
+      },
+      "max_finite_decades": 0.06830305425877768
+    },
+    {
+      "material": "PdD",
+      "input": "loading",
+      "range": [
+        0.6,
+        1.0
+      ],
+      "classification": "lookup",
+      "range_origin": "Ni phase endpoints, Ti entry313 range, Pd entry101 scenario; fixed-cell interpolation",
+      "states": [
+        "static_order"
+      ],
+      "phase_crossing": false,
+      "metrics": {
+        "threshold_loading": {
+          "decades": 0.0,
+          "min_abs": 0.2936229962565946,
+          "max_abs": 0.2936229962565946
+        },
+        "threshold_density_m3": {
+          "decades": 0.0,
+          "min_abs": 1.7242207098744672e+28,
+          "max_abs": 1.7242207098744672e+28
+        },
+        "amplitude_mode_THz": {
+          "decades": 0.1676842222695945,
+          "min_abs": 14.566158171360756,
+          "max_abs": 21.430349005871722
+        },
+        "static_displacement_A": {
+          "decades": 0.1813901938198298,
+          "min_abs": 0.28592610912302013,
+          "max_abs": 0.4341542015189811
+        },
+        "energy_per_isotope_eV": {
+          "decades": 0.7255607752793192,
+          "min_abs": 0.0196381693567684,
+          "max_abs": 0.10439069194521271
+        },
+        "correlation_length_nm": {
+          "decades": 0.18139019381982974,
+          "min_abs": 0.035231061365404846,
+          "max_abs": 0.05349533612959619
+        },
+        "ringdown_ps": {
+          "decades": 0.0268663711685045,
+          "min_abs": 3.9102924649517963,
+          "max_abs": 4.159830283377031
+        }
+      },
+      "max_finite_decades": 0.7255607752793192
+    },
+    {
+      "material": "PdD",
+      "input": "a",
+      "range": [
+        4.08,
+        4.088
+      ],
+      "classification": "lookup",
+      "range_origin": "Ni/Ti reported lattice precision; Pd reference-cell spread scenario",
+      "states": [
+        "static_order"
+      ],
+      "phase_crossing": false,
+      "metrics": {
+        "threshold_loading": {
+          "decades": 0.0017171663502246425,
+          "min_abs": 0.2930433702302312,
+          "max_abs": 0.29420433442153304
+        },
+        "threshold_density_m3": {
+          "decades": 0.0008350057601043768,
+          "min_abs": 1.722568085712149e+28,
+          "max_abs": 1.7258832047430332e+28
+        },
+        "amplitude_mode_THz": {
+          "decades": 0.0015231209948976384,
+          "min_abs": 21.392791315987946,
+          "max_abs": 21.467950028342553
+        },
+        "static_displacement_A": {
+          "decades": 0.0017229225051309041,
+          "min_abs": 0.43329383417787387,
+          "max_abs": 0.4350162011449037
+        },
+        "energy_per_isotope_eV": {
+          "decades": 0.006891690020523645,
+          "min_abs": 0.10356566051221339,
+          "max_abs": 0.10522222216953171
+        },
+        "correlation_length_nm": {
+          "decades": 0.0025736465419073005,
+          "min_abs": 0.035126811749863804,
+          "max_abs": 0.03533559265808507
+        },
+        "ringdown_ps": {
+          "decades": 0.000387242809560266,
+          "min_abs": 4.157979477878811,
+          "max_abs": 4.161688633273093
+        }
+      },
+      "max_finite_decades": 0.006891690020523645
+    },
+    {
+      "material": "PdD",
+      "input": "E",
+      "range": [
+        0.037,
+        0.065
+      ],
+      "classification": "lookup",
+      "range_origin": "Ni/Pd peak-to-shoulder MODE CHOICE, not uncertainty; Ti fitted-intercept interval",
+      "states": [
+        "static_order"
+      ],
+      "phase_crossing": false,
+      "metrics": {
+        "threshold_loading": {
+          "decades": 0.3969088057587279,
+          "min_abs": 0.2936229962565946,
+          "max_abs": 0.7323165883564766
+        },
+        "threshold_density_m3": {
+          "decades": 0.3969088057587279,
+          "min_abs": 1.7242207098744672e+28,
+          "max_abs": 4.300328802330629e+28
+        },
+        "amplitude_mode_THz": {
+          "decades": 0.18758936023689884,
+          "min_abs": 13.913611849625614,
+          "max_abs": 21.430349005871722
+        },
+        "static_displacement_A": {
+          "decades": 0.577774995604737,
+          "min_abs": 0.11478073796545749,
+          "max_abs": 0.4341542015189811
+        },
+        "energy_per_isotope_eV": {
+          "decades": 1.5769650846913663,
+          "min_abs": 0.002765009906194654,
+          "max_abs": 0.10439069194521271
+        },
+        "correlation_length_nm": {
+          "decades": 0.45541917931680675,
+          "min_abs": 0.035231061365404846,
+          "max_abs": 0.10054139487584188
+        },
+        "ringdown_ps": {
+          "decades": 0.29033005902370873,
+          "min_abs": 2.1317955593518803,
+          "max_abs": 4.159830283377031
+        }
+      },
+      "max_finite_decades": 1.5769650846913663
+    },
+    {
+      "material": "PdD",
+      "input": "T_K",
+      "range": [
+        5.0,
+        600.0
+      ],
+      "classification": "lookup",
+      "range_origin": "temperature scenario; fixed force/loss coefficients",
+      "states": [
+        "static_order"
+      ],
+      "phase_crossing": false,
+      "metrics": {
+        "threshold_loading": {
+          "decades": 0.0,
+          "min_abs": 0.2936229962565946,
+          "max_abs": 0.2936229962565946
+        },
+        "threshold_density_m3": {
+          "decades": 0.0,
+          "min_abs": 1.7242207098744672e+28,
+          "max_abs": 1.7242207098744672e+28
+        },
+        "amplitude_mode_THz": {
+          "decades": 0.0,
+          "min_abs": 21.430349005871722,
+          "max_abs": 21.430349005871722
+        },
+        "static_displacement_A": {
+          "decades": 0.0,
+          "min_abs": 0.4341542015189811,
+          "max_abs": 0.4341542015189811
+        },
+        "energy_per_isotope_eV": {
+          "decades": 0.0,
+          "min_abs": 0.10439069194521271,
+          "max_abs": 0.10439069194521271
+        },
+        "correlation_length_nm": {
+          "decades": 0.0,
+          "min_abs": 0.035231061365404846,
+          "max_abs": 0.035231061365404846
+        },
+        "ringdown_ps": {
+          "decades": 0.0,
+          "min_abs": 4.159830283377031,
+          "max_abs": 4.159830283377031
+        }
+      },
+      "max_finite_decades": 0.0
+    }
+  ],
+  "baselines": [
+    {
+      "material": "NiH",
+      "g0_scales330": {
+        "mask": 31,
+        "r": -0.9914320365114153,
+        "loading": 1.0,
+        "threshold_loading": 0.5476494523207872,
+        "threshold_density_m3": 4.214419315986561e+28,
+        "state": "static_order",
+        "bounded": true,
+        "amplitude_mode_THz": 29.235115186205828,
+        "locked_frequency_THz": 0.0,
+        "static_displacement_A": 0.2150099420530112,
+        "driven_amplitude_A": 0.0,
+        "energy_per_isotope_eV": -0.021870358997221083,
+        "response_diameter_nm": null,
+        "static_bulk_domain": "not selected by positive gradient",
+        "correlation_length_nm": 0.059262526871945,
+        "ringdown_ps": 1.588906612897951,
+        "ordered_state_lifetime": "infinite deterministic persistence",
+        "thermal_rms_A": 0.13222829003760195,
+        "screening_A": 5.0,
+        "mode_energy_eV": 0.12090672148208859
+      },
+      "TF_reference": {
+        "mask": 31,
+        "r": 1.0737675619609273,
+        "loading": 1.0,
+        "threshold_loading": 9.485979117495614,
+        "threshold_density_m3": 7.29990570690857e+29,
+        "state": "disordered",
+        "bounded": true,
+        "amplitude_mode_THz": 21.519870838461927,
+        "locked_frequency_THz": null,
+        "static_displacement_A": 0.0,
+        "driven_amplitude_A": 0.0,
+        "energy_per_isotope_eV": 0.0,
+        "response_diameter_nm": null,
+        "static_bulk_domain": "not selected by positive gradient",
+        "correlation_length_nm": 0.08053255859425629,
+        "ringdown_ps": 1.5880400379754986,
+        "ordered_state_lifetime": "no ordered state",
+        "thermal_rms_A": 0.15765509650049472,
+        "screening_A": 0.5619997977975328,
+        "mode_energy_eV": 0.08899903466171749
+      }
+    },
+    {
+      "material": "delta-TiH2_reference",
+      "g0_scales330": {
+        "mask": 31,
+        "r": 0.2117266189887238,
+        "loading": 2.0,
+        "threshold_loading": 2.4480235121593887,
+        "threshold_density_m3": 1.1082173317202985e+29,
+        "state": "disordered",
+        "bounded": true,
+        "amplitude_mode_THz": 16.32544351231923,
+        "locked_frequency_THz": null,
+        "static_displacement_A": 0.0,
+        "driven_amplitude_A": 0.0,
+        "energy_per_isotope_eV": 0.0,
+        "response_diameter_nm": null,
+        "static_bulk_domain": "not selected by positive gradient",
+        "correlation_length_nm": 0.1530497011162311,
+        "ringdown_ps": 0.9106074618352364,
+        "ordered_state_lifetime": "no ordered state",
+        "thermal_rms_A": 0.18868697898486075,
+        "screening_A": 5.0,
+        "mode_energy_eV": 0.06751660936663204
+      },
+      "TF_reference": {
+        "mask": 31,
+        "r": 1.0312898932874044,
+        "loading": 2.0,
+        "threshold_loading": 18.422435717078777,
+        "threshold_density_m3": 8.339814733299218e+29,
+        "state": "disordered",
+        "bounded": true,
+        "amplitude_mode_THz": 36.02761594487339,
+        "locked_frequency_THz": null,
+        "static_displacement_A": 0.0,
+        "driven_amplitude_A": 0.0,
+        "energy_per_isotope_eV": 0.0,
+        "response_diameter_nm": null,
+        "static_bulk_domain": "not selected by positive gradient",
+        "correlation_length_nm": 0.06934734462867428,
+        "ringdown_ps": 0.9108181865699202,
+        "ordered_state_lifetime": "no ordered state",
+        "thermal_rms_A": 0.11838051195785876,
+        "screening_A": 0.6139605240657915,
+        "mode_energy_eV": 0.14899824744886822
+      }
+    },
+    {
+      "material": "PdD",
+      "g0_scales330": {
+        "mask": 31,
+        "r": -3.359386880115666,
+        "loading": 1.0,
+        "threshold_loading": 0.2936229962565946,
+        "threshold_density_m3": 1.7242207098744672e+28,
+        "state": "static_order",
+        "bounded": true,
+        "amplitude_mode_THz": 21.430349005871722,
+        "locked_frequency_THz": 0.0,
+        "static_displacement_A": 0.4341542015189811,
+        "driven_amplitude_A": 0.0,
+        "energy_per_isotope_eV": -0.10439069194521271,
+        "response_diameter_nm": null,
+        "static_bulk_domain": "not selected by positive gradient",
+        "correlation_length_nm": 0.035231061365404846,
+        "ringdown_ps": 4.159830283377031,
+        "ordered_state_lifetime": "infinite deterministic persistence",
+        "thermal_rms_A": 0.11179092656330017,
+        "screening_A": 5.0,
+        "mode_energy_eV": 0.08862880211053341
+      },
+      "TF_reference": {
+        "mask": 31,
+        "r": 1.1627798498931063,
+        "loading": 1.0,
+        "threshold_loading": 5.97697100230975,
+        "threshold_density_m3": 3.5098126903846575e+29,
+        "state": "disordered",
+        "bounded": true,
+        "amplitude_mode_THz": 8.946477366896582,
+        "locked_frequency_THz": null,
+        "static_displacement_A": 0.0,
+        "driven_amplitude_A": 0.0,
+        "energy_per_isotope_eV": 0.0,
+        "response_diameter_nm": null,
+        "static_bulk_domain": "not selected by positive gradient",
+        "correlation_length_nm": 0.08468802151908073,
+        "ringdown_ps": 4.136036943628506,
+        "ordered_state_lifetime": "no ordered state",
+        "thermal_rms_A": 0.2137239835871161,
+        "screening_A": 0.5879064277534911,
+        "mode_energy_eV": 0.03699965744467304
+      }
+    }
+  ],
+  "matched_isotopes": [
+    {
+      "host": "NiH",
+      "mass_ratio": 1.9990075012669666,
+      "original": {
+        "mask": 31,
+        "r": -0.9914320365114153,
+        "loading": 1.0,
+        "threshold_loading": 0.5476494523207872,
+        "threshold_density_m3": 4.214419315986561e+28,
+        "state": "static_order",
+        "bounded": true,
+        "amplitude_mode_THz": 29.235115186205828,
+        "locked_frequency_THz": 0.0,
+        "static_displacement_A": 0.2150099420530112,
+        "driven_amplitude_A": 0.0,
+        "energy_per_isotope_eV": -0.021870358997221083,
+        "response_diameter_nm": null,
+        "static_bulk_domain": "not selected by positive gradient",
+        "correlation_length_nm": 0.059262526871945,
+        "ringdown_ps": 1.588906612897951,
+        "ordered_state_lifetime": "infinite deterministic persistence",
+        "thermal_rms_A": 0.13222829003760195,
+        "screening_A": 5.0,
+        "mode_energy_eV": 0.12090672148208859
+      },
+      "substituted": {
+        "threshold_loading": 0.5476494523207872,
+        "static_displacement_A": 0.2150099420530112,
+        "energy_per_isotope_eV": -0.021870358997221083,
+        "correlation_length_nm": 0.059262526871945,
+        "amplitude_mode_THz": 21.048225823818022,
+        "ringdown_ps": 2.168314379069634
+      }
+    },
+    {
+      "host": "delta-TiH2_reference",
+      "mass_ratio": 1.9990075012669666,
+      "original": {
+        "mask": 31,
+        "r": 0.2117266189887238,
+        "loading": 2.0,
+        "threshold_loading": 2.4480235121593887,
+        "threshold_density_m3": 1.1082173317202985e+29,
+        "state": "disordered",
+        "bounded": true,
+        "amplitude_mode_THz": 16.32544351231923,
+        "locked_frequency_THz": null,
+        "static_displacement_A": 0.0,
+        "driven_amplitude_A": 0.0,
+        "energy_per_isotope_eV": 0.0,
+        "response_diameter_nm": null,
+        "static_bulk_domain": "not selected by positive gradient",
+        "correlation_length_nm": 0.1530497011162311,
+        "ringdown_ps": 0.9106074618352364,
+        "ordered_state_lifetime": "no ordered state",
+        "thermal_rms_A": 0.18868697898486075,
+        "screening_A": 5.0,
+        "mode_energy_eV": 0.06751660936663204
+      },
+      "substituted": {
+        "threshold_loading": 2.4480235121593887,
+        "static_displacement_A": 0.0,
+        "energy_per_isotope_eV": 0.0,
+        "correlation_length_nm": 0.1530497011162311,
+        "amplitude_mode_THz": 11.634640162897247,
+        "ringdown_ps": 1.268309392657839
+      }
+    },
+    {
+      "host": "PdD",
+      "mass_ratio": 0.5002482478761097,
+      "original": {
+        "mask": 31,
+        "r": -3.359386880115666,
+        "loading": 1.0,
+        "threshold_loading": 0.2936229962565946,
+        "threshold_density_m3": 1.7242207098744672e+28,
+        "state": "static_order",
+        "bounded": true,
+        "amplitude_mode_THz": 21.430349005871722,
+        "locked_frequency_THz": 0.0,
+        "static_displacement_A": 0.4341542015189811,
+        "driven_amplitude_A": 0.0,
+        "energy_per_isotope_eV": -0.10439069194521271,
+        "response_diameter_nm": null,
+        "static_bulk_domain": "not selected by positive gradient",
+        "correlation_length_nm": 0.035231061365404846,
+        "ringdown_ps": 4.159830283377031,
+        "ordered_state_lifetime": "infinite deterministic persistence",
+        "thermal_rms_A": 0.11179092656330017,
+        "screening_A": 5.0,
+        "mode_energy_eV": 0.08862880211053341
+      },
+      "substituted": {
+        "threshold_loading": 0.2936229962565946,
+        "static_displacement_A": 0.4341542015189811,
+        "energy_per_isotope_eV": -0.10439069194521271,
+        "correlation_length_nm": 0.035231061365404846,
+        "amplitude_mode_THz": 28.140755726594712,
+        "ringdown_ps": 3.3820118741290184
+      }
+    }
+  ],
+  "critical_screening": [
+    {
+      "material": "NiH",
+      "reachable_loading": 1.0,
+      "lambda_critical_A": 1.5532688418609109
+    },
+    {
+      "material": "delta-TiH2_reference",
+      "reachable_loading": 2.0,
+      "lambda_critical_A": null,
+      "reason": "even unscreened coupling insufficient"
+    },
+    {
+      "material": "PdD",
+      "reachable_loading": 1.0,
+      "lambda_critical_A": 1.0943730452627989
+    }
+  ],
+  "gain_reference": [
+    {
+      "material": "NiH",
+      "q_m_inv": 5952415512.002097,
+      "mode_frequency_THz": 23.43701436379206,
+      "phase_velocity_m_s": 24739.385884236523,
+      "group_velocity_m_s": 3276.370156171083,
+      "passive_energy_decay_s_inv": 1259263695659.4836,
+      "current_kinematic_A_m2": 305024268720256.3,
+      "current_threshold_A_m2": 325199897412557.44,
+      "H_flux_threshold_m2_s": 1.2592636956594837e+32,
+      "temperature_gradient_threshold_K_m": 195557734994.59558,
+      "loading_gradient_threshold_m_inv": 16363703313.51162,
+      "after_pump_amplitude_decay_ps": 1.5882296987467652,
+      "pump_ratio": 2.0,
+      "coefficients": {
+        "gamma": 0.01,
+        "gradient": 0.1,
+        "saturation_q": 0.1,
+        "pump_ratio": 2.0,
+        "sigma_e": 1e-20,
+        "sigma_H": 1e-20,
+        "sigma_Q": 1e-20,
+        "thermal_W_mK": 10.0,
+        "diffusion_m2_s": 1e-07,
+        "T_K": 300.0,
+        "qd": 1.5707963267948966
+      },
+      "state": "self_sustained_limit_cycle",
+      "gain_length_nm": 5.203628386118492,
+      "coherent_isotopes": 5677.43970672669,
+      "phonon_number": 30.915797240540005,
+      "linewidth_FWHM_GHz": 7.641380314135131,
+      "linewidth_regime": "large-occupation phase diffusion",
+      "locked_frequency_THz": 23.511114281129558,
+      "nonlinear_frequency_shift_GHz": 74.09991733749578,
+      "radial_relaxation_ps": 0.7941148493733826,
+      "logistic_time_ps": [
+        0.0,
+        0.7941148493733826,
+        3.9705742468669136,
+        7.941148493733827
+      ],
+      "logistic_phonons": [
+        0.30915797240540005,
+        0.8261823571991542,
+        18.545137822442847,
+        30.77746506009245
+      ],
+      "after_stop_time_ps": [
+        0.0,
+        1.5882296987467652,
+        3.1764593974935305,
+        7.941148493733827
+      ],
+      "after_stop_phonons": [
+        30.915797240540005,
+        2.243834046099501,
+        0.28573802636133455,
+        0.0007018034425493691
+      ]
+    },
+    {
+      "material": "delta-TiH2_reference",
+      "q_m_inv": 7053418620.542868,
+      "mode_frequency_THz": 39.365280151643404,
+      "phase_velocity_m_s": 35066.59155908394,
+      "group_velocity_m_s": 4613.89815996607,
+      "passive_energy_decay_s_inv": 2195702825226.9817,
+      "current_kinematic_A_m2": 254339200556452.2,
+      "current_threshold_A_m2": 289518238174316.75,
+      "H_flux_threshold_m2_s": 2.1957028252269818e+32,
+      "temperature_gradient_threshold_K_m": 572720774386.5975,
+      "loading_gradient_threshold_m_inv": 48502509282.42179,
+      "after_pump_amplitude_decay_ps": 0.9108700763243083,
+      "pump_ratio": 2.0,
+      "coefficients": {
+        "gamma": 0.01,
+        "gradient": 0.1,
+        "saturation_q": 0.1,
+        "pump_ratio": 2.0,
+        "sigma_e": 1e-20,
+        "sigma_H": 1e-20,
+        "sigma_Q": 1e-20,
+        "thermal_W_mK": 10.0,
+        "diffusion_m2_s": 1e-07,
+        "T_K": 300.0,
+        "qd": 1.5707963267948966
+      },
+      "state": "self_sustained_limit_cycle",
+      "gain_length_nm": 4.20266176912088,
+      "coherent_isotopes": 3518.93535927023,
+      "phonon_number": 19.22445369895018,
+      "linewidth_FWHM_GHz": 20.486117915939502,
+      "linewidth_regime": "large-occupation phase diffusion",
+      "locked_frequency_THz": 39.488931594012264,
+      "nonlinear_frequency_shift_GHz": 123.65144236885956,
+      "radial_relaxation_ps": 0.45543503816215414,
+      "logistic_time_ps": [
+        0.0,
+        0.45543503816215414,
+        2.2771751908107705,
+        4.554350381621541
+      ],
+      "logistic_phonons": [
+        0.1922445369895018,
+        0.5137472066234587,
+        11.531973140925379,
+        19.138434225559354
+      ],
+      "after_stop_time_ps": [
+        0.0,
+        0.9108700763243083,
+        1.8217401526486166,
+        4.554350381621541
+      ],
+      "after_stop_phonons": [
+        19.22445369895018,
+        1.395289385285619,
+        0.17768124868569407,
+        0.0004364043301902096
+      ]
+    },
+    {
+      "material": "PdD",
+      "q_m_inv": 5439376760.72278,
+      "mode_frequency_THz": 9.68420454703688,
+      "phase_velocity_m_s": 11186.511690280204,
+      "group_velocity_m_s": 1499.6807843905895,
+      "passive_energy_decay_s_inv": 483456784091.45465,
+      "current_kinematic_A_m2": 105246549308855.77,
+      "current_threshold_A_m2": 112992380939056.88,
+      "H_flux_threshold_m2_s": 4.834567840914547e+31,
+      "temperature_gradient_threshold_K_m": 31022560639.3909,
+      "loading_gradient_threshold_m_inv": 8232938433.725548,
+      "after_pump_amplitude_decay_ps": 4.136874413208489,
+      "pump_ratio": 2.0,
+      "coefficients": {
+        "gamma": 0.01,
+        "gradient": 0.1,
+        "saturation_q": 0.1,
+        "pump_ratio": 2.0,
+        "sigma_e": 1e-20,
+        "sigma_H": 1e-20,
+        "sigma_Q": 1e-20,
+        "thermal_W_mK": 10.0,
+        "diffusion_m2_s": 1e-07,
+        "T_K": 300.0,
+        "qd": 1.5707963267948966
+      },
+      "state": "self_sustained_limit_cycle",
+      "gain_length_nm": 6.203991064925867,
+      "coherent_isotopes": 7342.008862266602,
+      "phonon_number": 39.736789362300975,
+      "linewidth_FWHM_GHz": 2.825416384471843,
+      "linewidth_regime": "large-occupation phase diffusion",
+      "locked_frequency_THz": 9.715198679915508,
+      "nonlinear_frequency_shift_GHz": 30.994132878630058,
+      "radial_relaxation_ps": 2.0684372066042447,
+      "logistic_time_ps": [
+        0.0,
+        2.0684372066042447,
+        10.342186033021225,
+        20.68437206604245
+      ],
+      "logistic_phonons": [
+        0.3973678936230097,
+        1.0619112956214567,
+        23.836494644198297,
+        39.55898781076071
+      ],
+      "after_stop_time_ps": [
+        0.0,
+        4.136874413208489,
+        8.273748826416979,
+        20.68437206604245
+      ],
+      "after_stop_phonons": [
+        39.736789362300975,
+        2.8840518056217537,
+        0.36726569520358376,
+        0.0009020441993892073
+      ]
+    }
+  ],
+  "gain_threshold_cases": [
+    {
+      "material": "NiH",
+      "q_m_inv": 5952415512.002097,
+      "mode_frequency_THz": 23.43701436379206,
+      "phase_velocity_m_s": 24739.385884236523,
+      "group_velocity_m_s": 3276.370156171083,
+      "passive_energy_decay_s_inv": 1259263695659.4836,
+      "current_kinematic_A_m2": 305024268720256.3,
+      "current_threshold_A_m2": 325199897412557.44,
+      "H_flux_threshold_m2_s": 1.2592636956594837e+32,
+      "temperature_gradient_threshold_K_m": 195557734994.59558,
+      "loading_gradient_threshold_m_inv": 16363703313.51162,
+      "after_pump_amplitude_decay_ps": 1.5882296987467652,
+      "pump_ratio": 0.5,
+      "coefficients": {
+        "gamma": 0.01,
+        "gradient": 0.1,
+        "saturation_q": 0.1,
+        "pump_ratio": 0.5,
+        "sigma_e": 1e-20,
+        "sigma_H": 1e-20,
+        "sigma_Q": 1e-20,
+        "thermal_W_mK": 10.0,
+        "diffusion_m2_s": 1e-07,
+        "T_K": 300.0,
+        "qd": 1.5707963267948966
+      },
+      "state": "below_or_at_gain_threshold",
+      "gain_length_nm": null,
+      "phonon_number": 0.0,
+      "linewidth_FWHM_GHz": null,
+      "locked_frequency_THz": null
+    },
+    {
+      "material": "NiH",
+      "q_m_inv": 5952415512.002097,
+      "mode_frequency_THz": 23.43701436379206,
+      "phase_velocity_m_s": 24739.385884236523,
+      "group_velocity_m_s": 3276.370156171083,
+      "passive_energy_decay_s_inv": 1259263695659.4836,
+      "current_kinematic_A_m2": 305024268720256.3,
+      "current_threshold_A_m2": 325199897412557.44,
+      "H_flux_threshold_m2_s": 1.2592636956594837e+32,
+      "temperature_gradient_threshold_K_m": 195557734994.59558,
+      "loading_gradient_threshold_m_inv": 16363703313.51162,
+      "after_pump_amplitude_decay_ps": 1.5882296987467652,
+      "pump_ratio": 1.0,
+      "coefficients": {
+        "gamma": 0.01,
+        "gradient": 0.1,
+        "saturation_q": 0.1,
+        "pump_ratio": 1.0,
+        "sigma_e": 1e-20,
+        "sigma_H": 1e-20,
+        "sigma_Q": 1e-20,
+        "thermal_W_mK": 10.0,
+        "diffusion_m2_s": 1e-07,
+        "T_K": 300.0,
+        "qd": 1.5707963267948966
+      },
+      "state": "below_or_at_gain_threshold",
+      "gain_length_nm": null,
+      "phonon_number": 0.0,
+      "linewidth_FWHM_GHz": null,
+      "locked_frequency_THz": null
+    },
+    {
+      "material": "NiH",
+      "q_m_inv": 5952415512.002097,
+      "mode_frequency_THz": 23.43701436379206,
+      "phase_velocity_m_s": 24739.385884236523,
+      "group_velocity_m_s": 3276.370156171083,
+      "passive_energy_decay_s_inv": 1259263695659.4836,
+      "current_kinematic_A_m2": 305024268720256.3,
+      "current_threshold_A_m2": 325199897412557.44,
+      "H_flux_threshold_m2_s": 1.2592636956594837e+32,
+      "temperature_gradient_threshold_K_m": 195557734994.59558,
+      "loading_gradient_threshold_m_inv": 16363703313.51162,
+      "after_pump_amplitude_decay_ps": 1.5882296987467652,
+      "pump_ratio": 2.0,
+      "coefficients": {
+        "gamma": 0.01,
+        "gradient": 0.1,
+        "saturation_q": 0.1,
+        "pump_ratio": 2.0,
+        "sigma_e": 1e-20,
+        "sigma_H": 1e-20,
+        "sigma_Q": 1e-20,
+        "thermal_W_mK": 10.0,
+        "diffusion_m2_s": 1e-07,
+        "T_K": 300.0,
+        "qd": 1.5707963267948966
+      },
+      "state": "self_sustained_limit_cycle",
+      "gain_length_nm": 5.203628386118492,
+      "coherent_isotopes": 5677.43970672669,
+      "phonon_number": 30.915797240540005,
+      "linewidth_FWHM_GHz": 7.641380314135131,
+      "linewidth_regime": "large-occupation phase diffusion",
+      "locked_frequency_THz": 23.511114281129558,
+      "nonlinear_frequency_shift_GHz": 74.09991733749578,
+      "radial_relaxation_ps": 0.7941148493733826,
+      "logistic_time_ps": [
+        0.0,
+        0.7941148493733826,
+        3.9705742468669136,
+        7.941148493733827
+      ],
+      "logistic_phonons": [
+        0.30915797240540005,
+        0.8261823571991542,
+        18.545137822442847,
+        30.77746506009245
+      ],
+      "after_stop_time_ps": [
+        0.0,
+        1.5882296987467652,
+        3.1764593974935305,
+        7.941148493733827
+      ],
+      "after_stop_phonons": [
+        30.915797240540005,
+        2.243834046099501,
+        0.28573802636133455,
+        0.0007018034425493691
+      ]
+    },
+    {
+      "material": "NiH",
+      "q_m_inv": 5952415512.002097,
+      "mode_frequency_THz": 23.43701436379206,
+      "phase_velocity_m_s": 24739.385884236523,
+      "group_velocity_m_s": 3276.370156171083,
+      "passive_energy_decay_s_inv": 1259263695659.4836,
+      "current_kinematic_A_m2": 305024268720256.3,
+      "current_threshold_A_m2": 325199897412557.44,
+      "H_flux_threshold_m2_s": 1.2592636956594837e+32,
+      "temperature_gradient_threshold_K_m": 195557734994.59558,
+      "loading_gradient_threshold_m_inv": 16363703313.51162,
+      "after_pump_amplitude_decay_ps": 1.5882296987467652,
+      "pump_ratio": 4.0,
+      "coefficients": {
+        "gamma": 0.01,
+        "gradient": 0.1,
+        "saturation_q": 0.1,
+        "pump_ratio": 4.0,
+        "sigma_e": 1e-20,
+        "sigma_H": 1e-20,
+        "sigma_Q": 1e-20,
+        "thermal_W_mK": 10.0,
+        "diffusion_m2_s": 1e-07,
+        "T_K": 300.0,
+        "qd": 1.5707963267948966
+      },
+      "state": "self_sustained_limit_cycle",
+      "gain_length_nm": 1.7345427953728303,
+      "coherent_isotopes": 210.275544693581,
+      "phonon_number": 3.435088582282221,
+      "linewidth_FWHM_GHz": null,
+      "linewidth_regime": "occupation<10; no semiclassical linewidth assigned",
+      "locked_frequency_THz": 23.65931411580455,
+      "nonlinear_frequency_shift_GHz": 222.29975201248735,
+      "radial_relaxation_ps": 0.2647049497911275,
+      "logistic_time_ps": [
+        0.0,
+        0.2647049497911275,
+        1.3235247489556377,
+        2.6470494979112753
+      ],
+      "logistic_phonons": [
+        0.03435088582282221,
+        0.09179803968879485,
+        2.060570869160315,
+        3.4197183400102706
+      ],
+      "after_stop_time_ps": [
+        0.0,
+        1.5882296987467652,
+        3.1764593974935305,
+        7.941148493733827
+      ],
+      "after_stop_phonons": [
+        3.435088582282221,
+        0.12935154226349696,
+        0.01594803433436376,
+        3.898952268207506e-05
+      ]
+    },
+    {
+      "material": "delta-TiH2_reference",
+      "q_m_inv": 7053418620.542868,
+      "mode_frequency_THz": 39.365280151643404,
+      "phase_velocity_m_s": 35066.59155908394,
+      "group_velocity_m_s": 4613.89815996607,
+      "passive_energy_decay_s_inv": 2195702825226.9817,
+      "current_kinematic_A_m2": 254339200556452.2,
+      "current_threshold_A_m2": 289518238174316.75,
+      "H_flux_threshold_m2_s": 2.1957028252269818e+32,
+      "temperature_gradient_threshold_K_m": 572720774386.5975,
+      "loading_gradient_threshold_m_inv": 48502509282.42179,
+      "after_pump_amplitude_decay_ps": 0.9108700763243083,
+      "pump_ratio": 0.5,
+      "coefficients": {
+        "gamma": 0.01,
+        "gradient": 0.1,
+        "saturation_q": 0.1,
+        "pump_ratio": 0.5,
+        "sigma_e": 1e-20,
+        "sigma_H": 1e-20,
+        "sigma_Q": 1e-20,
+        "thermal_W_mK": 10.0,
+        "diffusion_m2_s": 1e-07,
+        "T_K": 300.0,
+        "qd": 1.5707963267948966
+      },
+      "state": "below_or_at_gain_threshold",
+      "gain_length_nm": null,
+      "phonon_number": 0.0,
+      "linewidth_FWHM_GHz": null,
+      "locked_frequency_THz": null
+    },
+    {
+      "material": "delta-TiH2_reference",
+      "q_m_inv": 7053418620.542868,
+      "mode_frequency_THz": 39.365280151643404,
+      "phase_velocity_m_s": 35066.59155908394,
+      "group_velocity_m_s": 4613.89815996607,
+      "passive_energy_decay_s_inv": 2195702825226.9817,
+      "current_kinematic_A_m2": 254339200556452.2,
+      "current_threshold_A_m2": 289518238174316.75,
+      "H_flux_threshold_m2_s": 2.1957028252269818e+32,
+      "temperature_gradient_threshold_K_m": 572720774386.5975,
+      "loading_gradient_threshold_m_inv": 48502509282.42179,
+      "after_pump_amplitude_decay_ps": 0.9108700763243083,
+      "pump_ratio": 1.0,
+      "coefficients": {
+        "gamma": 0.01,
+        "gradient": 0.1,
+        "saturation_q": 0.1,
+        "pump_ratio": 1.0,
+        "sigma_e": 1e-20,
+        "sigma_H": 1e-20,
+        "sigma_Q": 1e-20,
+        "thermal_W_mK": 10.0,
+        "diffusion_m2_s": 1e-07,
+        "T_K": 300.0,
+        "qd": 1.5707963267948966
+      },
+      "state": "below_or_at_gain_threshold",
+      "gain_length_nm": null,
+      "phonon_number": 0.0,
+      "linewidth_FWHM_GHz": null,
+      "locked_frequency_THz": null
+    },
+    {
+      "material": "delta-TiH2_reference",
+      "q_m_inv": 7053418620.542868,
+      "mode_frequency_THz": 39.365280151643404,
+      "phase_velocity_m_s": 35066.59155908394,
+      "group_velocity_m_s": 4613.89815996607,
+      "passive_energy_decay_s_inv": 2195702825226.9817,
+      "current_kinematic_A_m2": 254339200556452.2,
+      "current_threshold_A_m2": 289518238174316.75,
+      "H_flux_threshold_m2_s": 2.1957028252269818e+32,
+      "temperature_gradient_threshold_K_m": 572720774386.5975,
+      "loading_gradient_threshold_m_inv": 48502509282.42179,
+      "after_pump_amplitude_decay_ps": 0.9108700763243083,
+      "pump_ratio": 2.0,
+      "coefficients": {
+        "gamma": 0.01,
+        "gradient": 0.1,
+        "saturation_q": 0.1,
+        "pump_ratio": 2.0,
+        "sigma_e": 1e-20,
+        "sigma_H": 1e-20,
+        "sigma_Q": 1e-20,
+        "thermal_W_mK": 10.0,
+        "diffusion_m2_s": 1e-07,
+        "T_K": 300.0,
+        "qd": 1.5707963267948966
+      },
+      "state": "self_sustained_limit_cycle",
+      "gain_length_nm": 4.20266176912088,
+      "coherent_isotopes": 3518.93535927023,
+      "phonon_number": 19.22445369895018,
+      "linewidth_FWHM_GHz": 20.486117915939502,
+      "linewidth_regime": "large-occupation phase diffusion",
+      "locked_frequency_THz": 39.488931594012264,
+      "nonlinear_frequency_shift_GHz": 123.65144236885956,
+      "radial_relaxation_ps": 0.45543503816215414,
+      "logistic_time_ps": [
+        0.0,
+        0.45543503816215414,
+        2.2771751908107705,
+        4.554350381621541
+      ],
+      "logistic_phonons": [
+        0.1922445369895018,
+        0.5137472066234587,
+        11.531973140925379,
+        19.138434225559354
+      ],
+      "after_stop_time_ps": [
+        0.0,
+        0.9108700763243083,
+        1.8217401526486166,
+        4.554350381621541
+      ],
+      "after_stop_phonons": [
+        19.22445369895018,
+        1.395289385285619,
+        0.17768124868569407,
+        0.0004364043301902096
+      ]
+    },
+    {
+      "material": "delta-TiH2_reference",
+      "q_m_inv": 7053418620.542868,
+      "mode_frequency_THz": 39.365280151643404,
+      "phase_velocity_m_s": 35066.59155908394,
+      "group_velocity_m_s": 4613.89815996607,
+      "passive_energy_decay_s_inv": 2195702825226.9817,
+      "current_kinematic_A_m2": 254339200556452.2,
+      "current_threshold_A_m2": 289518238174316.75,
+      "H_flux_threshold_m2_s": 2.1957028252269818e+32,
+      "temperature_gradient_threshold_K_m": 572720774386.5975,
+      "loading_gradient_threshold_m_inv": 48502509282.42179,
+      "after_pump_amplitude_decay_ps": 0.9108700763243083,
+      "pump_ratio": 4.0,
+      "coefficients": {
+        "gamma": 0.01,
+        "gradient": 0.1,
+        "saturation_q": 0.1,
+        "pump_ratio": 4.0,
+        "sigma_e": 1e-20,
+        "sigma_H": 1e-20,
+        "sigma_Q": 1e-20,
+        "thermal_W_mK": 10.0,
+        "diffusion_m2_s": 1e-07,
+        "T_K": 300.0,
+        "qd": 1.5707963267948966
+      },
+      "state": "self_sustained_limit_cycle",
+      "gain_length_nm": 1.4008872563736263,
+      "coherent_isotopes": 130.3309392322307,
+      "phonon_number": 2.1360504109944642,
+      "linewidth_FWHM_GHz": null,
+      "linewidth_regime": "occupation<10; no semiclassical linewidth assigned",
+      "locked_frequency_THz": 39.736234478749985,
+      "nonlinear_frequency_shift_GHz": 370.95432710657866,
+      "radial_relaxation_ps": 0.15181167938738468,
+      "logistic_time_ps": [
+        0.0,
+        0.15181167938738468,
+        0.7590583969369236,
+        1.5181167938738471
+      ],
+      "logistic_phonons": [
+        0.021360504109944643,
+        0.05708302295816207,
+        1.2813303489917085,
+        2.1264926917288167
+      ],
+      "after_stop_time_ps": [
+        0.0,
+        0.9108700763243083,
+        1.8217401526486166,
+        4.554350381621541
+      ],
+      "after_stop_phonons": [
+        2.1360504109944642,
+        0.080435018892916,
+        0.009917009264383722,
+        2.4244960196686413e-05
+      ]
+    },
+    {
+      "material": "PdD",
+      "q_m_inv": 5439376760.72278,
+      "mode_frequency_THz": 9.68420454703688,
+      "phase_velocity_m_s": 11186.511690280204,
+      "group_velocity_m_s": 1499.6807843905895,
+      "passive_energy_decay_s_inv": 483456784091.45465,
+      "current_kinematic_A_m2": 105246549308855.77,
+      "current_threshold_A_m2": 112992380939056.88,
+      "H_flux_threshold_m2_s": 4.834567840914547e+31,
+      "temperature_gradient_threshold_K_m": 31022560639.3909,
+      "loading_gradient_threshold_m_inv": 8232938433.725548,
+      "after_pump_amplitude_decay_ps": 4.136874413208489,
+      "pump_ratio": 0.5,
+      "coefficients": {
+        "gamma": 0.01,
+        "gradient": 0.1,
+        "saturation_q": 0.1,
+        "pump_ratio": 0.5,
+        "sigma_e": 1e-20,
+        "sigma_H": 1e-20,
+        "sigma_Q": 1e-20,
+        "thermal_W_mK": 10.0,
+        "diffusion_m2_s": 1e-07,
+        "T_K": 300.0,
+        "qd": 1.5707963267948966
+      },
+      "state": "below_or_at_gain_threshold",
+      "gain_length_nm": null,
+      "phonon_number": 0.0,
+      "linewidth_FWHM_GHz": null,
+      "locked_frequency_THz": null
+    },
+    {
+      "material": "PdD",
+      "q_m_inv": 5439376760.72278,
+      "mode_frequency_THz": 9.68420454703688,
+      "phase_velocity_m_s": 11186.511690280204,
+      "group_velocity_m_s": 1499.6807843905895,
+      "passive_energy_decay_s_inv": 483456784091.45465,
+      "current_kinematic_A_m2": 105246549308855.77,
+      "current_threshold_A_m2": 112992380939056.88,
+      "H_flux_threshold_m2_s": 4.834567840914547e+31,
+      "temperature_gradient_threshold_K_m": 31022560639.3909,
+      "loading_gradient_threshold_m_inv": 8232938433.725548,
+      "after_pump_amplitude_decay_ps": 4.136874413208489,
+      "pump_ratio": 1.0,
+      "coefficients": {
+        "gamma": 0.01,
+        "gradient": 0.1,
+        "saturation_q": 0.1,
+        "pump_ratio": 1.0,
+        "sigma_e": 1e-20,
+        "sigma_H": 1e-20,
+        "sigma_Q": 1e-20,
+        "thermal_W_mK": 10.0,
+        "diffusion_m2_s": 1e-07,
+        "T_K": 300.0,
+        "qd": 1.5707963267948966
+      },
+      "state": "below_or_at_gain_threshold",
+      "gain_length_nm": null,
+      "phonon_number": 0.0,
+      "linewidth_FWHM_GHz": null,
+      "locked_frequency_THz": null
+    },
+    {
+      "material": "PdD",
+      "q_m_inv": 5439376760.72278,
+      "mode_frequency_THz": 9.68420454703688,
+      "phase_velocity_m_s": 11186.511690280204,
+      "group_velocity_m_s": 1499.6807843905895,
+      "passive_energy_decay_s_inv": 483456784091.45465,
+      "current_kinematic_A_m2": 105246549308855.77,
+      "current_threshold_A_m2": 112992380939056.88,
+      "H_flux_threshold_m2_s": 4.834567840914547e+31,
+      "temperature_gradient_threshold_K_m": 31022560639.3909,
+      "loading_gradient_threshold_m_inv": 8232938433.725548,
+      "after_pump_amplitude_decay_ps": 4.136874413208489,
+      "pump_ratio": 2.0,
+      "coefficients": {
+        "gamma": 0.01,
+        "gradient": 0.1,
+        "saturation_q": 0.1,
+        "pump_ratio": 2.0,
+        "sigma_e": 1e-20,
+        "sigma_H": 1e-20,
+        "sigma_Q": 1e-20,
+        "thermal_W_mK": 10.0,
+        "diffusion_m2_s": 1e-07,
+        "T_K": 300.0,
+        "qd": 1.5707963267948966
+      },
+      "state": "self_sustained_limit_cycle",
+      "gain_length_nm": 6.203991064925867,
+      "coherent_isotopes": 7342.008862266602,
+      "phonon_number": 39.736789362300975,
+      "linewidth_FWHM_GHz": 2.825416384471843,
+      "linewidth_regime": "large-occupation phase diffusion",
+      "locked_frequency_THz": 9.715198679915508,
+      "nonlinear_frequency_shift_GHz": 30.994132878630058,
+      "radial_relaxation_ps": 2.0684372066042447,
+      "logistic_time_ps": [
+        0.0,
+        2.0684372066042447,
+        10.342186033021225,
+        20.68437206604245
+      ],
+      "logistic_phonons": [
+        0.3973678936230097,
+        1.0619112956214567,
+        23.836494644198297,
+        39.55898781076071
+      ],
+      "after_stop_time_ps": [
+        0.0,
+        4.136874413208489,
+        8.273748826416979,
+        20.68437206604245
+      ],
+      "after_stop_phonons": [
+        39.736789362300975,
+        2.8840518056217537,
+        0.36726569520358376,
+        0.0009020441993892073
+      ]
+    },
+    {
+      "material": "PdD",
+      "q_m_inv": 5439376760.72278,
+      "mode_frequency_THz": 9.68420454703688,
+      "phase_velocity_m_s": 11186.511690280204,
+      "group_velocity_m_s": 1499.6807843905895,
+      "passive_energy_decay_s_inv": 483456784091.45465,
+      "current_kinematic_A_m2": 105246549308855.77,
+      "current_threshold_A_m2": 112992380939056.88,
+      "H_flux_threshold_m2_s": 4.834567840914547e+31,
+      "temperature_gradient_threshold_K_m": 31022560639.3909,
+      "loading_gradient_threshold_m_inv": 8232938433.725548,
+      "after_pump_amplitude_decay_ps": 4.136874413208489,
+      "pump_ratio": 4.0,
+      "coefficients": {
+        "gamma": 0.01,
+        "gradient": 0.1,
+        "saturation_q": 0.1,
+        "pump_ratio": 4.0,
+        "sigma_e": 1e-20,
+        "sigma_H": 1e-20,
+        "sigma_Q": 1e-20,
+        "thermal_W_mK": 10.0,
+        "diffusion_m2_s": 1e-07,
+        "T_K": 300.0,
+        "qd": 1.5707963267948966
+      },
+      "state": "self_sustained_limit_cycle",
+      "gain_length_nm": 2.067997021641956,
+      "coherent_isotopes": 271.92625415802235,
+      "phonon_number": 4.415198818033444,
+      "linewidth_FWHM_GHz": null,
+      "linewidth_regime": "occupation<10; no semiclassical linewidth assigned",
+      "locked_frequency_THz": 9.777186945672769,
+      "nonlinear_frequency_shift_GHz": 92.98239863589019,
+      "radial_relaxation_ps": 0.6894790688680816,
+      "logistic_time_ps": [
+        0.0,
+        0.6894790688680816,
+        3.4473953443404084,
+        6.894790688680817
+      ],
+      "logistic_phonons": [
+        0.04415198818033444,
+        0.1179901439579397,
+        2.648499404910923,
+        4.395443090084525
+      ],
+      "after_stop_time_ps": [
+        0.0,
+        4.136874413208489,
+        8.273748826416979,
+        20.68437206604245
+      ],
+      "after_stop_phonons": [
+        4.415198818033444,
+        0.16625852953496656,
+        0.020498377452687944,
+        5.0114135440202946e-05
+      ]
+    }
+  ],
+  "gain_ranking": [
+    {
+      "input": "sigma_H",
+      "range": [
+        1e-24,
+        1e-18
+      ],
+      "classification": "neither",
+      "range_origin": "exploratory, not measured intervals",
+      "per_material": [
+        {
+          "material": "NiH",
+          "metrics": {
+            "current_threshold_A_m2": {
+              "decades": 0.0,
+              "min_abs": 325199897412557.44,
+              "max_abs": 325199897412557.44
+            },
+            "H_flux_threshold_m2_s": {
+              "decades": 6.0,
+              "min_abs": 1.2592636956594835e+30,
+              "max_abs": 1.2592636956594837e+36
+            },
+            "temperature_gradient_threshold_K_m": {
+              "decades": 0.0,
+              "min_abs": 195557734994.59558,
+              "max_abs": 195557734994.59558
+            },
+            "loading_gradient_threshold_m_inv": {
+              "decades": 6.0,
+              "min_abs": 163637033.13511616,
+              "max_abs": 163637033135116.2
+            },
+            "locked_frequency_THz": {
+              "decades": 0.0,
+              "min_abs": 23.511114281129558,
+              "max_abs": 23.511114281129558
+            },
+            "gain_length_nm": {
+              "decades": 0.0,
+              "min_abs": 5.203628386118492,
+              "max_abs": 5.203628386118492
+            },
+            "linewidth_FWHM_GHz": {
+              "decades": 0.0,
+              "min_abs": 7.641380314135131,
+              "max_abs": 7.641380314135131
+            },
+            "after_pump_amplitude_decay_ps": {
+              "decades": 0.0,
+              "min_abs": 1.5882296987467652,
+              "max_abs": 1.5882296987467652
+            }
+          },
+          "small_occupation_points": 0
+        },
+        {
+          "material": "delta-TiH2_reference",
+          "metrics": {
+            "current_threshold_A_m2": {
+              "decades": 0.0,
+              "min_abs": 289518238174316.75,
+              "max_abs": 289518238174316.75
+            },
+            "H_flux_threshold_m2_s": {
+              "decades": 6.0,
+              "min_abs": 2.1957028252269816e+30,
+              "max_abs": 2.1957028252269817e+36
+            },
+            "temperature_gradient_threshold_K_m": {
+              "decades": 0.0,
+              "min_abs": 572720774386.5975,
+              "max_abs": 572720774386.5975
+            },
+            "loading_gradient_threshold_m_inv": {
+              "decades": 6.0,
+              "min_abs": 485025092.82421786,
+              "max_abs": 485025092824217.9
+            },
+            "locked_frequency_THz": {
+              "decades": 0.0,
+              "min_abs": 39.488931594012264,
+              "max_abs": 39.488931594012264
+            },
+            "gain_length_nm": {
+              "decades": 0.0,
+              "min_abs": 4.20266176912088,
+              "max_abs": 4.20266176912088
+            },
+            "linewidth_FWHM_GHz": {
+              "decades": 0.0,
+              "min_abs": 20.486117915939502,
+              "max_abs": 20.486117915939502
+            },
+            "after_pump_amplitude_decay_ps": {
+              "decades": 0.0,
+              "min_abs": 0.9108700763243083,
+              "max_abs": 0.9108700763243083
+            }
+          },
+          "small_occupation_points": 0
+        },
+        {
+          "material": "PdD",
+          "metrics": {
+            "current_threshold_A_m2": {
+              "decades": 0.0,
+              "min_abs": 112992380939056.88,
+              "max_abs": 112992380939056.88
+            },
+            "H_flux_threshold_m2_s": {
+              "decades": 6.0,
+              "min_abs": 4.834567840914546e+29,
+              "max_abs": 4.834567840914547e+35
+            },
+            "temperature_gradient_threshold_K_m": {
+              "decades": 0.0,
+              "min_abs": 31022560639.3909,
+              "max_abs": 31022560639.3909
+            },
+            "loading_gradient_threshold_m_inv": {
+              "decades": 6.0,
+              "min_abs": 82329384.33725546,
+              "max_abs": 82329384337255.48
+            },
+            "locked_frequency_THz": {
+              "decades": 0.0,
+              "min_abs": 9.715198679915508,
+              "max_abs": 9.715198679915508
+            },
+            "gain_length_nm": {
+              "decades": 0.0,
+              "min_abs": 6.203991064925867,
+              "max_abs": 6.203991064925867
+            },
+            "linewidth_FWHM_GHz": {
+              "decades": 0.0,
+              "min_abs": 2.825416384471843,
+              "max_abs": 2.825416384471843
+            },
+            "after_pump_amplitude_decay_ps": {
+              "decades": 0.0,
+              "min_abs": 4.136874413208489,
+              "max_abs": 4.136874413208489
+            }
+          },
+          "small_occupation_points": 0
+        }
+      ],
+      "max_finite_decades": 6.0
+    },
+    {
+      "input": "sigma_Q",
+      "range": [
+        1e-24,
+        1e-18
+      ],
+      "classification": "neither",
+      "range_origin": "exploratory, not measured intervals",
+      "per_material": [
+        {
+          "material": "NiH",
+          "metrics": {
+            "current_threshold_A_m2": {
+              "decades": 0.0,
+              "min_abs": 325199897412557.44,
+              "max_abs": 325199897412557.44
+            },
+            "H_flux_threshold_m2_s": {
+              "decades": 0.0,
+              "min_abs": 1.2592636956594837e+32,
+              "max_abs": 1.2592636956594837e+32
+            },
+            "temperature_gradient_threshold_K_m": {
+              "decades": 6.0,
+              "min_abs": 1955577349.9459558,
+              "max_abs": 1955577349945956.0
+            },
+            "loading_gradient_threshold_m_inv": {
+              "decades": 0.0,
+              "min_abs": 16363703313.51162,
+              "max_abs": 16363703313.51162
+            },
+            "locked_frequency_THz": {
+              "decades": 0.0,
+              "min_abs": 23.511114281129558,
+              "max_abs": 23.511114281129558
+            },
+            "gain_length_nm": {
+              "decades": 0.0,
+              "min_abs": 5.203628386118492,
+              "max_abs": 5.203628386118492
+            },
+            "linewidth_FWHM_GHz": {
+              "decades": 0.0,
+              "min_abs": 7.641380314135131,
+              "max_abs": 7.641380314135131
+            },
+            "after_pump_amplitude_decay_ps": {
+              "decades": 0.0,
+              "min_abs": 1.5882296987467652,
+              "max_abs": 1.5882296987467652
+            }
+          },
+          "small_occupation_points": 0
+        },
+        {
+          "material": "delta-TiH2_reference",
+          "metrics": {
+            "current_threshold_A_m2": {
+              "decades": 0.0,
+              "min_abs": 289518238174316.75,
+              "max_abs": 289518238174316.75
+            },
+            "H_flux_threshold_m2_s": {
+              "decades": 0.0,
+              "min_abs": 2.1957028252269818e+32,
+              "max_abs": 2.1957028252269818e+32
+            },
+            "temperature_gradient_threshold_K_m": {
+              "decades": 6.0,
+              "min_abs": 5727207743.865975,
+              "max_abs": 5727207743865976.0
+            },
+            "loading_gradient_threshold_m_inv": {
+              "decades": 0.0,
+              "min_abs": 48502509282.42179,
+              "max_abs": 48502509282.42179
+            },
+            "locked_frequency_THz": {
+              "decades": 0.0,
+              "min_abs": 39.488931594012264,
+              "max_abs": 39.488931594012264
+            },
+            "gain_length_nm": {
+              "decades": 0.0,
+              "min_abs": 4.20266176912088,
+              "max_abs": 4.20266176912088
+            },
+            "linewidth_FWHM_GHz": {
+              "decades": 0.0,
+              "min_abs": 20.486117915939502,
+              "max_abs": 20.486117915939502
+            },
+            "after_pump_amplitude_decay_ps": {
+              "decades": 0.0,
+              "min_abs": 0.9108700763243083,
+              "max_abs": 0.9108700763243083
+            }
+          },
+          "small_occupation_points": 0
+        },
+        {
+          "material": "PdD",
+          "metrics": {
+            "current_threshold_A_m2": {
+              "decades": 0.0,
+              "min_abs": 112992380939056.88,
+              "max_abs": 112992380939056.88
+            },
+            "H_flux_threshold_m2_s": {
+              "decades": 0.0,
+              "min_abs": 4.834567840914547e+31,
+              "max_abs": 4.834567840914547e+31
+            },
+            "temperature_gradient_threshold_K_m": {
+              "decades": 6.0,
+              "min_abs": 310225606.393909,
+              "max_abs": 310225606393909.0
+            },
+            "loading_gradient_threshold_m_inv": {
+              "decades": 0.0,
+              "min_abs": 8232938433.725548,
+              "max_abs": 8232938433.725548
+            },
+            "locked_frequency_THz": {
+              "decades": 0.0,
+              "min_abs": 9.715198679915508,
+              "max_abs": 9.715198679915508
+            },
+            "gain_length_nm": {
+              "decades": 0.0,
+              "min_abs": 6.203991064925867,
+              "max_abs": 6.203991064925867
+            },
+            "linewidth_FWHM_GHz": {
+              "decades": 0.0,
+              "min_abs": 2.825416384471843,
+              "max_abs": 2.825416384471843
+            },
+            "after_pump_amplitude_decay_ps": {
+              "decades": 0.0,
+              "min_abs": 4.136874413208489,
+              "max_abs": 4.136874413208489
+            }
+          },
+          "small_occupation_points": 0
+        }
+      ],
+      "max_finite_decades": 6.0
+    },
+    {
+      "input": "diffusion_m2_s",
+      "range": [
+        1e-12,
+        1e-07
+      ],
+      "classification": "lookup",
+      "range_origin": "exploratory, not measured intervals",
+      "per_material": [
+        {
+          "material": "NiH",
+          "metrics": {
+            "current_threshold_A_m2": {
+              "decades": 0.0,
+              "min_abs": 325199897412557.44,
+              "max_abs": 325199897412557.44
+            },
+            "H_flux_threshold_m2_s": {
+              "decades": 0.0,
+              "min_abs": 1.2592636956594837e+32,
+              "max_abs": 1.2592636956594837e+32
+            },
+            "temperature_gradient_threshold_K_m": {
+              "decades": 0.0,
+              "min_abs": 195557734994.59558,
+              "max_abs": 195557734994.59558
+            },
+            "loading_gradient_threshold_m_inv": {
+              "decades": 5.0,
+              "min_abs": 16363703313.51162,
+              "max_abs": 1636370331351162.0
+            },
+            "locked_frequency_THz": {
+              "decades": 0.0,
+              "min_abs": 23.511114281129558,
+              "max_abs": 23.511114281129558
+            },
+            "gain_length_nm": {
+              "decades": 0.0,
+              "min_abs": 5.203628386118492,
+              "max_abs": 5.203628386118492
+            },
+            "linewidth_FWHM_GHz": {
+              "decades": 0.0,
+              "min_abs": 7.641380314135131,
+              "max_abs": 7.641380314135131
+            },
+            "after_pump_amplitude_decay_ps": {
+              "decades": 0.0,
+              "min_abs": 1.5882296987467652,
+              "max_abs": 1.5882296987467652
+            }
+          },
+          "small_occupation_points": 0
+        },
+        {
+          "material": "delta-TiH2_reference",
+          "metrics": {
+            "current_threshold_A_m2": {
+              "decades": 0.0,
+              "min_abs": 289518238174316.75,
+              "max_abs": 289518238174316.75
+            },
+            "H_flux_threshold_m2_s": {
+              "decades": 0.0,
+              "min_abs": 2.1957028252269818e+32,
+              "max_abs": 2.1957028252269818e+32
+            },
+            "temperature_gradient_threshold_K_m": {
+              "decades": 0.0,
+              "min_abs": 572720774386.5975,
+              "max_abs": 572720774386.5975
+            },
+            "loading_gradient_threshold_m_inv": {
+              "decades": 5.0,
+              "min_abs": 48502509282.42179,
+              "max_abs": 4850250928242178.0
+            },
+            "locked_frequency_THz": {
+              "decades": 0.0,
+              "min_abs": 39.488931594012264,
+              "max_abs": 39.488931594012264
+            },
+            "gain_length_nm": {
+              "decades": 0.0,
+              "min_abs": 4.20266176912088,
+              "max_abs": 4.20266176912088
+            },
+            "linewidth_FWHM_GHz": {
+              "decades": 0.0,
+              "min_abs": 20.486117915939502,
+              "max_abs": 20.486117915939502
+            },
+            "after_pump_amplitude_decay_ps": {
+              "decades": 0.0,
+              "min_abs": 0.9108700763243083,
+              "max_abs": 0.9108700763243083
+            }
+          },
+          "small_occupation_points": 0
+        },
+        {
+          "material": "PdD",
+          "metrics": {
+            "current_threshold_A_m2": {
+              "decades": 0.0,
+              "min_abs": 112992380939056.88,
+              "max_abs": 112992380939056.88
+            },
+            "H_flux_threshold_m2_s": {
+              "decades": 0.0,
+              "min_abs": 4.834567840914547e+31,
+              "max_abs": 4.834567840914547e+31
+            },
+            "temperature_gradient_threshold_K_m": {
+              "decades": 0.0,
+              "min_abs": 31022560639.3909,
+              "max_abs": 31022560639.3909
+            },
+            "loading_gradient_threshold_m_inv": {
+              "decades": 5.0,
+              "min_abs": 8232938433.725548,
+              "max_abs": 823293843372554.8
+            },
+            "locked_frequency_THz": {
+              "decades": 0.0,
+              "min_abs": 9.715198679915508,
+              "max_abs": 9.715198679915508
+            },
+            "gain_length_nm": {
+              "decades": 0.0,
+              "min_abs": 6.203991064925867,
+              "max_abs": 6.203991064925867
+            },
+            "linewidth_FWHM_GHz": {
+              "decades": 0.0,
+              "min_abs": 2.825416384471843,
+              "max_abs": 2.825416384471843
+            },
+            "after_pump_amplitude_decay_ps": {
+              "decades": 0.0,
+              "min_abs": 4.136874413208489,
+              "max_abs": 4.136874413208489
+            }
+          },
+          "small_occupation_points": 0
+        }
+      ],
+      "max_finite_decades": 5.0
+    },
+    {
+      "input": "pump_ratio",
+      "range": [
+        1.01,
+        4.0
+      ],
+      "classification": "neither",
+      "range_origin": "exploratory, not measured intervals",
+      "per_material": [
+        {
+          "material": "NiH",
+          "metrics": {
+            "current_threshold_A_m2": {
+              "decades": 0.0,
+              "min_abs": 325199897412557.44,
+              "max_abs": 325199897412557.44
+            },
+            "H_flux_threshold_m2_s": {
+              "decades": 0.0,
+              "min_abs": 1.2592636956594837e+32,
+              "max_abs": 1.2592636956594837e+32
+            },
+            "temperature_gradient_threshold_K_m": {
+              "decades": 0.0,
+              "min_abs": 195557734994.59558,
+              "max_abs": 195557734994.59558
+            },
+            "loading_gradient_threshold_m_inv": {
+              "decades": 0.0,
+              "min_abs": 16363703313.51162,
+              "max_abs": 16363703313.51162
+            },
+            "locked_frequency_THz": {
+              "decades": 0.00408613336921288,
+              "min_abs": 23.437755362965436,
+              "max_abs": 23.65931411580455
+            },
+            "gain_length_nm": {
+              "decades": 2.477121254719662,
+              "min_abs": 1.7345427953728303,
+              "max_abs": 520.3628386118487
+            },
+            "linewidth_FWHM_GHz": {
+              "decades": 4.687476386443342,
+              "min_abs": 0.0005159599838592062,
+              "max_abs": 25.12420954617711
+            },
+            "after_pump_amplitude_decay_ps": {
+              "decades": 0.0,
+              "min_abs": 1.5882296987467652,
+              "max_abs": 1.5882296987467652
+            }
+          },
+          "small_occupation_points": 6
+        },
+        {
+          "material": "delta-TiH2_reference",
+          "metrics": {
+            "current_threshold_A_m2": {
+              "decades": 0.0,
+              "min_abs": 289518238174316.75,
+              "max_abs": 289518238174316.75
+            },
+            "H_flux_threshold_m2_s": {
+              "decades": 0.0,
+              "min_abs": 2.1957028252269818e+32,
+              "max_abs": 2.1957028252269818e+32
+            },
+            "temperature_gradient_threshold_K_m": {
+              "decades": 0.0,
+              "min_abs": 572720774386.5975,
+              "max_abs": 572720774386.5975
+            },
+            "loading_gradient_threshold_m_inv": {
+              "decades": 0.0,
+              "min_abs": 48502509282.42179,
+              "max_abs": 48502509282.42179
+            },
+            "locked_frequency_THz": {
+              "decades": 0.00405972163564338,
+              "min_abs": 39.36651666606709,
+              "max_abs": 39.736234478749985
+            },
+            "gain_length_nm": {
+              "decades": 2.477121254719662,
+              "min_abs": 1.4008872563736263,
+              "max_abs": 420.26617691208753
+            },
+            "linewidth_FWHM_GHz": {
+              "decades": 4.448126104957865,
+              "min_abs": 0.0013734001342636812,
+              "max_abs": 38.541018780973495
+            },
+            "after_pump_amplitude_decay_ps": {
+              "decades": 0.0,
+              "min_abs": 0.9108700763243083,
+              "max_abs": 0.9108700763243083
+            }
+          },
+          "small_occupation_points": 8
+        },
+        {
+          "material": "PdD",
+          "metrics": {
+            "current_threshold_A_m2": {
+              "decades": 0.0,
+              "min_abs": 112992380939056.88,
+              "max_abs": 112992380939056.88
+            },
+            "H_flux_threshold_m2_s": {
+              "decades": 0.0,
+              "min_abs": 4.834567840914547e+31,
+              "max_abs": 4.834567840914547e+31
+            },
+            "temperature_gradient_threshold_K_m": {
+              "decades": 0.0,
+              "min_abs": 31022560639.3909,
+              "max_abs": 31022560639.3909
+            },
+            "loading_gradient_threshold_m_inv": {
+              "decades": 0.0,
+              "min_abs": 8232938433.725548,
+              "max_abs": 8232938433.725548
+            },
+            "locked_frequency_THz": {
+              "decades": 0.0041360660237675,
+              "min_abs": 9.684514488365664,
+              "max_abs": 9.777186945672769
+            },
+            "gain_length_nm": {
+              "decades": 2.477121254719662,
+              "min_abs": 2.067997021641956,
+              "max_abs": 620.3991064925862
+            },
+            "linewidth_FWHM_GHz": {
+              "decades": 4.762022930222492,
+              "min_abs": 0.0002035123206498813,
+              "max_abs": 11.765588008999636
+            },
+            "after_pump_amplitude_decay_ps": {
+              "decades": 0.0,
+              "min_abs": 4.136874413208489,
+              "max_abs": 4.136874413208489
+            }
+          },
+          "small_occupation_points": 5
+        }
+      ],
+      "max_finite_decades": 4.762022930222492
+    },
+    {
+      "input": "gradient",
+      "range": [
+        0.01,
+        1.0
+      ],
+      "classification": "electronic-structure-computable",
+      "range_origin": "exploratory, not measured intervals",
+      "per_material": [
+        {
+          "material": "NiH",
+          "metrics": {
+            "current_threshold_A_m2": {
+              "decades": 0.21224918360064263,
+              "min_abs": 302845658408975.0,
+              "max_abs": 493708421822773.2
+            },
+            "H_flux_threshold_m2_s": {
+              "decades": 0.0005200586835712381,
+              "min_abs": 1.2578918672591271e+32,
+              "max_abs": 1.2593990690641507e+32
+            },
+            "temperature_gradient_threshold_K_m": {
+              "decades": 0.22357372666989825,
+              "min_abs": 181244034548.38696,
+              "max_abs": 303275584082.4065
+            },
+            "loading_gradient_threshold_m_inv": {
+              "decades": 0.0005200586835712381,
+              "min_abs": 16345876870.155981,
+              "max_abs": 16365462444.850151
+            },
+            "locked_frequency_THz": {
+              "decades": 0.2230671449867694,
+              "min_abs": 21.799185504028923,
+              "max_abs": 36.43404682031383
+            },
+            "gain_length_nm": {
+              "decades": 1.7764262733301015,
+              "min_abs": 0.5614583583280599,
+              "max_abs": 33.553963271451764
+            },
+            "linewidth_FWHM_GHz": {
+              "decades": 3.0176689956569684,
+              "min_abs": 0.014349101606864584,
+              "max_abs": 14.944923851300278
+            },
+            "after_pump_amplitude_decay_ps": {
+              "decades": 0.0005200586835712381,
+              "min_abs": 1.5880589791813837,
+              "max_abs": 1.5899617861095512
+            }
+          },
+          "small_occupation_points": 9
+        },
+        {
+          "material": "delta-TiH2_reference",
+          "metrics": {
+            "current_threshold_A_m2": {
+              "decades": 0.20592607303844762,
+              "min_abs": 270201027096598.6,
+              "max_abs": 434123272940230.56
+            },
+            "H_flux_threshold_m2_s": {
+              "decades": 0.0002488922782777363,
+              "min_abs": 2.1945573740486666e+32,
+              "max_abs": 2.19581542579036e+32
+            },
+            "temperature_gradient_threshold_K_m": {
+              "decades": 0.22957811499219213,
+              "min_abs": 529245373631.5221,
+              "max_abs": 897914914549.6917
+            },
+            "loading_gradient_threshold_m_inv": {
+              "decades": 0.0002488922782777363,
+              "min_abs": 48477206561.229065,
+              "max_abs": 48504996599.834564
+            },
+            "locked_frequency_THz": {
+              "decades": 0.22878632936931467,
+              "min_abs": 36.5090006496501,
+              "max_abs": 61.8281532425567
+            },
+            "gain_length_nm": {
+              "decades": 1.770421885007808,
+              "min_abs": 0.4547893704540261,
+              "max_abs": 26.806010947072362
+            },
+            "linewidth_FWHM_GHz": {
+              "decades": 2.7061782036254125,
+              "min_abs": 0.04029781182187567,
+              "max_abs": 20.486117915939502
+            },
+            "after_pump_amplitude_decay_ps": {
+              "decades": 0.00024889227827764,
+              "min_abs": 0.9108233672600792,
+              "max_abs": 0.9113455057728866
+            }
+          },
+          "small_occupation_points": 10
+        },
+        {
+          "material": "PdD",
+          "metrics": {
+            "current_threshold_A_m2": {
+              "decades": 0.20050744626016168,
+              "min_abs": 105807716124395.27,
+              "max_abs": 167889983503458.75
+            },
+            "H_flux_threshold_m2_s": {
+              "decades": 0.0008764518629894417,
+              "min_abs": 4.825700313436477e+31,
+              "max_abs": 4.835448916884744e+31
+            },
+            "temperature_gradient_threshold_K_m": {
+              "decades": 0.21217917594382452,
+              "min_abs": 28909654432.22588,
+              "max_abs": 47121822210.827415
+            },
+            "loading_gradient_threshold_m_inv": {
+              "decades": 0.0008764518629894417,
+              "min_abs": 8217837640.813205,
+              "max_abs": 8234438845.852704
+            },
+            "locked_frequency_THz": {
+              "decades": 0.21205725205446926,
+              "min_abs": 9.056247040399757,
+              "max_abs": 14.757252660381768
+            },
+            "gain_length_nm": {
+              "decades": 1.7878208240561755,
+              "min_abs": 0.6657419218521021,
+              "max_abs": 40.84385534939663
+            },
+            "linewidth_FWHM_GHz": {
+              "decades": 3.3799245908176987,
+              "min_abs": 0.00457566624815983,
+              "max_abs": 10.974353113661916
+            },
+            "after_pump_amplitude_decay_ps": {
+              "decades": 0.0008764518629894417,
+              "min_abs": 4.136120625773268,
+              "max_abs": 4.144476179822615
+            }
+          },
+          "small_occupation_points": 8
+        }
+      ],
+      "max_finite_decades": 3.3799245908176987
+    },
+    {
+      "input": "sigma_e",
+      "range": [
+        1e-24,
+        1e-18
+      ],
+      "classification": "electronic-structure-computable",
+      "range_origin": "exploratory, not measured intervals",
+      "per_material": [
+        {
+          "material": "NiH",
+          "metrics": {
+            "current_threshold_A_m2": {
+              "decades": 2.8208616059806064,
+              "min_abs": 305226025007179.3,
+              "max_abs": 2.0206131119173146e+17
+            },
+            "H_flux_threshold_m2_s": {
+              "decades": 0.0,
+              "min_abs": 1.2592636956594837e+32,
+              "max_abs": 1.2592636956594837e+32
+            },
+            "temperature_gradient_threshold_K_m": {
+              "decades": 0.0,
+              "min_abs": 195557734994.59558,
+              "max_abs": 195557734994.59558
+            },
+            "loading_gradient_threshold_m_inv": {
+              "decades": 0.0,
+              "min_abs": 16363703313.51162,
+              "max_abs": 16363703313.51162
+            },
+            "locked_frequency_THz": {
+              "decades": 0.0,
+              "min_abs": 23.511114281129558,
+              "max_abs": 23.511114281129558
+            },
+            "gain_length_nm": {
+              "decades": 0.0,
+              "min_abs": 5.203628386118492,
+              "max_abs": 5.203628386118492
+            },
+            "linewidth_FWHM_GHz": {
+              "decades": 0.0,
+              "min_abs": 7.641380314135131,
+              "max_abs": 7.641380314135131
+            },
+            "after_pump_amplitude_decay_ps": {
+              "decades": 0.0,
+              "min_abs": 1.5882296987467652,
+              "max_abs": 1.5882296987467652
+            }
+          },
+          "small_occupation_points": 0
+        },
+        {
+          "material": "delta-TiH2_reference",
+          "metrics": {
+            "current_threshold_A_m2": {
+              "decades": 3.1405842462768416,
+              "min_abs": 254690990932630.84,
+              "max_abs": 3.5204471537920205e+17
+            },
+            "H_flux_threshold_m2_s": {
+              "decades": 0.0,
+              "min_abs": 2.1957028252269818e+32,
+              "max_abs": 2.1957028252269818e+32
+            },
+            "temperature_gradient_threshold_K_m": {
+              "decades": 0.0,
+              "min_abs": 572720774386.5975,
+              "max_abs": 572720774386.5975
+            },
+            "loading_gradient_threshold_m_inv": {
+              "decades": 0.0,
+              "min_abs": 48502509282.42179,
+              "max_abs": 48502509282.42179
+            },
+            "locked_frequency_THz": {
+              "decades": 0.0,
+              "min_abs": 39.488931594012264,
+              "max_abs": 39.488931594012264
+            },
+            "gain_length_nm": {
+              "decades": 0.0,
+              "min_abs": 4.20266176912088,
+              "max_abs": 4.20266176912088
+            },
+            "linewidth_FWHM_GHz": {
+              "decades": 0.0,
+              "min_abs": 20.486117915939502,
+              "max_abs": 20.486117915939502
+            },
+            "after_pump_amplitude_decay_ps": {
+              "decades": 0.0,
+              "min_abs": 0.9108700763243083,
+              "max_abs": 0.9108700763243083
+            }
+          },
+          "small_occupation_points": 0
+        },
+        {
+          "material": "PdD",
+          "metrics": {
+            "current_threshold_A_m2": {
+              "decades": 2.8671303741627505,
+              "min_abs": 105324007625157.78,
+              "max_abs": 7.756356285132e+16
+            },
+            "H_flux_threshold_m2_s": {
+              "decades": 0.0,
+              "min_abs": 4.834567840914547e+31,
+              "max_abs": 4.834567840914547e+31
+            },
+            "temperature_gradient_threshold_K_m": {
+              "decades": 0.0,
+              "min_abs": 31022560639.3909,
+              "max_abs": 31022560639.3909
+            },
+            "loading_gradient_threshold_m_inv": {
+              "decades": 0.0,
+              "min_abs": 8232938433.725548,
+              "max_abs": 8232938433.725548
+            },
+            "locked_frequency_THz": {
+              "decades": 0.0,
+              "min_abs": 9.715198679915508,
+              "max_abs": 9.715198679915508
+            },
+            "gain_length_nm": {
+              "decades": 0.0,
+              "min_abs": 6.203991064925867,
+              "max_abs": 6.203991064925867
+            },
+            "linewidth_FWHM_GHz": {
+              "decades": 0.0,
+              "min_abs": 2.825416384471843,
+              "max_abs": 2.825416384471843
+            },
+            "after_pump_amplitude_decay_ps": {
+              "decades": 0.0,
+              "min_abs": 4.136874413208489,
+              "max_abs": 4.136874413208489
+            }
+          },
+          "small_occupation_points": 0
+        }
+      ],
+      "max_finite_decades": 3.1405842462768416
+    },
+    {
+      "input": "gamma",
+      "range": [
+        0.001,
+        0.1
+      ],
+      "classification": "lookup",
+      "range_origin": "exploratory, not measured intervals",
+      "per_material": [
+        {
+          "material": "NiH",
+          "metrics": {
+            "current_threshold_A_m2": {
+              "decades": 0.21738164054065012,
+              "min_abs": 307044592508303.8,
+              "max_abs": 506504249968097.8
+            },
+            "H_flux_threshold_m2_s": {
+              "decades": 1.9999998073558825,
+              "min_abs": 1.2592637011899515e+31,
+              "max_abs": 1.2592631426065457e+33
+            },
+            "temperature_gradient_threshold_K_m": {
+              "decades": 1.9996024195063564,
+              "min_abs": 19555950593.326256,
+              "max_abs": 1953805603788.3928
+            },
+            "loading_gradient_threshold_m_inv": {
+              "decades": 1.9999998073558825,
+              "min_abs": 1636370338.5378165,
+              "max_abs": 163636961267.76843
+            },
+            "locked_frequency_THz": {
+              "decades": 0.0003948807160922486,
+              "min_abs": 23.48995787555987,
+              "max_abs": 23.51132574923744
+            },
+            "gain_length_nm": {
+              "decades": 1.9996024195063562,
+              "min_abs": 0.5208347130184234,
+              "max_abs": 52.035812633428755
+            },
+            "linewidth_FWHM_GHz": {
+              "decades": 2.7830271075479343,
+              "min_abs": 0.027506325356733228,
+              "max_abs": 16.690128609931083
+            },
+            "after_pump_amplitude_decay_ps": {
+              "decades": 1.9999998073558825,
+              "min_abs": 0.15882303962777827,
+              "max_abs": 15.882296917715362
+            }
+          },
+          "small_occupation_points": 9
+        },
+        {
+          "material": "delta-TiH2_reference",
+          "metrics": {
+            "current_threshold_A_m2": {
+              "decades": 0.37100432341667033,
+              "min_abs": 257859584806323.9,
+              "max_abs": 605881375171394.0
+            },
+            "H_flux_threshold_m2_s": {
+              "decades": 1.9999999615692863,
+              "min_abs": 2.195702827150711e+31,
+              "max_abs": 2.1957026328530022e+33
+            },
+            "temperature_gradient_threshold_K_m": {
+              "decades": 1.9995717575955385,
+              "min_abs": 57272636044.21968,
+              "max_abs": 5721618936121.319
+            },
+            "loading_gradient_threshold_m_inv": {
+              "decades": 1.9999999615692865,
+              "min_abs": 4850250932.491647,
+              "max_abs": 485025050329.3018
+            },
+            "locked_frequency_THz": {
+              "decades": 0.00042551972363758954,
+              "min_abs": 39.45064180572614,
+              "max_abs": 39.48931430448037
+            },
+            "gain_length_nm": {
+              "decades": 1.9995717575955385,
+              "min_abs": 0.42067668779905304,
+              "max_abs": 42.026207786864795
+            },
+            "linewidth_FWHM_GHz": {
+              "decades": 2.4680674915156295,
+              "min_abs": 0.06972558659381595,
+              "max_abs": 20.486117915939502
+            },
+            "after_pump_amplitude_decay_ps": {
+              "decades": 1.9999999615692865,
+              "min_abs": 0.09108701561291502,
+              "max_abs": 9.108700755262644
+            }
+          },
+          "small_occupation_points": 10
+        },
+        {
+          "material": "PdD",
+          "metrics": {
+            "current_threshold_A_m2": {
+              "decades": 0.23615822207384132,
+              "min_abs": 106021955574180.94,
+              "max_abs": 182622394395702.44
+            },
+            "H_flux_threshold_m2_s": {
+              "decades": 1.9999992636560864,
+              "min_abs": 4.834567922071188e+30,
+              "max_abs": 4.834559725094724e+32
+            },
+            "temperature_gradient_threshold_K_m": {
+              "decades": 1.9996559575758408,
+              "min_abs": 3102280377.4651804,
+              "max_abs": 309982376458.9305
+            },
+            "loading_gradient_threshold_m_inv": {
+              "decades": 1.9999992636560864,
+              "min_abs": 823293857.1929758,
+              "max_abs": 82329246130.39368
+            },
+            "locked_frequency_THz": {
+              "decades": 0.00034111390747487393,
+              "min_abs": 9.707646367793506,
+              "max_abs": 9.71527417364406
+            },
+            "gain_length_nm": {
+              "decades": 1.9996559575758408,
+              "min_abs": 0.6208859071812474,
+              "max_abs": 62.03942442338521
+            },
+            "linewidth_FWHM_GHz": {
+              "decades": 2.730162650130201,
+              "min_abs": 0.011291649040798145,
+              "max_abs": 6.066246047763612
+            },
+            "after_pump_amplitude_decay_ps": {
+              "decades": 1.9999992636560864,
+              "min_abs": 0.41368813578175706,
+              "max_abs": 41.36874343763849
+            }
+          },
+          "small_occupation_points": 9
+        }
+      ],
+      "max_finite_decades": 2.7830271075479343
+    },
+    {
+      "input": "thermal_W_mK",
+      "range": [
+        1.0,
+        100.0
+      ],
+      "classification": "lookup",
+      "range_origin": "exploratory, not measured intervals",
+      "per_material": [
+        {
+          "material": "NiH",
+          "metrics": {
+            "current_threshold_A_m2": {
+              "decades": 0.0,
+              "min_abs": 325199897412557.44,
+              "max_abs": 325199897412557.44
+            },
+            "H_flux_threshold_m2_s": {
+              "decades": 0.0,
+              "min_abs": 1.2592636956594837e+32,
+              "max_abs": 1.2592636956594837e+32
+            },
+            "temperature_gradient_threshold_K_m": {
+              "decades": 2.0,
+              "min_abs": 19555773499.45956,
+              "max_abs": 1955577349945.956
+            },
+            "loading_gradient_threshold_m_inv": {
+              "decades": 0.0,
+              "min_abs": 16363703313.51162,
+              "max_abs": 16363703313.51162
+            },
+            "locked_frequency_THz": {
+              "decades": 0.0,
+              "min_abs": 23.511114281129558,
+              "max_abs": 23.511114281129558
+            },
+            "gain_length_nm": {
+              "decades": 0.0,
+              "min_abs": 5.203628386118492,
+              "max_abs": 5.203628386118492
+            },
+            "linewidth_FWHM_GHz": {
+              "decades": 0.0,
+              "min_abs": 7.641380314135131,
+              "max_abs": 7.641380314135131
+            },
+            "after_pump_amplitude_decay_ps": {
+              "decades": 0.0,
+              "min_abs": 1.5882296987467652,
+              "max_abs": 1.5882296987467652
+            }
+          },
+          "small_occupation_points": 0
+        },
+        {
+          "material": "delta-TiH2_reference",
+          "metrics": {
+            "current_threshold_A_m2": {
+              "decades": 0.0,
+              "min_abs": 289518238174316.75,
+              "max_abs": 289518238174316.75
+            },
+            "H_flux_threshold_m2_s": {
+              "decades": 0.0,
+              "min_abs": 2.1957028252269818e+32,
+              "max_abs": 2.1957028252269818e+32
+            },
+            "temperature_gradient_threshold_K_m": {
+              "decades": 2.0,
+              "min_abs": 57272077438.65976,
+              "max_abs": 5727207743865.976
+            },
+            "loading_gradient_threshold_m_inv": {
+              "decades": 0.0,
+              "min_abs": 48502509282.42179,
+              "max_abs": 48502509282.42179
+            },
+            "locked_frequency_THz": {
+              "decades": 0.0,
+              "min_abs": 39.488931594012264,
+              "max_abs": 39.488931594012264
+            },
+            "gain_length_nm": {
+              "decades": 0.0,
+              "min_abs": 4.20266176912088,
+              "max_abs": 4.20266176912088
+            },
+            "linewidth_FWHM_GHz": {
+              "decades": 0.0,
+              "min_abs": 20.486117915939502,
+              "max_abs": 20.486117915939502
+            },
+            "after_pump_amplitude_decay_ps": {
+              "decades": 0.0,
+              "min_abs": 0.9108700763243083,
+              "max_abs": 0.9108700763243083
+            }
+          },
+          "small_occupation_points": 0
+        },
+        {
+          "material": "PdD",
+          "metrics": {
+            "current_threshold_A_m2": {
+              "decades": 0.0,
+              "min_abs": 112992380939056.88,
+              "max_abs": 112992380939056.88
+            },
+            "H_flux_threshold_m2_s": {
+              "decades": 0.0,
+              "min_abs": 4.834567840914547e+31,
+              "max_abs": 4.834567840914547e+31
+            },
+            "temperature_gradient_threshold_K_m": {
+              "decades": 2.0,
+              "min_abs": 3102256063.9390903,
+              "max_abs": 310225606393.909
+            },
+            "loading_gradient_threshold_m_inv": {
+              "decades": 0.0,
+              "min_abs": 8232938433.725548,
+              "max_abs": 8232938433.725548
+            },
+            "locked_frequency_THz": {
+              "decades": 0.0,
+              "min_abs": 9.715198679915508,
+              "max_abs": 9.715198679915508
+            },
+            "gain_length_nm": {
+              "decades": 0.0,
+              "min_abs": 6.203991064925867,
+              "max_abs": 6.203991064925867
+            },
+            "linewidth_FWHM_GHz": {
+              "decades": 0.0,
+              "min_abs": 2.825416384471843,
+              "max_abs": 2.825416384471843
+            },
+            "after_pump_amplitude_decay_ps": {
+              "decades": 0.0,
+              "min_abs": 4.136874413208489,
+              "max_abs": 4.136874413208489
+            }
+          },
+          "small_occupation_points": 0
+        }
+      ],
+      "max_finite_decades": 2.0
+    },
+    {
+      "input": "qd",
+      "range": [
+        0.2,
+        2.8
+      ],
+      "classification": "electronic-structure-computable",
+      "range_origin": "exploratory, not measured intervals",
+      "per_material": [
+        {
+          "material": "NiH",
+          "metrics": {
+            "current_threshold_A_m2": {
+              "decades": 1.03855554955172,
+              "min_abs": 203501987230010.5,
+              "max_abs": 2223945827059029.0
+            },
+            "H_flux_threshold_m2_s": {
+              "decades": 9.983382589798259e-05,
+              "min_abs": 1.2591216215216404e+32,
+              "max_abs": 1.2594110964819007e+32
+            },
+            "temperature_gradient_threshold_K_m": {
+              "decades": 0.06609266587369461,
+              "min_abs": 179915009255.32373,
+              "max_abs": 209488439357.61646
+            },
+            "loading_gradient_threshold_m_inv": {
+              "decades": 9.983382589798259e-05,
+              "min_abs": 16361857108.425104,
+              "max_abs": 16365618737.051989
+            },
+            "locked_frequency_THz": {
+              "decades": 0.06576753623133004,
+              "min_abs": 21.640308422951016,
+              "max_abs": 25.178565441504716
+            },
+            "gain_length_nm": {
+              "decades": 0.6665770109174273,
+              "min_abs": 1.1236853169016832,
+              "max_abs": 5.21460860454409
+            },
+            "linewidth_FWHM_GHz": {
+              "decades": 0.4652520114540195,
+              "min_abs": 7.725509841645934,
+              "max_abs": 22.551693560369838
+            },
+            "after_pump_amplitude_decay_ps": {
+              "decades": 9.983382589798259e-05,
+              "min_abs": 1.5880438131654517,
+              "max_abs": 1.5884089080950043
+            }
+          },
+          "small_occupation_points": 12
+        },
+        {
+          "material": "delta-TiH2_reference",
+          "metrics": {
+            "current_threshold_A_m2": {
+              "decades": 0.99607388813493,
+              "min_abs": 188387108640488.44,
+              "max_abs": 1866917251025112.8
+            },
+            "H_flux_threshold_m2_s": {
+              "decades": 4.7639972000116594e-05,
+              "min_abs": 2.1955845681466663e+32,
+              "max_abs": 2.195825426202294e+32
+            },
+            "temperature_gradient_threshold_K_m": {
+              "decades": 0.06850447111479038,
+              "min_abs": 525202690578.83984,
+              "max_abs": 614938116624.1917
+            },
+            "loading_gradient_threshold_m_inv": {
+              "decades": 4.763997200021301e-05,
+              "min_abs": 48499897014.008316,
+              "max_abs": 48505217506.35574
+            },
+            "locked_frequency_THz": {
+              "decades": 0.06811432038364833,
+              "min_abs": 36.23201214216689,
+              "max_abs": 42.38447163404623
+            },
+            "gain_length_nm": {
+              "decades": 0.6653213752546292,
+              "min_abs": 0.9104817866476083,
+              "max_abs": 4.2130114341744145
+            },
+            "linewidth_FWHM_GHz": {
+              "decades": 0.2531099049979593,
+              "min_abs": 20.68296016646244,
+              "max_abs": 37.04440303119212
+            },
+            "after_pump_amplitude_decay_ps": {
+              "decades": 4.763997200021301e-05,
+              "min_abs": 0.9108192191120693,
+              "max_abs": 0.910919136987849
+            }
+          },
+          "small_occupation_points": 14
+        },
+        {
+          "material": "PdD",
+          "metrics": {
+            "current_threshold_A_m2": {
+              "decades": 1.0383980828212684,
+              "min_abs": 70730447900495.53,
+              "max_abs": 772688575502719.4
+            },
+            "H_flux_threshold_m2_s": {
+              "decades": 0.00016914539972144008,
+              "min_abs": 4.833644315212671e+31,
+              "max_abs": 4.835527249416017e+31
+            },
+            "temperature_gradient_threshold_K_m": {
+              "decades": 0.06157552388444807,
+              "min_abs": 28714028554.00731,
+              "max_abs": 33087934076.749878
+            },
+            "loading_gradient_threshold_m_inv": {
+              "decades": 0.0001691453997213437,
+              "min_abs": 8231365732.608157,
+              "max_abs": 8234572240.796895
+            },
+            "locked_frequency_THz": {
+              "decades": 0.061344280485250535,
+              "min_abs": 8.995272318839255,
+              "max_abs": 10.35997234263526
+            },
+            "gain_length_nm": {
+              "decades": 0.6689145650707151,
+              "min_abs": 1.331635936337435,
+              "max_abs": 6.212981663153212
+            },
+            "linewidth_FWHM_GHz": {
+              "decades": 0.6148401730273779,
+              "min_abs": 2.867212462833708,
+              "max_abs": 11.811363865162232
+            },
+            "after_pump_amplitude_decay_ps": {
+              "decades": 0.00016914539972144008,
+              "min_abs": 4.13605362319391,
+              "max_abs": 4.1376648126663085
+            }
+          },
+          "small_occupation_points": 11
+        }
+      ],
+      "max_finite_decades": 1.03855554955172
+    },
+    {
+      "input": "saturation_q",
+      "range": [
+        0.03,
+        0.3
+      ],
+      "classification": "neither",
+      "range_origin": "exploratory, not measured intervals",
+      "per_material": [
+        {
+          "material": "NiH",
+          "metrics": {
+            "current_threshold_A_m2": {
+              "decades": 0.0,
+              "min_abs": 325199897412557.44,
+              "max_abs": 325199897412557.44
+            },
+            "H_flux_threshold_m2_s": {
+              "decades": 0.0,
+              "min_abs": 1.2592636956594837e+32,
+              "max_abs": 1.2592636956594837e+32
+            },
+            "temperature_gradient_threshold_K_m": {
+              "decades": 0.0,
+              "min_abs": 195557734994.59558,
+              "max_abs": 195557734994.59558
+            },
+            "loading_gradient_threshold_m_inv": {
+              "decades": 0.0,
+              "min_abs": 16363703313.51162,
+              "max_abs": 16363703313.51162
+            },
+            "locked_frequency_THz": {
+              "decades": 0.012061715383140962,
+              "min_abs": 23.443683356352434,
+              "max_abs": 24.10391361982952
+            },
+            "gain_length_nm": {
+              "decades": 0.0,
+              "min_abs": 5.203628386118492,
+              "max_abs": 5.203628386118492
+            },
+            "linewidth_FWHM_GHz": {
+              "decades": 0.5312031400073287,
+              "min_abs": 7.316406262503678,
+              "max_abs": 24.859990183371078
+            },
+            "after_pump_amplitude_decay_ps": {
+              "decades": 0.0,
+              "min_abs": 1.5882296987467652,
+              "max_abs": 1.5882296987467652
+            }
+          },
+          "small_occupation_points": 6
+        },
+        {
+          "material": "delta-TiH2_reference",
+          "metrics": {
+            "current_threshold_A_m2": {
+              "decades": 0.0,
+              "min_abs": 289518238174316.75,
+              "max_abs": 289518238174316.75
+            },
+            "H_flux_threshold_m2_s": {
+              "decades": 0.0,
+              "min_abs": 2.1957028252269818e+32,
+              "max_abs": 2.1957028252269818e+32
+            },
+            "temperature_gradient_threshold_K_m": {
+              "decades": 0.0,
+              "min_abs": 572720774386.5975,
+              "max_abs": 572720774386.5975
+            },
+            "loading_gradient_threshold_m_inv": {
+              "decades": 0.0,
+              "min_abs": 48502509282.42179,
+              "max_abs": 48502509282.42179
+            },
+            "locked_frequency_THz": {
+              "decades": 0.011984476798427547,
+              "min_abs": 39.376408781456604,
+              "max_abs": 40.47814313296314
+            },
+            "gain_length_nm": {
+              "decades": 0.0,
+              "min_abs": 4.20266176912088,
+              "max_abs": 4.20266176912088
+            },
+            "linewidth_FWHM_GHz": {
+              "decades": 0.513605053800399,
+              "min_abs": 19.32053980851035,
+              "max_abs": 63.041176577607004
+            },
+            "after_pump_amplitude_decay_ps": {
+              "decades": 0.0,
+              "min_abs": 0.9108700763243083,
+              "max_abs": 0.9108700763243083
+            }
+          },
+          "small_occupation_points": 8
+        },
+        {
+          "material": "PdD",
+          "metrics": {
+            "current_threshold_A_m2": {
+              "decades": 0.0,
+              "min_abs": 112992380939056.88,
+              "max_abs": 112992380939056.88
+            },
+            "H_flux_threshold_m2_s": {
+              "decades": 0.0,
+              "min_abs": 4.834567840914547e+31,
+              "max_abs": 4.834567840914547e+31
+            },
+            "temperature_gradient_threshold_K_m": {
+              "decades": 0.0,
+              "min_abs": 31022560639.3909,
+              "max_abs": 31022560639.3909
+            },
+            "loading_gradient_threshold_m_inv": {
+              "decades": 0.0,
+              "min_abs": 8232938433.725548,
+              "max_abs": 8232938433.725548
+            },
+            "locked_frequency_THz": {
+              "decades": 0.012207713261884875,
+              "min_abs": 9.686994018995955,
+              "max_abs": 9.963151742944548
+            },
+            "gain_length_nm": {
+              "decades": 0.0,
+              "min_abs": 6.203991064925867,
+              "max_abs": 6.203991064925867
+            },
+            "linewidth_FWHM_GHz": {
+              "decades": 0.5657224232019278,
+              "min_abs": 2.7721798230562986,
+              "max_abs": 10.19867662160799
+            },
+            "after_pump_amplitude_decay_ps": {
+              "decades": 0.0,
+              "min_abs": 4.136874413208489,
+              "max_abs": 4.136874413208489
+            }
+          },
+          "small_occupation_points": 5
+        }
+      ],
+      "max_finite_decades": 0.5657224232019278
+    },
+    {
+      "input": "T_K",
+      "range": [
+        5.0,
+        600.0
+      ],
+      "classification": "lookup",
+      "range_origin": "exploratory, not measured intervals",
+      "per_material": [
+        {
+          "material": "NiH",
+          "metrics": {
+            "current_threshold_A_m2": {
+              "decades": 0.0,
+              "min_abs": 325199897412557.44,
+              "max_abs": 325199897412557.44
+            },
+            "H_flux_threshold_m2_s": {
+              "decades": 0.0,
+              "min_abs": 1.2592636956594837e+32,
+              "max_abs": 1.2592636956594837e+32
+            },
+            "temperature_gradient_threshold_K_m": {
+              "decades": 0.0,
+              "min_abs": 195557734994.59558,
+              "max_abs": 195557734994.59558
+            },
+            "loading_gradient_threshold_m_inv": {
+              "decades": 0.0,
+              "min_abs": 16363703313.51162,
+              "max_abs": 16363703313.51162
+            },
+            "locked_frequency_THz": {
+              "decades": 0.0,
+              "min_abs": 23.511114281129558,
+              "max_abs": 23.511114281129558
+            },
+            "gain_length_nm": {
+              "decades": 0.0,
+              "min_abs": 5.203628386118492,
+              "max_abs": 5.203628386118492
+            },
+            "linewidth_FWHM_GHz": {
+              "decades": 0.049529188038852444,
+              "min_abs": 7.520546895585081,
+              "max_abs": 8.429049645482257
+            },
+            "after_pump_amplitude_decay_ps": {
+              "decades": 0.0,
+              "min_abs": 1.5882296987467652,
+              "max_abs": 1.5882296987467652
+            }
+          },
+          "small_occupation_points": 0
+        },
+        {
+          "material": "delta-TiH2_reference",
+          "metrics": {
+            "current_threshold_A_m2": {
+              "decades": 0.0,
+              "min_abs": 289518238174316.75,
+              "max_abs": 289518238174316.75
+            },
+            "H_flux_threshold_m2_s": {
+              "decades": 0.0,
+              "min_abs": 2.1957028252269818e+32,
+              "max_abs": 2.1957028252269818e+32
+            },
+            "temperature_gradient_threshold_K_m": {
+              "decades": 0.0,
+              "min_abs": 572720774386.5975,
+              "max_abs": 572720774386.5975
+            },
+            "loading_gradient_threshold_m_inv": {
+              "decades": 0.0,
+              "min_abs": 48502509282.42179,
+              "max_abs": 48502509282.42179
+            },
+            "locked_frequency_THz": {
+              "decades": 0.0,
+              "min_abs": 39.488931594012264,
+              "max_abs": 39.488931594012264
+            },
+            "gain_length_nm": {
+              "decades": 0.0,
+              "min_abs": 4.20266176912088,
+              "max_abs": 4.20266176912088
+            },
+            "linewidth_FWHM_GHz": {
+              "decades": 0.012789516112346149,
+              "min_abs": 20.460959313038536,
+              "max_abs": 21.072473088896146
+            },
+            "after_pump_amplitude_decay_ps": {
+              "decades": 0.0,
+              "min_abs": 0.9108700763243083,
+              "max_abs": 0.9108700763243083
+            }
+          },
+          "small_occupation_points": 0
+        },
+        {
+          "material": "PdD",
+          "metrics": {
+            "current_threshold_A_m2": {
+              "decades": 0.0,
+              "min_abs": 112992380939056.88,
+              "max_abs": 112992380939056.88
+            },
+            "H_flux_threshold_m2_s": {
+              "decades": 0.0,
+              "min_abs": 4.834567840914547e+31,
+              "max_abs": 4.834567840914547e+31
+            },
+            "temperature_gradient_threshold_K_m": {
+              "decades": 0.0,
+              "min_abs": 31022560639.3909,
+              "max_abs": 31022560639.3909
+            },
+            "loading_gradient_threshold_m_inv": {
+              "decades": 0.0,
+              "min_abs": 8232938433.725548,
+              "max_abs": 8232938433.725548
+            },
+            "locked_frequency_THz": {
+              "decades": 0.0,
+              "min_abs": 9.715198679915508,
+              "max_abs": 9.715198679915508
+            },
+            "gain_length_nm": {
+              "decades": 0.0,
+              "min_abs": 6.203991064925867,
+              "max_abs": 6.203991064925867
+            },
+            "linewidth_FWHM_GHz": {
+              "decades": 0.19587751679057128,
+              "min_abs": 2.394827812039494,
+              "max_abs": 3.759688031931817
+            },
+            "after_pump_amplitude_decay_ps": {
+              "decades": 0.0,
+              "min_abs": 4.136874413208489,
+              "max_abs": 4.136874413208489
+            }
+          },
+          "small_occupation_points": 0
+        }
+      ],
+      "max_finite_decades": 0.19587751679057128
+    }
+  ],
+  "domain_radius_result": "unselected at every input; gradient alone does not fix a bulk radius",
+  "top_tool_input": "finite-q longitudinal screening/force-constant kernel in the actual loaded phase"
+}
