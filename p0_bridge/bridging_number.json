@@ -1,0 +1,142 @@
+{
+  "inputs": {
+    "densities": [
+      [
+        "Ni/H",
+        0.6,
+        4.617281326359789e+28
+      ],
+      [
+        "Ni/H",
+        0.8,
+        6.156375101813054e+28
+      ],
+      [
+        "Ni/H",
+        1,
+        7.695468877266316e+28
+      ],
+      [
+        "Pd/D",
+        0.6,
+        3.5233358392018157e+28
+      ],
+      [
+        "Pd/D",
+        0.8,
+        4.6977811189357545e+28
+      ],
+      [
+        "Pd/D",
+        1,
+        5.872226398669693e+28
+      ]
+    ],
+    "claims_W_cm3": [
+      [
+        "FPH1989_p304_1mm_8mAcm2",
+        0.095
+      ],
+      [
+        "FPH1989_p304_4mm_512mAcm2",
+        21.4
+      ]
+    ],
+    "C": 1.0,
+    "Q_MeV": [
+      1.0,
+      25.0
+    ],
+    "assumption": "all Q becomes measured heat"
+  },
+  "rows": [
+    {
+      "claim": "FPH1989_p304_1mm_8mAcm2",
+      "reported_W_cm3": 0.095,
+      "Q_MeV": 1.0,
+      "event_rate_m3_s": 5.929433620737725e+17,
+      "C1_rate_full_density_range_s1": [
+        7.70509726607335e-12,
+        1.6829033312024527e-11
+      ],
+      "C1_rate_PdD_density_range_s1": [
+        1.0097419987214716e-11,
+        1.6829033312024527e-11
+      ]
+    },
+    {
+      "claim": "FPH1989_p304_1mm_8mAcm2",
+      "reported_W_cm3": 0.095,
+      "Q_MeV": 25.0,
+      "event_rate_m3_s": 2.3717734482950896e+16,
+      "C1_rate_full_density_range_s1": [
+        3.08203890642934e-13,
+        6.731613324809811e-13
+      ],
+      "C1_rate_PdD_density_range_s1": [
+        4.038967994885886e-13,
+        6.731613324809811e-13
+      ]
+    },
+    {
+      "claim": "FPH1989_p304_4mm_512mAcm2",
+      "reported_W_cm3": 21.4,
+      "Q_MeV": 1.0,
+      "event_rate_m3_s": 1.3356829419346033e+20,
+      "C1_rate_full_density_range_s1": [
+        1.7356745420417864e-09,
+        3.7909611881823674e-09
+      ],
+      "C1_rate_PdD_density_range_s1": [
+        2.2745767129094203e-09,
+        3.7909611881823674e-09
+      ]
+    },
+    {
+      "claim": "FPH1989_p304_4mm_512mAcm2",
+      "reported_W_cm3": 21.4,
+      "Q_MeV": 25.0,
+      "event_rate_m3_s": 5.342731767738413e+18,
+      "C1_rate_full_density_range_s1": [
+        6.942698168167145e-11,
+        1.5163844752729468e-10
+      ],
+      "C1_rate_PdD_density_range_s1": [
+        9.09830685163768e-11,
+        1.5163844752729468e-10
+      ]
+    }
+  ],
+  "energy_ratios": [
+    {
+      "Q_MeV": 1.0,
+      "ordering_energy_meV": [
+        1.0,
+        10.0
+      ],
+      "Q_over_abs_du_equals_energy_equivalent_sites": [
+        100000000.0,
+        1000000000.0
+      ]
+    },
+    {
+      "Q_MeV": 25.0,
+      "ordering_energy_meV": [
+        1.0,
+        10.0
+      ],
+      "Q_over_abs_du_equals_energy_equivalent_sites": [
+        2500000000.0,
+        25000000000.0
+      ]
+    }
+  ],
+  "reference": {
+    "reported_W_cm3": 21.4,
+    "Q_MeV": 25.0,
+    "n_m3": 5.872226398669693e+28,
+    "C1_rate_s1": 9.09830685163768e-11
+  },
+  "scaling": "every listed per-coherent-site rate scales as 1/C",
+  "energy_ledger_reference_W_cm3": 21.399999999999995
+}
