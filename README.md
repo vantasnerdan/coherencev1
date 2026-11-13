@@ -38,9 +38,9 @@ Passes 0 to 2 are complete. Each directory holds a small script, its output and 
 - **Method checks.** Symbolic regression recovered the known threshold law exactly once the target was re-expressed without its singularity, and failed on the raw singular target. It found a compact approximate law for the coherent fraction and no reliable law for heat. The reduced order-parameter equation reproduces end states of the full model to a fraction of a percent near threshold.
 - **Folding in real inputs.** Heat capacity by lookup collapsed a hundredfold placeholder range to about 20 percent and dropped it to the bottom of the ranking. A computed bare gap 27 percent below the measured value moved the output by 4 percent with the diamagnetic term off, and switched it off entirely in the case that had been just inside the threshold.
 
-## Validity: this is not yet a model of the Gamberale-Modanese theory
+## Loop 2: a model that orders
 
-After the loop closed, the pass 0 model was checked against the published theory it is meant to approximate: Gamberale and Modanese, "Coherent Plasma in a Lattice" (arXiv:2205.14015); Gamberale, "Neutron Production via Electron Capture by Coherent Protons" (arXiv:2209.06139); "Spectral Analysis of Proton Eigenfunctions in Crystalline Environments" (arXiv:2403.15487); Modanese, "Coherent Oscillations of Protons in Hydrogen-loaded Metals" (arXiv:2608.21452). It does not represent that theory. The results above are results about a single-mode two-level model and should not be read as tests of the published one.
+The first loop's model was too simple: two-level matter and one field mode. It differs from the published coherent-plasma work as shown below (Gamberale and Modanese, arXiv:2205.14015; Gamberale, arXiv:2209.06139; arXiv:2403.15487; Modanese, arXiv:2608.21452). That work is an input here, not a target. `g0_stability/` shows that coupling to the transverse field alone, treated consistently, gives no ordered state in either model, so the second loop looks for the ingredient that does: dipole-dipole interaction between protons, anharmonic wells, coupling to the electron plasma, drive and loss, and a gradient term that gives the domain a size.
 
 | | This repository | Published theory |
 |---|---|---|
