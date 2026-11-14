@@ -29,4 +29,25 @@ Four of the 32 sites are empty, as far apart as the cell allows, a = 4.0616 A (t
 
 A D atom with no vacancy beside it is stiffer than at full loading (0.703 against 0.591), because the lattice is 0.55 percent smaller. A D atom beside vacancies is softer (0.529), and it is not at rest on its lattice site: it feels a steady force of 0.07 eV/A along the probed direction, which a linear estimate turns into an off-centre shift of roughly 0.13 A. The atoms were not relaxed, so that shift is an estimate only.
 
-The remaining cases (0.75, and 0.875 bunched) and the fitted law follow.
+## x = 0.75, vacancies bunched (`x0750_bunched/`)
+
+Eight of the 32 sites are empty, grouped together, a = 4.0393 A (extrapolated along the same loading line; not a measured point). Same two probes.
+
+| D atom | On-site stiffness | Sum of neighbour couplings | Collective | Force at the site |
+|---|---:|---:|---:|---:|
+| No vacant neighbour | 0.732 eV/A^2 | 0.508 | 0.223 | 0.002 eV/A |
+| Four vacant neighbours | 0.477 eV/A^2 | 0.246 | 0.231 | 0.136 eV/A |
+
+## Across the cases so far
+
+| Loading | a (A) | Vacant neighbours | On-site stiffness | Sum of couplings | Force toward vacancy |
+|---|---:|---:|---:|---:|---:|
+| 1.0 | 4.084 | 0 | 0.591 | 0.389 | 0 |
+| 0.875 | 4.062 | 0 | 0.703 | 0.485 | 0.002 |
+| 0.875 | 4.062 | 2 | 0.529 | 0.399 | 0.070 |
+| 0.75 | 4.039 | 0 | 0.732 | 0.508 | 0.002 |
+| 0.75 | 4.039 | 4 | 0.477 | 0.246 | 0.136 |
+
+Two trends. Lower loading shrinks the lattice and stiffens a D that has all its neighbours. Each vacant neighbour softens the D beside it and adds a push toward the vacancy of roughly 0.035 eV/A per vacant neighbour (0.070 for two, 0.136 for four).
+
+The last case (0.875 bunched, near-vacancy probe only) and the fitted law follow.

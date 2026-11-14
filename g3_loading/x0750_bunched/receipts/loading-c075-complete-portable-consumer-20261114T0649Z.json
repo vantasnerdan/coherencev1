@@ -1,0 +1,49 @@
+{
+  "scope": "Both actual .75 saved readouts, noGPW/PAW; shared wrong-spacing refusal already exercised in loadingb without code changes",
+  "sources": [
+    {
+      "path": "loading_Pd/x0750-bunched8/k3/readout-clean-20261114T0608Z.json",
+      "bytes": 80184,
+      "sha256": "a8f988e554d88f906e70276f16ddb48fc93c07e840c39620dd540ca747842868"
+    },
+    {
+      "path": "loading_Pd/x0750-bunched8/k3/readout-near-20261114T0647Z.json",
+      "bytes": 80946,
+      "sha256": "167b0b64374c9e50308e017ff376f785caa176473b51e9e34a3067d512207172"
+    }
+  ],
+  "consumers": [
+    {
+      "command": [
+        "python",
+        "loading_readout.py",
+        "--config",
+        "loading-configs/x0750-bunched8.json",
+        "--mesh",
+        "3",
+        "--probe",
+        "clean",
+        "--output",
+        "portable-clean.json"
+      ],
+      "exit": 0,
+      "identical_parsed_output": true
+    },
+    {
+      "command": [
+        "python",
+        "loading_readout.py",
+        "--config",
+        "loading-configs/x0750-bunched8.json",
+        "--mesh",
+        "3",
+        "--probe",
+        "near",
+        "--output",
+        "portable-near.json"
+      ],
+      "exit": 0,
+      "identical_parsed_output": true
+    }
+  ]
+}
