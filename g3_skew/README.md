@@ -57,6 +57,8 @@ Shear along [110] at 8 percent gives 0.030. Shear softens steadily and would rea
 | +2% | 1.000 | -0.127 | 0.057 |
 | +4% | 0.971 | -0.281 | 0.421 |
 
+The +2% row was not height-searched: its starting height already met the stress tolerance (residual stress 1.6e-4 eV/A^3 against a tolerance of 5e-4; the other rows reached about 1e-6), so 1.000 is the starting value. It lies on the trend of the other four rows, which interpolate to about 1.001.
+
 A compressed film softens the motion across the layer; a stretched film softens the motion within it. Between them, at every strain in this range, one direction has a negative bare stiffness. These are small-vibration values at the site centre: zero-point motion and the anharmonic part of the well add stiffness, so a negative entry marks a direction where the well is flat or double-bottomed, not a demonstrated instability. The film with no imposed strain still grows 3.2 percent taller, because this method's own preferred spacing is larger than 4.084 Angstrom.
 
 `strain_tensor_law.py` with `strain-law.json` returns the stiffness tensor for a given strain inside the computed range and refuses outside it unless asked to extrapolate. None of the sites in the EMT mismatch maps above fall inside that range, so the well map there remains an extrapolation. `strain-family.png` shows both families.
