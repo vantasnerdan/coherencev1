@@ -56,6 +56,22 @@ The first loop's model was too simple: two-level matter and one field mode. It d
 
 One point of agreement: the published paper's single-direction comparison (its Eq. 32) shows no instability, which is what this model finds at `eta = 1`. The two-atom GPAW cell is a periodic crystal and is adequate for a phonon frequency, but that frequency is not an input the published theory uses.
 
+## Pass 3: computed wells, loading, strain and a lattice of up to a million sites
+
+Work after the table above, in directories `g0_*` to `g3_*`, each with its own README:
+
+| Directory | What it is |
+|---|---|
+| `g0_stability/`, `g0_model/`, `g0_scales/` | Field coupling alone gives no order; a small model that tests which ingredients do |
+| `g1_rank/` | Sweep, coarse laws and ranking for that model |
+| `g2_input/` | Hydrogen wells from GPAW: two-atom cells, strain derivatives |
+| `g2_refit/` | Anharmonic oscillator on the first computed wells (inputs since superseded) |
+| `g3_loading/` | Corrected single-atom wells, partial loading, a loading law, NiH check |
+| `g3_skew/` | Ni on Pd mismatch pattern; PdD well under shear and thin-film strain |
+| `g3_lattice/` | Lattice simulation: loading, arrangement, strain and pump; phase coherence; loss |
+
+Status: the single-atom wells in `g2_input` and everything computed from them in `g2_refit` and `g3_lattice` used settings that turned out to be too coarse. `g3_loading` holds the corrected wells. The oscillator and lattice results are being rerun on them; until that lands, treat the numbers in `g2_refit` and `g3_lattice` as provisional.
+
 ## Reproducibility
 
 NumPy and SciPy are enough for everything except `p1_pysr/` (PySR), `p1_sindy/` (PySINDy) and `p2_input/frozen_phonon.py` (GPAW). Those three were run on one machine only; all other outputs were reproduced on a second.

@@ -1,5 +1,7 @@
 # g2_refit: the ordering model with computed inputs
 
+**Superseded inputs.** The single-atom wells used here (64-atom cells, 400 eV cutoff, one k-point) were later recomputed at tighter settings in `g3_loading/`: the PdD on-site stiffness went from 1.09 to 0.59 eV/A^2 and its neighbour coupling from 0.064 to 0.39; the NiH neighbour coupling went from 0.23 to 0.68. The numbers below, including the NiH agreement with experiment and the Pd ordering strains, are the results on the old inputs and are being rerun. The method is unchanged.
+
 Inputs are GPAW results from `g2_input` (in `computed_inputs.json` and `adopted-strains.json`). Run:
 
     PYTHONPATH=../g0_model python3 anharmonic.py computed_inputs.json > anharmonic.json
