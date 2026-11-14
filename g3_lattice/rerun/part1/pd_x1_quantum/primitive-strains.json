@@ -1,0 +1,145 @@
+{
+  "definition": "Primitive collective Gamma stiffness; metal nuclei fixed, electronic density self-consistent.",
+  "strain_convention": "Hydro: cell and positions scaled by1+epsilon_a. Uniaxial: epsilon_xx=+/-0.01, epsilon_yy=epsilon_zz=0; H displacement x is parallel, y is perpendicular.",
+  "derivative": "[K(+1%)-K(-1%)]/(0.02*K(0)); hydro dlnK/dlnV is this hydro slope/3.",
+  "model_inputs": [
+    {
+      "material": "NiH",
+      "kmesh": 8,
+      "cutoff_eV": 500,
+      "smearing_eV": 0.1,
+      "H_step_A": 0.01,
+      "K_zero_eV_A2": 1.049783279069515,
+      "harmonic_quantum_meV": 66.0042494515322,
+      "strain": {
+        "hydro": {
+          "K_minus_eV_A2": 1.2951275143909535,
+          "K_plus_eV_A2": 0.8339846724724064,
+          "dK_depsilon_eV_A2": -23.057142095927357,
+          "dlnK_depsilon": -21.963716279005954,
+          "finite_interval_log_secant": -22.007470606892774,
+          "dlnK_dlnV": -7.321238759668652
+        },
+        "parallel": {
+          "K_minus_eV_A2": 1.3144172248005213,
+          "K_plus_eV_A2": 0.8124779047381576,
+          "dK_depsilon_eV_A2": -25.09696600311818,
+          "dlnK_depsilon": -23.906806770025053,
+          "finite_interval_log_secant": -24.052997582921762
+        },
+        "perpendicular": {
+          "K_minus_eV_A2": 1.032908887072414,
+          "K_plus_eV_A2": 1.0571564950988086,
+          "dK_depsilon_eV_A2": 1.2123804013197348,
+          "dlnK_depsilon": 1.1548863708272619,
+          "finite_interval_log_secant": 1.1601883923257688
+        }
+      }
+    },
+    {
+      "material": "PdD",
+      "kmesh": 12,
+      "cutoff_eV": 500,
+      "smearing_eV": 0.1,
+      "H_step_A": 0.01,
+      "K_zero_eV_A2": 0.18105969055575036,
+      "harmonic_quantum_meV": 19.387675691687594,
+      "strain": {
+        "hydro": {
+          "K_minus_eV_A2": 0.39732509992552595,
+          "K_plus_eV_A2": -0.012979731658527428,
+          "dK_depsilon_eV_A2": -20.51524157920267,
+          "dlnK_depsilon": -113.30650967221106,
+          "finite_interval_log_secant": null,
+          "dlnK_dlnV": -37.76883655740369
+        },
+        "parallel": {
+          "K_minus_eV_A2": 0.33910398831779337,
+          "K_plus_eV_A2": 0.04626724997024351,
+          "dK_depsilon_eV_A2": -14.641836917377493,
+          "dlnK_depsilon": -80.86745797717523,
+          "finite_interval_log_secant": -99.59362218955366
+        },
+        "perpendicular": {
+          "K_minus_eV_A2": 0.20931388442582055,
+          "K_plus_eV_A2": 0.15161176441611784,
+          "dK_depsilon_eV_A2": -2.8851060004851354,
+          "dlnK_depsilon": -15.9345572260148,
+          "finite_interval_log_secant": -16.125594640155054
+        }
+      }
+    }
+  ],
+  "source_files": [
+    {
+      "path": "primitive_Ni/k08_pw500/result.json",
+      "bytes": 1948,
+      "sha256": "65213877cfe5ffc0503a2f6d82e12137456a744ade71abd52f4976e826d1f27c"
+    },
+    {
+      "path": "primitive_Ni/k08_pw500_hydro_minus/result.json",
+      "bytes": 1911,
+      "sha256": "1f8f3ccbcfea6bb818516b23cc1597b3e1cffdeaffc27576eeda210f4b225843"
+    },
+    {
+      "path": "primitive_Ni/k08_pw500_hydro_plus/result.json",
+      "bytes": 1996,
+      "sha256": "b26644df58c51304ffcb1ff1333c1db941c5718915544dedebc4173e6031ec18"
+    },
+    {
+      "path": "primitive_Ni/k08_pw500_parallel_minus/result.json",
+      "bytes": 1850,
+      "sha256": "0616018b5d48c96e6ecad521b407578dd47cf25194e69fa1f643827407bde41b"
+    },
+    {
+      "path": "primitive_Ni/k08_pw500_parallel_plus/result.json",
+      "bytes": 1969,
+      "sha256": "48feb2c7e344e2d6850dec52316a5f7dada7a38c69acf017fade550dc0ab6a9f"
+    },
+    {
+      "path": "primitive_Ni/k08_pw500_perpendicular_minus/result.json",
+      "bytes": 1863,
+      "sha256": "86a945b62d9d6d9ac1d9321aea756fce34abf294712a647054a9784e5207be12"
+    },
+    {
+      "path": "primitive_Ni/k08_pw500_perpendicular_plus/result.json",
+      "bytes": 1901,
+      "sha256": "9f421e2386021240f9d71b42b3da35a5c18f5fd96d3c8b4faca569206219ff37"
+    },
+    {
+      "path": "primitive_Pd/k12_pw500/result.json",
+      "bytes": 1923,
+      "sha256": "308693c43fbaaa636acdee320aae7c92aeb246024f8fbe1a0171978ac865e318"
+    },
+    {
+      "path": "primitive_Pd/k12_pw500_hydro_minus/result.json",
+      "bytes": 1867,
+      "sha256": "dbb159d37ef9efb806da82d4941dcc4a22388e20e374eff18a2d0d91014d333b"
+    },
+    {
+      "path": "primitive_Pd/k12_pw500_hydro_plus/result.json",
+      "bytes": 1794,
+      "sha256": "19f9203d97038bb279f2abd901a2cdb61959d603daa4f36782f7308b483f0abc"
+    },
+    {
+      "path": "primitive_Pd/k12_pw500_parallel_minus/result.json",
+      "bytes": 1798,
+      "sha256": "fa699cfd4f38eb520a9b3871cf65ddcafb30cc22ea9768b5681ed4b5f23f83d2"
+    },
+    {
+      "path": "primitive_Pd/k12_pw500_parallel_plus/result.json",
+      "bytes": 1788,
+      "sha256": "7a4bb26a087d7497ac71a0d87d48ae4e31e2f69179ad58da44eb525b3cb8513f"
+    },
+    {
+      "path": "primitive_Pd/k12_pw500_perpendicular_minus/result.json",
+      "bytes": 1863,
+      "sha256": "9504cd86d17269a7d63a39d9dae86d6c72e0ce6b96cf513abd1871784b7e791b"
+    },
+    {
+      "path": "primitive_Pd/k12_pw500_perpendicular_plus/result.json",
+      "bytes": 1836,
+      "sha256": "0f266da76423ab56cfa127897ec989975e27a186abbce8a680e29a0d637ba242"
+    }
+  ]
+}

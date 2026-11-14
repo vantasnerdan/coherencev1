@@ -1,0 +1,273 @@
+{
+  "K0_eV_A2": 0.18105969055575036,
+  "coefficients_eV_A2": [
+    -12.957209890251177,
+    -3.7713577661071187,
+    -2.3195868899382903,
+    33.61367292728641,
+    -7.322366666640059,
+    29.88378457956705,
+    9.833270552002215,
+    -27.288092783554152,
+    -19.198724633878168,
+    18.279226744146694,
+    205.57349122300224,
+    9.993655787060478
+  ],
+  "calibration_box": {
+    "normal_min": -0.040000000000000036,
+    "normal_max": 0.10251998409292518,
+    "shear_abs_max": 0.03996803834887172
+  },
+  "degree": 2,
+  "basis_names": [
+    "normal_parallel",
+    "normal_transverse",
+    "shear",
+    "normal_parallel_squared",
+    "normal_parallel_times_transverse_sum",
+    "normal_transverse_squares",
+    "normal_transverse_product",
+    "shear_squares_touching_axis",
+    "shear_square_opposite_axis",
+    "shear_times_pair_normal_sum",
+    "shear_times_opposite_normal",
+    "cross_shear_product"
+  ],
+  "conditioning": {
+    "rank": 12,
+    "scaled_condition": 39.072099216572326,
+    "scaled_singular_values": [
+      1.6444977476180846,
+      1.5892446111200136,
+      1.5812028002025535,
+      1.0848140944289888,
+      1.001773850019192,
+      0.9075504758053221,
+      0.669383581636168,
+      0.6582496183719575,
+      0.5765502013175812,
+      0.19354110508339725,
+      0.11269159712553056,
+      0.042088799439795016
+    ]
+  },
+  "rms_independent_entry_error_eV_A2": 0.00805704272500374,
+  "max_abs_entry_error_eV_A2": 0.04397261576402617,
+  "residuals": [
+    {
+      "name": "cubic_zero",
+      "max_abs_entry_eV_A2": 0.0,
+      "operator_norm_eV_A2": 0.0,
+      "max_eigenvalue_error_eV_A2": 0.0
+    },
+    {
+      "name": "hydro_minus",
+      "max_abs_entry_eV_A2": 0.002409177214607039,
+      "operator_norm_eV_A2": 0.002409177214607039,
+      "max_eigenvalue_error_eV_A2": 0.002409177214607039
+    },
+    {
+      "name": "uniaxial_minus",
+      "max_abs_entry_eV_A2": 0.025110831566802494,
+      "operator_norm_eV_A2": 0.025110831566802494,
+      "max_eigenvalue_error_eV_A2": 0.025110831566802494
+    },
+    {
+      "name": "hydro_plus",
+      "max_abs_entry_eV_A2": 0.002102854079862264,
+      "operator_norm_eV_A2": 0.002102854079862264,
+      "max_eigenvalue_error_eV_A2": 0.002102854079862264
+    },
+    {
+      "name": "uniaxial_plus",
+      "max_abs_entry_eV_A2": 0.008581708975723634,
+      "operator_norm_eV_A2": 0.008581708975723634,
+      "max_eigenvalue_error_eV_A2": 0.008581708975723634
+    },
+    {
+      "name": "g3_shear100_g002",
+      "max_abs_entry_eV_A2": 0.0012842121902684467,
+      "operator_norm_eV_A2": 0.0013014130434985133,
+      "max_eigenvalue_error_eV_A2": 0.000362396185749736
+    },
+    {
+      "name": "g3_shear100_g004",
+      "max_abs_entry_eV_A2": 0.003997423190952892,
+      "operator_norm_eV_A2": 0.003997423190952892,
+      "max_eigenvalue_error_eV_A2": 0.003997423190952892
+    },
+    {
+      "name": "g3_shear100_g006",
+      "max_abs_entry_eV_A2": 0.002969545171980531,
+      "operator_norm_eV_A2": 0.002986220178229025,
+      "max_eigenvalue_error_eV_A2": 0.0014384313032357043
+    },
+    {
+      "name": "g3_shear100_g008",
+      "max_abs_entry_eV_A2": 0.006586504247562269,
+      "operator_norm_eV_A2": 0.006588021505204014,
+      "max_eigenvalue_error_eV_A2": 0.004075978963631516
+    },
+    {
+      "name": "g3_shear110_g110008",
+      "max_abs_entry_eV_A2": 0.0061934833247873355,
+      "operator_norm_eV_A2": 0.006194084488629903,
+      "max_eigenvalue_error_eV_A2": 0.0035283213347310875
+    },
+    {
+      "name": "g3_biax_m0p0400",
+      "max_abs_entry_eV_A2": 0.020114881137322127,
+      "operator_norm_eV_A2": 0.02011488113732213,
+      "max_eigenvalue_error_eV_A2": 0.02011488113732207
+    },
+    {
+      "name": "g3_biax_m0p0200",
+      "max_abs_entry_eV_A2": 0.04397261576402617,
+      "operator_norm_eV_A2": 0.04397261576402616,
+      "max_eigenvalue_error_eV_A2": 0.04397261576402617
+    },
+    {
+      "name": "g3_biax_0p0000",
+      "max_abs_entry_eV_A2": 0.0234647991628279,
+      "operator_norm_eV_A2": 0.0234647991628279,
+      "max_eigenvalue_error_eV_A2": 0.023464799162827926
+    },
+    {
+      "name": "g3_biax_0p0200",
+      "max_abs_entry_eV_A2": 0.004324645453324866,
+      "operator_norm_eV_A2": 0.004324645453324866,
+      "max_eigenvalue_error_eV_A2": 0.004324645453324866
+    },
+    {
+      "name": "g3_biax_0p0400",
+      "max_abs_entry_eV_A2": 0.013135792912558397,
+      "operator_norm_eV_A2": 0.013135792912558397,
+      "max_eigenvalue_error_eV_A2": 0.013135792912558397
+    }
+  ],
+  "leave_one_case_out": [
+    {
+      "name": "hydro_minus",
+      "identified": true,
+      "max_abs_entry_eV_A2": 0.013928578058525765,
+      "operator_norm_eV_A2": 0.013928578058525765,
+      "max_eigenvalue_error_eV_A2": 0.013928578058525765
+    },
+    {
+      "name": "uniaxial_minus",
+      "identified": true,
+      "max_abs_entry_eV_A2": 0.05803417654587084,
+      "operator_norm_eV_A2": 0.05803417654587084,
+      "max_eigenvalue_error_eV_A2": 0.05803417654587084
+    },
+    {
+      "name": "hydro_plus",
+      "identified": true,
+      "max_abs_entry_eV_A2": 0.0024321531203586808,
+      "operator_norm_eV_A2": 0.0024321531203586808,
+      "max_eigenvalue_error_eV_A2": 0.0024321531203586808
+    },
+    {
+      "name": "uniaxial_plus",
+      "identified": true,
+      "max_abs_entry_eV_A2": 0.010607451233235726,
+      "operator_norm_eV_A2": 0.010607451233235726,
+      "max_eigenvalue_error_eV_A2": 0.010607451233235726
+    },
+    {
+      "name": "g3_shear100_g002",
+      "identified": true,
+      "max_abs_entry_eV_A2": 0.001284868047001314,
+      "operator_norm_eV_A2": 0.001311431429708741,
+      "max_eigenvalue_error_eV_A2": 0.00039890071181361564
+    },
+    {
+      "name": "g3_shear100_g004",
+      "identified": true,
+      "max_abs_entry_eV_A2": 0.004154005815713319,
+      "operator_norm_eV_A2": 0.004154005815713319,
+      "max_eigenvalue_error_eV_A2": 0.004154005815713263
+    },
+    {
+      "name": "g3_shear100_g006",
+      "identified": true,
+      "max_abs_entry_eV_A2": 0.0031789067516970193,
+      "operator_norm_eV_A2": 0.003224433912208669,
+      "max_eigenvalue_error_eV_A2": 0.001809046375661011
+    },
+    {
+      "name": "g3_shear100_g008",
+      "identified": true,
+      "max_abs_entry_eV_A2": 0.011129012151431694,
+      "operator_norm_eV_A2": 0.011406066695643915,
+      "max_eigenvalue_error_eV_A2": 0.008855517399844193
+    },
+    {
+      "name": "g3_shear110_g110008",
+      "identified": false,
+      "reason": "Unidentified strain coefficient"
+    },
+    {
+      "name": "g3_biax_m0p0400",
+      "identified": true,
+      "max_abs_entry_eV_A2": 0.16059596849889837,
+      "operator_norm_eV_A2": 0.16059596849889837,
+      "max_eigenvalue_error_eV_A2": 0.16059596849889832
+    },
+    {
+      "name": "g3_biax_m0p0200",
+      "identified": true,
+      "max_abs_entry_eV_A2": 0.06329528132954093,
+      "operator_norm_eV_A2": 0.06329528132954093,
+      "max_eigenvalue_error_eV_A2": 0.06329528132954093
+    },
+    {
+      "name": "g3_biax_0p0000",
+      "identified": true,
+      "max_abs_entry_eV_A2": 0.02571169447612137,
+      "operator_norm_eV_A2": 0.02571169447612137,
+      "max_eigenvalue_error_eV_A2": 0.0257116944761214
+    },
+    {
+      "name": "g3_biax_0p0200",
+      "identified": true,
+      "max_abs_entry_eV_A2": 0.005277663976347019,
+      "operator_norm_eV_A2": 0.005277663976347019,
+      "max_eigenvalue_error_eV_A2": 0.005277663976347019
+    },
+    {
+      "name": "g3_biax_0p0400",
+      "identified": true,
+      "max_abs_entry_eV_A2": 0.15161183502066877,
+      "operator_norm_eV_A2": 0.15161183502066877,
+      "max_eigenvalue_error_eV_A2": 0.15161183502066877
+    }
+  ],
+  "reference_a_A": 4.084,
+  "material": "PdD",
+  "cutoff_eV": 500,
+  "kmesh": 12,
+  "frame": "Material-frame Biot strain U-I; lab tensor is R K R-transpose",
+  "operator": "Collective Gamma, not local Kii; local contrast requires frozen sum(J)",
+  "calibration_families": "Hydro/uniaxial +/-1%; shear100 0..8% and one110 8%; biaxial -4..4% with c_z zero-stress relaxation",
+  "applicability": "Bounding box is necessary, not certification of arbitrary mixed strains. Extrapolation must be requested explicitly. Bare eigenvalues are not clipped.",
+  "selection": "Linear if maximum entry error <=0.01eV/A2, otherwise quadratic; no universal accuracy claim",
+  "alternatives": [
+    {
+      "degree": 1,
+      "max_abs_entry_error_eV_A2": 0.390497357430959,
+      "rms_independent_entry_error_eV_A2": 0.07840032671846268
+    },
+    {
+      "degree": 2,
+      "max_abs_entry_error_eV_A2": 0.04397261576402617,
+      "rms_independent_entry_error_eV_A2": 0.00805704272500374
+    }
+  ],
+  "source_table": {
+    "path": "strain-table.json",
+    "bytes": 26172,
+    "sha256": "54e56da0f35c08be91c4dfaa3a3edc1648cae43ddece52b3efd20a9b1581b2b3"
+  }
+}

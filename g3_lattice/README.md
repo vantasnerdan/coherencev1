@@ -67,3 +67,25 @@ Cold (0 K), full loading, pump at 8 percent stiffness modulation. The oscillatio
 - **At 300 K there is no order beyond nearest neighbours.** A stronger or retuned pump raises the amplitude of the motion but not its range, which stays comparable to an unpumped lattice.
 
 The length quoted is an integral of the phase correlation, not a fitted decay length. All of this is for NiH with the assumed decay rate, which is not measured.
+
+## Rerun on the corrected wells (`rerun/`)
+
+The wells this directory first used were recomputed in `g3_loading/` (PdD on-site stiffness 0.59 instead of 1.09 eV/A^2, coupling 0.39 instead of 0.064; NiH coupling 0.68 instead of 0.23). `rerun/` holds the results on the corrected inputs. Where they differ from the sections above, these replace them.
+
+### Part 1: Pd oscillator and the vacancy force law (`rerun/part1/`)
+
+Reproduce: `cd rerun/part1/pd_x1_quantum && python3 pd_x1_refit.py`, and `fit_vacancy_bias.py` as given in `rerun/part1/updated/part1.md`. Both were rerun here and reproduce the delivered numbers.
+
+| | PdH | PdD |
+|---|---:|---:|
+| First excitation, one atom in its well (meV) | 74.0 | 48.9 |
+| Collective mode, all atoms in step (meV) | 62.3 | 39.8 |
+| Measured neutron peak (meV) | 55.8 | 37 |
+| Static ordering strain at 0 K / 300 K (percent) | 7.5 / 8.8 | 5.3 / 7.1 |
+| Collective mode frequency (THz) | 15.1 | 9.6 |
+| Stiffness-modulation (pump) frequency (THz) | 30.1 | 19.3 |
+| Modulation threshold at resonance (percent) | 1.0 | 1.6 |
+
+H to D ratio: 1.51 for the single-atom excitation, 1.56 for the collective mode (measured peaks: 1.51). The measured peaks are averages over the vibration band, not this one mode. The ordering strains extrapolate from calculations at plus and minus 1 percent strain. The pump thresholds assume a loss rate of 0.48 per picosecond, which is not measured.
+
+Vacancy force law: each vacant nearest-neighbour site pulls a D toward itself with 0.0707 eV/A along the line joining them; the third-shell term is negligible (-0.0001); the second-shell term cannot be determined from cells of this size and is set to zero. Fitted to 80 force vectors from the three partial-loading cells, RMS error 0.0041 eV/A; predicting each cell from the other two, 0.0030, 0.0086 and 0.0043 eV/A. Using the law in place of the computed forces changes the static displacement pattern in those cells by 2.4 to 3.6 percent.
