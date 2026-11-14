@@ -57,4 +57,14 @@ Three results. Lower loading shrinks the lattice and stiffens a D that has all i
 
 Four vacancies grouped together, a = 4.0616 A. Only the D beside the vacancies was probed (three calculations), to save budget.
 
-The fitted law follows.
+## The fitted law (`law/`)
+
+`law/loading_law.py` with `law/loading-law-base.json`: each quantity is its x = 1 value plus a term linear in the lattice spacing and a term linear in the number of vacant nearest neighbours,
+
+    y = y(x=1) + c_eps (a/4.084 - 1) + c_n n_vac
+
+For the on-site stiffness, c_eps = -14.4 eV/A^2 and c_n = -0.077 eV/A^2 per vacant neighbour. RMS residual 0.045 eV/A^2, largest 0.085, largest error predicting a left-out cell 0.108. The neighbour couplings are fitted shell by shell in the same form.
+
+A second version with one extra term (number of adjacent vacancy pairs among the nearest neighbours, `loading-law-motif.json`) fits the computed points slightly better (RMS 0.043) but predicts a left-out cell much worse (error up to 0.40), so the two-term law is the one to use. It carries the trends with loading; it does not distinguish bunched from spread arrangements, and the three computed cells are the reference for that.
+
+Cost of the whole loading set, including the x = 1 well: about 2,510 core-minutes.

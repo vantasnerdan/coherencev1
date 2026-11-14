@@ -1,0 +1,1632 @@
+{
+  "schema": "loading-anchored-affine-law-v2",
+  "reference_a_A": 4.084,
+  "formula": "y=y_x1+c_epsilon*(a_reference_A/4.084-1)+c_v*n_vac_NN",
+  "descriptor_names": [
+    "epsilon",
+    "n_vac_NN"
+  ],
+  "model_id": "baseline_two_descriptor",
+  "descriptor_selection": "Baseline preregistered776; single motif alternative authorized after the motif contrast by axiom852",
+  "anchor": {
+    "id": "x1:clean",
+    "config_id": "x1",
+    "probe_id": "clean",
+    "loading_x": 1,
+    "a_reference_A": 4.084,
+    "n_vac_NN": 0,
+    "vacant_NN_pair_count": 0,
+    "vacant_NN_pairs_original_indices": [],
+    "direction_vector": [
+      1.0,
+      0.0,
+      0.0
+    ],
+    "observables": {
+      "Kii_dd": 0.590658682890108,
+      "Jbar_shell_0.7071067812": 0.01887404712332313,
+      "Jbar_shell_1.0000000000": 0.08955904203984194,
+      "Jbar_shell_1.2247448714": -0.00905753528201411,
+      "Jbar_shell_1.4142135624": 0.0023732327927632516,
+      "Jbar_shell_1.7320508076": -0.004582643770591419
+    },
+    "shell_inventory": {
+      "Jbar_shell_0.7071067812": {
+        "radius_over_a": 0.7071067812,
+        "occupied_multiplicity": 12,
+        "reference_multiplicity": 12,
+        "sum_Jdd_eV_A2": 0.22648856547987756,
+        "mean_Jdd_eV_A2": 0.01887404712332313,
+        "occupied_original_indices": [
+          3,
+          11,
+          15,
+          19,
+          21,
+          27,
+          29,
+          31,
+          47,
+          53,
+          61,
+          63
+        ],
+        "vacant_original_indices": []
+      },
+      "Jbar_shell_1.0000000000": {
+        "radius_over_a": 1.0,
+        "occupied_multiplicity": 3,
+        "reference_multiplicity": 3,
+        "sum_Jdd_eV_A2": 0.2686771261195258,
+        "mean_Jdd_eV_A2": 0.08955904203984194,
+        "occupied_original_indices": [
+          9,
+          17,
+          57
+        ],
+        "vacant_original_indices": []
+      },
+      "Jbar_shell_1.2247448714": {
+        "radius_over_a": 1.2247448714,
+        "occupied_multiplicity": 12,
+        "reference_multiplicity": 12,
+        "sum_Jdd_eV_A2": -0.10869042338416932,
+        "mean_Jdd_eV_A2": -0.00905753528201411,
+        "occupied_original_indices": [
+          5,
+          7,
+          13,
+          23,
+          35,
+          37,
+          39,
+          43,
+          45,
+          51,
+          55,
+          59
+        ],
+        "vacant_original_indices": []
+      },
+      "Jbar_shell_1.4142135624": {
+        "radius_over_a": 1.4142135624,
+        "occupied_multiplicity": 3,
+        "reference_multiplicity": 3,
+        "sum_Jdd_eV_A2": 0.007119698378289755,
+        "mean_Jdd_eV_A2": 0.0023732327927632516,
+        "occupied_original_indices": [
+          1,
+          41,
+          49
+        ],
+        "vacant_original_indices": []
+      },
+      "Jbar_shell_1.7320508076": {
+        "radius_over_a": 1.7320508076,
+        "occupied_multiplicity": 1,
+        "reference_multiplicity": 1,
+        "sum_Jdd_eV_A2": -0.004582643770591419,
+        "mean_Jdd_eV_A2": -0.004582643770591419,
+        "occupied_original_indices": [
+          33
+        ],
+        "vacant_original_indices": []
+      }
+    },
+    "source": {
+      "path": "dense_Pd/k3/final-x1-dense-readout-20261114T0213Z.json",
+      "bytes": 51609,
+      "sha256": "c87e06ae646d2311c77d6cc8bfb3b9548bafa06d6342914a4fe14fd6c182d3cf"
+    }
+  },
+  "training_rows": [
+    {
+      "id": "x0875-spread4:clean",
+      "config_id": "x0875-spread4",
+      "probe_id": "clean",
+      "loading_x": 0.875,
+      "a_reference_A": 4.061599657409625,
+      "arrangement": "spread4",
+      "n_vac_NN": 0,
+      "vacant_NN_pair_count": 0,
+      "vacant_NN_pairs_original_indices": [],
+      "direction_vector": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "F0_source_eV_A": [
+        0.002499429227102544,
+        -8.349381506000939e-14,
+        -1.080922066488356e-09
+      ],
+      "F0_parallel_eV_A": 0.002499429227102544,
+      "Kii_energy_eV_A2": 0.7016241602918348,
+      "raw_all_ion_column_sum_eV_A2": [
+        -0.0017139354420479536,
+        -4.089006910845683e-12,
+        2.7288404700779174e-06
+      ],
+      "observables": {
+        "Kii_dd": 0.7025398132059419,
+        "Jbar_shell_0.7071067812": 0.016715407006100007,
+        "Jbar_shell_1.0000000000": 0.17540339096335852,
+        "Jbar_shell_1.2247448714": -0.005841563648234674,
+        "Jbar_shell_1.4142135624": 0.000496725006799449,
+        "Jbar_shell_1.7320508076": -0.009015157976005144
+      },
+      "shell_inventory": {
+        "Jbar_shell_0.7071067812": {
+          "radius_over_a": 0.7071067812,
+          "occupied_multiplicity": 12,
+          "reference_multiplicity": 12,
+          "sum_Jdd_eV_A2": 0.2005848840732001,
+          "mean_Jdd_eV_A2": 0.016715407006100007,
+          "occupied_original_indices": [
+            3,
+            11,
+            15,
+            19,
+            21,
+            27,
+            29,
+            31,
+            47,
+            53,
+            61,
+            63
+          ],
+          "vacant_original_indices": []
+        },
+        "Jbar_shell_1.0000000000": {
+          "radius_over_a": 1.0,
+          "occupied_multiplicity": 2,
+          "reference_multiplicity": 3,
+          "sum_Jdd_eV_A2": 0.35080678192671705,
+          "mean_Jdd_eV_A2": 0.17540339096335852,
+          "occupied_original_indices": [
+            9,
+            57
+          ],
+          "vacant_original_indices": [
+            17
+          ]
+        },
+        "Jbar_shell_1.2247448714": {
+          "radius_over_a": 1.2247448714,
+          "occupied_multiplicity": 10,
+          "reference_multiplicity": 12,
+          "sum_Jdd_eV_A2": -0.058415636482346746,
+          "mean_Jdd_eV_A2": -0.005841563648234674,
+          "occupied_original_indices": [
+            7,
+            23,
+            35,
+            37,
+            39,
+            43,
+            45,
+            51,
+            55,
+            59
+          ],
+          "vacant_original_indices": [
+            5,
+            13
+          ]
+        },
+        "Jbar_shell_1.4142135624": {
+          "radius_over_a": 1.4142135624,
+          "occupied_multiplicity": 2,
+          "reference_multiplicity": 3,
+          "sum_Jdd_eV_A2": 0.000993450013598898,
+          "mean_Jdd_eV_A2": 0.000496725006799449,
+          "occupied_original_indices": [
+            1,
+            41
+          ],
+          "vacant_original_indices": [
+            49
+          ]
+        },
+        "Jbar_shell_1.7320508076": {
+          "radius_over_a": 1.7320508076,
+          "occupied_multiplicity": 1,
+          "reference_multiplicity": 1,
+          "sum_Jdd_eV_A2": -0.009015157976005144,
+          "mean_Jdd_eV_A2": -0.009015157976005144,
+          "occupied_original_indices": [
+            33
+          ],
+          "vacant_original_indices": []
+        }
+      },
+      "source": {
+        "path": "loading_Pd/x0875-spread4/k3/readout-clean-20261114T0421Z.json",
+        "bytes": 86055,
+        "sha256": "4930c93b9a0d16e4fe555eaa7b7c95340e180c3c300416a539a97c64722c0a7e"
+      }
+    },
+    {
+      "id": "x0875-spread4:near",
+      "config_id": "x0875-spread4",
+      "probe_id": "near",
+      "loading_x": 0.875,
+      "a_reference_A": 4.061599657409625,
+      "arrangement": "spread4",
+      "n_vac_NN": 2,
+      "vacant_NN_pair_count": 0,
+      "vacant_NN_pairs_original_indices": [],
+      "direction_vector": [
+        -0.7071067811865475,
+        0.0,
+        0.7071067811865475
+      ],
+      "F0_source_eV_A": [
+        -0.09959200072234645,
+        6.800345931292017e-14,
+        4.542409284029595e-09
+      ],
+      "F0_parallel_eV_A": 0.07042218227467512,
+      "Kii_energy_eV_A2": 0.533526056440476,
+      "raw_all_ion_column_sum_eV_A2": [
+        0.00412804500694011,
+        1.2795806081378203e-12,
+        -0.011151937429248885
+      ],
+      "observables": {
+        "Kii_dd": 0.529445718339639,
+        "Jbar_shell_0.7071067812": 0.01337427227078708,
+        "Jbar_shell_1.0000000000": 0.17881441710393228,
+        "Jbar_shell_1.2247448714": -0.005606862429615774,
+        "Jbar_shell_1.4142135624": -0.00876553887465304,
+        "Jbar_shell_1.7320508076": -0.0079908006952327
+      },
+      "shell_inventory": {
+        "Jbar_shell_0.7071067812": {
+          "radius_over_a": 0.7071067812,
+          "occupied_multiplicity": 10,
+          "reference_multiplicity": 12,
+          "sum_Jdd_eV_A2": 0.1337427227078708,
+          "mean_Jdd_eV_A2": 0.01337427227078708,
+          "occupied_original_indices": [
+            3,
+            7,
+            11,
+            19,
+            23,
+            27,
+            37,
+            39,
+            45,
+            55
+          ],
+          "vacant_original_indices": [
+            5,
+            13
+          ]
+        },
+        "Jbar_shell_1.0000000000": {
+          "radius_over_a": 1.0,
+          "occupied_multiplicity": 2,
+          "reference_multiplicity": 3,
+          "sum_Jdd_eV_A2": 0.35762883420786457,
+          "mean_Jdd_eV_A2": 0.17881441710393228,
+          "occupied_original_indices": [
+            9,
+            33
+          ],
+          "vacant_original_indices": [
+            17
+          ]
+        },
+        "Jbar_shell_1.2247448714": {
+          "radius_over_a": 1.2247448714,
+          "occupied_multiplicity": 12,
+          "reference_multiplicity": 12,
+          "sum_Jdd_eV_A2": -0.06728234915538929,
+          "mean_Jdd_eV_A2": -0.005606862429615774,
+          "occupied_original_indices": [
+            15,
+            21,
+            29,
+            31,
+            35,
+            43,
+            47,
+            51,
+            53,
+            59,
+            61,
+            63
+          ],
+          "vacant_original_indices": []
+        },
+        "Jbar_shell_1.4142135624": {
+          "radius_over_a": 1.4142135624,
+          "occupied_multiplicity": 2,
+          "reference_multiplicity": 3,
+          "sum_Jdd_eV_A2": -0.01753107774930608,
+          "mean_Jdd_eV_A2": -0.00876553887465304,
+          "occupied_original_indices": [
+            25,
+            41
+          ],
+          "vacant_original_indices": [
+            49
+          ]
+        },
+        "Jbar_shell_1.7320508076": {
+          "radius_over_a": 1.7320508076,
+          "occupied_multiplicity": 1,
+          "reference_multiplicity": 1,
+          "sum_Jdd_eV_A2": -0.0079908006952327,
+          "mean_Jdd_eV_A2": -0.0079908006952327,
+          "occupied_original_indices": [
+            57
+          ],
+          "vacant_original_indices": []
+        }
+      },
+      "source": {
+        "path": "loading_Pd/x0875-spread4/k3/readout-near-20261114T0500Z.json",
+        "bytes": 86292,
+        "sha256": "bffda77262ed32f4d130bc7baa69bd534840e6738f69afb86c96b7090613ea03"
+      }
+    },
+    {
+      "id": "x0750-bunched8:clean",
+      "config_id": "x0750-bunched8",
+      "probe_id": "clean",
+      "loading_x": 0.75,
+      "a_reference_A": 4.0393221785186055,
+      "arrangement": "bunched8",
+      "n_vac_NN": 0,
+      "vacant_NN_pair_count": 0,
+      "vacant_NN_pairs_original_indices": [],
+      "direction_vector": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "F0_source_eV_A": [
+        0.0022031946029646863,
+        0.00023069263266857585,
+        2.4029590275270527e-13
+      ],
+      "F0_parallel_eV_A": 0.0022031946029646863,
+      "Kii_energy_eV_A2": 0.7301000265948056,
+      "raw_all_ion_column_sum_eV_A2": [
+        -0.0021954978549708903,
+        1.4630014497529764e-05,
+        -2.81312414180837e-12
+      ],
+      "observables": {
+        "Kii_dd": 0.7315104311261492,
+        "Jbar_shell_0.7071067812": 0.018515352305407212,
+        "Jbar_shell_1.0000000000": 0.11143415112385424,
+        "Jbar_shell_1.2247448714": -0.003403037451408169,
+        "Jbar_shell_1.4142135624": -0.013846977668279086,
+        "Jbar_shell_1.7320508076": null
+      },
+      "shell_inventory": {
+        "Jbar_shell_0.7071067812": {
+          "radius_over_a": 0.7071067812,
+          "occupied_multiplicity": 12,
+          "reference_multiplicity": 12,
+          "sum_Jdd_eV_A2": 0.22218422766488655,
+          "mean_Jdd_eV_A2": 0.018515352305407212,
+          "occupied_original_indices": [
+            3,
+            11,
+            15,
+            19,
+            21,
+            27,
+            29,
+            31,
+            47,
+            53,
+            61,
+            63
+          ],
+          "vacant_original_indices": []
+        },
+        "Jbar_shell_1.0000000000": {
+          "radius_over_a": 1.0,
+          "occupied_multiplicity": 3,
+          "reference_multiplicity": 3,
+          "sum_Jdd_eV_A2": 0.3343024533715627,
+          "mean_Jdd_eV_A2": 0.11143415112385424,
+          "occupied_original_indices": [
+            9,
+            17,
+            57
+          ],
+          "vacant_original_indices": []
+        },
+        "Jbar_shell_1.2247448714": {
+          "radius_over_a": 1.2247448714,
+          "occupied_multiplicity": 6,
+          "reference_multiplicity": 12,
+          "sum_Jdd_eV_A2": -0.020418224708449013,
+          "mean_Jdd_eV_A2": -0.003403037451408169,
+          "occupied_original_indices": [
+            37,
+            39,
+            45,
+            51,
+            55,
+            59
+          ],
+          "vacant_original_indices": [
+            5,
+            7,
+            13,
+            23,
+            35,
+            43
+          ]
+        },
+        "Jbar_shell_1.4142135624": {
+          "radius_over_a": 1.4142135624,
+          "occupied_multiplicity": 2,
+          "reference_multiplicity": 3,
+          "sum_Jdd_eV_A2": -0.027693955336558173,
+          "mean_Jdd_eV_A2": -0.013846977668279086,
+          "occupied_original_indices": [
+            1,
+            49
+          ],
+          "vacant_original_indices": [
+            41
+          ]
+        },
+        "Jbar_shell_1.7320508076": {
+          "radius_over_a": 1.7320508076,
+          "occupied_multiplicity": 0,
+          "reference_multiplicity": 1,
+          "sum_Jdd_eV_A2": -0.0,
+          "mean_Jdd_eV_A2": null,
+          "occupied_original_indices": [],
+          "vacant_original_indices": [
+            33
+          ]
+        }
+      },
+      "source": {
+        "path": "loading_Pd/x0750-bunched8/k3/readout-clean-20261114T0608Z.json",
+        "bytes": 80184,
+        "sha256": "a8f988e554d88f906e70276f16ddb48fc93c07e840c39620dd540ca747842868"
+      }
+    },
+    {
+      "id": "x0750-bunched8:near",
+      "config_id": "x0750-bunched8",
+      "probe_id": "near",
+      "loading_x": 0.75,
+      "a_reference_A": 4.0393221785186055,
+      "arrangement": "bunched8",
+      "n_vac_NN": 4,
+      "vacant_NN_pair_count": 4,
+      "vacant_NN_pairs_original_indices": [
+        [
+          5,
+          7
+        ],
+        [
+          5,
+          23
+        ],
+        [
+          7,
+          13
+        ],
+        [
+          13,
+          23
+        ]
+      ],
+      "direction_vector": [
+        -0.7071067811865475,
+        0.0,
+        0.7071067811865475
+      ],
+      "F0_source_eV_A": [
+        -0.19256717407758292,
+        0.0018762865401469521,
+        -1.724101097298694e-14
+      ],
+      "F0_parallel_eV_A": 0.13616555462417704,
+      "Kii_energy_eV_A2": 0.478631319917137,
+      "raw_all_ion_column_sum_eV_A2": [
+        -0.0015882782808568526,
+        1.5503982664960732e-05,
+        -0.006140968563343993
+      ],
+      "observables": {
+        "Kii_dd": 0.4772097968354046,
+        "Jbar_shell_0.7071067812": 0.014862584326007093,
+        "Jbar_shell_1.0000000000": 0.08559153404934727,
+        "Jbar_shell_1.2247448714": -0.0021288512366288035,
+        "Jbar_shell_1.4142135624": -0.01293545169518651,
+        "Jbar_shell_1.7320508076": 0.003077980339224868
+      },
+      "shell_inventory": {
+        "Jbar_shell_0.7071067812": {
+          "radius_over_a": 0.7071067812,
+          "occupied_multiplicity": 8,
+          "reference_multiplicity": 12,
+          "sum_Jdd_eV_A2": 0.11890067460805674,
+          "mean_Jdd_eV_A2": 0.014862584326007093,
+          "occupied_original_indices": [
+            3,
+            11,
+            19,
+            27,
+            37,
+            39,
+            45,
+            55
+          ],
+          "vacant_original_indices": [
+            5,
+            7,
+            13,
+            23
+          ]
+        },
+        "Jbar_shell_1.0000000000": {
+          "radius_over_a": 1.0,
+          "occupied_multiplicity": 2,
+          "reference_multiplicity": 3,
+          "sum_Jdd_eV_A2": 0.17118306809869455,
+          "mean_Jdd_eV_A2": 0.08559153404934727,
+          "occupied_original_indices": [
+            9,
+            17
+          ],
+          "vacant_original_indices": [
+            33
+          ]
+        },
+        "Jbar_shell_1.2247448714": {
+          "radius_over_a": 1.2247448714,
+          "occupied_multiplicity": 10,
+          "reference_multiplicity": 12,
+          "sum_Jdd_eV_A2": -0.021288512366288034,
+          "mean_Jdd_eV_A2": -0.0021288512366288035,
+          "occupied_original_indices": [
+            15,
+            21,
+            29,
+            31,
+            47,
+            51,
+            53,
+            59,
+            61,
+            63
+          ],
+          "vacant_original_indices": [
+            35,
+            43
+          ]
+        },
+        "Jbar_shell_1.4142135624": {
+          "radius_over_a": 1.4142135624,
+          "occupied_multiplicity": 2,
+          "reference_multiplicity": 3,
+          "sum_Jdd_eV_A2": -0.02587090339037302,
+          "mean_Jdd_eV_A2": -0.01293545169518651,
+          "occupied_original_indices": [
+            25,
+            49
+          ],
+          "vacant_original_indices": [
+            41
+          ]
+        },
+        "Jbar_shell_1.7320508076": {
+          "radius_over_a": 1.7320508076,
+          "occupied_multiplicity": 1,
+          "reference_multiplicity": 1,
+          "sum_Jdd_eV_A2": 0.003077980339224868,
+          "mean_Jdd_eV_A2": 0.003077980339224868,
+          "occupied_original_indices": [
+            57
+          ],
+          "vacant_original_indices": []
+        }
+      },
+      "source": {
+        "path": "loading_Pd/x0750-bunched8/k3/readout-near-20261114T0647Z.json",
+        "bytes": 80946,
+        "sha256": "167b0b64374c9e50308e017ff376f785caa176473b51e9e34a3067d512207172"
+      }
+    },
+    {
+      "id": "x0875-bunched4:near",
+      "config_id": "x0875-bunched4",
+      "probe_id": "near",
+      "loading_x": 0.875,
+      "a_reference_A": 4.061599657409625,
+      "arrangement": "bunched4",
+      "n_vac_NN": 2,
+      "vacant_NN_pair_count": 1,
+      "vacant_NN_pairs_original_indices": [
+        [
+          5,
+          7
+        ]
+      ],
+      "direction_vector": [
+        -0.7071067811865475,
+        0.0,
+        0.7071067811865475
+      ],
+      "F0_source_eV_A": [
+        -0.10106812458248178,
+        0.052513683398346674,
+        0.05251368339830764
+      ],
+      "F0_parallel_eV_A": 0.1085987378901064,
+      "Kii_energy_eV_A2": 0.43651490014124444,
+      "raw_all_ion_column_sum_eV_A2": [
+        0.0031946042269062856,
+        0.00011159628691629207,
+        -0.011467294868489509
+      ],
+      "observables": {
+        "Kii_dd": 0.4307391071798771,
+        "Jbar_shell_0.7071067812": 0.003911242920103476,
+        "Jbar_shell_1.0000000000": 0.08697450972763811,
+        "Jbar_shell_1.2247448714": -0.005052945450392286,
+        "Jbar_shell_1.4142135624": -0.008172260823561856,
+        "Jbar_shell_1.7320508076": -0.004974196718655222
+      },
+      "shell_inventory": {
+        "Jbar_shell_0.7071067812": {
+          "radius_over_a": 0.7071067812,
+          "occupied_multiplicity": 10,
+          "reference_multiplicity": 12,
+          "sum_Jdd_eV_A2": 0.039112429201034755,
+          "mean_Jdd_eV_A2": 0.003911242920103476,
+          "occupied_original_indices": [
+            3,
+            11,
+            13,
+            19,
+            23,
+            27,
+            37,
+            39,
+            45,
+            55
+          ],
+          "vacant_original_indices": [
+            5,
+            7
+          ]
+        },
+        "Jbar_shell_1.0000000000": {
+          "radius_over_a": 1.0,
+          "occupied_multiplicity": 2,
+          "reference_multiplicity": 3,
+          "sum_Jdd_eV_A2": 0.17394901945527622,
+          "mean_Jdd_eV_A2": 0.08697450972763811,
+          "occupied_original_indices": [
+            9,
+            17
+          ],
+          "vacant_original_indices": [
+            33
+          ]
+        },
+        "Jbar_shell_1.2247448714": {
+          "radius_over_a": 1.2247448714,
+          "occupied_multiplicity": 11,
+          "reference_multiplicity": 12,
+          "sum_Jdd_eV_A2": -0.055582399954315145,
+          "mean_Jdd_eV_A2": -0.005052945450392286,
+          "occupied_original_indices": [
+            15,
+            21,
+            29,
+            31,
+            43,
+            47,
+            51,
+            53,
+            59,
+            61,
+            63
+          ],
+          "vacant_original_indices": [
+            35
+          ]
+        },
+        "Jbar_shell_1.4142135624": {
+          "radius_over_a": 1.4142135624,
+          "occupied_multiplicity": 3,
+          "reference_multiplicity": 3,
+          "sum_Jdd_eV_A2": -0.024516782470685568,
+          "mean_Jdd_eV_A2": -0.008172260823561856,
+          "occupied_original_indices": [
+            25,
+            41,
+            49
+          ],
+          "vacant_original_indices": []
+        },
+        "Jbar_shell_1.7320508076": {
+          "radius_over_a": 1.7320508076,
+          "occupied_multiplicity": 1,
+          "reference_multiplicity": 1,
+          "sum_Jdd_eV_A2": -0.004974196718655222,
+          "mean_Jdd_eV_A2": -0.004974196718655222,
+          "occupied_original_indices": [
+            57
+          ],
+          "vacant_original_indices": []
+        }
+      },
+      "source": {
+        "path": "loading_Pd/x0875-bunched4/k3/readout-near-20261114T0746Z.json",
+        "bytes": 86112,
+        "sha256": "36a8cbe26c7a6b444bbb6230607d3e20e90169a931e0fad99aaff33cd1c8fc9e"
+      }
+    }
+  ],
+  "models": {
+    "Jbar_shell_0.7071067812": {
+      "identified": true,
+      "anchor_eV_A2": 0.01887404712332313,
+      "coefficients_eV_A2": {
+        "epsilon": 0.10636162208043917,
+        "n_vac_NN": -0.002082633780576259
+      },
+      "scaled_design_condition_number": 2.7401170686844516,
+      "residual_convention": "prediction minus actual; anchor is fixed, not a fitted observation",
+      "residuals": [
+        {
+          "row": "x0875-spread4:clean",
+          "predicted_eV_A2": 0.018290663976146385,
+          "actual_eV_A2": 0.016715407006100007,
+          "residual_eV_A2": 0.0015752569700463771
+        },
+        {
+          "row": "x0875-spread4:near",
+          "predicted_eV_A2": 0.014125396414993868,
+          "actual_eV_A2": 0.01337427227078708,
+          "residual_eV_A2": 0.0007511241442067877
+        },
+        {
+          "row": "x0750-bunched8:clean",
+          "predicted_eV_A2": 0.017710480628763542,
+          "actual_eV_A2": 0.018515352305407212,
+          "residual_eV_A2": -0.0008048716766436703
+        },
+        {
+          "row": "x0750-bunched8:near",
+          "predicted_eV_A2": 0.009379945506458504,
+          "actual_eV_A2": 0.014862584326007093,
+          "residual_eV_A2": -0.0054826388195485885
+        },
+        {
+          "row": "x0875-bunched4:near",
+          "predicted_eV_A2": 0.014125396414993868,
+          "actual_eV_A2": 0.003911242920103476,
+          "residual_eV_A2": 0.010214153494890393
+        }
+      ],
+      "rms_residual_eV_A2": 0.0052551251262050085,
+      "max_abs_residual_eV_A2": 0.010214153494890393,
+      "residual_degrees_of_freedom": 3,
+      "leave_one_configuration_out": [
+        {
+          "held_out_config": "x0750-bunched8",
+          "identified": true,
+          "predictions": [
+            {
+              "row": "x0750-bunched8:clean",
+              "actual_eV_A2": 0.018515352305407212,
+              "predicted_eV_A2": 0.014568606819864986,
+              "error_eV_A2": -0.003946745485542226
+            },
+            {
+              "row": "x0750-bunched8:near",
+              "actual_eV_A2": 0.014862584326007093,
+              "predicted_eV_A2": -0.0015766920014444775,
+              "error_eV_A2": -0.01643927632745157
+            }
+          ]
+        },
+        {
+          "held_out_config": "x0875-bunched4",
+          "identified": true,
+          "predictions": [
+            {
+              "row": "x0875-bunched4:near",
+              "actual_eV_A2": 0.003911242920103476,
+              "predicted_eV_A2": 0.016168236990331823,
+              "error_eV_A2": 0.012256994070228348
+            }
+          ]
+        },
+        {
+          "held_out_config": "x0875-spread4",
+          "identified": true,
+          "predictions": [
+            {
+              "row": "x0875-spread4:clean",
+              "actual_eV_A2": 0.016715407006100007,
+              "predicted_eV_A2": 0.018687060823497192,
+              "error_eV_A2": 0.001971653817397185
+            },
+            {
+              "row": "x0875-spread4:near",
+              "actual_eV_A2": 0.01337427227078708,
+              "predicted_eV_A2": 0.01427649092308914,
+              "error_eV_A2": 0.0009022186523020594
+            }
+          ]
+        }
+      ],
+      "domain": {
+        "feature_order": [
+          "epsilon",
+          "n_vac_NN"
+        ],
+        "scale": [
+          0.010939721224631271,
+          4.0
+        ],
+        "normalized_halfspaces": [
+          [
+            -0.0,
+            -1.0,
+            0.0
+          ],
+          [
+            -1.0,
+            0.0,
+            -1.0
+          ],
+          [
+            0.7071067811865475,
+            0.7071067811865475,
+            -0.0
+          ]
+        ],
+        "normalized_vertices": [
+          [
+            -1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            -1.0,
+            1.0
+          ]
+        ],
+        "interpretation": "Convex hull for THIS observable; no unsampled configuration guarantee"
+      }
+    },
+    "Jbar_shell_1.0000000000": {
+      "identified": true,
+      "anchor_eV_A2": 0.08955904203984194,
+      "coefficients_eV_A2": {
+        "epsilon": -4.747964190509423,
+        "n_vac_NN": -0.006435935468156347
+      },
+      "scaled_design_condition_number": 2.7401170686844516,
+      "residual_convention": "prediction minus actual; anchor is fixed, not a fitted observation",
+      "residuals": [
+        {
+          "row": "x0875-spread4:clean",
+          "predicted_eV_A2": 0.11560116360552349,
+          "actual_eV_A2": 0.17540339096335852,
+          "residual_eV_A2": -0.05980222735783504
+        },
+        {
+          "row": "x0875-spread4:near",
+          "predicted_eV_A2": 0.1027292926692108,
+          "actual_eV_A2": 0.17881441710393228,
+          "residual_eV_A2": -0.0760851244347215
+        },
+        {
+          "row": "x0750-bunched8:clean",
+          "predicted_eV_A2": 0.1415004466685471,
+          "actual_eV_A2": 0.11143415112385424,
+          "residual_eV_A2": 0.030066295544692867
+        },
+        {
+          "row": "x0750-bunched8:near",
+          "predicted_eV_A2": 0.11575670479592172,
+          "actual_eV_A2": 0.08559153404934727,
+          "residual_eV_A2": 0.030165170746574446
+        },
+        {
+          "row": "x0875-bunched4:near",
+          "predicted_eV_A2": 0.1027292926692108,
+          "actual_eV_A2": 0.08697450972763811,
+          "residual_eV_A2": 0.015754782941572676
+        }
+      ],
+      "rms_residual_eV_A2": 0.04780666354535135,
+      "max_abs_residual_eV_A2": 0.0760851244347215,
+      "residual_degrees_of_freedom": 3,
+      "leave_one_configuration_out": [
+        {
+          "held_out_config": "x0750-bunched8",
+          "identified": true,
+          "predictions": [
+            {
+              "row": "x0750-bunched8:clean",
+              "actual_eV_A2": 0.11143415112385424,
+              "predicted_eV_A2": 0.2607768919864476,
+              "error_eV_A2": 0.14934274086259336
+            },
+            {
+              "row": "x0750-bunched8:near",
+              "actual_eV_A2": 0.08559153404934727,
+              "predicted_eV_A2": 0.17575903689130096,
+              "error_eV_A2": 0.09016750284195368
+            }
+          ]
+        },
+        {
+          "held_out_config": "x0875-bunched4",
+          "identified": true,
+          "predictions": [
+            {
+              "row": "x0875-bunched4:near",
+              "actual_eV_A2": 0.08697450972763811,
+              "predicted_eV_A2": 0.10588026449127974,
+              "error_eV_A2": 0.018905754763641633
+            }
+          ]
+        },
+        {
+          "held_out_config": "x0875-spread4",
+          "identified": true,
+          "predictions": [
+            {
+              "row": "x0875-spread4:clean",
+              "actual_eV_A2": 0.17540339096335852,
+              "predicted_eV_A2": 0.10052632685716804,
+              "error_eV_A2": -0.07487706410619048
+            },
+            {
+              "row": "x0875-spread4:near",
+              "actual_eV_A2": 0.17881441710393228,
+              "predicted_eV_A2": 0.08747919417720681,
+              "error_eV_A2": -0.09133522292672547
+            }
+          ]
+        }
+      ],
+      "domain": {
+        "feature_order": [
+          "epsilon",
+          "n_vac_NN"
+        ],
+        "scale": [
+          0.010939721224631271,
+          4.0
+        ],
+        "normalized_halfspaces": [
+          [
+            -0.0,
+            -1.0,
+            0.0
+          ],
+          [
+            -1.0,
+            0.0,
+            -1.0
+          ],
+          [
+            0.7071067811865475,
+            0.7071067811865475,
+            -0.0
+          ]
+        ],
+        "normalized_vertices": [
+          [
+            -1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            -1.0,
+            1.0
+          ]
+        ],
+        "interpretation": "Convex hull for THIS observable; no unsampled configuration guarantee"
+      }
+    },
+    "Jbar_shell_1.2247448714": {
+      "identified": true,
+      "anchor_eV_A2": -0.00905753528201411,
+      "coefficients_eV_A2": {
+        "epsilon": -0.5308637929426065,
+        "n_vac_NN": 0.00032284620630741755
+      },
+      "scaled_design_condition_number": 2.7401170686844516,
+      "residual_convention": "prediction minus actual; anchor is fixed, not a fitted observation",
+      "residuals": [
+        {
+          "row": "x0875-spread4:clean",
+          "predicted_eV_A2": -0.00614579903550572,
+          "actual_eV_A2": -0.005841563648234674,
+          "residual_eV_A2": -0.0003042353872710459
+        },
+        {
+          "row": "x0875-spread4:near",
+          "predicted_eV_A2": -0.005500106622890885,
+          "actual_eV_A2": -0.005606862429615774,
+          "residual_eV_A2": 0.00010675580672489006
+        },
+        {
+          "row": "x0750-bunched8:clean",
+          "predicted_eV_A2": -0.0032500333789716165,
+          "actual_eV_A2": -0.003403037451408169,
+          "residual_eV_A2": 0.0001530040724365524
+        },
+        {
+          "row": "x0750-bunched8:near",
+          "predicted_eV_A2": -0.0019586485537419467,
+          "actual_eV_A2": -0.0021288512366288035,
+          "residual_eV_A2": 0.0001702026828868568
+        },
+        {
+          "row": "x0875-bunched4:near",
+          "predicted_eV_A2": -0.005500106622890885,
+          "actual_eV_A2": -0.005052945450392286,
+          "residual_eV_A2": -0.0004471611724985985
+        }
+      ],
+      "rms_residual_eV_A2": 0.0002669412994543259,
+      "max_abs_residual_eV_A2": 0.0004471611724985985,
+      "residual_degrees_of_freedom": 3,
+      "leave_one_configuration_out": [
+        {
+          "held_out_config": "x0750-bunched8",
+          "identified": true,
+          "predictions": [
+            {
+              "row": "x0750-bunched8:clean",
+              "actual_eV_A2": -0.003403037451408169,
+              "predicted_eV_A2": -0.0026432313059239028,
+              "error_eV_A2": 0.0007598061454842662
+            },
+            {
+              "row": "x0750-bunched8:near",
+              "actual_eV_A2": -0.0021288512366288035,
+              "predicted_eV_A2": -0.0016199118894626103,
+              "error_eV_A2": 0.0005089393471661933
+            }
+          ]
+        },
+        {
+          "held_out_config": "x0875-bunched4",
+          "identified": true,
+          "predictions": [
+            {
+              "row": "x0875-bunched4:near",
+              "actual_eV_A2": -0.005052945450392286,
+              "predicted_eV_A2": -0.005589539289763652,
+              "error_eV_A2": -0.000536593839371366
+            }
+          ]
+        },
+        {
+          "held_out_config": "x0875-spread4",
+          "identified": true,
+          "predictions": [
+            {
+              "row": "x0875-spread4:clean",
+              "actual_eV_A2": -0.005841563648234674,
+              "predicted_eV_A2": -0.006222217787522778,
+              "error_eV_A2": -0.00038065413928810386
+            },
+            {
+              "row": "x0875-spread4:near",
+              "actual_eV_A2": -0.005606862429615774,
+              "predicted_eV_A2": -0.005478923121313344,
+              "error_eV_A2": 0.00012793930830243012
+            }
+          ]
+        }
+      ],
+      "domain": {
+        "feature_order": [
+          "epsilon",
+          "n_vac_NN"
+        ],
+        "scale": [
+          0.010939721224631271,
+          4.0
+        ],
+        "normalized_halfspaces": [
+          [
+            -0.0,
+            -1.0,
+            0.0
+          ],
+          [
+            -1.0,
+            0.0,
+            -1.0
+          ],
+          [
+            0.7071067811865475,
+            0.7071067811865475,
+            -0.0
+          ]
+        ],
+        "normalized_vertices": [
+          [
+            -1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            -1.0,
+            1.0
+          ]
+        ],
+        "interpretation": "Convex hull for THIS observable; no unsampled configuration guarantee"
+      }
+    },
+    "Jbar_shell_1.4142135624": {
+      "identified": true,
+      "anchor_eV_A2": 0.0023732327927632516,
+      "coefficients_eV_A2": {
+        "epsilon": 1.2539965309146701,
+        "n_vac_NN": -0.0009257326196565165
+      },
+      "scaled_design_condition_number": 2.7401170686844516,
+      "residual_convention": "prediction minus actual; anchor is fixed, not a fitted observation",
+      "residuals": [
+        {
+          "row": "x0875-spread4:clean",
+          "predicted_eV_A2": -0.004504816154256911,
+          "actual_eV_A2": 0.000496725006799449,
+          "residual_eV_A2": -0.00500154116105636
+        },
+        {
+          "row": "x0875-spread4:near",
+          "predicted_eV_A2": -0.006356281393569944,
+          "actual_eV_A2": -0.00876553887465304,
+          "residual_eV_A2": 0.0024092574810830984
+        },
+        {
+          "row": "x0750-bunched8:clean",
+          "predicted_eV_A2": -0.011345139672097949,
+          "actual_eV_A2": -0.013846977668279086,
+          "residual_eV_A2": 0.0025018379961811374
+        },
+        {
+          "row": "x0750-bunched8:near",
+          "predicted_eV_A2": -0.015048070150724015,
+          "actual_eV_A2": -0.01293545169518651,
+          "residual_eV_A2": -0.0021126184555375054
+        },
+        {
+          "row": "x0875-bunched4:near",
+          "predicted_eV_A2": -0.006356281393569944,
+          "actual_eV_A2": -0.008172260823561856,
+          "residual_eV_A2": 0.0018159794299919142
+        }
+      ],
+      "rms_residual_eV_A2": 0.0029946641542537944,
+      "max_abs_residual_eV_A2": 0.00500154116105636,
+      "residual_degrees_of_freedom": 3,
+      "leave_one_configuration_out": [
+        {
+          "held_out_config": "x0750-bunched8",
+          "identified": true,
+          "predictions": [
+            {
+              "row": "x0750-bunched8:clean",
+              "actual_eV_A2": -0.013846977668279086,
+              "predicted_eV_A2": -0.0013694903165592282,
+              "error_eV_A2": 0.012477487351719859
+            },
+            {
+              "row": "x0750-bunched8:near",
+              "actual_eV_A2": -0.01293545169518651,
+              "predicted_eV_A2": -0.019300740028373026,
+              "error_eV_A2": -0.006365288333186517
+            }
+          ]
+        },
+        {
+          "held_out_config": "x0875-bunched4",
+          "identified": true,
+          "predictions": [
+            {
+              "row": "x0875-bunched4:near",
+              "actual_eV_A2": -0.008172260823561856,
+              "predicted_eV_A2": -0.005993083751648627,
+              "error_eV_A2": 0.0021791770719132297
+            }
+          ]
+        },
+        {
+          "held_out_config": "x0875-spread4",
+          "identified": true,
+          "predictions": [
+            {
+              "row": "x0875-spread4:clean",
+              "actual_eV_A2": 0.000496725006799449,
+              "predicted_eV_A2": -0.0057607573704132,
+              "error_eV_A2": -0.006257482377212649
+            },
+            {
+              "row": "x0875-spread4:near",
+              "actual_eV_A2": -0.00876553887465304,
+              "predicted_eV_A2": -0.005877185383495874,
+              "error_eV_A2": 0.0028883534911571668
+            }
+          ]
+        }
+      ],
+      "domain": {
+        "feature_order": [
+          "epsilon",
+          "n_vac_NN"
+        ],
+        "scale": [
+          0.010939721224631271,
+          4.0
+        ],
+        "normalized_halfspaces": [
+          [
+            -0.0,
+            -1.0,
+            0.0
+          ],
+          [
+            -1.0,
+            0.0,
+            -1.0
+          ],
+          [
+            0.7071067811865475,
+            0.7071067811865475,
+            -0.0
+          ]
+        ],
+        "normalized_vertices": [
+          [
+            -1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            -1.0,
+            1.0
+          ]
+        ],
+        "interpretation": "Convex hull for THIS observable; no unsampled configuration guarantee"
+      }
+    },
+    "Jbar_shell_1.7320508076": {
+      "identified": true,
+      "anchor_eV_A2": -0.004582643770591419,
+      "coefficients_eV_A2": {
+        "epsilon": 0.8119419315134742,
+        "n_vac_NN": 0.003182768339994933
+      },
+      "scaled_design_condition_number": 5.1034264501267765,
+      "residual_convention": "prediction minus actual; anchor is fixed, not a fitted observation",
+      "residuals": [
+        {
+          "row": "x0875-spread4:clean",
+          "predicted_eV_A2": -0.00903606625575121,
+          "actual_eV_A2": -0.009015157976005144,
+          "residual_eV_A2": -2.0908279746066627e-05
+        },
+        {
+          "row": "x0875-spread4:near",
+          "predicted_eV_A2": -0.0026705295757613436,
+          "actual_eV_A2": -0.0079908006952327,
+          "residual_eV_A2": 0.005320271119471356
+        },
+        {
+          "row": "x0750-bunched8:near",
+          "predicted_eV_A2": -0.0007339887919577499,
+          "actual_eV_A2": 0.003077980339224868,
+          "residual_eV_A2": -0.0038119691311826174
+        },
+        {
+          "row": "x0875-bunched4:near",
+          "predicted_eV_A2": -0.0026705295757613436,
+          "actual_eV_A2": -0.004974196718655222,
+          "residual_eV_A2": 0.0023036671428938783
+        }
+      ],
+      "rms_residual_eV_A2": 0.0034692835320560404,
+      "max_abs_residual_eV_A2": 0.005320271119471356,
+      "residual_degrees_of_freedom": 2,
+      "leave_one_configuration_out": [
+        {
+          "held_out_config": "x0750-bunched8",
+          "identified": true,
+          "predictions": [
+            {
+              "row": "x0750-bunched8:near",
+              "actual_eV_A2": 0.003077980339224868,
+              "predicted_eV_A2": -0.008358041734202832,
+              "error_eV_A2": -0.0114360220734277
+            }
+          ]
+        },
+        {
+          "held_out_config": "x0875-bunched4",
+          "identified": true,
+          "predictions": [
+            {
+              "row": "x0875-bunched4:near",
+              "actual_eV_A2": -0.004974196718655222,
+              "predicted_eV_A2": -0.002209785058627651,
+              "error_eV_A2": 0.0027644116600275713
+            }
+          ]
+        },
+        {
+          "held_out_config": "x0875-spread4",
+          "identified": true,
+          "predictions": [
+            {
+              "row": "x0875-spread4:clean",
+              "actual_eV_A2": -0.009015157976005144,
+              "predicted_eV_A2": -1.5440320162497743,
+              "error_eV_A2": -1.535016858273769
+            },
+            {
+              "row": "x0875-spread4:near",
+              "actual_eV_A2": -0.0079908006952327,
+              "predicted_eV_A2": -0.004974196718655674,
+              "error_eV_A2": 0.0030166039765770264
+            }
+          ]
+        }
+      ],
+      "domain": {
+        "feature_order": [
+          "epsilon",
+          "n_vac_NN"
+        ],
+        "scale": [
+          0.010939721224631271,
+          4.0
+        ],
+        "normalized_halfspaces": [
+          [
+            0.7071067811865475,
+            0.7071067811865475,
+            -0.0
+          ],
+          [
+            -0.8949188534075705,
+            -0.44622891638225237,
+            -0.4486899370253181
+          ],
+          [
+            0.0,
+            -1.0,
+            0.0
+          ]
+        ],
+        "normalized_vertices": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            -1.0,
+            1.0
+          ],
+          [
+            -0.5013749965338729,
+            0.0
+          ]
+        ],
+        "interpretation": "Convex hull for THIS observable; no unsampled configuration guarantee"
+      }
+    },
+    "Kii_dd": {
+      "identified": true,
+      "anchor_eV_A2": 0.590658682890108,
+      "coefficients_eV_A2": {
+        "epsilon": -14.37919295120641,
+        "n_vac_NN": -0.07669799877001333
+      },
+      "scaled_design_condition_number": 2.7401170686844516,
+      "residual_convention": "prediction minus actual; anchor is fixed, not a fitted observation",
+      "residuals": [
+        {
+          "row": "x0875-spread4:clean",
+          "predicted_eV_A2": 0.6695271570037535,
+          "actual_eV_A2": 0.7025398132059419,
+          "residual_eV_A2": -0.033012656202188406
+        },
+        {
+          "row": "x0875-spread4:near",
+          "predicted_eV_A2": 0.5161311594637269,
+          "actual_eV_A2": 0.529445718339639,
+          "residual_eV_A2": -0.013314558875912152
+        },
+        {
+          "row": "x0750-bunched8:clean",
+          "predicted_eV_A2": 0.7479630452114892,
+          "actual_eV_A2": 0.7315104311261492,
+          "residual_eV_A2": 0.016452614085339934
+        },
+        {
+          "row": "x0750-bunched8:near",
+          "predicted_eV_A2": 0.4411710501314358,
+          "actual_eV_A2": 0.4772097968354046,
+          "residual_eV_A2": -0.03603874670396878
+        },
+        {
+          "row": "x0875-bunched4:near",
+          "predicted_eV_A2": 0.5161311594637269,
+          "actual_eV_A2": 0.4307391071798771,
+          "residual_eV_A2": 0.08539205228384977
+        }
+      ],
+      "rms_residual_eV_A2": 0.045007544512149736,
+      "max_abs_residual_eV_A2": 0.08539205228384977,
+      "residual_degrees_of_freedom": 3,
+      "leave_one_configuration_out": [
+        {
+          "held_out_config": "x0750-bunched8",
+          "identified": true,
+          "predictions": [
+            {
+              "row": "x0750-bunched8:clean",
+              "actual_eV_A2": 0.7315104311261492,
+              "predicted_eV_A2": 0.8138072864090218,
+              "error_eV_A2": 0.08229685528287256
+            },
+            {
+              "row": "x0750-bunched8:near",
+              "actual_eV_A2": 0.4772097968354046,
+              "predicted_eV_A2": 0.368912485516654,
+              "error_eV_A2": -0.10829731131875059
+            }
+          ]
+        },
+        {
+          "held_out_config": "x0875-bunched4",
+          "identified": true,
+          "predictions": [
+            {
+              "row": "x0875-bunched4:near",
+              "actual_eV_A2": 0.4307391071798771,
+              "predicted_eV_A2": 0.5332096524885372,
+              "error_eV_A2": 0.10247054530866012
+            }
+          ]
+        },
+        {
+          "held_out_config": "x0875-spread4",
+          "identified": true,
+          "predictions": [
+            {
+              "row": "x0875-spread4:clean",
+              "actual_eV_A2": 0.7025398132059419,
+              "predicted_eV_A2": 0.6612212076867106,
+              "error_eV_A2": -0.04131860551923139
+            },
+            {
+              "row": "x0875-spread4:near",
+              "actual_eV_A2": 0.529445718339639,
+              "predicted_eV_A2": 0.51345002475904,
+              "error_eV_A2": -0.015995693580599046
+            }
+          ]
+        }
+      ],
+      "domain": {
+        "feature_order": [
+          "epsilon",
+          "n_vac_NN"
+        ],
+        "scale": [
+          0.010939721224631271,
+          4.0
+        ],
+        "normalized_halfspaces": [
+          [
+            -0.0,
+            -1.0,
+            0.0
+          ],
+          [
+            -1.0,
+            0.0,
+            -1.0
+          ],
+          [
+            0.7071067811865475,
+            0.7071067811865475,
+            -0.0
+          ]
+        ],
+        "normalized_vertices": [
+          [
+            -1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            -1.0,
+            1.0
+          ]
+        ],
+        "interpretation": "Convex hull for THIS observable; no unsampled configuration guarantee"
+      }
+    }
+  },
+  "uncertainty": "Equal-weight descriptive fit, not a statistical confidence interval. SCF/mesh/finite-cell/reference-spacing and descriptor errors remain. Configuration holdouts reuse the same x1 anchor.",
+  "scope": "Kii_dd and mean J_dd per existing periodic bond under the registered probe-axis policy. No loading quartic, relaxed minimum, full Hessian, independent hydrostatic derivative or global heterogeneous Gamma is inferred. Apply lattice occupancy once.",
+  "commissioned_probe_sets": {
+    "x0750-bunched8": [
+      "clean",
+      "near"
+    ],
+    "x0875-bunched4": [
+      "near"
+    ],
+    "x0875-spread4": [
+      "clean",
+      "near"
+    ]
+  },
+  "vacancy_motif_definition": "Number of unordered pairs of vacant sites in the source's 12-site nearest-neighbour shell that are themselves nearest neighbours, r/a=1/sqrt(2), with minimum images in the registered 2a periodic cell. One extra descriptor only.",
+  "source_files": [
+    {
+      "path": "loading_fit.py",
+      "bytes": 8037,
+      "sha256": "01c25b95de4b9072973badb48f749655cb25507bcba6b284266a38795898b2b9"
+    },
+    {
+      "path": "loading_law.py",
+      "bytes": 7343,
+      "sha256": "13ce696339b7f6e72ceb7a1540d330097bc9efa47adadedab538aea9cf0be6ba"
+    },
+    {
+      "path": "loading_readout.py",
+      "bytes": 10351,
+      "sha256": "883f7957a1fcc96b9c14a9238e405ac010bc775c3ac17c6a8409fc22b18e821b"
+    },
+    {
+      "path": "loading_lattice.py",
+      "bytes": 3085,
+      "sha256": "4e59961e94d5a2de052e66ba2aa0e31d927a488ea3a823b9365366ae3e30e59d"
+    }
+  ],
+  "direction_closure": "Dense100 is the fixed x1 anchor; loading clean100 and near110-family are measured under that policy. A scalar/isotropic transfer is a closure, not measured tensors."
+}

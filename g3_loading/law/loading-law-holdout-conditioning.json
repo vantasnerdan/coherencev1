@@ -1,0 +1,494 @@
+{
+  "scope": "Saved-data rank/conditioning diagnosis for actual configuration holdouts, not new SCFs or an accuracy certificate",
+  "sources": [
+    {
+      "path": "loading-law-base.json",
+      "bytes": 47433,
+      "sha256": "f11752b5513dcc0887755540c5b9bdb10163e6ac899e5c0bd3d25144ef08d23e"
+    },
+    {
+      "path": "loading-law-motif.json",
+      "bytes": 49962,
+      "sha256": "630e5ebd697b1cc7750cfe25f0c8605e68a98d734708ab67ef096614082295de"
+    }
+  ],
+  "numpy_version": "2.5.3",
+  "holdouts": [
+    {
+      "variant": "base",
+      "observable": "Jbar_shell_0.7071067812",
+      "held_out_config": "x0750-bunched8",
+      "training_rows": [
+        "x0875-spread4:clean",
+        "x0875-spread4:near",
+        "x0875-bunched4:near"
+      ],
+      "rank": 2,
+      "dimensions": 2,
+      "scaled_condition": 3.2255049266776936
+    },
+    {
+      "variant": "base",
+      "observable": "Jbar_shell_0.7071067812",
+      "held_out_config": "x0875-bunched4",
+      "training_rows": [
+        "x0875-spread4:clean",
+        "x0875-spread4:near",
+        "x0750-bunched8:clean",
+        "x0750-bunched8:near"
+      ],
+      "rank": 2,
+      "dimensions": 2,
+      "scaled_condition": 2.6186768510149196
+    },
+    {
+      "variant": "base",
+      "observable": "Jbar_shell_0.7071067812",
+      "held_out_config": "x0875-spread4",
+      "training_rows": [
+        "x0750-bunched8:clean",
+        "x0750-bunched8:near",
+        "x0875-bunched4:near"
+      ],
+      "rank": 2,
+      "dimensions": 2,
+      "scaled_condition": 2.7708203830204163
+    },
+    {
+      "variant": "base",
+      "observable": "Jbar_shell_1.0000000000",
+      "held_out_config": "x0750-bunched8",
+      "training_rows": [
+        "x0875-spread4:clean",
+        "x0875-spread4:near",
+        "x0875-bunched4:near"
+      ],
+      "rank": 2,
+      "dimensions": 2,
+      "scaled_condition": 3.2255049266776936
+    },
+    {
+      "variant": "base",
+      "observable": "Jbar_shell_1.0000000000",
+      "held_out_config": "x0875-bunched4",
+      "training_rows": [
+        "x0875-spread4:clean",
+        "x0875-spread4:near",
+        "x0750-bunched8:clean",
+        "x0750-bunched8:near"
+      ],
+      "rank": 2,
+      "dimensions": 2,
+      "scaled_condition": 2.6186768510149196
+    },
+    {
+      "variant": "base",
+      "observable": "Jbar_shell_1.0000000000",
+      "held_out_config": "x0875-spread4",
+      "training_rows": [
+        "x0750-bunched8:clean",
+        "x0750-bunched8:near",
+        "x0875-bunched4:near"
+      ],
+      "rank": 2,
+      "dimensions": 2,
+      "scaled_condition": 2.7708203830204163
+    },
+    {
+      "variant": "base",
+      "observable": "Jbar_shell_1.2247448714",
+      "held_out_config": "x0750-bunched8",
+      "training_rows": [
+        "x0875-spread4:clean",
+        "x0875-spread4:near",
+        "x0875-bunched4:near"
+      ],
+      "rank": 2,
+      "dimensions": 2,
+      "scaled_condition": 3.2255049266776936
+    },
+    {
+      "variant": "base",
+      "observable": "Jbar_shell_1.2247448714",
+      "held_out_config": "x0875-bunched4",
+      "training_rows": [
+        "x0875-spread4:clean",
+        "x0875-spread4:near",
+        "x0750-bunched8:clean",
+        "x0750-bunched8:near"
+      ],
+      "rank": 2,
+      "dimensions": 2,
+      "scaled_condition": 2.6186768510149196
+    },
+    {
+      "variant": "base",
+      "observable": "Jbar_shell_1.2247448714",
+      "held_out_config": "x0875-spread4",
+      "training_rows": [
+        "x0750-bunched8:clean",
+        "x0750-bunched8:near",
+        "x0875-bunched4:near"
+      ],
+      "rank": 2,
+      "dimensions": 2,
+      "scaled_condition": 2.7708203830204163
+    },
+    {
+      "variant": "base",
+      "observable": "Jbar_shell_1.4142135624",
+      "held_out_config": "x0750-bunched8",
+      "training_rows": [
+        "x0875-spread4:clean",
+        "x0875-spread4:near",
+        "x0875-bunched4:near"
+      ],
+      "rank": 2,
+      "dimensions": 2,
+      "scaled_condition": 3.2255049266776936
+    },
+    {
+      "variant": "base",
+      "observable": "Jbar_shell_1.4142135624",
+      "held_out_config": "x0875-bunched4",
+      "training_rows": [
+        "x0875-spread4:clean",
+        "x0875-spread4:near",
+        "x0750-bunched8:clean",
+        "x0750-bunched8:near"
+      ],
+      "rank": 2,
+      "dimensions": 2,
+      "scaled_condition": 2.6186768510149196
+    },
+    {
+      "variant": "base",
+      "observable": "Jbar_shell_1.4142135624",
+      "held_out_config": "x0875-spread4",
+      "training_rows": [
+        "x0750-bunched8:clean",
+        "x0750-bunched8:near",
+        "x0875-bunched4:near"
+      ],
+      "rank": 2,
+      "dimensions": 2,
+      "scaled_condition": 2.7708203830204163
+    },
+    {
+      "variant": "base",
+      "observable": "Jbar_shell_1.7320508076",
+      "held_out_config": "x0750-bunched8",
+      "training_rows": [
+        "x0875-spread4:clean",
+        "x0875-spread4:near",
+        "x0875-bunched4:near"
+      ],
+      "rank": 2,
+      "dimensions": 2,
+      "scaled_condition": 3.2255049266776936
+    },
+    {
+      "variant": "base",
+      "observable": "Jbar_shell_1.7320508076",
+      "held_out_config": "x0875-bunched4",
+      "training_rows": [
+        "x0875-spread4:clean",
+        "x0875-spread4:near",
+        "x0750-bunched8:near"
+      ],
+      "rank": 2,
+      "dimensions": 2,
+      "scaled_condition": 4.697894999609877
+    },
+    {
+      "variant": "base",
+      "observable": "Jbar_shell_1.7320508076",
+      "held_out_config": "x0875-spread4",
+      "training_rows": [
+        "x0750-bunched8:near",
+        "x0875-bunched4:near"
+      ],
+      "rank": 2,
+      "dimensions": 2,
+      "scaled_condition": 1819.187226802564
+    },
+    {
+      "variant": "base",
+      "observable": "Kii_dd",
+      "held_out_config": "x0750-bunched8",
+      "training_rows": [
+        "x0875-spread4:clean",
+        "x0875-spread4:near",
+        "x0875-bunched4:near"
+      ],
+      "rank": 2,
+      "dimensions": 2,
+      "scaled_condition": 3.2255049266776936
+    },
+    {
+      "variant": "base",
+      "observable": "Kii_dd",
+      "held_out_config": "x0875-bunched4",
+      "training_rows": [
+        "x0875-spread4:clean",
+        "x0875-spread4:near",
+        "x0750-bunched8:clean",
+        "x0750-bunched8:near"
+      ],
+      "rank": 2,
+      "dimensions": 2,
+      "scaled_condition": 2.6186768510149196
+    },
+    {
+      "variant": "base",
+      "observable": "Kii_dd",
+      "held_out_config": "x0875-spread4",
+      "training_rows": [
+        "x0750-bunched8:clean",
+        "x0750-bunched8:near",
+        "x0875-bunched4:near"
+      ],
+      "rank": 2,
+      "dimensions": 2,
+      "scaled_condition": 2.7708203830204163
+    },
+    {
+      "variant": "motif",
+      "observable": "Jbar_shell_0.7071067812",
+      "held_out_config": "x0750-bunched8",
+      "training_rows": [
+        "x0875-spread4:clean",
+        "x0875-spread4:near",
+        "x0875-bunched4:near"
+      ],
+      "rank": 3,
+      "dimensions": 3,
+      "scaled_condition": 4.048917339522307
+    },
+    {
+      "variant": "motif",
+      "observable": "Jbar_shell_0.7071067812",
+      "held_out_config": "x0875-bunched4",
+      "training_rows": [
+        "x0875-spread4:clean",
+        "x0875-spread4:near",
+        "x0750-bunched8:clean",
+        "x0750-bunched8:near"
+      ],
+      "rank": 3,
+      "dimensions": 3,
+      "scaled_condition": 5.927794764540133
+    },
+    {
+      "variant": "motif",
+      "observable": "Jbar_shell_0.7071067812",
+      "held_out_config": "x0875-spread4",
+      "training_rows": [
+        "x0750-bunched8:clean",
+        "x0750-bunched8:near",
+        "x0875-bunched4:near"
+      ],
+      "rank": 3,
+      "dimensions": 3,
+      "scaled_condition": 12.098849957813433
+    },
+    {
+      "variant": "motif",
+      "observable": "Jbar_shell_1.0000000000",
+      "held_out_config": "x0750-bunched8",
+      "training_rows": [
+        "x0875-spread4:clean",
+        "x0875-spread4:near",
+        "x0875-bunched4:near"
+      ],
+      "rank": 3,
+      "dimensions": 3,
+      "scaled_condition": 4.048917339522307
+    },
+    {
+      "variant": "motif",
+      "observable": "Jbar_shell_1.0000000000",
+      "held_out_config": "x0875-bunched4",
+      "training_rows": [
+        "x0875-spread4:clean",
+        "x0875-spread4:near",
+        "x0750-bunched8:clean",
+        "x0750-bunched8:near"
+      ],
+      "rank": 3,
+      "dimensions": 3,
+      "scaled_condition": 5.927794764540133
+    },
+    {
+      "variant": "motif",
+      "observable": "Jbar_shell_1.0000000000",
+      "held_out_config": "x0875-spread4",
+      "training_rows": [
+        "x0750-bunched8:clean",
+        "x0750-bunched8:near",
+        "x0875-bunched4:near"
+      ],
+      "rank": 3,
+      "dimensions": 3,
+      "scaled_condition": 12.098849957813433
+    },
+    {
+      "variant": "motif",
+      "observable": "Jbar_shell_1.2247448714",
+      "held_out_config": "x0750-bunched8",
+      "training_rows": [
+        "x0875-spread4:clean",
+        "x0875-spread4:near",
+        "x0875-bunched4:near"
+      ],
+      "rank": 3,
+      "dimensions": 3,
+      "scaled_condition": 4.048917339522307
+    },
+    {
+      "variant": "motif",
+      "observable": "Jbar_shell_1.2247448714",
+      "held_out_config": "x0875-bunched4",
+      "training_rows": [
+        "x0875-spread4:clean",
+        "x0875-spread4:near",
+        "x0750-bunched8:clean",
+        "x0750-bunched8:near"
+      ],
+      "rank": 3,
+      "dimensions": 3,
+      "scaled_condition": 5.927794764540133
+    },
+    {
+      "variant": "motif",
+      "observable": "Jbar_shell_1.2247448714",
+      "held_out_config": "x0875-spread4",
+      "training_rows": [
+        "x0750-bunched8:clean",
+        "x0750-bunched8:near",
+        "x0875-bunched4:near"
+      ],
+      "rank": 3,
+      "dimensions": 3,
+      "scaled_condition": 12.098849957813433
+    },
+    {
+      "variant": "motif",
+      "observable": "Jbar_shell_1.4142135624",
+      "held_out_config": "x0750-bunched8",
+      "training_rows": [
+        "x0875-spread4:clean",
+        "x0875-spread4:near",
+        "x0875-bunched4:near"
+      ],
+      "rank": 3,
+      "dimensions": 3,
+      "scaled_condition": 4.048917339522307
+    },
+    {
+      "variant": "motif",
+      "observable": "Jbar_shell_1.4142135624",
+      "held_out_config": "x0875-bunched4",
+      "training_rows": [
+        "x0875-spread4:clean",
+        "x0875-spread4:near",
+        "x0750-bunched8:clean",
+        "x0750-bunched8:near"
+      ],
+      "rank": 3,
+      "dimensions": 3,
+      "scaled_condition": 5.927794764540133
+    },
+    {
+      "variant": "motif",
+      "observable": "Jbar_shell_1.4142135624",
+      "held_out_config": "x0875-spread4",
+      "training_rows": [
+        "x0750-bunched8:clean",
+        "x0750-bunched8:near",
+        "x0875-bunched4:near"
+      ],
+      "rank": 3,
+      "dimensions": 3,
+      "scaled_condition": 12.098849957813433
+    },
+    {
+      "variant": "motif",
+      "observable": "Jbar_shell_1.7320508076",
+      "held_out_config": "x0750-bunched8",
+      "training_rows": [
+        "x0875-spread4:clean",
+        "x0875-spread4:near",
+        "x0875-bunched4:near"
+      ],
+      "rank": 3,
+      "dimensions": 3,
+      "scaled_condition": 4.048917339522307
+    },
+    {
+      "variant": "motif",
+      "observable": "Jbar_shell_1.7320508076",
+      "held_out_config": "x0875-bunched4",
+      "training_rows": [
+        "x0875-spread4:clean",
+        "x0875-spread4:near",
+        "x0750-bunched8:near"
+      ],
+      "rank": 3,
+      "dimensions": 3,
+      "scaled_condition": 6.482239398286885
+    },
+    {
+      "variant": "motif",
+      "observable": "Jbar_shell_1.7320508076",
+      "held_out_config": "x0875-spread4",
+      "training_rows": [
+        "x0750-bunched8:near",
+        "x0875-bunched4:near"
+      ],
+      "rank": 2,
+      "dimensions": 3,
+      "scaled_condition": null
+    },
+    {
+      "variant": "motif",
+      "observable": "Kii_dd",
+      "held_out_config": "x0750-bunched8",
+      "training_rows": [
+        "x0875-spread4:clean",
+        "x0875-spread4:near",
+        "x0875-bunched4:near"
+      ],
+      "rank": 3,
+      "dimensions": 3,
+      "scaled_condition": 4.048917339522307
+    },
+    {
+      "variant": "motif",
+      "observable": "Kii_dd",
+      "held_out_config": "x0875-bunched4",
+      "training_rows": [
+        "x0875-spread4:clean",
+        "x0875-spread4:near",
+        "x0750-bunched8:clean",
+        "x0750-bunched8:near"
+      ],
+      "rank": 3,
+      "dimensions": 3,
+      "scaled_condition": 5.927794764540133
+    },
+    {
+      "variant": "motif",
+      "observable": "Kii_dd",
+      "held_out_config": "x0875-spread4",
+      "training_rows": [
+        "x0750-bunched8:clean",
+        "x0750-bunched8:near",
+        "x0875-bunched4:near"
+      ],
+      "rank": 3,
+      "dimensions": 3,
+      "scaled_condition": 12.098849957813433
+    }
+  ]
+}

@@ -1,0 +1,247 @@
+{
+  "schema": "loading-law-comparison-v1",
+  "scope": "Baseline predeclared776, exactly one post-contrast motif term authorized852; descriptive fit/identified config holdouts, NOT validated universal law or confidence bounds.",
+  "sources": {
+    "base": {
+      "path": "loading-law-base.json",
+      "bytes": 47433,
+      "sha256": "f11752b5513dcc0887755540c5b9bdb10163e6ac899e5c0bd3d25144ef08d23e"
+    },
+    "motif": {
+      "path": "loading-law-motif.json",
+      "bytes": 49962,
+      "sha256": "630e5ebd697b1cc7750cfe25f0c8605e68a98d734708ab67ef096614082295de"
+    }
+  },
+  "motif_counts": {
+    "x0875-spread4:clean": 0,
+    "x0875-spread4:near": 0,
+    "x0750-bunched8:clean": 0,
+    "x0750-bunched8:near": 4,
+    "x0875-bunched4:near": 1
+  },
+  "model_comparison": {
+    "base": {
+      "Jbar_shell_0.7071067812": {
+        "coefficients_eV_A2": {
+          "epsilon": 0.10636162208043917,
+          "n_vac_NN": -0.002082633780576259
+        },
+        "rms_residual_eV_A2": 0.0052551251262050085,
+        "max_abs_residual_eV_A2": 0.010214153494890393,
+        "residual_degrees_of_freedom": 3,
+        "max_abs_identified_configuration_holdout_error_eV_A2": 0.01643927632745157,
+        "unidentified_holdout_configs": []
+      },
+      "Jbar_shell_1.0000000000": {
+        "coefficients_eV_A2": {
+          "epsilon": -4.747964190509423,
+          "n_vac_NN": -0.006435935468156347
+        },
+        "rms_residual_eV_A2": 0.04780666354535135,
+        "max_abs_residual_eV_A2": 0.0760851244347215,
+        "residual_degrees_of_freedom": 3,
+        "max_abs_identified_configuration_holdout_error_eV_A2": 0.14934274086259336,
+        "unidentified_holdout_configs": []
+      },
+      "Jbar_shell_1.2247448714": {
+        "coefficients_eV_A2": {
+          "epsilon": -0.5308637929426065,
+          "n_vac_NN": 0.00032284620630741755
+        },
+        "rms_residual_eV_A2": 0.0002669412994543259,
+        "max_abs_residual_eV_A2": 0.0004471611724985985,
+        "residual_degrees_of_freedom": 3,
+        "max_abs_identified_configuration_holdout_error_eV_A2": 0.0007598061454842662,
+        "unidentified_holdout_configs": []
+      },
+      "Jbar_shell_1.4142135624": {
+        "coefficients_eV_A2": {
+          "epsilon": 1.2539965309146701,
+          "n_vac_NN": -0.0009257326196565165
+        },
+        "rms_residual_eV_A2": 0.0029946641542537944,
+        "max_abs_residual_eV_A2": 0.00500154116105636,
+        "residual_degrees_of_freedom": 3,
+        "max_abs_identified_configuration_holdout_error_eV_A2": 0.012477487351719859,
+        "unidentified_holdout_configs": []
+      },
+      "Jbar_shell_1.7320508076": {
+        "coefficients_eV_A2": {
+          "epsilon": 0.8119419315134742,
+          "n_vac_NN": 0.003182768339994933
+        },
+        "rms_residual_eV_A2": 0.0034692835320560404,
+        "max_abs_residual_eV_A2": 0.005320271119471356,
+        "residual_degrees_of_freedom": 2,
+        "max_abs_identified_configuration_holdout_error_eV_A2": 1.535016858273769,
+        "unidentified_holdout_configs": []
+      },
+      "Kii_dd": {
+        "coefficients_eV_A2": {
+          "epsilon": -14.37919295120641,
+          "n_vac_NN": -0.07669799877001333
+        },
+        "rms_residual_eV_A2": 0.045007544512149736,
+        "max_abs_residual_eV_A2": 0.08539205228384977,
+        "residual_degrees_of_freedom": 3,
+        "max_abs_identified_configuration_holdout_error_eV_A2": 0.10829731131875059,
+        "unidentified_holdout_configs": []
+      }
+    },
+    "motif": {
+      "Jbar_shell_0.7071067812": {
+        "coefficients_eV_A2": {
+          "epsilon": 0.10568916696513637,
+          "n_vac_NN": -0.00459513644435078,
+          "vacant_NN_pair_count": 0.0033475491467284796
+        },
+        "rms_residual_eV_A2": 0.004446582275589401,
+        "max_abs_residual_eV_A2": 0.008540385664941384,
+        "residual_degrees_of_freedom": 2,
+        "max_abs_identified_configuration_holdout_error_eV_A2": 0.044828364379502356,
+        "unidentified_holdout_configs": []
+      },
+      "Jbar_shell_1.0000000000": {
+        "coefficients_eV_A2": {
+          "epsilon": -4.74013471525185,
+          "n_vac_NN": 0.022817433259112223,
+          "vacant_NN_pair_count": -0.03897591470601088
+        },
+        "rms_residual_eV_A2": 0.034958454863185086,
+        "max_abs_residual_eV_A2": 0.05984517126774505,
+        "residual_degrees_of_freedom": 2,
+        "max_abs_identified_configuration_holdout_error_eV_A2": 0.18535221928692874,
+        "unidentified_holdout_configs": []
+      },
+      "Jbar_shell_1.2247448714": {
+        "coefficients_eV_A2": {
+          "epsilon": -0.5308503827810166,
+          "n_vac_NN": 0.00037295076488754825,
+          "vacant_NN_pair_count": -6.675713213778289e-05
+        },
+        "rms_residual_eV_A2": 0.0002610327612712489,
+        "max_abs_residual_eV_A2": 0.000413782740907513,
+        "residual_degrees_of_freedom": 2,
+        "max_abs_identified_configuration_holdout_error_eV_A2": 0.0021706902848366563,
+        "unidentified_holdout_configs": []
+      },
+      "Jbar_shell_1.4142135624": {
+        "coefficients_eV_A2": {
+          "epsilon": 1.2536157485060455,
+          "n_vac_NN": -0.0023484548121344333,
+          "vacant_NN_pair_count": 0.0018955730993360338
+        },
+        "rms_residual_eV_A2": 0.0025402321896390626,
+        "max_abs_residual_eV_A2": 0.0049994526065985775,
+        "residual_degrees_of_freedom": 2,
+        "max_abs_identified_configuration_holdout_error_eV_A2": 0.012477487351719871,
+        "unidentified_holdout_configs": []
+      },
+      "Jbar_shell_1.7320508076": {
+        "coefficients_eV_A2": {
+          "epsilon": 0.8082435912739486,
+          "n_vac_NN": 0.00039886137041377986,
+          "vacant_NN_pair_count": 0.003698377326653416
+        },
+        "rms_residual_eV_A2": 0.0002603566851177687,
+        "max_abs_residual_eV_A2": 0.00045451556671729544,
+        "residual_degrees_of_freedom": 1,
+        "max_abs_identified_configuration_holdout_error_eV_A2": 0.002386210143695263,
+        "unidentified_holdout_configs": [
+          "x0875-spread4"
+        ]
+      },
+      "Kii_dd": {
+        "coefficients_eV_A2": {
+          "epsilon": -14.382565610888612,
+          "n_vac_NN": -0.08929931035641787,
+          "vacant_NN_pair_count": 0.0167894388559005
+        },
+        "rms_residual_eV_A2": 0.04275932323773847,
+        "max_abs_residual_eV_A2": 0.07699736667710827,
+        "residual_degrees_of_freedom": 2,
+        "max_abs_identified_configuration_holdout_error_eV_A2": 0.4044171447980362,
+        "unidentified_holdout_configs": []
+      }
+    }
+  },
+  "actual_run_receipts": [
+    {
+      "command": [
+        "python",
+        "loading_fit.py",
+        "--dense",
+        "dense_Pd/k3/final-x1-dense-readout-20261114T0213Z.json",
+        "--readout",
+        "loading_Pd/x0875-spread4/k3/readout-clean-20261114T0421Z.json",
+        "--readout",
+        "loading_Pd/x0875-spread4/k3/readout-near-20261114T0500Z.json",
+        "--readout",
+        "loading_Pd/x0750-bunched8/k3/readout-clean-20261114T0608Z.json",
+        "--readout",
+        "loading_Pd/x0750-bunched8/k3/readout-near-20261114T0647Z.json",
+        "--readout",
+        "loading_Pd/x0875-bunched4/k3/readout-near-20261114T0746Z.json",
+        "--near-only-config",
+        "x0875-bunched4",
+        "--output",
+        "loading-law-base.json"
+      ],
+      "exit": 0,
+      "stdout": "{\"path\": \"loading-law-base.json\", \"bytes\": 47433, \"sha256\": \"f11752b5513dcc0887755540c5b9bdb10163e6ac899e5c0bd3d25144ef08d23e\"}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python",
+        "loading_fit.py",
+        "--dense",
+        "dense_Pd/k3/final-x1-dense-readout-20261114T0213Z.json",
+        "--readout",
+        "loading_Pd/x0875-spread4/k3/readout-clean-20261114T0421Z.json",
+        "--readout",
+        "loading_Pd/x0875-spread4/k3/readout-near-20261114T0500Z.json",
+        "--readout",
+        "loading_Pd/x0750-bunched8/k3/readout-clean-20261114T0608Z.json",
+        "--readout",
+        "loading_Pd/x0750-bunched8/k3/readout-near-20261114T0647Z.json",
+        "--readout",
+        "loading_Pd/x0875-bunched4/k3/readout-near-20261114T0746Z.json",
+        "--near-only-config",
+        "x0875-bunched4",
+        "--motif",
+        "--output",
+        "loading-law-motif.json"
+      ],
+      "exit": 0,
+      "stdout": "{\"path\": \"loading-law-motif.json\", \"bytes\": 49962, \"sha256\": \"630e5ebd697b1cc7750cfe25f0c8605e68a98d734708ab67ef096614082295de\"}\n",
+      "stderr": ""
+    }
+  ],
+  "independent_rational_normal_equation_max_coefficient_errors": {
+    "base": {
+      "Jbar_shell_0.7071067812": 3.899658373995862e-15,
+      "Jbar_shell_1.0000000000": 6.572520305780927e-14,
+      "Jbar_shell_1.2247448714": 3.9968028886505635e-15,
+      "Jbar_shell_1.4142135624": 8.659739592076221e-15,
+      "Jbar_shell_1.7320508076": 1.1213252548714081e-14,
+      "Kii_dd": 9.059419880941277e-14
+    },
+    "motif": {
+      "Jbar_shell_0.7071067812": 1.419697692739419e-14,
+      "Jbar_shell_1.0000000000": 1.3855583347321954e-13,
+      "Jbar_shell_1.2247448714": 4.551914400963142e-15,
+      "Jbar_shell_1.4142135624": 1.3988810110276972e-14,
+      "Jbar_shell_1.7320508076": 1.4432899320127035e-15,
+      "Kii_dd": 6.394884621840902e-14
+    }
+  },
+  "missing_motif_refusal": "Motif law requires the actual vacant_NN_pair_count",
+  "outside_domain_refusal": "Outside sampled convex hull: Jbar_shell_0.7071067812, Jbar_shell_1.0000000000, Jbar_shell_1.2247448714, Jbar_shell_1.4142135624, Jbar_shell_1.7320508076, Kii_dd",
+  "Native_cost_source": {
+    "path": "receipts/loading-cumulative-loading-x0875-bunched4-near-20261114t071634.json",
+    "bytes": 4854,
+    "sha256": "13bd2a769e1e14800db9d6aaa684b7b8117edc418e36ec98be58479a78d6069b"
+  }
+}
