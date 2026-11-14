@@ -1,0 +1,82 @@
+{
+  "direction": "100",
+  "actual_samples": [
+    {
+      "u_A": 0.12,
+      "energy_difference_eV": 0.004836395276925032,
+      "force_parallel_eV_A": -0.08961242411752493,
+      "elapsed_s": 913.9397916002199,
+      "source": {
+        "path": "dense_Pd/k3/well100_012.json",
+        "bytes": 20847,
+        "sha256": "7e5a78eba092d76a4ed51f56bc8e6fda0cf43d26ecc9914945f5396ec12b6653"
+      }
+    },
+    {
+      "u_A": 0.24,
+      "energy_difference_eV": 0.026440141106007786,
+      "force_parallel_eV_A": -0.30270623915045597,
+      "elapsed_s": 2101.3171849809587,
+      "source": {
+        "path": "dense_Pd/k3/well100_024.json",
+        "bytes": 20801,
+        "sha256": "fb0830903d8899da50787d50bc1ffded49ae7a47420ab614139c06d84d485dd7"
+      }
+    }
+  ],
+  "fit": {
+    "k2_eV_A2": 0.590658682890108,
+    "k4_eV_A4": 11.615048217417709,
+    "coefficient_of_u2_eV_A2": 0.295329341445054,
+    "coefficient_of_u4_eV_A4": 2.903762054354427,
+    "energy_fit_RMS_eV": 0.00014541353477528148,
+    "force_fit_RMS_eV_A": 0.0009834663516317943,
+    "energy_fit_max_abs_eV": 0.00020481455468226648,
+    "force_fit_max_abs_eV_A": 0.001337421148985829,
+    "least_squares": "Fixed probe K2, joint energy and force; force rows scaled by max(u)=0.24 A, as analyse.py",
+    "harmonic_quantum_eV": 0.03501734023236149,
+    "imaginary_harmonic_magnitude_eV": null,
+    "vibrational_mass_kg": 3.3435837768e-27,
+    "sampled_positive_range_A": [
+      0.12,
+      0.24
+    ],
+    "k2_assumption": "Cubic x=1 reference gives isotropic quadratic coefficient; finite +100 probe supplies both directions",
+    "inversion_assumption": "Even local potential about the ideal centrosymmetric site; no negative SCF measurements added",
+    "residual_convention": "fitted minus measured; forces projected along the displacement unit vector",
+    "points": [
+      {
+        "point_id": "well100_012",
+        "displacement_A": 0.12,
+        "delta_energy_free_eV": 0.004836395276925032,
+        "force_parallel_eV_A": -0.08961242411752493,
+        "fitted_energy_eV": 0.004854866616399712,
+        "fitted_force_eV_A": -0.09094984526651076,
+        "energy_residual_eV": 1.8471339474680076e-05,
+        "force_residual_eV_A": -0.001337421148985829
+      },
+      {
+        "point_id": "well100_024",
+        "displacement_A": 0.24,
+        "delta_energy_free_eV": 0.026440141106007786,
+        "force_parallel_eV_A": -0.30270623915045597,
+        "fitted_energy_eV": 0.026644955660690053,
+        "fitted_force_eV_A": -0.3023245104512083,
+        "energy_residual_eV": 0.00020481455468226648,
+        "force_residual_eV_A": 0.0003817286992476854
+      }
+    ]
+  },
+  "K4_energy_only_eV_A4": 11.367691473651275,
+  "K4_force_only_eV_A4": 11.630329631635972,
+  "Native": {
+    "Result": "success",
+    "MemoryPeak": "5942476800",
+    "CPUUsageNSec": "18097266780000",
+    "InvocationID": "fba41e54a4ad43d2a8e5f18a7cdcc27a"
+  },
+  "stage_core_min": "301.621113",
+  "known_total_core_min_before_preparation": "784.2010021999666666666666666",
+  "remaining_before_preparation_core_min": "2215.798997800033333333333333",
+  "scope": "Actual adopted-accuracy local100 curve only;111 not yet sampled"
+}

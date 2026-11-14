@@ -1,0 +1,178 @@
+{
+  "status": "actual_map_reference_and_double_count_sensitivity_passed",
+  "a1_A": 4.084,
+  "loading_reference_domain": {
+    "x": [
+      0.75,
+      1.0
+    ],
+    "a_reference_A": [
+      4.0393221785186055,
+      4.084
+    ],
+    "meaning": "Bulk registered loading reference a(x), not an additional arbitrary strained local-spacing variable"
+  },
+  "definition": "E1=s*(I+E_loading)-I; DeltaGamma_elastic=A(E1)-A((s-1)*I), s=a(x)/4.084",
+  "local_transfer_assumption": "Only under the existing frozen-neighbour-sum closure may DeltaGamma be used as DeltaKii; x1 Gamma strain response at vacancy loadings is an unmeasured transfer assumption",
+  "scope": "Reference/algebra consumer proof only. Explicit polynomial extrapolation on archived EMT sites used for identity sensitivity, not validated stability predictions. No loading DFT result is claimed.",
+  "rows": [
+    {
+      "x": 0.875,
+      "a_reference_A": 4.061599657409625,
+      "s_to_4p084": 0.994515097308919,
+      "bulk_partA_Gamma_tensor_eV_A2": [
+        [
+          0.29616433386546037,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.29616433386546037,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.29616433386546037
+        ]
+      ],
+      "correct_elastic_increment_at_loading_bulk_max_abs": 0.0,
+      "wrong_subtract_Azero_double_count_tensor_eV_A2": [
+        [
+          0.11510464330971001,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.11510464330971001,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.11510464330971001
+        ]
+      ],
+      "actual_map_reference_checks": [
+        {
+          "case": "pd389",
+          "sites": 800,
+          "source": {
+            "path": "evidence/marvin-mismatch-20261113/files/pd389/octahedral_maps.npz",
+            "bytes": 209237,
+            "sha256": "9bca13a0b8dcb33e98bdb94e9154ead662d415d2da4ad9716f075990eb7a880f"
+          },
+          "frame_error": 6.302684069092734e-15,
+          "absolute_vs_rereferenced_delta_agreement": 1.4432899320127035e-15,
+          "no_rereference_mutant_error": 0.005509656705137145,
+          "zero_increment_mutant_error": 1.6396017574730979
+        },
+        {
+          "case": "pd4084",
+          "sites": 288,
+          "source": {
+            "path": "evidence/marvin-mismatch-20261113/files/pd4084/octahedral_maps.npz",
+            "bytes": 77606,
+            "sha256": "b279915965416770882226c4988cf521587e662e55ca70181bf4162bb45f031c"
+          },
+          "frame_error": 5.968415124474808e-15,
+          "absolute_vs_rereferenced_delta_agreement": 2.220446049250313e-15,
+          "no_rereference_mutant_error": 0.0059720321548963895,
+          "zero_increment_mutant_error": 3.3509964210783325
+        }
+      ]
+    },
+    {
+      "x": 0.75,
+      "a_reference_A": 4.0393221785186055,
+      "s_to_4p084": 0.9890602787753687,
+      "bulk_partA_Gamma_tensor_eV_A2": [
+        [
+          0.415922969607907,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.415922969607907,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.415922969607907
+        ]
+      ],
+      "correct_elastic_increment_at_loading_bulk_max_abs": 0.0,
+      "wrong_subtract_Azero_double_count_tensor_eV_A2": [
+        [
+          0.23486327905215662,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.23486327905215662,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.23486327905215662
+        ]
+      ],
+      "actual_map_reference_checks": [
+        {
+          "case": "pd389",
+          "sites": 800,
+          "source": {
+            "path": "evidence/marvin-mismatch-20261113/files/pd389/octahedral_maps.npz",
+            "bytes": 209237,
+            "sha256": "9bca13a0b8dcb33e98bdb94e9154ead662d415d2da4ad9716f075990eb7a880f"
+          },
+          "frame_error": 6.337812219481265e-15,
+          "absolute_vs_rereferenced_delta_agreement": 1.4432899320127035e-15,
+          "no_rereference_mutant_error": 0.011049700008697538,
+          "zero_increment_mutant_error": 1.5198431217306512
+        },
+        {
+          "case": "pd4084",
+          "sites": 288,
+          "source": {
+            "path": "evidence/marvin-mismatch-20261113/files/pd4084/octahedral_maps.npz",
+            "bytes": 77606,
+            "sha256": "b279915965416770882226c4988cf521587e662e55ca70181bf4162bb45f031c"
+          },
+          "frame_error": 6.001331845665166e-15,
+          "absolute_vs_rereferenced_delta_agreement": 2.220446049250313e-15,
+          "no_rereference_mutant_error": 0.01197700097945753,
+          "zero_increment_mutant_error": 3.231237785335886
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "path": "strain-law.json",
+      "bytes": 8768,
+      "sha256": "d3398ac45fa74a31bd4814447cb38283c53925a3835464c2af36915693da986c"
+    },
+    {
+      "path": "strain_tensor_law.py",
+      "bytes": 3289,
+      "sha256": "68d3fd010700f9a6472a6de81b33fe3a28c5f80558b6d0d18ad8b32e8521f0bf"
+    },
+    {
+      "path": "loading_lattice.py",
+      "bytes": 3085,
+      "sha256": "4e59961e94d5a2de052e66ba2aa0e31d927a488ea3a823b9365366ae3e30e59d"
+    },
+    {
+      "path": "loading-lattice-source.json",
+      "bytes": 745,
+      "sha256": "027f5d80d8cc30026b23c0279f0d84f15ca14208edb82ad38109a228127456ee"
+    }
+  ]
+}

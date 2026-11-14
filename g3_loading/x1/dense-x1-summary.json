@@ -1,0 +1,41 @@
+{
+  "schema": "corrected-dense-x1-summary-v1",
+  "on_site_Kii_energy_eV_A2": 0.5987369230019289,
+  "on_site_Kii_force_eV_A2": 0.590658682890108,
+  "sum_J_xx_eV_A2": 0.3890123228229324,
+  "H_only_Gamma_eV_A2": 0.20164636006717562,
+  "precision_energy_force_relative_difference": 0.013492136197845402,
+  "raw_acoustic_residual_eV_A2": [
+    -0.016092651891015892,
+    5.680594883372692e-13,
+    1.6697803945735185e-12
+  ],
+  "quartics": {
+    "100": {
+      "K4_joint_eV_A4": 11.615048217417709,
+      "K4_energy_only_eV_A4": 11.367691473651275,
+      "K4_force_only_eV_A4": 11.630329631635972,
+      "energy_force_K4_relative_difference": 0.022582176628105816,
+      "max_energy_residual_eV": 0.00020481455468226648,
+      "max_force_residual_eV_A": 0.001337421148985829,
+      "harmonic_D_quantum_eV": 0.03501734023236149
+    },
+    "111": {
+      "K4_joint_eV_A4": 2.227715739838984,
+      "K4_energy_only_eV_A4": 2.356761602529049,
+      "K4_force_only_eV_A4": 2.2197434353410648,
+      "energy_force_K4_relative_difference": 0.058138322960179574,
+      "max_energy_residual_eV": 0.00010551856814977265,
+      "max_force_residual_eV_A": 0.0003515469963360496,
+      "harmonic_D_quantum_eV": 0.03501734023236149
+    }
+  },
+  "known_cost_core_minutes": "1091.312275716633333333333333",
+  "remaining_Native_budget_after_reserve_core_minutes": "1888.687724283366666666666667",
+  "data_source": {
+    "path": "dense_Pd/k3/final-x1-dense-readout-20261114T0213Z.json",
+    "bytes": 51609,
+    "sha256": "c87e06ae646d2311c77d6cc8bfb3b9548bafa06d6342914a4fe14fd6c182d3cf"
+  },
+  "profile_id": "517d4d7d678d465fa6ef3b28e93e46745128c45440dadf061fd50a1623b59bed"
+}

@@ -1,0 +1,11 @@
+{
+  "status": "actual_parent_tighter_policy_passed_and_three_unsafe_mutants_refused",
+  "parent_profile_id": "9f83a1f6a1be303339cd4ca1ab75846a107479031263b0bf0e6d74bcf71a7fe6",
+  "target_profile_id": "517d4d7d678d465fa6ef3b28e93e46745128c45440dadf061fd50a1623b59bed",
+  "refusals": {
+    "wrong_cutoff": "Precision continuation changes the physical profile/software",
+    "weaker_force": "Only a strictly tighter force stopping criterion is permitted",
+    "changed_PAW_bytes": "Precision seed PAW bytes differ"
+  },
+  "scope": "Precision admission only; actual SCF continuation remains in Native"
+}

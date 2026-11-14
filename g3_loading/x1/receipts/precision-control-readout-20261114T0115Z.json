@@ -1,0 +1,157 @@
+{
+  "accepted": true,
+  "energy_force_gate": true,
+  "acoustic_gate": true,
+  "Kii_energy_eV_A2": 0.5987369230019289,
+  "Kii_force_eV_A2": 0.590658682890108,
+  "energy_force_relative_difference": 0.013492136197845402,
+  "all_ion_acoustic_residual_eV_A2": [
+    -0.016092651891015892,
+    5.680594883372692e-13,
+    1.6697803945735185e-12
+  ],
+  "acoustic_relative_to_Kii": 0.027245264240041533,
+  "H_only_Gamma_eV_A2": 0.20164636006717562,
+  "sum_actual_J_xx_eV_A2": 0.3890123228229324,
+  "inversion_diagnostic": {
+    "used_for_reconstruction": false,
+    "max_H_force_error_eV_A": 8.804907088704946e-05,
+    "max_H_column_component_difference_eV_A2": 0.0014674845147841576
+  },
+  "control_core_min": "129.9666928333333333333333333",
+  "control_cap_core_min": 180,
+  "Native": {
+    "dense-precision-zero-20261114t004758": {
+      "Result": "success",
+      "MemoryPeak": "3619549184",
+      "CPUUsageNSec": "1060687241000",
+      "InvocationID": "6fd21f0e2b9e4b208179166f99f2892f"
+    },
+    "dense-precision-probe-20261114t004758": {
+      "Result": "success",
+      "MemoryPeak": "5333581824",
+      "CPUUsageNSec": "6737314329000",
+      "InvocationID": "a7e5761677bb4d0a998269c83b0246b3"
+    }
+  },
+  "known_total_core_min_before_preparation": "482.5798891999666666666666666",
+  "remaining_before_preparation_core_min": "2517.420110800033333333333333",
+  "source": {
+    "path": "dense_Pd/k3/admission-dense-precision-probe-20261114t004758.json",
+    "bytes": 46430,
+    "sha256": "88059956f990148c1cc5fd952496c89769ec3c08c38a6187423edeba733e526f"
+  },
+  "shells": [
+    {
+      "distance_A": 2.887824,
+      "distinct_supercell_H_sites": 12,
+      "atom_indices": [
+        3,
+        11,
+        15,
+        19,
+        21,
+        27,
+        29,
+        31,
+        47,
+        53,
+        61,
+        63
+      ],
+      "sum_Phi_vector_eV_A2": [
+        -0.22648856547987756,
+        -5.79813974610488e-14,
+        4.0491203140900457e-13
+      ],
+      "mean_Phi_xx_eV_A2": -0.01887404712332313,
+      "sum_Phi_xx_eV_A2": -0.22648856547987756,
+      "sum_pulling_J_xx_eV_A2": 0.22648856547987756,
+      "min_Phi_xx_eV_A2": -0.04133667498945853,
+      "max_Phi_xx_eV_A2": 0.026050003868945164
+    },
+    {
+      "distance_A": 4.084,
+      "distinct_supercell_H_sites": 3,
+      "atom_indices": [
+        9,
+        17,
+        57
+      ],
+      "sum_Phi_vector_eV_A2": [
+        -0.2686771261195258,
+        8.578676833701132e-13,
+        2.2143676829115257e-13
+      ],
+      "mean_Phi_xx_eV_A2": -0.08955904203984194,
+      "sum_Phi_xx_eV_A2": -0.2686771261195258,
+      "sum_pulling_J_xx_eV_A2": 0.2686771261195258,
+      "min_Phi_xx_eV_A2": -0.255463913802411,
+      "max_Phi_xx_eV_A2": -0.006606606157929997
+    },
+    {
+      "distance_A": 5.001858,
+      "distinct_supercell_H_sites": 12,
+      "atom_indices": [
+        5,
+        7,
+        13,
+        23,
+        35,
+        37,
+        39,
+        43,
+        45,
+        51,
+        55,
+        59
+      ],
+      "sum_Phi_vector_eV_A2": [
+        0.10869042338416932,
+        -7.463519910060505e-13,
+        -1.0794116882373922e-12
+      ],
+      "mean_Phi_xx_eV_A2": 0.00905753528201411,
+      "sum_Phi_xx_eV_A2": 0.10869042338416932,
+      "sum_pulling_J_xx_eV_A2": -0.10869042338416932,
+      "min_Phi_xx_eV_A2": 0.008605579152211289,
+      "max_Phi_xx_eV_A2": 0.009960460754506068
+    },
+    {
+      "distance_A": 5.775648,
+      "distinct_supercell_H_sites": 3,
+      "atom_indices": [
+        1,
+        41,
+        49
+      ],
+      "sum_Phi_vector_eV_A2": [
+        -0.007119698378289755,
+        6.4393238592825e-13,
+        -6.663223758967493e-13
+      ],
+      "mean_Phi_xx_eV_A2": -0.0023732327927632516,
+      "sum_Phi_xx_eV_A2": -0.007119698378289755,
+      "sum_pulling_J_xx_eV_A2": 0.007119698378289755,
+      "min_Phi_xx_eV_A2": -0.008603398034539071,
+      "max_Phi_xx_eV_A2": 0.0007418498284117407
+    },
+    {
+      "distance_A": 7.073695,
+      "distinct_supercell_H_sites": 1,
+      "atom_indices": [
+        33
+      ],
+      "sum_Phi_vector_eV_A2": [
+        0.004582643770591419,
+        -6.62062088851082e-14,
+        3.8013182457464045e-13
+      ],
+      "mean_Phi_xx_eV_A2": 0.004582643770591419,
+      "sum_Phi_xx_eV_A2": 0.004582643770591419,
+      "sum_pulling_J_xx_eV_A2": -0.004582643770591419,
+      "min_Phi_xx_eV_A2": 0.004582643770591419,
+      "max_Phi_xx_eV_A2": 0.004582643770591419
+    }
+  ]
+}
