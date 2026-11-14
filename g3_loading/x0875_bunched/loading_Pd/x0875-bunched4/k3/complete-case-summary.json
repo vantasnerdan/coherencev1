@@ -1,0 +1,287 @@
+{
+  "schema": "complete-loading-case-summary-v1",
+  "config_id": "x0875-bunched4",
+  "loading_x": 0.875,
+  "arrangement": "bunched4",
+  "a_reference_A": 4.061599657409625,
+  "vacancy_original_indices": [
+    5,
+    7,
+    33,
+    35
+  ],
+  "profile_id": "0e80098bcbd48638f3f7dc9cce920496614ee5d8c349644bed316c970f25b591",
+  "commissioned_probes": [
+    "near"
+  ],
+  "intentionally_omitted_probes": [
+    "clean"
+  ],
+  "sampling_authority": "axiom798 reaffirmed830",
+  "probes": {
+    "near": {
+      "source": {
+        "path": "loading_Pd/x0875-bunched4/k3/readout-near-20261114T0746Z.json",
+        "bytes": 86112,
+        "sha256": "36a8cbe26c7a6b444bbb6230607d3e20e90169a931e0fad99aaff33cd1c8fc9e"
+      },
+      "n_vac_NN": 2,
+      "direction_vector": [
+        -0.7071067811865475,
+        0.0,
+        0.7071067811865475
+      ],
+      "direction_label": "vacancy_facing_110_family",
+      "Kii_force_eV_A2": 0.4307391071798771,
+      "Kii_energy_eV_A2": 0.43651490014124444,
+      "sum_Jdd_eV_A2": 0.127988069512655,
+      "H_only_column_sum_eV_A2": 0.3027510376672221,
+      "F0_source_vector_eV_A": [
+        -0.10106812458248178,
+        0.052513683398346674,
+        0.05251368339830764
+      ],
+      "F0_parallel_eV_A": 0.1085987378901064,
+      "F0_source_norm_eV_A": 0.1254198536705395,
+      "sampled_source_forces_parallel": [
+        {
+          "role": "zero",
+          "u_A": 0.0,
+          "F_parallel_eV_A": 0.1085987378901064
+        },
+        {
+          "role": "minus",
+          "u_A": -0.03,
+          "F_parallel_eV_A": 0.12156803831578594
+        },
+        {
+          "role": "plus",
+          "u_A": 0.03,
+          "F_parallel_eV_A": 0.09572369188499331
+        }
+      ],
+      "linear_tangent_shift_estimate_A": 0.25212184377945385,
+      "linear_shift_scope": "F0/Kii ratio only, NOT a relaxed minimum or validated extrapolation beyond\u00b1.03A",
+      "shells": [
+        {
+          "radius_over_a": 0.7071067812,
+          "distance_A": 2.8719846602739425,
+          "occupied_multiplicity": 10,
+          "original_reference_multiplicity": 12,
+          "occupied_atom_indices": [
+            3,
+            9,
+            11,
+            17,
+            21,
+            25,
+            33,
+            35,
+            41,
+            51
+          ],
+          "occupied_original_indices": [
+            3,
+            11,
+            13,
+            19,
+            23,
+            27,
+            37,
+            39,
+            45,
+            55
+          ],
+          "vacant_original_indices": [
+            5,
+            7
+          ],
+          "vacant_multiplicity": 2,
+          "sum_Phi_vector_eV_A2": [
+            0.0070447463208669625,
+            0.08711022842414078,
+            -0.04826858151259391
+          ],
+          "mean_Phi_vector_eV_A2": [
+            0.0007044746320866962,
+            0.008711022842414078,
+            -0.004826858151259391
+          ],
+          "sum_Phi_dd_eV_A2": -0.039112429201034755,
+          "mean_Phi_dd_eV_A2": -0.003911242920103476,
+          "sum_pulling_Jdd_eV_A2": 0.039112429201034755,
+          "mean_pulling_Jdd_eV_A2": 0.003911242920103476,
+          "full_reference_equivalent_Jdd_sum_eV_A2": 0.04693491504124171
+        },
+        {
+          "radius_over_a": 1.0,
+          "distance_A": 4.061599657409625,
+          "occupied_multiplicity": 2,
+          "original_reference_multiplicity": 3,
+          "occupied_atom_indices": [
+            7,
+            15
+          ],
+          "occupied_original_indices": [
+            9,
+            17
+          ],
+          "vacant_original_indices": [
+            33
+          ],
+          "vacant_multiplicity": 1,
+          "sum_Phi_vector_eV_A2": [
+            0.010450574151122521,
+            -2.3338275490790037e-05,
+            -0.2355504883240305
+          ],
+          "mean_Phi_vector_eV_A2": [
+            0.005225287075561261,
+            -1.1669137745395019e-05,
+            -0.11777524416201525
+          ],
+          "sum_Phi_dd_eV_A2": -0.17394901945527622,
+          "mean_Phi_dd_eV_A2": -0.08697450972763811,
+          "sum_pulling_Jdd_eV_A2": 0.17394901945527622,
+          "mean_pulling_Jdd_eV_A2": 0.08697450972763811,
+          "full_reference_equivalent_Jdd_sum_eV_A2": 0.26092352918291434
+        },
+        {
+          "radius_over_a": 1.2247448714,
+          "distance_A": 4.974423350092435,
+          "occupied_multiplicity": 11,
+          "original_reference_multiplicity": 12,
+          "occupied_atom_indices": [
+            13,
+            19,
+            27,
+            29,
+            39,
+            43,
+            47,
+            49,
+            55,
+            57,
+            59
+          ],
+          "occupied_original_indices": [
+            15,
+            21,
+            29,
+            31,
+            43,
+            47,
+            51,
+            53,
+            59,
+            61,
+            63
+          ],
+          "vacant_original_indices": [
+            35
+          ],
+          "vacant_multiplicity": 1,
+          "sum_Phi_vector_eV_A2": [
+            -0.03515990892741708,
+            -0.003630979874130342,
+            0.0434454749172211
+          ],
+          "mean_Phi_vector_eV_A2": [
+            -0.0031963553570379163,
+            -0.0003300890794663947,
+            0.003949588628838282
+          ],
+          "sum_Phi_dd_eV_A2": 0.055582399954315145,
+          "mean_Phi_dd_eV_A2": 0.005052945450392286,
+          "sum_pulling_Jdd_eV_A2": -0.055582399954315145,
+          "mean_pulling_Jdd_eV_A2": -0.005052945450392286,
+          "full_reference_equivalent_Jdd_sum_eV_A2": -0.06063534540470743
+        },
+        {
+          "radius_over_a": 1.4142135624,
+          "distance_A": 5.743969320547885,
+          "occupied_multiplicity": 3,
+          "original_reference_multiplicity": 3,
+          "occupied_atom_indices": [
+            23,
+            37,
+            45
+          ],
+          "occupied_original_indices": [
+            25,
+            41,
+            49
+          ],
+          "vacant_original_indices": [],
+          "vacant_multiplicity": 0,
+          "sum_Phi_vector_eV_A2": [
+            -0.023382276732900446,
+            0.0009336125002528672,
+            0.011289689542894043
+          ],
+          "mean_Phi_vector_eV_A2": [
+            -0.0077940922443001485,
+            0.00031120416675095575,
+            0.0037632298476313474
+          ],
+          "sum_Phi_dd_eV_A2": 0.024516782470685568,
+          "mean_Phi_dd_eV_A2": 0.008172260823561856,
+          "sum_pulling_Jdd_eV_A2": -0.024516782470685568,
+          "mean_pulling_Jdd_eV_A2": -0.008172260823561856,
+          "full_reference_equivalent_Jdd_sum_eV_A2": -0.024516782470685568
+        },
+        {
+          "radius_over_a": 1.7320508076,
+          "distance_A": 7.034896966764224,
+          "occupied_multiplicity": 1,
+          "original_reference_multiplicity": 1,
+          "occupied_atom_indices": [
+            53
+          ],
+          "occupied_original_indices": [
+            57
+          ],
+          "vacant_original_indices": [],
+          "vacant_multiplicity": 0,
+          "sum_Phi_vector_eV_A2": [
+            -0.0033005618090824955,
+            0.0005455863104276981,
+            0.003734014652351468
+          ],
+          "mean_Phi_vector_eV_A2": [
+            -0.0033005618090824955,
+            0.0005455863104276981,
+            0.003734014652351468
+          ],
+          "sum_Phi_dd_eV_A2": 0.004974196718655222,
+          "mean_Phi_dd_eV_A2": 0.004974196718655222,
+          "sum_pulling_Jdd_eV_A2": -0.004974196718655222,
+          "mean_pulling_Jdd_eV_A2": -0.004974196718655222,
+          "full_reference_equivalent_Jdd_sum_eV_A2": -0.004974196718655222
+        }
+      ]
+    }
+  },
+  "point_sources": [
+    {
+      "path": "loading_Pd/x0875-bunched4/k3/zero.json",
+      "bytes": 33066,
+      "sha256": "875ed52f02cc792fe4dd843440ea14f2b209271f7efacf4fc33a2c0a16329572"
+    },
+    {
+      "path": "loading_Pd/x0875-bunched4/k3/near_probe_minus.json",
+      "bytes": 33460,
+      "sha256": "ebf935d40a16af9db1457cc50154bf239f1928e23a30718bde3cb1e07a3e3d69"
+    },
+    {
+      "path": "loading_Pd/x0875-bunched4/k3/near_probe_plus.json",
+      "bytes": 33442,
+      "sha256": "57ae5b13b9b1cc9ed9fda41eeba55616d32ce5e578b950a64c5e9e5e038790c3"
+    }
+  ],
+  "case_Native_core_minutes": "299.7422769500000000000000000",
+  "known_prior_plus_Native_core_minutes": "2512.273308049966666666666667",
+  "remaining_after_reserve_core_minutes": "467.726691950033333333333333",
+  "stationarity": "Registeredsite tangent, NOT a relaxedwell. Preserve actualbias orflagomission. No loadingquartic/principalaxis/fulltensor result.",
+  "normalization": "MeanJ per existingfolded periodicbond; latticeoccupancy once. Kii-sumJ is Hsourcecolumnsum, not globalheterogeneousGamma."
+}

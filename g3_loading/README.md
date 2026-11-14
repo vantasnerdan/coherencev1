@@ -48,6 +48,14 @@ Eight of the 32 sites are empty, grouped together, a = 4.0393 A (extrapolated al
 | 0.75 | 4.039 | 0 | 0.732 | 0.508 | 0.002 |
 | 0.75 | 4.039 | 4 | 0.477 | 0.246 | 0.136 |
 
-Two trends. Lower loading shrinks the lattice and stiffens a D that has all its neighbours. Each vacant neighbour softens the D beside it and adds a push toward the vacancy of roughly 0.035 eV/A per vacant neighbour (0.070 for two, 0.136 for four).
+| 0.875 bunched | 4.062 | 2 | 0.431 | 0.128 | 0.109 |
 
-The last case (0.875 bunched, near-vacancy probe only) and the fitted law follow.
+(The unlabelled 0.875 rows are the spread arrangement; the 0.75 rows are bunched.)
+
+Three results. Lower loading shrinks the lattice and stiffens a D that has all its neighbours. A vacant neighbour softens the D beside it and pushes it toward the vacancy. And the arrangement matters, not only the count: at the same loading, lattice spacing and number of vacant neighbours (two), a D in the bunched cell is softer (0.431 against 0.529), far more weakly coupled to its neighbours (0.128 against 0.399) and pushed harder (0.109 against 0.070 eV/A) than in the spread cell. A law in only (lattice spacing, number of vacant neighbours) cannot reproduce both; the fit keeps that misfit visible.
+
+## x = 0.875, vacancies bunched (`x0875_bunched/`)
+
+Four vacancies grouped together, a = 4.0616 A. Only the D beside the vacancies was probed (three calculations), to save budget.
+
+The fitted law follows.
