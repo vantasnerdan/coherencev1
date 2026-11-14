@@ -1,0 +1,30 @@
+{
+  "schema": "nih-force-infinity-sentinel-check-v1",
+  "gpaw_version": "26.7.0",
+  "package_source": {
+    "path": "gpaw/convergence_criteria.py",
+    "bytes": 15110,
+    "sha256": "0f0a3e956f2e0826219a3b5a3cee2161166867a0beffe498f7fee2cad4f6c92f"
+  },
+  "atol_eV_A": 0.0001,
+  "default_rtol": "inf",
+  "observed_implementation": "Nonfinite rtol selects error_threshold=self.atol; the printed OR-inf description does not disable the absolute force-change gate.",
+  "isolated_criterion_results": [
+    {
+      "force_x_eV_A": 0,
+      "converged": false,
+      "log_entry": ""
+    },
+    {
+      "force_x_eV_A": 0.0002,
+      "converged": false,
+      "log_entry": "-3.70"
+    },
+    {
+      "force_x_eV_A": 0.00025,
+      "converged": true,
+      "log_entry": "-4.30"
+    }
+  ],
+  "scope": "Bounded criterion-only check, not additional SCF or physical-accuracy evidence."
+}

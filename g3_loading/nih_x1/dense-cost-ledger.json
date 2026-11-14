@@ -1,0 +1,118 @@
+{
+  "schema": "dense-loading-cost-ledger-v1",
+  "budget_total_core_minutes": 3000,
+  "prior_Pd_core_minutes": "84.7279749333",
+  "new_dense_Native_core_minutes": "1006.584300783333333333333333",
+  "known_prior_plus_Native_core_minutes": "1091.312275716633333333333333",
+  "preparation_review_budget_reserve_core_minutes": "20",
+  "reserve_is_not_measured_CPU": true,
+  "remaining_Native_budget_after_reserve_core_minutes": "1888.687724283366666666666667",
+  "units": [
+    {
+      "phase": "dense-k3-probe-20261113t230628",
+      "properties": {
+        "Result": "timeout",
+        "MemoryPeak": "3838132224",
+        "CPUUsageNSec": "3583032324000",
+        "InvocationID": "78ea47f0ad034fec8af6b325b714d3eb"
+      },
+      "core_minutes": "59.7172054",
+      "source": {
+        "path": "unit-accounting-dense-k3-probe-20261113t230628.txt",
+        "bytes": 110,
+        "sha256": "801c2a4f44e34e9cf7cbeb8b0862dd102128962e4cc43e30a2d1991d6eeb1374"
+      }
+    },
+    {
+      "phase": "dense-force-k3-zero-20261113t234138",
+      "properties": {
+        "Result": "success",
+        "MemoryPeak": "4197597184",
+        "CPUUsageNSec": "5629804688000",
+        "InvocationID": "88795fd680cf4f33a9958ad192019ae2"
+      },
+      "core_minutes": "93.83007813333333333333333333",
+      "source": {
+        "path": "unit-accounting-dense-force-k3-zero-20261113t234138.txt",
+        "bytes": 110,
+        "sha256": "30624485a2ea5e91906f193fee0285532a9565845f605cae0cd2aeff696feb27"
+      }
+    },
+    {
+      "phase": "dense-force-k3-probe-20261113t234138",
+      "properties": {
+        "Result": "success",
+        "MemoryPeak": "6420377600",
+        "CPUUsageNSec": "6860276274000",
+        "InvocationID": "603356b7bdee4cb69afafcfe8e9996d3"
+      },
+      "core_minutes": "114.3379379",
+      "source": {
+        "path": "unit-accounting-dense-force-k3-probe-20261113t234138.txt",
+        "bytes": 110,
+        "sha256": "157a709483fa32dc58a1d3a3374991c14a9d0896c9cc2645dcc6f89016d75e94"
+      }
+    },
+    {
+      "phase": "dense-precision-zero-20261114t004758",
+      "properties": {
+        "Result": "success",
+        "MemoryPeak": "3619549184",
+        "CPUUsageNSec": "1060687241000",
+        "InvocationID": "6fd21f0e2b9e4b208179166f99f2892f"
+      },
+      "core_minutes": "17.67812068333333333333333333",
+      "source": {
+        "path": "unit-accounting-dense-precision-zero-20261114t004758.txt",
+        "bytes": 110,
+        "sha256": "b5d36ae9067cbc3188295e49a4e4c8859ef499c740ea1e58da5b4dad6c0a451e"
+      }
+    },
+    {
+      "phase": "dense-precision-probe-20261114t004758",
+      "properties": {
+        "Result": "success",
+        "MemoryPeak": "5333581824",
+        "CPUUsageNSec": "6737314329000",
+        "InvocationID": "a7e5761677bb4d0a998269c83b0246b3"
+      },
+      "core_minutes": "112.28857215",
+      "source": {
+        "path": "unit-accounting-dense-precision-probe-20261114t004758.txt",
+        "bytes": 110,
+        "sha256": "ea457590bad93803d3337232e02a5d312470feef48d645401d679f8a5a59909a"
+      }
+    },
+    {
+      "phase": "dense-local-well100-20261114t011807",
+      "properties": {
+        "Result": "success",
+        "MemoryPeak": "5942476800",
+        "CPUUsageNSec": "18097266780000",
+        "InvocationID": "fba41e54a4ad43d2a8e5f18a7cdcc27a"
+      },
+      "core_minutes": "301.621113",
+      "source": {
+        "path": "unit-accounting-dense-local-well100-20261114t011807.txt",
+        "bytes": 111,
+        "sha256": "29603f737216164ee447ea0832fccc66135881b699736af687f6c13e475a62d2"
+      }
+    },
+    {
+      "phase": "dense-local-well111-20261114t011807",
+      "properties": {
+        "Result": "success",
+        "MemoryPeak": "6245429248",
+        "CPUUsageNSec": "18426676411000",
+        "InvocationID": "4c7d381946b44dc8929f336ac92b9e26"
+      },
+      "core_minutes": "307.1112735166666666666666667",
+      "source": {
+        "path": "unit-accounting-dense-local-well111-20261114t011807.txt",
+        "bytes": 111,
+        "sha256": "222e2e71e246643bced4abe275f73956244bc5b5362f623f3e21236d0d0f9d90"
+      }
+    }
+  ],
+  "scope": "All actual new dense Native work including failed and rejected-profile runs; x1 reused once by loading; prior Pd already includes its earlier failure costs; no Ni or PartA double charge"
+}

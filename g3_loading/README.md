@@ -68,3 +68,15 @@ For the on-site stiffness, c_eps = -14.4 eV/A^2 and c_n = -0.077 eV/A^2 per vaca
 A second version with one extra term (number of adjacent vacancy pairs among the nearest neighbours, `loading-law-motif.json`) fits the computed points slightly better (RMS 0.043) but predicts a left-out cell much worse (error up to 0.40), so the two-term law is the one to use. It carries the trends with loading; it does not distinguish bunched from spread arrangements, and the three computed cells are the reference for that.
 
 Cost of the whole loading set, including the x = 1 well: about 2,510 core-minutes.
+
+## NiH x = 1 check (`nih_x1/`)
+
+The NiH single-hydrogen well in `g2_input` was computed with a 400 eV cutoff and one k-point. Repeating the zero and +/-0.03 A probe with the settings adopted above (500 eV, 3x3x3 k-points, tight forces), a = 3.732 A:
+
+| eV/A^2 | g2_input | Here | Change |
+|---|---:|---:|---:|
+| On-site stiffness | 1.468 | 1.712 | +17% |
+| Sum of neighbour couplings | 0.234 | 0.676 | +189% |
+| Collective (on-site minus couplings) | 1.234 | 1.036 | -16% |
+
+The collective value now agrees with the two-atom-cell result (1.050) to 1.3 percent, which the old values did not. These replace the `g2_input` NiH local inputs. The NiH quartic coefficients were not recomputed here.

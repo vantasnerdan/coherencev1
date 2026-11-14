@@ -1,0 +1,33 @@
+{
+  "schema": "nih-control-cumulative-cost-v1",
+  "previous_ledger": {
+    "path": "receipts/loading-cumulative-loading-x0875-bunched4-near-20261114t071634.json",
+    "bytes": 4854,
+    "sha256": "13bd2a769e1e14800db9d6aaa684b7b8117edc418e36ec98be58479a78d6069b"
+  },
+  "Ni_control_units": [
+    {
+      "phase": "nih-k3-zero-20261114t082904",
+      "properties": {
+        "Result": "success",
+        "MemoryPeak": "3655610368",
+        "CPUUsageNSec": "5988386191000",
+        "InvocationID": "c3314a104ab94c33a0cd22eaee93d15e"
+      },
+      "source": {
+        "path": "unit-accounting-nih-k3-zero-20261114t082904.txt",
+        "bytes": 110,
+        "sha256": "7fce85f98c66fa5cf47e06c6af5714cd39ca295389b643307a2193aaa531eb37"
+      },
+      "core_minutes": "99.80643651666666666666666667"
+    }
+  ],
+  "known_prior_plus_Native_core_minutes": "2612.079744566633333333333334",
+  "preparation_review_budget_reserve_core_minutes": "20",
+  "remaining_after_reserve_core_minutes": "367.920255433366666666666666",
+  "whole_cap_core_minutes": "3000",
+  "planned_probe_runtime_core_minutes_max": "240",
+  "planned_probe_stop_core_minutes_max": "6",
+  "decision": "admit actual signed pair; no quartics or unchanged retries",
+  "decimal_precision": 28
+}
