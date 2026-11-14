@@ -49,3 +49,21 @@ Figures: `results/*.png` (occupied sites and displacement in one layer), `map_re
 ## The decay rate is not measured (`loss_table.py`, `loss_table.json`)
 
 The pump threshold is proportional to how fast the vibration decays. No measured decay rate for a single hydrogen vibration was found for NiH, PdH or PdD: the published neutron data give the width of a whole band of vibrations, or the instrument resolution, and neither is a lifetime. The threshold is therefore unknown. Two labelled scenarios show how far it could range, without implying the real value lies between them: the exploratory loss used in these runs gives a stiffness-modulation threshold of 1.7 percent; a published calculated value for PdH at 295 K (Paulatto et al., arXiv:1411.5628; calculated, not measured) gives about 23 percent.
+
+## Does the pumped state stay in step over distance? (`coherence/`)
+
+    cd coherence && python3 replot_phase.py     (redraws the figures from saved data; no simulation)
+
+Cold (0 K), full loading, pump at 8 percent stiffness modulation. The oscillation is not uniform: neighbouring sheets of hydrogen move in opposite directions, in stripes with a period of 0.53 nm. The measure below is how far that striped pattern keeps the same phase.
+
+| Sites | Phase length at 41 ps |
+|---:|---:|
+| 13,824 | 1.44 nm |
+| 110,592 | 2.01 nm |
+| 1,000,000 | 2.16 nm |
+
+- **It does not grow with the size of the system.** A million sites give the same length as a hundred thousand. The lattice breaks into patches a few nanometres across, each striped along a different diagonal, with walls between them (`coherence/cold_x1_h008_L100_t40_phase.png`).
+- **It is still growing in time.** Between the windows 21-41 ps and 41-83 ps the fraction of the lattice in the leading pattern rises from 0.16 to 0.29: the patches are coarsening. The runs do not resolve how fast, or where it stops.
+- **At 300 K there is no order beyond nearest neighbours.** A stronger or retuned pump raises the amplitude of the motion but not its range, which stays comparable to an unpumped lattice.
+
+The length quoted is an integral of the phase correlation, not a fitted decay length. All of this is for NiH with the assumed decay rate, which is not measured.
