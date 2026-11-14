@@ -1,0 +1,20 @@
+{
+  "schema": "nih-one-point-actual-consumer-proof-v1",
+  "readout": {
+    "path": "dense_Ni/k3/quartic/readout-100-final-20261114T1001Z.json",
+    "bytes": 13939,
+    "sha256": "9055523c121048655c929e56b5aec06cb1ab44c464b48c7ffe30a8d6d746764b"
+  },
+  "actual_point": {
+    "path": "dense_Ni/k3/quartic/q100_u024.json",
+    "bytes": 24967,
+    "sha256": "ea95b1dd1234b961785ef7aa5dedcdabfd6aa0e3966427138405bd2cc42b7d56"
+  },
+  "actual_legacy_and_exact_rational_oracle_max_error": 0,
+  "algebra_tolerance": 1e-10,
+  "cold_GPW_PAW_free_actual_reader_equal": true,
+  "wrong_100_as_111_returncode": 1,
+  "wrong_100_as_111_refusal": "ValueError: NiH quartic signed direction/positions differ",
+  "no_wrong_output": true,
+  "scope": "Actual100 numerical consumer; no111SCF or physical111quartic claimed. Algebra agreement is not a convergence/physical-accuracy bound."
+}

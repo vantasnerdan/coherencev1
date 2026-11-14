@@ -1,0 +1,33 @@
+{
+  "schema": "nih-active-convergence-source-v1",
+  "points": [
+    {
+      "point": "zero",
+      "raw_log": {
+        "path": "dense_Ni/k3/zero.nih-k3-zero-20261114t082904.out",
+        "bytes": 18849,
+        "sha256": "ad4494c7878076d31359296acdc3d7adbb6b397bd41392e8172c28d3b115543b"
+      },
+      "criteria_excerpt": "convergence criteria:\n- Maximum [total energy] change in last 3 cyles: 1e-07 eV / valence electron\n- Maximum integral of absolute [dens]ity change: 0.0001 electrons / valence electron\n- Maximum change in the atomic [forces] across last 2 cycles: 0.0001 eV/Ang OR\nMaximum error relative to the maximum force is below inf\n- Maximum integral of absolute [eigenst]ate change: 4e-08 eV^2 / valence electron\nmaximum number of iterations: 80"
+    },
+    {
+      "point": "probe_minus",
+      "raw_log": {
+        "path": "dense_Ni/k3/probe_minus.nih-k3-probe-20261114t084925.out",
+        "bytes": 14982,
+        "sha256": "a3d92428041cb2f683bbb99794505e6cd890831270e0e1969053b8e1b42f596c"
+      },
+      "criteria_excerpt": "convergence criteria:\n- Maximum [total energy] change in last 3 cyles: 1e-07 eV / valence electron\n- Maximum integral of absolute [dens]ity change: 0.0001 electrons / valence electron\n- Maximum change in the atomic [forces] across last 2 cycles: 0.0001 eV/Ang OR\nMaximum error relative to the maximum force is below inf\n- Maximum integral of absolute [eigenst]ate change: 4e-08 eV^2 / valence electron\nmaximum number of iterations: 80"
+    },
+    {
+      "point": "probe_plus",
+      "raw_log": {
+        "path": "dense_Ni/k3/probe_plus.nih-k3-probe-20261114t084925.out",
+        "bytes": 14827,
+        "sha256": "6c2c350e34eb3c29835a585e9ee5d518d1db82814245b3cb62c72168a1101584"
+      },
+      "criteria_excerpt": "convergence criteria:\n- Maximum [total energy] change in last 3 cyles: 1e-07 eV / valence electron\n- Maximum integral of absolute [dens]ity change: 0.0001 electrons / valence electron\n- Maximum change in the atomic [forces] across last 2 cycles: 0.0001 eV/Ang OR\nMaximum error relative to the maximum force is below inf\n- Maximum integral of absolute [eigenst]ate change: 4e-08 eV^2 / valence electron\nmaximum number of iterations: 80"
+    }
+  ],
+  "scope": "Actual completed log excerpts; targets are not an absolute curvature-accuracy certificate. Raw logs intentionally excluded from public bundle."
+}

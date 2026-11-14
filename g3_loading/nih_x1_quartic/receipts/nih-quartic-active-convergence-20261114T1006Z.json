@@ -1,0 +1,11 @@
+{
+  "schema": "nih-quartic-active-criteria-source-v1",
+  "point": "100_u024",
+  "raw_log": {
+    "path": "dense_Ni/k3/quartic/q100.nih-q100-20261114t094100.out",
+    "bytes": 15859,
+    "sha256": "734c7bd3206f62c74f2b20f27d1cb9a77dc82ef2f0b85c9c3151c026a88e885a"
+  },
+  "criteria_excerpt": "convergence criteria:\n- Maximum [total energy] change in last 3 cyles: 1e-07 eV / valence electron\n- Maximum integral of absolute [dens]ity change: 0.0001 electrons / valence electron\n- Maximum change in the atomic [forces] across last 2 cycles: 0.0001 eV/Ang OR\nMaximum error relative to the maximum force is below inf\n- Maximum integral of absolute [eigenst]ate change: 4e-08 eV^2 / valence electron\nmaximum number of iterations: 80",
+  "force_sentinel_semantics": "As checked in the unchanged base bundle: nonfinite rtol selects absolute tolerance, not a disabled gate. No new sentinel/SCF test."
+}

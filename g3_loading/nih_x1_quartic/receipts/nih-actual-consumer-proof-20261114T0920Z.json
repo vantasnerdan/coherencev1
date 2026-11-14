@@ -1,0 +1,40 @@
+{
+  "schema": "nih-actual-consumer-proof-v1",
+  "readout": {
+    "path": "dense_Ni/k3/readout-20261114T0917Z.json",
+    "bytes": 47403,
+    "sha256": "ca59c4098b718b67647d493cf98e5cde872d0ba1bdbafab5e6c0b496456e00c3"
+  },
+  "point_sources": {
+    "zero": {
+      "path": "dense_Ni/k3/zero.json",
+      "bytes": 22064,
+      "sha256": "f8db5b4aeadf8ee82b1ef6e980588aabf6705a93534c9d0b6e7499d4dc80af50"
+    },
+    "probe_minus": {
+      "path": "dense_Ni/k3/probe_minus.json",
+      "bytes": 22202,
+      "sha256": "bcf7c27c69db9c3734522b7ea0ddb011d958199ea84704f02d60739b94b11266"
+    },
+    "probe_plus": {
+      "path": "dense_Ni/k3/probe_plus.json",
+      "bytes": 22202,
+      "sha256": "cb5c2a0ad1012983d59c06b1dbe2a517b3f943cf55bc64476b262febaf15d249"
+    }
+  },
+  "direct_64_ion_force_column_errors_eV_A2": {
+    "Kii": 0,
+    "sumJ": 2.220446049250313e-16,
+    "Hq0": 0,
+    "all_ion_column": 0,
+    "raw_acoustic": 3.191891195797325e-16
+  },
+  "algebra_tolerance_eV_A2": 1e-12,
+  "relative_energy_force_difference": 0.001274401180953785,
+  "raw_acoustic_over_abs_Kii": 0.021435157032245487,
+  "diagnostic_admission_ceiling_each": 0.05,
+  "cold_GPW_PAW_free_actual_reader_equal": true,
+  "wrong_signed_pair_returncode": 1,
+  "wrong_signed_pair_refusal": "ValueError: NiH displacement differs",
+  "no_output_after_wrong_signed_pair": true
+}
