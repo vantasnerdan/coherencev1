@@ -1,0 +1,254 @@
+{
+  "schema": "central-vacancy-bias-v1",
+  "authority": "Axiom812/819",
+  "force_law": "F0_i=sum_s beta_s sum_{vacant physical reference images j in shell s} unit(R_ij)",
+  "shell_coefficients_eV_A": {
+    "1": 0.07073357955945704,
+    "2": 0.0,
+    "3": -0.00013426055207788404
+  },
+  "second_shell_policy": "FIXED ZERO ASSUMPTION by819;2a-periodic source cells cancel the odd-force feature and cannot measure beta2",
+  "fitted_shells": [
+    1,
+    3
+  ],
+  "fit_rank": 2,
+  "fit_singular_values": [
+    18.715759797667552,
+    10.788280764916982
+  ],
+  "weighting": "Equal weight per Cartesian force component, each measured D ONCE; no duplicate primitive-cover rows",
+  "RMS_definition": "vector_RMS=sqrt(sum_i ||Fpred-Fmeas||\u00b2/N_D); component_RMS=vector_RMS/sqrt(3)",
+  "fit_error": {
+    "D_vectors": 80,
+    "vector_RMS_eV_A": 0.004129553346197149,
+    "component_RMS_eV_A": 0.002384198736059844,
+    "maximum_vector_residual_eV_A": 0.019113440098681565
+  },
+  "per_cell_error": [
+    {
+      "case_id": "x0875-spread4",
+      "loading_x": 0.875,
+      "a_reference_A": 4.061599657409625,
+      "D_vectors": 28,
+      "vector_RMS_eV_A": 0.002393406851092053,
+      "component_RMS_eV_A": 0.0013818340897582913,
+      "maximum_vector_residual_eV_A": 0.004536753207746062
+    },
+    {
+      "case_id": "x0750-bunched8",
+      "loading_x": 0.75,
+      "a_reference_A": 4.0393221785186055,
+      "D_vectors": 24,
+      "vector_RMS_eV_A": 0.006110918384891098,
+      "component_RMS_eV_A": 0.0035281403745127085,
+      "maximum_vector_residual_eV_A": 0.019113440098681565
+    },
+    {
+      "case_id": "x0875-bunched4",
+      "loading_x": 0.875,
+      "a_reference_A": 4.061599657409625,
+      "D_vectors": 28,
+      "vector_RMS_eV_A": 0.0033145889910468013,
+      "component_RMS_eV_A": 0.001913678846233841,
+      "maximum_vector_residual_eV_A": 0.0038312896171324128
+    }
+  ],
+  "leave_one_cell_out": [
+    {
+      "held_out_cell": "x0875-spread4",
+      "training_cells": [
+        "x0750-bunched8",
+        "x0875-bunched4"
+      ],
+      "training_rank": 2,
+      "training_singular_values": [
+        17.840394188581957,
+        9.186239810862647
+      ],
+      "coefficients13_eV_A": [
+        0.07013502099557264,
+        0.00016011637021657796
+      ],
+      "D_vectors": 28,
+      "vector_RMS_eV_A": 0.0029876994548499306,
+      "component_RMS_eV_A": 0.0017249490845153057,
+      "maximum_vector_residual_eV_A": 0.005383242846651052
+    },
+    {
+      "held_out_cell": "x0750-bunched8",
+      "training_cells": [
+        "x0875-spread4",
+        "x0875-bunched4"
+      ],
+      "training_rank": 2,
+      "training_singular_values": [
+        11.860042392826708,
+        8.206058398546359
+      ],
+      "coefficients13_eV_A": [
+        0.07265472610283037,
+        -0.00018266858356214902
+      ],
+      "D_vectors": 24,
+      "vector_RMS_eV_A": 0.008634629008462012,
+      "component_RMS_eV_A": 0.004985205382388095,
+      "maximum_vector_residual_eV_A": 0.024802564755546513
+    },
+    {
+      "held_out_cell": "x0875-bunched4",
+      "training_cells": [
+        "x0875-spread4",
+        "x0750-bunched8"
+      ],
+      "training_rank": 2,
+      "training_singular_values": [
+        15.556614800125955,
+        8.981002317512717
+      ],
+      "coefficients13_eV_A": [
+        0.06994005948595,
+        -0.00019599187134801838
+      ],
+      "D_vectors": 28,
+      "vector_RMS_eV_A": 0.004255957027196227,
+      "component_RMS_eV_A": 0.0024571779353112218,
+      "maximum_vector_residual_eV_A": 0.005038942172286915
+    }
+  ],
+  "accuracy_scope": "Calibration/held-out errors on these cells, NOT guaranteed arbitrary-arrangement accuracy or confidence bounds",
+  "source_state": "Registered unrelaxed sites; law is the constant F0 term, not a relaxed minimum or a new displacement-dependent spring",
+  "strain_transfer": "Directions are reference lattice lines; extra strain dependence of F0 is unmeasured and frozen",
+  "sources": [
+    {
+      "case_id": "x0875-spread4",
+      "loading_x": 0.875,
+      "a_reference_A": 4.061599657409625,
+      "H_vectors": 28,
+      "original_H_indices": [
+        1,
+        3,
+        7,
+        9,
+        11,
+        15,
+        19,
+        21,
+        23,
+        25,
+        27,
+        29,
+        31,
+        33,
+        35,
+        37,
+        39,
+        41,
+        43,
+        45,
+        47,
+        51,
+        53,
+        55,
+        57,
+        59,
+        61,
+        63
+      ],
+      "zero_SHA256": "f99215a4341073bccd9f53f5463a20eaef43f4ff6ab6821a34bfeeaf2735735e",
+      "config_SHA256": "e6d589693d683285cf1ba1ab6322fee8b4a31b8b7bc67139162fbc3a76a8b76f",
+      "second_shell_feature_max_abs": 0.0
+    },
+    {
+      "case_id": "x0750-bunched8",
+      "loading_x": 0.75,
+      "a_reference_A": 4.0393221785186055,
+      "H_vectors": 24,
+      "original_H_indices": [
+        1,
+        3,
+        9,
+        11,
+        15,
+        17,
+        19,
+        21,
+        25,
+        27,
+        29,
+        31,
+        37,
+        39,
+        45,
+        47,
+        49,
+        51,
+        53,
+        55,
+        57,
+        59,
+        61,
+        63
+      ],
+      "zero_SHA256": "6a1f0406d6883e6ba2b7a45ab53835b6fc2b5b2b77ef6926bdc2c2b5e95a8d7f",
+      "config_SHA256": "4da6c333404397aaf42858246c674f9f4da8d4df909b45355e121ddfe9a57416",
+      "second_shell_feature_max_abs": 0.0
+    },
+    {
+      "case_id": "x0875-bunched4",
+      "loading_x": 0.875,
+      "a_reference_A": 4.061599657409625,
+      "H_vectors": 28,
+      "original_H_indices": [
+        1,
+        3,
+        9,
+        11,
+        13,
+        15,
+        17,
+        19,
+        21,
+        23,
+        25,
+        27,
+        29,
+        31,
+        37,
+        39,
+        41,
+        43,
+        45,
+        47,
+        49,
+        51,
+        53,
+        55,
+        57,
+        59,
+        61,
+        63
+      ],
+      "zero_SHA256": "875ed52f02cc792fe4dd843440ea14f2b209271f7efacf4fc33a2c0a16329572",
+      "config_SHA256": "15bf08c3fa5154c0525c465000bf5dcec8f90cbfee7d225c385d3c6127de3ae7",
+      "second_shell_feature_max_abs": 0.0
+    }
+  ],
+  "feature_contract": {
+    "shells": [
+      1,
+      2,
+      3
+    ],
+    "physical_image_neighbors_per_shell": [
+      12,
+      6,
+      24
+    ],
+    "units": "unit-vector sums; beta_s in eV/A per physical vacant-neighbor image",
+    "boundary": "periodic reference occupation, independent of open/clamped displacement exterior",
+    "half_cell_ties": "Both opposite physical images retained; odd force contributions may cancel exactly",
+    "rank_scope": "Zero/unidentified columns must not be reported as measured zero coefficients"
+  },
+  "single_loading_sensitivity": "One non2a-periodic large occupancy; SAME seed/other settings; beta2=0,+beta1/2,-beta1/2. Scenarios, not calibrated bounds; no additional cases on this point."
+}

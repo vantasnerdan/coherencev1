@@ -1,0 +1,63 @@
+{
+  "scope": "Algebraic measurement probe ONLY; amplitudes below are injected controls, not material predictions",
+  "clock": "run_case classical Gamma Hartree reference, pump_ratio1; NOT the distinct quantum RPA pole",
+  "sampling_profile": {
+    "dt": 0.15,
+    "steps": 4096,
+    "stride": 2,
+    "pump_ratio": 1.0
+  },
+  "sample_count": 1024,
+  "first_last_sample_steps": [
+    2048,
+    4094
+  ],
+  "time_interval_ps": [
+    5.777179068156666,
+    11.545899601806516
+  ],
+  "angular_half_pump_frequency_code": 1.1885623080944805,
+  "Gram_rank": 5,
+  "Gram_condition_number": 2.0038782905317203,
+  "pure_DC_plus_pump": {
+    "legacy_DC_only_false_half_amplitude_A": 4.6397130837541e-06,
+    "joint_false_half_amplitude_A": 5.866193929053783e-19,
+    "DC_max_error_A": 0.0,
+    "pump_complex_max_error_A": 8.940560153363745e-19
+  },
+  "plus_true_half_pump": {
+    "injected_half_vector_norm_A": 0.008616263691415205,
+    "half_complex_max_error_A": 2.637977740025101e-18,
+    "DC_max_error_A": 3.469446951953614e-18,
+    "pump_complex_max_error_A": 8.673617379884035e-19
+  },
+  "injected_control": {
+    "DC_vector_A": [
+      -0.021213203435596423,
+      0.0,
+      0.021213203435596423
+    ],
+    "pump_real_A": [
+      -0.004242640687119285,
+      0.0,
+      0.004242640687119285
+    ],
+    "pump_imag_A": [
+      0.0014849242404917497,
+      0.0,
+      -0.0014849242404917497
+    ],
+    "half_real_A": [
+      -0.00565685424949238,
+      0.0,
+      0.00565685424949238
+    ],
+    "half_imag_A": [
+      -0.002262741699796952,
+      0.0,
+      0.002262741699796952
+    ]
+  },
+  "mathematical_scope": "Full-rank joint least squares annihilates the DC/2Omega nuisance columns exactly in exact arithmetic; this is not an alias-free certificate for arbitrary unmodelled frequencies",
+  "lattice_source_SHA256": "75b31cdb6310127d2e0eec665298c017991a1e2a413c985cf79ee718784749db"
+}

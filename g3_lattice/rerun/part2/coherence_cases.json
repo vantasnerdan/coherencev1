@@ -1,0 +1,192 @@
+{
+  "decision": "Does the accepted pumped NiH field retain phase correlations beyond a few occupied neighbour spacings, or does raw/finite-q long range require a larger box? Keep the accepted force, loss, dt, seed and clocks.",
+  "resource_case": {
+    "expected_seconds_per_pilot": 35,
+    "threads_per_case": 1,
+    "maximum_parallel_cases": 4,
+    "expected_peak_MiB_per_case": 120,
+    "pilot_elapsed_ps": 20.72,
+    "safety": "Only expand size when correlations approach the inscribed box; no single job expected near two hours.",
+    "extension": {
+      "decision": "Cold full-loading C_phi retains a finite-q tail0.51 at the24-box edge; test a48 box and later time. Diluted case has strong lattice-shell revivals, not a valid short exponential xi. Thermal cases need a later window, not a larger box. Near-threshold duration follows the accepted linear growth guide.",
+      "expected_seconds_L48_t40": 450,
+      "expected_peak_MiB_L48": 350,
+      "expected_seconds_L24_t80": 110,
+      "maximum_parallel_cases": 4,
+      "threads_per_case": 1,
+      "no_new_force_or_loss": true
+    },
+    "million_site_decision": {
+      "observation": "At110592 sites and41.45ps the cold full-loading carrier-removed phase correlation retains a0.154 tail across the4.4784nm radius and a finite-q coherent fraction0.167. A million-site box is required to distinguish a finite coarsening range from box-scale order. Diluted/thermal cases do not require a million-site run.",
+      "expected_seconds": 5000,
+      "estimate": "Measured460CPU seconds at48^3, scaled by N log N to100^3; about83minutes, conservatively below2hours. This is one physical41.45ps case, not a split longer job.",
+      "threads": 1,
+      "expected_peak_GiB": 1.5,
+      "available_memory_GiB_before_launch": 29.5,
+      "other_cases": "48^3 cold80ps compares coarsening at fixed box;24^3 h=.04 at80ps and x=.5 at40ps resolve duration/matched-size ambiguity.",
+      "maximum_parallel_cases": 4
+    }
+  },
+  "cases": [
+    {
+      "label": "cold_x1_h008_t20",
+      "L": 24,
+      "x": 1.0,
+      "temperature_K": 0,
+      "pump_h": 0.08,
+      "pump_ratio": 1.0,
+      "steps": 8192,
+      "dt": 0.3,
+      "seed": 13
+    },
+    {
+      "label": "hot_x1_h008_coldclock_t20",
+      "L": 24,
+      "x": 1.0,
+      "temperature_K": 300,
+      "pump_h": 0.08,
+      "pump_ratio": 1.0,
+      "steps": 8192,
+      "dt": 0.3,
+      "seed": 13
+    },
+    {
+      "label": "hot_x1_h008_raisedclock_t20",
+      "L": 24,
+      "x": 1.0,
+      "temperature_K": 300,
+      "pump_h": 0.08,
+      "pump_ratio": 1.1,
+      "steps": 8192,
+      "dt": 0.3,
+      "seed": 13
+    },
+    {
+      "label": "cold_x05_h008_t20",
+      "L": 24,
+      "x": 0.5,
+      "temperature_K": 0,
+      "pump_h": 0.08,
+      "pump_ratio": 1.0,
+      "steps": 8192,
+      "dt": 0.3,
+      "seed": 13
+    },
+    {
+      "label": "cold_x1_h008_L48_t40",
+      "L": 48,
+      "x": 1.0,
+      "temperature_K": 0.0,
+      "pump_h": 0.08,
+      "pump_ratio": 1.0,
+      "steps": 16384,
+      "dt": 0.3,
+      "seed": 13
+    },
+    {
+      "label": "cold_x05_h008_L48_t40",
+      "L": 48,
+      "x": 0.5,
+      "temperature_K": 0.0,
+      "pump_h": 0.08,
+      "pump_ratio": 1.0,
+      "steps": 16384,
+      "dt": 0.3,
+      "seed": 13
+    },
+    {
+      "label": "cold_x1_h008_t40",
+      "L": 24,
+      "x": 1.0,
+      "temperature_K": 0.0,
+      "pump_h": 0.08,
+      "pump_ratio": 1.0,
+      "steps": 16384,
+      "dt": 0.3,
+      "seed": 13
+    },
+    {
+      "label": "hot_x1_h008_raisedclock_t40",
+      "L": 24,
+      "x": 1.0,
+      "temperature_K": 300.0,
+      "pump_h": 0.08,
+      "pump_ratio": 1.1,
+      "steps": 16384,
+      "dt": 0.3,
+      "seed": 13
+    },
+    {
+      "label": "hot_x1_h008_coldclock_t40",
+      "L": 24,
+      "x": 1.0,
+      "temperature_K": 300.0,
+      "pump_h": 0.08,
+      "pump_ratio": 1.0,
+      "steps": 16384,
+      "dt": 0.3,
+      "seed": 13
+    },
+    {
+      "label": "cold_x075_h008_t40",
+      "L": 24,
+      "x": 0.75,
+      "temperature_K": 0.0,
+      "pump_h": 0.08,
+      "pump_ratio": 1.0,
+      "steps": 16384,
+      "dt": 0.3,
+      "seed": 13
+    },
+    {
+      "label": "cold_x1_h001_t40",
+      "L": 24,
+      "x": 1.0,
+      "temperature_K": 0.0,
+      "pump_h": 0.01,
+      "pump_ratio": 1.0,
+      "steps": 16384,
+      "dt": 0.3,
+      "seed": 13
+    },
+    {
+      "label": "cold_x1_onsetguide_t80",
+      "L": 24,
+      "x": 1.0,
+      "temperature_K": 0.0,
+      "pump_h": 0.0176806193318172,
+      "pump_ratio": 1.0,
+      "steps": 32768,
+      "dt": 0.3,
+      "seed": 13
+    },
+    {
+      "label": "cold_x1_h002_t80",
+      "L": 24,
+      "x": 1.0,
+      "temperature_K": 0.0,
+      "pump_h": 0.02,
+      "pump_ratio": 1.0,
+      "steps": 32768,
+      "dt": 0.3,
+      "seed": 13
+    },
+    {
+      "label": "cold_x1_h004_t40",
+      "L": 24,
+      "x": 1.0,
+      "temperature_K": 0.0,
+      "pump_h": 0.04,
+      "pump_ratio": 1.0,
+      "steps": 16384,
+      "dt": 0.3,
+      "seed": 13
+    },
+    {"label":"cold_x1_h008_L100_t40","L":100,"x":1.0,"temperature_K":0,"pump_h":0.08,"pump_ratio":1.0,"steps":16384,"dt":0.3,"seed":13},
+    {"label":"cold_x1_h008_L48_t80","L":48,"x":1.0,"temperature_K":0,"pump_h":0.08,"pump_ratio":1.0,"steps":32768,"dt":0.3,"seed":13},
+    {"label":"cold_x1_h004_t80","L":24,"x":1.0,"temperature_K":0,"pump_h":0.04,"pump_ratio":1.0,"steps":32768,"dt":0.3,"seed":13},
+    {"label":"cold_x05_h008_t40","L":24,"x":0.5,"temperature_K":0,"pump_h":0.08,"pump_ratio":1.0,"steps":16384,"dt":0.3,"seed":13},
+    {"label":"hot_x1_h000_coldclock_t40","L":24,"x":1.0,"temperature_K":300,"pump_h":0.0,"pump_ratio":1.0,"steps":16384,"dt":0.3,"seed":13},
+    {"label":"cold_x1_h008_L48_epochs","L":48,"x":1.0,"temperature_K":0,"pump_h":0.08,"pump_ratio":1.0,"steps":32768,"dt":0.3,"seed":13,"observe_start_step":8192,"phase_epoch_steps":[8192,16384,32768],"scientific_decision":"Separate genuine time evolution from longer lock-in filtering by equal16-cycle envelopes in20.7–41.45ps and41.45–82.9ps epochs of one unchanged trajectory.","expected_seconds":1100,"threads":1,"expected_peak_MiB":160}
+  ]
+}

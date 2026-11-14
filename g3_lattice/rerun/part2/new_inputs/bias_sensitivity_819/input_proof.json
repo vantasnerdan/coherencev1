@@ -1,0 +1,58 @@
+{
+  "authority": "819",
+  "scope": "Coefficient-free input preparation, no force fit or dynamics",
+  "case": {
+    "L": 32,
+    "x": 0.875,
+    "arrangement": "random",
+    "seed": 13
+  },
+  "sites": 32768,
+  "occupied_sites": 28672,
+  "actual_loading": 0.875,
+  "occupation_SHA256": "522d47e2a9a92d31c4dc1fb25248a4ffd79cee61198c068bf0b623980891afd2",
+  "conventional_2a_translation_index_vectors": [
+    [
+      2,
+      -2,
+      0
+    ],
+    [
+      2,
+      2,
+      0
+    ],
+    [
+      -2,
+      2,
+      4
+    ]
+  ],
+  "invariant_under_2a_translations": [
+    false,
+    false,
+    false
+  ],
+  "shell2_vector_RMS": 0.8112971866091981,
+  "shell2_nonzero_occupied_fraction": 0.5254603794642857,
+  "shell2_max_vector_norm": 1.7320508075688772,
+  "scenario_delta_force_RMS_per_abs_C1": 0.40564859330459907,
+  "scenario_policy": "SAME occupancy/seed/pump/model, C2=0,+C1/2,-C1/2; scenarios, not calibrated bounds; no further cases",
+  "coefficient_status": "C1/C3 require joint b/c/d fit; no numeric coefficient is supplied here",
+  "feature_contract": {
+    "shells": [
+      1,
+      2,
+      3
+    ],
+    "physical_image_neighbors_per_shell": [
+      12,
+      6,
+      24
+    ],
+    "units": "unit-vector sums; beta_s in eV/A per physical vacant-neighbor image",
+    "boundary": "periodic reference occupation, independent of open/clamped displacement exterior",
+    "half_cell_ties": "Both opposite physical images retained; odd force contributions may cancel exactly",
+    "rank_scope": "Zero/unidentified columns must not be reported as measured zero coefficients"
+  }
+}

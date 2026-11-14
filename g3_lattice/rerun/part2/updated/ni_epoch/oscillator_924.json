@@ -1,0 +1,82 @@
+{
+  "source": {
+    "authority_entry": 949,
+    "producer_entry": 924,
+    "frozen_quantum_result": "updated/ni_epoch/quantum.json",
+    "late_K4_100_eV_A4": 16.16569693679319,
+    "late_100_fit": "One +0.24 angstrom point; joint energy/force fit at fixed893 K2. Not a full-amplitude or two-direction matched-well validation.",
+    "late_100_Native_finish_UTC": "2026-11-14T09:59:07Z",
+    "producer_archive_SHA256": "361033cda00fcd08be36fcc71b92db11e1375464d4272886ab642fc97fc4506d",
+    "111_policy": "Retain401 1.1283657157232418 eV/angstrom4; no new111 computation exists.",
+    "trajectory_policy": "Keep the completed893+401/401 110592-site T0 trajectory unchanged. This new row is oscillator-only."
+  },
+  "temperature_scope": "T0 local eigenenergy spectra; not a new bath/dynamics case",
+  "scope": "Local excitation energies only. All static, pumped-clock and trajectory results retain their original frozen-input epoch.",
+  "frozen": {
+    "zero_to_one_meV": 100.60169436691518,
+    "parallel_one_to_two_lines": [
+      {
+        "energy_eV": 0.35229968208476836,
+        "raw_strength_A2": 0.01242253005112688,
+        "block_degeneracy": 1,
+        "one_to_two_meV": 111.0946223044816,
+        "spacing_change_meV": 10.49292793756642
+      },
+      {
+        "energy_eV": 0.361760048468115,
+        "raw_strength_A2": 0.02278314969556681,
+        "block_degeneracy": 2,
+        "one_to_two_meV": 120.55498868782824,
+        "spacing_change_meV": 19.95329432091306
+      }
+    ],
+    "perpendicular_one_to_two_lines": [
+      {
+        "energy_eV": 0.3368392988705937,
+        "raw_strength_A2": 0.021596281427973343,
+        "block_degeneracy": 1,
+        "one_to_two_meV": 95.63423909030696,
+        "spacing_change_meV": -4.96745527660822
+      }
+    ],
+    "parity_basis_per_axis": 10,
+    "largest_block": 1000
+  },
+  "late100_old111": {
+    "zero_to_one_meV": 99.29888860856914,
+    "parallel_one_to_two_lines": [
+      {
+        "energy_eV": 0.34792840735208613,
+        "raw_strength_A2": 0.012629465389085605,
+        "block_degeneracy": 1,
+        "one_to_two_meV": 109.28547297358843,
+        "spacing_change_meV": 9.986584365019283
+      },
+      {
+        "energy_eV": 0.3562264525829774,
+        "raw_strength_A2": 0.02337950305756601,
+        "block_degeneracy": 2,
+        "one_to_two_meV": 117.5835182044797,
+        "spacing_change_meV": 18.28462959591056
+      }
+    ],
+    "perpendicular_one_to_two_lines": [
+      {
+        "energy_eV": 0.33352248756774505,
+        "raw_strength_A2": 0.021782513174682067,
+        "block_degeneracy": 1,
+        "one_to_two_meV": 94.87955318924735,
+        "spacing_change_meV": -4.419335419321797
+      }
+    ],
+    "parity_basis_per_axis": 10,
+    "largest_block": 1000
+  },
+  "late100_old111_K4_eV_A4": {
+    "100": 16.16569693679319,
+    "111": 1.1283657157232418
+  },
+  "zero_to_one_shift_meV": -1.3028057583460395,
+  "zero_to_one_relative_shift": -0.012950137336598333,
+  "elapsed_s": 1.6826780550181866
+}

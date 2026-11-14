@@ -89,3 +89,26 @@ Reproduce: `cd rerun/part1/pd_x1_quantum && python3 pd_x1_refit.py`, and `fit_va
 H to D ratio: 1.51 for the single-atom excitation, 1.56 for the collective mode (measured peaks: 1.51). The measured peaks are averages over the vibration band, not this one mode. The ordering strains extrapolate from calculations at plus and minus 1 percent strain. The pump thresholds assume a loss rate of 0.48 per picosecond, which is not measured.
 
 Vacancy force law: each vacant nearest-neighbour site pulls a D toward itself with 0.0707 eV/A along the line joining them; the third-shell term is negligible (-0.0001); the second-shell term cannot be determined from cells of this size and is set to zero. Fitted to 80 force vectors from the three partial-loading cells, RMS error 0.0041 eV/A; predicting each cell from the other two, 0.0030, 0.0086 and 0.0043 eV/A. Using the law in place of the computed forces changes the static displacement pattern in those cells by 2.4 to 3.6 percent.
+
+### Part 2: lattice, loading, interface and NiH (`rerun/part2/`)
+
+`updated_batch.py` ran 30 PdD cases, `ni_epoch.py` the NiH case, `updated_figures.py` redraws the three figures from the saved data (`updated/figures/`). Full write-up: `rerun/part2/updated/part2.md`. Temperatures of every case: `updated/temperatures.json`.
+
+**NiH, pumped, 0 K, 110,592 sites.** With the corrected coupling the striped patches reported above do not appear. The hydrogens move in step across the whole simulated box: 99.8 percent of the pumped motion is in the uniform (all-in-phase) pattern. The in-step length, 3.85 nm by the same measure as before, is set by the size of the box, so this run puts no upper limit on the coherent region. It was not repeated at a larger size or at 300 K. NiH oscillator on the corrected inputs: single-atom first excitation 100.6 meV, collective mode 85.6 meV (measured peak 89); static ordering strain 8.1 percent at 0 K, 8.2 at 300 K; collective mode 20.7 THz, pump at 41.4 THz, threshold about 1.9 percent stiffness modulation for an assumed loss of 1.26 per picosecond. This run used the earlier NiH quartics (18.3, 1.13); with the recomputed 100 quartic (16.2) the single-atom excitation moves by -1.3 percent.
+
+**PdD, pumped (8 percent stiffness modulation), 0 K.** Static displacement with no pump; pumped oscillation amplitude; in-step length; share of the pumped motion in the single strongest pattern:
+
+| Loading, arrangement | Static (A) | Pumped (A) | In-step length (nm) | Strongest-pattern share |
+|---|---:|---:|---:|---:|
+| 1.0 | 0.000 | 0.038 | 1.38 | 0.12 |
+| 0.875 random | 0.072 | 0.025 | 1.38 | 0.12 |
+| 0.75 random | 0.093 | 0.028 | 1.29 | 0.10 |
+| 0.6 random | 0.105 | 0.032 | 0.88 | 0.03 |
+| 0.875 ordered | 0.000 | 0.043 | 0.82 | 0.03 |
+| 0.875 clustered | 0.067 | 0.033 | 1.75 | 0.24 |
+
+PdD responds to the pump at every loading but stays patchy, with an in-step length near 1 to 2 nm. Vacancies displace their neighbours statically (vacancy-driven displacement, not ordering); an ordered vacancy superlattice cancels that displacement by symmetry. Clustered vacancies give the longest in-step length, ordered vacancies the largest amplitude but the shortest. At 300 K the pump adds nothing measurable (0.00915 A without, 0.00919 with). Stretching by 5 percent or raising the pump frequency by 10 percent increases the amplitude and shortens the in-step length. Loadings below 0.75 use the loading law outside the range it was fitted on.
+
+**Second-shell vacancy force.** Setting it to plus or minus half the first-shell value changes which pattern leads (the uniform share goes from 0.005 to 0.001 or 0.155), so the unknown coefficient affects the texture, not only the size.
+
+**Ni on Pd.** With the strain law and loading law applied to the mismatch map, the pumped amplitude at the PdD-spacing interface rises about tenfold (0.0013 to 0.0146 A) and concentrates in the soft regions (2.9 times enrichment), but the pumped pattern does not copy the period of the mismatch pattern (correlation 0.25). At the bare-Pd spacing the effect is negligible. Every site in this map is outside the strain range that was computed.

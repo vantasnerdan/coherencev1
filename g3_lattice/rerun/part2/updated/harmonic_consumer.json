@@ -1,0 +1,270 @@
+{
+  "label": "actual_x1_harmonic_consumer",
+  "configuration": {
+    "material": "PdD",
+    "L": 24,
+    "seed": 13,
+    "temperature_K": 0.0,
+    "strain": 0.0,
+    "pump_ratio": 1.0,
+    "pump_polarization": [
+      1.0,
+      0.0,
+      0.0
+    ],
+    "loading_extrapolate": true,
+    "elastic_extrapolate": true,
+    "bias_law_input": "new_inputs/vacancy_bias_law.json",
+    "bias_geometry_policy": "frozen_reference_under_strain",
+    "dt": 0.15,
+    "steps": 64,
+    "stride": 2,
+    "label": "actual_x1_harmonic_consumer",
+    "x": 1.0,
+    "arrangement": "random",
+    "pump_h": 0.0,
+    "harmonic_control": true,
+    "scalability_only": true
+  },
+  "sites": 13824,
+  "occupied": 13824,
+  "actual_loading": 1.0,
+  "elapsed_s": 0.28556787385605276,
+  "state": "short_scalability_record_not_phase_classified",
+  "classification": "finite-window displacement/oscillation amplitude diagnostic; partial-loading static signal is vacancy-driven displacement, not spontaneous ordering; extra stretch/pump ordering needs its matched baseline",
+  "static_rms_A": 2.285657633759641e-06,
+  "driven_demodulated_rms_A": 0.002434950005065362,
+  "pump_frequency_rms_A": 3.1661104953359643e-06,
+  "active_fraction": 0.0,
+  "order_field": "static_mean",
+  "displacement_peak": {
+    "layer_FCC_index": [
+      0,
+      0,
+      0
+    ],
+    "q_cartesian_A_inverse": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "wavelength_nm": null
+  },
+  "peak_fraction": 0.0,
+  "occupation_peak": {
+    "layer_FCC_index": [
+      0,
+      0,
+      0
+    ],
+    "q_cartesian_A_inverse": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "wavelength_nm": null
+  },
+  "vacancy_vs_amplitude_correlation": null,
+  "layer_order_amplitude_A": [
+    2.285657633759641e-06,
+    2.285657633759641e-06,
+    2.285657633759641e-06,
+    2.285657633759641e-06,
+    2.285657633759641e-06,
+    2.285657633759641e-06,
+    2.285657633759641e-06,
+    2.285657633759641e-06,
+    2.285657633759641e-06,
+    2.285657633759641e-06,
+    2.285657633759641e-06,
+    2.285657633759641e-06,
+    2.285657633759641e-06,
+    2.285657633759641e-06,
+    2.285657633759641e-06,
+    2.285657633759641e-06,
+    2.285657633759641e-06,
+    2.285657633759641e-06,
+    2.285657633759641e-06,
+    2.285657633759641e-06,
+    2.285657633759641e-06,
+    2.285657633759641e-06,
+    2.285657633759641e-06,
+    2.285657633759641e-06
+  ],
+  "layer_active_fraction": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "stiffness_modulation_THz": 20.127483043088088,
+  "incident_E_squared_carrier_THz": 10.063741521544044,
+  "finite_record_resolution_THz": 11.083480232235647,
+  "spectral_lines": {
+    "half_pump": {
+      "frequency_THz": 10.063741521544044,
+      "band_within_sampled_spectrum": false,
+      "collective_band_power_A2": null,
+      "mean_local_band_power_A2": null
+    },
+    "pump": {
+      "frequency_THz": 20.127483043088088,
+      "band_within_sampled_spectrum": false,
+      "collective_band_power_A2": null,
+      "mean_local_band_power_A2": null
+    },
+    "third_half_pump": {
+      "frequency_THz": 30.19122456463213,
+      "band_within_sampled_spectrum": true,
+      "collective_band_power_A2": 2.0759183469269113e-06,
+      "mean_local_band_power_A2": 2.0759183469269113e-06
+    },
+    "twice_pump": {
+      "frequency_THz": 40.254966086176175,
+      "band_within_sampled_spectrum": true,
+      "collective_band_power_A2": 4.325289890573622e-07,
+      "mean_local_band_power_A2": 4.32528989057362e-07
+    }
+  },
+  "spectrum": {
+    "frequency_THz": [
+      0.0,
+      11.083480232235647,
+      22.166960464471295,
+      33.250440696706946,
+      44.33392092894259,
+      55.41740116117823,
+      66.50088139341389,
+      77.58436162564954,
+      88.66784185788518
+    ],
+    "collective_PSD_A2_per_THz": [
+      3.765200693815819e-08,
+      1.4827569891716435e-07,
+      3.9001280286111745e-08,
+      1.594041794312127e-11,
+      5.501400837158359e-12,
+      1.9326059430481333e-12,
+      6.798261460910928e-13,
+      2.168669624976783e-13,
+      4.815672200422351e-14
+    ],
+    "mean_local_PSD_A2_per_THz": [
+      3.765200693815821e-08,
+      1.4827569891716435e-07,
+      3.9001280286111725e-08,
+      1.5940417943121572e-11,
+      5.501400837158512e-12,
+      1.93260594304809e-12,
+      6.798261460910794e-13,
+      2.1686696249763216e-13,
+      4.815672200421749e-14
+    ]
+  },
+  "strain_profile": "periodic in-plane sinusoid; input maximum |d epsilon/d in-plane coordinate| in1/nm",
+  "geometry": "r/a=CELL@index, CELL=[[1,-1,1],[1,1,0],[0,0,1]]/2; layer index=k is(001); reference geometry",
+  "occupation_SHA256": "f035d0afefefa618320cdaa025b0fdc47fef324d775b79bf67c8ed551c8528f1",
+  "tensor_semantics": "optional Cartesian symmetric per-site delta to effective curvature; no generated physical moire map",
+  "force_bias_policy": "fitted_central_vacancy_law",
+  "force_bias_source": {
+    "kind": "fitted_central_vacancy_law",
+    "authority": "812/819",
+    "coefficients_used_eV_A": {
+      "1": 0.07073357955945704,
+      "2": 0.0,
+      "3": -0.00013426055207788404
+    },
+    "second_shell_multiplier": 0.0,
+    "second_shell_feature_L2": 0.0,
+    "second_shell_scope": "Base0 is an assumption; +/-halfC1 are scenarios, not fitted bounds",
+    "force_origin": "Declared reference sites, not relaxed/F0-over-K shifted",
+    "force_definition": "Constant F0; directions are reference lines, not recomputed from instantaneous u",
+    "boundary": "periodic reference occupation, independent of open/clamped displacement exterior",
+    "accuracy_scope": "Calibration/held-out errors on these cells, NOT guaranteed arbitrary-arrangement accuracy or confidence bounds",
+    "law_file": "vacancy_bias_law.json",
+    "law_SHA256": "23a05c6801a114caa469b428c700534ca5a65fcebde2430e5c8a69b8aa73b19f",
+    "exact_occupancy_template": null
+  },
+  "displacement_origin": "declared reference lattice sites, never F0/K recentered",
+  "demodulation": "Joint DC+Omega+2Omega least squares; half-pump field is separated from forced pump-frequency texture and DC, not chosen by dominance over DC",
+  "occupation_descriptor": "periodic bulk-reference vacancy count; open depth only clamps exterior displacements",
+  "loading_response": {
+    "composition_reference": {
+      "x": 1.0,
+      "a_angstrom": 4.084,
+      "status": "author_extrapolated",
+      "measured_point": false,
+      "isotope": "D",
+      "phase": "beta",
+      "temperature_K": 77.0,
+      "source_uncertainty_angstrom": null,
+      "uncertainty_status": "not reported in accessible abstract; not zero",
+      "construction": "author x=1 endpoint",
+      "source": "10.1103/PhysRevB.12.117, publisher abstract (article pp.117-118)",
+      "source_sha256": "6ff6e47b8b6bc1d73994f41c398d4dcb8343e420d22ed2c17b1e74963394be2f",
+      "calibration_facts_sha256": "027f5d80d8cc30026b23c0279f0d84f15ca14208edb82ad38109a228127456ee",
+      "source_gate": "primary abstract; campaign-authorized extrapolation; pointwise uncertainty unavailable"
+    },
+    "fields": {
+      "source_entry": "864",
+      "model_id": "baseline_two_descriptor",
+      "law_SHA256": "f11752b5513dcc0887755540c5b9bdb10163e6ac899e5c0bd3d25144ef08d23e",
+      "a_reference_A": 4.084,
+      "descriptor_counts": [
+        {
+          "n_vac_NN": 0,
+          "occupied_sites": 13824,
+          "values_eV_A2": {
+            "Jbar_shell_0.7071067812": 0.01887404712332313,
+            "Jbar_shell_1.0000000000": 0.08955904203984194,
+            "Jbar_shell_1.2247448714": -0.00905753528201411,
+            "Jbar_shell_1.4142135624": 0.0023732327927632516,
+            "Jbar_shell_1.7320508076": -0.004582643770591419,
+            "Kii_dd": 0.590658682890108
+          },
+          "extrapolated_observables": [],
+          "direction_policy": "Clean +100; vacancy-adjacent ray toward original vacant H5 (110 family). Isotropic/scalar application at other directions is an unmeasured model closure."
+        }
+      ],
+      "extrapolated_fraction_by_observable": {
+        "Jbar_shell_0.7071067812": 0.0,
+        "Jbar_shell_1.0000000000": 0.0,
+        "Jbar_shell_1.2247448714": 0.0,
+        "Jbar_shell_1.4142135624": 0.0,
+        "Jbar_shell_1.7320508076": 0.0,
+        "Kii_dd": 0.0
+      },
+      "fraction_Nvac_above4": 0.0,
+      "direction_closure": "Dense100 is the fixed x1 anchor; loading clean100 and near110-family are measured under that policy. A scalar/isotropic transfer is a closure, not measured tensors.",
+      "uncertainty": "Equal-weight descriptive fit, not a statistical confidence interval. SCF/mesh/finite-cell/reference-spacing and descriptor errors remain. Configuration holdouts reuse the same x1 anchor.",
+      "bond_policy": "Per-existing folded-bond mean times reference multiplicity; physical-image sharing by shell_kernel; occupancy applied ONCE; reciprocal endpoint average",
+      "zero_point_policy": "Frozen x1 per-axis T0 Hartree only; thermal motion sampled, not added twice",
+      "absent_sites": "No degree of freedom; zero field storage here is not a measured zero bond/well"
+    },
+    "elastic": {
+      "kind": "no additional elastic contrast"
+    }
+  },
+  "material_status": "Adopted762 fixed-k3 local well and same-column J;864 directional scalar transfer; x1 quartic/T0 variance frozen, NOT mesh-converged; physical decay is a model input",
+  "harmonic_control_max_coordinate_error": 1.680513367352532e-17
+}

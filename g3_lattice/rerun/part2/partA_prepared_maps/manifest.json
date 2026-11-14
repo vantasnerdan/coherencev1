@@ -1,0 +1,160 @@
+{
+  "source": "Giuliano547 registered FCC grid and640 PartA;693 composition reference",
+  "operator": "delta_K=R[A(E_absolute)-A(E_bulk(a(x)))]R.T, added to loading local Kii; extra elastic deltaSumJ=0",
+  "bulk_loading_reference_domain": {
+    "x": [
+      0.75,
+      1.0
+    ],
+    "a_reference_A": [
+      4.0393221785186055,
+      4.084
+    ],
+    "meaning": "Bulk registered loading reference a(x), not an additional arbitrary strained local-spacing variable"
+  },
+  "loading_transfer_assumption": "Only under the existing frozen-neighbour-sum closure may DeltaGamma be used as DeltaKii; x1 Gamma strain response at vacancy loadings is an unmeasured transfer assumption",
+  "registration": "Delivered FCC D-site grid; periodic i,j; open four-layer k, k=3 interface; actual reference/registered positions and polar frames retained",
+  "known_case693": {
+    "x": 0.875,
+    "correct_loading_bulk_max_abs_delta": 0.0,
+    "wrong_subtract_Azero_max_abs_eV_A2": 0.11510464330971001,
+    "purpose": "Reject double-counting the composition-induced bulk curvature"
+  },
+  "law_SHA256": "d3398ac45fa74a31bd4814447cb38283c53925a3835464c2af36915693da986c",
+  "reference_contract_SHA256": "182053279ba7e90e06080a325092ad49a5d5b6723d76ce1eacc34f7e4e21a6d4",
+  "results": [
+    {
+      "shape_tensor": [
+        3,
+        3,
+        10,
+        10,
+        4
+      ],
+      "bulk_loading_fraction": 1.0,
+      "bulk_loading_a_A": 4.084,
+      "geometry_a_A": 3.89,
+      "law_reference_a_A": 4.084,
+      "fraction_outside_PartA_coordinate_box": 1.0,
+      "explicit_extrapolation": true,
+      "tensor_symmetry_defect_eV_A2": 2.220446049250313e-16,
+      "maximum_absolute_contrast_eV_A2": 1.7547073976845529,
+      "source_SHA256": "3fe8bfdd069fe243a8f3c34cf43559fda70bb0aa7f95973d9931043257c3fd3f",
+      "output_SHA256": "96822c8659db71db50b84780cfd4e20d4644d2f72b7960d32fcdabe4a9e34c58",
+      "limits": "Conditional pure-metal EMT registered-D response; no hydrogen geometry or validated out-of-box hydride prediction; no clipping.",
+      "case": "pd389",
+      "path": "x1p0/pd389/fcc_octahedral_grid.npz"
+    },
+    {
+      "shape_tensor": [
+        3,
+        3,
+        6,
+        6,
+        4
+      ],
+      "bulk_loading_fraction": 1.0,
+      "bulk_loading_a_A": 4.084,
+      "geometry_a_A": 4.084,
+      "law_reference_a_A": 4.084,
+      "fraction_outside_PartA_coordinate_box": 1.0,
+      "explicit_extrapolation": true,
+      "tensor_symmetry_defect_eV_A2": 4.440892098500626e-16,
+      "maximum_absolute_contrast_eV_A2": 3.4661010643880386,
+      "source_SHA256": "c9500944e21bdd1a7e2e7ed64fc3596342dddfb86bf94f51ad0cddb355e5c4ac",
+      "output_SHA256": "487da0aedfb2cf9ec3849487e971fbdec784b4a9397ee8d35a7ca9e2e2b3964c",
+      "limits": "Conditional pure-metal EMT registered-D response; no hydrogen geometry or validated out-of-box hydride prediction; no clipping.",
+      "case": "pd4084",
+      "path": "x1p0/pd4084/fcc_octahedral_grid.npz"
+    },
+    {
+      "shape_tensor": [
+        3,
+        3,
+        10,
+        10,
+        4
+      ],
+      "bulk_loading_fraction": 0.875,
+      "bulk_loading_a_A": 4.061599657409625,
+      "geometry_a_A": 3.89,
+      "law_reference_a_A": 4.084,
+      "fraction_outside_PartA_coordinate_box": 1.0,
+      "explicit_extrapolation": true,
+      "tensor_symmetry_defect_eV_A2": 1.1102230246251565e-16,
+      "maximum_absolute_contrast_eV_A2": 1.639602754374843,
+      "source_SHA256": "3fe8bfdd069fe243a8f3c34cf43559fda70bb0aa7f95973d9931043257c3fd3f",
+      "output_SHA256": "cca3f6f5e42904fcb081650d0e7349b453c93a57cf0a08e5a0afe05c0b95cf9c",
+      "limits": "Conditional pure-metal EMT registered-D response; no hydrogen geometry or validated out-of-box hydride prediction; no clipping.",
+      "case": "pd389",
+      "path": "x0p875/pd389/fcc_octahedral_grid.npz"
+    },
+    {
+      "shape_tensor": [
+        3,
+        3,
+        6,
+        6,
+        4
+      ],
+      "bulk_loading_fraction": 0.875,
+      "bulk_loading_a_A": 4.061599657409625,
+      "geometry_a_A": 4.084,
+      "law_reference_a_A": 4.084,
+      "fraction_outside_PartA_coordinate_box": 1.0,
+      "explicit_extrapolation": true,
+      "tensor_symmetry_defect_eV_A2": 2.220446049250313e-16,
+      "maximum_absolute_contrast_eV_A2": 3.3509964210783285,
+      "source_SHA256": "c9500944e21bdd1a7e2e7ed64fc3596342dddfb86bf94f51ad0cddb355e5c4ac",
+      "output_SHA256": "04356887a0894998622a4115befa2e9fc3978e5a3525ebe11bbd94c5e289b121",
+      "limits": "Conditional pure-metal EMT registered-D response; no hydrogen geometry or validated out-of-box hydride prediction; no clipping.",
+      "case": "pd4084",
+      "path": "x0p875/pd4084/fcc_octahedral_grid.npz"
+    },
+    {
+      "shape_tensor": [
+        3,
+        3,
+        10,
+        10,
+        4
+      ],
+      "bulk_loading_fraction": 0.75,
+      "bulk_loading_a_A": 4.0393221785186055,
+      "geometry_a_A": 3.89,
+      "law_reference_a_A": 4.084,
+      "fraction_outside_PartA_coordinate_box": 1.0,
+      "explicit_extrapolation": true,
+      "tensor_symmetry_defect_eV_A2": 2.220446049250313e-16,
+      "maximum_absolute_contrast_eV_A2": 1.5198441186323963,
+      "source_SHA256": "3fe8bfdd069fe243a8f3c34cf43559fda70bb0aa7f95973d9931043257c3fd3f",
+      "output_SHA256": "0c8fcce068469c78f8ed6b3ababea5cbc4c406026680f01e9a517e41fc2a3425",
+      "limits": "Conditional pure-metal EMT registered-D response; no hydrogen geometry or validated out-of-box hydride prediction; no clipping.",
+      "case": "pd389",
+      "path": "x0p75/pd389/fcc_octahedral_grid.npz"
+    },
+    {
+      "shape_tensor": [
+        3,
+        3,
+        6,
+        6,
+        4
+      ],
+      "bulk_loading_fraction": 0.75,
+      "bulk_loading_a_A": 4.0393221785186055,
+      "geometry_a_A": 4.084,
+      "law_reference_a_A": 4.084,
+      "fraction_outside_PartA_coordinate_box": 1.0,
+      "explicit_extrapolation": true,
+      "tensor_symmetry_defect_eV_A2": 2.220446049250313e-16,
+      "maximum_absolute_contrast_eV_A2": 3.231237785335882,
+      "source_SHA256": "c9500944e21bdd1a7e2e7ed64fc3596342dddfb86bf94f51ad0cddb355e5c4ac",
+      "output_SHA256": "7841c27e35b8b250b9bba685a08711321e457b4bb2344dbd3218fa941442029c",
+      "limits": "Conditional pure-metal EMT registered-D response; no hydrogen geometry or validated out-of-box hydride prediction; no clipping.",
+      "case": "pd4084",
+      "path": "x0p75/pd4084/fcc_octahedral_grid.npz"
+    }
+  ],
+  "execution": "field algebra only; no dynamics, eigenmode search, geometry or DFT replay"
+}

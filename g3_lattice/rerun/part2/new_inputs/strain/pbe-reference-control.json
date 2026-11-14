@@ -1,0 +1,80 @@
+{
+  "status": "actual_saved_force_pair_and_source_bindings_passed",
+  "comparison": [
+    {
+      "reference": "source_reference",
+      "a_A": 4.084,
+      "actual_K_Gamma_eV_A2": 0.18105969055575036,
+      "law_tensor_eV_A2": [
+        [
+          0.18105969055575036,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.18105969055575036,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.18105969055575036
+        ]
+      ],
+      "law_max_entry_error_eV_A2": 0.0,
+      "law_extrapolate": false
+    },
+    {
+      "reference": "centred_PBE_zero_pressure",
+      "a_A": 4.134262353807685,
+      "actual_K_Gamma_eV_A2": -0.054710988131038495,
+      "law_tensor_eV_A2": [
+        [
+          -0.057820451730790784,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          -0.057820451730790784,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          -0.057820451730790784
+        ]
+      ],
+      "law_max_entry_error_eV_A2": 0.0031094635997522893,
+      "law_extrapolate": false
+    }
+  ],
+  "mean_stress_eV_A3": 6.528415817263769e-06,
+  "stress_acceptance_eV_A3": 0.0005,
+  "Native_accounting": {
+    "Result": "success",
+    "MemoryPeak": "232714240",
+    "CPUUsageNSec": "357276125000",
+    "InvocationID": "4badcdcc609040b68443f857f42e1fa6"
+  },
+  "new_core_minutes": 5.9546020833333335,
+  "interpretation": "Centred electronic free-energy stationary reference at Fermi smearing0.1eV, no nuclear ZPE. Negative matched Gamma curvature is not local Kii; no4.084A input or fitted model was replaced.",
+  "sources": [
+    {
+      "path": "cubic_Pd/result.json",
+      "bytes": 7450,
+      "sha256": "8ca5fe9054d79db32ef12ac49409cf5dca9c0c26b6fc787d5a18203c01c7491d"
+    },
+    {
+      "path": "strain-law.json",
+      "bytes": 8768,
+      "sha256": "d3398ac45fa74a31bd4814447cb38283c53925a3835464c2af36915693da986c"
+    },
+    {
+      "path": "strain_tensor_law.py",
+      "bytes": 3289,
+      "sha256": "68d3fd010700f9a6472a6de81b33fe3a28c5f80558b6d0d18ad8b32e8521f0bf"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "threads": {
+    "OPENBLAS_NUM_THREADS": 1,
+    "OMP_NUM_THREADS": 1,
+    "MKL_NUM_THREADS": 1,
+    "NUMEXPR_NUM_THREADS": 1
+  },
+  "PdD_30_cases": {
+    "exit_code": 0,
+    "source_time_file_SHA256": "9679e09ca3a6d4c390c06180f8d63b651c6aff11d14d8d771db6164764bb5bc4",
+    "user_s": 3623.03,
+    "system_s": 3.71,
+    "wall_hms": "1:00:27",
+    "max_RSS_KiB": 126144,
+    "CPU_s": 3626.7400000000002
+  },
+  "NiH_quantum_and_110592_case": {
+    "exit_code": 0,
+    "source_time_file_SHA256": "cbeafb77b5feb20348b07f097e976f33af88c3a099d0664c29d56f8052770e0b",
+    "user_s": 405.25,
+    "system_s": 0.76,
+    "wall_hms": "6:46.09",
+    "max_RSS_KiB": 128304,
+    "CPU_s": 406.01
+  },
+  "extra_oscillator_only": {
+    "exit_code": 0,
+    "wall_s_observed": 1.91,
+    "diagonalization_elapsed_s": 1.6826780550181866
+  },
+  "commands": [
+    "python updated_batch.py --group pd --out updated",
+    "python ni_epoch.py --quartic-input updated/ni_quartic_choice.json --out updated/ni_epoch",
+    "python ni_oscillator924.py"
+  ],
+  "render": "Three figures rendered from only the two included minimal figure inputs; one visible caption-overlap repair, no simulation rerun."
+}

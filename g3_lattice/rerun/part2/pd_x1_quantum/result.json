@@ -1,0 +1,1634 @@
+{
+  "source": "762 fixed-k3 local force curvature+joint100/111 quartics; no lattice or DFT rerun",
+  "potential": "Kii sum(u_i^2)/2+A sum(u_i^4)/4+B sum_i<j(u_i^2 u_j^2)/2;B=(3K4_111-A)/2;u inA,m in eV/c^2",
+  "assumption": "Fixed-k3 periodically clamped local well+matched scalar-J RPA; PdH mass substitution at4.084A; frozen local variance/quartics under PartA collective strain contrast at fixed extraelastic sumJ; physical reference friction held.",
+  "quantum_normalization": "Full finite-basis dipole strengths enter chi_local(E); RPA=1/(chi_local^-1-J0); NO Hartree shift added again to that exact local spectrum.",
+  "classical_counterterm": "Only (3A+2B)*variance_axis_T0 enters future Langevin parameters; thermal Hartree used only in the separate static closure, not added to sampled300K noise.",
+  "static_reference": "Matched Kii-J0 + [K_PartA(epsilonI)-K_PartA(0)] + (3A+2B)*variance_axis(T). No absolute Gamma as onsite; fixed4.084A reference, not PBE-recentered.",
+  "static_interpretation": "Published478 used primitive Gamma intercept with old linear464; same-reference old/new PartA rows isolate the actual force/quartic update. Hydro data only+/-1%; larger roots are extrapolations even inside the mixed-strain coordinate box.",
+  "hydro_contrast_polynomial_eV_A2": {
+    "linear": -20.499925422465413,
+    "quadratic": 88.5697793051426,
+    "zero_intercept": 0.0
+  },
+  "bath_policy": "Hold physical kappa=2/reference_amplitude_decay_ps, NOT bare gamma=.01. Atomic lattice gamma=kappa*hbar/E0; reduced pole bare-force gamma=M_pole*kappa*hbar/E0. A literal .01 changes physical bath; values for both conventions are explicit.",
+  "spectral_mass_scope": "RPA pole mass is for single-pole action/drive normalization; do NOT replace the bare atomic mass in the full nonlinear coordinate lattice.",
+  "rows": [
+    {
+      "material": "PdH",
+      "material_inputs": {
+        "mass_eVc2": 938272089.43,
+        "a_A": 4.084,
+        "K2_eV_A2": 0.590658682890108,
+        "K_Gamma_eV_A2": 0.20164636006717562,
+        "J_sum_eV_A2": 0.3890123228229324,
+        "K4_100_eV_A4": 11.615048217417709,
+        "K4_111_eV_A4": 2.227715739838984,
+        "reference_amplitude_decay_ps": 4.136036943628514
+      },
+      "before_spectrum": {
+        "parity_basis_per_axis": 10,
+        "largest_block": 1000,
+        "basis_quantum_eV": 0.083551277988221,
+        "ground_energy_eV": 0.11390385190673814,
+        "zero_to_one_meV": 82.2612441567578,
+        "zero_to_one_THz": 19.890680342694477,
+        "parametric_stiffness_clock_THz": 39.781360685388954,
+        "raw_zero_to_one_x_strength_A2": 0.0251404234362062,
+        "zero_to_one_oscillator_strength": 0.9966753444458231,
+        "single_pole_effective_spring_eV_A2": 1.636035374771941,
+        "dE01_dKx_A2": 0.021552232916304544,
+        "dE01_dKy_A2": 0.00043589862550570853,
+        "dE01_dKz_A2": 0.0004358986255057033,
+        "dlnE01_dlnK_fixed_quartic": 0.29759853043059614,
+        "single_pole_mass_over_bare": 1.0033357457598446,
+        "parallel_one_to_two_lines": [
+          {
+            "energy_eV": 0.2885382046953104,
+            "raw_strength_A2": 0.014930769668544912,
+            "block_degeneracy": 1,
+            "one_to_two_meV": 92.37310863181445,
+            "spacing_change_meV": 10.111864475056649
+          },
+          {
+            "energy_eV": 0.29382126282188714,
+            "raw_strength_A2": 0.028151327598842268,
+            "block_degeneracy": 2,
+            "one_to_two_meV": 97.6561667583912,
+            "spacing_change_meV": 15.394922601633397
+          }
+        ],
+        "perpendicular_one_to_two_lines": [
+          {
+            "energy_eV": 0.27563635110219487,
+            "raw_strength_A2": 0.02600729014188725,
+            "block_degeneracy": 1,
+            "one_to_two_meV": 79.47125503869893,
+            "spacing_change_meV": -2.7899891180588696
+          }
+        ],
+        "total_parallel_upward_strength_A2": 0.04312876499788005,
+        "reported_parallel_strength_A2": 0.04308209726738718,
+        "local_static_susceptibility_A2_eV": 0.6114050321597182,
+        "RPA_static_denominator": 0.961048864188138,
+        "RPA_critical_J_eV_A2": 1.635576986449743,
+        "RPA_Gamma_quantum_eV": 0.08064368599991284,
+        "RPA_Gamma_residue_eV_A2": 0.004136263079328303,
+        "RPA_Gamma_x_strength_A2": 0.025645300236727606,
+        "RPA_Gamma_oscillator_strength": 0.9966989731786001,
+        "local_mean_square_axis_A2_T0": 0.025164722653517334,
+        "local_mean_square_axis_A2_T300": 0.027052210810606644,
+        "cross_manifold_shift_meV": -2.789989118058875
+      },
+      "spectrum": {
+        "parity_basis_per_axis": 10,
+        "largest_block": 1000,
+        "basis_quantum_eV": 0.07632784229462092,
+        "ground_energy_eV": 0.09705991852564394,
+        "zero_to_one_meV": 74.03466708946935,
+        "zero_to_one_THz": 17.901502857752035,
+        "parametric_stiffness_clock_THz": 35.80300571550407,
+        "raw_zero_to_one_x_strength_A2": 0.027847533075325556,
+        "zero_to_one_oscillator_strength": 0.9935911380543606,
+        "single_pole_effective_spring_eV_A2": 1.3292859171620508,
+        "dE01_dKx_A2": 0.022430523743020285,
+        "dE01_dKy_A2": 0.0004957824166347338,
+        "dE01_dKz_A2": 0.0004957824166347529,
+        "dlnE01_dlnK_fixed_quartic": 0.18686462076324473,
+        "single_pole_mass_over_bare": 1.006450200389457,
+        "parallel_one_to_two_lines": [
+          {
+            "energy_eV": 0.25933162027556594,
+            "raw_strength_A2": 0.015588414782609876,
+            "block_degeneracy": 1,
+            "one_to_two_meV": 88.23703466045265,
+            "spacing_change_meV": 14.202367570983299
+          },
+          {
+            "energy_eV": 0.26468879639499043,
+            "raw_strength_A2": 0.02924354799414696,
+            "block_degeneracy": 2,
+            "one_to_two_meV": 93.59421077987714,
+            "spacing_change_meV": 19.559543690407793
+          }
+        ],
+        "perpendicular_one_to_two_lines": [
+          {
+            "energy_eV": 0.2425330128071228,
+            "raw_strength_A2": 0.02883027368296076,
+            "block_degeneracy": 1,
+            "one_to_two_meV": 71.43842719200951,
+            "spacing_change_meV": -2.5962398974598386
+          }
+        ],
+        "total_parallel_upward_strength_A2": 0.044910374403595105,
+        "reported_parallel_strength_A2": 0.044831962776756835,
+        "local_static_susceptibility_A2_eV": 0.7526498684739427,
+        "RPA_static_denominator": 0.7072099263925771,
+        "RPA_critical_J_eV_A2": 1.3286390417201286,
+        "RPA_Gamma_quantum_eV": 0.0622643586577963,
+        "RPA_Gamma_residue_eV_A2": 0.004124592896335368,
+        "RPA_Gamma_x_strength_A2": 0.03312162033984843,
+        "RPA_Gamma_oscillator_strength": 0.9938868552879379,
+        "local_mean_square_axis_A2_T0": 0.027896860192878237,
+        "local_mean_square_axis_A2_T300": 0.030587615138565994,
+        "cross_manifold_shift_meV": -2.596239897459829
+      },
+      "basis8_to10": {
+        "local01_meV": -3.876665900293119e-06,
+        "RPA_Gamma_meV": -1.0892675789131445e-05,
+        "parallel12_meV": {
+          "1": -0.000698718239164009,
+          "2": -0.0006828509733765031
+        },
+        "perpendicular12_meV": -2.2616560642063632e-06,
+        "zero_point_axis_variance_A2": 1.58746297773682e-08,
+        "thermal_axis_variance300_A2": 2.057548088851835e-08,
+        "max_energy_change_meV": 0.000698718239164009,
+        "resolves_0p01meV_by_basis_comparison": true
+      },
+      "before_pumped": {
+        "material": "PdH",
+        "source_entry": "entry_401 Pd electronic well with H mass; entry_458",
+        "local_Kii_eV_A2": 1.0917228165401551,
+        "same_matrix_Jsum_eV_A2": 0.0637075813299599,
+        "harmonic_local_quantum_meV": 67.30979452419525,
+        "local_zero_to_one_meV": 82.2612441567578,
+        "parallel_one_to_two": [
+          {
+            "energy_eV": 0.2885382046953104,
+            "raw_strength_A2": 0.014930769668544912,
+            "block_degeneracy": 1,
+            "one_to_two_meV": 92.37310863181445,
+            "spacing_change_meV": 10.111864475056649
+          },
+          {
+            "energy_eV": 0.29382126282188714,
+            "raw_strength_A2": 0.028151327598842268,
+            "block_degeneracy": 2,
+            "one_to_two_meV": 97.6561667583912,
+            "spacing_change_meV": 15.394922601633397
+          }
+        ],
+        "perpendicular_one_to_two": [
+          {
+            "energy_eV": 0.27563635110219487,
+            "raw_strength_A2": 0.02600729014188725,
+            "block_degeneracy": 1,
+            "one_to_two_meV": 79.47125503869893,
+            "spacing_change_meV": -2.7899891180588696
+          }
+        ],
+        "N1_proxy_zero_to_one_meV": 59.48130589710217,
+        "INS_reference_meV": 55.8,
+        "RPA_static_denominator": 0.961048864188138,
+        "conditional_critical_loading": 25.67319229996535,
+        "conditional_critical_density_m3": 1.5075879756198e+30,
+        "threshold_scope": "neighbour occupancy rescales J at fixed local well; not a computed loading phase diagram",
+        "selected_phase_domain_size_nm": null,
+        "mode_quantum_meV": 80.64368599991283,
+        "mode_frequency_THz": 19.499556520494448,
+        "stiffness_modulation_clock_THz": 38.999113040988895,
+        "incident_carrier_Ey_squared_THz": 19.499556520494448,
+        "effective_curvature_modulation_threshold": 0.00789352482945802,
+        "Gamma_mode_strength_A2": 0.025645300236727606,
+        "Gamma_spectral_mass_over_bare": 1.0033119596891653,
+        "effective_pole_spring_eV_A2": 1.5722897617790406,
+        "action_normalization": "n=N*A_site,peak^2/(4*Gamma_mode_strength_A2)",
+        "local_Uself_meV": 13.633903226107813,
+        "local_Upair_meV": -1.7610193755255825,
+        "local_Ucross_meV": -2.789989118058875,
+        "Gamma_Uself_meV_times_N": 14.187001229871177,
+        "Gamma_Upair_meV_times_N": -1.8324601276739947,
+        "Gamma_Ucross_meV_times_N": -2.903172950020135,
+        "conservative_reference_gain_occupation_per_cell": 0.01942904163791198,
+        "reference_gain_definition": "g=2Gamma2, exact pair resonance, scalar self-pulling projection; tensor pair conversion retained separately",
+        "stationary_stored_energy_per_cell_eV": 0.0015695072420680242,
+        "equilibrium_ordering_energy_gain_eV": 0.0,
+        "pump_stop_amplitude_decay_ps": 4.136036943628514,
+        "local_strain_threshold": null,
+        "incident_intensity_threshold_W_m2": null,
+        "active_linewidth_Hz": null,
+        "static_Hartree": [
+          {
+            "T_K": 0,
+            "local_axis_variance_A2": 0.025164722653517334,
+            "Hartree_correction_eV_A2": 0.5982598270782601,
+            "effective_B_Hartree_eV_A4": 7.924583358424044,
+            "critical_linear_strain": 0.03798734295305817,
+            "crosses_below_5percent": true,
+            "just_beyond": {
+              "linear_strain": 0.03898734295305817,
+              "direction": "111",
+              "displacement_magnitude_A": 0.12243256185891248,
+              "Cartesian_components_A": [
+                0.07068647254681863,
+                0.07068647254681863,
+                0.07068647254681863
+              ],
+              "energy_gain_per_isotope_eV": -7.687949433975019e-05
+            },
+            "soft_mode_approach": [
+              {
+                "linear_strain": 0.0,
+                "curvature_eV_A2": 0.7793195176340104,
+                "undamped_soft_mode_THz": 13.750997786631697
+              },
+              {
+                "linear_strain": 0.018993671476529084,
+                "curvature_eV_A2": 0.3896597588170052,
+                "undamped_soft_mode_THz": 9.723423783008478
+              },
+              {
+                "linear_strain": 0.034188608657752355,
+                "curvature_eV_A2": 0.07793195176340095,
+                "undamped_soft_mode_THz": 4.348447310569022
+              },
+              {
+                "linear_strain": 0.03760746952352759,
+                "curvature_eV_A2": 0.007793195176340082,
+                "undamped_soft_mode_THz": 1.3750997786631676
+              }
+            ]
+          },
+          {
+            "T_K": 300,
+            "local_axis_variance_A2": 0.027052210810606644,
+            "Hartree_correction_eV_A2": 0.6431324987949373,
+            "effective_B_Hartree_eV_A4": 7.924583358424044,
+            "critical_linear_strain": 0.0401746275406385,
+            "crosses_below_5percent": true,
+            "just_beyond": {
+              "linear_strain": 0.0411746275406385,
+              "direction": "111",
+              "displacement_magnitude_A": 0.12243256185891248,
+              "Cartesian_components_A": [
+                0.07068647254681863,
+                0.07068647254681863,
+                0.07068647254681863
+              ],
+              "energy_gain_per_isotope_eV": -7.687949433975019e-05
+            },
+            "soft_mode_approach": [
+              {
+                "linear_strain": 0.0,
+                "curvature_eV_A2": 0.8241921893506876,
+                "undamped_soft_mode_THz": 14.141343867384432
+              },
+              {
+                "linear_strain": 0.02008731377031925,
+                "curvature_eV_A2": 0.4120960946753438,
+                "undamped_soft_mode_THz": 9.999440143718328
+              },
+              {
+                "linear_strain": 0.03615716478657465,
+                "curvature_eV_A2": 0.08241921893506868,
+                "undamped_soft_mode_THz": 4.471885579658888
+              },
+              {
+                "linear_strain": 0.03977288126523211,
+                "curvature_eV_A2": 0.00824192189350691,
+                "undamped_soft_mode_THz": 1.4141343867384462
+              }
+            ]
+          }
+        ]
+      },
+      "pumped": {
+        "material": "PdH",
+        "source_entry": "entry_762 adopted fixed-k3 profile",
+        "local_Kii_eV_A2": 0.590658682890108,
+        "same_matrix_Jsum_eV_A2": 0.3890123228229324,
+        "harmonic_local_quantum_meV": 49.50970830547883,
+        "local_zero_to_one_meV": 74.03466708946935,
+        "parallel_one_to_two": [
+          {
+            "energy_eV": 0.25933162027556594,
+            "raw_strength_A2": 0.015588414782609876,
+            "block_degeneracy": 1,
+            "one_to_two_meV": 88.23703466045265,
+            "spacing_change_meV": 14.202367570983299
+          },
+          {
+            "energy_eV": 0.26468879639499043,
+            "raw_strength_A2": 0.02924354799414696,
+            "block_degeneracy": 2,
+            "one_to_two_meV": 93.59421077987714,
+            "spacing_change_meV": 19.559543690407793
+          }
+        ],
+        "perpendicular_one_to_two": [
+          {
+            "energy_eV": 0.2425330128071228,
+            "raw_strength_A2": 0.02883027368296076,
+            "block_degeneracy": 1,
+            "one_to_two_meV": 71.43842719200951,
+            "spacing_change_meV": -2.5962398974598386
+          }
+        ],
+        "INS_reference_meV": 55.8,
+        "RPA_static_denominator": 0.7072099263925771,
+        "selected_phase_domain_size_nm": null,
+        "mode_quantum_meV": 62.2643586577963,
+        "mode_frequency_THz": 15.05545494115124,
+        "stiffness_modulation_clock_THz": 30.11090988230248,
+        "incident_carrier_Ey_squared_THz": 15.05545494115124,
+        "effective_curvature_modulation_threshold": 0.010223552470489027,
+        "Gamma_mode_strength_A2": 0.03312162033984843,
+        "Gamma_spectral_mass_over_bare": 1.0061507451069882,
+        "effective_pole_spring_eV_A2": 0.9399352751907251,
+        "action_normalization": "n=N*A_site,peak^2/(4*Gamma_mode_strength_A2)",
+        "local_Uself_meV": 17.773818317266294,
+        "local_Upair_meV": -1.7857253731414977,
+        "local_Ucross_meV": -2.596239897459829,
+        "Gamma_Uself_meV_times_N": 25.14377195145988,
+        "Gamma_Upair_meV_times_N": -2.526180404724158,
+        "Gamma_Ucross_meV_times_N": -3.672776594638434,
+        "conservative_reference_gain_occupation_per_cell": 0.010962549220713545,
+        "reference_gain_definition": "g=2Gamma2, exact pair resonance, scalar self-pulling projection; tensor pair conversion retained separately",
+        "stationary_stored_energy_per_cell_eV": 0.0006840869541257606,
+        "equilibrium_ordering_energy_gain_eV": 0.0,
+        "pump_stop_amplitude_decay_ps": 4.136036943628514,
+        "local_strain_threshold": null,
+        "incident_intensity_threshold_W_m2": null,
+        "active_linewidth_Hz": null,
+        "Gamma_Hartree_zero_temperature_curvature_eV_A2": 1.0361319362081458,
+        "Gamma_Hartree_zero_temperature_quantum_meV": 65.57368668881082,
+        "onresonance_bare_lattice_h_single_RPA_pole_projection": 0.009274376427333187,
+        "bare_h_definition": "lattice deltaK=h_code*Gamma_Hartree0; weak-drive single-RPA-pole on resonance, NOT exact nonlinear lattice onset",
+        "RPA_clock_over_classical_Hartree_clock": 0.9495326830300177
+      },
+      "before_units_bath": {
+        "bare_harmonic_energy_unit_meV": 67.30979452419525,
+        "time_unit_ps": 0.009778843651994785,
+        "length_unit_A": 0.24830355583021096,
+        "theta_at300K": 0.3840748581799223,
+        "physical_kappa_friction_ps_inverse": 0.4835546749844587,
+        "physical_amplitude_decay_ps": 4.136036943628514,
+        "gamma_atomic_velocity_code": 0.004728605563864175,
+        "Gamma_pole_mass_over_bare": 1.0033119596891653,
+        "gamma_Gamma_pole_bare_force_coefficient_for_same_kappa": 0.004744266514877657,
+        "kappa_over_RPA_angular_frequency": 0.00394676241472901,
+        "if_literal_atomic_gamma_0p01": {
+          "kappa_ps_inverse": 1.022615797519178,
+          "amplitude_decay_ps": 1.955768730398957
+        },
+        "if_literal_Gamma_bare_force_gamma_0p01": {
+          "kappa_ps_inverse": 1.01924011534358,
+          "amplitude_decay_ps": 1.9622461575953685
+        },
+        "physical_dt_ps_at_dimensionless_dt0p3": 0.0029336530955984355
+      },
+      "units_bath": {
+        "bare_harmonic_energy_unit_meV": 49.50970830547883,
+        "time_unit_ps": 0.013294603814645404,
+        "length_unit_A": 0.2895188783042786,
+        "theta_at300K": 0.5221602120232887,
+        "physical_kappa_friction_ps_inverse": 0.4835546749844587,
+        "physical_amplitude_decay_ps": 4.136036943628514,
+        "gamma_atomic_velocity_code": 0.006428667826638003,
+        "Gamma_pole_mass_over_bare": 1.0061507451069882,
+        "gamma_Gamma_pole_bare_force_coefficient_for_same_kappa": 0.006468208923817149,
+        "kappa_over_RPA_angular_frequency": 0.005111776235244513,
+        "if_literal_atomic_gamma_0p01": {
+          "kappa_ps_inverse": 0.7521848818829748,
+          "amplitude_decay_ps": 2.6589207629290805
+        },
+        "if_literal_Gamma_bare_force_gamma_0p01": {
+          "kappa_ps_inverse": 0.7475866668497988,
+          "amplitude_decay_ps": 2.675275106801536
+        },
+        "physical_dt_ps_at_dimensionless_dt0p3": 0.003988381144393621
+      },
+      "static_478_published": [
+        {
+          "T_K": 0,
+          "local_axis_variance_A2": 0.025164722653517334,
+          "Hartree_correction_eV_A2": 0.5982598270782601,
+          "effective_B_Hartree_eV_A4": 7.924583358424044,
+          "critical_linear_strain": 0.03798734295305817,
+          "crosses_below_5percent": true,
+          "just_beyond": {
+            "linear_strain": 0.03898734295305817,
+            "direction": "111",
+            "displacement_magnitude_A": 0.12243256185891248,
+            "Cartesian_components_A": [
+              0.07068647254681863,
+              0.07068647254681863,
+              0.07068647254681863
+            ],
+            "energy_gain_per_isotope_eV": -7.687949433975019e-05
+          },
+          "soft_mode_approach": [
+            {
+              "linear_strain": 0.0,
+              "curvature_eV_A2": 0.7793195176340104,
+              "undamped_soft_mode_THz": 13.750997786631697
+            },
+            {
+              "linear_strain": 0.018993671476529084,
+              "curvature_eV_A2": 0.3896597588170052,
+              "undamped_soft_mode_THz": 9.723423783008478
+            },
+            {
+              "linear_strain": 0.034188608657752355,
+              "curvature_eV_A2": 0.07793195176340095,
+              "undamped_soft_mode_THz": 4.348447310569022
+            },
+            {
+              "linear_strain": 0.03760746952352759,
+              "curvature_eV_A2": 0.007793195176340082,
+              "undamped_soft_mode_THz": 1.3750997786631676
+            }
+          ]
+        },
+        {
+          "T_K": 300,
+          "local_axis_variance_A2": 0.027052210810606644,
+          "Hartree_correction_eV_A2": 0.6431324987949373,
+          "effective_B_Hartree_eV_A4": 7.924583358424044,
+          "critical_linear_strain": 0.0401746275406385,
+          "crosses_below_5percent": true,
+          "just_beyond": {
+            "linear_strain": 0.0411746275406385,
+            "direction": "111",
+            "displacement_magnitude_A": 0.12243256185891248,
+            "Cartesian_components_A": [
+              0.07068647254681863,
+              0.07068647254681863,
+              0.07068647254681863
+            ],
+            "energy_gain_per_isotope_eV": -7.687949433975019e-05
+          },
+          "soft_mode_approach": [
+            {
+              "linear_strain": 0.0,
+              "curvature_eV_A2": 0.8241921893506876,
+              "undamped_soft_mode_THz": 14.141343867384432
+            },
+            {
+              "linear_strain": 0.02008731377031925,
+              "curvature_eV_A2": 0.4120960946753438,
+              "undamped_soft_mode_THz": 9.999440143718328
+            },
+            {
+              "linear_strain": 0.03615716478657465,
+              "curvature_eV_A2": 0.08241921893506868,
+              "undamped_soft_mode_THz": 4.471885579658888
+            },
+            {
+              "linear_strain": 0.03977288126523211,
+              "curvature_eV_A2": 0.00824192189350691,
+              "undamped_soft_mode_THz": 1.4141343867384462
+            }
+          ]
+        }
+      ],
+      "static_before_matched_PartA": [
+        {
+          "T_K": 0,
+          "local_axis_variance_A2": 0.025164722653517334,
+          "matched_bare_Gamma_eV_A2": 1.0280152352101952,
+          "Hartree_correction_eV_A2": 0.5982598270782601,
+          "zero_strain_renormalized_curvature_eV_A2": 1.6262750622884554,
+          "law": "PartA640 quadratic contrast",
+          "critical_positive_linear_strain": null,
+          "all_positive_roots_of_fitted_polynomial": [],
+          "crosses_below_5percent": false,
+          "outside_measured_hydro_range_at_onset": null,
+          "polynomial_minimum_positive_strain": 0.11572754038281279,
+          "polynomial_minimum_curvature_eV_A2": 0.44007208870194714,
+          "soft_mode_approach": [
+            {
+              "linear_strain": 0.0,
+              "curvature_eV_A2": 1.6262750622884554,
+              "omega_squared_ps_inverse2": 15577.817459302147,
+              "undamped_frequency_THz": 19.8643078380595,
+              "outside_measured_hydro_range": false,
+              "outside_PartA_coordinate_box": false
+            },
+            {
+              "linear_strain": 0.01,
+              "curvature_eV_A2": 1.4301327859943156,
+              "omega_squared_ps_inverse2": 13699.00332323433,
+              "undamped_frequency_THz": 18.62793085282435,
+              "outside_measured_hydro_range": false,
+              "outside_PartA_coordinate_box": false
+            },
+            {
+              "linear_strain": 0.025,
+              "curvature_eV_A2": 1.169133038792534,
+              "omega_squared_ps_inverse2": 11198.930295543643,
+              "undamped_frequency_THz": 16.842571604957758,
+              "outside_measured_hydro_range": true,
+              "outside_PartA_coordinate_box": false
+            },
+            {
+              "linear_strain": 0.05,
+              "curvature_eV_A2": 0.8227032394280411,
+              "omega_squared_ps_inverse2": 7880.5370531552735,
+              "undamped_frequency_THz": 14.12856452336005,
+              "outside_measured_hydro_range": true,
+              "outside_PartA_coordinate_box": false
+            }
+          ],
+          "just_beyond_within_5percent": null
+        },
+        {
+          "T_K": 300,
+          "local_axis_variance_A2": 0.027052210810606644,
+          "matched_bare_Gamma_eV_A2": 1.0280152352101952,
+          "Hartree_correction_eV_A2": 0.6431324987949373,
+          "zero_strain_renormalized_curvature_eV_A2": 1.6711477340051326,
+          "law": "PartA640 quadratic contrast",
+          "critical_positive_linear_strain": null,
+          "all_positive_roots_of_fitted_polynomial": [],
+          "crosses_below_5percent": false,
+          "outside_measured_hydro_range_at_onset": null,
+          "polynomial_minimum_positive_strain": 0.11572754038281279,
+          "polynomial_minimum_curvature_eV_A2": 0.48494476041862433,
+          "soft_mode_approach": [
+            {
+              "linear_strain": 0.0,
+              "curvature_eV_A2": 1.6711477340051326,
+              "omega_squared_ps_inverse2": 16007.645294164191,
+              "undamped_frequency_THz": 20.136494037762716,
+              "outside_measured_hydro_range": false,
+              "outside_PartA_coordinate_box": false
+            },
+            {
+              "linear_strain": 0.01,
+              "curvature_eV_A2": 1.4750054577109928,
+              "omega_squared_ps_inverse2": 14128.831158096376,
+              "undamped_frequency_THz": 18.9179141055579,
+              "outside_measured_hydro_range": false,
+              "outside_PartA_coordinate_box": false
+            },
+            {
+              "linear_strain": 0.025,
+              "curvature_eV_A2": 1.2140057105092112,
+              "omega_squared_ps_inverse2": 11628.758130405691,
+              "undamped_frequency_THz": 17.162746997954343,
+              "outside_measured_hydro_range": true,
+              "outside_PartA_coordinate_box": false
+            },
+            {
+              "linear_strain": 0.05,
+              "curvature_eV_A2": 0.8675759111447183,
+              "omega_squared_ps_inverse2": 8310.36488801732,
+              "undamped_frequency_THz": 14.508756036904392,
+              "outside_measured_hydro_range": true,
+              "outside_PartA_coordinate_box": false
+            }
+          ],
+          "just_beyond_within_5percent": null
+        }
+      ],
+      "static_after_matched_PartA": [
+        {
+          "T_K": 0,
+          "local_axis_variance_A2": 0.027896860192878237,
+          "matched_bare_Gamma_eV_A2": 0.20164636006717562,
+          "Hartree_correction_eV_A2": 0.8344855761409702,
+          "zero_strain_renormalized_curvature_eV_A2": 1.0361319362081458,
+          "law": "PartA640 quadratic contrast",
+          "critical_positive_linear_strain": 0.07456466909479209,
+          "all_positive_roots_of_fitted_polynomial": [
+            0.07456466909479209,
+            0.15689041167083348
+          ],
+          "crosses_below_5percent": false,
+          "outside_measured_hydro_range_at_onset": true,
+          "polynomial_minimum_positive_strain": 0.11572754038281279,
+          "polynomial_minimum_curvature_eV_A2": -0.15007103737836247,
+          "soft_mode_approach": [
+            {
+              "linear_strain": 0.0,
+              "curvature_eV_A2": 1.0361319362081458,
+              "omega_squared_ps_inverse2": 9924.93492662368,
+              "undamped_frequency_THz": 15.85564689896544,
+              "outside_measured_hydro_range": false,
+              "outside_PartA_coordinate_box": false
+            },
+            {
+              "linear_strain": 0.037282334547396045,
+              "curvature_eV_A2": 0.394956413257597,
+              "omega_squared_ps_inverse2": 3783.2215796568967,
+              "undamped_frequency_THz": 9.789286087760326,
+              "outside_measured_hydro_range": true,
+              "outside_PartA_coordinate_box": false
+            },
+            {
+              "linear_strain": 0.06710820218531288,
+              "curvature_eV_A2": 0.059293753876083155,
+              "omega_squared_ps_inverse2": 567.9649745465874,
+              "undamped_frequency_THz": 3.792983109916602,
+              "outside_measured_hydro_range": true,
+              "outside_PartA_coordinate_box": false
+            },
+            {
+              "linear_strain": 0.07381902240384416,
+              "curvature_eV_A2": 0.00548618099016096,
+              "omega_squared_ps_inverse2": 52.551212273500546,
+              "undamped_frequency_THz": 1.1537494343867327,
+              "outside_measured_hydro_range": true,
+              "outside_PartA_coordinate_box": false
+            }
+          ],
+          "just_beyond_within_5percent": null
+        },
+        {
+          "T_K": 300,
+          "local_axis_variance_A2": 0.030587615138565994,
+          "matched_bare_Gamma_eV_A2": 0.20164636006717562,
+          "Hartree_correction_eV_A2": 0.9149747844454817,
+          "zero_strain_renormalized_curvature_eV_A2": 1.1166211445126573,
+          "law": "PartA640 quadratic contrast",
+          "critical_positive_linear_strain": 0.08769869943725175,
+          "all_positive_roots_of_fitted_polynomial": [
+            0.08769869943725175,
+            0.14375638132837382
+          ],
+          "crosses_below_5percent": false,
+          "outside_measured_hydro_range_at_onset": true,
+          "polynomial_minimum_positive_strain": 0.11572754038281279,
+          "polynomial_minimum_curvature_eV_A2": -0.06958182907385102,
+          "soft_mode_approach": [
+            {
+              "linear_strain": 0.0,
+              "curvature_eV_A2": 1.1166211445126573,
+              "omega_squared_ps_inverse2": 10695.92762243926,
+              "undamped_frequency_THz": 16.45998212983782,
+              "outside_measured_hydro_range": false,
+              "outside_PartA_coordinate_box": false
+            },
+            {
+              "linear_strain": 0.04384934971862588,
+              "curvature_eV_A2": 0.38801165885677524,
+              "omega_squared_ps_inverse2": 3716.6989360621205,
+              "undamped_frequency_THz": 9.70283895883096,
+              "outside_measured_hydro_range": true,
+              "outside_PartA_coordinate_box": false
+            },
+            {
+              "linear_strain": 0.07892882949352659,
+              "curvature_eV_A2": 0.05035450562742638,
+              "omega_squared_ps_inverse2": 482.3374071872216,
+              "undamped_frequency_THz": 3.495389714008494,
+              "outside_measured_hydro_range": true,
+              "outside_PartA_coordinate_box": false
+            },
+            {
+              "linear_strain": 0.08682171244287923,
+              "curvature_eV_A2": 0.0044223744745046645,
+              "omega_squared_ps_inverse2": 42.361187168159134,
+              "undamped_frequency_THz": 1.0358674655056617,
+              "outside_measured_hydro_range": true,
+              "outside_PartA_coordinate_box": false
+            }
+          ],
+          "just_beyond_within_5percent": null
+        }
+      ],
+      "static_after_matched_old_linear464": [
+        {
+          "T_K": 0,
+          "local_axis_variance_A2": 0.027896860192878237,
+          "matched_bare_Gamma_eV_A2": 0.20164636006717562,
+          "Hartree_correction_eV_A2": 0.8344855761409702,
+          "zero_strain_renormalized_curvature_eV_A2": 1.0361319362081458,
+          "law": "464 linear hydro contrast",
+          "critical_positive_linear_strain": 0.050505470881635865,
+          "all_positive_roots_of_fitted_polynomial": [
+            0.050505470881635865
+          ],
+          "crosses_below_5percent": false,
+          "outside_measured_hydro_range_at_onset": true,
+          "polynomial_minimum_positive_strain": null,
+          "polynomial_minimum_curvature_eV_A2": null,
+          "soft_mode_approach": [
+            {
+              "linear_strain": 0.0,
+              "curvature_eV_A2": 1.0361319362081458,
+              "omega_squared_ps_inverse2": 9924.93492662368,
+              "undamped_frequency_THz": 15.85564689896544,
+              "outside_measured_hydro_range": false,
+              "outside_PartA_coordinate_box": false
+            },
+            {
+              "linear_strain": 0.025252735440817933,
+              "curvature_eV_A2": 0.5180659681040729,
+              "omega_squared_ps_inverse2": 4962.46746331184,
+              "undamped_frequency_THz": 11.211635442357919,
+              "outside_measured_hydro_range": true,
+              "outside_PartA_coordinate_box": false
+            },
+            {
+              "linear_strain": 0.04545492379347228,
+              "curvature_eV_A2": 0.10361319362081456,
+              "omega_squared_ps_inverse2": 992.4934926623677,
+              "undamped_frequency_THz": 5.013995797611645,
+              "outside_measured_hydro_range": true,
+              "outside_PartA_coordinate_box": false
+            },
+            {
+              "linear_strain": 0.05000041617281951,
+              "curvature_eV_A2": 0.010361319362081511,
+              "omega_squared_ps_inverse2": 99.2493492662373,
+              "undamped_frequency_THz": 1.5855646898965485,
+              "outside_measured_hydro_range": true,
+              "outside_PartA_coordinate_box": false
+            }
+          ],
+          "just_beyond_within_5percent": null
+        },
+        {
+          "T_K": 300,
+          "local_axis_variance_A2": 0.030587615138565994,
+          "matched_bare_Gamma_eV_A2": 0.20164636006717562,
+          "Hartree_correction_eV_A2": 0.9149747844454817,
+          "zero_strain_renormalized_curvature_eV_A2": 1.1166211445126573,
+          "law": "464 linear hydro contrast",
+          "critical_positive_linear_strain": 0.054428856721074746,
+          "all_positive_roots_of_fitted_polynomial": [
+            0.054428856721074746
+          ],
+          "crosses_below_5percent": false,
+          "outside_measured_hydro_range_at_onset": true,
+          "polynomial_minimum_positive_strain": null,
+          "polynomial_minimum_curvature_eV_A2": null,
+          "soft_mode_approach": [
+            {
+              "linear_strain": 0.0,
+              "curvature_eV_A2": 1.1166211445126573,
+              "omega_squared_ps_inverse2": 10695.92762243926,
+              "undamped_frequency_THz": 16.45998212983782,
+              "outside_measured_hydro_range": false,
+              "outside_PartA_coordinate_box": false
+            },
+            {
+              "linear_strain": 0.027214428360537373,
+              "curvature_eV_A2": 0.5583105722563286,
+              "omega_squared_ps_inverse2": 5347.96381121963,
+              "undamped_frequency_THz": 11.638964982217713,
+              "outside_measured_hydro_range": true,
+              "outside_PartA_coordinate_box": false
+            },
+            {
+              "linear_strain": 0.04898597104896727,
+              "curvature_eV_A2": 0.11166211445126573,
+              "omega_squared_ps_inverse2": 1069.5927622439258,
+              "undamped_frequency_THz": 5.205103377595687,
+              "outside_measured_hydro_range": true,
+              "outside_PartA_coordinate_box": false
+            },
+            {
+              "linear_strain": 0.053884568153864,
+              "curvature_eV_A2": 0.011166211445126528,
+              "omega_squared_ps_inverse2": 106.95927622439216,
+              "undamped_frequency_THz": 1.6459982129837785,
+              "outside_measured_hydro_range": true,
+              "outside_PartA_coordinate_box": false
+            }
+          ],
+          "just_beyond_within_5percent": null
+        }
+      ],
+      "zero_point_Hartree_once_eV_A2": 0.8344855761409702
+    },
+    {
+      "material": "PdD",
+      "material_inputs": {
+        "mass_eVc2": 1875612945.0,
+        "a_A": 4.084,
+        "K2_eV_A2": 0.590658682890108,
+        "K_Gamma_eV_A2": 0.20164636006717562,
+        "J_sum_eV_A2": 0.3890123228229324,
+        "K4_100_eV_A4": 11.615048217417709,
+        "K4_111_eV_A4": 2.227715739838984,
+        "reference_amplitude_decay_ps": 4.136036943628514
+      },
+      "before_spectrum": {
+        "parity_basis_per_axis": 10,
+        "largest_block": 1000,
+        "basis_quantum_eV": 0.05635195255916689,
+        "ground_energy_eV": 0.0782818979825353,
+        "zero_to_one_meV": 55.733570843915906,
+        "zero_to_one_THz": 13.476317473398899,
+        "parametric_stiffness_clock_THz": 26.952634946797797,
+        "raw_zero_to_one_x_strength_A2": 0.01857988518410439,
+        "zero_to_one_oscillator_strength": 0.9976085713810706,
+        "single_pole_effective_spring_eV_A2": 1.4998362554898221,
+        "dE01_dKx_A2": 0.016296018742988954,
+        "dE01_dKy_A2": 0.00026933311260348737,
+        "dE01_dKz_A2": 0.00026933311260347176,
+        "dlnE01_dlnK_fixed_quartic": 0.3297619264431423,
+        "single_pole_mass_over_bare": 1.0023971612589682,
+        "parallel_one_to_two_lines": [
+          {
+            "energy_eV": 0.19558692432608546,
+            "raw_strength_A2": 0.011212420595849103,
+            "block_degeneracy": 1,
+            "one_to_two_meV": 61.57145549963425,
+            "spacing_change_meV": 5.837884655718341
+          },
+          {
+            "energy_eV": 0.19848842496858743,
+            "raw_strength_A2": 0.021365349514011714,
+            "block_degeneracy": 2,
+            "one_to_two_meV": 64.47295614213621,
+            "spacing_change_meV": 8.739385298220306
+          }
+        ],
+        "perpendicular_one_to_two_lines": [
+          {
+            "energy_eV": 0.18816433013302797,
+            "raw_strength_A2": 0.0191161591028074,
+            "block_degeneracy": 1,
+            "one_to_two_meV": 54.148861306576755,
+            "spacing_change_meV": -1.584709537339151
+          }
+        ],
+        "total_parallel_upward_strength_A2": 0.032605201000450036,
+        "reported_parallel_strength_A2": 0.03257777010986082,
+        "local_static_susceptibility_A2_eV": 0.6668791368826534,
+        "RPA_static_denominator": 0.9575147431497949,
+        "RPA_critical_J_eV_A2": 1.4995220943251126,
+        "RPA_Gamma_quantum_eV": 0.05453703568824381,
+        "RPA_Gamma_residue_eV_A2": 0.002071086847760972,
+        "RPA_Gamma_x_strength_A2": 0.018987893471146457,
+        "RPA_Gamma_oscillator_strength": 0.9976279129907399,
+        "local_mean_square_axis_A2_T0": 0.018593048712592018,
+        "local_mean_square_axis_A2_T300": 0.022732028024111433,
+        "cross_manifold_shift_meV": -1.5847095373391489
+      },
+      "spectrum": {
+        "parity_basis_per_axis": 10,
+        "largest_block": 1000,
+        "basis_quantum_eV": 0.050122548724494856,
+        "ground_energy_eV": 0.06511686726835603,
+        "zero_to_one_meV": 48.88345281962621,
+        "zero_to_one_THz": 11.819966304296345,
+        "parametric_stiffness_clock_THz": 23.63993260859269,
+        "raw_zero_to_one_x_strength_A2": 0.02112201354022818,
+        "zero_to_one_oscillator_strength": 0.9947122530504563,
+        "single_pole_effective_spring_eV_A2": 1.1571683903744463,
+        "dE01_dKx_A2": 0.017345913161316902,
+        "dE01_dKy_A2": 0.0003392639020509576,
+        "dE01_dKz_A2": 0.0003392639020509628,
+        "dlnE01_dlnK_fixed_quartic": 0.2177892915982893,
+        "single_pole_mass_over_bare": 1.0053158558500992,
+        "parallel_one_to_two_lines": [
+          {
+            "energy_eV": 0.17138705419638295,
+            "raw_strength_A2": 0.011998653202667358,
+            "block_degeneracy": 1,
+            "one_to_two_meV": 57.38673410840072,
+            "spacing_change_meV": 8.50328128877451
+          },
+          {
+            "energy_eV": 0.17449295759519742,
+            "raw_strength_A2": 0.02267165952534407,
+            "block_degeneracy": 2,
+            "one_to_two_meV": 60.492637507215186,
+            "spacing_change_meV": 11.609184687588979
+          }
+        ],
+        "perpendicular_one_to_two_lines": [
+          {
+            "energy_eV": 0.1613365782081144,
+            "raw_strength_A2": 0.02179530195528383,
+            "block_degeneracy": 1,
+            "one_to_two_meV": 47.33625812013216,
+            "spacing_change_meV": -1.5471946994940495
+          }
+        ],
+        "total_parallel_upward_strength_A2": 0.03472317095459125,
+        "reported_parallel_strength_A2": 0.03467031272801143,
+        "local_static_susceptibility_A2_eV": 0.8645367452720857,
+        "RPA_static_denominator": 0.6636845525559281,
+        "RPA_critical_J_eV_A2": 1.156688834186315,
+        "RPA_Gamma_quantum_eV": 0.03982650139761155,
+        "RPA_Gamma_residue_eV_A2": 0.002065632758813055,
+        "RPA_Gamma_x_strength_A2": 0.025932892500280403,
+        "RPA_Gamma_oscillator_strength": 0.9950007168496131,
+        "local_mean_square_axis_A2_T0": 0.02115335829702729,
+        "local_mean_square_axis_A2_T300": 0.026858683322624633,
+        "cross_manifold_shift_meV": -1.5471946994940478
+      },
+      "basis8_to10": {
+        "local01_meV": -9.862719565489897e-07,
+        "RPA_Gamma_meV": -4.388222611673154e-06,
+        "parallel12_meV": {
+          "1": -0.0002646101294558889,
+          "2": -0.0002620790805920592
+        },
+        "perpendicular12_meV": -1.3081300664907758e-06,
+        "zero_point_axis_variance_A2": 7.13610145974819e-09,
+        "thermal_axis_variance300_A2": 2.324335022022006e-08,
+        "max_energy_change_meV": 0.0002646101294558889,
+        "resolves_0p01meV_by_basis_comparison": true
+      },
+      "before_pumped": {
+        "material": "PdD",
+        "source_entry": "entry_401; coordinate decision entry_458",
+        "local_Kii_eV_A2": 1.0917228165401551,
+        "same_matrix_Jsum_eV_A2": 0.0637075813299599,
+        "harmonic_local_quantum_meV": 47.60702609244912,
+        "local_zero_to_one_meV": 55.733570843915906,
+        "parallel_one_to_two": [
+          {
+            "energy_eV": 0.19558692432608546,
+            "raw_strength_A2": 0.011212420595849103,
+            "block_degeneracy": 1,
+            "one_to_two_meV": 61.57145549963425,
+            "spacing_change_meV": 5.837884655718341
+          },
+          {
+            "energy_eV": 0.19848842496858743,
+            "raw_strength_A2": 0.021365349514011714,
+            "block_degeneracy": 2,
+            "one_to_two_meV": 64.47295614213621,
+            "spacing_change_meV": 8.739385298220306
+          }
+        ],
+        "perpendicular_one_to_two": [
+          {
+            "energy_eV": 0.18816433013302797,
+            "raw_strength_A2": 0.0191161591028074,
+            "block_degeneracy": 1,
+            "one_to_two_meV": 54.148861306576755,
+            "spacing_change_meV": -1.584709537339151
+          }
+        ],
+        "N1_proxy_zero_to_one_meV": 38.313638766024916,
+        "INS_reference_meV": 37.0,
+        "RPA_static_denominator": 0.9575147431497949,
+        "conditional_critical_loading": 23.5375768946345,
+        "conditional_critical_density_m3": 1.3821798040139053e+30,
+        "threshold_scope": "neighbour occupancy rescales J at fixed local well; not a computed loading phase diagram",
+        "selected_phase_domain_size_nm": null,
+        "mode_quantum_meV": 54.537035688243805,
+        "mode_frequency_THz": 13.18699655995737,
+        "stiffness_modulation_clock_THz": 26.37399311991474,
+        "incident_carrier_Ey_squared_THz": 13.18699655995737,
+        "effective_curvature_modulation_threshold": 0.01167212206798669,
+        "Gamma_mode_strength_A2": 0.018987893471146457,
+        "Gamma_spectral_mass_over_bare": 1.0023777271850272,
+        "effective_pole_spring_eV_A2": 1.4361002122514792,
+        "action_normalization": "n=N*A_site,peak^2/(4*Gamma_mode_strength_A2)",
+        "local_Uself_meV": 7.772218417386317,
+        "local_Upair_meV": -0.967166880833988,
+        "local_Ucross_meV": -1.5847095373391489,
+        "Gamma_Uself_meV_times_N": 8.117317214508102,
+        "Gamma_Upair_meV_times_N": -1.010110620866461,
+        "Gamma_Ucross_meV_times_N": -1.6550731485701191,
+        "conservative_reference_gain_occupation_per_cell": 0.03395701194473758,
+        "reference_gain_definition": "g=2Gamma2, exact pair resonance, scalar self-pulling projection; tensor pair conversion retained separately",
+        "stationary_stored_energy_per_cell_eV": 0.0018565947249253975,
+        "equilibrium_ordering_energy_gain_eV": 0.0,
+        "pump_stop_amplitude_decay_ps": 4.136036943628514,
+        "local_strain_threshold": null,
+        "incident_intensity_threshold_W_m2": null,
+        "active_linewidth_Hz": null,
+        "static_Hartree": [
+          {
+            "T_K": 0,
+            "local_axis_variance_A2": 0.018593048712592018,
+            "Hartree_correction_eV_A2": 0.4420264932305229,
+            "effective_B_Hartree_eV_A4": 7.924583358424044,
+            "critical_linear_strain": 0.03037186675968403,
+            "crosses_below_5percent": true,
+            "just_beyond": {
+              "linear_strain": 0.03137186675968403,
+              "direction": "111",
+              "displacement_magnitude_A": 0.12243256185891248,
+              "Cartesian_components_A": [
+                0.07068647254681863,
+                0.07068647254681863,
+                0.07068647254681863
+              ],
+              "energy_gain_per_isotope_eV": -7.687949433975019e-05
+            },
+            "soft_mode_approach": [
+              {
+                "linear_strain": 0.0,
+                "curvature_eV_A2": 0.6230861837862732,
+                "undamped_soft_mode_THz": 8.696475633062345
+              },
+              {
+                "linear_strain": 0.015185933379842014,
+                "curvature_eV_A2": 0.3115430918931366,
+                "undamped_soft_mode_THz": 6.149336892561958
+              },
+              {
+                "linear_strain": 0.027334680083715625,
+                "curvature_eV_A2": 0.062308618378627334,
+                "undamped_soft_mode_THz": 2.750067061663172
+              },
+              {
+                "linear_strain": 0.030068148092087188,
+                "curvature_eV_A2": 0.006230861837862734,
+                "undamped_soft_mode_THz": 0.8696475633062345
+              }
+            ]
+          },
+          {
+            "T_K": 300,
+            "local_axis_variance_A2": 0.022732028024111433,
+            "Hartree_correction_eV_A2": 0.5404255529493074,
+            "effective_B_Hartree_eV_A4": 7.924583358424044,
+            "critical_linear_strain": 0.03516825481774797,
+            "crosses_below_5percent": true,
+            "just_beyond": {
+              "linear_strain": 0.03616825481774797,
+              "direction": "111",
+              "displacement_magnitude_A": 0.12243256185891248,
+              "Cartesian_components_A": [
+                0.07068647254681863,
+                0.07068647254681863,
+                0.07068647254681863
+              ],
+              "energy_gain_per_isotope_eV": -7.687949433975019e-05
+            },
+            "soft_mode_approach": [
+              {
+                "linear_strain": 0.0,
+                "curvature_eV_A2": 0.7214852435050577,
+                "undamped_soft_mode_THz": 9.357998046582665
+              },
+              {
+                "linear_strain": 0.017584127408873985,
+                "curvature_eV_A2": 0.36074262175252886,
+                "undamped_soft_mode_THz": 6.617103877069068
+              },
+              {
+                "linear_strain": 0.031651429335973175,
+                "curvature_eV_A2": 0.07214852435050573,
+                "undamped_soft_mode_THz": 2.959258816660768
+              },
+              {
+                "linear_strain": 0.03481657226957049,
+                "curvature_eV_A2": 0.007214852435050616,
+                "undamped_soft_mode_THz": 0.935799804658269
+              }
+            ]
+          }
+        ]
+      },
+      "pumped": {
+        "material": "PdD",
+        "source_entry": "entry_762 adopted fixed-k3 profile",
+        "local_Kii_eV_A2": 0.590658682890108,
+        "same_matrix_Jsum_eV_A2": 0.3890123228229324,
+        "harmonic_local_quantum_meV": 35.01734022202701,
+        "local_zero_to_one_meV": 48.88345281962621,
+        "parallel_one_to_two": [
+          {
+            "energy_eV": 0.17138705419638295,
+            "raw_strength_A2": 0.011998653202667358,
+            "block_degeneracy": 1,
+            "one_to_two_meV": 57.38673410840072,
+            "spacing_change_meV": 8.50328128877451
+          },
+          {
+            "energy_eV": 0.17449295759519742,
+            "raw_strength_A2": 0.02267165952534407,
+            "block_degeneracy": 2,
+            "one_to_two_meV": 60.492637507215186,
+            "spacing_change_meV": 11.609184687588979
+          }
+        ],
+        "perpendicular_one_to_two": [
+          {
+            "energy_eV": 0.1613365782081144,
+            "raw_strength_A2": 0.02179530195528383,
+            "block_degeneracy": 1,
+            "one_to_two_meV": 47.33625812013216,
+            "spacing_change_meV": -1.5471946994940495
+          }
+        ],
+        "INS_reference_meV": 37.0,
+        "RPA_static_denominator": 0.6636845525559281,
+        "selected_phase_domain_size_nm": null,
+        "mode_quantum_meV": 39.82650139761155,
+        "mode_frequency_THz": 9.63000519367526,
+        "stiffness_modulation_clock_THz": 19.26001038735052,
+        "incident_carrier_Ey_squared_THz": 9.63000519367526,
+        "effective_curvature_modulation_threshold": 0.01598340088736752,
+        "Gamma_mode_strength_A2": 0.025932892500280403,
+        "Gamma_spectral_mass_over_bare": 1.0050244015564287,
+        "effective_pole_spring_eV_A2": 0.7678761903860304,
+        "action_normalization": "n=N*A_site,peak^2/(4*Gamma_mode_strength_A2)",
+        "local_Uself_meV": 10.573883554650823,
+        "local_Upair_meV": -1.0353011329381565,
+        "local_Ucross_meV": -1.5471946994940478,
+        "Gamma_Uself_meV_times_N": 15.939173923879114,
+        "Gamma_Upair_meV_times_N": -1.560622900394263,
+        "Gamma_Ucross_meV_times_N": -2.3322561934675927,
+        "conservative_reference_gain_occupation_per_cell": 0.01729323231734918,
+        "reference_gain_definition": "g=2Gamma2, exact pair resonance, scalar self-pulling projection; tensor pair conversion retained separately",
+        "stationary_stored_energy_per_cell_eV": 0.000691112292930001,
+        "equilibrium_ordering_energy_gain_eV": 0.0,
+        "pump_stop_amplitude_decay_ps": 4.136036943628514,
+        "local_strain_threshold": null,
+        "incident_intensity_threshold_W_m2": null,
+        "active_linewidth_Hz": null,
+        "Gamma_Hartree_zero_temperature_curvature_eV_A2": 0.8344119209139692,
+        "Gamma_Hartree_zero_temperature_quantum_meV": 41.62029071762211,
+        "onresonance_bare_lattice_h_single_RPA_pole_projection": 0.014708889788344583,
+        "bare_h_definition": "lattice deltaK=h_code*Gamma_Hartree0; weak-drive single-RPA-pole on resonance, NOT exact nonlinear lattice onset",
+        "RPA_clock_over_classical_Hartree_clock": 0.9569010862470726
+      },
+      "before_units_bath": {
+        "bare_harmonic_energy_unit_meV": 47.60702609244912,
+        "time_unit_ps": 0.013825941482288853,
+        "length_unit_A": 0.2088234819450772,
+        "theta_at300K": 0.5430290843161982,
+        "physical_kappa_friction_ps_inverse": 0.4835546749844587,
+        "physical_amplitude_decay_ps": 4.136036943628514,
+        "gamma_atomic_velocity_code": 0.0066855986398223315,
+        "Gamma_pole_mass_over_bare": 1.0023777271850272,
+        "gamma_Gamma_pole_bare_force_coefficient_for_same_kappa": 0.006701495169456417,
+        "kappa_over_RPA_angular_frequency": 0.005836061033993345,
+        "if_literal_atomic_gamma_0p01": {
+          "kappa_ps_inverse": 0.7232780503816022,
+          "amplitude_decay_ps": 2.7651882964577705
+        },
+        "if_literal_Gamma_bare_force_gamma_0p01": {
+          "kappa_ps_inverse": 0.721562371914209,
+          "amplitude_decay_ps": 2.771763159841977
+        },
+        "physical_dt_ps_at_dimensionless_dt0p3": 0.004147782444686656
+      },
+      "units_bath": {
+        "bare_harmonic_energy_unit_meV": 35.01734022202701,
+        "time_unit_ps": 0.018796743348484357,
+        "length_unit_A": 0.24348559993105254,
+        "theta_at300K": 0.7382628041446243,
+        "physical_kappa_friction_ps_inverse": 0.4835546749844587,
+        "physical_amplitude_decay_ps": 4.136036943628514,
+        "gamma_atomic_velocity_code": 0.009089253120642639,
+        "Gamma_pole_mass_over_bare": 1.0050244015564287,
+        "gamma_Gamma_pole_bare_force_coefficient_for_same_kappa": 0.00913492117816877,
+        "kappa_over_RPA_angular_frequency": 0.007991700443683759,
+        "if_literal_atomic_gamma_0p01": {
+          "kappa_ps_inverse": 0.5320070511473113,
+          "amplitude_decay_ps": 3.7593486696968714
+        },
+        "if_literal_Gamma_bare_force_gamma_0p01": {
+          "kappa_ps_inverse": 0.5293473972606235,
+          "amplitude_decay_ps": 3.778237147004054
+        },
+        "physical_dt_ps_at_dimensionless_dt0p3": 0.005639023004545307
+      },
+      "static_478_published": [
+        {
+          "T_K": 0,
+          "local_axis_variance_A2": 0.018593048712592018,
+          "Hartree_correction_eV_A2": 0.4420264932305229,
+          "effective_B_Hartree_eV_A4": 7.924583358424044,
+          "critical_linear_strain": 0.03037186675968403,
+          "crosses_below_5percent": true,
+          "just_beyond": {
+            "linear_strain": 0.03137186675968403,
+            "direction": "111",
+            "displacement_magnitude_A": 0.12243256185891248,
+            "Cartesian_components_A": [
+              0.07068647254681863,
+              0.07068647254681863,
+              0.07068647254681863
+            ],
+            "energy_gain_per_isotope_eV": -7.687949433975019e-05
+          },
+          "soft_mode_approach": [
+            {
+              "linear_strain": 0.0,
+              "curvature_eV_A2": 0.6230861837862732,
+              "undamped_soft_mode_THz": 8.696475633062345
+            },
+            {
+              "linear_strain": 0.015185933379842014,
+              "curvature_eV_A2": 0.3115430918931366,
+              "undamped_soft_mode_THz": 6.149336892561958
+            },
+            {
+              "linear_strain": 0.027334680083715625,
+              "curvature_eV_A2": 0.062308618378627334,
+              "undamped_soft_mode_THz": 2.750067061663172
+            },
+            {
+              "linear_strain": 0.030068148092087188,
+              "curvature_eV_A2": 0.006230861837862734,
+              "undamped_soft_mode_THz": 0.8696475633062345
+            }
+          ]
+        },
+        {
+          "T_K": 300,
+          "local_axis_variance_A2": 0.022732028024111433,
+          "Hartree_correction_eV_A2": 0.5404255529493074,
+          "effective_B_Hartree_eV_A4": 7.924583358424044,
+          "critical_linear_strain": 0.03516825481774797,
+          "crosses_below_5percent": true,
+          "just_beyond": {
+            "linear_strain": 0.03616825481774797,
+            "direction": "111",
+            "displacement_magnitude_A": 0.12243256185891248,
+            "Cartesian_components_A": [
+              0.07068647254681863,
+              0.07068647254681863,
+              0.07068647254681863
+            ],
+            "energy_gain_per_isotope_eV": -7.687949433975019e-05
+          },
+          "soft_mode_approach": [
+            {
+              "linear_strain": 0.0,
+              "curvature_eV_A2": 0.7214852435050577,
+              "undamped_soft_mode_THz": 9.357998046582665
+            },
+            {
+              "linear_strain": 0.017584127408873985,
+              "curvature_eV_A2": 0.36074262175252886,
+              "undamped_soft_mode_THz": 6.617103877069068
+            },
+            {
+              "linear_strain": 0.031651429335973175,
+              "curvature_eV_A2": 0.07214852435050573,
+              "undamped_soft_mode_THz": 2.959258816660768
+            },
+            {
+              "linear_strain": 0.03481657226957049,
+              "curvature_eV_A2": 0.007214852435050616,
+              "undamped_soft_mode_THz": 0.935799804658269
+            }
+          ]
+        }
+      ],
+      "static_before_matched_PartA": [
+        {
+          "T_K": 0,
+          "local_axis_variance_A2": 0.018593048712592018,
+          "matched_bare_Gamma_eV_A2": 1.0280152352101952,
+          "Hartree_correction_eV_A2": 0.4420264932305229,
+          "zero_strain_renormalized_curvature_eV_A2": 1.4700417284407181,
+          "law": "PartA640 quadratic contrast",
+          "critical_positive_linear_strain": null,
+          "all_positive_roots_of_fitted_polynomial": [],
+          "crosses_below_5percent": false,
+          "outside_measured_hydro_range_at_onset": null,
+          "polynomial_minimum_positive_strain": 0.11572754038281279,
+          "polynomial_minimum_curvature_eV_A2": 0.28383875485420984,
+          "soft_mode_approach": [
+            {
+              "linear_strain": 0.0,
+              "curvature_eV_A2": 1.4700417284407181,
+              "omega_squared_ps_inverse2": 7044.137860786422,
+              "undamped_frequency_THz": 13.35777288505353,
+              "outside_measured_hydro_range": false,
+              "outside_PartA_coordinate_box": false
+            },
+            {
+              "linear_strain": 0.01,
+              "curvature_eV_A2": 1.2738994521465783,
+              "omega_squared_ps_inverse2": 6104.26438113363,
+              "undamped_frequency_THz": 12.434742582400146,
+              "outside_measured_hydro_range": false,
+              "outside_PartA_coordinate_box": false
+            },
+            {
+              "linear_strain": 0.025,
+              "curvature_eV_A2": 1.0128997049447968,
+              "omega_squared_ps_inverse2": 4853.607229469043,
+              "undamped_frequency_THz": 11.087980310056595,
+              "outside_measured_hydro_range": true,
+              "outside_PartA_coordinate_box": false
+            },
+            {
+              "linear_strain": 0.05,
+              "curvature_eV_A2": 0.6664699055803038,
+              "omega_squared_ps_inverse2": 3193.5868242003385,
+              "undamped_frequency_THz": 8.994136938758391,
+              "outside_measured_hydro_range": true,
+              "outside_PartA_coordinate_box": false
+            }
+          ],
+          "just_beyond_within_5percent": null
+        },
+        {
+          "T_K": 300,
+          "local_axis_variance_A2": 0.022732028024111433,
+          "matched_bare_Gamma_eV_A2": 1.0280152352101952,
+          "Hartree_correction_eV_A2": 0.5404255529493074,
+          "zero_strain_renormalized_curvature_eV_A2": 1.5684407881595026,
+          "law": "PartA640 quadratic contrast",
+          "critical_positive_linear_strain": null,
+          "all_positive_roots_of_fitted_polynomial": [],
+          "crosses_below_5percent": false,
+          "outside_measured_hydro_range_at_onset": null,
+          "polynomial_minimum_positive_strain": 0.11572754038281279,
+          "polynomial_minimum_curvature_eV_A2": 0.3822378145729943,
+          "soft_mode_approach": [
+            {
+              "linear_strain": 0.0,
+              "curvature_eV_A2": 1.5684407881595026,
+              "omega_squared_ps_inverse2": 7515.645933394732,
+              "undamped_frequency_THz": 13.79759165405576,
+              "outside_measured_hydro_range": false,
+              "outside_PartA_coordinate_box": false
+            },
+            {
+              "linear_strain": 0.01,
+              "curvature_eV_A2": 1.3722985118653628,
+              "omega_squared_ps_inverse2": 6575.772453741942,
+              "undamped_frequency_THz": 12.90605524914384,
+              "outside_measured_hydro_range": false,
+              "outside_PartA_coordinate_box": false
+            },
+            {
+              "linear_strain": 0.025,
+              "curvature_eV_A2": 1.1112987646635815,
+              "omega_squared_ps_inverse2": 5325.115302077355,
+              "undamped_frequency_THz": 11.614075355343648,
+              "outside_measured_hydro_range": true,
+              "outside_PartA_coordinate_box": false
+            },
+            {
+              "linear_strain": 0.05,
+              "curvature_eV_A2": 0.7648689652990883,
+              "omega_squared_ps_inverse2": 3665.09489680865,
+              "undamped_frequency_THz": 9.635244588308906,
+              "outside_measured_hydro_range": true,
+              "outside_PartA_coordinate_box": false
+            }
+          ],
+          "just_beyond_within_5percent": null
+        }
+      ],
+      "static_after_matched_PartA": [
+        {
+          "T_K": 0,
+          "local_axis_variance_A2": 0.02115335829702729,
+          "matched_bare_Gamma_eV_A2": 0.20164636006717562,
+          "Hartree_correction_eV_A2": 0.6327655608467936,
+          "zero_strain_renormalized_curvature_eV_A2": 0.8344119209139692,
+          "law": "PartA640 quadratic contrast",
+          "critical_positive_linear_strain": 0.052704461867358464,
+          "all_positive_roots_of_fitted_polynomial": [
+            0.052704461867358464,
+            0.1787506188982671
+          ],
+          "crosses_below_5percent": false,
+          "outside_measured_hydro_range_at_onset": true,
+          "polynomial_minimum_positive_strain": 0.11572754038281279,
+          "polynomial_minimum_curvature_eV_A2": -0.3517910526725391,
+          "soft_mode_approach": [
+            {
+              "linear_strain": 0.0,
+              "curvature_eV_A2": 0.8344119209139692,
+              "omega_squared_ps_inverse2": 3998.330448643889,
+              "undamped_frequency_THz": 10.06374152154404,
+              "outside_measured_hydro_range": false,
+              "outside_PartA_coordinate_box": false
+            },
+            {
+              "linear_strain": 0.026352230933679232,
+              "curvature_eV_A2": 0.35569955625747174,
+              "omega_squared_ps_inverse2": 1704.4391753123139,
+              "undamped_frequency_THz": 6.570688599549778,
+              "outside_measured_hydro_range": true,
+              "outside_PartA_coordinate_box": false
+            },
+            {
+              "linear_strain": 0.04743401568062262,
+              "curvature_eV_A2": 0.06129888657957239,
+              "omega_squared_ps_inverse2": 293.73166722092236,
+              "undamped_frequency_THz": 2.7276931735470686,
+              "outside_measured_hydro_range": true,
+              "outside_PartA_coordinate_box": false
+            },
+            {
+              "linear_strain": 0.05217741724868488,
+              "curvature_eV_A2": 0.005908465602838864,
+              "omega_squared_ps_inverse2": 28.312152945656948,
+              "undamped_frequency_THz": 0.846850170915266,
+              "outside_measured_hydro_range": true,
+              "outside_PartA_coordinate_box": false
+            }
+          ],
+          "just_beyond_within_5percent": null
+        },
+        {
+          "T_K": 300,
+          "local_axis_variance_A2": 0.026858683322624633,
+          "matched_bare_Gamma_eV_A2": 0.20164636006717562,
+          "Hartree_correction_eV_A2": 0.8034303384647612,
+          "zero_strain_renormalized_curvature_eV_A2": 1.0050766985319368,
+          "law": "PartA640 quadratic contrast",
+          "critical_positive_linear_strain": 0.07050572979485062,
+          "all_positive_roots_of_fitted_polynomial": [
+            0.07050572979485062,
+            0.16094935097077495
+          ],
+          "crosses_below_5percent": false,
+          "outside_measured_hydro_range_at_onset": true,
+          "polynomial_minimum_positive_strain": 0.11572754038281279,
+          "polynomial_minimum_curvature_eV_A2": -0.18112627505457146,
+          "soft_mode_approach": [
+            {
+              "linear_strain": 0.0,
+              "curvature_eV_A2": 1.0050766985319368,
+              "omega_squared_ps_inverse2": 4816.120990410745,
+              "undamped_frequency_THz": 11.045078986964338,
+              "outside_measured_hydro_range": false,
+              "outside_PartA_coordinate_box": false
+            },
+            {
+              "linear_strain": 0.03525286489742531,
+              "curvature_eV_A2": 0.3924669732362187,
+              "omega_squared_ps_inverse2": 1880.62108156203,
+              "undamped_frequency_THz": 6.901933677720293,
+              "outside_measured_hydro_range": true,
+              "outside_PartA_coordinate_box": false
+            },
+            {
+              "linear_strain": 0.06345515681536557,
+              "curvature_eV_A2": 0.06088197448248356,
+              "omega_squared_ps_inverse2": 291.73391012947,
+              "undamped_frequency_THz": 2.7184014182477396,
+              "outside_measured_hydro_range": true,
+              "outside_PartA_coordinate_box": false
+            },
+            {
+              "linear_strain": 0.06980067249690211,
+              "curvature_eV_A2": 0.005691940494541248,
+              "omega_squared_ps_inverse2": 27.27460912383092,
+              "undamped_frequency_THz": 0.8311882578286122,
+              "outside_measured_hydro_range": true,
+              "outside_PartA_coordinate_box": false
+            }
+          ],
+          "just_beyond_within_5percent": null
+        }
+      ],
+      "static_after_matched_old_linear464": [
+        {
+          "T_K": 0,
+          "local_axis_variance_A2": 0.02115335829702729,
+          "matched_bare_Gamma_eV_A2": 0.20164636006717562,
+          "Hartree_correction_eV_A2": 0.6327655608467936,
+          "zero_strain_renormalized_curvature_eV_A2": 0.8344119209139692,
+          "law": "464 linear hydro contrast",
+          "critical_positive_linear_strain": 0.0406727806588373,
+          "all_positive_roots_of_fitted_polynomial": [
+            0.0406727806588373
+          ],
+          "crosses_below_5percent": true,
+          "outside_measured_hydro_range_at_onset": true,
+          "polynomial_minimum_positive_strain": null,
+          "polynomial_minimum_curvature_eV_A2": null,
+          "soft_mode_approach": [
+            {
+              "linear_strain": 0.0,
+              "curvature_eV_A2": 0.8344119209139692,
+              "omega_squared_ps_inverse2": 3998.330448643889,
+              "undamped_frequency_THz": 10.06374152154404,
+              "outside_measured_hydro_range": false,
+              "outside_PartA_coordinate_box": false
+            },
+            {
+              "linear_strain": 0.02033639032941865,
+              "curvature_eV_A2": 0.4172059604569846,
+              "omega_squared_ps_inverse2": 1999.1652243219446,
+              "undamped_frequency_THz": 7.116139873992415,
+              "outside_measured_hydro_range": true,
+              "outside_PartA_coordinate_box": false
+            },
+            {
+              "linear_strain": 0.03660550259295357,
+              "curvature_eV_A2": 0.08344119209139689,
+              "omega_squared_ps_inverse2": 399.83304486438874,
+              "undamped_frequency_THz": 3.1824344991287647,
+              "outside_measured_hydro_range": true,
+              "outside_PartA_coordinate_box": false
+            },
+            {
+              "linear_strain": 0.04026605285224893,
+              "curvature_eV_A2": 0.0083441192091398,
+              "omega_squared_ps_inverse2": 39.98330448643941,
+              "undamped_frequency_THz": 1.0063741521544105,
+              "outside_measured_hydro_range": true,
+              "outside_PartA_coordinate_box": false
+            }
+          ],
+          "just_beyond_within_5percent": {
+            "linear_strain": 0.041672780658837304,
+            "direction": "111",
+            "displacement_magnitude_A": 0.09596401965782522,
+            "Cartesian_components_A": [
+              0.05540485258196393,
+              0.05540485258196393,
+              0.05540485258196393
+            ],
+            "energy_gain_per_isotope_eV": -4.7231692258396896e-05,
+            "outside_measured_hydro_range": true
+          }
+        },
+        {
+          "T_K": 300,
+          "local_axis_variance_A2": 0.026858683322624633,
+          "matched_bare_Gamma_eV_A2": 0.20164636006717562,
+          "Hartree_correction_eV_A2": 0.8034303384647612,
+          "zero_strain_renormalized_curvature_eV_A2": 1.0050766985319368,
+          "law": "464 linear hydro contrast",
+          "critical_positive_linear_strain": 0.04899170670994357,
+          "all_positive_roots_of_fitted_polynomial": [
+            0.04899170670994357
+          ],
+          "crosses_below_5percent": true,
+          "outside_measured_hydro_range_at_onset": true,
+          "polynomial_minimum_positive_strain": null,
+          "polynomial_minimum_curvature_eV_A2": null,
+          "soft_mode_approach": [
+            {
+              "linear_strain": 0.0,
+              "curvature_eV_A2": 1.0050766985319368,
+              "omega_squared_ps_inverse2": 4816.120990410745,
+              "undamped_frequency_THz": 11.045078986964338,
+              "outside_measured_hydro_range": false,
+              "outside_PartA_coordinate_box": false
+            },
+            {
+              "linear_strain": 0.024495853354971786,
+              "curvature_eV_A2": 0.5025383492659684,
+              "omega_squared_ps_inverse2": 2408.0604952053727,
+              "undamped_frequency_THz": 7.810050250423527,
+              "outside_measured_hydro_range": true,
+              "outside_PartA_coordinate_box": false
+            },
+            {
+              "linear_strain": 0.044092536038949214,
+              "curvature_eV_A2": 0.1005076698531937,
+              "omega_squared_ps_inverse2": 481.6120990410747,
+              "undamped_frequency_THz": 3.492760653527253,
+              "outside_measured_hydro_range": true,
+              "outside_PartA_coordinate_box": false
+            },
+            {
+              "linear_strain": 0.048501789642844136,
+              "curvature_eV_A2": 0.01005076698531937,
+              "omega_squared_ps_inverse2": 48.16120990410747,
+              "undamped_frequency_THz": 1.104507898696434,
+              "outside_measured_hydro_range": true,
+              "outside_PartA_coordinate_box": false
+            }
+          ],
+          "just_beyond_within_5percent": {
+            "linear_strain": 0.04999170670994357,
+            "direction": "111",
+            "displacement_magnitude_A": 0.09596401965782522,
+            "Cartesian_components_A": [
+              0.05540485258196393,
+              0.05540485258196393,
+              0.05540485258196393
+            ],
+            "energy_gain_per_isotope_eV": -4.7231692258396896e-05,
+            "outside_measured_hydro_range": true
+          }
+        }
+      ],
+      "zero_point_Hartree_once_eV_A2": 0.6327655608467936
+    }
+  ],
+  "local_PdH_over_PdD": 1.5145138655128958,
+  "RPA_Gamma_PdH_over_PdD": 1.563390116449706,
+  "historical_local_PdH_over_PdD": 1.4759729712480418,
+  "INS_descriptor_ratio_55p8_over37": 1.508108108108108,
+  "source_caveats": "Fixedk3, not mesh convergence. Finite periodic image-folded source column, not full3x3 bond tensors. 111 energy-only versus force-onlyK4 differ5.8138%, not a5%quartic uncertainty claim. Full-ion residual unpatched. Bare harmonicD quantum is not an anharmonic excitation gap.",
+  "next_input": "Actual completed loading stiffness/per-existing-bond J_dd law; joint lattice/map batch remains held. Dynamic pump vertex/loss still not measured.",
+  "provenance": {
+    "archive_sha256": "db91955d1504c70564e286e6b91664ce363b2bc0955616b82179dfdb098ca654",
+    "profile_id": "517d4d7d678d465fa6ef3b28e93e46745128c45440dadf061fd50a1623b59bed",
+    "files": {
+      "input.json": "813bd89ff559e71ac73aaa5d7b1e8458c3b60f76ee0cb7bece38c5951c22266a",
+      "historical-inputs.json": "cb813aa06b14b97983b4ab5c8f79ab49c6420b20ce9a2bc82de854fa673ee12c",
+      "historical-anharmonic.json": "cfaab0fdcbefc693e2f2283cb685a0b3f99541722755f9725b13f8b5d54fbbd2",
+      "historical-refit.json": "ce0a46a4f0c2443a4e9bd3ac7e85de435b715354874f4290a9fd62a727929a22",
+      "primitive-strains.json": "9748a47d0fe9e759a61cafcaaddfc2d4c2d844b44d4dd84925dcc1d92d942af8",
+      "partA-law.json": "d3398ac45fa74a31bd4814447cb38283c53925a3835464c2af36915693da986c",
+      "engine/anharmonic.py": "7f47c2493ec46ec712dd1c9e432a10ec6c00f1678ea6d1fbb7c47cbee76fd6e4",
+      "engine/refit.py": "0550a4f23a350bfd21b80c8bf96187bbfd7f0a8b31b184e803f6a99924095df0",
+      "engine/domain.py": "8d41a0102e62c6c99a9c4e6965b9571ac7e749848b58667098182dc2dfb3c9c9",
+      "engine/strain_tensor_law.py": "68d3fd010700f9a6472a6de81b33fe3a28c5f80558b6d0d18ad8b32e8521f0bf",
+      "pd_x1_refit.py": "77a700f55664bb1674744d9d96a433a63ee2d9a28f7d8247e0b2f68393fba3d9"
+    }
+  },
+  "execution": {
+    "elapsed_s": 4.147788644069806,
+    "peak_RSS_KiB": 109580,
+    "numpy": "2.5.3",
+    "threads": 1,
+    "changed_well_probe": "basis8 versus10 only, same original implementation; no source SCF checks repeated"
+  }
+}
