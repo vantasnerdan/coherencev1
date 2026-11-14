@@ -1,0 +1,83 @@
+{
+  "source": {
+    "path": "loading_Pd/x0875-spread4/k3/readout-clean-20261114T0421Z.json",
+    "bytes": 86055,
+    "sha256": "4930c93b9a0d16e4fe555eaa7b7c95340e180c3c300416a539a97c64722c0a7e"
+  },
+  "Kii_force_eV_A2": 0.7025398132059419,
+  "Kii_energy_eV_A2": 0.7016241602918348,
+  "relative_energy_force_difference": 0.0013033466529514656,
+  "raw_all_ion_column_sum_eV_A2": [
+    -0.0017139354420479536,
+    -4.089006910845683e-12,
+    2.7288404700779174e-06
+  ],
+  "raw_acoustic_over_abs_Kii": 0.002439630583476077,
+  "within_existing_five_percent_precision_resolution": true,
+  "sum_Jdd_eV_A2": 0.48495432155516416,
+  "H_only_column_sum_eV_A2": 0.21758549165077778,
+  "F0_parallel_eV_A": 0.002499429227102544,
+  "F0_source_norm_eV_A": 0.0024994292271027776,
+  "portable_consumer": {
+    "command": [
+      "python",
+      "loading_readout.py",
+      "--config",
+      "loading-configs/x0875-spread4.json",
+      "--mesh",
+      "3",
+      "--probe",
+      "clean",
+      "--output",
+      "portable-clean.json"
+    ],
+    "scope": "Actual complete saved readout, byte-equivalent parsed output, no GPW or PAW files",
+    "good_exit": 0,
+    "bad_exit": 1,
+    "wrong_reference_refusal": "ValueError: Lattice source differs"
+  },
+  "cost": {
+    "schema": "loading-cumulative-cost-v1",
+    "dense_baseline_ledger": {
+      "path": "dense-cost-ledger.json",
+      "bytes": 4283,
+      "sha256": "d0d6dbecacdc1e171264fca6430def18c7133788b423565005d3bebfa4ddc5de"
+    },
+    "loading_units": [
+      {
+        "phase": "loading-x0875-spread4-zero-20261114t031817",
+        "properties": {
+          "Result": "success",
+          "MemoryPeak": "3893010432",
+          "CPUUsageNSec": "7270523892000",
+          "InvocationID": "90a65efc786248248a080bfa79c27deb"
+        },
+        "source": {
+          "path": "unit-accounting-loading-x0875-spread4-zero-20261114t031817.txt",
+          "bytes": 110,
+          "sha256": "257e9054ec4e480ae1ae57585bf7ebb89b61509437f798933b900a551af2c44f"
+        },
+        "core_minutes": "121.1753982"
+      },
+      {
+        "phase": "loading-x0875-spread4-clean-20261114t034314",
+        "properties": {
+          "Result": "success",
+          "MemoryPeak": "6095781888",
+          "CPUUsageNSec": "13452027252000",
+          "InvocationID": "4c8568b6cd7845d19f7a744c43cbcee6"
+        },
+        "source": {
+          "path": "unit-accounting-loading-x0875-spread4-clean-20261114t034314.txt",
+          "bytes": 111,
+          "sha256": "3ad3797ce2a021181308c2035513c06d9528ea7d9763e05f8283b7c48b1cb9ca"
+        },
+        "core_minutes": "224.2004542"
+      }
+    ],
+    "known_prior_plus_Native_core_minutes": "1436.688128116633333333333333",
+    "preparation_review_budget_reserve_core_minutes": "20",
+    "remaining_after_reserve_core_minutes": "1543.311871883366666666666667",
+    "whole_cap_core_minutes": "3000"
+  }
+}

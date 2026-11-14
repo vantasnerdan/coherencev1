@@ -1,0 +1,211 @@
+{
+  "schema": "loading-convergence-evidence-v1",
+  "scope": "Exact selected lines from complete original logs, original byte hashes retained; private header omitted. No mesh-convergence or relaxed-minimum claim.",
+  "points": [
+    {
+      "point": "zero",
+      "point_source": {
+        "path": "loading_Pd/x0875-spread4/k3/zero.json",
+        "bytes": 33260,
+        "sha256": "f99215a4341073bccd9f53f5463a20eaef43f4ff6ab6821a34bfeeaf2735735e"
+      },
+      "record_type": "derived_exact_log_excerpt",
+      "original_log": {
+        "path": "loading_Pd/x0875-spread4/k3/zero.loading-x0875-spread4-zero-20261114t031817.out",
+        "bytes": 18254,
+        "sha256": "63569dc464d71908c41afe54911aeb89fc1203ed5ac5e6bbcdef35ae43007259"
+      },
+      "input_eigensolver_lines": [
+        "  eigensolver=Davidson(niter=2),"
+      ],
+      "active_scf_criterion_lines": [
+        "convergence criteria:",
+        "- Maximum [total energy] change in last 3 cyles: 1e-07 eV / valence electron",
+        "- Maximum integral of absolute [dens]ity change: 0.0001 electrons / valence electron",
+        "- Maximum change in the atomic [forces] across last 2 cycles: 0.0001 eV/Ang OR",
+        "Maximum error relative to the maximum force is below inf",
+        "- Maximum integral of absolute [eigenst]ate change: 4e-08 eV^2 / valence electron",
+        "maximum number of iterations: 80",
+        ""
+      ],
+      "final_scf_rows": [
+        "|iter:  28| 03:36:26 | -212.938197c| -9.09c| -5.18c|-3.69 |",
+        "|iter:  29| 03:37:10 | -212.938196c| -9.22c| -5.23c|-3.74 |",
+        "|iter:  30| 03:37:55 | -212.938196c| -9.61c| -5.46c|-3.68 |",
+        "|iter:  31| 03:38:40 | -212.938197c| -9.99c| -5.52c|-4.27c|"
+      ],
+      "actual_parallel": {
+        "world_size": 6,
+        "kpt": 6,
+        "domain": 1,
+        "band": 1
+      },
+      "n_ibz_kpoints": 14,
+      "spatial_operations": 1
+    },
+    {
+      "point": "clean_probe_minus",
+      "point_source": {
+        "path": "loading_Pd/x0875-spread4/k3/clean_probe_minus.json",
+        "bytes": 33592,
+        "sha256": "1b8a42389755b4ee3e3b8ecb50f4afdec1aae6a5df6ba25435c5089ed124d92a"
+      },
+      "record_type": "derived_exact_log_excerpt",
+      "original_log": {
+        "path": "loading_Pd/x0875-spread4/k3/clean_probe_minus.loading-x0875-spread4-clean-20261114t034314.out",
+        "bytes": 14510,
+        "sha256": "564f29a966349f6b5128c2bcb0ec8fe95fc295bccdd76a8c8b971654d8ded11b"
+      },
+      "input_eigensolver_lines": [
+        "  eigensolver=Davidson(niter=2),"
+      ],
+      "active_scf_criterion_lines": [
+        "convergence criteria:",
+        "- Maximum [total energy] change in last 3 cyles: 1e-07 eV / valence electron",
+        "- Maximum integral of absolute [dens]ity change: 0.0001 electrons / valence electron",
+        "- Maximum change in the atomic [forces] across last 2 cycles: 0.0001 eV/Ang OR",
+        "Maximum error relative to the maximum force is below inf",
+        "- Maximum integral of absolute [eigenst]ate change: 4e-08 eV^2 / valence electron",
+        "maximum number of iterations: 80",
+        ""
+      ],
+      "final_scf_rows": [
+        "|iter:  18| 03:55:17 | -212.937784c| -9.78c| -5.76c|-3.32 |",
+        "|iter:  19| 03:56:00 | -212.937784c| -9.96c| -5.85c|-3.31 |",
+        "|iter:  20| 03:56:45 | -212.937784c|-10.20c| -6.00c|-3.42 |",
+        "|iter:  21| 03:57:32 | -212.937784c|-10.68c| -6.33c|-4.26c|"
+      ],
+      "actual_parallel": {
+        "world_size": 6,
+        "kpt": 6,
+        "domain": 1,
+        "band": 1
+      },
+      "n_ibz_kpoints": 14,
+      "spatial_operations": 1
+    },
+    {
+      "point": "clean_probe_plus",
+      "point_source": {
+        "path": "loading_Pd/x0875-spread4/k3/clean_probe_plus.json",
+        "bytes": 33604,
+        "sha256": "d683d3b5ba660040469c7d96bc421ae9e12fb3f934b184e4fc0c259e570daadc"
+      },
+      "record_type": "derived_exact_log_excerpt",
+      "original_log": {
+        "path": "loading_Pd/x0875-spread4/k3/clean_probe_plus.loading-x0875-spread4-clean-20261114t034314.out",
+        "bytes": 14192,
+        "sha256": "fcfe7280520a356ca304892afb33db31b4f82e4226e458a246c6604f46d5e7d8"
+      },
+      "input_eigensolver_lines": [
+        "  eigensolver=Davidson(niter=2),"
+      ],
+      "active_scf_criterion_lines": [
+        "convergence criteria:",
+        "- Maximum [total energy] change in last 3 cyles: 1e-07 eV / valence electron",
+        "- Maximum integral of absolute [dens]ity change: 0.0001 electrons / valence electron",
+        "- Maximum change in the atomic [forces] across last 2 cycles: 0.0001 eV/Ang OR",
+        "Maximum error relative to the maximum force is below inf",
+        "- Maximum integral of absolute [eigenst]ate change: 4e-08 eV^2 / valence electron",
+        "maximum number of iterations: 80",
+        ""
+      ],
+      "final_scf_rows": [
+        "|iter:  19| 04:17:15 | -212.937985c| -9.91c| -5.91c|-3.19 |",
+        "|iter:  20| 04:18:26 | -212.937985c|-10.25c| -6.07c|-3.64 |",
+        "|iter:  21| 04:19:39 | -212.937985c|-10.84c| -6.25c|-3.98 |",
+        "|iter:  22| 04:20:48 | -212.937985c|-11.10c| -6.35c|-4.37c|"
+      ],
+      "actual_parallel": {
+        "world_size": 6,
+        "kpt": 6,
+        "domain": 1,
+        "band": 1
+      },
+      "n_ibz_kpoints": 14,
+      "spatial_operations": 1
+    },
+    {
+      "point": "near_probe_minus",
+      "point_source": {
+        "path": "loading_Pd/x0875-spread4/k3/near_probe_minus.json",
+        "bytes": 33625,
+        "sha256": "1050745ef8fc6ac26b38a3cbeef2634ba13204d36cdf2d31567b48c4c80de449"
+      },
+      "record_type": "derived_exact_log_excerpt",
+      "original_log": {
+        "path": "loading_Pd/x0875-spread4/k3/near_probe_minus.loading-x0875-spread4-near-20261114t042356.out",
+        "bytes": 14573,
+        "sha256": "0160b9f0e44b22c02e1e3ef1a0457d232767777c7a5c275b1f93d114758282f3"
+      },
+      "input_eigensolver_lines": [
+        "  eigensolver=Davidson(niter=2),"
+      ],
+      "active_scf_criterion_lines": [
+        "convergence criteria:",
+        "- Maximum [total energy] change in last 3 cyles: 1e-07 eV / valence electron",
+        "- Maximum integral of absolute [dens]ity change: 0.0001 electrons / valence electron",
+        "- Maximum change in the atomic [forces] across last 2 cycles: 0.0001 eV/Ang OR",
+        "Maximum error relative to the maximum force is below inf",
+        "- Maximum integral of absolute [eigenst]ate change: 4e-08 eV^2 / valence electron",
+        "maximum number of iterations: 80",
+        ""
+      ],
+      "final_scf_rows": [
+        "|iter:  18| 04:36:13 | -212.935798c| -9.77c| -5.77c|-3.63 |",
+        "|iter:  19| 04:36:58 | -212.935798c| -9.96c| -5.84c|-3.70 |",
+        "|iter:  20| 04:37:43 | -212.935798c|-10.42c| -6.10c|-3.77 |",
+        "|iter:  21| 04:38:29 | -212.935798c|-10.75c| -6.24c|-4.11c|"
+      ],
+      "actual_parallel": {
+        "world_size": 6,
+        "kpt": 6,
+        "domain": 1,
+        "band": 1
+      },
+      "n_ibz_kpoints": 14,
+      "spatial_operations": 1
+    },
+    {
+      "point": "near_probe_plus",
+      "point_source": {
+        "path": "loading_Pd/x0875-spread4/k3/near_probe_plus.json",
+        "bytes": 33652,
+        "sha256": "02faa70d7f179c6fd2cc9ae8ef381a59f6eca6c51a31f5eeae457e87a708b9bd"
+      },
+      "record_type": "derived_exact_log_excerpt",
+      "original_log": {
+        "path": "loading_Pd/x0875-spread4/k3/near_probe_plus.loading-x0875-spread4-near-20261114t042356.out",
+        "bytes": 14070,
+        "sha256": "e5cd91bdd8211d74dd3c0466931fcfd05d0177cde9830a6242b22c8c0150b0e2"
+      },
+      "input_eigensolver_lines": [
+        "  eigensolver=Davidson(niter=2),"
+      ],
+      "active_scf_criterion_lines": [
+        "convergence criteria:",
+        "- Maximum [total energy] change in last 3 cyles: 1e-07 eV / valence electron",
+        "- Maximum integral of absolute [dens]ity change: 0.0001 electrons / valence electron",
+        "- Maximum change in the atomic [forces] across last 2 cycles: 0.0001 eV/Ang OR",
+        "Maximum error relative to the maximum force is below inf",
+        "- Maximum integral of absolute [eigenst]ate change: 4e-08 eV^2 / valence electron",
+        "maximum number of iterations: 80",
+        ""
+      ],
+      "final_scf_rows": [
+        "|iter:  17| 04:55:59 | -212.940113c| -9.46c| -5.67c|-3.59 |",
+        "|iter:  18| 04:57:10 | -212.940113c| -9.76c| -5.73c|-3.51 |",
+        "|iter:  19| 04:58:22 | -212.940113c|-10.18c| -6.10c|-3.72 |",
+        "|iter:  20| 04:59:34 | -212.940113c|-10.65c| -6.29c|-4.13c|"
+      ],
+      "actual_parallel": {
+        "world_size": 6,
+        "kpt": 6,
+        "domain": 1,
+        "band": 1
+      },
+      "n_ibz_kpoints": 14,
+      "spatial_operations": 1
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "schema": "loading-cumulative-cost-v1",
+  "dense_baseline_ledger": {
+    "path": "dense-cost-ledger.json",
+    "bytes": 4283,
+    "sha256": "d0d6dbecacdc1e171264fca6430def18c7133788b423565005d3bebfa4ddc5de"
+  },
+  "loading_units": [
+    {
+      "phase": "loading-x0875-spread4-zero-20261114t031817",
+      "properties": {
+        "Result": "success",
+        "MemoryPeak": "3893010432",
+        "CPUUsageNSec": "7270523892000",
+        "InvocationID": "90a65efc786248248a080bfa79c27deb"
+      },
+      "source": {
+        "path": "unit-accounting-loading-x0875-spread4-zero-20261114t031817.txt",
+        "bytes": 110,
+        "sha256": "257e9054ec4e480ae1ae57585bf7ebb89b61509437f798933b900a551af2c44f"
+      },
+      "core_minutes": "121.1753982"
+    },
+    {
+      "phase": "loading-x0875-spread4-clean-20261114t034314",
+      "properties": {
+        "Result": "success",
+        "MemoryPeak": "6095781888",
+        "CPUUsageNSec": "13452027252000",
+        "InvocationID": "4c8568b6cd7845d19f7a744c43cbcee6"
+      },
+      "source": {
+        "path": "unit-accounting-loading-x0875-spread4-clean-20261114t034314.txt",
+        "bytes": 111,
+        "sha256": "3ad3797ce2a021181308c2035513c06d9528ea7d9763e05f8283b7c48b1cb9ca"
+      },
+      "core_minutes": "224.2004542"
+    },
+    {
+      "phase": "loading-x0875-spread4-near-20261114t042356",
+      "properties": {
+        "Result": "success",
+        "MemoryPeak": "5983207424",
+        "CPUUsageNSec": "12757301499000",
+        "InvocationID": "f699a9e16a8f45b8baa07ba54c4f366a"
+      },
+      "source": {
+        "path": "unit-accounting-loading-x0875-spread4-near-20261114t042356.txt",
+        "bytes": 111,
+        "sha256": "f597088c02b9ddaf1d01d777a6d235d3b38befb0dd77c03ef021b0d675cd3969"
+      },
+      "core_minutes": "212.62169165"
+    }
+  ],
+  "loading_core_minutes": "557.99754405",
+  "known_prior_plus_Native_core_minutes": "1649.309819766633333333333333",
+  "preparation_review_budget_reserve_core_minutes": "20",
+  "remaining_after_reserve_core_minutes": "1330.690180233366666666666667",
+  "whole_cap_core_minutes": "3000"
+}
