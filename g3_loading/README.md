@@ -38,7 +38,7 @@ Eight of the 32 sites are empty, grouped together, a = 4.0393 A (extrapolated al
 | No vacant neighbour | 0.732 eV/A^2 | 0.508 | 0.223 | 0.002 eV/A |
 | Four vacant neighbours | 0.477 eV/A^2 | 0.246 | 0.231 | 0.136 eV/A |
 
-## Across the cases so far
+## Across the cases
 
 | Loading | a (A) | Vacant neighbours | On-site stiffness | Sum of couplings | Force toward vacancy |
 |---|---:|---:|---:|---:|---:|
@@ -47,7 +47,6 @@ Eight of the 32 sites are empty, grouped together, a = 4.0393 A (extrapolated al
 | 0.875 | 4.062 | 2 | 0.529 | 0.399 | 0.070 |
 | 0.75 | 4.039 | 0 | 0.732 | 0.508 | 0.002 |
 | 0.75 | 4.039 | 4 | 0.477 | 0.246 | 0.136 |
-
 | 0.875 bunched | 4.062 | 2 | 0.431 | 0.128 | 0.109 |
 
 (The unlabelled 0.875 rows are the spread arrangement; the 0.75 rows are bunched.)
