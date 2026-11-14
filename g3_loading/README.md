@@ -16,7 +16,7 @@ One D is moved while the other 31 D and 32 Pd stay in place, a = 4.084 A, GPAW P
 | Quartic along 111 | 2.23 eV/A^4 |
 | Harmonic quantum of one D | 35.0 meV (measured peak: 37 meV) |
 
-The well is `V(u) = K2 u^2/2 + K4 u^4/4`, sampled to 0.24 A. These replace the earlier Gamma-point-only 64-atom values (on-site 1.09, coupling 0.064), which were not converged in k-points.
+The well is `V(u) = K2 u^2/2 + K4 u^4/4`, sampled to 0.24 A. These replace the earlier Gamma-point-only 64-atom values (on-site 1.09, coupling 0.064), which used coarser settings throughout (400 eV cutoff, one k-point, looser force convergence).
 
 ## x = 0.875, vacancies spread out (`x0875_spread/`)
 

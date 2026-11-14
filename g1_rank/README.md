@@ -1,6 +1,6 @@
 # g1_rank: laws, ranking and measurable predictions for the ordering model
 
-**Read with later results.** This pass used placeholder inputs. In particular the strain needed for the parametric route assumed the well stiffness changes by 5 per unit strain; the computed values (`g2_input`) are 22 for NiH and 113 for PdD, so the strain figures in the pump table are too large by those factors. The ranking and the form of the laws stand.
+**Read with later results.** This pass used placeholder inputs. In particular the strain needed for the parametric route assumed the well stiffness changes by 5 per unit strain; the computed values (`g2_input`) are 22 for NiH and 113 for PdD, so the strain figures in the pump table are too large by about 4 times for NiH and 23 times for PdD. The ranking and the form of the laws stand.
 
 Uses `g0_model/domain.py` unchanged. Run:
 
