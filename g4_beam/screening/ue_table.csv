@@ -1,0 +1,185 @@
+id,material,reaction,Ue_eV,err_stat_eV,err_sys_eV,kind,Ue_dd_equiv_eV,E_cm_keV,target_prep,D_per_M,T_target,vacuum,lab,reference,source_read,note
+g01,D2 gas,"d(d,p)t",25,5,,value,25,1.6-130,molecular D2 gas target,,RT,gas,Bochum,Greife et al. 1995 Z.Phys.A 351:107,secondary (Raiola PoS NIC-IX 169 2006; Bogdanova arXiv:0804.3886),Vesic 2024 Table 1 prints 15+-5 for the same reference; adiabatic limit 20-40 eV depending on atomic/molecular definition
+g02,D2 (Trojan Horse),"d(d,p)t",13.4,0.6,,value,13.4,THM,indirect (THM) vs direct gas data,,,gas,Catania,THM entry 21 in Vesic 2024 Particles 7:834 Table 1,secondary (Vesic 2024),THM-derived; 11.7+-1.6 for d(d;n)
+r02_Mg,Mg,"d(d,p)t",440,40,,value,440,~2.5-15,D implanted into in-situ Kr-sputtered metal,few % (metals with high Ue),RT,HV,Bochum,Raiola et al. 2002 PLB 547:193,secondary (Vesic 2024 Table 1 entry 5),29 metals; superseded by Raiola 2004 for most metals
+r02_Al,Al,"d(d,p)t",30,,,upper,30,~2.5-15,as r02_Mg,,RT,HV,Bochum,Raiola et al. 2002 PLB 547:193,secondary (Vesic 2024),<=30; 2004 value 520+-50
+r02_Ti,Ti,"d(d,p)t",30,,,upper,30,~2.5-15,as r02_Mg,~1,RT,HV,Bochum,Raiola et al. 2002 PLB 547:193,secondary (Vesic 2024),<=30
+r02_V,V,"d(d,p)t",350,30,,value,350,~2.5-15,as r02_Mg,,RT,HV,Bochum,Raiola et al. 2002 PLB 547:193,secondary (Vesic 2024),
+r02_Cr,Cr,"d(d,p)t",220,20,,value,220,~2.5-15,as r02_Mg,,RT,HV,Bochum,Raiola et al. 2002 PLB 547:193,secondary (Vesic 2024),
+r02_Mn,Mn,"d(d,p)t",350,40,,value,350,~2.5-15,as r02_Mg,,RT,HV,Bochum,Raiola et al. 2002 PLB 547:193,secondary (Vesic 2024),
+r02_Fe,Fe,"d(d,p)t",450,50,,value,450,~2.5-15,as r02_Mg,,RT,HV,Bochum,Raiola et al. 2002 PLB 547:193,secondary (Vesic 2024),
+r02_Co,Co,"d(d,p)t",200,20,,value,200,~2.5-15,as r02_Mg,,RT,HV,Bochum,Raiola et al. 2002 PLB 547:193,secondary (Vesic 2024),2004 value 640+-70
+r02_Ni,Ni,"d(d,p)t",450,80,,value,450,~2.5-15,as r02_Mg,,RT,HV,Bochum,Raiola et al. 2002 PLB 547:193,secondary (Vesic 2024),
+r02_Cu,Cu,"d(d,p)t",43,20,,value,43,~2.5-15,as r02_Mg,,RT,HV,Bochum,Raiola et al. 2002 PLB 547:193,secondary (Vesic 2024),2004 value 470+-50
+r02_Zn,Zn,"d(d,p)t",140,20,,value,140,~2.5-15,as r02_Mg,,RT,HV,Bochum,Raiola et al. 2002 PLB 547:193,secondary (Vesic 2024),2004 value 480+-50
+r02_Y,Y,"d(d,p)t",320,40,,value,320,~2.5-15,as r02_Mg,,RT,HV,Bochum,Raiola et al. 2002 PLB 547:193,secondary (Vesic 2024),2004 value <=70
+r02_Zr,Zr,"d(d,p)t",83,20,,value,83,~2.5-15,as r02_Mg,~2,RT,HV,Bochum,Raiola et al. 2002 PLB 547:193,secondary (Vesic 2024),
+r02_Nb,Nb,"d(d,p)t",400,40,,value,400,~2.5-15,as r02_Mg,,RT,HV,Bochum,Raiola et al. 2002 PLB 547:193,secondary (Vesic 2024),
+r02_Mo,Mo,"d(d,p)t",220,20,,value,220,~2.5-15,as r02_Mg,,RT,HV,Bochum,Raiola et al. 2002 PLB 547:193,secondary (Vesic 2024),
+r02_Ru,Ru,"d(d,p)t",220,30,,value,220,~2.5-15,as r02_Mg,,RT,HV,Bochum,Raiola et al. 2002 PLB 547:193,secondary (Vesic 2024),
+r02_Rh,Rh,"d(d,p)t",840,70,,value,840,~2.5-15,as r02_Mg,,RT,HV,Bochum,Raiola et al. 2002 PLB 547:193,secondary (Vesic 2024),2004 value 230+-40
+r02_Pd,Pd,"d(d,p)t",800,70,,value,800,~2.5-15,as r02_Mg,low (few %),RT,HV,Bochum,Raiola et al. 2002 PLB 547:193,secondary (Vesic 2024),
+r02_Ag,Ag,"d(d,p)t",23,10,,value,23,~2.5-15,as r02_Mg,,RT,HV,Bochum,Raiola et al. 2002 PLB 547:193,secondary (Vesic 2024),2004 value 330+-40
+r02_Cd,Cd,"d(d,p)t",390,60,,value,390,~2.5-15,as r02_Mg,,RT,HV,Bochum,Raiola et al. 2002 PLB 547:193,secondary (Vesic 2024),
+r02_Sn,Sn,"d(d,p)t",200,20,,value,200,~2.5-15,as r02_Mg,,RT,HV,Bochum,Raiola et al. 2002 PLB 547:193,secondary (Vesic 2024),
+r02_Hf,Hf,"d(d,p)t",87,20,,value,87,~2.5-15,as r02_Mg,,RT,HV,Bochum,Raiola et al. 2002 PLB 547:193,secondary (Vesic 2024),
+r02_Ta,Ta,"d(d,p)t",340,14,,value,340,~2.5-15,as r02_Mg,,RT,HV,Bochum,Raiola et al. 2002 PLB 547:193,secondary (Vesic 2024),Bogdanova 2008 quotes 340+-24 for Ta
+r02_W,W,"d(d,p)t",220,20,,value,220,~2.5-15,as r02_Mg,,RT,HV,Bochum,Raiola et al. 2002 PLB 547:193,secondary (Vesic 2024),
+r02_Re,Re,"d(d,p)t",700,70,,value,700,~2.5-15,as r02_Mg,,RT,HV,Bochum,Raiola et al. 2002 PLB 547:193,secondary (Vesic 2024; Huke 2008),Bonomo 2003 gives 420+-45; Raiola 2004 gives 230+-30
+r02_Ir,Ir,"d(d,p)t",330,30,,value,330,~2.5-15,as r02_Mg,,RT,HV,Bochum,Raiola et al. 2002 PLB 547:193,secondary (Vesic 2024),
+r02_Pt,Pt,"d(d,p)t",440,50,,value,440,~2.5-15,as r02_Mg,,RT,HV,Bochum,Raiola et al. 2002 PLB 547:193,secondary (Huke 2008 PRC 78:015803),Vesic 2024 Table 1 prints 40+-50 (typo); d(3He;p) on same Pt gave 730+-60
+r02_Au,Au,"d(d,p)t",61,20,,value,61,~2.5-15,as r02_Mg,,RT,HV,Bochum,Raiola et al. 2002 PLB 547:193,secondary (Vesic 2024),2004 value 280+-50
+r02_Pb,Pb,"d(d,p)t",440,50,,value,440,~2.5-15,as r02_Mg,,RT,HV,Bochum,Raiola et al. 2002 PLB 547:193,secondary (Vesic 2024),
+r02_C,C,"d(d,p)t",52,20,,value,52,~2.5-15,as r02_Mg,,RT,HV,Bochum,Raiola et al. 2002 PLB 547:193,secondary (Vesic 2024),semiconductor/insulator class
+r02_Si,Si,"d(d,p)t",45,20,,value,45,~2.5-15,as r02_Mg,,RT,HV,Bochum,Raiola et al. 2002 PLB 547:193,secondary (Vesic 2024),
+r02_Ge,Ge,"d(d,p)t",60,20,,value,60,~2.5-15,as r02_Mg,,RT,HV,Bochum,Raiola et al. 2002 PLB 547:193,secondary (Vesic 2024),
+r02_B,B,"d(d,p)t",30,,,upper,30,~2.5-15,as r02_Mg,,RT,HV,Bochum,Raiola et al. 2002 PLB 547:193,secondary (Vesic 2024),
+r02_BeO,BeO,"d(d,p)t",30,,,upper,30,~2.5-15,as r02_Mg,,RT,HV,Bochum,Raiola et al. 2002 PLB 547:193,secondary (Vesic 2024),
+r02e_Ta,Ta,"d(d,p)t",309,12,,value,309,~2.5-15,D implanted (LUNA/Bochum),,RT,HV,Bochum,Raiola et al. 2002 EPJA 13:377,secondary (Vesic 2024; Bogdanova 2008 quotes 340+-24),
+b03_Re,Re,"d(d,p)t",420,45,,value,420,~2.5-15,D implanted,,RT,HV,Bochum,Bonomo et al. 2003 NPA 719:C37,secondary (Huke 2008),Debye-model paper
+r04_Be,Be,"d(d,p)t",180,40,,value,180,~2.5-15,D implanted into in-situ Kr-sputtered metal; ~4 days implantation to saturation,low (avg solubility ~12%),RT,HV ~1e-8 mbar,Bochum,Raiola et al. 2004 EPJA 19:283,secondary (Vesic 2024 Table 1 entry 6; Pt/Re confirmed by Huke 2008),58 samples; n_eff(Hall) used for Debye fit
+r04_Mg,Mg,"d(d,p)t",440,40,,value,440,~2.5-15,as r04_Be,,RT,HV,Bochum,Raiola et al. 2004 EPJA 19:283,secondary (Vesic 2024),
+r04_Al,Al,"d(d,p)t",520,50,,value,520,~2.5-15,as r04_Be,,RT,HV,Bochum,Raiola et al. 2004 EPJA 19:283,secondary (Vesic 2024),2002: <=30; Czerski 2001: 190+-15
+r04_V,V,"d(d,p)t",480,60,,value,480,~2.5-15,as r04_Be,,RT,HV,Bochum,Raiola et al. 2004 EPJA 19:283,secondary (Vesic 2024),
+r04_Cr,Cr,"d(d,p)t",320,70,,value,320,~2.5-15,as r04_Be,,RT,HV,Bochum,Raiola et al. 2004 EPJA 19:283,secondary (Vesic 2024),
+r04_Mn,Mn,"d(d,p)t",390,50,,value,390,~2.5-15,as r04_Be,,RT,HV,Bochum,Raiola et al. 2004 EPJA 19:283,secondary (Vesic 2024),
+r04_Fe,Fe,"d(d,p)t",460,60,,value,460,~2.5-15,as r04_Be,,RT,HV,Bochum,Raiola et al. 2004 EPJA 19:283,secondary (Vesic 2024),Kasagi 2002: 200+-15+-40
+r04_Co,Co,"d(d,p)t",640,70,,value,640,~2.5-15,as r04_Be,,RT,HV,Bochum,Raiola et al. 2004 EPJA 19:283,secondary (Vesic 2024),480+-60 at 200 C (Raiola 2005)
+r04_Ni,Ni,"d(d,p)t",380,40,,value,380,~2.5-15,as r04_Be,,RT,HV,Bochum,Raiola et al. 2004 EPJA 19:283,secondary (Vesic 2024),
+r04_Cu,Cu,"d(d,p)t",470,50,,value,470,~2.5-15,as r04_Be,,RT,HV,Bochum,Raiola et al. 2004 EPJA 19:283,secondary (Vesic 2024),2002: 43+-20
+r04_Zn,Zn,"d(d,p)t",480,50,,value,480,~2.5-15,as r04_Be,,RT,HV,Bochum,Raiola et al. 2004 EPJA 19:283,secondary (Vesic 2024),
+r04_Sr,Sr,"d(d,p)t",210,30,,value,210,~2.5-15,as r04_Be,,RT,HV,Bochum,Raiola et al. 2004 EPJA 19:283,secondary (Vesic 2024),Huke 2008: 350-800 (layer formation)
+r04_Nb,Nb,"d(d,p)t",470,60,,value,470,~2.5-15,as r04_Be,,RT,HV,Bochum,Raiola et al. 2004 EPJA 19:283,secondary (Vesic 2024),
+r04_Mo,Mo,"d(d,p)t",420,50,,value,420,~2.5-15,as r04_Be,,RT,HV,Bochum,Raiola et al. 2004 EPJA 19:283,secondary (Vesic 2024),
+r04_Ru,Ru,"d(d,p)t",215,30,,value,215,~2.5-15,as r04_Be,,RT,HV,Bochum,Raiola et al. 2004 EPJA 19:283,secondary (Vesic 2024),
+r04_Rh,Rh,"d(d,p)t",230,40,,value,230,~2.5-15,as r04_Be,,RT,HV,Bochum,Raiola et al. 2004 EPJA 19:283,secondary (Vesic 2024),
+r04_Pd,Pd,"d(d,p)t",800,90,,value,800,~2.5-15,as r04_Be,low (few %),RT,HV,Bochum,Raiola et al. 2004 EPJA 19:283,secondary (Vesic 2024),fit uses remeasured n_eff(Pd)=6.3+-1.2 (Raiola PoS 2006)
+r04_Ag,Ag,"d(d,p)t",330,40,,value,330,~2.5-15,as r04_Be,,RT,HV,Bochum,Raiola et al. 2004 EPJA 19:283,secondary (Vesic 2024),
+r04_Cd,Cd,"d(d,p)t",360,40,,value,360,~2.5-15,as r04_Be,,RT,HV,Bochum,Raiola et al. 2004 EPJA 19:283,secondary (Vesic 2024),
+r04_In,In,"d(d,p)t",520,50,,value,520,~2.5-15,as r04_Be,,RT,HV,Bochum,Raiola et al. 2004 EPJA 19:283,secondary (Vesic 2024),
+r04_Sn,Sn,"d(d,p)t",130,20,,value,130,~2.5-15,as r04_Be,,RT,HV,Bochum,Raiola et al. 2004 EPJA 19:283,secondary (Vesic 2024),
+r04_Sb,Sb,"d(d,p)t",720,70,,value,720,~2.5-15,as r04_Be,,RT,HV,Bochum,Raiola et al. 2004 EPJA 19:283,secondary (Vesic 2024),
+r04_Ba,Ba,"d(d,p)t",490,70,,value,490,~2.5-15,as r04_Be,,RT,HV,Bochum,Raiola et al. 2004 EPJA 19:283,secondary (Vesic 2024),
+r04_Ta,Ta,"d(d,p)t",270,30,,value,270,~2.5-15,as r04_Be,,RT,HV,Bochum,Raiola et al. 2004 EPJA 19:283,secondary (Vesic 2024),
+r04_W,W,"d(d,p)t",250,30,,value,250,~2.5-15,as r04_Be,,RT,HV,Bochum,Raiola et al. 2004 EPJA 19:283,secondary (Vesic 2024),
+r04_Re,Re,"d(d,p)t",230,30,,value,230,~2.5-15,as r04_Be,,RT,HV,Bochum,Raiola et al. 2004 EPJA 19:283,secondary (Vesic 2024; Huke 2008),
+r04_Ir,Ir,"d(d,p)t",200,40,,value,200,~2.5-15,as r04_Be,,RT,HV,Bochum,Raiola et al. 2004 EPJA 19:283,secondary (Vesic 2024),
+r04_Pt,Pt,"d(d,p)t",670,50,,value,670,~2.5-15,as r04_Be,low (few %),RT,HV,Bochum,Raiola et al. 2004 EPJA 19:283,secondary (Vesic 2024; Huke 2008),d(3He;p) on Pt: 680+-60
+r04_Au,Au,"d(d,p)t",280,50,,value,280,~2.5-15,as r04_Be,,RT,HV,Bochum,Raiola et al. 2004 EPJA 19:283,secondary (Vesic 2024),
+r04_Tl,Tl,"d(d,p)t",550,90,,value,550,~2.5-15,as r04_Be,,RT,HV,Bochum,Raiola et al. 2004 EPJA 19:283,secondary (Vesic 2024),
+r04_Pb,Pb,"d(d,p)t",480,50,,value,480,~2.5-15,as r04_Be,,RT,HV,Bochum,Raiola et al. 2004 EPJA 19:283,secondary (Vesic 2024),
+r04_Bi,Bi,"d(d,p)t",540,60,,value,540,~2.5-15,as r04_Be,,RT,HV,Bochum,Raiola et al. 2004 EPJA 19:283,secondary (Vesic 2024),
+r04_C,C,"d(d,p)t",60,,,upper,60,~2.5-15,as r04_Be,,RT,HV,Bochum,Raiola et al. 2004 EPJA 19:283,secondary (Vesic 2024),insulator/semiconductor
+r04_Si,Si,"d(d,p)t",60,,,upper,60,~2.5-15,as r04_Be,,RT,HV,Bochum,Raiola et al. 2004 EPJA 19:283,secondary (Vesic 2024),
+r04_Ge,Ge,"d(d,p)t",80,,,upper,80,~2.5-15,as r04_Be,,RT,HV,Bochum,Raiola et al. 2004 EPJA 19:283,secondary (Vesic 2024),
+r04_BeO,BeO,"d(d,p)t",30,,,upper,30,~2.5-15,as r04_Be,,RT,HV,Bochum,Raiola et al. 2004 EPJA 19:283,secondary (Vesic 2024),
+r04_B,B,"d(d,p)t",30,,,upper,30,~2.5-15,as r04_Be,,RT,HV,Bochum,Raiola et al. 2004 EPJA 19:283,secondary (Vesic 2024),
+r04_Al2O3,Al2O3,"d(d,p)t",30,,,upper,30,~2.5-15,as r04_Be,,RT,HV,Bochum,Raiola et al. 2004 EPJA 19:283,secondary (Vesic 2024),
+r04_CaO2,CaO2,"d(d,p)t",50,,,upper,50,~2.5-15,as r04_Be,,RT,HV,Bochum,Raiola et al. 2004 EPJA 19:283,secondary (Vesic 2024),
+r04_Sc,Sc,"d(d,p)t",30,,,upper,30,~2.5-15,as r04_Be,~1 (high solubility),RT,HV,Bochum,Raiola et al. 2004 EPJA 19:283,secondary (Vesic 2024),group 3/4/lanthanides: low Ue at high D content
+r04_Ti,Ti,"d(d,p)t",30,,,upper,30,~2.5-15,as r04_Be,~1,RT,HV,Bochum,Raiola et al. 2004 EPJA 19:283,secondary (Vesic 2024),
+r04_Y,Y,"d(d,p)t",70,,,upper,70,~2.5-15,as r04_Be,~1,RT,HV,Bochum,Raiola et al. 2004 EPJA 19:283,secondary (Vesic 2024),
+r04_Zr,Zr,"d(d,p)t",40,,,upper,40,~2.5-15,as r04_Be,~1-2,RT,HV,Bochum,Raiola et al. 2004 EPJA 19:283,secondary (Vesic 2024),
+r04_Lu,Lu,"d(d,p)t",40,,,upper,40,~2.5-15,as r04_Be,~1,RT,HV,Bochum,Raiola et al. 2004 EPJA 19:283,secondary (Vesic 2024),
+r04_Hf,Hf,"d(d,p)t",30,,,upper,30,~2.5-15,as r04_Be,~1,RT,HV,Bochum,Raiola et al. 2004 EPJA 19:283,secondary (Vesic 2024),
+r04_La,La,"d(d,p)t",60,,,upper,60,~2.5-15,as r04_Be,~1,RT,HV,Bochum,Raiola et al. 2004 EPJA 19:283,secondary (Vesic 2024),
+r04_Ce,Ce,"d(d,p)t",30,,,upper,30,~2.5-15,as r04_Be,~1,RT,HV,Bochum,Raiola et al. 2004 EPJA 19:283,secondary (Vesic 2024),
+r04_Pr,Pr,"d(d,p)t",70,,,upper,70,~2.5-15,as r04_Be,~1,RT,HV,Bochum,Raiola et al. 2004 EPJA 19:283,secondary (Vesic 2024),
+r04_Nd,Nd,"d(d,p)t",30,,,upper,30,~2.5-15,as r04_Be,~1,RT,HV,Bochum,Raiola et al. 2004 EPJA 19:283,secondary (Vesic 2024),
+r04_Sm,Sm,"d(d,p)t",30,,,upper,30,~2.5-15,as r04_Be,~1,RT,HV,Bochum,Raiola et al. 2004 EPJA 19:283,secondary (Vesic 2024),
+r04_Eu,Eu,"d(d,p)t",50,,,upper,50,~2.5-15,as r04_Be,~1,RT,HV,Bochum,Raiola et al. 2004 EPJA 19:283,secondary (Vesic 2024),
+r04_Gd,Gd,"d(d,p)t",50,,,upper,50,~2.5-15,as r04_Be,~1,RT,HV,Bochum,Raiola et al. 2004 EPJA 19:283,secondary (Vesic 2024),
+r04_Tb,Tb,"d(d,p)t",30,,,upper,30,~2.5-15,as r04_Be,~1,RT,HV,Bochum,Raiola et al. 2004 EPJA 19:283,secondary (Vesic 2024),
+r04_Dy,Dy,"d(d,p)t",30,,,upper,30,~2.5-15,as r04_Be,~1,RT,HV,Bochum,Raiola et al. 2004 EPJA 19:283,secondary (Vesic 2024),
+r04_Ho,Ho,"d(d,p)t",70,,,upper,70,~2.5-15,as r04_Be,~1,RT,HV,Bochum,Raiola et al. 2004 EPJA 19:283,secondary (Vesic 2024),
+r04_Er,Er,"d(d,p)t",50,,,upper,50,~2.5-15,as r04_Be,~1,RT,HV,Bochum,Raiola et al. 2004 EPJA 19:283,secondary (Vesic 2024),
+r04_Tm,Tm,"d(d,p)t",70,,,upper,70,~2.5-15,as r04_Be,~1,RT,HV,Bochum,Raiola et al. 2004 EPJA 19:283,secondary (Vesic 2024),
+r04_Yb,Yb,"d(d,p)t",40,,,upper,40,~2.5-15,as r04_Be,~1,RT,HV,Bochum,Raiola et al. 2004 EPJA 19:283,secondary (Vesic 2024),
+r05_Pt20,Pt,"d(d,p)t",675,70,,value,675,~2.5-15,D implanted; sample heated,low,20 C,HV ~1e-8 mbar,Bochum,Raiola et al. 2005 J.Phys.G 31:1141,secondary (Vesic 2024 Table 1 entry 7),temperature series; Huke 2008 notes only the 20 C point differs
+r05_Pt100,Pt,"d(d,p)t",530,40,,value,530,~2.5-15,as r05_Pt20,low,100 C,HV,Bochum,Raiola et al. 2005 J.Phys.G 31:1141,secondary (Vesic 2024),
+r05_Pt200,Pt,"d(d,p)t",530,40,,value,530,~2.5-15,as r05_Pt20,low,200 C,HV,Bochum,Raiola et al. 2005 J.Phys.G 31:1141,secondary (Vesic 2024),
+r05_Pt300,Pt,"d(d,p)t",465,38,,value,465,~2.5-15,as r05_Pt20,low,300 C,HV,Bochum,Raiola et al. 2005 J.Phys.G 31:1141,secondary (Vesic 2024),
+r05_Pt340,Pt,"d(d,p)t",480,70,,value,480,~2.5-15,as r05_Pt20,low,340 C,HV,Bochum,Raiola et al. 2005 J.Phys.G 31:1141,secondary (Vesic 2024),
+r05_Co20,Co,"d(d,p)t",640,70,,value,640,~2.5-15,as r05_Pt20,low,20 C,HV,Bochum,Raiola et al. 2005 J.Phys.G 31:1141,secondary (Vesic 2024),
+r05_Co200,Co,"d(d,p)t",480,60,,value,480,~2.5-15,as r05_Pt20,low,200 C,HV,Bochum,Raiola et al. 2005 J.Phys.G 31:1141,secondary (Vesic 2024),
+r05_Tim10,Ti,"d(d,p)t",30,,,upper,30,~2.5-15,as r05_Pt20,high,-10 C,HV,Bochum,Raiola et al. 2005 J.Phys.G 31:1141,secondary (Vesic 2024),
+r05_Ti50,Ti,"d(d,p)t",50,,,upper,50,~2.5-15,as r05_Pt20,high,50 C,HV,Bochum,Raiola et al. 2005 J.Phys.G 31:1141,secondary (Vesic 2024),
+r05_Ti100,Ti,"d(d,p)t",250,40,,value,250,~2.5-15,as r05_Pt20,low (solubility drops),100 C,HV,Bochum,Raiola et al. 2005 J.Phys.G 31:1141,secondary (Vesic 2024),
+r05_Ti150,Ti,"d(d,p)t",295,40,,value,295,~2.5-15,as r05_Pt20,low,150 C,HV,Bochum,Raiola et al. 2005 J.Phys.G 31:1141,secondary (Vesic 2024),
+r05_Ti200,Ti,"d(d,p)t",290,65,,value,290,~2.5-15,as r05_Pt20,low,200 C,HV,Bochum,Raiola et al. 2005 J.Phys.G 31:1141,secondary (Vesic 2024),
+r05_Sc200,Sc,"d(d,p)t",320,50,,value,320,~2.5-15,as r05_Pt20,low,200 C,HV,Bochum,Raiola et al. 2005 J.Phys.G 31:1141,secondary (Vesic 2024),
+r05_Y200,Y,"d(d,p)t",270,75,,value,270,~2.5-15,as r05_Pt20,low,200 C,HV,Bochum,Raiola et al. 2005 J.Phys.G 31:1141,secondary (Vesic 2024),
+r05_Zr200,Zr,"d(d,p)t",205,70,,value,205,~2.5-15,as r05_Pt20,low,200 C,HV,Bochum,Raiola et al. 2005 J.Phys.G 31:1141,secondary (Vesic 2024),
+r05_Lu200,Lu,"d(d,p)t",265,70,,value,265,~2.5-15,as r05_Pt20,low,200 C,HV,Bochum,Raiola et al. 2005 J.Phys.G 31:1141,secondary (Vesic 2024),
+r05_Hf200,Hf,"d(d,p)t",370,70,,value,370,~2.5-15,as r05_Pt20,low,200 C,HV,Bochum,Raiola et al. 2005 J.Phys.G 31:1141,secondary (Vesic 2024),
+r05_La200,La,"d(d,p)t",245,70,,value,245,~2.5-15,as r05_Pt20,low,200 C,HV,Bochum,Raiola et al. 2005 J.Phys.G 31:1141,secondary (Vesic 2024),
+r05_Ce200,Ce,"d(d,p)t",200,50,,value,200,~2.5-15,as r05_Pt20,low,200 C,HV,Bochum,Raiola et al. 2005 J.Phys.G 31:1141,secondary (Vesic 2024),
+r05_Nd200,Nd,"d(d,p)t",190,50,,value,190,~2.5-15,as r05_Pt20,low,200 C,HV,Bochum,Raiola et al. 2005 J.Phys.G 31:1141,secondary (Vesic 2024),
+r05_Sm200,Sm,"d(d,p)t",314,60,,value,314,~2.5-15,as r05_Pt20,low,200 C,HV,Bochum,Raiola et al. 2005 J.Phys.G 31:1141,secondary (Vesic 2024),
+r05_Eu200,Eu,"d(d,p)t",120,60,,value,120,~2.5-15,as r05_Pt20,low,200 C,HV,Bochum,Raiola et al. 2005 J.Phys.G 31:1141,secondary (Vesic 2024),
+r05_Gd200,Gd,"d(d,p)t",340,85,,value,340,~2.5-15,as r05_Pt20,low,200 C,HV,Bochum,Raiola et al. 2005 J.Phys.G 31:1141,secondary (Vesic 2024),
+r05_Tb200,Tb,"d(d,p)t",340,80,,value,340,~2.5-15,as r05_Pt20,low,200 C,HV,Bochum,Raiola et al. 2005 J.Phys.G 31:1141,secondary (Vesic 2024),
+r05_Dy200,Dy,"d(d,p)t",340,70,,value,340,~2.5-15,as r05_Pt20,low,200 C,HV,Bochum,Raiola et al. 2005 J.Phys.G 31:1141,secondary (Vesic 2024),
+r05_Ho200,Ho,"d(d,p)t",165,50,,value,165,~2.5-15,as r05_Pt20,low,200 C,HV,Bochum,Raiola et al. 2005 J.Phys.G 31:1141,secondary (Vesic 2024),
+r05_Er200,Er,"d(d,p)t",360,80,,value,360,~2.5-15,as r05_Pt20,low,200 C,HV,Bochum,Raiola et al. 2005 J.Phys.G 31:1141,secondary (Vesic 2024),
+r05_Tm200,Tm,"d(d,p)t",260,80,,value,260,~2.5-15,as r05_Pt20,low,200 C,HV,Bochum,Raiola et al. 2005 J.Phys.G 31:1141,secondary (Vesic 2024),
+r05_Yb200,Yb,"d(d,p)t",110,40,,value,110,~2.5-15,as r05_Pt20,low,200 C,HV,Bochum,Raiola et al. 2005 J.Phys.G 31:1141,secondary (Vesic 2024),
+r05_C200,C,"d(d,p)t",50,,,upper,50,~2.5-15,as r05_Pt20,0.15,200 C,HV,Bochum,Raiola et al. 2005 J.Phys.G 31:1141,secondary (Vesic 2024),
+y97_Ti,Ti,"d(d,p)t",19,12,,value,19,1.25-3.25,D implanted (thick target yield),high,not stated,HV,Tohoku,Yuki et al. 1997 J.Phys.Soc.Jpn. 66:73,secondary (Vesic 2024),E_d 2.5-6.5 keV
+y98_Pd,Pd,"d(d,p)t",250,15,,value,250,1.25-5,D implanted,low,not stated,HV,Tohoku,Yuki et al. 1998 JETP Lett. 68:823,secondary (Vesic 2024; Bogdanova 2008),
+y98_AuPdPdO,Au/Pd/PdO heterostructure,"d(d,p)t",601,23,,value,601,1.25-5,D implanted into layered target,low,not stated,HV,Tohoku,Yuki et al. 1998 JETP Lett. 68:823,secondary (Vesic 2024; Huke 2008 quotes 602+-23),
+y98_Ti,Ti,"d(d,p)t",36,11,,value,36,1.25-5,D implanted,high,not stated,HV,Tohoku,Yuki et al. 1998 JETP Lett. 68:823,secondary (Bogdanova 2008),
+y98_Au,Au,"d(d,p)t",23,11,,value,23,1.25-5,D implanted,low,not stated,HV,Tohoku,Yuki et al. 1998 JETP Lett. 68:823,secondary (Bogdanova 2008),
+k02_PdO,PdO,"d(d,p)t",600,20,75,value,600,1.25-5,D implanted (excitation function 2.5-10 keV),low,cooled holder (Huke 2008),HV,Tohoku,Kasagi et al. 2002 J.Phys.Soc.Jpn. 71:2881,primary abstract + Vesic 2024,factor ~50 over bare at E_d 2.5 keV; high Ue associated with low D density (high D mobility)
+k02_Pd,Pd,"d(d,p)t",310,20,50,value,310,1.25-5,as k02_PdO,low,cooled holder,HV,Tohoku,Kasagi et al. 2002 J.Phys.Soc.Jpn. 71:2881,secondary (Vesic 2024),
+k02_Fe,Fe,"d(d,p)t",200,15,40,value,200,1.25-5,as k02_PdO,low,cooled holder,HV,Tohoku,Kasagi et al. 2002 J.Phys.Soc.Jpn. 71:2881,secondary (Vesic 2024),Kasagi 2004 PTPS: ~4x the calculated value
+k02_Au,Au,"d(d,p)t",70,10,40,value,70,1.25-5,as k02_PdO,low,cooled holder,HV,Tohoku,Kasagi et al. 2002 J.Phys.Soc.Jpn. 71:2881,secondary (Vesic 2024),
+k02_Ti,Ti,"d(d,p)t",65,10,40,value,65,1.25-5,as k02_PdO,high,cooled holder,HV,Tohoku,Kasagi et al. 2002 J.Phys.Soc.Jpn. 71:2881,secondary (Vesic 2024),
+c01_Al,Al,"d(d,p)t + d(d,n)",190,15,,value,190,2.5-30,D implanted to near stoichiometry,0.8,beam-heated,HV (elastomer seals; LN2 traps),Berlin,Czerski et al. 2001 EPL 54:449,secondary (Vesic 2024; Bogdanova 2008),differential yield analysis
+c01_Zr,Zr,"d(d,p)t + d(d,n)",297,8,,value,297,2.5-30,as c01_Al,2.1,beam-heated,HV,Berlin,Czerski et al. 2001 EPL 54:449,secondary (Vesic 2024),
+c01_Ta,Ta,"d(d,p)t + d(d,n)",322,15,,value,322,2.5-30,as c01_Al,0.9,beam-heated,HV,Berlin,Czerski et al. 2001 EPL 54:449,secondary (Vesic 2024),Huke 2008: true value may be ~400 (oxide layers make these lower limits)
+c04_C,CD,"d(d,p)t",-20,5,,value,-20,2.5-30,D implanted,1,,HV,Berlin,Czerski et al. 2004 EPL 68:363,primary (Table I),theory 14.3 eV
+c04_Al,AlD,"d(d,p)t",191,12,,value,191,2.5-30,D implanted,1,,HV,Berlin,Czerski et al. 2004 EPL 68:363,primary (Table I),theory (dielectric+cohesion) 96.6 eV = 76.2 + 20.4
+c04_Zr,ZrD2,"d(d,p)t",295,7,,value,295,2.5-30,D implanted,2,,HV,Berlin,Czerski et al. 2004 EPL 68:363,primary (Table I),theory 112.4 eV = 72.4 + 40.0
+c04_Pd,PdD0.2,"d(d,p)t",296,15,,value,296,2.5-30,D implanted; implantation stopped early (few lattice defects),0.2,,HV,Berlin,Czerski et al. 2004 EPL 68:363,primary (Table I),theory 133.8 eV = 90.6 + 43.2
+c04_Ta,TaD,"d(d,p)t",302,13,,value,302,2.5-30,D implanted,1,,HV,Berlin,Czerski et al. 2004 EPL 68:363,primary (Table I),theory 135.7 eV = 82.3 + 53.4
+h08_Ta,Ta,"d(d,p)t",322,15,,value,322,2.5-30 (monitor E_d 25 keV),D implanted; residual-gas equilibrium to keep surface clean,0.9,beam-heated,HV,Berlin,Huke et al. 2008 PRC 78:015803,primary (Table 1),values stated as lower limits (oxide/carbon layers); 433 for thin oxide case in text
+h08_Zr,Zr,"d(d,p)t",297,8,,value,297,2.5-30,as h08_Ta,2.1,,HV,Berlin,Huke et al. 2008 PRC 78:015803,primary,
+h08_Al,Al,"d(d,p)t",190,15,,value,190,2.5-30,as h08_Ta,0.8,,HV,Berlin,Huke et al. 2008 PRC 78:015803,primary,
+h08_Sr,Sr,"d(d,p)t",575,,,range,575,2.5-30,as h08_Ta,1.0,,HV,Berlin,Huke et al. 2008 PRC 78:015803,primary,range 350-800 (layer formation; estimate at best)
+h08_Li,Li,"d(d,p)t",150,,,upper,150,2.5-30,as h08_Ta,0.03,,HV,Berlin,Huke et al. 2008 PRC 78:015803,primary,
+h08_Pd,Pd,"d(d,p)t",313,2,,value,313,2.5-30,as h08_Ta; implantation deliberately stopped early,0.3,,HV,Berlin,Huke et al. 2008 PRC 78:015803,primary,
+h08_C,C,"d(d,p)t",0,,,value,0,2.5-30,as h08_Ta,,,HV,Berlin,Huke et al. 2008 PRC 78:015803,primary,no enhancement
+c08_Zr,Zr,"d(d,p)t",497,7,,value,497,not stated in sources read (monitor E_d 14 keV),D implanted into atomically clean target,~2,,UHV <1e-10 mbar,Berlin,Czerski et al. 2008 J.Phys.G 35:014012,secondary (Targosz-Sleczka PoS NIC XI 133 2010; Acta Phys.Pol.B 42:795 2011),first UHV run; NIC XIII proceedings print 497+-3
+k17_Zr,Zr,"d(d,p)t + d(d,n)",105,15,,value,105,3-12.5,D implanted; Ar-sputter-cleaned; AES-checked surface,~2,,UHV,Szczecin,Kaczmarski et al. 2017 Acta Phys.Pol.B 48:489; Targosz-Sleczka et al. 2018 APPB 49:675; Czerski et al. 2016 EPL 113:22001,secondary (Vesic 2024; Kowalska 2025),fit includes 0+ threshold resonance; theory ~110 eV
+kw25_ZrO,ZrD2 + O implant,"d(d,p)t",600,,,value,600,4 and 10 (two-point),ZrD2 then O implanted up to 2e17 /cm2,2,,UHV ~1e-10 mbar,Szczecin,Kowalska et al. 2025 Materials 18:1331,primary (full text),rises from ~300 eV; approximate values read from the paper text
+kw25_ZrC,ZrD2 + C implant,"d(d,p)t",400,,,value,400,4 and 10 (two-point),ZrD2 then C implanted up to 6.5e17 /cm2,2,,UHV,Szczecin,Kowalska et al. 2025 Materials 18:1331,primary (full text),falls from ~600 eV
+cz26_Zr,ZrD2,"d(d,p)t",340,30,,value,340,0.625-12.5,D implanted to saturation in 1 mm Zr,2,RT,UHV,Szczecin,Czerski et al. arXiv:2409.02112v3 (2026),primary,yield plateau below E_d ~3 keV (2.6e-4 in their units); attributed to thermal fusion in ion tracks + threshold resonance
+cz26_Ti,TiD2 (Ti0.993Pd0.007),"d(d,p)t",25,10,,value,25,0.625-12.5,D implanted to saturation,2,RT,UHV,Szczecin,Czerski et al. arXiv:2409.02112v3 (2026),primary,threshold resonance added explicitly; plateau below E_d ~2 keV; 370 eV needed in hot track to explain plateau
+cz26_Pd,PdD0.05,"d(d,p)t",400,40,,value,400,0.625-12.5,D implanted to saturation,0.05,RT,UHV,Szczecin,Czerski et al. arXiv:2409.02112v3 (2026),primary,plateau below E_d ~6 keV; plateau ~1000x Zr per unit D density; ascribed to low D diffusion activation energy (150 meV) plus higher Ue
+by12_Zr,ZrD2,"d(d,n)3He",205,35,,value,205,2-7,magnetron-sputtered deuteride film,2,,pulsed Hall plasma accelerator,Tomsk/Dubna,Bystritsky et al. 2012 NPA 889:93,secondary (Vesic 2024),
+by12_Ti,TiD2,"d(d,n)3He",125,34,,value,125,2-7,magnetron-sputtered deuteride film,2,,pulsed Hall plasma accelerator,Tomsk/Dubna,Bystritsky et al. 2012 NPA 889:93,secondary (Vesic 2024),
+by12_Ta,TaD0.5,"d(d,n)3He",313,58,,value,313,2-7,magnetron-sputtered deuteride film,0.5,,pulsed Hall plasma accelerator,Tomsk/Dubna,Bystritsky et al. 2012 NPA 889:93,secondary (Vesic 2024),
+l05_Ti,Ti cathode,"d(d,p)t",610,150,,value,610,0.4-1.2,high-current pulsed D glow discharge (loading from plasma),high,,glow discharge,Moscow,Lipson et al. 2005 JETP 100:1175,secondary (web summaries of Lipson ICCF-13 2007),E_d 0.8-2.45 keV; energy spread of discharge ions large
+s19_Pd,Pd wire cathode,"d(d,n)3He",1000,250,,value,1000,<2,pulsed glow discharge; current density 0.1 to several A/cm2,,,glow discharge,LBNL,Schenkel et al. 2019 J.Appl.Phys. 126:203302 (arXiv:1905.03400),primary abstract,yields >100x bare below 2 keV cm
+ch25_Pd,Pd,"d(d,n)3He",,,,none,,<=15,plasma-implanted Pd plus in-situ electrochemical D loading from the back,,,plasma,UBC,Chen et al. 2025 Nature 644:640,primary abstract (via news coverage),no Ue extracted; rate +15(2)% with electrochemical loading
+kh26_Pd,Pd (beam-loaded),"d(d,p)t + d(d,n)",800,200,,value,800,2.5-6.5 fit (data 0.25-6.5),250 um foil + 200 nm sputtered Pd overlayer; beam loading only,not measured,RT (not stated),~1e-6 Torr base; 2.5-3e-4 Torr D2 during run,UC Davis/LBNL,Karahadian et al. 2026 Nat.Commun. 17:8845 (this paper),primary,"brief fact 4 refit: 0.70 (cross-section model), 1.12 keV (thick target)"
+kh26_PdD,PdD (beam + electrochemical),"d(d,p)t + d(d,n)",1700,200,,value,1700,2.5-6.5 fit,as kh26_Pd plus electrolytic loading 6 M D2SO4,not measured,RT,as kh26_Pd,UC Davis/LBNL,Karahadian et al. 2026 Nat.Commun. 17:8845,primary,refit: 1.48 / 1.92 keV; per-energy bi-exponential Ue reaches ~3.0 keV at E_cm 0.25 keV
+kh26_Ti,Ti (beam-loaded),"d(d,p)t + d(d,n)",300,200,,value,300,2.5-6.5 fit,250 um foil + 200 nm sputtered Ti overlayer,not measured,RT,as kh26_Pd,UC Davis/LBNL,Karahadian et al. 2026 Nat.Commun. 17:8845,primary,refit: 0.29 / 0.69 keV
+kh26_TiD,TiD (beam + electrochemical),"d(d,p)t + d(d,n)",900,200,,value,900,2.5-6.5 fit,as kh26_Ti; electrolyte side 250 nm Pd,not measured,RT,as kh26_Pd,UC Davis/LBNL,Karahadian et al. 2026 Nat.Commun. 17:8845,primary,refit: 0.75 / 1.17 keV; per-energy Ue ~2.2 keV at 0.25 keV
+o_cv23_LiH_hard,Pd hard (cold-rolled) H/Pd 0.47,"1H(7Li,a)4He",2860,190,,value,953,inverse kinematics; E_cm 0.2-0.9 MeV range,gas-loaded at 1 bar RT (85% D2 / 15% H2),0.47,RT,HV,JSI Ljubljana,Cvetinovic et al. 2023 PLB 838:137684,secondary (Vesic 2024 Table 1; Cvetinovic slides),"Z1Z2=3; adiabatic 0.24 keV; Ue_dd_equiv = Ue/3 (linear Z1Z2 scaling, estimate); JSI find ~Z^2 dependence, which would give ~0.32 keV"
+o_cv23_FH_hard,Pd hard H/Pd 0.47,"1H(19F,ag)16O",18700,1500,,value,2078,inverse kinematics,as above,0.47,RT,HV,JSI Ljubljana,Cvetinovic et al. 2023 PLB 838:137684,secondary (Vesic 2024),Z1Z2=9; adiabatic 2.19 keV; Z^2 scaling would give ~0.23 keV
+o_cv23_FD_hard,Pd hard,"2H(19F,p)20F",18200,3300,,value,2022,inverse kinematics,as above,0.47,RT,HV,JSI Ljubljana,Cvetinovic et al. 2023 PLB 838:137684,secondary (Vesic 2024),Z1Z2=9
+o_cv23_FD_soft,Pd soft (annealed) H/Pd 0.70,"2H(19F,p)20F",3200,1900,,value,356,inverse kinematics,gas-loaded,0.70,RT,HV,JSI Ljubljana,Cvetinovic et al. 2023 PLB 838:137684,secondary (Vesic 2024),soft foil: no large screening; Knight shift of H differs between foils
+o_lp10_Pd,Pd (no stress),"1H(7Li,a)4He",300,,,upper,100,inverse kinematics,H diffused into foil,,RT,HV,JSI Ljubljana,Lipoglavsek et al. 2010 EPJA 44:71,secondary (Vesic 2024),Z1Z2=3
+o_lp10_Pds,Pd (tensile stress),"1H(7Li,a)4He",1900,600,,value,633,inverse kinematics,H diffused; foil under tensile stress,,RT,HV,JSI Ljubljana,Lipoglavsek et al. 2010 EPJA 44:71,secondary (Vesic 2024),no correlation with H content or Hall coefficient
+o_lp10_PdAg,Pd77Ag23 (tensile stress),"1H(7Li,a)4He",2800,700,,value,933,inverse kinematics,as above,,RT,HV,JSI Ljubljana,Lipoglavsek et al. 2010 EPJA 44:71,secondary (Vesic 2024),
+o_v14_Pd,Pd (H implanted),"1H(7Li,a)4He",2300,500,,value,767,inverse kinematics; E_Li 0.34-2.07 MeV,H implanted,,RT,HV,JSI Ljubljana,Vesic et al. 2014 EPJA 50:153,secondary (Vesic 2024),
+o_v14_Pt,Pt (H implanted),"1H(7Li,a)4He",2800,1300,,value,933,as above,H implanted,,RT,HV,JSI Ljubljana,Vesic et al. 2014 EPJA 50:153,secondary (Vesic 2024),
+o_v14_Ni,Ni (H implanted),"1H(7Li,a)4He",4100,1000,,value,1367,as above,H implanted,,RT,HV,JSI Ljubljana,Vesic et al. 2014 EPJA 50:153,secondary (Vesic 2024),
+o_v14_Zn,Zn (H implanted),"1H(7Li,a)4He",2400,1000,,value,800,as above,H implanted,,RT,HV,JSI Ljubljana,Vesic et al. 2014 EPJA 50:153,secondary (Vesic 2024),
+o_cr05_PdLi,PdLi1%,"7Li(p,a)4He",3790,330,,value,1263,low-energy proton beam,arc-melted / discharge-loaded alloy,,RT,HV,Bochum,Cruz et al. 2005 PLB 624:181,secondary (Vesic 2024),reanalysis (Cruz 2008) 3680+-330 for Pd94.1Li5.9
+o_cr05_Li,Li metal,"7Li(p,a)4He",1280,60,,value,427,low-energy proton beam,metal,,RT,HV,Bochum,Cruz et al. 2005 PLB 624:181,secondary (Vesic 2024),
+o_k04_PdLi,PdLix,"6,7Li(d,a)",1500,310,,value,500,15-37.5 (E_d 30-75 keV),arc-melted alloy,,RT,HV,Tohoku,Kasagi et al. 2004 J.Phys.Soc.Jpn. 73:608,secondary (Vesic 2024),Z1Z2=3
+o_k04_AuLi,AuLix,"6,7Li(d,a)",60,150,,value,20,15-37.5,arc-melted alloy,,RT,HV,Tohoku,Kasagi et al. 2004 J.Phys.Soc.Jpn. 73:608,secondary (Vesic 2024),
+o_lc26_PdF,Pd with implanted 19F (thermal),"d(d,p)t at 0.025 eV",475,10,,inferred,475,thermal (~2.5e-5),cold-rolled Pd gas-loaded with D; 19F previously implanted,~0.08,289 K,underground,JSI Ljubljana,Lipoglavsek & Cvetinovic 2026 Phys.Rev.Research 8:043070,primary,Ue inferred by matching sigma(0.025 eV)=(3.0+-1.0)e-16 b with S=59 keV b; no 0+ threshold resonance seen

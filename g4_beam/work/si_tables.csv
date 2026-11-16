@@ -1,0 +1,13 @@
+# SI Table 1: signal-to-background in proton window (bg 0.007 cph); I = Faraday-cup current from the IV characteristic at V_lab = 2*E_cm
+E_cm,I_uA,Pd_SB,PdD_SB,Ti_SB,TiD_SB
+3.0,145,443,465,1525,5427
+2.5,138,121,177,225,1082
+2.0,134,83,138,82,368
+1.5,123,53,92,106,261
+1.0,110,44,43,69,112
+0.5,68,15,32,47,62
+0.25,38,21,30,15,56
+# SI Table 2: sigmoid model (Eq 16, Delta=0.5 keV fixed): Ue_s, Ue_b, E0 (keV)
+# Pd 3.28 0.8 0.6 ; PdD 3.68 1.7 0.6 ; Ti 3.21 0.3 0.6 ; TiD 2.75 0.9 0.6
+# SI Fig 3 IV (Faraday cup, constant extraction voltage), V_lab kV : I uA (read from plot)
+# 0.5:38 1:68 1.5:94 2:110 2.5:118 3:123 3.5:130 4:134 4.5:136 5:138 5.5:140 6:145 6.5:152 7:156 7.5:160 8:165 8.5:171 9:176 9.5:180 10:182 10.5:192 11:207 11.5:217 12:222 12.5:228 13:238 13.5:251 14:263 14.5:275 15:283

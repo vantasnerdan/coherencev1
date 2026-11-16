@@ -72,6 +72,12 @@ Work after the table above, in directories `g0_*` to `g3_*`, each with its own R
 
 Status: the single-atom wells in `g2_input` and everything computed from them in `g2_refit` and `g3_lattice` used settings that turned out to be too coarse. `g3_loading` holds the corrected wells. The oscillator and lattice results are being rerun on them; until that lands, treat the numbers in `g2_refit` and `g3_lattice` as provisional.
 
+## Pass 4: a second observable on the material layer
+
+| Directory | What it is |
+|---|---|
+| `g4_beam/` | Forward model of low-energy D-D beam-fusion yields in Pd, PdD, Ti and TiD (Karahadian et al. 2026), near-surface deuterium transport with beam damage, measured screening potentials. Outside the lattice map; shares ratio 7 (screening length over lattice spacing) and the near-surface loading with it. |
+
 ## Reproducibility
 
 NumPy and SciPy are enough for everything except `p1_pysr/` (PySR), `p1_sindy/` (PySINDy) and `p2_input/frozen_phonon.py` (GPAW). Those three were run on one machine only; all other outputs were reproduced on a second.

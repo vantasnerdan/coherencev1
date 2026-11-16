@@ -1,0 +1,25 @@
+# lit notes (scratch)
+- Kaess 1997 JALCOM 259, 74: TiHx 1.65<=x<=2.02 PFG-NMR, Ea(H) 0.55 (x=1.65) -> 0.92 eV (x=2.02); TiDx 0.60-0.67 eV (abstract via search)
+- Kappesser & Wipf 1996 J Phys IV 6 C8-73: delta TiHx x 1.6-1.8 mech. spectroscopy Ea 0.49+-0.04 eV
+- Wipf 2000 JALCOM 310, 190: H in TiHx 0.49 eV, D 0.60 eV (search snippet)
+- Bohdansky light-ion threshold Us/(g(1-g)): D-Pd 57.5 eV (Us 3.89), D-Ti 37.0 eV (Us 4.85) -- computed
+- Hupfer 2017 Sci Rep 7, 17065 (doi 10.1038/s41598-017-16660-3): rutile, along c: D_H = 9.4e-4 exp(-0.541 eV/kT) cm2/s, D_D = 1.9e-3 exp(-0.614 eV/kT) cm2/s (fit over 12 decades incl. low T); stress-alignment Ea 0.53 (H) 0.58 (D)
+- Johnson, Paek, DeFord 1975 J Appl Phys 46, 1026: rutile 350-700 C: D_par = 1.8e-3 exp(-0.58 eV/kT), D_perp = 3.8e-1 exp(-1.28 eV/kT) cm2/s, classical isotope sqrt(m)
+- Caskey 1974 tritium rutile 0.39 eV; Cathcart 1979 J Appl Phys 50, 4110: 0.75 eV
+- Ti-H TSS: Lenning, Craighead, Jaffee 1954 (Trans AIME; onemine "Constitution and mechanical properties of Ti-H alloys"): alpha solubility ~8 at% at 300 C -> ~0.1 at% at RT; eutectoid ~300 C, 44 at%. Vizcaino 2015 DSC: eutectoid 319.9 C, alpha limit 5.44 at%.
+- Pd E_d: electron-irradiation resistivity, Phys Rev 153, 735 (1967?) effective 34+-2 eV
+- Konobeyev 2017 Nucl Energy Technol 3, 169, doi 10.1016/j.nucet.2017.08.007 (values not seen)
+- Carstens & David 1989 LA-11456-MS: beta-region PdH/PdD isotherms to 3.5 MPa, 173-473 K (no numbers seen)
+- cyberleninka: Pd-In-Ru plateau 2.7 kPa at RT, 1.6x lower than Pd -> Pd-D ~4.3 kPa (implied)
+- Ti implant: Radiat. Eff. 1980 doi 10.1080/00337578008209259: 6.6 keV D+ into Ti: RT -> TiD1.8 hydride layer, no saturation up to 2e19 D/cm2; 140 K -> ~200 nm surface layer max D/Ti 2.5
+- Pd D traps: Besenbacher, Bech Nielsen, Norskov, Myers, Nordlander (Sandia "Interaction of hydrogen isotopes with metals: deuterium trapped at lattice defects in Pd", ~1989-90 J Fusion Energy 9): up to 6 H/vacancy; number not seen. Cu: 0.22, 0.42 eV; Ni 0.24/0.43 eV.
+- SAV: Fukai & Okuma 1994 PRL: 3-5 GPa, 600-900 C. Watanabe/Matsuzaki/Kadono RIKEN APR52: PALS, electrolytic charging RT -> large vacancy number (prelim). Fukada et al. dry electrolysis ~300 C.
+- PdAg: Vicinanza 2015 J Membr Sci 476 (doi 10.1016/j.memsci.2014.11.031) Pd77Ag23 thin foils; 2021 study: PdAg-D equilibrium pressure ~2x PdAg-H (79-400 C). No RT numbers seen.
+- Permeation: Berlinguette patent US 11667592: 50 mA -> 90% of H released on electrochemical side (i.e. ~10% permeates) with acid on chemical side.
+- Sharpe, Shmayda, Glance 2020 Fusion Sci Technol 76(5), doi 10.1080/15361055.2020.1740558: van't Hoff (absorption), H: A=-36+-1 kJ/mol, B=88+-3 J/K (236-393 K); D: A=-32+-2 kJ/mol, B=88+-9 J/K (211-354 K). If ln(P/1bar)=A/RT+B/R: H 298K 1.9 kPa; D 298K 9.8 kPa (factor ~3 band); D 400K 2.6 bar.
+- Papazoglou & Hepworth 1968 Trans AIME (onemine): 610-900 C, hcp 0-6.7 at% H (equation not seen); beta 1.8e-4 cm2/s at 900 C
+- PRB 41, 7483 (1990) "Surface-controlled deuterium-palladium interactions": D release limited by recombination (no number seen)
+- derived kr(D, alpha-Pd, 300 K) = s * (2-9)e-28 m^4/s with J_atoms = 2 kr c^2 convention, Ks from recalled alpha-Pd Sieverts
+- RustBCA (KrC, LS, planar SBV) outputs: bca_results.txt (sputter, R_N), esc_results.txt (k=1.53), rng_results.txt (ranges). Calibration: D->Ni 1 keV 0.056-0.067 vs Yamamura 0.025; D->W 1 keV 0.006-0.008 vs 0.0017 => BCA ~2-3x high on yields.
+- Yamamura (RustBCA formulas.py, YT params) D->Ti: .0087 .0134 .0152 .0125 .0085 .0071 .0040 at .25 .5 1 2.5 5 6.5 13 keV
+- ICRU49 (Geant4 G4BraggModel.cc coefficients) p stopping 1e-15 eV cm2: Ti 10.86/15.36/22.61; Pd 11.71/16.56/24.66 at 5/10/25 keV; k vs LS = 1.52 Ti, 1.54 Pd below 10 keV/u

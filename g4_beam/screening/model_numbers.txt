@@ -1,0 +1,82 @@
+Raiola 2004 metals: 32 numeric, 51 incl. upper limits
+
+Correlation of Ue (Raiola 2004, RT) with material properties
+property                                   set        n  Pearson        p Spearman        p    95% CI (boot)
+gamma (DOS proxy, mJ/molK2)                numeric   32     0.23    0.205     0.04    0.824   [-0.33, 0.42]
+gamma (DOS proxy, mJ/molK2)                all       38    -0.10    0.558    -0.19    0.244   [-0.50, 0.15]
+log10 gamma                                numeric   32    -0.03    0.882     0.04    0.824   [-0.31, 0.40]
+log10 gamma                                all       38    -0.20    0.222    -0.19    0.244   [-0.51, 0.16]
+work function (eV)                         numeric   32     0.08    0.681    -0.11    0.565   [-0.52, 0.28]
+work function (eV)                         all       46     0.55    0.000     0.48    0.001   [ 0.19, 0.68]
+d-band centre (eV)                         numeric   11     0.21    0.533     0.09    0.790   [-0.42, 0.65]
+d-band centre (eV)                         all       11     0.21    0.533     0.09    0.790   [-0.45, 0.62]
+d count (group-1, TM only)                 numeric   19     0.21    0.391     0.11    0.658   [-0.36, 0.50]
+d count (group-1, TM only)                 all       24     0.59    0.002     0.55    0.005   [ 0.15, 0.79]
+exothermic H solution (0/1)                numeric   32     0.22    0.229     0.17    0.355   [-0.19, 0.46]
+exothermic H solution (0/1)                all       51    -0.62    0.000    -0.67    0.000   [-0.83,-0.44]
+H-absorber incl. ionic hydrides (0/1)      numeric   32     0.13    0.467     0.10    0.592   [-0.26, 0.43]
+H-absorber incl. ionic hydrides (0/1)      all       51    -0.56    0.000    -0.60    0.000   [-0.78,-0.37]
+r_s, all valence e                         numeric   32     0.02    0.926     0.01    0.956   [-0.37, 0.40]
+r_s, all valence e                         all       51    -0.44    0.001    -0.50    0.000   [-0.69,-0.26]
+r_s, s-p electrons only                    numeric   32    -0.15    0.425    -0.23    0.206   [-0.60, 0.16]
+r_s, s-p electrons only                    all       51    -0.69    0.000    -0.71    0.000   [-0.82,-0.53]
+atomic density (1/A3)                      numeric   32    -0.16    0.382    -0.20    0.280   [-0.55, 0.17]
+atomic density (1/A3)                      all       51     0.38    0.006     0.42    0.002   [ 0.16, 0.63]
+group number                               numeric   32     0.34    0.056     0.39    0.029   [ 0.03, 0.66]
+group number                               all       51     0.68    0.000     0.66    0.000   [ 0.44, 0.82]
+
+Exothermic absorbers (n=23): median Ue 50 eV; others (n=28): median 405 eV; Mann-Whitney one-sided p = 1.15e-06
+  exothermic absorbers with a numeric Ue at RT: [('Nb', 470.0), ('Pd', 800.0), ('Ta', 270.0), ('V', 480.0)]
+
+Raiola 2002 vs 2004, same metals (n=29): Pearson 0.31 (p=0.096), Spearman 0.26 (p=0.178) CI [-0.13,0.62]
+  metals changing by >2x between the two surveys: 11/29: [('Ag', 23.0, 330.0), ('Al', 30.0, 520.0), ('Au', 61.0, 280.0), ('Co', 200.0, 640.0), ('Cu', 43.0, 470.0), ('Hf', 87.0, 30.0), ('Re', 700.0, 230.0), ('Rh', 840.0, 230.0), ('Y', 320.0, 70.0), ('Zn', 140.0, 480.0), ('Zr', 83.0, 40.0)]
+
+Same metal, different laboratories (d+d; RT; accelerator):
+  Pd: n=7  min 250  max 800 eV  max/min 3.2   r02_Pd=800, r04_Pd=800, y98_Pd=250, k02_Pd=310, c04_Pd=296, h08_Pd=313, cz26_Pd=400
+  Ti: n=6  min 19  max 125 eV  max/min 6.6   r04_Ti=30(<=), y97_Ti=19, y98_Ti=36, k02_Ti=65, by12_Ti=125, cz26_Ti=25
+  Zr: n=7  min 40  max 497 eV  max/min 12.4   r02_Zr=83, r04_Zr=40(<=), c01_Zr=297, c08_Zr=497, k17_Zr=105, cz26_Zr=340, by12_Zr=205
+  Ta: n=6  min 270  max 340 eV  max/min 1.3   r02e_Ta=309, r02_Ta=340, r04_Ta=270, c01_Ta=322, c04_Ta=302, by12_Ta=313
+  Al: n=3  min 30  max 520 eV  max/min 17.3   r02_Al=30(<=), r04_Al=520, c01_Al=190
+  Au: n=4  min 23  max 280 eV  max/min 12.2   r02_Au=61, r04_Au=280, y98_Au=23, k02_Au=70
+  Fe: n=3  min 200  max 460 eV  max/min 2.3   r02_Fe=450, r04_Fe=460, k02_Fe=200
+  Pt: n=2  min 440  max 670 eV  max/min 1.5   r02_Pt=440, r04_Pt=670
+
+================ MODEL NUMBERS ================
+Debye Pd 293 K n_eff=1.0: U=318 eV, R_D=0.0453 A, electrons in Debye sphere=2.6e-05
+Debye Pd 293 K n_eff=6.3: U=799 eV, R_D=0.0180 A, electrons in Debye sphere=1.1e-05
+  Debye: Ue=300 eV needs n_eff=0.9 at 293 K, or T=2080 K with n_eff=6.3
+  Debye: Ue=800 eV needs n_eff=6.3 at 293 K, or T=292 K with n_eff=6.3
+  Debye: Ue=1700 eV needs n_eff=28.5 at 293 K, or T=65 K with n_eff=6.3
+  Debye: Ue=3000 eV needs n_eff=88.8 at 293 K, or T=21 K with n_eff=6.3
+  Debye sensitivities: dlnU = 0.5 dln n_eff + 0.5 dln rho_a - 0.5 dln T; +1% linear strain -> -1.5%; 293->600 K -> x0.70
+
+Static screening lengths and implied Ue = e^2/lambda (N(EF) values are estimates; see models.md)
+mat     lam_TF(DOS)     Ue  lam/dMM  lam/dDD | lam_TF free sp    Ue  ratio | lam free all    Ue | Czerski 250/sqrt(rs)
+Pd          0.188 A   76.6    0.068    0.068 |        0.574 A  25.1  0.209 |      0.391 A  36.8 | rs=1.33 U=216 eV
+PdD0.7      0.475 A   30.3    0.167    0.167 |        0.534 A  27.0  0.188 |      0.393 A  36.6 | rs=1.35 U=215 eV
+Ti          0.329 A   43.7    0.113    0.113 |        0.591 A  24.3  0.203 |      0.469 A  30.7 | rs=1.92 U=180 eV
+TiD2        0.246 A   58.6    0.078    0.111 |        0.510 A  28.2  0.163 |      0.455 A  31.7 | rs=1.80 U=186 eV
+  Ue=300 eV requires static lambda=0.0480 A = 0.0174 d_nn(Pd); turning point at E=Ue is the same length
+  Ue=800 eV requires static lambda=0.0180 A = 0.0065 d_nn(Pd); turning point at E=Ue is the same length
+  Ue=1700 eV requires static lambda=0.0085 A = 0.0031 d_nn(Pd); turning point at E=Ue is the same length
+  Ue=3000 eV requires static lambda=0.0048 A = 0.0017 d_nn(Pd); turning point at E=Ue is the same length
+  TF: Ue=100 eV needs local electron density 272 e/A^3 (40.3 e/a0^3); Pd valence-electron density is 0.68 e/A^3
+  TF: Ue=1700 eV needs local electron density 6.56e+09 e/A^3 (9.73e+08 e/a0^3); Pd valence-electron density is 0.68 e/A^3
+  Constant-shift validity needs lambda >> r_c(E), i.e. Ue << E:
+    E=6.5 keV, Ue=1.7 keV: lambda/r_c = E/Ue = 3.82
+    E=2.5 keV, Ue=1.7 keV: lambda/r_c = E/Ue = 1.47
+    E=0.25 keV, Ue=3.0 keV: lambda/r_c = E/Ue = 0.08
+    E=0.25 keV, Ue=0.8 keV: lambda/r_c = E/Ue = 0.31
+
+Dynamic screening factor U_dyn/U_ad (Lifschitz-Arista), v_F=1.46e+06 m/s
+  E_cm=0.25 keV  v/vF=0.15  U_dyn/U_ad=0.996
+  E_cm=1.0 keV  v/vF=0.30  U_dyn/U_ad=0.985
+  E_cm=2.5 keV  v/vF=0.47  U_dyn/U_ad=0.960
+  E_cm=6.5 keV  v/vF=0.76  U_dyn/U_ad=0.880
+
+Yield sensitivity: dln(sigma)/dUe = 0.5*sqrt(EG)*E^-1.5 (keV^-1)
+  E= 0.25 keV: 125.603 /keV -> factor 2 in yield = dUe      6 eV
+  E= 1.00 keV:  15.700 /keV -> factor 2 in yield = dUe     44 eV
+  E= 2.50 keV:   3.972 /keV -> factor 2 in yield = dUe    175 eV
+  E= 6.50 keV:   0.947 /keV -> factor 2 in yield = dUe    732 eV
+  E=15.00 keV:   0.270 /keV -> factor 2 in yield = dUe   2565 eV
