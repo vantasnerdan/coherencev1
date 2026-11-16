@@ -2,8 +2,8 @@
 Nat. Commun. 17:8845 (2026), Fig. 2, with an explicit measurement layer.
 
 Layers
-  reaction   : Bosch & Hale (1992) S-factors for D(d,p)T and D(d,n)3He; screened cross section of the
-               paper's Eq. 7; optional Czerski (2022) 0+ threshold-resonance term.
+  reaction   : Bosch & Hale (1992) S-factors for D(d,p)T and D(d,n)3He; screened cross section of
+               the paper's Eq. 7; Czerski (2026 v3) thermal-track rate as a separate source.
   stopping   : ICRU-49 (Andersen-Ziegler type) velocity-proportional electronic stopping + ZBL universal
                nuclear stopping, Bragg additivity for MD_x. Path range (CSDA) and mean projected range
                (first-moment transport, sigma_tr = 2 S_n / (gamma E) for M2 >> M1).
@@ -41,36 +41,29 @@ def sigma(E_cm, Ue=0.0, ch='p'):
     return S_BH(E, ch)/np.sqrt(E*(E + Ue))*np.exp(-BG/np.sqrt(E + Ue))
 
 
-# Czerski, Phys. Rev. C 106, L011601 (2022), Eqs. 4-7: 0+ threshold resonance interfering with the
-# 0+ part (1/3) of the flat (Bosch-Hale) cross section.  Constants:
-HBARC = 197.327                    # MeV fm
-MU = 1875.613/2.0                  # MeV, d+d reduced mass
-A_CH = 8.0                         # fm, channel radius (assumed; only Gamma_p / a matters for E >> E_res)
-E_RES = 1.0e-3                     # keV (1 eV, Czerski Fig. 3)
-G_TOT0 = 1.0e-4                    # keV (0.1 eV total width excluding Gamma_d, Czerski Fig. 3)
-PHI_FLAT = np.deg2rad(116.0)       # Czerski Zr fit, phi_flat = 116 +- 40 deg
+def reaction_S(E_cm, ch='p', reaction='proton'):
+    """Common fixed nuclear background, source v3 literal Eqs14/17, keV mb.
+
+    Gamma_p=40meV, phase115deg, a=7fm, E_R->0. Neutron parameters
+    are unknown: baseline 'proton' leaves them Bosch-Hale. 'mirror' is
+    the explicitly authorized fixed-neutron sensitivity; 'eq7' is effective.
+    """
+    if reaction not in ('proton', 'mirror', 'eq7'):
+        raise ValueError(reaction)
+    sb = S_BH(E_cm, ch)
+    if reaction == 'eq7' or (ch == 'n' and reaction == 'proton'):
+        return sb
+    e = np.asarray(E_cm, float)
+    sr = np.sqrt(2*986.)*197326.9804**3*(40.e-6)/(7.*937806.5**1.5*e**2)*10.
+    return sb + sr + 2*np.sqrt(sb*sr/3)*np.cos(np.deg2rad(115.))
 
 
-def czerski_factor(E_cm, Ue, Gp_meV, ch='p'):
-    """sigma_tot / sigma_flat for the screened Czerski threshold resonance.
-    sigma_res = pi/k^2 Gd Gp / ((E-Er)^2 + Gtot^2/4), Gd = 2 k a P(E+Ue) hbar^2/(mu a^2),
-    P(x) = sqrt(EG/x) exp(-sqrt(EG/x)); sigma_flat(0+) = sigma_flat/3;
-    sigma_tot = sigma_flat + sigma_res + 2 sqrt(sigma_flat/3 * sigma_res) cos(phi_flat - phi_res).
-    Applied to both channels (Gamma_n = Gamma_p by mirror symmetry, assumed)."""
-    E = np.asarray(E_cm, float)
-    if Gp_meV <= 0:
-        return np.ones_like(E)
-    k2 = 2*MU*(E*1e-3)/HBARC**2                         # fm^-2
-    k = np.sqrt(k2)
-    x = E + Ue
-    P = np.sqrt(EG/x)*np.exp(-np.sqrt(EG/x))
-    Gd = 2*k*A_CH*P*(HBARC**2/(MU*A_CH**2))*1e3         # keV
-    Gp = Gp_meV*1e-6                                     # keV
-    Gt = Gd + Gp + G_TOT0
-    sres = (np.pi/k2)*Gd*Gp/((E - E_RES)**2 + Gt**2/4)*10.0   # fm^2 -> mb
-    sflat = sigma(E, Ue, 'p')
-    phires = np.arctan2(Gt, 2*(E - E_RES))
-    return 1.0 + sres/sflat + 2*np.sqrt(sres/(3*sflat))*np.cos(PHI_FLAT - phires)
+def reaction_sigma(E_cm, Ue=0., ch='p', reaction='proton'):
+    """Eq7 penetration with the fixed common reaction S-factor, in mb."""
+    e = np.asarray(E_cm, float)
+    return reaction_S(e, ch, reaction)/np.sqrt(e*(e+Ue))*np.exp(-BG/np.sqrt(e+Ue))
+
+
 
 
 # ----------------------------------------------------------------------------------------------
@@ -130,8 +123,9 @@ class Target:
     """Precomputes stopping, path and projected-depth functions on a log grid of lab energies.
     E_cut (lab keV) is the lower end of the slowing-down integral (convention, see report)."""
 
-    def __init__(self, mat, E_cut=0.1, E_max=16.0, N=1200):
+    def __init__(self, mat, E_cut=0.1, E_max=32.0, N=1600, reaction='proton'):
         self.mat = mat
+        self.reaction = reaction
         self.x = MATERIALS[mat]['x']
         self.n = host_density(mat)
         self.E = np.geomspace(E_cut, E_max, N)
@@ -168,20 +162,15 @@ class Target:
         return np.exp(np.interp(Qd, self.Q, self._lnE, left=np.log(self.E[0]))), Qd <= 0
 
     # --- cumulative yield integrals ---
-    def cumulative(self, Ue, ch='p', Gp_meV=0.0):
-        """C(E) = int_{E_cut}^{E} x sigma(E'/2) / S(E') dE'  -> reactions per incident D (x absorbed)."""
-        Ecm = self.E/2
-        s = sigma(Ecm, Ue, ch)
-        if Gp_meV > 0:
-            s = s*czerski_factor(Ecm, Ue, Gp_meV, ch)
-        f = self.x*s/self.S*1e-9          # mb -> cm2 (1e-27) / (eV->keV 1e-3 * 1e-15)  = 1e-9
-        dE = np.diff(self.E)
-        return np.concatenate([[0], np.cumsum(0.5*(f[1:] + f[:-1])*dE)])
+    def cumulative(self, Ue, ch='p'):
+        """C(E) = int x sigma(E'/2)/S(E') dE': reactions per incident D."""
+        f = self.x*reaction_sigma(self.E/2, Ue, ch, self.reaction)/self.S*1e-9
+        return np.concatenate([[0], np.cumsum(0.5*(f[1:] + f[:-1])*np.diff(self.E))])
 
-    def Y_const(self, E0, Ue, ch='p', Gp_meV=0.0, C=None):
-        """Thick-target yield per incident deuteron at lab energy E0 with constant Ue."""
+    def Y_const(self, E0, Ue, ch='p', C=None):
+        """Thick-target probability per incident D at lab energy E0 (keV)."""
         if C is None:
-            C = self.cumulative(Ue, ch, Gp_meV)
+            C = self.cumulative(Ue, ch)
         return np.interp(np.log(E0), self._lnE, C)
 
     def Y_rows(self, E0, Ue, ch='p'):
@@ -190,14 +179,15 @@ class Target:
         E0 = np.asarray(E0, float); shp = E0.shape
         e0 = E0.ravel(); u = np.broadcast_to(np.asarray(Ue, float), shp).ravel()
         Ecm = self.E[None, :]/2
-        f = self.x*sigma(Ecm, u[:, None], ch)/self.S[None, :]*1e-9
+        f = self.x*reaction_sigma(Ecm, u[:, None], ch, self.reaction)/self.S[None, :]*1e-9
         dE = np.diff(self.E)[None, :]
         C = np.concatenate([np.zeros((len(e0), 1)), np.cumsum(0.5*(f[:, 1:] + f[:, :-1])*dE, 1)], 1)
         le = np.log(e0)
         j = np.clip(np.searchsorted(self._lnE, le) - 1, 0, len(self.E) - 2)
         t = (le - self._lnE[j])/(self._lnE[j + 1] - self._lnE[j])
         r = np.arange(len(e0))
-        return (C[r, j]*(1 - t) + C[r, j + 1]*t).reshape(shp)
+        result = (C[r, j]*(1 - t) + C[r, j + 1]*t).reshape(shp)
+        return np.where(E0 <= self.E[0], 0.0, result)
 
     def Y_layer(self, E0, Ue_s, Ue_b, d, ch='p'):
         """Step Ue(z): Ue_s for mean projected depth z < d (nm), Ue_b beyond."""
@@ -266,15 +256,14 @@ def plotted(E_cm, Yion, Yneu, meas):
 
 
 def yield_function(T, physics, p):
-    """Returns yf(E_lab, ch) = yield per incident deuteron for the given physics candidate.
-    physics: 'const' {Ue}; 'czerski' {Ue, Gp (meV)}; 'layer' {Ue, Ue_s, d (nm)};
-             'sigmoid_tt' {Ue, Ue_s, E0} per-beam-energy Ue_eff (paper Eq. 16, Delta = 0.5 keV)
-             held constant along each path; 'sigmoid_xs' paper's own cross-section ratio (not a
-             thick-target yield; reference only)."""
-    if physics in ('const', 'czerski'):
-        Gp = p.get('Gp', 0.0) if physics == 'czerski' else 0.0
-        C = {ch: T.cumulative(p['Ue'], ch, Gp) for ch in ('p', 'n')}
-        return lambda E, ch: np.interp(np.log(E), T._lnE, C[ch])
+    """Per-incident-D physical probability; only the confirmed candidates.
+
+    'const' is the no-plateau control and the ion part of fast neutrals.
+    Thermal sources are supplied per incident charge to relative_yield.
+    """
+    if physics == 'const':
+        C = {ch: T.cumulative(p['Ue'], ch) for ch in ('p', 'n')}
+        return lambda E, ch: np.interp(np.log(E), T._lnE, C[ch], left=0.0)
     if physics == 'layer':
         Cs = {ch: T.cumulative(p['Ue_s'], ch) for ch in ('p', 'n')}
         Cb = {ch: T.cumulative(p['Ue'], ch) for ch in ('p', 'n')}
@@ -287,8 +276,6 @@ def yield_function(T, physics, p):
         return yf
     if physics == 'sigmoid_tt':
         return lambda E, ch: T.Y_rows(E, Ue_sigmoid(np.asarray(E)/2, p['Ue_s'], p['Ue'], p['E0']), ch)
-    if physics == 'sigmoid_xs':
-        return lambda E, ch: sigma(np.asarray(E)/2, Ue_sigmoid(np.asarray(E)/2, p['Ue_s'], p['Ue'], p['E0']), ch)
     raise ValueError(physics)
 
 
@@ -296,20 +283,21 @@ def relative_yield(T, E_cm, physics, p, meas):
     """Model of the plotted relative yield R(E) = Y(E)/Y(6.5 keV) for one material.
     Proton channel for E <= 4.0 keV, stitched to the neutron channel at 4.5 keV and multiplied by
     the stitch factor s; neutron channel for E >= 4.5 keV.  meas may hold k, b_hi, b_lo, f_n,
-    E_n (lab keV), delta, s, F (additive floor in R units, phenomenological)."""
+    E_n (lab keV), delta and s. No arbitrary additive relative-yield floor."""
     E = np.asarray(E_cm, float)
-    yf = yield_function(T, physics, p)
-    if physics == 'sigmoid_xs':
-        Yb = lambda EE, ch: yf(2*np.atleast_1d(EE), ch)
-    else:
-        Yb = lambda EE, ch: beam_average(lambda x: yf(x, ch), 2*np.atleast_1d(EE))
+    yf = yield_function(T, 'const' if physics == 'thermal' else physics, p)
+    def Yb(EE, ch):
+        direct = beam_average(lambda x: yf(x, ch), 2*np.atleast_1d(EE))
+        if physics == 'thermal' and ch == 'p':
+            direct = direct + p['thermal_per_charge'](np.atleast_1d(EE))
+        return direct
     En = meas.get('E_n', 5.0)
     yn = {ch: float(np.atleast_1d(yf(np.array([En]), ch))[0]) for ch in ('p', 'n')}
     pl = lambda EE, ch: plotted(EE, Yb(EE, ch), yn[ch], meas)
     ref = pl(np.array([6.5]), 'n')[0]
     stitch = pl(np.array([4.5]), 'n')[0]/pl(np.array([4.5]), 'p')[0]
     R = np.where(E <= 4.0, pl(E, 'p')*stitch*meas.get('s', 1.0), pl(E, 'n'))/ref
-    return R + meas.get('F', 0.0)
+    return R
 
 
 # ----------------------------------------------------------------------------------------------

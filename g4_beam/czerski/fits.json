@@ -1,0 +1,2445 @@
+[
+  {
+    "material": "Zr",
+    "candidate": "none",
+    "blocks": [
+      "czerski"
+    ],
+    "karahadian_current_power": 0,
+    "k": 3,
+    "balanced_log_score": 0.7780204688039408,
+    "parameters": {
+      "Ue": 0.3996105215169805,
+      "neutral_2a_D2": 0.00016690280054801332,
+      "neutral_7a_D1": 0.0004506485290955259
+    },
+    "per_dataset": {
+      "czerski": {
+        "n": 41,
+        "log_sse": 31.898839220961566,
+        "log_rmse": 0.8820546858352608,
+        "rms_factor": 2.4158584404699917
+      }
+    },
+    "optimizer_success": true,
+    "optimizer_message": "`ftol` termination condition is satisfied."
+  },
+  {
+    "material": "Zr",
+    "candidate": "layer",
+    "blocks": [
+      "czerski"
+    ],
+    "karahadian_current_power": 0,
+    "k": 5,
+    "balanced_log_score": 0.06933189514875598,
+    "parameters": {
+      "Ue": 0.22087482872823755,
+      "Ue_s": 4.139231768422438,
+      "d": 7.5980625264011e-05,
+      "neutral_2a_D2": 0.00023683861554445727,
+      "neutral_7a_D1": 0.0005362332827339305
+    },
+    "per_dataset": {
+      "czerski": {
+        "n": 41,
+        "log_sse": 2.8426077010989954,
+        "log_rmse": 0.2633095044785812,
+        "rms_factor": 1.3012293929585876
+      }
+    },
+    "optimizer_success": true,
+    "optimizer_message": "`xtol` termination condition is satisfied."
+  },
+  {
+    "material": "Zr",
+    "candidate": "sigmoid_tt",
+    "blocks": [
+      "czerski"
+    ],
+    "karahadian_current_power": 0,
+    "k": 5,
+    "balanced_log_score": 0.08369986714280488,
+    "parameters": {
+      "Ue": 0.18505970985317757,
+      "Ue_s": 2.6979239420677446,
+      "E0": 0.05000000000000069,
+      "neutral_2a_D2": 0.0002475383584028379,
+      "neutral_7a_D1": 0.0005503873750601307
+    },
+    "per_dataset": {
+      "czerski": {
+        "n": 41,
+        "log_sse": 3.431694552854999,
+        "log_rmse": 0.2893092932188748,
+        "rms_factor": 1.3355047272122718
+      }
+    },
+    "optimizer_success": true,
+    "optimizer_message": "`ftol` termination condition is satisfied."
+  },
+  {
+    "material": "Zr",
+    "candidate": "fast_neutrals",
+    "blocks": [
+      "czerski"
+    ],
+    "karahadian_current_power": 0,
+    "k": 3,
+    "balanced_log_score": 0.7780204688039408,
+    "parameters": {
+      "Ue": 0.3996105215169805,
+      "neutral_2a_D2": 0.00016690280054801332,
+      "neutral_7a_D1": 0.0004506485290955259
+    },
+    "per_dataset": {
+      "czerski": {
+        "n": 41,
+        "log_sse": 31.898839220961566,
+        "log_rmse": 0.8820546858352608,
+        "rms_factor": 2.4158584404699917
+      }
+    },
+    "optimizer_success": true,
+    "optimizer_message": "`ftol` termination condition is satisfied."
+  },
+  {
+    "material": "Ti",
+    "candidate": "none",
+    "blocks": [
+      "czerski"
+    ],
+    "karahadian_current_power": 0,
+    "k": 1,
+    "balanced_log_score": 1.0288493190920778,
+    "parameters": {
+      "Ue": 0.42423623980565794
+    },
+    "per_dataset": {
+      "czerski": {
+        "n": 22,
+        "log_sse": 22.634685020025714,
+        "log_rmse": 1.0143220982962355,
+        "rms_factor": 2.757493454118366
+      }
+    },
+    "optimizer_success": true,
+    "optimizer_message": "`ftol` termination condition is satisfied."
+  },
+  {
+    "material": "Ti",
+    "candidate": "none",
+    "blocks": [
+      "exfor"
+    ],
+    "karahadian_current_power": 0,
+    "k": 1,
+    "balanced_log_score": 0.012932127588312041,
+    "parameters": {
+      "Ue": 1.8232121640965967e-10
+    },
+    "per_dataset": {
+      "exfor": {
+        "n": 19,
+        "log_sse": 0.24571042417792877,
+        "log_rmse": 0.11371951278611793,
+        "rms_factor": 1.1204378123255794
+      }
+    },
+    "optimizer_success": true,
+    "optimizer_message": "`gtol` termination condition is satisfied."
+  },
+  {
+    "material": "Ti",
+    "candidate": "none",
+    "blocks": [
+      "czerski",
+      "exfor"
+    ],
+    "karahadian_current_power": 0,
+    "k": 1,
+    "balanced_log_score": 2.4518005800891154,
+    "parameters": {
+      "Ue": 0.3251329352483671
+    },
+    "per_dataset": {
+      "czerski": {
+        "n": 22,
+        "log_sse": 28.478048180751998,
+        "log_rmse": 1.1377419459124847,
+        "rms_factor": 3.1197159184980583
+      },
+      "exfor": {
+        "n": 19,
+        "log_sse": 21.989533047407388,
+        "log_rmse": 1.0757991655510748,
+        "rms_factor": 2.932335385816801
+      }
+    },
+    "optimizer_success": true,
+    "optimizer_message": "`ftol` termination condition is satisfied."
+  },
+  {
+    "material": "Ti",
+    "candidate": "none",
+    "blocks": [
+      "czerski",
+      "exfor",
+      "karahadian"
+    ],
+    "karahadian_current_power": 0,
+    "k": 2,
+    "balanced_log_score": 16.12481394954292,
+    "parameters": {
+      "Ue": 0.9099140960673313,
+      "s": 2.9999999999993228
+    },
+    "per_dataset": {
+      "czerski": {
+        "n": 22,
+        "log_sse": 113.24133558011592,
+        "log_rmse": 2.2687735531471214,
+        "rms_factor": 9.667536820172785
+      },
+      "exfor": {
+        "n": 19,
+        "log_sse": 98.23927970606705,
+        "log_rmse": 2.273870797908816,
+        "rms_factor": 9.716940425756185
+      },
+      "karahadian": {
+        "n": 13,
+        "log_sse": 75.49089741050823,
+        "log_rmse": 2.409770136029707,
+        "rms_factor": 11.131402142673904,
+        "chi2_existing_error_convention": 317.2453007761721
+      }
+    },
+    "optimizer_success": true,
+    "optimizer_message": "`ftol` termination condition is satisfied."
+  },
+  {
+    "material": "Ti",
+    "candidate": "none",
+    "blocks": [
+      "czerski",
+      "exfor",
+      "karahadian"
+    ],
+    "karahadian_current_power": 1,
+    "k": 2,
+    "balanced_log_score": 13.933529244707733,
+    "parameters": {
+      "Ue": 0.8389312352421332,
+      "s": 2.9999999999999996
+    },
+    "per_dataset": {
+      "czerski": {
+        "n": 22,
+        "log_sse": 91.3141707326762,
+        "log_rmse": 2.0373129666824767,
+        "rms_factor": 7.669972014547458
+      },
+      "exfor": {
+        "n": 19,
+        "log_sse": 88.15946361370995,
+        "log_rmse": 2.1540593699205757,
+        "rms_factor": 8.619778341661632
+      },
+      "karahadian": {
+        "n": 13,
+        "log_sse": 66.85787356758314,
+        "log_rmse": 2.26779923082987,
+        "rms_factor": 9.658122110521688,
+        "chi2_existing_error_convention": 409.9011560615911
+      }
+    },
+    "optimizer_success": true,
+    "optimizer_message": "`ftol` termination condition is satisfied."
+  },
+  {
+    "material": "Ti",
+    "candidate": "layer",
+    "blocks": [
+      "czerski"
+    ],
+    "karahadian_current_power": 0,
+    "k": 3,
+    "balanced_log_score": 0.029380885224375635,
+    "parameters": {
+      "Ue": 0.1394957312852598,
+      "Ue_s": 2.488785165371517,
+      "d": 0.0007154601356384046
+    },
+    "per_dataset": {
+      "czerski": {
+        "n": 22,
+        "log_sse": 0.6463794749362636,
+        "log_rmse": 0.1714085331142403,
+        "rms_factor": 1.1869755688081525
+      }
+    },
+    "optimizer_success": true,
+    "optimizer_message": "`ftol` termination condition is satisfied."
+  },
+  {
+    "material": "Ti",
+    "candidate": "layer",
+    "blocks": [
+      "exfor"
+    ],
+    "karahadian_current_power": 0,
+    "k": 3,
+    "balanced_log_score": 0.012932127911740572,
+    "parameters": {
+      "Ue": 1e-09,
+      "Ue_s": 1e-09,
+      "d": 0.022468906577298112
+    },
+    "per_dataset": {
+      "exfor": {
+        "n": 19,
+        "log_sse": 0.24571043032307047,
+        "log_rmse": 0.11371951420816284,
+        "rms_factor": 1.1204378139188924
+      }
+    },
+    "optimizer_success": true,
+    "optimizer_message": "`gtol` termination condition is satisfied."
+  },
+  {
+    "material": "Ti",
+    "candidate": "layer",
+    "blocks": [
+      "czerski",
+      "exfor"
+    ],
+    "karahadian_current_power": 0,
+    "k": 3,
+    "balanced_log_score": 0.6602699698197992,
+    "parameters": {
+      "Ue": 0.10290692561391758,
+      "Ue_s": 7.653333853812204,
+      "d": 9.452047072137294e-07
+    },
+    "per_dataset": {
+      "czerski": {
+        "n": 22,
+        "log_sse": 4.3659644592779925,
+        "log_rmse": 0.44548056070627984,
+        "rms_factor": 1.5612402863208907
+      },
+      "exfor": {
+        "n": 19,
+        "log_sse": 8.77452375719974,
+        "log_rmse": 0.6795712176458166,
+        "rms_factor": 1.9730315497165813
+      }
+    },
+    "optimizer_success": true,
+    "optimizer_message": "`xtol` termination condition is satisfied."
+  },
+  {
+    "material": "Ti",
+    "candidate": "layer",
+    "blocks": [
+      "czerski",
+      "exfor",
+      "karahadian"
+    ],
+    "karahadian_current_power": 0,
+    "k": 4,
+    "balanced_log_score": 5.3281142953684135,
+    "parameters": {
+      "Ue": 0.17840064547872078,
+      "Ue_s": 17.685437092701953,
+      "d": 6.390740746425791e-07,
+      "s": 2.9999903860265595
+    },
+    "per_dataset": {
+      "czerski": {
+        "n": 22,
+        "log_sse": 10.170670101642475,
+        "log_rmse": 0.6799288098310693,
+        "rms_factor": 1.9737372165429687
+      },
+      "exfor": {
+        "n": 19,
+        "log_sse": 36.47808473754123,
+        "log_rmse": 1.3856042713244991,
+        "rms_factor": 3.997240593047232
+      },
+      "karahadian": {
+        "n": 13,
+        "log_sse": 38.29685485882647,
+        "log_rmse": 1.7163659027775577,
+        "rms_factor": 5.564270576756681,
+        "chi2_existing_error_convention": 218.6440363949669
+      }
+    },
+    "optimizer_success": true,
+    "optimizer_message": "`xtol` termination condition is satisfied."
+  },
+  {
+    "material": "Ti",
+    "candidate": "layer",
+    "blocks": [
+      "czerski",
+      "exfor",
+      "karahadian"
+    ],
+    "karahadian_current_power": 1,
+    "k": 4,
+    "balanced_log_score": 3.9194894281380597,
+    "parameters": {
+      "Ue": 0.147286175529816,
+      "Ue_s": 15.250376408962158,
+      "d": 4.984049345851004e-07,
+      "s": 2.9999762188140364
+    },
+    "per_dataset": {
+      "czerski": {
+        "n": 22,
+        "log_sse": 4.059931002013968,
+        "log_rmse": 0.429583889680889,
+        "rms_factor": 1.5366179878975217
+      },
+      "exfor": {
+        "n": 19,
+        "log_sse": 25.51729174565192,
+        "log_rmse": 1.1588853933993264,
+        "rms_factor": 3.1863797361983357
+      },
+      "karahadian": {
+        "n": 13,
+        "log_sse": 31.095112812794994,
+        "log_rmse": 1.5465871313412587,
+        "rms_factor": 4.695417961310354,
+        "chi2_existing_error_convention": 197.67240571902457
+      }
+    },
+    "optimizer_success": true,
+    "optimizer_message": "`xtol` termination condition is satisfied."
+  },
+  {
+    "material": "Ti",
+    "candidate": "sigmoid_tt",
+    "blocks": [
+      "czerski"
+    ],
+    "karahadian_current_power": 0,
+    "k": 3,
+    "balanced_log_score": 0.02598814076684981,
+    "parameters": {
+      "Ue": 0.11215083290436051,
+      "Ue_s": 2.4329226795867145,
+      "E0": 0.19858798308501951
+    },
+    "per_dataset": {
+      "czerski": {
+        "n": 22,
+        "log_sse": 0.5717390968706961,
+        "log_rmse": 0.16120837685073883,
+        "rms_factor": 1.1749297714730011
+      }
+    },
+    "optimizer_success": true,
+    "optimizer_message": "`gtol` termination condition is satisfied."
+  },
+  {
+    "material": "Ti",
+    "candidate": "sigmoid_tt",
+    "blocks": [
+      "exfor"
+    ],
+    "karahadian_current_power": 0,
+    "k": 3,
+    "balanced_log_score": 0.012932127871831508,
+    "parameters": {
+      "Ue": 3.0361060842449595e-11,
+      "Ue_s": 1.4121823033997857e-08,
+      "E0": 0.05000000417229135
+    },
+    "per_dataset": {
+      "exfor": {
+        "n": 19,
+        "log_sse": 0.24571042956479858,
+        "log_rmse": 0.11371951403269144,
+        "rms_factor": 1.1204378137222875
+      }
+    },
+    "optimizer_success": true,
+    "optimizer_message": "`gtol` termination condition is satisfied."
+  },
+  {
+    "material": "Ti",
+    "candidate": "sigmoid_tt",
+    "blocks": [
+      "czerski",
+      "exfor"
+    ],
+    "karahadian_current_power": 0,
+    "k": 3,
+    "balanced_log_score": 1.068347166567424,
+    "parameters": {
+      "Ue": 0.01274360581186823,
+      "Ue_s": 2.986142125563129,
+      "E0": 0.05000000000008599
+    },
+    "per_dataset": {
+      "czerski": {
+        "n": 22,
+        "log_sse": 5.87066937213316,
+        "log_rmse": 0.5165739132246561,
+        "rms_factor": 1.6762747376278129
+      },
+      "exfor": {
+        "n": 19,
+        "log_sse": 15.228472616120605,
+        "log_rmse": 0.8952645188675746,
+        "rms_factor": 2.44798324158179
+      }
+    },
+    "optimizer_success": true,
+    "optimizer_message": "`ftol` termination condition is satisfied."
+  },
+  {
+    "material": "Ti",
+    "candidate": "sigmoid_tt",
+    "blocks": [
+      "czerski",
+      "exfor",
+      "karahadian"
+    ],
+    "karahadian_current_power": 0,
+    "k": 4,
+    "balanced_log_score": 3.2102381074525903,
+    "parameters": {
+      "Ue": 0.0491445508533758,
+      "Ue_s": 3.0903408469952147,
+      "E0": 0.185078042947815,
+      "s": 2.9999999999999996
+    },
+    "per_dataset": {
+      "czerski": {
+        "n": 22,
+        "log_sse": 2.280041004636173,
+        "log_rmse": 0.3219289168177696,
+        "rms_factor": 1.3797866928423315
+      },
+      "exfor": {
+        "n": 19,
+        "log_sse": 27.89581278379451,
+        "log_rmse": 1.2116933080739904,
+        "rms_factor": 3.3591679456122314
+      },
+      "karahadian": {
+        "n": 13,
+        "log_sse": 21.299189692791877,
+        "log_rmse": 1.27999969028818,
+        "rms_factor": 3.5966386116476188,
+        "chi2_existing_error_convention": 161.41652453660393
+      }
+    },
+    "optimizer_success": true,
+    "optimizer_message": "`ftol` termination condition is satisfied."
+  },
+  {
+    "material": "Ti",
+    "candidate": "sigmoid_tt",
+    "blocks": [
+      "czerski",
+      "exfor",
+      "karahadian"
+    ],
+    "karahadian_current_power": 1,
+    "k": 4,
+    "balanced_log_score": 2.9176310013148883,
+    "parameters": {
+      "Ue": 0.0230110637771173,
+      "Ue_s": 2.2355546898158885,
+      "E0": 0.38595630103105394,
+      "s": 2.9999999999999996
+    },
+    "per_dataset": {
+      "czerski": {
+        "n": 22,
+        "log_sse": 1.9528208167549101,
+        "log_rmse": 0.297933856048232,
+        "rms_factor": 1.3470726842220995
+      },
+      "exfor": {
+        "n": 19,
+        "log_sse": 26.71803841736734,
+        "log_rmse": 1.185838331427388,
+        "rms_factor": 3.2734298906574333
+      },
+      "karahadian": {
+        "n": 13,
+        "log_sse": 18.494500315884164,
+        "log_rmse": 1.1927505482927383,
+        "rms_factor": 3.2961349286269277,
+        "chi2_existing_error_convention": 126.18387581531735
+      }
+    },
+    "optimizer_success": true,
+    "optimizer_message": "`ftol` termination condition is satisfied."
+  },
+  {
+    "material": "Ti",
+    "candidate": "fast_neutrals",
+    "blocks": [
+      "czerski"
+    ],
+    "karahadian_current_power": 0,
+    "k": 1,
+    "balanced_log_score": 1.0288493190920778,
+    "parameters": {
+      "Ue": 0.42423623980565794
+    },
+    "per_dataset": {
+      "czerski": {
+        "n": 22,
+        "log_sse": 22.634685020025714,
+        "log_rmse": 1.0143220982962355,
+        "rms_factor": 2.757493454118366
+      }
+    },
+    "optimizer_success": true,
+    "optimizer_message": "`ftol` termination condition is satisfied."
+  },
+  {
+    "material": "Ti",
+    "candidate": "fast_neutrals",
+    "blocks": [
+      "exfor"
+    ],
+    "karahadian_current_power": 0,
+    "k": 1,
+    "balanced_log_score": 0.012932127588312041,
+    "parameters": {
+      "Ue": 1.8232121640965967e-10
+    },
+    "per_dataset": {
+      "exfor": {
+        "n": 19,
+        "log_sse": 0.24571042417792877,
+        "log_rmse": 0.11371951278611793,
+        "rms_factor": 1.1204378123255794
+      }
+    },
+    "optimizer_success": true,
+    "optimizer_message": "`gtol` termination condition is satisfied."
+  },
+  {
+    "material": "Ti",
+    "candidate": "fast_neutrals",
+    "blocks": [
+      "czerski",
+      "exfor"
+    ],
+    "karahadian_current_power": 0,
+    "k": 1,
+    "balanced_log_score": 2.4518005800891154,
+    "parameters": {
+      "Ue": 0.3251329352483671
+    },
+    "per_dataset": {
+      "czerski": {
+        "n": 22,
+        "log_sse": 28.478048180751998,
+        "log_rmse": 1.1377419459124847,
+        "rms_factor": 3.1197159184980583
+      },
+      "exfor": {
+        "n": 19,
+        "log_sse": 21.989533047407388,
+        "log_rmse": 1.0757991655510748,
+        "rms_factor": 2.932335385816801
+      }
+    },
+    "optimizer_success": true,
+    "optimizer_message": "`ftol` termination condition is satisfied."
+  },
+  {
+    "material": "Ti",
+    "candidate": "fast_neutrals",
+    "blocks": [
+      "czerski",
+      "exfor",
+      "karahadian"
+    ],
+    "karahadian_current_power": 0,
+    "k": 4,
+    "balanced_log_score": 2.5218128191779527,
+    "parameters": {
+      "Ue": 0.32459737143464656,
+      "f_n": 0.17735634788464308,
+      "E_n": 5.271545725211922,
+      "s": 1.8388336707887833
+    },
+    "per_dataset": {
+      "czerski": {
+        "n": 22,
+        "log_sse": 28.544444887327558,
+        "log_rmse": 1.1390674991438383,
+        "rms_factor": 3.1238540100391186
+      },
+      "exfor": {
+        "n": 19,
+        "log_sse": 21.93238960062153,
+        "log_rmse": 1.0744004350192502,
+        "rms_factor": 2.928236705925699
+      },
+      "karahadian": {
+        "n": 13,
+        "log_sse": 0.9100228384338136,
+        "log_rmse": 0.26457845113047485,
+        "rms_factor": 1.3028816317198437,
+        "chi2_existing_error_convention": 29.02573730865843
+      }
+    },
+    "optimizer_success": true,
+    "optimizer_message": "`ftol` termination condition is satisfied."
+  },
+  {
+    "material": "Ti",
+    "candidate": "fast_neutrals",
+    "blocks": [
+      "czerski",
+      "exfor",
+      "karahadian"
+    ],
+    "karahadian_current_power": 1,
+    "k": 4,
+    "balanced_log_score": 2.629049114166096,
+    "parameters": {
+      "Ue": 0.32426508415029853,
+      "f_n": 0.8162529674047181,
+      "E_n": 4.043226787850892,
+      "s": 1.2380357004714198
+    },
+    "per_dataset": {
+      "czerski": {
+        "n": 22,
+        "log_sse": 28.585846649576307,
+        "log_rmse": 1.139893269516858,
+        "rms_factor": 3.126434661496361
+      },
+      "exfor": {
+        "n": 19,
+        "log_sse": 21.89695773630541,
+        "log_rmse": 1.073532235103142,
+        "rms_factor": 2.9256955143540466
+      },
+      "karahadian": {
+        "n": 13,
+        "log_sse": 2.303872850119307,
+        "log_rmse": 0.4209762326672563,
+        "rms_factor": 1.5234480696812733,
+        "chi2_existing_error_convention": 15.349286146452908
+      }
+    },
+    "optimizer_success": true,
+    "optimizer_message": "`ftol` termination condition is satisfied."
+  },
+  {
+    "material": "Pd",
+    "candidate": "none",
+    "blocks": [
+      "czerski"
+    ],
+    "karahadian_current_power": 0,
+    "k": 1,
+    "balanced_log_score": 0.6726385693587672,
+    "parameters": {
+      "Ue": 0.8423747328401645
+    },
+    "per_dataset": {
+      "czerski": {
+        "n": 20,
+        "log_sse": 13.452771387175346,
+        "log_rmse": 0.8201454562202776,
+        "rms_factor": 2.2708301198771426
+      }
+    },
+    "optimizer_success": true,
+    "optimizer_message": "`gtol` termination condition is satisfied."
+  },
+  {
+    "material": "Pd",
+    "candidate": "none",
+    "blocks": [
+      "czerski",
+      "karahadian"
+    ],
+    "karahadian_current_power": 0,
+    "k": 2,
+    "balanced_log_score": 3.6022896747101285,
+    "parameters": {
+      "Ue": 1.3688323901476236,
+      "s": 2.5855607745852045
+    },
+    "per_dataset": {
+      "czerski": {
+        "n": 20,
+        "log_sse": 41.506631120170795,
+        "log_rmse": 1.4406011092625672,
+        "rms_factor": 4.2232336790364
+      },
+      "karahadian": {
+        "n": 13,
+        "log_sse": 19.850455543120667,
+        "log_rmse": 1.2357014682768608,
+        "rms_factor": 3.4407912802994614,
+        "chi2_existing_error_convention": 342.98536503155754
+      }
+    },
+    "optimizer_success": true,
+    "optimizer_message": "`ftol` termination condition is satisfied."
+  },
+  {
+    "material": "Pd",
+    "candidate": "none",
+    "blocks": [
+      "czerski",
+      "karahadian"
+    ],
+    "karahadian_current_power": 1,
+    "k": 2,
+    "balanced_log_score": 2.820387525996348,
+    "parameters": {
+      "Ue": 1.307063578171219,
+      "s": 1.495270348743554
+    },
+    "per_dataset": {
+      "czerski": {
+        "n": 20,
+        "log_sse": 35.55403827176665,
+        "log_rmse": 1.3333048839587789,
+        "rms_factor": 3.793559968739527
+      },
+      "karahadian": {
+        "n": 13,
+        "log_sse": 13.554912961304195,
+        "log_rmse": 1.0211197835748826,
+        "rms_factor": 2.7763018812357068,
+        "chi2_existing_error_convention": 228.63019395810863
+      }
+    },
+    "optimizer_success": true,
+    "optimizer_message": "`ftol` termination condition is satisfied."
+  },
+  {
+    "material": "Pd",
+    "candidate": "layer",
+    "blocks": [
+      "czerski"
+    ],
+    "karahadian_current_power": 0,
+    "k": 3,
+    "balanced_log_score": 0.029174983775399167,
+    "parameters": {
+      "Ue": 0.27743845579399595,
+      "Ue_s": 14.503872890562524,
+      "d": 0.00022221643613676132
+    },
+    "per_dataset": {
+      "czerski": {
+        "n": 20,
+        "log_sse": 0.5834996755079833,
+        "log_rmse": 0.17080686103139758,
+        "rms_factor": 1.186261613550396
+      }
+    },
+    "optimizer_success": true,
+    "optimizer_message": "`ftol` termination condition is satisfied."
+  },
+  {
+    "material": "Pd",
+    "candidate": "layer",
+    "blocks": [
+      "czerski",
+      "karahadian"
+    ],
+    "karahadian_current_power": 0,
+    "k": 4,
+    "balanced_log_score": 0.1685136850120664,
+    "parameters": {
+      "Ue": 0.18693197558939223,
+      "Ue_s": 4.425107253523775,
+      "d": 0.016728535581834812,
+      "s": 2.992590399335999
+    },
+    "per_dataset": {
+      "czerski": {
+        "n": 20,
+        "log_sse": 0.904526075985481,
+        "log_rmse": 0.21266476858961395,
+        "rms_factor": 1.23696991056271
+      },
+      "karahadian": {
+        "n": 13,
+        "log_sse": 1.6027359557663006,
+        "log_rmse": 0.35112302859936767,
+        "rms_factor": 1.4206620972290365,
+        "chi2_existing_error_convention": 63.72654870858471
+      }
+    },
+    "optimizer_success": true,
+    "optimizer_message": "`ftol` termination condition is satisfied."
+  },
+  {
+    "material": "Pd",
+    "candidate": "layer",
+    "blocks": [
+      "czerski",
+      "karahadian"
+    ],
+    "karahadian_current_power": 1,
+    "k": 4,
+    "balanced_log_score": 0.1646247161525506,
+    "parameters": {
+      "Ue": 0.09673771821475718,
+      "Ue_s": 3.0233628522491456,
+      "d": 0.07344682824194947,
+      "s": 1.9273708264261027
+    },
+    "per_dataset": {
+      "czerski": {
+        "n": 20,
+        "log_sse": 1.320341272111119,
+        "log_rmse": 0.2569378594243284,
+        "rms_factor": 1.2929647786872709
+      },
+      "karahadian": {
+        "n": 13,
+        "log_sse": 1.2818994831109312,
+        "log_rmse": 0.31401855446294047,
+        "rms_factor": 1.368915135796896,
+        "chi2_existing_error_convention": 27.979092682076995
+      }
+    },
+    "optimizer_success": true,
+    "optimizer_message": "`ftol` termination condition is satisfied."
+  },
+  {
+    "material": "Pd",
+    "candidate": "sigmoid_tt",
+    "blocks": [
+      "czerski"
+    ],
+    "karahadian_current_power": 0,
+    "k": 3,
+    "balanced_log_score": 0.02901232047849249,
+    "parameters": {
+      "Ue": 0.27622390902481336,
+      "Ue_s": 1.6447812840650378,
+      "E0": 2.022582772460339
+    },
+    "per_dataset": {
+      "czerski": {
+        "n": 20,
+        "log_sse": 0.5802464095698493,
+        "log_rmse": 0.1703300339884087,
+        "rms_factor": 1.1856961067681735
+      }
+    },
+    "optimizer_success": true,
+    "optimizer_message": "`ftol` termination condition is satisfied."
+  },
+  {
+    "material": "Pd",
+    "candidate": "sigmoid_tt",
+    "blocks": [
+      "czerski",
+      "karahadian"
+    ],
+    "karahadian_current_power": 0,
+    "k": 4,
+    "balanced_log_score": 0.2168787722399083,
+    "parameters": {
+      "Ue": 0.37175394667859557,
+      "Ue_s": 1.6399003750481371,
+      "E0": 1.889105550140885,
+      "s": 1.7002969962135175
+    },
+    "per_dataset": {
+      "czerski": {
+        "n": 20,
+        "log_sse": 0.9422056580494113,
+        "log_rmse": 0.21704903340598078,
+        "rms_factor": 1.2424050199939847
+      },
+      "karahadian": {
+        "n": 13,
+        "log_sse": 2.20699036138669,
+        "log_rmse": 0.41202971899783847,
+        "rms_factor": 1.5098793077618582,
+        "chi2_existing_error_convention": 53.005436142406666
+      }
+    },
+    "optimizer_success": true,
+    "optimizer_message": "`ftol` termination condition is satisfied."
+  },
+  {
+    "material": "Pd",
+    "candidate": "sigmoid_tt",
+    "blocks": [
+      "czerski",
+      "karahadian"
+    ],
+    "karahadian_current_power": 1,
+    "k": 4,
+    "balanced_log_score": 0.1161071346035903,
+    "parameters": {
+      "Ue": 0.33444829593957054,
+      "Ue_s": 1.4848136079020766,
+      "E0": 2.0694550200349044,
+      "s": 1.082287413346464
+    },
+    "per_dataset": {
+      "czerski": {
+        "n": 20,
+        "log_sse": 0.8303743676330567,
+        "log_rmse": 0.20376142515611936,
+        "rms_factor": 1.2260056244621158
+      },
+      "karahadian": {
+        "n": 13,
+        "log_sse": 0.9696494108851869,
+        "log_rmse": 0.2731087992393095,
+        "rms_factor": 1.3140432039486856,
+        "chi2_existing_error_convention": 22.626023633407257
+      }
+    },
+    "optimizer_success": true,
+    "optimizer_message": "`ftol` termination condition is satisfied."
+  },
+  {
+    "material": "Pd",
+    "candidate": "fast_neutrals",
+    "blocks": [
+      "czerski"
+    ],
+    "karahadian_current_power": 0,
+    "k": 1,
+    "balanced_log_score": 0.6726385693587672,
+    "parameters": {
+      "Ue": 0.8423747328401645
+    },
+    "per_dataset": {
+      "czerski": {
+        "n": 20,
+        "log_sse": 13.452771387175346,
+        "log_rmse": 0.8201454562202776,
+        "rms_factor": 2.2708301198771426
+      }
+    },
+    "optimizer_success": true,
+    "optimizer_message": "`gtol` termination condition is satisfied."
+  },
+  {
+    "material": "Pd",
+    "candidate": "fast_neutrals",
+    "blocks": [
+      "czerski",
+      "karahadian"
+    ],
+    "karahadian_current_power": 0,
+    "k": 4,
+    "balanced_log_score": 0.7321918538287256,
+    "parameters": {
+      "Ue": 0.8462627643029255,
+      "f_n": 0.10206788177325733,
+      "E_n": 6.506336869513646,
+      "s": 1.215340129168979
+    },
+    "per_dataset": {
+      "czerski": {
+        "n": 20,
+        "log_sse": 13.454567252197176,
+        "log_rmse": 0.8202001966653378,
+        "rms_factor": 2.2709544295309128
+      },
+      "karahadian": {
+        "n": 13,
+        "log_sse": 0.7730253858452705,
+        "log_rmse": 0.24385137116462346,
+        "rms_factor": 1.276154643014938,
+        "chi2_existing_error_convention": 17.30642478851978
+      }
+    },
+    "optimizer_success": true,
+    "optimizer_message": "`ftol` termination condition is satisfied."
+  },
+  {
+    "material": "Pd",
+    "candidate": "fast_neutrals",
+    "blocks": [
+      "czerski",
+      "karahadian"
+    ],
+    "karahadian_current_power": 1,
+    "k": 4,
+    "balanced_log_score": 0.7596634077481081,
+    "parameters": {
+      "Ue": 0.8476849991985134,
+      "f_n": 0.19727239913770778,
+      "E_n": 5.093798015477891,
+      "s": 0.8861547874210258
+    },
+    "per_dataset": {
+      "czerski": {
+        "n": 20,
+        "log_sse": 13.456119371360106,
+        "log_rmse": 0.8202475044570421,
+        "rms_factor": 2.2710618659113035
+      },
+      "karahadian": {
+        "n": 13,
+        "log_sse": 1.12914670934134,
+        "log_rmse": 0.2947158617721535,
+        "rms_factor": 1.3427447793561502,
+        "chi2_existing_error_convention": 12.007451422666605
+      }
+    },
+    "optimizer_success": true,
+    "optimizer_message": "`ftol` termination condition is satisfied."
+  },
+  {
+    "material": "Zr",
+    "candidate": "thermal",
+    "blocks": [
+      "czerski"
+    ],
+    "global_scope": "czerski_separate",
+    "karahadian_current_power": 0,
+    "k": 6,
+    "balanced_log_score": 0.1611573893556934,
+    "parameters": {
+      "Ue_Zr": 0.2201496533282833,
+      "Ue_Ti": 0.14969541298253977,
+      "Ue_Pd": 0.6350593493950091,
+      "A": 1.3266118820300233e-34,
+      "neutral_2a_D2": 0.00023310144122183328,
+      "neutral_7a_D1": 0.0005367568342423496,
+      "Ue": 0.2201496533282833
+    },
+    "per_dataset": {
+      "czerski": {
+        "n": 41,
+        "log_sse": 3.1331241812153983,
+        "log_rmse": 0.27643744854211255,
+        "rms_factor": 1.3184244807650287
+      }
+    },
+    "optimizer_success": true,
+    "optimizer_message": "`ftol` termination condition is satisfied."
+  },
+  {
+    "material": "Ti",
+    "candidate": "thermal",
+    "blocks": [
+      "czerski"
+    ],
+    "global_scope": "czerski_separate",
+    "karahadian_current_power": 0,
+    "k": 6,
+    "balanced_log_score": 0.1611573893556934,
+    "parameters": {
+      "Ue_Zr": 0.2201496533282833,
+      "Ue_Ti": 0.14969541298253977,
+      "Ue_Pd": 0.6350593493950091,
+      "A": 1.3266118820300233e-34,
+      "neutral_2a_D2": 0.00023310144122183328,
+      "neutral_7a_D1": 0.0005367568342423496,
+      "Ue": 0.14969541298253977
+    },
+    "per_dataset": {
+      "czerski": {
+        "n": 22,
+        "log_sse": 1.6499673427833548,
+        "log_rmse": 0.27385856857338164,
+        "rms_factor": 1.3150288026863353
+      }
+    },
+    "optimizer_success": true,
+    "optimizer_message": "`ftol` termination condition is satisfied."
+  },
+  {
+    "material": "Pd",
+    "candidate": "thermal",
+    "blocks": [
+      "czerski"
+    ],
+    "global_scope": "czerski_separate",
+    "karahadian_current_power": 0,
+    "k": 6,
+    "balanced_log_score": 0.1611573893556934,
+    "parameters": {
+      "Ue_Zr": 0.2201496533282833,
+      "Ue_Ti": 0.14969541298253977,
+      "Ue_Pd": 0.6350593493950091,
+      "A": 1.3266118820300233e-34,
+      "neutral_2a_D2": 0.00023310144122183328,
+      "neutral_7a_D1": 0.0005367568342423496,
+      "Ue": 0.6350593493950091
+    },
+    "per_dataset": {
+      "czerski": {
+        "n": 20,
+        "log_sse": 8.5929717925238,
+        "log_rmse": 0.6554758497657942,
+        "rms_factor": 1.92605881398485
+      }
+    },
+    "optimizer_success": true,
+    "optimizer_message": "`ftol` termination condition is satisfied."
+  },
+  {
+    "material": "Ti",
+    "candidate": "thermal",
+    "blocks": [
+      "exfor"
+    ],
+    "global_scope": "exfor_separate",
+    "karahadian_current_power": 0,
+    "k": 2,
+    "balanced_log_score": 0.01293212755614466,
+    "parameters": {
+      "Ue_Ti": 1.0096821343485757e-10,
+      "A": 1.0204105029138292e-47,
+      "Ue": 1.0096821343485757e-10
+    },
+    "per_dataset": {
+      "exfor": {
+        "n": 19,
+        "log_sse": 0.24571042356674855,
+        "log_rmse": 0.11371951264468494,
+        "rms_factor": 1.1204378121671126
+      }
+    },
+    "optimizer_success": true,
+    "optimizer_message": "`gtol` termination condition is satisfied."
+  },
+  {
+    "material": "Zr",
+    "candidate": "thermal",
+    "blocks": [
+      "czerski"
+    ],
+    "global_scope": "czerski+exfor_one_A",
+    "karahadian_current_power": 0,
+    "k": 6,
+    "balanced_log_score": 0.6756851384130418,
+    "parameters": {
+      "Ue_Zr": 0.26433852232497274,
+      "Ue_Ti": 0.026987218087680242,
+      "Ue_Pd": 0.8191968563441209,
+      "A": 1.7736052074881339e-35,
+      "neutral_2a_D2": 0.00022377095559642041,
+      "neutral_7a_D1": 0.0005156201427802943,
+      "Ue": 0.26433852232497274
+    },
+    "per_dataset": {
+      "czerski": {
+        "n": 41,
+        "log_sse": 10.601197928712182,
+        "log_rmse": 0.5084936608644414,
+        "rms_factor": 1.6627845900193565
+      }
+    },
+    "optimizer_success": true,
+    "optimizer_message": "`ftol` termination condition is satisfied."
+  },
+  {
+    "material": "Ti",
+    "candidate": "thermal",
+    "blocks": [
+      "czerski",
+      "exfor"
+    ],
+    "global_scope": "czerski+exfor_one_A",
+    "karahadian_current_power": 0,
+    "k": 6,
+    "balanced_log_score": 0.6756851384130418,
+    "parameters": {
+      "Ue_Zr": 0.26433852232497274,
+      "Ue_Ti": 0.026987218087680242,
+      "Ue_Pd": 0.8191968563441209,
+      "A": 1.7736052074881339e-35,
+      "neutral_2a_D2": 0.00022377095559642041,
+      "neutral_7a_D1": 0.0005156201427802943,
+      "Ue": 0.026987218087680242
+    },
+    "per_dataset": {
+      "czerski": {
+        "n": 22,
+        "log_sse": 12.5764292460086,
+        "log_rmse": 0.7560792781306552,
+        "rms_factor": 2.1299090475537756
+      },
+      "exfor": {
+        "n": 19,
+        "log_sse": 4.594909472569167,
+        "log_rmse": 0.49176960119708,
+        "rms_factor": 1.6352073259901196
+      }
+    },
+    "optimizer_success": true,
+    "optimizer_message": "`ftol` termination condition is satisfied."
+  },
+  {
+    "material": "Pd",
+    "candidate": "thermal",
+    "blocks": [
+      "czerski"
+    ],
+    "global_scope": "czerski+exfor_one_A",
+    "karahadian_current_power": 0,
+    "k": 6,
+    "balanced_log_score": 0.6756851384130418,
+    "parameters": {
+      "Ue_Zr": 0.26433852232497274,
+      "Ue_Ti": 0.026987218087680242,
+      "Ue_Pd": 0.8191968563441209,
+      "A": 1.7736052074881339e-35,
+      "neutral_2a_D2": 0.00022377095559642041,
+      "neutral_7a_D1": 0.0005156201427802943,
+      "Ue": 0.8191968563441209
+    },
+    "per_dataset": {
+      "czerski": {
+        "n": 20,
+        "log_sse": 12.831740038654285,
+        "log_rmse": 0.8009912620826236,
+        "rms_factor": 2.2277481165984163
+      }
+    },
+    "optimizer_success": true,
+    "optimizer_message": "`ftol` termination condition is satisfied."
+  },
+  {
+    "material": "Zr",
+    "candidate": "thermal",
+    "blocks": [
+      "czerski"
+    ],
+    "global_scope": "czerski+karahadian_separate",
+    "karahadian_current_power": 0,
+    "k": 10,
+    "balanced_log_score": 0.8541584591393838,
+    "parameters": {
+      "Ue_Zr": 0.2158071056775145,
+      "Ue_Ti": 0.21330595679740835,
+      "Ue_Pd": 0.3840555777117703,
+      "Ue_PdD": 1.9915975970321638,
+      "Ue_TiD": 0.7450019276736766,
+      "A_czerski": 1.8018677646050565e-34,
+      "A_karahadian": 1.1216173281476616e-31,
+      "s": 1.4636083230288075,
+      "neutral_2a_D2": 0.0002282864740209253,
+      "neutral_7a_D1": 0.0005387237711814873,
+      "Ue": 0.2158071056775145
+    },
+    "per_dataset": {
+      "czerski": {
+        "n": 41,
+        "log_sse": 4.06960553289076,
+        "log_rmse": 0.3150534423457724,
+        "rms_factor": 1.3703325427857136
+      }
+    },
+    "optimizer_success": true,
+    "optimizer_message": "`ftol` termination condition is satisfied."
+  },
+  {
+    "material": "Ti",
+    "candidate": "thermal",
+    "blocks": [
+      "czerski",
+      "karahadian"
+    ],
+    "global_scope": "czerski+karahadian_separate",
+    "karahadian_current_power": 0,
+    "k": 10,
+    "balanced_log_score": 0.8541584591393838,
+    "parameters": {
+      "Ue_Zr": 0.2158071056775145,
+      "Ue_Ti": 0.21330595679740835,
+      "Ue_Pd": 0.3840555777117703,
+      "Ue_PdD": 1.9915975970321638,
+      "Ue_TiD": 0.7450019276736766,
+      "A_czerski": 1.8018677646050565e-34,
+      "A_karahadian": 1.1216173281476616e-31,
+      "s": 1.4636083230288075,
+      "neutral_2a_D2": 0.0002282864740209253,
+      "neutral_7a_D1": 0.0005387237711814873,
+      "Ue": 0.21330595679740835
+    },
+    "per_dataset": {
+      "czerski": {
+        "n": 22,
+        "log_sse": 3.687698486012332,
+        "log_rmse": 0.4094174623231232,
+        "rms_factor": 1.5059402626006158
+      },
+      "karahadian": {
+        "n": 13,
+        "log_sse": 8.97299629118881,
+        "log_rmse": 0.8308011097354172,
+        "rms_factor": 2.2951566763293654,
+        "chi2_existing_error_convention": 98.64241823759097
+      }
+    },
+    "optimizer_success": true,
+    "optimizer_message": "`ftol` termination condition is satisfied."
+  },
+  {
+    "material": "Pd",
+    "candidate": "thermal",
+    "blocks": [
+      "czerski",
+      "karahadian"
+    ],
+    "global_scope": "czerski+karahadian_separate",
+    "karahadian_current_power": 0,
+    "k": 10,
+    "balanced_log_score": 0.8541584591393838,
+    "parameters": {
+      "Ue_Zr": 0.2158071056775145,
+      "Ue_Ti": 0.21330595679740835,
+      "Ue_Pd": 0.3840555777117703,
+      "Ue_PdD": 1.9915975970321638,
+      "Ue_TiD": 0.7450019276736766,
+      "A_czerski": 1.8018677646050565e-34,
+      "A_karahadian": 1.1216173281476616e-31,
+      "s": 1.4636083230288075,
+      "neutral_2a_D2": 0.0002282864740209253,
+      "neutral_7a_D1": 0.0005387237711814873,
+      "Ue": 0.3840555777117703
+    },
+    "per_dataset": {
+      "czerski": {
+        "n": 20,
+        "log_sse": 7.880661753940778,
+        "log_rmse": 0.6277205490479334,
+        "rms_factor": 1.8733355322728544
+      },
+      "karahadian": {
+        "n": 13,
+        "log_sse": 16.9362128863747,
+        "log_rmse": 1.1413963407354204,
+        "rms_factor": 3.1311374488795662,
+        "chi2_existing_error_convention": 243.37059270680632
+      }
+    },
+    "optimizer_success": true,
+    "optimizer_message": "`ftol` termination condition is satisfied."
+  },
+  {
+    "material": "PdD",
+    "candidate": "thermal",
+    "blocks": [
+      "karahadian"
+    ],
+    "global_scope": "czerski+karahadian_separate",
+    "karahadian_current_power": 0,
+    "k": 10,
+    "balanced_log_score": 0.8541584591393838,
+    "parameters": {
+      "Ue_Zr": 0.2158071056775145,
+      "Ue_Ti": 0.21330595679740835,
+      "Ue_Pd": 0.3840555777117703,
+      "Ue_PdD": 1.9915975970321638,
+      "Ue_TiD": 0.7450019276736766,
+      "A_czerski": 1.8018677646050565e-34,
+      "A_karahadian": 1.1216173281476616e-31,
+      "s": 1.4636083230288075,
+      "neutral_2a_D2": 0.0002282864740209253,
+      "neutral_7a_D1": 0.0005387237711814873,
+      "Ue": 1.9915975970321638
+    },
+    "per_dataset": {
+      "karahadian": {
+        "n": 12,
+        "log_sse": 4.388987621338812,
+        "log_rmse": 0.6047718317224281,
+        "rms_factor": 1.8308344228880402,
+        "chi2_existing_error_convention": 44.11077259701979
+      }
+    },
+    "optimizer_success": true,
+    "optimizer_message": "`ftol` termination condition is satisfied."
+  },
+  {
+    "material": "TiD",
+    "candidate": "thermal",
+    "blocks": [
+      "karahadian"
+    ],
+    "global_scope": "czerski+karahadian_separate",
+    "karahadian_current_power": 0,
+    "k": 10,
+    "balanced_log_score": 0.8541584591393838,
+    "parameters": {
+      "Ue_Zr": 0.2158071056775145,
+      "Ue_Ti": 0.21330595679740835,
+      "Ue_Pd": 0.3840555777117703,
+      "Ue_PdD": 1.9915975970321638,
+      "Ue_TiD": 0.7450019276736766,
+      "A_czerski": 1.8018677646050565e-34,
+      "A_karahadian": 1.1216173281476616e-31,
+      "s": 1.4636083230288075,
+      "neutral_2a_D2": 0.0002282864740209253,
+      "neutral_7a_D1": 0.0005387237711814873,
+      "Ue": 0.7450019276736766
+    },
+    "per_dataset": {
+      "karahadian": {
+        "n": 10,
+        "log_sse": 1.6577663832036946,
+        "log_rmse": 0.40715677363930647,
+        "rms_factor": 1.5025396458067006,
+        "chi2_existing_error_convention": 41.349743481581456
+      }
+    },
+    "optimizer_success": true,
+    "optimizer_message": "`ftol` termination condition is satisfied."
+  },
+  {
+    "material": "Zr",
+    "candidate": "thermal",
+    "blocks": [
+      "czerski"
+    ],
+    "global_scope": "czerski+karahadian_one_A",
+    "karahadian_current_power": 0,
+    "k": 9,
+    "balanced_log_score": 3.5829538400561747,
+    "parameters": {
+      "Ue_Zr": 0.1734408250135533,
+      "Ue_Ti": 4.787763002224187e-19,
+      "Ue_Pd": 8.81299619188175e-17,
+      "Ue_PdD": 1.7962588138190165,
+      "Ue_TiD": 1.407270247837805,
+      "A": 2.9223060697670692e-33,
+      "s": 2.9999999999999996,
+      "neutral_2a_D2": 1.0000000000000029e-07,
+      "neutral_7a_D1": 0.0005504364712762034,
+      "Ue": 0.1734408250135533
+    },
+    "per_dataset": {
+      "czerski": {
+        "n": 41,
+        "log_sse": 52.192410183889486,
+        "log_rmse": 1.1282666414643336,
+        "rms_factor": 3.0902952653201177
+      }
+    },
+    "optimizer_success": true,
+    "optimizer_message": "`ftol` termination condition is satisfied."
+  },
+  {
+    "material": "Ti",
+    "candidate": "thermal",
+    "blocks": [
+      "czerski",
+      "karahadian"
+    ],
+    "global_scope": "czerski+karahadian_one_A",
+    "karahadian_current_power": 0,
+    "k": 9,
+    "balanced_log_score": 3.5829538400561747,
+    "parameters": {
+      "Ue_Zr": 0.1734408250135533,
+      "Ue_Ti": 4.787763002224187e-19,
+      "Ue_Pd": 8.81299619188175e-17,
+      "Ue_PdD": 1.7962588138190165,
+      "Ue_TiD": 1.407270247837805,
+      "A": 2.9223060697670692e-33,
+      "s": 2.9999999999999996,
+      "neutral_2a_D2": 1.0000000000000029e-07,
+      "neutral_7a_D1": 0.0005504364712762034,
+      "Ue": 4.787763002224187e-19
+    },
+    "per_dataset": {
+      "czerski": {
+        "n": 22,
+        "log_sse": 46.63513876096175,
+        "log_rmse": 1.4559460960451698,
+        "rms_factor": 4.288538916585084
+      },
+      "karahadian": {
+        "n": 13,
+        "log_sse": 12.158036440532218,
+        "log_rmse": 0.967074750134979,
+        "rms_factor": 2.6302390882430218,
+        "chi2_existing_error_convention": 102.06307708935245
+      }
+    },
+    "optimizer_success": true,
+    "optimizer_message": "`ftol` termination condition is satisfied."
+  },
+  {
+    "material": "Pd",
+    "candidate": "thermal",
+    "blocks": [
+      "czerski",
+      "karahadian"
+    ],
+    "global_scope": "czerski+karahadian_one_A",
+    "karahadian_current_power": 0,
+    "k": 9,
+    "balanced_log_score": 3.5829538400561747,
+    "parameters": {
+      "Ue_Zr": 0.1734408250135533,
+      "Ue_Ti": 4.787763002224187e-19,
+      "Ue_Pd": 8.81299619188175e-17,
+      "Ue_PdD": 1.7962588138190165,
+      "Ue_TiD": 1.407270247837805,
+      "A": 2.9223060697670692e-33,
+      "s": 2.9999999999999996,
+      "neutral_2a_D2": 1.0000000000000029e-07,
+      "neutral_7a_D1": 0.0005504364712762034,
+      "Ue": 8.81299619188175e-17
+    },
+    "per_dataset": {
+      "czerski": {
+        "n": 20,
+        "log_sse": 12.747280696359946,
+        "log_rmse": 0.7983508218934814,
+        "rms_factor": 2.221873639955207
+      },
+      "karahadian": {
+        "n": 13,
+        "log_sse": 75.7548869167999,
+        "log_rmse": 2.4139799074557335,
+        "rms_factor": 11.178361576234614,
+        "chi2_existing_error_convention": 831.2544830000941
+      }
+    },
+    "optimizer_success": true,
+    "optimizer_message": "`ftol` termination condition is satisfied."
+  },
+  {
+    "material": "PdD",
+    "candidate": "thermal",
+    "blocks": [
+      "karahadian"
+    ],
+    "global_scope": "czerski+karahadian_one_A",
+    "karahadian_current_power": 0,
+    "k": 9,
+    "balanced_log_score": 3.5829538400561747,
+    "parameters": {
+      "Ue_Zr": 0.1734408250135533,
+      "Ue_Ti": 4.787763002224187e-19,
+      "Ue_Pd": 8.81299619188175e-17,
+      "Ue_PdD": 1.7962588138190165,
+      "Ue_TiD": 1.407270247837805,
+      "A": 2.9223060697670692e-33,
+      "s": 2.9999999999999996,
+      "neutral_2a_D2": 1.0000000000000029e-07,
+      "neutral_7a_D1": 0.0005504364712762034,
+      "Ue": 1.7962588138190165
+    },
+    "per_dataset": {
+      "karahadian": {
+        "n": 12,
+        "log_sse": 8.290591015219688,
+        "log_rmse": 0.8311934700186477,
+        "rms_factor": 2.2960573813418304,
+        "chi2_existing_error_convention": 124.5973914954004
+      }
+    },
+    "optimizer_success": true,
+    "optimizer_message": "`ftol` termination condition is satisfied."
+  },
+  {
+    "material": "TiD",
+    "candidate": "thermal",
+    "blocks": [
+      "karahadian"
+    ],
+    "global_scope": "czerski+karahadian_one_A",
+    "karahadian_current_power": 0,
+    "k": 9,
+    "balanced_log_score": 3.5829538400561747,
+    "parameters": {
+      "Ue_Zr": 0.1734408250135533,
+      "Ue_Ti": 4.787763002224187e-19,
+      "Ue_Pd": 8.81299619188175e-17,
+      "Ue_PdD": 1.7962588138190165,
+      "Ue_TiD": 1.407270247837805,
+      "A": 2.9223060697670692e-33,
+      "s": 2.9999999999999996,
+      "neutral_2a_D2": 1.0000000000000029e-07,
+      "neutral_7a_D1": 0.0005504364712762034,
+      "Ue": 1.407270247837805
+    },
+    "per_dataset": {
+      "karahadian": {
+        "n": 10,
+        "log_sse": 11.253067266070602,
+        "log_rmse": 1.0608047542347556,
+        "rms_factor": 2.8886947434447436,
+        "chi2_existing_error_convention": 219.28649247475667
+      }
+    },
+    "optimizer_success": true,
+    "optimizer_message": "`ftol` termination condition is satisfied."
+  },
+  {
+    "material": "Zr",
+    "candidate": "thermal",
+    "blocks": [
+      "czerski"
+    ],
+    "global_scope": "czerski+exfor+karahadian_one_A",
+    "karahadian_current_power": 0,
+    "k": 9,
+    "balanced_log_score": 4.423489481056561,
+    "parameters": {
+      "Ue_Zr": 0.22111314487414926,
+      "Ue_Ti": 0.10192772265858992,
+      "Ue_Pd": 1.3648535271995963,
+      "Ue_PdD": 1.7963503816848285,
+      "Ue_TiD": 1.4170640456199175,
+      "A": 1.244416754728388e-34,
+      "s": 2.9999999999999996,
+      "neutral_2a_D2": 0.00023378709488744076,
+      "neutral_7a_D1": 0.0005363133957982072,
+      "Ue": 0.22111314487414926
+    },
+    "per_dataset": {
+      "czerski": {
+        "n": 41,
+        "log_sse": 3.0214998567110505,
+        "log_rmse": 0.27146844836254375,
+        "rms_factor": 1.3118894789422597
+      }
+    },
+    "optimizer_success": true,
+    "optimizer_message": "`ftol` termination condition is satisfied."
+  },
+  {
+    "material": "Ti",
+    "candidate": "thermal",
+    "blocks": [
+      "czerski",
+      "exfor",
+      "karahadian"
+    ],
+    "global_scope": "czerski+exfor+karahadian_one_A",
+    "karahadian_current_power": 0,
+    "k": 9,
+    "balanced_log_score": 4.423489481056561,
+    "parameters": {
+      "Ue_Zr": 0.22111314487414926,
+      "Ue_Ti": 0.10192772265858992,
+      "Ue_Pd": 1.3648535271995963,
+      "Ue_PdD": 1.7963503816848285,
+      "Ue_TiD": 1.4170640456199175,
+      "A": 1.244416754728388e-34,
+      "s": 2.9999999999999996,
+      "neutral_2a_D2": 0.00023378709488744076,
+      "neutral_7a_D1": 0.0005363133957982072,
+      "Ue": 0.10192772265858992
+    },
+    "per_dataset": {
+      "czerski": {
+        "n": 22,
+        "log_sse": 1.9009299989075867,
+        "log_rmse": 0.2939488204454203,
+        "rms_factor": 1.3417152335217082
+      },
+      "exfor": {
+        "n": 19,
+        "log_sse": 20.802090821529035,
+        "log_rmse": 1.0463493132523352,
+        "rms_factor": 2.847237748537422
+      },
+      "karahadian": {
+        "n": 13,
+        "log_sse": 92.7690516088661,
+        "log_rmse": 2.6713443980493605,
+        "rms_factor": 14.45939531451267,
+        "chi2_existing_error_convention": 382.3188031427688
+      }
+    },
+    "optimizer_success": true,
+    "optimizer_message": "`ftol` termination condition is satisfied."
+  },
+  {
+    "material": "Pd",
+    "candidate": "thermal",
+    "blocks": [
+      "czerski",
+      "karahadian"
+    ],
+    "global_scope": "czerski+exfor+karahadian_one_A",
+    "karahadian_current_power": 0,
+    "k": 9,
+    "balanced_log_score": 4.423489481056561,
+    "parameters": {
+      "Ue_Zr": 0.22111314487414926,
+      "Ue_Ti": 0.10192772265858992,
+      "Ue_Pd": 1.3648535271995963,
+      "Ue_PdD": 1.7963503816848285,
+      "Ue_TiD": 1.4170640456199175,
+      "A": 1.244416754728388e-34,
+      "s": 2.9999999999999996,
+      "neutral_2a_D2": 0.00023378709488744076,
+      "neutral_7a_D1": 0.0005363133957982072,
+      "Ue": 1.3648535271995963
+    },
+    "per_dataset": {
+      "czerski": {
+        "n": 20,
+        "log_sse": 41.82842158805859,
+        "log_rmse": 1.4461746365508314,
+        "rms_factor": 4.24683770492911
+      },
+      "karahadian": {
+        "n": 13,
+        "log_sse": 20.269029342743767,
+        "log_rmse": 1.2486617249231202,
+        "rms_factor": 3.4856750426458154,
+        "chi2_existing_error_convention": 388.4055104864007
+      }
+    },
+    "optimizer_success": true,
+    "optimizer_message": "`ftol` termination condition is satisfied."
+  },
+  {
+    "material": "PdD",
+    "candidate": "thermal",
+    "blocks": [
+      "karahadian"
+    ],
+    "global_scope": "czerski+exfor+karahadian_one_A",
+    "karahadian_current_power": 0,
+    "k": 9,
+    "balanced_log_score": 4.423489481056561,
+    "parameters": {
+      "Ue_Zr": 0.22111314487414926,
+      "Ue_Ti": 0.10192772265858992,
+      "Ue_Pd": 1.3648535271995963,
+      "Ue_PdD": 1.7963503816848285,
+      "Ue_TiD": 1.4170640456199175,
+      "A": 1.244416754728388e-34,
+      "s": 2.9999999999999996,
+      "neutral_2a_D2": 0.00023378709488744076,
+      "neutral_7a_D1": 0.0005363133957982072,
+      "Ue": 1.7963503816848285
+    },
+    "per_dataset": {
+      "karahadian": {
+        "n": 12,
+        "log_sse": 8.288562451250298,
+        "log_rmse": 0.8310917744775191,
+        "rms_factor": 2.295823894416463,
+        "chi2_existing_error_convention": 124.58339403690586
+      }
+    },
+    "optimizer_success": true,
+    "optimizer_message": "`ftol` termination condition is satisfied."
+  },
+  {
+    "material": "TiD",
+    "candidate": "thermal",
+    "blocks": [
+      "karahadian"
+    ],
+    "global_scope": "czerski+exfor+karahadian_one_A",
+    "karahadian_current_power": 0,
+    "k": 9,
+    "balanced_log_score": 4.423489481056561,
+    "parameters": {
+      "Ue_Zr": 0.22111314487414926,
+      "Ue_Ti": 0.10192772265858992,
+      "Ue_Pd": 1.3648535271995963,
+      "Ue_PdD": 1.7963503816848285,
+      "Ue_TiD": 1.4170640456199175,
+      "A": 1.244416754728388e-34,
+      "s": 2.9999999999999996,
+      "neutral_2a_D2": 0.00023378709488744076,
+      "neutral_7a_D1": 0.0005363133957982072,
+      "Ue": 1.4170640456199175
+    },
+    "per_dataset": {
+      "karahadian": {
+        "n": 10,
+        "log_sse": 11.411564211884404,
+        "log_rmse": 1.0682492317752634,
+        "rms_factor": 2.910279811674133,
+        "chi2_existing_error_convention": 223.41083223166112
+      }
+    },
+    "optimizer_success": true,
+    "optimizer_message": "`ftol` termination condition is satisfied."
+  },
+  {
+    "material": "Zr",
+    "candidate": "thermal",
+    "blocks": [
+      "czerski"
+    ],
+    "global_scope": "czerski+karahadian_separate",
+    "karahadian_current_power": 1,
+    "k": 10,
+    "balanced_log_score": 0.6436242047198518,
+    "parameters": {
+      "Ue_Zr": 0.21604283204561586,
+      "Ue_Ti": 0.20418603009384428,
+      "Ue_Pd": 0.40252576168541815,
+      "Ue_PdD": 1.7961646965790445,
+      "Ue_TiD": 0.746466694489408,
+      "A_czerski": 1.7707651329052043e-34,
+      "A_karahadian": 5.026265342165008e-32,
+      "s": 1.1031544461830025,
+      "neutral_2a_D2": 0.00022863579148624943,
+      "neutral_7a_D1": 0.0005386187000778782,
+      "Ue": 0.21604283204561586
+    },
+    "per_dataset": {
+      "czerski": {
+        "n": 41,
+        "log_sse": 3.998012733546786,
+        "log_rmse": 0.31226992441838364,
+        "rms_factor": 1.3665235013133594
+      }
+    },
+    "optimizer_success": true,
+    "optimizer_message": "`ftol` termination condition is satisfied."
+  },
+  {
+    "material": "Ti",
+    "candidate": "thermal",
+    "blocks": [
+      "czerski",
+      "karahadian"
+    ],
+    "global_scope": "czerski+karahadian_separate",
+    "karahadian_current_power": 1,
+    "k": 10,
+    "balanced_log_score": 0.6436242047198518,
+    "parameters": {
+      "Ue_Zr": 0.21604283204561586,
+      "Ue_Ti": 0.20418603009384428,
+      "Ue_Pd": 0.40252576168541815,
+      "Ue_PdD": 1.7961646965790445,
+      "Ue_TiD": 0.746466694489408,
+      "A_czerski": 1.7707651329052043e-34,
+      "A_karahadian": 5.026265342165008e-32,
+      "s": 1.1031544461830025,
+      "neutral_2a_D2": 0.00022863579148624943,
+      "neutral_7a_D1": 0.0005386187000778782,
+      "Ue": 0.20418603009384428
+    },
+    "per_dataset": {
+      "czerski": {
+        "n": 22,
+        "log_sse": 3.3899079468523974,
+        "log_rmse": 0.3925388195541011,
+        "rms_factor": 1.480735345651211
+      },
+      "karahadian": {
+        "n": 13,
+        "log_sse": 7.498260855550139,
+        "log_rmse": 0.7594664552044283,
+        "rms_factor": 2.137135658645355,
+        "chi2_existing_error_convention": 51.38562017288196
+      }
+    },
+    "optimizer_success": true,
+    "optimizer_message": "`ftol` termination condition is satisfied."
+  },
+  {
+    "material": "Pd",
+    "candidate": "thermal",
+    "blocks": [
+      "czerski",
+      "karahadian"
+    ],
+    "global_scope": "czerski+karahadian_separate",
+    "karahadian_current_power": 1,
+    "k": 10,
+    "balanced_log_score": 0.6436242047198518,
+    "parameters": {
+      "Ue_Zr": 0.21604283204561586,
+      "Ue_Ti": 0.20418603009384428,
+      "Ue_Pd": 0.40252576168541815,
+      "Ue_PdD": 1.7961646965790445,
+      "Ue_TiD": 0.746466694489408,
+      "A_czerski": 1.7707651329052043e-34,
+      "A_karahadian": 5.026265342165008e-32,
+      "s": 1.1031544461830025,
+      "neutral_2a_D2": 0.00022863579148624943,
+      "neutral_7a_D1": 0.0005386187000778782,
+      "Ue": 0.40252576168541815
+    },
+    "per_dataset": {
+      "czerski": {
+        "n": 20,
+        "log_sse": 7.849088454286149,
+        "log_rmse": 0.6264618286171213,
+        "rms_factor": 1.870979009977131
+      },
+      "karahadian": {
+        "n": 13,
+        "log_sse": 12.241451556167492,
+        "log_rmse": 0.9703865826077728,
+        "rms_factor": 2.6389644399430847,
+        "chi2_existing_error_convention": 154.36830676204934
+      }
+    },
+    "optimizer_success": true,
+    "optimizer_message": "`ftol` termination condition is satisfied."
+  },
+  {
+    "material": "PdD",
+    "candidate": "thermal",
+    "blocks": [
+      "karahadian"
+    ],
+    "global_scope": "czerski+karahadian_separate",
+    "karahadian_current_power": 1,
+    "k": 10,
+    "balanced_log_score": 0.6436242047198518,
+    "parameters": {
+      "Ue_Zr": 0.21604283204561586,
+      "Ue_Ti": 0.20418603009384428,
+      "Ue_Pd": 0.40252576168541815,
+      "Ue_PdD": 1.7961646965790445,
+      "Ue_TiD": 0.746466694489408,
+      "A_czerski": 1.7707651329052043e-34,
+      "A_karahadian": 5.026265342165008e-32,
+      "s": 1.1031544461830025,
+      "neutral_2a_D2": 0.00022863579148624943,
+      "neutral_7a_D1": 0.0005386187000778782,
+      "Ue": 1.7961646965790445
+    },
+    "per_dataset": {
+      "karahadian": {
+        "n": 12,
+        "log_sse": 1.9609264792514978,
+        "log_rmse": 0.404240695548611,
+        "rms_factor": 1.4981645050914918,
+        "chi2_existing_error_convention": 24.595368885457162
+      }
+    },
+    "optimizer_success": true,
+    "optimizer_message": "`ftol` termination condition is satisfied."
+  },
+  {
+    "material": "TiD",
+    "candidate": "thermal",
+    "blocks": [
+      "karahadian"
+    ],
+    "global_scope": "czerski+karahadian_separate",
+    "karahadian_current_power": 1,
+    "k": 10,
+    "balanced_log_score": 0.6436242047198518,
+    "parameters": {
+      "Ue_Zr": 0.21604283204561586,
+      "Ue_Ti": 0.20418603009384428,
+      "Ue_Pd": 0.40252576168541815,
+      "Ue_PdD": 1.7961646965790445,
+      "Ue_TiD": 0.746466694489408,
+      "A_czerski": 1.7707651329052043e-34,
+      "A_karahadian": 5.026265342165008e-32,
+      "s": 1.1031544461830025,
+      "neutral_2a_D2": 0.00022863579148624943,
+      "neutral_7a_D1": 0.0005386187000778782,
+      "Ue": 0.746466694489408
+    },
+    "per_dataset": {
+      "karahadian": {
+        "n": 10,
+        "log_sse": 0.3815586167295914,
+        "log_rmse": 0.19533525455728448,
+        "rms_factor": 1.2157184933419172,
+        "chi2_existing_error_convention": 7.3208780012025905
+      }
+    },
+    "optimizer_success": true,
+    "optimizer_message": "`ftol` termination condition is satisfied."
+  },
+  {
+    "material": "Zr",
+    "candidate": "thermal",
+    "blocks": [
+      "czerski"
+    ],
+    "global_scope": "czerski+karahadian_one_A",
+    "karahadian_current_power": 1,
+    "k": 9,
+    "balanced_log_score": 2.489393084375559,
+    "parameters": {
+      "Ue_Zr": 0.18931117104206482,
+      "Ue_Ti": 9.157818127277277e-18,
+      "Ue_Pd": 5.214609584521123e-16,
+      "Ue_PdD": 1.5659499002888806,
+      "Ue_TiD": 1.210921589190109,
+      "A": 1.861755041218645e-33,
+      "s": 2.9999999999999996,
+      "neutral_2a_D2": 1.0000000000000029e-07,
+      "neutral_7a_D1": 0.0005461970347525195,
+      "Ue": 0.18931117104206482
+    },
+    "per_dataset": {
+      "czerski": {
+        "n": 41,
+        "log_sse": 37.70060253841184,
+        "log_rmse": 0.9589196479271749,
+        "rms_factor": 2.608876445310359
+      }
+    },
+    "optimizer_success": true,
+    "optimizer_message": "`ftol` termination condition is satisfied."
+  },
+  {
+    "material": "Ti",
+    "candidate": "thermal",
+    "blocks": [
+      "czerski",
+      "karahadian"
+    ],
+    "global_scope": "czerski+karahadian_one_A",
+    "karahadian_current_power": 1,
+    "k": 9,
+    "balanced_log_score": 2.489393084375559,
+    "parameters": {
+      "Ue_Zr": 0.18931117104206482,
+      "Ue_Ti": 9.157818127277277e-18,
+      "Ue_Pd": 5.214609584521123e-16,
+      "Ue_PdD": 1.5659499002888806,
+      "Ue_TiD": 1.210921589190109,
+      "A": 1.861755041218645e-33,
+      "s": 2.9999999999999996,
+      "neutral_2a_D2": 1.0000000000000029e-07,
+      "neutral_7a_D1": 0.0005461970347525195,
+      "Ue": 9.157818127277277e-18
+    },
+    "per_dataset": {
+      "czerski": {
+        "n": 22,
+        "log_sse": 35.11884253602657,
+        "log_rmse": 1.2634520269344793,
+        "rms_factor": 3.537612366811222
+      },
+      "karahadian": {
+        "n": 13,
+        "log_sse": 4.526245183597873,
+        "log_rmse": 0.5900616124021335,
+        "rms_factor": 1.8040995668816704,
+        "chi2_existing_error_convention": 52.96226613775305
+      }
+    },
+    "optimizer_success": true,
+    "optimizer_message": "`ftol` termination condition is satisfied."
+  },
+  {
+    "material": "Pd",
+    "candidate": "thermal",
+    "blocks": [
+      "czerski",
+      "karahadian"
+    ],
+    "global_scope": "czerski+karahadian_one_A",
+    "karahadian_current_power": 1,
+    "k": 9,
+    "balanced_log_score": 2.489393084375559,
+    "parameters": {
+      "Ue_Zr": 0.18931117104206482,
+      "Ue_Ti": 9.157818127277277e-18,
+      "Ue_Pd": 5.214609584521123e-16,
+      "Ue_PdD": 1.5659499002888806,
+      "Ue_TiD": 1.210921589190109,
+      "A": 1.861755041218645e-33,
+      "s": 2.9999999999999996,
+      "neutral_2a_D2": 1.0000000000000029e-07,
+      "neutral_7a_D1": 0.0005461970347525195,
+      "Ue": 5.214609584521123e-16
+    },
+    "per_dataset": {
+      "czerski": {
+        "n": 20,
+        "log_sse": 6.62221712197829,
+        "log_rmse": 0.5754223284674609,
+        "rms_factor": 1.7778812182339474
+      },
+      "karahadian": {
+        "n": 13,
+        "log_sse": 49.25628202267759,
+        "log_rmse": 1.9465211971553762,
+        "rms_factor": 7.0042786437958915,
+        "chi2_existing_error_convention": 534.7881649438989
+      }
+    },
+    "optimizer_success": true,
+    "optimizer_message": "`ftol` termination condition is satisfied."
+  },
+  {
+    "material": "PdD",
+    "candidate": "thermal",
+    "blocks": [
+      "karahadian"
+    ],
+    "global_scope": "czerski+karahadian_one_A",
+    "karahadian_current_power": 1,
+    "k": 9,
+    "balanced_log_score": 2.489393084375559,
+    "parameters": {
+      "Ue_Zr": 0.18931117104206482,
+      "Ue_Ti": 9.157818127277277e-18,
+      "Ue_Pd": 5.214609584521123e-16,
+      "Ue_PdD": 1.5659499002888806,
+      "Ue_TiD": 1.210921589190109,
+      "A": 1.861755041218645e-33,
+      "s": 2.9999999999999996,
+      "neutral_2a_D2": 1.0000000000000029e-07,
+      "neutral_7a_D1": 0.0005461970347525195,
+      "Ue": 1.5659499002888806
+    },
+    "per_dataset": {
+      "karahadian": {
+        "n": 12,
+        "log_sse": 8.086063779397039,
+        "log_rmse": 0.8208767558428528,
+        "rms_factor": 2.272491384453783,
+        "chi2_existing_error_convention": 145.8003035931142
+      }
+    },
+    "optimizer_success": true,
+    "optimizer_message": "`ftol` termination condition is satisfied."
+  },
+  {
+    "material": "TiD",
+    "candidate": "thermal",
+    "blocks": [
+      "karahadian"
+    ],
+    "global_scope": "czerski+karahadian_one_A",
+    "karahadian_current_power": 1,
+    "k": 9,
+    "balanced_log_score": 2.489393084375559,
+    "parameters": {
+      "Ue_Zr": 0.18931117104206482,
+      "Ue_Ti": 9.157818127277277e-18,
+      "Ue_Pd": 5.214609584521123e-16,
+      "Ue_PdD": 1.5659499002888806,
+      "Ue_TiD": 1.210921589190109,
+      "A": 1.861755041218645e-33,
+      "s": 2.9999999999999996,
+      "neutral_2a_D2": 1.0000000000000029e-07,
+      "neutral_7a_D1": 0.0005461970347525195,
+      "Ue": 1.210921589190109
+    },
+    "per_dataset": {
+      "karahadian": {
+        "n": 10,
+        "log_sse": 11.680110974860344,
+        "log_rmse": 1.0807456210811286,
+        "rms_factor": 2.946875984967918,
+        "chi2_existing_error_convention": 277.60217652443623
+      }
+    },
+    "optimizer_success": true,
+    "optimizer_message": "`ftol` termination condition is satisfied."
+  },
+  {
+    "material": "Zr",
+    "candidate": "thermal",
+    "blocks": [
+      "czerski"
+    ],
+    "global_scope": "czerski+exfor+karahadian_one_A",
+    "karahadian_current_power": 1,
+    "k": 9,
+    "balanced_log_score": 3.4457679659629514,
+    "parameters": {
+      "Ue_Zr": 0.22635038528345372,
+      "Ue_Ti": 0.07812133380366545,
+      "Ue_Pd": 1.2359422289140578,
+      "Ue_PdD": 1.5661972672705546,
+      "Ue_TiD": 1.2388176546507712,
+      "A": 8.995624691143074e-35,
+      "s": 2.9999999999999996,
+      "neutral_2a_D2": 0.00023585356110125992,
+      "neutral_7a_D1": 0.0005338685819244505,
+      "Ue": 0.22635038528345372
+    },
+    "per_dataset": {
+      "czerski": {
+        "n": 41,
+        "log_sse": 2.8769633752940815,
+        "log_rmse": 0.2648959011042014,
+        "rms_factor": 1.3032952971151626
+      }
+    },
+    "optimizer_success": true,
+    "optimizer_message": "`ftol` termination condition is satisfied."
+  },
+  {
+    "material": "Ti",
+    "candidate": "thermal",
+    "blocks": [
+      "czerski",
+      "exfor",
+      "karahadian"
+    ],
+    "global_scope": "czerski+exfor+karahadian_one_A",
+    "karahadian_current_power": 1,
+    "k": 9,
+    "balanced_log_score": 3.4457679659629514,
+    "parameters": {
+      "Ue_Zr": 0.22635038528345372,
+      "Ue_Ti": 0.07812133380366545,
+      "Ue_Pd": 1.2359422289140578,
+      "Ue_PdD": 1.5661972672705546,
+      "Ue_TiD": 1.2388176546507712,
+      "A": 8.995624691143074e-35,
+      "s": 2.9999999999999996,
+      "neutral_2a_D2": 0.00023585356110125992,
+      "neutral_7a_D1": 0.0005338685819244505,
+      "Ue": 0.07812133380366545
+    },
+    "per_dataset": {
+      "czerski": {
+        "n": 22,
+        "log_sse": 2.154417543684068,
+        "log_rmse": 0.3129346100504986,
+        "rms_factor": 1.367432111787341
+      },
+      "exfor": {
+        "n": 19,
+        "log_sse": 16.859044901174183,
+        "log_rmse": 0.9419756645972219,
+        "rms_factor": 2.565044082403363
+      },
+      "karahadian": {
+        "n": 13,
+        "log_sse": 62.290155878731284,
+        "log_rmse": 2.188961044013826,
+        "rms_factor": 8.92593464234231,
+        "chi2_existing_error_convention": 280.39541313781825
+      }
+    },
+    "optimizer_success": true,
+    "optimizer_message": "`ftol` termination condition is satisfied."
+  },
+  {
+    "material": "Pd",
+    "candidate": "thermal",
+    "blocks": [
+      "czerski",
+      "karahadian"
+    ],
+    "global_scope": "czerski+exfor+karahadian_one_A",
+    "karahadian_current_power": 1,
+    "k": 9,
+    "balanced_log_score": 3.4457679659629514,
+    "parameters": {
+      "Ue_Zr": 0.22635038528345372,
+      "Ue_Ti": 0.07812133380366545,
+      "Ue_Pd": 1.2359422289140578,
+      "Ue_PdD": 1.5661972672705546,
+      "Ue_TiD": 1.2388176546507712,
+      "A": 8.995624691143074e-35,
+      "s": 2.9999999999999996,
+      "neutral_2a_D2": 0.00023585356110125992,
+      "neutral_7a_D1": 0.0005338685819244505,
+      "Ue": 1.2359422289140578
+    },
+    "per_dataset": {
+      "czerski": {
+        "n": 20,
+        "log_sse": 30.04168986847509,
+        "log_rmse": 1.2255955668260858,
+        "rms_factor": 3.406194095028677
+      },
+      "karahadian": {
+        "n": 13,
+        "log_sse": 19.969576166021188,
+        "log_rmse": 1.239403583801536,
+        "rms_factor": 3.4535530953965683,
+        "chi2_existing_error_convention": 476.6216829057033
+      }
+    },
+    "optimizer_success": true,
+    "optimizer_message": "`ftol` termination condition is satisfied."
+  },
+  {
+    "material": "PdD",
+    "candidate": "thermal",
+    "blocks": [
+      "karahadian"
+    ],
+    "global_scope": "czerski+exfor+karahadian_one_A",
+    "karahadian_current_power": 1,
+    "k": 9,
+    "balanced_log_score": 3.4457679659629514,
+    "parameters": {
+      "Ue_Zr": 0.22635038528345372,
+      "Ue_Ti": 0.07812133380366545,
+      "Ue_Pd": 1.2359422289140578,
+      "Ue_PdD": 1.5661972672705546,
+      "Ue_TiD": 1.2388176546507712,
+      "A": 8.995624691143074e-35,
+      "s": 2.9999999999999996,
+      "neutral_2a_D2": 0.00023585356110125992,
+      "neutral_7a_D1": 0.0005338685819244505,
+      "Ue": 1.5661972672705546
+    },
+    "per_dataset": {
+      "karahadian": {
+        "n": 12,
+        "log_sse": 8.084941847428695,
+        "log_rmse": 0.8208198060185872,
+        "rms_factor": 2.2723619701538893,
+        "chi2_existing_error_convention": 145.81861213068035
+      }
+    },
+    "optimizer_success": true,
+    "optimizer_message": "`ftol` termination condition is satisfied."
+  },
+  {
+    "material": "TiD",
+    "candidate": "thermal",
+    "blocks": [
+      "karahadian"
+    ],
+    "global_scope": "czerski+exfor+karahadian_one_A",
+    "karahadian_current_power": 1,
+    "k": 9,
+    "balanced_log_score": 3.4457679659629514,
+    "parameters": {
+      "Ue_Zr": 0.22635038528345372,
+      "Ue_Ti": 0.07812133380366545,
+      "Ue_Pd": 1.2359422289140578,
+      "Ue_PdD": 1.5661972672705546,
+      "Ue_TiD": 1.2388176546507712,
+      "A": 8.995624691143074e-35,
+      "s": 2.9999999999999996,
+      "neutral_2a_D2": 0.00023585356110125992,
+      "neutral_7a_D1": 0.0005338685819244505,
+      "Ue": 1.2388176546507712
+    },
+    "per_dataset": {
+      "karahadian": {
+        "n": 10,
+        "log_sse": 12.177695484544486,
+        "log_rmse": 1.1035259618397968,
+        "rms_factor": 3.0147772951823724,
+        "chi2_existing_error_convention": 292.95731130643156
+      }
+    },
+    "optimizer_success": true,
+    "optimizer_message": "`ftol` termination condition is satisfied."
+  }
+]

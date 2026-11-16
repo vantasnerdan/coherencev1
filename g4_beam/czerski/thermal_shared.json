@@ -1,0 +1,234 @@
+[
+  {
+    "scope": "czerski_separate",
+    "current_power": 0,
+    "parameters": {
+      "Ue_Zr": 0.2201496533282833,
+      "Ue_Ti": 0.14969541298253977,
+      "Ue_Pd": 0.6350593493950091,
+      "A": 1.3266118820300233e-34,
+      "neutral_2a_D2": 0.00023310144122183328,
+      "neutral_7a_D1": 0.0005367568342423496
+    },
+    "balanced_log_score": 0.1611573893556934,
+    "optimizer_success": true,
+    "per_dataset": {
+      "czerski": {
+        "n": 83,
+        "rms_factor": 1.4939806425098903
+      }
+    }
+  },
+  {
+    "scope": "exfor_separate",
+    "current_power": 0,
+    "parameters": {
+      "Ue_Ti": 1.0096821343485757e-10,
+      "A": 1.0204105029138292e-47
+    },
+    "balanced_log_score": 0.01293212755614466,
+    "optimizer_success": true,
+    "per_dataset": {
+      "exfor": {
+        "n": 19,
+        "rms_factor": 1.1204378121671126
+      }
+    }
+  },
+  {
+    "scope": "czerski+exfor_one_A",
+    "current_power": 0,
+    "parameters": {
+      "Ue_Zr": 0.26433852232497274,
+      "Ue_Ti": 0.026987218087680242,
+      "Ue_Pd": 0.8191968563441209,
+      "A": 1.7736052074881339e-35,
+      "neutral_2a_D2": 0.00022377095559642041,
+      "neutral_7a_D1": 0.0005156201427802943
+    },
+    "balanced_log_score": 0.6756851384130418,
+    "optimizer_success": true,
+    "per_dataset": {
+      "czerski": {
+        "n": 83,
+        "rms_factor": 1.9322231601983881
+      },
+      "exfor": {
+        "n": 19,
+        "rms_factor": 1.6352073259901196
+      }
+    }
+  },
+  {
+    "scope": "czerski+karahadian_separate",
+    "current_power": 0,
+    "parameters": {
+      "Ue_Zr": 0.2158071056775145,
+      "Ue_Ti": 0.21330595679740835,
+      "Ue_Pd": 0.3840555777117703,
+      "Ue_PdD": 1.9915975970321638,
+      "Ue_TiD": 0.7450019276736766,
+      "A_czerski": 1.8018677646050565e-34,
+      "A_karahadian": 1.1216173281476616e-31,
+      "s": 1.4636083230288075,
+      "neutral_2a_D2": 0.0002282864740209253,
+      "neutral_7a_D1": 0.0005387237711814873
+    },
+    "balanced_log_score": 0.8541584591393838,
+    "optimizer_success": true,
+    "per_dataset": {
+      "czerski": {
+        "n": 83,
+        "rms_factor": 1.543513507522477
+      },
+      "karahadian": {
+        "n": 48,
+        "rms_factor": 2.2612880315370654
+      }
+    }
+  },
+  {
+    "scope": "czerski+karahadian_one_A",
+    "current_power": 0,
+    "parameters": {
+      "Ue_Zr": 0.1734408250135533,
+      "Ue_Ti": 4.787763002224187e-19,
+      "Ue_Pd": 8.81299619188175e-17,
+      "Ue_PdD": 1.7962588138190165,
+      "Ue_TiD": 1.407270247837805,
+      "A": 2.9223060697670692e-33,
+      "s": 2.9999999999999996,
+      "neutral_2a_D2": 1.0000000000000029e-07,
+      "neutral_7a_D1": 0.0005504364712762034
+    },
+    "balanced_log_score": 3.5829538400561747,
+    "optimizer_success": true,
+    "per_dataset": {
+      "czerski": {
+        "n": 83,
+        "rms_factor": 3.1881115877975494
+      },
+      "karahadian": {
+        "n": 48,
+        "rms_factor": 4.464786971163089
+      }
+    }
+  },
+  {
+    "scope": "czerski+exfor+karahadian_one_A",
+    "current_power": 0,
+    "parameters": {
+      "Ue_Zr": 0.22111314487414926,
+      "Ue_Ti": 0.10192772265858992,
+      "Ue_Pd": 1.3648535271995963,
+      "Ue_PdD": 1.7963503816848285,
+      "Ue_TiD": 1.4170640456199175,
+      "A": 1.244416754728388e-34,
+      "s": 2.9999999999999996,
+      "neutral_2a_D2": 0.00023378709488744076,
+      "neutral_7a_D1": 0.0005363133957982072
+    },
+    "balanced_log_score": 4.423489481056561,
+    "optimizer_success": true,
+    "per_dataset": {
+      "czerski": {
+        "n": 83,
+        "rms_factor": 2.118077154338041
+      },
+      "exfor": {
+        "n": 19,
+        "rms_factor": 2.847237748537422
+      },
+      "karahadian": {
+        "n": 48,
+        "rms_factor": 5.274811642559829
+      }
+    }
+  },
+  {
+    "scope": "czerski+karahadian_separate",
+    "current_power": 1,
+    "parameters": {
+      "Ue_Zr": 0.21604283204561586,
+      "Ue_Ti": 0.20418603009384428,
+      "Ue_Pd": 0.40252576168541815,
+      "Ue_PdD": 1.7961646965790445,
+      "Ue_TiD": 0.746466694489408,
+      "A_czerski": 1.7707651329052043e-34,
+      "A_karahadian": 5.026265342165008e-32,
+      "s": 1.1031544461830025,
+      "neutral_2a_D2": 0.00022863579148624943,
+      "neutral_7a_D1": 0.0005386187000778782
+    },
+    "balanced_log_score": 0.6436242047198518,
+    "optimizer_success": true,
+    "per_dataset": {
+      "czerski": {
+        "n": 83,
+        "rms_factor": 1.534892777996112
+      },
+      "karahadian": {
+        "n": 48,
+        "rms_factor": 1.9704594678691498
+      }
+    }
+  },
+  {
+    "scope": "czerski+karahadian_one_A",
+    "current_power": 1,
+    "parameters": {
+      "Ue_Zr": 0.18931117104206482,
+      "Ue_Ti": 9.157818127277277e-18,
+      "Ue_Pd": 5.214609584521123e-16,
+      "Ue_PdD": 1.5659499002888806,
+      "Ue_TiD": 1.210921589190109,
+      "A": 1.861755041218645e-33,
+      "s": 2.9999999999999996,
+      "neutral_2a_D2": 1.0000000000000029e-07,
+      "neutral_7a_D1": 0.0005461970347525195
+    },
+    "balanced_log_score": 2.489393084375559,
+    "optimizer_success": true,
+    "per_dataset": {
+      "czerski": {
+        "n": 83,
+        "rms_factor": 2.660008778958113
+      },
+      "karahadian": {
+        "n": 48,
+        "rms_factor": 3.4481807367002513
+      }
+    }
+  },
+  {
+    "scope": "czerski+exfor+karahadian_one_A",
+    "current_power": 1,
+    "parameters": {
+      "Ue_Zr": 0.22635038528345372,
+      "Ue_Ti": 0.07812133380366545,
+      "Ue_Pd": 1.2359422289140578,
+      "Ue_PdD": 1.5661972672705546,
+      "Ue_TiD": 1.2388176546507712,
+      "A": 8.995624691143074e-35,
+      "s": 2.9999999999999996,
+      "neutral_2a_D2": 0.00023585356110125992,
+      "neutral_7a_D1": 0.0005338685819244505
+    },
+    "balanced_log_score": 3.4457679659629514,
+    "optimizer_success": true,
+    "per_dataset": {
+      "czerski": {
+        "n": 83,
+        "rms_factor": 1.9156397254226392
+      },
+      "exfor": {
+        "n": 19,
+        "rms_factor": 2.565044082403363
+      },
+      "karahadian": {
+        "n": 48,
+        "rms_factor": 4.31227643794233
+      }
+    }
+  }
+]

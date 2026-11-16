@@ -1,0 +1,21 @@
+quantity,independent,reference,tolerance,meaning,difference
+crossing xs Pd U=0,1.9072779274621074,1.92,0.005,exact R=1e-4; earlier reference was a raster row above axis,-0.012722072537892481
+crossing sqrt-stop Pd U=0,2.1302695031581784,2.15,0.005,"approximate stopping, exact R=1e-4",-0.019730496841821488
+crossing ICRU-ZBL Pd U=0,2.1399928762277445,,0.005,"single deuteron, actual material stopping, no beam average",
+crossing xs Pd U=0.8,1.1792534361164513,1.2,0.005,exact R=1e-4; earlier reference was a raster row above axis,-0.020746563883548674
+crossing sqrt-stop Pd U=0.8,1.3951188433323702,1.41,0.005,"approximate stopping, exact R=1e-4",-0.01488115666762968
+crossing ICRU-ZBL Pd U=0.8,1.4124345753808059,,0.005,"single deuteron, actual material stopping, no beam average",
+crossing xs Ti U=0.3,1.6387877067002805,1.66,0.005,exact R=1e-4; earlier reference was a raster row above axis,-0.02121229329971941
+crossing sqrt-stop Ti U=0.3,1.8630325030522017,1.88,0.005,"approximate stopping, exact R=1e-4",-0.0169674969477982
+crossing ICRU-ZBL Ti U=0.3,1.8766181716220618,,0.005,"single deuteron, actual material stopping, no beam average",
+crossing xs TiD U=0.9,1.0849609277838526,1.1,0.005,exact R=1e-4; earlier reference was a raster row above axis,-0.015039072216147531
+crossing sqrt-stop TiD U=0.9,1.2963749598854548,1.32,0.005,"approximate stopping, exact R=1e-4",-0.023625040114545248
+crossing ICRU-ZBL TiD U=0.9,1.3200568728805688,,0.005,"single deuteron, actual material stopping, no beam average",
+bulk Pd M0,1.268421715620841,1.27,0.01,four-material shared proton/neutron stitch; adaptive quadrature,-0.0015782843791589674
+bulk TiD M0,1.3375081577565682,1.34,0.01,four-material shared proton/neutron stitch; adaptive quadrature,-0.0024918422434319076
+bulk Pd M1,0.6954921167686058,0.7,0.01,four-material shared proton/neutron stitch; adaptive quadrature,-0.004507883231394172
+bulk TiD M1,0.8414294285365972,0.84,0.01,four-material shared proton/neutron stitch; adaptive quadrature,0.0014294285365972215
+Pd frozen chi2 none M0,163.04278821982325,163.0445954211005,0.05,independent integral at exact saved joint-fit parameters; not independent parameter optimum,-0.0018072012772449852
+Pd frozen chi2 neutral d1 M2,14.3412054079728,14.342905802221285,0.05,independent integral at exact saved joint-fit parameters; not independent parameter optimum,-0.0017003942484841161
+Pd frozen chi2 sigmoid_tt M5,10.704353228936304,10.706170715597317,0.05,independent integral at exact saved joint-fit parameters; not independent parameter optimum,-0.0018174866610127793
+Pd frozen chi2 layer wide bounds M4,7.452611164643357,7.467372803794097,0.05,independent integral at exact saved joint-fit parameters; not independent parameter optimum,-0.014761639150740358

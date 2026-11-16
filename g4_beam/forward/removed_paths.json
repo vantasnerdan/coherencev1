@@ -1,0 +1,9 @@
+{
+  "reason": "Clean cutover to the confirmed candidate set; frozen required baseline comparisons are retained in second_route_reference.json and bulk_effective.json.",
+  "remove_after_overlay": [
+    "g4_beam/forward/extra_checks.py",
+    "g4_beam/forward/extra_checks.json",
+    "g4_beam/forward/extra_checks_log.txt",
+    "g4_beam/forward/ue_implied.csv"
+  ]
+}
