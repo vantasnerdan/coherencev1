@@ -1,0 +1,692 @@
+{
+  "cases": [
+    {
+      "DD_nearest_image_A": 2.7506453788156704,
+      "case": "Pd_hydro_+0pct-4-DDfar",
+      "endpoint": "DDfar",
+      "expected_wall_s": 120,
+      "geometry": {
+        "cell_A": [
+          [
+            3.8900000000000006,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            3.8900000000000006,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            3.8900000000000006
+          ]
+        ],
+        "initial_moments_muB": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "pbc": [
+          true,
+          true,
+          true
+        ],
+        "positions_A": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.945,
+            1.945
+          ],
+          [
+            1.945,
+            0.0,
+            1.945
+          ],
+          [
+            1.945,
+            1.945,
+            0.0
+          ],
+          [
+            1.9450000000000003,
+            1.9450000000000003,
+            1.9450000000000003
+          ],
+          [
+            1.9450000000000003,
+            0.0,
+            0.0
+          ]
+        ],
+        "symbols": [
+          "Pd",
+          "Pd",
+          "Pd",
+          "Pd",
+          "H",
+          "H"
+        ]
+      },
+      "host": "Pd_hydro_+0pct",
+      "kmesh": [
+        4,
+        4,
+        4
+      ],
+      "metal_atoms": 4,
+      "minimum_host_image_A": 3.8900000000000006,
+      "site_definition": "A body octahedron (six Pd); B edge octahedron (six Pd in Pd, four Pd/two Rh in L12). Same A/B sites in both cells; He at A.",
+      "spinpol": false,
+      "valence_electrons": 42
+    },
+    {
+      "DD_nearest_image_A": 2.7506453788156704,
+      "case": "Pd_hydro_+0pct-4-He",
+      "endpoint": "He",
+      "expected_wall_s": 120,
+      "geometry": {
+        "cell_A": [
+          [
+            3.8900000000000006,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            3.8900000000000006,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            3.8900000000000006
+          ]
+        ],
+        "initial_moments_muB": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "pbc": [
+          true,
+          true,
+          true
+        ],
+        "positions_A": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.945,
+            1.945
+          ],
+          [
+            1.945,
+            0.0,
+            1.945
+          ],
+          [
+            1.945,
+            1.945,
+            0.0
+          ],
+          [
+            1.9450000000000003,
+            1.9450000000000003,
+            1.9450000000000003
+          ]
+        ],
+        "symbols": [
+          "Pd",
+          "Pd",
+          "Pd",
+          "Pd",
+          "He"
+        ]
+      },
+      "host": "Pd_hydro_+0pct",
+      "kmesh": [
+        4,
+        4,
+        4
+      ],
+      "metal_atoms": 4,
+      "minimum_host_image_A": 3.8900000000000006,
+      "site_definition": "A body octahedron (six Pd); B edge octahedron (six Pd in Pd, four Pd/two Rh in L12). Same A/B sites in both cells; He at A.",
+      "spinpol": false,
+      "valence_electrons": 42
+    },
+    {
+      "DD_nearest_image_A": 2.7506453788156704,
+      "case": "Pd_hydro_+0pct-8-DDfar",
+      "endpoint": "DDfar",
+      "expected_wall_s": 300,
+      "geometry": {
+        "cell_A": [
+          [
+            0.0,
+            3.8900000000000006,
+            3.8900000000000006
+          ],
+          [
+            3.8900000000000006,
+            0.0,
+            3.8900000000000006
+          ],
+          [
+            3.8900000000000006,
+            3.8900000000000006,
+            0.0
+          ]
+        ],
+        "initial_moments_muB": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "pbc": [
+          true,
+          true,
+          true
+        ],
+        "positions_A": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.945,
+            1.945
+          ],
+          [
+            1.945,
+            0.0,
+            1.945
+          ],
+          [
+            1.945,
+            1.945,
+            0.0
+          ],
+          [
+            3.89,
+            3.89,
+            3.89
+          ],
+          [
+            3.89,
+            1.9450000000000003,
+            1.9450000000000003
+          ],
+          [
+            1.9450000000000003,
+            3.89,
+            1.9450000000000003
+          ],
+          [
+            1.9450000000000003,
+            1.9450000000000003,
+            3.89
+          ],
+          [
+            1.9450000000000003,
+            1.9450000000000003,
+            1.9450000000000003
+          ],
+          [
+            1.9450000000000003,
+            0.0,
+            0.0
+          ]
+        ],
+        "symbols": [
+          "Pd",
+          "Pd",
+          "Pd",
+          "Pd",
+          "Pd",
+          "Pd",
+          "Pd",
+          "Pd",
+          "H",
+          "H"
+        ]
+      },
+      "host": "Pd_hydro_+0pct",
+      "kmesh": [
+        4,
+        4,
+        4
+      ],
+      "metal_atoms": 8,
+      "minimum_host_image_A": 5.501290757631341,
+      "site_definition": "A body octahedron (six Pd); B edge octahedron (six Pd in Pd, four Pd/two Rh in L12). Same A/B sites in both cells; He at A.",
+      "spinpol": false,
+      "valence_electrons": 82
+    },
+    {
+      "DD_nearest_image_A": 2.7506453788156704,
+      "case": "Pd_hydro_+0pct-8-He",
+      "endpoint": "He",
+      "expected_wall_s": 300,
+      "geometry": {
+        "cell_A": [
+          [
+            0.0,
+            3.8900000000000006,
+            3.8900000000000006
+          ],
+          [
+            3.8900000000000006,
+            0.0,
+            3.8900000000000006
+          ],
+          [
+            3.8900000000000006,
+            3.8900000000000006,
+            0.0
+          ]
+        ],
+        "initial_moments_muB": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "pbc": [
+          true,
+          true,
+          true
+        ],
+        "positions_A": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.945,
+            1.945
+          ],
+          [
+            1.945,
+            0.0,
+            1.945
+          ],
+          [
+            1.945,
+            1.945,
+            0.0
+          ],
+          [
+            3.89,
+            3.89,
+            3.89
+          ],
+          [
+            3.89,
+            1.9450000000000003,
+            1.9450000000000003
+          ],
+          [
+            1.9450000000000003,
+            3.89,
+            1.9450000000000003
+          ],
+          [
+            1.9450000000000003,
+            1.9450000000000003,
+            3.89
+          ],
+          [
+            1.9450000000000003,
+            1.9450000000000003,
+            1.9450000000000003
+          ]
+        ],
+        "symbols": [
+          "Pd",
+          "Pd",
+          "Pd",
+          "Pd",
+          "Pd",
+          "Pd",
+          "Pd",
+          "Pd",
+          "He"
+        ]
+      },
+      "host": "Pd_hydro_+0pct",
+      "kmesh": [
+        4,
+        4,
+        4
+      ],
+      "metal_atoms": 8,
+      "minimum_host_image_A": 5.501290757631341,
+      "site_definition": "A body octahedron (six Pd); B edge octahedron (six Pd in Pd, four Pd/two Rh in L12). Same A/B sites in both cells; He at A.",
+      "spinpol": false,
+      "valence_electrons": 82
+    },
+    {
+      "case": "vacuum-H-8A",
+      "endpoint": "H",
+      "expected_wall_s": 180,
+      "geometry": {
+        "cell_A": [
+          [
+            8.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            8.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            8.0
+          ]
+        ],
+        "initial_moments_muB": [
+          1.0
+        ],
+        "pbc": [
+          true,
+          true,
+          true
+        ],
+        "positions_A": [
+          [
+            4.0,
+            4.0,
+            4.0
+          ]
+        ],
+        "symbols": [
+          "H"
+        ]
+      },
+      "host": "vacuum",
+      "kmesh": [
+        1,
+        1,
+        1
+      ],
+      "metal_atoms": 0,
+      "spinpol": true,
+      "vacuum_box_A": 8.0,
+      "valence_electrons": 1
+    },
+    {
+      "case": "vacuum-He-8A",
+      "endpoint": "He",
+      "expected_wall_s": 180,
+      "geometry": {
+        "cell_A": [
+          [
+            8.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            8.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            8.0
+          ]
+        ],
+        "initial_moments_muB": [
+          0.0
+        ],
+        "pbc": [
+          true,
+          true,
+          true
+        ],
+        "positions_A": [
+          [
+            4.0,
+            4.0,
+            4.0
+          ]
+        ],
+        "symbols": [
+          "He"
+        ]
+      },
+      "host": "vacuum",
+      "kmesh": [
+        1,
+        1,
+        1
+      ],
+      "metal_atoms": 0,
+      "spinpol": false,
+      "vacuum_box_A": 8.0,
+      "valence_electrons": 2
+    },
+    {
+      "case": "vacuum-H-10A",
+      "endpoint": "H",
+      "expected_wall_s": 180,
+      "geometry": {
+        "cell_A": [
+          [
+            10.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            10.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            10.0
+          ]
+        ],
+        "initial_moments_muB": [
+          1.0
+        ],
+        "pbc": [
+          true,
+          true,
+          true
+        ],
+        "positions_A": [
+          [
+            5.0,
+            5.0,
+            5.0
+          ]
+        ],
+        "symbols": [
+          "H"
+        ]
+      },
+      "host": "vacuum",
+      "kmesh": [
+        1,
+        1,
+        1
+      ],
+      "metal_atoms": 0,
+      "spinpol": true,
+      "vacuum_box_A": 10.0,
+      "valence_electrons": 1
+    },
+    {
+      "case": "vacuum-He-10A",
+      "endpoint": "He",
+      "expected_wall_s": 180,
+      "geometry": {
+        "cell_A": [
+          [
+            10.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            10.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            10.0
+          ]
+        ],
+        "initial_moments_muB": [
+          0.0
+        ],
+        "pbc": [
+          true,
+          true,
+          true
+        ],
+        "positions_A": [
+          [
+            5.0,
+            5.0,
+            5.0
+          ]
+        ],
+        "symbols": [
+          "He"
+        ]
+      },
+      "host": "vacuum",
+      "kmesh": [
+        1,
+        1,
+        1
+      ],
+      "metal_atoms": 0,
+      "spinpol": false,
+      "vacuum_box_A": 10.0,
+      "valence_electrons": 2
+    }
+  ],
+  "control_scope": "4/8-atom periodic-cell plus k-grid-shape control, not proof of an infinite-dilution limit; fixed A/B sites. Vacuum8/10A check. Difference-to-primary contributions must fit15% before eligibility.",
+  "cpu_quota_percent": 100,
+  "memory_max": "2G",
+  "observable": "Signed electronic metal excess: [E(host+DDfar)-E(host+He)]-[2E(vacuum H doublet)-E(vacuum He singlet)]. Identical neutral total valence electrons within each host pair; PAW species energy constants cancel only in the complete cycle.",
+  "restart": "no",
+  "runtime_max_s": 2700,
+  "schema": "coherence-neutral-cycle-plan-v1",
+  "setup_bytes": [
+    {
+      "atom": {
+        "Z": "46",
+        "core": "36.0",
+        "symbol": "Pd",
+        "valence": "10"
+      },
+      "bytes": 106793,
+      "path": "setups/Pd.10.PBE.gz",
+      "sha256": "3c6cfd1de7e6d6815d58c9521b2bc7cec27ede8e83554ed1f0151f979761bbb4"
+    },
+    {
+      "atom": {
+        "Z": "45",
+        "core": "36.0",
+        "symbol": "Rh",
+        "valence": "9"
+      },
+      "bytes": 131420,
+      "path": "setups/Rh.9.PBE.gz",
+      "sha256": "664126c19ddfa75cd1b233017f817ea06692ec1bb6d18db8a5185f690d9b31be"
+    },
+    {
+      "atom": {
+        "Z": "1",
+        "core": "0.0",
+        "symbol": "H",
+        "valence": "1"
+      },
+      "bytes": 12501,
+      "path": "setups/H.PBE.gz",
+      "sha256": "3136ad73c02d471f99dd5f82e451b2061952970556a260d38b53b5020dc94ae7"
+    },
+    {
+      "atom": {
+        "Z": "2",
+        "core": "0.0",
+        "symbol": "He",
+        "valence": "2"
+      },
+      "bytes": 13220,
+      "path": "setups/He.PBE.gz",
+      "sha256": "491731a50d406d2ebbad45d9cfa6d41542eecc6d0637ec2340f39af1add19c18"
+    }
+  ],
+  "source_host": {
+    "completed": {
+      "bytes": 748,
+      "path": "completed.json",
+      "sha256": "2fea62a09c62512b9175af1425155830604280a26709c39963a71e78a23484e4"
+    },
+    "ground": {
+      "bytes": 2178,
+      "path": "ground.json",
+      "sha256": "3625e3bb1e99faf85621cf8c13c042b34b93415ba888d20d185a970203f46749"
+    },
+    "producer": {
+      "bytes": 7530,
+      "path": "producer.json",
+      "sha256": "ce2cb562c5ae7bb21479b1012c4521a308b7e61f1fd3f1de54ff902dd1c0c80c"
+    },
+    "setup_bytes": [
+      {
+        "bytes": 106793,
+        "path": "setups/Pd.10.PBE.gz",
+        "sha256": "3c6cfd1de7e6d6815d58c9521b2bc7cec27ede8e83554ed1f0151f979761bbb4"
+      }
+    ]
+  },
+  "source_readout": {
+    "bytes": 37960,
+    "path": "tier1-A-and-Pd0-readout.json",
+    "sha256": "227426c2f3c6b944d673088016a7eb66f6825aeb7fe593b640cf5673e65ccc74"
+  }
+}

@@ -1,0 +1,324 @@
+{
+  "CPUUsageNSec_total": "21113423449000",
+  "Native_core_minutes": "351.8903908166666666666666667",
+  "absolute_stop_utc": "2026-11-17T00:00:00Z",
+  "conservative_whole_charge_core_minutes": "371.8903908166666666666666667",
+  "nonNative_reserve_charged_core_minutes": 20,
+  "phases": [
+    {
+      "accounting": {
+        "CPUUsageNSec": "223043825000",
+        "EXIT_CODE": "exited",
+        "EXIT_STATUS": "0",
+        "InvocationID": "55a0e3d9f65949f79b0b1999dd426296",
+        "MemoryPeak": "268353536",
+        "Result": "success",
+        "SERVICE_RESULT": "success",
+        "UTC_UNIT_END": "2026-11-16T19:54:49Z"
+      },
+      "numerical_completion": true,
+      "phase": "p4-pd0-fp-20261116t194914",
+      "receipts": [
+        {
+          "bytes": 108,
+          "path": "unit-accounting-p4-pd0-fp-20261116t194914.txt",
+          "sha256": "b7500727bcb39dd22943cd31f65f8870ae6c15878e19a267116e0f7d8eb13cbf"
+        },
+        {
+          "bytes": 88,
+          "path": "unit-result-p4-pd0-fp-20261116t194914.txt",
+          "sha256": "3359260e535980ddc91face7a6bb1e2b28cfd96d5cfcc8e3c1026b05abc346f3"
+        }
+      ]
+    },
+    {
+      "accounting": {
+        "CPUUsageNSec": "114656268000",
+        "EXIT_CODE": "exited",
+        "EXIT_STATUS": "0",
+        "InvocationID": "8043c3dd45624968bda154e9d8109505",
+        "MemoryPeak": "146579456",
+        "Result": "success",
+        "SERVICE_RESULT": "success",
+        "UTC_UNIT_END": "2026-11-16T20:22:46Z"
+      },
+      "numerical_completion": true,
+      "phase": "p4-pd0-eta-20261116t202003",
+      "receipts": [
+        {
+          "bytes": 108,
+          "path": "unit-accounting-p4-pd0-eta-20261116t202003.txt",
+          "sha256": "2303c66856f3c079b789696e192b3af206c0daa262c9e6cced40b5e8df580757"
+        },
+        {
+          "bytes": 88,
+          "path": "unit-result-p4-pd0-eta-20261116t202003.txt",
+          "sha256": "eeae0d4307067051f9b602e9b4b4870b2cb72742c5a29704b21c0008f6be0182"
+        }
+      ]
+    },
+    {
+      "accounting": {
+        "CPUUsageNSec": "1521334508000",
+        "EXIT_CODE": "exited",
+        "EXIT_STATUS": "0",
+        "InvocationID": "f2c3ca0593254eb6a5404c646c199d3e",
+        "MemoryPeak": "710438912",
+        "Result": "success",
+        "SERVICE_RESULT": "success",
+        "UTC_UNIT_END": "2026-11-16T20:46:15Z"
+      },
+      "numerical_completion": true,
+      "phase": "p4-pd0-k24-20261116t202003",
+      "receipts": [
+        {
+          "bytes": 109,
+          "path": "unit-accounting-p4-pd0-k24-20261116t202003.txt",
+          "sha256": "031c8a4447bb5b7a9ada143196b64ec64217bae9ea84790f6f7d43176f255e40"
+        },
+        {
+          "bytes": 88,
+          "path": "unit-result-p4-pd0-k24-20261116t202003.txt",
+          "sha256": "193720fe51bfbacd0ecc4833df9b8626f0c943069ad871eb36bce6620ea52090"
+        }
+      ]
+    },
+    {
+      "accounting": {
+        "CPUUsageNSec": "1818823825000",
+        "EXIT_CODE": "killed",
+        "EXIT_STATUS": "TERM",
+        "InvocationID": "f69b13653fbd4c3c91b856fdc367390d",
+        "MemoryPeak": "1448960000",
+        "Result": "success",
+        "SERVICE_RESULT": "success",
+        "UTC_UNIT_END": "2026-11-16T20:51:12Z"
+      },
+      "numerical_completion": false,
+      "phase": "p4-pd0-k32-20261116t202003",
+      "receipts": [
+        {
+          "bytes": 110,
+          "path": "unit-accounting-p4-pd0-k32-20261116t202003.txt",
+          "sha256": "0eb10ced71b6c6308f919c9ab10df53e0abbf28104310b59803573804f43527a"
+        },
+        {
+          "bytes": 91,
+          "path": "unit-result-p4-pd0-k32-20261116t202003.txt",
+          "sha256": "37f180a63135753bc94d5ca1cccdcc6d779c38fce804480118ed31d4edddf4ea"
+        }
+      ]
+    },
+    {
+      "accounting": {
+        "CPUUsageNSec": "2431302177000",
+        "EXIT_CODE": "exited",
+        "EXIT_STATUS": "0",
+        "InvocationID": "7a144e5dee08460988d2a257763f893c",
+        "MemoryPeak": "939569152",
+        "Result": "success",
+        "SERVICE_RESULT": "success",
+        "UTC_UNIT_END": "2026-11-16T21:57:50Z"
+      },
+      "numerical_completion": true,
+      "phase": "p4-tier1-a-20261116t211531",
+      "receipts": [
+        {
+          "bytes": 109,
+          "path": "unit-accounting-p4-tier1-a-20261116t211531.txt",
+          "sha256": "ed371ce28748c3b0c4fedcad1d24eb456e2fac01be0023f452ed369a0be1ed03"
+        },
+        {
+          "bytes": 88,
+          "path": "unit-result-p4-tier1-a-20261116t211531.txt",
+          "sha256": "169ab49bdc3dccaba855ff34a5cdd3bf6c0cc7348fd76733f3c7560a0c7711f8"
+        }
+      ]
+    },
+    {
+      "accounting": {
+        "CPUUsageNSec": "2716868030000",
+        "EXIT_CODE": "exited",
+        "EXIT_STATUS": "0",
+        "InvocationID": "f23c64b94f9549b3b236efe7463b1800",
+        "MemoryPeak": "1009397760",
+        "Result": "success",
+        "SERVICE_RESULT": "success",
+        "UTC_UNIT_END": "2026-11-16T22:02:34Z"
+      },
+      "numerical_completion": true,
+      "phase": "p4-tier1-c-20261116t211531",
+      "receipts": [
+        {
+          "bytes": 110,
+          "path": "unit-accounting-p4-tier1-c-20261116t211531.txt",
+          "sha256": "ac94b18c04bf7fa13ec027829350036f89d423b0caa7ecd4b37a83c8bb8b7d55"
+        },
+        {
+          "bytes": 88,
+          "path": "unit-result-p4-tier1-c-20261116t211531.txt",
+          "sha256": "f19f4f0790498199207b328eb6691b3d80cbf3845c0a8d98cca0501932c4ca93"
+        }
+      ]
+    },
+    {
+      "accounting": {
+        "CPUUsageNSec": "959187707000",
+        "EXIT_CODE": "exited",
+        "EXIT_STATUS": "0",
+        "InvocationID": "e4c4a60c961243b1acbaa259579931d3",
+        "MemoryPeak": "835018752",
+        "Result": "success",
+        "SERVICE_RESULT": "success",
+        "UTC_UNIT_END": "2026-11-16T22:33:44Z"
+      },
+      "numerical_completion": true,
+      "phase": "p4-neutral-pd-20261116t221659",
+      "receipts": [
+        {
+          "bytes": 108,
+          "path": "unit-accounting-p4-neutral-pd-20261116t221659.txt",
+          "sha256": "6fb51712322307548db4dc95a28880a7cb878b940c3612ded98a327c663e3d85"
+        },
+        {
+          "bytes": 88,
+          "path": "unit-result-p4-neutral-pd-20261116t221659.txt",
+          "sha256": "5795047963cf7c1c3f44279d5a78738cb80da1fe015b285dd4c74c9f1e40e944"
+        }
+      ]
+    },
+    {
+      "accounting": {
+        "CPUUsageNSec": "981328345000",
+        "EXIT_CODE": "exited",
+        "EXIT_STATUS": "0",
+        "InvocationID": "86f3c4a4c62e431da6bb1525b35c422f",
+        "MemoryPeak": "536014848",
+        "Result": "success",
+        "SERVICE_RESULT": "success",
+        "UTC_UNIT_END": "2026-11-16T22:34:06Z"
+      },
+      "numerical_completion": true,
+      "phase": "p4-neutral-rh-20261116t221659",
+      "receipts": [
+        {
+          "bytes": 108,
+          "path": "unit-accounting-p4-neutral-rh-20261116t221659.txt",
+          "sha256": "77befd8af7a31654df382df60df1dca094816a4ee6916fee38d0851a678e2154"
+        },
+        {
+          "bytes": 88,
+          "path": "unit-result-p4-neutral-rh-20261116t221659.txt",
+          "sha256": "0a974c24e4b7058128f7d80d116c5f0396d8f39442672a5d9941f2b2c5a876af"
+        }
+      ]
+    },
+    {
+      "accounting": {
+        "CPUUsageNSec": "7175241621000",
+        "EXIT_CODE": "killed",
+        "EXIT_STATUS": "TERM",
+        "InvocationID": "0f2d47463f1f4c669b49e00aac4639c2",
+        "MemoryPeak": "1467244544",
+        "Result": "timeout",
+        "SERVICE_RESULT": "timeout",
+        "UTC_UNIT_END": "2026-11-16T23:17:14Z"
+      },
+      "numerical_completion": false,
+      "phase": "p4-tier1-b-20261116t211531",
+      "receipts": [
+        {
+          "bytes": 110,
+          "path": "unit-accounting-p4-tier1-b-20261116t211531.txt",
+          "sha256": "ed712c2c0c68070c3f7c980e8e2b6f96e04fc8ad7ea8fcf24cded0e0487c76ab"
+        },
+        {
+          "bytes": 91,
+          "path": "unit-result-p4-tier1-b-20261116t211531.txt",
+          "sha256": "80b5fcd6761ec8531719ccbe043d7a83bf6a46163cc52d9781be6e35789d8779"
+        }
+      ]
+    },
+    {
+      "accounting": {
+        "CPUUsageNSec": "1557799323000",
+        "EXIT_CODE": "killed",
+        "EXIT_STATUS": "TERM",
+        "InvocationID": "07ba6dcad6ba426ea84e58efe48bd5e4",
+        "MemoryPeak": "402026496",
+        "Result": "timeout",
+        "SERVICE_RESULT": "timeout",
+        "UTC_UNIT_END": "2026-11-16T23:50:24Z"
+      },
+      "numerical_completion": false,
+      "phase": "p4-recover-half-20261116t232234",
+      "receipts": [
+        {
+          "bytes": 109,
+          "path": "unit-accounting-p4-recover-half-20261116t232234.txt",
+          "sha256": "480cb58aad7896bd85b3fb353dc4725c9c40f79cc2d67541b930b29ec9365a17"
+        },
+        {
+          "bytes": 91,
+          "path": "unit-result-p4-recover-half-20261116t232234.txt",
+          "sha256": "bc01a18f2bd2dfffe74ba249e39370e7bef99c4cfc31d712e131cde4f30f64e9"
+        }
+      ]
+    },
+    {
+      "accounting": {
+        "CPUUsageNSec": "1262532307000",
+        "EXIT_CODE": "exited",
+        "EXIT_STATUS": "0",
+        "InvocationID": "aa8a44feaef945eea90f947c5e5d2e12",
+        "MemoryPeak": "472080384",
+        "Result": "success",
+        "SERVICE_RESULT": "success",
+        "UTC_UNIT_END": "2026-11-16T23:45:28Z"
+      },
+      "numerical_completion": true,
+      "phase": "p4-recover-threequarter-20261116t232234",
+      "receipts": [
+        {
+          "bytes": 109,
+          "path": "unit-accounting-p4-recover-threequarter-20261116t232234.txt",
+          "sha256": "8561d6e00be1bac4e391373a3ab1dc2d92912d440797b5ed700f44517bfeca98"
+        },
+        {
+          "bytes": 88,
+          "path": "unit-result-p4-recover-threequarter-20261116t232234.txt",
+          "sha256": "abb776da86db89963e312c3906bf3db2cc565310c5b6fd6f6cb94a8218d45dbe"
+        }
+      ]
+    },
+    {
+      "accounting": {
+        "CPUUsageNSec": "351305513000",
+        "EXIT_CODE": "exited",
+        "EXIT_STATUS": "0",
+        "InvocationID": "71f732238e564d6398fa81727f4fae48",
+        "MemoryPeak": "244862976",
+        "Result": "success",
+        "SERVICE_RESULT": "success",
+        "UTC_UNIT_END": "2026-11-16T23:30:16Z"
+      },
+      "numerical_completion": true,
+      "phase": "p4-recover-full-20261116t232234",
+      "receipts": [
+        {
+          "bytes": 108,
+          "path": "unit-accounting-p4-recover-full-20261116t232234.txt",
+          "sha256": "752f29cc0f364ef1409d1dffd6e464c49e05dbd5fb6dc29322fe323c873d239c"
+        },
+        {
+          "bytes": 88,
+          "path": "unit-result-p4-recover-full-20261116t232234.txt",
+          "sha256": "4df6e4a0b6ecf557bf0674473beb1e1a919f4f523ba28116716212d243dd60ff"
+        }
+      ]
+    }
+  ],
+  "scope": "Original all-exit publisher receipts; all failed/terminated work charged; numerical completion independent of Result=success",
+  "whole_cap_core_minutes": 1000,
+  "within_cap": true
+}

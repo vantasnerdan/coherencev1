@@ -1,0 +1,75 @@
+{
+  "atomic_reference_energy_eV": {
+    "H": -12.490162242114687,
+    "He": -78.72969636301885
+  },
+  "convention": "GPAW reports energies relative to setup reference atoms; add get_reference_energy() to recover the consistent absolute PAW total energy. setup.py929-942 subtracts reference kinetic/XC/electrostatic terms; setup.py1341 sums reference totals; new/calculation.py285 labels relative energies; new/ase_interface.py490 exposes the offset.",
+  "neutral_atom_absolute_energy_eV": {
+    "H": -13.601751289415931,
+    "He": -78.7197685503261
+  },
+  "neutral_vacuum_adiabatic_difference_eV": 51.516265971494235,
+  "reference_offset_2H_minus_He_eV": 53.749371878789475,
+  "runtime_source": [
+    {
+      "bytes": 57201,
+      "path": "gpaw/setup.py",
+      "sha256": "ac566b134823bf164336fd3404288fcf698c892d081047cd5e2663b070089bb2"
+    },
+    {
+      "bytes": 26177,
+      "path": "gpaw/setup_data.py",
+      "sha256": "e048c24b8438feb93a56d3afa97bc861bae3e71ae2008b5d555c380c7c8f51b7"
+    },
+    {
+      "bytes": 30926,
+      "path": "gpaw/new/calculation.py",
+      "sha256": "1ebda5e91a3b761fba5d2f42d98ece5f7b015f4b1fca3175836e299db2b0b096"
+    },
+    {
+      "bytes": 28239,
+      "path": "gpaw/new/ase_interface.py",
+      "sha256": "570c92ca14dd54fa46cd8c7137f1a822cba66392271b1d97229a7c2090275f0f"
+    }
+  ],
+  "schema": "coherence-neutral-PAW-reference-calibration-v1",
+  "sensitivity": "Omitting the2H-minus-He reference offset changes the physical neutral adiabatic result by the recorded offset. Host-minus-vacuum metal excess cancels it and is a distinct quantity.",
+  "sources": [
+    {
+      "energy": {
+        "bytes": 1475,
+        "path": "energy.json",
+        "sha256": "93f58fb34d91a1e0b60c3c281ce389f8f88a128b3f3942d68bb26d80d85103f2"
+      },
+      "gpw": {
+        "bytes": 13348458,
+        "path": "ground.gpw",
+        "sha256": "041c10a56031cc3b33f436089c860b2aacd2913a33ecb58fffeafdf7e93e930d"
+      },
+      "setup": {
+        "bytes": 12501,
+        "path": "H.PBE.gz",
+        "sha256": "3136ad73c02d471f99dd5f82e451b2061952970556a260d38b53b5020dc94ae7"
+      },
+      "symbol": "H"
+    },
+    {
+      "energy": {
+        "bytes": 1481,
+        "path": "energy.json",
+        "sha256": "0220f3b5f42e04dcf28cae145e898b15209c341d2427571295eaec0630992e35"
+      },
+      "gpw": {
+        "bytes": 8998469,
+        "path": "ground.gpw",
+        "sha256": "4ae2cc3b7ee0897e2de9dec5895f9cf2c5fa33b56237349585f4c6e325f74a29"
+      },
+      "setup": {
+        "bytes": 13220,
+        "path": "He.PBE.gz",
+        "sha256": "491731a50d406d2ebbad45d9cfa6d41542eecc6d0637ec2340f39af1add19c18"
+      },
+      "symbol": "He"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "N_EF_SCF_subset_tetrahedron": 5.337282987570084,
+  "N_EF_full_tetrahedron": 5.337282987570084,
+  "SCF_bands": 29,
+  "deliberately_insufficient_bands": 19,
+  "full_saved_bands": 96,
+  "highest_retained_min_relative_EF_eV": 9.511106597153386,
+  "insufficient_band_margin_eV": -1.1952197427534044,
+  "scope": "Actual saved eigenvalue subset establishes omitted bands cannot cross EF under tetrahedron interpolation. New DOS-only production additionally converges all retained SCF bands; occupied projections/electron count still independently checked. No RPA band truncation.",
+  "source_engine_DOS": {
+    "bytes": 9165,
+    "path": "dos.py",
+    "sha256": "e24cb9bdfa0ab6ae8a7a9ae8e7bcae58f8288115364444eaf01f1e01542b5ba5"
+  },
+  "source_gpw": {
+    "bytes": 225196051,
+    "path": "ground.gpw",
+    "sha256": "8000639489154d51ebd4874df2bac2de0cea22b81a33e0ff4312339766dadcd8"
+  },
+  "source_ground": {
+    "bytes": 5708,
+    "path": "ground.json",
+    "sha256": "cdf2c4bfad973d26a5916e715c7752c34f01436d644ecd7056772067b7b30b41"
+  }
+}

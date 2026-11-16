@@ -1,0 +1,4739 @@
+{
+  "all_metal_centroid_definition_sensitivity": {
+    "Ue_Yukawa_proxy_eV": [
+      36.849303431584154,
+      36.22746936148262,
+      35.68244514992993,
+      35.624044246534865,
+      30.096754085759855
+    ],
+    "conditional_lambda_allowance": 0.1,
+    "conditional_slope_interval_eV_per_eV": [
+      -16.315036551852028,
+      17.56635252987633
+    ],
+    "d_band_coordinate": "all_metal",
+    "materials": [
+      "Pd_hydro_-2pct",
+      "Pd_hydro_+0pct",
+      "Pd_hydro_+2pct",
+      "Pd3Rh_L12",
+      "Pd3Ag_L12"
+    ],
+    "nonpositive_sign_resolved_under_this_allowance": false,
+    "occupied_d_centres_relative_EF_eV": [
+      -2.684491872366199,
+      -2.4238674357280985,
+      -2.193429522507739,
+      -2.466938188745323,
+      -2.514947275557254
+    ],
+    "positive_sign_resolved_under_this_allowance": false,
+    "scope": "OLS association conditional on the explicitly named occupied PAW d-centre coordinate and independent per-host +/-lambda allowance. Not statistical confidence, not uncertainty in the d-centre, not a universal or causal slope.",
+    "slope_eV_per_eV": 0.6194014091220303
+  },
+  "alloy_paths": {
+    "Pd3Ag_L12": {
+      "Ue_Yukawa_proxy_eV": [
+        36.22746936148262,
+        30.096754085759855
+      ],
+      "conditional_lambda_allowance": 0.1,
+      "conditional_slope_interval_eV_per_eV": [
+        -36.87510413191026,
+        1.4495260462840065
+      ],
+      "d_band_coordinate": "Pd",
+      "materials": [
+        "Pd_hydro_+0pct",
+        "Pd3Ag_L12"
+      ],
+      "nonpositive_sign_resolved_under_this_allowance": false,
+      "occupied_d_centres_relative_EF_eV": [
+        -2.4238674357280985,
+        -2.0742532853150166
+      ],
+      "positive_sign_resolved_under_this_allowance": false,
+      "scope": "OLS association conditional on the explicitly named occupied PAW d-centre coordinate and independent per-host +/-lambda allowance. Not statistical confidence, not uncertainty in the d-centre, not a universal or causal slope.",
+      "slope_eV_per_eV": -17.535661152385003
+    },
+    "Pd3Rh_L12": {
+      "Ue_Yukawa_proxy_eV": [
+        36.22746936148262,
+        35.624044246534865
+      ],
+      "conditional_lambda_allowance": 0.1,
+      "conditional_slope_interval_eV_per_eV": [
+        -53.825452716378095,
+        63.69509140363135
+      ],
+      "d_band_coordinate": "Pd",
+      "materials": [
+        "Pd_hydro_+0pct",
+        "Pd3Rh_L12"
+      ],
+      "nonpositive_sign_resolved_under_this_allowance": false,
+      "occupied_d_centres_relative_EF_eV": [
+        -2.4238674357280985,
+        -2.547381646824042
+      ],
+      "positive_sign_resolved_under_this_allowance": false,
+      "scope": "OLS association conditional on the explicitly named occupied PAW d-centre coordinate and independent per-host +/-lambda allowance. Not statistical confidence, not uncertainty in the d-centre, not a universal or causal slope.",
+      "slope_eV_per_eV": 4.885471150190369
+    }
+  },
+  "budget_ledger": {
+    "CPUUsageNSec_total": "21113423449000",
+    "Native_core_minutes": "351.8903908166666666666666667",
+    "absolute_stop_utc": "2026-11-17T00:00:00Z",
+    "conservative_whole_charge_core_minutes": "371.8903908166666666666666667",
+    "nonNative_reserve_charged_core_minutes": 20,
+    "phases": [
+      {
+        "accounting": {
+          "CPUUsageNSec": "223043825000",
+          "EXIT_CODE": "exited",
+          "EXIT_STATUS": "0",
+          "InvocationID": "55a0e3d9f65949f79b0b1999dd426296",
+          "MemoryPeak": "268353536",
+          "Result": "success",
+          "SERVICE_RESULT": "success",
+          "UTC_UNIT_END": "2026-11-16T19:54:49Z"
+        },
+        "numerical_completion": true,
+        "phase": "p4-pd0-fp-20261116t194914",
+        "receipts": [
+          {
+            "bytes": 108,
+            "path": "unit-accounting-p4-pd0-fp-20261116t194914.txt",
+            "sha256": "b7500727bcb39dd22943cd31f65f8870ae6c15878e19a267116e0f7d8eb13cbf"
+          },
+          {
+            "bytes": 88,
+            "path": "unit-result-p4-pd0-fp-20261116t194914.txt",
+            "sha256": "3359260e535980ddc91face7a6bb1e2b28cfd96d5cfcc8e3c1026b05abc346f3"
+          }
+        ]
+      },
+      {
+        "accounting": {
+          "CPUUsageNSec": "114656268000",
+          "EXIT_CODE": "exited",
+          "EXIT_STATUS": "0",
+          "InvocationID": "8043c3dd45624968bda154e9d8109505",
+          "MemoryPeak": "146579456",
+          "Result": "success",
+          "SERVICE_RESULT": "success",
+          "UTC_UNIT_END": "2026-11-16T20:22:46Z"
+        },
+        "numerical_completion": true,
+        "phase": "p4-pd0-eta-20261116t202003",
+        "receipts": [
+          {
+            "bytes": 108,
+            "path": "unit-accounting-p4-pd0-eta-20261116t202003.txt",
+            "sha256": "2303c66856f3c079b789696e192b3af206c0daa262c9e6cced40b5e8df580757"
+          },
+          {
+            "bytes": 88,
+            "path": "unit-result-p4-pd0-eta-20261116t202003.txt",
+            "sha256": "eeae0d4307067051f9b602e9b4b4870b2cb72742c5a29704b21c0008f6be0182"
+          }
+        ]
+      },
+      {
+        "accounting": {
+          "CPUUsageNSec": "1521334508000",
+          "EXIT_CODE": "exited",
+          "EXIT_STATUS": "0",
+          "InvocationID": "f2c3ca0593254eb6a5404c646c199d3e",
+          "MemoryPeak": "710438912",
+          "Result": "success",
+          "SERVICE_RESULT": "success",
+          "UTC_UNIT_END": "2026-11-16T20:46:15Z"
+        },
+        "numerical_completion": true,
+        "phase": "p4-pd0-k24-20261116t202003",
+        "receipts": [
+          {
+            "bytes": 109,
+            "path": "unit-accounting-p4-pd0-k24-20261116t202003.txt",
+            "sha256": "031c8a4447bb5b7a9ada143196b64ec64217bae9ea84790f6f7d43176f255e40"
+          },
+          {
+            "bytes": 88,
+            "path": "unit-result-p4-pd0-k24-20261116t202003.txt",
+            "sha256": "193720fe51bfbacd0ecc4833df9b8626f0c943069ad871eb36bce6620ea52090"
+          }
+        ]
+      },
+      {
+        "accounting": {
+          "CPUUsageNSec": "1818823825000",
+          "EXIT_CODE": "killed",
+          "EXIT_STATUS": "TERM",
+          "InvocationID": "f69b13653fbd4c3c91b856fdc367390d",
+          "MemoryPeak": "1448960000",
+          "Result": "success",
+          "SERVICE_RESULT": "success",
+          "UTC_UNIT_END": "2026-11-16T20:51:12Z"
+        },
+        "numerical_completion": false,
+        "phase": "p4-pd0-k32-20261116t202003",
+        "receipts": [
+          {
+            "bytes": 110,
+            "path": "unit-accounting-p4-pd0-k32-20261116t202003.txt",
+            "sha256": "0eb10ced71b6c6308f919c9ab10df53e0abbf28104310b59803573804f43527a"
+          },
+          {
+            "bytes": 91,
+            "path": "unit-result-p4-pd0-k32-20261116t202003.txt",
+            "sha256": "37f180a63135753bc94d5ca1cccdcc6d779c38fce804480118ed31d4edddf4ea"
+          }
+        ]
+      },
+      {
+        "accounting": {
+          "CPUUsageNSec": "2431302177000",
+          "EXIT_CODE": "exited",
+          "EXIT_STATUS": "0",
+          "InvocationID": "7a144e5dee08460988d2a257763f893c",
+          "MemoryPeak": "939569152",
+          "Result": "success",
+          "SERVICE_RESULT": "success",
+          "UTC_UNIT_END": "2026-11-16T21:57:50Z"
+        },
+        "numerical_completion": true,
+        "phase": "p4-tier1-a-20261116t211531",
+        "receipts": [
+          {
+            "bytes": 109,
+            "path": "unit-accounting-p4-tier1-a-20261116t211531.txt",
+            "sha256": "ed371ce28748c3b0c4fedcad1d24eb456e2fac01be0023f452ed369a0be1ed03"
+          },
+          {
+            "bytes": 88,
+            "path": "unit-result-p4-tier1-a-20261116t211531.txt",
+            "sha256": "169ab49bdc3dccaba855ff34a5cdd3bf6c0cc7348fd76733f3c7560a0c7711f8"
+          }
+        ]
+      },
+      {
+        "accounting": {
+          "CPUUsageNSec": "2716868030000",
+          "EXIT_CODE": "exited",
+          "EXIT_STATUS": "0",
+          "InvocationID": "f23c64b94f9549b3b236efe7463b1800",
+          "MemoryPeak": "1009397760",
+          "Result": "success",
+          "SERVICE_RESULT": "success",
+          "UTC_UNIT_END": "2026-11-16T22:02:34Z"
+        },
+        "numerical_completion": true,
+        "phase": "p4-tier1-c-20261116t211531",
+        "receipts": [
+          {
+            "bytes": 110,
+            "path": "unit-accounting-p4-tier1-c-20261116t211531.txt",
+            "sha256": "ac94b18c04bf7fa13ec027829350036f89d423b0caa7ecd4b37a83c8bb8b7d55"
+          },
+          {
+            "bytes": 88,
+            "path": "unit-result-p4-tier1-c-20261116t211531.txt",
+            "sha256": "f19f4f0790498199207b328eb6691b3d80cbf3845c0a8d98cca0501932c4ca93"
+          }
+        ]
+      },
+      {
+        "accounting": {
+          "CPUUsageNSec": "959187707000",
+          "EXIT_CODE": "exited",
+          "EXIT_STATUS": "0",
+          "InvocationID": "e4c4a60c961243b1acbaa259579931d3",
+          "MemoryPeak": "835018752",
+          "Result": "success",
+          "SERVICE_RESULT": "success",
+          "UTC_UNIT_END": "2026-11-16T22:33:44Z"
+        },
+        "numerical_completion": true,
+        "phase": "p4-neutral-pd-20261116t221659",
+        "receipts": [
+          {
+            "bytes": 108,
+            "path": "unit-accounting-p4-neutral-pd-20261116t221659.txt",
+            "sha256": "6fb51712322307548db4dc95a28880a7cb878b940c3612ded98a327c663e3d85"
+          },
+          {
+            "bytes": 88,
+            "path": "unit-result-p4-neutral-pd-20261116t221659.txt",
+            "sha256": "5795047963cf7c1c3f44279d5a78738cb80da1fe015b285dd4c74c9f1e40e944"
+          }
+        ]
+      },
+      {
+        "accounting": {
+          "CPUUsageNSec": "981328345000",
+          "EXIT_CODE": "exited",
+          "EXIT_STATUS": "0",
+          "InvocationID": "86f3c4a4c62e431da6bb1525b35c422f",
+          "MemoryPeak": "536014848",
+          "Result": "success",
+          "SERVICE_RESULT": "success",
+          "UTC_UNIT_END": "2026-11-16T22:34:06Z"
+        },
+        "numerical_completion": true,
+        "phase": "p4-neutral-rh-20261116t221659",
+        "receipts": [
+          {
+            "bytes": 108,
+            "path": "unit-accounting-p4-neutral-rh-20261116t221659.txt",
+            "sha256": "77befd8af7a31654df382df60df1dca094816a4ee6916fee38d0851a678e2154"
+          },
+          {
+            "bytes": 88,
+            "path": "unit-result-p4-neutral-rh-20261116t221659.txt",
+            "sha256": "0a974c24e4b7058128f7d80d116c5f0396d8f39442672a5d9941f2b2c5a876af"
+          }
+        ]
+      },
+      {
+        "accounting": {
+          "CPUUsageNSec": "7175241621000",
+          "EXIT_CODE": "killed",
+          "EXIT_STATUS": "TERM",
+          "InvocationID": "0f2d47463f1f4c669b49e00aac4639c2",
+          "MemoryPeak": "1467244544",
+          "Result": "timeout",
+          "SERVICE_RESULT": "timeout",
+          "UTC_UNIT_END": "2026-11-16T23:17:14Z"
+        },
+        "numerical_completion": false,
+        "phase": "p4-tier1-b-20261116t211531",
+        "receipts": [
+          {
+            "bytes": 110,
+            "path": "unit-accounting-p4-tier1-b-20261116t211531.txt",
+            "sha256": "ed712c2c0c68070c3f7c980e8e2b6f96e04fc8ad7ea8fcf24cded0e0487c76ab"
+          },
+          {
+            "bytes": 91,
+            "path": "unit-result-p4-tier1-b-20261116t211531.txt",
+            "sha256": "80b5fcd6761ec8531719ccbe043d7a83bf6a46163cc52d9781be6e35789d8779"
+          }
+        ]
+      },
+      {
+        "accounting": {
+          "CPUUsageNSec": "1557799323000",
+          "EXIT_CODE": "killed",
+          "EXIT_STATUS": "TERM",
+          "InvocationID": "07ba6dcad6ba426ea84e58efe48bd5e4",
+          "MemoryPeak": "402026496",
+          "Result": "timeout",
+          "SERVICE_RESULT": "timeout",
+          "UTC_UNIT_END": "2026-11-16T23:50:24Z"
+        },
+        "numerical_completion": false,
+        "phase": "p4-recover-half-20261116t232234",
+        "receipts": [
+          {
+            "bytes": 109,
+            "path": "unit-accounting-p4-recover-half-20261116t232234.txt",
+            "sha256": "480cb58aad7896bd85b3fb353dc4725c9c40f79cc2d67541b930b29ec9365a17"
+          },
+          {
+            "bytes": 91,
+            "path": "unit-result-p4-recover-half-20261116t232234.txt",
+            "sha256": "bc01a18f2bd2dfffe74ba249e39370e7bef99c4cfc31d712e131cde4f30f64e9"
+          }
+        ]
+      },
+      {
+        "accounting": {
+          "CPUUsageNSec": "1262532307000",
+          "EXIT_CODE": "exited",
+          "EXIT_STATUS": "0",
+          "InvocationID": "aa8a44feaef945eea90f947c5e5d2e12",
+          "MemoryPeak": "472080384",
+          "Result": "success",
+          "SERVICE_RESULT": "success",
+          "UTC_UNIT_END": "2026-11-16T23:45:28Z"
+        },
+        "numerical_completion": true,
+        "phase": "p4-recover-threequarter-20261116t232234",
+        "receipts": [
+          {
+            "bytes": 109,
+            "path": "unit-accounting-p4-recover-threequarter-20261116t232234.txt",
+            "sha256": "8561d6e00be1bac4e391373a3ab1dc2d92912d440797b5ed700f44517bfeca98"
+          },
+          {
+            "bytes": 88,
+            "path": "unit-result-p4-recover-threequarter-20261116t232234.txt",
+            "sha256": "abb776da86db89963e312c3906bf3db2cc565310c5b6fd6f6cb94a8218d45dbe"
+          }
+        ]
+      },
+      {
+        "accounting": {
+          "CPUUsageNSec": "351305513000",
+          "EXIT_CODE": "exited",
+          "EXIT_STATUS": "0",
+          "InvocationID": "71f732238e564d6398fa81727f4fae48",
+          "MemoryPeak": "244862976",
+          "Result": "success",
+          "SERVICE_RESULT": "success",
+          "UTC_UNIT_END": "2026-11-16T23:30:16Z"
+        },
+        "numerical_completion": true,
+        "phase": "p4-recover-full-20261116t232234",
+        "receipts": [
+          {
+            "bytes": 108,
+            "path": "unit-accounting-p4-recover-full-20261116t232234.txt",
+            "sha256": "752f29cc0f364ef1409d1dffd6e464c49e05dbd5fb6dc29322fe323c873d239c"
+          },
+          {
+            "bytes": 88,
+            "path": "unit-result-p4-recover-full-20261116t232234.txt",
+            "sha256": "4df6e4a0b6ecf557bf0674473beb1e1a919f4f523ba28116716212d243dd60ff"
+          }
+        ]
+      }
+    ],
+    "scope": "Original all-exit publisher receipts; all failed/terminated work charged; numerical completion independent of Result=success",
+    "whole_cap_core_minutes": 1000,
+    "within_cap": true
+  },
+  "cases": [
+    {
+      "D_per_metal": 0.0,
+      "D_projected_N_EF_states_per_eV_per_D": null,
+      "N_EF_tetrahedron_states_per_eV_per_cell": 1.2758904696838589,
+      "N_EF_tetrahedron_states_per_eV_per_metal": 1.2758904696838589,
+      "by_metal_element": {
+        "Ni": {
+          "occupied_d_centre_relative_EF_eV": -2.22580707831334,
+          "occupied_d_rms_width_eV": 1.3475674266826643,
+          "occupied_d_states_per_cell": 8.84940940801621
+        }
+      },
+      "geometry": {
+        "cell_A": [
+          [
+            0.0,
+            1.7195823441423994,
+            1.7195823441423994
+          ],
+          [
+            1.7195823441423994,
+            0.0,
+            1.7195823441423994
+          ],
+          [
+            1.7195823441423994,
+            1.7195823441423994,
+            0.0
+          ]
+        ],
+        "initial_magnetic_moments_muB": [
+          1.0
+        ],
+        "positions_A": [
+          [
+            -1.0747294969577371e-27,
+            7.912286701446376e-20,
+            -3.7882835348698395e-19
+          ]
+        ],
+        "symbols": [
+          "Ni"
+        ]
+      },
+      "ground_state_settings": {
+        "convergence": {
+          "bands": "occupied",
+          "density": 1e-06,
+          "eigenstates": 1e-09,
+          "energy": 1e-07
+        },
+        "ecut_eV": 500,
+        "kmesh": [
+          12,
+          12,
+          12
+        ],
+        "occupation_width_eV": 0.1,
+        "saved_nbands": 96,
+        "scf_nbands": 14,
+        "setups": {
+          "Ni": "10"
+        },
+        "spinpol": true
+      },
+      "material_id": "Ni",
+      "metal_atoms_per_cell": 1,
+      "model": "neutral collinear PBE / explicit valence PAW; static charge RPA",
+      "nspins": 2,
+      "occupied_DOS_settings": {
+        "metal_indices": [
+          0
+        ],
+        "moment_width_eV": 0.1,
+        "occupied_window_eV": [
+          -20,
+          0.005,
+          0.01
+        ],
+        "widths_eV": [
+          0.1,
+          0.05
+        ]
+      },
+      "occupied_metal_d_centre_relative_EF_eV": -2.22580707831334,
+      "occupied_metal_d_rms_width_eV": 1.3475674266826643,
+      "screening": {
+        "DD_spacing_A": 2.4318566727035003,
+        "DD_spacing_convention": "registered ideal octahedral fcc probe sublattice; no D present",
+        "Ue_static_Yukawa_proxy_eV": 38.3194442206203,
+        "Yukawa_radial_force_factor": 0.011557627097029165,
+        "eligible_for_Tier1": true,
+        "fit": "q^2(epsilon_M-1)=kappa^2+regular*q^2",
+        "force_convention": "(1+d/lambda)exp(-d/lambda); not a longitudinal Hessian or a second screening of DFT forces",
+        "kappa_squared_Ainv2": 7.081655746305826,
+        "lambda_A": 0.3757790762581539,
+        "lambda_over_DD": 0.15452352948103618,
+        "lambda_over_metal": 0.15452352948103618,
+        "metal_spacing_A": 2.4318566727035003,
+        "model": "Valence-PAW static RPA low-q length; C/lambda is a Yukawa proxy, not a full-RPA near-origin shift",
+        "points": [
+          {
+            "Q_head_Ainv": 0.26369766042503867,
+            "epsilon_head_NLF": [
+              383.8494500349487,
+              4.638505127669118e-17
+            ],
+            "epsilon_macro_LF": [
+              102.1383795419249,
+              5.531377794451153e-17
+            ],
+            "inverse_residual": 6.839288924999365e-14,
+            "matrix_dimension": 12,
+            "settings": {
+              "ecut_eV": 50,
+              "eta_eV": 0.005,
+              "expected_wall_s": 60,
+              "nbands": 96,
+              "q_fractional": [
+                0.08333333333333333,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "Q_head_Ainv": 0.5273953208500773,
+            "epsilon_head_NLF": [
+              89.67609277153163,
+              5.582841132124334e-19
+            ],
+            "epsilon_macro_LF": [
+              26.84095491076279,
+              3.0343553529726788e-18
+            ],
+            "inverse_residual": 3.465450885299348e-14,
+            "matrix_dimension": 11,
+            "settings": {
+              "ecut_eV": 50,
+              "eta_eV": 0.005,
+              "expected_wall_s": 60,
+              "nbands": 96,
+              "q_fractional": [
+                0.16666666666666666,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "Q_head_Ainv": 0.7910929812751161,
+            "epsilon_head_NLF": [
+              37.6430158647236,
+              -2.922069690929875e-18
+            ],
+            "epsilon_macro_LF": [
+              12.3352993654021,
+              -1.5070043169381842e-19
+            ],
+            "inverse_residual": 3.6265435518774425e-15,
+            "matrix_dimension": 11,
+            "settings": {
+              "ecut_eV": 50,
+              "eta_eV": 0.005,
+              "expected_wall_s": 60,
+              "nbands": 96,
+              "q_fractional": [
+                0.25,
+                0,
+                0
+              ]
+            }
+          }
+        ],
+        "q_Ainv": [
+          0.26369766042503867,
+          0.5273953208500773,
+          0.7910929812751161
+        ],
+        "q_squared_epsilon_minus_one_Ainv2": [
+          7.0328044904216265,
+          7.187553708347125,
+          7.09394892171519
+        ],
+        "q_window_lambda_span_A": [
+          0.3730005296818993,
+          0.3784724693887681
+        ],
+        "q_window_pass_10percent": true,
+        "q_window_relative_spread": 0.007394096030897135,
+        "source_response": {
+          "bytes": 2796,
+          "path": "response.json",
+          "sha256": "fb767ceb4e02b1a777a8ba88ed37e4114a9be244e1c5d4672e40ba4e84ff4eee"
+        },
+        "uncertainty_scope": "Pd k/band/cutoff/eta controls plus this q-window; transferred model tolerance, not all-electron physical confidence"
+      },
+      "spin_degeneracy": 1.0
+    },
+    {
+      "D_per_metal": 1.0,
+      "D_projected_N_EF_states_per_eV_per_D": 0.04455988533638063,
+      "N_EF_tetrahedron_states_per_eV_per_cell": 0.7270751589045854,
+      "N_EF_tetrahedron_states_per_eV_per_metal": 0.7270751589045854,
+      "by_metal_element": {
+        "Ni": {
+          "occupied_d_centre_relative_EF_eV": -2.2138368710633403,
+          "occupied_d_rms_width_eV": 1.6744744905941595,
+          "occupied_d_states_per_cell": 9.087825834405693
+        }
+      },
+      "geometry": {
+        "cell_A": [
+          [
+            0.0,
+            1.8232933265053188,
+            1.8232933265053188
+          ],
+          [
+            1.8232933265053188,
+            0.0,
+            1.8232933265053188
+          ],
+          [
+            1.8232933265053188,
+            1.8232933265053188,
+            0.0
+          ]
+        ],
+        "initial_magnetic_moments_muB": [
+          1.0,
+          0.0
+        ],
+        "positions_A": [
+          [
+            1.3843236721904848e-28,
+            1.2978928870228986e-17,
+            2.1196675412456017e-20
+          ],
+          [
+            1.8232933265053197,
+            2.4965624900482673e-19,
+            -2.81127343246683e-21
+          ]
+        ],
+        "symbols": [
+          "Ni",
+          "H"
+        ]
+      },
+      "ground_state_settings": {
+        "convergence": {
+          "bands": "occupied",
+          "density": 1e-06,
+          "eigenstates": 1e-09,
+          "energy": 1e-07
+        },
+        "ecut_eV": 500,
+        "kmesh": [
+          12,
+          12,
+          12
+        ],
+        "occupation_width_eV": 0.1,
+        "saved_nbands": 96,
+        "scf_nbands": 14,
+        "setups": {
+          "H": "paw",
+          "Ni": "10"
+        },
+        "spinpol": true
+      },
+      "material_id": "NiH",
+      "metal_atoms_per_cell": 1,
+      "model": "neutral collinear PBE / explicit valence PAW; static charge RPA",
+      "nspins": 2,
+      "occupied_DOS_settings": {
+        "metal_indices": [
+          0
+        ],
+        "moment_width_eV": 0.1,
+        "occupied_window_eV": [
+          -20,
+          0.005,
+          0.01
+        ],
+        "widths_eV": [
+          0.1,
+          0.05
+        ]
+      },
+      "occupied_metal_d_centre_relative_EF_eV": -2.2138368710633403,
+      "occupied_metal_d_rms_width_eV": 1.6744744905941595,
+      "screening": {
+        "DD_spacing_A": 2.5785261505281776,
+        "DD_spacing_convention": "actual ordered D sublattice",
+        "Ue_static_Yukawa_proxy_eV": 31.89608161116676,
+        "Yukawa_radial_force_factor": 0.02219796376801288,
+        "eligible_for_Tier1": true,
+        "fit": "q^2(epsilon_M-1)=kappa^2+regular*q^2",
+        "force_convention": "(1+d/lambda)exp(-d/lambda); not a longitudinal Hessian or a second screening of DFT forces",
+        "kappa_squared_Ainv2": 4.9064917812886,
+        "lambda_A": 0.45145499461317085,
+        "lambda_over_DD": 0.17508257363249782,
+        "lambda_over_metal": 0.17508257363249782,
+        "metal_spacing_A": 2.5785261505281776,
+        "model": "Valence-PAW static RPA low-q length; C/lambda is a Yukawa proxy, not a full-RPA near-origin shift",
+        "points": [
+          {
+            "Q_head_Ainv": 0.24869823986449588,
+            "epsilon_head_NLF": [
+              193.13691404754945,
+              -1.3069937885571421e-17
+            ],
+            "epsilon_macro_LF": [
+              80.67519546184596,
+              -3.0526404394873425e-18
+            ],
+            "inverse_residual": 2.5393921439914548e-14,
+            "matrix_dimension": 15,
+            "settings": {
+              "ecut_eV": 50,
+              "eta_eV": 0.005,
+              "expected_wall_s": 240,
+              "nbands": 96,
+              "q_fractional": [
+                0.08333333333333333,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "Q_head_Ainv": 0.49739647972899176,
+            "epsilon_head_NLF": [
+              50.596092006751725,
+              2.252021754882172e-19
+            ],
+            "epsilon_macro_LF": [
+              22.571721307099338,
+              2.2670129942433647e-18
+            ],
+            "inverse_residual": 4.9061201304325254e-15,
+            "matrix_dimension": 12,
+            "settings": {
+              "ecut_eV": 50,
+              "eta_eV": 0.005,
+              "expected_wall_s": 240,
+              "nbands": 96,
+              "q_fractional": [
+                0.16666666666666666,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "Q_head_Ainv": 0.7460947195934877,
+            "epsilon_head_NLF": [
+              24.288301137400154,
+              1.363736991159643e-18
+            ],
+            "epsilon_macro_LF": [
+              11.08982881092255,
+              3.3869425804625906e-18
+            ],
+            "inverse_residual": 3.829997181772678e-15,
+            "matrix_dimension": 11,
+            "settings": {
+              "ecut_eV": 50,
+              "eta_eV": 0.005,
+              "expected_wall_s": 240,
+              "nbands": 96,
+              "q_fractional": [
+                0.25,
+                0,
+                0
+              ]
+            }
+          }
+        ],
+        "q_Ainv": [
+          0.24869823986449588,
+          0.49739647972899176,
+          0.7460947195934877
+        ],
+        "q_squared_epsilon_minus_one_Ainv2": [
+          4.927975735693943,
+          5.336914133053807,
+          5.616577172152445
+        ],
+        "q_window_lambda_span_A": [
+          0.42195305418946155,
+          0.45683237038768465
+        ],
+        "q_window_pass_10percent": true,
+        "q_window_relative_spread": 0.0653485746657605,
+        "source_response": {
+          "bytes": 2806,
+          "path": "response.json",
+          "sha256": "76a00a96621c4e93a27a457e74fce98450524cb078c566ee6fe6f9de1015dbdf"
+        },
+        "uncertainty_scope": "Pd k/band/cutoff/eta controls plus this q-window; transferred model tolerance, not all-electron physical confidence"
+      },
+      "spin_degeneracy": 1.0
+    },
+    {
+      "D_per_metal": 0.0,
+      "D_projected_N_EF_states_per_eV_per_D": null,
+      "N_EF_tetrahedron_states_per_eV_per_cell": 5.428347285978259,
+      "N_EF_tetrahedron_states_per_eV_per_metal": 1.3570868214945648,
+      "by_metal_element": {
+        "Ag": {
+          "occupied_d_centre_relative_EF_eV": -3.764660568289178,
+          "occupied_d_rms_width_eV": 1.1658489992915244,
+          "occupied_d_states_per_cell": 9.725494868911825
+        },
+        "Pd": {
+          "occupied_d_centre_relative_EF_eV": -2.0742532853150166,
+          "occupied_d_rms_width_eV": 1.3084865620570962,
+          "occupied_d_states_per_cell": 27.579409942473774
+        }
+      },
+      "geometry": {
+        "cell_A": [
+          [
+            3.996439036077139,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            3.996439036077139,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            3.996439036077139
+          ]
+        ],
+        "initial_magnetic_moments_muB": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "positions_A": [
+          [
+            5.841319421661507e-29,
+            -1.2439194292723027e-17,
+            -1.2344820748505845e-18
+          ],
+          [
+            -2.1639720801951515e-19,
+            1.9982195180385696,
+            1.9982195180385696
+          ],
+          [
+            1.9982195180385696,
+            6.379126027485894e-20,
+            1.9982195180385696
+          ],
+          [
+            1.9982195180385696,
+            1.9982195180385696,
+            -2.2747981556119158e-20
+          ]
+        ],
+        "symbols": [
+          "Ag",
+          "Pd",
+          "Pd",
+          "Pd"
+        ]
+      },
+      "ground_state_settings": {
+        "convergence": {
+          "bands": "occupied",
+          "density": 1e-06,
+          "eigenstates": 1e-09,
+          "energy": 1e-07
+        },
+        "ecut_eV": 500,
+        "kmesh": [
+          12,
+          12,
+          12
+        ],
+        "occupation_width_eV": 0.1,
+        "saved_nbands": 96,
+        "scf_nbands": 29,
+        "setups": {
+          "Ag": "11",
+          "Pd": "10"
+        },
+        "spinpol": false
+      },
+      "material_id": "Pd3Ag_L12",
+      "metal_atoms_per_cell": 4,
+      "model": "neutral collinear PBE / explicit valence PAW; static charge RPA",
+      "nspins": 1,
+      "occupied_DOS_settings": {
+        "metal_indices": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "moment_width_eV": 0.1,
+        "occupied_window_eV": [
+          -20,
+          0.005,
+          0.01
+        ],
+        "widths_eV": [
+          0.1,
+          0.05
+        ]
+      },
+      "occupied_metal_d_centre_relative_EF_eV": -2.514947275557254,
+      "occupied_metal_d_rms_width_eV": 1.4733864165485693,
+      "screening": {
+        "DD_spacing_A": 2.8259091430087744,
+        "DD_spacing_convention": "registered ideal octahedral fcc probe sublattice; no D present",
+        "Ue_static_Yukawa_proxy_eV": 30.096754085759855,
+        "Yukawa_radial_force_factor": 0.018798301963336504,
+        "eligible_for_Tier1": true,
+        "fit": "q^2(epsilon_M-1)=kappa^2+regular*q^2",
+        "force_convention": "(1+d/lambda)exp(-d/lambda); not a longitudinal Hessian or a second screening of DFT forces",
+        "kappa_squared_Ainv2": 4.368534073887882,
+        "lambda_A": 0.47844512770111897,
+        "lambda_over_DD": 0.16930662080370834,
+        "lambda_over_metal": 0.16930662080370834,
+        "metal_spacing_A": 2.8259091430087744,
+        "model": "Valence-PAW static RPA low-q length; C/lambda is a Yukawa proxy, not a full-RPA near-origin shift",
+        "points": [
+          {
+            "Q_head_Ainv": 0.13101633000568866,
+            "epsilon_head_NLF": [
+              687.3674637698319,
+              4.926152361137971e-16
+            ],
+            "epsilon_macro_LF": [
+              258.2003639657894,
+              3.553076883430876e-16
+            ],
+            "inverse_residual": 8.768190347354571e-14,
+            "matrix_dimension": 53,
+            "settings": {
+              "ecut_eV": 50,
+              "eta_eV": 0.005,
+              "expected_wall_s": 960,
+              "nbands": 96,
+              "q_fractional": [
+                0.08333333333333333,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "Q_head_Ainv": 0.2620326600113773,
+            "epsilon_head_NLF": [
+              159.02320060530684,
+              9.555738387455234e-17
+            ],
+            "epsilon_macro_LF": [
+              64.66276491148338,
+              3.103005125908199e-17
+            ],
+            "inverse_residual": 5.257844626374365e-14,
+            "matrix_dimension": 49,
+            "settings": {
+              "ecut_eV": 50,
+              "eta_eV": 0.005,
+              "expected_wall_s": 960,
+              "nbands": 96,
+              "q_fractional": [
+                0.16666666666666666,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "Q_head_Ainv": 0.393048990017066,
+            "epsilon_head_NLF": [
+              71.62874762817772,
+              1.2997804686651646e-17
+            ],
+            "epsilon_macro_LF": [
+              30.203740929434925,
+              3.561746725659318e-18
+            ],
+            "inverse_residual": 2.6995366218086454e-14,
+            "matrix_dimension": 53,
+            "settings": {
+              "ecut_eV": 50,
+              "eta_eV": 0.005,
+              "expected_wall_s": 960,
+              "nbands": 96,
+              "q_fractional": [
+                0.25,
+                0,
+                0
+              ]
+            }
+          }
+        ],
+        "q_Ainv": [
+          0.13101633000568866,
+          0.2620326600113773,
+          0.393048990017066
+        ],
+        "q_squared_epsilon_minus_one_Ainv2": [
+          4.4149159364568495,
+          4.371156417243622,
+          4.511613176628397
+        ],
+        "q_window_lambda_span_A": [
+          0.4707974173870069,
+          0.47844512770111897
+        ],
+        "q_window_pass_10percent": true,
+        "q_window_relative_spread": 0.01598450871651369,
+        "source_response": {
+          "bytes": 2807,
+          "path": "response.json",
+          "sha256": "2f47ab28cfc89517fcf451f1fa6bfe6c4103227d753337df4c27773a088beeb9"
+        },
+        "uncertainty_scope": "Pd k/band/cutoff/eta controls plus this q-window; transferred model tolerance, not all-electron physical confidence"
+      },
+      "spin_degeneracy": 2.0
+    },
+    {
+      "D_per_metal": 0.0,
+      "D_projected_N_EF_states_per_eV_per_D": null,
+      "N_EF_tetrahedron_states_per_eV_per_cell": 7.393802798489568,
+      "N_EF_tetrahedron_states_per_eV_per_metal": 1.848450699622392,
+      "by_metal_element": {
+        "Pd": {
+          "occupied_d_centre_relative_EF_eV": -2.547381646824042,
+          "occupied_d_rms_width_eV": 1.4212530460134307,
+          "occupied_d_states_per_cell": 27.331197079392417
+        },
+        "Rh": {
+          "occupied_d_centre_relative_EF_eV": -2.1996400497158595,
+          "occupied_d_rms_width_eV": 1.515260986178134,
+          "occupied_d_states_per_cell": 8.225332261871658
+        }
+      },
+      "geometry": {
+        "cell_A": [
+          [
+            3.925803558645441,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            3.925803558645441,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            3.925803558645441
+          ]
+        ],
+        "initial_magnetic_moments_muB": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "positions_A": [
+          [
+            -9.740611577431647e-27,
+            3.2541915452479274e-18,
+            8.12228471950645e-21
+          ],
+          [
+            -6.542877708824851e-20,
+            1.9629017793227195,
+            1.9629017793227195
+          ],
+          [
+            1.9629017793227195,
+            2.412514638166295e-19,
+            1.9629017793227195
+          ],
+          [
+            1.9629017793227195,
+            1.9629017793227195,
+            5.178371819451595e-19
+          ]
+        ],
+        "symbols": [
+          "Rh",
+          "Pd",
+          "Pd",
+          "Pd"
+        ]
+      },
+      "ground_state_settings": {
+        "convergence": {
+          "bands": "occupied",
+          "density": 1e-06,
+          "eigenstates": 1e-09,
+          "energy": 1e-07
+        },
+        "ecut_eV": 500,
+        "kmesh": [
+          12,
+          12,
+          12
+        ],
+        "occupation_width_eV": 0.1,
+        "saved_nbands": 96,
+        "scf_nbands": 28,
+        "setups": {
+          "Pd": "10",
+          "Rh": "9"
+        },
+        "spinpol": false
+      },
+      "material_id": "Pd3Rh_L12",
+      "metal_atoms_per_cell": 4,
+      "model": "neutral collinear PBE / explicit valence PAW; static charge RPA",
+      "nspins": 1,
+      "occupied_DOS_settings": {
+        "metal_indices": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "moment_width_eV": 0.1,
+        "occupied_window_eV": [
+          -20,
+          0.005,
+          0.01
+        ],
+        "widths_eV": [
+          0.1,
+          0.05
+        ]
+      },
+      "occupied_metal_d_centre_relative_EF_eV": -2.466938188745323,
+      "occupied_metal_d_rms_width_eV": 1.4509730771793892,
+      "screening": {
+        "DD_spacing_A": 2.77596231792447,
+        "DD_spacing_convention": "registered ideal octahedral fcc probe sublattice; no D present",
+        "Ue_static_Yukawa_proxy_eV": 35.624044246534865,
+        "Yukawa_radial_force_factor": 0.008189954465475583,
+        "eligible_for_Tier1": true,
+        "fit": "q^2(epsilon_M-1)=kappa^2+regular*q^2",
+        "force_convention": "(1+d/lambda)exp(-d/lambda); not a longitudinal Hessian or a second screening of DFT forces",
+        "kappa_squared_Ainv2": 6.120442906441282,
+        "lambda_A": 0.40421141553436046,
+        "lambda_over_DD": 0.14561127610571495,
+        "lambda_over_metal": 0.14561127610571495,
+        "metal_spacing_A": 2.77596231792447,
+        "model": "Valence-PAW static RPA low-q length; C/lambda is a Yukawa proxy, not a full-RPA near-origin shift",
+        "points": [
+          {
+            "Q_head_Ainv": 0.13337365657158898,
+            "epsilon_head_NLF": [
+              1234.2539863399923,
+              -5.521015300103387e-17
+            ],
+            "epsilon_macro_LF": [
+              346.3337138058634,
+              4.605039420585371e-16
+            ],
+            "inverse_residual": 1.0060281760694627e-13,
+            "matrix_dimension": 49,
+            "settings": {
+              "ecut_eV": 50,
+              "eta_eV": 0.005,
+              "expected_wall_s": 960,
+              "nbands": 96,
+              "q_fractional": [
+                0.08333333333333333,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "Q_head_Ainv": 0.26674731314317796,
+            "epsilon_head_NLF": [
+              283.31996407520427,
+              -4.032014910924578e-17
+            ],
+            "epsilon_macro_LF": [
+              85.47013968298623,
+              2.911428957244117e-17
+            ],
+            "inverse_residual": 5.795614189569277e-14,
+            "matrix_dimension": 49,
+            "settings": {
+              "ecut_eV": 50,
+              "eta_eV": 0.005,
+              "expected_wall_s": 960,
+              "nbands": 96,
+              "q_fractional": [
+                0.16666666666666666,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "Q_head_Ainv": 0.4001209697147669,
+            "epsilon_head_NLF": [
+              125.57529333114479,
+              6.016880871700015e-17
+            ],
+            "epsilon_macro_LF": [
+              38.62091905449993,
+              3.8735797682201293e-17
+            ],
+            "inverse_residual": 3.8937971415624875e-14,
+            "matrix_dimension": 53,
+            "settings": {
+              "ecut_eV": 50,
+              "eta_eV": 0.005,
+              "expected_wall_s": 960,
+              "nbands": 96,
+              "q_fractional": [
+                0.25,
+                0,
+                0
+              ]
+            }
+          }
+        ],
+        "q_Ainv": [
+          0.13337365657158898,
+          0.26674731314317796,
+          0.4001209697147669
+        ],
+        "q_squared_epsilon_minus_one_Ainv2": [
+          6.142979911013911,
+          6.010399221488499,
+          6.022988392730007
+        ],
+        "q_window_lambda_span_A": [
+          0.4020257340641494,
+          0.407894960991943
+        ],
+        "q_window_pass_10percent": true,
+        "q_window_relative_spread": 0.009112917933584264,
+        "source_response": {
+          "bytes": 2813,
+          "path": "response.json",
+          "sha256": "1c49290c9c8eee0b16fee1a0be037c8643bcd75937b3e32a6a9c33f094ce0380"
+        },
+        "uncertainty_scope": "Pd k/band/cutoff/eta controls plus this q-window; transferred model tolerance, not all-electron physical confidence"
+      },
+      "spin_degeneracy": 2.0
+    },
+    {
+      "D_per_metal": 0.25,
+      "D_projected_N_EF_states_per_eV_per_D": 0.04772737806245461,
+      "N_EF_tetrahedron_states_per_eV_per_cell": 5.337282987570084,
+      "N_EF_tetrahedron_states_per_eV_per_metal": 1.334320746892521,
+      "by_metal_element": {
+        "Pd": {
+          "occupied_d_centre_relative_EF_eV": -2.2447917239292217,
+          "occupied_d_rms_width_eV": 1.4723885329671396,
+          "occupied_d_states_per_cell": 36.950116859308785
+        }
+      },
+      "geometry": {
+        "cell_A": [
+          [
+            4.006805815179247,
+            1.5186358414688443e-19,
+            1.8544002032419076e-19
+          ],
+          [
+            -1.0439784159235865e-18,
+            4.006805815179247,
+            -1.5704891548386591e-19
+          ],
+          [
+            2.3374092424423107e-20,
+            1.8504991386105243e-20,
+            4.006805815179247
+          ]
+        ],
+        "initial_magnetic_moments_muB": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "positions_A": [
+          [
+            2.4909236692294764e-31,
+            4.129872812909637e-18,
+            -1.2078050968521283e-17
+          ],
+          [
+            -3.3101225782247796e-19,
+            2.003402907589626,
+            2.003402907589626
+          ],
+          [
+            2.003402907589626,
+            2.9875421024696456e-20,
+            2.003402907589626
+          ],
+          [
+            2.003402907589626,
+            2.003402907589626,
+            5.246374228110391e-19
+          ],
+          [
+            2.003402907589626,
+            2.003402907589626,
+            2.003402907589626
+          ]
+        ],
+        "symbols": [
+          "Pd",
+          "Pd",
+          "Pd",
+          "Pd",
+          "H"
+        ]
+      },
+      "ground_state_settings": {
+        "convergence": {
+          "bands": "occupied",
+          "density": 1e-06,
+          "eigenstates": 1e-09,
+          "energy": 1e-07
+        },
+        "ecut_eV": 500,
+        "kmesh": [
+          12,
+          12,
+          12
+        ],
+        "occupation_width_eV": 0.1,
+        "saved_nbands": 96,
+        "scf_nbands": 29,
+        "setups": {
+          "H": "paw",
+          "Pd": "10"
+        },
+        "spinpol": false
+      },
+      "material_id": "PdD_x0.25",
+      "metal_atoms_per_cell": 4,
+      "model": "neutral collinear PBE / explicit valence PAW; static charge RPA",
+      "nspins": 1,
+      "occupied_DOS_settings": {
+        "metal_indices": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "moment_width_eV": 0.1,
+        "occupied_window_eV": [
+          -20,
+          0.005,
+          0.01
+        ],
+        "widths_eV": [
+          0.1,
+          0.05
+        ]
+      },
+      "occupied_metal_d_centre_relative_EF_eV": -2.2447917239292217,
+      "occupied_metal_d_rms_width_eV": 1.4723885329671396,
+      "spin_degeneracy": 2.0
+    },
+    {
+      "D_per_metal": 0.75,
+      "D_projected_N_EF_states_per_eV_per_D": 0.05839946953866498,
+      "N_EF_tetrahedron_states_per_eV_per_cell": 2.062913570411825,
+      "N_EF_tetrahedron_states_per_eV_per_metal": 0.5157283926029562,
+      "by_metal_element": {
+        "Pd": {
+          "occupied_d_centre_relative_EF_eV": -2.458479407945609,
+          "occupied_d_rms_width_eV": 1.5982874290058555,
+          "occupied_d_states_per_cell": 36.99072532799594
+        }
+      },
+      "geometry": {
+        "cell_A": [
+          [
+            4.096174850629658,
+            -3.850934824753087e-23,
+            -2.7300420346343897e-28
+          ],
+          [
+            -3.651867870787167e-20,
+            4.096174850629658,
+            4.242285060076047e-52
+          ],
+          [
+            -2.8157284722765027e-22,
+            -2.8075838878462944e-39,
+            4.096174850629658
+          ]
+        ],
+        "initial_magnetic_moments_muB": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "positions_A": [
+          [
+            1.0716194197132373e-28,
+            8.363952936158394e-18,
+            1.420099957894571e-17
+          ],
+          [
+            -3.663416948823095e-17,
+            2.048087425314829,
+            2.048087425314829
+          ],
+          [
+            2.048087425314829,
+            -1.0636061852014001e-19,
+            2.048087425314829
+          ],
+          [
+            2.048087425314829,
+            2.048087425314829,
+            -6.34020467233818e-20
+          ],
+          [
+            2.048087425314829,
+            -6.651088890838061e-20,
+            -9.015777004517185e-20
+          ],
+          [
+            4.022580812905895e-19,
+            2.048087425314829,
+            -5.1919963709471873e-20
+          ],
+          [
+            5.005508335371942e-20,
+            -2.62784755781928e-20,
+            2.048087425314829
+          ]
+        ],
+        "symbols": [
+          "Pd",
+          "Pd",
+          "Pd",
+          "Pd",
+          "H",
+          "H",
+          "H"
+        ]
+      },
+      "ground_state_settings": {
+        "convergence": {
+          "bands": 30,
+          "density": 1e-06,
+          "eigenstates": 1e-09,
+          "energy": 1e-07
+        },
+        "ecut_eV": 500,
+        "kmesh": [
+          12,
+          12,
+          12
+        ],
+        "occupation_width_eV": 0.1,
+        "saved_nbands": 30,
+        "scf_nbands": 30,
+        "setups": {
+          "H": "paw",
+          "Pd": "10"
+        },
+        "spinpol": false
+      },
+      "material_id": "PdD_x0.75",
+      "metal_atoms_per_cell": 4,
+      "model": "neutral collinear PBE / explicit valence PAW; static charge RPA",
+      "nspins": 1,
+      "occupied_DOS_settings": {
+        "metal_indices": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "moment_width_eV": 0.1,
+        "occupied_window_eV": [
+          -20,
+          0.005,
+          0.01
+        ],
+        "widths_eV": [
+          0.1,
+          0.05
+        ]
+      },
+      "occupied_metal_d_centre_relative_EF_eV": -2.458479407945609,
+      "occupied_metal_d_rms_width_eV": 1.5982874290058555,
+      "spin_degeneracy": 2.0
+    },
+    {
+      "D_per_metal": 1.0,
+      "D_projected_N_EF_states_per_eV_per_D": 0.06573692511909479,
+      "N_EF_tetrahedron_states_per_eV_per_cell": 0.4967422154818638,
+      "N_EF_tetrahedron_states_per_eV_per_metal": 0.4967422154818638,
+      "by_metal_element": {
+        "Pd": {
+          "occupied_d_centre_relative_EF_eV": -2.684473519601039,
+          "occupied_d_rms_width_eV": 1.6306242696698243,
+          "occupied_d_states_per_cell": 9.232054447196855
+        }
+      },
+      "geometry": {
+        "cell_A": [
+          [
+            0.0,
+            2.0670708423342865,
+            2.0670708423342865
+          ],
+          [
+            2.0670708423342865,
+            0.0,
+            2.0670708423342865
+          ],
+          [
+            2.0670708423342865,
+            2.0670708423342865,
+            0.0
+          ]
+        ],
+        "initial_magnetic_moments_muB": [
+          0.0,
+          0.0
+        ],
+        "positions_A": [
+          [
+            5.620192272275922e-27,
+            -1.45891026380064e-18,
+            -3.8156701644457023e-22
+          ],
+          [
+            2.0670708423342847,
+            3.0999731199979916e-19,
+            2.9432781966884644e-21
+          ]
+        ],
+        "symbols": [
+          "Pd",
+          "H"
+        ]
+      },
+      "ground_state_settings": {
+        "convergence": {
+          "bands": "occupied",
+          "density": 1e-06,
+          "eigenstates": 1e-09,
+          "energy": 1e-07
+        },
+        "ecut_eV": 500,
+        "kmesh": [
+          12,
+          12,
+          12
+        ],
+        "occupation_width_eV": 0.1,
+        "saved_nbands": 96,
+        "scf_nbands": 14,
+        "setups": {
+          "H": "paw",
+          "Pd": "10"
+        },
+        "spinpol": false
+      },
+      "material_id": "PdD_x1",
+      "metal_atoms_per_cell": 1,
+      "model": "neutral collinear PBE / explicit valence PAW; static charge RPA",
+      "nspins": 1,
+      "occupied_DOS_settings": {
+        "metal_indices": [
+          0
+        ],
+        "moment_width_eV": 0.1,
+        "occupied_window_eV": [
+          -20,
+          0.005,
+          0.01
+        ],
+        "widths_eV": [
+          0.1,
+          0.05
+        ]
+      },
+      "occupied_metal_d_centre_relative_EF_eV": -2.684473519601039,
+      "occupied_metal_d_rms_width_eV": 1.6306242696698243,
+      "screening": {
+        "DD_spacing_A": 2.923279619615126,
+        "DD_spacing_convention": "actual ordered D sublattice",
+        "Ue_static_Yukawa_proxy_eV": 26.607101982891034,
+        "Yukawa_radial_force_factor": 0.028869023882776332,
+        "eligible_for_Tier1": true,
+        "fit": "q^2(epsilon_M-1)=kappa^2+regular*q^2",
+        "force_convention": "(1+d/lambda)exp(-d/lambda); not a longitudinal Hessian or a second screening of DFT forces",
+        "kappa_squared_Ainv2": 3.414220427667118,
+        "lambda_A": 0.5411955560289822,
+        "lambda_over_DD": 0.18513301033454851,
+        "lambda_over_metal": 0.18513301033454851,
+        "metal_spacing_A": 2.923279619615126,
+        "model": "Valence-PAW static RPA low-q length; C/lambda is a Yukawa proxy, not a full-RPA near-origin shift",
+        "points": [
+          {
+            "Q_head_Ainv": 0.2193683118022631,
+            "epsilon_head_NLF": [
+              109.70531451798355,
+              2.6278089213363446e-18
+            ],
+            "epsilon_macro_LF": [
+              74.07812249036097,
+              7.10430841396296e-18
+            ],
+            "inverse_residual": 7.60680179646368e-15,
+            "matrix_dimension": 15,
+            "settings": {
+              "ecut_eV": 50,
+              "eta_eV": 0.005,
+              "expected_wall_s": 240,
+              "nbands": 96,
+              "q_fractional": [
+                0.08333333333333333,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "Q_head_Ainv": 0.4387366236045262,
+            "epsilon_head_NLF": [
+              28.284481961407295,
+              1.1530697586618709e-18
+            ],
+            "epsilon_macro_LF": [
+              19.67033204868834,
+              3.002405005516911e-18
+            ],
+            "inverse_residual": 3.5516077509288882e-15,
+            "matrix_dimension": 15,
+            "settings": {
+              "ecut_eV": 50,
+              "eta_eV": 0.005,
+              "expected_wall_s": 240,
+              "nbands": 96,
+              "q_fractional": [
+                0.16666666666666666,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "Q_head_Ainv": 0.6581049354067894,
+            "epsilon_head_NLF": [
+              14.80966733146611,
+              1.571388931234575e-18
+            ],
+            "epsilon_macro_LF": [
+              10.215143771177853,
+              1.6032606182544363e-18
+            ],
+            "inverse_residual": 1.3864523520441193e-15,
+            "matrix_dimension": 15,
+            "settings": {
+              "ecut_eV": 50,
+              "eta_eV": 0.005,
+              "expected_wall_s": 240,
+              "nbands": 96,
+              "q_fractional": [
+                0.25,
+                0,
+                0
+              ]
+            }
+          }
+        ],
+        "q_Ainv": [
+          0.2193683118022631,
+          0.4387366236045262,
+          0.6581049354067894
+        ],
+        "q_squared_epsilon_minus_one_Ainv2": [
+          3.516698750399595,
+          3.593848946725642,
+          3.9910981744523375
+        ],
+        "q_window_lambda_span_A": [
+          0.5005572944452886,
+          0.5411955560289822
+        ],
+        "q_window_pass_10percent": true,
+        "q_window_relative_spread": 0.07508979172311847,
+        "source_response": {
+          "bytes": 2803,
+          "path": "response.json",
+          "sha256": "069589b9ab025c2956ca83e191553420abfb01db10053ca3800b54bcb2350f46"
+        },
+        "uncertainty_scope": "Pd k/band/cutoff/eta controls plus this q-window; transferred model tolerance, not all-electron physical confidence"
+      },
+      "spin_degeneracy": 2.0
+    },
+    {
+      "D_per_metal": 0.0,
+      "D_projected_N_EF_states_per_eV_per_D": null,
+      "N_EF_tetrahedron_states_per_eV_per_cell": 2.055141384047781,
+      "N_EF_tetrahedron_states_per_eV_per_metal": 2.055141384047781,
+      "by_metal_element": {
+        "Pd": {
+          "occupied_d_centre_relative_EF_eV": -2.4238674357280985,
+          "occupied_d_rms_width_eV": 1.4875662615790624,
+          "occupied_d_states_per_cell": 9.184878629673518
+        }
+      },
+      "geometry": {
+        "cell_A": [
+          [
+            0,
+            1.945,
+            1.945
+          ],
+          [
+            1.945,
+            0,
+            1.945
+          ],
+          [
+            1.945,
+            1.945,
+            0
+          ]
+        ],
+        "positions_A": [
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "symbols": [
+          "Pd"
+        ]
+      },
+      "ground_state_settings": {
+        "convergence": {
+          "bands": "occupied",
+          "density": 1e-06,
+          "eigenstates": 1e-09,
+          "energy": 1e-07
+        },
+        "ecut_eV": 500,
+        "kmesh": [
+          12,
+          12,
+          12
+        ],
+        "occupation_width_eV": 0.1,
+        "saved_nbands": 96,
+        "scf_nbands": 16,
+        "setups": {
+          "Pd": "10"
+        }
+      },
+      "material_id": "Pd_hydro_+0pct",
+      "metal_atoms_per_cell": 1,
+      "model": "neutral nonmagnetic PBE/Pd10 frozen-core PAW; static direct valence RPA",
+      "nspins": 1,
+      "occupied_DOS_settings": {
+        "metal_indices": [
+          0
+        ],
+        "moment_width_eV": 0.1,
+        "occupied_window_eV": [
+          -20,
+          0.005,
+          0.01
+        ],
+        "widths_eV": [
+          0.1,
+          0.05
+        ]
+      },
+      "occupied_metal_d_centre_relative_EF_eV": -2.4238674357280985,
+      "occupied_metal_d_rms_width_eV": 1.4875662615790624,
+      "screening": {
+        "DD_spacing_A": 2.75064537881567,
+        "DD_spacing_convention": "registered ideal octahedral fcc probe sublattice; no D present",
+        "Ue_static_Yukawa_proxy_eV": 36.22746936148262,
+        "Yukawa_radial_force_factor": 0.007822010947432517,
+        "eligible_for_Tier1": true,
+        "fit": "q^2(epsilon_M-1)=kappa^2+regular*q^2",
+        "force_convention": "(1+d/lambda)exp(-d/lambda); not a longitudinal Hessian or a second screening of DFT forces",
+        "kappa_squared_Ainv2": 6.329543714499573,
+        "lambda_A": 0.39747864274672146,
+        "lambda_over_DD": 0.14450377566222716,
+        "lambda_over_metal": 0.14450377566222716,
+        "metal_spacing_A": 2.75064537881567,
+        "model": "Valence-PAW static RPA low-q length; C/lambda is a Yukawa proxy, not a full-RPA near-origin shift",
+        "points": [
+          {
+            "Q_head_Ainv": 0.23313616506866555,
+            "epsilon_head_NLF": [
+              415.1120369821418,
+              1.807111467363796e-17
+            ],
+            "epsilon_macro_LF": [
+              118.17105420290132,
+              1.6153713735440162e-17
+            ],
+            "inverse_residual": 1.011661640272383e-13,
+            "matrix_dimension": 15,
+            "settings": {
+              "ecut_eV": 50,
+              "eta_eV": 0.005,
+              "expected_wall_s": 60,
+              "nbands": 96,
+              "q_fractional": [
+                0.08333333333333333,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "Q_head_Ainv": 0.4662723301373311,
+            "epsilon_head_NLF": [
+              80.62749164166573,
+              6.590470947591764e-18
+            ],
+            "epsilon_macro_LF": [
+              28.79344522021666,
+              5.6970775505541824e-18
+            ],
+            "inverse_residual": 5.9359001583678666e-15,
+            "matrix_dimension": 15,
+            "settings": {
+              "ecut_eV": 50,
+              "eta_eV": 0.005,
+              "expected_wall_s": 60,
+              "nbands": 96,
+              "q_fractional": [
+                0.16666666666666666,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "Q_head_Ainv": 0.6994084952059967,
+            "epsilon_head_NLF": [
+              30.816394474814533,
+              -2.2514689652152243e-18
+            ],
+            "epsilon_macro_LF": [
+              13.298450805326762,
+              -1.5404217917871829e-19
+            ],
+            "inverse_residual": 4.349342219727617e-15,
+            "matrix_dimension": 12,
+            "settings": {
+              "ecut_eV": 50,
+              "eta_eV": 0.005,
+              "expected_wall_s": 60,
+              "nbands": 96,
+              "q_fractional": [
+                0.25,
+                0,
+                0
+              ]
+            }
+          }
+        ],
+        "q_Ainv": [
+          0.23313616506866555,
+          0.4662723301373311,
+          0.6994084952059967
+        ],
+        "q_squared_epsilon_minus_one_Ainv2": [
+          6.368536379843924,
+          6.042569752752678,
+          6.016060767912286
+        ],
+        "q_window_lambda_span_A": [
+          0.3929222453961441,
+          0.407702986549628
+        ],
+        "q_window_pass_10percent": true,
+        "q_window_relative_spread": 0.025723001699544445,
+        "source_response": {
+          "bytes": 2842,
+          "path": "response.json",
+          "sha256": "ff11b2edc1799dd1158666a0fca3a7a4759b7eedf2b9a9a40f887a49319aff5d"
+        },
+        "uncertainty_scope": "Pd k/band/cutoff/eta controls plus this q-window; transferred model tolerance, not all-electron physical confidence"
+      },
+      "spin_degeneracy": 2.0
+    },
+    {
+      "D_per_metal": 0.0,
+      "D_projected_N_EF_states_per_eV_per_D": null,
+      "N_EF_tetrahedron_states_per_eV_per_cell": 2.1124248124659806,
+      "N_EF_tetrahedron_states_per_eV_per_metal": 2.1124248124659806,
+      "by_metal_element": {
+        "Pd": {
+          "occupied_d_centre_relative_EF_eV": -2.305209779330018,
+          "occupied_d_rms_width_eV": 1.4202555069346536,
+          "occupied_d_states_per_cell": 9.18276848215822
+        }
+      },
+      "geometry": {
+        "cell_A": [
+          [
+            0.0,
+            1.96445,
+            1.96445
+          ],
+          [
+            1.96445,
+            0.0,
+            1.96445
+          ],
+          [
+            1.96445,
+            1.96445,
+            0.0
+          ]
+        ],
+        "initial_magnetic_moments_muB": [
+          0.0
+        ],
+        "positions_A": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "symbols": [
+          "Pd"
+        ]
+      },
+      "ground_state_settings": {
+        "convergence": {
+          "bands": "occupied",
+          "density": 1e-06,
+          "eigenstates": 1e-09,
+          "energy": 1e-07
+        },
+        "ecut_eV": 500,
+        "kmesh": [
+          12,
+          12,
+          12
+        ],
+        "occupation_width_eV": 0.1,
+        "saved_nbands": 96,
+        "scf_nbands": 13,
+        "setups": {
+          "Pd": "10"
+        },
+        "spinpol": false
+      },
+      "material_id": "Pd_hydro_+1pct",
+      "metal_atoms_per_cell": 1,
+      "model": "neutral collinear PBE / explicit valence PAW; static charge RPA",
+      "nspins": 1,
+      "occupied_DOS_settings": {
+        "metal_indices": [
+          0
+        ],
+        "moment_width_eV": 0.1,
+        "occupied_window_eV": [
+          -20,
+          0.005,
+          0.01
+        ],
+        "widths_eV": [
+          0.1,
+          0.05
+        ]
+      },
+      "occupied_metal_d_centre_relative_EF_eV": -2.305209779330018,
+      "occupied_metal_d_rms_width_eV": 1.4202555069346536,
+      "spin_degeneracy": 2.0
+    },
+    {
+      "D_per_metal": 0.0,
+      "D_projected_N_EF_states_per_eV_per_D": null,
+      "N_EF_tetrahedron_states_per_eV_per_cell": 2.168695676952008,
+      "N_EF_tetrahedron_states_per_eV_per_metal": 2.168695676952008,
+      "by_metal_element": {
+        "Pd": {
+          "occupied_d_centre_relative_EF_eV": -2.193429522507739,
+          "occupied_d_rms_width_eV": 1.3563277870758104,
+          "occupied_d_states_per_cell": 9.183126585454298
+        }
+      },
+      "geometry": {
+        "cell_A": [
+          [
+            0.0,
+            1.9839,
+            1.9839
+          ],
+          [
+            1.9839,
+            0.0,
+            1.9839
+          ],
+          [
+            1.9839,
+            1.9839,
+            0.0
+          ]
+        ],
+        "initial_magnetic_moments_muB": [
+          0.0
+        ],
+        "positions_A": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "symbols": [
+          "Pd"
+        ]
+      },
+      "ground_state_settings": {
+        "convergence": {
+          "bands": "occupied",
+          "density": 1e-06,
+          "eigenstates": 1e-09,
+          "energy": 1e-07
+        },
+        "ecut_eV": 500,
+        "kmesh": [
+          12,
+          12,
+          12
+        ],
+        "occupation_width_eV": 0.1,
+        "saved_nbands": 96,
+        "scf_nbands": 13,
+        "setups": {
+          "Pd": "10"
+        },
+        "spinpol": false
+      },
+      "material_id": "Pd_hydro_+2pct",
+      "metal_atoms_per_cell": 1,
+      "model": "neutral collinear PBE / explicit valence PAW; static charge RPA",
+      "nspins": 1,
+      "occupied_DOS_settings": {
+        "metal_indices": [
+          0
+        ],
+        "moment_width_eV": 0.1,
+        "occupied_window_eV": [
+          -20,
+          0.005,
+          0.01
+        ],
+        "widths_eV": [
+          0.1,
+          0.05
+        ]
+      },
+      "occupied_metal_d_centre_relative_EF_eV": -2.193429522507739,
+      "occupied_metal_d_rms_width_eV": 1.3563277870758104,
+      "screening": {
+        "DD_spacing_A": 2.8056582863919832,
+        "DD_spacing_convention": "registered ideal octahedral fcc probe sublattice; no D present",
+        "Ue_static_Yukawa_proxy_eV": 35.68244514992993,
+        "Yukawa_radial_force_factor": 0.007604874083219052,
+        "eligible_for_Tier1": true,
+        "fit": "q^2(epsilon_M-1)=kappa^2+regular*q^2",
+        "force_convention": "(1+d/lambda)exp(-d/lambda); not a longitudinal Hessian or a second screening of DFT forces",
+        "kappa_squared_Ainv2": 6.140526666708213,
+        "lambda_A": 0.4035498489928688,
+        "lambda_over_DD": 0.1438342833659281,
+        "lambda_over_metal": 0.1438342833659281,
+        "metal_spacing_A": 2.8056582863919832,
+        "model": "Valence-PAW static RPA low-q length; C/lambda is a Yukawa proxy, not a full-RPA near-origin shift",
+        "points": [
+          {
+            "Q_head_Ainv": 0.22856486771437792,
+            "epsilon_head_NLF": [
+              432.52990414259983,
+              3.6981083780160193e-17
+            ],
+            "epsilon_macro_LF": [
+              118.67466372763495,
+              3.176119099806636e-17
+            ],
+            "inverse_residual": 1.3870974198451677e-14,
+            "matrix_dimension": 15,
+            "settings": {
+              "ecut_eV": 50,
+              "eta_eV": 0.005,
+              "expected_wall_s": 60,
+              "nbands": 96,
+              "q_fractional": [
+                0.08333333333333333,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "Q_head_Ainv": 0.45712973542875585,
+            "epsilon_head_NLF": [
+              84.28545439115382,
+              -4.089122231089777e-18
+            ],
+            "epsilon_macro_LF": [
+              29.056778327114476,
+              -5.317704166341742e-18
+            ],
+            "inverse_residual": 8.593179678990201e-15,
+            "matrix_dimension": 15,
+            "settings": {
+              "ecut_eV": 50,
+              "eta_eV": 0.005,
+              "expected_wall_s": 60,
+              "nbands": 96,
+              "q_fractional": [
+                0.16666666666666666,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "Q_head_Ainv": 0.6856946031431339,
+            "epsilon_head_NLF": [
+              32.16960720408502,
+              -5.850359476436187e-18
+            ],
+            "epsilon_macro_LF": [
+              13.219303417240866,
+              -1.6180083067132951e-18
+            ],
+            "inverse_residual": 4.1335777200985224e-15,
+            "matrix_dimension": 15,
+            "settings": {
+              "ecut_eV": 50,
+              "eta_eV": 0.005,
+              "expected_wall_s": 60,
+              "nbands": 96,
+              "q_fractional": [
+                0.25,
+                0,
+                0
+              ]
+            }
+          }
+        ],
+        "q_Ainv": [
+          0.22856486771437792,
+          0.45712973542875585,
+          0.6856946031431339
+        ],
+        "q_squared_epsilon_minus_one_Ainv2": [
+          6.147547868286679,
+          5.862957490834583,
+          5.745236507633171
+        ],
+        "q_window_lambda_span_A": [
+          0.40024305888372697,
+          0.41720167583266676
+        ],
+        "q_window_pass_10percent": true,
+        "q_window_relative_spread": 0.033829344438781384,
+        "source_response": {
+          "bytes": 2814,
+          "path": "response.json",
+          "sha256": "77b32b9c32f2095ca957e549fb0c19eab50434f5634afda173e14ac51cd5a849"
+        },
+        "uncertainty_scope": "Pd k/band/cutoff/eta controls plus this q-window; transferred model tolerance, not all-electron physical confidence"
+      },
+      "spin_degeneracy": 2.0
+    },
+    {
+      "D_per_metal": 0.0,
+      "D_projected_N_EF_states_per_eV_per_D": null,
+      "N_EF_tetrahedron_states_per_eV_per_cell": 1.9969823019999995,
+      "N_EF_tetrahedron_states_per_eV_per_metal": 1.9969823019999995,
+      "by_metal_element": {
+        "Pd": {
+          "occupied_d_centre_relative_EF_eV": -2.5500215430281563,
+          "occupied_d_rms_width_eV": 1.558480997962409,
+          "occupied_d_states_per_cell": 9.18967343767493
+        }
+      },
+      "geometry": {
+        "cell_A": [
+          [
+            0.0,
+            1.92555,
+            1.92555
+          ],
+          [
+            1.92555,
+            0.0,
+            1.92555
+          ],
+          [
+            1.92555,
+            1.92555,
+            0.0
+          ]
+        ],
+        "initial_magnetic_moments_muB": [
+          0.0
+        ],
+        "positions_A": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "symbols": [
+          "Pd"
+        ]
+      },
+      "ground_state_settings": {
+        "convergence": {
+          "bands": "occupied",
+          "density": 1e-06,
+          "eigenstates": 1e-09,
+          "energy": 1e-07
+        },
+        "ecut_eV": 500,
+        "kmesh": [
+          12,
+          12,
+          12
+        ],
+        "occupation_width_eV": 0.1,
+        "saved_nbands": 96,
+        "scf_nbands": 13,
+        "setups": {
+          "Pd": "10"
+        },
+        "spinpol": false
+      },
+      "material_id": "Pd_hydro_-1pct",
+      "metal_atoms_per_cell": 1,
+      "model": "neutral collinear PBE / explicit valence PAW; static charge RPA",
+      "nspins": 1,
+      "occupied_DOS_settings": {
+        "metal_indices": [
+          0
+        ],
+        "moment_width_eV": 0.1,
+        "occupied_window_eV": [
+          -20,
+          0.005,
+          0.01
+        ],
+        "widths_eV": [
+          0.1,
+          0.05
+        ]
+      },
+      "occupied_metal_d_centre_relative_EF_eV": -2.5500215430281563,
+      "occupied_metal_d_rms_width_eV": 1.558480997962409,
+      "spin_degeneracy": 2.0
+    },
+    {
+      "D_per_metal": 0.0,
+      "D_projected_N_EF_states_per_eV_per_D": null,
+      "N_EF_tetrahedron_states_per_eV_per_cell": 1.9370817206124231,
+      "N_EF_tetrahedron_states_per_eV_per_metal": 1.9370817206124231,
+      "by_metal_element": {
+        "Pd": {
+          "occupied_d_centre_relative_EF_eV": -2.684491872366199,
+          "occupied_d_rms_width_eV": 1.633261478635247,
+          "occupied_d_states_per_cell": 9.197136394354976
+        }
+      },
+      "geometry": {
+        "cell_A": [
+          [
+            0.0,
+            1.9061000000000001,
+            1.9061000000000001
+          ],
+          [
+            1.9061000000000001,
+            0.0,
+            1.9061000000000001
+          ],
+          [
+            1.9061000000000001,
+            1.9061000000000001,
+            0.0
+          ]
+        ],
+        "initial_magnetic_moments_muB": [
+          0.0
+        ],
+        "positions_A": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "symbols": [
+          "Pd"
+        ]
+      },
+      "ground_state_settings": {
+        "convergence": {
+          "bands": "occupied",
+          "density": 1e-06,
+          "eigenstates": 1e-09,
+          "energy": 1e-07
+        },
+        "ecut_eV": 500,
+        "kmesh": [
+          12,
+          12,
+          12
+        ],
+        "occupation_width_eV": 0.1,
+        "saved_nbands": 96,
+        "scf_nbands": 13,
+        "setups": {
+          "Pd": "10"
+        },
+        "spinpol": false
+      },
+      "material_id": "Pd_hydro_-2pct",
+      "metal_atoms_per_cell": 1,
+      "model": "neutral collinear PBE / explicit valence PAW; static charge RPA",
+      "nspins": 1,
+      "occupied_DOS_settings": {
+        "metal_indices": [
+          0
+        ],
+        "moment_width_eV": 0.1,
+        "occupied_window_eV": [
+          -20,
+          0.005,
+          0.01
+        ],
+        "widths_eV": [
+          0.1,
+          0.05
+        ]
+      },
+      "occupied_metal_d_centre_relative_EF_eV": -2.684491872366199,
+      "occupied_metal_d_rms_width_eV": 1.633261478635247,
+      "screening": {
+        "DD_spacing_A": 2.6956324712393567,
+        "DD_spacing_convention": "registered ideal octahedral fcc probe sublattice; no D present",
+        "Ue_static_Yukawa_proxy_eV": 36.849303431584154,
+        "Yukawa_radial_force_factor": 0.007973767487217669,
+        "eligible_for_Tier1": true,
+        "fit": "q^2(epsilon_M-1)=kappa^2+regular*q^2",
+        "force_convention": "(1+d/lambda)exp(-d/lambda); not a longitudinal Hessian or a second screening of DFT forces",
+        "kappa_squared_Ainv2": 6.548698158181467,
+        "lambda_A": 0.3907711682714841,
+        "lambda_over_DD": 0.14496455746128525,
+        "lambda_over_metal": 0.14496455746128525,
+        "metal_spacing_A": 2.6956324712393567,
+        "model": "Valence-PAW static RPA low-q length; C/lambda is a Yukawa proxy, not a full-RPA near-origin shift",
+        "points": [
+          {
+            "Q_head_Ainv": 0.23789404598843425,
+            "epsilon_head_NLF": [
+              396.15626281248416,
+              -1.8083243230100557e-16
+            ],
+            "epsilon_macro_LF": [
+              117.4350947096806,
+              -2.4944028335275256e-18
+            ],
+            "inverse_residual": 3.5742336327655867e-14,
+            "matrix_dimension": 15,
+            "settings": {
+              "ecut_eV": 50,
+              "eta_eV": 0.005,
+              "expected_wall_s": 60,
+              "nbands": 96,
+              "q_fractional": [
+                0.08333333333333333,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "Q_head_Ainv": 0.4757880919768685,
+            "epsilon_head_NLF": [
+              76.88940798378853,
+              8.492181412335546e-18
+            ],
+            "epsilon_macro_LF": [
+              28.497962765542326,
+              2.5034977487618403e-17
+            ],
+            "inverse_residual": 8.265244699555217e-15,
+            "matrix_dimension": 15,
+            "settings": {
+              "ecut_eV": 50,
+              "eta_eV": 0.005,
+              "expected_wall_s": 60,
+              "nbands": 96,
+              "q_fractional": [
+                0.16666666666666666,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "Q_head_Ainv": 0.7136821379653027,
+            "epsilon_head_NLF": [
+              29.402539990939378,
+              2.6080258099036586e-18
+            ],
+            "epsilon_macro_LF": [
+              13.1435854150817,
+              5.119371664058137e-18
+            ],
+            "inverse_residual": 4.11737580431444e-15,
+            "matrix_dimension": 12,
+            "settings": {
+              "ecut_eV": 50,
+              "eta_eV": 0.005,
+              "expected_wall_s": 60,
+              "nbands": 96,
+              "q_fractional": [
+                0.25,
+                0,
+                0
+              ]
+            }
+          }
+        ],
+        "q_Ainv": [
+          0.23789404598843425,
+          0.4757880919768685,
+          0.7136821379653027
+        ],
+        "q_squared_epsilon_minus_one_Ainv2": [
+          6.589478511548081,
+          6.224832305300659,
+          6.1852404389601015
+        ],
+        "q_window_lambda_span_A": [
+          0.3860161713882827,
+          0.40208855047412834
+        ],
+        "q_window_pass_10percent": true,
+        "q_window_relative_spread": 0.02896166125230004,
+        "source_response": {
+          "bytes": 2811,
+          "path": "response.json",
+          "sha256": "cea3e992403bb732a6218b8d3f96f742ae885ffc0e9d91bb9d11279039c34ee4"
+        },
+        "uncertainty_scope": "Pd k/band/cutoff/eta controls plus this q-window; transferred model tolerance, not all-electron physical confidence"
+      },
+      "spin_degeneracy": 2.0
+    },
+    {
+      "D_per_metal": 2.0,
+      "D_projected_N_EF_states_per_eV_per_D": 0.0020856645107654257,
+      "N_EF_tetrahedron_states_per_eV_per_cell": 2.452072523728742,
+      "N_EF_tetrahedron_states_per_eV_per_metal": 2.452072523728742,
+      "by_metal_element": {
+        "Ti": {
+          "occupied_d_centre_relative_EF_eV": -2.588120613513892,
+          "occupied_d_rms_width_eV": 2.293976233012431,
+          "occupied_d_states_per_cell": 2.4623520079297125
+        }
+      },
+      "geometry": {
+        "cell_A": [
+          [
+            0.0,
+            2.211464884414634,
+            2.211464884414634
+          ],
+          [
+            2.211464884414634,
+            0.0,
+            2.211464884414634
+          ],
+          [
+            2.211464884414634,
+            2.211464884414634,
+            0.0
+          ]
+        ],
+        "initial_magnetic_moments_muB": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "positions_A": [
+          [
+            -3.756719733366676e-33,
+            4.214155194046839e-19,
+            1.5832065936461027e-20
+          ],
+          [
+            1.105732442207317,
+            1.105732442207317,
+            1.105732442207317
+          ],
+          [
+            3.3171973266219505,
+            3.3171973266219505,
+            3.3171973266219505
+          ]
+        ],
+        "symbols": [
+          "Ti",
+          "H",
+          "H"
+        ]
+      },
+      "ground_state_settings": {
+        "convergence": {
+          "bands": "occupied",
+          "density": 1e-06,
+          "eigenstates": 1e-09,
+          "energy": 1e-07
+        },
+        "ecut_eV": 500,
+        "kmesh": [
+          12,
+          12,
+          12
+        ],
+        "occupation_width_eV": 0.1,
+        "saved_nbands": 96,
+        "scf_nbands": 15,
+        "setups": {
+          "H": "paw",
+          "Ti": "paw"
+        },
+        "spinpol": false
+      },
+      "material_id": "TiD2_fluorite",
+      "metal_atoms_per_cell": 1,
+      "model": "neutral collinear PBE / explicit valence PAW; static charge RPA",
+      "nspins": 1,
+      "occupied_DOS_settings": {
+        "metal_indices": [
+          0
+        ],
+        "moment_width_eV": 0.1,
+        "occupied_window_eV": [
+          -20,
+          0.005,
+          0.01
+        ],
+        "widths_eV": [
+          0.1,
+          0.05
+        ]
+      },
+      "occupied_metal_d_centre_relative_EF_eV": -2.588120613513892,
+      "occupied_metal_d_rms_width_eV": 2.293976233012431,
+      "screening": {
+        "DD_spacing_A": 2.2114648844146334,
+        "DD_spacing_convention": "actual ordered D sublattice",
+        "Ue_static_Yukawa_proxy_eV": 33.07887883574269,
+        "Yukawa_radial_force_factor": 0.037811384673495985,
+        "eligible_for_Tier1": true,
+        "fit": "q^2(epsilon_M-1)=kappa^2+regular*q^2",
+        "force_convention": "(1+d/lambda)exp(-d/lambda); not a longitudinal Hessian or a second screening of DFT forces",
+        "kappa_squared_Ainv2": 5.277132157963239,
+        "lambda_A": 0.4353123763188525,
+        "lambda_over_DD": 0.19684344951020016,
+        "lambda_over_metal": 0.1391893379808143,
+        "metal_spacing_A": 3.127483632251024,
+        "model": "Valence-PAW static RPA low-q length; C/lambda is a Yukawa proxy, not a full-RPA near-origin shift",
+        "points": [
+          {
+            "Q_head_Ainv": 0.20504501077736115,
+            "epsilon_head_NLF": [
+              320.7318745082632,
+              -1.0738842797516962e-16
+            ],
+            "epsilon_macro_LF": [
+              126.19913368059923,
+              -8.858524774492004e-17
+            ],
+            "inverse_residual": 5.298377234548225e-14,
+            "matrix_dimension": 15,
+            "settings": {
+              "ecut_eV": 50,
+              "eta_eV": 0.005,
+              "expected_wall_s": 540,
+              "nbands": 96,
+              "q_fractional": [
+                0.08333333333333333,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "Q_head_Ainv": 0.4100900215547223,
+            "epsilon_head_NLF": [
+              74.98503566620906,
+              -4.732513485348705e-17
+            ],
+            "epsilon_macro_LF": [
+              31.369765015267063,
+              -2.881411929656846e-17
+            ],
+            "inverse_residual": 1.3776252209679164e-14,
+            "matrix_dimension": 15,
+            "settings": {
+              "ecut_eV": 50,
+              "eta_eV": 0.005,
+              "expected_wall_s": 540,
+              "nbands": 96,
+              "q_fractional": [
+                0.16666666666666666,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "Q_head_Ainv": 0.6151350323320837,
+            "epsilon_head_NLF": [
+              32.02479146868785,
+              -1.7934153549837913e-17
+            ],
+            "epsilon_macro_LF": [
+              14.167724264988378,
+              -9.465170298772968e-18
+            ],
+            "inverse_residual": 7.252568285666037e-15,
+            "matrix_dimension": 18,
+            "settings": {
+              "ecut_eV": 50,
+              "eta_eV": 0.005,
+              "expected_wall_s": 540,
+              "nbands": 96,
+              "q_fractional": [
+                0.25,
+                0,
+                0
+              ]
+            }
+          }
+        ],
+        "q_Ainv": [
+          0.20504501077736115,
+          0.4100900215547223,
+          0.6151350323320837
+        ],
+        "q_squared_epsilon_minus_one_Ainv2": [
+          5.263804323812963,
+          5.107399570619179,
+          4.982549774496323
+        ],
+        "q_window_lambda_span_A": [
+          0.4337205459077669,
+          0.44799604198577914
+        ],
+        "q_window_pass_10percent": true,
+        "q_window_relative_spread": 0.029136928690573827,
+        "source_response": {
+          "bytes": 2819,
+          "path": "response.json",
+          "sha256": "bcb3472d66a4398ca300eaffae434743a642202a9b41a3c95fde475745837150"
+        },
+        "uncertainty_scope": "Pd k/band/cutoff/eta controls plus this q-window; transferred model tolerance, not all-electron physical confidence"
+      },
+      "spin_degeneracy": 2.0
+    },
+    {
+      "D_per_metal": 0.0,
+      "D_projected_N_EF_states_per_eV_per_D": null,
+      "N_EF_tetrahedron_states_per_eV_per_cell": 1.7130285051623462,
+      "N_EF_tetrahedron_states_per_eV_per_metal": 0.8565142525811731,
+      "by_metal_element": {
+        "Ti": {
+          "occupied_d_centre_relative_EF_eV": -1.263563948545697,
+          "occupied_d_rms_width_eV": 0.7682664444383995,
+          "occupied_d_states_per_cell": 4.654819816365133
+        }
+      },
+      "geometry": {
+        "cell_A": [
+          [
+            2.9395015346697115,
+            0.0,
+            0.0
+          ],
+          [
+            -1.4697507673348558,
+            2.5456830034873135,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            4.653449535949384
+          ]
+        ],
+        "initial_magnetic_moments_muB": [
+          0.0,
+          0.0
+        ],
+        "positions_A": [
+          [
+            -8.209391443955626e-19,
+            3.776196121001351e-18,
+            3.558709174912048e-19
+          ],
+          [
+            5.744711634258696e-17,
+            1.6971220023248774,
+            2.3267247679746914
+          ]
+        ],
+        "symbols": [
+          "Ti",
+          "Ti"
+        ]
+      },
+      "ground_state_settings": {
+        "convergence": {
+          "bands": "occupied",
+          "density": 1e-06,
+          "eigenstates": 1e-09,
+          "energy": 1e-07
+        },
+        "ecut_eV": 500,
+        "kmesh": [
+          12,
+          12,
+          12
+        ],
+        "occupation_width_eV": 0.1,
+        "saved_nbands": 96,
+        "scf_nbands": 20,
+        "setups": {
+          "Ti": "paw"
+        },
+        "spinpol": false
+      },
+      "material_id": "Ti_hcp",
+      "metal_atoms_per_cell": 2,
+      "model": "neutral collinear PBE / explicit valence PAW; static charge RPA",
+      "nspins": 1,
+      "occupied_DOS_settings": {
+        "metal_indices": [
+          0,
+          1
+        ],
+        "moment_width_eV": 0.1,
+        "occupied_window_eV": [
+          -20,
+          0.005,
+          0.01
+        ],
+        "widths_eV": [
+          0.1,
+          0.05
+        ]
+      },
+      "occupied_metal_d_centre_relative_EF_eV": -1.263563948545697,
+      "occupied_metal_d_rms_width_eV": 0.7682664444383995,
+      "spin_degeneracy": 2.0
+    }
+  ],
+  "completed_DOS_cases": 14,
+  "completed_RPA_cases": 9,
+  "delivery_status": "Axiom1228 accepted final completed subset:14DOS/9RPA plus two neutral cycles; PdD0.5DOS not computed",
+  "headline_static_Yukawa_proxy_slope": {
+    "Ue_Yukawa_proxy_eV": [
+      36.849303431584154,
+      36.22746936148262,
+      35.68244514992993,
+      35.624044246534865,
+      30.096754085759855
+    ],
+    "conditional_lambda_allowance": 0.1,
+    "conditional_slope_interval_eV_per_eV": [
+      -22.304043562784955,
+      5.425862203064661
+    ],
+    "d_band_coordinate": "Pd",
+    "materials": [
+      "Pd_hydro_-2pct",
+      "Pd_hydro_+0pct",
+      "Pd_hydro_+2pct",
+      "Pd3Rh_L12",
+      "Pd3Ag_L12"
+    ],
+    "nonpositive_sign_resolved_under_this_allowance": false,
+    "occupied_d_centres_relative_EF_eV": [
+      -2.684491872366199,
+      -2.4238674357280985,
+      -2.193429522507739,
+      -2.547381646824042,
+      -2.0742532853150166
+    ],
+    "positive_sign_resolved_under_this_allowance": false,
+    "scope": "OLS association conditional on the explicitly named occupied PAW d-centre coordinate and independent per-host +/-lambda allowance. Not statistical confidence, not uncertainty in the d-centre, not a universal or causal slope.",
+    "slope_eV_per_eV": -8.354699773061547
+  },
+  "hypothesis_scope": "Pooled and path-specific associations must not be interchanged. A sign unresolved by the declared allowance is neither support nor refutation of a positive physical d-band hypothesis.",
+  "neutral_adiabatic": {
+    "atomic_reference_calibration": {
+      "atomic_reference_energy_eV": {
+        "H": -12.490162242114687,
+        "He": -78.72969636301885
+      },
+      "convention": "GPAW reports energies relative to setup reference atoms; add get_reference_energy() to recover the consistent absolute PAW total energy. setup.py929-942 subtracts reference kinetic/XC/electrostatic terms; setup.py1341 sums reference totals; new/calculation.py285 labels relative energies; new/ase_interface.py490 exposes the offset.",
+      "neutral_atom_absolute_energy_eV": {
+        "H": -13.601751289415931,
+        "He": -78.7197685503261
+      },
+      "neutral_vacuum_adiabatic_difference_eV": 51.516265971494235,
+      "reference_offset_2H_minus_He_eV": 53.749371878789475,
+      "runtime_source": [
+        {
+          "bytes": 57201,
+          "path": "gpaw/setup.py",
+          "sha256": "ac566b134823bf164336fd3404288fcf698c892d081047cd5e2663b070089bb2"
+        },
+        {
+          "bytes": 26177,
+          "path": "gpaw/setup_data.py",
+          "sha256": "e048c24b8438feb93a56d3afa97bc861bae3e71ae2008b5d555c380c7c8f51b7"
+        },
+        {
+          "bytes": 30926,
+          "path": "gpaw/new/calculation.py",
+          "sha256": "1ebda5e91a3b761fba5d2f42d98ece5f7b015f4b1fca3175836e299db2b0b096"
+        },
+        {
+          "bytes": 28239,
+          "path": "gpaw/new/ase_interface.py",
+          "sha256": "570c92ca14dd54fa46cd8c7137f1a822cba66392271b1d97229a7c2090275f0f"
+        }
+      ],
+      "schema": "coherence-neutral-PAW-reference-calibration-v1",
+      "sensitivity": "Omitting the2H-minus-He reference offset changes the physical neutral adiabatic result by the recorded offset. Host-minus-vacuum metal excess cancels it and is a distinct quantity.",
+      "sources": [
+        {
+          "energy": {
+            "bytes": 1475,
+            "path": "energy.json",
+            "sha256": "93f58fb34d91a1e0b60c3c281ce389f8f88a128b3f3942d68bb26d80d85103f2"
+          },
+          "gpw": {
+            "bytes": 13348458,
+            "path": "ground.gpw",
+            "sha256": "041c10a56031cc3b33f436089c860b2aacd2913a33ecb58fffeafdf7e93e930d"
+          },
+          "setup": {
+            "bytes": 12501,
+            "path": "H.PBE.gz",
+            "sha256": "3136ad73c02d471f99dd5f82e451b2061952970556a260d38b53b5020dc94ae7"
+          },
+          "symbol": "H"
+        },
+        {
+          "energy": {
+            "bytes": 1481,
+            "path": "energy.json",
+            "sha256": "0220f3b5f42e04dcf28cae145e898b15209c341d2427571295eaec0630992e35"
+          },
+          "gpw": {
+            "bytes": 8998469,
+            "path": "ground.gpw",
+            "sha256": "4ae2cc3b7ee0897e2de9dec5895f9cf2c5fa33b56237349585f4c6e325f74a29"
+          },
+          "setup": {
+            "bytes": 13220,
+            "path": "He.PBE.gz",
+            "sha256": "491731a50d406d2ebbad45d9cfa6d41542eecc6d0637ec2340f39af1add19c18"
+          },
+          "symbol": "He"
+        }
+      ]
+    },
+    "cases": [
+      {
+        "Uad_signed_neutral_metal_excess_eV": -9.262906591498135,
+        "Ue_adiabatic_neutral_reference_calibrated_eV": 42.2533593799961,
+        "combined_observed_control_change_eV": 0.11269717274719016,
+        "control_scope": "Observed4/8-metal periodic-cell plus k-grid-shape change and8/10A atom-box change; not a rigorous asymptotic image bound or all-electron physical error. Fixed ions, neutral Born-Oppenheimer D=H proxy.",
+        "eligible_15percent": true,
+        "host_DD_minus_He_extrapolated_eV": {
+          "4": -11.6067260958941,
+          "8": -11.496012498793373
+        },
+        "host_entropy_extrapolation_difference_eV": 0.0056685575259685095,
+        "material_id": "Pd_hydro_+0pct",
+        "periodic_cell_and_sampling_change_eV": 0.1107135971007267,
+        "relative_control_change_of_Ue_ad": 0.0026671766316536736,
+        "relative_control_change_of_metal_excess": 0.012166502126948803,
+        "vacuum_2H_minus_He_extrapolated_eV": {
+          "10": -2.2331059072952386,
+          "8": -2.235089482941702
+        },
+        "vacuum_box_change_eV": 0.0019835756464634535
+      },
+      {
+        "Uad_signed_neutral_metal_excess_eV": -9.254715923621566,
+        "Ue_adiabatic_neutral_reference_calibrated_eV": 42.261550047872674,
+        "combined_observed_control_change_eV": 0.046244746726250785,
+        "control_scope": "Observed4/8-metal periodic-cell plus k-grid-shape change and8/10A atom-box change; not a rigorous asymptotic image bound or all-electron physical error. Fixed ions, neutral Born-Oppenheimer D=H proxy.",
+        "eligible_15percent": true,
+        "host_DD_minus_He_extrapolated_eV": {
+          "4": -11.532083001996591,
+          "8": -11.487821830916804
+        },
+        "host_entropy_extrapolation_difference_eV": 0.004315607398186927,
+        "material_id": "Pd3Rh_L12",
+        "periodic_cell_and_sampling_change_eV": 0.04426117107978733,
+        "relative_control_change_of_Ue_ad": 0.0010942510786723643,
+        "relative_control_change_of_metal_excess": 0.004996884518974434,
+        "vacuum_2H_minus_He_extrapolated_eV": {
+          "10": -2.2331059072952386,
+          "8": -2.235089482941702
+        },
+        "vacuum_box_change_eV": 0.0019835756464634535
+      }
+    ],
+    "definition": "Neutral Ue_ad=E(host+DDfar)-E(host+He) after restoring GPAW PAW atomic reference offsets. Signed metal excess=Ue_ad-[2E(H_atom_doublet)-E(He_atom_singlet)]. Same neutral electron total within each host pair.",
+    "endpoint_settings_and_energies": {
+      "Pd": {
+        "Pd_hydro_+0pct-4-DDfar": {
+          "PW_ecut_eV": 500.0,
+          "actual_neutral_valence_electrons": 42.0,
+          "case": "Pd_hydro_+0pct-4-DDfar",
+          "config": {
+            "DD_nearest_image_A": 2.7506453788156704,
+            "case": "Pd_hydro_+0pct-4-DDfar",
+            "endpoint": "DDfar",
+            "expected_wall_s": 120,
+            "geometry": {
+              "cell_A": [
+                [
+                  3.8900000000000006,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  3.8900000000000006,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  3.8900000000000006
+                ]
+              ],
+              "initial_moments_muB": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "pbc": [
+                true,
+                true,
+                true
+              ],
+              "positions_A": [
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  1.945,
+                  1.945
+                ],
+                [
+                  1.945,
+                  0.0,
+                  1.945
+                ],
+                [
+                  1.945,
+                  1.945,
+                  0.0
+                ],
+                [
+                  1.9450000000000003,
+                  1.9450000000000003,
+                  1.9450000000000003
+                ],
+                [
+                  1.9450000000000003,
+                  0.0,
+                  0.0
+                ]
+              ],
+              "symbols": [
+                "Pd",
+                "Pd",
+                "Pd",
+                "Pd",
+                "H",
+                "H"
+              ]
+            },
+            "host": "Pd_hydro_+0pct",
+            "kmesh": [
+              4,
+              4,
+              4
+            ],
+            "metal_atoms": 4,
+            "minimum_host_image_A": 3.8900000000000006,
+            "site_definition": "A body octahedron (six Pd); B edge octahedron (six Pd in Pd, four Pd/two Rh in L12). Same A/B sites in both cells; He at A.",
+            "spinpol": false,
+            "valence_electrons": 42
+          },
+          "elapsed_wall_s": 78.10144903790206,
+          "energy_extrapolated_zero_temperature_eV": -20.77101404415488,
+          "forces_eV_A": [
+            [
+              -2.100606721686401e-11,
+              2.2330815710305253e-10,
+              -1.3659981149848115e-14
+            ],
+            [
+              2.919254251988686e-11,
+              -2.9021790166433905e-10,
+              -4.997192600615336e-13
+            ],
+            [
+              -4.240678656037234e-11,
+              7.984426193425395e-11,
+              9.347548988578722e-14
+            ],
+            [
+              4.1938997707861265e-11,
+              -3.6461716544584985e-11,
+              -1.3372629773085858e-12
+            ],
+            [
+              -8.209274977664084e-12,
+              8.696245718265649e-11,
+              2.1751571297762023e-13
+            ],
+            [
+              7.587182084360459e-12,
+              -4.626001458501345e-11,
+              -3.314081796007438e-13
+            ]
+          ],
+          "free_energy_eV": -20.846242024632303,
+          "gpaw_version": "26.7.0",
+          "gpw": {
+            "bytes": 27263879,
+            "path": "ground.gpw",
+            "sha256": "900beb2b10980a476ee40e51f976f84b9def7e8aaafea2dd91aeae3dd4d4a4ed"
+          },
+          "ion_scope": "All ions fixed; only electrons relax. D represented by H in the Born-Oppenheimer electronic Hamiltonian.",
+          "occupation_width_eV": 0.1,
+          "scf_nbands": 29
+        },
+        "Pd_hydro_+0pct-4-He": {
+          "PW_ecut_eV": 500.0,
+          "actual_neutral_valence_electrons": 42.0,
+          "case": "Pd_hydro_+0pct-4-He",
+          "config": {
+            "DD_nearest_image_A": 2.7506453788156704,
+            "case": "Pd_hydro_+0pct-4-He",
+            "endpoint": "He",
+            "expected_wall_s": 120,
+            "geometry": {
+              "cell_A": [
+                [
+                  3.8900000000000006,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  3.8900000000000006,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  3.8900000000000006
+                ]
+              ],
+              "initial_moments_muB": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "pbc": [
+                true,
+                true,
+                true
+              ],
+              "positions_A": [
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  1.945,
+                  1.945
+                ],
+                [
+                  1.945,
+                  0.0,
+                  1.945
+                ],
+                [
+                  1.945,
+                  1.945,
+                  0.0
+                ],
+                [
+                  1.9450000000000003,
+                  1.9450000000000003,
+                  1.9450000000000003
+                ]
+              ],
+              "symbols": [
+                "Pd",
+                "Pd",
+                "Pd",
+                "Pd",
+                "He"
+              ]
+            },
+            "host": "Pd_hydro_+0pct",
+            "kmesh": [
+              4,
+              4,
+              4
+            ],
+            "metal_atoms": 4,
+            "minimum_host_image_A": 3.8900000000000006,
+            "site_definition": "A body octahedron (six Pd); B edge octahedron (six Pd in Pd, four Pd/two Rh in L12). Same A/B sites in both cells; He at A.",
+            "spinpol": false,
+            "valence_electrons": 42
+          },
+          "elapsed_wall_s": 76.55570204742253,
+          "energy_extrapolated_zero_temperature_eV": -9.164287948260782,
+          "forces_eV_A": [
+            [
+              -4.218985680731511e-13,
+              2.2198540494402875e-13,
+              4.0561072611124257e-13
+            ],
+            [
+              -1.4527380691378847e-12,
+              -2.2001657441160287e-14,
+              -2.3657316525518325e-13
+            ],
+            [
+              -1.256655082195394e-12,
+              2.4815445048417097e-13,
+              -1.1673183667266957e-13
+            ],
+            [
+              -3.6525324266102215e-12,
+              3.245104057485124e-13,
+              -5.699889509968801e-14
+            ],
+            [
+              -2.0068558642321446e-13,
+              3.8993862064915836e-14,
+              3.3845807281471004e-14
+            ]
+          ],
+          "free_energy_eV": -9.27442549918609,
+          "gpaw_version": "26.7.0",
+          "gpw": {
+            "bytes": 27180012,
+            "path": "ground.gpw",
+            "sha256": "3a2ca462d92336bcd05b665a83fb77a78cc445301a644aa30a623059d884b3d6"
+          },
+          "ion_scope": "All ions fixed; only electrons relax. D represented by H in the Born-Oppenheimer electronic Hamiltonian.",
+          "occupation_width_eV": 0.1,
+          "scf_nbands": 29
+        },
+        "Pd_hydro_+0pct-8-DDfar": {
+          "PW_ecut_eV": 500.0,
+          "actual_neutral_valence_electrons": 82.0,
+          "case": "Pd_hydro_+0pct-8-DDfar",
+          "config": {
+            "DD_nearest_image_A": 2.7506453788156704,
+            "case": "Pd_hydro_+0pct-8-DDfar",
+            "endpoint": "DDfar",
+            "expected_wall_s": 300,
+            "geometry": {
+              "cell_A": [
+                [
+                  0.0,
+                  3.8900000000000006,
+                  3.8900000000000006
+                ],
+                [
+                  3.8900000000000006,
+                  0.0,
+                  3.8900000000000006
+                ],
+                [
+                  3.8900000000000006,
+                  3.8900000000000006,
+                  0.0
+                ]
+              ],
+              "initial_moments_muB": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "pbc": [
+                true,
+                true,
+                true
+              ],
+              "positions_A": [
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  1.945,
+                  1.945
+                ],
+                [
+                  1.945,
+                  0.0,
+                  1.945
+                ],
+                [
+                  1.945,
+                  1.945,
+                  0.0
+                ],
+                [
+                  3.89,
+                  3.89,
+                  3.89
+                ],
+                [
+                  3.89,
+                  1.9450000000000003,
+                  1.9450000000000003
+                ],
+                [
+                  1.9450000000000003,
+                  3.89,
+                  1.9450000000000003
+                ],
+                [
+                  1.9450000000000003,
+                  1.9450000000000003,
+                  3.89
+                ],
+                [
+                  1.9450000000000003,
+                  1.9450000000000003,
+                  1.9450000000000003
+                ],
+                [
+                  1.9450000000000003,
+                  0.0,
+                  0.0
+                ]
+              ],
+              "symbols": [
+                "Pd",
+                "Pd",
+                "Pd",
+                "Pd",
+                "Pd",
+                "Pd",
+                "Pd",
+                "Pd",
+                "H",
+                "H"
+              ]
+            },
+            "host": "Pd_hydro_+0pct",
+            "kmesh": [
+              4,
+              4,
+              4
+            ],
+            "metal_atoms": 8,
+            "minimum_host_image_A": 5.501290757631341,
+            "site_definition": "A body octahedron (six Pd); B edge octahedron (six Pd in Pd, four Pd/two Rh in L12). Same A/B sites in both cells; He at A.",
+            "spinpol": false,
+            "valence_electrons": 82
+          },
+          "elapsed_wall_s": 388.8002027850598,
+          "energy_extrapolated_zero_temperature_eV": -34.941068302831916,
+          "forces_eV_A": [
+            [
+              -0.4942657091472437,
+              4.661138028526327e-06,
+              6.3709750262706155e-06
+            ],
+            [
+              -0.4942739164005676,
+              -1.2659422075214607e-06,
+              2.633917256409162e-06
+            ],
+            [
+              2.7207205338354535e-06,
+              -0.48633582183750723,
+              0.48634052654948096
+            ],
+            [
+              2.168139858512213e-06,
+              0.4863432080180515,
+              -0.4863362830425847
+            ],
+            [
+              0.494275982758462,
+              -1.5271840735034225e-06,
+              -4.2382393949620455e-06
+            ],
+            [
+              0.4942520897695069,
+              -8.75793707015377e-06,
+              -6.170047384403666e-06
+            ],
+            [
+              -3.0721917993027507e-06,
+              0.48635287557605433,
+              -0.48635633422535873
+            ],
+            [
+              -3.617751371590433e-07,
+              -0.486356511965901,
+              0.4863498567809478
+            ],
+            [
+              3.0661465263901423e-06,
+              -1.722216960271997e-06,
+              -4.282130489397671e-06
+            ],
+            [
+              -1.7341285265634914e-05,
+              4.590915548276944e-06,
+              2.1709610838685023e-06
+            ]
+          ],
+          "free_energy_eV": -35.17873393744885,
+          "gpaw_version": "26.7.0",
+          "gpw": {
+            "bytes": 90593978,
+            "path": "ground.gpw",
+            "sha256": "e1ec949bb265ec78e1db526c361cfe4dddd456ef19f0846f85f33ea72d473224"
+          },
+          "ion_scope": "All ions fixed; only electrons relax. D represented by H in the Born-Oppenheimer electronic Hamiltonian.",
+          "occupation_width_eV": 0.1,
+          "scf_nbands": 49
+        },
+        "Pd_hydro_+0pct-8-He": {
+          "PW_ecut_eV": 500.0,
+          "actual_neutral_valence_electrons": 82.0,
+          "case": "Pd_hydro_+0pct-8-He",
+          "config": {
+            "DD_nearest_image_A": 2.7506453788156704,
+            "case": "Pd_hydro_+0pct-8-He",
+            "endpoint": "He",
+            "expected_wall_s": 300,
+            "geometry": {
+              "cell_A": [
+                [
+                  0.0,
+                  3.8900000000000006,
+                  3.8900000000000006
+                ],
+                [
+                  3.8900000000000006,
+                  0.0,
+                  3.8900000000000006
+                ],
+                [
+                  3.8900000000000006,
+                  3.8900000000000006,
+                  0.0
+                ]
+              ],
+              "initial_moments_muB": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "pbc": [
+                true,
+                true,
+                true
+              ],
+              "positions_A": [
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  1.945,
+                  1.945
+                ],
+                [
+                  1.945,
+                  0.0,
+                  1.945
+                ],
+                [
+                  1.945,
+                  1.945,
+                  0.0
+                ],
+                [
+                  3.89,
+                  3.89,
+                  3.89
+                ],
+                [
+                  3.89,
+                  1.9450000000000003,
+                  1.9450000000000003
+                ],
+                [
+                  1.9450000000000003,
+                  3.89,
+                  1.9450000000000003
+                ],
+                [
+                  1.9450000000000003,
+                  1.9450000000000003,
+                  3.89
+                ],
+                [
+                  1.9450000000000003,
+                  1.9450000000000003,
+                  1.9450000000000003
+                ]
+              ],
+              "symbols": [
+                "Pd",
+                "Pd",
+                "Pd",
+                "Pd",
+                "Pd",
+                "Pd",
+                "Pd",
+                "Pd",
+                "He"
+              ]
+            },
+            "host": "Pd_hydro_+0pct",
+            "kmesh": [
+              4,
+              4,
+              4
+            ],
+            "metal_atoms": 8,
+            "minimum_host_image_A": 5.501290757631341,
+            "site_definition": "A body octahedron (six Pd); B edge octahedron (six Pd in Pd, four Pd/two Rh in L12). Same A/B sites in both cells; He at A.",
+            "spinpol": false,
+            "valence_electrons": 82
+          },
+          "elapsed_wall_s": 381.7408377593383,
+          "energy_extrapolated_zero_temperature_eV": -23.445055804038542,
+          "forces_eV_A": [
+            [
+              -2.4943225223841885e-06,
+              2.1597590828683766e-06,
+              -9.518723003715381e-07
+            ],
+            [
+              -2.098173139949073,
+              -1.831166512789758e-06,
+              -2.868932579487603e-07
+            ],
+            [
+              7.848749211158482e-07,
+              -2.0982237253512985,
+              2.2007971571876407e-07
+            ],
+            [
+              1.2864948878520013e-06,
+              3.999919529013645e-09,
+              -2.0981947484330052
+            ],
+            [
+              -7.753680581363437e-07,
+              1.8038805043756377e-06,
+              -1.2189975592538225e-08
+            ],
+            [
+              2.0981769386683364,
+              -2.9716050425588346e-06,
+              2.4080924057528635e-07
+            ],
+            [
+              1.4039647566946654e-06,
+              2.098216632679324,
+              -7.836370808095394e-08
+            ],
+            [
+              2.2429489895631218e-06,
+              -7.063261400325151e-07,
+              2.0981946921588945
+            ],
+            [
+              -8.956056437560056e-06,
+              9.158971133680255e-06,
+              -6.92897102195901e-07
+            ]
+          ],
+          "free_energy_eV": -23.677052881129505,
+          "gpaw_version": "26.7.0",
+          "gpw": {
+            "bytes": 90452502,
+            "path": "ground.gpw",
+            "sha256": "45d9011f5f82522c655614faa4daed3f27774729f41e89390e31c8c1ceac0f44"
+          },
+          "ion_scope": "All ions fixed; only electrons relax. D represented by H in the Born-Oppenheimer electronic Hamiltonian.",
+          "occupation_width_eV": 0.1,
+          "scf_nbands": 49
+        },
+        "vacuum-H-10A": {
+          "PW_ecut_eV": 500.0,
+          "actual_neutral_valence_electrons": 1.0,
+          "case": "vacuum-H-10A",
+          "config": {
+            "case": "vacuum-H-10A",
+            "endpoint": "H",
+            "expected_wall_s": 180,
+            "geometry": {
+              "cell_A": [
+                [
+                  10.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  10.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  10.0
+                ]
+              ],
+              "initial_moments_muB": [
+                1.0
+              ],
+              "pbc": [
+                true,
+                true,
+                true
+              ],
+              "positions_A": [
+                [
+                  5.0,
+                  5.0,
+                  5.0
+                ]
+              ],
+              "symbols": [
+                "H"
+              ]
+            },
+            "host": "vacuum",
+            "kmesh": [
+              1,
+              1,
+              1
+            ],
+            "metal_atoms": 0,
+            "spinpol": true,
+            "vacuum_box_A": 10.0,
+            "valence_electrons": 1
+          },
+          "elapsed_wall_s": 16.435809521004558,
+          "energy_extrapolated_zero_temperature_eV": -1.1115890473012446,
+          "forces_eV_A": [
+            [
+              -1.6665603603444836e-07,
+              3.4234804217154094e-08,
+              9.515275960560379e-08
+            ]
+          ],
+          "free_energy_eV": -1.11158904730596,
+          "gpaw_version": "26.7.0",
+          "gpw": {
+            "bytes": 13348458,
+            "path": "ground.gpw",
+            "sha256": "041c10a56031cc3b33f436089c860b2aacd2913a33ecb58fffeafdf7e93e930d"
+          },
+          "ion_scope": "All ions fixed; only electrons relax. D represented by H in the Born-Oppenheimer electronic Hamiltonian.",
+          "occupation_width_eV": 0.01,
+          "scf_nbands": 9
+        },
+        "vacuum-H-8A": {
+          "PW_ecut_eV": 500.0,
+          "actual_neutral_valence_electrons": 1.0,
+          "case": "vacuum-H-8A",
+          "config": {
+            "case": "vacuum-H-8A",
+            "endpoint": "H",
+            "expected_wall_s": 180,
+            "geometry": {
+              "cell_A": [
+                [
+                  8.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  8.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  8.0
+                ]
+              ],
+              "initial_moments_muB": [
+                1.0
+              ],
+              "pbc": [
+                true,
+                true,
+                true
+              ],
+              "positions_A": [
+                [
+                  4.0,
+                  4.0,
+                  4.0
+                ]
+              ],
+              "symbols": [
+                "H"
+              ]
+            },
+            "host": "vacuum",
+            "kmesh": [
+              1,
+              1,
+              1
+            ],
+            "metal_atoms": 0,
+            "spinpol": true,
+            "vacuum_box_A": 8.0,
+            "valence_electrons": 1
+          },
+          "elapsed_wall_s": 6.772330346517265,
+          "energy_extrapolated_zero_temperature_eV": -1.11261812683752,
+          "forces_eV_A": [
+            [
+              -2.2105505596662318e-07,
+              3.739884344234395e-08,
+              1.1574636160355237e-07
+            ]
+          ],
+          "free_energy_eV": -1.112618126846838,
+          "gpaw_version": "26.7.0",
+          "gpw": {
+            "bytes": 6632883,
+            "path": "ground.gpw",
+            "sha256": "0044e031f545117f4ccc9708f8374e264c2ae40f7c151a8b3bc02a6391578e41"
+          },
+          "ion_scope": "All ions fixed; only electrons relax. D represented by H in the Born-Oppenheimer electronic Hamiltonian.",
+          "occupation_width_eV": 0.01,
+          "scf_nbands": 9
+        },
+        "vacuum-He-10A": {
+          "PW_ecut_eV": 500.0,
+          "actual_neutral_valence_electrons": 2.0,
+          "case": "vacuum-He-10A",
+          "config": {
+            "case": "vacuum-He-10A",
+            "endpoint": "He",
+            "expected_wall_s": 180,
+            "geometry": {
+              "cell_A": [
+                [
+                  10.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  10.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  10.0
+                ]
+              ],
+              "initial_moments_muB": [
+                0.0
+              ],
+              "pbc": [
+                true,
+                true,
+                true
+              ],
+              "positions_A": [
+                [
+                  5.0,
+                  5.0,
+                  5.0
+                ]
+              ],
+              "symbols": [
+                "He"
+              ]
+            },
+            "host": "vacuum",
+            "kmesh": [
+              1,
+              1,
+              1
+            ],
+            "metal_atoms": 0,
+            "spinpol": false,
+            "vacuum_box_A": 10.0,
+            "valence_electrons": 2
+          },
+          "elapsed_wall_s": 6.520050894469023,
+          "energy_extrapolated_zero_temperature_eV": 0.009927812692749125,
+          "forces_eV_A": [
+            [
+              -2.3085284172390735e-07,
+              1.468897535814203e-06,
+              2.706924292506889e-07
+            ]
+          ],
+          "free_energy_eV": 0.009927812692749125,
+          "gpaw_version": "26.7.0",
+          "gpw": {
+            "bytes": 8998469,
+            "path": "ground.gpw",
+            "sha256": "4ae2cc3b7ee0897e2de9dec5895f9cf2c5fa33b56237349585f4c6e325f74a29"
+          },
+          "ion_scope": "All ions fixed; only electrons relax. D represented by H in the Born-Oppenheimer electronic Hamiltonian.",
+          "occupation_width_eV": 0.01,
+          "scf_nbands": 9
+        },
+        "vacuum-He-8A": {
+          "PW_ecut_eV": 500.0,
+          "actual_neutral_valence_electrons": 2.0,
+          "case": "vacuum-He-8A",
+          "config": {
+            "case": "vacuum-He-8A",
+            "endpoint": "He",
+            "expected_wall_s": 180,
+            "geometry": {
+              "cell_A": [
+                [
+                  8.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  8.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  8.0
+                ]
+              ],
+              "initial_moments_muB": [
+                0.0
+              ],
+              "pbc": [
+                true,
+                true,
+                true
+              ],
+              "positions_A": [
+                [
+                  4.0,
+                  4.0,
+                  4.0
+                ]
+              ],
+              "symbols": [
+                "He"
+              ]
+            },
+            "host": "vacuum",
+            "kmesh": [
+              1,
+              1,
+              1
+            ],
+            "metal_atoms": 0,
+            "spinpol": false,
+            "vacuum_box_A": 8.0,
+            "valence_electrons": 2
+          },
+          "elapsed_wall_s": 3.1195875629782677,
+          "energy_extrapolated_zero_temperature_eV": 0.009853229266662312,
+          "forces_eV_A": [
+            [
+              2.7044598002692614e-07,
+              2.4743065747849234e-07,
+              3.488399933019248e-07
+            ]
+          ],
+          "free_energy_eV": 0.009853229266662312,
+          "gpaw_version": "26.7.0",
+          "gpw": {
+            "bytes": 4507980,
+            "path": "ground.gpw",
+            "sha256": "881abf9bd84bd7e9ec564917af07e26b0acf2a1f702cb56c6e50e8eaa5b6d4e2"
+          },
+          "ion_scope": "All ions fixed; only electrons relax. D represented by H in the Born-Oppenheimer electronic Hamiltonian.",
+          "occupation_width_eV": 0.01,
+          "scf_nbands": 9
+        }
+      },
+      "Pd3Rh": {
+        "Pd3Rh_L12-4-DDfar": {
+          "PW_ecut_eV": 500.0,
+          "actual_neutral_valence_electrons": 41.0,
+          "case": "Pd3Rh_L12-4-DDfar",
+          "config": {
+            "DD_nearest_image_A": 2.7759623179244715,
+            "case": "Pd3Rh_L12-4-DDfar",
+            "endpoint": "DDfar",
+            "expected_wall_s": 120,
+            "geometry": {
+              "cell_A": [
+                [
+                  3.925803558645441,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  3.925803558645441,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  3.925803558645441
+                ]
+              ],
+              "initial_moments_muB": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "pbc": [
+                true,
+                true,
+                true
+              ],
+              "positions_A": [
+                [
+                  0.0,
+                  3.2521286895312093e-18,
+                  6.650569917241737e-21
+                ],
+                [
+                  -6.650569917241737e-20,
+                  1.9629017793227195,
+                  1.9629017793227195
+                ],
+                [
+                  1.9629017793227195,
+                  2.3942051702070253e-19,
+                  1.9629017793227195
+                ],
+                [
+                  1.9629017793227195,
+                  1.9629017793227195,
+                  5.187444535448555e-19
+                ],
+                [
+                  1.9629017793227206,
+                  1.9629017793227206,
+                  1.9629017793227206
+                ],
+                [
+                  1.9629017793227206,
+                  0.0,
+                  0.0
+                ]
+              ],
+              "symbols": [
+                "Rh",
+                "Pd",
+                "Pd",
+                "Pd",
+                "H",
+                "H"
+              ]
+            },
+            "host": "Pd3Rh_L12",
+            "kmesh": [
+              4,
+              4,
+              4
+            ],
+            "metal_atoms": 4,
+            "minimum_host_image_A": 3.925803558645441,
+            "site_definition": "A body octahedron (six Pd); B edge octahedron (six Pd in Pd, four Pd/two Rh in L12). Same A/B sites in both cells; He at A.",
+            "spinpol": false,
+            "valence_electrons": 41
+          },
+          "elapsed_wall_s": 79.77226497791708,
+          "energy_extrapolated_zero_temperature_eV": -23.99748816578787,
+          "forces_eV_A": [
+            [
+              -6.9953512415488765e-15,
+              -1.9395169667635154e-14,
+              3.459410097216838e-15
+            ],
+            [
+              7.632731684437865e-15,
+              4.568265935540408e-15,
+              -7.654971216288454e-15
+            ],
+            [
+              -1.9020588969870738e-15,
+              -8.157976527032723e-15,
+              1.1494583510931034e-14
+            ],
+            [
+              1.4540734766375745e-14,
+              4.114557764857619e-14,
+              -1.2573713753193087e-14
+            ],
+            [
+              1.0189833394791171e-15,
+              6.22609016522896e-15,
+              3.07340880442581e-15
+            ],
+            [
+              -2.7727372057616013e-15,
+              -2.4938154809710123e-14,
+              -2.07384316034485e-14
+            ]
+          ],
+          "free_energy_eV": -24.112442114803933,
+          "gpaw_version": "26.7.0",
+          "gpw": {
+            "bytes": 28247972,
+            "path": "ground.gpw",
+            "sha256": "b84a10e39035ca7f46a38270b770279cce2e2bb44c62537cd0e3d27c8883c5b2"
+          },
+          "ion_scope": "All ions fixed; only electrons relax. D represented by H in the Born-Oppenheimer electronic Hamiltonian.",
+          "occupation_width_eV": 0.1,
+          "scf_nbands": 29
+        },
+        "Pd3Rh_L12-4-He": {
+          "PW_ecut_eV": 500.0,
+          "actual_neutral_valence_electrons": 41.0,
+          "case": "Pd3Rh_L12-4-He",
+          "config": {
+            "DD_nearest_image_A": 2.7759623179244715,
+            "case": "Pd3Rh_L12-4-He",
+            "endpoint": "He",
+            "expected_wall_s": 120,
+            "geometry": {
+              "cell_A": [
+                [
+                  3.925803558645441,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  3.925803558645441,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  3.925803558645441
+                ]
+              ],
+              "initial_moments_muB": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "pbc": [
+                true,
+                true,
+                true
+              ],
+              "positions_A": [
+                [
+                  0.0,
+                  3.2521286895312093e-18,
+                  6.650569917241737e-21
+                ],
+                [
+                  -6.650569917241737e-20,
+                  1.9629017793227195,
+                  1.9629017793227195
+                ],
+                [
+                  1.9629017793227195,
+                  2.3942051702070253e-19,
+                  1.9629017793227195
+                ],
+                [
+                  1.9629017793227195,
+                  1.9629017793227195,
+                  5.187444535448555e-19
+                ],
+                [
+                  1.9629017793227206,
+                  1.9629017793227206,
+                  1.9629017793227206
+                ]
+              ],
+              "symbols": [
+                "Rh",
+                "Pd",
+                "Pd",
+                "Pd",
+                "He"
+              ]
+            },
+            "host": "Pd3Rh_L12",
+            "kmesh": [
+              4,
+              4,
+              4
+            ],
+            "metal_atoms": 4,
+            "minimum_host_image_A": 3.925803558645441,
+            "site_definition": "A body octahedron (six Pd); B edge octahedron (six Pd in Pd, four Pd/two Rh in L12). Same A/B sites in both cells; He at A.",
+            "spinpol": false,
+            "valence_electrons": 41
+          },
+          "elapsed_wall_s": 75.0303214173764,
+          "energy_extrapolated_zero_temperature_eV": -12.46540516379128,
+          "forces_eV_A": [
+            [
+              -1.2119325835535691e-12,
+              -1.7515662524105314e-12,
+              -4.7294650694464126e-14
+            ],
+            [
+              -5.0444418946089995e-12,
+              2.9763847192171207e-12,
+              3.725434827320386e-14
+            ],
+            [
+              6.9071895342155e-12,
+              -2.1746028710391964e-12,
+              8.366205276147145e-16
+            ],
+            [
+              5.373230331652687e-12,
+              2.9183367335969883e-12,
+              -3.3764177327334375e-15
+            ],
+            [
+              8.101426561826065e-13,
+              4.387404519062982e-13,
+              8.379764427105675e-15
+            ]
+          ],
+          "free_energy_eV": -12.597770238229739,
+          "gpaw_version": "26.7.0",
+          "gpw": {
+            "bytes": 28164107,
+            "path": "ground.gpw",
+            "sha256": "2a134118e158d104098bd74689ffb7d637ecbe485cc9eb63c9d6a639108b579e"
+          },
+          "ion_scope": "All ions fixed; only electrons relax. D represented by H in the Born-Oppenheimer electronic Hamiltonian.",
+          "occupation_width_eV": 0.1,
+          "scf_nbands": 29
+        },
+        "Pd3Rh_L12-8-DDfar": {
+          "PW_ecut_eV": 500.0,
+          "actual_neutral_valence_electrons": 80.0,
+          "case": "Pd3Rh_L12-8-DDfar",
+          "config": {
+            "DD_nearest_image_A": 2.7759623179244715,
+            "case": "Pd3Rh_L12-8-DDfar",
+            "endpoint": "DDfar",
+            "expected_wall_s": 300,
+            "geometry": {
+              "cell_A": [
+                [
+                  0.0,
+                  3.925803558645441,
+                  3.925803558645441
+                ],
+                [
+                  3.925803558645441,
+                  0.0,
+                  3.925803558645441
+                ],
+                [
+                  3.925803558645441,
+                  3.925803558645441,
+                  0.0
+                ]
+              ],
+              "initial_moments_muB": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "pbc": [
+                true,
+                true,
+                true
+              ],
+              "positions_A": [
+                [
+                  0.0,
+                  3.2521286895312093e-18,
+                  6.650569917241641e-21
+                ],
+                [
+                  -6.650569917241737e-20,
+                  1.9629017793227195,
+                  1.9629017793227195
+                ],
+                [
+                  1.9629017793227195,
+                  2.3942051702070253e-19,
+                  1.9629017793227195
+                ],
+                [
+                  1.9629017793227195,
+                  1.9629017793227195,
+                  0.0
+                ],
+                [
+                  3.9258035586454407,
+                  3.9258035586454407,
+                  3.9258035586454407
+                ],
+                [
+                  3.9258035586454407,
+                  1.9629017793227195,
+                  1.9629017793227184
+                ],
+                [
+                  1.9629017793227195,
+                  3.9258035586454407,
+                  1.9629017793227184
+                ],
+                [
+                  1.9629017793227197,
+                  1.9629017793227197,
+                  3.9258035586454407
+                ],
+                [
+                  1.9629017793227206,
+                  1.9629017793227206,
+                  1.9629017793227206
+                ],
+                [
+                  1.9629017793227206,
+                  0.0,
+                  0.0
+                ]
+              ],
+              "symbols": [
+                "Rh",
+                "Pd",
+                "Pd",
+                "Pd",
+                "Rh",
+                "Pd",
+                "Pd",
+                "Pd",
+                "H",
+                "H"
+              ]
+            },
+            "host": "Pd3Rh_L12",
+            "kmesh": [
+              4,
+              4,
+              4
+            ],
+            "metal_atoms": 8,
+            "minimum_host_image_A": 5.551924635848943,
+            "site_definition": "A body octahedron (six Pd); B edge octahedron (six Pd in Pd, four Pd/two Rh in L12). Same A/B sites in both cells; He at A.",
+            "spinpol": false,
+            "valence_electrons": 80
+          },
+          "elapsed_wall_s": 407.92098573595285,
+          "energy_extrapolated_zero_temperature_eV": -41.58390751685106,
+          "forces_eV_A": [
+            [
+              -0.3992570866660147,
+              2.5233024036742834e-07,
+              2.2914602086551592e-07
+            ],
+            [
+              -0.42447967667374015,
+              3.191529334183881e-07,
+              4.842150851433155e-07
+            ],
+            [
+              2.799576562336841e-06,
+              -0.42647056033891406,
+              0.5100300057926359
+            ],
+            [
+              2.6865348204230325e-06,
+              0.5100298347052719,
+              -0.4264693079803208
+            ],
+            [
+              0.399254469575137,
+              1.579218878763021e-07,
+              1.074220828542311e-07
+            ],
+            [
+              0.42447766941766013,
+              -7.517096198927691e-08,
+              -4.18800247200791e-09
+            ],
+            [
+              2.407711704533073e-06,
+              0.42646942742142163,
+              -0.5100299595141683
+            ],
+            [
+              2.625491037320485e-06,
+              -0.5100299008580317,
+              0.42647060599223824
+            ],
+            [
+              -2.582400142948901e-06,
+              5.3106903812667304e-08,
+              -4.5267126104545007e-08
+            ],
+            [
+              6.285988454706154e-07,
+              8.833465627365087e-08,
+              -5.032647344072628e-08
+            ]
+          ],
+          "free_energy_eV": -41.82781214738426,
+          "gpaw_version": "26.7.0",
+          "gpw": {
+            "bytes": 91986016,
+            "path": "ground.gpw",
+            "sha256": "86baed8ffc41a5c633b4eefa8b275cc9bfd51dbdbaa3d118ce36b73d16c57b8a"
+          },
+          "ion_scope": "All ions fixed; only electrons relax. D represented by H in the Born-Oppenheimer electronic Hamiltonian.",
+          "occupation_width_eV": 0.1,
+          "scf_nbands": 48
+        },
+        "Pd3Rh_L12-8-He": {
+          "PW_ecut_eV": 500.0,
+          "actual_neutral_valence_electrons": 80.0,
+          "case": "Pd3Rh_L12-8-He",
+          "config": {
+            "DD_nearest_image_A": 2.7759623179244715,
+            "case": "Pd3Rh_L12-8-He",
+            "endpoint": "He",
+            "expected_wall_s": 300,
+            "geometry": {
+              "cell_A": [
+                [
+                  0.0,
+                  3.925803558645441,
+                  3.925803558645441
+                ],
+                [
+                  3.925803558645441,
+                  0.0,
+                  3.925803558645441
+                ],
+                [
+                  3.925803558645441,
+                  3.925803558645441,
+                  0.0
+                ]
+              ],
+              "initial_moments_muB": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "pbc": [
+                true,
+                true,
+                true
+              ],
+              "positions_A": [
+                [
+                  0.0,
+                  3.2521286895312093e-18,
+                  6.650569917241641e-21
+                ],
+                [
+                  -6.650569917241737e-20,
+                  1.9629017793227195,
+                  1.9629017793227195
+                ],
+                [
+                  1.9629017793227195,
+                  2.3942051702070253e-19,
+                  1.9629017793227195
+                ],
+                [
+                  1.9629017793227195,
+                  1.9629017793227195,
+                  0.0
+                ],
+                [
+                  3.9258035586454407,
+                  3.9258035586454407,
+                  3.9258035586454407
+                ],
+                [
+                  3.9258035586454407,
+                  1.9629017793227195,
+                  1.9629017793227184
+                ],
+                [
+                  1.9629017793227195,
+                  3.9258035586454407,
+                  1.9629017793227184
+                ],
+                [
+                  1.9629017793227197,
+                  1.9629017793227197,
+                  3.9258035586454407
+                ],
+                [
+                  1.9629017793227206,
+                  1.9629017793227206,
+                  1.9629017793227206
+                ]
+              ],
+              "symbols": [
+                "Rh",
+                "Pd",
+                "Pd",
+                "Pd",
+                "Rh",
+                "Pd",
+                "Pd",
+                "Pd",
+                "He"
+              ]
+            },
+            "host": "Pd3Rh_L12",
+            "kmesh": [
+              4,
+              4,
+              4
+            ],
+            "metal_atoms": 8,
+            "minimum_host_image_A": 5.551924635848943,
+            "site_definition": "A body octahedron (six Pd); B edge octahedron (six Pd in Pd, four Pd/two Rh in L12). Same A/B sites in both cells; He at A.",
+            "spinpol": false,
+            "valence_electrons": 80
+          },
+          "elapsed_wall_s": 417.52450326643884,
+          "energy_extrapolated_zero_temperature_eV": -30.09608568593426,
+          "forces_eV_A": [
+            [
+              -1.1528463890250823e-07,
+              -2.5781539512447566e-06,
+              4.832594458618693e-07
+            ],
+            [
+              -2.095270751778398,
+              3.4580856208306267e-06,
+              9.6764153419742e-07
+            ],
+            [
+              -7.766613152337944e-07,
+              -2.095287285682597,
+              2.1732567823901435e-06
+            ],
+            [
+              4.617866836287276e-06,
+              1.4201642335981428e-06,
+              -2.095245767353754
+            ],
+            [
+              -2.9667854225169277e-06,
+              -9.336260920234949e-07,
+              -1.116093680802072e-06
+            ],
+            [
+              2.09530477272047,
+              6.364138292491961e-07,
+              7.395342368244088e-07
+            ],
+            [
+              -3.242008930322016e-06,
+              2.095273338727792,
+              1.0527240335996923e-06
+            ],
+            [
+              8.260017500350075e-06,
+              -3.5515423521070282e-06,
+              2.0952341532802494
+            ],
+            [
+              1.3203880565324491e-05,
+              1.58808472110369e-05,
+              9.497508925632021e-06
+            ]
+          ],
+          "free_energy_eV": -30.335674709069266,
+          "gpaw_version": "26.7.0",
+          "gpw": {
+            "bytes": 91847426,
+            "path": "ground.gpw",
+            "sha256": "cebc17eeb9a262719377edc179a7bb9c0852bf1059a8f930dc6f7d0b152aeec4"
+          },
+          "ion_scope": "All ions fixed; only electrons relax. D represented by H in the Born-Oppenheimer electronic Hamiltonian.",
+          "occupation_width_eV": 0.1,
+          "scf_nbands": 48
+        }
+      }
+    },
+    "interpretation": "Neutral fixed-ion adiabatic total and metal excess are distinct. Neither is an ionic-beam limit or an all-electron material calculation; Pd/Rh core remains frozen. Do not add either to the independent RPA/Yukawa proxy. Raw GPAW cross-species differences are not physical without restoring reference energies.",
+    "observed_control_slope_span_eV_per_eV": [
+      -1.353144596617992,
+      1.2205174632072995
+    ],
+    "occupied_Pd_d_centres_relative_EF_eV": [
+      -2.4238674357280985,
+      -2.547381646824042
+    ],
+    "schema": "coherence-neutral-adiabatic-v1",
+    "slope_eligible": true,
+    "slope_scope": "Two-host association at the declared sites, conditional on computed occupied Pd-projected centres; interval propagates observed controls only, not statistical confidence or full physical uncertainty.",
+    "sources": {
+      "Pd": {
+        "completed": {
+          "bytes": 2060,
+          "path": "completed.json",
+          "sha256": "0dd3abf8009b6e455133c30cf68c744966a31cc2e5c5ffc6c8906a3ab155ebf2"
+        },
+        "producer": {
+          "bytes": 1993,
+          "path": "producer.json",
+          "sha256": "c2fbc92e6927039abab15b749075fe26d431205be48b0ecc47fcd68c7ae9908e"
+        }
+      },
+      "Pd3Rh": {
+        "completed": {
+          "bytes": 1136,
+          "path": "completed.json",
+          "sha256": "4218a02cdeb513d5ee261916b441236a89f6d92aa6fd497de20635f7e18afee3"
+        },
+        "producer": {
+          "bytes": 1993,
+          "path": "producer.json",
+          "sha256": "b5e4ebec288842f772a1cc04adf8260c4a74b29b7682e2ab3ef17f9fc03b001a"
+        }
+      },
+      "consumer": {
+        "bytes": 8135,
+        "path": "read_neutral_cycle.py",
+        "sha256": "6577091c5bf1da921d0237c1d8a0f6f482e5b1d7df92183b83f3afd0c3e74ece"
+      },
+      "qualified_DOS_rows": {
+        "bytes": 65786,
+        "path": "tier1-AC-readout-qualified.json",
+        "sha256": "8f0c02005fd7dbdadf36d349ee8209dd77fe78cc4e3f403328c1e91e50294750"
+      },
+      "reference_calibration": {
+        "bytes": 2664,
+        "path": "neutral-reference-calibration.json",
+        "sha256": "015c074fa852e39a932fa3b6d41dea5bc6c92dcab75fc9ec40cbaa34761c5aaa"
+      }
+    },
+    "two_host_slope_eV_per_eV": -0.06631356670534634
+  },
+  "not_computed_materials": [
+    "PdD_x0.5"
+  ],
+  "numerical_controls": {
+    "Pd_DOS": {
+      "N_EF_tetrahedron_states_per_eV_per_cell": [
+        2.055141384047781,
+        2.0451809356135753,
+        2.1033780678330847
+      ],
+      "k32_status": "Completed ground checkpoint admitted after downstream RPA cancellation; not a completed invocation",
+      "k_meshes": [
+        12,
+        24,
+        32
+      ],
+      "passed": true,
+      "relative_changes_12_24_24_32_12_32": [
+        0.0048702040297561745,
+        0.027668412592827166,
+        0.022932959377577534
+      ],
+      "scope": "Pd-only k-mesh DOS control requested by Axiom1162",
+      "sources": [
+        {
+          "bytes": 1504,
+          "path": "p4-pd0-fp-20261116t194914-intake.json",
+          "sha256": "d7c428ae9b38467fd299a0717ee2c9c36c54f205023c371e90494454f7cb570d"
+        },
+        {
+          "bytes": 5711,
+          "path": "Pd-k-control-intake.json",
+          "sha256": "6628c5a2dd96472c2fb2c36e34bc71089b233c19a66d61b9b9773b86da10e515"
+        }
+      ],
+      "tolerance": 0.05,
+      "transfer_scope": "Only the explicitly requested Pd k control; not an independent per-material5% proof"
+    },
+    "Pd_lambda": {
+      "Bohr_mutation_lambda_A": 0.7558904503347714,
+      "analytic_TF_lambda_A": 0.4000000000000001,
+      "k12": {
+        "Ue_static_Yukawa_proxy_eV": 36.22746936148262,
+        "fit": "q^2(epsilon_M-1)=kappa^2+regular*q^2",
+        "kappa_squared_Ainv2": 6.329543714499573,
+        "lambda_A": 0.39747864274672146,
+        "model": "Valence-PAW static RPA low-q length; C/lambda is a Yukawa proxy, not a full-RPA near-origin shift",
+        "q_Ainv": [
+          0.23313616506866555,
+          0.4662723301373311,
+          0.6994084952059967
+        ],
+        "q_squared_epsilon_minus_one_Ainv2": [
+          6.368536379843924,
+          6.042569752752678,
+          6.016060767912286
+        ],
+        "q_window_lambda_span_A": [
+          0.3929222453961441,
+          0.407702986549628
+        ],
+        "q_window_pass_10percent": true,
+        "q_window_relative_spread": 0.025723001699544445
+      },
+      "k24_cutoff50": {
+        "Ue_static_Yukawa_proxy_eV": 36.50671640516003,
+        "fit": "q^2(epsilon_M-1)=kappa^2+regular*q^2",
+        "kappa_squared_Ainv2": 6.427498029841662,
+        "lambda_A": 0.394438250543816,
+        "model": "Valence-PAW static RPA low-q length; C/lambda is a Yukawa proxy, not a full-RPA near-origin shift",
+        "q_Ainv": [
+          0.11656808253433278,
+          0.23313616506866555,
+          0.34970424760299834
+        ],
+        "q_squared_epsilon_minus_one_Ainv2": [
+          6.420666264744222,
+          6.356531963779735,
+          6.300553635456456
+        ],
+        "q_window_lambda_span_A": [
+          0.3939926719905434,
+          0.39839203175361965
+        ],
+        "q_window_pass_10percent": true,
+        "q_window_relative_spread": 0.010023828075376828
+      },
+      "k_relative_change": 0.007708157610763378,
+      "passed": true,
+      "radial_force_derivative_check": 0.00813721890566263,
+      "role": "Actual Pd small-q length qualification",
+      "scope": "Numerical small-q valence-PAW RPA/Yukawa proxy, not full-RPA near-origin screening",
+      "sources": [
+        {
+          "bytes": 2905,
+          "path": "readout.json",
+          "sha256": "fd0067b6f4d22b64bef70c0789173b377b031fb42fa3aed9f4aaa0d69eec731f"
+        },
+        {
+          "bytes": 2857,
+          "path": "response.json",
+          "sha256": "58c4c95486ed8a02e1348f93691ee8f3a47f99ef3aedece6273d572b8a825b80"
+        },
+        {
+          "bytes": 1457,
+          "path": "cutoff-restriction-proof.json",
+          "sha256": "603e21ef6aca811c3e1f910fde3102247f5a1d469ea2f10fbba450f1be855fff"
+        }
+      ],
+      "tolerance": 0.1
+    },
+    "control_scope": "Requested Pd-only k control; per-case q-window; Pd band/cutoff/eta controls transferred as an explicit model allowance, not independent all-material convergence."
+  },
+  "pooled_leave_one_out_central_slope_range_eV_per_eV": [
+    -11.133742310661077,
+    -1.7899168084695631
+  ],
+  "projection_scope": "PAW-projector occupied[-20,0]eV d moments, Gaussian0.1eV. Centroids are not all-valence DOS centres. N(EF) tetrahedron, per-cell and per-metal both explicit.",
+  "response_scope": "Valence-PAW PBE static low-q RPA, actual relaxed/fixed declared geometry; lambda from q^2(epsilon_M-1) intercept. Ue=C/lambda and force factors are explicitly Yukawa-model outputs, NOT near-origin full-RPA or all-electron screening potentials.",
+  "schema": "coherence-screen-tier1-scalars-v1",
+  "source_collection": {
+    "bytes": 129809,
+    "path": "scalars.json",
+    "sha256": "27b9779cc69fde09221eae6660c3e23c22eb1e5d0d91beb6a17d76be14c02d7a"
+  },
+  "strain_only_static_proxy_slope": {
+    "Ue_Yukawa_proxy_eV": [
+      36.849303431584154,
+      36.22746936148262,
+      35.68244514992993
+    ],
+    "conditional_lambda_allowance": 0.1,
+    "conditional_slope_interval_eV_per_eV": [
+      -17.611124172767106,
+      12.810309126512735
+    ],
+    "d_band_coordinate": "Pd",
+    "materials": [
+      "Pd_hydro_-2pct",
+      "Pd_hydro_+0pct",
+      "Pd_hydro_+2pct"
+    ],
+    "nonpositive_sign_resolved_under_this_allowance": false,
+    "occupied_d_centres_relative_EF_eV": [
+      -2.684491872366199,
+      -2.4238674357280985,
+      -2.193429522507739
+    ],
+    "positive_sign_resolved_under_this_allowance": false,
+    "scope": "OLS association conditional on the explicitly named occupied PAW d-centre coordinate and independent per-host +/-lambda allowance. Not statistical confidence, not uncertainty in the d-centre, not a universal or causal slope.",
+    "slope_eV_per_eV": -2.376403447895896
+  },
+  "tier1_complete": false
+}

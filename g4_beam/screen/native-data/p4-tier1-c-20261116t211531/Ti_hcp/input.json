@@ -1,0 +1,163 @@
+{
+  "case": "Ti_hcp",
+  "geometry": {
+    "symbols": [
+      "Ti",
+      "Ti"
+    ],
+    "positions_A": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        5.460446909448062e-17,
+        1.7037606443785855,
+        2.343
+      ]
+    ],
+    "cell_A": [
+      [
+        2.951,
+        0,
+        0
+      ],
+      [
+        -1.4755,
+        2.5556409665678785,
+        0
+      ],
+      [
+        0,
+        0,
+        4.686
+      ]
+    ],
+    "initial_magnetic_moments_muB": [
+      0,
+      0
+    ]
+  },
+  "model": "neutral collinear PBE / explicit valence PAW; static charge RPA",
+  "magnetic": false,
+  "valence_electrons": 24,
+  "setups": {
+    "Ti": "paw"
+  },
+  "setup_files": [
+    "Ti.PBE.gz"
+  ],
+  "relaxation": {
+    "mode": "hexagonal",
+    "max_steps": 60,
+    "force_tolerance_eV_A": 0.02,
+    "stress_tolerance_eV_A3": 0.0005
+  },
+  "metal_indices": [
+    0,
+    1
+  ],
+  "D_indices": [],
+  "note": "hcp representative; a,c and internal positions relaxed; supplied dimensions are initial seeds",
+  "isotope_convention": "H nuclear charge/electrons represent D in Born-Oppenheimer electronic quantities; no isotope kinetic prefactor inferred",
+  "schema": "coherence-screen-bulk-input-v1",
+  "ground_state": {
+    "ecut_eV": 500,
+    "kmesh": [
+      12,
+      12,
+      12
+    ],
+    "occupation_width_eV": 0.1,
+    "setups": {
+      "Ti": "paw"
+    },
+    "scf_nbands": 20,
+    "saved_nbands": 96,
+    "spinpol": false,
+    "convergence": {
+      "energy": 1e-7,
+      "density": 0.000001,
+      "eigenstates": 1e-9,
+      "bands": "occupied"
+    }
+  },
+  "dos": {
+    "widths_eV": [
+      0.1,
+      0.05
+    ],
+    "occupied_window_eV": [
+      -20,
+      0.005,
+      0.01
+    ],
+    "moment_width_eV": 0.1,
+    "metal_indices": [
+      0,
+      1
+    ]
+  },
+  "reuse_ground": null,
+  "runtime_source": {
+    "python": "3.12.3",
+    "gpaw": "26.7.0",
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "ase": "3.29.0",
+    "world_size": 1,
+    "source_files": [
+      {
+        "module": "gpaw.dos",
+        "path": "gpaw/dos.py",
+        "bytes": 9165,
+        "sha256": "e24cb9bdfa0ab6ae8a7a9ae8e7bcae58f8288115364444eaf01f1e01542b5ba5"
+      },
+      {
+        "module": "gpaw.new.ase_interface",
+        "path": "gpaw/new/ase_interface.py",
+        "bytes": 28239,
+        "sha256": "570c92ca14dd54fa46cd8c7137f1a822cba66392271b1d97229a7c2090275f0f"
+      },
+      {
+        "module": "gpaw.response.df",
+        "path": "gpaw/response/df.py",
+        "bytes": 34912,
+        "sha256": "4a12cd747199418babe7b03be947ce011e1cbc58f229979d398e44eb577ed4ef"
+      },
+      {
+        "module": "gpaw.response.groundstate",
+        "path": "gpaw/response/groundstate.py",
+        "bytes": 16980,
+        "sha256": "c4ed7ee5387be2d98c9332d17cd24ace6340fbb81a6ed09a5b8bdc72cac1a3e2"
+      },
+      {
+        "module": "gpaw.response.chi0",
+        "path": "gpaw/response/chi0.py",
+        "bytes": 19740,
+        "sha256": "1c3829261cef1d066d75e711e76af225b53d2d1fc14605b17a534c89b026b7d6"
+      },
+      {
+        "module": "gpaw.response.frequencies",
+        "path": "gpaw/response/frequencies.py",
+        "bytes": 5933,
+        "sha256": "49b3e6ed05b97db4a5f3879f5882cbeea1594f35854dcf61ac57f779df97183f"
+      }
+    ]
+  },
+  "cpu": 10,
+  "material_id": "Ti_hcp",
+  "kind": "dos",
+  "responses": [],
+  "scope": {
+    "authority": "Axiom entry_1162",
+    "tier": 1,
+    "lambda_tolerance_relative": 0.1,
+    "DOS_tolerance_relative": 0.05,
+    "static_Ue_definition": "Yukawa proxy C/lambda, not full-RPA near-origin Ue",
+    "k_control": "Pd only",
+    "screen_cap_core_min": 1000,
+    "absolute_stop_utc": "2026-11-17T00:00:00Z"
+  }
+}

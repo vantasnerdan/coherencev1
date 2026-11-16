@@ -1,0 +1,189 @@
+{
+  "case": "Ni",
+  "cell_volume_A3": 10.169484241503346,
+  "dos": {
+    "D_projected_n_EF_tetrahedron_states_per_eV_per_D": null,
+    "D_projected_n_EF_tetrahedron_states_per_eV_per_cell": null,
+    "D_projection_present": false,
+    "D_projector_channels": {},
+    "by_metal_element": {
+      "Ni": {
+        "occupied_d_centre_relative_EF_eV": -2.22580707831334,
+        "occupied_d_rms_width_eV": 1.3475674266826643,
+        "occupied_d_states_per_cell": 8.84940940801621
+      }
+    },
+    "eligible": false,
+    "fermi_energy_eV": 11.382402904976189,
+    "n_EF_states_per_eV_per_cell": {
+      "0.05": 2.1115735079311424,
+      "0.1": 1.8826523235609183
+    },
+    "n_EF_tetrahedron_states_per_eV_per_cell": 1.2758904696838589,
+    "nspins": 2,
+    "numerical_electron_count": 10.0,
+    "occupied_d_centre_relative_EF_eV": -2.22580707831334,
+    "occupied_d_rms_width_eV": 1.3475674266826643,
+    "occupied_d_states_per_cell": 8.84940940801621,
+    "reason": "Requires independent observable-level convergence qualification",
+    "settings": {
+      "metal_indices": [
+        0
+      ],
+      "moment_width_eV": 0.1,
+      "occupied_window_eV": [
+        -20,
+        0.005,
+        0.01
+      ],
+      "widths_eV": [
+        0.1,
+        0.05
+      ]
+    },
+    "spectrum": {
+      "bytes": 28546,
+      "path": "dos.npz",
+      "sha256": "fbd71319012a7b7a13f53fb0b6e153593543af85487bc5a070a78b7b452efa13"
+    },
+    "spin_degeneracy": 1.0
+  },
+  "forces_eV_A": [
+    [
+      0.0,
+      0.0,
+      6.923069165795355e-27
+    ]
+  ],
+  "free_energy_eV": -6.841676231035721,
+  "geometry": {
+    "cell_A": [
+      [
+        0.0,
+        1.7195823441423994,
+        1.7195823441423994
+      ],
+      [
+        1.7195823441423994,
+        0.0,
+        1.7195823441423994
+      ],
+      [
+        1.7195823441423994,
+        1.7195823441423994,
+        0.0
+      ]
+    ],
+    "initial_magnetic_moments_muB": [
+      1.0
+    ],
+    "positions_A": [
+      [
+        -1.0747294969577371e-27,
+        7.912286701446376e-20,
+        -3.7882835348698395e-19
+      ]
+    ],
+    "symbols": [
+      "Ni"
+    ]
+  },
+  "gpaw_version": "26.7.0",
+  "gpw": {
+    "bytes": 63983897,
+    "path": "ground.gpw",
+    "sha256": "7b905c9bcca105b3aed73af7a691fb25f70227834e13c160749ac828f9b5b1b0"
+  },
+  "ground_state_settings": {
+    "convergence": {
+      "bands": "occupied",
+      "density": 1e-06,
+      "eigenstates": 1e-09,
+      "energy": 1e-07
+    },
+    "ecut_eV": 500,
+    "kmesh": [
+      12,
+      12,
+      12
+    ],
+    "occupation_width_eV": 0.1,
+    "saved_nbands": 96,
+    "scf_nbands": 14,
+    "setups": {
+      "Ni": "10"
+    },
+    "spinpol": true
+  },
+  "initial_geometry": {
+    "cell_A": [
+      [
+        0,
+        1.76,
+        1.76
+      ],
+      [
+        1.76,
+        0,
+        1.76
+      ],
+      [
+        1.76,
+        1.76,
+        0
+      ]
+    ],
+    "initial_magnetic_moments_muB": [
+      1
+    ],
+    "positions_A": [
+      [
+        0,
+        0,
+        0
+      ]
+    ],
+    "symbols": [
+      "Ni"
+    ]
+  },
+  "magnetic_moment_muB": 0.6090916535755616,
+  "model": "neutral collinear PBE / explicit valence PAW; static charge RPA",
+  "neutral_electrons": 10.0,
+  "relaxation": {
+    "forces_eV_A": [
+      [
+        0.0,
+        0.0,
+        6.923069165795355e-27
+      ]
+    ],
+    "interpretation": "Stationary ordered phase; no global phase or phonon stability claim",
+    "mode": "hydrostatic",
+    "relaxed": true,
+    "settings": {
+      "force_tolerance_eV_A": 0.02,
+      "max_steps": 60,
+      "mode": "hydrostatic",
+      "stress_tolerance_eV_A3": 0.0005
+    },
+    "steps": 4,
+    "stress_eV_A3": [
+      3.2845353524249213e-06,
+      3.2845353524226398e-06,
+      3.284535352423055e-06,
+      -8.295571229871537e-19,
+      0.0,
+      -1.2443356844807306e-18
+    ]
+  },
+  "schema": "coherence-screen-ground-v1",
+  "stress_eV_A3": [
+    3.2845353524249213e-06,
+    3.2845353524226398e-06,
+    3.284535352423055e-06,
+    -8.295571229871537e-19,
+    0.0,
+    -1.2443356844807306e-18
+  ]
+}

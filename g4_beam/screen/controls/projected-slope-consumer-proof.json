@@ -1,0 +1,30 @@
+{
+  "actual_strain_slope": {
+    "Ue_Yukawa_proxy_eV": [
+      36.849303431584154,
+      36.22746936148262,
+      35.68244514992993
+    ],
+    "conditional_lambda_allowance": 0.1,
+    "conditional_slope_interval_eV_per_eV": [
+      -17.611124172767106,
+      12.810309126512735
+    ],
+    "materials": [
+      "Pd_hydro_-2pct",
+      "Pd_hydro_+0pct",
+      "Pd_hydro_+2pct"
+    ],
+    "nonpositive_sign_resolved_under_this_allowance": false,
+    "occupied_Pd_d_centres_relative_EF_eV": [
+      -2.684491872366199,
+      -2.4238674357280985,
+      -2.193429522507739
+    ],
+    "positive_sign_resolved_under_this_allowance": false,
+    "scope": "OLS association conditional on computed occupied Pd-projected centres and independent per-host +/-lambda allowance. Not statistical confidence, not uncertainty in the d-centre, not a universal or causal slope.",
+    "slope_eV_per_eV": -2.376403447895896
+  },
+  "scalar_cases": 10,
+  "wrong_projection_refused": "Element-resolved occupied d count fails independent quadrature"
+}

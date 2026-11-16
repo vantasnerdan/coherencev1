@@ -1,0 +1,43 @@
+{
+  "checks": [
+    {
+      "coarse_dimension": 15,
+      "max_inverse_error": 2.2377932840100926e-15,
+      "native_coarse": {
+        "bytes": 4804,
+        "path": "response-00.npz",
+        "sha256": "75d1e76dbe3800b4e393ba0671ed2d2af58b42671ab4a51adaa3195f31376d4a"
+      },
+      "native_fine": {
+        "bytes": 11247,
+        "path": "response-02.npz",
+        "sha256": "529ba7d477381da611b64039747680a465139b89cd18f9677f9ec8fd83996051"
+      },
+      "wrong_Bohr_mutation_dimension": 1,
+      "wrong_inverse_slice_error": 0.005678785343841031
+    },
+    {
+      "coarse_dimension": 15,
+      "max_inverse_error": 2.3245294578098464e-15,
+      "native_coarse": {
+        "bytes": 5745,
+        "path": "response-01.npz",
+        "sha256": "e3e9f857e19f8c0edcf2f7688bec77d298f3803e9637700fa32e2cec7f8c3167"
+      },
+      "native_fine": {
+        "bytes": 14780,
+        "path": "response-03.npz",
+        "sha256": "6f63551414635f43665dae7e65b46246dbd02289038e90d8c6c9fd4312771bb6"
+      },
+      "wrong_Bohr_mutation_dimension": 1,
+      "wrong_inverse_slice_error": 0.006109078144145741
+    }
+  ],
+  "producer": {
+    "bytes": 1156,
+    "path": "screen_cutoff.py",
+    "sha256": "45b14009d7bbe7247a516a7a70e13b442784ea1f049227127d02fa2591e6200d"
+  },
+  "role": "Exact finite-PW cutoff restriction qualified against independently computed native cutoffs",
+  "scope": "Same saved state, bands, q and kernel; not band or high-Q tail convergence"
+}

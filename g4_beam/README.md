@@ -24,6 +24,7 @@ One static number cannot serve both, so the shared deliverable is eps(q) over th
 | `czerski/` | Czerski et al. (Pd, Ti, Zr) and Tohoku (Ti, EXFOR O1084) fitted with the same candidate set; shared thermal amplitude |
 | `transport/` | 1D deuterium transport with beam damage, binary-collision ranges, knob sweeps |
 | `screening/` | 184 measured screening potentials with sources, screening-model formulas, correlation tests |
+| `screen/` | First-principles screening (GPAW, PBE): density of states and d-band centres for 14 hosts, static RPA screening length for 9, the neutral adiabatic screening cycle for Pd and Pd3Rh, and ratio 7 |
 | `priordata/` | Other low-energy d+d datasets in one table, plateau comparison |
 
 Run every script from its own directory, except `work/` scripts and `priordata/scripts/compare.py .`, which run from `g4_beam/`.
@@ -55,6 +56,22 @@ Low-energy plateau, best fit of each candidate on all 48 points (`forward/fits.j
 
 The first three lie within 3.4 in AIC. With the fixed resonance in place the no-plateau control misses the lowest points by factors of 4 to 5; without it (Eq 7 only) it had chi2 459.
 
+Electronic screening from first principles (`screen/README.md`, valence-PAW PBE, static low-q RPA). The screening length lambda gives a Yukawa static U_e = e^2/lambda:
+
+| Host | N(E_F) per metal atom (/eV) | Pd d-band centre (eV) | lambda (A) | static U_e (eV) | ratio 7, lambda/D-D |
+|---|---|---|---|---|---|
+| Pd -2% | 1.937 | -2.684 | 0.391 | 36.85 | 0.145 |
+| Pd | 2.055 | -2.424 | 0.397 | 36.23 | 0.145 |
+| Pd +2% | 2.169 | -2.193 | 0.404 | 35.68 | 0.144 |
+| Pd3Rh | 1.848 | -2.547 | 0.404 | 35.62 | 0.146 |
+| Pd3Ag | 1.357 | -2.074 | 0.478 | 30.10 | 0.169 |
+| PdD | 0.497 | -2.684 | 0.541 | 26.61 | 0.185 |
+| Ni | 1.276 | -2.226 | 0.376 | 38.32 | 0.155 |
+| NiH | 0.727 | -2.214 | 0.451 | 31.90 | 0.175 |
+| TiD2 | 2.452 | -2.588 | 0.435 | 33.08 | 0.197 |
+
+(The alloy rows give the Pd-projected d-band centre; the README also lists all-metal centres.) Across the Pd strain series and the two alloys, static U_e changes by -8.35 eV per eV of Pd d-band shift (interval -22.3 to +5.4 under a +/-10 % allowance on lambda). The neutral adiabatic cycle gives 42.25 eV for Pd and 42.26 eV for Pd3Rh, a slope of -0.066 eV/eV. Loading Pd to PdD lowers static U_e from 36.2 to 26.6 eV.
+
 Across laboratories (`czerski/README.md`): the palladium plateau can share layer or sigmoid parameters between Szczecin and UC Davis (mismatch factors 1.2-1.4); titanium cannot once the Tohoku data are included. One thermal-spike amplitude for both laboratories fails: A_UC Davis / A_Szczecin = 622.5 (as plotted) and 283.8 (one cup-current power).
 
 ## What the models keep, drop, and leave out
@@ -71,6 +88,5 @@ The three biggest omissions are:
 ## Open work
 
 Open work is tracked on Fleet nodes, one directory per node when delivered:
-- `g4_screen`: eps(q), N(E_F), d-band centre and the adiabatic screening limit from GPAW. This gives ratio 7 for the map and the U_e response to d-band shifts.
 - `g4_transport`: second-route check of the transport model, and DFT inputs for the Pd surface and vacancy trapping.
 - `g4_zenodo`: refit on the per-run data once it opens.

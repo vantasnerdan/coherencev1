@@ -1,0 +1,215 @@
+{
+  "D_indices": [
+    4,
+    5
+  ],
+  "case": "PdD_x0.5",
+  "cpu": 6,
+  "dos": {
+    "metal_indices": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "moment_width_eV": 0.1,
+    "occupied_window_eV": [
+      -20,
+      0.005,
+      0.01
+    ],
+    "widths_eV": [
+      0.1,
+      0.05
+    ]
+  },
+  "geometry": {
+    "cell_A": [
+      [
+        4.039938914999369,
+        -4.428533383319694e-20,
+        2.498099289614276e-20
+      ],
+      [
+        -8.927580381128869e-20,
+        4.062027885003867,
+        2.988664794197197e-20
+      ],
+      [
+        -2.5386841360854436e-20,
+        1.6749840120455255e-20,
+        4.062027885003867
+      ]
+    ],
+    "initial_magnetic_moments_muB": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "positions_A": [
+      [
+        2.6258683988858097e-27,
+        -1.4262459406987046e-19,
+        -5.829194970432771e-18
+      ],
+      [
+        5.9558208636175685e-19,
+        2.0310139425019527,
+        2.0310139425019527
+      ],
+      [
+        2.019969457499704,
+        -3.529305365977149e-19,
+        2.0310139425019527
+      ],
+      [
+        2.019969457499704,
+        2.0310139425019527,
+        8.336339501315465e-20
+      ],
+      [
+        2.019969457499704,
+        2.0310139425019527,
+        2.0310139425019527
+      ],
+      [
+        2.019969457499704,
+        3.6992191050432953e-20,
+        -6.957604091709817e-20
+      ]
+    ],
+    "symbols": [
+      "Pd",
+      "Pd",
+      "Pd",
+      "Pd",
+      "H",
+      "H"
+    ]
+  },
+  "ground_state": {
+    "convergence": {
+      "bands": 29,
+      "density": 1e-06,
+      "eigenstates": 1e-09,
+      "energy": 1e-07
+    },
+    "ecut_eV": 500,
+    "kmesh": [
+      12,
+      12,
+      12
+    ],
+    "occupation_width_eV": 0.1,
+    "saved_nbands": 29,
+    "scf_nbands": 29,
+    "setups": {
+      "H": "paw",
+      "Pd": "10"
+    },
+    "spinpol": false
+  },
+  "isotope_convention": "H nuclear charge/electrons represent D in Born-Oppenheimer electronic quantities; no isotope kinetic prefactor inferred",
+  "kind": "dos",
+  "magnetic": false,
+  "material_id": "PdD_x0.5",
+  "metal_indices": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "model": "neutral collinear PBE / explicit valence PAW; static charge RPA",
+  "note": "Ordered octahedral occupancy, not a disordered configurational average; D and full cell relaxed; linear seed interpolation is not an empirical loading law",
+  "recovery_geometry_source": {
+    "input": {
+      "bytes": 4078,
+      "path": "input.json",
+      "sha256": "298f55a59581cb9dbb1177bd69f185b1e004aee492647ee483ca67ff37787752"
+    },
+    "phase": "p4-tier1-b-20261116t211531",
+    "scope": "Last saved converged electronic geometry, not a fully relaxed phase or resumed in-flight SCF",
+    "trajectory": {
+      "bytes": 17321,
+      "path": "relax.traj",
+      "sha256": "0d779dd3b896fbfb6df2ca867eb9dcee983eeb3ef75da6bf1b1094ca6f459cdb"
+    }
+  },
+  "relaxation": {
+    "force_tolerance_eV_A": 0.02,
+    "max_steps": 60,
+    "mode": "cell",
+    "stress_tolerance_eV_A3": 0.0005
+  },
+  "responses": [],
+  "reuse_ground": null,
+  "runtime_source": {
+    "ase": "3.29.0",
+    "gpaw": "26.7.0",
+    "numpy": "2.5.3",
+    "python": "3.12.3",
+    "scipy": "1.18.1",
+    "source_files": [
+      {
+        "bytes": 9165,
+        "module": "gpaw.dos",
+        "path": "gpaw/dos.py",
+        "sha256": "e24cb9bdfa0ab6ae8a7a9ae8e7bcae58f8288115364444eaf01f1e01542b5ba5"
+      },
+      {
+        "bytes": 28239,
+        "module": "gpaw.new.ase_interface",
+        "path": "gpaw/new/ase_interface.py",
+        "sha256": "570c92ca14dd54fa46cd8c7137f1a822cba66392271b1d97229a7c2090275f0f"
+      },
+      {
+        "bytes": 34912,
+        "module": "gpaw.response.df",
+        "path": "gpaw/response/df.py",
+        "sha256": "4a12cd747199418babe7b03be947ce011e1cbc58f229979d398e44eb577ed4ef"
+      },
+      {
+        "bytes": 16980,
+        "module": "gpaw.response.groundstate",
+        "path": "gpaw/response/groundstate.py",
+        "sha256": "c4ed7ee5387be2d98c9332d17cd24ace6340fbb81a6ed09a5b8bdc72cac1a3e2"
+      },
+      {
+        "bytes": 19740,
+        "module": "gpaw.response.chi0",
+        "path": "gpaw/response/chi0.py",
+        "sha256": "1c3829261cef1d066d75e711e76af225b53d2d1fc14605b17a534c89b026b7d6"
+      },
+      {
+        "bytes": 5933,
+        "module": "gpaw.response.frequencies",
+        "path": "gpaw/response/frequencies.py",
+        "sha256": "49b3e6ed05b97db4a5f3879f5882cbeea1594f35854dcf61ac57f779df97183f"
+      }
+    ],
+    "world_size": 1
+  },
+  "schema": "coherence-screen-bulk-input-v1",
+  "scope": {
+    "DOS_tolerance_relative": 0.05,
+    "absolute_stop_utc": "2026-11-17T00:00:00Z",
+    "authority": "Axiom entry_1162",
+    "k_control": "Pd only",
+    "lambda_tolerance_relative": 0.1,
+    "screen_cap_core_min": 1000,
+    "static_Ue_definition": "Yukawa proxy C/lambda, not full-RPA near-origin Ue",
+    "tier": 1
+  },
+  "setup_files": [
+    "H.PBE.gz",
+    "Pd.10.PBE.gz"
+  ],
+  "setups": {
+    "H": "paw",
+    "Pd": "10"
+  },
+  "valence_electrons": 42
+}

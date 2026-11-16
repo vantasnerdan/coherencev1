@@ -1,0 +1,104 @@
+{
+  "case": "TiD2_fluorite",
+  "eligible": false,
+  "gpw": {
+    "bytes": 66449209,
+    "path": "ground.gpw",
+    "sha256": "44fff43bc07ff3f56d65d8a7dfe1d851164220b4b2f910b4df2d43fd884667f5"
+  },
+  "model": "neutral collinear PBE / explicit valence PAW; static charge RPA",
+  "points": [
+    {
+      "Q_head_Ainv": 0.20504501077736115,
+      "arrays": {
+        "bytes": 5802,
+        "path": "response-00.npz",
+        "sha256": "a88f6e0a8171778aaf49d077241086309b70a717db3a009a71124707fa21be77"
+      },
+      "elapsed_wall_s": 117.91324475221336,
+      "epsilon_head_no_local_fields": [
+        320.7318745082632,
+        -1.0738842797516962e-16
+      ],
+      "epsilon_macro_local_fields": [
+        126.19913368059923,
+        -8.858524774492004e-17
+      ],
+      "inverse_identity_infinity_residual": 5.298377234548225e-14,
+      "matrix_dimension": 15,
+      "settings": {
+        "ecut_eV": 50,
+        "eta_eV": 0.005,
+        "expected_wall_s": 540,
+        "nbands": 96,
+        "q_fractional": [
+          0.08333333333333333,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "Q_head_Ainv": 0.4100900215547223,
+      "arrays": {
+        "bytes": 5767,
+        "path": "response-01.npz",
+        "sha256": "c386e4cce3ba9a1132ae65cf652170921131fe3011daca7d07299db4d7b63314"
+      },
+      "elapsed_wall_s": 122.71302062738687,
+      "epsilon_head_no_local_fields": [
+        74.98503566620906,
+        -4.732513485348705e-17
+      ],
+      "epsilon_macro_local_fields": [
+        31.369765015267063,
+        -2.881411929656846e-17
+      ],
+      "inverse_identity_infinity_residual": 1.3776252209679164e-14,
+      "matrix_dimension": 15,
+      "settings": {
+        "ecut_eV": 50,
+        "eta_eV": 0.005,
+        "expected_wall_s": 540,
+        "nbands": 96,
+        "q_fractional": [
+          0.16666666666666666,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "Q_head_Ainv": 0.6151350323320837,
+      "arrays": {
+        "bytes": 7462,
+        "path": "response-02.npz",
+        "sha256": "1122914f546cc33494a65c2a44f7b4da714ad60ca7d22f0fa0520252d8083d74"
+      },
+      "elapsed_wall_s": 112.42433688789606,
+      "epsilon_head_no_local_fields": [
+        32.02479146868785,
+        -1.7934153549837913e-17
+      ],
+      "epsilon_macro_local_fields": [
+        14.167724264988378,
+        -9.465170298772968e-18
+      ],
+      "inverse_identity_infinity_residual": 7.252568285666037e-15,
+      "matrix_dimension": 18,
+      "settings": {
+        "ecut_eV": 50,
+        "eta_eV": 0.005,
+        "expected_wall_s": 540,
+        "nbands": 96,
+        "q_fractional": [
+          0.25,
+          0,
+          0
+        ]
+      }
+    }
+  ],
+  "reason": "API/cost fingerprint; k, eta, angular and q-tail errors unbounded",
+  "schema": "coherence-screen-response-fingerprint-v1"
+}

@@ -1,0 +1,167 @@
+{
+  "case": "Pd_hydro_+1pct",
+  "cell_volume_A3": 15.161875773642247,
+  "dos": {
+    "D_projected_n_EF_tetrahedron_states_per_eV_per_D": null,
+    "D_projected_n_EF_tetrahedron_states_per_eV_per_cell": null,
+    "D_projection_present": false,
+    "D_projector_channels": {},
+    "by_metal_element": {
+      "Pd": {
+        "occupied_d_centre_relative_EF_eV": -2.305209779330018,
+        "occupied_d_rms_width_eV": 1.4202555069346536,
+        "occupied_d_states_per_cell": 9.18276848215822
+      }
+    },
+    "eligible": false,
+    "fermi_energy_eV": 9.444034196272789,
+    "n_EF_states_per_eV_per_cell": {
+      "0.05": 2.362663091085262,
+      "0.1": 2.282633860929332
+    },
+    "n_EF_tetrahedron_states_per_eV_per_cell": 2.1124248124659806,
+    "nspins": 1,
+    "numerical_electron_count": 9.999999999977632,
+    "occupied_d_centre_relative_EF_eV": -2.305209779330018,
+    "occupied_d_rms_width_eV": 1.4202555069346536,
+    "occupied_d_states_per_cell": 9.18276848215822,
+    "reason": "Requires independent observable-level convergence qualification",
+    "settings": {
+      "metal_indices": [
+        0
+      ],
+      "moment_width_eV": 0.1,
+      "occupied_window_eV": [
+        -20,
+        0.005,
+        0.01
+      ],
+      "widths_eV": [
+        0.1,
+        0.05
+      ]
+    },
+    "spectrum": {
+      "bytes": 24266,
+      "path": "dos.npz",
+      "sha256": "32fa8911727f7c99e941e304387453e897e3de2367d74927668d44fb43a75c44"
+    },
+    "spin_degeneracy": 2.0
+  },
+  "forces_eV_A": [
+    [
+      3.544611412887222e-24,
+      -7.089222825774444e-24,
+      -3.544611412887222e-24
+    ]
+  ],
+  "free_energy_eV": -3.6206507735665654,
+  "geometry": {
+    "cell_A": [
+      [
+        0.0,
+        1.96445,
+        1.96445
+      ],
+      [
+        1.96445,
+        0.0,
+        1.96445
+      ],
+      [
+        1.96445,
+        1.96445,
+        0.0
+      ]
+    ],
+    "initial_magnetic_moments_muB": [
+      0.0
+    ],
+    "positions_A": [
+      [
+        0.0,
+        0.0,
+        0.0
+      ]
+    ],
+    "symbols": [
+      "Pd"
+    ]
+  },
+  "gpaw_version": "26.7.0",
+  "gpw": {
+    "bytes": 46312137,
+    "path": "ground.gpw",
+    "sha256": "4328a3ba4ff9c0b050d2a7a20089a2fa142a6298cdd4481d3c7a5a2c3a2a3985"
+  },
+  "ground_state_settings": {
+    "convergence": {
+      "bands": "occupied",
+      "density": 1e-06,
+      "eigenstates": 1e-09,
+      "energy": 1e-07
+    },
+    "ecut_eV": 500,
+    "kmesh": [
+      12,
+      12,
+      12
+    ],
+    "occupation_width_eV": 0.1,
+    "saved_nbands": 96,
+    "scf_nbands": 13,
+    "setups": {
+      "Pd": "10"
+    },
+    "spinpol": false
+  },
+  "initial_geometry": {
+    "cell_A": [
+      [
+        0,
+        1.96445,
+        1.96445
+      ],
+      [
+        1.96445,
+        0,
+        1.96445
+      ],
+      [
+        1.96445,
+        1.96445,
+        0
+      ]
+    ],
+    "initial_magnetic_moments_muB": [
+      0
+    ],
+    "positions_A": [
+      [
+        0,
+        0,
+        0
+      ]
+    ],
+    "symbols": [
+      "Pd"
+    ]
+  },
+  "magnetic_moment_muB": 0.0,
+  "model": "neutral collinear PBE / explicit valence PAW; static charge RPA",
+  "neutral_electrons": 10.0,
+  "relaxation": {
+    "mode": "fixed",
+    "relaxed": false,
+    "steps": 0
+  },
+  "schema": "coherence-screen-ground-v1",
+  "stress_eV_A3": [
+    -0.017128667163717207,
+    -0.017128667163717214,
+    -0.01712866716371721,
+    8.295571229871537e-19,
+    -3.94039633418898e-18,
+    -1.6591142459743075e-17
+  ]
+}

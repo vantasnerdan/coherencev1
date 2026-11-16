@@ -1,0 +1,56 @@
+{
+  "actual_saved_endpoint_calibration": {
+    "atomic_reference_energy_eV": {
+      "H": -12.490162242114687,
+      "He": -78.72969636301885
+    },
+    "convention": "Actual GPAW get_reference_energy() added to reported relative-to-atom energies; no experimental constant substituted",
+    "gpaw_version": "26.7.0",
+    "neutral_atom_absolute_energy_eV": {
+      "H": -13.601751289415931,
+      "He": -78.7197685503261
+    },
+    "neutral_vacuum_adiabatic_difference_eV": 51.516265971494235,
+    "reference_offset_2H_minus_He_eV": 53.749371878789475,
+    "schema": "coherence-neutral-PAW-reference-calibration-v1",
+    "sources": [
+      {
+        "energy": {
+          "bytes": 1475,
+          "path": "energy.json",
+          "sha256": "93f58fb34d91a1e0b60c3c281ce389f8f88a128b3f3942d68bb26d80d85103f2"
+        },
+        "gpw": {
+          "bytes": 13348458,
+          "path": "ground.gpw",
+          "sha256": "041c10a56031cc3b33f436089c860b2aacd2913a33ecb58fffeafdf7e93e930d"
+        },
+        "setup": {
+          "bytes": 12501,
+          "path": "H.PBE.gz",
+          "sha256": "3136ad73c02d471f99dd5f82e451b2061952970556a260d38b53b5020dc94ae7"
+        },
+        "symbol": "H"
+      },
+      {
+        "energy": {
+          "bytes": 1481,
+          "path": "energy.json",
+          "sha256": "0220f3b5f42e04dcf28cae145e898b15209c341d2427571295eaec0630992e35"
+        },
+        "gpw": {
+          "bytes": 8998469,
+          "path": "ground.gpw",
+          "sha256": "4ae2cc3b7ee0897e2de9dec5895f9cf2c5fa33b56237349585f4c6e325f74a29"
+        },
+        "setup": {
+          "bytes": 13220,
+          "path": "He.PBE.gz",
+          "sha256": "491731a50d406d2ebbad45d9cfa6d41542eecc6d0637ec2340f39af1add19c18"
+        },
+        "symbol": "He"
+      }
+    ]
+  },
+  "scope": "New producer sidecar function exercised on actual saved endpoints plus the separately bound GPW/XML reference-energy receipt; no Native run repeated"
+}

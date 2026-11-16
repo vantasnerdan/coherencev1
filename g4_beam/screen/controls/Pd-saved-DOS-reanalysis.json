@@ -1,0 +1,72 @@
+{
+  "dos": {
+    "D_projected_n_EF_tetrahedron_states_per_eV_per_D": null,
+    "D_projected_n_EF_tetrahedron_states_per_eV_per_cell": null,
+    "D_projection_present": false,
+    "D_projector_channels": {},
+    "by_metal_element": {
+      "Pd": {
+        "occupied_d_centre_relative_EF_eV": -2.4238674357280985,
+        "occupied_d_rms_width_eV": 1.4875662615790624,
+        "occupied_d_states_per_cell": 9.184878629673518
+      }
+    },
+    "eligible": false,
+    "fermi_energy_eV": 9.943081902788055,
+    "n_EF_states_per_eV_per_cell": {
+      "0.05": 2.519327121331099,
+      "0.1": 2.2578666962522007
+    },
+    "n_EF_tetrahedron_states_per_eV_per_cell": 2.055141384047781,
+    "nspins": 1,
+    "numerical_electron_count": 9.99999999999098,
+    "occupied_d_centre_relative_EF_eV": -2.4238674357280985,
+    "occupied_d_rms_width_eV": 1.4875662615790624,
+    "occupied_d_states_per_cell": 9.184878629673518,
+    "reason": "Requires independent observable-level convergence qualification",
+    "settings": {
+      "metal_indices": [
+        0
+      ],
+      "moment_width_eV": 0.1,
+      "occupied_window_eV": [
+        -20,
+        0.005,
+        0.01
+      ],
+      "widths_eV": [
+        0.1,
+        0.05
+      ]
+    },
+    "spectrum": {
+      "bytes": 24600,
+      "path": "postprocessing/dos.npz",
+      "sha256": "901ff98ee60bd916de56eaf8f53f190e740559192b7775f109e06ae9acc0df6e"
+    },
+    "spin_degeneracy": 2.0
+  },
+  "gpw": {
+    "bytes": 45311909,
+    "path": "ground.gpw",
+    "sha256": "2234bcd142bd594a415c685695fb6874174f16fd7d545853ff1ca1f965f8d965"
+  },
+  "native_completed": {
+    "bytes": 686,
+    "path": "completed.json",
+    "sha256": "4c4ab3781fdc0ecc05af700603dfc7e78cdade879000fdc0f77eee6038d34e01"
+  },
+  "source_data": {
+    "analyser": {
+      "bytes": 3850,
+      "path": "screen_dos.py",
+      "sha256": "9ee16c8faf690fa8f247242da3ed202bc2e0891585e35cc476cf2c72acba08de"
+    },
+    "original_ground": {
+      "bytes": 2178,
+      "path": "ground.json",
+      "sha256": "3625e3bb1e99faf85621cf8c13c042b34b93415ba888d20d185a970203f46749"
+    },
+    "role": "Saved GPW DOS reanalysis only; no fresh Native ground state, no re-pinning original producer"
+  }
+}

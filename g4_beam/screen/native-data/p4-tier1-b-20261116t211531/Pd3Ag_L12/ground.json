@@ -1,0 +1,270 @@
+{
+  "case": "Pd3Ag_L12",
+  "cell_volume_A3": 63.829225852116735,
+  "dos": {
+    "D_projected_n_EF_tetrahedron_states_per_eV_per_D": null,
+    "D_projected_n_EF_tetrahedron_states_per_eV_per_cell": null,
+    "D_projection_present": false,
+    "D_projector_channels": {},
+    "by_metal_element": {
+      "Ag": {
+        "occupied_d_centre_relative_EF_eV": -3.764660568289178,
+        "occupied_d_rms_width_eV": 1.1658489992915244,
+        "occupied_d_states_per_cell": 9.725494868911825
+      },
+      "Pd": {
+        "occupied_d_centre_relative_EF_eV": -2.0742532853150166,
+        "occupied_d_rms_width_eV": 1.3084865620570962,
+        "occupied_d_states_per_cell": 27.579409942473774
+      }
+    },
+    "eligible": false,
+    "fermi_energy_eV": 8.38175115988217,
+    "n_EF_states_per_eV_per_cell": {
+      "0.05": 6.932546334244555,
+      "0.1": 5.774521557767256
+    },
+    "n_EF_tetrahedron_states_per_eV_per_cell": 5.428347285978259,
+    "nspins": 1,
+    "numerical_electron_count": 40.99999999999995,
+    "occupied_d_centre_relative_EF_eV": -2.514947275557254,
+    "occupied_d_rms_width_eV": 1.4733864165485693,
+    "occupied_d_states_per_cell": 37.304904811385605,
+    "reason": "Requires independent observable-level convergence qualification",
+    "settings": {
+      "metal_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "moment_width_eV": 0.1,
+      "occupied_window_eV": [
+        -20,
+        0.005,
+        0.01
+      ],
+      "widths_eV": [
+        0.1,
+        0.05
+      ]
+    },
+    "spectrum": {
+      "bytes": 31757,
+      "path": "dos.npz",
+      "sha256": "80beb5932053ee2b1dd0c16145020cfadc9af39c24342775263d5d8e214d2fd6"
+    },
+    "spin_degeneracy": 2.0
+  },
+  "forces_eV_A": [
+    [
+      -2.3210704911934745e-27,
+      -3.866338065614472e-28,
+      0.0
+    ],
+    [
+      2.567417495811315e-27,
+      1.4890683435219016e-27,
+      0.0
+    ],
+    [
+      5.0706072991665205e-27,
+      6.78278236385175e-27,
+      0.0
+    ],
+    [
+      1.974156441808832e-27,
+      5.3131513483099855e-27,
+      0.0
+    ]
+  ],
+  "free_energy_eV": -13.57957263918994,
+  "geometry": {
+    "cell_A": [
+      [
+        3.996439036077139,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        3.996439036077139,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        3.996439036077139
+      ]
+    ],
+    "initial_magnetic_moments_muB": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "positions_A": [
+      [
+        5.841319421661507e-29,
+        -1.2439194292723027e-17,
+        -1.2344820748505845e-18
+      ],
+      [
+        -2.1639720801951515e-19,
+        1.9982195180385696,
+        1.9982195180385696
+      ],
+      [
+        1.9982195180385696,
+        6.379126027485894e-20,
+        1.9982195180385696
+      ],
+      [
+        1.9982195180385696,
+        1.9982195180385696,
+        -2.2747981556119158e-20
+      ]
+    ],
+    "symbols": [
+      "Ag",
+      "Pd",
+      "Pd",
+      "Pd"
+    ]
+  },
+  "gpaw_version": "26.7.0",
+  "gpw": {
+    "bytes": 222992780,
+    "path": "ground.gpw",
+    "sha256": "49629a2d77fe4626af6bea0945e76e342ce69660a8b6c034324e154e5ef57562"
+  },
+  "ground_state_settings": {
+    "convergence": {
+      "bands": "occupied",
+      "density": 1e-06,
+      "eigenstates": 1e-09,
+      "energy": 1e-07
+    },
+    "ecut_eV": 500,
+    "kmesh": [
+      12,
+      12,
+      12
+    ],
+    "occupation_width_eV": 0.1,
+    "saved_nbands": 96,
+    "scf_nbands": 29,
+    "setups": {
+      "Ag": "11",
+      "Pd": "10"
+    },
+    "spinpol": false
+  },
+  "initial_geometry": {
+    "cell_A": [
+      [
+        3.89,
+        0,
+        0
+      ],
+      [
+        0,
+        3.89,
+        0
+      ],
+      [
+        0,
+        0,
+        3.89
+      ]
+    ],
+    "initial_magnetic_moments_muB": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "positions_A": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1.945,
+        1.945
+      ],
+      [
+        1.945,
+        0,
+        1.945
+      ],
+      [
+        1.945,
+        1.945,
+        0
+      ]
+    ],
+    "symbols": [
+      "Ag",
+      "Pd",
+      "Pd",
+      "Pd"
+    ]
+  },
+  "magnetic_moment_muB": 0.0,
+  "model": "neutral collinear PBE / explicit valence PAW; static charge RPA",
+  "neutral_electrons": 41.0,
+  "relaxation": {
+    "forces_eV_A": [
+      [
+        -2.3210704911934745e-27,
+        -3.866338065614472e-28,
+        0.0
+      ],
+      [
+        2.567417495811315e-27,
+        1.4890683435219016e-27,
+        0.0
+      ],
+      [
+        5.0706072991665205e-27,
+        6.78278236385175e-27,
+        0.0
+      ],
+      [
+        1.974156441808832e-27,
+        5.3131513483099855e-27,
+        0.0
+      ]
+    ],
+    "interpretation": "Stationary ordered phase; no global phase or phonon stability claim",
+    "mode": "hydrostatic",
+    "relaxed": true,
+    "settings": {
+      "force_tolerance_eV_A": 0.02,
+      "max_steps": 60,
+      "mode": "hydrostatic",
+      "stress_tolerance_eV_A3": 0.0005
+    },
+    "steps": 5,
+    "stress_eV_A3": [
+      -6.311530772020832e-06,
+      -6.311530772017928e-06,
+      -6.311530772015646e-06,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "schema": "coherence-screen-ground-v1",
+  "stress_eV_A3": [
+    -6.311530772020832e-06,
+    -6.311530772017928e-06,
+    -6.311530772015646e-06,
+    0.0,
+    0.0,
+    0.0
+  ]
+}

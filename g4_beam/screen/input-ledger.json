@@ -1,0 +1,3147 @@
+{
+  "Pd_DOS_control": {
+    "bytes": 972,
+    "path": "Pd-DOS-k-qualified.json",
+    "sha256": "4f55feb3bd384adfc97789e4342b6383e0c7318aed1af24fd3bd6212474bcf77"
+  },
+  "Pd_length_control": {
+    "bytes": 2314,
+    "path": "Pd-length-qualified.json",
+    "sha256": "e0b823f219249b213f4719768c924e67f50adc200bea795b4f1fb374f998a5ba"
+  },
+  "cases": [
+    {
+      "checkpoint_from_incomplete_batch": false,
+      "completed": {
+        "bytes": 720,
+        "path": "completed.json",
+        "sha256": "2e2b6bfed8412280dd0022fa48e9b6cda39a07a886652e578b0decfaec8c5b76"
+      },
+      "config": {
+        "D_indices": [
+          1
+        ],
+        "case": "PdD_x1",
+        "cpu": 10,
+        "dos": {
+          "metal_indices": [
+            0
+          ],
+          "moment_width_eV": 0.1,
+          "occupied_window_eV": [
+            -20,
+            0.005,
+            0.01
+          ],
+          "widths_eV": [
+            0.1,
+            0.05
+          ]
+        },
+        "geometry": {
+          "cell_A": [
+            [
+              0,
+              2.045,
+              2.045
+            ],
+            [
+              2.045,
+              0,
+              2.045
+            ],
+            [
+              2.045,
+              2.045,
+              0
+            ]
+          ],
+          "initial_magnetic_moments_muB": [
+            0,
+            0
+          ],
+          "positions_A": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              2.045,
+              0,
+              0
+            ]
+          ],
+          "symbols": [
+            "Pd",
+            "H"
+          ]
+        },
+        "ground_state": {
+          "convergence": {
+            "bands": "occupied",
+            "density": 1e-06,
+            "eigenstates": 1e-09,
+            "energy": 1e-07
+          },
+          "ecut_eV": 500,
+          "kmesh": [
+            12,
+            12,
+            12
+          ],
+          "occupation_width_eV": 0.1,
+          "saved_nbands": 96,
+          "scf_nbands": 14,
+          "setups": {
+            "H": "paw",
+            "Pd": "10"
+          },
+          "spinpol": false
+        },
+        "isotope_convention": "H nuclear charge/electrons represent D in Born-Oppenheimer electronic quantities; no isotope kinetic prefactor inferred",
+        "kind": "rpa",
+        "magnetic": false,
+        "material_id": "PdD_x1",
+        "metal_indices": [
+          0
+        ],
+        "model": "neutral collinear PBE / explicit valence PAW; static charge RPA",
+        "note": "Full octahedral rocksalt occupancy; cubic volume and D positions relaxed; a=4.09 A is only an initial seed",
+        "relaxation": {
+          "force_tolerance_eV_A": 0.02,
+          "max_steps": 60,
+          "mode": "hydrostatic",
+          "stress_tolerance_eV_A3": 0.0005
+        },
+        "responses": [
+          {
+            "ecut_eV": 50,
+            "eta_eV": 0.005,
+            "expected_wall_s": 240,
+            "nbands": 96,
+            "q_fractional": [
+              0.08333333333333333,
+              0,
+              0
+            ]
+          },
+          {
+            "ecut_eV": 50,
+            "eta_eV": 0.005,
+            "expected_wall_s": 240,
+            "nbands": 96,
+            "q_fractional": [
+              0.16666666666666666,
+              0,
+              0
+            ]
+          },
+          {
+            "ecut_eV": 50,
+            "eta_eV": 0.005,
+            "expected_wall_s": 240,
+            "nbands": 96,
+            "q_fractional": [
+              0.25,
+              0,
+              0
+            ]
+          }
+        ],
+        "reuse_ground": null,
+        "runtime_source": {
+          "ase": "3.29.0",
+          "gpaw": "26.7.0",
+          "numpy": "2.5.3",
+          "python": "3.12.3",
+          "scipy": "1.18.1",
+          "source_files": [
+            {
+              "bytes": 9165,
+              "module": "gpaw.dos",
+              "path": "gpaw/dos.py",
+              "sha256": "e24cb9bdfa0ab6ae8a7a9ae8e7bcae58f8288115364444eaf01f1e01542b5ba5"
+            },
+            {
+              "bytes": 28239,
+              "module": "gpaw.new.ase_interface",
+              "path": "gpaw/new/ase_interface.py",
+              "sha256": "570c92ca14dd54fa46cd8c7137f1a822cba66392271b1d97229a7c2090275f0f"
+            },
+            {
+              "bytes": 34912,
+              "module": "gpaw.response.df",
+              "path": "gpaw/response/df.py",
+              "sha256": "4a12cd747199418babe7b03be947ce011e1cbc58f229979d398e44eb577ed4ef"
+            },
+            {
+              "bytes": 16980,
+              "module": "gpaw.response.groundstate",
+              "path": "gpaw/response/groundstate.py",
+              "sha256": "c4ed7ee5387be2d98c9332d17cd24ace6340fbb81a6ed09a5b8bdc72cac1a3e2"
+            },
+            {
+              "bytes": 19740,
+              "module": "gpaw.response.chi0",
+              "path": "gpaw/response/chi0.py",
+              "sha256": "1c3829261cef1d066d75e711e76af225b53d2d1fc14605b17a534c89b026b7d6"
+            },
+            {
+              "bytes": 5933,
+              "module": "gpaw.response.frequencies",
+              "path": "gpaw/response/frequencies.py",
+              "sha256": "49b3e6ed05b97db4a5f3879f5882cbeea1594f35854dcf61ac57f779df97183f"
+            }
+          ],
+          "world_size": 1
+        },
+        "schema": "coherence-screen-bulk-input-v1",
+        "scope": {
+          "DOS_tolerance_relative": 0.05,
+          "absolute_stop_utc": "2026-11-17T00:00:00Z",
+          "authority": "Axiom entry_1162",
+          "k_control": "Pd only",
+          "lambda_tolerance_relative": 0.1,
+          "screen_cap_core_min": 1000,
+          "static_Ue_definition": "Yukawa proxy C/lambda, not full-RPA near-origin Ue",
+          "tier": 1
+        },
+        "setup_files": [
+          "H.PBE.gz",
+          "Pd.10.PBE.gz"
+        ],
+        "setups": {
+          "H": "paw",
+          "Pd": "10"
+        },
+        "valence_electrons": 11
+      },
+      "consumers": {
+        "DOS_and_slope": [
+          "g4_beam"
+        ],
+        "lambda_and_ratios": [
+          "g1_rank",
+          "g3_lattice"
+        ]
+      },
+      "convergence": {
+        "DOS": "Requested Pd-only k control and declared transferred5% target; occupied projections independently integrated",
+        "RPA": true,
+        "physical_scope": "Numerical protocol eligibility, not all-electron physical confidence"
+      },
+      "input": {
+        "bytes": 4232,
+        "path": "input.json",
+        "sha256": "68e6910c2479bf2a1980cfe618306261598124fd0322a939ca7cb71ebb4bce3a"
+      },
+      "material_id": "PdD_x1",
+      "source_case": "PdD_x1",
+      "source_phase": "p4-recover-full-20261116t232234"
+    },
+    {
+      "checkpoint_from_incomplete_batch": false,
+      "completed": {
+        "bytes": 573,
+        "path": "completed.json",
+        "sha256": "db5c586a8c761940915cef2c06bcda15f10352d7c054c70407927ac5289c01dd"
+      },
+      "config": {
+        "D_indices": [
+          4,
+          5,
+          6
+        ],
+        "case": "PdD_x0.75",
+        "cpu": 9,
+        "dos": {
+          "metal_indices": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "moment_width_eV": 0.1,
+          "occupied_window_eV": [
+            -20,
+            0.005,
+            0.01
+          ],
+          "widths_eV": [
+            0.1,
+            0.05
+          ]
+        },
+        "geometry": {
+          "cell_A": [
+            [
+              4.04,
+              0,
+              0
+            ],
+            [
+              0,
+              4.04,
+              0
+            ],
+            [
+              0,
+              0,
+              4.04
+            ]
+          ],
+          "initial_magnetic_moments_muB": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "positions_A": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              2.02,
+              2.02
+            ],
+            [
+              2.02,
+              0,
+              2.02
+            ],
+            [
+              2.02,
+              2.02,
+              0
+            ],
+            [
+              2.02,
+              0,
+              0
+            ],
+            [
+              0,
+              2.02,
+              0
+            ],
+            [
+              0,
+              0,
+              2.02
+            ]
+          ],
+          "symbols": [
+            "Pd",
+            "Pd",
+            "Pd",
+            "Pd",
+            "H",
+            "H",
+            "H"
+          ]
+        },
+        "ground_state": {
+          "convergence": {
+            "bands": 30,
+            "density": 1e-06,
+            "eigenstates": 1e-09,
+            "energy": 1e-07
+          },
+          "ecut_eV": 500,
+          "kmesh": [
+            12,
+            12,
+            12
+          ],
+          "occupation_width_eV": 0.1,
+          "saved_nbands": 30,
+          "scf_nbands": 30,
+          "setups": {
+            "H": "paw",
+            "Pd": "10"
+          },
+          "spinpol": false
+        },
+        "isotope_convention": "H nuclear charge/electrons represent D in Born-Oppenheimer electronic quantities; no isotope kinetic prefactor inferred",
+        "kind": "dos",
+        "magnetic": false,
+        "material_id": "PdD_x0.75",
+        "metal_indices": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "model": "neutral collinear PBE / explicit valence PAW; static charge RPA",
+        "note": "Ordered octahedral occupancy, not a disordered configurational average; D and full cell relaxed; linear seed interpolation is not an empirical loading law",
+        "relaxation": {
+          "force_tolerance_eV_A": 0.02,
+          "max_steps": 60,
+          "mode": "cell",
+          "stress_tolerance_eV_A3": 0.0005
+        },
+        "responses": [],
+        "reuse_ground": null,
+        "runtime_source": {
+          "ase": "3.29.0",
+          "gpaw": "26.7.0",
+          "numpy": "2.5.3",
+          "python": "3.12.3",
+          "scipy": "1.18.1",
+          "source_files": [
+            {
+              "bytes": 9165,
+              "module": "gpaw.dos",
+              "path": "gpaw/dos.py",
+              "sha256": "e24cb9bdfa0ab6ae8a7a9ae8e7bcae58f8288115364444eaf01f1e01542b5ba5"
+            },
+            {
+              "bytes": 28239,
+              "module": "gpaw.new.ase_interface",
+              "path": "gpaw/new/ase_interface.py",
+              "sha256": "570c92ca14dd54fa46cd8c7137f1a822cba66392271b1d97229a7c2090275f0f"
+            },
+            {
+              "bytes": 34912,
+              "module": "gpaw.response.df",
+              "path": "gpaw/response/df.py",
+              "sha256": "4a12cd747199418babe7b03be947ce011e1cbc58f229979d398e44eb577ed4ef"
+            },
+            {
+              "bytes": 16980,
+              "module": "gpaw.response.groundstate",
+              "path": "gpaw/response/groundstate.py",
+              "sha256": "c4ed7ee5387be2d98c9332d17cd24ace6340fbb81a6ed09a5b8bdc72cac1a3e2"
+            },
+            {
+              "bytes": 19740,
+              "module": "gpaw.response.chi0",
+              "path": "gpaw/response/chi0.py",
+              "sha256": "1c3829261cef1d066d75e711e76af225b53d2d1fc14605b17a534c89b026b7d6"
+            },
+            {
+              "bytes": 5933,
+              "module": "gpaw.response.frequencies",
+              "path": "gpaw/response/frequencies.py",
+              "sha256": "49b3e6ed05b97db4a5f3879f5882cbeea1594f35854dcf61ac57f779df97183f"
+            }
+          ],
+          "world_size": 1
+        },
+        "schema": "coherence-screen-bulk-input-v1",
+        "scope": {
+          "DOS_tolerance_relative": 0.05,
+          "absolute_stop_utc": "2026-11-17T00:00:00Z",
+          "authority": "Axiom entry_1162",
+          "k_control": "Pd only",
+          "lambda_tolerance_relative": 0.1,
+          "screen_cap_core_min": 1000,
+          "static_Ue_definition": "Yukawa proxy C/lambda, not full-RPA near-origin Ue",
+          "tier": 1
+        },
+        "setup_files": [
+          "H.PBE.gz",
+          "Pd.10.PBE.gz"
+        ],
+        "setups": {
+          "H": "paw",
+          "Pd": "10"
+        },
+        "valence_electrons": 43
+      },
+      "consumers": {
+        "DOS_and_slope": [
+          "g4_beam"
+        ],
+        "lambda_and_ratios": [
+          "g1_rank",
+          "g3_lattice"
+        ]
+      },
+      "convergence": {
+        "DOS": "Requested Pd-only k control and declared transferred5% target; occupied projections independently integrated",
+        "RPA": null,
+        "physical_scope": "Numerical protocol eligibility, not all-electron physical confidence"
+      },
+      "input": {
+        "bytes": 4134,
+        "path": "input.json",
+        "sha256": "fe8b536635c6be12fec9ec760753bf79c61829dbb0b9cc7c1ae8a29a338c7663"
+      },
+      "material_id": "PdD_x0.75",
+      "source_case": "PdD_x0.75",
+      "source_phase": "p4-recover-threequarter-20261116t232234"
+    },
+    {
+      "checkpoint_from_incomplete_batch": false,
+      "completed": {
+        "bytes": 723,
+        "path": "completed.json",
+        "sha256": "90378d3115eed9da4a9ca128cedf991d91e76d4986e0ea0c1b6cc3512257d512"
+      },
+      "config": {
+        "D_indices": [],
+        "case": "Pd3Rh_L12",
+        "cpu": 6,
+        "dos": {
+          "metal_indices": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "moment_width_eV": 0.1,
+          "occupied_window_eV": [
+            -20,
+            0.005,
+            0.01
+          ],
+          "widths_eV": [
+            0.1,
+            0.05
+          ]
+        },
+        "geometry": {
+          "cell_A": [
+            [
+              3.89,
+              0,
+              0
+            ],
+            [
+              0,
+              3.89,
+              0
+            ],
+            [
+              0,
+              0,
+              3.89
+            ]
+          ],
+          "initial_magnetic_moments_muB": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "positions_A": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1.945,
+              1.945
+            ],
+            [
+              1.945,
+              0,
+              1.945
+            ],
+            [
+              1.945,
+              1.945,
+              0
+            ]
+          ],
+          "symbols": [
+            "Rh",
+            "Pd",
+            "Pd",
+            "Pd"
+          ]
+        },
+        "ground_state": {
+          "convergence": {
+            "bands": "occupied",
+            "density": 1e-06,
+            "eigenstates": 1e-09,
+            "energy": 1e-07
+          },
+          "ecut_eV": 500,
+          "kmesh": [
+            12,
+            12,
+            12
+          ],
+          "occupation_width_eV": 0.1,
+          "saved_nbands": 96,
+          "scf_nbands": 28,
+          "setups": {
+            "Pd": "10",
+            "Rh": "9"
+          },
+          "spinpol": false
+        },
+        "isotope_convention": "H nuclear charge/electrons represent D in Born-Oppenheimer electronic quantities; no isotope kinetic prefactor inferred",
+        "kind": "rpa",
+        "magnetic": false,
+        "material_id": "Pd3Rh_L12",
+        "metal_indices": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "model": "neutral collinear PBE / explicit valence PAW; static charge RPA",
+        "note": "Ordered L12 corner solute/three Pd face centres; cubic volume and internal coordinates relaxed; a=3.890 A is only the initial seed",
+        "relaxation": {
+          "force_tolerance_eV_A": 0.02,
+          "max_steps": 60,
+          "mode": "hydrostatic",
+          "stress_tolerance_eV_A3": 0.0005
+        },
+        "responses": [
+          {
+            "ecut_eV": 50,
+            "eta_eV": 0.005,
+            "expected_wall_s": 960,
+            "nbands": 96,
+            "q_fractional": [
+              0.08333333333333333,
+              0,
+              0
+            ]
+          },
+          {
+            "ecut_eV": 50,
+            "eta_eV": 0.005,
+            "expected_wall_s": 960,
+            "nbands": 96,
+            "q_fractional": [
+              0.16666666666666666,
+              0,
+              0
+            ]
+          },
+          {
+            "ecut_eV": 50,
+            "eta_eV": 0.005,
+            "expected_wall_s": 960,
+            "nbands": 96,
+            "q_fractional": [
+              0.25,
+              0,
+              0
+            ]
+          }
+        ],
+        "reuse_ground": null,
+        "runtime_source": {
+          "ase": "3.29.0",
+          "gpaw": "26.7.0",
+          "numpy": "2.5.3",
+          "python": "3.12.3",
+          "scipy": "1.18.1",
+          "source_files": [
+            {
+              "bytes": 9165,
+              "module": "gpaw.dos",
+              "path": "gpaw/dos.py",
+              "sha256": "e24cb9bdfa0ab6ae8a7a9ae8e7bcae58f8288115364444eaf01f1e01542b5ba5"
+            },
+            {
+              "bytes": 28239,
+              "module": "gpaw.new.ase_interface",
+              "path": "gpaw/new/ase_interface.py",
+              "sha256": "570c92ca14dd54fa46cd8c7137f1a822cba66392271b1d97229a7c2090275f0f"
+            },
+            {
+              "bytes": 34912,
+              "module": "gpaw.response.df",
+              "path": "gpaw/response/df.py",
+              "sha256": "4a12cd747199418babe7b03be947ce011e1cbc58f229979d398e44eb577ed4ef"
+            },
+            {
+              "bytes": 16980,
+              "module": "gpaw.response.groundstate",
+              "path": "gpaw/response/groundstate.py",
+              "sha256": "c4ed7ee5387be2d98c9332d17cd24ace6340fbb81a6ed09a5b8bdc72cac1a3e2"
+            },
+            {
+              "bytes": 19740,
+              "module": "gpaw.response.chi0",
+              "path": "gpaw/response/chi0.py",
+              "sha256": "1c3829261cef1d066d75e711e76af225b53d2d1fc14605b17a534c89b026b7d6"
+            },
+            {
+              "bytes": 5933,
+              "module": "gpaw.response.frequencies",
+              "path": "gpaw/response/frequencies.py",
+              "sha256": "49b3e6ed05b97db4a5f3879f5882cbeea1594f35854dcf61ac57f779df97183f"
+            }
+          ],
+          "world_size": 1
+        },
+        "schema": "coherence-screen-bulk-input-v1",
+        "scope": {
+          "DOS_tolerance_relative": 0.05,
+          "absolute_stop_utc": "2026-11-17T00:00:00Z",
+          "authority": "Axiom entry_1162",
+          "k_control": "Pd only",
+          "lambda_tolerance_relative": 0.1,
+          "screen_cap_core_min": 1000,
+          "static_Ue_definition": "Yukawa proxy C/lambda, not full-RPA near-origin Ue",
+          "tier": 1
+        },
+        "setup_files": [
+          "Pd.10.PBE.gz",
+          "Rh.9.PBE.gz"
+        ],
+        "setups": {
+          "Pd": "10",
+          "Rh": "9"
+        },
+        "valence_electrons": 39
+      },
+      "consumers": {
+        "DOS_and_slope": [
+          "g4_beam"
+        ],
+        "lambda_and_ratios": [
+          "g1_rank",
+          "g3_lattice"
+        ]
+      },
+      "convergence": {
+        "DOS": "Requested Pd-only k control and declared transferred5% target; occupied projections independently integrated",
+        "RPA": true,
+        "physical_scope": "Numerical protocol eligibility, not all-electron physical confidence"
+      },
+      "input": {
+        "bytes": 4448,
+        "path": "input.json",
+        "sha256": "853a31010303681900e15179b5e48eca489150adb27bcac7cb5fe91276aeacc3"
+      },
+      "material_id": "Pd3Rh_L12",
+      "source_case": "Pd3Rh_L12",
+      "source_phase": "p4-tier1-a-20261116t211531"
+    },
+    {
+      "checkpoint_from_incomplete_batch": false,
+      "completed": {
+        "bytes": 577,
+        "path": "completed.json",
+        "sha256": "9c01f07238b573c6f7e3a831bf04a7d058345c627ac252ee03f3e43c0479cea4"
+      },
+      "config": {
+        "D_indices": [],
+        "case": "Pd_hydro_+1pct",
+        "cpu": 6,
+        "dos": {
+          "metal_indices": [
+            0
+          ],
+          "moment_width_eV": 0.1,
+          "occupied_window_eV": [
+            -20,
+            0.005,
+            0.01
+          ],
+          "widths_eV": [
+            0.1,
+            0.05
+          ]
+        },
+        "geometry": {
+          "cell_A": [
+            [
+              0,
+              1.96445,
+              1.96445
+            ],
+            [
+              1.96445,
+              0,
+              1.96445
+            ],
+            [
+              1.96445,
+              1.96445,
+              0
+            ]
+          ],
+          "initial_magnetic_moments_muB": [
+            0
+          ],
+          "positions_A": [
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "symbols": [
+            "Pd"
+          ]
+        },
+        "ground_state": {
+          "convergence": {
+            "bands": "occupied",
+            "density": 1e-06,
+            "eigenstates": 1e-09,
+            "energy": 1e-07
+          },
+          "ecut_eV": 500,
+          "kmesh": [
+            12,
+            12,
+            12
+          ],
+          "occupation_width_eV": 0.1,
+          "saved_nbands": 96,
+          "scf_nbands": 13,
+          "setups": {
+            "Pd": "10"
+          },
+          "spinpol": false
+        },
+        "isotope_convention": "H nuclear charge/electrons represent D in Born-Oppenheimer electronic quantities; no isotope kinetic prefactor inferred",
+        "kind": "dos",
+        "magnetic": false,
+        "material_id": "Pd_hydro_+1pct",
+        "metal_indices": [
+          0
+        ],
+        "model": "neutral collinear PBE / explicit valence PAW; static charge RPA",
+        "note": "Fixed hydrostatic strain relative to empirical a=3.890 A, not a redefined PBE equilibrium; constrained nonmagnetic branch",
+        "relaxation": {
+          "force_tolerance_eV_A": 0.02,
+          "max_steps": 60,
+          "mode": "fixed",
+          "stress_tolerance_eV_A3": 0.0005
+        },
+        "responses": [],
+        "reuse_ground": null,
+        "runtime_source": {
+          "ase": "3.29.0",
+          "gpaw": "26.7.0",
+          "numpy": "2.5.3",
+          "python": "3.12.3",
+          "scipy": "1.18.1",
+          "source_files": [
+            {
+              "bytes": 9165,
+              "module": "gpaw.dos",
+              "path": "gpaw/dos.py",
+              "sha256": "e24cb9bdfa0ab6ae8a7a9ae8e7bcae58f8288115364444eaf01f1e01542b5ba5"
+            },
+            {
+              "bytes": 28239,
+              "module": "gpaw.new.ase_interface",
+              "path": "gpaw/new/ase_interface.py",
+              "sha256": "570c92ca14dd54fa46cd8c7137f1a822cba66392271b1d97229a7c2090275f0f"
+            },
+            {
+              "bytes": 34912,
+              "module": "gpaw.response.df",
+              "path": "gpaw/response/df.py",
+              "sha256": "4a12cd747199418babe7b03be947ce011e1cbc58f229979d398e44eb577ed4ef"
+            },
+            {
+              "bytes": 16980,
+              "module": "gpaw.response.groundstate",
+              "path": "gpaw/response/groundstate.py",
+              "sha256": "c4ed7ee5387be2d98c9332d17cd24ace6340fbb81a6ed09a5b8bdc72cac1a3e2"
+            },
+            {
+              "bytes": 19740,
+              "module": "gpaw.response.chi0",
+              "path": "gpaw/response/chi0.py",
+              "sha256": "1c3829261cef1d066d75e711e76af225b53d2d1fc14605b17a534c89b026b7d6"
+            },
+            {
+              "bytes": 5933,
+              "module": "gpaw.response.frequencies",
+              "path": "gpaw/response/frequencies.py",
+              "sha256": "49b3e6ed05b97db4a5f3879f5882cbeea1594f35854dcf61ac57f779df97183f"
+            }
+          ],
+          "world_size": 1
+        },
+        "schema": "coherence-screen-bulk-input-v1",
+        "scope": {
+          "DOS_tolerance_relative": 0.05,
+          "absolute_stop_utc": "2026-11-17T00:00:00Z",
+          "authority": "Axiom entry_1162",
+          "k_control": "Pd only",
+          "lambda_tolerance_relative": 0.1,
+          "screen_cap_core_min": 1000,
+          "static_Ue_definition": "Yukawa proxy C/lambda, not full-RPA near-origin Ue",
+          "tier": 1
+        },
+        "setup_files": [
+          "Pd.10.PBE.gz"
+        ],
+        "setups": {
+          "Pd": "10"
+        },
+        "valence_electrons": 10
+      },
+      "consumers": {
+        "DOS_and_slope": [
+          "g4_beam"
+        ],
+        "lambda_and_ratios": [
+          "g1_rank",
+          "g3_lattice"
+        ]
+      },
+      "convergence": {
+        "DOS": "Requested Pd-only k control and declared transferred5% target; occupied projections independently integrated",
+        "RPA": null,
+        "physical_scope": "Numerical protocol eligibility, not all-electron physical confidence"
+      },
+      "input": {
+        "bytes": 3583,
+        "path": "input.json",
+        "sha256": "d4d39aa1bf76b25423371bf5c58c7d39f920a65ab5352c592e61cd7a8c8660ae"
+      },
+      "material_id": "Pd_hydro_+1pct",
+      "source_case": "Pd_hydro_+1pct",
+      "source_phase": "p4-tier1-a-20261116t211531"
+    },
+    {
+      "checkpoint_from_incomplete_batch": false,
+      "completed": {
+        "bytes": 728,
+        "path": "completed.json",
+        "sha256": "fadf8d6bdbfc791bfd1b031df3aec807354727a5d26f1ce7b24bdd1080c24baa"
+      },
+      "config": {
+        "D_indices": [],
+        "case": "Pd_hydro_+2pct",
+        "cpu": 6,
+        "dos": {
+          "metal_indices": [
+            0
+          ],
+          "moment_width_eV": 0.1,
+          "occupied_window_eV": [
+            -20,
+            0.005,
+            0.01
+          ],
+          "widths_eV": [
+            0.1,
+            0.05
+          ]
+        },
+        "geometry": {
+          "cell_A": [
+            [
+              0,
+              1.9839,
+              1.9839
+            ],
+            [
+              1.9839,
+              0,
+              1.9839
+            ],
+            [
+              1.9839,
+              1.9839,
+              0
+            ]
+          ],
+          "initial_magnetic_moments_muB": [
+            0
+          ],
+          "positions_A": [
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "symbols": [
+            "Pd"
+          ]
+        },
+        "ground_state": {
+          "convergence": {
+            "bands": "occupied",
+            "density": 1e-06,
+            "eigenstates": 1e-09,
+            "energy": 1e-07
+          },
+          "ecut_eV": 500,
+          "kmesh": [
+            12,
+            12,
+            12
+          ],
+          "occupation_width_eV": 0.1,
+          "saved_nbands": 96,
+          "scf_nbands": 13,
+          "setups": {
+            "Pd": "10"
+          },
+          "spinpol": false
+        },
+        "isotope_convention": "H nuclear charge/electrons represent D in Born-Oppenheimer electronic quantities; no isotope kinetic prefactor inferred",
+        "kind": "rpa",
+        "magnetic": false,
+        "material_id": "Pd_hydro_+2pct",
+        "metal_indices": [
+          0
+        ],
+        "model": "neutral collinear PBE / explicit valence PAW; static charge RPA",
+        "note": "Fixed hydrostatic strain relative to empirical a=3.890 A, not a redefined PBE equilibrium; constrained nonmagnetic branch",
+        "relaxation": {
+          "force_tolerance_eV_A": 0.02,
+          "max_steps": 60,
+          "mode": "fixed",
+          "stress_tolerance_eV_A3": 0.0005
+        },
+        "responses": [
+          {
+            "ecut_eV": 50,
+            "eta_eV": 0.005,
+            "expected_wall_s": 60,
+            "nbands": 96,
+            "q_fractional": [
+              0.08333333333333333,
+              0,
+              0
+            ]
+          },
+          {
+            "ecut_eV": 50,
+            "eta_eV": 0.005,
+            "expected_wall_s": 60,
+            "nbands": 96,
+            "q_fractional": [
+              0.16666666666666666,
+              0,
+              0
+            ]
+          },
+          {
+            "ecut_eV": 50,
+            "eta_eV": 0.005,
+            "expected_wall_s": 60,
+            "nbands": 96,
+            "q_fractional": [
+              0.25,
+              0,
+              0
+            ]
+          }
+        ],
+        "reuse_ground": null,
+        "runtime_source": {
+          "ase": "3.29.0",
+          "gpaw": "26.7.0",
+          "numpy": "2.5.3",
+          "python": "3.12.3",
+          "scipy": "1.18.1",
+          "source_files": [
+            {
+              "bytes": 9165,
+              "module": "gpaw.dos",
+              "path": "gpaw/dos.py",
+              "sha256": "e24cb9bdfa0ab6ae8a7a9ae8e7bcae58f8288115364444eaf01f1e01542b5ba5"
+            },
+            {
+              "bytes": 28239,
+              "module": "gpaw.new.ase_interface",
+              "path": "gpaw/new/ase_interface.py",
+              "sha256": "570c92ca14dd54fa46cd8c7137f1a822cba66392271b1d97229a7c2090275f0f"
+            },
+            {
+              "bytes": 34912,
+              "module": "gpaw.response.df",
+              "path": "gpaw/response/df.py",
+              "sha256": "4a12cd747199418babe7b03be947ce011e1cbc58f229979d398e44eb577ed4ef"
+            },
+            {
+              "bytes": 16980,
+              "module": "gpaw.response.groundstate",
+              "path": "gpaw/response/groundstate.py",
+              "sha256": "c4ed7ee5387be2d98c9332d17cd24ace6340fbb81a6ed09a5b8bdc72cac1a3e2"
+            },
+            {
+              "bytes": 19740,
+              "module": "gpaw.response.chi0",
+              "path": "gpaw/response/chi0.py",
+              "sha256": "1c3829261cef1d066d75e711e76af225b53d2d1fc14605b17a534c89b026b7d6"
+            },
+            {
+              "bytes": 5933,
+              "module": "gpaw.response.frequencies",
+              "path": "gpaw/response/frequencies.py",
+              "sha256": "49b3e6ed05b97db4a5f3879f5882cbeea1594f35854dcf61ac57f779df97183f"
+            }
+          ],
+          "world_size": 1
+        },
+        "schema": "coherence-screen-bulk-input-v1",
+        "scope": {
+          "DOS_tolerance_relative": 0.05,
+          "absolute_stop_utc": "2026-11-17T00:00:00Z",
+          "authority": "Axiom entry_1162",
+          "k_control": "Pd only",
+          "lambda_tolerance_relative": 0.1,
+          "screen_cap_core_min": 1000,
+          "static_Ue_definition": "Yukawa proxy C/lambda, not full-RPA near-origin Ue",
+          "tier": 1
+        },
+        "setup_files": [
+          "Pd.10.PBE.gz"
+        ],
+        "setups": {
+          "Pd": "10"
+        },
+        "valence_electrons": 10
+      },
+      "consumers": {
+        "DOS_and_slope": [
+          "g4_beam"
+        ],
+        "lambda_and_ratios": [
+          "g1_rank",
+          "g3_lattice"
+        ]
+      },
+      "convergence": {
+        "DOS": "Requested Pd-only k control and declared transferred5% target; occupied projections independently integrated",
+        "RPA": true,
+        "physical_scope": "Numerical protocol eligibility, not all-electron physical confidence"
+      },
+      "input": {
+        "bytes": 4128,
+        "path": "input.json",
+        "sha256": "1e8db9c5c5736074d25c5b2012cc632004ca6cf7f440769c624443476845fa3e"
+      },
+      "material_id": "Pd_hydro_+2pct",
+      "source_case": "Pd_hydro_+2pct",
+      "source_phase": "p4-tier1-a-20261116t211531"
+    },
+    {
+      "checkpoint_from_incomplete_batch": false,
+      "completed": {
+        "bytes": 578,
+        "path": "completed.json",
+        "sha256": "5c92d07e175870090eb204e5e3573899937f06a02031abbc7308d8e7f5c178eb"
+      },
+      "config": {
+        "D_indices": [],
+        "case": "Pd_hydro_-1pct",
+        "cpu": 6,
+        "dos": {
+          "metal_indices": [
+            0
+          ],
+          "moment_width_eV": 0.1,
+          "occupied_window_eV": [
+            -20,
+            0.005,
+            0.01
+          ],
+          "widths_eV": [
+            0.1,
+            0.05
+          ]
+        },
+        "geometry": {
+          "cell_A": [
+            [
+              0,
+              1.92555,
+              1.92555
+            ],
+            [
+              1.92555,
+              0,
+              1.92555
+            ],
+            [
+              1.92555,
+              1.92555,
+              0
+            ]
+          ],
+          "initial_magnetic_moments_muB": [
+            0
+          ],
+          "positions_A": [
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "symbols": [
+            "Pd"
+          ]
+        },
+        "ground_state": {
+          "convergence": {
+            "bands": "occupied",
+            "density": 1e-06,
+            "eigenstates": 1e-09,
+            "energy": 1e-07
+          },
+          "ecut_eV": 500,
+          "kmesh": [
+            12,
+            12,
+            12
+          ],
+          "occupation_width_eV": 0.1,
+          "saved_nbands": 96,
+          "scf_nbands": 13,
+          "setups": {
+            "Pd": "10"
+          },
+          "spinpol": false
+        },
+        "isotope_convention": "H nuclear charge/electrons represent D in Born-Oppenheimer electronic quantities; no isotope kinetic prefactor inferred",
+        "kind": "dos",
+        "magnetic": false,
+        "material_id": "Pd_hydro_-1pct",
+        "metal_indices": [
+          0
+        ],
+        "model": "neutral collinear PBE / explicit valence PAW; static charge RPA",
+        "note": "Fixed hydrostatic strain relative to empirical a=3.890 A, not a redefined PBE equilibrium; constrained nonmagnetic branch",
+        "relaxation": {
+          "force_tolerance_eV_A": 0.02,
+          "max_steps": 60,
+          "mode": "fixed",
+          "stress_tolerance_eV_A3": 0.0005
+        },
+        "responses": [],
+        "reuse_ground": null,
+        "runtime_source": {
+          "ase": "3.29.0",
+          "gpaw": "26.7.0",
+          "numpy": "2.5.3",
+          "python": "3.12.3",
+          "scipy": "1.18.1",
+          "source_files": [
+            {
+              "bytes": 9165,
+              "module": "gpaw.dos",
+              "path": "gpaw/dos.py",
+              "sha256": "e24cb9bdfa0ab6ae8a7a9ae8e7bcae58f8288115364444eaf01f1e01542b5ba5"
+            },
+            {
+              "bytes": 28239,
+              "module": "gpaw.new.ase_interface",
+              "path": "gpaw/new/ase_interface.py",
+              "sha256": "570c92ca14dd54fa46cd8c7137f1a822cba66392271b1d97229a7c2090275f0f"
+            },
+            {
+              "bytes": 34912,
+              "module": "gpaw.response.df",
+              "path": "gpaw/response/df.py",
+              "sha256": "4a12cd747199418babe7b03be947ce011e1cbc58f229979d398e44eb577ed4ef"
+            },
+            {
+              "bytes": 16980,
+              "module": "gpaw.response.groundstate",
+              "path": "gpaw/response/groundstate.py",
+              "sha256": "c4ed7ee5387be2d98c9332d17cd24ace6340fbb81a6ed09a5b8bdc72cac1a3e2"
+            },
+            {
+              "bytes": 19740,
+              "module": "gpaw.response.chi0",
+              "path": "gpaw/response/chi0.py",
+              "sha256": "1c3829261cef1d066d75e711e76af225b53d2d1fc14605b17a534c89b026b7d6"
+            },
+            {
+              "bytes": 5933,
+              "module": "gpaw.response.frequencies",
+              "path": "gpaw/response/frequencies.py",
+              "sha256": "49b3e6ed05b97db4a5f3879f5882cbeea1594f35854dcf61ac57f779df97183f"
+            }
+          ],
+          "world_size": 1
+        },
+        "schema": "coherence-screen-bulk-input-v1",
+        "scope": {
+          "DOS_tolerance_relative": 0.05,
+          "absolute_stop_utc": "2026-11-17T00:00:00Z",
+          "authority": "Axiom entry_1162",
+          "k_control": "Pd only",
+          "lambda_tolerance_relative": 0.1,
+          "screen_cap_core_min": 1000,
+          "static_Ue_definition": "Yukawa proxy C/lambda, not full-RPA near-origin Ue",
+          "tier": 1
+        },
+        "setup_files": [
+          "Pd.10.PBE.gz"
+        ],
+        "setups": {
+          "Pd": "10"
+        },
+        "valence_electrons": 10
+      },
+      "consumers": {
+        "DOS_and_slope": [
+          "g4_beam"
+        ],
+        "lambda_and_ratios": [
+          "g1_rank",
+          "g3_lattice"
+        ]
+      },
+      "convergence": {
+        "DOS": "Requested Pd-only k control and declared transferred5% target; occupied projections independently integrated",
+        "RPA": null,
+        "physical_scope": "Numerical protocol eligibility, not all-electron physical confidence"
+      },
+      "input": {
+        "bytes": 3583,
+        "path": "input.json",
+        "sha256": "ee9f3042991c14350aca935ed802ae5c7c093f96adc84efaf87ea5a90a886e91"
+      },
+      "material_id": "Pd_hydro_-1pct",
+      "source_case": "Pd_hydro_-1pct",
+      "source_phase": "p4-tier1-a-20261116t211531"
+    },
+    {
+      "checkpoint_from_incomplete_batch": false,
+      "completed": {
+        "bytes": 727,
+        "path": "completed.json",
+        "sha256": "9a619ca3cfb08835040e09e5d282966d6163174397047de6d1f8d818a87b2791"
+      },
+      "config": {
+        "D_indices": [],
+        "case": "Pd_hydro_-2pct",
+        "cpu": 6,
+        "dos": {
+          "metal_indices": [
+            0
+          ],
+          "moment_width_eV": 0.1,
+          "occupied_window_eV": [
+            -20,
+            0.005,
+            0.01
+          ],
+          "widths_eV": [
+            0.1,
+            0.05
+          ]
+        },
+        "geometry": {
+          "cell_A": [
+            [
+              0,
+              1.9061000000000001,
+              1.9061000000000001
+            ],
+            [
+              1.9061000000000001,
+              0,
+              1.9061000000000001
+            ],
+            [
+              1.9061000000000001,
+              1.9061000000000001,
+              0
+            ]
+          ],
+          "initial_magnetic_moments_muB": [
+            0
+          ],
+          "positions_A": [
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "symbols": [
+            "Pd"
+          ]
+        },
+        "ground_state": {
+          "convergence": {
+            "bands": "occupied",
+            "density": 1e-06,
+            "eigenstates": 1e-09,
+            "energy": 1e-07
+          },
+          "ecut_eV": 500,
+          "kmesh": [
+            12,
+            12,
+            12
+          ],
+          "occupation_width_eV": 0.1,
+          "saved_nbands": 96,
+          "scf_nbands": 13,
+          "setups": {
+            "Pd": "10"
+          },
+          "spinpol": false
+        },
+        "isotope_convention": "H nuclear charge/electrons represent D in Born-Oppenheimer electronic quantities; no isotope kinetic prefactor inferred",
+        "kind": "rpa",
+        "magnetic": false,
+        "material_id": "Pd_hydro_-2pct",
+        "metal_indices": [
+          0
+        ],
+        "model": "neutral collinear PBE / explicit valence PAW; static charge RPA",
+        "note": "Fixed hydrostatic strain relative to empirical a=3.890 A, not a redefined PBE equilibrium; constrained nonmagnetic branch",
+        "relaxation": {
+          "force_tolerance_eV_A": 0.02,
+          "max_steps": 60,
+          "mode": "fixed",
+          "stress_tolerance_eV_A3": 0.0005
+        },
+        "responses": [
+          {
+            "ecut_eV": 50,
+            "eta_eV": 0.005,
+            "expected_wall_s": 60,
+            "nbands": 96,
+            "q_fractional": [
+              0.08333333333333333,
+              0,
+              0
+            ]
+          },
+          {
+            "ecut_eV": 50,
+            "eta_eV": 0.005,
+            "expected_wall_s": 60,
+            "nbands": 96,
+            "q_fractional": [
+              0.16666666666666666,
+              0,
+              0
+            ]
+          },
+          {
+            "ecut_eV": 50,
+            "eta_eV": 0.005,
+            "expected_wall_s": 60,
+            "nbands": 96,
+            "q_fractional": [
+              0.25,
+              0,
+              0
+            ]
+          }
+        ],
+        "reuse_ground": null,
+        "runtime_source": {
+          "ase": "3.29.0",
+          "gpaw": "26.7.0",
+          "numpy": "2.5.3",
+          "python": "3.12.3",
+          "scipy": "1.18.1",
+          "source_files": [
+            {
+              "bytes": 9165,
+              "module": "gpaw.dos",
+              "path": "gpaw/dos.py",
+              "sha256": "e24cb9bdfa0ab6ae8a7a9ae8e7bcae58f8288115364444eaf01f1e01542b5ba5"
+            },
+            {
+              "bytes": 28239,
+              "module": "gpaw.new.ase_interface",
+              "path": "gpaw/new/ase_interface.py",
+              "sha256": "570c92ca14dd54fa46cd8c7137f1a822cba66392271b1d97229a7c2090275f0f"
+            },
+            {
+              "bytes": 34912,
+              "module": "gpaw.response.df",
+              "path": "gpaw/response/df.py",
+              "sha256": "4a12cd747199418babe7b03be947ce011e1cbc58f229979d398e44eb577ed4ef"
+            },
+            {
+              "bytes": 16980,
+              "module": "gpaw.response.groundstate",
+              "path": "gpaw/response/groundstate.py",
+              "sha256": "c4ed7ee5387be2d98c9332d17cd24ace6340fbb81a6ed09a5b8bdc72cac1a3e2"
+            },
+            {
+              "bytes": 19740,
+              "module": "gpaw.response.chi0",
+              "path": "gpaw/response/chi0.py",
+              "sha256": "1c3829261cef1d066d75e711e76af225b53d2d1fc14605b17a534c89b026b7d6"
+            },
+            {
+              "bytes": 5933,
+              "module": "gpaw.response.frequencies",
+              "path": "gpaw/response/frequencies.py",
+              "sha256": "49b3e6ed05b97db4a5f3879f5882cbeea1594f35854dcf61ac57f779df97183f"
+            }
+          ],
+          "world_size": 1
+        },
+        "schema": "coherence-screen-bulk-input-v1",
+        "scope": {
+          "DOS_tolerance_relative": 0.05,
+          "absolute_stop_utc": "2026-11-17T00:00:00Z",
+          "authority": "Axiom entry_1162",
+          "k_control": "Pd only",
+          "lambda_tolerance_relative": 0.1,
+          "screen_cap_core_min": 1000,
+          "static_Ue_definition": "Yukawa proxy C/lambda, not full-RPA near-origin Ue",
+          "tier": 1
+        },
+        "setup_files": [
+          "Pd.10.PBE.gz"
+        ],
+        "setups": {
+          "Pd": "10"
+        },
+        "valence_electrons": 10
+      },
+      "consumers": {
+        "DOS_and_slope": [
+          "g4_beam"
+        ],
+        "lambda_and_ratios": [
+          "g1_rank",
+          "g3_lattice"
+        ]
+      },
+      "convergence": {
+        "DOS": "Requested Pd-only k control and declared transferred5% target; occupied projections independently integrated",
+        "RPA": true,
+        "physical_scope": "Numerical protocol eligibility, not all-electron physical confidence"
+      },
+      "input": {
+        "bytes": 4200,
+        "path": "input.json",
+        "sha256": "682c02dd015f89877304f795bf1dd8ffee8d4bfdc0d4e22f80a2449f08492143"
+      },
+      "material_id": "Pd_hydro_-2pct",
+      "source_case": "Pd_hydro_-2pct",
+      "source_phase": "p4-tier1-a-20261116t211531"
+    },
+    {
+      "checkpoint_from_incomplete_batch": true,
+      "completed": {
+        "bytes": 722,
+        "path": "completed.json",
+        "sha256": "e689dbe9eac1b26c47d03c577bb7170b15306c9338bd2ca71b8b3825d5391a29"
+      },
+      "config": {
+        "D_indices": [],
+        "case": "Pd3Ag_L12",
+        "cpu": 9,
+        "dos": {
+          "metal_indices": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "moment_width_eV": 0.1,
+          "occupied_window_eV": [
+            -20,
+            0.005,
+            0.01
+          ],
+          "widths_eV": [
+            0.1,
+            0.05
+          ]
+        },
+        "geometry": {
+          "cell_A": [
+            [
+              3.89,
+              0,
+              0
+            ],
+            [
+              0,
+              3.89,
+              0
+            ],
+            [
+              0,
+              0,
+              3.89
+            ]
+          ],
+          "initial_magnetic_moments_muB": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "positions_A": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1.945,
+              1.945
+            ],
+            [
+              1.945,
+              0,
+              1.945
+            ],
+            [
+              1.945,
+              1.945,
+              0
+            ]
+          ],
+          "symbols": [
+            "Ag",
+            "Pd",
+            "Pd",
+            "Pd"
+          ]
+        },
+        "ground_state": {
+          "convergence": {
+            "bands": "occupied",
+            "density": 1e-06,
+            "eigenstates": 1e-09,
+            "energy": 1e-07
+          },
+          "ecut_eV": 500,
+          "kmesh": [
+            12,
+            12,
+            12
+          ],
+          "occupation_width_eV": 0.1,
+          "saved_nbands": 96,
+          "scf_nbands": 29,
+          "setups": {
+            "Ag": "11",
+            "Pd": "10"
+          },
+          "spinpol": false
+        },
+        "isotope_convention": "H nuclear charge/electrons represent D in Born-Oppenheimer electronic quantities; no isotope kinetic prefactor inferred",
+        "kind": "rpa",
+        "magnetic": false,
+        "material_id": "Pd3Ag_L12",
+        "metal_indices": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "model": "neutral collinear PBE / explicit valence PAW; static charge RPA",
+        "note": "Ordered L12 corner solute/three Pd face centres; cubic volume and internal coordinates relaxed; a=3.890 A is only the initial seed",
+        "relaxation": {
+          "force_tolerance_eV_A": 0.02,
+          "max_steps": 60,
+          "mode": "hydrostatic",
+          "stress_tolerance_eV_A3": 0.0005
+        },
+        "responses": [
+          {
+            "ecut_eV": 50,
+            "eta_eV": 0.005,
+            "expected_wall_s": 960,
+            "nbands": 96,
+            "q_fractional": [
+              0.08333333333333333,
+              0,
+              0
+            ]
+          },
+          {
+            "ecut_eV": 50,
+            "eta_eV": 0.005,
+            "expected_wall_s": 960,
+            "nbands": 96,
+            "q_fractional": [
+              0.16666666666666666,
+              0,
+              0
+            ]
+          },
+          {
+            "ecut_eV": 50,
+            "eta_eV": 0.005,
+            "expected_wall_s": 960,
+            "nbands": 96,
+            "q_fractional": [
+              0.25,
+              0,
+              0
+            ]
+          }
+        ],
+        "reuse_ground": null,
+        "runtime_source": {
+          "ase": "3.29.0",
+          "gpaw": "26.7.0",
+          "numpy": "2.5.3",
+          "python": "3.12.3",
+          "scipy": "1.18.1",
+          "source_files": [
+            {
+              "bytes": 9165,
+              "module": "gpaw.dos",
+              "path": "gpaw/dos.py",
+              "sha256": "e24cb9bdfa0ab6ae8a7a9ae8e7bcae58f8288115364444eaf01f1e01542b5ba5"
+            },
+            {
+              "bytes": 28239,
+              "module": "gpaw.new.ase_interface",
+              "path": "gpaw/new/ase_interface.py",
+              "sha256": "570c92ca14dd54fa46cd8c7137f1a822cba66392271b1d97229a7c2090275f0f"
+            },
+            {
+              "bytes": 34912,
+              "module": "gpaw.response.df",
+              "path": "gpaw/response/df.py",
+              "sha256": "4a12cd747199418babe7b03be947ce011e1cbc58f229979d398e44eb577ed4ef"
+            },
+            {
+              "bytes": 16980,
+              "module": "gpaw.response.groundstate",
+              "path": "gpaw/response/groundstate.py",
+              "sha256": "c4ed7ee5387be2d98c9332d17cd24ace6340fbb81a6ed09a5b8bdc72cac1a3e2"
+            },
+            {
+              "bytes": 19740,
+              "module": "gpaw.response.chi0",
+              "path": "gpaw/response/chi0.py",
+              "sha256": "1c3829261cef1d066d75e711e76af225b53d2d1fc14605b17a534c89b026b7d6"
+            },
+            {
+              "bytes": 5933,
+              "module": "gpaw.response.frequencies",
+              "path": "gpaw/response/frequencies.py",
+              "sha256": "49b3e6ed05b97db4a5f3879f5882cbeea1594f35854dcf61ac57f779df97183f"
+            }
+          ],
+          "world_size": 1
+        },
+        "schema": "coherence-screen-bulk-input-v1",
+        "scope": {
+          "DOS_tolerance_relative": 0.05,
+          "absolute_stop_utc": "2026-11-17T00:00:00Z",
+          "authority": "Axiom entry_1162",
+          "k_control": "Pd only",
+          "lambda_tolerance_relative": 0.1,
+          "screen_cap_core_min": 1000,
+          "static_Ue_definition": "Yukawa proxy C/lambda, not full-RPA near-origin Ue",
+          "tier": 1
+        },
+        "setup_files": [
+          "Ag.11.PBE.gz",
+          "Pd.10.PBE.gz"
+        ],
+        "setups": {
+          "Ag": "11",
+          "Pd": "10"
+        },
+        "valence_electrons": 41
+      },
+      "consumers": {
+        "DOS_and_slope": [
+          "g4_beam"
+        ],
+        "lambda_and_ratios": [
+          "g1_rank",
+          "g3_lattice"
+        ]
+      },
+      "convergence": {
+        "DOS": "Requested Pd-only k control and declared transferred5% target; occupied projections independently integrated",
+        "RPA": true,
+        "physical_scope": "Numerical protocol eligibility, not all-electron physical confidence"
+      },
+      "input": {
+        "bytes": 4451,
+        "path": "input.json",
+        "sha256": "a9f6b26def1ea6e392da09f6b2639e75c46610aa2dc704c6b4fa5ec16d5047c1"
+      },
+      "material_id": "Pd3Ag_L12",
+      "source_case": "Pd3Ag_L12",
+      "source_phase": "p4-tier1-b-20261116t211531"
+    },
+    {
+      "checkpoint_from_incomplete_batch": true,
+      "completed": {
+        "bytes": 573,
+        "path": "completed.json",
+        "sha256": "78dc23dc81d645611dfeffc92047b5644c86ad00a95f4b17a4344ca3c258d5bc"
+      },
+      "config": {
+        "D_indices": [
+          4
+        ],
+        "case": "PdD_x0.25",
+        "cpu": 9,
+        "dos": {
+          "metal_indices": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "moment_width_eV": 0.1,
+          "occupied_window_eV": [
+            -20,
+            0.005,
+            0.01
+          ],
+          "widths_eV": [
+            0.1,
+            0.05
+          ]
+        },
+        "geometry": {
+          "cell_A": [
+            [
+              3.94,
+              0,
+              0
+            ],
+            [
+              0,
+              3.94,
+              0
+            ],
+            [
+              0,
+              0,
+              3.94
+            ]
+          ],
+          "initial_magnetic_moments_muB": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "positions_A": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1.97,
+              1.97
+            ],
+            [
+              1.97,
+              0,
+              1.97
+            ],
+            [
+              1.97,
+              1.97,
+              0
+            ],
+            [
+              1.97,
+              1.97,
+              1.97
+            ]
+          ],
+          "symbols": [
+            "Pd",
+            "Pd",
+            "Pd",
+            "Pd",
+            "H"
+          ]
+        },
+        "ground_state": {
+          "convergence": {
+            "bands": "occupied",
+            "density": 1e-06,
+            "eigenstates": 1e-09,
+            "energy": 1e-07
+          },
+          "ecut_eV": 500,
+          "kmesh": [
+            12,
+            12,
+            12
+          ],
+          "occupation_width_eV": 0.1,
+          "saved_nbands": 96,
+          "scf_nbands": 29,
+          "setups": {
+            "H": "paw",
+            "Pd": "10"
+          },
+          "spinpol": false
+        },
+        "isotope_convention": "H nuclear charge/electrons represent D in Born-Oppenheimer electronic quantities; no isotope kinetic prefactor inferred",
+        "kind": "dos",
+        "magnetic": false,
+        "material_id": "PdD_x0.25",
+        "metal_indices": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "model": "neutral collinear PBE / explicit valence PAW; static charge RPA",
+        "note": "Ordered octahedral occupancy, not a disordered configurational average; D and full cell relaxed; linear seed interpolation is not an empirical loading law",
+        "relaxation": {
+          "force_tolerance_eV_A": 0.02,
+          "max_steps": 60,
+          "mode": "cell",
+          "stress_tolerance_eV_A3": 0.0005
+        },
+        "responses": [],
+        "reuse_ground": null,
+        "runtime_source": {
+          "ase": "3.29.0",
+          "gpaw": "26.7.0",
+          "numpy": "2.5.3",
+          "python": "3.12.3",
+          "scipy": "1.18.1",
+          "source_files": [
+            {
+              "bytes": 9165,
+              "module": "gpaw.dos",
+              "path": "gpaw/dos.py",
+              "sha256": "e24cb9bdfa0ab6ae8a7a9ae8e7bcae58f8288115364444eaf01f1e01542b5ba5"
+            },
+            {
+              "bytes": 28239,
+              "module": "gpaw.new.ase_interface",
+              "path": "gpaw/new/ase_interface.py",
+              "sha256": "570c92ca14dd54fa46cd8c7137f1a822cba66392271b1d97229a7c2090275f0f"
+            },
+            {
+              "bytes": 34912,
+              "module": "gpaw.response.df",
+              "path": "gpaw/response/df.py",
+              "sha256": "4a12cd747199418babe7b03be947ce011e1cbc58f229979d398e44eb577ed4ef"
+            },
+            {
+              "bytes": 16980,
+              "module": "gpaw.response.groundstate",
+              "path": "gpaw/response/groundstate.py",
+              "sha256": "c4ed7ee5387be2d98c9332d17cd24ace6340fbb81a6ed09a5b8bdc72cac1a3e2"
+            },
+            {
+              "bytes": 19740,
+              "module": "gpaw.response.chi0",
+              "path": "gpaw/response/chi0.py",
+              "sha256": "1c3829261cef1d066d75e711e76af225b53d2d1fc14605b17a534c89b026b7d6"
+            },
+            {
+              "bytes": 5933,
+              "module": "gpaw.response.frequencies",
+              "path": "gpaw/response/frequencies.py",
+              "sha256": "49b3e6ed05b97db4a5f3879f5882cbeea1594f35854dcf61ac57f779df97183f"
+            }
+          ],
+          "world_size": 1
+        },
+        "schema": "coherence-screen-bulk-input-v1",
+        "scope": {
+          "DOS_tolerance_relative": 0.05,
+          "absolute_stop_utc": "2026-11-17T00:00:00Z",
+          "authority": "Axiom entry_1162",
+          "k_control": "Pd only",
+          "lambda_tolerance_relative": 0.1,
+          "screen_cap_core_min": 1000,
+          "static_Ue_definition": "Yukawa proxy C/lambda, not full-RPA near-origin Ue",
+          "tier": 1
+        },
+        "setup_files": [
+          "H.PBE.gz",
+          "Pd.10.PBE.gz"
+        ],
+        "setups": {
+          "H": "paw",
+          "Pd": "10"
+        },
+        "valence_electrons": 41
+      },
+      "consumers": {
+        "DOS_and_slope": [
+          "g4_beam"
+        ],
+        "lambda_and_ratios": [
+          "g1_rank",
+          "g3_lattice"
+        ]
+      },
+      "convergence": {
+        "DOS": "Requested Pd-only k control and declared transferred5% target; occupied projections independently integrated",
+        "RPA": null,
+        "physical_scope": "Numerical protocol eligibility, not all-electron physical confidence"
+      },
+      "input": {
+        "bytes": 3991,
+        "path": "input.json",
+        "sha256": "5ff9ffc9c2b2442bb11edf8e82310e2f1b48587dfdceed8113f2a123bdd60ac4"
+      },
+      "material_id": "PdD_x0.25",
+      "source_case": "PdD_x0.25",
+      "source_phase": "p4-tier1-b-20261116t211531"
+    },
+    {
+      "checkpoint_from_incomplete_batch": false,
+      "completed": {
+        "bytes": 715,
+        "path": "completed.json",
+        "sha256": "ffd71984b544401428f12f24e4e12d10bb86844c6a11386de2e85bb67e47c142"
+      },
+      "config": {
+        "D_indices": [],
+        "case": "Ni",
+        "cpu": 10,
+        "dos": {
+          "metal_indices": [
+            0
+          ],
+          "moment_width_eV": 0.1,
+          "occupied_window_eV": [
+            -20,
+            0.005,
+            0.01
+          ],
+          "widths_eV": [
+            0.1,
+            0.05
+          ]
+        },
+        "geometry": {
+          "cell_A": [
+            [
+              0,
+              1.76,
+              1.76
+            ],
+            [
+              1.76,
+              0,
+              1.76
+            ],
+            [
+              1.76,
+              1.76,
+              0
+            ]
+          ],
+          "initial_magnetic_moments_muB": [
+            1
+          ],
+          "positions_A": [
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "symbols": [
+            "Ni"
+          ]
+        },
+        "ground_state": {
+          "convergence": {
+            "bands": "occupied",
+            "density": 1e-06,
+            "eigenstates": 1e-09,
+            "energy": 1e-07
+          },
+          "ecut_eV": 500,
+          "kmesh": [
+            12,
+            12,
+            12
+          ],
+          "occupation_width_eV": 0.1,
+          "saved_nbands": 96,
+          "scf_nbands": 14,
+          "setups": {
+            "Ni": "10"
+          },
+          "spinpol": true
+        },
+        "isotope_convention": "H nuclear charge/electrons represent D in Born-Oppenheimer electronic quantities; no isotope kinetic prefactor inferred",
+        "kind": "rpa",
+        "magnetic": true,
+        "material_id": "Ni",
+        "metal_indices": [
+          0
+        ],
+        "model": "neutral collinear PBE / explicit valence PAW; static charge RPA",
+        "note": "Ferromagnetic collinear initialization; relaxed cubic volume; a=3.52 A is only an initial seed",
+        "relaxation": {
+          "force_tolerance_eV_A": 0.02,
+          "max_steps": 60,
+          "mode": "hydrostatic",
+          "stress_tolerance_eV_A3": 0.0005
+        },
+        "responses": [
+          {
+            "ecut_eV": 50,
+            "eta_eV": 0.005,
+            "expected_wall_s": 60,
+            "nbands": 96,
+            "q_fractional": [
+              0.08333333333333333,
+              0,
+              0
+            ]
+          },
+          {
+            "ecut_eV": 50,
+            "eta_eV": 0.005,
+            "expected_wall_s": 60,
+            "nbands": 96,
+            "q_fractional": [
+              0.16666666666666666,
+              0,
+              0
+            ]
+          },
+          {
+            "ecut_eV": 50,
+            "eta_eV": 0.005,
+            "expected_wall_s": 60,
+            "nbands": 96,
+            "q_fractional": [
+              0.25,
+              0,
+              0
+            ]
+          }
+        ],
+        "reuse_ground": null,
+        "runtime_source": {
+          "ase": "3.29.0",
+          "gpaw": "26.7.0",
+          "numpy": "2.5.3",
+          "python": "3.12.3",
+          "scipy": "1.18.1",
+          "source_files": [
+            {
+              "bytes": 9165,
+              "module": "gpaw.dos",
+              "path": "gpaw/dos.py",
+              "sha256": "e24cb9bdfa0ab6ae8a7a9ae8e7bcae58f8288115364444eaf01f1e01542b5ba5"
+            },
+            {
+              "bytes": 28239,
+              "module": "gpaw.new.ase_interface",
+              "path": "gpaw/new/ase_interface.py",
+              "sha256": "570c92ca14dd54fa46cd8c7137f1a822cba66392271b1d97229a7c2090275f0f"
+            },
+            {
+              "bytes": 34912,
+              "module": "gpaw.response.df",
+              "path": "gpaw/response/df.py",
+              "sha256": "4a12cd747199418babe7b03be947ce011e1cbc58f229979d398e44eb577ed4ef"
+            },
+            {
+              "bytes": 16980,
+              "module": "gpaw.response.groundstate",
+              "path": "gpaw/response/groundstate.py",
+              "sha256": "c4ed7ee5387be2d98c9332d17cd24ace6340fbb81a6ed09a5b8bdc72cac1a3e2"
+            },
+            {
+              "bytes": 19740,
+              "module": "gpaw.response.chi0",
+              "path": "gpaw/response/chi0.py",
+              "sha256": "1c3829261cef1d066d75e711e76af225b53d2d1fc14605b17a534c89b026b7d6"
+            },
+            {
+              "bytes": 5933,
+              "module": "gpaw.response.frequencies",
+              "path": "gpaw/response/frequencies.py",
+              "sha256": "49b3e6ed05b97db4a5f3879f5882cbeea1594f35854dcf61ac57f779df97183f"
+            }
+          ],
+          "world_size": 1
+        },
+        "schema": "coherence-screen-bulk-input-v1",
+        "scope": {
+          "DOS_tolerance_relative": 0.05,
+          "absolute_stop_utc": "2026-11-17T00:00:00Z",
+          "authority": "Axiom entry_1162",
+          "k_control": "Pd only",
+          "lambda_tolerance_relative": 0.1,
+          "screen_cap_core_min": 1000,
+          "static_Ue_definition": "Yukawa proxy C/lambda, not full-RPA near-origin Ue",
+          "tier": 1
+        },
+        "setup_files": [
+          "Ni.10.PBE.gz"
+        ],
+        "setups": {
+          "Ni": "10"
+        },
+        "valence_electrons": 10
+      },
+      "consumers": {
+        "DOS_and_slope": [
+          "g4_beam"
+        ],
+        "lambda_and_ratios": [
+          "g1_rank",
+          "g3_lattice"
+        ]
+      },
+      "convergence": {
+        "DOS": "Requested Pd-only k control and declared transferred5% target; occupied projections independently integrated",
+        "RPA": true,
+        "physical_scope": "Numerical protocol eligibility, not all-electron physical confidence"
+      },
+      "input": {
+        "bytes": 4070,
+        "path": "input.json",
+        "sha256": "c93c38f2b5428f309bdc9775f030fbb696a2f179d37696b3b0c0502ac58c50e3"
+      },
+      "material_id": "Ni",
+      "source_case": "Ni",
+      "source_phase": "p4-tier1-c-20261116t211531"
+    },
+    {
+      "checkpoint_from_incomplete_batch": false,
+      "completed": {
+        "bytes": 716,
+        "path": "completed.json",
+        "sha256": "ac98fdb3199d7cae9d4b71a5194180b2218fabd34f76fc3897ab96176b870807"
+      },
+      "config": {
+        "D_indices": [
+          1
+        ],
+        "case": "NiH",
+        "cpu": 10,
+        "dos": {
+          "metal_indices": [
+            0
+          ],
+          "moment_width_eV": 0.1,
+          "occupied_window_eV": [
+            -20,
+            0.005,
+            0.01
+          ],
+          "widths_eV": [
+            0.1,
+            0.05
+          ]
+        },
+        "geometry": {
+          "cell_A": [
+            [
+              0,
+              1.875,
+              1.875
+            ],
+            [
+              1.875,
+              0,
+              1.875
+            ],
+            [
+              1.875,
+              1.875,
+              0
+            ]
+          ],
+          "initial_magnetic_moments_muB": [
+            1,
+            0
+          ],
+          "positions_A": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              1.875,
+              0,
+              0
+            ]
+          ],
+          "symbols": [
+            "Ni",
+            "H"
+          ]
+        },
+        "ground_state": {
+          "convergence": {
+            "bands": "occupied",
+            "density": 1e-06,
+            "eigenstates": 1e-09,
+            "energy": 1e-07
+          },
+          "ecut_eV": 500,
+          "kmesh": [
+            12,
+            12,
+            12
+          ],
+          "occupation_width_eV": 0.1,
+          "saved_nbands": 96,
+          "scf_nbands": 14,
+          "setups": {
+            "H": "paw",
+            "Ni": "10"
+          },
+          "spinpol": true
+        },
+        "isotope_convention": "H nuclear charge/electrons represent D in Born-Oppenheimer electronic quantities; no isotope kinetic prefactor inferred",
+        "kind": "rpa",
+        "magnetic": true,
+        "material_id": "NiH",
+        "metal_indices": [
+          0
+        ],
+        "model": "neutral collinear PBE / explicit valence PAW; static charge RPA",
+        "note": "Collinear magnetic initialization may relax to zero moment; cubic volume and H positions relaxed; a=3.75 A is only an initial seed",
+        "relaxation": {
+          "force_tolerance_eV_A": 0.02,
+          "max_steps": 60,
+          "mode": "hydrostatic",
+          "stress_tolerance_eV_A3": 0.0005
+        },
+        "responses": [
+          {
+            "ecut_eV": 50,
+            "eta_eV": 0.005,
+            "expected_wall_s": 240,
+            "nbands": 96,
+            "q_fractional": [
+              0.08333333333333333,
+              0,
+              0
+            ]
+          },
+          {
+            "ecut_eV": 50,
+            "eta_eV": 0.005,
+            "expected_wall_s": 240,
+            "nbands": 96,
+            "q_fractional": [
+              0.16666666666666666,
+              0,
+              0
+            ]
+          },
+          {
+            "ecut_eV": 50,
+            "eta_eV": 0.005,
+            "expected_wall_s": 240,
+            "nbands": 96,
+            "q_fractional": [
+              0.25,
+              0,
+              0
+            ]
+          }
+        ],
+        "reuse_ground": null,
+        "runtime_source": {
+          "ase": "3.29.0",
+          "gpaw": "26.7.0",
+          "numpy": "2.5.3",
+          "python": "3.12.3",
+          "scipy": "1.18.1",
+          "source_files": [
+            {
+              "bytes": 9165,
+              "module": "gpaw.dos",
+              "path": "gpaw/dos.py",
+              "sha256": "e24cb9bdfa0ab6ae8a7a9ae8e7bcae58f8288115364444eaf01f1e01542b5ba5"
+            },
+            {
+              "bytes": 28239,
+              "module": "gpaw.new.ase_interface",
+              "path": "gpaw/new/ase_interface.py",
+              "sha256": "570c92ca14dd54fa46cd8c7137f1a822cba66392271b1d97229a7c2090275f0f"
+            },
+            {
+              "bytes": 34912,
+              "module": "gpaw.response.df",
+              "path": "gpaw/response/df.py",
+              "sha256": "4a12cd747199418babe7b03be947ce011e1cbc58f229979d398e44eb577ed4ef"
+            },
+            {
+              "bytes": 16980,
+              "module": "gpaw.response.groundstate",
+              "path": "gpaw/response/groundstate.py",
+              "sha256": "c4ed7ee5387be2d98c9332d17cd24ace6340fbb81a6ed09a5b8bdc72cac1a3e2"
+            },
+            {
+              "bytes": 19740,
+              "module": "gpaw.response.chi0",
+              "path": "gpaw/response/chi0.py",
+              "sha256": "1c3829261cef1d066d75e711e76af225b53d2d1fc14605b17a534c89b026b7d6"
+            },
+            {
+              "bytes": 5933,
+              "module": "gpaw.response.frequencies",
+              "path": "gpaw/response/frequencies.py",
+              "sha256": "49b3e6ed05b97db4a5f3879f5882cbeea1594f35854dcf61ac57f779df97183f"
+            }
+          ],
+          "world_size": 1
+        },
+        "schema": "coherence-screen-bulk-input-v1",
+        "scope": {
+          "DOS_tolerance_relative": 0.05,
+          "absolute_stop_utc": "2026-11-17T00:00:00Z",
+          "authority": "Axiom entry_1162",
+          "k_control": "Pd only",
+          "lambda_tolerance_relative": 0.1,
+          "screen_cap_core_min": 1000,
+          "static_Ue_definition": "Yukawa proxy C/lambda, not full-RPA near-origin Ue",
+          "tier": 1
+        },
+        "setup_files": [
+          "H.PBE.gz",
+          "Ni.10.PBE.gz"
+        ],
+        "setups": {
+          "H": "paw",
+          "Ni": "10"
+        },
+        "valence_electrons": 11
+      },
+      "consumers": {
+        "DOS_and_slope": [
+          "g4_beam"
+        ],
+        "lambda_and_ratios": [
+          "g1_rank",
+          "g3_lattice"
+        ]
+      },
+      "convergence": {
+        "DOS": "Requested Pd-only k control and declared transferred5% target; occupied projections independently integrated",
+        "RPA": true,
+        "physical_scope": "Numerical protocol eligibility, not all-electron physical confidence"
+      },
+      "input": {
+        "bytes": 4249,
+        "path": "input.json",
+        "sha256": "c819c52597a9d02fa7755ac71790efc543167c08859d82797ca5a7e7178a8373"
+      },
+      "material_id": "NiH",
+      "source_case": "NiH",
+      "source_phase": "p4-tier1-c-20261116t211531"
+    },
+    {
+      "checkpoint_from_incomplete_batch": false,
+      "completed": {
+        "bytes": 748,
+        "path": "completed.json",
+        "sha256": "2fea62a09c62512b9175af1425155830604280a26709c39963a71e78a23484e4"
+      },
+      "config": {
+        "case": "Pd-pristine-api-fingerprint-a3.890A",
+        "cpu": 10,
+        "dos": {
+          "metal_indices": [
+            0
+          ],
+          "moment_width_eV": 0.1,
+          "occupied_window_eV": [
+            -20,
+            0.005,
+            0.01
+          ],
+          "widths_eV": [
+            0.1,
+            0.05
+          ]
+        },
+        "eligible": false,
+        "geometry": {
+          "cell_A": [
+            [
+              0,
+              1.945,
+              1.945
+            ],
+            [
+              1.945,
+              0,
+              1.945
+            ],
+            [
+              1.945,
+              1.945,
+              0
+            ]
+          ],
+          "positions_A": [
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "symbols": [
+            "Pd"
+          ]
+        },
+        "ground_state": {
+          "convergence": {
+            "bands": "occupied",
+            "density": 1e-06,
+            "eigenstates": 1e-09,
+            "energy": 1e-07
+          },
+          "ecut_eV": 500,
+          "kmesh": [
+            12,
+            12,
+            12
+          ],
+          "occupation_width_eV": 0.1,
+          "saved_nbands": 96,
+          "scf_nbands": 16,
+          "setups": {
+            "Pd": "10"
+          }
+        },
+        "kind": "rpa",
+        "material_id": "Pd_hydro_+0pct",
+        "model": "neutral nonmagnetic PBE/Pd10 frozen-core PAW; static direct valence RPA",
+        "responses": [
+          {
+            "ecut_eV": 50,
+            "eta_eV": 0.005,
+            "expected_wall_s": 60,
+            "nbands": 96,
+            "q_fractional": [
+              0.08333333333333333,
+              0,
+              0
+            ]
+          },
+          {
+            "ecut_eV": 50,
+            "eta_eV": 0.005,
+            "expected_wall_s": 60,
+            "nbands": 96,
+            "q_fractional": [
+              0.16666666666666666,
+              0,
+              0
+            ]
+          },
+          {
+            "ecut_eV": 50,
+            "eta_eV": 0.005,
+            "expected_wall_s": 60,
+            "nbands": 96,
+            "q_fractional": [
+              0.25,
+              0,
+              0
+            ]
+          }
+        ],
+        "reuse_ground": {
+          "completed": {
+            "bytes": 686,
+            "path": "completed.json",
+            "sha256": "4c4ab3781fdc0ecc05af700603dfc7e78cdade879000fdc0f77eee6038d34e01"
+          },
+          "gpw": {
+            "bytes": 45311909,
+            "path": "ground.gpw",
+            "sha256": "2234bcd142bd594a415c685695fb6874174f16fd7d545853ff1ca1f965f8d965"
+          },
+          "ground": {
+            "bytes": 2178,
+            "path": "ground.json",
+            "sha256": "3625e3bb1e99faf85621cf8c13c042b34b93415ba888d20d185a970203f46749"
+          },
+          "input": {
+            "bytes": 3381,
+            "path": "input.json",
+            "sha256": "6f6c56cee7f25671b9f294c80dcac5b42463ba2ea6db95341eaaf6ed8229134a"
+          },
+          "producer": {
+            "bytes": 4825,
+            "path": "producer.json",
+            "sha256": "c0e146eb36bc8da1042466174f30dccc722830272fbe103c66c4271c14bbbc1f"
+          },
+          "source_case_directory": "p4-pd0-fp-20261116t194914"
+        },
+        "runtime_source": {
+          "ase": "3.29.0",
+          "gpaw": "26.7.0",
+          "numpy": "2.5.3",
+          "python": "3.12.3",
+          "scipy": "1.18.1",
+          "setup": {
+            "bytes": 106793,
+            "path": "Pd.10.PBE.gz",
+            "sha256": "3c6cfd1de7e6d6815d58c9521b2bc7cec27ede8e83554ed1f0151f979761bbb4"
+          },
+          "source_files": [
+            {
+              "bytes": 9165,
+              "module": "gpaw.dos",
+              "path": "gpaw/dos.py",
+              "sha256": "e24cb9bdfa0ab6ae8a7a9ae8e7bcae58f8288115364444eaf01f1e01542b5ba5"
+            },
+            {
+              "bytes": 28239,
+              "module": "gpaw.new.ase_interface",
+              "path": "gpaw/new/ase_interface.py",
+              "sha256": "570c92ca14dd54fa46cd8c7137f1a822cba66392271b1d97229a7c2090275f0f"
+            },
+            {
+              "bytes": 34912,
+              "module": "gpaw.response.df",
+              "path": "gpaw/response/df.py",
+              "sha256": "4a12cd747199418babe7b03be947ce011e1cbc58f229979d398e44eb577ed4ef"
+            },
+            {
+              "bytes": 16980,
+              "module": "gpaw.response.groundstate",
+              "path": "gpaw/response/groundstate.py",
+              "sha256": "c4ed7ee5387be2d98c9332d17cd24ace6340fbb81a6ed09a5b8bdc72cac1a3e2"
+            },
+            {
+              "bytes": 19740,
+              "module": "gpaw.response.chi0",
+              "path": "gpaw/response/chi0.py",
+              "sha256": "1c3829261cef1d066d75e711e76af225b53d2d1fc14605b17a534c89b026b7d6"
+            },
+            {
+              "bytes": 5933,
+              "module": "gpaw.response.frequencies",
+              "path": "gpaw/response/frequencies.py",
+              "sha256": "49b3e6ed05b97db4a5f3879f5882cbeea1594f35854dcf61ac57f779df97183f"
+            }
+          ],
+          "world_size": 1
+        },
+        "schema": "coherence-screen-fingerprint-input-v1",
+        "scope": {
+          "DOS_tolerance_relative": 0.05,
+          "absolute_stop_utc": "2026-11-17T00:00:00Z",
+          "authority": "Axiom entry_1162",
+          "k_control": "Pd only",
+          "lambda_tolerance_relative": 0.1,
+          "screen_cap_core_min": 1000,
+          "static_Ue_definition": "Yukawa proxy C/lambda, not full-RPA near-origin Ue",
+          "tier": 1
+        },
+        "setup_files": [
+          "Pd.10.PBE.gz"
+        ]
+      },
+      "consumers": {
+        "DOS_and_slope": [
+          "g4_beam"
+        ],
+        "lambda_and_ratios": [
+          "g1_rank",
+          "g3_lattice"
+        ]
+      },
+      "convergence": {
+        "DOS": "Requested Pd-only k control and declared transferred5% target; occupied projections independently integrated",
+        "RPA": true,
+        "physical_scope": "Numerical protocol eligibility, not all-electron physical confidence"
+      },
+      "input": {
+        "bytes": 4557,
+        "path": "input.json",
+        "sha256": "ef08b7716baa57a29648008092ad426bedf5ec96be5de4af14e39e068f0d5336"
+      },
+      "material_id": "Pd_hydro_+0pct",
+      "source_case": "Pd_hydro_+0pct",
+      "source_phase": "p4-tier1-c-20261116t211531"
+    },
+    {
+      "checkpoint_from_incomplete_batch": false,
+      "completed": {
+        "bytes": 725,
+        "path": "completed.json",
+        "sha256": "e0a73a9884bb087b8dc916ddf9db1530043decffa18e2e8091fbb3606e8cc7a2"
+      },
+      "config": {
+        "D_indices": [
+          1,
+          2
+        ],
+        "case": "TiD2_fluorite",
+        "cpu": 10,
+        "dos": {
+          "metal_indices": [
+            0
+          ],
+          "moment_width_eV": 0.1,
+          "occupied_window_eV": [
+            -20,
+            0.005,
+            0.01
+          ],
+          "widths_eV": [
+            0.1,
+            0.05
+          ]
+        },
+        "geometry": {
+          "cell_A": [
+            [
+              0,
+              2.22,
+              2.22
+            ],
+            [
+              2.22,
+              0,
+              2.22
+            ],
+            [
+              2.22,
+              2.22,
+              0
+            ]
+          ],
+          "initial_magnetic_moments_muB": [
+            0,
+            0,
+            0
+          ],
+          "positions_A": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              1.11,
+              1.11,
+              1.11
+            ],
+            [
+              3.33,
+              3.33,
+              3.33
+            ]
+          ],
+          "symbols": [
+            "Ti",
+            "H",
+            "H"
+          ]
+        },
+        "ground_state": {
+          "convergence": {
+            "bands": "occupied",
+            "density": 1e-06,
+            "eigenstates": 1e-09,
+            "energy": 1e-07
+          },
+          "ecut_eV": 500,
+          "kmesh": [
+            12,
+            12,
+            12
+          ],
+          "occupation_width_eV": 0.1,
+          "saved_nbands": 96,
+          "scf_nbands": 15,
+          "setups": {
+            "H": "paw",
+            "Ti": "paw"
+          },
+          "spinpol": false
+        },
+        "isotope_convention": "H nuclear charge/electrons represent D in Born-Oppenheimer electronic quantities; no isotope kinetic prefactor inferred",
+        "kind": "rpa",
+        "magnetic": false,
+        "material_id": "TiD2_fluorite",
+        "metal_indices": [
+          0
+        ],
+        "model": "neutral collinear PBE / explicit valence PAW; static charge RPA",
+        "note": "Stoichiometric fluorite tetrahedral D sites, not the transport TiD1.85 estimate; cubic volume and D positions relaxed",
+        "relaxation": {
+          "force_tolerance_eV_A": 0.02,
+          "max_steps": 60,
+          "mode": "hydrostatic",
+          "stress_tolerance_eV_A3": 0.0005
+        },
+        "responses": [
+          {
+            "ecut_eV": 50,
+            "eta_eV": 0.005,
+            "expected_wall_s": 540,
+            "nbands": 96,
+            "q_fractional": [
+              0.08333333333333333,
+              0,
+              0
+            ]
+          },
+          {
+            "ecut_eV": 50,
+            "eta_eV": 0.005,
+            "expected_wall_s": 540,
+            "nbands": 96,
+            "q_fractional": [
+              0.16666666666666666,
+              0,
+              0
+            ]
+          },
+          {
+            "ecut_eV": 50,
+            "eta_eV": 0.005,
+            "expected_wall_s": 540,
+            "nbands": 96,
+            "q_fractional": [
+              0.25,
+              0,
+              0
+            ]
+          }
+        ],
+        "reuse_ground": null,
+        "runtime_source": {
+          "ase": "3.29.0",
+          "gpaw": "26.7.0",
+          "numpy": "2.5.3",
+          "python": "3.12.3",
+          "scipy": "1.18.1",
+          "source_files": [
+            {
+              "bytes": 9165,
+              "module": "gpaw.dos",
+              "path": "gpaw/dos.py",
+              "sha256": "e24cb9bdfa0ab6ae8a7a9ae8e7bcae58f8288115364444eaf01f1e01542b5ba5"
+            },
+            {
+              "bytes": 28239,
+              "module": "gpaw.new.ase_interface",
+              "path": "gpaw/new/ase_interface.py",
+              "sha256": "570c92ca14dd54fa46cd8c7137f1a822cba66392271b1d97229a7c2090275f0f"
+            },
+            {
+              "bytes": 34912,
+              "module": "gpaw.response.df",
+              "path": "gpaw/response/df.py",
+              "sha256": "4a12cd747199418babe7b03be947ce011e1cbc58f229979d398e44eb577ed4ef"
+            },
+            {
+              "bytes": 16980,
+              "module": "gpaw.response.groundstate",
+              "path": "gpaw/response/groundstate.py",
+              "sha256": "c4ed7ee5387be2d98c9332d17cd24ace6340fbb81a6ed09a5b8bdc72cac1a3e2"
+            },
+            {
+              "bytes": 19740,
+              "module": "gpaw.response.chi0",
+              "path": "gpaw/response/chi0.py",
+              "sha256": "1c3829261cef1d066d75e711e76af225b53d2d1fc14605b17a534c89b026b7d6"
+            },
+            {
+              "bytes": 5933,
+              "module": "gpaw.response.frequencies",
+              "path": "gpaw/response/frequencies.py",
+              "sha256": "49b3e6ed05b97db4a5f3879f5882cbeea1594f35854dcf61ac57f779df97183f"
+            }
+          ],
+          "world_size": 1
+        },
+        "schema": "coherence-screen-bulk-input-v1",
+        "scope": {
+          "DOS_tolerance_relative": 0.05,
+          "absolute_stop_utc": "2026-11-17T00:00:00Z",
+          "authority": "Axiom entry_1162",
+          "k_control": "Pd only",
+          "lambda_tolerance_relative": 0.1,
+          "screen_cap_core_min": 1000,
+          "static_Ue_definition": "Yukawa proxy C/lambda, not full-RPA near-origin Ue",
+          "tier": 1
+        },
+        "setup_files": [
+          "H.PBE.gz",
+          "Ti.PBE.gz"
+        ],
+        "setups": {
+          "H": "paw",
+          "Ti": "paw"
+        },
+        "valence_electrons": 14
+      },
+      "consumers": {
+        "DOS_and_slope": [
+          "g4_beam"
+        ],
+        "lambda_and_ratios": [
+          "g1_rank",
+          "g3_lattice"
+        ]
+      },
+      "convergence": {
+        "DOS": "Requested Pd-only k control and declared transferred5% target; occupied projections independently integrated",
+        "RPA": true,
+        "physical_scope": "Numerical protocol eligibility, not all-electron physical confidence"
+      },
+      "input": {
+        "bytes": 4341,
+        "path": "input.json",
+        "sha256": "5360ea4e0a8e1317c0a4c10699ddf8f3dda82b5eb50d7614a6e65b9bd27c80c7"
+      },
+      "material_id": "TiD2_fluorite",
+      "source_case": "TiD2_fluorite",
+      "source_phase": "p4-tier1-c-20261116t211531"
+    },
+    {
+      "checkpoint_from_incomplete_batch": false,
+      "completed": {
+        "bytes": 569,
+        "path": "completed.json",
+        "sha256": "0bd1718bb423164dc8c8d986a680fbd380dbd48ffc717f6500aec192abc6a510"
+      },
+      "config": {
+        "D_indices": [],
+        "case": "Ti_hcp",
+        "cpu": 10,
+        "dos": {
+          "metal_indices": [
+            0,
+            1
+          ],
+          "moment_width_eV": 0.1,
+          "occupied_window_eV": [
+            -20,
+            0.005,
+            0.01
+          ],
+          "widths_eV": [
+            0.1,
+            0.05
+          ]
+        },
+        "geometry": {
+          "cell_A": [
+            [
+              2.951,
+              0,
+              0
+            ],
+            [
+              -1.4755,
+              2.5556409665678785,
+              0
+            ],
+            [
+              0,
+              0,
+              4.686
+            ]
+          ],
+          "initial_magnetic_moments_muB": [
+            0,
+            0
+          ],
+          "positions_A": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              5.460446909448062e-17,
+              1.7037606443785855,
+              2.343
+            ]
+          ],
+          "symbols": [
+            "Ti",
+            "Ti"
+          ]
+        },
+        "ground_state": {
+          "convergence": {
+            "bands": "occupied",
+            "density": 1e-06,
+            "eigenstates": 1e-09,
+            "energy": 1e-07
+          },
+          "ecut_eV": 500,
+          "kmesh": [
+            12,
+            12,
+            12
+          ],
+          "occupation_width_eV": 0.1,
+          "saved_nbands": 96,
+          "scf_nbands": 20,
+          "setups": {
+            "Ti": "paw"
+          },
+          "spinpol": false
+        },
+        "isotope_convention": "H nuclear charge/electrons represent D in Born-Oppenheimer electronic quantities; no isotope kinetic prefactor inferred",
+        "kind": "dos",
+        "magnetic": false,
+        "material_id": "Ti_hcp",
+        "metal_indices": [
+          0,
+          1
+        ],
+        "model": "neutral collinear PBE / explicit valence PAW; static charge RPA",
+        "note": "hcp representative; a,c and internal positions relaxed; supplied dimensions are initial seeds",
+        "relaxation": {
+          "force_tolerance_eV_A": 0.02,
+          "max_steps": 60,
+          "mode": "hexagonal",
+          "stress_tolerance_eV_A3": 0.0005
+        },
+        "responses": [],
+        "reuse_ground": null,
+        "runtime_source": {
+          "ase": "3.29.0",
+          "gpaw": "26.7.0",
+          "numpy": "2.5.3",
+          "python": "3.12.3",
+          "scipy": "1.18.1",
+          "source_files": [
+            {
+              "bytes": 9165,
+              "module": "gpaw.dos",
+              "path": "gpaw/dos.py",
+              "sha256": "e24cb9bdfa0ab6ae8a7a9ae8e7bcae58f8288115364444eaf01f1e01542b5ba5"
+            },
+            {
+              "bytes": 28239,
+              "module": "gpaw.new.ase_interface",
+              "path": "gpaw/new/ase_interface.py",
+              "sha256": "570c92ca14dd54fa46cd8c7137f1a822cba66392271b1d97229a7c2090275f0f"
+            },
+            {
+              "bytes": 34912,
+              "module": "gpaw.response.df",
+              "path": "gpaw/response/df.py",
+              "sha256": "4a12cd747199418babe7b03be947ce011e1cbc58f229979d398e44eb577ed4ef"
+            },
+            {
+              "bytes": 16980,
+              "module": "gpaw.response.groundstate",
+              "path": "gpaw/response/groundstate.py",
+              "sha256": "c4ed7ee5387be2d98c9332d17cd24ace6340fbb81a6ed09a5b8bdc72cac1a3e2"
+            },
+            {
+              "bytes": 19740,
+              "module": "gpaw.response.chi0",
+              "path": "gpaw/response/chi0.py",
+              "sha256": "1c3829261cef1d066d75e711e76af225b53d2d1fc14605b17a534c89b026b7d6"
+            },
+            {
+              "bytes": 5933,
+              "module": "gpaw.response.frequencies",
+              "path": "gpaw/response/frequencies.py",
+              "sha256": "49b3e6ed05b97db4a5f3879f5882cbeea1594f35854dcf61ac57f779df97183f"
+            }
+          ],
+          "world_size": 1
+        },
+        "schema": "coherence-screen-bulk-input-v1",
+        "scope": {
+          "DOS_tolerance_relative": 0.05,
+          "absolute_stop_utc": "2026-11-17T00:00:00Z",
+          "authority": "Axiom entry_1162",
+          "k_control": "Pd only",
+          "lambda_tolerance_relative": 0.1,
+          "screen_cap_core_min": 1000,
+          "static_Ue_definition": "Yukawa proxy C/lambda, not full-RPA near-origin Ue",
+          "tier": 1
+        },
+        "setup_files": [
+          "Ti.PBE.gz"
+        ],
+        "setups": {
+          "Ti": "paw"
+        },
+        "valence_electrons": 24
+      },
+      "consumers": {
+        "DOS_and_slope": [
+          "g4_beam"
+        ],
+        "lambda_and_ratios": [
+          "g1_rank",
+          "g3_lattice"
+        ]
+      },
+      "convergence": {
+        "DOS": "Requested Pd-only k control and declared transferred5% target; occupied projections independently integrated",
+        "RPA": null,
+        "physical_scope": "Numerical protocol eligibility, not all-electron physical confidence"
+      },
+      "input": {
+        "bytes": 3665,
+        "path": "input.json",
+        "sha256": "6834cf945da2f39956fd7b72a898e55a6473e292e0795ea7f6845c658e86811e"
+      },
+      "material_id": "Ti_hcp",
+      "source_case": "Ti_hcp",
+      "source_phase": "p4-tier1-c-20261116t211531"
+    }
+  ],
+  "collector": {
+    "bytes": 4326,
+    "path": "collect_screen.py",
+    "sha256": "b0fa5d64a2ca2c6c02dd82c181e4934ba51eaf99b5711b2d1836c2adefed4966"
+  },
+  "neutral_cycle": {
+    "bytes": 48840,
+    "path": "neutral-adiabatic-calibrated.json",
+    "sha256": "795f367e9fee61ad4482b542977a7a79320fbd7529dd4c1ffe02bef315bb9e30"
+  },
+  "not_computed": [
+    {
+      "material_id": "PdD_x0.5",
+      "reason": "Original and bounded recovery timed out before completed DOS; no interpolation/in-flight SCF reuse",
+      "source_recovery_input": {
+        "bytes": 5041,
+        "path": "input.json",
+        "sha256": "350ce544ca61b31499c2d5674438958013c443187c621b6885eba692bbfaf0ac"
+      },
+      "status": "not_computed"
+    }
+  ],
+  "requested_cases": {
+    "bytes": 21228,
+    "path": "tier1-case-specs.json",
+    "sha256": "40b23e06476e84b3e3e98d9c256806770243a43f8d6be21eb872bec6ee761eac"
+  },
+  "saved_DOS_supplement": {
+    "bytes": 2188,
+    "path": "Pd-saved-DOS-reanalysis.json",
+    "sha256": "5652ecf780ac795522def62369cc163a80099af7d6a2d0f3c7881ea4fc0df4b8"
+  }
+}

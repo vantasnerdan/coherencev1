@@ -1,0 +1,73 @@
+{
+  "Bohr_mutation_lambda_A": 0.7558904503347714,
+  "analytic_TF_lambda_A": 0.4000000000000001,
+  "k12": {
+    "Ue_static_Yukawa_proxy_eV": 36.22746936148262,
+    "fit": "q^2(epsilon_M-1)=kappa^2+regular*q^2",
+    "kappa_squared_Ainv2": 6.329543714499573,
+    "lambda_A": 0.39747864274672146,
+    "model": "Valence-PAW static RPA low-q length; C/lambda is a Yukawa proxy, not a full-RPA near-origin shift",
+    "q_Ainv": [
+      0.23313616506866555,
+      0.4662723301373311,
+      0.6994084952059967
+    ],
+    "q_squared_epsilon_minus_one_Ainv2": [
+      6.368536379843924,
+      6.042569752752678,
+      6.016060767912286
+    ],
+    "q_window_lambda_span_A": [
+      0.3929222453961441,
+      0.407702986549628
+    ],
+    "q_window_pass_10percent": true,
+    "q_window_relative_spread": 0.025723001699544445
+  },
+  "k24_cutoff50": {
+    "Ue_static_Yukawa_proxy_eV": 36.50671640516003,
+    "fit": "q^2(epsilon_M-1)=kappa^2+regular*q^2",
+    "kappa_squared_Ainv2": 6.427498029841662,
+    "lambda_A": 0.394438250543816,
+    "model": "Valence-PAW static RPA low-q length; C/lambda is a Yukawa proxy, not a full-RPA near-origin shift",
+    "q_Ainv": [
+      0.11656808253433278,
+      0.23313616506866555,
+      0.34970424760299834
+    ],
+    "q_squared_epsilon_minus_one_Ainv2": [
+      6.420666264744222,
+      6.356531963779735,
+      6.300553635456456
+    ],
+    "q_window_lambda_span_A": [
+      0.3939926719905434,
+      0.39839203175361965
+    ],
+    "q_window_pass_10percent": true,
+    "q_window_relative_spread": 0.010023828075376828
+  },
+  "k_relative_change": 0.007708157610763378,
+  "passed": true,
+  "radial_force_derivative_check": 0.00813721890566263,
+  "role": "Actual Pd small-q length qualification",
+  "scope": "Numerical small-q valence-PAW RPA/Yukawa proxy, not full-RPA near-origin screening",
+  "sources": [
+    {
+      "bytes": 2905,
+      "path": "readout.json",
+      "sha256": "fd0067b6f4d22b64bef70c0789173b377b031fb42fa3aed9f4aaa0d69eec731f"
+    },
+    {
+      "bytes": 2857,
+      "path": "response.json",
+      "sha256": "58c4c95486ed8a02e1348f93691ee8f3a47f99ef3aedece6273d572b8a825b80"
+    },
+    {
+      "bytes": 1457,
+      "path": "cutoff-restriction-proof.json",
+      "sha256": "603e21ef6aca811c3e1f910fde3102247f5a1d469ea2f10fbba450f1be855fff"
+    }
+  ],
+  "tolerance": 0.1
+}

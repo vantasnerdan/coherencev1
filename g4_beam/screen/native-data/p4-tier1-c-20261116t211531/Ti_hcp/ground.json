@@ -1,0 +1,214 @@
+{
+  "case": "Ti_hcp",
+  "cell_volume_A3": 34.821944806601735,
+  "dos": {
+    "D_projected_n_EF_tetrahedron_states_per_eV_per_D": null,
+    "D_projected_n_EF_tetrahedron_states_per_eV_per_cell": null,
+    "D_projection_present": false,
+    "D_projector_channels": {},
+    "by_metal_element": {
+      "Ti": {
+        "occupied_d_centre_relative_EF_eV": -1.263563948545697,
+        "occupied_d_rms_width_eV": 0.7682664444383995,
+        "occupied_d_states_per_cell": 4.654819816365133
+      }
+    },
+    "eligible": false,
+    "fermi_energy_eV": 8.490427380366397,
+    "n_EF_states_per_eV_per_cell": {
+      "0.05": 1.474295494955004,
+      "0.1": 1.7164418974501583
+    },
+    "n_EF_tetrahedron_states_per_eV_per_cell": 1.7130285051623462,
+    "nspins": 1,
+    "numerical_electron_count": 24.000000000170107,
+    "occupied_d_centre_relative_EF_eV": -1.263563948545697,
+    "occupied_d_rms_width_eV": 0.7682664444383995,
+    "occupied_d_states_per_cell": 4.654819816365133,
+    "reason": "Requires independent observable-level convergence qualification",
+    "settings": {
+      "metal_indices": [
+        0,
+        1
+      ],
+      "moment_width_eV": 0.1,
+      "occupied_window_eV": [
+        -20,
+        0.005,
+        0.01
+      ],
+      "widths_eV": [
+        0.1,
+        0.05
+      ]
+    },
+    "spectrum": {
+      "bytes": 23224,
+      "path": "dos.npz",
+      "sha256": "29804c81632ae956e1fabcb97674d97b251712045de218e7acbc1d61d2afb6a1"
+    },
+    "spin_degeneracy": 2.0
+  },
+  "forces_eV_A": [
+    [
+      5.94687113100741e-17,
+      5.94687113100741e-17,
+      0.0
+    ],
+    [
+      0.0,
+      -5.94687113100741e-17,
+      0.0
+    ]
+  ],
+  "free_energy_eV": -13.33604085361977,
+  "geometry": {
+    "cell_A": [
+      [
+        2.9395015346697115,
+        0.0,
+        0.0
+      ],
+      [
+        -1.4697507673348558,
+        2.5456830034873135,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        4.653449535949384
+      ]
+    ],
+    "initial_magnetic_moments_muB": [
+      0.0,
+      0.0
+    ],
+    "positions_A": [
+      [
+        -8.209391443955626e-19,
+        3.776196121001351e-18,
+        3.558709174912048e-19
+      ],
+      [
+        5.744711634258696e-17,
+        1.6971220023248774,
+        2.3267247679746914
+      ]
+    ],
+    "symbols": [
+      "Ti",
+      "Ti"
+    ]
+  },
+  "gpaw_version": "26.7.0",
+  "gpw": {
+    "bytes": 194478330,
+    "path": "ground.gpw",
+    "sha256": "28f70e19c109e3cf04109c4671583ee6ff9cb896f61b853fbb36cbb37dfc5d45"
+  },
+  "ground_state_settings": {
+    "convergence": {
+      "bands": "occupied",
+      "density": 1e-06,
+      "eigenstates": 1e-09,
+      "energy": 1e-07
+    },
+    "ecut_eV": 500,
+    "kmesh": [
+      12,
+      12,
+      12
+    ],
+    "occupation_width_eV": 0.1,
+    "saved_nbands": 96,
+    "scf_nbands": 20,
+    "setups": {
+      "Ti": "paw"
+    },
+    "spinpol": false
+  },
+  "initial_geometry": {
+    "cell_A": [
+      [
+        2.951,
+        0,
+        0
+      ],
+      [
+        -1.4755,
+        2.5556409665678785,
+        0
+      ],
+      [
+        0,
+        0,
+        4.686
+      ]
+    ],
+    "initial_magnetic_moments_muB": [
+      0,
+      0
+    ],
+    "positions_A": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        5.460446909448062e-17,
+        1.7037606443785855,
+        2.343
+      ]
+    ],
+    "symbols": [
+      "Ti",
+      "Ti"
+    ]
+  },
+  "magnetic_moment_muB": 0.0,
+  "model": "neutral collinear PBE / explicit valence PAW; static charge RPA",
+  "neutral_electrons": 24.0,
+  "relaxation": {
+    "forces_eV_A": [
+      [
+        5.94687113100741e-17,
+        5.94687113100741e-17,
+        0.0
+      ],
+      [
+        0.0,
+        -5.94687113100741e-17,
+        0.0
+      ]
+    ],
+    "interpretation": "Stationary ordered phase; no global phase or phonon stability claim",
+    "mode": "hexagonal",
+    "relaxed": true,
+    "settings": {
+      "force_tolerance_eV_A": 0.02,
+      "max_steps": 60,
+      "mode": "hexagonal",
+      "stress_tolerance_eV_A3": 0.0005
+    },
+    "steps": 6,
+    "stress_eV_A3": [
+      5.991420018676205e-05,
+      5.991420018676205e-05,
+      6.169892715554946e-05,
+      0.0,
+      0.0,
+      2.4886713689614612e-18
+    ]
+  },
+  "schema": "coherence-screen-ground-v1",
+  "stress_eV_A3": [
+    5.991420018676205e-05,
+    5.991420018676205e-05,
+    6.169892715554946e-05,
+    0.0,
+    0.0,
+    2.4886713689614612e-18
+  ]
+}
