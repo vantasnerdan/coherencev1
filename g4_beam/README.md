@@ -20,7 +20,8 @@ One static number cannot serve both, so the shared deliverable is eps(q) over th
 | Directory | What it is |
 |---|---|
 | `work/` | Digitised Fig 2, SI Tables 1 and 2, SI Fig 3 IV points; first checks |
-| `forward/` | Thick-target yield model with a measurement layer, fitted to Fig 2 (about 6 CPU-minutes) |
+| `forward/` | Thick-target yield model with a measurement layer, fitted to Fig 2; independent second route; callable consumer |
+| `czerski/` | Czerski et al. (Pd, Ti, Zr) and Tohoku (Ti, EXFOR O1084) fitted with the same candidate set; shared thermal amplitude |
 | `transport/` | 1D deuterium transport with beam damage, binary-collision ranges, knob sweeps |
 | `screening/` | 184 measured screening potentials with sources, screening-model formulas, correlation tests |
 | `priordata/` | Other low-energy d+d datasets in one table, plateau comparison |
@@ -29,34 +30,32 @@ Run every script from its own directory, except `work/` scripts and `priordata/s
 
 ## Current best numbers
 
-Bulk screening potential U_e (keV) from a thick-target fit to the 2.5-6.5 keV points. The value depends on how the beam charge is normalised. Fig 2 and SI Table 1 differ by one factor of cup current, so the model carries the normalisation as a hypothesis:
+Every fit now carries a fixed threshold-resonance term (Czerski et al., arXiv:2409.02112v3: Gamma_p 40 meV, phase 115 degrees, 7 fm) as common reaction physics; see `forward/README.md` and `forward/bulk_screening.csv` for the Eq 7-only values beside these.
 
-| Charge normalisation | chi2 (28 pts) | Pd | PdD | Ti | TiD |
+Bulk screening potential U_e (keV) from a thick-target fit to the 2.5-6.5 keV points (28 points). Fig 2 and SI Table 1 differ by one factor of cup current, so the model carries the charge normalisation as a hypothesis:
+
+| Charge normalisation | chi2 | Pd | PdD | Ti | TiD |
 |---|---|---|---|---|---|
-| As plotted | 33.9 | 1.27 | 2.20 | 0.99 | 1.34 |
-| One power of cup current | 19.9 | 0.70 | 1.41 | 0.45 | 0.84 |
-| Two powers | 25.5 | 0.25 | 0.80 | 0.03 | 0.45 |
+| As plotted (M0) | 37.85 | 1.25 | 2.04 | 0.98 | 1.32 |
+| One power of cup current (M1, M2, M4) | 19.9-20.0 | 0.70 | 1.40 | 0.45 | 0.84 |
+| Two powers (M3, M5) | 25.58 | 0.25 | 0.81 | 0.03 | 0.45 |
 
-The hydride-minus-metal step is stable across these: PdD-Pd 0.55-0.93 keV, TiD-Ti 0.35-0.42 keV.
+Each power of current moves U_e by 0.39-0.64 keV. The step loading adds stays at PdD-Pd 0.55-0.79 keV and TiD-Ti 0.34-0.42 keV under all six hypotheses.
 
-Low-energy plateau. These three candidates fit all 48 points at chi2/dof ~ 1 and lie within delta-BIC 2.2 of each other:
-- a sub-monolayer surface deuterium population with U_e 6-12 keV;
-- the paper's sigmoid U_e placed inside the thick-target integral, with run-to-run values 1.6-2.2 keV;
-- a fast-neutral beam component of at least 0.18 of the cup current at about 5 keV lab.
+Low-energy plateau, best fit of each candidate on all 48 points (`forward/fits.json`):
 
-These do not fit: no plateau (chi2 459), a threshold resonance with one width (chi2 >= 136), and any deuterium layer thicker than 0.2 nm.
+| Candidate | Hypothesis | k | chi2 | Key parameters |
+|---|---|---|---|---|
+| Sigmoid screening inside the thick target | M3 | 10 | 36.92 | surface U_e 1.29-1.69 keV, E0 1.63 keV |
+| Sub-monolayer surface layer | M2 | 10 | 40.29 | surface U_e 3.3-5.9 keV, depth 0.052 nm |
+| Fast neutrals, fitted energy | M2 | 7 | 46.31 | 3.8 keV lab, flux 1.59 x extracted current |
+| Fast neutrals at 5 keV lab | M4 | 6 | 49.65 | flux 0.267 |
+| Thermal spike, one amplitude | M4 | 6 | 132.23 | |
+| No additional plateau | M0 | 5 | 181.45 | |
 
-Near-surface deuterium in the top 5 nm, against the base case, from `transport/`:
+The first three lie within 3.4 in AIC. With the fixed resonance in place the no-plateau control misses the lowest points by factors of 4 to 5; without it (Eq 7 only) it had chi2 459.
 
-| Knob | Pd / PdD | Ti / TiD |
-|---|---|---|
-| Pd77Ag23 / Pd90Pt10 | x6.5-12 / x0.27-0.31 | - |
-| -30 K / +30 K | x2.3-2.5 / x0.40-0.63 | ~x1 |
-| Strain +0.5% / -0.5% | x1.4 / x0.68 | x1.00 |
-| Back-side current x2 | x1.13-1.25 | x1.00 |
-| 2 nm Al2O3, while it lasts (0.9-1.7 h) | x0.04 (0.25 keV) to x3.3 (PdD, 2.5 keV) | Al2O3 5 nm x0.19-0.30 |
-
-Beam-side surface recombination is the largest lever in the transport model. At sticking <= 1e-6, the beta phase reaches the beam surface (D/Pd 0.6-0.7, against ~0.01 for a clean surface).
+Across laboratories (`czerski/README.md`): the palladium plateau can share layer or sigmoid parameters between Szczecin and UC Davis (mismatch factors 1.2-1.4); titanium cannot once the Tohoku data are included. One thermal-spike amplitude for both laboratories fails: A_UC Davis / A_Szczecin = 622.5 (as plotted) and 283.8 (one cup-current power).
 
 ## What the models keep, drop, and leave out
 
@@ -73,6 +72,5 @@ The three biggest omissions are:
 
 Open work is tracked on Fleet nodes, one directory per node when delivered:
 - `g4_screen`: eps(q), N(E_F), d-band centre and the adiabatic screening limit from GPAW. This gives ratio 7 for the map and the U_e response to d-band shifts.
-- `g4_forward`: second-route check of the forward model, and a fit to the Czerski et al. data (arXiv:2409.02112).
 - `g4_transport`: second-route check of the transport model, and DFT inputs for the Pd surface and vacancy trapping.
 - `g4_zenodo`: refit on the per-run data once it opens.
