@@ -1,0 +1,15 @@
+{
+  "note": "Screening inputs for the forward model until g4_screen delivers computed eps(q) and V(r). Ue in keV; lambda in Angstrom.",
+  "Ue_bulk_fit_keV": {
+    "source": "forward/fits.json, thick-target fit to the 2.5-6.5 keV points, stitch factor free, +/-1 sigma",
+    "M0_as_plotted":        {"Pd": [1.27, 0.12], "PdD": [2.20, 0.15], "Ti": [0.99, 0.10], "TiD": [1.34, 0.09]},
+    "M4_one_power_current": {"Pd": [0.70, 0.09], "PdD": [1.41, 0.12], "Ti": [0.45, 0.08], "TiD": [0.84, 0.08]},
+    "M5_two_powers_current":{"Pd": [0.25, 0.08], "PdD": [0.80, 0.09], "Ti": [0.03, 0.07], "TiD": [0.45, 0.06]}
+  },
+  "Ue_paper_keV": {"Pd": 0.8, "PdD": 1.7, "Ti": 0.3, "TiD": 0.9},
+  "static_thomas_fermi": {
+    "V_form": "V(r) = 14.3996 eV*A / r * exp(-r/lambda); static Ue = 14.3996 eV*A / lambda",
+    "lambda_A_range": {"Pd": [0.19, 0.57], "PdD0.7": [0.48, 0.53], "Ti": [0.33, 0.59], "TiD2": [0.22, 0.51]},
+    "source": "screening/model_numbers.txt (estimates; full-d-DOS to s-p-only bounds)"
+  }
+}
