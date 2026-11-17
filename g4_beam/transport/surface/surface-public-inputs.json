@@ -1,0 +1,129 @@
+{
+  "schema": "coherence-clean111-actual-inputs-v1",
+  "GPAW_version_actually_recorded": "26.7.0",
+  "functional": "PBE",
+  "Pd_setup_valence": 10,
+  "H_setup_valence": 1,
+  "PAW_bytes": [
+    {
+      "path": "inputs/setups/Pd.10.PBE.gz",
+      "bytes": 106793,
+      "sha256": "3c6cfd1de7e6d6815d58c9521b2bc7cec27ede8e83554ed1f0151f979761bbb4"
+    },
+    {
+      "path": "inputs/setups/H.PBE.gz",
+      "bytes": 12501,
+      "sha256": "3136ad73c02d471f99dd5f82e451b2061952970556a260d38b53b5020dc94ae7"
+    }
+  ],
+  "slab": {
+    "facet": "Pd(111)",
+    "lattice_a_A": 3.89,
+    "lattice_policy": "fixed experimental screen reference, not relaxed PBE lattice",
+    "cell_repeats": [
+      1,
+      2,
+      3
+    ],
+    "Pd_count": 6,
+    "adsorbed_H_count": 2,
+    "coverage_ML": 1.0,
+    "site": "fcc-start hollow; final Cartesian positions and heights retained",
+    "vacuum_each_side_initial_A": 8.0,
+    "pbc": [
+      true,
+      true,
+      false
+    ],
+    "dipole_treatment": {
+      "dipolelayer": true
+    },
+    "fixed_atom_indices": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "relaxed_indices": [
+      4,
+      5,
+      6,
+      7
+    ]
+  },
+  "basis": {
+    "mode": "new-GPAW plane waves",
+    "cutoff_eV": 300,
+    "kmesh": [
+      6,
+      3,
+      1
+    ],
+    "gamma": true,
+    "nbands_slab_clean": 42,
+    "nbands_adsorbed_and_gas_slab": 43,
+    "slab_occupation_width_eV": 0.05,
+    "XC": "PBE",
+    "spin_slab": "restricted nonmagnetic",
+    "parallel": {
+      "domain": 1,
+      "band": 1,
+      "kpt": 1
+    }
+  },
+  "SCF": {
+    "energy": 1e-05,
+    "density": 0.0001,
+    "eigenstates": 1e-07,
+    "maxiter": 100
+  },
+  "geometry_force_target_eV_A": 0.05,
+  "isolated_references": {
+    "box_A": [
+      10,
+      10,
+      10
+    ],
+    "pbc": [
+      true,
+      true,
+      true
+    ],
+    "kmesh": [
+      1,
+      1,
+      1
+    ],
+    "cutoff_eV": 300,
+    "nbands": 4,
+    "occupation_width_eV": 0.01,
+    "atomic_H_spin_polarized": true,
+    "H2_spin": "singlet nonmagnetic",
+    "H2_bond_A": 0.7544829803999651
+  },
+  "isotope": "Z=1 electronic H PAW also defines Born-Oppenheimer D energetics. Adsorbed D mass2.014101778u; no computed ZPE/entropy/frequency or isotope-rate correction.",
+  "NEB_attempt": {
+    "interior_images": 5,
+    "method": "serial climbing-image improvedtangent",
+    "initial_path": "IDPP",
+    "optimizer": "FIRE dt0.08 maxstep0.12",
+    "max_steps": 45,
+    "force_target_eV_A": 0.05,
+    "status": "not converged, intentionally terminated at user wrap"
+  },
+  "consumer_units_source": {
+    "path": "inputs/pinned-original-transport.py",
+    "bytes": 36824,
+    "sha256": "e4fed892b64babe21b931cd3c82f993e515d192d6e4c57fc39b0c6d601f35031"
+  },
+  "portable_numeric_result": {
+    "path": "surface-public-row.json",
+    "bytes": 5386,
+    "sha256": "3fd59d2bfebbb5f19ce91314079ed2f2a91e42159663092d08d9191272df1122"
+  },
+  "portable_actual_consumer_proof": {
+    "path": "portable-surface-consumer-proof.json",
+    "bytes": 1550,
+    "sha256": "de226741a9f5d20017912836a47b1a331f900a98bdcd9e9bd83b05e61258fc96"
+  }
+}

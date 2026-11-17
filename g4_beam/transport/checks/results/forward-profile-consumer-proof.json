@@ -1,0 +1,121 @@
+{
+  "schema": "coherence-updated-profile-real-forward-consumer-v1",
+  "consumer_commit": "7bed90a69a4ae97c70ec51b94c010064bcf88978",
+  "consumer_source_archive": {
+    "commit": "7bed90a69a4ae97c70ec51b94c010064bcf88978",
+    "url": "https://codeload.github.com/vantasnerdan/coherencev1/tar.gz/7bed90a69a4ae97c70ec51b94c010064bcf88978",
+    "bytes": 18317662,
+    "sha256": "b65d5abbaf639b597cac8b3146494beb80ce27f3581f546c3cac934a4ee8aa77"
+  },
+  "consumer_files": [
+    {
+      "path": "g4_beam/forward/consumer.py",
+      "bytes": 11147,
+      "sha256": "76dd07e0fe5fd357456a9d43b211a53d3cee5f593a8c4f19810c7bd19fdf5c27"
+    },
+    {
+      "path": "g4_beam/forward/model.py",
+      "bytes": 16303,
+      "sha256": "76604acd39c1e47995a1290281e737076e8c01235a706e93c20be37fb4d1e84b"
+    },
+    {
+      "path": "g4_beam/forward/thermal.py",
+      "bytes": 1710,
+      "sha256": "c9241ad9b47bcffbc3e70e73f4a854c38f94b31a5d6e541d9b1ef41fdee473b2"
+    },
+    {
+      "path": "g4_beam/forward/profile_thermal.py",
+      "bytes": 3283,
+      "sha256": "e81574b3a56499a3d651a19aeb45722d022f1883ae727ffcc96881370019b07c"
+    },
+    {
+      "path": "g4_beam/transport/bca.py",
+      "bytes": 7277,
+      "sha256": "0fb5c06751a0a12385bb847296a47695f397d271a00935732948a7666446f56b"
+    }
+  ],
+  "input": {
+    "path": "results/baseline-pdrh/updated-knobs.json",
+    "bytes": 300780,
+    "sha256": "49c5278d59246a2deb39824587cc1c961bb0b079484cc3e55c04d9e0f1a98059"
+  },
+  "scope": "Actual published consumer accepts four exact updated SI profiles. BareUe0 compatibility calculation, not a new screening fit or original2.5/6.5keV normalization claim. Reference2.5keV lies in supplied exact-key profiles; no energy extrapolation.",
+  "measurement": {
+    "spread_FWHM": 0.0,
+    "D1_current_fraction": 0.85,
+    "D2_current_fraction": 0.15,
+    "efficiency": 1.0,
+    "collected_fraction": 1.0
+  },
+  "results": [
+    {
+      "condition": "Pd",
+      "E_cm_keV": [
+        0.25,
+        2.5
+      ],
+      "R": [
+        1.2864981598326858e-17,
+        1.0
+      ],
+      "physical_yield_per_C": [
+        5.820860507020406e-15,
+        452.4577406140582
+      ],
+      "counts_per_C": [
+        5.820860507020406e-15,
+        452.4577406140582
+      ],
+      "reported_signal": [
+        5.820860507020406e-15,
+        452.4577406140582
+      ],
+      "ion_yield_per_C": [
+        5.820860507020406e-15,
+        452.4577406140582
+      ],
+      "neutral_yield_per_C": [
+        0.0,
+        0.0
+      ],
+      "reference_signal": 452.4577406140582,
+      "reference_E_cm_keV": 2.5,
+      "channel": "p"
+    },
+    {
+      "condition": "PdD",
+      "E_cm_keV": [
+        0.25,
+        2.5
+      ],
+      "R": [
+        1.2111573761722924e-17,
+        1.0
+      ],
+      "physical_yield_per_C": [
+        5.834540502347082e-15,
+        481.73264822003557
+      ],
+      "counts_per_C": [
+        5.834540502347082e-15,
+        481.73264822003557
+      ],
+      "reported_signal": [
+        5.834540502347082e-15,
+        481.73264822003557
+      ],
+      "ion_yield_per_C": [
+        5.834540502347082e-15,
+        481.73264822003557
+      ],
+      "neutral_yield_per_C": [
+        0.0,
+        0.0
+      ],
+      "reference_signal": 481.73264822003557,
+      "reference_E_cm_keV": 2.5,
+      "channel": "p"
+    }
+  ],
+  "process_cpu_ns": "6374419056"
+}

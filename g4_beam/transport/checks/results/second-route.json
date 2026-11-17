@@ -1,0 +1,799 @@
+{
+  "Pd_dilute_backside_lag": {
+    "T_K": 300.0,
+    "diffusivity_m2_s": 5.885742177829964e-11,
+    "independent_eigenmode_lag_s": 176.98136086531437,
+    "lag_s": 176.98136194112442,
+    "scope": "dilute constant-D permeation time lag; not nonlinear hydride-front loading or a full equilibration time",
+    "thickness_m": 0.00025
+  },
+  "dilute_Sieverts": {
+    "D_per_Pd": 3.220207928230107e-05,
+    "T_K": 300.0,
+    "baseline_numerical_inverse_D_per_Pd": 3.22020828335265e-05,
+    "plateau_pressure_Pa": 5215.3963185938355,
+    "pressure_Pa": 0.03666355,
+    "relative_difference": 1.1027938273677762e-07,
+    "scope": "closed-form inversion of specified alpha-Pd isotherm; not independent validation of its empirical vanthoff parameters"
+  },
+  "elapsed_wall_s": 14.914300102740526,
+  "overlayer": {
+    "rows": [
+      {
+        "E_lab_keV": 0.5,
+        "film": "TiO2",
+        "incident_D_flux_m2_s": 2.7275394655393526e+18,
+        "native_95percent_removal_possible": false,
+        "native_steady_thickness_nm": 1.2302477459528316,
+        "native_water_regrowth_assumptions": {
+          "T_K": 300.0,
+          "pH2O_torr": 3e-07,
+          "sticking": 0.5
+        },
+        "nonregrowing_95percent_removal_h": 1.0325327214886535,
+        "nonregrowing_linear_removal_h": 1.053650702467685,
+        "sputter_yield_atoms_per_incident_D": 0.018500000000000003,
+        "thickness_m": 2e-09
+      },
+      {
+        "E_lab_keV": 1.0,
+        "film": "TiO2",
+        "incident_D_flux_m2_s": 4.880860096228316e+18,
+        "native_95percent_removal_possible": false,
+        "native_steady_thickness_nm": 1.0460583642049117,
+        "native_water_regrowth_assumptions": {
+          "T_K": 300.0,
+          "pH2O_torr": 3e-07,
+          "sticking": 0.5
+        },
+        "nonregrowing_95percent_removal_h": 0.6496825169181872,
+        "nonregrowing_linear_removal_h": 0.6629702149728377,
+        "sputter_yield_atoms_per_incident_D": 0.016430434782608694,
+        "thickness_m": 2e-09
+      },
+      {
+        "E_lab_keV": 2.5,
+        "film": "TiO2",
+        "incident_D_flux_m2_s": 8.469727814043254e+18,
+        "native_95percent_removal_possible": false,
+        "native_steady_thickness_nm": 0.9193073077254821,
+        "native_water_regrowth_assumptions": {
+          "T_K": 300.0,
+          "pH2O_torr": 3e-07,
+          "sticking": 0.5
+        },
+        "nonregrowing_95percent_removal_h": 0.4720207012877191,
+        "nonregrowing_linear_removal_h": 0.481674752906666,
+        "sputter_yield_atoms_per_incident_D": 0.013032150762978015,
+        "thickness_m": 2e-09
+      },
+      {
+        "E_lab_keV": 6.5,
+        "film": "TiO2",
+        "incident_D_flux_m2_s": 1.091015786215741e+19,
+        "native_95percent_removal_possible": false,
+        "native_steady_thickness_nm": 1.0373492388365382,
+        "native_water_regrowth_assumptions": {
+          "T_K": 300.0,
+          "pH2O_torr": 3e-07,
+          "sticking": 0.5
+        },
+        "nonregrowing_95percent_removal_h": 0.6355898723324095,
+        "nonregrowing_linear_removal_h": 0.6485893391338385,
+        "sputter_yield_atoms_per_incident_D": 0.007513436013951282,
+        "thickness_m": 2e-09
+      },
+      {
+        "E_lab_keV": 13.0,
+        "film": "TiO2",
+        "incident_D_flux_m2_s": 1.7083010336799105e+19,
+        "native_95percent_removal_possible": false,
+        "native_steady_thickness_nm": 1.0624741272936786,
+        "native_water_regrowth_assumptions": {
+          "T_K": 300.0,
+          "pH2O_torr": 3e-07,
+          "sticking": 0.5
+        },
+        "nonregrowing_95percent_removal_h": 0.677096037350753,
+        "nonregrowing_linear_removal_h": 0.690944413232861,
+        "sputter_yield_atoms_per_incident_D": 0.0045043478260869555,
+        "thickness_m": 2e-09
+      },
+      {
+        "E_lab_keV": 0.5,
+        "film": "Al2O3",
+        "incident_D_flux_m2_s": 2.7275394655393526e+18,
+        "nonregrowing_95percent_removal_h": 1.6331024805534415,
+        "nonregrowing_linear_removal_h": 1.6665036758893277,
+        "sputter_yield_atoms_per_incident_D": 0.011000000000000005,
+        "thickness_m": 2e-09
+      },
+      {
+        "E_lab_keV": 1.0,
+        "film": "Al2O3",
+        "incident_D_flux_m2_s": 4.880860096228316e+18,
+        "nonregrowing_95percent_removal_h": 1.0225503600297494,
+        "nonregrowing_linear_removal_h": 1.0434641757411556,
+        "sputter_yield_atoms_per_incident_D": 0.009817391304347828,
+        "thickness_m": 2e-09
+      },
+      {
+        "E_lab_keV": 2.5,
+        "film": "Al2O3",
+        "incident_D_flux_m2_s": 8.469727814043254e+18,
+        "nonregrowing_95percent_removal_h": 0.7432980300832077,
+        "nonregrowing_linear_removal_h": 0.7585004089854644,
+        "sputter_yield_atoms_per_incident_D": 0.007782958793715644,
+        "thickness_m": 2e-09
+      },
+      {
+        "E_lab_keV": 6.5,
+        "film": "Al2O3",
+        "incident_D_flux_m2_s": 1.091015786215741e+19,
+        "nonregrowing_95percent_removal_h": 0.9976263159196176,
+        "nonregrowing_linear_removal_h": 1.0180303700723976,
+        "sputter_yield_atoms_per_incident_D": 0.004501717476630623,
+        "thickness_m": 2e-09
+      },
+      {
+        "E_lab_keV": 13.0,
+        "film": "Al2O3",
+        "incident_D_flux_m2_s": 1.7083010336799105e+19,
+        "nonregrowing_95percent_removal_h": 1.0555056973472803,
+        "nonregrowing_linear_removal_h": 1.0770935354621853,
+        "sputter_yield_atoms_per_incident_D": 0.0027173913043478256,
+        "thickness_m": 2e-09
+      }
+    ],
+    "scope": "independent incident-particle/atom-inventory balance using specified sputter fits; film sputter-removal time is not a measured permeability lifetime; native regrowth may prevent removal"
+  },
+  "process_cpu_ns": "14846353995",
+  "profiles": {
+    "Ti_yield_comparison": [
+      {
+        "E_cm_keV": 0.25,
+        "TiD_over_Ti": 0.9999281876114208,
+        "TiD_reactions_per_true_C": 2.0630202479958986e-15,
+        "Ti_reactions_per_true_C": 2.0631684090473935e-15
+      },
+      {
+        "E_cm_keV": 0.5,
+        "TiD_over_Ti": 0.9992895202980673,
+        "TiD_reactions_per_true_C": 3.0083864870382197e-07,
+        "Ti_reactions_per_true_C": 3.010525404230078e-07
+      },
+      {
+        "E_cm_keV": 2.5,
+        "TiD_over_Ti": 0.9918799438966299,
+        "TiD_reactions_per_true_C": 21940.432221696425,
+        "Ti_reactions_per_true_C": 22120.04825453248
+      },
+      {
+        "E_cm_keV": 6.5,
+        "TiD_over_Ti": 1.0057005729819828,
+        "TiD_reactions_per_true_C": 45224883.922791295,
+        "Ti_reactions_per_true_C": 44968537.49291988
+      }
+    ],
+    "max_saved_window_relative_error": 0.0,
+    "method": "independent adaptive RK45 CSDA; same declared stopping/sigma model, not independent nuclear data",
+    "profile_results": [
+      {
+        "bare_DDp_reactions_per_true_incident_C": 9.954126520418324e-16,
+        "case": {
+          "E_cm_keV": 0.25,
+          "T_K": 300.13859619883044,
+          "beam_time_s": 43200.0,
+          "condition": "Pd"
+        },
+        "windows": {
+          "20nm": {
+            "D_column_m2": 1.0889968073861603e+18,
+            "D_density_nm3": 0.05444984036930801,
+            "D_per_metal": 0.000800835547472699,
+            "adsorbate_excluded": true,
+            "metal_column_m2": 1.359825760510818e+21
+          },
+          "5nm": {
+            "D_column_m2": 1.0561806039888191e+18,
+            "D_density_nm3": 0.21123612079776383,
+            "D_per_metal": 0.0031079582777322665,
+            "adsorbate_excluded": true,
+            "metal_column_m2": 3.398310111033618e+20
+          },
+          "70nm": {
+            "D_column_m2": 1.1983848058117064e+18,
+            "D_density_nm3": 0.017119782940167232,
+            "D_per_metal": 0.0002517716556520952,
+            "adsorbate_excluded": true,
+            "metal_column_m2": 4.75980825843107e+21
+          }
+        }
+      },
+      {
+        "bare_DDp_reactions_per_true_incident_C": 5.051552877934649e-08,
+        "case": {
+          "E_cm_keV": 0.5,
+          "T_K": 300.4960285010774,
+          "beam_time_s": 43200.0,
+          "condition": "Pd"
+        },
+        "windows": {
+          "20nm": {
+            "D_column_m2": 1.352000614860202e+19,
+            "D_density_nm3": 0.676000307430101,
+            "D_per_metal": 0.009957018515330783,
+            "adsorbate_excluded": true,
+            "metal_column_m2": 1.3578367990162234e+21
+          },
+          "5nm": {
+            "D_column_m2": 3.83163008891323e+18,
+            "D_density_nm3": 0.766326017782646,
+            "D_per_metal": 0.011289857229349269,
+            "adsorbate_excluded": true,
+            "metal_column_m2": 3.393869391857739e+20
+          },
+          "70nm": {
+            "D_column_m2": 1.362915153604937e+19,
+            "D_density_nm3": 0.1947021648007053,
+            "D_per_metal": 0.0028645794584146005,
+            "adsorbate_excluded": true,
+            "metal_column_m2": 4.757819335754231e+21
+          }
+        }
+      },
+      {
+        "bare_DDp_reactions_per_true_incident_C": 586.9400090542166,
+        "case": {
+          "E_cm_keV": 2.5,
+          "T_K": 305.0332303785795,
+          "beam_time_s": 7200.0,
+          "condition": "Pd"
+        },
+        "windows": {
+          "20nm": {
+            "D_column_m2": 1.3319823635116368e+19,
+            "D_density_nm3": 0.6659911817558185,
+            "D_per_metal": 0.009809359606990097,
+            "adsorbate_excluded": true,
+            "metal_column_m2": 1.3578688282183816e+21
+          },
+          "5nm": {
+            "D_column_m2": 3.3286278920195036e+18,
+            "D_density_nm3": 0.6657255784039008,
+            "D_per_metal": 0.009805441407475001,
+            "adsorbate_excluded": true,
+            "metal_column_m2": 3.394674195372769e+20
+          },
+          "70nm": {
+            "D_column_m2": 4.664921775190858e+19,
+            "D_density_nm3": 0.6664173964558369,
+            "D_per_metal": 0.009815647166772683,
+            "adsorbate_excluded": true,
+            "metal_column_m2": 4.752536125159695e+21
+          }
+        }
+      },
+      {
+        "bare_DDp_reactions_per_true_incident_C": 499261.71730113734,
+        "case": {
+          "E_cm_keV": 6.5,
+          "T_K": 322.56929679902163,
+          "beam_time_s": 7200.0,
+          "condition": "Pd"
+        },
+        "windows": {
+          "20nm": {
+            "D_column_m2": 7.77656135653425e+18,
+            "D_density_nm3": 0.38882806782671253,
+            "D_per_metal": 0.005723296004809656,
+            "adsorbate_excluded": true,
+            "metal_column_m2": 1.3587557501829545e+21
+          },
+          "5nm": {
+            "D_column_m2": 1.9422282185795323e+18,
+            "D_density_nm3": 0.3884456437159065,
+            "D_per_metal": 0.005717661821296797,
+            "adsorbate_excluded": true,
+            "metal_column_m2": 3.396892434850273e+20
+          },
+          "70nm": {
+            "D_column_m2": 2.726247123842151e+19,
+            "D_density_nm3": 0.389463874834593,
+            "D_per_metal": 0.005732663254024095,
+            "adsorbate_excluded": true,
+            "metal_column_m2": 4.755638004601852e+21
+          }
+        }
+      },
+      {
+        "bare_DDp_reactions_per_true_incident_C": 1.0010699950104598e-15,
+        "case": {
+          "E_cm_keV": 0.25,
+          "T_K": 300.0386875557311,
+          "beam_time_s": 43200.0,
+          "condition": "PdD"
+        },
+        "windows": {
+          "20nm": {
+            "D_column_m2": 1.3157053251272814e+18,
+            "D_density_nm3": 0.06578526625636406,
+            "D_per_metal": 0.0009675801567541455,
+            "adsorbate_excluded": true,
+            "metal_column_m2": 1.35978948714798e+21
+          },
+          "5nm": {
+            "D_column_m2": 1.269775413460261e+18,
+            "D_density_nm3": 0.25395508269205225,
+            "D_per_metal": 0.003736866501333369,
+            "adsorbate_excluded": true,
+            "metal_column_m2": 3.397968359338463e+20
+          },
+          "70nm": {
+            "D_column_m2": 1.511764916310947e+18,
+            "D_density_nm3": 0.021596641661584957,
+            "D_per_metal": 0.00031761381123899786,
+            "adsorbate_excluded": true,
+            "metal_column_m2": 4.75975811761339e+21
+          }
+        }
+      },
+      {
+        "bare_DDp_reactions_per_true_incident_C": 5.1276029337199245e-08,
+        "case": {
+          "E_cm_keV": 0.5,
+          "T_K": 300.1384607257742,
+          "beam_time_s": 43200.0,
+          "condition": "PdD"
+        },
+        "windows": {
+          "20nm": {
+            "D_column_m2": 1.7333578498045352e+19,
+            "D_density_nm3": 0.8666789249022676,
+            "D_per_metal": 0.012771322156223786,
+            "adsorbate_excluded": true,
+            "metal_column_m2": 1.3572266274403128e+21
+          },
+          "5nm": {
+            "D_column_m2": 4.701238007886985e+18,
+            "D_density_nm3": 0.9402476015773971,
+            "D_per_metal": 0.013857828941845578,
+            "adsorbate_excluded": true,
+            "metal_column_m2": 3.3924780191873814e+20
+          },
+          "70nm": {
+            "D_column_m2": 1.7529486408139215e+19,
+            "D_density_nm3": 0.25042123440198877,
+            "D_per_metal": 0.003684836414814111,
+            "adsorbate_excluded": true,
+            "metal_column_m2": 4.757195282174697e+21
+          }
+        }
+      },
+      {
+        "bare_DDp_reactions_per_true_incident_C": 648.3933824932512,
+        "case": {
+          "E_cm_keV": 2.5,
+          "T_K": 301.40496912917996,
+          "beam_time_s": 7200.0,
+          "condition": "PdD"
+        },
+        "windows": {
+          "20nm": {
+            "D_column_m2": 1.894233178014852e+19,
+            "D_density_nm3": 0.9471165890074259,
+            "D_per_metal": 0.013959293552448848,
+            "adsorbate_excluded": true,
+            "metal_column_m2": 1.3569692269151763e+21
+          },
+          "5nm": {
+            "D_column_m2": 4.504502525083842e+18,
+            "D_density_nm3": 0.9009005050167684,
+            "D_per_metal": 0.013276680292553673,
+            "adsorbate_excluded": true,
+            "metal_column_m2": 3.3927927959598655e+20
+          },
+          "70nm": {
+            "D_column_m2": 7.62225803850097e+19,
+            "D_density_nm3": 1.0888940055001386,
+            "D_per_metal": 0.01605427986702515,
+            "adsorbate_excluded": true,
+            "metal_column_m2": 4.7478043871384e+21
+          }
+        }
+      },
+      {
+        "bare_DDp_reactions_per_true_incident_C": 719673.2160407159,
+        "case": {
+          "E_cm_keV": 6.5,
+          "T_K": 306.2999630227286,
+          "beam_time_s": 7200.0,
+          "condition": "PdD"
+        },
+        "windows": {
+          "20nm": {
+            "D_column_m2": 1.6435061953183572e+19,
+            "D_density_nm3": 0.8217530976591786,
+            "D_per_metal": 0.012108015670007528,
+            "adsorbate_excluded": true,
+            "metal_column_m2": 1.3573703900874909e+21
+          },
+          "5nm": {
+            "D_column_m2": 3.9112180647574707e+18,
+            "D_density_nm3": 0.7822436129514941,
+            "D_per_metal": 0.011524794771876979,
+            "adsorbate_excluded": true,
+            "metal_column_m2": 3.393742051096388e+20
+          },
+          "70nm": {
+            "D_column_m2": 6.612691813895854e+19,
+            "D_density_nm3": 0.9446702591279791,
+            "D_per_metal": 0.01392315744069942,
+            "adsorbate_excluded": true,
+            "metal_column_m2": 4.749419693097767e+21
+          }
+        }
+      },
+      {
+        "bare_DDp_reactions_per_true_incident_C": 2.0631684090473935e-15,
+        "case": {
+          "E_cm_keV": 0.25,
+          "T_K": 300.4975603538013,
+          "beam_time_s": 43200.0,
+          "condition": "Ti"
+        },
+        "windows": {
+          "20nm": {
+            "D_column_m2": 1.648939215434036e+21,
+            "D_density_nm3": 82.44696077170181,
+            "D_per_metal": 1.8324955576642001,
+            "adsorbate_excluded": true,
+            "metal_column_m2": 8.998325854256721e+20
+          },
+          "5nm": {
+            "D_column_m2": 3.5595525886088865e+20,
+            "D_density_nm3": 71.19105177217773,
+            "D_per_metal": 1.687346970700744,
+            "adsorbate_excluded": true,
+            "metal_column_m2": 2.1095557999731543e+20
+          },
+          "70nm": {
+            "D_column_m2": 5.890406359775821e+21,
+            "D_density_nm3": 84.14866228251172,
+            "D_per_metal": 1.8380814891616155,
+            "adsorbate_excluded": true,
+            "metal_column_m2": 3.20464919238295e+21
+          }
+        }
+      },
+      {
+        "bare_DDp_reactions_per_true_incident_C": 3.010525404230078e-07,
+        "case": {
+          "E_cm_keV": 0.5,
+          "T_K": 301.7807423188679,
+          "beam_time_s": 43200.0,
+          "condition": "Ti"
+        },
+        "windows": {
+          "20nm": {
+            "D_column_m2": 1.663585020539801e+21,
+            "D_density_nm3": 83.17925102699004,
+            "D_per_metal": 1.8438757972154884,
+            "adsorbate_excluded": true,
+            "metal_column_m2": 9.022218432781905e+20
+          },
+          "5nm": {
+            "D_column_m2": 3.695180200390137e+20,
+            "D_density_nm3": 73.90360400780274,
+            "D_per_metal": 1.7309239371731104,
+            "adsorbate_excluded": true,
+            "metal_column_m2": 2.1348021834078896e+20
+          },
+          "70nm": {
+            "D_column_m2": 5.910937586902989e+21,
+            "D_density_nm3": 84.44196552718554,
+            "D_per_metal": 1.843536935323756,
+            "adsorbate_excluded": true,
+            "metal_column_m2": 3.206302772482792e+21
+          }
+        }
+      },
+      {
+        "bare_DDp_reactions_per_true_incident_C": 22120.04825453248,
+        "case": {
+          "E_cm_keV": 2.5,
+          "T_K": 318.0692970591004,
+          "beam_time_s": 7200.0,
+          "condition": "Ti"
+        },
+        "windows": {
+          "20nm": {
+            "D_column_m2": 1.6827337476174772e+21,
+            "D_density_nm3": 84.13668738087387,
+            "D_per_metal": 1.8676393413776127,
+            "adsorbate_excluded": true,
+            "metal_column_m2": 9.009950210067084e+20
+          },
+          "5nm": {
+            "D_column_m2": 3.7529952120530076e+20,
+            "D_density_nm3": 75.05990424106015,
+            "D_per_metal": 1.7543566692466048,
+            "adsorbate_excluded": true,
+            "metal_column_m2": 2.1392429930823034e+20
+          },
+          "70nm": {
+            "D_column_m2": 5.954406537440825e+21,
+            "D_density_nm3": 85.06295053486892,
+            "D_per_metal": 1.8595689373788338,
+            "adsorbate_excluded": true,
+            "metal_column_m2": 3.2020359222787907e+21
+          }
+        }
+      },
+      {
+        "bare_DDp_reactions_per_true_incident_C": 44968537.49291988,
+        "case": {
+          "E_cm_keV": 6.5,
+          "T_K": 381.02377550848774,
+          "beam_time_s": 7200.0,
+          "condition": "Ti"
+        },
+        "windows": {
+          "20nm": {
+            "D_column_m2": 1.6467063805239348e+21,
+            "D_density_nm3": 82.33531902619674,
+            "D_per_metal": 1.8195583868449463,
+            "adsorbate_excluded": true,
+            "metal_column_m2": 9.050033197226877e+20
+          },
+          "5nm": {
+            "D_column_m2": 3.5869976387512566e+20,
+            "D_density_nm3": 71.73995277502513,
+            "D_per_metal": 1.6644680355116916,
+            "adsorbate_excluded": true,
+            "metal_column_m2": 2.1550414680378887e+20
+          },
+          "70nm": {
+            "D_column_m2": 5.927327913357563e+21,
+            "D_density_nm3": 84.67611304796517,
+            "D_per_metal": 1.8494432012256459,
+            "adsorbate_excluded": true,
+            "metal_column_m2": 3.204925628118484e+21
+          }
+        }
+      },
+      {
+        "bare_DDp_reactions_per_true_incident_C": 2.0630202479958986e-15,
+        "case": {
+          "E_cm_keV": 0.25,
+          "T_K": 300.04040214795117,
+          "beam_time_s": 43200.0,
+          "condition": "TiD"
+        },
+        "windows": {
+          "20nm": {
+            "D_column_m2": 1.648494323469488e+21,
+            "D_density_nm3": 82.4247161734744,
+            "D_per_metal": 1.8319019788300444,
+            "adsorbate_excluded": true,
+            "metal_column_m2": 8.998812941521626e+20
+          },
+          "5nm": {
+            "D_column_m2": 3.558581548372481e+20,
+            "D_density_nm3": 71.17163096744962,
+            "D_per_metal": 1.6868448031320993,
+            "adsorbate_excluded": true,
+            "metal_column_m2": 2.1096081523119253e+20
+          },
+          "70nm": {
+            "D_column_m2": 5.89011536938269e+21,
+            "D_density_nm3": 84.14450527689557,
+            "D_per_metal": 1.837973783964244,
+            "adsorbate_excluded": true,
+            "metal_column_m2": 3.2046786634130124e+21
+          }
+        }
+      },
+      {
+        "bare_DDp_reactions_per_true_incident_C": 3.0083864870382197e-07,
+        "case": {
+          "E_cm_keV": 0.5,
+          "T_K": 300.1445971610883,
+          "beam_time_s": 43200.0,
+          "condition": "TiD"
+        },
+        "windows": {
+          "20nm": {
+            "D_column_m2": 1.6619695327109075e+21,
+            "D_density_nm3": 83.09847663554538,
+            "D_per_metal": 1.8417232418410385,
+            "adsorbate_excluded": true,
+            "metal_column_m2": 9.023991742915488e+20
+          },
+          "5nm": {
+            "D_column_m2": 3.691531051508939e+20,
+            "D_density_nm3": 73.83062103017878,
+            "D_per_metal": 1.7290444137698826,
+            "adsorbate_excluded": true,
+            "metal_column_m2": 2.1350122773655034e+20
+          },
+          "70nm": {
+            "D_column_m2": 5.908431183697182e+21,
+            "D_density_nm3": 84.40615976710261,
+            "D_per_metal": 1.8425893172892918,
+            "adsorbate_excluded": true,
+            "metal_column_m2": 3.2065914679182644e+21
+          }
+        }
+      },
+      {
+        "bare_DDp_reactions_per_true_incident_C": 21940.432221696425,
+        "case": {
+          "E_cm_keV": 2.5,
+          "T_K": 301.4672358992788,
+          "beam_time_s": 7200.0,
+          "condition": "TiD"
+        },
+        "windows": {
+          "20nm": {
+            "D_column_m2": 1.6654005187256393e+21,
+            "D_density_nm3": 83.27002593628197,
+            "D_per_metal": 1.844461545049262,
+            "adsorbate_excluded": true,
+            "metal_column_m2": 9.029196207401329e+20
+          },
+          "5nm": {
+            "D_column_m2": 3.723096705106993e+20,
+            "D_density_nm3": 74.46193410213985,
+            "D_per_metal": 1.7393098577946169,
+            "adsorbate_excluded": true,
+            "metal_column_m2": 2.140559767670004e+20
+          },
+          "70nm": {
+            "D_column_m2": 5.92989305801335e+21,
+            "D_density_nm3": 84.71275797161928,
+            "D_per_metal": 1.8502825895372945,
+            "adsorbate_excluded": true,
+            "metal_column_m2": 3.20485805332917e+21
+          }
+        }
+      },
+      {
+        "bare_DDp_reactions_per_true_incident_C": 45224883.922791295,
+        "case": {
+          "E_cm_keV": 6.5,
+          "T_K": 306.5791708295196,
+          "beam_time_s": 7200.0,
+          "condition": "TiD"
+        },
+        "windows": {
+          "20nm": {
+            "D_column_m2": 1.666452550065395e+21,
+            "D_density_nm3": 83.32262750326974,
+            "D_per_metal": 1.8484107160947956,
+            "adsorbate_excluded": true,
+            "metal_column_m2": 9.015596672076052e+20
+          },
+          "5nm": {
+            "D_column_m2": 3.6924038405208093e+20,
+            "D_density_nm3": 73.84807681041619,
+            "D_per_metal": 1.7318058568418964,
+            "adsorbate_excluded": true,
+            "metal_column_m2": 2.1321118795926926e+20
+          },
+          "70nm": {
+            "D_column_m2": 5.93068581528845e+21,
+            "D_density_nm3": 84.72408307554929,
+            "D_per_metal": 1.8512968109794707,
+            "adsorbate_excluded": true,
+            "metal_column_m2": 3.2035305090547235e+21
+          }
+        }
+      }
+    ],
+    "yield_units": "physical reactions per TRUE incident charged C; no detector/cup correction"
+  },
+  "ranges": {
+    "boundary_warning": "LSS p24 explicitly defines an infinite homogeneous-medium projected moment. Cached/RustBCA means are conditional on implantation in a half-space. Different observables: do not overwrite the cache or claim a fresh4% agreement.",
+    "earlier_comparison": "Earlier accepted RustBCA comparison is retained as source data, not rerun or newly certified",
+    "method": "LSS1963 Eq4.1 with ZBL scattering and continuous LS electronic stopping; independently discretised Volterra equation",
+    "rows": [
+      {
+        "E_lab_eV": 500,
+        "LS_scale": 1.54,
+        "analytic_infinite_medium_projected_mean_nm": 3.622053198247181,
+        "analytic_mean_path_nm": 36.98479006747235,
+        "cached_half_space_implanted_mean_nm": 7.277125775022144,
+        "density_nm3": 68.0,
+        "earlier_RustBCA_KrC_scaledLS_implanted_mean_nm": 7.57,
+        "quadrature_pass_5percent": true,
+        "quadrature_relative_change": 9.205038599059227e-05,
+        "target": "Pd"
+      },
+      {
+        "E_lab_eV": 13000,
+        "LS_scale": 1.54,
+        "analytic_infinite_medium_projected_mean_nm": 72.03141727663926,
+        "analytic_mean_path_nm": 244.8172574403327,
+        "cached_half_space_implanted_mean_nm": 82.8096143018018,
+        "density_nm3": 68.0,
+        "earlier_RustBCA_KrC_scaledLS_implanted_mean_nm": 85.14,
+        "quadrature_pass_5percent": true,
+        "quadrature_relative_change": 0.00012335398075951774,
+        "target": "Pd"
+      },
+      {
+        "E_lab_eV": 500,
+        "LS_scale": 1.52,
+        "analytic_infinite_medium_projected_mean_nm": 6.848589795985545,
+        "analytic_mean_path_nm": 41.576998011844225,
+        "cached_TiD2_implanted_mean_nm": 9.953528670447385,
+        "cached_half_space_implanted_mean_nm": 10.869567185802245,
+        "density_nm3": 56.7,
+        "earlier_RustBCA_KrC_scaledLS_implanted_mean_nm": 10.39,
+        "quadrature_pass_5percent": true,
+        "quadrature_relative_change": 6.328330735463724e-05,
+        "target": "Ti"
+      },
+      {
+        "E_lab_eV": 13000,
+        "LS_scale": 1.52,
+        "analytic_infinite_medium_projected_mean_nm": 142.42109806309685,
+        "analytic_mean_path_nm": 309.1131164433427,
+        "cached_TiD2_implanted_mean_nm": 147.8864508700102,
+        "cached_half_space_implanted_mean_nm": 148.23093440916188,
+        "density_nm3": 56.7,
+        "earlier_RustBCA_KrC_scaledLS_implanted_mean_nm": 146.11,
+        "quadrature_pass_5percent": true,
+        "quadrature_relative_change": 0.0006209701820476908,
+        "target": "Ti"
+      }
+    ]
+  },
+  "schema": "coherence-transport-second-route-v1",
+  "scope": "Independent numerical routes under the explicitly supplied baseline physics; not experimental validation of all estimated parameters",
+  "sources": {
+    "cache": {
+      "bytes": 348579,
+      "path": "bca_tables.npz",
+      "sha256": "4fd7ce875442bc6932646d08c4821e5764dba619fdccf3d32b69f22e3a231045"
+    },
+    "code": [
+      {
+        "bytes": 4107,
+        "path": "lss_range.py",
+        "sha256": "ab8020be704d17c85d96ae563e2b608c24d59c646c929b325a6e02a1a06fa44a"
+      },
+      {
+        "bytes": 4204,
+        "path": "profile_checks.py",
+        "sha256": "7eaaa0b793ee1f93af0bce6c1d9504a12f54c8260c89cf8298377b7b9e32cf9d"
+      },
+      {
+        "bytes": 3860,
+        "path": "thermo_checks.py",
+        "sha256": "58203fc417533f8550281b2b326bc095e68aef3c2830af0aee8e28d3d2306a34"
+      },
+      {
+        "bytes": 5341,
+        "path": "run_second_route.py",
+        "sha256": "523b1082ef2697fc20ad9baf0a9a84d940456736e0bc2cb659896f66f769868e"
+      }
+    ],
+    "earlier_rust": {
+      "bytes": 1800,
+      "path": "rng_results.txt",
+      "sha256": "38bb0103c399e02b68c928baea7d2cedaa1d32737b0416e10390f5e90a6c44cc"
+    },
+    "profiles": {
+      "bytes": 461970,
+      "path": "baseline/profiles_full.json",
+      "sha256": "f06a1df5fcc98e204e621080e038569a171a19da7fe0cf900de8b3f5291aa51d"
+    },
+    "transport": {
+      "bytes": 36824,
+      "path": "g4_beam/transport/transport.py",
+      "sha256": "e4fed892b64babe21b931cd3c82f993e515d192d6e4c57fc39b0c6d601f35031"
+    }
+  }
+}

@@ -1,0 +1,127 @@
+{
+  "schema": "coherence-p4-clean111-surface-v1",
+  "status": "uncontrolled_electronic_adsorption_only",
+  "surface": "clean Pd(111), ordered1ML, two fcc-start D per two surface Pd",
+  "event_cell_scope": "Periodic1x2 ordered reaction-pair array, not an isolated rare recombination event within a larger1ML adlayer",
+  "adsorbate_count": 2,
+  "coverage_ML": 1.0,
+  "adsorption": {
+    "atomic_H_adsorption_eV_per_D": -2.705735578332809,
+    "half_H2_adsorption_eV_per_D": -0.46569862623110936,
+    "positive_electronic_binding_eV_per_D": 0.46569862623110936,
+    "atomic_reservoir_spin_polarized": true
+  },
+  "barriers": null,
+  "primitive_bindings": {
+    "clean": {
+      "path": "clean/point-002.json",
+      "bytes": 2444,
+      "sha256": "9c367c45f9ad5c3781d9c8e1d0fef8b66418077652856d289b6ec83900878196"
+    },
+    "adsorbed": {
+      "path": "adsorbed-1ML/point-007.json",
+      "bytes": 3049,
+      "sha256": "68fbf7ca4a0a2314766b824919d6c9a6cb76000dddcca5a3980601b9b6e4a87d"
+    },
+    "H_atom": {
+      "path": "H-atom/point-000.json",
+      "bytes": 866,
+      "sha256": "2f3b91695e9fa9d2b314f46e12a485df59324874a87a8d9f33ff343f86cc567f"
+    },
+    "H2_gas": {
+      "path": "H2-gas/point-001.json",
+      "bytes": 1155,
+      "sha256": "a79cd4c97596a60ea2e179a7751c303bc9b18c394788385012f7f2e5a4cf7aa9"
+    },
+    "gas_slab": {
+      "path": "gas-slab-endpoint/point-001.json",
+      "bytes": 3204,
+      "sha256": "53081b7c03a370386aac8cbfdbb4f55de6588aabc3a38a711284b30bc7d407ca"
+    }
+  },
+  "band_result_binding": null,
+  "coverage_adsorption": null,
+  "coverage_adsorption_binding": null,
+  "missing_converged_stages": [],
+  "energy_conventions": {
+    "atomic": "E(slab+nH)-E(clean)-nE(spin-polarized H), divided by n; negative favorable",
+    "molecular": "E(slab+nH)-E(clean)-n/2 E(computed H2), divided by n; negative favorable",
+    "transport_sign": "Eads positive binding is negative molecular adsorption, but is not yet a differential finite-T free energy",
+    "SCF": "GPAW extrapolated electronic eV; force-consistent smeared free energies separately retained"
+  },
+  "gas_slab_endpoint_interaction_eV_per_D2": 0.0009764880420455313,
+  "pair_density_m_inv2": 7.630801662553457e+18,
+  "site_density_m_inv2": 1.5261603325106913e+19,
+  "pair_occupation": "External input; theta squared requires an explicit mean-field independent-site assumption",
+  "prefactor": {
+    "source_kind": "externally_assumed_range",
+    "range_s_inv": [
+      100000000000.0,
+      100000000000000.0
+    ],
+    "provenance": "Analyst-assumed sensitivity range, not literature-calibrated or DFT-predicted",
+    "normalization": "one specified reactive pair; D2 events per pair per second",
+    "harmonic_TST_computed": false
+  },
+  "isotope": {
+    "electronic_species": "Z=1 H PAW for H/D",
+    "D_mass_u": 2.014101778,
+    "mass_role": "geometry metadata only; no frequency or prefactor isotope scaling inferred",
+    "ZPE_eV": null,
+    "entropy_correction_eV": null
+  },
+  "eligibility": {
+    "adsorption": true,
+    "adsorption_numerically_controlled": false,
+    "differential_electronic_adsorption": false,
+    "differential_adsorption_numerically_controlled": false,
+    "barrier_force_converged": false,
+    "barrier": false,
+    "original_transport_Eads": false,
+    "unique_DFT_rate": false,
+    "sticking_probability": false
+  },
+  "original_consumer": {
+    "Eads_eV_per_D_estimate_retained": 0.45,
+    "s_clean_estimate_retained": 0.5,
+    "original_mu_reservoir": "half D2 gas at1Pa, finite T",
+    "reason_no_automatic_replacement": "Electronic adsorption rows do not supply a differential finite-T Langmuir free energy referenced to half D2 at1Pa; front flux has no barrier argument"
+  },
+  "numerical_controls": null,
+  "uncertainty": {
+    "target_eV": 0.05,
+    "control_interpretation": "Measured fixed-geometry single-point sensitivities, not rigorous error bounds or reoptimized paths",
+    "unresolved": [
+      "PBE/PAW model error",
+      "nonmagnetic slab branch",
+      "fixed experimental3.890A lattice",
+      "lateral periodic reaction-event coupling in the1x2 cell",
+      "path image discretization and alternative reaction channels",
+      "coverage differential versus average adsorption",
+      "H/D ZPE and vibrational entropy",
+      "gas standard-state finite-T free energy",
+      "harmonic TS partition functions",
+      "sticking and correlated pair statistics"
+    ]
+  },
+  "delivery_status": {
+    "1ML_average_electronic_adsorption": "computed_uncontrolled",
+    "differential_adsorption": "not_computed",
+    "0.25_and_0.5ML_adsorption": "not_computed",
+    "qualified_D2_recombination_barrier": "not_computed",
+    "TST_recombination_rate": "not_computed",
+    "controlled_conditional_transport_rerun": "not_computed",
+    "C_O_surface_states": "not_computed",
+    "harmonic_prefactor": "not_computed",
+    "k_slab_vacuum_cutoff_controls": "not_computed"
+  },
+  "native_attempt_note": "CI-NEB was actually attempted and checkpointed but did not converge; no barrier or rate is inferred from adsorption or unconverged image energies.",
+  "model_parameters_unchanged": {
+    "Eads_eV_per_D": 0.45,
+    "Eb_eV": 0.23,
+    "mtrap_D_per_vacancy": 6,
+    "s_clean": 0.5,
+    "kind": "baseline estimates retained per Axiom"
+  },
+  "private_original_numeric_record_sha256": "ce89d788500591e80c421379210025e3ffc51f4e07e3511eff79b57b48850029"
+}

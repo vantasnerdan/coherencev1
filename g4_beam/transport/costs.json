@@ -1,0 +1,90 @@
+{
+  "schema": "coherence-transport-final-costs-v1",
+  "component_accounting": {
+    "vacancy": {
+      "method": "Native ExecStopPost CPUUsageNSec, all four successful/failed/timeout invocations",
+      "CPUUsageNSec": "7664778906000",
+      "core_min": "127.7463151",
+      "reserve_core_min": "20"
+    },
+    "surface": {
+      "method": "Native ExecStopPost CPUUsageNSec, all five successful/failed/intentional-stop invocations",
+      "CPUUsageNSec": "12836134078000",
+      "core_min": "213.93556796666666666666666666666666666666666666667",
+      "reserve_core_min": "20",
+      "attempts": [
+        {
+          "scientific_status": "startup_metadata_API_failure_before_new_force_step",
+          "CPUUsageNSec": "1779262000",
+          "MemoryPeak_bytes": "111673344",
+          "terminal": {
+            "SERVICE_RESULT": "exit-code",
+            "EXIT_CODE": "exited",
+            "EXIT_STATUS": "1",
+            "UTC_UNIT_END": "2026-11-16T21:10:34Z"
+          }
+        },
+        {
+          "scientific_status": "completed_all_five_endpoint_stages",
+          "CPUUsageNSec": "887362106000",
+          "MemoryPeak_bytes": "498204672",
+          "terminal": {
+            "SERVICE_RESULT": "success",
+            "EXIT_CODE": "exited",
+            "EXIT_STATUS": "0",
+            "UTC_UNIT_END": "2026-11-16T21:26:43Z"
+          }
+        },
+        {
+          "scientific_status": "incomplete_CI_NEB_stopped_at_user_wrap",
+          "CPUUsageNSec": "11660048409000",
+          "MemoryPeak_bytes": "453120000",
+          "terminal": {
+            "SERVICE_RESULT": "success",
+            "EXIT_CODE": "killed",
+            "EXIT_STATUS": "TERM",
+            "UTC_UNIT_END": "2026-11-17T00:49:05Z"
+          }
+        },
+        {
+          "scientific_status": "completed_bounded_cost_pilot_not_endpoint_convergence",
+          "CPUUsageNSec": "285277119000",
+          "MemoryPeak_bytes": "238374912",
+          "terminal": {
+            "SERVICE_RESULT": "success",
+            "EXIT_CODE": "exited",
+            "EXIT_STATUS": "0",
+            "UTC_UNIT_END": "2026-11-16T21:08:40Z"
+          }
+        },
+        {
+          "scientific_status": "startup_boundary_assertion_before_SCF",
+          "CPUUsageNSec": "1667182000",
+          "MemoryPeak_bytes": "101191680",
+          "terminal": {
+            "SERVICE_RESULT": "exit-code",
+            "EXIT_CODE": "exited",
+            "EXIT_STATUS": "1",
+            "UTC_UNIT_END": "2026-11-16T21:02:26Z"
+          }
+        }
+      ]
+    },
+    "Root": {
+      "method": "Saved process_time_ns for five substantial calculations; unmeasured preparation/readout/refusals/packaging conservatively covered by20reserve",
+      "process_CPU_ns": "42910696286",
+      "core_min": "0.71517827143333333333333333333333333333333333333333",
+      "reserve_core_min": "20"
+    }
+  },
+  "measured_CPU_ns_total": "20543823680286",
+  "measured_core_min_total": "342.3970613381",
+  "conservative_reserve_total_core_min": "60",
+  "conservative_whole_charge_core_min": "402.3970613381",
+  "transport_whole_cap_core_min": "800",
+  "unused_cap_core_min": "397.6029386619",
+  "unused_cap_is_not_authorization_for_new_work": true,
+  "all_owned_Native_terminated": true,
+  "no_more_computation_authorized": true,
+  "raw_operational_receipts": "Preserved privately with original immutable reports; no wall-time/rank estimate substituted for counters."
+}

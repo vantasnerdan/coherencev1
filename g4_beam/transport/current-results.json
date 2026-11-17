@@ -1,0 +1,71 @@
+{
+  "schema": "coherence-transport-current-results-v1",
+  "delivery_scope": "Axiom-accepted user-ordered current-results wrap-up. Original controlled surface/barrier objective remains scientifically unresolved; no more Native, retry, or conditional rerun.",
+  "original_scientific_request_fully_resolved": false,
+  "retained_model_parameters": {
+    "Eads_eV_per_D": 0.45,
+    "Eb_eV": 0.23,
+    "mtrap_D_per_vacancy": 6,
+    "s_clean": 0.5,
+    "kind": "baseline estimates retained per Axiom"
+  },
+  "surface": {
+    "row": "surface/surface-public-row.json",
+    "inputs": "surface/surface-public-inputs.json",
+    "complete_findings": "surface/surface-findings.json",
+    "average_1ML_electronic_adsorption_eV_per_D_relative_half_D2": -0.46569862623110936,
+    "positive_electronic_binding_magnitude_eV_per_D": 0.46569862623110936,
+    "status": "geometric endpoint converged, numerical/coverage/finite-T controls absent; not a differential Langmuir replacement",
+    "H_D_convention": "Shared Z1 Born-Oppenheimer electronic surface; no isotope ZPE/vibrational/gas free-energy correction",
+    "NEB": {
+      "completed_bands": 28,
+      "last_step": 27,
+      "last_fmax_eV_A": 0.5140062134073033,
+      "target_fmax_eV_A": 0.05,
+      "barrier": null,
+      "TST_rate": null,
+      "status": "attempted but unconverged, intentionally stopped; unfinished image energies are not barriers"
+    }
+  },
+  "vacancy": {
+    "path": "vacancy/vacancy-results.json",
+    "component": "All13 files unchanged from accepted entry_1256",
+    "pilot_first_D_binding_eV": 0.130944965913681,
+    "unrelaxed27_trial_eV": 0.2424368494914262,
+    "replacement_eligible": false,
+    "maximum_n_tested": 1,
+    "capacity_proven": false
+  },
+  "transport_table": {
+    "path": "checks/results/baseline-pdrh/updated-knobs.json",
+    "original_estimate_rows_retained": 136,
+    "new_baseline_PdRh_rows": 4,
+    "qualified_DFT_parameter_rows": 0,
+    "SI_profiles": "Exact end-state layers/nads/state saved in all four new case outputs",
+    "PdRh_scope": "Conditional20percentRh H-electrosorption bulk-loading calibration; Pd kinetics/surface/cache assumptions retained. Not25percentRh ordered screening cell."
+  },
+  "not_computed": {
+    "1ML_average_electronic_adsorption": "computed_uncontrolled",
+    "differential_adsorption": "not_computed",
+    "0.25_and_0.5ML_adsorption": "not_computed",
+    "qualified_D2_recombination_barrier": "not_computed",
+    "TST_recombination_rate": "not_computed",
+    "controlled_conditional_transport_rerun": "not_computed",
+    "C_O_surface_states": "not_computed",
+    "harmonic_prefactor": "not_computed",
+    "k_slab_vacuum_cutoff_controls": "not_computed"
+  },
+  "costs": "costs.json",
+  "private_original_reports": [
+    {
+      "filename": "surface-return-20261117t005811z.json",
+      "bytes": 132437,
+      "sha256": "69b0fd24141f8a3235fb763fe28aaa47db27c3363d7c470136ec65f685244f2f"
+    },
+    {
+      "filename": "vacancy-report-20261116T232214Z.json",
+      "bytes": 153450,
+      "sha256": "fb243d3b2411fa07ea408186760cc362816c3c29393ee7c27211b6cd5a279625"
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "schema": "coherence-completed-transport-checks-input-ledger-v1",
+  "scope": "Completed Root checks and four baseline-estimate PdRh rows only; not the final campaign cost or qualified DFT-input table.",
+  "repository_baseline": {
+    "commit": "e9c652c18e246aa5674bf0cb85dcbd1e8666261a",
+    "archive_bytes": 15908551,
+    "archive_sha256": "8fda632a9834d9fec28d409b83beaa72e7fb150dfbf3baea1eebe621a718126a"
+  },
+  "saved_baseline_data_commit": "0aab89af99e2bad8ace81c4b413c033cf87812e2",
+  "sources": [
+    {
+      "role": "LSS infinite-medium projected moment, not halfspace implanted-only mean",
+      "url": "https://gymarkiv.sdu.dk/MFM/kdvs/mfm%2030-39/mfm-33-14.pdf",
+      "consumed_pages": [
+        24,
+        25
+      ],
+      "bytes": 1936821,
+      "sha256": "004ef4deee6c46b77b74dd25962e5fcb77e394285a2bb292dc97dda0c49eeb90",
+      "included_in_archive": false
+    },
+    {
+      "role": "Conditional Pd80Rh20 H-electrosorption fit, not25percentRh DFT or direct gasD data",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6982334/",
+      "doi": "10.3390/ma13010162",
+      "path": "checks/sources/pd80rh20-2020-PMC6982334.html",
+      "bytes": 231013,
+      "sha256": "0ae0ed015f1dc0828c94b4de0048a75f9ce5f9d77da793363d6a94726309e2fc"
+    }
+  ],
+  "reference_files": [
+    {
+      "path": "checks/reference/bca.py",
+      "bytes": 7277,
+      "sha256": "0fb5c06751a0a12385bb847296a47695f397d271a00935732948a7666446f56b"
+    },
+    {
+      "path": "checks/reference/bca_tables.npz",
+      "bytes": 348579,
+      "sha256": "4fd7ce875442bc6932646d08c4821e5764dba619fdccf3d32b69f22e3a231045"
+    },
+    {
+      "path": "checks/reference/knobs.csv",
+      "bytes": 21707,
+      "sha256": "0a144ceaf5e39254ed597a29e773ccd0ee1bc51c092f95905ef204c6b60c8309"
+    },
+    {
+      "path": "checks/reference/lit/rng_results.txt",
+      "bytes": 1800,
+      "sha256": "38bb0103c399e02b68c928baea7d2cedaa1d32737b0416e10390f5e90a6c44cc"
+    },
+    {
+      "path": "checks/reference/post.py",
+      "bytes": 8983,
+      "sha256": "0447cdad1600a66fd20276b38470e53c9cf884c0160e1ca32721775436a99690"
+    },
+    {
+      "path": "checks/reference/profiles_full.json",
+      "bytes": 461970,
+      "sha256": "f06a1df5fcc98e204e621080e038569a171a19da7fe0cf900de8b3f5291aa51d"
+    },
+    {
+      "path": "checks/reference/run_all.py",
+      "bytes": 6852,
+      "sha256": "402fea3a0a81b8e5bbc6f6f554557d713b1470bc680ed1db5c5d09cb82c45aea"
+    },
+    {
+      "path": "checks/reference/transport.py",
+      "bytes": 37001,
+      "sha256": "383aad3068c5d5b62fc5f031ccfe8c35c1c6ab426f41daeca6c18aeba3d4a47e"
+    }
+  ],
+  "source_epochs": [
+    {
+      "path": "checks/source-snapshots/baseline-transport-e4fed892b64babe2.py",
+      "bytes": 36824,
+      "sha256": "e4fed892b64babe21b931cd3c82f993e515d192d6e4c57fc39b0c6d601f35031"
+    },
+    {
+      "path": "checks/source-snapshots/knob_cases-f144143e26a39ff3.py",
+      "bytes": 2852,
+      "sha256": "f144143e26a39ff325b7c76ff48c0c1c7fdbd36d1d4ab7383dbf3ed919420242"
+    },
+    {
+      "path": "checks/source-snapshots/run_all-bad142400f0d940d.py",
+      "bytes": 6520,
+      "sha256": "bad142400f0d940d930bb1acab06fc052306b3fdd9b5d416414a40764ac32005"
+    },
+    {
+      "path": "checks/source-snapshots/run_updated_knobs-8effe88b4662133c.py",
+      "bytes": 7125,
+      "sha256": "8effe88b4662133c3ba7ca140722975c39ebbb96986fc779f1a04ea988bea9e3"
+    }
+  ],
+  "contracts": {
+    "Eb_eV_retained": 0.23,
+    "mtrap_retained": 6,
+    "s_clean_retained": 0.5,
+    "Eads_estimate_eV_retained_in_baseline": 0.45,
+    "barrier_or_prefactor_is_not_sticking": true,
+    "yield_units": "physical DDp reactions per true incident charged C; detector and cup separate",
+    "profile": "seven-field SI layers, adsorbedD/m2 and exact end state; plotting samples not substituted",
+    "conditional_alloy": "20percentRh foil loading fit; Pd kinetics/surface assumptions retained; not25percentRh ordered screening cell"
+  },
+  "runtime": {
+    "python": "3.12.3",
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "BLAS_threads": 1
+  }
+}

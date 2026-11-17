@@ -1,0 +1,43 @@
+{
+  "schema": "coherence-parent-completed-work-cost-v1",
+  "accounting_scope": "Actual saved process_time_ns for five completed substantial Root calculations; not systemd Native counters. Imports/preparation/readout/refusals/source acquisition/packaging covered conservatively by included20core-minute reserve; never claimed as measured preparation CPU.",
+  "calculations": [
+    {
+      "path": "results/second-route.json",
+      "bytes": 28509,
+      "sha256": "a5331a29448bc6767dac2e07635d2312aa2dc3059d8d3c09c6e9581ea4f18c14",
+      "process_cpu_ns": "14846353995"
+    },
+    {
+      "path": "results/initial-smoke-pdrh/updated-knobs.json",
+      "bytes": 94703,
+      "sha256": "eaf22d7af3e15df5700be7c46d88ec8266a5751e1df9c83c48e8e4ff874e612a",
+      "process_cpu_ns": "2325290569"
+    },
+    {
+      "path": "results/pre-profile-baseline-pdrh/updated-knobs.json",
+      "bytes": 105615,
+      "sha256": "724a0110861f3f8e6db4553b277a336c8e88b44263c489a64fb34a1d4e67877a",
+      "process_cpu_ns": "10092893230"
+    },
+    {
+      "path": "results/baseline-pdrh/updated-knobs.json",
+      "bytes": 300780,
+      "sha256": "49c5278d59246a2deb39824587cc1c961bb0b079484cc3e55c04d9e0f1a98059",
+      "process_cpu_ns": "9271739436"
+    },
+    {
+      "path": "results/forward-profile-consumer-proof.json",
+      "bytes": 3341,
+      "sha256": "3df2afa39dc579e0fc7a2e93d4af747b338990885d98289f37d8c873af91c13c",
+      "process_cpu_ns": "6374419056"
+    }
+  ],
+  "measured_process_CPU_ns": "42910696286",
+  "measured_process_core_min": 0.7151782714333333,
+  "conservative_reserve_core_min": 20,
+  "conservative_whole_charge_core_min": 20.715178271433334,
+  "original_whole_ceiling_core_min": 100,
+  "original_compute_ceiling_core_min": 80,
+  "no_more_computation": true
+}

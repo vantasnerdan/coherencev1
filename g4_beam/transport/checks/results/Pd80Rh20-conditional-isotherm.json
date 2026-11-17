@@ -1,0 +1,72 @@
+{
+  "alloy_label": "Pd80Rh20 H-electrosorption-fitted isotherm (D transport assumption)",
+  "composition_warning": "Pd80Rh20 foil data are not the ordered Pd3Rh25% screening cell. Do not combine them into a causal d-band derivative.",
+  "conditional_mu_relative_half_H2_at_1Pa_eV": [
+    0.09806746524404013,
+    0.18106746524404013,
+    0.29806746524404015
+  ],
+  "doi": "10.3390/ma13010162",
+  "extrapolated_chamber_D_per_metal_at300K": 8.449816996246983e-06,
+  "fit_source": {
+    "bytes": 3891,
+    "path": "fit_pdrh.py",
+    "sha256": "076070fda266ab433fe42db2a07c54b23815d32e7f1d8ca611984534a7d6d1c6"
+  },
+  "material_overrides": {
+    "a300": 0.04725238441243143,
+    "b300": 0.6021698418964742,
+    "dH": -21306.883111211737
+  },
+  "max_mu_calibration_residual_eV": 6.38378239159465e-16,
+  "observations": {
+    "E_RHE_V": [
+      0.05,
+      -0.033,
+      -0.15
+    ],
+    "H_per_total_metal": [
+      0.002,
+      0.4,
+      0.8
+    ],
+    "T_K": 298.15
+  },
+  "plateau_pressure_at298K_Pa": 1197857.9549892496,
+  "reproduced_H_per_metal": [
+    0.001999999999999741,
+    0.39999999999990743,
+    0.7999999999999148
+  ],
+  "retained_estimates": {
+    "D0": 1.7e-07,
+    "D0_hyd": 1.7e-07,
+    "Ea": 0.206,
+    "Ea_hyd": 0.206,
+    "Eads": 0.45,
+    "Eb": 0.23,
+    "Tc": 555.0,
+    "bca": "Pd",
+    "dS": -92.0,
+    "mtrap": 6,
+    "nM": 6.8e+28,
+    "s_clean": 0.5,
+    "tilt": 0.002,
+    "w": 0.465,
+    "xc": 0.27
+  },
+  "schema": "coherence-Pd80Rh20-conditional-isotherm-v1",
+  "scope": "Three parameters calibrated to three H-electrosorption points: zero holdout degrees of freedom, not predictive validation. Reversible RHE-to-H chemical-potential mapping is conditional. H-to-D isotope, kinetics, surface adsorption, implantation/density and temperature extrapolation retain Pd estimates; no PdRh DFT values supplied.",
+  "source": {
+    "bytes": 231013,
+    "path": "pd80rh20-2020-PMC6982334.html",
+    "sha256": "0ae0ed015f1dc0828c94b4de0048a75f9ce5f9d77da793363d6a94726309e2fc"
+  },
+  "source_measurement": "Total oxidised surface+absorbed H in50um foil at25C. Applied potentials after reported saturation, not direct gas-pressure measurements.",
+  "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6982334/",
+  "transport_source": {
+    "bytes": 37001,
+    "path": "transport.py",
+    "sha256": "383aad3068c5d5b62fc5f031ccfe8c35c1c6ab426f41daeca6c18aeba3d4a47e"
+  }
+}

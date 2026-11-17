@@ -1,0 +1,73 @@
+{
+  "T_K": 300.13859619883044,
+  "elapsed_wall_s": 1.6002256385982037,
+  "end": {
+    "DM20": 0.00024349696835142335,
+    "DM5": 0.000948728435224669,
+    "DM70": 7.560830537606828e-05,
+    "ads_ML": 0.9997746571770991,
+    "d_ol_nm": 0.0,
+    "nD20": 0.016557148789411225,
+    "nD5": 0.06450374214978055,
+    "nD70": 0.00514130256954469,
+    "v20": 0.000676153244626032,
+    "v5": 0.0027046129783075707,
+    "v70": 0.0001931866413217234,
+    "x_surf_solute": 8.452894313919475e-06
+  },
+  "incident_D_flux_m2_s": 2.7275388424624737e+18,
+  "job": {
+    "case": {
+      "E_cm": 0.25,
+      "alloy": {
+        "a300": 0.04725238441243143,
+        "b300": 0.6021698418964742,
+        "dH": -21306.883111211737
+      }
+    },
+    "condition": "Pd",
+    "id": "baseline_estimates__knob_Pd_0.25_Pd80Rh20 conditional alloy",
+    "knob": "Pd80Rh20 conditional alloy",
+    "scenario": {
+      "id": "baseline_estimates",
+      "kind": "baseline_estimates",
+      "material_overrides": {},
+      "scope": "Original Pd Eb0.23eV, Eads0.45eV, mtrap6 and sticking0.5 retained. New Pd80Rh20 row changes only the conditional literature-fitted bulk-isotherm parameters; no new DFT values admitted."
+    },
+    "tag": "knob_Pd_0.25_Pd80Rh20 conditional alloy",
+    "transferred_to_alloy": false
+  },
+  "m30": {
+    "DM20": 0.00024183795348625917,
+    "DM5": 0.000942090940346222,
+    "DM70": 7.513428918430461e-05,
+    "ads_ML": 0.999774657010113,
+    "d_ol_nm": 0.0,
+    "nD20": 0.01644434453840489,
+    "nD5": 0.06405252901437658,
+    "nD70": 0.005109070245914902,
+    "v20": 0.0006713814631013646,
+    "v5": 0.0026855258524052877,
+    "v70": 0.00019182327517181847,
+    "x_surf_solute": 8.45288805041899e-06
+  },
+  "overlayer_removal_h": null,
+  "overlayer_status": "none",
+  "physical_yield_per_true_C": {
+    "Ue0": 9.759135321372933e-16,
+    "Ue0_noads": 8.587958301635116e-18,
+    "Ue0_nom": 2.370355394792203e-15,
+    "Ue0_uni70": 2.294215072452169e-19,
+    "Ue1": 0.5848887074591249,
+    "Ue1_noads": 0.011434730106363401,
+    "Ue1_nom": 22.48618123686172,
+    "Ue1_uni70": 0.002432745148805522,
+    "UeP": 0.04747051107467791,
+    "UeP_noads": 0.0008969602937812609,
+    "UeP_nom": 1.2905800040264446,
+    "UeP_uni70": 0.0001345376015314401
+  },
+  "process_cpu_ns": "1591603035",
+  "t_run_s": 43200.0,
+  "yield_scope": "DDp reactions/true charged C, original fitted Ue probes held fixed; no detector or cup correction"
+}

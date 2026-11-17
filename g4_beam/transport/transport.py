@@ -650,7 +650,7 @@ class Model:
         return th * self.mat["ns"], mu_s
 
     def profile(self, k=-1):
-        """Depth profile including overlayer and adsorbate: list of layers (z_top, z_bot, n_host, n_D, Z, M)."""
+        """Return seven-field SI layers (z_top,z_bot,n_host,n_D,Z,M,n_metal), adsorbed D/m², and state."""
         x, xt, v, d = self.state(k)
         mu = self.mu(x)
         layers = []
@@ -715,7 +715,7 @@ def stopping(E_eV, nh, Z, M, nD):
 
 
 def yield_per_ion(layers, nads, E_lab_eV, Ue_keV, ds=0.05):
-    """Fusion probability per incident deuteron (arbitrary consistent units: mb * D/nm^2)."""
+    """Raw mb*D/nm² yield per deuteron; multiply by 1e-13 for physical fusion probability."""
     E = float(E_lab_eV)
     Y = nads * 1e-18 * sigma(E / 2e3, Ue_keV)          # adsorbed monolayer, D per nm^2
     z = 0.0
@@ -736,6 +736,10 @@ def yield_per_ion(layers, nads, E_lab_eV, Ue_keV, ds=0.05):
 
 
 def yield_per_charge(model, Ue_keV, k=-1, profile=None):
+    """Raw mixed-beam yield per charged particle; multiply by 1e-13/QE for reactions per true incident C.
+
+    No detector-efficiency or Faraday-cup correction is included.
+    """
     layers, nads, _ = model.profile(k) if profile is None else profile
     E = model.E_lab
     return 0.85 * yield_per_ion(layers, nads, E, Ue_keV) + 0.30 * yield_per_ion(layers, nads, E / 2, Ue_keV)

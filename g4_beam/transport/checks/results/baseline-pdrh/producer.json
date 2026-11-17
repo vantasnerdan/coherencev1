@@ -1,0 +1,52 @@
+{
+  "PdRh": {
+    "bytes": 2394,
+    "path": "Pd80Rh20-conditional-isotherm.json",
+    "sha256": "d9c7f88ef20393af0e22d5ae2b0d7ac3906145f98dac95a8b265c61011412ec3"
+  },
+  "bca": {
+    "bytes": 7277,
+    "path": "bca.py",
+    "sha256": "0fb5c06751a0a12385bb847296a47695f397d271a00935732948a7666446f56b"
+  },
+  "cache": {
+    "bytes": 348579,
+    "path": "bca_tables.npz",
+    "sha256": "4fd7ce875442bc6932646d08c4821e5764dba619fdccf3d32b69f22e3a231045"
+  },
+  "cpu_budget_s": 120.0,
+  "original_table": {
+    "bytes": 21707,
+    "path": "knobs.csv",
+    "sha256": "0a144ceaf5e39254ed597a29e773ccd0ee1bc51c092f95905ef204c6b60c8309"
+  },
+  "parameter_sets": {
+    "bytes": 399,
+    "path": "baseline-parameter-scenario.json",
+    "sha256": "0e079604d4128b538c32fc16842e4fff339696daac9f60bcffd6ce5ee85ddec8"
+  },
+  "reference_runner": {
+    "bytes": 6852,
+    "path": "run_all.py",
+    "sha256": "402fea3a0a81b8e5bbc6f6f554557d713b1470bc680ed1db5c5d09cb82c45aea"
+  },
+  "reuse_scope": "Original baseline estimates retained, not relabelled new computations. Ti/TiD physics unchanged by Pd Eb/Eads; original rows remain authoritative.",
+  "selection": "all changed Pd rows; unchanged Ti rows retained from source table",
+  "sources": [
+    {
+      "bytes": 2634,
+      "path": "knob_cases.py",
+      "sha256": "0b3caabd8d65f0e8da2c199046dc7ab6988962816478b20619f17b49c6dd635b"
+    },
+    {
+      "bytes": 7166,
+      "path": "run_updated_knobs.py",
+      "sha256": "c3a4b2366a2adbae9b6afca3be7f8166414dcbf80e6acdb53ef53d9c43d13bf8"
+    }
+  ],
+  "transport": {
+    "bytes": 37001,
+    "path": "transport.py",
+    "sha256": "383aad3068c5d5b62fc5f031ccfe8c35c1c6ab426f41daeca6c18aeba3d4a47e"
+  }
+}

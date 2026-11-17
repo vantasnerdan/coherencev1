@@ -1,0 +1,285 @@
+{
+  "schema": "coherence-surface-complete-findings-v1",
+  "original_private_report": {
+    "filename": "surface-return-20261117t005811z.json",
+    "bytes": 132437,
+    "sha256": "69b0fd24141f8a3235fb763fe28aaa47db27c3363d7c470136ec65f685244f2f"
+  },
+  "findings": [
+    {
+      "id": "S01",
+      "severity": "resolved",
+      "finding": "Actual pinned consumer Eads is positive Langmuir binding relative to half-D2 gas at1Pa; front_flux is an independent2sGamma law with no barrier argument.",
+      "disposition": "Retain Eads0.45, Eb0.23,mtrap6,s0.5; no automatic electronic-energy/sticking substitution."
+    },
+    {
+      "id": "S02",
+      "severity": "resolved",
+      "finding": "Selected original Pd10/H1 PAW bytes and pinned consumer are banked; all scientific calculations use PBE and the qualified serial new-PW route.",
+      "disposition": "Exact raw bytes/counts/SHA256 and source/settings preserved."
+    },
+    {
+      "id": "S03",
+      "severity": "corrected",
+      "finding": "Initial3D-periodic slab with new-PW dipole correction asserted before SCF because dipolelayer requires2D periodicity.",
+      "disposition": "Changed slab pbc toTrue,True,False as intended; preserved failed inputs/log and charged1667182000ns. No unchanged scientific retry."
+    },
+    {
+      "id": "S04",
+      "severity": "resolved",
+      "finding": "Single scientific cost pilot completed3 force points, first156.33s then~64s per warm force; pilot geometry was deliberately unconverged.",
+      "disposition": "Cost-based bounded continuation, not an adsorption/barrier convergence claim."
+    },
+    {
+      "id": "S05",
+      "severity": "corrected",
+      "finding": "Endpoint metadata callback used absent get_spin_polarized new-GPAW API after exact completed-state reload, before a new optimization force step.",
+      "disposition": "Used actual get_number_of_spins()==2; saved original failure/code and charged1779262000ns; no lost new SCF step."
+    },
+    {
+      "id": "S06",
+      "severity": "computed_uncontrolled",
+      "finding": "Clean slab,1ML adsorbed slab, spin-polarized isolated H, computed H2, and matched gas+slab endpoint all converged to0.05eV/A.",
+      "disposition": "Actual endpoint energies, raw/constrained forces, geometries, trajectories and GPWs preserved. This does not qualify numerical convergence of energy differences."
+    },
+    {
+      "id": "S07",
+      "severity": "computed_uncontrolled",
+      "finding": "Actual1ML average adsorption is-0.46569862623110936eV/D relative to half computed H2, and-2.705735578332809eV/D relative to spin-polarized atomic H.",
+      "disposition": "Separate reservoir/sign conventions. Display as uncontrolled0K electronic data, not the finite-T Langmuir Eads parameter."
+    },
+    {
+      "id": "S08",
+      "severity": "blocking",
+      "finding": "Actual CI-NEB stopped with28 completed band records, latest step27 fmax0.5140062134073033eV/A versus0.05 target.",
+      "disposition": "No converged MEP/TS, desorption/reverse barrier, detailed-balance barrier pair or TST rate computed. Adsorption/reaction energy and unconverged image energies are NOT barriers."
+    },
+    {
+      "id": "S09",
+      "severity": "not_computed",
+      "finding": "Dominant k/slab/vacuum/cutoff sensitivities were not run before wrap-up.",
+      "disposition": "All corresponding convergence/admission flags remain false; no physical tolerance claimed."
+    },
+    {
+      "id": "S10",
+      "severity": "not_computed",
+      "finding": "0.25/0.5ML and matched differential adsorption were prepared but not executed.",
+      "disposition": "Only actual1ML average row is delivered; lower-coverage/differential row is explicitly not computed."
+    },
+    {
+      "id": "S11",
+      "severity": "not_computed",
+      "finding": "Harmonic mode-index, Hessian, vibrational prefactor, ZPE and entropy calculations were prepared but not run.",
+      "disposition": "An analyst-assumed1e11..1e14s^-1 range is labelled external sensitivity only; no rate follows without an earned barrier. No unique DFT rate or sticking inference."
+    },
+    {
+      "id": "S12",
+      "severity": "verified",
+      "finding": "Actual saved endpoint numeric consumer and separate portable-restoration consumer both consumed real energies/forces; wrong atomic spin, missing barrier, ineligible original parameter and wrong raw-byte identity were refused.",
+      "disposition": "Receipts and original admitted snapshot preserved. No source-text/wiring tests or fabricated fixtures."
+    },
+    {
+      "id": "S13",
+      "severity": "scope_limit",
+      "finding": "Model is restricted nonmagnetic, clamped-bottom3-layer Pd(111) at fixed3.890A.1x2 periodic reaction pairs are not isolated rare events in a larger1ML adlayer.",
+      "disposition": "PBE/PAW, lateral-event coupling, clamping, lattice strain, alternative channels, smearing and thermochemical corrections remain model uncertainties, not zero errors."
+    },
+    {
+      "id": "S14",
+      "severity": "budget_closed",
+      "finding": "Main explicitly reallocated102.2536849 returned vacancy minutes: surface552.2536849whole/532.2536849Native, same20reserve; current NEB bound was never extended.",
+      "disposition": "All prior costs included; actual Native+20reserve also remains below original450. Returned unused grant andCPU8 to parent after actual all-exit."
+    },
+    {
+      "id": "S15",
+      "severity": "recovery_limit",
+      "finding": "Completed pilot GPW reload reproduced energy and forces exactly. NEB persists complete band geometries/energies/forces but saves native image GPWs only after a completed optimization.",
+      "disposition": "Completed band JSON/trajectories survive; in-flight SCF/wavefunctions and FIRE velocity/history are lost/unproven reusable. No in-flight resume promise."
+    },
+    {
+      "id": "S16",
+      "severity": "operational_limit",
+      "finding": "Initial Herdr tab creation was visible in the tool transcript; the local tab receipt is an abbreviated retrospective transcription, not attested original stdout bytes.",
+      "disposition": "Explicit provenance limitation; subsequent Native launch/stop/observer/accounting receipts are actual raw outputs. No numerical replay for this metadata gap."
+    },
+    {
+      "id": "S17",
+      "severity": "not_computed",
+      "finding": "C/O surfaces and controlled conditional transport rerun were not run.",
+      "disposition": "Mark not computed per Axiom. No extra facet/contamination work jeopardized clean111 priority."
+    },
+    {
+      "id": "S18",
+      "severity": "closed_at_user_wrap",
+      "finding": "User requested current-step wrap-up; Axiom accepted uncontrolled1ML electronic row and requested immediate current-results archive with barrier/TST/rerun/C-O not computed.",
+      "disposition": "Owned Native intentionally stopped, resources returned, immutable partial report supplied. Parent alone packages archive/public commit."
+    }
+  ],
+  "scientific_conclusion": "One converged but numerically uncontrolled1ML electronic adsorption point. No qualified desorption barrier, differential adsorption or TST rate; baseline parameters unchanged.",
+  "not_computed": {
+    "1ML_average_electronic_adsorption": "computed_uncontrolled",
+    "differential_adsorption": "not_computed",
+    "0.25_and_0.5ML_adsorption": "not_computed",
+    "qualified_D2_recombination_barrier": "not_computed",
+    "TST_recombination_rate": "not_computed",
+    "controlled_conditional_transport_rerun": "not_computed",
+    "C_O_surface_states": "not_computed",
+    "harmonic_prefactor": "not_computed",
+    "k_slab_vacuum_cutoff_controls": "not_computed"
+  },
+  "checkpoint_and_losses": {
+    "demonstrated_completed_native_reload": {
+      "path": "receipts/endpoint-api-failure/restart-proof.json",
+      "bytes": 604,
+      "sha256": "e0845ed494a0f8b984511a372f2fbb2a94dc0243c5960ef8142ed8da49bd91ed"
+    },
+    "completed_band_bank": [
+      {
+        "path": "neb/band-000.json",
+        "bytes": 21469,
+        "sha256": "711de471869b69d3dc3a0eb3e1b1961c7f49735f1c49537f2ac5f87d9f93fe00"
+      },
+      {
+        "path": "neb/band-001.json",
+        "bytes": 21451,
+        "sha256": "705e95d72101a4a17bd3b8e3511b44647ba551da2b5b936cb9066c7b2d7bc15a"
+      },
+      {
+        "path": "neb/band-002.json",
+        "bytes": 21470,
+        "sha256": "362a7241fa964f372d55c3bd728a463d018dae097c492cfff628e81b5c901cb8"
+      },
+      {
+        "path": "neb/band-003.json",
+        "bytes": 21483,
+        "sha256": "ca6243f1796e96ad86e8bdb80c586e702a0b21e055e1eb45ea1e8bccde8cd084"
+      },
+      {
+        "path": "neb/band-004.json",
+        "bytes": 21484,
+        "sha256": "12ee2ff98bd94be07d8a759e655b31691217e556a164c31135eb8c7053461c29"
+      },
+      {
+        "path": "neb/band-005.json",
+        "bytes": 21476,
+        "sha256": "2aa77847c6eca2e88fb39dc15c5f351e899edc69e16ea917ff1aa1716ebea8ea"
+      },
+      {
+        "path": "neb/band-006.json",
+        "bytes": 21519,
+        "sha256": "296f7f903ce79edcc19c3a5ac2892081a3f7cfca39360c34560e7e16f8c80310"
+      },
+      {
+        "path": "neb/band-007.json",
+        "bytes": 21521,
+        "sha256": "d319219121e854d54e684fa5f34e04227d109ae3163abc0a5e40ca634828b80c"
+      },
+      {
+        "path": "neb/band-008.json",
+        "bytes": 21464,
+        "sha256": "8961556929c9b5c52c893b44fb290ad4db59ca0be87f759c6ebf6fe0eb20233c"
+      },
+      {
+        "path": "neb/band-009.json",
+        "bytes": 21479,
+        "sha256": "ea44484d7fbfbcc66747dad7427441e76942b82fa850c932f7e4262ae9babc56"
+      },
+      {
+        "path": "neb/band-010.json",
+        "bytes": 21527,
+        "sha256": "6ce4fb3b7cadc8d7a346644ad5dae20dffabafb693d851c251d9956eb4312dd3"
+      },
+      {
+        "path": "neb/band-011.json",
+        "bytes": 21542,
+        "sha256": "863a5b1dc36f2e09ab978445dceeff2c11551e62480c12be46b78dd5aef3b9bb"
+      },
+      {
+        "path": "neb/band-012.json",
+        "bytes": 21555,
+        "sha256": "5ca51af30179ee170d41aab064d57e953ef8a3cf5cf40dae02721e53013b05ba"
+      },
+      {
+        "path": "neb/band-013.json",
+        "bytes": 21486,
+        "sha256": "e311586a33cd3baa5149ac67632a2b0558bc818be39e72d95bb8bb6a3d0ca85d"
+      },
+      {
+        "path": "neb/band-014.json",
+        "bytes": 21482,
+        "sha256": "9c5cdb4e6586ae315f085858a94868ed77622846229e390f934b0ec40030152f"
+      },
+      {
+        "path": "neb/band-015.json",
+        "bytes": 21493,
+        "sha256": "d6aa307759523a4e308640cd6a75d254e7ca7194819065384b0f3c2c3c6277fb"
+      },
+      {
+        "path": "neb/band-016.json",
+        "bytes": 21539,
+        "sha256": "3aba93da8e845a587952c3af11663e00e248692ee2be926d07f66a0cb5209af9"
+      },
+      {
+        "path": "neb/band-017.json",
+        "bytes": 21501,
+        "sha256": "a4246f79188d46a353a2ae3478c4ef04cfb20b4289a7a39e2a359f00d2dd77ef"
+      },
+      {
+        "path": "neb/band-018.json",
+        "bytes": 21513,
+        "sha256": "36ef5e765075ef6b2cad4562b9717d96d9a221f896d06fa6253a1c675f2171a1"
+      },
+      {
+        "path": "neb/band-019.json",
+        "bytes": 21510,
+        "sha256": "dcfcf90966f94c190df582a6b9378b90e39f05676176ff43ebbb427caed452cd"
+      },
+      {
+        "path": "neb/band-020.json",
+        "bytes": 21554,
+        "sha256": "ebe6ed9bedcf6d468c19b9dc1644b37657383135bc5c90604f14af684da591e7"
+      },
+      {
+        "path": "neb/band-021.json",
+        "bytes": 21504,
+        "sha256": "9c773cc923fc119ff57bc62f3af3807a5912ffc59552d45178c7ce7809b8a32e"
+      },
+      {
+        "path": "neb/band-022.json",
+        "bytes": 21494,
+        "sha256": "4091d1758f2e25bdc0137b234d83a3debfa193b6dac6e363dde181dcacdeca5b"
+      },
+      {
+        "path": "neb/band-023.json",
+        "bytes": 21507,
+        "sha256": "5a57a143eec5a52affc53257d2665d80ec777e872fbe0a9de3d3e8db0f10f2d0"
+      },
+      {
+        "path": "neb/band-024.json",
+        "bytes": 21530,
+        "sha256": "3e12c2d25587d3dd9b76322ce66f86d33cd22757dae02d4f73e089630b9c3281"
+      },
+      {
+        "path": "neb/band-025.json",
+        "bytes": 21530,
+        "sha256": "89b816196dc260ae774dc66cd9f37bd68fe439119135f04d15a4991405b9feb8"
+      },
+      {
+        "path": "neb/band-026.json",
+        "bytes": 21547,
+        "sha256": "208176e41ce941c3f0663e43850bc058f3adbca8c11a488f90872aa9a44c230c"
+      },
+      {
+        "path": "neb/band-027.json",
+        "bytes": 21549,
+        "sha256": "75e7e96117e96e533b22f1e0d6a14d3ffd519e550d744f0345bdb259edb8de83"
+      }
+    ],
+    "NEB_inflight_SCF_reuse": "not saved/not demonstrated",
+    "NEB_FIRE_history_reuse": "not saved/not demonstrated",
+    "unrecoverable_inflight_cost": "Not separately measured; full Native counter includes it. No wall-times-rank substitute.",
+    "native_NEB_GPWs": [],
+    "settled_endpoints_preserved": true
+  },
+  "publication_scope": "Portable scientific subset; full original operational report/receipts retained privately. Complete18 findings and dispositions retained; no qualified barrier or TST inferred."
+}

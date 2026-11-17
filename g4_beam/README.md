@@ -74,6 +74,19 @@ Electronic screening from first principles (`screen/README.md`, valence-PAW PBE,
 
 Across laboratories (`czerski/README.md`): the palladium plateau can share layer or sigmoid parameters between Szczecin and UC Davis (mismatch factors 1.2-1.4); titanium cannot once the Tohoku data are included. One thermal-spike amplitude for both laboratories fails: A_UC Davis / A_Szczecin = 622.5 (as plotted) and 283.8 (one cup-current power).
 
+Near-surface deuterium (`transport/README.md`, `transport/knobs.csv`). In Pd the top 5 nm hold about 0.01 D per metal atom, almost all in beam-made vacancies; Ti and TiD both reach TiD ~1.85 under the beam. Factors on D/M in the top 5 nm:
+
+| Knob | Pd / PdD | Ti / TiD |
+|---|---|---|
+| Pd77Ag23 / Pd90Pt10 | x6.5-12 / x0.27-0.31 | - |
+| Pd80Rh20 (estimate from H-electrosorption data) | x0.31 at 0.25 keV, yield x0.96 | - |
+| -30 K / +30 K | x2.3-2.5 / x0.40-0.63 | ~x1 |
+| Strain +0.5% / -0.5% | x1.4 / x0.68 | x1.00 |
+| Back-side current x2 | x1.13-1.14 (end of run) | x1.00 |
+| 2 nm Al2O3 while it lasts | x0.04 (0.25 keV) to x3.3 (PdD, 2.5 keV) | Al2O3 5 nm x0.19-0.30 |
+
+A beam-side surface that almost stops recombining deuterium (sticking 1e-7) lets the hydride reach the beam side (0.68-0.72 D/Pd). First-principles inputs: the converged 1 ML adsorption of D on clean Pd(111) is 0.466 eV per D below half a D2 molecule, beside the model's 0.45 eV; the Pd vacancy binding stays at the 0.23 eV estimate (8-Pd pilot 0.131 eV, unrelaxed 27-Pd trial 0.242 eV); the D2 recombination barrier was not converged. Pd80Rh20 lowers near-surface D but barely moves the yield, because the adsorbed monolayer stays nearly full.
+
 ## What the models keep, drop, and leave out
 
 `forward/` keeps the Bosch-Hale S-factors, ICRU-49 electronic and ZBL nuclear stopping with Bragg additivity, the 85/15 D+/D2+ beam, and a measurement layer: charge normalisation, Faraday-cup collected fraction in each beam-delivery regime, proton-to-neutron stitch factor, and fast neutrals. It drops target evolution, straggling and backscatter, and the deuterium depth profile.
@@ -88,5 +101,4 @@ The three biggest omissions are:
 ## Open work
 
 Open work is tracked on Fleet nodes, one directory per node when delivered:
-- `g4_transport`: second-route check of the transport model, and DFT inputs for the Pd surface and vacancy trapping.
 - `g4_zenodo`: refit on the per-run data once it opens.

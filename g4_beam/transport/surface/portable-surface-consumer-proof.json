@@ -1,0 +1,45 @@
+{
+  "primitive_binding": {
+    "path": "adsorbed-1ML/point-007.json",
+    "bytes": 3049,
+    "sha256": "68fbf7ca4a0a2314766b824919d6c9a6cb76000dddcca5a3980601b9b6e4a87d"
+  },
+  "consumed_energy_extrapolated_eV": -25.203505699511172,
+  "consumed_free_energy_eV": -25.254688304534817,
+  "consumed_fmax_eV_A": 0.04733489378164327,
+  "consumed_atom_count": 8,
+  "replacement_binding": {
+    "path": "surface-public-row.json",
+    "bytes": 5386,
+    "sha256": "3fd59d2bfebbb5f19ce91314079ed2f2a91e42159663092d08d9191272df1122"
+  },
+  "refusals": [
+    {
+      "case": "unpolarized_atomic_H_reservoir",
+      "refused": true,
+      "reason": "Atomic reservoir must be an actually spin-polarized isolated H"
+    },
+    {
+      "case": "incomplete_barrier_is_not_rate",
+      "refused": true,
+      "reason": "No converged MEP/TS barrier: rate refused"
+    },
+    {
+      "case": "ineligible_original_transport_replacement",
+      "refused": true,
+      "reason": "Coverage-average electronic binding is not a differential Langmuir free energy"
+    },
+    {
+      "case": "wrong_saved_primitive_identity",
+      "refused": true,
+      "reason": "Saved primitive byte identity mismatch"
+    }
+  ],
+  "consumed_adsorption": {
+    "atomic_H_adsorption_eV_per_D": -2.705735578332809,
+    "half_H2_adsorption_eV_per_D": -0.46569862623110936,
+    "positive_electronic_binding_eV_per_D": 0.46569862623110936,
+    "atomic_reservoir_spin_polarized": true
+  },
+  "claim": "Actual saved primitive numerical intake and refusal; NOT completed surface-rate calibration"
+}
