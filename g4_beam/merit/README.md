@@ -23,11 +23,16 @@ models parallel island-covered/open columns; areas sum to one. `measurement`
 contains explicit beam/current settings. `Ue_shift_keV` is a scalar or
 `(E_cm,z_m)` callable added after the fitted cause. Treat a Target and its profile
 snapshots as immutable after evaluation; the object caches numerical results.
+`material` selects the fitted phenomenological law; layer composition and stopping
+remain explicit. It does not infer a new material-specific law at every interface.
 
-`evaluate_fit(target,energies,cause,fit)` supplies raw physical/measurement yields
-at one explicit transported-fit row. It never chooses a denominator; later
-profile-likelihood consumers must evaluate numerator and reference with the
-same fitted parameters. Its default-fit identity is exercised in `explicit_fit.log`.
+`evaluate_fit(target,energies,cause,fit)` supplies physical/measurement yields at
+one explicit transported-fit row. Its optional `reference_E_cm_keV=6.5` retains
+the normalized consumer default. Pass `reference_E_cm_keV=None` for raw-only
+single-age evaluation: no6.5keV callback is requested and R/reference_signal are
+null, while physical zero is valid. `evaluate()` supports the same option and
+partitions its cache by mode/reference energy. Evaluate numerator and reference
+with the SAME fitted parameters; physical yields never acquire a fitted amplitude.
 
 `merit` is reactions/true charged coulomb of the design divided by the modeled
 PdD value at the **same CM energy**, with the same cause and beam. It is not a
@@ -53,6 +58,16 @@ PdD's observed energies/error weights; ratios to Pd use Pd's matched weights.
 same extra current correction applied to the digitized paper curve; `self_R`
 alone is the physical proton-yield ratio. Quoted paper Ue is0.8/1.7/0.3/0.9keV
 for Pd/PdD/Ti/TiD, each+-0.2keV, not our new refit values.
+
+The later ALD delivery extends the high-level zero-target boundary without
+replacing the original merit archive. `merit` and `compare` retain physical0;
+undefined self-R, stitched reported-R and effective-Ue are null, with
+`self_R_defined`/`reported_R_defined` flags. A literal fit requires a positive
+finite curve throughout its requested weighted support; an undefined/zero point
+is not silently removed to fit a narrower interval. Low-level normalized
+zero-reference rejection is unchanged. Exact positive-consumer parity and raw/
+normalized boundary evidence are in `ald/zero_merit_proof.json`,
+`ald/literal_support_proof.json` and `ald/raw_consumer_proof.json`.
 
 SI1 supplies absolute cross-material **same-energy counts ratios** only at0.25–3
 keV. To place its markers on the primary modeled scale, compare multiplies each

@@ -89,21 +89,23 @@ def _settings(target,cause,bare,channel,fit=None):
     return 0. if bare else p['Ue_'+target.material],cand,params,measurement
 
 
-def evaluate(target, energies, cause, *, bare=False, channel='p'):
+def evaluate(target, energies, cause, *, bare=False, channel='p',reference_E_cm_keV=6.5):
     """Cached actual consumer result. Target and profile snapshots are immutable in use."""
     ee=np.atleast_1d(np.asarray(energies,float))
-    key=(tuple(ee),cause,bare,channel)
+    key=(tuple(ee),cause,bare,channel,reference_E_cm_keV)
     if key in target._cache:return target._cache[key]
-    out=evaluate_fit(target,ee,cause,bestfits()[cause],bare=bare,channel=channel)
+    out=evaluate_fit(target,ee,cause,bestfits()[cause],bare=bare,channel=channel,reference_E_cm_keV=reference_E_cm_keV)
     target._cache[key]=out
     return out
 
 
-def evaluate_fit(target,energies,cause,fit,*,bare=False,channel='p'):
+def evaluate_fit(target,energies,cause,fit,*,bare=False,channel='p',reference_E_cm_keV=6.5):
     """Raw shared-consumer yields at one explicit transported-fit row.
 
     This does NOT divide by an implicit reference. Profile-likelihood consumers
     must evaluate BOTH changed target and reference at the same supplied fit.
+    Pass reference_E_cm_keV=None for a raw-only age snapshot: no unrelated
+    reference-energy profile is requested and R/reference_signal are None.
     """
     ee=np.atleast_1d(np.asarray(energies,float))
     u,cand,p,measurement=_settings(target,cause,bare,channel,fit)
@@ -113,12 +115,12 @@ def evaluate_fit(target,energies,cause,fit,*,bare=False,channel='p'):
         if weight==0:continue
         out=forward_yields(ee,profiles,Ue_keV=u,candidate=cand,parameters=p,
                            measurement=measurement,stopping_fn=target.stopping_fn,
-                           reaction='eq7' if bare else 'proton')
+                           reaction='eq7' if bare else 'proton',reference_E_cm_keV=reference_E_cm_keV)
         outputs.append((weight,out))
     keys=('physical_yield_per_C','counts_per_C','reported_signal','ion_yield_per_C','neutral_yield_per_C')
     out={name:sum(w*r[name] for w,r in outputs) for name in keys}
-    out['reference_signal']=sum(w*r['reference_signal'] for w,r in outputs)
-    out['R']=out['reported_signal']/out['reference_signal']
+    out['reference_signal']=None if reference_E_cm_keV is None else sum(w*r['reference_signal'] for w,r in outputs)
+    out['R']=None if reference_E_cm_keV is None else out['reported_signal']/out['reference_signal']
     return out
 
 
@@ -126,8 +128,8 @@ def merit(target,E,*,cause=None):
     """Dimensionless physical proton yield relative to fixed PdD at SAME CM keV."""
     if cause is None:return {c:merit(target,E,cause=c) for c in CAUSES}
     if cause not in CAUSES:raise ValueError('Unknown plateau cause')
-    n=evaluate(target,E,cause)['physical_yield_per_C']
-    d=evaluate(reference(),E,cause)['physical_yield_per_C']
+    n=evaluate(target,E,cause,reference_E_cm_keV=None)['physical_yield_per_C']
+    d=evaluate(reference(),E,cause,reference_E_cm_keV=None)['physical_yield_per_C']
     if np.any(d<=0):raise ValueError('Positive physical reference required')
     ratio=n/d
     return float(ratio[0]) if np.ndim(E)==0 else ratio
@@ -166,8 +168,13 @@ def paper_weights(material,energies):
 def _reported(target,energies,cause,fit=None):
     # Same fitted proton/neutron stitch for baseline and explicit-fit consumers.
     def run(ee,channel='p'):
-        return evaluate(target,ee,cause,channel=channel) if fit is None else evaluate_fit(target,ee,cause,fit,channel=channel)
+        return evaluate(target,ee,cause,channel=channel,reference_E_cm_keV=None) if fit is None else evaluate_fit(target,ee,cause,fit,channel=channel,reference_E_cm_keV=None)
     pp=run(np.r_[energies,4.5,6.5]);nn=run([4.5,6.5],channel='n')
+    if nn['reported_signal'][-1]<=0:
+        return np.full(np.shape(energies),np.nan,dtype=float)
+    if pp['reported_signal'][-2]<=0:
+        neutron=run(energies,channel='n')
+        return np.where(energies<=4.,np.nan,neutron['reported_signal']/nn['reported_signal'][-1])
     stitch=nn['reported_signal'][0]/pp['reported_signal'][-2]
     s=(bestfits()[cause] if fit is None else fit)['params']['s']
     neutron=run(energies,channel='n')
@@ -181,9 +188,9 @@ def compare(target,*,energies=None):
     rows=[]
     for cause in CAUSES:
         grid=np.unique(np.r_[ee,6.5])
-        out=evaluate(target,grid,cause); idx=np.searchsorted(grid,ee); iref=np.searchsorted(grid,6.5)
+        out=evaluate(target,grid,cause,reference_E_cm_keV=None); idx=np.searchsorted(grid,ee); iref=np.searchsorted(grid,6.5)
         y=out['physical_yield_per_C'][idx]; yref=out['physical_yield_per_C'][iref]
-        base=evaluate(target,grid,cause,bare=True)['physical_yield_per_C'][idx]
+        base=evaluate(target,grid,cause,bare=True,reference_E_cm_keV=None)['physical_yield_per_C'][idx]
         references={m:evaluate(reference(m),grid,cause)['physical_yield_per_C'] for m in M.MATS}
         bare_refs={m:evaluate(reference(m),grid,cause,bare=True)['physical_yield_per_C'] for m in ('Pd','PdD')}
         reported=_reported(target,ee,cause)
@@ -191,8 +198,14 @@ def compare(target,*,energies=None):
         # curve. Apply the SAME extra inverse-current powers to this curve and
         # the actual digitized paper curves, without undoing its native fit.
         as_plotted=reported
-        ue={j:eq7_fit(ee,as_plotted*(M.I_cup(6.5)/M.I_cup(ee))**j,paper_weights('PdD',ee)) for j in range(3)}
-        ue_pd={j:eq7_fit(ee,as_plotted*(M.I_cup(6.5)/M.I_cup(ee))**j,paper_weights('Pd',ee)) for j in range(3)}
+        def literal_fits(material):
+            weights=paper_weights(material,ee)
+            support=(ee>=2.5)&(ee<=6.5)&(weights>0)
+            complete=np.all(np.isfinite(as_plotted[support])&(as_plotted[support]>0))
+            return {j:eq7_fit(ee,as_plotted*(M.I_cup(6.5)/M.I_cup(ee))**j,weights)
+                    if complete else (None,None) for j in range(3)}
+        ue=literal_fits('PdD')
+        ue_pd=literal_fits('Pd')
         for i,e in enumerate(ee):
             nD=(target.measurement.get('D1_fraction',.85)+2*target.measurement.get('D2_fraction',.15))/QE
             neutral_atoms=0.
@@ -212,15 +225,19 @@ def compare(target,*,energies=None):
                      enhancement_over_bare_same_target=enhancement,
                      enhancement_ratio_to_PdD=None if enhancement is None else enhancement/(references['PdD'][idx[i]]/bare_refs['PdD'][idx[i]]),
                      enhancement_ratio_to_Pd=None if enhancement is None else enhancement/(references['Pd'][idx[i]]/bare_refs['Pd'][idx[i]]),
-                     fixed_PdD_reference_curve=float(y[i]/references['PdD'][iref]),self_R=float(y[i]/yref),reported_R=float(reported[i]),
+                     fixed_PdD_reference_curve=float(y[i]/references['PdD'][iref]),
+                     self_R=float(y[i]/yref) if yref>0 else None,
+                     reported_R=float(reported[i]) if np.isfinite(reported[i]) else None,
+                     self_R_defined=bool(yref>0),reported_R_defined=bool(np.isfinite(reported[i])),
                      reference_status='actual transported run-end PdD + adsorbate; refitted causes; same-energy physical proton reference')
             row.update(cause_fit_chi2=bestfits()[cause]['chi2'],cause_fit_dof=bestfits()[cause]['dof'],
                        cause_fit_current_power=bestfits()[cause]['current_power'],
                        effective_fit_scope='literal Eq7;2.5<=E<6.5; PdD paper energy/error weights; matched reference-specific ratios')
             for j in range(3):
-                row.update({f'self_R_current_power_{j}':float(as_plotted[i]*(M.I_cup(6.5)/M.I_cup(e))**j),
+                row.update({f'self_R_current_power_{j}':float(as_plotted[i]*(M.I_cup(6.5)/M.I_cup(e))**j) if np.isfinite(as_plotted[i]) else None,
                             f'Ue_effective_{j}_keV':ue[j][0],f'Ue_fit_log_rms_{j}':ue[j][1],
-                            f'Ue_ratio_PdD_{j}':ue[j][0]/paper_fit('PdD',j),f'Ue_ratio_Pd_{j}':ue_pd[j][0]/paper_fit('Pd',j)})
+                            f'Ue_ratio_PdD_{j}':None if ue[j][0] is None else ue[j][0]/paper_fit('PdD',j),
+                            f'Ue_ratio_Pd_{j}':None if ue_pd[j][0] is None else ue_pd[j][0]/paper_fit('Pd',j)})
             for m in M.MATS:
                 obs=next((float(r['R']) for r in paper_rows() if r['material']==m and abs(float(r['E_cm'])-e)<1e-8),None)
                 si=np.flatnonzero(np.isclose(M.SI1_E,e))

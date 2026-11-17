@@ -1,0 +1,34 @@
+{
+  "old_transport_source_sha256": "687f5f8230c816b3ac65b778637cba5e6ce2b5cc52a9b8226ffc674312e53068",
+  "old_input_fingerprint": "bc7f9b4caba26d2a94e44abc754e02a1a3ecd9089da179f2bac41ecc26d10177",
+  "physical_ast_sha256": "c74347825cbcf239f0f7c43f3faa1aa28e1703cf6eef9e2ef59ff3ce7f0b4132",
+  "excluded_numerical_methods": [
+    "Model.run_te",
+    "Model._switching_beam"
+  ],
+  "retained_stage_counts": {
+    "surface": 42,
+    "promoter": 75,
+    "BZY": 2
+  },
+  "retained_stage_values_sha256": "84ca86975441eb40e572d8eaf37cc2caedf9aa9064f21ad46f0aee1a4d0b4309",
+  "old_cache_bytes_sha256": "3cab79c14a78d98aae91f30055608716971b5db2a67fe4d89d629ab7f0e5549b",
+  "observed_failure": "beam-on BDF/Radau stop at d=1pm; preload succeeds; exact covered-patch sticking jumps to clean Pd at clearance",
+  "branch_jacobian_input": {
+    "old_transport_source_sha256": "4e4b6c984c67b973451612897651b898604cc926aa61d5d665d23c3dafed39be",
+    "old_input_fingerprint": "edd078f032b0fdea702f95134f262b0fd0bdd624edde72481485fb423f4e9563",
+    "physical_AST_excluding_numerical_jacobian": "fed02d8533b714d015c6aeb750e075257665006fecfd9ff1cd9fc7ab4629d8b8",
+    "retained_counts": {
+      "surface": 42,
+      "promoter": 84,
+      "BZY": 111
+    },
+    "retained_values_sha256": "1bb4e2db4d4235e5bd44c792eb0dd095fa876c9206187caa3e82c0003770343a",
+    "deciding_probe_job": [
+      20.0,
+      0.01,
+      5.5
+    ],
+    "deciding_probe_wall_s": 8.74587524891831
+  }
+}

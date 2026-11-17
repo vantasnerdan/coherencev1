@@ -32,6 +32,16 @@ This path uses the s-wave WKB action ratio at that same fixed4fm radius with the
 
 The result separates `physical_yield_per_C` (reactions/TRUE charged coulomb, including explicitly modeled neutrals), `counts_per_C` (efficiency-weighted counts/CUP coulomb), and `reported_signal`/`R` (possibly another current power). Sigma mb converts by1e-31m²; incident deuterons per true coulomb carry1/e. D2+ current contributes TWO deuterons. The old transport helper's arbitrary `mb*D/nm²` quantity is NOT calibrated yield/C: its conversion would be1e-13/e. A zero reference is rejected, not replaced by a fake fallback.
 
+For a single transported age snapshot, explicitly pass
+`reference_E_cm_keV=None` to `forward_yields` (or `merit.api.evaluate_fit`).
+This raw-only mode does not request an unrelated6.5keV profile: physical,
+counts/C and reported arrays are returned, with `R` and `reference_signal=None`.
+Physical zero yield is valid here because no normalization was requested.
+The default6.5keV normalized behavior and its zero-reference rejection remain
+unchanged. This option is used for separate design/reference charge integrals,
+not as a substitute for a fixed-reference comparison or a fabricated normalizer.
+
+
 Parameters for `thermal` must explicitly provide `A`, `E_R_eV`, `T_track_K`, `E_A_eV`, and `Ue_hot`. The fitting convention is ER1eV,T1080K and source hot Ue(Pd/Ti/Zr)=0.400/0.370/0.340keV. A is an EFFECTIVE FITTED track/resonance product in m³s at that convention, not a predicted lifetime or absolute rate. When changing explicit ER/T, keep A fixed as the convention-bound coefficient; do not also absorb those changes into A a second time. The rate is N0² exp(-EA/kT)<sigma v> A, not a fitted per-material additive floor. It averages N_D² over the traversed lattice track, excluding the separately counted adsorbate.
 
 `profile_thermal.py` supplies the same track-density definition to fits, using the actual exported baseline profiles and log-linear interpolation of their positive energy-dependent density moments. Exactly one A is fitted across ALL materials within a dataset; see `../czerski/README.md` for the cross-dataset result.

@@ -1,0 +1,22 @@
+MODEL_PROGRESS E_cm 0.25 beam_on False solver_t_s 0.0 wall_s 0.00021438789553940296 front_D_per_metal 1e-09 max_solute_D_per_metal 1e-09 film_nm 0.0
+DENSE_REFERENCE 0.25 new_ages 5 saved_ages 1528 cumulative_wall_s 13.28724960796535
+MODEL_PROGRESS E_cm 1.0 beam_on False solver_t_s 0.0 wall_s 0.00019435794092714787 front_D_per_metal 1e-09 max_solute_D_per_metal 1e-09 film_nm 0.0
+DENSE_REFERENCE 1.0 new_ages 4 saved_ages 1760 cumulative_wall_s 13.401300550904125
+SPUTTER_POINT 0.25 1.0 wall_s 37.78219048399478
+SPUTTER_POINT 1.0 1.0 wall_s 37.49234685394913
+SPUTTER_POINT 2.5 1.0 wall_s 17.554856756003574
+SPUTTER_POINT 6.5 1.0 wall_s 20.34725228091702
+REPORT_START nominal_cap 1 1 TiD2_cap_20.0nm_ret1.0_erosion1.0
+reported nominal_cap 1 1 TiD2_cap_20.0nm_ret1.0_erosion1.0 wall_s 46.6186317531392
+{
+  "total_wall_s": 201.67692195088603,
+  "workers": 1,
+  "threads": 1,
+  "nominal_point_walls_s": {
+    "0.25": 37.78219048399478,
+    "1.0": 37.49234685394913,
+    "2.5": 17.554856756003574,
+    "6.5": 20.34725228091702
+  },
+  "exit_reached": true
+}

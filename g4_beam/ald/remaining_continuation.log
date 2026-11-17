@@ -1,0 +1,235 @@
+TRANSPORT_STARTTRANSPORT_START  promoterpromoter  ["BaO", 1e-07, 3.0]["BaO", 1e-07, 4.0]
+
+TRANSPORT_START promoter ["SrO", 1e-07, 3.0]
+TRANSPORT_START promoter ["SrO", 1e-07, 4.0]
+MODEL_PROGRESS E_cm 3.0 beam_on False solver_t_s 0.0 wall_s 0.0004845620132982731 front_D_per_metal 1e-09 max_solute_D_per_metal 1e-09 film_nm 0.3
+MODEL_PROGRESS E_cm 3.0 beam_on False solver_t_s 0.0 wall_s 0.0004071218427270651 front_D_per_metal 1e-09 max_solute_D_per_metal 1e-09 film_nm 0.3
+MODEL_PROGRESS E_cm 4.0 beam_on False solver_t_s 0.0 wall_s 0.00036019692197442055 front_D_per_metal 1e-09 max_solute_D_per_metal 1e-09 film_nm 0.3
+MODEL_PROGRESS E_cm 4.0 beam_on False solver_t_s 0.0 wall_s 0.000413194065913558 front_D_per_metal 1e-09 max_solute_D_per_metal 1e-09 film_nm 0.3
+TRANSPORT_END promoter ["SrO", 1e-07, 3.0] wall_s 6.255044782999903
+TRANSPORT_START promoter ["La2O3", 1e-07, 0.5]
+MODEL_PROGRESS E_cm 0.5 beam_on False solver_t_s 0.0 wall_s 0.00014516990631818771 front_D_per_metal 1e-09 max_solute_D_per_metal 1e-09 film_nm 0.3
+TRANSPORT_END promoter ["BaO", 1e-07, 4.0] wall_s 6.433808938832954
+TRANSPORT_START promoter ["La2O3", 1e-07, 2.5]
+MODEL_PROGRESS E_cm 2.5 beam_on False solver_t_s 0.0 wall_s 0.00013682013377547264 front_D_per_metal 1e-09 max_solute_D_per_metal 1e-09 film_nm 0.3
+TRANSPORT_END promoter ["BaO", 1e-07, 3.0] wall_s 6.632427858188748
+TRANSPORT_END promoter ["SrO", 1e-07, 4.0] wall_s 6.65705458400771
+TRANSPORT_START promoter ["La2O3", 1e-07, 3.5]
+TRANSPORT_START promoter ["La2O3", 1e-07, 4.5]
+MODEL_PROGRESS E_cm 3.5 beam_on False solver_t_s 0.0 wall_s 0.0001924261450767517 front_D_per_metal 1e-09 max_solute_D_per_metal 1e-09 film_nm 0.3
+MODEL_PROGRESS E_cm 4.5 beam_on False solver_t_s 0.0 wall_s 0.00018900609575212002 front_D_per_metal 1e-09 max_solute_D_per_metal 1e-09 film_nm 0.3
+TRANSPORT_END promoter ["La2O3", 1e-07, 2.5] wall_s 4.900020971894264
+TRANSPORT_START promoter ["La2O3", 1e-07, 6.0]
+MODEL_PROGRESS E_cm 6.0 beam_on False solver_t_s 0.0 wall_s 9.701005183160305e-05 front_D_per_metal 1e-09 max_solute_D_per_metal 1e-09 film_nm 0.3
+TRANSPORT_END promoter ["La2O3", 1e-07, 3.5] wall_s 4.968726366059855
+TRANSPORT_END promoter ["La2O3", 1e-07, 0.5] wall_s 5.773559281136841
+TRANSPORT_END promoter ["La2O3", 1e-07, 4.5] wall_s 5.432395623065531
+TRANSPORT_END promoter ["La2O3", 1e-07, 6.0] wall_s 5.460480388952419
+TRANSPORT_STARTTRANSPORT_START  BZYBZY  [2.0, 0.01, 0.25][2.0, 0.01, 0.5]
+
+TRANSPORT_STARTTRANSPORT_START  BZYBZY  [2.0, 0.01, 1.5][2.0, 0.01, 1.0]
+
+MODEL_PROGRESS E_cm 1.5 beam_on False solver_t_s 0.0 wall_s 0.0006465560290962458 front_D_per_metal 1e-09 max_solute_D_per_metal 1e-09 film_nm 2.0
+MODEL_PROGRESS E_cm 0.5 beam_on False solver_t_s 0.0 wall_s 0.0006262210663408041 front_D_per_metal 1e-09 max_solute_D_per_metal 1e-09 film_nm 2.0
+MODEL_PROGRESS E_cm 1.0 beam_on False solver_t_s 0.0 wall_s 0.0005916599184274673 front_D_per_metal 1e-09 max_solute_D_per_metal 1e-09 film_nm 2.0
+MODEL_PROGRESS E_cm 0.25 beam_on False solver_t_s 0.0 wall_s 0.0005328350234776735 front_D_per_metal 1e-09 max_solute_D_per_metal 1e-09 film_nm 2.0
+TRANSPORT_END BZY [2.0, 0.01, 1.5] wall_s 4.707936224061996
+TRANSPORT_START BZY [2.0, 0.01, 2.0]
+MODEL_PROGRESS E_cm 2.0 beam_on False solver_t_s 0.0 wall_s 0.0001279341522604227 front_D_per_metal 1e-09 max_solute_D_per_metal 1e-09 film_nm 2.0
+TRANSPORT_END BZY [2.0, 0.01, 1.0] wall_s 4.759246937930584
+TRANSPORT_START BZY [2.0, 0.01, 2.5]
+MODEL_PROGRESS E_cm 2.5 beam_on False solver_t_s 0.0 wall_s 0.00011307420209050179 front_D_per_metal 1e-09 max_solute_D_per_metal 1e-09 film_nm 2.0
+TRANSPORT_END BZY [2.0, 0.01, 2.5] wall_s 5.431191673036665
+TRANSPORT_START BZY [2.0, 0.01, 3.0]
+MODEL_PROGRESS E_cm 3.0 beam_on False solver_t_s 0.0 wall_s 0.00016370904631912708 front_D_per_metal 1e-09 max_solute_D_per_metal 1e-09 film_nm 2.0
+TRANSPORT_END BZY [2.0, 0.01, 3.0] wall_s 5.899727619020268
+TRANSPORT_START BZY [2.0, 0.01, 3.5]
+MODEL_PROGRESS E_cm 3.5 beam_on False solver_t_s 0.0 wall_s 0.00012639793567359447 front_D_per_metal 1e-09 max_solute_D_per_metal 1e-09 film_nm 2.0
+TRANSPORT_END BZY [2.0, 0.01, 3.5] wall_s 10.421141008846462
+TRANSPORT_START BZY [2.0, 0.01, 4.0]
+MODEL_PROGRESS E_cm 4.0 beam_on False solver_t_s 0.0 wall_s 0.00010013394057750702 front_D_per_metal 1e-09 max_solute_D_per_metal 1e-09 film_nm 2.0
+TRANSPORT_END BZY [2.0, 0.01, 2.0] wall_s 23.405288701876998
+TRANSPORT_START BZY [2.0, 0.01, 4.5]
+MODEL_PROGRESS E_cm 4.5 beam_on False solver_t_s 0.0 wall_s 0.000126158120110631 front_D_per_metal 1e-09 max_solute_D_per_metal 1e-09 film_nm 2.0
+MODEL_PROGRESS E_cm 0.5 beam_on True solver_t_s 42540.05874781896 wall_s 30.000646034022793 front_D_per_metal 4.0189861104799734e-05 max_solute_D_per_metal 0.6121220208220671 film_nm -3.690765441787476e-08
+MODEL_PROGRESS E_cm 0.25 beam_on True solver_t_s 4385.593063566179 wall_s 30.000643372070044 front_D_per_metal 0.011972597022134709 max_solute_D_per_metal 0.6166842350568024 film_nm 0.04368682426906032
+TRANSPORT_END BZY [2.0, 0.01, 4.0] wall_s 4.66840547695756
+TRANSPORT_START BZY [2.0, 0.01, 5.0]
+MODEL_PROGRESS E_cm 5.0 beam_on False solver_t_s 0.0 wall_s 9.868317283689976e-05 front_D_per_metal 1e-09 max_solute_D_per_metal 1e-09 film_nm 2.0
+TRANSPORT_END BZY [2.0, 0.01, 0.5] wall_s 31.9878415891435
+TRANSPORT_START BZY [2.0, 0.01, 5.5]
+MODEL_PROGRESS E_cm 5.5 beam_on False solver_t_s 0.0 wall_s 0.00014583813026547432 front_D_per_metal 1e-09 max_solute_D_per_metal 1e-09 film_nm 2.0
+TRANSPORT_END BZY [2.0, 0.01, 4.5] wall_s 5.166525213047862
+TRANSPORT_START BZY [2.0, 0.01, 6.0]
+MODEL_PROGRESS E_cm 6.0 beam_on False solver_t_s 0.0 wall_s 9.58822201937437e-05 front_D_per_metal 1e-09 max_solute_D_per_metal 1e-09 film_nm 2.0
+TRANSPORT_END BZY [2.0, 0.01, 5.0] wall_s 5.466726095881313
+TRANSPORT_START BZY [2.0, 0.01, 6.5]
+MODEL_PROGRESS E_cm 6.5 beam_on False solver_t_s 0.0 wall_s 9.541003964841366e-05 front_D_per_metal 1e-09 max_solute_D_per_metal 1e-09 film_nm 2.0
+TRANSPORT_END BZY [2.0, 0.01, 5.5] wall_s 6.307862231042236
+TRANSPORT_START BZY [2.0, 100.0, 0.25]
+MODEL_PROGRESS E_cm 0.25 beam_on False solver_t_s 0.0 wall_s 0.00012458418495953083 front_D_per_metal 1e-09 max_solute_D_per_metal 1e-09 film_nm 2.0
+TRANSPORT_END BZY [2.0, 0.01, 6.0] wall_s 5.284685745835304
+TRANSPORT_START BZY [2.0, 100.0, 0.5]
+MODEL_PROGRESS E_cm 0.5 beam_on False solver_t_s 0.0 wall_s 9.1583002358675e-05 front_D_per_metal 1e-09 max_solute_D_per_metal 1e-09 film_nm 2.0
+TRANSPORT_END BZY [2.0, 0.01, 6.5] wall_s 5.794588773977011
+TRANSPORT_START BZY [2.0, 100.0, 1.0]
+MODEL_PROGRESS E_cm 1.0 beam_on False solver_t_s 0.0 wall_s 9.689107537269592e-05 front_D_per_metal 1e-09 max_solute_D_per_metal 1e-09 film_nm 2.0
+TRANSPORT_END BZY [2.0, 100.0, 0.25] wall_s 4.409159262897447
+TRANSPORT_START BZY [2.0, 100.0, 1.5]
+MODEL_PROGRESS E_cm 1.5 beam_on False solver_t_s 0.0 wall_s 0.0001321909949183464 front_D_per_metal 1e-09 max_solute_D_per_metal 1e-09 film_nm 2.0
+TRANSPORT_END BZY [2.0, 0.01, 0.25] wall_s 43.87897141207941
+TRANSPORT_START BZY [2.0, 100.0, 2.0]
+MODEL_PROGRESS E_cm 2.0 beam_on False solver_t_s 0.0 wall_s 0.00011035404168069363 front_D_per_metal 1e-09 max_solute_D_per_metal 1e-09 film_nm 2.0
+TRANSPORT_END BZY [2.0, 100.0, 1.0] wall_s 4.433550652116537
+TRANSPORT_START BZY [2.0, 100.0, 2.5]
+MODEL_PROGRESS E_cm 2.5 beam_on False solver_t_s 0.0 wall_s 0.00010064104571938515 front_D_per_metal 1e-09 max_solute_D_per_metal 1e-09 film_nm 2.0
+TRANSPORT_END BZY [2.0, 100.0, 1.5] wall_s 4.538357264827937
+TRANSPORT_START BZY [2.0, 100.0, 3.0]
+MODEL_PROGRESS E_cm 3.0 beam_on False solver_t_s 0.0 wall_s 9.243120439350605e-05 front_D_per_metal 1e-09 max_solute_D_per_metal 1e-09 film_nm 2.0
+TRANSPORT_END BZY [2.0, 100.0, 2.5] wall_s 3.9203944981563836
+TRANSPORT_START BZY [2.0, 100.0, 3.5]
+MODEL_PROGRESS E_cm 3.5 beam_on False solver_t_s 0.0 wall_s 0.0001218270044773817 front_D_per_metal 1e-09 max_solute_D_per_metal 1e-09 film_nm 2.0
+TRANSPORT_END BZY [2.0, 100.0, 3.0] wall_s 4.054552342975512
+TRANSPORT_START BZY [2.0, 100.0, 4.0]
+MODEL_PROGRESS E_cm 4.0 beam_on False solver_t_s 0.0 wall_s 0.00011081085540354252 front_D_per_metal 1e-09 max_solute_D_per_metal 1e-09 film_nm 2.0
+TRANSPORT_END BZY [2.0, 100.0, 3.5] wall_s 3.932557268999517
+TRANSPORT_START BZY [2.0, 100.0, 4.5]
+MODEL_PROGRESS E_cm 4.5 beam_on False solver_t_s 0.0 wall_s 0.00011033192276954651 front_D_per_metal 1e-09 max_solute_D_per_metal 1e-09 film_nm 2.0
+TRANSPORT_END BZY [2.0, 100.0, 4.0] wall_s 4.195784214884043
+TRANSPORT_START BZY [2.0, 100.0, 5.0]
+MODEL_PROGRESS E_cm 5.0 beam_on False solver_t_s 0.0 wall_s 9.427289478480816e-05 front_D_per_metal 1e-09 max_solute_D_per_metal 1e-09 film_nm 2.0
+TRANSPORT_END BZY [2.0, 100.0, 4.5] wall_s 4.512813611887395
+TRANSPORT_START BZY [2.0, 100.0, 5.5]
+MODEL_PROGRESS E_cm 5.5 beam_on False solver_t_s 0.0 wall_s 9.143492206931114e-05 front_D_per_metal 1e-09 max_solute_D_per_metal 1e-09 film_nm 2.0
+TRANSPORT_END BZY [2.0, 100.0, 5.0] wall_s 4.282865250017494
+TRANSPORT_START BZY [2.0, 100.0, 6.0]
+MODEL_PROGRESS E_cm 6.0 beam_on False solver_t_s 0.0 wall_s 9.297812357544899e-05 front_D_per_metal 1e-09 max_solute_D_per_metal 1e-09 film_nm 2.0
+TRANSPORT_END BZY [2.0, 100.0, 5.5] wall_s 3.839521801099181
+TRANSPORT_START BZY [2.0, 100.0, 6.5]
+MODEL_PROGRESS E_cm 6.5 beam_on False solver_t_s 0.0 wall_s 9.278603829443455e-05 front_D_per_metal 1e-09 max_solute_D_per_metal 1e-09 film_nm 2.0
+TRANSPORT_END BZY [2.0, 100.0, 6.0] wall_s 4.448552469955757
+TRANSPORT_START BZY [5.0, 0.01, 0.25]
+MODEL_PROGRESS E_cm 0.25 beam_on False solver_t_s 0.0 wall_s 8.959393016994e-05 front_D_per_metal 1e-09 max_solute_D_per_metal 1e-09 film_nm 5.0
+TRANSPORT_END BZY [2.0, 100.0, 2.0] wall_s 20.49127230606973
+TRANSPORT_START BZY [5.0, 0.01, 0.5]
+MODEL_PROGRESS E_cm 0.5 beam_on False solver_t_s 0.0 wall_s 0.00010503199882805347 front_D_per_metal 1e-09 max_solute_D_per_metal 1e-09 film_nm 5.0
+TRANSPORT_END BZY [2.0, 100.0, 6.5] wall_s 3.9053509139921516
+TRANSPORT_START BZY [5.0, 0.01, 1.0]
+MODEL_PROGRESS E_cm 1.0 beam_on False solver_t_s 0.0 wall_s 0.00012140790931880474 front_D_per_metal 1e-09 max_solute_D_per_metal 1e-09 film_nm 5.0
+MODEL_PROGRESS E_cm 0.5 beam_on True solver_t_s 38077.48102272395 wall_s 30.00027105305344 front_D_per_metal 4.018986110479901e-05 max_solute_D_per_metal 0.6121220208220679 film_nm -1.2499810257507321e-10
+TRANSPORT_END BZY [2.0, 100.0, 0.5] wall_s 45.79799042502418
+TRANSPORT_START BZY [5.0, 0.01, 1.5]
+MODEL_PROGRESS E_cm 1.5 beam_on False solver_t_s 0.0 wall_s 0.00011561810970306396 front_D_per_metal 1e-09 max_solute_D_per_metal 1e-09 film_nm 5.0
+MODEL_PROGRESS E_cm 0.25 beam_on True solver_t_s 3541.033030626034 wall_s 30.00025431998074 front_D_per_metal 0.6302012387740537 max_solute_D_per_metal 0.6393012540088603 film_nm 3.366585327942239
+MODEL_PROGRESS E_cm 0.5 beam_on True solver_t_s 6871.798513710847 wall_s 30.000495475018397 front_D_per_metal 0.01121061069156848 max_solute_D_per_metal 0.62972699703308 film_nm 0.021738375900497608
+MODEL_PROGRESS E_cm 1.0 beam_on True solver_t_s 4967.901556276265 wall_s 30.000162398908287 front_D_per_metal 0.009690217159777264 max_solute_D_per_metal 0.6339272070313202 film_nm 0.01597674818108459
+MODEL_PROGRESS E_cm 1.5 beam_on True solver_t_s 5031.992480410071 wall_s 30.000433199107647 front_D_per_metal 0.010833997417449493 max_solute_D_per_metal 0.6339955544932407 film_nm 0.01749232860812413
+TRANSPORT_END BZY [5.0, 0.01, 0.5] wall_s 52.58289465890266
+TRANSPORT_START BZY [5.0, 0.01, 2.0]
+MODEL_PROGRESS E_cm 2.0 beam_on False solver_t_s 0.0 wall_s 0.00014643208123743534 front_D_per_metal 1e-09 max_solute_D_per_metal 1e-09 film_nm 5.0
+TRANSPORT_END BZY [5.0, 0.01, 1.5] wall_s 38.10487070702948
+TRANSPORT_START BZY [5.0, 0.01, 2.5]
+MODEL_PROGRESS E_cm 2.5 beam_on False solver_t_s 0.0 wall_s 0.00013403594493865967 front_D_per_metal 1e-09 max_solute_D_per_metal 1e-09 film_nm 5.0
+MODEL_PROGRESS E_cm 0.25 beam_on True solver_t_s 10934.642219303545 wall_s 60.000397064955905 front_D_per_metal 0.011913207219519158 max_solute_D_per_metal 0.6216639862044685 film_nm 0.03239986198301642
+MODEL_PROGRESS E_cm 1.0 beam_on True solver_t_s 2025.8273637052998 wall_s 60.00062791397795 front_D_per_metal 0.012076200831846334 max_solute_D_per_metal 0.6109057156640036 film_nm 2.931406139900154
+TRANSPORT_END BZY [5.0, 0.01, 0.25] wall_s 72.77066656784154
+TRANSPORT_START BZY [5.0, 0.01, 3.0]
+MODEL_PROGRESS E_cm 3.0 beam_on False solver_t_s 0.0 wall_s 0.0001279730349779129 front_D_per_metal 1e-09 max_solute_D_per_metal 1e-09 film_nm 5.0
+MODEL_PROGRESS E_cm 2.0 beam_on True solver_t_s 5196.934651293511 wall_s 30.001160243991762 front_D_per_metal 0.009228433542384486 max_solute_D_per_metal 0.6321386070582291 film_nm 0.015709756300421672
+MODEL_PROGRESS E_cm 2.5 beam_on True solver_t_s 5760.703928105288 wall_s 30.000545409042388 front_D_per_metal 0.009030734143475267 max_solute_D_per_metal 0.6297504929918779 film_nm 0.01638563474951473
+MODEL_PROGRESS E_cm 1.0 beam_on True solver_t_s 2025.924066313844 wall_s 90.00079565192573 front_D_per_metal 0.012076278443157012 max_solute_D_per_metal 0.6109059254187704 film_nm 2.9313075586702273
+MODEL_PROGRESS E_cm 3.0 beam_on True solver_t_s 6301.44878837668 wall_s 30.00073351105675 front_D_per_metal 0.011272153151967699 max_solute_D_per_metal 0.6285618388585344 film_nm 0.02094097594883668
+TRANSPORT_END BZY [5.0, 0.01, 3.0] wall_s 37.77825606917031
+TRANSPORT_START BZY [5.0, 0.01, 3.5]
+MODEL_PROGRESS E_cm 3.5 beam_on False solver_t_s 0.0 wall_s 0.00013639801181852818 front_D_per_metal 1e-09 max_solute_D_per_metal 1e-09 film_nm 5.0
+MODEL_PROGRESS E_cm 2.0 beam_on True solver_t_s 1990.4282284329738 wall_s 60.001253167167306 front_D_per_metal 0.012185523244230629 max_solute_D_per_metal 0.6102166421901244 film_nm 3.056699373581979
+MODEL_PROGRESS E_cm 2.5 beam_on True solver_t_s 1967.2598754244686 wall_s 60.001626185141504 front_D_per_metal 0.012240335239309815 max_solute_D_per_metal 0.609865606895043 film_nm 3.267527651196649
+MODEL_PROGRESS E_cm 1.0 beam_on True solver_t_s 2025.924095980502 wall_s 120.00111284595914 front_D_per_metal 0.012076277668960857 max_solute_D_per_metal 0.610905925483116 film_nm 2.9313075284272387
+MODEL_PROGRESS E_cm 3.5 beam_on True solver_t_s 6545.716232924532 wall_s 30.000526783056557 front_D_per_metal 0.010832489796543325 max_solute_D_per_metal 0.6265474763915507 film_nm 0.021031310540440884
+MODEL_PROGRESS E_cm 2.0 beam_on True solver_t_s 1992.0724302832018 wall_s 90.00132107711397 front_D_per_metal 0.012186418713308477 max_solute_D_per_metal 0.6102204184388036 film_nm 3.0550964622362127
+TRANSPORT_END BZY [5.0, 0.01, 3.5] wall_s 36.90550151607022
+TRANSPORT_START BZY [5.0, 0.01, 4.0]
+MODEL_PROGRESS E_cm 4.0 beam_on False solver_t_s 0.0 wall_s 0.00013467692770063877 front_D_per_metal 1e-09 max_solute_D_per_metal 1e-09 film_nm 5.0
+MODEL_PROGRESS E_cm 2.5 beam_on True solver_t_s 1967.5954769931723 wall_s 90.00174269708805 front_D_per_metal 0.012240345307192308 max_solute_D_per_metal 0.6098664229208914 film_nm 3.267232458317934
+MODEL_PROGRESS E_cm 1.0 beam_on True solver_t_s 2025.924130892164 wall_s 150.00144390505739 front_D_per_metal 0.012076271244498716 max_solute_D_per_metal 0.6109059255588347 film_nm 2.9313074928373606
+MODEL_PROGRESS E_cm 2.0 beam_on True solver_t_s 3262.7998462896403 wall_s 120.0014606390614 front_D_per_metal 0.5971648610306013 max_solute_D_per_metal 0.6147595875390673 film_nm 1.8185483110822969
+MODEL_PROGRESS E_cm 4.0 beam_on True solver_t_s 6620.5040685905915 wall_s 30.000432174885646 front_D_per_metal 0.011835983068685036 max_solute_D_per_metal 0.6260087750872372 film_nm 0.02289541171188645
+MODEL_PROGRESS E_cm 2.5 beam_on True solver_t_s 1967.595491174571 wall_s 120.00204823794775 front_D_per_metal 0.01224034484735838 max_solute_D_per_metal 0.6098664229553623 film_nm 3.2672324458440736
+MODEL_PROGRESS E_cm 1.0 beam_on True solver_t_s 2025.9241607096524 wall_s 180.00200627394952 front_D_per_metal 0.012076278133637729 max_solute_D_per_metal 0.6109059256235083 film_nm 2.93130746244062
+TRANSPORT_END BZY [5.0, 0.01, 4.0] wall_s 38.71784301684238
+TRANSPORT_START BZY [5.0, 0.01, 4.5]
+MODEL_PROGRESS E_cm 4.5 beam_on False solver_t_s 0.0 wall_s 0.0001429880503565073 front_D_per_metal 1e-09 max_solute_D_per_metal 1e-09 film_nm 5.0
+MODEL_PROGRESS E_cm 2.0 beam_on True solver_t_s 3262.8469395381117 wall_s 150.00184022914618 front_D_per_metal 0.5990203567945857 max_solute_D_per_metal 0.614760079457178 film_nm 1.8185026027019835
+MODEL_PROGRESS E_cm 2.5 beam_on True solver_t_s 1967.5955069799381 wall_s 150.0022791151423 front_D_per_metal 0.012240346342811934 max_solute_D_per_metal 0.6098664229937772 film_nm 3.2672324319417765
+MODEL_PROGRESS E_cm 1.0 beam_on True solver_t_s 2025.9241883289856 wall_s 210.00204045092687 front_D_per_metal 0.012076278440553838 max_solute_D_per_metal 0.6109059256834112 film_nm 2.9313074342847245
+MODEL_PROGRESS E_cm 4.5 beam_on True solver_t_s 6676.773003076981 wall_s 30.00091303186491 front_D_per_metal 0.011868887719219614 max_solute_D_per_metal 0.6248232836322024 film_nm 0.023286130940740456
+TRANSPORT_END BZY [5.0, 0.01, 4.5] wall_s 38.42106514796615
+TRANSPORT_START BZY [5.0, 0.01, 5.0]
+MODEL_PROGRESS E_cm 5.0 beam_on False solver_t_s 0.0 wall_s 0.0002456200309097767 front_D_per_metal 1e-09 max_solute_D_per_metal 1e-09 film_nm 5.0
+MODEL_PROGRESS E_cm 2.0 beam_on True solver_t_s 3262.847350146758 wall_s 180.0019417849835 front_D_per_metal 0.5990856456192113 max_solute_D_per_metal 0.6147600837474307 film_nm 1.8185022041681396
+MODEL_PROGRESS E_cm 2.5 beam_on True solver_t_s 1967.5955229390065 wall_s 180.0024215450976 front_D_per_metal 0.012240345630273356 max_solute_D_per_metal 0.6098664230325632 film_nm 3.267232417904284
+MODEL_PROGRESS E_cm 1.0 beam_on True solver_t_s 2025.9242150919083 wall_s 240.00213140295818 front_D_per_metal 0.012076278313403748 max_solute_D_per_metal 0.6109059257414601 film_nm 2.931307407001883
+MODEL_PROGRESS E_cm 5.0 beam_on True solver_t_s 6982.337585870905 wall_s 30.000336022116244 front_D_per_metal 0.012347812373636382 max_solute_D_per_metal 0.6232524375707073 film_nm 0.025090054416994082
+MODEL_PROGRESS E_cm 2.0 beam_on True solver_t_s 3262.8476171886223 wall_s 210.0021738091018 front_D_per_metal 0.5991402874013597 max_solute_D_per_metal 0.6147600865376338 film_nm 1.8185019449791986
+MODEL_PROGRESS E_cm 2.5 beam_on True solver_t_s 1967.5955397481357 wall_s 210.0024763820693 front_D_per_metal 0.012240345938925475 max_solute_D_per_metal 0.6098664230734181 film_nm 3.267232403119094
+MODEL_PROGRESS E_cm 1.0 beam_on True solver_t_s 2025.9242479820205 wall_s 270.0022122969385 front_D_per_metal 0.01207627828132403 max_solute_D_per_metal 0.6109059258127973 film_nm 2.931307373472829
+MODEL_PROGRESS E_cm 5.0 beam_on True solver_t_s 1864.3690219402831 wall_s 60.00159736699425 front_D_per_metal 0.012639451290514706 max_solute_D_per_metal 0.607383666768304 film_nm 3.6496409235673783
+MODEL_PROGRESS E_cm 2.0 beam_on True solver_t_s 3262.8477370019746 wall_s 240.00230975309387 front_D_per_metal 0.599171420412468 max_solute_D_per_metal 0.6147601492655237 film_nm 1.8185018286892083
+MODEL_PROGRESS E_cm 2.5 beam_on True solver_t_s 1967.5955553105687 wall_s 240.00254295300692 front_D_per_metal 0.012240346225569833 max_solute_D_per_metal 0.6098664231112438 film_nm 3.267232389430484
+MODEL_PROGRESS E_cm 1.0 beam_on True solver_t_s 2025.9581627984649 wall_s 300.00297035393305 front_D_per_metal 0.012076325816207843 max_solute_D_per_metal 0.6109059993700999 film_nm 2.9312727998056767
+MODEL_PROGRESS E_cm 5.0 beam_on True solver_t_s 1864.3690578606268 wall_s 90.00184861989692 front_D_per_metal 0.01263943563553411 max_solute_D_per_metal 0.6073837275737649 film_nm 3.6496408975714827
+MODEL_PROGRESS E_cm 2.0 beam_on True solver_t_s 3262.847797313166 wall_s 270.002466642065 front_D_per_metal 0.5991901141395967 max_solute_D_per_metal 0.6147600884196817 film_nm 1.818501770151592
+MODEL_PROGRESS E_cm 2.5 beam_on True solver_t_s 1967.5955728974538 wall_s 270.0027130350936 front_D_per_metal 0.012240345979002951 max_solute_D_per_metal 0.6098664231539868 film_nm 3.26723237396119
+MODEL_PROGRESS E_cm 1.0 beam_on True solver_t_s 2025.9581867516026 wall_s 330.00428426102735 front_D_per_metal 0.012076315631836306 max_solute_D_per_metal 0.6109059994220488 film_nm 2.931272775387217
+MODEL_PROGRESS E_cm 5.0 beam_on True solver_t_s 1864.4939564808824 wall_s 120.00360647006892 front_D_per_metal 0.012639485705776225 max_solute_D_per_metal 0.6073839001171824 film_nm 3.649550507276581
+MODEL_PROGRESS E_cm 2.0 beam_on True solver_t_s 3262.8478516383057 wall_s 300.0027267669793 front_D_per_metal 0.5992099716882039 max_solute_D_per_metal 0.6147600889873032 film_nm 1.818501717423992
+MODEL_PROGRESS E_cm 2.5 beam_on True solver_t_s 1967.595590854854 wall_s 300.0039747490082 front_D_per_metal 0.012240346873341449 max_solute_D_per_metal 0.6098664231976322 film_nm 3.267232358165984
+MODEL_PROGRESS E_cm 1.0 beam_on True solver_t_s 2025.9582132095734 wall_s 360.0046004001051 front_D_per_metal 0.012076308695780035 max_solute_D_per_metal 0.6109059994794337 film_nm 2.93127274841526
+MODEL_PROGRESS E_cm 5.0 beam_on True solver_t_s 1864.493963829093 wall_s 150.00378438807093 front_D_per_metal 0.012639493099239951 max_solute_D_per_metal 0.6073839001309068 film_nm 3.6495505019586223
+MODEL_PROGRESS E_cm 2.0 beam_on True solver_t_s 3262.847885635896 wall_s 330.0032132540364 front_D_per_metal 0.5992248716856173 max_solute_D_per_metal 0.6147600893425295 film_nm 1.8185018662763393
+MODEL_PROGRESS E_cm 2.5 beam_on True solver_t_s 1967.595610789771 wall_s 330.0043986761011 front_D_per_metal 0.01224034765100814 max_solute_D_per_metal 0.6098664232460814 film_nm 3.267232340631371
+MODEL_PROGRESS E_cm 1.0 beam_on True solver_t_s 2025.958277115932 wall_s 390.00515472190455 front_D_per_metal 0.012076303408900795 max_solute_D_per_metal 0.6109060607086337 film_nm 2.931272683267426
+MODEL_PROGRESS E_cm 5.0 beam_on True solver_t_s 1864.4949305288417 wall_s 180.00417933007702 front_D_per_metal 0.012639497733924894 max_solute_D_per_metal 0.6073839019363955 film_nm 3.649549802349059
+MODEL_PROGRESS E_cm 2.0 beam_on True solver_t_s 3262.8479083851175 wall_s 360.0049933909904 front_D_per_metal 0.5992366978137611 max_solute_D_per_metal 0.6147600895802277 film_nm 1.8185016623459405
+MODEL_PROGRESS E_cm 2.5 beam_on True solver_t_s 1967.5956334503253 wall_s 360.0046639519278 front_D_per_metal 0.012240346473825929 max_solute_D_per_metal 0.609866423301158 film_nm 3.2672323206993106
+MODEL_PROGRESS E_cm 1.0 beam_on True solver_t_s 2026.0686367347907 wall_s 420.00637243990786 front_D_per_metal 0.01207635636257905 max_solute_D_per_metal 0.6109062389525729 film_nm 2.931160179751818
+MODEL_PROGRESS E_cm 5.0 beam_on True solver_t_s 3209.17453990073 wall_s 210.00418511009775 front_D_per_metal 0.5630480790561024 max_solute_D_per_metal 0.6119902503722908 film_nm 2.677255913885375
+MODEL_PROGRESS E_cm 2.0 beam_on True solver_t_s 3262.8479272685663 wall_s 390.00686883507296 front_D_per_metal 0.5992484972970912 max_solute_D_per_metal 0.6147600897775317 film_nm 1.8185016440177986
+MODEL_PROGRESS E_cm 2.5 beam_on True solver_t_s 1967.5956569087211 wall_s 390.0046678609215 front_D_per_metal 0.01224034647049103 max_solute_D_per_metal 0.6098664233581725 film_nm 3.2672323000654613
+MODEL_PROGRESS E_cm 1.0 beam_on True solver_t_s 2026.0686441111184 wall_s 450.0065174200572 front_D_per_metal 0.012076361091709266 max_solute_D_per_metal 0.6109063000591931 film_nm 2.9311601722321963
+MODEL_PROGRESS E_cm 5.0 beam_on True solver_t_s 3218.9630293330465 wall_s 240.00439781695604 front_D_per_metal 0.5973132396466369 max_solute_D_per_metal 0.6120892228130815 film_nm 2.6701859568598993
+MODEL_PROGRESS E_cm 2.0 beam_on True solver_t_s 3262.847940086217 wall_s 420.0073025589809 front_D_per_metal 0.5992584034170565 max_solute_D_per_metal 0.6147600899114575 film_nm 1.8185016315770814
+MODEL_PROGRESS E_cm 2.5 beam_on True solver_t_s 1967.5956866295098 wall_s 420.0057456539944 front_D_per_metal 0.012240346634687486 max_solute_D_per_metal 0.6098664234304075 film_nm 3.2672322739232564
+MODEL_PROGRESS E_cm 1.0 beam_on True solver_t_s 2026.0686598368186 wall_s 480.0068721601274 front_D_per_metal 0.012076356390774623 max_solute_D_per_metal 0.6109062390026705 film_nm 2.931160156201009
+MODEL_PROGRESS E_cm 5.0 beam_on True solver_t_s 3218.963611763983 wall_s 270.0045669958927 front_D_per_metal 0.5973981525247987 max_solute_D_per_metal 0.6120892290229649 film_nm 2.670185536190162
+MODEL_PROGRESS E_cm 2.0 beam_on True solver_t_s 3262.847949007873 wall_s 450.00743372598663 front_D_per_metal 0.5992670907394613 max_solute_D_per_metal 0.6147601514806849 film_nm 1.8185016229177884
+MODEL_PROGRESS E_cm 2.5 beam_on True solver_t_s 1967.59573071063 wall_s 450.00631788698956 front_D_per_metal 0.012240346499916038 max_solute_D_per_metal 0.6098664235375457 film_nm 3.2672322351498053
+MODEL_PROGRESS E_cm 1.0 beam_on True solver_t_s 2026.068667781284 wall_s 510.0073376270011 front_D_per_metal 0.012076354639307164 max_solute_D_per_metal 0.6109063001105207 film_nm 2.9311601481022005
+MODEL_PROGRESS E_cm 5.0 beam_on True solver_t_s 3218.963770902437 wall_s 300.0048336049076 front_D_per_metal 0.5974276813640468 max_solute_D_per_metal 0.6120892307197087 film_nm 2.6701854212499545
+MODEL_PROGRESS E_cm 2.0 beam_on True solver_t_s 3262.8479555341823 wall_s 480.00858568795957 front_D_per_metal 0.5992756090401353 max_solute_D_per_metal 0.6147600900728662 film_nm 1.818501616583404
+MODEL_PROGRESS E_cm 2.5 beam_on True solver_t_s 1967.5957748455548 wall_s 480.0065375750419 front_D_per_metal 0.012240343529827872 max_solute_D_per_metal 0.6098664236448136 film_nm 3.2672321963290396
+MODEL_PROGRESS E_cm 1.0 beam_on True solver_t_s 3275.4332738676003 wall_s 540.0080552469008 front_D_per_metal 0.5992115986948756 max_solute_D_per_metal 0.6154301165400753 film_nm 1.6602038198713869
+MODEL_PROGRESS E_cm 5.0 beam_on True solver_t_s 3218.963929167398 wall_s 330.0051976139657 front_D_per_metal 0.5974625772638453 max_solute_D_per_metal 0.612089232407143 film_nm 2.6701853069406454
+MODEL_PROGRESS E_cm 2.0 beam_on True solver_t_s 3262.847959735235 wall_s 510.0086140311323 front_D_per_metal 0.5992840447718497 max_solute_D_per_metal 0.6147600901167602 film_nm 1.8185016125058893
+MODEL_PROGRESS E_cm 2.5 beam_on True solver_t_s 1967.6563777078043 wall_s 510.0068434129935 front_D_per_metal 0.012240379300547775 max_solute_D_per_metal 0.6098665709278402 film_nm 3.2671788904770342
+MODEL_PROGRESS E_cm 1.0 beam_on True solver_t_s 3275.4357399484043 wall_s 570.0088608609512 front_D_per_metal 0.5994975873372522 max_solute_D_per_metal 0.6154301421556548 film_nm 1.6602013188591547
+MODEL_PROGRESS E_cm 5.0 beam_on True solver_t_s 3218.9640494939727 wall_s 360.0064797939267 front_D_per_metal 0.5974959398519801 max_solute_D_per_metal 0.6120892336900757 film_nm 2.6701852200329177
+MODEL_PROGRESS E_cm 2.0 beam_on True solver_t_s 3262.847961933573 wall_s 540.009334285045 front_D_per_metal 0.5992934338715157 max_solute_D_per_metal 0.6147600901397322 film_nm 1.8185016103721978
+MODEL_PROGRESS E_cm 2.5 beam_on True solver_t_s 1967.6563854316737 wall_s 540.0087657319382 front_D_per_metal 0.012240367633565164 max_solute_D_per_metal 0.6098665709466092 film_nm 3.2671788836831777
+MODEL_PROGRESS E_cm 1.0 beam_on True solver_t_s 3275.4360503751655 wall_s 600.0091815430205 front_D_per_metal 0.599562724807915 max_solute_D_per_metal 0.6154301453801575 film_nm 1.660201004035279
+MODEL_PROGRESS E_cm 5.0 beam_on True solver_t_s 3218.9640977415024 wall_s 390.0066650349181 front_D_per_metal 0.5975125467350527 max_solute_D_per_metal 0.612089234204494 film_nm 2.670185185185395
+MODEL_PROGRESS E_cm 2.0 beam_on True solver_t_s 5157.597390671896 wall_s 570.009342313977 front_D_per_metal 0.5988620390145599 max_solute_D_per_metal 0.6413254246530852 film_nm 0.03709255894331411
+MODEL_PROGRESS E_cm 2.5 beam_on True solver_t_s 1967.6563932622853 wall_s 570.0092233740725 front_D_per_metal 0.012240376251821238 max_solute_D_per_metal 0.6098665709656386 film_nm 3.2671788767954197
+MODEL_PROGRESS E_cm 1.0 beam_on True solver_t_s 3275.4361756068397 wall_s 630.0100493519567 front_D_per_metal 0.599597696781726 max_solute_D_per_metal 0.6154301466809813 film_nm 1.6602008770297312
+MODEL_PROGRESS E_cm 5.0 beam_on True solver_t_s 3218.9641450881986 wall_s 420.00676247896627 front_D_per_metal 0.5975324729092508 max_solute_D_per_metal 0.6120892347093109 film_nm 2.6701851509885084
+MODEL_PROGRESS E_cm 2.0 beam_on True solver_t_s 5188.553219296181 wall_s 600.0094570291694 front_D_per_metal 0.012185821644485121 max_solute_D_per_metal 0.6339920565358407 film_nm 0.019537856748898585
+MODEL_PROGRESS E_cm 2.5 beam_on True solver_t_s 1967.6564002919722 wall_s 600.0093359309249 front_D_per_metal 0.01224037481097521 max_solute_D_per_metal 0.6098665709827208 film_nm 3.267178870612158
+MODEL_PROGRESS E_cm 1.0 beam_on True solver_t_s 3275.436225988186 wall_s 660.0110050439835 front_D_per_metal 0.5996148211769867 max_solute_D_per_metal 0.6154301472043107 film_nm 1.6602008259347454
+MODEL_PROGRESS E_cm 5.0 beam_on True solver_t_s 3218.964174689757 wall_s 450.00724718207493 front_D_per_metal 0.5975485143313026 max_solute_D_per_metal 0.6120892350249261 film_nm 2.6701851296083223
+MODEL_PROGRESS E_cm 2.0 beam_on True solver_t_s 5188.563145164639 wall_s 630.0098079841118 front_D_per_metal 0.01218263057625472 max_solute_D_per_metal 0.6339897919303472 film_nm 0.019533044005601467
+MODEL_PROGRESS E_cm 2.5 beam_on True solver_t_s 1967.6564070402653 wall_s 630.0097989090718 front_D_per_metal 0.012240379117049588 max_solute_D_per_metal 0.6098665709991188 film_nm 3.2671788646764064
+MODEL_PROGRESS E_cm 1.0 beam_on True solver_t_s 3275.4362720341132 wall_s 690.01141240797 front_D_per_metal 0.5996332770060613 max_solute_D_per_metal 0.6154302092256193 film_nm 1.6602007792365898
+MODEL_PROGRESS E_cm 5.0 beam_on True solver_t_s 3218.964189308348 wall_s 480.0077540150378 front_D_per_metal 0.5975586684459396 max_solute_D_per_metal 0.6120892351807918 film_nm 2.6701851190498163
+MODEL_PROGRESS E_cm 2.0 beam_on True solver_t_s 5188.578298872579 wall_s 660.0107148860116 front_D_per_metal 0.012177672977428946 max_solute_D_per_metal 0.6339863349099975 film_nm 0.01952569760332393
+MODEL_PROGRESS E_cm 2.5 beam_on True solver_t_s 1967.6564141155015 wall_s 660.0105504931416 front_D_per_metal 0.012240376875453903 max_solute_D_per_metal 0.6098665710163123 film_nm 3.2671788584530725
+MODEL_PROGRESS E_cm 1.0 beam_on True solver_t_s 3275.436298571429 wall_s 720.01175555191 front_D_per_metal 0.5996459492003883 max_solute_D_per_metal 0.6154301479582577 film_nm 1.6602007523233804

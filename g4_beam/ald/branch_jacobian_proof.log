@@ -1,0 +1,48 @@
+{
+  "physical_RHS_EOS_AST_unchanged": true,
+  "numerical_methods_excluded": [
+    "jac",
+    "run_te",
+    "_switching_beam"
+  ],
+  "analytic_derivative_witness": [
+    {
+      "branch": "alpha",
+      "x": 0.012802817254849606,
+      "actual_jacobian_step": -1.2802817261209354e-09,
+      "analytic_mu_derivative": 2.07704169037798,
+      "new_derivative": 2.0770417829227217,
+      "old_forward_derivative": 0.21078540344607635,
+      "relative_error": 4.45560346395979e-08
+    },
+    {
+      "branch": "plateau",
+      "x": 0.5969862097499614,
+      "actual_jacobian_step": -5.969862093557765e-08,
+      "analytic_mu_derivative": 0.0034235823984276226,
+      "new_derivative": 0.00342358242268735,
+      "old_forward_derivative": 0.5170426952141292,
+      "relative_error": 7.086065068051539e-09
+    }
+  ],
+  "retained237_values_sha256": "1bb4e2db4d4235e5bd44c792eb0dd095fa876c9206187caa3e82c0003770343a",
+  "current_counts": {
+    "surface": 42,
+    "promoter": 84,
+    "BZY": 112
+  },
+  "winning_probe_wall_s": 8.74587524891831,
+  "winning_probe_last_accepted_profile_s": 7200.0,
+  "native_Ti_regrowth": {
+    "G0_m_s": 1.0915700295105825e-11,
+    "initial_film_m": 0.0,
+    "final_film_m": 4.893624488776496e-11,
+    "original_driver": true,
+    "requested_time_alignment": true,
+    "constitutive_callback_restored": true
+  },
+  "current_source_sha256": "326970130f3d3baeec4b87acc3ced4098f4085ace18114c3fd7cd9d749d05cd7",
+  "current_input_fingerprint": "0706349657782f7252500227cee664d7c54666a066a55a433f43c922a90da181",
+  "wall_s": 9.807454768102616,
+  "unresolved_cells": 0
+}

@@ -1,0 +1,15 @@
+MODEL_PROGRESS E_cm 3.0 beam_on False solver_t_s 0.0 wall_s 0.00022599310614168644 front_D_per_metal 1e-09 max_solute_D_per_metal 1e-09 film_nm 0.3
+SOLVER_RETURN BDF (0, 3600.0) True The solver successfully reached the end of the integration interval. last_trial_RHS {"t": 3600.0, "beam_on": false, "d_m": 3e-10, "x0": 0.011045275685341588, "v0": 9.726692536762479e-14}
+SOLVER_RETURN BDF (0, 7200.0) False Required step size is less than spacing between numbers. last_trial_RHS {"t": 805.8853166562566, "beam_on": true, "d_m": 9.999999999999307e-13, "x0": 0.011458228287905041, "v0": 0.009988974997103566}
+SOLVER_RETURN Radau (0, 7200.0) False Required step size is less than spacing between numbers. last_trial_RHS {"t": 806.0715495892265, "beam_on": true, "d_m": 1.0000000000000474e-12, "x0": 0.01155870346907504, "v0": 0.009988974996728534}
+SOLVER_RETURN BDF (0, 7200.0) False Required step size is less than spacing between numbers. last_trial_RHS {"t": 805.6554092641562, "beam_on": true, "d_m": 1.0000000000000002e-12, "x0": 0.011530555636257253, "v0": 0.00998897509142557}
+Traceback (most recent call last):
+  File "<stdin>", line 12, in <module>
+  File "g4_beam/ald/designs.py", line 181, in promoter_job
+    observed_run(model,times)
+  File "g4_beam/ald/designs.py", line 95, in observed_run
+    return model.run_te(times)
+           ^^^^^^^^^^^^^^^^^^^
+  File "g4_beam/transport/transport.py", line 629, in run_te
+    raise RuntimeError(s.message)
+RuntimeError: Required step size is less than spacing between numbers.

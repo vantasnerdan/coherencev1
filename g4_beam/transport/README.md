@@ -57,3 +57,52 @@ python g4_beam/transport/checks/run_updated_knobs.py \
   --pdrh g4_beam/transport/checks/results/Pd80Rh20-conditional-isotherm.json \
   --output pd-rh-baseline-reproduction --cpu-budget-s 120
 ```
+
+## Pass5 surface-profile and covered-patch consumer
+
+`Model.profile()` reports depth from the actual beam-facing modeled surface.
+When an overlayer is omitted at the existing `d<=1e-12m` cutoff, the Pd layers
+and `zc` now start at the exposed-metal origin, not at a residual numerical
+film offset. `d` retains the numerical thickness; `surface_offset_m` states the
+reported geometric offset. Densities, layer thicknesses, adsorbate and evolved
+state are not clipped or refitted. Strict forward layer validation remains.
+The ALD coordinate migration translates retained cached profiles without
+rerunning transport; `ald/transport_boundary_proof.json` binds the cutoff witness.
+
+An overlayer may explicitly set `sticking_is_patch_value=True` when its covered
+area is already represented as a separate parallel column. Then `s` is the
+covered-patch value, not another bare/covered thickness blend. Its clean-metal
+value returns when the inventory clears. Optional overlayer `Eads` is an
+explicit positive binding energy per D relative to half D2; absence preserves
+the original Pd/oxide convention. Pass5 promoters retain the .45eV Pd baseline
+as a conditional control, not an inferred promoter binding energy or barrier.
+
+### Resolving erosion-only overlayer clearance
+
+Covered-patch sticking OR finite film permeance can jump to the clean-metal
+boundary at the existing1pm cutoff. Implicit integration across that jump can
+fail even though each physical phase is regular. For erosion-only overlayers
+(`G0=0`), `run_te()` terminates the covered phase at the erosion event and
+restarts the clean phase. The original `ol_state` law is extended one-sided only
+for implicit trial states outside the current phase; accepted states obey the
+original physical law. No density/state clipping is introduced; only floating
+event-root roundoff is projected onto the existing cutoff. The callback is restored.
+
+The public `t_beam` and `sol.y` columns remain aligned exactly with the caller's
+requested `te`; an internal clearance event is not inserted into public indices.
+Uncoated-reference and native-regrowth integration retain their original driver.
+`ald/solver_repair_proof.json` records the actual failed/default controls and
+requested-time alignment; `solver_repair_provenance.json` binds the source and
+unchanged physical operators. Completed cases are retained explicitly rather than
+replayed. This is numerical boundary repair, not a new rate or altered film law.
+
+### Numerical Jacobian at isotherm branch boundaries
+
+The fixed relative finite-difference scale is retained. If a positive solute
+perturbation would cross the alpha/plateau or plateau/beta boundary, its sign is
+reversed so the difference differentiates the CURRENT physical branch. State
+values and the EOS/RHS are not smoothed, clipped or refitted. This prevents a
+wrong-branch numerical derivative from forcing microscopic time steps.
+The isolated BZY20nm/.01/5.5keV case then completes with the same BDF/event method;
+Radau with the old Jacobian did not resolve it. Analytic derivative witnesses
+and native-Ti-regrowth behavior are recorded in `ald/solver_repair_proof.json`.

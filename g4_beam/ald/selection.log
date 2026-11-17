@@ -1,0 +1,41 @@
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/concurrent/futures/process.py", line 263, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "g4_beam/ald/dense.py", line 175, in coarse_one
+    values.append(raw_values(age_target(design,e,float(age),profile),e))
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "g4_beam/ald/dense.py", line 94, in raw_values
+    values[scenario_key(name,cause)]=float(evaluate_fit(projected,[e],cause,fit,reference_E_cm_keV=None)['physical_yield_per_C'][0])
+                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "g4_beam/merit/api.py", line 116, in evaluate_fit
+    out=forward_yields(ee,profiles,Ue_keV=u,candidate=cand,parameters=p,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "g4_beam/forward/consumer.py", line 227, in forward_yields
+    values=np.array([at_energy(float(e)) for e in requested])
+                     ^^^^^^^^^^^^^^^^^^^
+  File "g4_beam/forward/consumer.py", line 185, in at_energy
+    raise ValueError('Contiguous nonnegative-density layers must start at zero')
+ValueError: Contiguous nonnegative-density layers must start at zero
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "g4_beam/ald/dense.py", line 304, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "g4_beam/ald/dense.py", line 267, in main
+    prepare_coarse_reference();selected,checks=select(all_designs)
+                                               ^^^^^^^^^^^^^^^^^^^
+  File "g4_beam/ald/dense.py", line 199, in select
+    row=future.result();results.append(row);save(path,results)
+        ^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+ValueError: Contiguous nonnegative-density layers must start at zero

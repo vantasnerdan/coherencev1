@@ -1,0 +1,34 @@
+step,portable_invocation,status,exit_code,elapsed_s,elapsed_scope,evidence,interpretation
+prepare_early,G5_WORKERS=4 python g4_beam/ald/designs.py --early --prepare-early,completed,0,761.97,tool wall,early_profiles.json.gz,392 actual seal transport cases; no BCA rebuild
+report_early,G5_WORKERS=4 python g4_beam/ald/designs.py --early,completed,0,1631.83,tool wall,early_compare.csv and early_erosion.csv,132 actual design endpoints and initial erosion comparison
+old_remaining,G5_WORKERS=2 python g4_beam/ald/designs.py --remaining,timed_out,,3600,tool deadline,remaining.log,not completed; root cause not inferred from an empty log
+raw_snapshot_initial,G5_DENSE_WORKERS=1 python g4_beam/ald/dense.py --pilot,failed,1,12.28,tool wall,dense_pilot_initial.log,unrelated6.5keV lookup corrected with explicit raw consumer mode
+normalized_consumer,python g4_beam/forward/consumer_example.py,completed,0,15.60,tool wall,normalized_consumer.log,existing normalized potential and thermal consumers unchanged
+universal_reference_pilot,G5_DENSE_WORKERS=1 python g4_beam/ald/dense.py --pilot,timed_out,,1800.09,tool wall,dense_reference_pilot.log,3279 completed age kernels retained; preparation narrowed to requested selected ages
+cap_pilot,G5_DENSE_WORKERS=1 python g4_beam/ald/dense.py --pilot,completed,0,189.7907,program stopwatch,dense_pilot.json,full reference plus nuclear integration and I-O cost
+seal_pilot,G5_DENSE_WORKERS=1 python g4_beam/ald/dense.py --pilot-seal,completed,0,110.46,tool wall,dense_pilot_seal.json,actual Model data reused after omitted-film coordinate correction
+selection,G5_DENSE_WORKERS=4 python g4_beam/ald/dense.py --select,completed,0,406.13,tool wall,selection_status.json,all132 coarse design cases cached before selected rerun
+selected_initial,G5_DENSE_WORKERS=4 python g4_beam/ald/dense.py,cancelled,,,,dense_full.log,non-natural stop with57 completed cases checkpointed; no scientific failure inferred
+selected_six_only_resume,G5_DENSE_WORKERS=4 python g4_beam/ald/dense.py,completed,0,217.10,tool wall,dense_status.json and dense_resume.log,63 of63 selected designs exported; only6 missing designs computed
+remaining_probe_surface,"G5_WORKERS=1 python g4_beam/ald/designs.py --remaining-probe surface '[""loss0.5_j0.0"",0.25,0.5,0.0]'",completed,0,0.869139543,worker stopwatch,remaining_probes.log,actual job checkpointed
+remaining_probe_promoter,"G5_WORKERS=1 python g4_beam/ald/designs.py --remaining-probe promoter '[""BaO"",1e-7,0.25]'",completed,0,8.735040107,worker stopwatch,remaining_probes.log,actual job checkpointed
+remaining_probe_BZY_low,"G5_WORKERS=1 python g4_beam/ald/designs.py --remaining-probe BZY '[20.0,0.01,0.25]'",completed,0,19.130580024,worker stopwatch,remaining_probes.log,actual job checkpointed
+remaining_probe_BZY_high,"G5_WORKERS=1 python g4_beam/ald/designs.py --remaining-probe BZY '[20.0,100.0,6.5]'",completed,0,4.351351426,worker stopwatch,remaining_probes.log,actual job checkpointed
+remaining_laminate_report_pilot,G5_WORKERS=1 python g4_beam/ald/designs.py --remaining-report-pilot,completed,0,101.22,tool wall,remaining_report_pilot.log,actual maximum-layer loaded laminate report cached for reuse
+nominal_cap_pilot,G5_SPUTTER_WORKERS=1 python g4_beam/ald/cap_requirements.py --pilot,completed,0,210.32,tool wall,cap_requirements_pilot.json,nominal sputter4E physical integration plus14E compare; no fits
+cap_requirements,G5_SPUTTER_WORKERS=4 python g4_beam/ald/cap_requirements.py,completed,0,1468.51,tool wall,cap_requirements_status.json and cap_sputter_thresholds.csv,raw and matching-fit SI1-calibrated material requirements from shared evaluations
+canonical_additions_initial,G5_DENSE_WORKERS=4 python g4_beam/ald/dense.py,failed,1,14.51,tool wall,dense_canonical_additions.log,selection metadata requested unavailable original island peak; corrected to explicit null before any new physical cases
+cap_requirements_zero_limit,G5_SPUTTER_WORKERS=4 python g4_beam/ald/cap_requirements.py,completed,0,536.12,tool wall,cap_requirements_limit.log and cap_sputter_thresholds.csv,noneroding limit plus only revealed positive lower bracket; all89 prior points retained
+canonical_additions_recovery,G5_DENSE_WORKERS=4 python g4_beam/ald/dense.py,completed,0,493.86,tool wall,dense_status.json and dense_canonical_recovery.log,75 selected designs; only12 new endpoints evaluated and63 preserved
+remaining_checkpointed_failure,G5_WORKERS=4 python g4_beam/ald/designs.py --remaining,failed,1,284.45,tool wall,remaining_recovery.log,119 valid transport cases saved;9 low-loss promoters fail at hard1pm switching boundary
+remaining_stalled_pool1,G5_WORKERS=4 python g4_beam/ald/designs.py --remaining,cancelled_authorized,,,,remaining_continuation.log,Axiom1691; retained163 cases before bounded BZY event discriminator
+bzy_event_discriminator,python -,completed,0,38.61,tool wall,bzy_solver_probe.log and bzy_numerical_probe.json,inline same-equation numerical discriminator; winning E1 profile reused
+bzy_event_quartet_proof,python -,completed,0,59.18,tool wall,bzy_event_repair_proof.log and solver_repair_proof.json,inline proof and provenance update;4 stalled5nm cases fixed with167 cases retained
+remaining_stalled_pool2,G5_WORKERS=4 python g4_beam/ald/designs.py --remaining,cancelled_authorized,,,,remaining_final.log,Axiom1705; retained237 cases and isolated20nm/.01/5.5keV
+bzy_last_Radau_discriminator,python -,timed_out,,120.19,tool wall,bzy_last_case_probe.log,inline Radau discriminator with unchanged old Jacobian; no failed profile promoted
+bzy_branch_Jacobian_discriminator,python -,completed,0,9.87,tool wall,bzy_branch_jacobian_probe.log and bzy_branch_jacobian_probe.json,inline branch-consistent numerical differences; winning final profile reused
+branch_Jacobian_native_regrowth_proof,python -,completed,0,11.14,tool wall,branch_jacobian_proof.log and solver_repair_proof.json,analytic derivative and native growth witness; unchanged237 values plus final profile gives238 transport cases
+remaining_reports_and_erosion,G5_WORKERS=4 python g4_beam/ald/designs.py --remaining,completed,0,2019.10,tool wall,remaining_reports.log and remaining_compare.csv and remaining_erosion.csv,all238 transport cases reused;112 design reports and3840 erosion rows;0 unresolved cells
+finalize,G5_FINAL_WORKERS=1 python g4_beam/ald/finalize.py,completed,0,1087.62,tool wall,verification.json and all_designs.csv,245 designs and76 resolved integrals against both references; complete separate physical-yield integration
+plot_initial,python g4_beam/ald/plot.py,completed,0,14.34,tool wall,plot.log,rendered inspection found missing criterion filter in threshold figure only; numeric tables unchanged
+plot_corrected,python g4_beam/ald/plot.py,completed,0,13.92,tool wall,sputter_thresholds.png and plot.log,actual criterion-separated raw and calibrated figure inspected; no fit or transport replay

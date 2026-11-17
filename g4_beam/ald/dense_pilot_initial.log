@@ -1,0 +1,24 @@
+MODEL_PROGRESS E_cm 0.25 beam_on False solver_t_s 0.0 wall_s 0.0002805700059980154 front_D_per_metal 1e-09 max_solute_D_per_metal 1e-09 film_nm 0.0
+Traceback (most recent call last):
+  File "g4_beam/ald/dense.py", line 262, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "g4_beam/ald/dense.py", line 239, in main
+    reference_wall=prepare_reference(all_designs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "g4_beam/ald/dense.py", line 106, in prepare_reference
+    records[str(float(age))]=dict(profile=profile,yields=raw_values(target,float(e)))
+                                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "g4_beam/ald/dense.py", line 89, in raw_values
+    values[scenario_key(name,cause)]=float(evaluate_fit(projected,[e],cause,fit)['physical_yield_per_C'][0])
+                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "g4_beam/merit/api.py", line 114, in evaluate_fit
+    out=forward_yields(ee,profiles,Ue_keV=u,candidate=cand,parameters=p,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "g4_beam/forward/consumer.py", line 222, in forward_yields
+    values=np.array([at_energy(float(e)) for e in np.r_[energies,reference_E_cm_keV]])
+                     ^^^^^^^^^^^^^^^^^^^
+  File "g4_beam/forward/consumer.py", line 176, in at_energy
+    layers,nads,_=profiles(e) if callable(profiles) else profiles[float(e)]
+                                                         ~~~~~~~~^^^^^^^^^^
+KeyError: 6.5

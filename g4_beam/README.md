@@ -28,6 +28,7 @@ One static number cannot serve both, so the shared deliverable is eps(q) over th
 | `priordata/` | Other low-energy d+d datasets in one table, plateau comparison |
 | `merit/` | Pass 5: yield of any layered target relative to the transported UC Davis PdD foil, side by side with the UC Davis values (`compare.csv`); causes refitted on transported profiles |
 | `causes/` | Pass 5: how each plateau cause responds to beam and target changes, surface-density and sheet-occupancy scans, Zenodo column list |
+| `ald/` | Pass 5: 245 ALD designs in six families (sealing oxides, deuteride caps, deuterated oxides, donor promoters, BZY proton conductor, Pd/oxide nanolaminates), with run-integrated merit, erosion and cap sputter thresholds |
 
 Run every script from its own directory, except `work/` scripts and `priordata/scripts/compare.py .`, which run from `g4_beam/`.
 
@@ -83,6 +84,21 @@ Measurements that separate the causes, as changed/base counts per charge:
 | Near-surface D x50, 0.5 keV | 14.5 | 1.01 | 13.8 |
 | D2+ current fraction 0.85, 0.25 keV | 3.08 | 3.31 | 1.00 |
 | Half current, 0.5 keV | 1.00 | 1.00 | 2.00 |
+
+Pass 5 (`ald/`): the merit is the charge-integrated D(d,p)T yield over the paper's run at each energy, divided by the same integral for the transported PdD reference.
+- **Erosion decides it.** Sealing oxides and promoters sputter away within about 1 to 2 h at the UC Davis current. The 2 nm Al2O3 seal integrates to 9.8/1.2/1.8/3.8 at 0.25/1/2.5/6.5 keV (rising screening), against a peak of 128.
+- **Best design: the 20 nm TiD2 cap**, with retained D and sputter x0.1, under rising screening:
+
+| | 0.25 keV | 1 keV | 2.5 keV | 6.5 keV |
+|---|---|---|---|---|
+| Model | 210 | 18 | 37 | 38 |
+| Scaled to the SI Table 1 TiD/PdD counts | 41 | 8.5 | 9.4 | - |
+
+- **The cap's other endpoints.** At nominal sputter the scaled values are 12.5/1.6/7.0. A cap that loses its D gives 0.1 to 1.
+- **Measured anchor.** The SI Table 1 TiD/PdD counts are 1.9 to 2.8 at 0.25-2 keV, 6.1 at 2.5 keV and 11.7 at 3 keV. Model TiD/PdD runs 1.2 to 8.4 times above them.
+- **Sputter thresholds** for 10x are in `cap_sputter_thresholds.csv`. Scaled to the measured counts, 1 keV needs sputter about 30 to 40 times below nominal. Rising screening at 2.5 keV and neutrals at 0.25 keV stay below 10 even with no erosion.
+
+Open transport item: `transport.py` lets superabundant vacancies reach 0.25 per Pd with 6 D each, so an infinite-time bulk-fed steady state holds 2.3 D/Pd. The 2 to 12 h run-end profiles used here are unaffected (vacancies move about 1 nm in 12 h). Superabundant-vacancy formation needs a kinetic limit before any long-time state is used.
 
 Electronic screening from first principles (`screen/README.md`, valence-PAW PBE, static low-q RPA). The screening length lambda gives a Yukawa static U_e = e^2/lambda:
 

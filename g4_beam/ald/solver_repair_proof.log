@@ -1,0 +1,66 @@
+MODEL_PROGRESS E_cm 3.0 beam_on False solver_t_s 0.0 wall_s 0.00024895486421883106 front_D_per_metal 1e-09 max_solute_D_per_metal 1e-09 film_nm 0.3
+MODEL_PROGRESS E_cm 6.5 beam_on False solver_t_s 0.0 wall_s 0.00010335585102438927 front_D_per_metal 1e-09 max_solute_D_per_metal 1e-09 film_nm 20.0
+{
+  "physical_equation_AST_unchanged": true,
+  "default_profile_exact_parity": true,
+  "requested_time_alignment": [
+    {
+      "requested": [
+        0.0,
+        292.70823026318254,
+        585.4164605263651,
+        7200.0
+      ],
+      "actual": [
+        0.0,
+        292.70823026318254,
+        585.4164605263651,
+        7200.0
+      ],
+      "columns": 4,
+      "callback_restored": true,
+      "clearance_s": 805.7981597259976,
+      "event_roundoff_m": 4.0389678347315804e-28
+    },
+    {
+      "requested": [
+        0.0,
+        600.0,
+        7200.0
+      ],
+      "actual": [
+        0.0,
+        600.0,
+        7200.0
+      ],
+      "columns": 3,
+      "callback_restored": true,
+      "clearance_s": null,
+      "event_roundoff_m": null
+    }
+  ],
+  "failed_case_now_completed": true,
+  "covered_and_cleared_consumer_physical_yields": {
+    "covered": {
+      "screeningrise": 48381.59524221439,
+      "surface": 289548.1889520442,
+      "neutrals": 159026.96996656567
+    },
+    "cleared": {
+      "screeningrise": 17377.389181235158,
+      "surface": 227835.94622678705,
+      "neutrals": 54483.28730308622
+    }
+  },
+  "retained_stage_counts": {
+    "surface": 42,
+    "promoter": 75,
+    "BZY": 2
+  },
+  "retained_stage_values_sha256": "84ca86975441eb40e572d8eaf37cc2caedf9aa9064f21ad46f0aee1a4d0b4309",
+  "new_transport_source_sha256": "1135d9da600f5aa608236613b2c753182aea9f667683a2ae45baaa48ed4a6766",
+  "new_input_fingerprint": "3aab1bbaecd93b7762f3f163c42b985db43a4c74579ef9b522685cdd8fba6fac",
+  "density_or_state_clipping": false,
+  "event_root_projection_only": true,
+  "wall_s": 12.103373609948903
+}

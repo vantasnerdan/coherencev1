@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "g4_beam/ald/dense.py", line 320, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "g4_beam/ald/dense.py", line 310, in main
+    prepare_coarse_reference();selected,checks=select(all_designs)
+                                               ^^^^^^^^^^^^^^^^^^^
+  File "g4_beam/ald/dense.py", line 221, in select
+    canonical_sampled_peak_merit=canonical_peak[r['target']],
+                                 ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+KeyError: 'Al2O3_seal_0.1nm_perm100.0_coverage0.25'

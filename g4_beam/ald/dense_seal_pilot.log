@@ -1,0 +1,36 @@
+MODEL_PROGRESS E_cm 2.5 beam_on False solver_t_s 0.0 wall_s 0.0001736530102789402 front_D_per_metal 1e-09 max_solute_D_per_metal 1e-09 film_nm 0.0
+DENSE_REFERENCE 2.5 new_ages 13 saved_ages 38 cumulative_wall_s 19.59519619587809
+MODEL_PROGRESS E_cm 6.5 beam_on False solver_t_s 0.0 wall_s 0.0001706141047179699 front_D_per_metal 1e-09 max_solute_D_per_metal 1e-09 film_nm 0.0
+DENSE_REFERENCE 6.5 new_ages 12 saved_ages 37 cumulative_wall_s 39.1527776629664
+MODEL_PROGRESS E_cm 0.25 beam_on False solver_t_s 0.0 wall_s 0.00013167597353458405 front_D_per_metal 1e-09 max_solute_D_per_metal 1e-09 film_nm 2.0
+MODEL_PROGRESS E_cm 0.25 beam_on True solver_t_s 6110.7137516310695 wall_s 30.000556987011805 front_D_per_metal 0.011786960548560684 max_solute_D_per_metal 0.6182210684420373 film_nm 0.040760900958025495
+DENSE_SEAL Al2O3_seal|2.0|0.01|0.25 ages 66
+MODEL_PROGRESS E_cm 1.0 beam_on False solver_t_s 0.0 wall_s 0.00011673010885715485 front_D_per_metal 1e-09 max_solute_D_per_metal 1e-09 film_nm 2.0
+DENSE_SEAL Al2O3_seal|2.0|0.01|1.0 ages 56
+MODEL_PROGRESS E_cm 2.5 beam_on False solver_t_s 0.0 wall_s 0.0001205778680741787 front_D_per_metal 1e-09 max_solute_D_per_metal 1e-09 film_nm 2.0
+DENSE_SEAL Al2O3_seal|2.0|0.01|2.5 ages 38
+MODEL_PROGRESS E_cm 6.5 beam_on False solver_t_s 0.0 wall_s 0.0001670769415795803 front_D_per_metal 1e-09 max_solute_D_per_metal 1e-09 film_nm 2.0
+MODEL_PROGRESS E_cm 6.5 beam_on True solver_t_s 2551.9704269530885 wall_s 30.000798547873273 front_D_per_metal 0.013095888086678577 max_solute_D_per_metal 0.6061589070300849 film_nm 0.7045819653250516
+DENSE_SEAL Al2O3_seal|2.0|0.01|6.5 ages 37
+Traceback (most recent call last):
+  File "g4_beam/ald/dense.py", line 304, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "g4_beam/ald/dense.py", line 283, in main
+    if not any(r['target']==name for r in results):results.append(resolve_one(chosen));save(cache,results)
+                                                                  ^^^^^^^^^^^^^^^^^^^
+  File "g4_beam/ald/dense.py", line 232, in resolve_one
+    target=age_target(design,e,age,profile);values=raw_values(target,e)
+                                                   ^^^^^^^^^^^^^^^^^^^^
+  File "g4_beam/ald/dense.py", line 94, in raw_values
+    values[scenario_key(name,cause)]=float(evaluate_fit(projected,[e],cause,fit,reference_E_cm_keV=None)['physical_yield_per_C'][0])
+                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "g4_beam/merit/api.py", line 116, in evaluate_fit
+    out=forward_yields(ee,profiles,Ue_keV=u,candidate=cand,parameters=p,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "g4_beam/forward/consumer.py", line 227, in forward_yields
+    values=np.array([at_energy(float(e)) for e in requested])
+                     ^^^^^^^^^^^^^^^^^^^
+  File "g4_beam/forward/consumer.py", line 185, in at_energy
+    raise ValueError('Contiguous nonnegative-density layers must start at zero')
+ValueError: Contiguous nonnegative-density layers must start at zero

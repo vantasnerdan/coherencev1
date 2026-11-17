@@ -1,0 +1,101 @@
+MODEL_PROGRESS E_cm 6.5 beam_on False solver_t_s 0.0 wall_s 0.000270316144451499 front_D_per_metal 1e-09 max_solute_D_per_metal 1e-09 film_nm 0.0
+MODEL_PROGRESS E_cm 2.5 beam_on False solver_t_s 0.0 wall_s 0.0007465321104973555 front_D_per_metal 1e-09 max_solute_D_per_metal 1e-09 film_nm 5.0
+MODEL_PROGRESS E_cm 2.0 beam_on False solver_t_s 0.0 wall_s 0.0008307199459522963 front_D_per_metal 1e-09 max_solute_D_per_metal 1e-09 film_nm 5.0
+MODEL_PROGRESS E_cm 5.0 beam_on False solver_t_s 0.0 wall_s 0.0011770608834922314 front_D_per_metal 1e-09 max_solute_D_per_metal 1e-09 film_nm 5.0
+MODEL_PROGRESS E_cm 2.5 beam_on True solver_t_s 5754.908661717737 wall_s 30.001513381954283 front_D_per_metal 0.010708516329725444 max_solute_D_per_metal 0.6308904042512289 film_nm 0.01878317944332981
+MODEL_PROGRESS E_cm 2.0 beam_on True solver_t_s 5199.921967010867 wall_s 30.00100660789758 front_D_per_metal 0.008344020831670698 max_solute_D_per_metal 0.6315117186774417 film_nm 0.014450063243979473
+MODEL_PROGRESS E_cm 5.0 beam_on True solver_t_s 6986.751242767603 wall_s 30.001530630979687 front_D_per_metal 0.011306940386850262 max_solute_D_per_metal 0.622622181156899 film_nm 0.02333159903562773
+REPAIRED (5.0, 0.01, 5.0) {'wall_s': 35.62600166792981, 'alignment': [{'requested': [0.0, 600.0, 3435.5983394012483, 7200.0], 'actual': [0.0, 600.0, 3435.5983394012483, 7200.0], 'columns': 4, 'clearance_s': 7104.012074755259, 'callback_restored': True}]}
+REPAIRED (5.0, 0.01, 2.5) {'wall_s': 38.24847447290085, 'alignment': [{'requested': [0.0, 600.0, 2824.9310510208675, 7200.0], 'actual': [0.0, 600.0, 2824.9310510208675, 7200.0], 'columns': 4, 'clearance_s': 5841.286419566183, 'callback_restored': True}]}
+REPAIRED (5.0, 0.01, 2.0) {'wall_s': 50.34205686696805, 'alignment': [{'requested': [0.0, 600.0, 2547.72508209508, 43200.0], 'actual': [0.0, 600.0, 2547.72508209508, 43200.0], 'columns': 4, 'clearance_s': 5268.062450947403, 'callback_restored': True}]}
+{
+  "physical_equation_AST_unchanged": true,
+  "primary_no_film_reference_exact_parity": true,
+  "previous_counts": {
+    "surface": 42,
+    "promoter": 84,
+    "BZY": 37
+  },
+  "previous_values_sha256": "326b1ba11529df6d34d0f65347505503a9d8f4dffaaa213c16e6c3a6f10f656d",
+  "repaired_cases": {
+    "[5.0, 0.01, 1.0]": {
+      "wall_s": 37.402513090055436,
+      "reused_deciding_probe": true
+    },
+    "[5.0, 0.01, 5.0]": {
+      "wall_s": 35.62600166792981,
+      "alignment": [
+        {
+          "requested": [
+            0.0,
+            600.0,
+            3435.5983394012483,
+            7200.0
+          ],
+          "actual": [
+            0.0,
+            600.0,
+            3435.5983394012483,
+            7200.0
+          ],
+          "columns": 4,
+          "clearance_s": 7104.012074755259,
+          "callback_restored": true
+        }
+      ]
+    },
+    "[5.0, 0.01, 2.5]": {
+      "wall_s": 38.24847447290085,
+      "alignment": [
+        {
+          "requested": [
+            0.0,
+            600.0,
+            2824.9310510208675,
+            7200.0
+          ],
+          "actual": [
+            0.0,
+            600.0,
+            2824.9310510208675,
+            7200.0
+          ],
+          "columns": 4,
+          "clearance_s": 5841.286419566183,
+          "callback_restored": true
+        }
+      ]
+    },
+    "[5.0, 0.01, 2.0]": {
+      "wall_s": 50.34205686696805,
+      "alignment": [
+        {
+          "requested": [
+            0.0,
+            600.0,
+            2547.72508209508,
+            43200.0
+          ],
+          "actual": [
+            0.0,
+            600.0,
+            2547.72508209508,
+            43200.0
+          ],
+          "columns": 4,
+          "clearance_s": 5268.062450947403,
+          "callback_restored": true
+        }
+      ]
+    }
+  },
+  "current_counts": {
+    "surface": 42,
+    "promoter": 84,
+    "BZY": 41
+  },
+  "current_transport_source_sha256": "4e4b6c984c67b973451612897651b898604cc926aa61d5d665d23c3dafed39be",
+  "current_input_fingerprint": "edd078f032b0fdea702f95134f262b0fd0bdd624edde72481485fb423f4e9563",
+  "wall_s": 57.93783591897227,
+  "unresolved_cells": 0
+}

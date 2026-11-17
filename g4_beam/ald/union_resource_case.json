@@ -1,0 +1,50 @@
+{
+  "selected_designs": 63,
+  "families": {
+    "1": 23,
+    "2": 40
+  },
+  "cap_recipe_endpoint_combinations": "all4 retention0/1 x sputter.1/10 for every selected material/thickness",
+  "resolved_already": 2,
+  "coverage": {
+    "0.25": {
+      "required": 488,
+      "reused": 488,
+      "missing": 0
+    },
+    "1.0": {
+      "required": 491,
+      "reused": 491,
+      "missing": 0
+    },
+    "2.5": {
+      "required": 344,
+      "reused": 38,
+      "missing": 306
+    },
+    "6.5": {
+      "required": 333,
+      "reused": 37,
+      "missing": 296
+    }
+  },
+  "missing_reference_age_kernels": 602,
+  "missing_unique_seal_Model_cases": 64,
+  "sum_measured_same_case_Model_wall_s": 316.44742802274413,
+  "Model_snapshot_IO_allowance_s": 474.6711420341162,
+  "remaining_forward_ages": {
+    "1": 3632,
+    "2": 8272
+  },
+  "measured_forward_s_per_age4fits": {
+    "seal": 0.49716187591858324,
+    "cap": 0.37664316109138546
+  },
+  "predicted_forward_CPU_s": 4921.284161884235,
+  "workers": 4,
+  "threads": 1,
+  "estimate_s": 3508.992182505175,
+  "estimate_minutes": 58.48320304175292,
+  "estimate_formula": "2s per missing highE reference age + 1.5x exact old same-case Model walls + measured forward age CPU/4 +600s I/O/import allowance",
+  "estimate_not_execution_result": true
+}

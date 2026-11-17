@@ -149,6 +149,9 @@ def forward_yields(E_cm_keV, profiles, *, Ue_keV=None, potential=None,
     Counts/C is per collected cup coulomb; physical yield/C per TRUE charged
     coulomb, including uncounted neutrals. Additional current power affects
     only reported_signal and R, never either physical or counts/C output.
+    Set reference_E_cm_keV=None for raw-only yields: no reference profile is
+    evaluated, R/reference_signal are None, and a physical zero yield is valid.
+    Normalized mode still rejects a zero reference; it never invents a floor.
     """
     if (Ue_keV is None)==(potential is None):
         raise ValueError('Provide exactly one of Ue_keV and potential')
@@ -159,7 +162,8 @@ def forward_yields(E_cm_keV, profiles, *, Ue_keV=None, potential=None,
         required={'Ue_hot','A','E_A_eV','T_track_K','E_R_eV'}
         if not required.issubset(p):raise ValueError('Explicit thermal parameters required: '+str(sorted(required)))
     energies=np.atleast_1d(np.asarray(E_cm_keV,float))
-    if np.any(~np.isfinite(energies)) or np.any(energies<=0) or reference_E_cm_keV<=0:
+    if (np.any(~np.isfinite(energies)) or np.any(energies<=0) or
+            (reference_E_cm_keV is not None and (not np.isfinite(reference_E_cm_keV) or reference_E_cm_keV<=0))):
         raise ValueError('Positive finite energies required')
     ch=meas.get('channel','p')
     if ch not in ('p','n'):raise ValueError('Explicit p or n channel required')
@@ -168,7 +172,7 @@ def forward_yields(E_cm_keV, profiles, *, Ue_keV=None, potential=None,
     if min(f1,f2)<0 or abs(f1+f2-1)>1e-10:raise ValueError('Current fractions must sum to one')
     gx,gw=np.polynomial.hermite_e.hermegauss(5);gw/=gw.sum()
     spread=meas.get('spread_FWHM',.05)/2.3548
-    maxe=max(np.max(energies),reference_E_cm_keV,p.get('E_n_lab_keV',5)/2)*(1+spread*np.max(gx))+max(0.,float(p.get('delta_Ue_surface_keV',0.)))
+    maxe=max(np.max(energies),0. if reference_E_cm_keV is None else reference_E_cm_keV,p.get('E_n_lab_keV',5)/2)*(1+spread*np.max(gx))+max(0.,float(p.get('delta_Ue_surface_keV',0.)))
     potential_xs=_potential_cross_section(potential,maxe,reaction) if potential is not None else None
     if potential is not None and candidate in ('layer','sigmoid_tt'):
         if 'delta_Ue_surface_keV' not in p:raise ValueError('Specify potential surface shift explicitly')
@@ -219,10 +223,16 @@ def forward_yields(E_cm_keV, profiles, *, Ue_keV=None, potential=None,
         counts=physical*efficiency/frac
         signal=counts/(current*frac)**meas.get('extra_current_power',0)
         return physical,counts,signal,yi/QE,yn/QE
-    values=np.array([at_energy(float(e)) for e in np.r_[energies,reference_E_cm_keV]])
-    if values[-1,2]<=0:raise ValueError('Reference signal is zero; R is undefined')
-    return dict(E_cm_keV=energies,R=values[:-1,2]/values[-1,2],
-                physical_yield_per_C=values[:-1,0],counts_per_C=values[:-1,1],
-                reported_signal=values[:-1,2],ion_yield_per_C=values[:-1,3],
-                neutral_yield_per_C=values[:-1,4],reference_signal=values[-1,2],
+    requested=energies if reference_E_cm_keV is None else np.r_[energies,reference_E_cm_keV]
+    values=np.array([at_energy(float(e)) for e in requested])
+    if reference_E_cm_keV is None:
+        physical_values=values;reference_signal=None;normalized=None
+    else:
+        if values[-1,2]<=0:raise ValueError('Reference signal is zero; R is undefined')
+        physical_values=values[:-1];reference_signal=values[-1,2]
+        normalized=physical_values[:,2]/reference_signal
+    return dict(E_cm_keV=energies,R=normalized,
+                physical_yield_per_C=physical_values[:,0],counts_per_C=physical_values[:,1],
+                reported_signal=physical_values[:,2],ion_yield_per_C=physical_values[:,3],
+                neutral_yield_per_C=physical_values[:,4],reference_signal=reference_signal,
                 reference_E_cm_keV=reference_E_cm_keV,channel=ch)

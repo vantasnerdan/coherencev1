@@ -451,7 +451,8 @@ class Model:
             return 0.0, np.inf, self.s_front
         o = self.ol
         w = d / (d + 0.1e-9)
-        return w, o["perm"] / d, o["s"] * w + self.s_front * (1 - w)
+        s = o["s"] if o.get("sticking_is_patch_value", False) else o["s"] * w + self.s_front * (1 - w)
+        return w, o["perm"] / d, s
 
     def front_flux(self, mu0, d):
         """Net D atoms per m2 per s leaving the metal at the vacuum side (positive = out)."""
@@ -494,10 +495,14 @@ class Model:
         self._floor = np.concatenate([np.full(3 * N, 1e-10), [1e-13]])
 
     def jac(self, t, y, beam_on=True):
-        """Grouped sparse forward-difference Jacobian with fixed relative steps (avoids the adaptive-step
-        overflow of scipy's num_jac on near-inert bulk cells)."""
+        """Grouped sparse differences stay on the current isotherm branch.
+        Fixed relative scales avoid adaptive-step overflow in near-inert cells."""
         f0 = self.rhs(t, y, beam_on)
         hs = 1e-7 * np.maximum(np.abs(y), self._floor)
+        x = y[:self.N]
+        h = hs[:self.N]
+        crosses = ((x < self.iso.a) & (x + h >= self.iso.a)) | ((x >= self.iso.a) & (x <= self.iso.b) & (x + h > self.iso.b))
+        h[crosses] *= -1
         vals = np.empty(len(self._rows))
         gc = self._groups[self._cols]
         for g in range(self._ng):
@@ -603,6 +608,74 @@ class Model:
     def run(self, n_out=60):
         return self.run_te(np.linspace(0, self.c["t_run"], n_out + 1)[1:])
 
+    def _switching_beam(self, y0, te, kw):
+        """Resolve an overlayer/clean boundary without smearing its jump.
+
+        The constitutive law is extended smoothly only for implicit trial states
+        outside the active phase. Accepted states obey the original law. The
+        erosion equation and public requested-time columns are unchanged.
+        """
+        te = np.asarray(te, dtype=float)
+        index = 3 * self.N
+        cutoff = 1e-12
+        original = self.ol_state
+        had_override = "ol_state" in self.__dict__
+        override = self.__dict__.get("ol_state")
+        first = second = None
+        rhs = lambda t, y: self.rhs(t, y, beam_on=True)
+        jac = lambda t, y: self.jac(t, y, True)
+        try:
+            if y0[index] > cutoff:
+                self.ol_state = lambda d: original(max(float(d), np.nextafter(cutoff, np.inf)))
+                def cleared(t, y):
+                    return y[index] - cutoff
+                cleared.terminal = True
+                cleared.direction = -1
+                first = solve_ivp(rhs, (0, self.c["t_run"]), y0, t_eval=te,
+                                  events=cleared, dense_output=True, jac=jac, **kw)
+                if not first.success:
+                    raise RuntimeError("Covered-patch phase: " + first.message)
+                if not len(first.t_events[0]):
+                    self._overlayer_clearance_s = None
+                    first.sol = None
+                    return first
+                transition = float(first.t_events[0][0])
+                state = first.y_events[0][0].copy()
+                self._overlayer_event_roundoff_m = float(state[index] - cutoff)
+                state[index] = cutoff  # enforce the event root, not a density floor
+            else:
+                transition = 0.
+                state = y0
+                self._overlayer_event_roundoff_m = 0.
+            self.ol_state = lambda d: original(min(float(d), cutoff))
+            if transition < self.c["t_run"]:
+                second = solve_ivp(rhs, (transition, self.c["t_run"]), state,
+                                   t_eval=te[te >= transition], dense_output=True, jac=jac, **kw)
+                if not second.success:
+                    raise RuntimeError("Cleared-patch phase: " + second.message)
+            values = np.empty((len(y0), len(te)))
+            before = te < transition
+            if np.any(before):
+                values[:, before] = first.sol(te[before])
+            if np.any(~before):
+                values[:, ~before] = second.sol(te[~before]) if second is not None else state[:, None]
+            result = second if second is not None else first
+            for statistic in ("nfev", "njev", "nlu"):
+                result[statistic] = sum(getattr(s, statistic) for s in (first, second) if s is not None)
+            result.t = te
+            result.y = values
+            result.sol = None
+            result.status = 0
+            result.message = "Reached run end with a resolved overlayer-clearance event."
+            result.t_events = result.y_events = None
+            self._overlayer_clearance_s = transition
+            return result
+        finally:
+            if had_override:
+                self.ol_state = override
+            else:
+                del self.ol_state
+
     def run_te(self, te):
         y0 = self.initial()
         sols = []
@@ -614,18 +687,23 @@ class Model:
             y0 = s.y[:, -1]
             t0 = self.c["t_pre"]
             sols.append(s)
-        s = solve_ivp(lambda t, y: self.rhs(t, y, beam_on=True), (0, self.c["t_run"]), y0, t_eval=te,
-                          jac=lambda t, y: self.jac(t, y, True), **kw)
-        if not s.success:   # retry: Radau with the same sparsity, then BDF with looser tolerances
-            kw2 = dict(kw, method="Radau")
+        if self.ol is not None and self.G0 == 0:
+            if sols and not sols[-1].success:
+                raise RuntimeError("Preloading: " + sols[-1].message)
+            s = self._switching_beam(y0, te, kw)
+        else:
             s = solve_ivp(lambda t, y: self.rhs(t, y, beam_on=True), (0, self.c["t_run"]), y0, t_eval=te,
-                          jac=lambda t, y: self.jac(t, y, True), **kw2)
-        if not s.success:
-            kw3 = dict(kw, rtol=3e-5, atol=1e-12)
-            s = solve_ivp(lambda t, y: self.rhs(t, y, beam_on=True), (0, self.c["t_run"]), y0, t_eval=te,
-                          jac=lambda t, y: self.jac(t, y, True), **kw3)
-        if not s.success:
-            raise RuntimeError(s.message)
+                              jac=lambda t, y: self.jac(t, y, True), **kw)
+            if not s.success:   # retry: Radau with the same sparsity, then BDF with looser tolerances
+                kw2 = dict(kw, method="Radau")
+                s = solve_ivp(lambda t, y: self.rhs(t, y, beam_on=True), (0, self.c["t_run"]), y0, t_eval=te,
+                              jac=lambda t, y: self.jac(t, y, True), **kw2)
+            if not s.success:
+                kw3 = dict(kw, rtol=3e-5, atol=1e-12)
+                s = solve_ivp(lambda t, y: self.rhs(t, y, beam_on=True), (0, self.c["t_run"]), y0, t_eval=te,
+                              jac=lambda t, y: self.jac(t, y, True), **kw3)
+            if not s.success:
+                raise RuntimeError(s.message)
         self.sol = s
         self.t_beam = s.t
         return self
@@ -644,6 +722,8 @@ class Model:
         mu_s = self.kT * np.log(max(b, 1e-300))
         w, Pi, s = self.ol_state(d)
         Eads = self.mat["Eads"] if (self.ol is None or w < 0.5) else 0.2
+        if self.ol is not None and d > 1e-12:
+            Eads = self.ol.get("Eads", Eads)  # explicit binding-energy assumption for this outer surface
         th = 1 / (1 + np.exp(np.clip(-(mu_s + Eads) / self.kT, -200, 200)))
         k_ex = 2 * s * self.G1 * (self.p_gas + b * b) / self.mat["ns"] + 1e-6
         th = th / (1 + self.c["sigma_des"] * self.F / k_ex)
@@ -663,7 +743,7 @@ class Model:
             else:
                 xo = float(langmuir_x(mu_mid, o["mu0"], o["xm"], self.kT))
             layers.append((0.0, d, o["n"] * o["natoms"], o["n"] * xo, o["Z"], o["M"], o["n"] * o["nmet"]))
-        top = d
+        top = d if layers else 0.0
         # host density falls with D content (lattice expansion): Pd ~ +11% volume at x 0.7; delta-TiD2 Ti density
         # 4.53e28 vs 5.67e28 m^-3 in alpha-Ti
         kexp = 0.16 if self.mat["name"] == "Pd" else 0.125
@@ -671,7 +751,7 @@ class Model:
             nh = self.nM / (1 + kexp * (x[i] + xt[i]))
             layers.append((top + self.e[i], top + self.e[i + 1], nh, nh * (x[i] + xt[i]),
                            self.mat["Z"], self.mat["M"], nh))
-        return layers, nads, dict(x=x, xt=xt, v=v, d=d, zc=self.zc + d)
+        return layers, nads, dict(x=x, xt=xt, v=v, d=d, zc=self.zc + top, surface_offset_m=top)
 
     def window_DM(self, depth, k=-1, with_ads=False):
         """Mean D per metal atom in [0, depth] (overlayer counted per its metal atom), mean D density (nm^-3),
