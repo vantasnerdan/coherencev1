@@ -1,0 +1,40 @@
+{
+  "schema": "coherence-connected-elbow-run-v1",
+  "selected_indices": [
+    3,
+    4,
+    5,
+    7,
+    8,
+    9
+  ],
+  "kmesh": [
+    10,
+    5,
+    1
+  ],
+  "cutoff_eV": 300.0,
+  "xc": "PBE",
+  "Pd_valence": 10,
+  "H_valence": 1,
+  "convergence": {
+    "energy": 1e-07,
+    "density": 1e-06,
+    "eigenstates": 1e-09
+  },
+  "symmetry": {
+    "point_group": false,
+    "time_reversal": true
+  },
+  "meaning": "Explicit fixed-coordinate path upper bound, not a relaxed saddle or capture calculation",
+  "route": {
+    "path": "data/elbow-final/final-route.traj",
+    "bytes": 15341,
+    "sha256": "92a13eafa477599dfb391d01d77a27aa3134e64bc824f07c86242d1a2b41be7f"
+  },
+  "artifact_form": "scientific_metadata_derivative",
+  "source_original_input_identity": {
+    "bytes": 1544,
+    "sha256": "474986df37d8f09d9a14b378fc2d400c62bb0acde8aa93aaebbef3090df29096"
+  }
+}

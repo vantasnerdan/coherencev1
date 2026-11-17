@@ -1,0 +1,45 @@
+{
+  "schema": "coherence-pass5-open-items-v1",
+  "decision": "Coherencev1 entry_1607, entry_1736, entry_1749",
+  "node_budget_core_min": 800,
+  "active_priority": [
+    "Coverage-dependent equilibrium sheet model from qualified1ML and0.5/0.25ML electronic/local-harmonic free energies",
+    "Report the highest computed restricted-route frame and its conditional detailed-balance factor; no further geometry refinements",
+    "Compare both no-beam states with barrierless entry_1681, then deliver; no oxide Native before this delivery"
+  ],
+  "items": [
+    {
+      "item": "Matched k-mesh and slab-thickness qualification of the highest computed restricted-route frame",
+      "status": "open; deferred by entry_1749. PBE/PW300/10x5x1 ridge drives a sensitivity only, not a transport-ledger replacement"
+    },
+    {
+      "item": "Global clean-Pd activation/barrierlessness beyond this sampled restricted-route upper-bound calculation",
+      "status": "open; a positive restricted-path ridge does not establish a global activation barrier"
+    },
+    {
+      "item": "First full-layer Al2O3/Pd D binding and single-layer passage with local harmonic corrections",
+      "status": "open; deferred by the final capped route/readout-and-deliver decision"
+    },
+    {
+      "item": "Full lower-coverage recombination-barrier k/slab qualification beyond the revised sheet-energy model",
+      "status": "open; deferred by the revised priority"
+    },
+    {
+      "item": "Al2O3 island recombination chemistry beyond the optional full-layer case",
+      "status": "open; deferred by the revised priority"
+    },
+    {
+      "item": "Y2O3 island and full-layer adsorption/recombination cases as the Er2O3 stand-in",
+      "status": "open; deferred by the revised priority"
+    },
+    {
+      "item": "BaO, SrO and La2O3 donor promoters: adsorption/recombination, work-function change and transferred surface charge",
+      "status": "open; explicitly deferred for this pass"
+    },
+    {
+      "item": "Two- and three-layer Al2O3 D binding and permeation beyond the optional one-layer case",
+      "status": "open; deferred by the revised priority"
+    }
+  ],
+  "reason": "The lead reports sputter lifetime as the controlling ALD limitation and no reconciliation of the UC Davis count ratio from sheet occupancy alone. These observations change allocation; they are not substitute atomistic calculations of the open cases."
+}

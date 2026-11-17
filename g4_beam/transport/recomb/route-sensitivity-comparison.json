@@ -1,0 +1,118 @@
+{
+  "schema": "coherence-route-transport-sensitivity-comparison-v1",
+  "scope": "Numerically converged sensitivity only; restricted PBE/PW300/10x5x1 ridge lacks peak k/slab controls. No transport ledger replacement.",
+  "baseline_original_identity": {
+    "bytes": 127057,
+    "sha256": "92a100c70fdae52dcafcaa958e5f615b3ff9b1987639ef1b6648280f3cd7c66c"
+  },
+  "baseline_numerical_replay_identity": {
+    "bytes": 128236,
+    "sha256": "71d8b06498b057447a504e70fd4d6616fc63228508f963c3df632254b5d44dcc"
+  },
+  "sensitivity_original_identity": {
+    "bytes": 130387,
+    "sha256": "7237dce7d3e5581202d3fd0c15ea1f984a78029687c04144bbc390a9df1961a6"
+  },
+  "final_route_original_identity": {
+    "bytes": 33526,
+    "sha256": "58b9cd45863bdc7f9e852423dd1a14e1ec9560c71f13714b2296e706bcc5389b"
+  },
+  "sampled_peak_index": 14,
+  "sampled_peak_eV": 0.09809129744521528,
+  "relaxed_central_knot_excess_eV": 0.024395735820633035,
+  "force_interpolation_is_diagnostic_not_DFT": true,
+  "conditional_factors": [
+    {
+      "temperature_K": 305.0332303785795,
+      "kT_eV": 0.026285729222379355,
+      "relative_rate_factor": 0.023951315698662996,
+      "conditional_capture": 0.011975657849331498
+    },
+    {
+      "temperature_K": 301.40496912917996,
+      "kT_eV": 0.025973069868408638,
+      "relative_rate_factor": 0.022899184726382305,
+      "conditional_capture": 0.011449592363191152
+    }
+  ],
+  "baseline_observables_preserved_exactly": true,
+  "baseline_max_state_absolute_difference": 2.4868995751603507e-14,
+  "rows": [
+    {
+      "state": "gas-equilibrated Pd",
+      "T_K": 305.0332303785795,
+      "barrierless": {
+        "state": "gas-equilibrated Pd",
+        "T_K": 305.0332303785795,
+        "theta_ML": 0.7814494103411498,
+        "s_effective": 0.02388158292520376,
+        "D2_desorption_events_m2_s": 65814737999573100000
+      },
+      "sensitivity": {
+        "state": "gas-equilibrated Pd",
+        "T_K": 305.0332303785795,
+        "theta_ML": 0.7814494103411498,
+        "s_effective": 0.000571995332025355,
+        "D2_desorption_events_m2_s": 1576349567452567300
+      },
+      "theta_change_ML": 0,
+      "release_rate_ratio": 0.023951315698662996
+    },
+    {
+      "state": "bulk-fed PdD; frozen7200s vacancies",
+      "T_K": 301.40496912917996,
+      "barrierless": {
+        "state": "bulk-fed PdD; frozen7200s vacancies",
+        "T_K": 301.40496912917996,
+        "theta_ML": 0.99996817781901,
+        "s_effective": 5.063129403620425e-10,
+        "D2_desorption_events_m2_s": 775044251721722800000,
+        "top100nm_max_x_plus_xt": 0.8365943837217181
+      },
+      "sensitivity": {
+        "state": "bulk-fed PdD; frozen7200s vacancies",
+        "T_K": 301.40496912917996,
+        "theta_ML": 0.9999815637712073,
+        "s_effective": 3.891556524767238e-12,
+        "D2_desorption_events_m2_s": 17750944103401212000,
+        "top100nm_max_x_plus_xt": 0.8594410589324173
+      },
+      "theta_change_ML": 1.3385952197242368e-05,
+      "release_rate_ratio": 0.0229031362583083
+    }
+  ],
+  "sensitivity_closure": {
+    "status": "converged_frozen_v_steady",
+    "theta": 0.9999815637712073,
+    "s_effective": 3.891556524767238e-12,
+    "desorption": 17750944103401212000,
+    "top100nm_max": 0.8594410589324173,
+    "coverage_change": 1.1013412404281553e-13,
+    "s_relative_change": 1.1947577803647087e-08,
+    "rate_relative_change": 1.4203710998748063e-12,
+    "mass_residual": 6.070346312557278e-07,
+    "cell_residual": 3.7122234804892766e-06,
+    "grids": [
+      {
+        "grid_cells": 244,
+        "theta_ML": 0.9999815637713174,
+        "s_effective": 3.891556478272564e-12,
+        "refinement": 1
+      },
+      {
+        "grid_cells": 484,
+        "theta_ML": 0.9999815637712073,
+        "refinement": 2,
+        "s_effective": 3.891556524767238e-12,
+        "effective_s_relative_change": 1.1947577803647087e-08,
+        "recombination_rate_relative_change": 1.4203710998748063e-12,
+        "change_ML": 1.1013412404281553e-13,
+        "invariants_passed": true
+      }
+    ]
+  },
+  "transport_source_sha256": "383aad3068c5d5b62fc5f031ccfe8c35c1c6ab426f41daeca6c18aeba3d4a47e",
+  "transport_source_defaults_changed": false,
+  "transport_ledger_replacement_authorized": false,
+  "Native_launched_by_sensitivity": false
+}

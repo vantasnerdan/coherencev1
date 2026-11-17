@@ -1,0 +1,41 @@
+{
+  "schema": "coherence-recomb-conservative-cost-v1",
+  "node": "g5_recomb",
+  "node_cap_core_min": 800,
+  "path_cap_core_min": 160,
+  "pre_path_conservative_CPUUsageNSec": "34017984009000",
+  "path_admission_and_failures_conservative_CPUUsageNSec": "658103083000",
+  "final_native_segments": [
+    {
+      "phase": "p5connected-elbow-route-20261117t201746z",
+      "InvocationID": "58f7bf1d8ec94c3a91288af3f3d8d131",
+      "sampled_CPUUsageNSec": "4494098608000",
+      "unsampled_post_tail_reserve_NS": "60000000000",
+      "result": "timeout; complete frames1..14 retained; incomplete15 discarded"
+    },
+    {
+      "phase": "p5connected-tail-20261117t221322z",
+      "InvocationID": "c4f21b246faa43eea64e2a7f4f954e28",
+      "sampled_CPUUsageNSec": "573504161000",
+      "unsampled_post_tail_reserve_NS": "60000000000",
+      "result": "success; actual15/16 retained"
+    },
+    {
+      "phase": "p5connected-final-20261117t215352z",
+      "InvocationID": "20e8e401f7d149b3b2e67658d7884a43",
+      "sampled_CPUUsageNSec": "1994596799000",
+      "unsampled_post_tail_reserve_NS": "60000000000",
+      "result": "success; actual3/4/5/7/8/9 retained"
+    }
+  ],
+  "settled_path_conservative_CPUUsageNSec": "7900302651000",
+  "settled_path_core_min": 131.67171085,
+  "settled_node_conservative_CPUUsageNSec": "41918286660000",
+  "settled_node_core_min": 698.638111,
+  "pure_readout_and_packaging_reserve_core_min": 20,
+  "whole_upper_bound_including_reserve_core_min": 718.638111,
+  "extra_peak_controls_launched": false,
+  "oxide_Native_launched": false,
+  "further_path_refinement_authorized": false,
+  "original_transport_source_changed": false
+}

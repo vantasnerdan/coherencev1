@@ -1,0 +1,167 @@
+{
+  "schema": "coherence-pass5-recomb-input-ledger-v1",
+  "scope": "Settled material inputs only; no transport source defaults changed. Coverage fit and absolute rate are not supplied by this partial ledger.",
+  "repository_baseline_commit": "853c37738caca76ba70cefd8f4df7350bc204937",
+  "contracts": {
+    "reference": "Binding per D relative to one half D2 at1Pa; positive binding favorable",
+    "isotope_mass_u": 2.014101778,
+    "site_area_model": "One adsorption site per primitive Pd111 surface atom",
+    "intrinsic_capture_probability_computed": false,
+    "configuration_entropy": "Not included in these input free energies; sheet model adds it once"
+  },
+  "gas_reference": {
+    "path": "inputs/D2-gas-point.json",
+    "bytes": 1155,
+    "sha256": "a79cd4c97596a60ea2e179a7751c303bc9b18c394788385012f7f2e5a4cf7aa9"
+  },
+  "cases": [
+    {
+      "coverage_ML": 1,
+      "model": "Three-layer1x2 neutral PBE/Pd10/H1/PW300; bottom2 clamped, full mobile harmonic spectrum",
+      "kmesh": [
+        10,
+        5,
+        1
+      ],
+      "electronic_binding_eV_per_D": 0.4885751419748168,
+      "mean_binding_rows": [
+        {
+          "T_K": 305.0332303785795,
+          "full_mobile_binding_eV_per_D": 0.11677291831473502,
+          "local_D_only_binding_eV_per_D": 0.12244009927817973,
+          "local_minus_full_binding_eV_per_D": 0.005667180963444707
+        },
+        {
+          "T_K": 301.40496912917996,
+          "full_mobile_binding_eV_per_D": 0.12119041410073617,
+          "local_D_only_binding_eV_per_D": 0.1268055102709783,
+          "local_minus_full_binding_eV_per_D": 0.00561509617024214
+        }
+      ],
+      "numerical_controls": {
+        "k_pair_energy_change_eV": 0.02846020255439896,
+        "slab_pair_energy_change_eV": 0.005985445128189326,
+        "target_eV": 0.03,
+        "scope": "Matched electronic pair controls of the same phase; k control precedes strict vibrational refinement",
+        "k_source": {
+          "path": "inputs/k_source.json",
+          "bytes": 642,
+          "sha256": "1b3a2e37726c22144eaa6e868d29f15e80e16ece4ddfdf38cd561d00da3f3ba1"
+        },
+        "slab_source": {
+          "path": "inputs/slab_source.json",
+          "bytes": 312,
+          "sha256": "71c2914422ef4b5dd854a53d4011d94ceb6cb0431bc3237e069d1f7691b0b712"
+        }
+      },
+      "source": {
+        "path": "inputs/full-1ML-thermochemistry.json",
+        "bytes": 3678,
+        "sha256": "291443261425eaaebf431abcf21a4cad2ef9fbec6598b7015491423d27090a85"
+      }
+    },
+    {
+      "coverage_ML": 0.5,
+      "model": "Ordered neutral adsorption phase; bottom2Pd layers clamped, all topPd+D relaxed. Local three-Cartesian-D harmonic free energy on that relaxed geometry. PBE/Pd10/H1/PW300/gamma-centered10x5x1/FD0.05eV.",
+      "kmesh": [
+        10,
+        5,
+        1
+      ],
+      "electronic_binding_eV_per_D": 0.518458838739825,
+      "mean_binding_rows": [
+        {
+          "T_K": 305.0332303785795,
+          "local_D_only_binding_eV_per_D": 0.1598153977000707
+        },
+        {
+          "T_K": 301.40496912917996,
+          "local_D_only_binding_eV_per_D": 0.16415482289878924
+        }
+      ],
+      "signed_local_D_quanta_eV": [
+        0.07213373456585197,
+        0.07269493177576014,
+        0.09415767777623721
+      ],
+      "full_mobile_fmax_eV_A": 0.030683142707434143,
+      "source": {
+        "path": "inputs/half-local-hessian.json",
+        "bytes": 2295,
+        "sha256": "eb6c21bfe3c0f89eb3624732f919fc6dff1a1c542bacf309377c69449cd1ef5e"
+      },
+      "clean_reference": {
+        "path": "inputs/half-clean-reference.json",
+        "bytes": 184,
+        "sha256": "4b1c02c890af01614de8ea35ebf5110b8ea207b2bd38af7c3bfeb0f01d5572d0",
+        "energy_field": "center_energy_eV"
+      },
+      "original_report_identity": {
+        "bytes": 213784,
+        "sha256": "49fcb6fa31c76b2a6cefb2511fa31d6f07fa424e79c0358c99a571f60e764397"
+      },
+      "Native_total_CPUUsageNSec": "2202400923000",
+      "limitations": [
+        "Local-D correction omits Pd vibrational changes; accepted by the full1ML comparison, not recomputed here.",
+        "Three-layer PBE/PW300/Pd10 slab and ordered periodic adsorption phase; prior numerical qualification reused.",
+        "No nuclear-spin ortho/para entropy in the classical rigid rotor; gas is D2 at1Pa."
+      ]
+    },
+    {
+      "coverage_ML": 0.25,
+      "model": "One D/2x2 ordered Pd111, bottom2 fixed, topPd+D relaxed; local D harmonic correction with frozen Pd displacement background; half ideal D2 RRHO at1Pa; no configurational entropy, fitting, coverage closure, or full-Pd harmonic correction.",
+      "kmesh": [
+        5,
+        5,
+        1
+      ],
+      "electronic_binding_eV_per_D": 0.5298650822216153,
+      "electronic_energy_convention": "Tight local-spectrum center, as in the half case; original loose endpoint retained in the immutable report",
+      "original_loose_endpoint_binding_eV_per_D": 0.5298542299917308,
+      "tight_center_binding_shift_eV_per_D": 1.085222988450596e-05,
+      "mean_binding_rows": [
+        {
+          "T_K": 305.0332303785795,
+          "local_D_only_binding_eV_per_D": 0.17418132528294794
+        },
+        {
+          "T_K": 301.40496912917996,
+          "local_D_only_binding_eV_per_D": 0.1785111527843376
+        }
+      ],
+      "signed_local_D_quanta_eV": [
+        0.07123577079485376,
+        0.07125721200000906,
+        0.09108541457680025
+      ],
+      "full_mobile_fmax_eV_A": 0.04221933968171011,
+      "source": {
+        "path": "inputs/quarter-local-hessian.json",
+        "bytes": 2306,
+        "sha256": "1fd5a3a43a2008a5637ce44aa5a028f77107bc93dc20cc14e9b7159fa06893e5"
+      },
+      "clean_reference": {
+        "path": "inputs/quarter-clean-reference.json",
+        "bytes": 188,
+        "sha256": "3c1871b060bb6163b7e05de66c1e69861d80f0e5685436d442391644a2c1ff41",
+        "energy_field": "energy_extrapolated_eV"
+      },
+      "clean_folding_difference_eV": 3.4565053397273005e-07,
+      "original_report_identity": {
+        "bytes": 139862,
+        "sha256": "3af646c54331c22bc0508890441b9b4e025a588793c66477c0def2aa258feeeb"
+      },
+      "Native_counter_CPUUsageNSec": "4955413019000",
+      "unsampled_stop_post_reserve_s": 180,
+      "limitations": [
+        "Local frozen-Pd vibrational correction after fully topPd+D-relaxed geometry, not full coupled-Pd spectrum.",
+        "PBE/Pd10/PW300 finite three-layer neutral ordered slab; no configurational entropy or coverage-model fit.",
+        "Runtime or budget obstruction, if any, is not physical refutation."
+      ]
+    }
+  ],
+  "source_original_ledger_identity": {
+    "bytes": 6760,
+    "sha256": "ca993d67cbafe65d8ca41ccc60810c2875c956e660a939168e57c1af2126d9f1"
+  }
+}

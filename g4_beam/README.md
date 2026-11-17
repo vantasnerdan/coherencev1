@@ -28,6 +28,7 @@ One static number cannot serve both, so the shared deliverable is eps(q) over th
 | `priordata/` | Other low-energy d+d datasets in one table, plateau comparison |
 | `merit/` | Pass 5: yield of any layered target relative to the transported UC Davis PdD foil, side by side with the UC Davis values (`compare.csv`); causes refitted on transported profiles |
 | `causes/` | Pass 5: how each plateau cause responds to beam and target changes, surface-density and sheet-occupancy scans, Zenodo column list |
+| `transport/recomb/` | Pass 5: first-principles D sheet on clean Pd(111), no-beam coverage and D2 release, connected clean recombination route |
 | `ald/` | Pass 5: 245 ALD designs in six families (sealing oxides, deuteride caps, deuterated oxides, donor promoters, BZY proton conductor, Pd/oxide nanolaminates), with run-integrated merit, erosion and cap sputter thresholds |
 
 Run every script from its own directory, except `work/` scripts and `priordata/scripts/compare.py .`, which run from `g4_beam/`.
@@ -97,6 +98,18 @@ Pass 5 (`ald/`): the merit is the charge-integrated D(d,p)T yield over the paper
 - **The cap's other endpoints.** At nominal sputter the scaled values are 12.5/1.6/7.0. A cap that loses its D gives 0.1 to 1.
 - **Measured anchor.** The SI Table 1 TiD/PdD counts are 1.9 to 2.8 at 0.25-2 keV, 6.1 at 2.5 keV and 11.7 at 3 keV. Model TiD/PdD runs 1.2 to 8.4 times above them.
 - **Sputter thresholds** for 10x are in `cap_sputter_thresholds.csv`. Scaled to the measured counts, 1 keV needs sputter about 30 to 40 times below nominal. Rising screening at 2.5 keV and neutrals at 0.25 keV stay below 10 even with no erosion.
+
+Pass 5 (`transport/recomb/`): the D sheet on clean Pd(111) from first principles (PBE, relaxed, local harmonic corrections calibrated at 1 ML).
+- **Binding.** The electronic binding is 0.489 eV/D at 1 ML and 0.518 eV/D at 0.5 ML. Against half a D2 at 1 Pa and 305 K, the binding is 0.117 eV/D.
+- **No-beam sheet**, with capture assumed at 0.5:
+
+| State | Sheet (ML) | D2 release (m^-2 s^-1) |
+|---|---|---|
+| Pd, equilibrated with 0.037 Pa D2 | 0.78 | 6.6e19 |
+| PdD, fed from the bulk | 1.00 | 7.8e20 |
+
+- **Clean recombination route.** The connected bridge-to-fcc route peaks 98 meV above clean surface plus gas, at the highest sampled frame. This is a restricted route, and the peak is not k- or slab-qualified. As a sensitivity, it lowers D2 release by a factor of 42 to 44 and leaves the sheet unchanged.
+- **The transport model keeps its surface inputs.** The sheet the data prefer depends on beam stripping, which none of these calculations includes.
 
 Open transport item: `transport.py` lets superabundant vacancies reach 0.25 per Pd with 6 D each, so an infinite-time bulk-fed steady state holds 2.3 D/Pd. The 2 to 12 h run-end profiles used here are unaffected (vacancies move about 1 nm in 12 h). Superabundant-vacancy formation needs a kinetic limit before any long-time state is used.
 

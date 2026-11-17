@@ -1,0 +1,854 @@
+{
+  "schema": "coherence-connected-elbow-readout-v1",
+  "Native_inputs": [
+    {
+      "schema": "coherence-connected-elbow-run-v1",
+      "selected_indices": [
+        0
+      ],
+      "kmesh": [
+        10,
+        5,
+        1
+      ],
+      "cutoff_eV": 300.0,
+      "xc": "PBE",
+      "Pd_valence": 10,
+      "H_valence": 1,
+      "convergence": {
+        "energy": 1e-07,
+        "density": 1e-06,
+        "eigenstates": 1e-09
+      },
+      "symmetry": {
+        "point_group": false,
+        "time_reversal": true
+      },
+      "meaning": "Explicit fixed-coordinate path upper bound, not a relaxed saddle or capture calculation",
+      "route": {
+        "path": "data/elbow-final/original-route.traj",
+        "bytes": 15341,
+        "sha256": "5c397fa803f6f475d0684708d5e90ecbf031c899eee89d51e9fded50ac37b845"
+      },
+      "artifact_form": "scientific_metadata_derivative",
+      "source_original_input_identity": {
+        "bytes": 1507,
+        "sha256": "b780161c6c5d57e9a22928871d6348f4ab1dc4bf3d461198256f8d0d91ff2fcb"
+      }
+    },
+    {
+      "schema": "coherence-connected-elbow-run-v1",
+      "selected_indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "kmesh": [
+        10,
+        5,
+        1
+      ],
+      "cutoff_eV": 300.0,
+      "xc": "PBE",
+      "Pd_valence": 10,
+      "H_valence": 1,
+      "convergence": {
+        "energy": 1e-07,
+        "density": 1e-06,
+        "eigenstates": 1e-09
+      },
+      "symmetry": {
+        "point_group": false,
+        "time_reversal": true
+      },
+      "meaning": "Explicit fixed-coordinate path upper bound, not a relaxed saddle or capture calculation",
+      "route": {
+        "path": "data/elbow-final/original-route.traj",
+        "bytes": 15341,
+        "sha256": "5c397fa803f6f475d0684708d5e90ecbf031c899eee89d51e9fded50ac37b845"
+      },
+      "artifact_form": "scientific_metadata_derivative",
+      "source_original_input_identity": {
+        "bytes": 1619,
+        "sha256": "6c331dfcbe222fcbabb420e8ec1e11180030cf2a8460825468cf4483a9f4bd3e"
+      }
+    },
+    {
+      "schema": "coherence-connected-elbow-run-v1",
+      "selected_indices": [
+        3,
+        4,
+        5,
+        7,
+        8,
+        9
+      ],
+      "kmesh": [
+        10,
+        5,
+        1
+      ],
+      "cutoff_eV": 300.0,
+      "xc": "PBE",
+      "Pd_valence": 10,
+      "H_valence": 1,
+      "convergence": {
+        "energy": 1e-07,
+        "density": 1e-06,
+        "eigenstates": 1e-09
+      },
+      "symmetry": {
+        "point_group": false,
+        "time_reversal": true
+      },
+      "meaning": "Explicit fixed-coordinate path upper bound, not a relaxed saddle or capture calculation",
+      "route": {
+        "path": "data/elbow-final/final-route.traj",
+        "bytes": 15341,
+        "sha256": "92a13eafa477599dfb391d01d77a27aa3134e64bc824f07c86242d1a2b41be7f"
+      },
+      "artifact_form": "scientific_metadata_derivative",
+      "source_original_input_identity": {
+        "bytes": 1544,
+        "sha256": "474986df37d8f09d9a14b378fc2d400c62bb0acde8aa93aaebbef3090df29096"
+      }
+    },
+    {
+      "schema": "coherence-connected-elbow-run-v1",
+      "selected_indices": [
+        15,
+        16
+      ],
+      "kmesh": [
+        10,
+        5,
+        1
+      ],
+      "cutoff_eV": 300.0,
+      "xc": "PBE",
+      "Pd_valence": 10,
+      "H_valence": 1,
+      "convergence": {
+        "energy": 1e-07,
+        "density": 1e-06,
+        "eigenstates": 1e-09
+      },
+      "symmetry": {
+        "point_group": false,
+        "time_reversal": true
+      },
+      "meaning": "Explicit fixed-coordinate path upper bound, not a relaxed saddle or capture calculation",
+      "route": {
+        "path": "data/elbow-final/final-route.traj",
+        "bytes": 15341,
+        "sha256": "92a13eafa477599dfb391d01d77a27aa3134e64bc824f07c86242d1a2b41be7f"
+      },
+      "artifact_form": "scientific_metadata_derivative",
+      "source_original_input_identity": {
+        "bytes": 1518,
+        "sha256": "e414d8b65d181da86afec3485e6a5ec54ecf5b106d62ea6e4cd5a52658f78776"
+      }
+    }
+  ],
+  "Native_terminals": [
+    {
+      "status": "path_complete",
+      "error": null,
+      "process_cpu_s": 536.509019913,
+      "in_flight_reuse_proven": false,
+      "completed_points": [
+        {
+          "path": "data/elbow-final/point-000.json",
+          "bytes": 2592,
+          "sha256": "3c16d42d8040d2167f8d4d31768262c045f99e270772d00ef95a218407c0ff28"
+        }
+      ],
+      "artifact_form": "delivered_subset_of_authentic_completed_points",
+      "source_original_terminal_identity": {
+        "bytes": 382,
+        "sha256": "baec6156fd0afdd6efe0feb227464f0d446f216550dbbed1fdab6c474343c239"
+      },
+      "original_completed_indices": [
+        0
+      ]
+    },
+    {
+      "status": "native_bounded_stop",
+      "error": "Native signal15; unfinished frame is not admitted",
+      "process_cpu_s": 4493.899705843,
+      "in_flight_reuse_proven": false,
+      "completed_points": [
+        {
+          "path": "data/elbow-final/point-001.json",
+          "bytes": 2578,
+          "sha256": "3b797f6c8b68c4f5603d9ff99067d3228f21444ff26052c9ebdf83451144ccd3"
+        },
+        {
+          "path": "data/elbow-final/point-002.json",
+          "bytes": 2587,
+          "sha256": "30574c22b27b46e9d53529cdb0626619a27e343c74ef4db07567ec556c48a449"
+        },
+        {
+          "path": "data/elbow-final/point-006.json",
+          "bytes": 2541,
+          "sha256": "1473929b99929b05ebe218560aa3c19994722e8f1fe9997e613f0b5a33dce291"
+        },
+        {
+          "path": "data/elbow-final/point-010.json",
+          "bytes": 2551,
+          "sha256": "c992e40d82ea2f4fb2f539ccfd76e57ed11d4d0337b106a3670aeeecc8421258"
+        },
+        {
+          "path": "data/elbow-final/point-011.json",
+          "bytes": 2545,
+          "sha256": "e593bde2d4f9dd67ebd46cb44f73bc524a347a0c63b29ca1f7e95d4bf5dc2433"
+        },
+        {
+          "path": "data/elbow-final/point-012.json",
+          "bytes": 2552,
+          "sha256": "de40dfe099bd89319616ce794c89fffc53d4bc0708b3d973880143e2b4e06107"
+        },
+        {
+          "path": "data/elbow-final/point-013.json",
+          "bytes": 2537,
+          "sha256": "2cc95a298df861502cc3e721e5acf061b7f0e90c3b430759e81ff32f483dfd87"
+        },
+        {
+          "path": "data/elbow-final/point-014.json",
+          "bytes": 2534,
+          "sha256": "df3972e37b6799a4ef4eaa5c365ebfc3bb111bd085d721d5366bdb97c5cd41ca"
+        }
+      ],
+      "artifact_form": "delivered_subset_of_authentic_completed_points",
+      "source_original_terminal_identity": {
+        "bytes": 3462,
+        "sha256": "be6ea30357b964e4a40d2ded26bf817f54336c3833b87567ec195301a85ea458"
+      },
+      "original_completed_indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ]
+    },
+    {
+      "status": "path_complete",
+      "error": null,
+      "process_cpu_s": 1994.382406547,
+      "in_flight_reuse_proven": false,
+      "completed_points": [
+        {
+          "path": "data/elbow-final/point-003.json",
+          "bytes": 2573,
+          "sha256": "754dc9ead3b7e9d28186e888f6942cf6ddf9f16e7cef53e8132f6bdd2aac25d7"
+        },
+        {
+          "path": "data/elbow-final/point-004.json",
+          "bytes": 2562,
+          "sha256": "9f38ff126153f1ea2e19336be48fb3e51b40e7a4cbb5c782fedd398144c6b794"
+        },
+        {
+          "path": "data/elbow-final/point-005.json",
+          "bytes": 2562,
+          "sha256": "5ffacda76185090d1b72b4a274eb3ba13d144997d51211e6f95bbb712ff77e4f"
+        },
+        {
+          "path": "data/elbow-final/point-007.json",
+          "bytes": 2556,
+          "sha256": "0e4408ebacd8960e5510051d5a3010d5b2942e590cb32b73b177355ce0363bd9"
+        },
+        {
+          "path": "data/elbow-final/point-008.json",
+          "bytes": 2545,
+          "sha256": "7292b537d5761109662dc5b263ad4d989f049d70b300b2bd4f7815889121d675"
+        },
+        {
+          "path": "data/elbow-final/point-009.json",
+          "bytes": 2559,
+          "sha256": "6d11b0d199964cf8a33c0ee96c4f7e682cb07ae57acc443570be7d538ce23588"
+        }
+      ],
+      "artifact_form": "delivered_subset_of_authentic_completed_points",
+      "source_original_terminal_identity": {
+        "bytes": 1581,
+        "sha256": "7039c1d227a2489684f662f8950ae72e5e62cf1c1b376c0bf71b0508c0f6f526"
+      },
+      "original_completed_indices": [
+        3,
+        4,
+        5,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "status": "path_complete",
+      "error": null,
+      "process_cpu_s": 573.33215137,
+      "in_flight_reuse_proven": false,
+      "completed_points": [
+        {
+          "path": "data/elbow-final/point-015.json",
+          "bytes": 2534,
+          "sha256": "a549139e83b42bde2e0fb89152a3ae6637331c954569f6b6f55a6c8589f35f6a"
+        },
+        {
+          "path": "data/elbow-final/point-016.json",
+          "bytes": 2599,
+          "sha256": "089cae2918996408d884cd9c540b4633a9dc91c9bf4df58cee6be787c70fe587"
+        }
+      ],
+      "artifact_form": "delivered_subset_of_authentic_completed_points",
+      "source_original_terminal_identity": {
+        "bytes": 621,
+        "sha256": "932749ca13db5b8780cb2523fcbfd5a00be3f6ecb2c07509c4decd29c8d1f64b"
+      },
+      "original_completed_indices": [
+        15,
+        16
+      ]
+    }
+  ],
+  "Native_selections": [
+    {
+      "directory": "data/elbow-segments/admission",
+      "route": {
+        "path": "data/elbow-final/original-route.traj",
+        "bytes": 15341,
+        "sha256": "5c397fa803f6f475d0684708d5e90ecbf031c899eee89d51e9fded50ac37b845"
+      },
+      "indices": [
+        0
+      ]
+    },
+    {
+      "directory": "data/elbow-segments/original",
+      "route": {
+        "path": "data/elbow-final/original-route.traj",
+        "bytes": 15341,
+        "sha256": "5c397fa803f6f475d0684708d5e90ecbf031c899eee89d51e9fded50ac37b845"
+      },
+      "indices": [
+        1,
+        2,
+        6,
+        10,
+        11,
+        12,
+        13,
+        14
+      ]
+    },
+    {
+      "directory": "data/elbow-segments/refinement",
+      "route": {
+        "path": "data/elbow-final/final-route.traj",
+        "bytes": 15341,
+        "sha256": "92a13eafa477599dfb391d01d77a27aa3134e64bc824f07c86242d1a2b41be7f"
+      },
+      "indices": [
+        3,
+        4,
+        5,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "directory": "data/elbow-segments/tail",
+      "route": {
+        "path": "data/elbow-final/final-route.traj",
+        "bytes": 15341,
+        "sha256": "92a13eafa477599dfb391d01d77a27aa3134e64bc824f07c86242d1a2b41be7f"
+      },
+      "indices": [
+        15,
+        16
+      ]
+    }
+  ],
+  "references": {
+    "route": {
+      "path": "data/elbow-final/final-route.traj",
+      "bytes": 15341,
+      "sha256": "92a13eafa477599dfb391d01d77a27aa3134e64bc824f07c86242d1a2b41be7f"
+    },
+    "clean": {
+      "path": "inputs/half-clean-reference.json",
+      "bytes": 184,
+      "sha256": "4b1c02c890af01614de8ea35ebf5110b8ea207b2bd38af7c3bfeb0f01d5572d0",
+      "energy_field": "center_energy_eV"
+    },
+    "gas": {
+      "path": "inputs/D2-gas-point.json",
+      "bytes": 1155,
+      "sha256": "a79cd4c97596a60ea2e179a7751c303bc9b18c394788385012f7f2e5a4cf7aa9"
+    }
+  },
+  "clean_plus_gas_energy_eV": -24.27685644917204,
+  "complete_route": true,
+  "peak_target_eV": 0.03,
+  "refinement_target_eV": 0.01,
+  "curve": [
+    {
+      "route_index": 0,
+      "energy_eV": -24.27292097299445,
+      "E_minus_gas_eV": 0.0039354761775918234,
+      "separation_A": 0.7544829803999652,
+      "height_A": 5.999999999999998,
+      "actual_bank": {
+        "path": "data/elbow-final/point-000.gpw",
+        "bytes": 3110126,
+        "sha256": "50cd8c437a207b16a6bf5180a165ca91d00f09a8e03f72de42e68c21d23f24d2"
+      }
+    },
+    {
+      "route_index": 1,
+      "energy_eV": -24.27537936398194,
+      "E_minus_gas_eV": 0.0014770851900998139,
+      "separation_A": 0.7544829803999652,
+      "height_A": 4.999999999999998,
+      "actual_bank": {
+        "path": "data/elbow-final/point-001.gpw",
+        "bytes": 3110129,
+        "sha256": "14c9febdae78aff9ca18bef8e43381b2437ba77fa29183264fc373111d001fb9"
+      }
+    },
+    {
+      "route_index": 2,
+      "energy_eV": -24.279094305532524,
+      "E_minus_gas_eV": -0.002237856360483903,
+      "separation_A": 0.7544829803999652,
+      "height_A": 3.9999999999999982,
+      "actual_bank": {
+        "path": "data/elbow-final/point-002.gpw",
+        "bytes": 3110124,
+        "sha256": "d324912728ef0d689c36dad9b78e384d03730152b5eacfb6e61af0145fac5914"
+      }
+    },
+    {
+      "route_index": 3,
+      "energy_eV": -24.27801799480065,
+      "E_minus_gas_eV": -0.0011615456286087067,
+      "separation_A": 0.7544829803999652,
+      "height_A": 2.9000000000000004,
+      "actual_bank": {
+        "path": "data/elbow-final/point-003.gpw",
+        "bytes": 3110126,
+        "sha256": "a9cd2215ce507e8b2bbd92285ca100b2b397fac46d04be60024fbe1be4abef3c"
+      }
+    },
+    {
+      "route_index": 4,
+      "energy_eV": -24.32921017086813,
+      "E_minus_gas_eV": -0.05235372169608965,
+      "separation_A": 0.7544829803999652,
+      "height_A": 1.8000000000000007,
+      "actual_bank": {
+        "path": "data/elbow-final/point-004.gpw",
+        "bytes": 3110128,
+        "sha256": "4060065a7460d7f2d81fbe8314e68f1bed6d4d3b45bed8df37e534e7f8ade2d6"
+      }
+    },
+    {
+      "route_index": 5,
+      "energy_eV": -24.372520549280583,
+      "E_minus_gas_eV": -0.09566410010854298,
+      "separation_A": 0.9772414901999827,
+      "height_A": 1.6500000000000004,
+      "actual_bank": {
+        "path": "data/elbow-final/point-005.gpw",
+        "bytes": 3110124,
+        "sha256": "03ead9769f6020370e41ff20ccd4b76e925648982e5301054262703d5ed4cab7"
+      }
+    },
+    {
+      "route_index": 6,
+      "energy_eV": -24.265211421597687,
+      "E_minus_gas_eV": 0.01164502757435315,
+      "separation_A": 1.2000000000000002,
+      "height_A": 1.5,
+      "actual_bank": {
+        "path": "data/elbow-final/point-006.gpw",
+        "bytes": 3110128,
+        "sha256": "1a893670517fbbf6c3be356c6ff391ee917cb2342555559c357fc8b1038c88bf"
+      }
+    },
+    {
+      "route_index": 7,
+      "energy_eV": -24.253377211257646,
+      "E_minus_gas_eV": 0.02347923791439399,
+      "separation_A": 1.2711838018657415,
+      "height_A": 1.4263052850353208,
+      "actual_bank": {
+        "path": "data/elbow-final/point-007.gpw",
+        "bytes": 3110127,
+        "sha256": "bf2e5fae29cf217d8f4d217baed43619de131731d70702c69bbbfeb6ff6489ff"
+      }
+    },
+    {
+      "route_index": 8,
+      "energy_eV": -24.252460713351407,
+      "E_minus_gas_eV": 0.024395735820633035,
+      "separation_A": 1.342367603731483,
+      "height_A": 1.35261057007064,
+      "actual_bank": {
+        "path": "data/elbow-final/point-008.gpw",
+        "bytes": 3110127,
+        "sha256": "864a14a9f21d2e10d52c63ee5f68b43937bfa4c72de63ce3f8101fd505ab53be"
+      }
+    },
+    {
+      "route_index": 9,
+      "energy_eV": -24.31231957473855,
+      "E_minus_gas_eV": -0.035463125566508324,
+      "separation_A": 1.5711838018657414,
+      "height_A": 1.3263052850353194,
+      "actual_bank": {
+        "path": "data/elbow-final/point-009.gpw",
+        "bytes": 3110126,
+        "sha256": "3e13bfcdc962ec29ce788bd718bfb217dcdee4620eedc1144d095d0a2d135b7a"
+      }
+    },
+    {
+      "route_index": 10,
+      "energy_eV": -24.410998119783617,
+      "E_minus_gas_eV": -0.13414167061157656,
+      "separation_A": 1.8000000000000003,
+      "height_A": 1.3000000000000007,
+      "actual_bank": {
+        "path": "data/elbow-final/point-010.gpw",
+        "bytes": 3110129,
+        "sha256": "ba78497ea5c17e8af596e15ae03ae6ee587259991967dcfa6a6578e25f994b08"
+      }
+    },
+    {
+      "route_index": 11,
+      "energy_eV": -24.681386058606666,
+      "E_minus_gas_eV": -0.40452960943462557,
+      "separation_A": 2.275322689407835,
+      "height_A": 1.200000000000001,
+      "actual_bank": {
+        "path": "data/elbow-final/point-011.gpw",
+        "bytes": 3110124,
+        "sha256": "1303b0a25aa8fb75450d679a39d5bb86061c7190d8b11099740b81a1a3882302"
+      }
+    },
+    {
+      "route_index": 12,
+      "energy_eV": -24.891818074656662,
+      "E_minus_gas_eV": -0.6149616254846215,
+      "separation_A": 2.7506453788156695,
+      "height_A": 1.0999999999999996,
+      "actual_bank": {
+        "path": "data/elbow-final/point-012.gpw",
+        "bytes": 3110128,
+        "sha256": "8b14df25e50352dd530a8dd2dbbd22dba48d8aab04d8746b015d31821a779437"
+      }
+    },
+    {
+      "route_index": 13,
+      "energy_eV": -24.56339022563546,
+      "E_minus_gas_eV": -0.2865337764634184,
+      "separation_A": 2.7506453788156695,
+      "height_A": 1.0436457570572486,
+      "actual_bank": {
+        "path": "data/elbow-final/point-013.gpw",
+        "bytes": 3110124,
+        "sha256": "776f3fb56a38281745adf20ea5aa65c6b7ceb2d9e1aa0a2d4b0938324bb66f26"
+      }
+    },
+    {
+      "route_index": 14,
+      "energy_eV": -24.178765151726825,
+      "E_minus_gas_eV": 0.09809129744521528,
+      "separation_A": 2.7506453788156695,
+      "height_A": 0.9872915141144993,
+      "actual_bank": {
+        "path": "data/elbow-final/point-014.gpw",
+        "bytes": 3110128,
+        "sha256": "a7e6603ad637f766bb523a7c07ba335ac2f847f27580deb3ef39bd7eccffdf23"
+      }
+    },
+    {
+      "route_index": 15,
+      "energy_eV": -24.761510196985377,
+      "E_minus_gas_eV": -0.48465374781333637,
+      "separation_A": 2.7506453788156695,
+      "height_A": 0.9309372711717501,
+      "actual_bank": {
+        "path": "data/elbow-final/point-015.gpw",
+        "bytes": 3110128,
+        "sha256": "65dee4cf4e413d7de9b9d4c76d0dd249485cc75b6f449f5426a0be31757fbf2c"
+      }
+    },
+    {
+      "route_index": 16,
+      "energy_eV": -25.254006704595515,
+      "E_minus_gas_eV": -0.9771502554234743,
+      "separation_A": 2.75064537881567,
+      "height_A": 0.874583028228999,
+      "actual_bank": {
+        "path": "data/elbow-final/point-016.gpw",
+        "bytes": 3110127,
+        "sha256": "7b652366ed4c9c129d7ef80de46a4cca7362c409d61f5d03b84cf6555e544604"
+      }
+    }
+  ],
+  "capture_probability_computed": false,
+  "sampled_peak_excess_eV": 0.09809129744521528,
+  "coarse_to_refined_peak_change_eV": 0.0,
+  "force_interpolated_peak_excess_eV": 0.10254602590674367,
+  "maximum_predicted_unsampled_rise_eV": 0.00445472846152839,
+  "far_height_change_eV": 0.0061733325380757265,
+  "interval_diagnostics": [
+    {
+      "fraction": 0.0,
+      "predicted_energy_eV": -24.27292097299445,
+      "sampled_endpoint_max_eV": -24.27292097299445,
+      "predicted_unsampled_rise_eV": 0.0,
+      "interpretation": "Interpolation diagnostic only; no interpolated energy is admitted as DFT"
+    },
+    {
+      "fraction": 0.0,
+      "predicted_energy_eV": -24.27537936398194,
+      "sampled_endpoint_max_eV": -24.27537936398194,
+      "predicted_unsampled_rise_eV": 0.0,
+      "interpretation": "Interpolation diagnostic only; no interpolated energy is admitted as DFT"
+    },
+    {
+      "fraction": 1.0,
+      "predicted_energy_eV": -24.27801799480065,
+      "sampled_endpoint_max_eV": -24.27801799480065,
+      "predicted_unsampled_rise_eV": 0.0,
+      "interpretation": "Interpolation diagnostic only; no interpolated energy is admitted as DFT"
+    },
+    {
+      "fraction": 0.008585854712406863,
+      "predicted_energy_eV": -24.27799053529346,
+      "sampled_endpoint_max_eV": -24.27801799480065,
+      "predicted_unsampled_rise_eV": 2.7459507190741306e-05,
+      "interpretation": "Interpolation diagnostic only; no interpolated energy is admitted as DFT"
+    },
+    {
+      "fraction": 0.0,
+      "predicted_energy_eV": -24.32921017086813,
+      "sampled_endpoint_max_eV": -24.32921017086813,
+      "predicted_unsampled_rise_eV": 0.0,
+      "interpretation": "Interpolation diagnostic only; no interpolated energy is admitted as DFT"
+    },
+    {
+      "fraction": 1.0,
+      "predicted_energy_eV": -24.265211421597687,
+      "sampled_endpoint_max_eV": -24.265211421597687,
+      "predicted_unsampled_rise_eV": 0.0,
+      "interpretation": "Interpolation diagnostic only; no interpolated energy is admitted as DFT"
+    },
+    {
+      "fraction": 1.0,
+      "predicted_energy_eV": -24.253377211257646,
+      "sampled_endpoint_max_eV": -24.253377211257646,
+      "predicted_unsampled_rise_eV": 0.0,
+      "interpretation": "Interpolation diagnostic only; no interpolated energy is admitted as DFT"
+    },
+    {
+      "fraction": 0.5784432900509551,
+      "predicted_energy_eV": -24.251410562665537,
+      "sampled_endpoint_max_eV": -24.252460713351407,
+      "predicted_unsampled_rise_eV": 0.0010501506858702214,
+      "interpretation": "Interpolation diagnostic only; no interpolated energy is admitted as DFT"
+    },
+    {
+      "fraction": 0.0,
+      "predicted_energy_eV": -24.252460713351407,
+      "sampled_endpoint_max_eV": -24.252460713351407,
+      "predicted_unsampled_rise_eV": 0.0,
+      "interpretation": "Interpolation diagnostic only; no interpolated energy is admitted as DFT"
+    },
+    {
+      "fraction": 0.0,
+      "predicted_energy_eV": -24.31231957473855,
+      "sampled_endpoint_max_eV": -24.31231957473855,
+      "predicted_unsampled_rise_eV": 0.0,
+      "interpretation": "Interpolation diagnostic only; no interpolated energy is admitted as DFT"
+    },
+    {
+      "fraction": 0.0,
+      "predicted_energy_eV": -24.410998119783617,
+      "sampled_endpoint_max_eV": -24.410998119783617,
+      "predicted_unsampled_rise_eV": 0.0,
+      "interpretation": "Interpolation diagnostic only; no interpolated energy is admitted as DFT"
+    },
+    {
+      "fraction": 0.0,
+      "predicted_energy_eV": -24.681386058606666,
+      "sampled_endpoint_max_eV": -24.681386058606666,
+      "predicted_unsampled_rise_eV": 0.0,
+      "interpretation": "Interpolation diagnostic only; no interpolated energy is admitted as DFT"
+    },
+    {
+      "fraction": 1.0,
+      "predicted_energy_eV": -24.56339022563546,
+      "sampled_endpoint_max_eV": -24.56339022563546,
+      "predicted_unsampled_rise_eV": 0.0,
+      "interpretation": "Interpolation diagnostic only; no interpolated energy is admitted as DFT"
+    },
+    {
+      "fraction": 0.9222341591298403,
+      "predicted_energy_eV": -24.174310423265297,
+      "sampled_endpoint_max_eV": -24.178765151726825,
+      "predicted_unsampled_rise_eV": 0.00445472846152839,
+      "interpretation": "Interpolation diagnostic only; no interpolated energy is admitted as DFT"
+    },
+    {
+      "fraction": 0.0,
+      "predicted_energy_eV": -24.178765151726825,
+      "sampled_endpoint_max_eV": -24.178765151726825,
+      "predicted_unsampled_rise_eV": 0.0,
+      "interpretation": "Interpolation diagnostic only; no interpolated energy is admitted as DFT"
+    },
+    {
+      "fraction": 0.0,
+      "predicted_energy_eV": -24.761510196985377,
+      "sampled_endpoint_max_eV": -24.761510196985377,
+      "predicted_unsampled_rise_eV": 0.0,
+      "interpretation": "Interpolation diagnostic only; no interpolated energy is admitted as DFT"
+    }
+  ],
+  "sampled_peak_index": 14,
+  "status": "route_does_not_yet_decide_activation",
+  "scope": "Final corrected restricted route at PBE/PW300/10x5x1; highest sampled frame is not a global activation barrier",
+  "peak_k_slab_convergence_qualified": false,
+  "transport_ledger_replacement_authorized": false,
+  "global_activation_status": "unresolved",
+  "further_path_refinements_authorized": false,
+  "relaxed_central_knot": {
+    "route_index": 8,
+    "energy_eV": -24.252460713351407,
+    "E_minus_gas_eV": 0.024395735820633035,
+    "separation_A": 1.342367603731483,
+    "height_A": 1.35261057007064,
+    "actual_bank": {
+      "path": "data/elbow-final/point-008.gpw",
+      "bytes": 3110127,
+      "sha256": "864a14a9f21d2e10d52c63ee5f68b43937bfa4c72de63ce3f8101fd505ab53be"
+    }
+  },
+  "corrected_frames": [
+    {
+      "route_index": 3,
+      "energy_eV": -24.27801799480065,
+      "E_minus_gas_eV": -0.0011615456286087067,
+      "separation_A": 0.7544829803999652,
+      "height_A": 2.9000000000000004,
+      "actual_bank": {
+        "path": "data/elbow-final/point-003.gpw",
+        "bytes": 3110126,
+        "sha256": "a9cd2215ce507e8b2bbd92285ca100b2b397fac46d04be60024fbe1be4abef3c"
+      }
+    },
+    {
+      "route_index": 4,
+      "energy_eV": -24.32921017086813,
+      "E_minus_gas_eV": -0.05235372169608965,
+      "separation_A": 0.7544829803999652,
+      "height_A": 1.8000000000000007,
+      "actual_bank": {
+        "path": "data/elbow-final/point-004.gpw",
+        "bytes": 3110128,
+        "sha256": "4060065a7460d7f2d81fbe8314e68f1bed6d4d3b45bed8df37e534e7f8ade2d6"
+      }
+    },
+    {
+      "route_index": 5,
+      "energy_eV": -24.372520549280583,
+      "E_minus_gas_eV": -0.09566410010854298,
+      "separation_A": 0.9772414901999827,
+      "height_A": 1.6500000000000004,
+      "actual_bank": {
+        "path": "data/elbow-final/point-005.gpw",
+        "bytes": 3110124,
+        "sha256": "03ead9769f6020370e41ff20ccd4b76e925648982e5301054262703d5ed4cab7"
+      }
+    },
+    {
+      "route_index": 7,
+      "energy_eV": -24.253377211257646,
+      "E_minus_gas_eV": 0.02347923791439399,
+      "separation_A": 1.2711838018657415,
+      "height_A": 1.4263052850353208,
+      "actual_bank": {
+        "path": "data/elbow-final/point-007.gpw",
+        "bytes": 3110127,
+        "sha256": "bf2e5fae29cf217d8f4d217baed43619de131731d70702c69bbbfeb6ff6489ff"
+      }
+    },
+    {
+      "route_index": 8,
+      "energy_eV": -24.252460713351407,
+      "E_minus_gas_eV": 0.024395735820633035,
+      "separation_A": 1.342367603731483,
+      "height_A": 1.35261057007064,
+      "actual_bank": {
+        "path": "data/elbow-final/point-008.gpw",
+        "bytes": 3110127,
+        "sha256": "864a14a9f21d2e10d52c63ee5f68b43937bfa4c72de63ce3f8101fd505ab53be"
+      }
+    },
+    {
+      "route_index": 9,
+      "energy_eV": -24.31231957473855,
+      "E_minus_gas_eV": -0.035463125566508324,
+      "separation_A": 1.5711838018657414,
+      "height_A": 1.3263052850353194,
+      "actual_bank": {
+        "path": "data/elbow-final/point-009.gpw",
+        "bytes": 3110126,
+        "sha256": "3e13bfcdc962ec29ce788bd718bfb217dcdee4620eedc1144d095d0a2d135b7a"
+      }
+    }
+  ],
+  "code": [
+    {
+      "filename": "elbow_path_results.py",
+      "bytes": 9713,
+      "sha256": "20779b4e4919475e789bb3e453d65ebec483351ad9bb2c18753a3f0bee2db9ce"
+    },
+    {
+      "filename": "force_bank_results.py",
+      "bytes": 1675,
+      "sha256": "2e77bd333a8f5d705d83802cdc777c398d97c30aeb5344539bc1bccf68e90328"
+    }
+  ],
+  "process_cpu_s": 1.589302965,
+  "artifact_form": "scientific_metadata_derivative",
+  "source_original_execution_identity": {
+    "bytes": 33526,
+    "sha256": "58b9cd45863bdc7f9e852423dd1a14e1ec9560c71f13714b2296e706bcc5389b"
+  }
+}

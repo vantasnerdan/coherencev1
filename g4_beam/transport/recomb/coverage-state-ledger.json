@@ -1,0 +1,63 @@
+{
+  "schema": "coherence-pass5-recomb-state-input-ledger-v1",
+  "source": {
+    "path": "physical-result.json",
+    "bytes": 114724,
+    "sha256": "9a91bfa918abac9978f015ccd1311e669fc308df3ad87411a95813a8cb184985"
+  },
+  "material_ledger": {
+    "path": "input-ledger.json",
+    "bytes": 6739,
+    "sha256": "7859fe76f2fcf8abb1903ce18a7454952b93550a1964881611e38fdc8ae554b9"
+  },
+  "contracts": {
+    "beam": false,
+    "capture_probability_computed": false,
+    "intrinsic_capture_probability_assumed": 0.5,
+    "equivalent_s_scope": "State-local original-boundary equivalent, not a universal sticking default",
+    "event_flux_species": "D2 molecules; D-atom flux has factor2",
+    "standard_pressure_Pa": 1
+  },
+  "cases": [
+    {
+      "id": "gas-equilibrated-Pd",
+      "T_K": 305.0332303785795,
+      "p_D2_Pa": 0.03666355,
+      "theta_ML": 0.7814494103411498,
+      "s_equivalent": 0.02388158292520376,
+      "D2_desorption_events_m2_s": 65814737999573100000,
+      "differential_binding_eV_per_D": 0.07694145735938611,
+      "mean_binding_eV_per_D": 0.13223784550753542,
+      "chemical_potential_eV_relative_half_gas1Pa": -0.04344994510486084,
+      "balance_relative_residual": 2.0755472733304463e-13
+    },
+    {
+      "id": "bulk-fed-PdD-frozen-run-end-v",
+      "T_K": 301.40496912917996,
+      "p_D2_Pa": 0.03666355,
+      "x_back": 0.8,
+      "theta_ML": 0.99996817781901,
+      "s_equivalent": 5.063129403620425e-10,
+      "D2_desorption_events_m2_s": 775044251721722800000,
+      "differential_binding_eV_per_D": 0.050482436767976466,
+      "mean_binding_eV_per_D": 0.12119266432600244,
+      "chemical_potential_eV_relative_half_gas1Pa": 0.21847688773582447,
+      "vacancy_ensemble": "Hold actual7200s PdD/Ecm2.5keV run-end v(z) fixed; solute/traps/sheet steady",
+      "vacancy_primary_sha256": "e2e91077595de602b815ae86f45c1a675d6a553153272d0e1295b72e2a5a9943",
+      "top100nm_max_x_plus_xt": 0.8365943837217181,
+      "overflow_on_triggered": false,
+      "grid_both": true,
+      "grid_cells": 484,
+      "coverage_grid_change_ML": 1.2611345301394294e-10,
+      "equivalent_s_relative_grid_change": 0.000007926087989751834,
+      "recombination_rate_relative_grid_change": 1.625626173784429e-9,
+      "mass_balance_relative_residual": 6.624930803510479e-11,
+      "cell_flux_relative_residual": 1.3521546111522359e-8
+    }
+  ],
+  "source_original_result_identity": {
+    "bytes": 127057,
+    "sha256": "92a100c70fdae52dcafcaa958e5f615b3ff9b1987639ef1b6648280f3cd7c66c"
+  },
+  "representation": "Portable derivative of qualified state-local inputs; original execution identity retained"
+}

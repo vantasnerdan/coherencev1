@@ -1,0 +1,93 @@
+{
+  "schema": "coherence-g5-recomb-delivery-v1",
+  "created_at": "2026-11-17T22:57:09.563Z",
+  "integration_root": "g4_beam/transport/recomb",
+  "source_baseline_commit": "853c37738caca76ba70cefd8f4df7350bc204937",
+  "required_transport_source_sha256": "383aad3068c5d5b62fc5f031ccfe8c35c1c6ab426f41daeca6c18aeba3d4a47e",
+  "transport_source_or_surface_defaults_changed": false,
+  "transport_ledger_replacement_authorized": false,
+  "observed_runtime": {
+    "GPAW": "26.7.0",
+    "ASE": "3.29.0",
+    "NumPy": "2.5.3",
+    "SciPy": "1.18.1"
+  },
+  "entry_points": {
+    "physical_and_sensitivity": "run_sheet_coverage.py",
+    "actual_native_banks": "verify_native_banks.py",
+    "route_reanalysis": "analyze_elbow_bundle.py",
+    "mathematical_fixture": "sheet_proof.py"
+  },
+  "inputs": [
+    {
+      "path": "input-ledger.json",
+      "bytes": 6739,
+      "sha256": "7859fe76f2fcf8abb1903ce18a7454952b93550a1964881611e38fdc8ae554b9"
+    },
+    {
+      "path": "elbow-input-ledger.json",
+      "bytes": 2025,
+      "sha256": "08c2129a5fb1449a6a52c463e6543f0c1d1d5222ed5e00dd216c5fdefcdecaf6"
+    },
+    {
+      "path": "native-force-banks.json",
+      "bytes": 12171,
+      "sha256": "923b0314f9be8ce36752d27e098fc513327b34fb71c9996e4863b008d62aa0dc"
+    },
+    {
+      "path": "coverage-operating-points.json",
+      "bytes": 1222,
+      "sha256": "93c66452fcafa0b071a1a7e7b10f24089cc200bf685f328b8353a84c4282d64c"
+    }
+  ],
+  "results": [
+    {
+      "path": "physical-result.json",
+      "bytes": 114724,
+      "sha256": "9a91bfa918abac9978f015ccd1311e669fc308df3ad87411a95813a8cb184985"
+    },
+    {
+      "path": "coverage-state-ledger.json",
+      "bytes": 2613,
+      "sha256": "7503caa45f8b1577c0a4fa000832d1014b3983971fb22ca1eb044746dc44b056"
+    },
+    {
+      "path": "elbow-result.json",
+      "bytes": 26997,
+      "sha256": "1c0a9c27b53f6414e64499c035d90f46ec51cd4311c3a51e5cb46b39e6b8800b"
+    },
+    {
+      "path": "ridge-sensitivity.json",
+      "bytes": 118760,
+      "sha256": "6136643246fbc88967e8887f626dfe18563b4382194d02d54fdeb883ad3c2115"
+    },
+    {
+      "path": "route-sensitivity-comparison.json",
+      "bytes": 4270,
+      "sha256": "0b862a347eaa11f53fd2f0a1eecfe05ae882f424ea223f2fbacdf8fe3ed4a5b5"
+    },
+    {
+      "path": "native-final-cost-ledger.json",
+      "bytes": 1652,
+      "sha256": "8bb07b0c6d9bc4efb946b4624076653e2652e7d9071530c36c46562dbc697ecd"
+    },
+    {
+      "path": "portability-proof.json",
+      "bytes": 940,
+      "sha256": "9ee50102a746cc2a3c13511d4394955c702df4890d2faedc907b7e650bce4a5f"
+    },
+    {
+      "path": "pass5-open-items.json",
+      "bytes": 2422,
+      "sha256": "048e000bb0245b84683cf115e70c64a076e3bd79a84d50473fd0578ea360c614"
+    }
+  ],
+  "status": {
+    "material_sheet": "qualified ordered-neutral three-coverage electronic/local-harmonic model",
+    "route": "complete restricted PBE/PW300/10x5x1 sampled path; peak k/slab qualification open",
+    "transport": "ridge-conditioned two-state sensitivity only; baseline state/material ledgers retained"
+  },
+  "Native_banks": 57,
+  "baseline_observables_reproduced_exactly": true,
+  "asset_release_tag": "g5_recomb-delivery"
+}

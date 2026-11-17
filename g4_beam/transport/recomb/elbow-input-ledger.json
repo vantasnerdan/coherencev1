@@ -1,0 +1,79 @@
+{
+  "schema": "coherence-portable-elbow-inputs-v1",
+  "target_route": {
+    "path": "data/elbow-final/final-route.traj",
+    "bytes": 15341,
+    "sha256": "92a13eafa477599dfb391d01d77a27aa3134e64bc824f07c86242d1a2b41be7f"
+  },
+  "clean_reference": {
+    "path": "inputs/half-clean-reference.json",
+    "bytes": 184,
+    "sha256": "4b1c02c890af01614de8ea35ebf5110b8ea207b2bd38af7c3bfeb0f01d5572d0",
+    "energy_field": "center_energy_eV"
+  },
+  "gas_reference": {
+    "path": "inputs/D2-gas-point.json",
+    "bytes": 1155,
+    "sha256": "a79cd4c97596a60ea2e179a7751c303bc9b18c394788385012f7f2e5a4cf7aa9"
+  },
+  "segments": [
+    {
+      "directory": "data/elbow-segments/admission",
+      "route": {
+        "path": "data/elbow-final/original-route.traj",
+        "bytes": 15341,
+        "sha256": "5c397fa803f6f475d0684708d5e90ecbf031c899eee89d51e9fded50ac37b845"
+      },
+      "indices": [
+        0
+      ]
+    },
+    {
+      "directory": "data/elbow-segments/original",
+      "route": {
+        "path": "data/elbow-final/original-route.traj",
+        "bytes": 15341,
+        "sha256": "5c397fa803f6f475d0684708d5e90ecbf031c899eee89d51e9fded50ac37b845"
+      },
+      "indices": [
+        1,
+        2,
+        6,
+        10,
+        11,
+        12,
+        13,
+        14
+      ]
+    },
+    {
+      "directory": "data/elbow-segments/refinement",
+      "route": {
+        "path": "data/elbow-final/final-route.traj",
+        "bytes": 15341,
+        "sha256": "92a13eafa477599dfb391d01d77a27aa3134e64bc824f07c86242d1a2b41be7f"
+      },
+      "indices": [
+        3,
+        4,
+        5,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "directory": "data/elbow-segments/tail",
+      "route": {
+        "path": "data/elbow-final/final-route.traj",
+        "bytes": 15341,
+        "sha256": "92a13eafa477599dfb391d01d77a27aa3134e64bc824f07c86242d1a2b41be7f"
+      },
+      "indices": [
+        15,
+        16
+      ]
+    }
+  ],
+  "artifact_form": "scientific_derivative_preserving_original_execution_identities"
+}

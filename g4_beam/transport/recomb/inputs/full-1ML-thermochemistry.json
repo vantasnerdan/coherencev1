@@ -1,0 +1,108 @@
+{
+  "schema": "coherence-clean-actual-thermochemistry-v1",
+  "rows": [
+    {
+      "T_K": 305.0332303785795,
+      "full_mobile_thermochemistry": {
+        "adsorption_pair_G_eV": -0.23354583662947004,
+        "pair_to_site_G_eV": -0.11677291831473502,
+        "degeneracy_binding_eV_per_D": 0.0,
+        "Eads_eV_per_D": 0.11677291831473502,
+        "standard_pressure_Pa": 1.0
+      },
+      "gas_RRHO": {
+        "translation_G_eV": -0.637487870468974,
+        "rotation_G_eV": -0.033705064470796485,
+        "electronic_G_eV": -0.0,
+        "G_external_eV": -0.6711929349397706,
+        "mass_D2_kg": 6.688989265804827e-27,
+        "inertia_kg_m2": 9.519177007628498e-48,
+        "standard_pressure_Pa": 1.0,
+        "vibration": {
+          "zpe_eV": 0.1844978560567958,
+          "thermal_F_eV": -2.1044939197014237e-08,
+          "F_eV": 0.1844978350118566
+        },
+        "correction_G_eV": -0.48669509992791404
+      },
+      "frozen_Pd_sensitivity": {
+        "adsorption_pair_G_eV": -0.24488019855635945,
+        "pair_to_site_G_eV": -0.12244009927817973,
+        "degeneracy_binding_eV_per_D": 0.0,
+        "Eads_eV_per_D": 0.12244009927817973,
+        "standard_pressure_Pa": 1.0
+      },
+      "frozen_Pd_minus_full_binding_eV_per_D": 0.005667180963444707
+    },
+    {
+      "T_K": 301.40496912917996,
+      "full_mobile_thermochemistry": {
+        "adsorption_pair_G_eV": -0.24238082820147233,
+        "pair_to_site_G_eV": -0.12119041410073617,
+        "degeneracy_binding_eV_per_D": 0.0,
+        "Eads_eV_per_D": 0.12119041410073617,
+        "standard_pressure_Pa": 1.0
+      },
+      "gas_RRHO": {
+        "translation_G_eV": -0.6291281992139481,
+        "rotation_G_eV": -0.03299336242038728,
+        "electronic_G_eV": -0.0,
+        "G_external_eV": -0.6621215616343354,
+        "mass_D2_kg": 6.688989265804827e-27,
+        "inertia_kg_m2": 9.519177007628498e-48,
+        "standard_pressure_Pa": 1.0,
+        "vibration": {
+          "zpe_eV": 0.1844978560567958,
+          "thermal_F_eV": -1.7561492033311207e-08,
+          "F_eV": 0.18449783849530377
+        },
+        "correction_G_eV": -0.4776237231390317
+      },
+      "frozen_Pd_sensitivity": {
+        "adsorption_pair_G_eV": -0.2536110205419566,
+        "pair_to_site_G_eV": -0.1268055102709783,
+        "degeneracy_binding_eV_per_D": 0.0,
+        "Eads_eV_per_D": 0.1268055102709783,
+        "standard_pressure_Pa": 1.0
+      },
+      "frozen_Pd_minus_full_binding_eV_per_D": 0.00561509617024214
+    }
+  ],
+  "electronic_adsorption_pair_eV": -0.9771502839496335,
+  "electronic_binding_eV_per_D": 0.4885751419748168,
+  "full_clean_signed_modes_eV": [
+    0.004548572033730569,
+    0.004557960531497912,
+    0.012613212959165378,
+    0.013464372477560835,
+    0.015311225725914368,
+    0.02343948528027563
+  ],
+  "full_ads_signed_modes_eV": [
+    0.005068760941046743,
+    0.005089544202709742,
+    0.011455679690414153,
+    0.01219015465521071,
+    0.017230762286117675,
+    0.0281650446790415,
+    0.0754961694498287,
+    0.07680962811702022,
+    0.07681215332355287,
+    0.08441835003694398,
+    0.09676328146099374,
+    0.09925193670759776
+  ],
+  "frozen_Pd_D_only_signed_modes_eV": [
+    0.07479603545771721,
+    0.07611713590708558,
+    0.0761199619022981,
+    0.0839700995978753,
+    0.09568993882251574,
+    0.09843587966850346
+  ],
+  "assumption": "Ordered neutral clean Pd111/PBE/Pd10/PW300; clamped bottom2; full mobile harmonic modes, D2 RRHO at1Pa, classical rotation, equal independent-site split of mean pair free energy, site degeneracies1.",
+  "source_original_identity": {
+    "bytes": 6192,
+    "sha256": "c95bef924ca9763d6933f98f6b14cd9e6186291d6988f98f96e5cd274106db79"
+  }
+}
