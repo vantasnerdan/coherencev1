@@ -1,0 +1,64 @@
+{
+  "joint_minimum_multipliers": {
+    "Pd": 0.3,
+    "PdD": 0.3
+  },
+  "requested_region_count": 0,
+  "reference_policy": "m1 baseline remains canonical; inferred-reference quotient is an explicit separate diagnostic",
+  "joint_minimum_D_per_Pd": {
+    "Pd": {
+      "D_per_metal_top10_E0.25": 0.00047090613788088693,
+      "D_per_metal_top10_E1": 0.003273610174055112,
+      "D_per_metal_top10_E2.5": 0.0029421041195191494,
+      "D_per_metal_top10_E6.5": 0.0017161275673835774,
+      "top10_D_per_metal_min": 0.00047090613788088693,
+      "top10_D_per_metal_max": 0.003387445065775339,
+      "max_local_D_per_metal": 0.003409750885807025
+    },
+    "PdD": {
+      "D_per_metal_top10_E0.25": 0.0005668297936950619,
+      "D_per_metal_top10_E1": 0.004195016558475513,
+      "D_per_metal_top10_E2.5": 0.004052325257990876,
+      "D_per_metal_top10_E6.5": 0.0035165561015837892,
+      "top10_D_per_metal_min": 0.0005668297936950619,
+      "top10_D_per_metal_max": 0.004232660226127566,
+      "max_local_D_per_metal": 0.004381193156696299
+    }
+  },
+  "four_energy_no_sheet": {
+    "0.25": {
+      "joint_minimum_merit": 136.54582631919402,
+      "sampled_region_range": null
+    },
+    "1.0": {
+      "joint_minimum_merit": 40.97547419368548,
+      "sampled_region_range": null
+    },
+    "2.5": {
+      "joint_minimum_merit": 22.262456261842708,
+      "sampled_region_range": null
+    },
+    "6.5": {
+      "joint_minimum_merit": 31.91528136358341,
+      "sampled_region_range": null
+    }
+  },
+  "four_energy_retained_sheet": {
+    "0.25": {
+      "joint_minimum_merit": 137.51106624304165,
+      "sampled_region_range": null
+    },
+    "1.0": {
+      "joint_minimum_merit": 41.2942499677349,
+      "sampled_region_range": null
+    },
+    "2.5": {
+      "joint_minimum_merit": 22.947787874358937,
+      "sampled_region_range": null
+    },
+    "6.5": {
+      "joint_minimum_merit": 32.398584258010914,
+      "sampled_region_range": null
+    }
+  }
+}

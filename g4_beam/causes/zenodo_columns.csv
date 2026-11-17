@@ -1,0 +1,43 @@
+column,unit,meaning,needed_for
+run_id,string,unique run identity not figure-point identity,all mechanisms and covariance
+foil_id,string,physical foil identity and reuse sequence,run history and matched targets
+material,string,Pd/PdD/Ti/TiD with preparation and loading state,shared density and SI1 ratios
+run_start_utc,ISO8601,actual acquisition start not file export time,history and temporal ordering
+run_duration_s,s,beam-on interval separate from detector live time,time response and dose integral
+preload_duration_s,s,electrochemical loading before irradiation,hydride front and target age
+loading_current_density_A_m2,A/m2,back-side cell current and active area,near-surface density and supply
+loading_efficiency,fraction,measured absorption efficiency if available not assumed equal to current,transport calibration
+E_lab_Dplus_keV,keV,arrival lab energy for a singly charged atomic deuteron,all energy curves
+E_cm_nominal_keV,keV,nominal atomic-D centre-of-mass energy equal to lab/2,reported curve axis
+retarding_and_extraction_voltage_V,V,both source extraction and target/deceleration settings,neutral energy versus charged energy
+energy_distribution,keV with density,arrival energy spectrum and spread by species,neutral separation and beam averaging
+Dplus_current_fraction,fraction of electrical current,D+ current fraction not atom number fraction,molecular-beam response
+D2plus_current_fraction,fraction of electrical current,D2+ fraction with two deuterons each at half atomic-D lab energy,molecular-beam response
+other_species_fractions,fraction of electrical current,D3+ and impurities if actually measured not invented zero,beam composition
+cup_current_trace_A,A,collected cup current versus time including bias settings,current readings and integrated charge
+foil_true_current_trace_A,A,independently measured delivered charged current versus time,physical normalization and neutral discrimination
+cup_suppressor_bias_V,V,secondary-electron collection and suppression configuration,cup collected fraction
+extracted_source_current_trace_A,A,source-current time series distinct from delivered current,fixed extracted-neutral versus delivered-ion scaling
+neutral_flux_trace_D_m2_s,D/(m2 s),neutral deuteron flux at the target not inferred from cup charge,neutral cause
+neutral_energy_spectrum,keV with density,neutral atomic-D energy spectrum including high-energy tail,neutral cause and proton kinematics
+beam_spot_area_on_foil_m2,m2,projected illuminated area on the actual foil,fluence and erosion
+angle_from_foil_normal_deg,degree,beam incidence angle distinct from detector angle,ray-path versus surface-sheet response
+foil_temperature_trace_K,K,spot temperature and sensor calibration versus time,adsorption/recombination and diffusion
+chamber_D2_pressure_Pa,Pa,D2 partial pressure not total gauge pressure,surface equilibrium and gas supply
+residual_gas_composition,string or fractions,water/oxygen/carbon-bearing contaminants and measurement,real surface chemistry
+film_material_and_thickness,string and nm,actual deposited composition and initial/after-run thickness,layer stopping and erosion
+island_coverage,fraction of projected area,measured coverage/continuity not cycles treated as coverage,sealing/percolation
+D_loading_depth_profile,D/m3 versus depth_m,independent depth profile with method and resolution,density preference and sealed baseline
+adsorbed_D_areal_density,D/m2,separate outer sheet with coverage calibration,sheet removal and surface cause
+cumulative_incident_charge_C,C,true delivered charged dose including beam interruptions,integrated merit and erosion lifetime
+acquisition_time_bins_s,s,sub-run timestamps or binned spectra rather than run-averaged rate,transients and film-clearance windows
+proton_gross_counts,count,raw accepted D(d,p)T events before background subtraction,absolute likelihood
+proton_background_counts,count,matched background with its independent acquisition exposure,Poisson count errors
+neutron_gross_counts,count,raw accepted D(d,n) events with channel identity,proton/neutron stitching
+neutron_background_counts,count,matched neutron background and exposure,absolute likelihood
+detector_live_time_s,s,dead-time-corrected live time separate from beam-on time,counts per charge
+detector_acceptance_efficiency,fraction,channel-specific geometry and energy response with calibration,SI1 ratios and absolute yields
+proton_peak_energy_or_channel,keV or channel with calibration,full peak centroid/width and detector calibration,fast-neutral kinematic separation
+normalization_reference_run_id,string,exact6.5keV or other reference used for each normalized point,shared denominator covariance
+normalization_covariance,log-yield squared,covariance from shared reference and detector/current systematics,replacing the approved Fig2 ratio-error proxy
+quality_and_exclusions,string,actual masks/dead-time/beam trips and selection provenance,likelihood membership without hidden row loss

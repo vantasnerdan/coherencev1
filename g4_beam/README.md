@@ -27,6 +27,7 @@ One static number cannot serve both, so the shared deliverable is eps(q) over th
 | `screen/` | First-principles screening (GPAW, PBE): density of states and d-band centres for 14 hosts, static RPA screening length for 9, the neutral adiabatic screening cycle for Pd and Pd3Rh, and ratio 7 |
 | `priordata/` | Other low-energy d+d datasets in one table, plateau comparison |
 | `merit/` | Pass 5: yield of any layered target relative to the transported UC Davis PdD foil, side by side with the UC Davis values (`compare.csv`); causes refitted on transported profiles |
+| `causes/` | Pass 5: how each plateau cause responds to beam and target changes, surface-density and sheet-occupancy scans, Zenodo column list |
 
 Run every script from its own directory, except `work/` scripts and `priordata/scripts/compare.py .`, which run from `g4_beam/`.
 
@@ -69,6 +70,19 @@ Merit is the D(d,p)T yield of a design over the yield of the transported UC Davi
 | The same, fast neutrals | 35 | 21 | 21 | 30 |
 
 Against the uniform 0.7 D/Pd target instead, the same ideal beam side gives 1.02-1.05.
+
+Pass 5 (`causes/`): the adsorbed D sheet decides which cause fits.
+- **Without the sheet:** refitting the surface cause gives chi2 44.21, the best shape fit, while rising screening falls to 110 and neutrals to 159.
+- **Target-side scans:** no setting reconciles the curve shapes with the SI Table 1 counts. Scaling near-surface bulk D (0.1-100, shared and per foil) and varying sheet occupancy (0-1 ML per foil) were tried for all three causes. The canonical reference gives a model/measured PdD/Pd of 2.55-6.83, and the closest variants 1.5-3. The charge per run is the next hypothesis, for `g4_zenodo`.
+- **Ideal beam side at 0.7 D/Pd with no sheet** (rising screening, best joint fit): 137/41/22/32 at 0.25/1/2.5/6.5 keV. Against the zero-sheet surface reference it gives 53/47/45/47.
+
+Measurements that separate the causes, as changed/base counts per charge:
+
+| Change | Rising screening | Surface layer | Fast neutrals |
+|---|---|---|---|
+| Near-surface D x50, 0.5 keV | 14.5 | 1.01 | 13.8 |
+| D2+ current fraction 0.85, 0.25 keV | 3.08 | 3.31 | 1.00 |
+| Half current, 0.5 keV | 1.00 | 1.00 | 2.00 |
 
 Electronic screening from first principles (`screen/README.md`, valence-PAW PBE, static low-q RPA). The screening length lambda gives a Yukawa static U_e = e^2/lambda:
 

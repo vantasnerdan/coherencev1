@@ -1,0 +1,29 @@
+input,value,units,status,reference,source,consumer
+source_revision,853c377 plus accepted98efac2 merit,version,actual running source base not pulled during jobs,pass5 governing contract,merit/SHA256SUMS,all causes scripts
+canonical_cause_fits,screeningrise;surface;neutrals,fit rows,transported-profile fits at each cause best current reading,48 UC Davis digitized points,merit/fits_transported.json,all predictions and scan starts
+original_reference_profiles,m=1 with source adsorbate,SI seven-field layers,retained-model profiles not measured depth reconstructions,pass4 transport plus missing-energy extension,merit/profiles.json,all canonical comparisons
+physical_kernel,Eq17 fixed proton plus BH neutron,mb and SI density,shared accepted kernel no free nuclear width,forward/README.md,forward/consumer.py,all raw yields and compiled responses
+near_surface_depth,10,nm normal to foil,authorized profile transform with host inventory fixed,Axiom1429,causes/density.py,shared1D and independent2D scans
+shared_density_multipliers,13 log points0.1–100,volumetric D factor,sheet unchanged no silent concentration clipping,Axiom1419,causes/density.py ONE,profile likelihood
+independent_density_multipliers,7x7 log points0.3–30,Pd and PdD volumetric D factors,Ti and TiD unchanged no per-material amplitude,Axiom1439,causes/density.py TWO,joint likelihood
+shape_uncertainty,sigma_lnR,digitized log-yield error,original48-point convention not new count errors,published Fig2 bars,forward/errbars.csv,shape chi2
+ratio_observation,SI1 PdD/Pd counts per cup C,dimensionless actual sameE ratio,no6.5keV absolute anchor,SupplementaryTable1,forward/model.py SI1,joint ratio residual and maps
+ratio_error_proxy,sqrt(sigma_lnR_Pd^2+sigma_lnR_PdD^2),log ratio uncertainty,approved proxy assumes independent normalization errors real covariance unavailable,Axiom1444,forward/errbars.csv,joint score only; replaced when per-run errors open
+shape_region,delta chi2<=4,finite-grid threshold,applied to shape component at joint optimum not continuous confidence enclosure,Axiom1444,density2d.csv,primary region map
+ratio_region,all7 model ratios inside actual SI1 min/max,dimensionless,exact0.97727–2.13333 band with geomean-only alternative explicit,Axiom1444,density2d.csv,primary region CSV and map
+sheet_zero_point,0,m^-2 Pd/PdD adsorbate,volumetric bulk m1 unchanged; reoptimized and frozen columns separate,Axiom1429,density1d_fits.json,occupation diagnostic and yield loss
+Pd_surface_site_density,1.53e19,Pd(111) sites/m2,retained geometric site estimate not measured beam-end occupancy,transport.py PD ns,causes sheet occupancy scan,absolute ML conversion
+current_multipliers,0.5;2,delivered charged current factor,extracted neutral flux fixed; immediate and transported cases separate,controlled prospective experiment,causes/responses.py,current response
+D2_fractions,0;0.5;0.85,electrical current fraction,immediate frozen target; D2 gives2D per charge,controlled prospective experiment,causes/responses.py,molecular-beam response
+incidence_angles,30;60,degree from normal,straight rays plus sec-angle sheet thickness; reflection omitted,controlled prospective experiment,causes/responses.py,angle response
+foil_temperature_change,-30;+30,K relative to each actual source beam temperature,actual Model history using retained surface inputs,transport Model,causes/responses.py,temperature response
+beam_time,600;1800;7200,s after3600s preload,actual histories compared with energy-specific nominal2h/12h endpoint,transport Model,causes/knob_profiles.json,time response
+response_density_factors,0.1;3;50,top10nm volumetric D multiplier,instant frozen target with physical D stopping and unchanged sheet,pass5 causes contract,causes/responses.py,density response
+old_top5_response,0.1;3;50,top5nm volumetric D multiplier,reused existing actual result no extra5nm fit campaign,merit sensitivities,merit/sensitivities.csv,top5nm_reused_response.csv
+sealed_density_control,0.7,D/Pd over first400nm,given density control with retained or removed sheet; not integrated device counts,pass5 causes contract,merit/report.py sealed_target,sealed_compare and inferred_baseline_sealed
+transport_current_clock,provided IV treated as incident flux,A and seconds,retained Model convention separate from fitted cup collection and true-yield units,transport.py beam_flux,transport Model,all transported history responses
+independent_sheet_grid,6x6 linear0–1 including0,Pd and PdD absolute ML,original transported bulk m1 fixed diagnostic inconsistency explicitly accepted,Axiom1481 and1487,causes/sheet.py,three-cause joint likelihood and maps
+sheet_optimizer_seed,interpolation of existing full and zero fits,cause parameters,optimizer seed only not interpolation of physics or observations,existing actual refits,causes/sheet.py,local nuisance refit at every cell
+zero_sheet_surface_reference,44.2060,48-point shape chi2,refitted m1 zero-Pd/PdD-sheet scenario not a measured or joined boundary,Axiom1487,density1d_fits.json and references.py,every design beside canonical full-sheet reference
+zero_sheet_projection,remove adsorbate only on exposed Pd,SI seven-field profile columns,both numerator and denominator use identical explicit surface fit; films and bulk unchanged,Axiom1487,references.py,partial islands and promoters plus actual outer laminate material
+joined_boundary_rule,one consistent transport if sampled region fits shape and ratio,physical boundary flux,not a post-export nAds patch and no further bulk grid,Axiom1487,actual sheet_grid.csv region,conditional inferred transport reference

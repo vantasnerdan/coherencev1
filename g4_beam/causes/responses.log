@@ -1,0 +1,41 @@
+transported knob 14 70 current 0.5
+transported knob 28 70 current 2.0
+transported knob 42 70 temperature -30.0
+transported knob 56 70 temperature 30.0
+transported knob 70 70 time 0.0
+compared current 0.5 immediate frozen profile; delivered charged beam changed at fixed extracted neutral flux
+compared current 2.0 immediate frozen profile; delivered charged beam changed at fixed extracted neutral flux
+compared D2_fraction 0.0 immediate frozen target; fraction is electrical current, not D atom fraction
+compared D2_fraction 0.5 immediate frozen target; fraction is electrical current, not D atom fraction
+compared D2_fraction 0.85 immediate frozen target; fraction is electrical current, not D atom fraction
+compared angle_deg_from_normal 30.0 immediate frozen profile; straight ray; normal screening thickness preserved; no reflection/straggling
+compared angle_deg_from_normal 30.0 immediate frozen profile; straight ray; normal screening thickness preserved; no reflection/straggling
+compared angle_deg_from_normal 60.0 immediate frozen profile; straight ray; normal screening thickness preserved; no reflection/straggling
+compared angle_deg_from_normal 60.0 immediate frozen profile; straight ray; normal screening thickness preserved; no reflection/straggling
+compared near_surface_D_factor 0.1 top10nm volumetricD only; adsorbate unchanged; physical D stopping
+compared near_surface_D_factor 3.0 top10nm volumetricD only; adsorbate unchanged; physical D stopping
+compared near_surface_D_factor 50.0 top10nm volumetricD only; adsorbate unchanged; physical D stopping
+compared current 0.5 actual Model nominal run history; retained pass4 surface estimates
+compared current 2.0 actual Model nominal run history; retained pass4 surface estimates
+compared temperature -30.0 actual Model nominal run history; retained pass4 surface estimates
+compared temperature 30.0 actual Model nominal run history; retained pass4 surface estimates
+compared time_s 600.0 actual Model after same3600s preload; reference is nominal run end
+compared time_s 1800.0 actual Model after same3600s preload; reference is nominal run end
+compared time_s 7200.0 actual Model after same3600s preload; reference is nominal run end
+{
+  "completed_knobs": [
+    "D2_fraction",
+    "angle_deg_from_normal",
+    "current",
+    "near_surface_D_factor",
+    "temperature",
+    "time_s"
+  ],
+  "rows": 714,
+  "wall_s": 390.32398937712424,
+  "transported_profile_cases": 70,
+  "worker_threads": 1,
+  "workers": 2,
+  "source": "853c377 plus accepted merit archive; no Zenodo access",
+  "all_designs_through_compare": true
+}
