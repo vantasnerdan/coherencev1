@@ -79,13 +79,13 @@ Near-surface deuterium (`transport/README.md`, `transport/knobs.csv`). In Pd the
 | Knob | Pd / PdD | Ti / TiD |
 |---|---|---|
 | Pd77Ag23 / Pd90Pt10 | x6.5-12 / x0.27-0.31 | - |
-| Pd80Rh20 (estimate from H-electrosorption data) | x0.31 at 0.25 keV, yield x0.96 | - |
+| Pd80Rh20 (estimate from H-electrosorption data) | x0.31-0.33; yield x0.95-0.96 at 0.25 keV, x0.68-0.75 at 2.5 keV | - |
 | -30 K / +30 K | x2.3-2.5 / x0.40-0.63 | ~x1 |
 | Strain +0.5% / -0.5% | x1.4 / x0.68 | x1.00 |
 | Back-side current x2 | x1.13-1.14 (end of run) | x1.00 |
 | 2 nm Al2O3 while it lasts | x0.04 (0.25 keV) to x3.3 (PdD, 2.5 keV) | Al2O3 5 nm x0.19-0.30 |
 
-A beam-side surface that almost stops recombining deuterium (sticking 1e-7) lets the hydride reach the beam side (0.68-0.72 D/Pd). First-principles inputs: the converged 1 ML adsorption of D on clean Pd(111) is 0.466 eV per D below half a D2 molecule, beside the model's 0.45 eV; the Pd vacancy binding stays at the 0.23 eV estimate (8-Pd pilot 0.131 eV, unrelaxed 27-Pd trial 0.242 eV); the D2 recombination barrier was not converged. Pd80Rh20 lowers near-surface D but barely moves the yield, because the adsorbed monolayer stays nearly full.
+A beam-side surface that almost stops recombining deuterium (sticking 1e-7) lets the hydride reach the beam side (0.68-0.72 D/Pd). First-principles inputs: the converged 1 ML adsorption of D on clean Pd(111) is 0.466 eV per D below half a D2 molecule, beside the model's 0.45 eV; the Pd vacancy binding stays at the 0.23 eV estimate (8-Pd pilot 0.131 eV, unrelaxed 27-Pd trial 0.242 eV); the D2 recombination barrier was not converged. Pd80Rh20 lowers near-surface D to about a third; at 0.25 keV the yield barely moves because the adsorbed monolayer stays nearly full, while at 2.5 keV it falls to x0.68-0.75. In the screening cells Rh moves the Pd d band away from the Fermi level (Pd3Rh -2.547 eV against Pd -2.424 eV); only tensile strain moves it toward it.
 
 ## What the models keep, drop, and leave out
 
