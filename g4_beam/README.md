@@ -26,6 +26,7 @@ One static number cannot serve both, so the shared deliverable is eps(q) over th
 | `screening/` | 184 measured screening potentials with sources, screening-model formulas, correlation tests |
 | `screen/` | First-principles screening (GPAW, PBE): density of states and d-band centres for 14 hosts, static RPA screening length for 9, the neutral adiabatic screening cycle for Pd and Pd3Rh, and ratio 7 |
 | `priordata/` | Other low-energy d+d datasets in one table, plateau comparison |
+| `merit/` | Pass 5: yield of any layered target relative to the transported UC Davis PdD foil, side by side with the UC Davis values (`compare.csv`); causes refitted on transported profiles |
 
 Run every script from its own directory, except `work/` scripts and `priordata/scripts/compare.py .`, which run from `g4_beam/`.
 
@@ -54,7 +55,20 @@ Low-energy plateau, best fit of each candidate on all 48 points (`forward/fits.j
 | Thermal spike, one amplitude | M4 | 6 | 132.23 | |
 | No additional plateau | M0 | 5 | 181.45 | |
 
-The first three lie within 3.4 in AIC. With the fixed resonance in place the no-plateau control misses the lowest points by factors of 4 to 5; without it (Eq 7 only) it had chi2 459.
+The first three lie within 3.4 in AIC. With the fixed resonance in place the no-plateau control misses the lowest points by factors of 4 to 5; without it (Eq 7 only) it had chi2 459. These fits use uniform targets. Pass 5 refits them with the transported deuterium profiles; see below.
+
+Pass 5 (`merit/`): the three causes refitted with the transported, run-end deuterium profiles of all four foils plus the adsorbed sheet, the reference for every pass 5 design. Best chi2 over the 0, 1 and 2 extra current powers: rising screening 51.48, fast neutrals 69.89, surface layer 262.24. The surface layer no longer fits once the real profile is used. The refitted model gives PdD/Pd 4.9-7.2 over 0.25-3 keV against the SI Table 1 counts per charge of 0.98-2.13.
+
+Merit is the D(d,p)T yield of a design over the yield of the transported UC Davis PdD foil at the same energy:
+
+| | 0.25 keV | 1 keV | 2.5 keV | 6.5 keV |
+|---|---|---|---|---|
+| Extra uniform U_e for 10x, rising screening (keV) | 0.51 | 0.53 | 0.78 | 2.82 |
+| Extra uniform U_e for 10x, fast neutrals (keV) | 0.99 | 0.86 | 0.95 | 2.29 |
+| Ideal beam side at 0.7 D/Pd with the sheet kept, rising screening | 136 | 41 | 20 | 29 |
+| The same, fast neutrals | 35 | 21 | 21 | 30 |
+
+Against the uniform 0.7 D/Pd target instead, the same ideal beam side gives 1.02-1.05.
 
 Electronic screening from first principles (`screen/README.md`, valence-PAW PBE, static low-q RPA). The screening length lambda gives a Yukawa static U_e = e^2/lambda:
 
@@ -89,7 +103,7 @@ A beam-side surface that almost stops recombining deuterium (sticking 1e-7) lets
 
 ## What the models keep, drop, and leave out
 
-`forward/` keeps the Bosch-Hale S-factors, ICRU-49 electronic and ZBL nuclear stopping with Bragg additivity, the 85/15 D+/D2+ beam, and a measurement layer: charge normalisation, Faraday-cup collected fraction in each beam-delivery regime, proton-to-neutron stitch factor, and fast neutrals. It drops target evolution, straggling and backscatter, and the deuterium depth profile.
+`forward/` keeps the Bosch-Hale S-factors, ICRU-49 electronic and ZBL nuclear stopping with Bragg additivity, the 85/15 D+/D2+ beam, and a measurement layer: charge normalisation, Faraday-cup collected fraction in each beam-delivery regime, proton-to-neutron stitch factor, and fast neutrals. It drops target evolution, straggling and backscatter. It reads the deuterium depth profile when given one; `merit/` supplies the transported profiles.
 
 `transport/` keeps the isotherm-driven diffusion over the full foil, vacancy trapping, surface desorption against chamber gas, sputter erosion, overlayers and beam heating. It drops microstructure, blisters and run history.
 

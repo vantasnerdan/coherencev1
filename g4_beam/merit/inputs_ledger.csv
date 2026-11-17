@@ -1,0 +1,27 @@
+input,value,units,status,reference,source,consumer
+source_revision,853c37738caca76ba70cefd8f4df7350bc204937,git revision,pinned input not local edited-source claim,pass5 contract,g4_beam/README.md,all pass5 scripts
+primary_profiles,16 supplied plus40 missing energies generated,energy/run-bound SI profiles,retained-model transport not measured D profiles,pass4 transport,g4_beam/merit/profiles.json,merit.refit and api.reference
+run_time_low_E,43200,s,retained nominal run history,Ecm<=2keV,g4_beam/transport/transport.py default_case,prepare.py and designs.py
+run_time_high_E,7200,s,retained nominal run history,Ecm>2keV,g4_beam/transport/transport.py default_case,prepare.py and designs.py
+preload_loaded_foil,3600,s,retained nominal loading history,loaded foils,g4_beam/transport/transport.py default_case,prepare.py and designs.py
+Eads_Pd,0.45,eV per D positive binding,retained finite-T model estimate not electronic endpoint,Christmann1988,g4_beam/transport/transport.py PD,transport.Model
+vacancy_binding,0.23,eV per D,retained estimate not unrelaxed27Pd endpoint,Myers1992 and retained decision,g4_beam/transport/transport.py PD,transport.Model
+trap_capacity,6,D per vacancy,retained model estimate not qualified multi-D DFT,pass4 retained decision,g4_beam/transport/transport.py PD,transport.Model
+clean_sticking,0.5,dimensionless D2 sticking,retained estimate no barrier-to-sticking substitution,Conrad1974 H2 analogy,g4_beam/transport/transport.py PD,transport.Model
+BCA_cache,provided,conditional implantation and damage tables,supplied cache no rebuild,pass4 transport,g4_beam/transport/bca_tables.npz,transport.Model
+stopping,scaled LS plus ZBL,eV/m from SI densities,model estimates Bragg atomic sum not measured layered stopping,LindhardScharffSchiott1963 and ZBL1985,g4_beam/transport/bca.py,transport_stopping and ald.Stopping
+LS_Pd_scale,1.54,dimensionless,pass4 ICRU-calibrated estimate,ICRU49 comparison,g4_beam/transport/bca.py SE_FACTOR,transport_stopping
+LS_Ti_scale,1.52,dimensionless,pass4 ICRU-calibrated estimate,ICRU49 comparison,g4_beam/transport/bca.py SE_FACTOR,transport_stopping
+unsupported_LS_scale,1,dimensionless,explicit uncalibrated LS elemental model not ICRU fallback,LS1963,g4_beam/transport/bca.py,ald.Stopping
+D1_current_fraction,0.85,electrical current fraction,retained beam model,UC Davis beam description,g4_beam/forward/model.py,consumer and refit
+D2_current_fraction,0.15,electrical current fraction with2D per charge,retained beam model,UC Davis beam description,g4_beam/forward/model.py,consumer and refit
+spread_FWHM,0.05,fraction of beam energy,retained Gaussian beam estimate,pass4 model,g4_beam/forward/model.py,consumer and responses
+energy_cutoff,0.1,lab keV,fixed integration convention not resolved below50eV CM,pass4 model,g4_beam/forward/consumer.py,all physical yields
+reaction_width,0.040,eV Gamma_p,common fixed nuclear parameter not plateau fit,Czerski arXiv2409.02112v3 literal Eq17,g4_beam/forward/model.py,all proton yields
+reaction_phase,115,degree,common fixed nuclear parameter,Czerski arXiv2409.02112v3,g4_beam/forward/model.py,all proton yields
+reaction_channel_radius,7,fm,common fixed nuclear parameter distinct from4fm WKB radius,Czerski arXiv2409.02112v3,g4_beam/forward/model.py,all proton yields
+cause_parameters,three transported-profile fitted families,keV and nm and flux ratios,fit not first-principles screening or microscopic identification,48 UC Davis digitized points,g4_beam/merit/fits_transported.json,api.bestfits and all designs
+current_readings,0;1;2,extra inverse cup-current powers,matched measurement hypotheses not physical yield modifiers,pass5 contract,g4_beam/merit/refit.py,refit and compare
+SI1_anchors,0.25 to3.0,CM keV,actual same-energy counts per cup C only no6.5 absolute measurement,UC Davis SupplementaryTable1,g4_beam/forward/model.py SI1,compare and transported_material_ratios.csv
+paper_quoted_Ue,0.8;1.7;0.3;0.9,keV forPd/PdD/Ti/TiD each+-0.2,quoted paper fit separate from matched refits,10.1038/s41467-026-74421-1 Results,https://www.nature.com/articles/s41467-026-74421-1,compare
+ideal_sealed_density,0.7,D/Pd,given ideal density design not verified ALD material,pass5 causes contract,g4_beam/merit/report.py sealed_target,merit and causes

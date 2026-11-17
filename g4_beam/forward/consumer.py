@@ -7,6 +7,7 @@ No transport evolution is performed here. No detector factor enters physical yie
 """
 import numpy as np
 from scipy.integrate import solve_ivp, quad
+from functools import lru_cache
 from scipy.interpolate import PchipInterpolator
 from . import model as M
 from . import thermal
@@ -63,6 +64,65 @@ def stopping_eV_per_m(E_lab_keV, layer):
     host=(se+float(M.Sn_atom(e,z,m)))*1e-19
     deut=(float(M.Se_atom(e,'H'))+float(M.Sn_atom(e,1,M.M_D)))*1e-19
     return nh*host+nd*deut
+
+_GX, _GW = np.polynomial.legendre.leggauss(12)
+
+
+@lru_cache(maxsize=2048)
+def _csda_segments(e0, layers, stopping_fn, cutoff):
+    """Reusable stopping solution, independent of nuclear/screening parameters."""
+    energy=float(e0); segments=[]
+    for layer in layers:
+        if energy<=cutoff:break
+        zt,zb,_,nd,_,_,_=layer
+        def rhs(z,state):
+            return [-stopping_fn(max(float(state[0]),cutoff),layer)/1000]
+        def event(z,state):return state[0]-cutoff
+        event.terminal=True;event.direction=-1
+        sol=solve_ivp(rhs,(zt,zb),[energy],rtol=2e-7,atol=1e-8,
+                      events=event,max_step=10e-9,dense_output=True)
+        if not sol.success:raise RuntimeError(sol.message)
+        end=float(sol.t[-1])
+        segments.append((zt,end,nd,sol.sol))
+        energy=float(sol.y[0,-1])
+        if sol.t_events[0].size:break
+    return segments
+
+
+@lru_cache(maxsize=2048)
+def _csda_quadrature(e0,frozen,stopping_fn,cutoff):
+    parts=_csda_segments(e0,frozen,stopping_fn,cutoff)
+    energies=[];depths=[];weights=[];intervals=[]
+    for za,zb,nd,solution in parts:
+        cuts=np.linspace(za,zb,max(1,int(np.ceil((zb-za)/10e-9)))+1)
+        mid=(cuts[:-1]+cuts[1:])/2;half=np.diff(cuts)/2
+        z=(mid[:,None]+half[:,None]*_GX).ravel()
+        energies.append(solution(z)[0]);depths.append(z)
+        weights.append((half[:,None]*_GW*nd*1e-31).ravel())
+        intervals.extend((a,b,nd,solution) for a,b in zip(cuts[:-1],cuts[1:]))
+    if not parts:return np.array([]),np.array([]),np.array([]),0.,[]
+    return (np.concatenate(energies),np.concatenate(depths),
+            np.concatenate(weights),parts[-1][1],intervals)
+
+
+def csda_nodes(e0,layers,stopping_fn=stopping_eV_per_m,cutoff=.1,break_m=None):
+    """Reusable authoritative stopping ODE and 12-point Gauss reaction nodes.
+
+    Return lab keV, depth m, n_D*dz*1e-31 weights, and terminal depth.
+    Split a screening step exactly, replacing only its intersected interval.
+    """
+    frozen=tuple(tuple(float(v) for v in row) for row in layers)
+    en,z,w,length,intervals=_csda_quadrature(float(e0),frozen,stopping_fn,float(cutoff))
+    if break_m is not None:
+        for za,zb,nd,solution in intervals:
+            if za<break_m<zb:
+                cuts=np.array([za,break_m,zb])
+                mid=(cuts[:-1]+cuts[1:])/2;half=np.diff(cuts)/2
+                zz=(mid[:,None]+half[:,None]*_GX).ravel()
+                keep=(z<za)|(z>zb)
+                return (np.r_[en[keep],solution(zz)[0]],np.r_[z[keep],zz],
+                        np.r_[w[keep],(half[:,None]*_GW*nd*1e-31).ravel()],length)
+    return en,z,w,length
 
 
 def forward_yields(E_cm_keV, profiles, *, Ue_keV=None, potential=None,
@@ -121,42 +181,27 @@ def forward_yields(E_cm_keV, profiles, *, Ue_keV=None, potential=None,
             raise ValueError('Contiguous nonnegative-density layers must start at zero')
         def ion(e0):
             def xs(energy,z):
-                ec=max(energy/2,.05)
-                base=0.0 if potential_xs is not None else (float(Ue_keV(e,z)) if callable(Ue_keV) else float(Ue_keV))
-                u=base
+                ec=np.maximum(np.asarray(energy)/2,.05)
+                if potential_xs is not None:base=0.
+                elif callable(Ue_keV):
+                    base=np.array([float(Ue_keV(e,zz)) for zz in np.atleast_1d(z)])
+                else:base=float(Ue_keV)
                 weight=0.
-                if candidate=='layer':weight=float(z<p['d_nm']*1e-9)
+                if candidate=='layer':weight=np.asarray(z)<p['d_nm']*1e-9
                 elif candidate=='sigmoid_tt':weight=1/(1+np.exp((e0/2-p['E0'])/.5))
-                if weight:
-                    u+=weight*((p['Ue_s']-base) if potential_xs is None else p['delta_Ue_surface_keV'])
-                if u<0:raise ValueError('Screening energy must be nonnegative')
-                if potential_xs is None:return float(M.reaction_sigma(ec,u,ch,reaction))
-                # A constant potential reduction shifts the supplied barrier;
-                # the supplied barrier, with the bare S-factor left at ec.
-                return float(potential_xs(ec+u,ch)*M.reaction_S(ec,ch,reaction)/M.reaction_S(ec+u,ch,reaction)*(ec+u)/ec)
-            y=float(nads)*xs(e0,0)*1e-31
-            energy=float(e0)
-            for layer in layers:
-                if energy<=E_cut_lab_keV:break
-                zt,zb,_,nd,_,_,_=layer
-                def rhs(z,state):
-                    en=max(state[0],E_cut_lab_keV)
-                    return [-stopping_fn(en,layer)/1000,nd*xs(en,z)*1e-31]
-                def cutoff(z,state):return state[0]-E_cut_lab_keV
-                cutoff.terminal=True;cutoff.direction=-1
-                # Split at a true screening-layer boundary (possibly subatomic)
-                # instead of expecting an adaptive integrator to find a step.
-                cuts=[zt,zb]
-                if candidate=='layer' and zt<p['d_nm']*1e-9<zb:cuts.insert(1,p['d_nm']*1e-9)
-                for za,zz in zip(cuts[:-1],cuts[1:]):
-                    sol=solve_ivp(rhs,(za,zz),[energy,0.],rtol=2e-6,atol=[1e-7,1e-30],events=cutoff,max_step=10e-9)
-                    if not sol.success:raise RuntimeError(sol.message)
-                    energy=float(sol.y[0,-1]);y+=float(sol.y[1,-1])
-                    if sol.t_events[0].size:break
+                u=base+weight*((p.get('Ue_s',base)-base) if potential_xs is None else p.get('delta_Ue_surface_keV',0.))
+                extra=p.get('additional_Ue_keV',0.)
+                u+=np.array([float(extra(e,zz)) for zz in np.atleast_1d(z)]) if callable(extra) else float(extra)
+                if np.any(u<0):raise ValueError('Screening energy must be nonnegative')
+                if potential_xs is None:return M.reaction_sigma(ec,u,ch,reaction)
+                return potential_xs(ec+u,ch)*M.reaction_S(ec,ch,reaction)/M.reaction_S(ec+u,ch,reaction)*(ec+u)/ec
+            y=float(nads)*float(np.asarray(xs(e0,0)).item())*1e-31
+            en,z,w,length=csda_nodes(e0,layers,stopping_fn,E_cut_lab_keV,
+                                    p['d_nm']*1e-9 if candidate=='layer' else None)
+            if len(en):y+=float(np.sum(w*xs(en,z)))
             if candidate=='thermal' and ch=='p':
                 from .profile_thermal import density_squared_average
                 # Volume-average along the frozen target's traversed track.
-                length=min(float(layers[-1,1]),max(float(sol.t[-1]) if 'sol' in locals() else 0,1e-30))
                 nd2=density_squared_average(layers,length)
                 y+=float(thermal.probability(np.sqrt(nd2),Ue_hot_keV=p['Ue_hot'],E_A_eV=p['E_A_eV'],exposure_m3_s=p['A'],T_K=p['T_track_K'],E_R_eV=p['E_R_eV']))
             return y

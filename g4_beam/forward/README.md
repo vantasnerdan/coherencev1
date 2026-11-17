@@ -42,6 +42,23 @@ The final actual-profile command exited0. Its uniform-target integral limit diff
 
 The targeted `--potential-domain` command exited0 in26.83s on the actual saved-profile API. Both the0.01–3Angstrom reporting-only table and an incomplete outer table were rejected with explicit domain errors. Full-domain recovery succeeded; extending the supplied samples from4fm down to1fm while retaining the physical4fm boundary changed yield/C by only2.69e-5 relative (interpolation-grid difference). The domain evidence is retained alongside the unaffected checks in `consumer_verification.json`.
 
+### Pass5 transported-profile fit acceleration
+
+The pass5 merit consumer reuses this same kernel. Stopping is now solved once
+per immutable seven-field profile and incident energy, independently of the
+nuclear/screening parameters. `csda_nodes` returns 12-point Gauss reaction nodes
+on segments no longer than10nm; a fitted surface boundary is split exactly.
+Both production yields and the compiled fit responses consume those nodes.
+The previous coupled stopping/yield ODE is not retained as a second production
+integrator. `parameters.additional_Ue_keV` is an explicit scalar or `(E_cm,z_m)`
+addition after the selected cause, used for the tenfold-screening sensitivity.
+
+The actual PdD profile pilot agrees with the previous ODE within6.29e-6
+relative over the no-plateau, surface, screening-rise and neutral cases
+(`../merit/path_parity.json`). This is numerical parity, not material-input
+uncertainty. Transported cause refits and fixed-PdD-reference comparisons live
+in `../merit/`, separately from the retained uniform pass4 fit artifacts.
+
 ## Reproduce and consume
 
 From the repository root with NumPy/SciPy/Matplotlib installed:

@@ -1,0 +1,10 @@
+step,portable_command,observed_exit,wall_s,evidence
+missing_profile_pilot,python g4_beam/merit/prepare.py --pilot,0,4.37,prepare_pilot.log
+consumer_parity,inline Python old/new consumer on frozen PdD profile,0,54.82,path_parity.json; timing includes profile pilot and parity calls
+missing_profiles,python g4_beam/merit/prepare.py,0,160.97,prepare.log;39 remaining after1pilot
+refit_pilot,python g4_beam/merit/refit.py --pilot,0,30.50,refit_pilot.log
+all_refits,python g4_beam/merit/refit.py,0,905.39,refit.log and refit_summary.csv
+surface_distinct_start,python g4_beam/merit/refit.py --surface-alternative,0,290.59,refit.log; original better branch retained
+settled_consumer,python g4_beam/merit/report.py,0,149.51,report.log and verification.json
+changed_potential_path,python g4_beam/forward/consumer_example.py --potential-layer,0,5.25,potential_consumer.log
+explicit_fit_and_replot,inline Python explicit-fit equivalence then python g4_beam/merit/report.py --plot-only,0,10.82,explicit_fit.log; default and explicit fits identical for all3causes
