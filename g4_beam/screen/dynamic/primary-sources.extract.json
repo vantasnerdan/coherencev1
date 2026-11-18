@@ -1,0 +1,137 @@
+{
+  "schema": "dynamic-primary-source-evidence-extract-v1",
+  "record_kind": "portable_extract",
+  "original_records": [
+    {
+      "locator": "dynamic/grounding-20261118.json",
+      "bytes": 5716,
+      "sha256": "4fd507bbaeb7203261bc4ffe9c089940a0cc3321ac56c551ce2d03f2ded1f47b"
+    },
+    {
+      "locator": "sources/pd-core-alpha-source-original-20261118.json",
+      "bytes": 10495,
+      "sha256": "df8ea87d391c1f07ad389081af5e59c71d8b4f9224af29226aeb60981d06803a"
+    }
+  ],
+  "transformations": [
+    "Selected scientific citations, quoted passages and source-byte identities only; omitted private filesystem locators, campaign identities, search transcripts and accounting.",
+    "PDF/text originals are not bundled. Hashes identify originals, not a claim of supplied PDF bytes. No new source search or scientific calculation."
+  ],
+  "primary_sources": [
+    {
+      "citation": "Huke et al., arXiv:0805.4538v1",
+      "url": "https://arxiv.org/pdf/0805.4538v1",
+      "location": "rendered p.10, Eq.(10)",
+      "used_for": "Printed squared dynamic/adibatic ratio; exact snapshot uses the positive square root. Not a bound-core validation.",
+      "original_pdf": {
+        "bytes": 653081,
+        "sha256": "7a428728bc7d86c12bc8aa9bb659c57bb74d9070ec87d91ba0dbb0aea74cd33b"
+      },
+      "original_text": {
+        "bytes": 176950,
+        "sha256": "9941881c54ce606f8032f4d7b9d8a8cbbf5f1a3a1af0c0ad827622707a30706a"
+      }
+    },
+    {
+      "citation": "Yan et al., arXiv:1104.1273v1",
+      "url": "https://arxiv.org/pdf/1104.1273v1",
+      "location": "Eqs.(4),(8),(11) and PAW augmentation Eqs.(15)-(18)",
+      "used_for": "Static-response context only; no new static18 response or dielectric inversion in this slice.",
+      "original_pdf": {
+        "bytes": 443238,
+        "sha256": "44df983b77c96798d9527af1f84163acd1015f780898f1f255c0b4b2d590a6f8"
+      },
+      "original_text": {
+        "bytes": 76624,
+        "sha256": "bd246c3bf3517278c39996e26bf3b3227f57ce65a5f62c9807961da4b76221fb"
+      }
+    },
+    {
+      "citation": "Jerabek, Schwerdtfeger and Nagle, The Static Dipole Polarizability of Palladium from Relativistic Coupled Cluster Theory, arXiv:1809.08992v1.",
+      "url": "https://arxiv.org/pdf/1809.08992v1",
+      "original_pdf": {
+        "bytes": 159557,
+        "sha256": "4568a603cbc72bc264bb1bb55c61040d81d93739b8aa697f2b19517a8efb617a"
+      },
+      "original_text": {
+        "bytes": 36897,
+        "sha256": "e4a519472beb71422afaa46352ccf6bc87e6bfac05e373b6a911ad7772119e7d"
+      },
+      "quoted_passages": [
+        {
+          "page": "1, Introduction",
+          "quote": "For palladium, the main contribution from the sum-over-states formula of the dipole polarizability will come from 4d\u21925p excitations"
+        },
+        {
+          "page": "2, Computational Method",
+          "quote": "All 46 electrons and virtual orbitals up to 30 a.u. were considered in the correlation treatment."
+        },
+        {
+          "page": "3, Table II",
+          "quote": "Final value                       26.135"
+        },
+        {
+          "page": "4, Summary",
+          "quote": "Our calculated value for the palladium atomic polarizability of 26.14(10) a.u."
+        }
+      ],
+      "electron_scope": "Total neutral Pd atom, with 4d10 5s0 valence configuration; not a Kr-core-only calculation.",
+      "units": "Atomic units of dipole polarizability, conventionally a0^3.",
+      "restriction": "Neither 26.14(10) nor the all-electron correlation treatment supplies a separately tabulated core alpha or a rigorous upper bound for an embedded Pd core. No subtraction or substitution was made."
+    },
+    {
+      "citation": "W. R. Johnson, D. Kolb and K.-N. Huang, Atomic Data and Nuclear Data Tables 28(2), 333\u2013340 (1983).",
+      "url": "https://doi.org/10.1016/0092-640X(83)90020-7",
+      "accessible_original_abstract": "https://inspirehep.net/api/literature/1617199",
+      "literal_abstract_quotes": [
+        "Theoretical values of electric and magnetic susceptibilities ( \u03b1 1 , \u03b1 2 , \u03c7 1 ) and shielding factors ( \u03b3 1 , \u03b3 2 , \u03c3 1 ) calculated in the relativistic random-phase approximation are presented in tabular form for ions with closed 1 s , 2 p , 3 p , 3 d , 4 p , 4 d , and 5 p shells.",
+        "The table includes all ions in these sequences with nuclear charge up to Z = 56 and a representative selection of ions with 56 < Z \u2a7d 92."
+      ],
+      "read_extent": "Abstract only; actual Pd10+ alpha1 table row, units and notes were not acquired. No numerical value admitted.",
+      "not_observed": [
+        "The Pd10+ table row",
+        "Its alpha1 value",
+        "The table's unit convention",
+        "Any separately resolved 4s/4p contribution",
+        "Any claim that the ionic value bounds the embedded metallic core"
+      ]
+    },
+    {
+      "citation": "Nieminen and Puska, Core Polarizabilities in Metals, Physica Scripta 25(6B), 952\u2013956 (1982).",
+      "url": "https://doi.org/10.1088/0031-8949/25/6B/010",
+      "literal_quote": "While the core polarizability changes relatively little (around 10%) from its free-ion value in the alkalis, Mg and Al, large increases are found for metals like Ga, Cd, In, and Sn with full d-shells.",
+      "read_extent": "Author-institution abstract and bibliographic records; not full text.",
+      "finding": "Supports environmental dependence of core response. The accessible abstract supplies no Pd value, electron partition or units."
+    }
+  ],
+  "implementation_sources": [
+    {
+      "bytes": 57568,
+      "sha256": "ebe3aef926bfedcea6f6c1a6862c3805eb31208c560a301eaf956b9ef28e8886",
+      "locator": "upstream/gpaw/atom/generator2.py"
+    },
+    {
+      "bytes": 32198,
+      "sha256": "bc617b5dde35f8bed935128c42aeaba0614c43fdd4c28319d51a38d41833d3e7",
+      "locator": "upstream/gpaw/atom/aeatom.py"
+    },
+    {
+      "bytes": 34912,
+      "sha256": "4a12cd747199418babe7b03be947ce011e1cbc58f229979d398e44eb577ed4ef",
+      "locator": "upstream/gpaw/response/df.py"
+    },
+    {
+      "bytes": 7715,
+      "sha256": "5ff1fa7ef2facf1dc4624a2bd54fcae72a52a33a9149807edc89207385a32eb2",
+      "locator": "upstream/gpaw/response/chi0_drude.py"
+    }
+  ],
+  "core_polarizability_disposition": {
+    "usable_core_alpha": null,
+    "fallback_triggered": false,
+    "sourced_embedded_core_upper_bound_established": false,
+    "neutral_total_atom_value_not_core_alpha": true,
+    "restriction": "The neutral atom total 26.14(10) a0^3 is not a separately resolved 4s/4p core alpha or a rigorous bound for an embedded metallic core. No substitution, subtraction, oscillator-strength bound or numerical core correction is made.",
+    "source_hunt_closed_for_this_slice": true
+  }
+}

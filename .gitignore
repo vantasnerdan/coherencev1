@@ -28,3 +28,12 @@ g4_beam/transport/recomb/data/**/*.gpw
 
 # pass 5 pairs GPW banks, kept in the g5_pairs-delivery release asset
 g4_beam/pairs/data/**/*.gpw
+
+# pass 5 dynamic screening: GPW banks, response matrices, generated setup and
+# third-party copies, kept in the g5_dynamic-delivery release asset
+g4_beam/screen/dynamic/**/*.gpw
+g4_beam/screen/dynamic/data/static/banks/
+g4_beam/screen/dynamic/data/atomic/Pd.18.PBE
+g4_beam/screen/dynamic/data/primary/
+g4_beam/screen/dynamic/data/speed-proof-sources/huke-page10.png
+g4_beam/screen/dynamic/data/speed-proof-sources/chi0_drude.py

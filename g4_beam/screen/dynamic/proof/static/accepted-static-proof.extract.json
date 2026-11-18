@@ -1,0 +1,162 @@
+{
+  "schema": "closed-static-proof-scientific-extract-v1",
+  "status": "historical accepted proof; portable adapter has not executed",
+  "accepted_check_count": 53,
+  "accepted_checks": [
+    "raw primary binding: yan-paw-response.txt",
+    "inventory agrees with primary: yan-paw-response.txt",
+    "raw primary binding: yan-paw-response.pdf",
+    "inventory agrees with primary: yan-paw-response.pdf",
+    "full complex finite-radius two-charge angular oracle",
+    "angular oracle exposes no source phase",
+    "angular oracle exposes reversed source phase",
+    "angular oracle exposes discarded imaginary local fields",
+    "angular oracle exposes diagonal-only local fields",
+    "opposite-q conjugation preserves the real readout",
+    "joint reciprocal-basis permutation preserves the readout",
+    "independent angular oracle exposes self-energy half",
+    "independent angular oracle exposes missing 4pi",
+    "Gaussian Coulomb analytic curve: kappa=1.0,width=1.5",
+    "separate radial refinement and cutoff: kappa=1.0,width=1.5",
+    "independent damped-TF Fourier integral: kappa=1.0,width=1.5",
+    "Gaussian Coulomb analytic curve: kappa=1.0,width=3.0",
+    "separate radial refinement and cutoff: kappa=1.0,width=3.0",
+    "independent damped-TF Fourier integral: kappa=1.0,width=3.0",
+    "Gaussian Coulomb analytic curve: kappa=2.0,width=1.5",
+    "separate radial refinement and cutoff: kappa=2.0,width=1.5",
+    "independent damped-TF Fourier integral: kappa=2.0,width=1.5",
+    "Gaussian Coulomb analytic curve: kappa=2.0,width=3.0",
+    "separate radial refinement and cutoff: kappa=2.0,width=3.0",
+    "independent damped-TF Fourier integral: kappa=2.0,width=3.0",
+    "Gaussian Coulomb analytic curve: kappa=3.0,width=1.5",
+    "separate radial refinement and cutoff: kappa=3.0,width=1.5",
+    "independent damped-TF Fourier integral: kappa=3.0,width=1.5",
+    "Gaussian Coulomb analytic curve: kappa=3.0,width=3.0",
+    "separate radial refinement and cutoff: kappa=3.0,width=3.0",
+    "independent damped-TF Fourier integral: kappa=3.0,width=3.0",
+    "nonidentical-reference TF continuum reconstruction",
+    "analytic continuum exposes equal weights",
+    "analytic continuum exposes twice volume",
+    "analytic continuum exposes repeated addback",
+    "analytic undamped TF limit and uniform error bound: 40.0",
+    "analytic undamped TF limit and uniform error bound: 160.0",
+    "explicit invalid-input refusal: Gamma",
+    "explicit invalid-input refusal: matrix dimension",
+    "explicit invalid-input refusal: nonfinite matrix",
+    "explicit invalid-input refusal: source dimension",
+    "explicit invalid-input refusal: negative radius",
+    "explicit invalid-input refusal: scalar radius",
+    "explicit invalid-input refusal: empty radii",
+    "explicit invalid-input refusal: nonfinite radius",
+    "explicit invalid-input refusal: zero volume",
+    "explicit invalid-input refusal: zero weight",
+    "explicit invalid-input refusal: unnormalized individual weight",
+    "explicit invalid-input refusal: zero kappa",
+    "explicit invalid-input refusal: negative width",
+    "explicit invalid-input refusal: complex units",
+    "contact limit, duplicate and unsorted radii",
+    "q kernel does not mutate its inputs"
+  ],
+  "scientific_result": {
+    "bindings": {
+      "microscopic_screening.py": {
+        "bytes": 6829,
+        "sha256": "294347911c9a05c115b3e9f20003624f896949cc07c544a8eccba86b9f66be74"
+      },
+      "preregistration.json": {
+        "bytes": 8548,
+        "sha256": "e3dacb94a2044bbd2c2a3c4988f1c8290f25cfe4b62c277c5915875cb5d9f2a4"
+      },
+      "source_inventory.json": {
+        "bytes": 5716,
+        "sha256": "4fd507bbaeb7203261bc4ffe9c089940a0cc3321ac56c551ce2d03f2ded1f47b"
+      },
+      "verify.py": {
+        "bytes": 14798,
+        "sha256": "21d74ba6ba160fac90479a284ca3265e43f168f5d7b711cab7fc3f85e4083627"
+      },
+      "yan-paw-response.pdf": {
+        "bytes": 443238,
+        "sha256": "44df983b77c96798d9527af1f84163acd1015f780898f1f255c0b4b2d590a6f8"
+      },
+      "yan-paw-response.txt": {
+        "bytes": 76624,
+        "sha256": "bd246c3bf3517278c39996e26bf3b3227f57ce65a5f62c9807961da4b76221fb"
+      }
+    },
+    "continuum": {
+      "continuum_mutation_gaps_eV": {
+        "equal weights": 1297.1641381812692,
+        "repeated addback": 3563.914938250164,
+        "twice volume": 1.8949315074832498
+      },
+      "gaussian_errors_eV": {
+        "kappa=1.0,width=1.5": 1.1368683772161603e-13,
+        "kappa=1.0,width=3.0": 8.526512829121202e-14,
+        "kappa=2.0,width=1.5": 9.592326932761353e-14,
+        "kappa=2.0,width=3.0": 3.907985046680551e-14,
+        "kappa=3.0,width=1.5": 8.171241461241152e-14,
+        "kappa=3.0,width=3.0": 1.0658141036401503e-14
+      },
+      "reference_errors": {
+        "kappa=1.0,width=1.5": {
+          "max_eV": 3.552713678800501e-15,
+          "quad_error_eV": 2.110180216982405e-11
+        },
+        "kappa=1.0,width=3.0": {
+          "max_eV": 8.881784197001252e-15,
+          "quad_error_eV": 2.0610056436694395e-11
+        },
+        "kappa=2.0,width=1.5": {
+          "max_eV": 3.552713678800501e-15,
+          "quad_error_eV": 9.917924040333e-12
+        },
+        "kappa=2.0,width=3.0": {
+          "max_eV": 3.552713678800501e-15,
+          "quad_error_eV": 3.329312900929292e-11
+        },
+        "kappa=3.0,width=1.5": {
+          "max_eV": 7.105427357601002e-15,
+          "quad_error_eV": 2.192768328836983e-11
+        },
+        "kappa=3.0,width=3.0": {
+          "max_eV": 7.105427357601002e-15,
+          "quad_error_eV": 6.528557626094977e-12
+        }
+      }
+    },
+    "local_fields": {
+      "angular_max_error_eV": 7.105427357601002e-15,
+      "mutation_gaps_eV": {
+        "diagonal-only local fields": 0.5090173071972286,
+        "discarded imaginary local fields": 0.4509957662040378,
+        "missing 4pi": 4.0363197440378995,
+        "no source phase": 0.38353659962626185,
+        "reversed source phase": 0.9019915324080703,
+        "self-energy half": 2.192645018596689
+      }
+    },
+    "mutation": "none",
+    "radii_A": [
+      0.0,
+      0.001,
+      0.002,
+      0.005,
+      0.01,
+      0.02,
+      0.05,
+      0.1,
+      0.2,
+      0.5,
+      1.0
+    ]
+  },
+  "raw_receipt_identity": {
+    "bytes": 7388,
+    "sha256": "3b03816047738d34831fd14a67f8e9c1adfdfba7605c8e0e2872e70315bf8672"
+  },
+  "canonical_script_identity": {
+    "bytes": 14798,
+    "sha256": "21d74ba6ba160fac90479a284ca3265e43f168f5d7b711cab7fc3f85e4083627"
+  }
+}

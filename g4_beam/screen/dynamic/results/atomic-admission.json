@@ -1,0 +1,166 @@
+{
+  "schema": "pd18-saved-atomic-readout-v1",
+  "identity": {
+    "atom": {
+      "symbol": "Pd",
+      "Z": "46",
+      "core": "28.0",
+      "valence": "18.0"
+    },
+    "xc_functional": {
+      "type": "GGA",
+      "name": "PBE"
+    },
+    "generator_attributes": {
+      "type": "scalar-relativistic",
+      "version": "3",
+      "name": "gpaw-26.7.0"
+    },
+    "generator_parameters": "symbol='Pd',\n    Z=46,\n    xc='PBE',\n    projectors='4s,5s,10.0s,4p,5p,10.0p,4d,d,10.0d,0.0f,5.0f,10.0f,G',\n    radii=[1.6],\n    scalar_relativistic=True,\n    r0=1.4400000000000002,\n    nderiv0=5,\n    pseudize=('poly', 4),\n    yukawa_gamma=0.0",
+    "valence_states": [
+      {
+        "n": "4",
+        "l": "0",
+        "f": "2.0",
+        "rc": "1.6",
+        "e": "-3.135871794877785",
+        "id": "4s"
+      },
+      {
+        "n": "5",
+        "l": "0",
+        "f": "0.0",
+        "rc": "1.6",
+        "e": "-0.12207222706583981",
+        "id": "5s"
+      },
+      {
+        "n": "4",
+        "l": "1",
+        "f": "6.0",
+        "rc": "1.6",
+        "e": "-1.8815336463253571",
+        "id": "4p"
+      },
+      {
+        "n": "5",
+        "l": "1",
+        "f": "0.0",
+        "rc": "1.6",
+        "e": "-0.011504101207573586",
+        "id": "5p"
+      },
+      {
+        "n": "4",
+        "l": "2",
+        "f": "10.0",
+        "rc": "1.6",
+        "e": "-0.14874290584416947",
+        "id": "4d"
+      },
+      {
+        "l": "0",
+        "rc": "1.6",
+        "e": "10.0",
+        "id": "s1"
+      },
+      {
+        "l": "1",
+        "rc": "1.6",
+        "e": "10.0",
+        "id": "p1"
+      },
+      {
+        "l": "2",
+        "rc": "1.6",
+        "e": "0.8512570941558305",
+        "id": "d1"
+      },
+      {
+        "l": "2",
+        "rc": "1.6",
+        "e": "10.0",
+        "id": "d2"
+      },
+      {
+        "l": "3",
+        "rc": "1.6",
+        "e": "0.0",
+        "id": "f1"
+      },
+      {
+        "l": "3",
+        "rc": "1.6",
+        "e": "5.0",
+        "id": "f2"
+      },
+      {
+        "l": "3",
+        "rc": "1.6",
+        "e": "10.0",
+        "id": "f3"
+      }
+    ]
+  },
+  "XML": {
+    "path": "g4_beam/screen/dynamic/data/atomic/Pd.18.PBE",
+    "bytes": 2306235,
+    "sha256": "da1c289de2947a314b26cbdce4d7ad4fa43162d8f10e692cdbda0adee8dc9567"
+  },
+  "logarithmic_derivative_diagnostics": {
+    "radius_Bohr": 3.0,
+    "source_API_quantity": "unwrapped arctan(u_prime/u)/pi, not a free-space scattering phase",
+    "energy_range_Hartree": [
+      -5.0,
+      12.0
+    ],
+    "energy_step_Hartree": 0.04999999999999982,
+    "channels": [
+      {
+        "angular_momentum": 0,
+        "alignment_integer": -0.0,
+        "max_abs_aligned_arctan_logderivative_over_pi": 0.0034152730011207666,
+        "max_abs_wrapped_arctan_logderivative_over_pi": 0.0034152730011207666,
+        "endpoint_winding_difference": 0.0,
+        "max_difference_energy_Hartree": 5.9
+      },
+      {
+        "angular_momentum": 1,
+        "alignment_integer": -0.0,
+        "max_abs_aligned_arctan_logderivative_over_pi": 0.0008966541914574577,
+        "max_abs_wrapped_arctan_logderivative_over_pi": 0.0008966541914574577,
+        "endpoint_winding_difference": -0.0,
+        "max_difference_energy_Hartree": 11.900000000000002
+      },
+      {
+        "angular_momentum": 2,
+        "alignment_integer": -0.0,
+        "max_abs_aligned_arctan_logderivative_over_pi": 0.0013259599194528349,
+        "max_abs_wrapped_arctan_logderivative_over_pi": 0.0013259599194528349,
+        "endpoint_winding_difference": -0.0,
+        "max_difference_energy_Hartree": 7.550000000000001
+      },
+      {
+        "angular_momentum": 3,
+        "alignment_integer": -0.0,
+        "max_abs_aligned_arctan_logderivative_over_pi": 0.0013862428061659493,
+        "max_abs_wrapped_arctan_logderivative_over_pi": 0.0013862428061659493,
+        "endpoint_winding_difference": -0.0,
+        "max_difference_energy_Hartree": 8.5
+      }
+    ],
+    "curves": {
+      "path": "g4_beam/screen/dynamic/data/atomic/logarithmic-derivatives.npz",
+      "bytes": 23765,
+      "sha256": "0df50f1d8d0d4bca2788228e9c83a0759818f703230429cbe1752752f1e3f028"
+    },
+    "sampled_proxy_gate_pass": true,
+    "limitation": "Sampled atomic diagnostics do not prove absence of all scalar-relativistic ghost states."
+  },
+  "generation_log": {
+    "path": "g4_beam/screen/dynamic/data/atomic/generation.txt",
+    "bytes": 5537,
+    "sha256": "17f19c0849116f883023ffe633da8a8395e11cea514bad5f32d43713abebeb19"
+  },
+  "qualification": "Identity and sampled diagnostics only; solid numerical controls are reported separately. Atomic execution records remain private."
+}

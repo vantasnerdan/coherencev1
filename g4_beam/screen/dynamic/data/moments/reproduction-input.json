@@ -1,0 +1,195 @@
+{
+  "schema": "portable-retained-ten-valence-moment-input-v1",
+  "no_new_SCF": true,
+  "no_new_solid": true,
+  "setup_directory": "g4_beam/screen/dynamic/data/static/setups-tenvalence",
+  "setup_bindings": [
+    {
+      "path": "g4_beam/screen/dynamic/data/static/setups-tenvalence/Pd.10.PBE.gz",
+      "bytes": 106793,
+      "sha256": "3c6cfd1de7e6d6815d58c9521b2bc7cec27ede8e83554ed1f0151f979761bbb4"
+    },
+    {
+      "path": "g4_beam/screen/dynamic/data/static/setups-tenvalence/H.PBE.gz",
+      "bytes": 12501,
+      "sha256": "3136ad73c02d471f99dd5f82e451b2061952970556a260d38b53b5020dc94ae7"
+    }
+  ],
+  "cases": [
+    {
+      "case": "Pd-k12",
+      "material": "Pd",
+      "ground_gpw": "g4_beam/screen/dynamic/data/static/retained/Pd/ground.gpw",
+      "source_bindings": [
+        {
+          "path": "g4_beam/screen/dynamic/data/static/retained/Pd/ground.gpw",
+          "bytes": 45311909,
+          "sha256": "2234bcd142bd594a415c685695fb6874174f16fd7d545853ff1ca1f965f8d965"
+        },
+        {
+          "path": "g4_beam/screen/dynamic/data/static/retained/Pd/ground.json",
+          "bytes": 2178,
+          "sha256": "3625e3bb1e99faf85621cf8c13c042b34b93415ba888d20d185a970203f46749"
+        }
+      ],
+      "geometry": {
+        "cell_A": [
+          [
+            0,
+            1.945,
+            1.945
+          ],
+          [
+            1.945,
+            0,
+            1.945
+          ],
+          [
+            1.945,
+            1.945,
+            0
+          ]
+        ],
+        "positions_A": [
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "symbols": [
+          "Pd"
+        ]
+      },
+      "kmesh": [
+        12,
+        12,
+        12
+      ],
+      "FD_width_eV": 0.1,
+      "expected_valence_electrons": 10,
+      "U10_static_Yukawa_proxy_eV": 36.22746936148262,
+      "static_reference_scope": "Accepted pass4 low-q Yukawa proxy"
+    },
+    {
+      "case": "PdD-k12",
+      "material": "PdD",
+      "ground_gpw": "g4_beam/screen/dynamic/data/static/retained/PdD/ground.gpw",
+      "source_bindings": [
+        {
+          "path": "g4_beam/screen/dynamic/data/static/retained/PdD/ground.gpw",
+          "bytes": 54317785,
+          "sha256": "8e864d99acb62bcd92754c8dac2851e7d8ba2c9c2bd62996913207919ce358fd"
+        },
+        {
+          "path": "g4_beam/screen/dynamic/data/static/retained/PdD/ground.json",
+          "bytes": 4640,
+          "sha256": "a4c40d17f51c6f32a2ce6795ee4e2028a8464ad48980230a4563b1aade8cb5c7"
+        }
+      ],
+      "geometry": {
+        "cell_A": [
+          [
+            0,
+            2.0670708423342865,
+            2.0670708423342865
+          ],
+          [
+            2.0670708423342865,
+            0,
+            2.0670708423342865
+          ],
+          [
+            2.0670708423342865,
+            2.0670708423342865,
+            0
+          ]
+        ],
+        "initial_magnetic_moments_muB": [
+          0,
+          0
+        ],
+        "positions_A": [
+          [
+            5.620192272275922e-27,
+            -1.45891026380064e-18,
+            -3.8156701644457023e-22
+          ],
+          [
+            2.0670708423342847,
+            3.0999731199979916e-19,
+            2.9432781966884644e-21
+          ]
+        ],
+        "symbols": [
+          "Pd",
+          "H"
+        ]
+      },
+      "kmesh": [
+        12,
+        12,
+        12
+      ],
+      "FD_width_eV": 0.1,
+      "expected_valence_electrons": 11,
+      "U10_static_Yukawa_proxy_eV": 26.607101982891034,
+      "static_reference_scope": "Accepted pass4 low-q Yukawa proxy"
+    },
+    {
+      "case": "Pd-k24-control",
+      "material": "Pd",
+      "ground_gpw": "g4_beam/screen/dynamic/data/speed-retained/Pd-k24-control/ground.gpw",
+      "source_bindings": [
+        {
+          "path": "g4_beam/screen/dynamic/data/speed-retained/Pd-k24-control/ground.gpw",
+          "bytes": 259415972,
+          "sha256": "6d341062c83d466c0207aa39f3f745e201b3084531c7cbf18104323b3da48699"
+        },
+        {
+          "path": "g4_beam/screen/dynamic/data/speed-retained/Pd-k24-control/ground.json",
+          "bytes": 2226,
+          "sha256": "f4adb7a213df213b8cd241f121881717cfb52d9b3e46132b3afe8bf28da64739"
+        }
+      ],
+      "geometry": {
+        "cell_A": [
+          [
+            0,
+            1.945,
+            1.945
+          ],
+          [
+            1.945,
+            0,
+            1.945
+          ],
+          [
+            1.945,
+            1.945,
+            0
+          ]
+        ],
+        "positions_A": [
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "symbols": [
+          "Pd"
+        ]
+      },
+      "kmesh": [
+        24,
+        24,
+        24
+      ],
+      "FD_width_eV": 0.1,
+      "expected_valence_electrons": 10,
+      "U10_static_Yukawa_proxy_eV": 36.22746936148262,
+      "static_reference_scope": "Same accepted k12 U0 held fixed: velocity-only saved-k24 control"
+    }
+  ]
+}

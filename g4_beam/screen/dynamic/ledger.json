@@ -1,0 +1,623 @@
+{
+  "schema": "g5-dynamic-scientific-source-and-cost-ledger-v1",
+  "source_convention": "Original identities identify actual original bytes. Current identities identify bundled files. Path/import-only adapters and scientific extracts are not relabelled as originals.",
+  "consumer_dependency_baseline": "data/consumer-baseline.json",
+  "static_source_manifest": {
+    "path": "static-source-provenance.json",
+    "bytes": 101953,
+    "sha256": "cbc88d1ea491820f0e49a50b3a4b1cfb1f621aa7749ac6fa1a11fd2e2a8f3908"
+  },
+  "source_rows": [
+    {
+      "path": "dynamic_results.py",
+      "original": {
+        "locator": "dynamic/dynamic_results.py",
+        "bytes": 5276,
+        "sha256": "da21e6ba37ff5512c4af9d6c428b6c2858cc4b3a9c3a2beb348fa5f5e3d3e998"
+      },
+      "current": {
+        "bytes": 5272,
+        "sha256": "4b0005d5b61f927d56ef17470eeb2d7882e45486605ce7a28210f72f3b02c6df"
+      },
+      "transformation": [
+        "Package import selects the exact bundled upstream speed module.",
+        "Module header marks a portable source extract.",
+        "Removed campaign-person attribution from fitted_step_source; all mathematical code, data handling, energy grids, values and scope qualifications unchanged."
+      ]
+    },
+    {
+      "path": "beam_screen_results.py",
+      "original": {
+        "locator": "dynamic/beam_screen_results.py",
+        "bytes": 6196,
+        "sha256": "70fb1ee74c414d0c322398fbe0f41e3b98a034c70e2fa4e061c00736f36e5e37"
+      },
+      "current": {
+        "bytes": 6286,
+        "sha256": "ecc9e0fb8f64146d1b855fa29a1dfe569f493f9a1c97a44e2ef8f72f2891c71f"
+      },
+      "transformation": [
+        "Package-qualified imports replace private standalone import assumptions.",
+        "Source/moment path reporting is relative to integration-root cwd.",
+        "Header and native_paths_private flag describe portable output rather than private producer output.",
+        "Original fixed14-energy incident-shift cache, actual Target construction and compare(candidate) implementation are unchanged."
+      ]
+    },
+    {
+      "path": "postprocess_tenvalence.py",
+      "original": {
+        "locator": "dynamic/postprocess_tenvalence.py",
+        "bytes": 6319,
+        "sha256": "d81d0a95ff9af8659da1b897d093d78eea3ca5feb2952cc446a31b6ac2228350"
+      },
+      "current": {
+        "bytes": 6345,
+        "sha256": "b43abab649c90a0f155e552db5c1500fdd00aed3624ad90b2464536085ad39e9"
+      },
+      "transformation": [
+        "Package import selects exact bundled speed module; header marks a source extract.",
+        "Retained-GPW explicit input/source-binding, actual geometry/electron/k-grid checks and finite-width Drude/eigenvalue algorithms unchanged. No producer execution performed."
+      ]
+    },
+    {
+      "path": "generate_pd18.py",
+      "original": {
+        "locator": "dynamic/generate_pd18.py",
+        "bytes": 4294,
+        "sha256": "8b7be241ec2f4727ce1fda9c7b3744e965a2448fe775ef6061bc58bcec505089"
+      },
+      "current": {
+        "bytes": 4322,
+        "sha256": "ce7dd1dba71740f27ce0a31168ebc31c60a01e23668cd2d5cb9423c9610c30ea"
+      },
+      "transformation": [
+        "Package-qualified parser import and source-extract header.",
+        "Integrator-specific wording generalized; generator recipe/defaults, explicit CLI inputs, occupied-state check and diagnostic algorithm unchanged."
+      ]
+    },
+    {
+      "path": "pd18_dataset.py",
+      "original": {
+        "locator": "dynamic/pd18_dataset.py",
+        "bytes": 4305,
+        "sha256": "bb7169694b6794a9f04f07e773312db073a0ceddfb593a124e071da50c8fcc73"
+      },
+      "current": {
+        "bytes": 4213,
+        "sha256": "1f9225d17afde7222b6c86cca202ec96e4aebd822e988bd7d24082db2b90edcf"
+      },
+      "transformation": [
+        "Header marks portable source extract and qualification uses integrator-neutral wording.",
+        "Preserve explicit --directory spelling rather than force absolute paths, so relative input paths remain portable in output.",
+        "Original XML identity validation and saved phase diagnostics algorithm unchanged."
+      ]
+    },
+    {
+      "path": "_upstream/electronic_speed.py",
+      "original": {
+        "locator": "upstream/substrate-framework/src/substrate_framework/electronic_speed.py",
+        "bytes": 4670,
+        "sha256": "db448e136d28a0c1c996a48ebe4260fbb2f45e22c4bed0da212bb3513a87a66b"
+      },
+      "current": {
+        "bytes": 4670,
+        "sha256": "db448e136d28a0c1c996a48ebe4260fbb2f45e22c4bed0da212bb3513a87a66b"
+      },
+      "transformation": [
+        "Exact scientific source bytes; no arithmetic change."
+      ]
+    },
+    {
+      "path": "data/moments/Pd-k12/occupation-spectrum.npz",
+      "original": {
+        "locator": "dynamic/p5dynamic-tenvel-20261118t050919z/calculation/Pd-k12/occupation-spectrum.npz",
+        "bytes": 68299,
+        "sha256": "402ecd2f0509c837ea2a280f87a59c22094608659532d8477e01bbd16cc3fefb"
+      },
+      "current": {
+        "bytes": 68299,
+        "sha256": "402ecd2f0509c837ea2a280f87a59c22094608659532d8477e01bbd16cc3fefb"
+      },
+      "transformation": [
+        "Exact scientific source bytes; no arithmetic change."
+      ]
+    },
+    {
+      "path": "data/moments/PdD-k12/occupation-spectrum.npz",
+      "original": {
+        "locator": "dynamic/p5dynamic-tenvel-20261118t050919z/calculation/PdD-k12/occupation-spectrum.npz",
+        "bytes": 71263,
+        "sha256": "a87319cf976c2e04c60a33be42f8a0568ac76df4d19b41ffe67b2252ebe7c5f4"
+      },
+      "current": {
+        "bytes": 71263,
+        "sha256": "a87319cf976c2e04c60a33be42f8a0568ac76df4d19b41ffe67b2252ebe7c5f4"
+      },
+      "transformation": [
+        "Exact scientific source bytes; no arithmetic change."
+      ]
+    },
+    {
+      "path": "data/moments/Pd-k24-control/occupation-spectrum.npz",
+      "original": {
+        "locator": "dynamic/p5dynamic-tenvel-20261118t050919z/calculation/Pd-k24-control/occupation-spectrum.npz",
+        "bytes": 393956,
+        "sha256": "d26a331ea98229a135ab4a038abb7d86fb27d6cb68b5649f9f0b930738da21e2"
+      },
+      "current": {
+        "bytes": 393956,
+        "sha256": "d26a331ea98229a135ab4a038abb7d86fb27d6cb68b5649f9f0b930738da21e2"
+      },
+      "transformation": [
+        "Exact scientific source bytes; no arithmetic change."
+      ]
+    },
+    {
+      "path": "data/atomic/Pd.18.PBE",
+      "original": {
+        "locator": "dynamic/qualified-setups-20261118/Pd.18.PBE",
+        "bytes": 2306235,
+        "sha256": "da1c289de2947a314b26cbdce4d7ad4fa43162d8f10e692cdbda0adee8dc9567"
+      },
+      "current": {
+        "bytes": 2306235,
+        "sha256": "da1c289de2947a314b26cbdce4d7ad4fa43162d8f10e692cdbda0adee8dc9567"
+      },
+      "transformation": [
+        "Exact scientific source bytes; no arithmetic change."
+      ]
+    },
+    {
+      "path": "data/atomic/H.PBE.gz",
+      "original": {
+        "locator": "dynamic/qualified-setups-20261118/H.PBE.gz",
+        "bytes": 12501,
+        "sha256": "3136ad73c02d471f99dd5f82e451b2061952970556a260d38b53b5020dc94ae7"
+      },
+      "current": {
+        "bytes": 12501,
+        "sha256": "3136ad73c02d471f99dd5f82e451b2061952970556a260d38b53b5020dc94ae7"
+      },
+      "transformation": [
+        "Exact scientific source bytes; no arithmetic change."
+      ]
+    },
+    {
+      "path": "data/atomic/logarithmic-derivatives.npz",
+      "original": {
+        "locator": "dynamic/p5dynamic-finalpaw-20261118t052448z/calculation/logarithmic-derivatives.npz",
+        "bytes": 23765,
+        "sha256": "0df50f1d8d0d4bca2788228e9c83a0759818f703230429cbe1752752f1e3f028"
+      },
+      "current": {
+        "bytes": 23765,
+        "sha256": "0df50f1d8d0d4bca2788228e9c83a0759818f703230429cbe1752752f1e3f028"
+      },
+      "transformation": [
+        "Exact scientific source bytes; no arithmetic change."
+      ]
+    },
+    {
+      "path": "data/atomic/generation.txt",
+      "original": {
+        "locator": "dynamic/p5dynamic-finalpaw-20261118t052448z/calculation/generation.txt",
+        "bytes": 5537,
+        "sha256": "17f19c0849116f883023ffe633da8a8395e11cea514bad5f32d43713abebeb19"
+      },
+      "current": {
+        "bytes": 5537,
+        "sha256": "17f19c0849116f883023ffe633da8a8395e11cea514bad5f32d43713abebeb19"
+      },
+      "transformation": [
+        "Exact scientific source bytes; no arithmetic change."
+      ]
+    },
+    {
+      "path": "data/moments/result.extract.json",
+      "original": {
+        "locator": "dynamic/p5dynamic-tenvel-20261118t050919z/calculation/result.json",
+        "bytes": 9392,
+        "sha256": "130fb5e66fafd3771bf52556c9701d5a943e53a4cab6b13d4ecc98246daea4d4"
+      },
+      "current": {
+        "bytes": 10929,
+        "sha256": "958f87369b0ff66c7577779adda550a1e09132fdd57fe937403eccaae77f4495"
+      },
+      "transformation": [
+        "Original GPW/ground identities retained with non-live logical locators; no GPW bytes bundled.",
+        "Spectrum paths now point to unchanged bundled NPZ bytes, relative to integration-root cwd.",
+        "All three material/control cases and all numerical fields preserved."
+      ]
+    },
+    {
+      "path": "primary-sources.extract.json",
+      "original": null,
+      "current": {
+        "bytes": 6764,
+        "sha256": "efadd359e88d2458f4c87b11146d294b1123f4cdc645fdaf2495835c7a3ff513"
+      },
+      "transformation": [
+        "Selected scientific citations, quoted passages and source-byte identities only; omitted private filesystem locators, campaign identities, search transcripts and accounting.",
+        "PDF/text originals are not bundled. Hashes identify originals, not a claim of supplied PDF bytes. No new source search or scientific calculation."
+      ]
+    },
+    {
+      "path": "proof/verify.py",
+      "original": {
+        "bytes": 10066,
+        "sha256": "e087db67c141e488436ab86405cb02f82415f74d053317829c36a3037f7bf511"
+      },
+      "current": {
+        "bytes": 10079,
+        "sha256": "3ab836a3be3ddcf520960cfb58b2a2c3d5e441d442459bad306fd84aacd00583"
+      },
+      "transformation": [
+        "Canonical proof import redirected to exact bundled runtime; equations, source gates and tolerances unchanged. Not executed at sealing."
+      ]
+    },
+    {
+      "path": "proof/speed_edges.py",
+      "original": {
+        "bytes": 3092,
+        "sha256": "c770790603e028a7931a78cbb9fb430bcf14822dca024a43a881e5b411443845"
+      },
+      "current": {
+        "bytes": 3105,
+        "sha256": "8f7549545056b9c08c8d499a7f88f48172ff4dbaf856537a8a7c57a0b99e45aa"
+      },
+      "transformation": [
+        "Canonical edge source import redirected to bundled runtime and filename made explicit-only, preventing automatic suite collection. Not executed at sealing."
+      ]
+    }
+  ],
+  "canonical_kernels": [
+    {
+      "path": "_upstream/microscopic_screening.py",
+      "bytes": 6829,
+      "sha256": "294347911c9a05c115b3e9f20003624f896949cc07c544a8eccba86b9f66be74",
+      "status": "Local source snapshot; no promotion claimed."
+    },
+    {
+      "path": "_upstream/screening_quadrature.py",
+      "bytes": 3683,
+      "sha256": "4ab3c97f48b88faef89d679b5cb3811ad118cc39c00ffec2a0434b027d8111b1",
+      "status": "Local source snapshot; no promotion claimed."
+    },
+    {
+      "path": "_upstream/electronic_speed.py",
+      "bytes": 4670,
+      "sha256": "db448e136d28a0c1c996a48ebe4260fbb2f45e22c4bed0da212bb3513a87a66b",
+      "local_commit": "f7a2ad850d8ab324acdeb8386f7fdb1fca56137c",
+      "status": "Local commit only; no successful upstream push/PR/merge."
+    }
+  ],
+  "atomic_setup": {
+    "original_candidate": {
+      "bytes": 6294,
+      "sha256": "cc7d9fa0a723dcfd126a921dc3453c9ee6feca65bbe252ba14658d545b824fa5"
+    },
+    "original_candidate_solid_qualified": false,
+    "default_occupied_bound_state_check": true,
+    "admitted_sampled_atomic_gate": true,
+    "gpaw_version": "26.7.0",
+    "current_scientific_readout": "results/atomic-admission.json",
+    "limits": [
+      "The source API quantity is unwrapped arctan(u_prime/u)/pi at radius3 Bohr, not a free-space scattering phase.",
+      "Only sampled energies -5..12 Hartree at nominal0.05 Hartree spacing and channels l=0..3 are covered.",
+      "Not a universal scalar-relativistic ghost-free certificate, cutoff/k-grid convergence result, solid accuracy proof or physical response error bound."
+    ]
+  },
+  "native_reproduction_inputs": [
+    {
+      "path": "data/native-specs/pd10-main-20261118t081649z.json",
+      "original": {
+        "bytes": 9823,
+        "sha256": "7e20cc71b34f58ced9ef147e2cbadcc2595efd8b0d7ef662e6c669ff514be742"
+      },
+      "ground_mode": "saved",
+      "public_bank": "banks/pd10-main-20261118t081649z"
+    },
+    {
+      "path": "data/native-specs/pd18-k8-20261118t081649z.json",
+      "original": {
+        "bytes": 6024,
+        "sha256": "1f09b5a47f13fa9cb119733873a0101d08ffcdd910c0218b01565d7ff78686f2"
+      },
+      "ground_mode": "cold",
+      "public_bank": "banks/pd18-k8-20261118t081649z"
+    },
+    {
+      "path": "data/native-specs/pd18-main-20261118t074034z.json",
+      "original": {
+        "bytes": 9793,
+        "sha256": "670396112abcce492fb53318250b032f3d59f77e33f1f0944ddb75d72719b1f3"
+      },
+      "ground_mode": "cold",
+      "public_bank": "banks/pd18-main-20261118t074034z"
+    },
+    {
+      "path": "data/native-specs/pd18-pw500-20261118t081649z.json",
+      "original": {
+        "bytes": 8305,
+        "sha256": "a70446b3cdd86100bdd821ab75cedaf46f8a9290d90443da38dd3d3e0edeaee7"
+      },
+      "ground_mode": "cold",
+      "public_bank": "banks/pd18-pw500-20261118t081649z"
+    },
+    {
+      "path": "data/native-specs/pdd10-main-20261118t074034z.json",
+      "original": {
+        "bytes": 10214,
+        "sha256": "e23d39a97fd39136b5aa586422c2ebaa3e6350f71525e7d49e296fd50222e4e1"
+      },
+      "ground_mode": "saved",
+      "public_bank": "banks/pdd10-main-20261118t074034z"
+    },
+    {
+      "path": "data/native-specs/pdd18-k8-20261118t081649z.json",
+      "original": {
+        "bytes": 7279,
+        "sha256": "7fa3b7781b592df58a4806e1d6b6c537c5685b90426108dc0e17acf0ac473191"
+      },
+      "ground_mode": "cold",
+      "public_bank": "banks/pdd18-k8-20261118t081649z"
+    },
+    {
+      "path": "data/native-specs/pdd18-main-20261118t074034z.json",
+      "original": {
+        "bytes": 10952,
+        "sha256": "39f6937a04b6c1b41d24970fc82e9a5426b71c91aef9bffac730bdbc6fb998cf"
+      },
+      "ground_mode": "saved",
+      "public_bank": "banks/pdd18-main-20261118t074034z"
+    },
+    {
+      "path": "data/native-specs/pdd18-pw500-20261118t081649z.json",
+      "original": {
+        "bytes": 9560,
+        "sha256": "2d17aded4b77125cadbb105686b9a871d75c9e04ff3f72f459e81e6b3a11790b"
+      },
+      "ground_mode": "cold",
+      "public_bank": "banks/pdd18-pw500-20261118t081649z"
+    },
+    {
+      "path": "data/native-specs/permute-20261118t065439z.json",
+      "original": {
+        "bytes": 7417,
+        "sha256": "ad4e5c09895e4882dc7b547f7d3ee1f630a2f70cf5bd742f591d98c4938f5d2a"
+      },
+      "ground_mode": "saved",
+      "public_bank": "banks/permute-20261118t065439z"
+    },
+    {
+      "path": "data/native-specs/qrepair-20261118t055431z.json",
+      "original": {
+        "bytes": 6833,
+        "sha256": "f349ad442d42fc2c58267761d24791d396200f8fc9e863d169b84242c1b56893"
+      },
+      "ground_mode": "cold",
+      "public_bank": "banks/qrepair-20261118t055431z"
+    }
+  ],
+  "velocity_reproduction_input": "data/moments/reproduction-input.json",
+  "physical_outputs": [
+    {
+      "path": "results/static-profiles.json",
+      "bytes": 241898,
+      "sha256": "2ce1bc39e51e76d6b4dd8b2fd4170c00d8b2c27e4240c410be392dd8a94b19dc"
+    },
+    {
+      "path": "results/static-profiles.csv",
+      "bytes": 21085,
+      "sha256": "2dc7a5e4e9608c98695033371045247aa6df7b0e53153421bf6655215e232907"
+    },
+    {
+      "path": "results/speed10.json",
+      "bytes": 11970,
+      "sha256": "7f4f788cc8ca58948d4b080adf293b8e57b1f4bb30e671cabfb15f847afa5dff"
+    },
+    {
+      "path": "results/beam/comparison.json",
+      "bytes": 237863,
+      "sha256": "a82e577d8bb55375096617fc7fa57ffbcae84d23ecd47019a73b2aba4d9b3aa2"
+    },
+    {
+      "path": "results/beam/comparison.csv",
+      "bytes": 107164,
+      "sha256": "624a8ce9f0b0df89f8956182d093efb87f238ce02fcc744c9907f8e66a4bd397"
+    },
+    {
+      "path": "results/fit-reference.json",
+      "bytes": 23474,
+      "sha256": "ca42829c8a71be3beb588f897c32568ef0306e3a76ef4e41cd9c3f1b58053dd4"
+    },
+    {
+      "path": "results/fit-reference.csv",
+      "bytes": 3177,
+      "sha256": "4d31bd3a821f585e3832f3ef6d560b0071d9b4891979ef246b5b33449157f6a6"
+    },
+    {
+      "path": "results/screening-report.json",
+      "bytes": 38013,
+      "sha256": "9aefa936090fc1c6f77d466d10ba487ce71aeec6d1443ad624f23d1470086e15"
+    },
+    {
+      "path": "results/screening-report.csv",
+      "bytes": 4637,
+      "sha256": "487565d3023d1fcdd27c1857b0180a1228b473b9005bc88b99d18829e26bf5f0"
+    },
+    {
+      "path": "results/atomic-admission.json",
+      "bytes": 4643,
+      "sha256": "832b08db3d4ce95e1c158f080bdeac56f7e300d0ffbc33b13c43e5811442ae2a"
+    }
+  ],
+  "acceptance": {
+    "actual_pure_entrypoints_executed": [
+      "pd18_dataset",
+      "dynamic_results",
+      "static_results",
+      "beam_screen_results",
+      "fit_reference_results",
+      "screening_report_results"
+    ],
+    "sixteen_case_profiles_exact_after_bijective_bank_locator_remap": true,
+    "all_report_scientific_fields_exact": true,
+    "all_speed_models_and_curves_exact": true,
+    "static_Target_and_report_CSVs_byte_identical_to_original": true,
+    "wrong_physical_target_refused_without_output": true,
+    "producer_binding_checks": 120,
+    "native_reproduction_executed_at_sealing": false,
+    "proofs_rerun_at_sealing": false,
+    "independent_scientific_review": {
+      "complete": true,
+      "current_defects": 0,
+      "record": "Complete report retained locally; not a physical completeness certificate."
+    }
+  },
+  "budget": {
+    "native_rows": [
+      {
+        "phase": "p5dynamic-atom-20261118t042834z",
+        "result": "exit-code",
+        "raw_cpu_ns": 4583702000,
+        "conservative_tail_ns": 60000000000,
+        "charged_ns": 64583702000,
+        "memory_peak_bytes": 68780032
+      },
+      {
+        "phase": "p5dynamic-hard-20261118t044448z",
+        "result": "success",
+        "raw_cpu_ns": 5232031000,
+        "conservative_tail_ns": 60000000000,
+        "charged_ns": 65232031000,
+        "memory_peak_bytes": 68775936
+      },
+      {
+        "phase": "p5dynamic-tenvel-20261118t050919z",
+        "result": "success",
+        "raw_cpu_ns": 16619600000,
+        "conservative_tail_ns": 60000000000,
+        "charged_ns": 76619600000,
+        "memory_peak_bytes": 403681280
+      },
+      {
+        "phase": "p5dynamic-finalpaw-20261118t052448z",
+        "result": "success",
+        "raw_cpu_ns": 6436070000,
+        "conservative_tail_ns": 60000000000,
+        "charged_ns": 66436070000,
+        "memory_peak_bytes": 71360512
+      },
+      {
+        "phase": "p5dynamic-qpilot-20261118t054555z",
+        "result": "exit-code",
+        "raw_cpu_ns": 1178553000,
+        "conservative_tail_ns": 60000000000,
+        "charged_ns": 61178553000,
+        "memory_peak_bytes": 52146176
+      },
+      {
+        "phase": "p5dynamic-qrepair-20261118t055431z",
+        "result": "exit-code",
+        "raw_cpu_ns": 1343773969000,
+        "conservative_tail_ns": 60000000000,
+        "charged_ns": 1403773969000,
+        "memory_peak_bytes": 1416368128
+      },
+      {
+        "phase": "p5dynamic-permute-20261118t065439z",
+        "result": "success",
+        "raw_cpu_ns": 2016769838000,
+        "conservative_tail_ns": 60000000000,
+        "charged_ns": 2076769838000,
+        "memory_peak_bytes": 867938304
+      },
+      {
+        "phase": "p5dynamic-pdd10-main-20261118t074034z",
+        "result": "success",
+        "raw_cpu_ns": 2268722290000,
+        "conservative_tail_ns": 60000000000,
+        "charged_ns": 2328722290000,
+        "memory_peak_bytes": 288804864
+      },
+      {
+        "phase": "p5dynamic-pdd18-k8-20261118t081649z",
+        "result": "success",
+        "raw_cpu_ns": 686684769000,
+        "conservative_tail_ns": 60000000000,
+        "charged_ns": 746684769000,
+        "memory_peak_bytes": 774901760
+      },
+      {
+        "phase": "p5dynamic-pd18-k8-20261118t081649z",
+        "result": "success",
+        "raw_cpu_ns": 618969774000,
+        "conservative_tail_ns": 60000000000,
+        "charged_ns": 678969774000,
+        "memory_peak_bytes": 797966336
+      },
+      {
+        "phase": "p5dynamic-pd10-main-20261118t081649z",
+        "result": "success",
+        "raw_cpu_ns": 2106650799000,
+        "conservative_tail_ns": 60000000000,
+        "charged_ns": 2166650799000,
+        "memory_peak_bytes": 256323584
+      },
+      {
+        "phase": "p5dynamic-pdd18-main-20261118t074034z",
+        "result": "success",
+        "raw_cpu_ns": 6823348413000,
+        "conservative_tail_ns": 60000000000,
+        "charged_ns": 6883348413000,
+        "memory_peak_bytes": 972865536
+      },
+      {
+        "phase": "p5dynamic-pdd18-pw500-20261118t081649z",
+        "result": "success",
+        "raw_cpu_ns": 2549466398000,
+        "conservative_tail_ns": 60000000000,
+        "charged_ns": 2609466398000,
+        "memory_peak_bytes": 865284096
+      },
+      {
+        "phase": "p5dynamic-pd18-pw500-20261118t081649z",
+        "result": "success",
+        "raw_cpu_ns": 2392333399000,
+        "conservative_tail_ns": 60000000000,
+        "charged_ns": 2452333399000,
+        "memory_peak_bytes": 705462272
+      },
+      {
+        "phase": "p5dynamic-pd18-main-20261118t074034z",
+        "result": "success",
+        "raw_cpu_ns": 8388030713000,
+        "conservative_tail_ns": 60000000000,
+        "charged_ns": 8448030713000,
+        "memory_peak_bytes": 952893440
+      }
+    ],
+    "native_charged_ns": 30128800318000,
+    "native_charged_core_minutes": 502.14667196666664,
+    "pure_reserved_core_minutes": 20,
+    "whole_with_reserve_core_minutes": 522.1466719666666,
+    "whole_cap_core_minutes": 800,
+    "active_native": 0
+  },
+  "primary_PDF_dependencies": [
+    {
+      "url": "https://arxiv.org/pdf/1104.1273v1",
+      "bytes": 443238,
+      "sha256": "44df983b77c96798d9527af1f84163acd1015f780898f1f255c0b4b2d590a6f8",
+      "bundled": false
+    },
+    {
+      "url": "https://arxiv.org/pdf/0805.4538v1",
+      "bytes": 653081,
+      "sha256": "7a428728bc7d86c12bc8aa9bb659c57bb74d9070ec87d91ba0dbb0aea74cd33b",
+      "bundled": false
+    }
+  ],
+  "record_policy": "Scientific source/output identities and ledger rows only. Historical execution receipts, failed tracebacks, complete handoffs and review records remain local."
+}

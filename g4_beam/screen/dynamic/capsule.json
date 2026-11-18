@@ -1,0 +1,56 @@
+{
+  "schema": "g5-dynamic-screening-capsule-v1",
+  "integration_root": "g4_beam/screen/dynamic",
+  "scope": "Completed finite-G static Pd/PdD PAW18 and matched10 response, historical10 electronic-speed closure, and actual Target comparison.",
+  "readme": "README.md",
+  "commands": "COMMANDS.md",
+  "source_and_cost_ledger": "ledger.json",
+  "payload_hashes": "SHA256SUMS",
+  "scientific_outputs": {
+    "static_profiles": "results/static-profiles.json",
+    "static_table": "results/static-profiles.csv",
+    "combined_report": "results/screening-report.json",
+    "benchmark_rows": "results/fit-reference.csv",
+    "electronic_speed": "results/speed10.json",
+    "actual_Target_comparison": "results/beam/comparison.json",
+    "atomic_admission": "results/atomic-admission.json"
+  },
+  "scientific_inputs": {
+    "static_registry": "data/static/registry.json",
+    "velocity_moments": "data/moments/result.extract.json",
+    "native_reproduction_specs": "data/native-specs",
+    "velocity_reproduction_spec": "data/moments/reproduction-input.json",
+    "ten_valence_setups": "data/static/setups-tenvalence",
+    "eighteen_valence_setup_and_atomic_diagnostics": "data/atomic",
+    "primary_source_identities": "primary-sources.extract.json",
+    "static_source_provenance": "static-source-provenance.json"
+  },
+  "accepted_scientific_verification": {
+    "speed": "proof/speed-verification-results.json",
+    "static": "proof/static/accepted-static-proof.extract.json",
+    "quadrature": "proof/static/accepted-quadrature-proof.extract.json",
+    "proof_adapters_executed_at_sealing": false,
+    "scope": "Source-bound symbolic and sampled numerical evidence, not a physical completeness certificate or rigorous floating-point enclosure."
+  },
+  "acceptance": {
+    "all_16_static_cases_and_11_radii_consumed": true,
+    "actual_42_row_Target_consumer_executed": true,
+    "all_24_benchmark_rows_retained": true,
+    "all_9_cause_by_charge_refits_retained": true,
+    "original_scientific_values_preserved_under_declared_path_remapping": true,
+    "wrong_physical_target_refused_without_output": true,
+    "original_loading_precision_flag": false,
+    "finite_G_campaign_result_accepted": true,
+    "real_time_triggered": false,
+    "real_time_started": false
+  },
+  "dependencies": {
+    "pure_saved_readout": ["Python", "NumPy", "SciPy", "existing Coherencev1 merit/forward package and data"],
+    "Native_only": ["compatible GPAW/ASE environment", "explicit new bounded allocation"],
+    "optional_proofs": ["SymPy", "mpmath", "pytest", "exact externally supplied primary PDFs"],
+    "substrate_framework_install_required": false
+  },
+  "binary_policy": "GPWs and scientific arrays are bound archive inputs. GPWs are ignored by Git; no GPAW import is needed merely to hash them for pure readout. Duplicate GPW hardlinks exist only between staged copies.",
+  "canonical_source_status": "Exact admitted local-source snapshots; no upstream push, PR, merge, registry or release promotion claimed.",
+  "record_policy": "Only scripts, scientific inputs/outputs, README and ledger rows, one commands file and payload hashes. Historical argv/stdout/stderr/exit receipts, failed tracebacks and agent handoffs remain local."
+}

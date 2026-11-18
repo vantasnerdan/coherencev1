@@ -31,6 +31,7 @@ One static number cannot serve both, so the shared deliverable is eps(q) over th
 | `transport/recomb/` | Pass 5: first-principles D sheet on clean Pd(111), no-beam coverage and D2 release, connected clean recombination route |
 | `ald/` | Pass 5: 245 ALD designs in six families (sealing oxides, deuteride caps, deuterated oxides, donor promoters, BZY proton conductor, Pd/oxide nanolaminates), with run-integrated merit, erosion and cap sputter thresholds |
 | `pairs/` | Pass 5: D clusters in a Pd vacancy (8-Pd cells, 1 to 6 D) and screening by mobile deuterons, through the merit consumer |
+| `screen/dynamic/` | Pass 5: static contact potential for Pd and PdD at finite G with the Pd 4s/4p shells open, and the electron-speed closure through the merit consumer |
 
 Run every script from its own directory, except `work/` scripts and `priordata/scripts/compare.py .`, which run from `g4_beam/`.
 
@@ -137,6 +138,13 @@ Electronic screening from first principles (`screen/README.md`, valence-PAW PBE,
 | TiD2 | 2.452 | -2.588 | 0.435 | 33.08 | 0.197 |
 
 (The alloy rows give the Pd-projected d-band centre; the README also lists all-metal centres.) Across the Pd strain series and the two alloys, static U_e changes by -8.35 eV per eV of Pd d-band shift (interval -22.3 to +5.4 under a +/-10 % allowance on lambda). The neutral adiabatic cycle gives 42.25 eV for Pd and 42.26 eV for Pd3Rh, a slope of -0.066 eV/eV. Loading Pd to PdD lowers static U_e from 36.2 to 26.6 eV.
+
+Pass 5 (`screen/dynamic/`): the static contact potential at finite G, with local fields and the Pd 4s and 4p shells open (N3, 1200 eV plane waves).
+- Pd 17.31 eV, PdD 30.89 eV, so loading adds 13.58 eV. The low-q Yukawa values above are a different quantity.
+- The 4s/4p shells add 0.112 eV in Pd and 0.005 eV in PdD at matched settings.
+- G200 to G400 adds 2.96 eV to the loading contrast. The largest value over every sampled profile is 33.9 eV.
+- The fitted loading benchmarks are 213-840 eV (nine transported cause × charge refits) and 891-1978 eV (direct Eq 7 fits).
+- The electron-speed closure (ten valence electrons, Huke et al.) gives PdD minus Pd of -5.6, +10.5, +11.4 and +5.0 eV at 0.5, 2, 5 and 13 keV lab. Through the merit consumer that is 0.65-1.02 times PdD.
 
 Across laboratories (`czerski/README.md`): the palladium plateau can share layer or sigmoid parameters between Szczecin and UC Davis (mismatch factors 1.2-1.4); titanium cannot once the Tohoku data are included. One thermal-spike amplitude for both laboratories fails: A_UC Davis / A_Szczecin = 622.5 (as plotted) and 283.8 (one cup-current power).
 

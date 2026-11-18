@@ -1,0 +1,293 @@
+{
+  "schema": "portable-static-family-reproduction-input-v1",
+  "phase": "p5dynamic-pd18-pw500-20261118t081649z",
+  "model_id": "Pd18_500",
+  "ground_mode": "cold",
+  "setup_directory": "g4_beam/screen/dynamic/data/atomic",
+  "expected_ground_wall_s": 240,
+  "configuration": {
+    "schema": "coherence-screen-bulk-input-v1",
+    "case": "Pd_Pd18_PW500_basis",
+    "model": "neutral nonmagnetic PBE/Pd18 semicore; fixed-lattice static RPA",
+    "kind": "rpa",
+    "geometry": {
+      "cell_A": [
+        [
+          0,
+          1.945,
+          1.945
+        ],
+        [
+          1.945,
+          0,
+          1.945
+        ],
+        [
+          1.945,
+          1.945,
+          0
+        ]
+      ],
+      "positions_A": [
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "symbols": [
+        "Pd"
+      ],
+      "initial_magnetic_moments_muB": [
+        0
+      ]
+    },
+    "ground_state": {
+      "convergence": {
+        "bands": "occupied",
+        "density": 0.000001,
+        "eigenstates": 1e-9,
+        "energy": 1e-7
+      },
+      "ecut_eV": 500,
+      "kmesh": [
+        12,
+        12,
+        12
+      ],
+      "occupation_width_eV": 0.1,
+      "saved_nbands": 160,
+      "scf_nbands": 16,
+      "setups": {
+        "H": "paw",
+        "Pd": "18"
+      },
+      "spinpol": false
+    },
+    "relaxation": {
+      "force_tolerance_eV_A": 0.02,
+      "max_steps": 0,
+      "mode": "fixed",
+      "stress_tolerance_eV_A3": 0.0005
+    },
+    "dos": {
+      "widths_eV": [
+        0.1,
+        0.05
+      ],
+      "occupied_window_eV": [
+        -20,
+        0.005,
+        0.01
+      ],
+      "moment_width_eV": 0.1,
+      "metal_indices": [
+        0
+      ]
+    },
+    "valence_electrons": 18,
+    "responses": [
+      {
+        "q_fractional": [
+          -0.25,
+          -0.25,
+          -0.25
+        ],
+        "ecut_eV": 200,
+        "eta_eV": 0.005,
+        "nbands": 160,
+        "expected_wall_s": 160,
+        "family": "primary-q2",
+        "grid_n": 2,
+        "class_numerators": [
+          -1,
+          -1,
+          -1
+        ]
+      },
+      {
+        "q_fractional": [
+          -0.25,
+          -0.25,
+          0.25
+        ],
+        "ecut_eV": 200,
+        "eta_eV": 0.005,
+        "nbands": 160,
+        "expected_wall_s": 411.42857142857144,
+        "family": "primary-q2",
+        "grid_n": 2,
+        "class_numerators": [
+          -1,
+          -1,
+          1
+        ]
+      },
+      {
+        "q_fractional": [
+          -0.5,
+          -0.5,
+          -0.5
+        ],
+        "ecut_eV": 200,
+        "eta_eV": 0.005,
+        "nbands": 160,
+        "expected_wall_s": 83.07692307692308,
+        "family": "primary-q3",
+        "grid_n": 3,
+        "class_numerators": [
+          -3,
+          -3,
+          -3
+        ]
+      },
+      {
+        "q_fractional": [
+          -0.5,
+          -0.5,
+          -0.16666666666666666
+        ],
+        "ecut_eV": 200,
+        "eta_eV": 0.005,
+        "nbands": 160,
+        "expected_wall_s": 411.42857142857144,
+        "family": "primary-q3",
+        "grid_n": 3,
+        "class_numerators": [
+          -3,
+          -3,
+          -1
+        ]
+      },
+      {
+        "q_fractional": [
+          -0.5,
+          -0.16666666666666666,
+          -0.16666666666666666
+        ],
+        "ecut_eV": 200,
+        "eta_eV": 0.005,
+        "nbands": 160,
+        "expected_wall_s": 411.42857142857144,
+        "family": "primary-q3",
+        "grid_n": 3,
+        "class_numerators": [
+          -3,
+          -1,
+          -1
+        ]
+      },
+      {
+        "q_fractional": [
+          -0.5,
+          -0.16666666666666666,
+          0.16666666666666666
+        ],
+        "ecut_eV": 200,
+        "eta_eV": 0.005,
+        "nbands": 160,
+        "expected_wall_s": 385.05494505494505,
+        "family": "primary-q3",
+        "grid_n": 3,
+        "class_numerators": [
+          -3,
+          -1,
+          1
+        ]
+      },
+      {
+        "q_fractional": [
+          -0.16666666666666666,
+          -0.16666666666666666,
+          -0.16666666666666666
+        ],
+        "ecut_eV": 200,
+        "eta_eV": 0.005,
+        "nbands": 160,
+        "expected_wall_s": 160,
+        "family": "primary-q3",
+        "grid_n": 3,
+        "class_numerators": [
+          -1,
+          -1,
+          -1
+        ]
+      },
+      {
+        "q_fractional": [
+          -0.16666666666666666,
+          -0.16666666666666666,
+          0.16666666666666666
+        ],
+        "ecut_eV": 200,
+        "eta_eV": 0.005,
+        "nbands": 160,
+        "expected_wall_s": 411.42857142857144,
+        "family": "primary-q3",
+        "grid_n": 3,
+        "class_numerators": [
+          -1,
+          -1,
+          1
+        ]
+      }
+    ]
+  },
+  "bound_sources": [
+    {
+      "path": "g4_beam/screen/dynamic/data/static/native-source/screen_cases.py",
+      "bytes": 4770,
+      "sha256": "61af4c98c174e22bf9c1eaa7fd0b4e1ea0a211047d2abd9dd42ad5f8466e8be3"
+    },
+    {
+      "path": "g4_beam/screen/dynamic/data/static/native-source/screen_dos.py",
+      "bytes": 4141,
+      "sha256": "71da0a3e6e66609991aa28d687ab3bc706c55aaadcdf5b4bdd2021c30c9d5c7c"
+    },
+    {
+      "path": "g4_beam/screen/dynamic/data/static/native-source/screen_ground.py",
+      "bytes": 2958,
+      "sha256": "4e8ce0bb19887e6a2191f4b59672c1997a3172e0653ef4f945308a83d5abccf0"
+    },
+    {
+      "path": "g4_beam/screen/dynamic/data/static/native-source/screen_io.py",
+      "bytes": 1409,
+      "sha256": "dcab99128fbb312083bdccf440c4c32c214e58e78c59a8a52126300c25d3420c"
+    },
+    {
+      "path": "g4_beam/screen/dynamic/data/static/native-source/screen_relax.py",
+      "bytes": 1827,
+      "sha256": "66b2eeca611cfd16ec6291edae6b47d2a1b14c3804028be245e54188019d65f2"
+    },
+    {
+      "path": "g4_beam/screen/dynamic/data/static/native-source/screen_response.py",
+      "bytes": 4140,
+      "sha256": "609c3539de6a821d112944fd18f22b8c62df96aaf801a18124fd438b9663c9c5"
+    },
+    {
+      "path": "g4_beam/screen/dynamic/run_static_family.py",
+      "bytes": 2915,
+      "sha256": "d4902d1abbdbfa73b5e561ffedd55404f754df18bc7a395b684abe017343a305"
+    },
+    {
+      "path": "g4_beam/screen/dynamic/prepare_static_ground.py",
+      "bytes": 4624,
+      "sha256": "bb928a6f42d9b76aaef98b24a8544a1ce823ec27701a2c2bcc98593e3b35ac59"
+    },
+    {
+      "path": "g4_beam/screen/dynamic/data/atomic/Pd.18.PBE",
+      "bytes": 2306235,
+      "sha256": "da1c289de2947a314b26cbdce4d7ad4fa43162d8f10e692cdbda0adee8dc9567"
+    },
+    {
+      "path": "g4_beam/screen/dynamic/data/atomic/H.PBE.gz",
+      "bytes": 12501,
+      "sha256": "3136ad73c02d471f99dd5f82e451b2061952970556a260d38b53b5020dc94ae7"
+    }
+  ],
+  "original_source": {
+    "bytes": 8305,
+    "sha256": "a70446b3cdd86100bdd821ab75cedaf46f8a9290d90443da38dd3d3e0edeaee7"
+  },
+  "transformation": "Original physical configuration retained exactly; paths/source authentication remapped to bundled bytes. Legacy two-point driver represented by qualified general family wrapper; no new execution or result claim."
+}

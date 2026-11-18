@@ -1,0 +1,104 @@
+{
+  "case": "Pd-pristine-api-fingerprint-a3.890A",
+  "cell_volume_A3": 14.715967249999999,
+  "dos": {
+    "D_projection_present": false,
+    "eligible": false,
+    "fermi_energy_eV": 9.943081902788055,
+    "n_EF_states_per_eV_per_cell": {
+      "0.05": 2.519327121331099,
+      "0.1": 2.2578666962522007
+    },
+    "numerical_electron_count": 9.99999999999098,
+    "occupied_d_centre_relative_EF_eV": -2.4238674357280985,
+    "occupied_d_rms_width_eV": 1.4875662615790624,
+    "occupied_d_states_per_cell": 9.184878629673518,
+    "reason": "Fingerprint only; k-mesh and observable convergence not established",
+    "settings": {
+      "metal_indices": [
+        0
+      ],
+      "moment_width_eV": 0.1,
+      "occupied_window_eV": [
+        -20,
+        0.005,
+        0.01
+      ],
+      "widths_eV": [
+        0.1,
+        0.05
+      ]
+    },
+    "spectrum": {
+      "bytes": 16708,
+      "path": "dos.npz",
+      "sha256": "b6a09af00379df8cc52a6f464abfcc3b3724f701fbd669b09cc38952db534546"
+    }
+  },
+  "forces_eV_A": [
+    [
+      2.2153821330545137e-25,
+      -5.5384553326362845e-25,
+      -4.153841499477213e-25
+    ]
+  ],
+  "free_energy_eV": -3.6037754079082656,
+  "geometry": {
+    "cell_A": [
+      [
+        0,
+        1.945,
+        1.945
+      ],
+      [
+        1.945,
+        0,
+        1.945
+      ],
+      [
+        1.945,
+        1.945,
+        0
+      ]
+    ],
+    "positions_A": [
+      [
+        0,
+        0,
+        0
+      ]
+    ],
+    "symbols": [
+      "Pd"
+    ]
+  },
+  "gpaw_version": "26.7.0",
+  "gpw": {
+    "bytes": 45311909,
+    "path": "ground.gpw",
+    "sha256": "2234bcd142bd594a415c685695fb6874174f16fd7d545853ff1ca1f965f8d965"
+  },
+  "ground_state_settings": {
+    "convergence": {
+      "bands": "occupied",
+      "density": 1e-06,
+      "eigenstates": 1e-09,
+      "energy": 1e-07
+    },
+    "ecut_eV": 500,
+    "kmesh": [
+      12,
+      12,
+      12
+    ],
+    "occupation_width_eV": 0.1,
+    "saved_nbands": 96,
+    "scf_nbands": 16,
+    "setups": {
+      "Pd": "10"
+    }
+  },
+  "model": "neutral nonmagnetic PBE/Pd10 frozen-core PAW; static direct valence RPA",
+  "neutral_electrons": 10.0,
+  "schema": "coherence-screen-ground-v1"
+}

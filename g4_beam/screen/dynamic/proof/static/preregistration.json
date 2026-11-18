@@ -1,0 +1,31 @@
+{
+  "static_readout_proposal_to_check": {
+    "source": "Yan Eq4/8/11 and screened mutual Coulomb kernel",
+    "formula": "u_G=exp(-i Q_G.R0)/|Q_G|; U(r)=4pi*C/Omega sum_q wq Re[(j0(|Q|r)u)^dagger (I-epsilon_inv_sym)u]",
+    "singularity": "Subtract diagonal kappa_ref^2/(Q^2+kappa_ref^2)*exp[-(Q/width)^2] in the reciprocal sum and add its independent continuum radial integral. Arbitrary positive reference parameters must cancel with converged sampling. No Gamma head set to zero.",
+    "reference_controls": {
+      "kappa_Ainv": [
+        1,
+        2,
+        3
+      ],
+      "width_Ainv": [
+        1.5,
+        3
+      ]
+    },
+    "radii_A": [
+      0,
+      0.001,
+      0.002,
+      0.005,
+      0.01,
+      0.02,
+      0.05,
+      0.1,
+      0.2,
+      0.5,
+      1.0
+    ]
+  }
+}

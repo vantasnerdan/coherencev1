@@ -1,0 +1,386 @@
+{
+  "schema": "pass4-tenvalence-Huke-speed-estimate-v1",
+  "source_moments": {
+    "bytes": 10929,
+    "sha256": "958f87369b0ff66c7577779adda550a1e09132fdd57fe937403eccaae77f4495"
+  },
+  "models": {
+    "Pd": {
+      "material": "Pd",
+      "velocity_au": 0.12943107802363107,
+      "velocity_m_s": 283155.2384442469,
+      "U0_eV": 36.22746936148262,
+      "kmesh": [
+        12,
+        12,
+        12
+      ],
+      "D_T_states_per_eV_cell": 1.996500221697711
+    },
+    "PdD": {
+      "material": "PdD",
+      "velocity_au": 0.3280395592887967,
+      "velocity_m_s": 717649.2774989178,
+      "U0_eV": 26.607101982891034,
+      "kmesh": [
+        12,
+        12,
+        12
+      ],
+      "D_T_states_per_eV_cell": 0.5203384768177459
+    }
+  },
+  "velocity_controls": {
+    "Pd-k24-control": {
+      "material": "Pd",
+      "velocity_au": 0.15840002477628165,
+      "velocity_m_s": 346530.35012899886,
+      "U0_eV": 36.22746936148262,
+      "kmesh": [
+        24,
+        24,
+        24
+      ],
+      "D_T_states_per_eV_cell": 1.9588992844952389
+    }
+  },
+  "four_laboratory_energies": [
+    {
+      "E_lab_keV": 0.5,
+      "E_cm_keV": 0.25,
+      "U10_Pd_eV": 31.737695571520927,
+      "U10_PdD_eV": 26.183132344861022,
+      "loading_PdD_minus_Pd_eV": -5.554563226659905,
+      "fitted_loading_step_eV": [
+        550.0,
+        790.0
+      ],
+      "signed_fraction_of_fitted_step": [
+        -0.010099205866654373,
+        -0.007031092691974564
+      ],
+      "U10_Pd_k24_velocity_control_eV": 33.47879105272878,
+      "loading_with_Pd_k24_velocity_eV": -7.295658707867759,
+      "Pd_velocity_grid_change_eV": 1.7410954812078536
+    },
+    {
+      "E_lab_keV": 2.0,
+      "E_cm_keV": 1.0,
+      "U10_Pd_eV": 14.210248976357773,
+      "U10_PdD_eV": 24.743699822842242,
+      "loading_PdD_minus_Pd_eV": 10.533450846484468,
+      "fitted_loading_step_eV": [
+        550.0,
+        790.0
+      ],
+      "signed_fraction_of_fitted_step": [
+        0.019151728811789944,
+        0.013333482084157555
+      ],
+      "U10_Pd_k24_velocity_control_eV": 17.97751551857537,
+      "loading_with_Pd_k24_velocity_eV": 6.766184304266872,
+      "Pd_velocity_grid_change_eV": 3.7672665422175964
+    },
+    {
+      "E_lab_keV": 5.0,
+      "E_cm_keV": 2.5,
+      "U10_Pd_eV": 8.708766109223939,
+      "U10_PdD_eV": 20.13069029331322,
+      "loading_PdD_minus_Pd_eV": 11.42192418408928,
+      "fitted_loading_step_eV": [
+        550.0,
+        790.0
+      ],
+      "signed_fraction_of_fitted_step": [
+        0.020767134880162328,
+        0.014458131878594025
+      ],
+      "U10_Pd_k24_velocity_control_eV": 10.761759719301374,
+      "loading_with_Pd_k24_velocity_eV": 9.368930574011845,
+      "Pd_velocity_grid_change_eV": 2.0529936100774346
+    },
+    {
+      "E_lab_keV": 13.0,
+      "E_cm_keV": 6.5,
+      "U10_Pd_eV": 5.340994999165836,
+      "U10_PdD_eV": 10.367933925888517,
+      "loading_PdD_minus_Pd_eV": 5.026938926722681,
+      "fitted_loading_step_eV": [
+        550.0,
+        790.0
+      ],
+      "signed_fraction_of_fitted_step": [
+        0.009139888957677603,
+        0.006363213831294533
+      ],
+      "U10_Pd_k24_velocity_control_eV": 6.558556428094277,
+      "loading_with_Pd_k24_velocity_eV": 3.80937749779424,
+      "Pd_velocity_grid_change_eV": 1.217561428928441
+    }
+  ],
+  "paper_grid": [
+    {
+      "E_lab_keV": 0.5,
+      "E_cm_keV": 0.25,
+      "U10_Pd_eV": 31.737695571520927,
+      "U10_PdD_eV": 26.183132344861022,
+      "loading_PdD_minus_Pd_eV": -5.554563226659905,
+      "fitted_loading_step_eV": [
+        550.0,
+        790.0
+      ],
+      "signed_fraction_of_fitted_step": [
+        -0.010099205866654373,
+        -0.007031092691974564
+      ],
+      "U10_Pd_k24_velocity_control_eV": 33.47879105272878,
+      "loading_with_Pd_k24_velocity_eV": -7.295658707867759,
+      "Pd_velocity_grid_change_eV": 1.7410954812078536
+    },
+    {
+      "E_lab_keV": 1.0,
+      "E_cm_keV": 0.5,
+      "U10_Pd_eV": 21.769013781140035,
+      "U10_PdD_eV": 25.734152197189243,
+      "loading_PdD_minus_Pd_eV": 3.965138416049207,
+      "fitted_loading_step_eV": [
+        550.0,
+        790.0
+      ],
+      "signed_fraction_of_fitted_step": [
+        0.007209342574634922,
+        0.005019162551961022
+      ],
+      "U10_Pd_k24_velocity_control_eV": 29.48803935792669,
+      "loading_with_Pd_k24_velocity_eV": -3.753887160737449,
+      "Pd_velocity_grid_change_eV": 7.719025576786656
+    },
+    {
+      "E_lab_keV": 2.0,
+      "E_cm_keV": 1.0,
+      "U10_Pd_eV": 14.210248976357773,
+      "U10_PdD_eV": 24.743699822842242,
+      "loading_PdD_minus_Pd_eV": 10.533450846484468,
+      "fitted_loading_step_eV": [
+        550.0,
+        790.0
+      ],
+      "signed_fraction_of_fitted_step": [
+        0.019151728811789944,
+        0.013333482084157555
+      ],
+      "U10_Pd_k24_velocity_control_eV": 17.97751551857537,
+      "loading_with_Pd_k24_velocity_eV": 6.766184304266872,
+      "Pd_velocity_grid_change_eV": 3.7672665422175964
+    },
+    {
+      "E_lab_keV": 3.0,
+      "E_cm_keV": 1.5,
+      "U10_Pd_eV": 11.391655936597992,
+      "U10_PdD_eV": 23.584720092385755,
+      "loading_PdD_minus_Pd_eV": 12.193064155787763,
+      "fitted_loading_step_eV": [
+        550.0,
+        790.0
+      ],
+      "signed_fraction_of_fitted_step": [
+        0.02216920755597775,
+        0.015434258425047802
+      ],
+      "U10_Pd_k24_velocity_control_eV": 14.198224353307127,
+      "loading_with_Pd_k24_velocity_eV": 9.386495739078628,
+      "Pd_velocity_grid_change_eV": 2.806568416709135
+    },
+    {
+      "E_lab_keV": 4.0,
+      "E_cm_keV": 2.0,
+      "U10_Pd_eV": 9.783427786783314,
+      "U10_PdD_eV": 22.152969265563645,
+      "loading_PdD_minus_Pd_eV": 12.36954147878033,
+      "fitted_loading_step_eV": [
+        550.0,
+        790.0
+      ],
+      "signed_fraction_of_fitted_step": [
+        0.022490075415964237,
+        0.015657647441494088
+      ],
+      "U10_Pd_k24_velocity_control_eV": 12.12562274779626,
+      "loading_with_Pd_k24_velocity_eV": 10.027346517767384,
+      "Pd_velocity_grid_change_eV": 2.3421949610129467
+    },
+    {
+      "E_lab_keV": 5.0,
+      "E_cm_keV": 2.5,
+      "U10_Pd_eV": 8.708766109223939,
+      "U10_PdD_eV": 20.13069029331322,
+      "loading_PdD_minus_Pd_eV": 11.42192418408928,
+      "fitted_loading_step_eV": [
+        550.0,
+        790.0
+      ],
+      "signed_fraction_of_fitted_step": [
+        0.020767134880162328,
+        0.014458131878594025
+      ],
+      "U10_Pd_k24_velocity_control_eV": 10.761759719301374,
+      "loading_with_Pd_k24_velocity_eV": 9.368930574011845,
+      "Pd_velocity_grid_change_eV": 2.0529936100774346
+    },
+    {
+      "E_lab_keV": 6.0,
+      "E_cm_keV": 3.0,
+      "U10_Pd_eV": 7.92531583143886,
+      "U10_PdD_eV": 16.848759653193405,
+      "loading_PdD_minus_Pd_eV": 8.923443821754544,
+      "fitted_loading_step_eV": [
+        550.0,
+        790.0
+      ],
+      "signed_fraction_of_fitted_step": [
+        0.01622444331228099,
+        0.011295498508550056
+      ],
+      "U10_Pd_k24_velocity_control_eV": 9.775660102843515,
+      "loading_with_Pd_k24_velocity_eV": 7.073099550349889,
+      "Pd_velocity_grid_change_eV": 1.850344271404655
+    },
+    {
+      "E_lab_keV": 7.0,
+      "E_cm_keV": 3.5,
+      "U10_Pd_eV": 7.321438546584187,
+      "U10_PdD_eV": 15.047474644166064,
+      "loading_PdD_minus_Pd_eV": 7.7260360975818765,
+      "fitted_loading_step_eV": [
+        550.0,
+        790.0
+      ],
+      "signed_fraction_of_fitted_step": [
+        0.014047338359239775,
+        0.009779792528584654
+      ],
+      "U10_Pd_k24_velocity_control_eV": 9.019512804670356,
+      "loading_with_Pd_k24_velocity_eV": 6.027961839495708,
+      "Pd_velocity_grid_change_eV": 1.6980742580861685
+    },
+    {
+      "E_lab_keV": 8.0,
+      "E_cm_keV": 4.0,
+      "U10_Pd_eV": 6.837532492424436,
+      "U10_PdD_eV": 13.789288404544719,
+      "loading_PdD_minus_Pd_eV": 6.951755912120283,
+      "fitted_loading_step_eV": [
+        550.0,
+        790.0
+      ],
+      "signed_fraction_of_fitted_step": [
+        0.01263955620385506,
+        0.008799691028000357
+      ],
+      "U10_Pd_k24_velocity_control_eV": 8.415741971549762,
+      "loading_with_Pd_k24_velocity_eV": 5.3735464329949565,
+      "Pd_velocity_grid_change_eV": 1.5782094791253263
+    },
+    {
+      "E_lab_keV": 9.0,
+      "E_cm_keV": 4.5,
+      "U10_Pd_eV": 6.4384762135665055,
+      "U10_PdD_eV": 12.822601964773922,
+      "loading_PdD_minus_Pd_eV": 6.384125751207416,
+      "fitted_loading_step_eV": [
+        550.0,
+        790.0
+      ],
+      "signed_fraction_of_fitted_step": [
+        0.011607501365831666,
+        0.008081171836971414
+      ],
+      "U10_Pd_k24_velocity_control_eV": 7.9191308677072065,
+      "loading_with_Pd_k24_velocity_eV": 4.903471097066715,
+      "Pd_velocity_grid_change_eV": 1.480654654140701
+    },
+    {
+      "E_lab_keV": 10.0,
+      "E_cm_keV": 5.0,
+      "U10_Pd_eV": 6.102046757611523,
+      "U10_PdD_eV": 12.0433394361636,
+      "loading_PdD_minus_Pd_eV": 5.941292678552077,
+      "fitted_loading_step_eV": [
+        550.0,
+        790.0
+      ],
+      "signed_fraction_of_fitted_step": [
+        0.010802350324640142,
+        0.007520623643736807
+      ],
+      "U10_Pd_k24_velocity_control_eV": 7.501285305872628,
+      "loading_with_Pd_k24_velocity_eV": 4.542054130290973,
+      "Pd_velocity_grid_change_eV": 1.3992385482611045
+    },
+    {
+      "E_lab_keV": 11.0,
+      "E_cm_keV": 5.5,
+      "U10_Pd_eV": 5.81340300808148,
+      "U10_PdD_eV": 11.395377142536136,
+      "loading_PdD_minus_Pd_eV": 5.581974134454656,
+      "fitted_loading_step_eV": [
+        550.0,
+        790.0
+      ],
+      "signed_fraction_of_fitted_step": [
+        0.010149043880826648,
+        0.007065790043613488
+      ],
+      "U10_Pd_k24_velocity_control_eV": 7.143348735863844,
+      "loading_with_Pd_k24_velocity_eV": 4.2520284066722915,
+      "Pd_velocity_grid_change_eV": 1.3299457277823645
+    },
+    {
+      "E_lab_keV": 12.0,
+      "E_cm_keV": 6.0,
+      "U10_Pd_eV": 5.562204359078315,
+      "U10_PdD_eV": 10.844438355002984,
+      "loading_PdD_minus_Pd_eV": 5.282233995924669,
+      "fitted_loading_step_eV": [
+        550.0,
+        790.0
+      ],
+      "signed_fraction_of_fitted_step": [
+        0.009604061810772125,
+        0.0066863721467400866
+      ],
+      "U10_Pd_k24_velocity_control_eV": 6.832239197239886,
+      "loading_with_Pd_k24_velocity_eV": 4.0121991577630975,
+      "Pd_velocity_grid_change_eV": 1.2700348381615711
+    },
+    {
+      "E_lab_keV": 13.0,
+      "E_cm_keV": 6.5,
+      "U10_Pd_eV": 5.340994999165836,
+      "U10_PdD_eV": 10.367933925888517,
+      "loading_PdD_minus_Pd_eV": 5.026938926722681,
+      "fitted_loading_step_eV": [
+        550.0,
+        790.0
+      ],
+      "signed_fraction_of_fitted_step": [
+        0.009139888957677603,
+        0.006363213831294533
+      ],
+      "U10_Pd_k24_velocity_control_eV": 6.558556428094277,
+      "loading_with_Pd_k24_velocity_eV": 3.80937749779424,
+      "Pd_velocity_grid_change_eV": 1.217561428928441
+    }
+  ],
+  "constants": {
+    "deuteron_mass_kg": 3.3435837768e-27,
+    "atomic_velocity_m_s": 2187691.26216,
+    "elementary_charge_C": 1.602176634e-19
+  },
+  "screening_scope": "r->0 limit of accepted pass4 low-q ten-valence C/lambda Yukawa proxy; NOT full large-q U18/contact dielectric readout",
+  "dynamic_scope": "One isotropic Huke Eq10 factor using actual finite-width band-RMS velocity, not full frequency-dependent/local-field or real-time screening",
+  "rate_mapping": "Pd-minus-PdD contrast at the same incident lab energy, common PdD phenomenological calibration; never add absolute microscopic U to a fitted Ue",
+  "uncertainty": "Pd k12/k24 velocity sensitivity is measured; no PdD velocity-grid control exists here. Static proxies retain prior conditional numerical allowance; no global physical error bound.",
+  "fitted_step_source": "Historical pass4 +0.55 to +0.79keV loading step under the three charge readings; separate from literal Eq7 effective-fit definitions",
+  "no_new_solid": true
+}

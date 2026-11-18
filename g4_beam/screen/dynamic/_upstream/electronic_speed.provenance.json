@@ -1,0 +1,28 @@
+{
+  "schema": "per-module-upstream-snapshot-v1",
+  "record_kind": "unchanged_exact_bytes",
+  "module": "g4_beam.screen.dynamic._upstream.electronic_speed",
+  "staged_path": "g4_beam/screen/dynamic/_upstream/electronic_speed.py",
+  "upstream": {
+    "repository": "https://github.com/vantasnerdan/substrate-framework",
+    "issue": "https://github.com/vantasnerdan/substrate-framework/issues/243",
+    "branch": "research/243-speed-screening",
+    "path": "src/substrate_framework/electronic_speed.py",
+    "commit": "f7a2ad850d8ab324acdeb8386f7fdb1fca56137c",
+    "pull_request": null,
+    "resolution_status": "Local canonical commit identified by the controlling assignment. No push/PR is authorized; PR blocked pending repository-owner decision. No merge or future promotion claim."
+  },
+  "snapshot": {
+    "bytes": 4670,
+    "sha256": "db448e136d28a0c1c996a48ebe4260fbb2f45e22c4bed0da212bb3513a87a66b"
+  },
+  "ownership": "Exact canonical proposal runtime snapshot, not a maintained fork, compatibility shim or re-export. Update only by taking a new canonical snapshot and identity.",
+  "equation_source": {
+    "url": "https://arxiv.org/pdf/0805.4538v1",
+    "location": "rendered p.10, Eq.(10)",
+    "scope": "Positive square root converts the printed U_dyn^2/U_ad^2 into U_dyn/U_ad."
+  },
+  "scientific_limit": "Isotropic one-factor intraband band-RMS closure; neither absolute DFT EF nor 18 free electrons; shell/core applicability is not established.",
+  "saved_proof": "proof/evidence.json",
+  "worker_executed_proofs_or_tests": false
+}

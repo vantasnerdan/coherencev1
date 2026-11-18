@@ -1,0 +1,369 @@
+{
+  "schema": "portable-static-family-reproduction-input-v1",
+  "phase": "p5dynamic-pdd10-main-20261118t074034z",
+  "model_id": "PdD10_500",
+  "ground_mode": "saved",
+  "setup_directory": "g4_beam/screen/dynamic/data/static/setups-tenvalence",
+  "expected_ground_wall_s": 120,
+  "configuration": {
+    "case": "PdD_x1",
+    "model": "neutral collinear PBE / explicit valence PAW; static charge RPA",
+    "kind": "rpa",
+    "geometry": {
+      "cell_A": [
+        [
+          0,
+          2.0670708423342865,
+          2.0670708423342865
+        ],
+        [
+          2.0670708423342865,
+          0,
+          2.0670708423342865
+        ],
+        [
+          2.0670708423342865,
+          2.0670708423342865,
+          0
+        ]
+      ],
+      "initial_magnetic_moments_muB": [
+        0,
+        0
+      ],
+      "positions_A": [
+        [
+          5.620192272275922e-27,
+          -1.45891026380064e-18,
+          -3.8156701644457023e-22
+        ],
+        [
+          2.0670708423342847,
+          3.0999731199979916e-19,
+          2.9432781966884644e-21
+        ]
+      ],
+      "symbols": [
+        "Pd",
+        "H"
+      ]
+    },
+    "ground_state": {
+      "convergence": {
+        "bands": "occupied",
+        "density": 0.000001,
+        "eigenstates": 1e-9,
+        "energy": 1e-7
+      },
+      "ecut_eV": 500,
+      "kmesh": [
+        12,
+        12,
+        12
+      ],
+      "occupation_width_eV": 0.1,
+      "saved_nbands": 156,
+      "scf_nbands": 14,
+      "setups": {
+        "H": "paw",
+        "Pd": "10"
+      },
+      "spinpol": false
+    },
+    "valence_electrons": 11,
+    "relaxation": {
+      "mode": "fixed"
+    },
+    "responses": [
+      {
+        "q_fractional": [
+          -0.25,
+          -0.25,
+          -0.25
+        ],
+        "ecut_eV": 200,
+        "eta_eV": 0.005,
+        "nbands": 156,
+        "expected_wall_s": 200,
+        "family": "primary-q2",
+        "grid_n": 2,
+        "class_numerators": [
+          -1,
+          -1,
+          -1
+        ]
+      },
+      {
+        "q_fractional": [
+          -0.25,
+          -0.25,
+          0.25
+        ],
+        "ecut_eV": 200,
+        "eta_eV": 0.005,
+        "nbands": 156,
+        "expected_wall_s": 514.2857142857143,
+        "family": "primary-q2",
+        "grid_n": 2,
+        "class_numerators": [
+          -1,
+          -1,
+          1
+        ]
+      },
+      {
+        "q_fractional": [
+          -0.5,
+          -0.5,
+          -0.5
+        ],
+        "ecut_eV": 200,
+        "eta_eV": 0.005,
+        "nbands": 156,
+        "expected_wall_s": 103.84615384615384,
+        "family": "primary-q3",
+        "grid_n": 3,
+        "class_numerators": [
+          -3,
+          -3,
+          -3
+        ]
+      },
+      {
+        "q_fractional": [
+          -0.5,
+          -0.5,
+          -0.16666666666666666
+        ],
+        "ecut_eV": 200,
+        "eta_eV": 0.005,
+        "nbands": 156,
+        "expected_wall_s": 514.2857142857143,
+        "family": "primary-q3",
+        "grid_n": 3,
+        "class_numerators": [
+          -3,
+          -3,
+          -1
+        ]
+      },
+      {
+        "q_fractional": [
+          -0.5,
+          -0.16666666666666666,
+          -0.16666666666666666
+        ],
+        "ecut_eV": 200,
+        "eta_eV": 0.005,
+        "nbands": 156,
+        "expected_wall_s": 514.2857142857143,
+        "family": "primary-q3",
+        "grid_n": 3,
+        "class_numerators": [
+          -3,
+          -1,
+          -1
+        ]
+      },
+      {
+        "q_fractional": [
+          -0.5,
+          -0.16666666666666666,
+          0.16666666666666666
+        ],
+        "ecut_eV": 200,
+        "eta_eV": 0.005,
+        "nbands": 156,
+        "expected_wall_s": 481.31868131868134,
+        "family": "primary-q3",
+        "grid_n": 3,
+        "class_numerators": [
+          -3,
+          -1,
+          1
+        ]
+      },
+      {
+        "q_fractional": [
+          -0.16666666666666666,
+          -0.16666666666666666,
+          -0.16666666666666666
+        ],
+        "ecut_eV": 200,
+        "eta_eV": 0.005,
+        "nbands": 156,
+        "expected_wall_s": 200,
+        "family": "primary-q3",
+        "grid_n": 3,
+        "class_numerators": [
+          -1,
+          -1,
+          -1
+        ]
+      },
+      {
+        "q_fractional": [
+          -0.16666666666666666,
+          -0.16666666666666666,
+          0.16666666666666666
+        ],
+        "ecut_eV": 200,
+        "eta_eV": 0.005,
+        "nbands": 156,
+        "expected_wall_s": 514.2857142857143,
+        "family": "primary-q3",
+        "grid_n": 3,
+        "class_numerators": [
+          -1,
+          -1,
+          1
+        ]
+      },
+      {
+        "q_fractional": [
+          -0.25,
+          -0.25,
+          -0.25
+        ],
+        "ecut_eV": 200,
+        "eta_eV": 0.005,
+        "nbands": 96,
+        "expected_wall_s": 150,
+        "family": "band-control",
+        "grid_n": 2,
+        "class_numerators": [
+          -1,
+          -1,
+          -1
+        ]
+      },
+      {
+        "q_fractional": [
+          -0.25,
+          -0.25,
+          0.25
+        ],
+        "ecut_eV": 200,
+        "eta_eV": 0.005,
+        "nbands": 96,
+        "expected_wall_s": 385.7142857142857,
+        "family": "band-control",
+        "grid_n": 2,
+        "class_numerators": [
+          -1,
+          -1,
+          1
+        ]
+      },
+      {
+        "q_fractional": [
+          -0.25,
+          -0.25,
+          -0.25
+        ],
+        "ecut_eV": 400,
+        "eta_eV": 0.005,
+        "nbands": 156,
+        "expected_wall_s": 229.99999999999997,
+        "family": "G-control",
+        "grid_n": 2,
+        "class_numerators": [
+          -1,
+          -1,
+          -1
+        ]
+      },
+      {
+        "q_fractional": [
+          -0.25,
+          -0.25,
+          0.25
+        ],
+        "ecut_eV": 400,
+        "eta_eV": 0.005,
+        "nbands": 156,
+        "expected_wall_s": 591.4285714285713,
+        "family": "G-control",
+        "grid_n": 2,
+        "class_numerators": [
+          -1,
+          -1,
+          1
+        ]
+      }
+    ]
+  },
+  "bound_sources": [
+    {
+      "path": "g4_beam/screen/dynamic/data/static/native-source/screen_cases.py",
+      "bytes": 4770,
+      "sha256": "61af4c98c174e22bf9c1eaa7fd0b4e1ea0a211047d2abd9dd42ad5f8466e8be3"
+    },
+    {
+      "path": "g4_beam/screen/dynamic/data/static/native-source/screen_dos.py",
+      "bytes": 4141,
+      "sha256": "71da0a3e6e66609991aa28d687ab3bc706c55aaadcdf5b4bdd2021c30c9d5c7c"
+    },
+    {
+      "path": "g4_beam/screen/dynamic/data/static/native-source/screen_ground.py",
+      "bytes": 2958,
+      "sha256": "4e8ce0bb19887e6a2191f4b59672c1997a3172e0653ef4f945308a83d5abccf0"
+    },
+    {
+      "path": "g4_beam/screen/dynamic/data/static/native-source/screen_io.py",
+      "bytes": 1409,
+      "sha256": "dcab99128fbb312083bdccf440c4c32c214e58e78c59a8a52126300c25d3420c"
+    },
+    {
+      "path": "g4_beam/screen/dynamic/data/static/native-source/screen_relax.py",
+      "bytes": 1827,
+      "sha256": "66b2eeca611cfd16ec6291edae6b47d2a1b14c3804028be245e54188019d65f2"
+    },
+    {
+      "path": "g4_beam/screen/dynamic/data/static/native-source/screen_response.py",
+      "bytes": 4140,
+      "sha256": "609c3539de6a821d112944fd18f22b8c62df96aaf801a18124fd438b9663c9c5"
+    },
+    {
+      "path": "g4_beam/screen/dynamic/run_static_family.py",
+      "bytes": 2915,
+      "sha256": "d4902d1abbdbfa73b5e561ffedd55404f754df18bc7a395b684abe017343a305"
+    },
+    {
+      "path": "g4_beam/screen/dynamic/prepare_static_ground.py",
+      "bytes": 4624,
+      "sha256": "bb928a6f42d9b76aaef98b24a8544a1ce823ec27701a2c2bcc98593e3b35ac59"
+    },
+    {
+      "path": "g4_beam/screen/dynamic/data/static/setups-tenvalence/Pd.10.PBE.gz",
+      "bytes": 106793,
+      "sha256": "3c6cfd1de7e6d6815d58c9521b2bc7cec27ede8e83554ed1f0151f979761bbb4"
+    },
+    {
+      "path": "g4_beam/screen/dynamic/data/static/setups-tenvalence/H.PBE.gz",
+      "bytes": 12501,
+      "sha256": "3136ad73c02d471f99dd5f82e451b2061952970556a260d38b53b5020dc94ae7"
+    },
+    {
+      "path": "g4_beam/screen/dynamic/data/static/retained/PdD/input.json",
+      "bytes": 4232,
+      "sha256": "68e6910c2479bf2a1980cfe618306261598124fd0322a939ca7cb71ebb4bce3a"
+    },
+    {
+      "path": "g4_beam/screen/dynamic/data/static/retained/PdD/ground.json",
+      "bytes": 4640,
+      "sha256": "a4c40d17f51c6f32a2ce6795ee4e2028a8464ad48980230a4563b1aade8cb5c7"
+    },
+    {
+      "path": "g4_beam/screen/dynamic/data/static/retained/PdD/ground.gpw",
+      "bytes": 54317785,
+      "sha256": "8e864d99acb62bcd92754c8dac2851e7d8ba2c9c2bd62996913207919ce358fd"
+    }
+  ],
+  "original_source": {
+    "bytes": 10214,
+    "sha256": "e23d39a97fd39136b5aa586422c2ebaa3e6350f71525e7d49e296fd50222e4e1"
+  },
+  "transformation": "Original physical configuration retained exactly; paths/source authentication remapped to bundled bytes. Legacy two-point driver represented by qualified general family wrapper; no new execution or result claim.",
+  "saved_ground_directory": "g4_beam/screen/dynamic/data/static/retained/PdD"
+}

@@ -1,0 +1,76 @@
+{
+  "schema": "saved-source-bound-speed-proof-result-v1",
+  "source_verifier": {
+    "bytes": 10066,
+    "sha256": "e087db67c141e488436ab86405cb02f82415f74d053317829c36a3037f7bf511",
+    "local_commit": "f7a2ad850d8ab324acdeb8386f7fdb1fca56137c"
+  },
+  "source_runtime": {
+    "bytes": 4670,
+    "sha256": "db448e136d28a0c1c996a48ebe4260fbb2f45e22c4bed0da212bb3513a87a66b"
+  },
+  "original_result": {
+    "bytes": 1671,
+    "sha256": "d1d0a2d29ffe65dee580cba8f700e6802452da379cc59bd3e3d76d6223c8bd42"
+  },
+  "scientific_result": {
+    "scope": "Algebraic/sampled numerical kernel evidence only; no material U, Native, full dynamical response or physical adequacy claim.",
+    "source_bindings": {
+      "drude_source": {
+        "bytes": 7715,
+        "sha256": "5ff1fa7ef2facf1dc4624a2bd54fcae72a52a33a9149807edc89207385a32eb2"
+      },
+      "huke_page": {
+        "bytes": 252672,
+        "sha256": "948f313fa1a3ea9728d490df93a5536ffc79bed824240bb9f2fd9041f418d50c"
+      },
+      "huke_pdf": {
+        "bytes": 653081,
+        "sha256": "7a428728bc7d86c12bc8aa9bb659c57bb74d9070ec87d91ba0dbb0aea74cd33b"
+      }
+    },
+    "speed_numeric": {
+      "atol": 0,
+      "exposed_mutations": [
+        "missing_positive_root",
+        "wrong_sign",
+        "half_log_prefactor",
+        "direct_high_speed_cancellation"
+      ],
+      "max_relative_error": 5.6131912597046475e-16,
+      "rtol": 3e-14,
+      "samples": 134
+    },
+    "symbolic": {
+      "free_gas_D": "Omega*g*kf/(2*pi**2)",
+      "free_gas_N": "Omega*g*kf**3/(6*pi**2)",
+      "free_gas_plasma_diagonal": "2*g*kf**3/(3*pi)",
+      "free_gas_rms_squared": "kf**2",
+      "high_speed_squared_series": "t**8/63 + t**6/35 + t**4/15 + t**2/3",
+      "positive_root_high_speed_limit": "u*F(u) -> 1/sqrt(3)",
+      "squared_endpoint_limits": [
+        "1",
+        "1/2",
+        "1/2"
+      ]
+    },
+    "velocity_numeric": {
+      "exposed_mutations": [
+        "missing_4pi",
+        "directional_mean_not_trace",
+        "missing_volume",
+        "spin_mismatched_DOS",
+        "plasma_frequency_not_squared"
+      ],
+      "free_gas_max_relative_error": 2.220446049250313e-16,
+      "limitation": "Finite-width multiband isotropic closure; not absolute DFT EF or 18 free electrons.",
+      "synthetic_multiband_relative_error": 0
+    }
+  },
+  "consumer_edges": {
+    "passed": 18,
+    "source_test_bytes": 3092,
+    "source_test_sha256": "c770790603e028a7931a78cbb9fb430bcf14822dca024a43a881e5b411443845"
+  },
+  "provenance": "Scientific fields extracted from original accepted results. Operational records remain private. No proof/edge rerun at sealing; portable import-only adapters are distinct source bytes."
+}

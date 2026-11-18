@@ -1,0 +1,352 @@
+{
+  "cases": [
+    {
+      "schema": "actual-pass4-tenvalence-intraband-v1",
+      "case": "Pd-k12",
+      "material": "Pd",
+      "geometry": {
+        "cell_A": [
+          [
+            0,
+            1.945,
+            1.945
+          ],
+          [
+            1.945,
+            0,
+            1.945
+          ],
+          [
+            1.945,
+            1.945,
+            0
+          ]
+        ],
+        "positions_A": [
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "symbols": [
+          "Pd"
+        ]
+      },
+      "source_bindings": [
+        {
+          "path": "original/pass4/screen/results/p4-tier1-c-20261116t211531/Pd_hydro_+0pct/ground.gpw",
+          "bytes": 45311909,
+          "sha256": "2234bcd142bd594a415c685695fb6874174f16fd7d545853ff1ca1f965f8d965",
+          "record_kind": "original_source_identity_only",
+          "availability": "Not bundled; retained GPW/ground JSON are external producer inputs, not required for saved-moment consumption."
+        },
+        {
+          "path": "original/pass4/screen/results/p4-tier1-c-20261116t211531/Pd_hydro_+0pct/ground.json",
+          "bytes": 2178,
+          "sha256": "3625e3bb1e99faf85621cf8c13c042b34b93415ba888d20d185a970203f46749",
+          "record_kind": "original_source_identity_only",
+          "availability": "Not bundled; retained GPW/ground JSON are external producer inputs, not required for saved-moment consumption."
+        }
+      ],
+      "no_new_SCF": true,
+      "no_new_solid": true,
+      "gpaw_version": "26.7.0",
+      "kmesh": [
+        12,
+        12,
+        12
+      ],
+      "saved_bands": 96,
+      "expected_electrons": 10,
+      "reconstructed_electrons": 9.999999999990983,
+      "FD_width_eV": 0.1,
+      "D_T_states_per_Hartree_cell": 54.327538230351195,
+      "D_T_states_per_eV_cell": 1.996500221697711,
+      "volume_Bohr3": 99.30826960552956,
+      "plasma_squared_au_real": [
+        [
+          0.0383884305983884,
+          2.0720572945526537e-18,
+          5.676869300144257e-20
+        ],
+        [
+          2.0720572945526537e-18,
+          0.038388430598388416,
+          -2.2707477200577027e-18
+        ],
+        [
+          5.676869300144257e-20,
+          -2.2707477200577027e-18,
+          0.038388430598388416
+        ]
+      ],
+      "plasma_squared_au_imag": [
+        [
+          2.8118157513232024e-19,
+          5.672331904327068e-35,
+          6.302591004807853e-36
+        ],
+        [
+          5.98746145456746e-35,
+          2.811815751323201e-19,
+          -5.98746145456746e-35
+        ],
+        [
+          9.45388650721178e-36,
+          -5.98746145456746e-35,
+          2.8118157513232015e-19
+        ]
+      ],
+      "band_RMS_velocity_au": 0.12943107802363107,
+      "spectrum": {
+        "path": "g4_beam/screen/dynamic/data/moments/Pd-k12/occupation-spectrum.npz",
+        "bytes": 68299,
+        "sha256": "402ecd2f0509c837ea2a280f87a59c22094608659532d8477e01bbd16cc3fefb"
+      },
+      "U10_static_Yukawa_proxy_eV": 36.22746936148262,
+      "screening_scope": "Accepted pass4 low-q ten-valence C/lambda Yukawa proxy, NOT a full large-q/contact dielectric inversion",
+      "velocity_scope": "Actual intraband band-RMS finite-width moment; one isotropic Huke factor remains a model closure, not full dynamical response"
+    },
+    {
+      "schema": "actual-pass4-tenvalence-intraband-v1",
+      "case": "PdD-k12",
+      "material": "PdD",
+      "geometry": {
+        "cell_A": [
+          [
+            0,
+            2.0670708423342865,
+            2.0670708423342865
+          ],
+          [
+            2.0670708423342865,
+            0,
+            2.0670708423342865
+          ],
+          [
+            2.0670708423342865,
+            2.0670708423342865,
+            0
+          ]
+        ],
+        "initial_magnetic_moments_muB": [
+          0,
+          0
+        ],
+        "positions_A": [
+          [
+            5.620192272275922e-27,
+            -1.45891026380064e-18,
+            -3.8156701644457023e-22
+          ],
+          [
+            2.0670708423342847,
+            3.0999731199979916e-19,
+            2.9432781966884644e-21
+          ]
+        ],
+        "symbols": [
+          "Pd",
+          "H"
+        ]
+      },
+      "source_bindings": [
+        {
+          "path": "original/pass4/screen/results/p4-recover-full-20261116t232234/PdD_x1/ground.gpw",
+          "bytes": 54317785,
+          "sha256": "8e864d99acb62bcd92754c8dac2851e7d8ba2c9c2bd62996913207919ce358fd",
+          "record_kind": "original_source_identity_only",
+          "availability": "Not bundled; retained GPW/ground JSON are external producer inputs, not required for saved-moment consumption."
+        },
+        {
+          "path": "original/pass4/screen/results/p4-recover-full-20261116t232234/PdD_x1/ground.json",
+          "bytes": 4640,
+          "sha256": "a4c40d17f51c6f32a2ce6795ee4e2028a8464ad48980230a4563b1aade8cb5c7",
+          "record_kind": "original_source_identity_only",
+          "availability": "Not bundled; retained GPW/ground JSON are external producer inputs, not required for saved-moment consumption."
+        }
+      ],
+      "no_new_SCF": true,
+      "no_new_solid": true,
+      "gpaw_version": "26.7.0",
+      "kmesh": [
+        12,
+        12,
+        12
+      ],
+      "saved_bands": 96,
+      "expected_electrons": 11,
+      "reconstructed_electrons": 11.00000000007664,
+      "FD_width_eV": 0.1,
+      "D_T_states_per_Hartree_cell": 14.159131156018951,
+      "D_T_states_per_eV_cell": 0.5203384768177459,
+      "volume_Bohr3": 119.20450824704707,
+      "plasma_squared_au_real": [
+        [
+          0.053540814413304966,
+          2.270747720057703e-19,
+          2.8384346500721284e-19
+        ],
+        [
+          2.270747720057703e-19,
+          0.05354081441330497,
+          -2.100441641053375e-18
+        ],
+        [
+          2.8384346500721284e-19,
+          -2.100441641053375e-18,
+          0.053540814413304987
+        ]
+      ],
+      "plasma_squared_au_imag": [
+        [
+          -5.124601361707394e-19,
+          -3.151295502403926e-36,
+          0.0
+        ],
+        [
+          3.151295502403926e-36,
+          -5.124601361707393e-19,
+          3.623989827764515e-35
+        ],
+        [
+          6.302591004807853e-36,
+          2.048342076562552e-35,
+          -5.124601361707393e-19
+        ]
+      ],
+      "band_RMS_velocity_au": 0.3280395592887967,
+      "spectrum": {
+        "path": "g4_beam/screen/dynamic/data/moments/PdD-k12/occupation-spectrum.npz",
+        "bytes": 71263,
+        "sha256": "a87319cf976c2e04c60a33be42f8a0568ac76df4d19b41ffe67b2252ebe7c5f4"
+      },
+      "U10_static_Yukawa_proxy_eV": 26.607101982891034,
+      "screening_scope": "Accepted pass4 low-q ten-valence C/lambda Yukawa proxy, NOT a full large-q/contact dielectric inversion",
+      "velocity_scope": "Actual intraband band-RMS finite-width moment; one isotropic Huke factor remains a model closure, not full dynamical response"
+    },
+    {
+      "schema": "actual-pass4-tenvalence-intraband-v1",
+      "case": "Pd-k24-control",
+      "material": "Pd",
+      "geometry": {
+        "cell_A": [
+          [
+            0,
+            1.945,
+            1.945
+          ],
+          [
+            1.945,
+            0,
+            1.945
+          ],
+          [
+            1.945,
+            1.945,
+            0
+          ]
+        ],
+        "positions_A": [
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "symbols": [
+          "Pd"
+        ]
+      },
+      "source_bindings": [
+        {
+          "path": "original/pass4/screen/results/p4-pd0-k24-20261116t202003/ground.gpw",
+          "bytes": 259415972,
+          "sha256": "6d341062c83d466c0207aa39f3f745e201b3084531c7cbf18104323b3da48699",
+          "record_kind": "original_source_identity_only",
+          "availability": "Not bundled; retained GPW/ground JSON are external producer inputs, not required for saved-moment consumption."
+        },
+        {
+          "path": "original/pass4/screen/results/p4-pd0-k24-20261116t202003/ground.json",
+          "bytes": 2226,
+          "sha256": "f4adb7a213df213b8cd241f121881717cfb52d9b3e46132b3afe8bf28da64739",
+          "record_kind": "original_source_identity_only",
+          "availability": "Not bundled; retained GPW/ground JSON are external producer inputs, not required for saved-moment consumption."
+        }
+      ],
+      "no_new_SCF": true,
+      "no_new_solid": true,
+      "gpaw_version": "26.7.0",
+      "kmesh": [
+        24,
+        24,
+        24
+      ],
+      "saved_bands": 96,
+      "expected_electrons": 10,
+      "reconstructed_electrons": 9.999999999992905,
+      "FD_width_eV": 0.1,
+      "D_T_states_per_Hartree_cell": 53.30436461325674,
+      "D_T_states_per_eV_cell": 1.9588992844952389,
+      "volume_Bohr3": 99.30826960552956,
+      "plasma_squared_au_real": [
+        [
+          0.05641264411516482,
+          2.8100503035714075e-18,
+          -3.5480433125901605e-20
+        ],
+        [
+          2.8100503035714075e-18,
+          0.056412644115164834,
+          -1.8165981760461622e-18
+        ],
+        [
+          -3.5480433125901605e-20,
+          -1.8165981760461622e-18,
+          0.05641264411516482
+        ]
+      ],
+      "plasma_squared_au_imag": [
+        [
+          1.629578741305821e-19,
+          1.5362565574219143e-35,
+          1.575647751201963e-36
+        ],
+        [
+          1.457474169861816e-35,
+          1.62957874130582e-19,
+          1.0438666351713006e-35
+        ],
+        [
+          -1.575647751201963e-36,
+          9.650842476112025e-36,
+          1.629578741305819e-19
+        ]
+      ],
+      "band_RMS_velocity_au": 0.15840002477628165,
+      "spectrum": {
+        "path": "g4_beam/screen/dynamic/data/moments/Pd-k24-control/occupation-spectrum.npz",
+        "bytes": 393956,
+        "sha256": "d26a331ea98229a135ab4a038abb7d86fb27d6cb68b5649f9f0b930738da21e2"
+      },
+      "U10_static_Yukawa_proxy_eV": 36.22746936148262,
+      "screening_scope": "Accepted pass4 low-q ten-valence C/lambda Yukawa proxy, NOT a full large-q/contact dielectric inversion",
+      "velocity_scope": "Actual intraband band-RMS finite-width moment; one isotropic Huke factor remains a model closure, not full dynamical response"
+    }
+  ],
+  "portable_extract": {
+    "record_kind": "portable_extract",
+    "original": {
+      "locator": "dynamic/p5dynamic-tenvel-20261118t050919z/calculation/result.json",
+      "bytes": 9392,
+      "sha256": "130fb5e66fafd3771bf52556c9701d5a943e53a4cab6b13d4ecc98246daea4d4"
+    },
+    "transformations": [
+      "Original GPW/ground identities retained with non-live logical locators; no GPW bytes bundled.",
+      "Spectrum paths now point to unchanged bundled NPZ bytes, relative to integration-root cwd.",
+      "All three material/control cases and all numerical fields preserved."
+    ],
+    "scientific_values_recomputed": false
+  }
+}

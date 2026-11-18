@@ -84,3 +84,5 @@ Modules separate geometry/relaxation, ground/DOS, response, length/cutoff, saved
 Executed source/input manifests preserve original versions; current producer improvements do not re-pin historical Native records. Admitted DOS spectra and direct-RPA matrices are included for numeric readback. Large GPWs, trajectories and private operational logs are not public attachments; their original byte identities/retained-bank scope are explicit. Recomputing Native requires the recorded engine/PAW versions and new invocation/source bindings. This archive is not a claim that unarchived wavefunctions were independently reproduced elsewhere.
 
 Source: [Yan et al., PAW dielectric response, arXiv1104.1273v1](https://arxiv.org/abs/1104.1273). Raw PAW and installed-engine source hashes, analytic TF/Yukawa/cutoff checks and actual saved-output receipts bind the implementation.
+
+Pass 5: the static contact potential at finite G with the Pd 4s/4p shells open, and the electron-speed closure, are in `dynamic/README.md`.

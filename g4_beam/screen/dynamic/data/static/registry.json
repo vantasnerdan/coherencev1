@@ -1,0 +1,929 @@
+{
+  "schema": "registered-static-matrix-inputs-v1",
+  "purpose": "Final two-host fixed-lattice screening and matched activation/control set; execute only after all declared banks are published",
+  "cases": [
+    {
+      "id": "PdD18_1200",
+      "material": "PdD",
+      "pd_valence": 18,
+      "ground_state": {
+        "convergence": {
+          "bands": "occupied",
+          "density": 1e-06,
+          "eigenstates": 1e-09,
+          "energy": 1e-07
+        },
+        "ecut_eV": 1200,
+        "kmesh": [
+          12,
+          12,
+          12
+        ],
+        "occupation_width_eV": 0.1,
+        "saved_nbands": 160,
+        "scf_nbands": 16,
+        "setups": {
+          "H": "paw",
+          "Pd": "18"
+        },
+        "spinpol": false
+      },
+      "response": {
+        "ecut_eV": 200,
+        "eta_eV": 0.005,
+        "nbands": 160
+      },
+      "quadratures": [
+        {
+          "n": 2,
+          "points": [
+            {
+              "bank": "banks/qrepair-20261118t055431z",
+              "index": 1
+            },
+            {
+              "bank": "banks/permute-20261118t065439z",
+              "index": 0
+            }
+          ]
+        },
+        {
+          "n": 3,
+          "points": [
+            {
+              "bank": "banks/pdd18-main-20261118t074034z",
+              "index": 0
+            },
+            {
+              "bank": "banks/pdd18-main-20261118t074034z",
+              "index": 1
+            },
+            {
+              "bank": "banks/pdd18-main-20261118t074034z",
+              "index": 2
+            },
+            {
+              "bank": "banks/pdd18-main-20261118t074034z",
+              "index": 3
+            },
+            {
+              "bank": "banks/pdd18-main-20261118t074034z",
+              "index": 4
+            },
+            {
+              "bank": "banks/pdd18-main-20261118t074034z",
+              "index": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PdD18_1200_nb100",
+      "material": "PdD",
+      "pd_valence": 18,
+      "ground_state": {
+        "convergence": {
+          "bands": "occupied",
+          "density": 1e-06,
+          "eigenstates": 1e-09,
+          "energy": 1e-07
+        },
+        "ecut_eV": 1200,
+        "kmesh": [
+          12,
+          12,
+          12
+        ],
+        "occupation_width_eV": 0.1,
+        "saved_nbands": 160,
+        "scf_nbands": 16,
+        "setups": {
+          "H": "paw",
+          "Pd": "18"
+        },
+        "spinpol": false
+      },
+      "response": {
+        "ecut_eV": 200,
+        "eta_eV": 0.005,
+        "nbands": 100
+      },
+      "quadratures": [
+        {
+          "n": 2,
+          "points": [
+            {
+              "bank": "banks/pdd18-main-20261118t074034z",
+              "index": 6
+            },
+            {
+              "bank": "banks/pdd18-main-20261118t074034z",
+              "index": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PdD18_1200_G400",
+      "material": "PdD",
+      "pd_valence": 18,
+      "ground_state": {
+        "convergence": {
+          "bands": "occupied",
+          "density": 1e-06,
+          "eigenstates": 1e-09,
+          "energy": 1e-07
+        },
+        "ecut_eV": 1200,
+        "kmesh": [
+          12,
+          12,
+          12
+        ],
+        "occupation_width_eV": 0.1,
+        "saved_nbands": 160,
+        "scf_nbands": 16,
+        "setups": {
+          "H": "paw",
+          "Pd": "18"
+        },
+        "spinpol": false
+      },
+      "response": {
+        "ecut_eV": 400,
+        "eta_eV": 0.005,
+        "nbands": 160
+      },
+      "quadratures": [
+        {
+          "n": 2,
+          "points": [
+            {
+              "bank": "banks/pdd18-main-20261118t074034z",
+              "index": 8
+            },
+            {
+              "bank": "banks/pdd18-main-20261118t074034z",
+              "index": 9
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Pd18_1200",
+      "material": "Pd",
+      "pd_valence": 18,
+      "ground_state": {
+        "convergence": {
+          "bands": "occupied",
+          "density": 1e-06,
+          "eigenstates": 1e-09,
+          "energy": 1e-07
+        },
+        "ecut_eV": 1200,
+        "kmesh": [
+          12,
+          12,
+          12
+        ],
+        "occupation_width_eV": 0.1,
+        "saved_nbands": 160,
+        "scf_nbands": 16,
+        "setups": {
+          "H": "paw",
+          "Pd": "18"
+        },
+        "spinpol": false
+      },
+      "response": {
+        "ecut_eV": 200,
+        "eta_eV": 0.005,
+        "nbands": 160
+      },
+      "quadratures": [
+        {
+          "n": 2,
+          "points": [
+            {
+              "bank": "banks/pd18-main-20261118t074034z",
+              "index": 0
+            },
+            {
+              "bank": "banks/pd18-main-20261118t074034z",
+              "index": 1
+            }
+          ]
+        },
+        {
+          "n": 3,
+          "points": [
+            {
+              "bank": "banks/pd18-main-20261118t074034z",
+              "index": 2
+            },
+            {
+              "bank": "banks/pd18-main-20261118t074034z",
+              "index": 3
+            },
+            {
+              "bank": "banks/pd18-main-20261118t074034z",
+              "index": 4
+            },
+            {
+              "bank": "banks/pd18-main-20261118t074034z",
+              "index": 5
+            },
+            {
+              "bank": "banks/pd18-main-20261118t074034z",
+              "index": 6
+            },
+            {
+              "bank": "banks/pd18-main-20261118t074034z",
+              "index": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Pd18_1200_nb100",
+      "material": "Pd",
+      "pd_valence": 18,
+      "ground_state": {
+        "convergence": {
+          "bands": "occupied",
+          "density": 1e-06,
+          "eigenstates": 1e-09,
+          "energy": 1e-07
+        },
+        "ecut_eV": 1200,
+        "kmesh": [
+          12,
+          12,
+          12
+        ],
+        "occupation_width_eV": 0.1,
+        "saved_nbands": 160,
+        "scf_nbands": 16,
+        "setups": {
+          "H": "paw",
+          "Pd": "18"
+        },
+        "spinpol": false
+      },
+      "response": {
+        "ecut_eV": 200,
+        "eta_eV": 0.005,
+        "nbands": 100
+      },
+      "quadratures": [
+        {
+          "n": 2,
+          "points": [
+            {
+              "bank": "banks/pd18-main-20261118t074034z",
+              "index": 8
+            },
+            {
+              "bank": "banks/pd18-main-20261118t074034z",
+              "index": 9
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Pd18_1200_G400",
+      "material": "Pd",
+      "pd_valence": 18,
+      "ground_state": {
+        "convergence": {
+          "bands": "occupied",
+          "density": 1e-06,
+          "eigenstates": 1e-09,
+          "energy": 1e-07
+        },
+        "ecut_eV": 1200,
+        "kmesh": [
+          12,
+          12,
+          12
+        ],
+        "occupation_width_eV": 0.1,
+        "saved_nbands": 160,
+        "scf_nbands": 16,
+        "setups": {
+          "H": "paw",
+          "Pd": "18"
+        },
+        "spinpol": false
+      },
+      "response": {
+        "ecut_eV": 400,
+        "eta_eV": 0.005,
+        "nbands": 160
+      },
+      "quadratures": [
+        {
+          "n": 2,
+          "points": [
+            {
+              "bank": "banks/pd18-main-20261118t074034z",
+              "index": 10
+            },
+            {
+              "bank": "banks/pd18-main-20261118t074034z",
+              "index": 11
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PdD10_500",
+      "material": "PdD",
+      "pd_valence": 10,
+      "ground_state": {
+        "convergence": {
+          "bands": "occupied",
+          "density": 1e-06,
+          "eigenstates": 1e-09,
+          "energy": 1e-07
+        },
+        "ecut_eV": 500,
+        "kmesh": [
+          12,
+          12,
+          12
+        ],
+        "occupation_width_eV": 0.1,
+        "saved_nbands": 156,
+        "scf_nbands": 14,
+        "setups": {
+          "H": "paw",
+          "Pd": "10"
+        },
+        "spinpol": false
+      },
+      "response": {
+        "ecut_eV": 200,
+        "eta_eV": 0.005,
+        "nbands": 156
+      },
+      "quadratures": [
+        {
+          "n": 2,
+          "points": [
+            {
+              "bank": "banks/pdd10-main-20261118t074034z",
+              "index": 0
+            },
+            {
+              "bank": "banks/pdd10-main-20261118t074034z",
+              "index": 1
+            }
+          ]
+        },
+        {
+          "n": 3,
+          "points": [
+            {
+              "bank": "banks/pdd10-main-20261118t074034z",
+              "index": 2
+            },
+            {
+              "bank": "banks/pdd10-main-20261118t074034z",
+              "index": 3
+            },
+            {
+              "bank": "banks/pdd10-main-20261118t074034z",
+              "index": 4
+            },
+            {
+              "bank": "banks/pdd10-main-20261118t074034z",
+              "index": 5
+            },
+            {
+              "bank": "banks/pdd10-main-20261118t074034z",
+              "index": 6
+            },
+            {
+              "bank": "banks/pdd10-main-20261118t074034z",
+              "index": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PdD10_500_nb96",
+      "material": "PdD",
+      "pd_valence": 10,
+      "ground_state": {
+        "convergence": {
+          "bands": "occupied",
+          "density": 1e-06,
+          "eigenstates": 1e-09,
+          "energy": 1e-07
+        },
+        "ecut_eV": 500,
+        "kmesh": [
+          12,
+          12,
+          12
+        ],
+        "occupation_width_eV": 0.1,
+        "saved_nbands": 156,
+        "scf_nbands": 14,
+        "setups": {
+          "H": "paw",
+          "Pd": "10"
+        },
+        "spinpol": false
+      },
+      "response": {
+        "ecut_eV": 200,
+        "eta_eV": 0.005,
+        "nbands": 96
+      },
+      "quadratures": [
+        {
+          "n": 2,
+          "points": [
+            {
+              "bank": "banks/pdd10-main-20261118t074034z",
+              "index": 8
+            },
+            {
+              "bank": "banks/pdd10-main-20261118t074034z",
+              "index": 9
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PdD10_500_G400",
+      "material": "PdD",
+      "pd_valence": 10,
+      "ground_state": {
+        "convergence": {
+          "bands": "occupied",
+          "density": 1e-06,
+          "eigenstates": 1e-09,
+          "energy": 1e-07
+        },
+        "ecut_eV": 500,
+        "kmesh": [
+          12,
+          12,
+          12
+        ],
+        "occupation_width_eV": 0.1,
+        "saved_nbands": 156,
+        "scf_nbands": 14,
+        "setups": {
+          "H": "paw",
+          "Pd": "10"
+        },
+        "spinpol": false
+      },
+      "response": {
+        "ecut_eV": 400,
+        "eta_eV": 0.005,
+        "nbands": 156
+      },
+      "quadratures": [
+        {
+          "n": 2,
+          "points": [
+            {
+              "bank": "banks/pdd10-main-20261118t074034z",
+              "index": 10
+            },
+            {
+              "bank": "banks/pdd10-main-20261118t074034z",
+              "index": 11
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Pd10_500",
+      "material": "Pd",
+      "pd_valence": 10,
+      "ground_state": {
+        "ecut_eV": 500,
+        "kmesh": [
+          12,
+          12,
+          12
+        ],
+        "occupation_width_eV": 0.1,
+        "setups": {
+          "Pd": "10"
+        },
+        "scf_nbands": 16,
+        "saved_nbands": 156,
+        "convergence": {
+          "energy": 1e-07,
+          "density": 1e-06,
+          "eigenstates": 1e-09,
+          "bands": "occupied"
+        },
+        "spinpol": false
+      },
+      "response": {
+        "ecut_eV": 200,
+        "eta_eV": 0.005,
+        "nbands": 156
+      },
+      "quadratures": [
+        {
+          "n": 2,
+          "points": [
+            {
+              "bank": "banks/pd10-main-20261118t081649z",
+              "index": 0
+            },
+            {
+              "bank": "banks/pd10-main-20261118t081649z",
+              "index": 1
+            }
+          ]
+        },
+        {
+          "n": 3,
+          "points": [
+            {
+              "bank": "banks/pd10-main-20261118t081649z",
+              "index": 2
+            },
+            {
+              "bank": "banks/pd10-main-20261118t081649z",
+              "index": 3
+            },
+            {
+              "bank": "banks/pd10-main-20261118t081649z",
+              "index": 4
+            },
+            {
+              "bank": "banks/pd10-main-20261118t081649z",
+              "index": 5
+            },
+            {
+              "bank": "banks/pd10-main-20261118t081649z",
+              "index": 6
+            },
+            {
+              "bank": "banks/pd10-main-20261118t081649z",
+              "index": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Pd10_500_nb96",
+      "material": "Pd",
+      "pd_valence": 10,
+      "ground_state": {
+        "ecut_eV": 500,
+        "kmesh": [
+          12,
+          12,
+          12
+        ],
+        "occupation_width_eV": 0.1,
+        "setups": {
+          "Pd": "10"
+        },
+        "scf_nbands": 16,
+        "saved_nbands": 156,
+        "convergence": {
+          "energy": 1e-07,
+          "density": 1e-06,
+          "eigenstates": 1e-09,
+          "bands": "occupied"
+        },
+        "spinpol": false
+      },
+      "response": {
+        "ecut_eV": 200,
+        "eta_eV": 0.005,
+        "nbands": 96
+      },
+      "quadratures": [
+        {
+          "n": 2,
+          "points": [
+            {
+              "bank": "banks/pd10-main-20261118t081649z",
+              "index": 8
+            },
+            {
+              "bank": "banks/pd10-main-20261118t081649z",
+              "index": 9
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Pd10_500_G400",
+      "material": "Pd",
+      "pd_valence": 10,
+      "ground_state": {
+        "ecut_eV": 500,
+        "kmesh": [
+          12,
+          12,
+          12
+        ],
+        "occupation_width_eV": 0.1,
+        "setups": {
+          "Pd": "10"
+        },
+        "scf_nbands": 16,
+        "saved_nbands": 156,
+        "convergence": {
+          "energy": 1e-07,
+          "density": 1e-06,
+          "eigenstates": 1e-09,
+          "bands": "occupied"
+        },
+        "spinpol": false
+      },
+      "response": {
+        "ecut_eV": 400,
+        "eta_eV": 0.005,
+        "nbands": 156
+      },
+      "quadratures": [
+        {
+          "n": 2,
+          "points": [
+            {
+              "bank": "banks/pd10-main-20261118t081649z",
+              "index": 10
+            },
+            {
+              "bank": "banks/pd10-main-20261118t081649z",
+              "index": 11
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PdD18_500",
+      "material": "PdD",
+      "pd_valence": 18,
+      "ground_state": {
+        "convergence": {
+          "bands": "occupied",
+          "density": 1e-06,
+          "eigenstates": 1e-09,
+          "energy": 1e-07
+        },
+        "ecut_eV": 500,
+        "kmesh": [
+          12,
+          12,
+          12
+        ],
+        "occupation_width_eV": 0.1,
+        "saved_nbands": 160,
+        "scf_nbands": 16,
+        "setups": {
+          "H": "paw",
+          "Pd": "18"
+        },
+        "spinpol": false
+      },
+      "response": {
+        "ecut_eV": 200,
+        "eta_eV": 0.005,
+        "nbands": 160
+      },
+      "quadratures": [
+        {
+          "n": 2,
+          "points": [
+            {
+              "bank": "banks/pdd18-pw500-20261118t081649z",
+              "index": 0
+            },
+            {
+              "bank": "banks/pdd18-pw500-20261118t081649z",
+              "index": 1
+            }
+          ]
+        },
+        {
+          "n": 3,
+          "points": [
+            {
+              "bank": "banks/pdd18-pw500-20261118t081649z",
+              "index": 2
+            },
+            {
+              "bank": "banks/pdd18-pw500-20261118t081649z",
+              "index": 3
+            },
+            {
+              "bank": "banks/pdd18-pw500-20261118t081649z",
+              "index": 4
+            },
+            {
+              "bank": "banks/pdd18-pw500-20261118t081649z",
+              "index": 5
+            },
+            {
+              "bank": "banks/pdd18-pw500-20261118t081649z",
+              "index": 6
+            },
+            {
+              "bank": "banks/pdd18-pw500-20261118t081649z",
+              "index": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PdD18_k8",
+      "material": "PdD",
+      "pd_valence": 18,
+      "ground_state": {
+        "convergence": {
+          "bands": "occupied",
+          "density": 1e-06,
+          "eigenstates": 1e-09,
+          "energy": 1e-07
+        },
+        "ecut_eV": 1200,
+        "kmesh": [
+          8,
+          8,
+          8
+        ],
+        "occupation_width_eV": 0.1,
+        "saved_nbands": 160,
+        "scf_nbands": 16,
+        "setups": {
+          "H": "paw",
+          "Pd": "18"
+        },
+        "spinpol": false
+      },
+      "response": {
+        "ecut_eV": 200,
+        "eta_eV": 0.005,
+        "nbands": 160
+      },
+      "quadratures": [
+        {
+          "n": 2,
+          "points": [
+            {
+              "bank": "banks/pdd18-k8-20261118t081649z",
+              "index": 0
+            },
+            {
+              "bank": "banks/pdd18-k8-20261118t081649z",
+              "index": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Pd18_500",
+      "material": "Pd",
+      "pd_valence": 18,
+      "ground_state": {
+        "convergence": {
+          "bands": "occupied",
+          "density": 1e-06,
+          "eigenstates": 1e-09,
+          "energy": 1e-07
+        },
+        "ecut_eV": 500,
+        "kmesh": [
+          12,
+          12,
+          12
+        ],
+        "occupation_width_eV": 0.1,
+        "saved_nbands": 160,
+        "scf_nbands": 16,
+        "setups": {
+          "H": "paw",
+          "Pd": "18"
+        },
+        "spinpol": false
+      },
+      "response": {
+        "ecut_eV": 200,
+        "eta_eV": 0.005,
+        "nbands": 160
+      },
+      "quadratures": [
+        {
+          "n": 2,
+          "points": [
+            {
+              "bank": "banks/pd18-pw500-20261118t081649z",
+              "index": 0
+            },
+            {
+              "bank": "banks/pd18-pw500-20261118t081649z",
+              "index": 1
+            }
+          ]
+        },
+        {
+          "n": 3,
+          "points": [
+            {
+              "bank": "banks/pd18-pw500-20261118t081649z",
+              "index": 2
+            },
+            {
+              "bank": "banks/pd18-pw500-20261118t081649z",
+              "index": 3
+            },
+            {
+              "bank": "banks/pd18-pw500-20261118t081649z",
+              "index": 4
+            },
+            {
+              "bank": "banks/pd18-pw500-20261118t081649z",
+              "index": 5
+            },
+            {
+              "bank": "banks/pd18-pw500-20261118t081649z",
+              "index": 6
+            },
+            {
+              "bank": "banks/pd18-pw500-20261118t081649z",
+              "index": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Pd18_k8",
+      "material": "Pd",
+      "pd_valence": 18,
+      "ground_state": {
+        "convergence": {
+          "bands": "occupied",
+          "density": 1e-06,
+          "eigenstates": 1e-09,
+          "energy": 1e-07
+        },
+        "ecut_eV": 1200,
+        "kmesh": [
+          8,
+          8,
+          8
+        ],
+        "occupation_width_eV": 0.1,
+        "saved_nbands": 160,
+        "scf_nbands": 16,
+        "setups": {
+          "H": "paw",
+          "Pd": "18"
+        },
+        "spinpol": false
+      },
+      "response": {
+        "ecut_eV": 200,
+        "eta_eV": 0.005,
+        "nbands": 160
+      },
+      "quadratures": [
+        {
+          "n": 2,
+          "points": [
+            {
+              "bank": "banks/pd18-k8-20261118t081649z",
+              "index": 0
+            },
+            {
+              "bank": "banks/pd18-k8-20261118t081649z",
+              "index": 1
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
