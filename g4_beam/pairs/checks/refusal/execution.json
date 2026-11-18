@@ -1,0 +1,38 @@
+{
+  "sources": [
+    {
+      "path": "inputs/axis.json",
+      "bytes": 3194,
+      "sha256": "145c80c747e0f84b5e2425262812bc7d44e4ec4b3c053f11270d8fc18a5c9c35"
+    },
+    {
+      "path": "execution-source/adapters/run_pair_cells.py",
+      "bytes": 6262,
+      "sha256": "45fb9c53ee2036ace36efbbe058fc75c21ae413091c6eda475fb5388fe8fe568"
+    },
+    {
+      "path": "execution-source/adapters/pair_dft.py",
+      "bytes": 975,
+      "sha256": "025b4e22a5205c441c5b70c741faf2db5ef3c4a4abaa5b264c5fbe22105fda00"
+    },
+    {
+      "path": "execution-source/helpers/force_bank_results.py",
+      "bytes": 1675,
+      "sha256": "2e77bd333a8f5d705d83802cdc777c398d97c30aeb5344539bc1bccf68e90328"
+    },
+    {
+      "path": "execution-source/helpers/surface_io.py",
+      "bytes": 727,
+      "sha256": "4d624565e095c1c458882060814c2141e244b6c7f38358cf29d12f632fdd627c"
+    }
+  ],
+  "affinity": [
+    7
+  ],
+  "setup_sha256": {
+    "Pd.10.PBE.gz": "3c6cfd1de7e6d6815d58c9521b2bc7cec27ede8e83554ed1f0151f979761bbb4",
+    "H.PBE.gz": "3136ad73c02d471f99dd5f82e451b2061952970556a260d38b53b5020dc94ae7"
+  },
+  "start_utc": "2026-11-18T00:27:09Z",
+  "record_kind": "portable_locator_extract_not_original_execution"
+}

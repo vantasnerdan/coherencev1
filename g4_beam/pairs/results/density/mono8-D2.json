@@ -1,0 +1,238 @@
+{
+  "schema": "coherence-pairs-actual-density-v1",
+  "case": {
+    "name": "mono8-D2",
+    "host_Pd": 8,
+    "n_Pd": 7,
+    "n_missing": 1,
+    "n_D": 2,
+    "add_D_positions_A": [
+      [
+        -1.945,
+        0,
+        0
+      ]
+    ]
+  },
+  "source_point": {
+    "path": "data/axis/mono8-D2/primitive.json",
+    "bytes": 4392,
+    "sha256": "34371a4aa44230ef2e36d751a56d0255bc4cd2efb445178a70ceb870b5959e00"
+  },
+  "source_execution": {
+    "path": "data/axis/execution.json",
+    "bytes": 1205,
+    "sha256": "e35892a0e1148035b5ffefe581b3109b0d95facbfeab79c61b37d82b5decb3b6"
+  },
+  "source_bank": {
+    "forces": [
+      [
+        -0.018697162578553302,
+        -0.01093211262352594,
+        6.2581055439505494e-06
+      ],
+      [
+        -0.018696751981376217,
+        6.103036430979319e-06,
+        -0.010924325448366554
+      ],
+      [
+        0.026069304244167618,
+        -5.4421851026891195e-06,
+        -5.208955767779783e-06
+      ],
+      [
+        0.02608013860856246,
+        9.959429640707392e-07,
+        4.813384380984108e-07
+      ],
+      [
+        -0.018711511598230507,
+        -8.981179913291241e-06,
+        0.010910750483874923
+      ],
+      [
+        -0.01871068459701232,
+        0.010915999682917206,
+        -8.365716258368399e-06
+      ],
+      [
+        0.02587533704046174,
+        1.0575375809104303e-05,
+        1.03574672857788e-05
+      ],
+      [
+        -0.042593795055105285,
+        -1.32696636180895e-06,
+        -1.3339404696423966e-06
+      ],
+      [
+        0.03942760667931847,
+        2.992709539939041e-06,
+        2.8276108180329118e-06
+      ]
+    ],
+    "energy_eV": -29.443102763637338,
+    "positions_A": [
+      [
+        1.9375188405334287,
+        1.9461381441850634,
+        -5.735807166065497e-07
+      ],
+      [
+        1.9375187064212196,
+        -5.690251611441034e-07,
+        1.9461380450907244
+      ],
+      [
+        3.880258878700229,
+        1.9449997922897475,
+        1.9449998084136106
+      ],
+      [
+        -0.009740978258624815,
+        1.9449997572661788,
+        1.9449997276705164
+      ],
+      [
+        1.937519151825028,
+        3.890000334511334,
+        1.9438623383858056
+      ],
+      [
+        1.9375191318164608,
+        1.9438623286009076,
+        3.890000312607366
+      ],
+      [
+        3.8794052752182906,
+        3.8899992398120187,
+        3.8899992621187303
+      ],
+      [
+        1.9252986137424748,
+        -3.7672714224136015e-07,
+        -3.3134243480558746e-07
+      ],
+      [
+        -1.9411641792231207,
+        2.2587327331990471e-07,
+        1.8714450294039185e-07
+      ]
+    ],
+    "gpw": {
+      "path": "data/axis/mono8-D2/point-002.gpw",
+      "bytes": 3683052,
+      "sha256": "42808b0deb93207693df900e6b09641765811a25f5856c476f43e27cc2ecf19c"
+    },
+    "geometry": {
+      "path": "data/axis/mono8-D2/point-002.traj",
+      "bytes": 1872,
+      "sha256": "7c3e66e8127d814fddb4b397fc362045f89a9b762c14d2b57ee014ef815c2b01"
+    }
+  },
+  "periodic_pairs": [
+    {
+      "atom_indices": [
+        7,
+        8
+      ],
+      "periodic_distance_A": 3.866462792965677,
+      "same_cell_distance_A": 3.866462792965677,
+      "periodic_displacement_A": [
+        -3.8664627929655957,
+        6.026004153447673e-07,
+        5.184869373842105e-07
+      ],
+      "uses_periodic_image": false,
+      "midpoint_A": [
+        -0.007932782740323052,
+        -7.542693456897652e-08,
+        -7.209896611348222e-08
+      ]
+    }
+  ],
+  "closest_pair": {
+    "atom_indices": [
+      7,
+      8
+    ],
+    "periodic_distance_A": 3.866462792965677,
+    "same_cell_distance_A": 3.866462792965677,
+    "periodic_displacement_A": [
+      -3.8664627929655957,
+      6.026004153447673e-07,
+      5.184869373842105e-07
+    ],
+    "uses_periodic_image": false,
+    "midpoint_A": [
+      -0.007932782740323052,
+      -7.542693456897652e-08,
+      -7.209896611348222e-08
+    ]
+  },
+  "density_rows": [
+    {
+      "grid_refinement": 1,
+      "all_electron": {
+        "shape": [
+          24,
+          24,
+          24
+        ],
+        "integral_electrons": 323.9999223767484,
+        "expected_electrons": 324,
+        "relative_integral_residual": 2.3957793712130005e-07,
+        "midpoint_e_per_A3": 0.01639302058483507
+      },
+      "PAW_valence": {
+        "shape": [
+          24,
+          24,
+          24
+        ],
+        "integral_electrons": 73.7035443330331,
+        "expected_electrons": 72,
+        "relative_integral_residual": 0.023660337958792965,
+        "midpoint_e_per_A3": 0.016392977359680854
+      }
+    },
+    {
+      "grid_refinement": 2,
+      "all_electron": {
+        "shape": [
+          48,
+          48,
+          48
+        ],
+        "integral_electrons": 323.99992237674854,
+        "expected_electrons": 324,
+        "relative_integral_residual": 2.395779365949721e-07,
+        "midpoint_e_per_A3": 0.016326625637822344
+      },
+      "PAW_valence": {
+        "shape": [
+          48,
+          48,
+          48
+        ],
+        "integral_electrons": 72.56605849740319,
+        "expected_electrons": 72,
+        "relative_integral_residual": 0.007861923575044314,
+        "midpoint_e_per_A3": 0.01632660673637655
+      }
+    }
+  ],
+  "midpoint_relative_grid_change": {
+    "all_electron": 0.004066666835240907,
+    "PAW_valence": 0.0040651817230598405
+  },
+  "midpoint_grid_target_met": true,
+  "raw_fmax_eV_A": 0.04259379509666342,
+  "stationarity_target_eV_A": 0.05,
+  "saved_point_only": true,
+  "density_units": "electrons/angstrom^3",
+  "density_convention": "GPAW PAW reconstructed all-electron and frozen-core-excluded valence; spin sum",
+  "density_is_not_screening_energy": true,
+  "readout_process_cpu_s": 5.653043898
+}

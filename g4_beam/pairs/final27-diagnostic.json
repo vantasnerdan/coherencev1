@@ -1,0 +1,46 @@
+{
+  "schema": "coherence-pairs-final-scf-discriminator-v1",
+  "case": "bulk27-scf-discriminator",
+  "inputs": [
+    {
+      "path": "sha256:d0307323f18951147e782090cd701c17cbe398ee7d530f565085629bb3b4ba82",
+      "filename": "primitive.json",
+      "bytes": 10813,
+      "sha256": "d0307323f18951147e782090cd701c17cbe398ee7d530f565085629bb3b4ba82"
+    },
+    {
+      "path": "sha256:eed5c474bb7cdd905ff1b741736f631de8cc7e0e5339de6432edf81da1d0a203",
+      "filename": "primitive.json",
+      "bytes": 4602,
+      "sha256": "eed5c474bb7cdd905ff1b741736f631de8cc7e0e5339de6432edf81da1d0a203"
+    }
+  ],
+  "actual_energy_eV": -89.2511829432057,
+  "actual_raw_fmax_eV_A": 0.00006880640629410049,
+  "actual_nbands": 157,
+  "actual_moment_muB": 5.386707680601974e-11,
+  "energy_per_Pd_difference_eV": 0.000057130326764909256,
+  "energy_difference_target_eV_per_Pd": 0.0001,
+  "numerical_discriminator_passed": true,
+  "numerical_changes": [
+    "zero initial moment, spin-unrestricted",
+    "157 instead of149bands",
+    "point symmetry enabled"
+  ],
+  "unchanged": [
+    "PBE/PW300/Pd10/H1/k222/Fermi0.1",
+    "SCF1e-7/1e-6/1e-9",
+    "all-mobile rawforce0.05target"
+  ],
+  "two_point_binding_size_check_qualified": false,
+  "replace_transport_Eb": false,
+  "no_further_27_Native_authorized": true,
+  "controlling_decision": "entry1869",
+  "scope": "Numerical crystal SCF result only; not a D1/D2 size or global spin-ground-state result",
+  "portable_extraction": {
+    "role": "Authenticated numerical readback locator extract, not a material binding size result",
+    "original_bytes": 1454,
+    "original_sha256": "72ee128c846ecc3bf98409767e54f62799d4d46f9b445d09e26c6b8f86fd81ca",
+    "original_GPW_and_primitive_retained_in_owned_storage": true
+  }
+}

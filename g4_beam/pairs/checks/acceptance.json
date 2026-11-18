@@ -1,0 +1,172 @@
+{
+  "schema": "coherence-pairs-saved-data-acceptance-v1",
+  "status": "passed",
+  "receipts": [
+    {
+      "name": "banks",
+      "command": "$PYTHON -m g4_beam.pairs.verify_saved_banks --output checks/banks.json",
+      "exit": 0,
+      "expected_exit": 0,
+      "streams": {
+        "stdout": {
+          "path": "checks/banks.stdout",
+          "bytes": 101,
+          "sha256": "7625496a8204c9c407d9a456a7f1ec0958b765d2bd6a106053e6e97f009dd8e7"
+        },
+        "stderr": {
+          "path": "checks/banks.stderr",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      "wall_s": 1.5489609315991402
+    },
+    {
+      "name": "binding",
+      "command": "$PYTHON -m g4_beam.pairs.pair_binding_results --root data/axis --root data/tetra --reference data/reference --output checks/binding.json",
+      "exit": 0,
+      "expected_exit": 0,
+      "streams": {
+        "stdout": {
+          "path": "checks/binding.stdout",
+          "bytes": 621,
+          "sha256": "02a40a16a2c056ac1322eb16ba0528813e76c9c3a387d10faf5e9bb34a47dc7e"
+        },
+        "stderr": {
+          "path": "checks/binding.stderr",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      "wall_s": 1.0439421394839883
+    },
+    {
+      "name": "finite-T",
+      "command": "$PYTHON -m g4_beam.pairs.binding_transport_ledger --binding checks/binding.json --profiles inputs/run-end-profiles.json --transport execution-source/transport/transport.py --selection-label 'Final lowest enumerated8Pd basins; source-Eb equivalents only, not physical capacity or a new trajectory' --output checks/finite-T.json",
+      "exit": 0,
+      "expected_exit": 0,
+      "streams": {
+        "stdout": {
+          "path": "checks/finite-T.stdout",
+          "bytes": 1141,
+          "sha256": "d24aabcdc90303503dfc8b1f3e975de057929333fd78fd159990f6db9473e92c"
+        },
+        "stderr": {
+          "path": "checks/finite-T.stderr",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      "wall_s": 0.7828136282041669
+    },
+    {
+      "name": "ionic",
+      "command": "$PYTHON -m g4_beam.pairs.run_ionic_estimate --profiles inputs/run-end-profiles.json --transport execution-source/transport/transport.py --output checks/ionic.json",
+      "exit": 0,
+      "expected_exit": 0,
+      "streams": {
+        "stdout": {
+          "path": "checks/ionic.stdout",
+          "bytes": 1239,
+          "sha256": "b55e33316400443fc29aaba48b5bd563a965e7d5c45244fe235be3c0a5590d4d"
+        },
+        "stderr": {
+          "path": "checks/ionic.stderr",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      "wall_s": 0.7807155111804605
+    },
+    {
+      "name": "ionic-proof",
+      "command": "$PYTHON -m g4_beam.pairs.ionic_proof --material checks/ionic.json --output checks/ionic-proof.json",
+      "exit": 0,
+      "expected_exit": 0,
+      "streams": {
+        "stdout": {
+          "path": "checks/ionic-proof.stdout",
+          "bytes": 1990,
+          "sha256": "5cc9cab33b1c03e1aeb18a1db8ea21be2a9fb5bd70a24099cf4b2669b85abeb1"
+        },
+        "stderr": {
+          "path": "checks/ionic-proof.stderr",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      "wall_s": 1.9217840069904923
+    },
+    {
+      "name": "selected-D2-density",
+      "command": "$PYTHON -m g4_beam.pairs.pair_density_results --point data/tetra/mono8T-D2/primitive.json --output checks/D2-density.json",
+      "exit": 0,
+      "expected_exit": 0,
+      "streams": {
+        "stdout": {
+          "path": "checks/selected-D2-density.stdout",
+          "bytes": 1145,
+          "sha256": "7ea8e6d59de42e8bf2706404105f24aa568fc9526d2000e2a8e56a7c6245ebe7"
+        },
+        "stderr": {
+          "path": "checks/selected-D2-density.stderr",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      "wall_s": 5.80085005518049
+    },
+    {
+      "name": "authentic-D2-under-D4-refusal",
+      "command": "$PYTHON -m g4_beam.pairs.pair_density_results --point checks/refusal/mono8-D4/primitive.json --output checks/must-not-exist.json",
+      "exit": 1,
+      "expected_exit": 1,
+      "streams": {
+        "stdout": {
+          "path": "checks/authentic-D2-under-D4-refusal.stdout",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stderr": {
+          "path": "checks/authentic-D2-under-D4-refusal.stderr",
+          "bytes": 574,
+          "sha256": "31c75882c0a58e6a4821a9f5891297d2c57ad390c11f9460aa8a680b1fa39a67"
+        }
+      },
+      "wall_s": 0.9793841997161508
+    },
+    {
+      "name": "integrated-D2-yield",
+      "command": "$PYTHON -m g4_beam.pairs.beam_pair_results --cluster-density checks/D2-density.json --reference-density results/density/Pd8D8-reference.json --selection-label 'Lowest enumerated8Pd D2 basin' --output checks/D2-yield.json",
+      "exit": 0,
+      "expected_exit": 0,
+      "streams": {
+        "stdout": {
+          "path": "checks/integrated-D2-yield.stdout",
+          "bytes": 218,
+          "sha256": "4c10be24b824181faa936ee2f0d4a3326a1706ed6dbb84408e2950a30ad8c3f6"
+        },
+        "stderr": {
+          "path": "checks/integrated-D2-yield.stderr",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      "wall_s": 35.27142263390124
+    }
+  ],
+  "error": null,
+  "cpu_affinity": [
+    9
+  ],
+  "no_new_scf": true,
+  "BLAS_OMP_threads": 1,
+  "integrated_baseline_commit": "7ec4b53c1a9608d7d5f9ae1fd266a89625d93f8c",
+  "raw_proof_identity": {
+    "bytes": 12540,
+    "sha256": "07eedfd40b0a447dcc667ad0946335dfd63157e85d17a09741a2f7dc53f6062d"
+  },
+  "raw_proof_location": "Delivery-owner immutable proof, outside capsule; actual machine command paths retained there only.",
+  "public_receipt_policy": "Interpreter and repo roots are explicit symbolic locators; raw stdout/stderr and command argv retained in external raw proof.",
+  "wall_s": 48.42674523964524
+}

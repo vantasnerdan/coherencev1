@@ -1,0 +1,254 @@
+{
+  "schema": "coherence-pairs-explicit-cell-input-v1",
+  "canonical_issue": "vantasnerdan/substrate-framework#236",
+  "controlling_decision": "Coherencev1 entry1869; one final30core-minute attempt then stop27 either way",
+  "whole_limit_core_min": 800,
+  "setup_directory": "setups",
+  "setup_sha256": {
+    "Pd.10.PBE.gz": "3c6cfd1de7e6d6815d58c9521b2bc7cec27ede8e83554ed1f0151f979761bbb4",
+    "H.PBE.gz": "3136ad73c02d471f99dd5f82e451b2061952970556a260d38b53b5020dc94ae7"
+  },
+  "settings": {
+    "ecut_eV": 300,
+    "kmesh": [
+      2,
+      2,
+      2
+    ],
+    "occupation_width_eV": 0.1,
+    "fmax_eV_A": 0.05,
+    "relax_steps": 0
+  },
+  "lattice_A": 3.89,
+  "primitive_repeat": 3,
+  "k_density": "2*3=6 primitive-cell reciprocal divisions; size check uses3*2=6",
+  "cpu": 6,
+  "inclusive_native_cap_core_min": 30,
+  "cases": [
+    {
+      "name": "bulk27-scf-discriminator",
+      "host_Pd": 27,
+      "n_Pd": 27,
+      "n_missing": 0,
+      "n_D": 0,
+      "seed": {
+        "symbols": [
+          "Pd",
+          "Pd",
+          "Pd",
+          "Pd",
+          "Pd",
+          "Pd",
+          "Pd",
+          "Pd",
+          "Pd",
+          "Pd",
+          "Pd",
+          "Pd",
+          "Pd",
+          "Pd",
+          "Pd",
+          "Pd",
+          "Pd",
+          "Pd",
+          "Pd",
+          "Pd",
+          "Pd",
+          "Pd",
+          "Pd",
+          "Pd",
+          "Pd",
+          "Pd",
+          "Pd"
+        ],
+        "positions_A": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            1.945,
+            1.945,
+            0
+          ],
+          [
+            3.89,
+            3.89,
+            0
+          ],
+          [
+            1.945,
+            0,
+            1.945
+          ],
+          [
+            3.89,
+            1.945,
+            1.945
+          ],
+          [
+            5.835,
+            3.89,
+            1.945
+          ],
+          [
+            3.89,
+            0,
+            3.89
+          ],
+          [
+            5.835,
+            1.945,
+            3.89
+          ],
+          [
+            7.78,
+            3.89,
+            3.89
+          ],
+          [
+            0,
+            1.945,
+            1.945
+          ],
+          [
+            1.945,
+            3.89,
+            1.945
+          ],
+          [
+            3.89,
+            5.835,
+            1.945
+          ],
+          [
+            1.945,
+            1.945,
+            3.89
+          ],
+          [
+            3.89,
+            3.89,
+            3.89
+          ],
+          [
+            5.835,
+            5.835,
+            3.89
+          ],
+          [
+            3.89,
+            1.945,
+            5.835
+          ],
+          [
+            5.835,
+            3.89,
+            5.835
+          ],
+          [
+            7.78,
+            5.835,
+            5.835
+          ],
+          [
+            0,
+            3.89,
+            3.89
+          ],
+          [
+            1.945,
+            5.835,
+            3.89
+          ],
+          [
+            3.89,
+            7.78,
+            3.89
+          ],
+          [
+            1.945,
+            3.89,
+            5.835
+          ],
+          [
+            3.89,
+            5.835,
+            5.835
+          ],
+          [
+            5.835,
+            7.78,
+            5.835
+          ],
+          [
+            3.89,
+            3.89,
+            7.78
+          ],
+          [
+            5.835,
+            5.835,
+            7.78
+          ],
+          [
+            7.78,
+            7.78,
+            7.78
+          ]
+        ],
+        "cell_A": [
+          [
+            0,
+            5.835,
+            5.835
+          ],
+          [
+            5.835,
+            0,
+            5.835
+          ],
+          [
+            5.835,
+            5.835,
+            0
+          ]
+        ],
+        "source_report_sha256": "fb243d3b2411fa07ea408186760cc362816c3c29393ee7c27211b6cd5a279625",
+        "role": "coordinate seed only; old energies and frozen-force convergence are not reused"
+      }
+    }
+  ],
+  "numerical_strategy": {
+    "initial_moments_muB": 0,
+    "spinpol": true,
+    "point_group": true,
+    "nbands_formula": "ceil(ne/2)+max(12,ceil(0.08ne))",
+    "bulk27_nbands": 157,
+    "convergence_unchanged": {
+      "energy": 1e-7,
+      "density": 0.000001,
+      "eigenstates": 1e-9
+    }
+  },
+  "classification": "Numerical SCF discriminator only; does not qualify D1/D2 binding size convergence",
+  "qualification": {
+    "reference_bulk8": {
+      "path": "retained-original://pass5/pairs/p5pairs-eight-ref-20261118t002023z/calculation/bulk8/primitive.json",
+      "bytes": 4602,
+      "sha256": "eed5c474bb7cdd905ff1b741736f631de8cc7e0e5339de6432edf81da1d0a203"
+    },
+    "energy_per_Pd_difference_eV_max": 0.0001,
+    "force_target_eV_A": 0.05
+  },
+  "no_further_27_native": true,
+  "portable_extraction": {
+    "role": "Locator-only input extract; not original Native input bytes",
+    "original": {
+      "path": "sha256:205b5d8cf3e1cb2fc852535e9b712ae843cfb0046c79c15b9ea78da534fc43f1",
+      "bytes": 4918,
+      "sha256": "205b5d8cf3e1cb2fc852535e9b712ae843cfb0046c79c15b9ea78da534fc43f1"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "status": "passed",
+  "comparisons": [
+    {
+      "actual": "checks/binding.json",
+      "frozen_portable_expected": "results/selected-binding.json",
+      "status": "passed",
+      "rtol": 1e-10,
+      "atol": 1e-12
+    },
+    {
+      "actual": "checks/finite-T.json",
+      "frozen_portable_expected": "results/finite-T-binding-ledger.json",
+      "status": "passed",
+      "rtol": 1e-10,
+      "atol": 1e-12
+    },
+    {
+      "actual": "checks/ionic.json",
+      "frozen_portable_expected": "results/ionic-result.json",
+      "status": "passed",
+      "rtol": 1e-10,
+      "atol": 1e-12
+    },
+    {
+      "actual": "checks/ionic-proof.json",
+      "frozen_portable_expected": "results/ionic-proof.json",
+      "status": "passed",
+      "rtol": 1e-10,
+      "atol": 1e-12
+    },
+    {
+      "actual": "checks/D2-density.json",
+      "frozen_portable_expected": "results/density/mono8T-D2.json",
+      "status": "passed",
+      "rtol": 1e-10,
+      "atol": 1e-12
+    },
+    {
+      "actual": "checks/D2-yield.json",
+      "frozen_portable_expected": "results/yield-D2.json",
+      "status": "passed",
+      "rtol": 1e-10,
+      "atol": 1e-12
+    }
+  ],
+  "frozen_report_binding_and_selected_D2_values_match": true,
+  "exact_model_and_baseline_bytes_match": true,
+  "authentic_D2_under_D4_refused": true,
+  "private_machine_locators_absent": true,
+  "no_native_scf": true
+}

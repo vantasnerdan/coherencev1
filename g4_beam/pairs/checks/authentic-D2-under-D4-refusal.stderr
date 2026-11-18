@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "$CAPSULE/pair_density_results.py", line 103, in <module>
+    main()
+  File "$CAPSULE/pair_density_results.py", line 95, in main
+    result = read_point(args.point)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "$CAPSULE/pair_density_results.py", line 44, in read_point
+    raise ValueError('Actual saved bank does not match the requested cluster target')
+ValueError: Actual saved bank does not match the requested cluster target

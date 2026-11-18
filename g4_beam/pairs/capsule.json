@@ -1,0 +1,151 @@
+{
+  "schema": "coherence-g5-pairs-delivery-v1",
+  "created_at": "2026-11-18T03:30:26.400Z",
+  "integration_root": "g4_beam/pairs",
+  "source_baseline_commit": "7ec4b53c1a9608d7d5f9ae1fd266a89625d93f8c",
+  "required_transport_source_sha256": "383aad3068c5d5b62fc5f031ccfe8c35c1c6ab426f41daeca6c18aeba3d4a47e",
+  "source_or_transport_defaults_changed": false,
+  "retained_defaults": {
+    "Eb_eV": 0.23,
+    "mtrap": 6
+  },
+  "scientific_scope": "Complete enumerated8-Pd O/T single-cell-size result; no two-point27-Pd binding qualification",
+  "Native_banks": 12,
+  "diagnostic27_GPW_publication": false,
+  "maximum_conditional_merit_PdD": 1.000286983367914,
+  "physical_pair_fraction_computed": false,
+  "closures_alternative_not_additive": true,
+  "complete_scientific_review": {
+    "original_bytes": 130425,
+    "original_sha256": "518a875cb9c49e7d8c13fc27d422bae3c0e80fbaf8d6cebfe888395a205f4b15",
+    "findings": [],
+    "issues": [],
+    "assessments": 10,
+    "limitations": 11,
+    "verdict": "supported_within_declared_closures"
+  },
+  "native_charged_core_min": 227.83466966666666,
+  "whole_with_pure_reserve_core_min": 247.83466966666666,
+  "whole_limit_core_min": 800,
+  "no_further_27_Native": true,
+  "entry_points": {
+    "authentic_saved_banks": "verify_saved_banks.py",
+    "matched_binding": "pair_binding_results.py",
+    "actual_density": "pair_density_results.py",
+    "ionic_estimate": "run_ionic_estimate.py",
+    "conditional_yield": "beam_pair_results.py",
+    "source_slot_ledger": "binding_transport_ledger.py"
+  },
+  "runtime_versions": "checks/dependency-versions.json",
+  "saved_data_acceptance_commands": 8,
+  "inputs": [
+    {
+      "path": "input-ledger.json",
+      "bytes": 4630,
+      "sha256": "33b025b873eb336202713bf6b8d45528ae56afbb1429b4257804a57b7e8bc248"
+    },
+    {
+      "path": "source-provenance.json",
+      "bytes": 62059,
+      "sha256": "6c8565bbf4c8e14eb139b80f97c63082724073bf672dc13ec0feb2875beba912"
+    },
+    {
+      "path": "inputs/run-end-profiles.json",
+      "bytes": 1523730,
+      "sha256": "e2e91077595de602b815ae86f45c1a675d6a553153272d0e1295b72e2a5a9943"
+    }
+  ],
+  "results": [
+    {
+      "path": "scientific-result.json",
+      "bytes": 49598,
+      "sha256": "1f438b3b11444d8f704619d231f5262c6f333b75dfddc8583ce5d6097b75ced4"
+    },
+    {
+      "path": "results/selected-binding.json",
+      "bytes": 61321,
+      "sha256": "6ce8df9b49527fcdc02af62c7e4340dc0ba397e9baae1015118e4f6a9b76fbe0"
+    },
+    {
+      "path": "results/finite-T-binding-ledger.json",
+      "bytes": 50572,
+      "sha256": "a50d555cccecb72d3a52bc8ad8d415ff29f3df438d9fd3f9b39d1539e3a44634"
+    },
+    {
+      "path": "results/ionic-result.json",
+      "bytes": 66144,
+      "sha256": "1c1c713075c716f62f62053297f81ecb95b8868d6a7e2146f75196fbd805ed30"
+    },
+    {
+      "path": "results/ionic-proof.json",
+      "bytes": 2445,
+      "sha256": "0a6d39c9a541ea76f4ed4f9545fcf7354ff238bdbfad87ef6733ce86a66d6d5e"
+    },
+    {
+      "path": "results/yield-D2.json",
+      "bytes": 356511,
+      "sha256": "72d37c2e80060bcdaa53f8c123e9f6f702ac9a254df81f6ce411bec636f1e11e"
+    },
+    {
+      "path": "results/yield-D4.json",
+      "bytes": 356173,
+      "sha256": "5935f6ff618707661ea05f53444c5c6717ae75e52a17315ff4da8dd831faa75c"
+    },
+    {
+      "path": "results/yield-D6.json",
+      "bytes": 356176,
+      "sha256": "f81727ebbc9fb26284c0c6ab47454557f450e87231603811ad4df326e26cb75c"
+    },
+    {
+      "path": "results/unchanged-merit-baseline.json",
+      "bytes": 171662,
+      "sha256": "a23e350d5d9ebc7352a68ccf3769b6ac8482d55a911210db7318debc45dcb393"
+    },
+    {
+      "path": "native-final-cost-ledger.json",
+      "bytes": 1916,
+      "sha256": "966a6db8025824761292c4dcfc3a855eddb82cd8cf9a0eb718e731e1c022ad24"
+    },
+    {
+      "path": "final27-diagnostic.json",
+      "bytes": 1751,
+      "sha256": "1ecbaacc0e037f20295ec91d3ecd36a3310baf5aad5302158d74760c6942dd4e"
+    },
+    {
+      "path": "reviews/ionic-complete-review.json",
+      "bytes": 10367,
+      "sha256": "83638fcce4e3c004fc5228b29561786031811c8d0f2a8d5c97e9869bc720a8bd"
+    },
+    {
+      "path": "reviews/pairs-complete-review.json",
+      "bytes": 127127,
+      "sha256": "24cf514541f47ee6e61dc083a74e6035e1bcfa4452f537f9f349b8fd88f1c665"
+    },
+    {
+      "path": "pass5-open-items.json",
+      "bytes": 4409,
+      "sha256": "f4700227f76d5c53fc90cc04b2308c1015314316d139575b252758dd880e498c"
+    },
+    {
+      "path": "checks/acceptance.json",
+      "bytes": 6376,
+      "sha256": "65709534e54b7c17acda05f4ab517111872ccd398f8ff2ce73d72b2237b311eb"
+    },
+    {
+      "path": "checks/scientific-comparison.json",
+      "bytes": 1381,
+      "sha256": "51504b3bcd108411085aa511cbda5dffcf549d7a6b9a5d67edb29c2db44a7545"
+    }
+  ],
+  "canonical_sources": {
+    "236": "81f9bc778ccf160d17957d52dbd8c2f3df209a2b",
+    "237": "15c6881f",
+    "238": "c673d15b0d050e206d78e432858e31dd3510670f"
+  },
+  "canonical_PRs_informational_only": [
+    240,
+    239,
+    241
+  ],
+  "asset_release_tag": "g5_pairs-delivery"
+}

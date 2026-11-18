@@ -1,0 +1,161 @@
+{
+  "schema": "coherence-pairs-explicit-cell-input-v1",
+  "canonical_issue": "vantasnerdan/substrate-framework#236",
+  "controlling_decision": "Coherencev1 entry1830",
+  "whole_limit_core_min": 800,
+  "setup_directory": "setups",
+  "setup_sha256": {
+    "Pd.10.PBE.gz": "3c6cfd1de7e6d6815d58c9521b2bc7cec27ede8e83554ed1f0151f979761bbb4",
+    "H.PBE.gz": "3136ad73c02d471f99dd5f82e451b2061952970556a260d38b53b5020dc94ae7"
+  },
+  "settings": {
+    "ecut_eV": 300,
+    "kmesh": [
+      3,
+      3,
+      3
+    ],
+    "occupation_width_eV": 0.1,
+    "fmax_eV_A": 0.05,
+    "relax_steps": 30
+  },
+  "lattice_A": 3.89,
+  "primitive_repeat": 2,
+  "k_density": "2*3=6 primitive-cell reciprocal divisions; size check uses3*2=6",
+  "cpu": 7,
+  "inclusive_native_cap_core_min": 160,
+  "cases": [
+    {
+      "name": "mono8-D1",
+      "host_Pd": 8,
+      "n_Pd": 7,
+      "n_missing": 1,
+      "n_D": 1,
+      "seed": {
+        "symbols": [
+          "Pd",
+          "Pd",
+          "Pd",
+          "Pd",
+          "Pd",
+          "Pd",
+          "Pd",
+          "H"
+        ],
+        "positions_A": [
+          [
+            1.9362143183851586,
+            1.95629141832331,
+            3.6095447332428136e-17
+          ],
+          [
+            1.9362143183851608,
+            -1.5479526163186128e-17,
+            1.95629141832331
+          ],
+          [
+            3.878025004768801,
+            1.945,
+            1.945
+          ],
+          [
+            -0.011974995231207108,
+            1.945,
+            1.945
+          ],
+          [
+            1.9362143183851663,
+            3.89,
+            1.9337085816766901
+          ],
+          [
+            1.9362143183851659,
+            1.9337085816766901,
+            3.89
+          ],
+          [
+            3.89,
+            3.89,
+            3.89
+          ],
+          [
+            1.9282213433974538,
+            4.1704674666900415e-17,
+            4.2673821491464155e-17
+          ]
+        ],
+        "cell_A": [
+          [
+            0,
+            3.89,
+            3.89
+          ],
+          [
+            3.89,
+            0,
+            3.89
+          ],
+          [
+            3.89,
+            3.89,
+            0
+          ]
+        ],
+        "source_report_sha256": "fb243d3b2411fa07ea408186760cc362816c3c29393ee7c27211b6cd5a279625",
+        "role": "coordinate seed only; old energies and frozen-force convergence are not reused"
+      }
+    },
+    {
+      "name": "mono8-D2",
+      "host_Pd": 8,
+      "n_Pd": 7,
+      "n_missing": 1,
+      "n_D": 2,
+      "add_D_positions_A": [
+        [
+          -1.945,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "name": "mono8-D4",
+      "host_Pd": 8,
+      "n_Pd": 7,
+      "n_missing": 1,
+      "n_D": 4,
+      "add_D_positions_A": [
+        [
+          0,
+          1.945,
+          0
+        ],
+        [
+          0,
+          -1.945,
+          0
+        ]
+      ]
+    },
+    {
+      "name": "mono8-D6",
+      "host_Pd": 8,
+      "n_Pd": 7,
+      "n_missing": 1,
+      "n_D": 6,
+      "add_D_positions_A": [
+        [
+          0,
+          0,
+          1.945
+        ],
+        [
+          0,
+          0,
+          -1.945
+        ]
+      ]
+    }
+  ]
+}

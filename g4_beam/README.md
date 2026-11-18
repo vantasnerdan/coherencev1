@@ -30,6 +30,7 @@ One static number cannot serve both, so the shared deliverable is eps(q) over th
 | `causes/` | Pass 5: how each plateau cause responds to beam and target changes, surface-density and sheet-occupancy scans, Zenodo column list |
 | `transport/recomb/` | Pass 5: first-principles D sheet on clean Pd(111), no-beam coverage and D2 release, connected clean recombination route |
 | `ald/` | Pass 5: 245 ALD designs in six families (sealing oxides, deuteride caps, deuterated oxides, donor promoters, BZY proton conductor, Pd/oxide nanolaminates), with run-integrated merit, erosion and cap sputter thresholds |
+| `pairs/` | Pass 5: D clusters in a Pd vacancy (8-Pd cells, 1 to 6 D) and screening by mobile deuterons, through the merit consumer |
 
 Run every script from its own directory, except `work/` scripts and `priordata/scripts/compare.py .`, which run from `g4_beam/`.
 
@@ -110,6 +111,14 @@ Pass 5 (`transport/recomb/`): the D sheet on clean Pd(111) from first principles
 
 - **Clean recombination route.** The connected bridge-to-fcc route peaks 98 meV above clean surface plus gas, at the highest sampled frame. This is a restricted route, and the peak is not k- or slab-qualified. As a sensitivity, it lowers D2 release by a factor of 42 to 44 and leaves the sheet unchanged.
 - **The transport model keeps its surface inputs.** The sheet the data prefer depends on beam stripping, which none of these calculations includes.
+
+Pass 5 (`pairs/`): two candidates for keV screening that the static calculation leaves out.
+- **Mobile deuterons.** A drift-diffusion estimate using the transported profiles gives at most 4e-5 eV in the top 100 nm of PdD and 0.11 eV over the whole foil. In BZY with the measured 3 mol% H, the static upper bound is 24 eV. All are far below the 100 eV that would matter.
+- **D in a Pd vacancy (8-Pd cells, PBE, lowest enumerated basins).**
+  - Binding per added D is 0.179, 0.230, -0.014 and -0.275 eV for 1, 2, 2 to 4 and 4 to 6 D. The last two are block means.
+  - The closest D-D distance is 2.78 A, and the valence density at its midpoint is 0.028 e/A^3, against 0.295 in bulk PdD.
+  - Through the merit consumer, the largest merit is 1.0003.
+- **Ledger.** A 27-Pd size check of the binding was not reached. transport.py keeps Eb 0.23 eV and 6 D per vacancy. The capacity of 6 is untested; in the axis basin the binding levels off near 4 D.
 
 Open transport item: `transport.py` lets superabundant vacancies reach 0.25 per Pd with 6 D each, so an infinite-time bulk-fed steady state holds 2.3 D/Pd. The 2 to 12 h run-end profiles used here are unaffected (vacancies move about 1 nm in 12 h). Superabundant-vacancy formation needs a kinetic limit before any long-time state is used.
 

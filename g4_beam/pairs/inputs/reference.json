@@ -1,0 +1,396 @@
+{
+  "schema": "coherence-pairs-explicit-cell-input-v1",
+  "canonical_issue": "vantasnerdan/substrate-framework#236",
+  "controlling_decision": "Coherencev1 entry1830",
+  "whole_limit_core_min": 800,
+  "setup_directory": "setups",
+  "setup_sha256": {
+    "Pd.10.PBE.gz": "3c6cfd1de7e6d6815d58c9521b2bc7cec27ede8e83554ed1f0151f979761bbb4",
+    "H.PBE.gz": "3136ad73c02d471f99dd5f82e451b2061952970556a260d38b53b5020dc94ae7"
+  },
+  "settings": {
+    "ecut_eV": 300,
+    "kmesh": [
+      3,
+      3,
+      3
+    ],
+    "occupation_width_eV": 0.1,
+    "fmax_eV_A": 0.05,
+    "relax_steps": 30
+  },
+  "lattice_A": 3.89,
+  "primitive_repeat": 2,
+  "k_density": "2*3=6 primitive-cell reciprocal divisions; size check uses3*2=6",
+  "cpu": 6,
+  "inclusive_native_cap_core_min": 60,
+  "cases": [
+    {
+      "name": "bulk8",
+      "host_Pd": 8,
+      "n_Pd": 8,
+      "n_missing": 0,
+      "n_D": 0,
+      "seed": {
+        "symbols": [
+          "Pd",
+          "Pd",
+          "Pd",
+          "Pd",
+          "Pd",
+          "Pd",
+          "Pd",
+          "Pd"
+        ],
+        "positions_A": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            1.945,
+            1.945,
+            0
+          ],
+          [
+            1.945,
+            0,
+            1.945
+          ],
+          [
+            3.89,
+            1.945,
+            1.945
+          ],
+          [
+            0,
+            1.945,
+            1.945
+          ],
+          [
+            1.945,
+            3.89,
+            1.945
+          ],
+          [
+            1.945,
+            1.945,
+            3.89
+          ],
+          [
+            3.89,
+            3.89,
+            3.89
+          ]
+        ],
+        "cell_A": [
+          [
+            0,
+            3.89,
+            3.89
+          ],
+          [
+            3.89,
+            0,
+            3.89
+          ],
+          [
+            3.89,
+            3.89,
+            0
+          ]
+        ],
+        "source_report_sha256": "fb243d3b2411fa07ea408186760cc362816c3c29393ee7c27211b6cd5a279625",
+        "role": "coordinate seed only; old energies and frozen-force convergence are not reused"
+      }
+    },
+    {
+      "name": "bulk8-D1",
+      "host_Pd": 8,
+      "n_Pd": 8,
+      "n_missing": 0,
+      "n_D": 1,
+      "seed": {
+        "symbols": [
+          "Pd",
+          "Pd",
+          "Pd",
+          "Pd",
+          "Pd",
+          "Pd",
+          "Pd",
+          "Pd",
+          "H"
+        ],
+        "positions_A": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            1.945,
+            1.945,
+            -0.016012246987933753
+          ],
+          [
+            1.945,
+            -0.01601224698793375,
+            1.945
+          ],
+          [
+            3.906012246987934,
+            1.945,
+            1.945
+          ],
+          [
+            -0.01601224698793375,
+            1.945,
+            1.945
+          ],
+          [
+            1.945,
+            3.906012246987934,
+            1.945
+          ],
+          [
+            1.945,
+            1.945,
+            3.906012246987934
+          ],
+          [
+            3.89,
+            3.89,
+            3.89
+          ],
+          [
+            1.945,
+            1.945,
+            1.945
+          ]
+        ],
+        "cell_A": [
+          [
+            0,
+            3.89,
+            3.89
+          ],
+          [
+            3.89,
+            0,
+            3.89
+          ],
+          [
+            3.89,
+            3.89,
+            0
+          ]
+        ],
+        "source_report_sha256": "fb243d3b2411fa07ea408186760cc362816c3c29393ee7c27211b6cd5a279625",
+        "role": "coordinate seed only; old energies and frozen-force convergence are not reused"
+      }
+    },
+    {
+      "name": "mono8-D0",
+      "host_Pd": 8,
+      "n_Pd": 7,
+      "n_missing": 1,
+      "n_D": 0,
+      "seed": {
+        "symbols": [
+          "Pd",
+          "Pd",
+          "Pd",
+          "Pd",
+          "Pd",
+          "Pd",
+          "Pd"
+        ],
+        "positions_A": [
+          [
+            1.945,
+            1.945,
+            0
+          ],
+          [
+            1.945,
+            0,
+            1.945
+          ],
+          [
+            3.89,
+            1.945,
+            1.945
+          ],
+          [
+            0,
+            1.945,
+            1.945
+          ],
+          [
+            1.945,
+            3.89,
+            1.945
+          ],
+          [
+            1.945,
+            1.945,
+            3.89
+          ],
+          [
+            3.89,
+            3.89,
+            3.89
+          ]
+        ],
+        "cell_A": [
+          [
+            0,
+            3.89,
+            3.89
+          ],
+          [
+            3.89,
+            0,
+            3.89
+          ],
+          [
+            3.89,
+            3.89,
+            0
+          ]
+        ],
+        "source_report_sha256": "fb243d3b2411fa07ea408186760cc362816c3c29393ee7c27211b6cd5a279625",
+        "role": "coordinate seed only; old energies and frozen-force convergence are not reused"
+      }
+    },
+    {
+      "name": "Pd8D8-reference",
+      "host_Pd": 8,
+      "n_Pd": 8,
+      "n_missing": 0,
+      "n_D": 8,
+      "seed": {
+        "symbols": [
+          "Pd",
+          "Pd",
+          "Pd",
+          "Pd",
+          "Pd",
+          "Pd",
+          "Pd",
+          "Pd",
+          "H",
+          "H",
+          "H",
+          "H",
+          "H",
+          "H",
+          "H",
+          "H"
+        ],
+        "positions_A": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            1.945,
+            1.945,
+            0
+          ],
+          [
+            1.945,
+            0,
+            1.945
+          ],
+          [
+            3.89,
+            1.945,
+            1.945
+          ],
+          [
+            0,
+            1.945,
+            1.945
+          ],
+          [
+            1.945,
+            3.89,
+            1.945
+          ],
+          [
+            1.945,
+            1.945,
+            3.89
+          ],
+          [
+            3.89,
+            3.89,
+            3.89
+          ],
+          [
+            1.945,
+            1.945,
+            1.945
+          ],
+          [
+            3.89,
+            3.89,
+            1.945
+          ],
+          [
+            3.89,
+            1.945,
+            3.89
+          ],
+          [
+            5.835,
+            3.89,
+            3.89
+          ],
+          [
+            1.945,
+            3.89,
+            3.89
+          ],
+          [
+            3.89,
+            5.835,
+            3.89
+          ],
+          [
+            3.89,
+            3.89,
+            5.835
+          ],
+          [
+            5.835,
+            5.835,
+            5.835
+          ]
+        ],
+        "cell_A": [
+          [
+            0,
+            3.89,
+            3.89
+          ],
+          [
+            3.89,
+            0,
+            3.89
+          ],
+          [
+            3.89,
+            3.89,
+            0
+          ]
+        ],
+        "construction": "defect-free rocksalt Pd8D8 at the same fixed3.89A Pd lattice; one octahedral D per Pd; isovolume density reference, not relaxed-volume ambient PdD"
+      }
+    }
+  ]
+}

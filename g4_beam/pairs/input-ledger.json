@@ -1,0 +1,129 @@
+{
+  "schema": "coherence-pairs-input-ledger-v1",
+  "complete_final_cells": 12,
+  "families": {
+    "reference": 4,
+    "axis": 4,
+    "tetra": 4
+  },
+  "density_readouts": 7,
+  "selected_occupancies": [
+    0,
+    1,
+    2,
+    4,
+    6
+  ],
+  "original_frozen_report": {
+    "bytes": 53593,
+    "sha256": "39d3c516b29f5e036e90a2aabf256114170a44c237815f6201e04944220de98f"
+  },
+  "setups": [
+    {
+      "path": "setups/Pd.10.PBE.gz",
+      "record_kind": "unchanged_exact_bytes",
+      "original_locator": "Pd.10.PBE.gz",
+      "original": {
+        "bytes": 106793,
+        "sha256": "3c6cfd1de7e6d6815d58c9521b2bc7cec27ede8e83554ed1f0151f979761bbb4"
+      },
+      "staged": {
+        "bytes": 106793,
+        "sha256": "3c6cfd1de7e6d6815d58c9521b2bc7cec27ede8e83554ed1f0151f979761bbb4"
+      }
+    },
+    {
+      "path": "setups/H.PBE.gz",
+      "record_kind": "unchanged_exact_bytes",
+      "original_locator": "H.PBE.gz",
+      "original": {
+        "bytes": 12501,
+        "sha256": "3136ad73c02d471f99dd5f82e451b2061952970556a260d38b53b5020dc94ae7"
+      },
+      "staged": {
+        "bytes": 12501,
+        "sha256": "3136ad73c02d471f99dd5f82e451b2061952970556a260d38b53b5020dc94ae7"
+      }
+    }
+  ],
+  "upstream_execution_source_dependencies": [
+    {
+      "path": "_upstream/cluster_observables.py",
+      "record_kind": "unchanged_exact_bytes",
+      "original_locator": "upstream-worktree/substrate-pairs-236/src/substrate_framework/cluster_observables.py",
+      "original": {
+        "bytes": 866,
+        "sha256": "c585d81a70414d4dbc329b9ad3a94b701e400b7ef45066573473ed649326bdbb"
+      },
+      "staged": {
+        "bytes": 866,
+        "sha256": "c585d81a70414d4dbc329b9ad3a94b701e400b7ef45066573473ed649326bdbb"
+      }
+    },
+    {
+      "path": "_upstream/cluster_binding.py",
+      "record_kind": "unchanged_exact_bytes",
+      "original_locator": "upstream-worktree/substrate-pairs-236/src/substrate_framework/cluster_binding.py",
+      "original": {
+        "bytes": 1730,
+        "sha256": "29291d2fa588b56c409d4af1f7d649cb84ba54c85a6bb7d87964016b8beec5e6"
+      },
+      "staged": {
+        "bytes": 1730,
+        "sha256": "29291d2fa588b56c409d4af1f7d649cb84ba54c85a6bb7d87964016b8beec5e6"
+      }
+    },
+    {
+      "path": "_upstream/ionic_diffusion.py",
+      "record_kind": "unchanged_exact_bytes",
+      "original_locator": "upstream-worktree/substrate-ionic-237/src/substrate_framework/ionic_diffusion.py",
+      "original": {
+        "bytes": 2985,
+        "sha256": "fc5b03e353ef6c100708e72677691a5b5bec7046ff3844193b2367bd4ef1a038"
+      },
+      "staged": {
+        "bytes": 2985,
+        "sha256": "fc5b03e353ef6c100708e72677691a5b5bec7046ff3844193b2367bd4ef1a038"
+      }
+    },
+    {
+      "path": "_upstream/cluster_screening.py",
+      "record_kind": "unchanged_exact_bytes",
+      "original_locator": "upstream-worktree/substrate-cluster-238/src/substrate_framework/cluster_screening.py",
+      "original": {
+        "bytes": 2006,
+        "sha256": "4815bde79f4b59b52257cab9c51a120c762c817e0f8b074f92940231deb50f4b"
+      },
+      "staged": {
+        "bytes": 2006,
+        "sha256": "4815bde79f4b59b52257cab9c51a120c762c817e0f8b074f92940231deb50f4b"
+      }
+    }
+  ],
+  "producer_identity_policy": "execution-source original producer bytes retained; all locator-only extracts explicitly bound to original bytes in source-provenance.json",
+  "integrated_baseline_commit": "7ec4b53c1a9608d7d5f9ae1fd266a89625d93f8c",
+  "retained_defaults": {
+    "Eb_eV": 0.23,
+    "mtrap": 6,
+    "transport_file_changed": false
+  },
+  "no_new_native": true,
+  "scientific_scope": "Completed enumerated8-Pd O/T vacancy cells; single-cell-size. No two-point27-Pd binding qualification.",
+  "upstream_ownership": {
+    "issues": [
+      236,
+      237,
+      238
+    ],
+    "commits": {"236": "81f9bc778ccf160d17957d52dbd8c2f3df209a2b", "237": "15c6881f", "238": "c673d15b0d050e206d78e432858e31dd3510670f"},
+    "pull_requests": {"236": 240, "237": 239, "238": 241},
+    "status": "Execution-source snapshots owned by canonical upstream issues; PR merges are informational and not execution prerequisites."
+  },
+  "dependency_versions": "checks/dependency-versions.json",
+  "final_native_cost": "native-final-cost-ledger.json",
+  "final27_numerical_diagnostic": "final27-diagnostic.json",
+  "complete_scientific_review": "reviews/pairs-complete-review.json",
+  "scientific_review_original": {"bytes": 130425, "sha256": "518a875cb9c49e7d8c13fc27d422bae3c0e80fbaf8d6cebfe888395a205f4b15"},
+  "two_point_binding_size_check_qualified": false,
+  "actual_saved_data_acceptance": "checks/acceptance.json"
+}

@@ -1,0 +1,201 @@
+{
+  "status": "passed",
+  "final_banks": 12,
+  "canonical_models": 4,
+  "raw_force_energy_geometry_isotope_authenticated": true,
+  "no_calculator_or_scf_started": true,
+  "checks": [
+    {
+      "case": "mono8-D0",
+      "family": "reference",
+      "atoms": 7,
+      "gpw": {
+        "path": "data/reference/mono8-D0/point-000.gpw",
+        "bytes": 3409934,
+        "sha256": "bd6e4b33d7fe67855ddbba7d9f981c7144c482b063765de7b9194a7fac4e9f51"
+      },
+      "geometry": {
+        "path": "data/reference/mono8-D0/point-000.traj",
+        "bytes": 1704,
+        "sha256": "32083c5c6398f4d38ee4793b6fa9911bb590d45667505341948c1cd078a0a35b"
+      },
+      "original_report_energy_eV": -22.20535844362776
+    },
+    {
+      "case": "Pd8D8-reference",
+      "family": "reference",
+      "atoms": 16,
+      "gpw": {
+        "path": "data/reference/Pd8D8-reference/point-000.gpw",
+        "bytes": 5387432,
+        "sha256": "899c52eb4d0ad7a60e116370a28447ddc95541c6446a86ba5ea23055e0731eaa"
+      },
+      "geometry": {
+        "path": "data/reference/Pd8D8-reference/point-000.traj",
+        "bytes": 2433,
+        "sha256": "990d97cb87e6733a156b711498b7183196f4f4e8f14e209a0f72e16d128c499b"
+      },
+      "original_report_energy_eV": -50.67284828927052
+    },
+    {
+      "case": "bulk8",
+      "family": "reference",
+      "atoms": 8,
+      "gpw": {
+        "path": "data/reference/bulk8/point-000.gpw",
+        "bytes": 4119326,
+        "sha256": "e14ddcbb8213ab19d87b83f36ce5e9eb0d6c9d19b7041593dd10ca1e55088cd8"
+      },
+      "geometry": {
+        "path": "data/reference/bulk8/point-000.traj",
+        "bytes": 1789,
+        "sha256": "8aed3ef61aca1158f6c35047d9839838c57f0118df522df3316fbf86c0c95180"
+      },
+      "original_report_energy_eV": -26.445251988749142
+    },
+    {
+      "case": "bulk8-D1",
+      "family": "reference",
+      "atoms": 9,
+      "gpw": {
+        "path": "data/reference/bulk8-D1/point-000.gpw",
+        "bytes": 4303596,
+        "sha256": "af56780c09b5333dcf62dd125c56c5b06d991c8f76f588bba5f0412782af78d7"
+      },
+      "geometry": {
+        "path": "data/reference/bulk8-D1/point-000.traj",
+        "bytes": 1863,
+        "sha256": "4767f985d4ef9d75015035accee031674a752ee464d9009aab4accfe837f0852"
+      },
+      "original_report_energy_eV": -29.90105159907516
+    },
+    {
+      "case": "mono8-D6",
+      "family": "axis",
+      "atoms": 13,
+      "gpw": {
+        "path": "data/axis/mono8-D6/point-004.gpw",
+        "bytes": 4256189,
+        "sha256": "b682ff5cc851f169b50141fdcd0a6c28c9ea01145d06e7e75a08f1c8d052d435"
+      },
+      "geometry": {
+        "path": "data/axis/mono8-D6/point-004.traj",
+        "bytes": 2199,
+        "sha256": "0b329818898407cc8fb83b4c3dc749e1912f2b29c7e02085c56515dfece590ff"
+      },
+      "original_report_energy_eV": -42.77034962989698
+    },
+    {
+      "case": "mono8-D1",
+      "family": "axis",
+      "atoms": 8,
+      "gpw": {
+        "path": "data/axis/mono8-D1/point-002.gpw",
+        "bytes": 3574944,
+        "sha256": "dae288556eff7b1a5e8bcc9b66a77fd3b451f52c465e8a8fb6d0709253081d9b"
+      },
+      "geometry": {
+        "path": "data/axis/mono8-D1/point-002.traj",
+        "bytes": 1792,
+        "sha256": "4eda90b6086f0596e8b3e0213ad8c03e815d302aed3b630b36925cfe9537876d"
+      },
+      "original_report_energy_eV": -25.840514329248915
+    },
+    {
+      "case": "mono8-D2",
+      "family": "axis",
+      "atoms": 9,
+      "gpw": {
+        "path": "data/axis/mono8-D2/point-002.gpw",
+        "bytes": 3683052,
+        "sha256": "42808b0deb93207693df900e6b09641765811a25f5856c476f43e27cc2ecf19c"
+      },
+      "geometry": {
+        "path": "data/axis/mono8-D2/point-002.traj",
+        "bytes": 1872,
+        "sha256": "7c3e66e8127d814fddb4b397fc362045f89a9b762c14d2b57ee014ef815c2b01"
+      },
+      "original_report_energy_eV": -29.443102763637338
+    },
+    {
+      "case": "mono8-D4",
+      "family": "axis",
+      "atoms": 11,
+      "gpw": {
+        "path": "data/axis/mono8-D4/point-004.gpw",
+        "bytes": 3965143,
+        "sha256": "e10b636c93756cbb4e7378af250a585e384bf1bb50e0c6f56feb11aec75cd47a"
+      },
+      "geometry": {
+        "path": "data/axis/mono8-D4/point-004.traj",
+        "bytes": 2035,
+        "sha256": "7b80e39de8f5ec3f8cb162d9dbeeb1e5e35c4371aa514d50994bc61e8caf4a9b"
+      },
+      "original_report_energy_eV": -36.409354035903334
+    },
+    {
+      "case": "mono8T-D1",
+      "family": "tetra",
+      "atoms": 8,
+      "gpw": {
+        "path": "data/tetra/mono8T-D1/point-012.gpw",
+        "bytes": 3574940,
+        "sha256": "7b47bb1964255d9f8c4acdf930baf8be82bc7de7ae9913e21a53d0fed0b0a517"
+      },
+      "geometry": {
+        "path": "data/tetra/mono8T-D1/point-012.traj",
+        "bytes": 1779,
+        "sha256": "8829994ba21072c0917e07827895b5cf46f3bce76970b9f07d35e2d21b07e4db"
+      },
+      "original_report_energy_eV": -25.823610017918
+    },
+    {
+      "case": "mono8T-D2",
+      "family": "tetra",
+      "atoms": 9,
+      "gpw": {
+        "path": "data/tetra/mono8T-D2/point-004.gpw",
+        "bytes": 3683052,
+        "sha256": "fc41a00285b505f8768b9909579750fecd501bbe407b281359b5132dbccf1133"
+      },
+      "geometry": {
+        "path": "data/tetra/mono8T-D2/point-004.traj",
+        "bytes": 1866,
+        "sha256": "efee8f9b1db6bb0bef152c085a39eda453960fe85b19f3e0b9c5c170b8c0b397"
+      },
+      "original_report_energy_eV": -29.526514483669228
+    },
+    {
+      "case": "mono8T-D6",
+      "family": "tetra",
+      "atoms": 13,
+      "gpw": {
+        "path": "data/tetra/mono8T-D6/point-005.gpw",
+        "bytes": 4256185,
+        "sha256": "f9c2a00f3bb4d4b5d17d1e68173c94ae84cba2181c04e0092f3ddd428d4854d1"
+      },
+      "geometry": {
+        "path": "data/tetra/mono8T-D6/point-005.traj",
+        "bytes": 2192,
+        "sha256": "4bdd32a9892c3d3f0fc734ab0d1340279f1203b6747f8b1ae8dbbcd49baba5e0"
+      },
+      "original_report_energy_eV": -42.005527421099636
+    },
+    {
+      "case": "mono8T-D4",
+      "family": "tetra",
+      "atoms": 11,
+      "gpw": {
+        "path": "data/tetra/mono8T-D4/point-007.gpw",
+        "bytes": 3965144,
+        "sha256": "26b364763223adc86983d05dc4b3b9b2eb2d73848f0499b2754e2426101ea249"
+      },
+      "geometry": {
+        "path": "data/tetra/mono8T-D4/point-007.traj",
+        "bytes": 2027,
+        "sha256": "2ab74c27a78b7878bc1fd844310814080c27d5a4da4ff990dbdf9f9bca550a0e"
+      },
+      "original_report_energy_eV": -36.29561937829563
+    }
+  ]
+}

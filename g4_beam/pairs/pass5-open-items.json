@@ -1,0 +1,77 @@
+{
+  "schema": "coherence-pairs-pass5-open-items-v1",
+  "scope": "Complete enumerated8Pd single-cell-size capsule only",
+  "controlling_decision": "Coherencev1 entry1869: sole final bulk27 discriminator completed within30core-min;27work closed either way",
+  "findings": [
+    {
+      "id": "PAIR-01",
+      "severity": "scientific_limit",
+      "finding": "Only one 8-Pd cell size is scientifically complete; no two-point 27-Pd binding qualification.",
+      "disposition": "retained_open_limit",
+      "action": "Keep source Eb0.23 unchanged. The completed final bulk27 numerical point does not qualify the missing D1/D2 size increments."
+    },
+    {
+      "id": "PAIR-02",
+      "severity": "scientific_limit",
+      "finding": "mtrap6 remains unqualified; axis electronic plateau near four D is not a proved global or finite-T capacity.",
+      "disposition": "retained_open_item",
+      "action": "Keep source Eb0.23 and mtrap6 unchanged; do not silently set capacity to four."
+    },
+    {
+      "id": "PAIR-03",
+      "severity": "scientific_limit",
+      "finding": "D3/D5 energies, configurational degeneracies, differential ionic free energies, hydride background and global spin/configuration search are absent.",
+      "disposition": "explicitly_outside_completed_scope",
+      "action": "Report block means and lowest enumerated basins only; no fabricated increments or physical capacity."
+    },
+    {
+      "id": "PAIR-04",
+      "severity": "scientific_limit",
+      "finding": "All-paired yield sensitivity is not measured pair fraction; spectator and local TF closures are alternatives. Local PAW valence is not conduction susceptibility.",
+      "disposition": "qualified_not_additive",
+      "action": "Never sum closures or infer a physical pair fraction; retain phenomenological cause baseline and unchanged transport."
+    },
+    {
+      "id": "PAIR-05",
+      "severity": "scientific_limit",
+      "finding": "Ionic continuum applicability at atomic q, strong fields and hopping/inertial timescales is unestablished; no measured room-temperature oxide mobility is available.",
+      "disposition": "admitted_model_only_review",
+      "action": "Below100eV closes the conditional model escalation gate only; complete admitted review and proof included."
+    },
+    {
+      "id": "PAIR-06",
+      "severity": "provenance",
+      "finding": "Portable JSON locators and their byte identities differ from historical original execution JSON.",
+      "disposition": "resolved_explicit_extracts",
+      "action": "Preserve every original byte count/SHA and producer identity in source-provenance.json; label portable execution extracts, omit cgroup strings; do not re-pin producers to public adapters."
+    },
+    {
+      "id": "PAIR-07",
+      "severity": "dependency",
+      "finding": "Canonical scientific APIs are owned by upstream issues236/237/238; their PR merges must not gate reproduction.",
+      "disposition": "resolved_exact_byte_snapshots",
+      "action": "Use four exact-byte execution-source snapshots through g4_beam.pairs._upstream; no math fork or shims. Upstream236=81f9bc77,237=15c6881f,238=c673d15b; proposals240/239/241 do not gate reproduction."
+    },
+    {
+      "id": "PAIR-08",
+      "severity": "portability",
+      "finding": "Historical public adapters used machine-specific absolute-path manifests and external substrate imports.",
+      "disposition": "resolved_public_cutover",
+      "action": "All public adapters use one g4_beam.pairs package convention and capsule-cwd manifests; historical private originals remain evidence."
+    },
+    {
+      "id": "PAIR-09",
+      "severity": "administrative",
+      "finding": "Final bulk27 numerical discriminator and exact Native cost are now included; material size qualification is still absent.",
+      "disposition": "closed_administrative_insertion",
+      "action": "See final27-diagnostic.json and native-final-cost-ledger.json. No further27Native; with pure reserve the whole cost is247.834670core-min."
+    },
+    {
+      "id": "PAIR-10",
+      "severity": "review",
+      "finding": "Admitted complete ionic review reports no concrete findings and preserves all five assessments and unsupported applicability limits.",
+      "disposition": "included_complete_review",
+      "action": "Ship its full portable extract, original byte identity and existing proof, not a summarized replacement."
+    }
+  ]
+}

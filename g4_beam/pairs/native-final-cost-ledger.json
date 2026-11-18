@@ -1,0 +1,60 @@
+{
+  "schema": "coherence-g5-pairs-native-final-cost-v1",
+  "native_cpu_with_conservative_tails_ns": "13670080180000",
+  "native_charged_core_min": 227.83466966666666,
+  "pure_reserve_core_min": 20,
+  "whole_conservative_core_min": 247.83466966666666,
+  "whole_limit_core_min": 800,
+  "units": [
+    {
+      "phase": "p5pairs-pilot-20261117t233450z",
+      "cpu_ns": "907021391000",
+      "outcome": "controlled stop, two unqualified Gamma banks",
+      "conservative_tail_ns": "60000000000"
+    },
+    {
+      "phase": "p5pairs-eight-ref-20261118t002023z",
+      "cpu_ns": "862032118000",
+      "outcome": "success",
+      "conservative_tail_ns": "60000000000"
+    },
+    {
+      "phase": "p5pairs-eight-occ-20261118t002023z",
+      "cpu_ns": "2090933522000",
+      "outcome": "success",
+      "conservative_tail_ns": "60000000000"
+    },
+    {
+      "phase": "p5pairs-tetra-eight-20261118t010154z",
+      "cpu_ns": "4174199396000",
+      "outcome": "success",
+      "conservative_tail_ns": "60000000000"
+    },
+    {
+      "phase": "p5pairs-size-ref-20261118t010154z",
+      "cpu_ns": "3474309516000",
+      "outcome": "timeout before first force",
+      "conservative_tail_ns": "60000000000"
+    },
+    {
+      "phase": "p5pairs-size-occ-20261118t015347z",
+      "cpu_ns": "1193434811000",
+      "outcome": "controlled diagnostic stop before first force",
+      "conservative_tail_ns": "60000000000"
+    },
+    {
+      "phase": "p5pairs-scfdisc-20261118t024027z",
+      "cpu_ns": "548149426000",
+      "outcome": "success",
+      "invocation": "4786d07ce6ae46cc894a54076274b395",
+      "end_utc": "2026-11-18T02:52:05Z",
+      "conservative_tail_ns": "60000000000"
+    }
+  ],
+  "controlling_stop": "entry1869: 27 path closed after sole final discriminator; no further27Native either way",
+  "two_point_binding_size_qualification": false,
+  "transport_defaults_unchanged": {
+    "Eb_eV": 0.23,
+    "mtrap": 6
+  }
+}

@@ -1,0 +1,314 @@
+{
+  "schema": "coherence-pairs-actual-density-v1",
+  "case": {
+    "name": "mono8T-D2",
+    "host_Pd": 8,
+    "n_Pd": 7,
+    "n_missing": 1,
+    "n_D": 2,
+    "seed": {
+      "symbols": [
+        "Pd",
+        "Pd",
+        "Pd",
+        "Pd",
+        "Pd",
+        "Pd",
+        "Pd",
+        "H",
+        "H"
+      ],
+      "positions_A": [
+        [
+          1.945,
+          1.945,
+          0
+        ],
+        [
+          1.945,
+          0,
+          1.945
+        ],
+        [
+          3.89,
+          1.945,
+          1.945
+        ],
+        [
+          0,
+          1.945,
+          1.945
+        ],
+        [
+          1.945,
+          3.89,
+          1.945
+        ],
+        [
+          1.945,
+          1.945,
+          3.89
+        ],
+        [
+          3.89,
+          3.89,
+          3.89
+        ],
+        [
+          0.9725,
+          0.9725,
+          0.9725
+        ],
+        [
+          -0.9725,
+          -0.9725,
+          -0.9725
+        ]
+      ],
+      "cell_A": [
+        [
+          0,
+          3.89,
+          3.89
+        ],
+        [
+          3.89,
+          0,
+          3.89
+        ],
+        [
+          3.89,
+          3.89,
+          0
+        ]
+      ],
+      "source_primitive": {
+        "path": "data/reference/mono8-D0/primitive.json",
+        "bytes": 4147,
+        "sha256": "d97ab3da4d6e05715549f0116c81fa20e6e1b3c8270548091bb8b82123b73c65"
+      },
+      "arrangement": "one vertex or opposite vertices"
+    }
+  },
+  "source_point": {
+    "path": "data/tetra/mono8T-D2/primitive.json",
+    "bytes": 5619,
+    "sha256": "a829465be10064fd6d4d036ee9487f56f5692041cf1c7bafcc645c888f134728"
+  },
+  "source_execution": {
+    "path": "data/tetra/execution.json",
+    "bytes": 1206,
+    "sha256": "99c5921355a589110f61bf216a7f75170816a6a9247217e8777c254f5a03b5a0"
+  },
+  "source_bank": {
+    "forces": [
+      [
+        -2.5000239240780785e-12,
+        2.9997104839634673e-10,
+        1.1272439547548871e-10
+      ],
+      [
+        1.55863483485354e-10,
+        -8.310298482900419e-11,
+        3.199243224138438e-10
+      ],
+      [
+        1.7166355121577065e-10,
+        2.2092319247762642e-10,
+        2.0290473355764242e-11
+      ],
+      [
+        -5.595641485597161e-10,
+        -1.9974242816115069e-10,
+        2.529438959038638e-10
+      ],
+      [
+        -1.3678589815988624e-09,
+        -2.5803321672686845e-10,
+        -4.450731105576312e-10
+      ],
+      [
+        -6.237619408697157e-10,
+        -9.459343186658694e-10,
+        -1.7070210525259832e-10
+      ],
+      [
+        -1.0355981033855711e-10,
+        1.239917210804059e-10,
+        -4.3751311572280866e-11
+      ],
+      [
+        -0.0015119847138819525,
+        -0.0015049117071124609,
+        -0.0014948950358212713
+      ],
+      [
+        0.0015119847062428696,
+        0.0015049117214061818,
+        0.001494895024242624
+      ]
+    ],
+    "energy_eV": -29.526514483669228,
+    "positions_A": [
+      [
+        1.9449999999985392,
+        1.9449999999995655,
+        -2.188704999748651e-13
+      ],
+      [
+        1.9450000000008811,
+        3.4123333377146612e-12,
+        1.9449999999986836
+      ],
+      [
+        3.889999999991922,
+        1.9449999999855778,
+        1.9449999999903973
+      ],
+      [
+        2.9813445553623087e-12,
+        1.945000000001752,
+        1.9450000000005312
+      ],
+      [
+        1.9449999999982506,
+        3.8899999999946764,
+        1.9449999999998753
+      ],
+      [
+        1.945000000001348,
+        1.9450000000100973,
+        3.8900000000112254
+      ],
+      [
+        3.890000000003539,
+        3.889999999989976,
+        3.8900000000134005
+      ],
+      [
+        0.8022938018791123,
+        0.802292911081285,
+        0.8022906187127694
+      ],
+      [
+        -0.8022938018791326,
+        -0.8022929110816792,
+        -0.8022906187121912
+      ]
+    ],
+    "gpw": {
+      "path": "data/tetra/mono8T-D2/point-004.gpw",
+      "bytes": 3683052,
+      "sha256": "fc41a00285b505f8768b9909579750fecd501bbe407b281359b5132dbccf1133"
+    },
+    "geometry": {
+      "path": "data/tetra/mono8T-D2/point-004.traj",
+      "bytes": 1866,
+      "sha256": "efee8f9b1db6bb0bef152c085a39eda453960fe85b19f3e0b9c5c170b8c0b397"
+    }
+  },
+  "periodic_pairs": [
+    {
+      "atom_indices": [
+        7,
+        8
+      ],
+      "periodic_distance_A": 2.779222550699608,
+      "same_cell_distance_A": 2.779222550699609,
+      "periodic_displacement_A": [
+        -1.6045876037582447,
+        -1.6045858221629636,
+        -1.6045812374249602
+      ],
+      "uses_periodic_image": false,
+      "midpoint_A": [
+        -1.0103029524088925e-14,
+        -1.9684254226604025e-13,
+        2.893241202173158e-13
+      ]
+    }
+  ],
+  "closest_pair": {
+    "atom_indices": [
+      7,
+      8
+    ],
+    "periodic_distance_A": 2.779222550699608,
+    "same_cell_distance_A": 2.779222550699609,
+    "periodic_displacement_A": [
+      -1.6045876037582447,
+      -1.6045858221629636,
+      -1.6045812374249602
+    ],
+    "uses_periodic_image": false,
+    "midpoint_A": [
+      -1.0103029524088925e-14,
+      -1.9684254226604025e-13,
+      2.893241202173158e-13
+    ]
+  },
+  "density_rows": [
+    {
+      "grid_refinement": 1,
+      "all_electron": {
+        "shape": [
+          24,
+          24,
+          24
+        ],
+        "integral_electrons": 323.99992244530205,
+        "expected_electrons": 324,
+        "relative_integral_residual": 2.393663517054454e-07,
+        "midpoint_e_per_A3": 0.028266024401238352
+      },
+      "PAW_valence": {
+        "shape": [
+          24,
+          24,
+          24
+        ],
+        "integral_electrons": 75.41483441473845,
+        "expected_electrons": 72,
+        "relative_integral_residual": 0.047428255760256256,
+        "midpoint_e_per_A3": 0.028266024401238352
+      }
+    },
+    {
+      "grid_refinement": 2,
+      "all_electron": {
+        "shape": [
+          48,
+          48,
+          48
+        ],
+        "integral_electrons": 323.99992244530324,
+        "expected_electrons": 324,
+        "relative_integral_residual": 2.393663480211497e-07,
+        "midpoint_e_per_A3": 0.028266024401228676
+      },
+      "PAW_valence": {
+        "shape": [
+          48,
+          48,
+          48
+        ],
+        "integral_electrons": 72.81588766677928,
+        "expected_electrons": 72,
+        "relative_integral_residual": 0.011331773149712157,
+        "midpoint_e_per_A3": 0.028266024401228676
+      }
+    }
+  ],
+  "midpoint_relative_grid_change": {
+    "all_electron": 3.423292717662134e-13,
+    "PAW_valence": 3.423292717662134e-13
+  },
+  "midpoint_grid_target_met": true,
+  "raw_fmax_eV_A": 0.0026049123189351136,
+  "stationarity_target_eV_A": 0.05,
+  "saved_point_only": true,
+  "density_units": "electrons/angstrom^3",
+  "density_convention": "GPAW PAW reconstructed all-electron and frozen-core-excluded valence; spin sum",
+  "density_is_not_screening_energy": true,
+  "readout_process_cpu_s": 5.483692210000001
+}
