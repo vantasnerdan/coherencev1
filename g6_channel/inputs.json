@@ -1,0 +1,77 @@
+{
+  "schema": "coherencev1-g6-channel-inputs-v1",
+  "authority": {
+    "node": "g6_channel",
+    "definition": 1,
+    "accepted_handoff": "entry_2038",
+    "plan": "coherencev1-pass6-marvin-20261119",
+    "plan_revision": "e0733fdc3d0d6cb1a0abc91ed9817ed72fe2c311f9485bc325b11e9675612cd3",
+    "base_commit": "47f090229bc6f02c6273ae5e6ce6e6d66c6b5c26"
+  },
+  "geometry": {
+    "PdD": {
+      "structure": "rocksalt, full octahedral D occupancy",
+      "a_nm": 0.4084,
+      "source": "p0_scales/material_scales.py; Antonov et al., Phys. Rev. B 80,134302 (2009), quoted stoichiometric reference",
+      "url": "https://doi.org/10.1103/PhysRevB.80.134302",
+      "status": "published reference cell, not newly relaxed DFT"
+    },
+    "TiD2": {
+      "structure": "fluorite, full tetrahedral D occupancy",
+      "a_nm": 0.444,
+      "source": "g4_beam/screen/screen_cases.py and inputs/case-specs.json",
+      "status": "existing specified initial cubic scenario, not a consumed converged DFT lattice constant"
+    },
+    "LiD": {
+      "structure": "rocksalt, full octahedral D occupancy",
+      "a_nm": 0.4072,
+      "source": "Knudson, Desjarlais and Lemke, Shock Compression Experiments on Lithium Deuteride Single Crystals (2014), p9, measured a=4.072(3) Angstrom",
+      "url": "https://www.osti.gov/servlets/purl/1162374",
+      "status": "published XRD reference; mean natural Li mass 6.94 amu is a separate approximate isotope choice"
+    }
+  },
+  "thermal": {
+    "temperature_K": 300,
+    "host_one_coordinate_u_nm": {"PdD": 0.008, "TiD2": 0.008, "LiD": 0.012},
+    "host_status": "declared harmonic thermal-width estimates; not fitted Debye-Waller measurements",
+    "fuel_optical_energy_eV": {"PdD": 0.037, "TiD2": 0.050, "LiD": 0.070},
+    "fuel_status": "PdD published phonon peak via p0_scales; TiD2 and LiD are explicit representative harmonic assumptions, not sourced measurements",
+    "formula": "u^2=hbar^2/(2 M epsilon) coth(epsilon/(2 kBT)); epsilon_T=epsilon_D sqrt(M_D/M_T)",
+    "interpretation": "independent Gaussian positional disorder around stable ideal crystallographic sites, including zero-point variance"
+  },
+  "electron_density": {
+    "formula": "rho_j(r)=exp(-r/b_j)/(8 pi b_j^3), projected and Gaussian-thermally convoluted before trajectory sampling",
+    "b_nm": {"Pd": 0.045, "Ti": 0.065, "Li": 0.080, "H": 0.02645885},
+    "source": "H hydrogenic 1s density b=a0/2; host lengths are coarse Slater-effective-valence radial-scale estimates",
+    "status": "superposed normalized atomic effective stopping densities, NOT a DFT/PAW valence density or calibrated charge-transfer model",
+    "mean_normalization": "each species local stopping factor has cell mean one; each coefficient is its own bulk atomic stopping cross section"
+  },
+  "stopping": {
+    "electronic": "g4_beam/transport/bca.py se_ls: Lindhard-Scharff, factors Pd1.54, Ti1.52, H0.75; Li uses documented default1.0, not an invented existing target",
+    "nuclear": "same bca.py ZBL potential and cm_angle; discrete recoil tied to each angular kick, not a second added Sn loss",
+    "sources": ["Lindhard and Scharff (1961), Phys. Rev.124,128", "Ziegler, Biersack and Littmark (1985), The Stopping and Range of Ions in Solids"],
+    "calibrated_energy_domain": "Pd/Ti electronic factors were anchored around5-10keV/u; velocity-proportional ICRU model is low-energy, below10keV/u (~20keV D lab). 50 and200keV lab are uncalibrated LS extrapolations. Li has no range calibration at any energy.",
+    "cutoff_lab_eV": 10,
+    "profile": "uniform infinite-thickness stoichiometric crystal in a half-space; no adsorbed sheet or transported depth profile",
+    "reference_profile": "homogeneous historical PdD0.70 and TiD1.70, identical between stochastic reference and forward uniform Target; never substituted for production stoichiometry"
+  },
+  "nuclear": {
+    "DD": "existing forward reaction='proton': fixed threshold resonance in D(d,p)T, Bosch-Hale D(d,n)3He; Ue=0 on both orientations and random",
+    "DT": "Bosch-Hale rational D(t,n)alpha S-factor; target mass changed to T for recoil, phonon width, and Ecm; projectile remains D",
+    "source": "Bosch and Hale, Nucl. Fusion32,611 (1992)",
+    "url": "https://doi.org/10.1088/0029-5515/32/4/I07",
+    "DT_fit_domain_cm_keV": [0.5, 550],
+    "low_energy_extrapolation": "same smooth formula to10eV lab; explicitly below fitted range; no DT copy of DD resonance",
+    "Q_eV": {"DDp": 4033000, "DDn": 3269000, "DTnalpha": 17589000},
+    "velocity": "lab beam velocity from projectile D mass; Ecm=Mtarget/(Mprojectile+Mtarget) Elab, not Elab/2 for DT"
+  },
+  "beam": {
+    "lab_keV": [2, 13, 50, 200],
+    "axes": ["100", "110", "111", "random"],
+    "divergence_rms_polar_deg": [0, 0.5, 2],
+    "incidence": "uniform transverse impact area, independent Gaussian angular components each sigma=polar_rms/sqrt(2)",
+    "charge": "one incident monoenergetic D+, no molecular fraction, no detector or cup factor"
+  },
+  "dropped": ["beam damage and evolving occupancy", "surface disorder and chemistry", "correlated host/fuel vibrations and electronic bonding/charge transfer"],
+  "comparison_contract": "yield and energy-return ratios use the same isolated reaction channels, Ue0, uniform profile, half-space boundary,10eV cutoff and electronic extrapolation on numerator and denominator"
+}
