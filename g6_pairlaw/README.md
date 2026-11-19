@@ -136,4 +136,19 @@ At lambda_s=0.03 and k=1e4, zero centre achieves a minimum mean 0.07792 Angstrom
 
 For the explicit reference lambda_s=0.54, external centre=2.78, k=10, the solver achieves mean 2.78673 Angstrom and **log10 rate=-212.031 DD / -231.418 DT** per second. Ratio 7 remains 0.19424: dividing by the achieved pair mean or its instantaneous closest approach is not allowed. A material that can supply only this screening scale and site-centred soft confinement needs a changed pair-confinement mechanism; screening length alone does not create the compact state. This conditional comparison is not a computed PdD/vacancy potential or a result on a driven lattice.
 
-The coupling consumer can use the callable/table only after identifying its conditional potential and state. A trajectory histogram of nearest approach, relative speed and orientation does not by itself specify a stationary normalized ground-state contact, so no rate is assigned to unresolved trajectory tails. The missing part (c) input is a delivered material **total** pair potential with a stated electronic/nuclear separation and origin continuation; no material file or keV electronic response is assumed here.
+A trajectory histogram of nearest approach, relative speed and orientation does not specify a normalized ground-state contact. Part (c) reads a material interaction without assigning a rate to a collision scan.
+
+### Part (c): mapped target-conditioned pair interaction
+
+From the repository root, run `python -m g6_pairlaw.script.material_pair curve.json`. The input JSON has these fields:
+
+| Field | Meaning |
+|---|---|
+| `schema` | `coherencev1-target-conditioned-pair-v1` |
+| `observable` | `target_conditioned_BO_total_interaction` |
+| `R_A`, `V_pair_total_eV` | Paired ascending radii and total interaction energies, including bare repulsion. The producer first subtracts the vacant-cell BO energy from the occupied-cell BO energy and supplies the mapped isolated interaction with its stated energy zero. |
+| `reference` | `source`, `configuration`, `energy_zero`, `periodic_to_isolated` (provenance strings); `bare` must be `isolated_unit_charge_coulomb`. |
+
+The reader reports only at supplied radii. It computes `V_bare = C/R`, the signed electronic correction `V_pair_total − V_bare`, and the positive-lowering convention `V_bare − V_pair_total`. Comparisons require the same physical reference and target-relative path. The reader does not subtract an arbitrary far-point constant, turn raw `U_phi` into an interaction energy, or mix the potential with electronic energy loss. Keep the undisplaced and displaced profiles separate; a 2 keV head-on snapshot does not supply arbitrary-angle or energy-dependent screening.
+
+`--isotope DD` or `--isotope DT` additionally solves a **specified prepared radial ground state**. Supply a `prepared_state` object with `preparation`, `inner_continuation_source`, and `outer_boundary` (provenance strings), `V_confinement_eV` at every listed radius (explicit zeros if the well is already in the interaction), and `regular_potential_at_zero_eV` for the *combined* potential after subtracting `C/R`. The reader joins these inputs by interpolating the regular part with a smooth, zero-slope origin, adds `C/R` exactly once, and uses the last radius as the outer wall. It rejects profiles without a resolved single interior well or with a non-negligible outer tail. Those checks do not prove the proposed origin continuation, preparation, or physical far boundary; they must come from the input model. Report masses and states separately under isotope substitution. Without such a state there is no material rate. No mapped material curve has been supplied or run here.
