@@ -1,0 +1,37 @@
+{
+  "native_rest_consumer_relative_error": 1.5543122344752192e-15,
+  "named_contrast": "NiH cold .08 vs0 pump, H velocities explicitly transplanted into DD scattering on unchanged transported PdD target",
+  "named_contrast_E_lab_keV": 0.5,
+  "named_contrast_pumped_over_unpumped": 1.0077159398507902,
+  "named_contrast_projectile_axis": "parallel_x",
+  "consumer_matched_temporal_block_yield_ratios": [
+    1.0062708586559503,
+    1.008193939419005,
+    1.0083761883190194,
+    1.0083631841602902,
+    1.0081509940644533,
+    1.007814340284737,
+    1.0074545355585682,
+    1.0071244215500232
+  ],
+  "entrance_cross_section_matched_temporal_block_ratios": [
+    1.0063592910110741,
+    1.008300031421861,
+    1.0084838011299362,
+    1.0084706776721353,
+    1.008256792537955,
+    1.0079175320954776,
+    1.0075551607465447,
+    1.0072228867401527
+  ],
+  "block_interpretation": "Eight contiguous finite trajectory blocks; spread is a temporal diagnostic, not iid error bars or a rare-tail enclosure.",
+  "pairlaw_script_SHA256": "99007768cb574ae3e612338dabbdfd17c10f598f0d8ee321985ca1dd4110bffc",
+  "nuclear_contact_status": "Only conditional quantum potential rates are quantified; actual pumped/unpumped lattice pair rate remains unidentified.",
+  "pump_off_result": "At zero bath temperature, dH/dt=-m gamma sum(v^2)<=0 when pump is off. Positive drag cannot sustain nonzero periodic motion; no dynamic pump-off lock is provided by this model. Static displacement is not oscillatory lock.",
+  "power_interpretation": "No division by domain N. Thermal injection belongs to all3 velocity components. Finite-difference drag at300K is not an exact OU-work estimate; compare matched pump increments and explicit Hamiltonian pump work.",
+  "largest_omissions": [
+    "Displacement-induced host electronic/nonlinear collision-frequency response; awaits collision-scope paired frozen snapshot.",
+    "Prepared many-body quantum pair density/contact, isotope-specific pair state and bound-state threshold-resonance matrix element.",
+    "Pump delivery/efficiency and backreaction, long-time thermal/damage/transport evolution and high-barrier rare tails beyond short classical records."
+  ]
+}

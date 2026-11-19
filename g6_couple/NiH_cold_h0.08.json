@@ -1,0 +1,117 @@
+{
+  "summary": {
+    "label": "NiH_cold_h0.08",
+    "configuration": {
+      "label": "NiH_cold_h0.08",
+      "L": 48,
+      "x": 1.0,
+      "temperature_K": 0.0,
+      "pump_h": 0.08,
+      "pump_ratio": 1.0,
+      "steps": 17695,
+      "dt": 0.3,
+      "seed": 13,
+      "material": "NiH",
+      "arrangement": "random",
+      "stride": 1
+    },
+    "sites": 110592,
+    "occupied": 110592,
+    "actual_loading": 1.0,
+    "elapsed_s": 647.2075882158242,
+    "state": "patterned_driven_oscillation",
+    "static_rms_A": 1.0878570930728996e-06,
+    "driven_demodulated_rms_A": 0.06361208699162546,
+    "pump_frequency_rms_A": 1.854484861505425e-05,
+    "incident_E_squared_carrier_THz": 21.241556562664492,
+    "peak_fraction": 0.10975860433706056,
+    "occupation_SHA256": "3943449dc021df8ec8ea2e12f3adb9ede63e614f76a081ca151706e238a9d907",
+    "material_status": "893 adopted fixed-k3 harmonic correction; quartic epoch legacy401 pair, frozen at PdD-ready boundary;893 harmonics are a different numerical profile; mixed=True; scalar minimum-image shell continuation",
+    "loading_response": {
+      "composition_reference": null,
+      "fields": null,
+      "elastic": null
+    }
+  },
+  "statistics": {
+    "observation_samples": 8848,
+    "dt_ps": 0.0023425128897606737,
+    "record_ps": 20.72655404860244,
+    "retained_velocity_vectors": 70784,
+    "sampled_joint_pairs": 3072,
+    "min_pair_A": 2.602044063332234,
+    "pair_min_quantiles_A": [
+      2.602044063332234,
+      2.6194752744664065,
+      2.6337502350166684,
+      2.638664486838313,
+      2.638922502269611,
+      2.6389225052819145,
+      2.638922506595404
+    ],
+    "maximum_observed_site_displacement_A": 0.13417612817355312,
+    "maximum_observed_pair_displacement_A": 0.052528932766305894,
+    "omega_rad_ps": 133.46463609615765,
+    "gamma_per_s": 1259414090434.1978,
+    "ratio4_omega_over_gamma": 105.97359288726406,
+    "q2_A2_blocks": [
+      0.0019330081371973441,
+      0.002078191375627311,
+      0.0020826387056948744,
+      0.0020818411780424255,
+      0.0020812307094965204,
+      0.002080701096027004,
+      0.00208025372665951,
+      0.0020816027246278396
+    ],
+    "mean_v2_m2_s2_blocks": [
+      333751.45634959056,
+      357954.624270341,
+      358742.2324794093,
+      358736.0253856105,
+      358802.7607272525,
+      358893.0013582754,
+      358974.47825456975,
+      358731.88624756935
+    ],
+    "drag_eV_per_s_per_occupied_site_blocks": [
+      4388126200.293141,
+      4706346700.196795,
+      4716702083.377981,
+      4716620473.214465,
+      4717497901.898516,
+      4718684375.454778,
+      4719755624.423271,
+      4716566052.298123
+    ],
+    "classical_thermal_injection_eV_per_s_per_occupied_site": 0.0,
+    "net_drag_minus_thermal_eV_per_s_per_occupied_site_blocks": [
+      4388126200.293141,
+      4706346700.196795,
+      4716702083.377981,
+      4716620473.214465,
+      4717497901.898516,
+      4718684375.454778,
+      4719755624.423271,
+      4716566052.298123
+    ],
+    "explicit_pump_work_eV_per_s_per_occupied_site_blocks": [
+      4676990317.652686,
+      4782004997.422953,
+      4826788343.004639,
+      4829160975.7832575,
+      4819502779.771671,
+      4806450144.9576235,
+      4796589988.638374,
+      4795865385.077487
+    ],
+    "velocity_estimator": "Central difference at every native dt; no change to force/noise. Harmonic v amplitude attenuation sinc(Omega dt); stochastic unresolved kinetic power is not a measured thermostat balance.",
+    "harmonic_velocity_squared_attenuation": 0.9678398729793253,
+    "zero_point_motion": "Quantum variance enters Hartree curvature only; classical trajectories are not nuclear quantum samples."
+  },
+  "parameters_file": "g3_lattice/rerun/part2/updated/ni_epoch/parameters.json",
+  "parameters_SHA256": "6bbcc9ff031be8017ea8024cf736b5312828ed5d0bf2e8cc12ba784ec455b1f2",
+  "arrays_file": "NiH_cold_h0.08.npz",
+  "arrays_SHA256": "595590d62251439af03e11496fa62071702fdb0b8d07f71c03bb9afae36f5cbe",
+  "engine_SHA256": "61c1733ee4eae2ec82e11c07dff844c818426334ddd37c516cfa1f8a840933b7"
+}

@@ -1,0 +1,179 @@
+{
+  "summary": {
+    "label": "PdD_random_x1_h0",
+    "configuration": {
+      "material": "PdD",
+      "L": 32,
+      "seed": 13,
+      "temperature_K": 0.0,
+      "strain": 0.0,
+      "pump_ratio": 1.0,
+      "pump_polarization": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "loading_extrapolate": true,
+      "elastic_extrapolate": true,
+      "bias_law_input": "new_inputs/vacancy_bias_law.json",
+      "bias_geometry_policy": "frozen_reference_under_strain",
+      "dt": 0.15,
+      "steps": 4096,
+      "stride": 1,
+      "label": "PdD_random_x1_h0",
+      "x": 1.0,
+      "arrangement": "random",
+      "pump_h": 0.0
+    },
+    "sites": 32768,
+    "occupied": 32768,
+    "actual_loading": 1.0,
+    "elapsed_s": 39.929560074117035,
+    "state": "disordered",
+    "static_rms_A": 1.7213750175014965e-06,
+    "driven_demodulated_rms_A": 2.449400126245288e-05,
+    "pump_frequency_rms_A": 3.881820009393274e-06,
+    "incident_E_squared_carrier_THz": 10.063741521544044,
+    "peak_fraction": 0.00029528632664027295,
+    "occupation_SHA256": "bfa5a24faa8ddf576edcc46f4f05e2459ee4a383b8dc14ff7dba0056b9c59ed0",
+    "material_status": "Adopted762 fixed-k3 local well and same-column J;864 directional scalar transfer; x1 quartic/T0 variance frozen, NOT mesh-converged; physical decay is a model input",
+    "loading_response": {
+      "composition_reference": {
+        "x": 1.0,
+        "a_angstrom": 4.084,
+        "status": "author_extrapolated",
+        "measured_point": false,
+        "isotope": "D",
+        "phase": "beta",
+        "temperature_K": 77.0,
+        "source_uncertainty_angstrom": null,
+        "uncertainty_status": "not reported in accessible abstract; not zero",
+        "construction": "author x=1 endpoint",
+        "source": "10.1103/PhysRevB.12.117, publisher abstract (article pp.117-118)",
+        "source_sha256": "6ff6e47b8b6bc1d73994f41c398d4dcb8343e420d22ed2c17b1e74963394be2f",
+        "calibration_facts_sha256": "027f5d80d8cc30026b23c0279f0d84f15ca14208edb82ad38109a228127456ee",
+        "source_gate": "primary abstract; campaign-authorized extrapolation; pointwise uncertainty unavailable"
+      },
+      "fields": {
+        "source_entry": "864",
+        "model_id": "baseline_two_descriptor",
+        "law_SHA256": "f11752b5513dcc0887755540c5b9bdb10163e6ac899e5c0bd3d25144ef08d23e",
+        "a_reference_A": 4.084,
+        "descriptor_counts": [
+          {
+            "n_vac_NN": 0,
+            "occupied_sites": 32768,
+            "values_eV_A2": {
+              "Jbar_shell_0.7071067812": 0.01887404712332313,
+              "Jbar_shell_1.0000000000": 0.08955904203984194,
+              "Jbar_shell_1.2247448714": -0.00905753528201411,
+              "Jbar_shell_1.4142135624": 0.0023732327927632516,
+              "Jbar_shell_1.7320508076": -0.004582643770591419,
+              "Kii_dd": 0.590658682890108
+            },
+            "extrapolated_observables": [],
+            "direction_policy": "Clean +100; vacancy-adjacent ray toward original vacant H5 (110 family). Isotropic/scalar application at other directions is an unmeasured model closure."
+          }
+        ],
+        "extrapolated_fraction_by_observable": {
+          "Jbar_shell_0.7071067812": 0.0,
+          "Jbar_shell_1.0000000000": 0.0,
+          "Jbar_shell_1.2247448714": 0.0,
+          "Jbar_shell_1.4142135624": 0.0,
+          "Jbar_shell_1.7320508076": 0.0,
+          "Kii_dd": 0.0
+        },
+        "fraction_Nvac_above4": 0.0,
+        "direction_closure": "Dense100 is the fixed x1 anchor; loading clean100 and near110-family are measured under that policy. A scalar/isotropic transfer is a closure, not measured tensors.",
+        "uncertainty": "Equal-weight descriptive fit, not a statistical confidence interval. SCF/mesh/finite-cell/reference-spacing and descriptor errors remain. Configuration holdouts reuse the same x1 anchor.",
+        "bond_policy": "Per-existing folded-bond mean times reference multiplicity; physical-image sharing by shell_kernel; occupancy applied ONCE; reciprocal endpoint average",
+        "zero_point_policy": "Frozen x1 per-axis T0 Hartree only; thermal motion sampled, not added twice",
+        "absent_sites": "No degree of freedom; zero field storage here is not a measured zero bond/well"
+      },
+      "elastic": {
+        "kind": "no additional elastic contrast"
+      }
+    }
+  },
+  "statistics": {
+    "observation_samples": 2048,
+    "dt_ps": 0.002819511502272654,
+    "record_ps": 5.774359556654395,
+    "retained_velocity_vectors": 16384,
+    "sampled_joint_pairs": 3072,
+    "min_pair_A": 2.885185960109964,
+    "pair_min_quantiles_A": [
+      2.885185960109964,
+      2.8858729250904447,
+      2.8863035581148258,
+      2.8867363320840136,
+      2.887031043238843,
+      2.887209862928765,
+      2.8873401652490918
+    ],
+    "maximum_observed_site_displacement_A": 0.002350842786845118,
+    "maximum_observed_pair_displacement_A": 0.00309592973798588,
+    "omega_rad_ps": 63.232352863418654,
+    "gamma_per_s": 483554674984.4587,
+    "ratio4_omega_over_gamma": 130.76567373782692,
+    "q2_A2_blocks": [
+      4.6110878243194864e-07,
+      3.253285005513527e-07,
+      2.2952008974754214e-07,
+      1.6188937051469377e-07,
+      1.1427072995686468e-07,
+      8.055724559978783e-08,
+      5.6791413797698676e-08,
+      4.0113018288513764e-08
+    ],
+    "mean_v2_m2_s2_blocks": [
+      26.7071750414125,
+      18.861817223940083,
+      13.302047347011934,
+      9.383751101883247,
+      6.614124213065491,
+      4.668247834766511,
+      3.2946218044997617,
+      2.323806872378546
+    ],
+    "drag_eV_per_s_per_occupied_site_blocks": [
+      269510.2921547165,
+      190340.38091675678,
+      134235.03838163524,
+      94694.30956490789,
+      66745.15542159668,
+      47108.72025392634,
+      33247.03880860432,
+      23450.247662463236
+    ],
+    "classical_thermal_injection_eV_per_s_per_occupied_site": 0.0,
+    "net_drag_minus_thermal_eV_per_s_per_occupied_site_blocks": [
+      269510.2921547165,
+      190340.38091675678,
+      134235.03838163524,
+      94694.30956490789,
+      66745.15542159668,
+      47108.72025392634,
+      33247.03880860432,
+      23450.247662463236
+    ],
+    "explicit_pump_work_eV_per_s_per_occupied_site_blocks": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "velocity_estimator": "Central difference at every native dt; no change to force/noise. Harmonic v amplitude attenuation sinc(Omega dt); stochastic unresolved kinetic power is not a measured thermostat balance.",
+    "harmonic_velocity_squared_attenuation": 0.9894496979770545,
+    "zero_point_motion": "Quantum variance enters Hartree curvature only; classical trajectories are not nuclear quantum samples."
+  },
+  "parameters_file": "g3_lattice/rerun/part2/updated/parameters.json",
+  "parameters_SHA256": "12f1a0be03bd673ed9fc8f62be1d948c12fb01eea6b47f6971cf11e11e9e8ec9",
+  "arrays_file": "PdD_random_x1_h0.npz",
+  "arrays_SHA256": "5471c1c9737d9d6e0de5e343efb65c974e71efa393813d008b04a871c8d0c8cf",
+  "engine_SHA256": "61c1733ee4eae2ec82e11c07dff844c818426334ddd37c516cfa1f8a840933b7"
+}

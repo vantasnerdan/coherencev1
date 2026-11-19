@@ -1,0 +1,131 @@
+{
+  "records": [
+    {
+      "case": "NiH_cold_h0",
+      "ion_species": "NiH",
+      "max_observed_site_displacement_A": 1.7185674651291215e-08,
+      "max_observed_joint_NN_relative_displacement_A": 2.356492640610812e-08,
+      "prior_snapshot_control_A": 0.0432,
+      "prior_control_amplitude_exceeds_observed_max": true,
+      "primary_collision_snapshot_A": 0.0768,
+      "screening_scenario_A": 0.541,
+      "reference_a_A": 3.732,
+      "screening_status": "NiH screening not identified; .541A is a shared sensitivity scenario, NOT a material bound",
+      "single_record_vs_undisplaced_spectator_absolute_envelope_eV": 4.1251860324857834e-08,
+      "signed_spectator_change_eV": null,
+      "definition": "Triangle envelope using the actual maximum over every site and observed native step; same .541A screened unit-charge scenario. It is not an electronic response, an observed signed shift, or a stochastic tail bound."
+    },
+    {
+      "case": "NiH_cold_h0.08",
+      "ion_species": "NiH",
+      "max_observed_site_displacement_A": 0.13417612817355312,
+      "max_observed_joint_NN_relative_displacement_A": 0.052528932766305894,
+      "prior_snapshot_control_A": 0.0432,
+      "prior_control_amplitude_exceeds_observed_max": false,
+      "primary_collision_snapshot_A": 0.0768,
+      "screening_scenario_A": 0.541,
+      "reference_a_A": 3.732,
+      "screening_status": "NiH screening not identified; .541A is a shared sensitivity scenario, NOT a material bound",
+      "single_record_vs_undisplaced_spectator_absolute_envelope_eV": 0.445308928743966,
+      "signed_spectator_change_eV": null,
+      "definition": "Triangle envelope using the actual maximum over every site and observed native step; same .541A screened unit-charge scenario. It is not an electronic response, an observed signed shift, or a stochastic tail bound."
+    },
+    {
+      "case": "PdD_random_x1_h0",
+      "ion_species": "PdD",
+      "max_observed_site_displacement_A": 0.002350842786845118,
+      "max_observed_joint_NN_relative_displacement_A": 0.00309592973798588,
+      "prior_snapshot_control_A": 0.0432,
+      "prior_control_amplitude_exceeds_observed_max": true,
+      "primary_collision_snapshot_A": 0.0768,
+      "screening_scenario_A": 0.541,
+      "reference_a_A": 4.084,
+      "screening_status": "PdD .541A conditional scenario",
+      "single_record_vs_undisplaced_spectator_absolute_envelope_eV": 0.003168744171419968,
+      "signed_spectator_change_eV": null,
+      "definition": "Triangle envelope using the actual maximum over every site and observed native step; same .541A screened unit-charge scenario. It is not an electronic response, an observed signed shift, or a stochastic tail bound."
+    },
+    {
+      "case": "PdD_random_x1_h0.08",
+      "ion_species": "PdD",
+      "max_observed_site_displacement_A": 0.07684432733644198,
+      "max_observed_joint_NN_relative_displacement_A": 0.040210657562184435,
+      "prior_snapshot_control_A": 0.0432,
+      "prior_control_amplitude_exceeds_observed_max": false,
+      "primary_collision_snapshot_A": 0.0768,
+      "screening_scenario_A": 0.541,
+      "reference_a_A": 4.084,
+      "screening_status": "PdD .541A conditional scenario",
+      "single_record_vs_undisplaced_spectator_absolute_envelope_eV": 0.12308014613855014,
+      "signed_spectator_change_eV": null,
+      "definition": "Triangle envelope using the actual maximum over every site and observed native step; same .541A screened unit-charge scenario. It is not an electronic response, an observed signed shift, or a stochastic tail bound."
+    },
+    {
+      "case": "PdD_thermal_x0.875_h0",
+      "ion_species": "PdD",
+      "max_observed_site_displacement_A": 0.7338447661520106,
+      "max_observed_joint_NN_relative_displacement_A": 0.996072862348209,
+      "prior_snapshot_control_A": 0.0432,
+      "prior_control_amplitude_exceeds_observed_max": false,
+      "primary_collision_snapshot_A": 0.0768,
+      "screening_scenario_A": 0.541,
+      "reference_a_A": 4.084,
+      "screening_status": "PdD .541A conditional scenario",
+      "single_record_vs_undisplaced_spectator_absolute_envelope_eV": 8.934832669301695,
+      "signed_spectator_change_eV": null,
+      "definition": "Triangle envelope using the actual maximum over every site and observed native step; same .541A screened unit-charge scenario. It is not an electronic response, an observed signed shift, or a stochastic tail bound."
+    },
+    {
+      "case": "PdD_thermal_x0.875_h0.08",
+      "ion_species": "PdD",
+      "max_observed_site_displacement_A": 0.7178239956820182,
+      "max_observed_joint_NN_relative_displacement_A": 1.057778070407126,
+      "prior_snapshot_control_A": 0.0432,
+      "prior_control_amplitude_exceeds_observed_max": false,
+      "primary_collision_snapshot_A": 0.0768,
+      "screening_scenario_A": 0.541,
+      "reference_a_A": 4.084,
+      "screening_status": "PdD .541A conditional scenario",
+      "single_record_vs_undisplaced_spectator_absolute_envelope_eV": 8.215756742756614,
+      "signed_spectator_change_eV": null,
+      "definition": "Triangle envelope using the actual maximum over every site and observed native step; same .541A screened unit-charge scenario. It is not an electronic response, an observed signed shift, or a stochastic tail bound."
+    }
+  ],
+  "contrasts": [
+    {
+      "unpumped": "NiH_cold_h0",
+      "pumped": "NiH_cold_h0.08",
+      "absolute_pumped_minus_unpumped_envelope_eV": 0.4453089699958263,
+      "equal_pole_linear_susceptibility_contrast_eV": 0.0,
+      "warning": "Sum of two global triangle envelopes; cancellations and simultaneity discarded. Pure common Gamma displacement still cancels exactly. No uniform locked state exists in these PdD records."
+    },
+    {
+      "unpumped": "PdD_random_x1_h0",
+      "pumped": "PdD_random_x1_h0.08",
+      "absolute_pumped_minus_unpumped_envelope_eV": 0.1262488903099701,
+      "equal_pole_linear_susceptibility_contrast_eV": 0.0,
+      "warning": "Sum of two global triangle envelopes; cancellations and simultaneity discarded. Pure common Gamma displacement still cancels exactly. No uniform locked state exists in these PdD records."
+    },
+    {
+      "unpumped": "PdD_thermal_x0.875_h0",
+      "pumped": "PdD_thermal_x0.875_h0.08",
+      "absolute_pumped_minus_unpumped_envelope_eV": 17.15058941205831,
+      "equal_pole_linear_susceptibility_contrast_eV": 0.0,
+      "warning": "Sum of two global triangle envelopes; cancellations and simultaneity discarded. Pure common Gamma displacement still cancels exactly. No uniform locked state exists in these PdD records."
+    }
+  ],
+  "imposed_PdD_snapshots": [
+    {
+      "amplitude_A": 0.0432,
+      "spectator_absolute_envelope_eV": 0.06392288860298159,
+      "meaning": "Imposed pointwise .541A-screened charge scenario, not a computed electronic response"
+    },
+    {
+      "amplitude_A": 0.0768,
+      "spectator_absolute_envelope_eV": 0.12299613313524685,
+      "meaning": "Imposed pointwise .541A-screened charge scenario, not a computed electronic response"
+    }
+  ],
+  "snapshot_interpretation": "The primary imposed electronic snapshot is now .0768A (rounded cold pumped PdD record maximum); .0432A is a budget-conditional linearity check. Neither is an RMS-to-maximum conversion or a bound on thermal/future states.",
+  "finite_shell_note": "The17^3-site envelope is a finite screened-shell sum; omitted far shells are negligible at .541A screening on these geometries, not a host-electronic error bound."
+}

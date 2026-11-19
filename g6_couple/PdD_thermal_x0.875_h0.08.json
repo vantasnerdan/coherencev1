@@ -1,0 +1,312 @@
+{
+  "summary": {
+    "label": "PdD_thermal_x0.875_h0.08",
+    "configuration": {
+      "material": "PdD",
+      "L": 32,
+      "seed": 13,
+      "temperature_K": 300.0,
+      "strain": 0.0,
+      "pump_ratio": 1.0,
+      "pump_polarization": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "loading_extrapolate": true,
+      "elastic_extrapolate": true,
+      "bias_law_input": "new_inputs/vacancy_bias_law.json",
+      "bias_geometry_policy": "frozen_reference_under_strain",
+      "dt": 0.15,
+      "steps": 4096,
+      "stride": 1,
+      "label": "PdD_thermal_x0.875_h0.08",
+      "x": 0.875,
+      "arrangement": "random",
+      "pump_h": 0.08
+    },
+    "sites": 32768,
+    "occupied": 28672,
+    "actual_loading": 0.875,
+    "elapsed_s": 165.1822124281898,
+    "state": "vacancy_driven_displacement",
+    "static_rms_A": 0.053624234886486655,
+    "driven_demodulated_rms_A": 0.00918721933312494,
+    "pump_frequency_rms_A": 0.003733679997797343,
+    "incident_E_squared_carrier_THz": 10.063741521544044,
+    "peak_fraction": 0.00029039891710674355,
+    "occupation_SHA256": "522d47e2a9a92d31c4dc1fb25248a4ffd79cee61198c068bf0b623980891afd2",
+    "material_status": "Adopted762 fixed-k3 local well and same-column J;864 directional scalar transfer; x1 quartic/T0 variance frozen, NOT mesh-converged; physical decay is a model input",
+    "loading_response": {
+      "composition_reference": {
+        "x": 0.875,
+        "a_angstrom": 4.061599657409625,
+        "status": "model_interpolated",
+        "measured_point": false,
+        "isotope": "D",
+        "phase": "beta",
+        "temperature_K": 77.0,
+        "source_uncertainty_angstrom": null,
+        "uncertainty_status": "not reported in accessible abstract; not zero",
+        "construction": "a(x)=4.084*exp(0.044*(x-1)); constant log-slope ansatz",
+        "source": "10.1103/PhysRevB.12.117, publisher abstract (article pp.117-118)",
+        "source_sha256": "6ff6e47b8b6bc1d73994f41c398d4dcb8343e420d22ed2c17b1e74963394be2f",
+        "calibration_facts_sha256": "027f5d80d8cc30026b23c0279f0d84f15ca14208edb82ad38109a228127456ee",
+        "source_gate": "primary abstract; campaign-authorized extrapolation; pointwise uncertainty unavailable"
+      },
+      "fields": {
+        "source_entry": "864",
+        "model_id": "baseline_two_descriptor",
+        "law_SHA256": "f11752b5513dcc0887755540c5b9bdb10163e6ac899e5c0bd3d25144ef08d23e",
+        "a_reference_A": 4.061599657409625,
+        "descriptor_counts": [
+          {
+            "n_vac_NN": 0,
+            "occupied_sites": 5810,
+            "values_eV_A2": {
+              "Jbar_shell_0.7071067812": 0.018290663976146385,
+              "Jbar_shell_1.0000000000": 0.11560116360552349,
+              "Jbar_shell_1.2247448714": -0.00614579903550572,
+              "Jbar_shell_1.4142135624": -0.004504816154256911,
+              "Jbar_shell_1.7320508076": -0.00903606625575121,
+              "Kii_dd": 0.6695271570037535
+            },
+            "extrapolated_observables": [],
+            "direction_policy": "Clean +100; vacancy-adjacent ray toward original vacant H5 (110 family). Isotropic/scalar application at other directions is an unmeasured model closure."
+          },
+          {
+            "n_vac_NN": 1,
+            "occupied_sites": 9857,
+            "values_eV_A2": {
+              "Jbar_shell_0.7071067812": 0.016208030195570128,
+              "Jbar_shell_1.0000000000": 0.10916522813736713,
+              "Jbar_shell_1.2247448714": -0.005822952829198302,
+              "Jbar_shell_1.4142135624": -0.005430548773913427,
+              "Jbar_shell_1.7320508076": -0.005853297915756277,
+              "Kii_dd": 0.5928291582337403
+            },
+            "extrapolated_observables": [],
+            "direction_policy": "Clean +100; vacancy-adjacent ray toward original vacant H5 (110 family). Isotropic/scalar application at other directions is an unmeasured model closure."
+          },
+          {
+            "n_vac_NN": 2,
+            "occupied_sites": 7855,
+            "values_eV_A2": {
+              "Jbar_shell_0.7071067812": 0.014125396414993868,
+              "Jbar_shell_1.0000000000": 0.1027292926692108,
+              "Jbar_shell_1.2247448714": -0.005500106622890885,
+              "Jbar_shell_1.4142135624": -0.006356281393569944,
+              "Jbar_shell_1.7320508076": -0.0026705295757613436,
+              "Kii_dd": 0.5161311594637269
+            },
+            "extrapolated_observables": [],
+            "direction_policy": "Clean +100; vacancy-adjacent ray toward original vacant H5 (110 family). Isotropic/scalar application at other directions is an unmeasured model closure."
+          },
+          {
+            "n_vac_NN": 3,
+            "occupied_sites": 3666,
+            "values_eV_A2": {
+              "Jbar_shell_0.7071067812": 0.012042762634417607,
+              "Jbar_shell_1.0000000000": 0.09629335720105445,
+              "Jbar_shell_1.2247448714": -0.005177260416583467,
+              "Jbar_shell_1.4142135624": -0.00728201401322646,
+              "Jbar_shell_1.7320508076": 0.0005122387642335887,
+              "Kii_dd": 0.4394331606937136
+            },
+            "extrapolated_observables": [
+              "Jbar_shell_0.7071067812",
+              "Jbar_shell_1.0000000000",
+              "Jbar_shell_1.2247448714",
+              "Jbar_shell_1.4142135624",
+              "Jbar_shell_1.7320508076",
+              "Kii_dd"
+            ],
+            "direction_policy": "Clean +100; vacancy-adjacent ray toward original vacant H5 (110 family). Isotropic/scalar application at other directions is an unmeasured model closure."
+          },
+          {
+            "n_vac_NN": 4,
+            "occupied_sites": 1155,
+            "values_eV_A2": {
+              "Jbar_shell_0.7071067812": 0.00996012885384135,
+              "Jbar_shell_1.0000000000": 0.0898574217328981,
+              "Jbar_shell_1.2247448714": -0.00485441421027605,
+              "Jbar_shell_1.4142135624": -0.008207746632882975,
+              "Jbar_shell_1.7320508076": 0.0036950071042285227,
+              "Kii_dd": 0.36273516192370026
+            },
+            "extrapolated_observables": [
+              "Jbar_shell_0.7071067812",
+              "Jbar_shell_1.0000000000",
+              "Jbar_shell_1.2247448714",
+              "Jbar_shell_1.4142135624",
+              "Jbar_shell_1.7320508076",
+              "Kii_dd"
+            ],
+            "direction_policy": "Clean +100; vacancy-adjacent ray toward original vacant H5 (110 family). Isotropic/scalar application at other directions is an unmeasured model closure."
+          },
+          {
+            "n_vac_NN": 5,
+            "occupied_sites": 275,
+            "values_eV_A2": {
+              "Jbar_shell_0.7071067812": 0.007877495073265092,
+              "Jbar_shell_1.0000000000": 0.08342148626474175,
+              "Jbar_shell_1.2247448714": -0.004531568003968632,
+              "Jbar_shell_1.4142135624": -0.009133479252539493,
+              "Jbar_shell_1.7320508076": 0.006877775444223457,
+              "Kii_dd": 0.28603716315368694
+            },
+            "extrapolated_observables": [
+              "Jbar_shell_0.7071067812",
+              "Jbar_shell_1.0000000000",
+              "Jbar_shell_1.2247448714",
+              "Jbar_shell_1.4142135624",
+              "Jbar_shell_1.7320508076",
+              "Kii_dd"
+            ],
+            "direction_policy": "Clean +100; vacancy-adjacent ray toward original vacant H5 (110 family). Isotropic/scalar application at other directions is an unmeasured model closure."
+          },
+          {
+            "n_vac_NN": 6,
+            "occupied_sites": 50,
+            "values_eV_A2": {
+              "Jbar_shell_0.7071067812": 0.005794861292688832,
+              "Jbar_shell_1.0000000000": 0.0769855507965854,
+              "Jbar_shell_1.2247448714": -0.004208721797661214,
+              "Jbar_shell_1.4142135624": -0.01005921187219601,
+              "Jbar_shell_1.7320508076": 0.010060543784218386,
+              "Kii_dd": 0.20933916438367356
+            },
+            "extrapolated_observables": [
+              "Jbar_shell_0.7071067812",
+              "Jbar_shell_1.0000000000",
+              "Jbar_shell_1.2247448714",
+              "Jbar_shell_1.4142135624",
+              "Jbar_shell_1.7320508076",
+              "Kii_dd"
+            ],
+            "direction_policy": "Clean +100; vacancy-adjacent ray toward original vacant H5 (110 family). Isotropic/scalar application at other directions is an unmeasured model closure."
+          },
+          {
+            "n_vac_NN": 7,
+            "occupied_sites": 4,
+            "values_eV_A2": {
+              "Jbar_shell_0.7071067812": 0.003712227512112573,
+              "Jbar_shell_1.0000000000": 0.07054961532842906,
+              "Jbar_shell_1.2247448714": -0.003885875591353797,
+              "Jbar_shell_1.4142135624": -0.010984944491852526,
+              "Jbar_shell_1.7320508076": 0.013243312124213324,
+              "Kii_dd": 0.1326411656136603
+            },
+            "extrapolated_observables": [
+              "Jbar_shell_0.7071067812",
+              "Jbar_shell_1.0000000000",
+              "Jbar_shell_1.2247448714",
+              "Jbar_shell_1.4142135624",
+              "Jbar_shell_1.7320508076",
+              "Kii_dd"
+            ],
+            "direction_policy": "Clean +100; vacancy-adjacent ray toward original vacant H5 (110 family). Isotropic/scalar application at other directions is an unmeasured model closure."
+          }
+        ],
+        "extrapolated_fraction_by_observable": {
+          "Jbar_shell_0.7071067812": 0.17961774553571427,
+          "Jbar_shell_1.0000000000": 0.17961774553571427,
+          "Jbar_shell_1.2247448714": 0.17961774553571427,
+          "Jbar_shell_1.4142135624": 0.17961774553571427,
+          "Jbar_shell_1.7320508076": 0.17961774553571427,
+          "Kii_dd": 0.17961774553571427
+        },
+        "fraction_Nvac_above4": 0.011474609375,
+        "direction_closure": "Dense100 is the fixed x1 anchor; loading clean100 and near110-family are measured under that policy. A scalar/isotropic transfer is a closure, not measured tensors.",
+        "uncertainty": "Equal-weight descriptive fit, not a statistical confidence interval. SCF/mesh/finite-cell/reference-spacing and descriptor errors remain. Configuration holdouts reuse the same x1 anchor.",
+        "bond_policy": "Per-existing folded-bond mean times reference multiplicity; physical-image sharing by shell_kernel; occupancy applied ONCE; reciprocal endpoint average",
+        "zero_point_policy": "Frozen x1 per-axis T0 Hartree only; thermal motion sampled, not added twice",
+        "absent_sites": "No degree of freedom; zero field storage here is not a measured zero bond/well"
+      },
+      "elastic": {
+        "kind": "no additional elastic contrast"
+      }
+    }
+  },
+  "statistics": {
+    "observation_samples": 2048,
+    "dt_ps": 0.002819511502272654,
+    "record_ps": 5.774359556654395,
+    "retained_velocity_vectors": 16384,
+    "sampled_joint_pairs": 2677,
+    "min_pair_A": 2.001774850881854,
+    "pair_min_quantiles_A": [
+      2.001774850881854,
+      2.1674489466965103,
+      2.2806068991033954,
+      2.4022725994536924,
+      2.5099820870438037,
+      2.5835019453126247,
+      2.652274272150442
+    ],
+    "maximum_observed_site_displacement_A": 0.7178239956820182,
+    "maximum_observed_pair_displacement_A": 1.057778070407126,
+    "omega_rad_ps": 63.232352863418654,
+    "gamma_per_s": 483554674984.4587,
+    "ratio4_omega_over_gamma": 130.76567373782692,
+    "q2_A2_blocks": [
+      0.049858929656844075,
+      0.05035309870394209,
+      0.05077046874853524,
+      0.05083284482901508,
+      0.05087030713442964,
+      0.05106610693819697,
+      0.051281835304999204,
+      0.05135542992124262
+    ],
+    "mean_v2_m2_s2_blocks": [
+      3510647.7977786334,
+      3562739.261331044,
+      3596628.2023301325,
+      3605718.027927497,
+      3605617.8513880605,
+      3628303.8078842964,
+      3645494.353766036,
+      3652530.1958657005
+    ],
+    "drag_eV_per_s_per_occupied_site_blocks": [
+      35427023343.521355,
+      35952694274.235954,
+      36294677968.70442,
+      36386406185.881355,
+      36385395273.70631,
+      36614326216.55702,
+      36787801285.92332,
+      36858802125.843475
+    ],
+    "classical_thermal_injection_eV_per_s_per_occupied_site": 37502566062.65257,
+    "net_drag_minus_thermal_eV_per_s_per_occupied_site_blocks": [
+      -2075542719.131218,
+      -1549871788.4166183,
+      -1207888093.9481506,
+      -1116159876.7712173,
+      -1117170788.9462662,
+      -888239846.0955505,
+      -714764776.7292557,
+      -643763936.8090973
+    ],
+    "explicit_pump_work_eV_per_s_per_occupied_site_blocks": [
+      462521900.5359693,
+      -392500137.4767175,
+      704645583.5995654,
+      -885265092.8407845,
+      1123408627.8187082,
+      -1276078075.0133092,
+      1490099292.5068316,
+      -1455912719.396299
+    ],
+    "velocity_estimator": "Central difference at every native dt; no change to force/noise. Harmonic v amplitude attenuation sinc(Omega dt); stochastic unresolved kinetic power is not a measured thermostat balance.",
+    "harmonic_velocity_squared_attenuation": 0.9894496979770545,
+    "zero_point_motion": "Quantum variance enters Hartree curvature only; classical trajectories are not nuclear quantum samples."
+  },
+  "parameters_file": "g3_lattice/rerun/part2/updated/parameters.json",
+  "parameters_SHA256": "12f1a0be03bd673ed9fc8f62be1d948c12fb01eea6b47f6971cf11e11e9e8ec9",
+  "arrays_file": "PdD_thermal_x0.875_h0.08.npz",
+  "arrays_SHA256": "f485f0fe3c73256823c8bb0876faef97d1c3d18359d9cb372d0290477fa3544a",
+  "engine_SHA256": "61c1733ee4eae2ec82e11c07dff844c818426334ddd37c516cfa1f8a840933b7"
+}
