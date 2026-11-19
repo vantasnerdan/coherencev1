@@ -1,0 +1,40 @@
+{
+  "DD": {
+    "coordinates": "x=2*ln(m)/ln(206.768262)-1; log10(rate/s^-1)=sum c_j T_j(x)",
+    "coefficients": [
+      -15.22584582640094,
+      35.33703150386934,
+      -10.577853541059168,
+      2.2577775425316537,
+      -0.3701505496271926,
+      0.04805728417772392
+    ],
+    "scale_domain": [
+      1,
+      206.768262
+    ],
+    "heldout_max_dex": 0.00603570765727568,
+    "heldout_rms_dex": 0.0038857630880044626,
+    "isotope": "DD",
+    "interpretation": "two-electron scaled-BO model only; never a muonic law"
+  },
+  "DT": {
+    "coordinates": "x=2*ln(m)/ln(206.768262)-1; log10(rate/s^-1)=sum c_j T_j(x)",
+    "coefficients": [
+      -15.981066185963392,
+      38.570879124470295,
+      -11.57947938538576,
+      2.4738224032687315,
+      -0.4049530904324532,
+      0.052745118172939844
+    ],
+    "scale_domain": [
+      1,
+      206.768262
+    ],
+    "heldout_max_dex": 0.006578575274126308,
+    "heldout_rms_dex": 0.0042316729521304,
+    "isotope": "DT",
+    "interpretation": "two-electron scaled-BO model only; never a muonic law"
+  }
+}

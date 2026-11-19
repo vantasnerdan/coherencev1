@@ -78,6 +78,14 @@ Status: the single-atom wells in `g2_input` and everything computed from them in
 |---|---|
 | `g4_beam/` | Forward model of low-energy D-D beam-fusion yields in Pd, PdD, Ti and TiD (Karahadian et al. 2026), near-surface deuterium transport with beam damage, measured screening potentials. Outside the lattice map; shares ratio 7 (screening length over lattice spacing) and the near-surface loading with it. |
 
+## Pass 6: resolving the lumped inputs of the beam and pair models
+
+Pass 6 replaces seven lumped inputs with resolved quantities: the fitted screening shift, the low-energy excess, random-medium stopping, unrelated sources for screening and drag, gapless stopping in insulators, the missing lattice-to-beam coupling, and the pair-at-rest rate law. Directories appear as the nodes deliver.
+
+| Directory | What it is |
+|---|---|
+| `g6_pairlaw/` | Fusion rate of a pair at rest from a normalized radial solution in a real potential, for D-D and D-T. A scaled D2 Born-Oppenheimer family, and a screened repulsion inside a harmonic well (screening length, well stiffness and well centre as separate levers). It reproduces the D2 molecule rate within a factor of 2 without fitting, and retires the earlier two-point interpolation. |
+
 ## Reproducibility
 
 NumPy and SciPy are enough for everything except `p1_pysr/` (PySR), `p1_sindy/` (PySINDy) and `p2_input/frozen_phonon.py` (GPAW). Those three were run on one machine only; all other outputs were reproduced on a second.
