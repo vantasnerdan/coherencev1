@@ -2,7 +2,11 @@
 
 ## Result to carry forward
 
-**The best-supported gain candidate in the low-energy stopping domain is Pd(D/T), `<110>`,13keV lab,2deg polar RMS incidence at300K: about1.3–1.4x the random energy return in this coarse model.** The default256-particle D-T result is **1.420±0.060** (one particle standard error), with absolute nuclear energy return **1.886e-6**. D-D gives **1.341±0.055**, return **3.661e-9**. These are conditional model results, **not a validated material optimum**: the independent angular-scale check fails, and the electron-density sensitivity is larger than the particle error. No sub-degree collimation benefit is established; among the requested divergences,2deg gives the largest refined mean by admitting more fuel encounters.
+**Use the DFT-width result for Pd(D/T) `<110>`, 13 keV lab, 2° polar RMS incidence at 300 K: 1.777±0.073× random energy return for D–T and 1.692±0.065× for D–D (one particle standard error).** These replace the hand-set density-width range as the nominal modeled gains at this point. The separate center-match sensitivity gives 1.904±0.073× and 1.807±0.067×, respectively. Neither is a validated material optimum. The rest of the matrix, including the incidence comparisons, retains its original electronic widths; no sub-degree collimation benefit was established there.
+
+### Original-width baseline
+
+At the same point the original-width baseline gave 1.420±0.060× (absolute nuclear energy return 1.886e-6) for D–T and 1.341±0.055× (3.661e-9) for D–D.
 
 At that D-T point the path-weighted fuel-site flux is1.198x random, total drag per path0.8625x random, and electronic drag0.9025x random. The1.420x yield is the actual joint integral, not a product of these means. Initial capture is91.4%; every captured sample eventually exits before the10eV terminal cutoff, with mean first-exit path181.5nm. **Initial capture is not the dominant restriction; channel survival/dechanneling and useful fuel overlap are.** The reported exit probability includes slowing-induced closure of the continuum allowed region, not only a thermal or fuel kick. It must not be read as a measured thermal dechanneling probability. The2keV best refined D-T point is1.411±0.083 at2deg, return5.110e-14 and mean first exit37.8nm; its gain is statistically tied with13keV, but its absolute return is much smaller.
 
@@ -31,9 +35,22 @@ Particle standard errors, not confidence bounds or model errors:
 
 ### Dominant uncertainty and stopping point
 
-Changing all superposed-atom electronic radial lengths to0.7x and1.5x, without changing the nuclear geometry or fitting a normalization, moves the13keV2deg D-T gain from **1.768±0.070 to1.322±0.058**. D-D moves from1.628±0.060 to1.188±0.043. This is a sensitivity range, not a justified physical enclosure. It identifies the bonded/local stopping density as the deciding missing input; another indiscriminate trajectory sweep would not settle it.
+The original hand-set width sensitivity multiplied both electronic radial lengths by 0.7 or 1.5. For 13 keV, 2° this gave D–T **1.768±0.070×** and **1.322±0.058×**, and D–D **1.628±0.060×** and **1.188±0.043×**, respectively. Keep these as historical sensitivity results, not a physical enclosure or the estimate to carry forward.
 
-For the **actual best-case D-T consumer**,512-particle continuations at paraxial exit thresholds0.1 and0.3rad give gains1.3177±0.0380 and1.3260±0.0405, respectively: an observed **0.63% change**, below their roughly3% particle resolution. First-exit means are182.4/183.6nm. This supports the hybrid for this yield consumer at the achieved precision, not a1% global error certificate or a validation of every high-energy row. The alternative ensembles also show why the256-particle default1.420 should be summarized as about1.3–1.4, not an exactly established optimum.
+The targeted rerun uses the relaxed PdD PBE valence-density fit (GPAW, grid spacing 0.16 Å): \(b_{\rm Pd}=0.28571\) Å, \(b_{\rm D}=0.26375\) Å, 2.5% relative RMS outside the Pd cylinders. The transport rerun uses the Pd scale 0.6349 and holds \(b_{\rm D}=a_0/2=0.2645885\) Å. This adjusts the width of the 300 K stopping profile; it does not import the GPAW density directly or recalibrate stopping.
+
+Fit and projection provenance: Fleet `g6_channel` entries `2433`, `2437`, and `2449`; the geometry for the static match is [`occupied-host/state.json`](../g6_collision/controls/h016/calculation/occupied-host/state.json) at `63df39cfc2d75a413cd5f79d5a23d07445d69d1b`.
+
+For the center-match sensitivity, use the producer's **static** `<110>` projection on the 4.1341416847 Å relaxed cubic cell, with Pd/D electron weights 10/1, no thermal convolution, and no amplitude rescaling. At the geometric open hole \((1/8,1/4)\) in transverse fractional coordinates, the fitted static model is about 8% above the DFT value 0.23274610 e/Å³. For each projected string with atom line density \(\lambda\) and electron weight \(q\), the periodic sum uses \(q\lambda\,rK_1(r/b)/(4\pi b^3)\) at transverse distance \(r\). Holding D at \(a_0/2\), solving on the narrower-Pd branch gives \(b_{\rm Pd}=0.27491058\) Å, scale 0.6109124. The geometric hole is inside the largest projected Pd PAW matching radius; this is a center sensitivity outside the fit mask, not another exterior fit. The trajectory transport still uses its original 4.084 Å cell and positional smearing.
+
+| Pd width case | D–T return / random | D–T absolute return | D–D return / random | D–D absolute return |
+|---|---:|---:|---:|---:|
+| Exterior DFT fit | 1.7767 ± 0.0728 | 2.3586e-6 | 1.6924 ± 0.0654 | 4.6077e-9 |
+| Static center match | 1.9035 ± 0.0727 | 2.5270e-6 | 1.8074 ± 0.0668 | 4.9208e-9 |
+
+Each run has 256 ions per isotope/orientation, a 192² grid and maximum step 0.025 nm. The two runs reproduce the same homogeneous references (D–T 1.3275e-6 and D–D 2.7226e-9); the tabulated ratio errors propagate the independent channel and random mean return errors, not model or between-case uncertainty. Nominal fitted D–T is at the upper end of the old 1.32–1.77× range; matching the static center raises the estimate a further 7%. Use the exterior-fit gain as nominal and the center-match as a sensitivity, not as a confidence interval. Neither fixes the separate angular-acceptance or stopping-law limitations.
+
+At the original widths, 512-particle continuations at paraxial exit thresholds 0.1 and 0.3 rad give D–T gains 1.3177±0.0380 and 1.3260±0.0405: an observed **0.63% change**, below their roughly 3% particle resolution. First-exit means are 182.4/183.6 nm. This supports the hybrid for the original-width yield consumer at the achieved precision, not a 1% global error certificate or validation of every high-energy row. It does not recheck the transition at the new widths.
 
 The independent angular-scale comparison is **unmet**: across the original36 zero-divergence D crystal/axis/energy points the resolved critical-angle/Lindhard-scale ratio is0.120–0.706, with0/36 within20%. At the refined Pd11013keV point the angles are5.096deg versus10.763deg; at2keV8.449deg versus27.440deg. The observed capture fractions are separate trajectory observables. This disagreement leaves the continuum acceptance/dechannel model quantitatively uncalibrated; it is not repaired by defining one angle to equal the other. The current evidence supports the named conditional lever and the required density/acceptance input, not promotion to a validated experimental gain.
 
@@ -97,11 +114,11 @@ python g6_channel/channel.py --stage references --nions 512
 python g6_channel/channel.py --stage production --nions 32 --grid 128 --step .05
 ```
 
-The source's `--material`, `--axis`, `--isotope`, `--energy` and `--divergence` selectors keep a selected aligned case **and its independently simulated matched random reference**. `--density-scale`, `--vibration-scale` and `--switch-angle` expose the stated coarse-model uncertainty rather than hide it in a fitted normalization. Energies passed to `--energy` are lab keV; `--switch-angle` is radians. The unselected default production invocation covers all288 requested rows.
+The source's `--material`, `--axis`, `--isotope`, `--energy` and `--divergence` selectors keep a selected aligned case **and its independently simulated matched random reference**. `--density-scale` multiplies both electronic widths; `--metal-density-scale` additionally multiplies only the host width. Neither changes the bulk stopping coefficient, conservative potential, or nuclear densities. `--vibration-scale` and `--switch-angle` expose separate model assumptions. Energies passed to `--energy` are lab keV; `--switch-angle` is radians. The unselected default production invocation covers all 288 rows.
 
 ## Curated delivery and regeneration
 
-The shareable set is exactly `channel.py`, `inputs.json`, `results.json`, `results.csv`, and this `README.md`. Intermediate per-stage files are not required for delivery. `results.json.raw_stages` preserves the selected runs with their full CLI settings and the common producing-source SHA256.
+The curated matrix set is `channel.py`, `inputs.json`, `results.json`, `results.csv`, and this `README.md`. `results.json.raw_stages` preserves the original matrix runs with their CLI settings and historical producing-source SHA-256. The two DFT-width follow-up stages are separate `density-dft-fit.{json,csv}` and `density-dft-center.{json,csv}` outputs with their updated producing-source SHA-256; each includes its matched random rows. They change the estimate to carry forward at the named point, not the existing 288-row matrix.
 
 The focused stages are reproduced by:
 
@@ -112,6 +129,8 @@ python g6_channel/channel.py --stage refine --material PdD --axis 110 --energy 1
 python g6_channel/channel.py --stage refine --material PdD --axis 110 --energy 13 --nions 256 --grid 192 --step .025 --density-scale 1.5 --output g6_channel/density-broad.json
 python g6_channel/channel.py --stage refine --material PdD --axis 110 --energy 13 --isotope T --divergence 2 --nions 512 --grid 192 --step .025 --switch-angle .1 --output g6_channel/best-exit-early.json
 python g6_channel/channel.py --stage refine --material PdD --axis 110 --energy 13 --isotope T --divergence 2 --nions 512 --grid 192 --step .025 --switch-angle .3 --output g6_channel/best-exit-late.json
+python g6_channel/channel.py --stage refine --material PdD --axis 110 --energy 13 --divergence 2 --nions 256 --grid 192 --step .025 --metal-density-scale .6349 --output g6_channel/density-dft-fit.json
+python g6_channel/channel.py --stage refine --material PdD --axis 110 --energy 13 --divergence 2 --nions 256 --grid 192 --step .025 --metal-density-scale .6109124 --output g6_channel/density-dft-center.json
 ```
 
 For the current table, key rows by `(material,isotope,axis,E_lab_keV,divergence_rms_deg)`, start from production, replace matching rows with `refined-2` then `refined-13`, and recompute each ratio and delta-method error against the matching random row. Alternative density/exit stages are sensitivities, not replacements. This is the complete aggregation rule saved in `results.json.assembly`; there is no fitted or hidden postprocessing. Scientific rows are deterministic for the saved settings/seeds; elapsed time and peak RSS are not byte-reproducible quantities.

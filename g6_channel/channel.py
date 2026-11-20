@@ -67,7 +67,7 @@ def geometry(mat, axis):
     return lengths, result
 
 
-def fields(mat, axis, mass, grid, density_scale=1., vibration_scale=1.):
+def fields(mat, axis, mass, grid, density_scale=1., vibration_scale=1., *, metal_density_scale=1.):
     lengths, rows = geometry(mat, axis)
     kx = 2*np.pi*np.fft.fftfreq(grid, d=lengths[0]/grid)
     ky = 2*np.pi*np.fft.fftfreq(grid, d=lengths[1]/grid)
@@ -79,7 +79,7 @@ def fields(mat, axis, mass, grid, density_scale=1., vibration_scale=1.):
     us = [mat['u']*vibration_scale, thermal_u(mass,fuel_phonon)*vibration_scale]
     X,Y = np.meshgrid(np.arange(grid)/grid*lengths[0],np.arange(grid)/grid*lengths[1],indexing='ij')
     for j, ((positions, linear), Z, u, b) in enumerate(zip(
-            rows, [mat['Z'],1], us, [mat['b']*density_scale,A0/2*density_scale])):
+            rows, [mat['Z'],1], us, [mat['b']*density_scale*metal_density_scale,A0/2*density_scale])):
         nk = np.zeros((grid,grid), complex)
         for r, line in zip(positions,linear):
             nk += line/(lengths[0]*lengths[1])*np.exp(-1j*(KX*r[0]+KY*r[1]))
@@ -181,7 +181,7 @@ def rotate(v, psi, phi):
 
 
 def run_batch(mat, axis, mass, scatter, nions, seed, grid=96, step=.025,
-              density_scale=1., vibration_scale=1., switch_angle=.20, only=None):
+              density_scale=1., vibration_scale=1., switch_angle=.20, only=None, *, metal_density_scale=1.):
     rng=np.random.default_rng(seed)
     cases=[(e,d) for e in ENERGIES for d in DIVERGENCES] if only is None else only
     labels=np.repeat(np.arange(len(cases)),nions); n=len(labels)
@@ -190,7 +190,8 @@ def run_batch(mat, axis, mass, scatter, nions, seed, grid=96, step=.025,
     v=np.zeros((n,3)); v[:,:2]=rng.normal(size=(n,2))*divergence[:,None]/np.sqrt(2)
     v[:,2]=1; v/=np.linalg.norm(v,axis=1)[:,None]
     random=axis=='random'
-    field=None if random else fields(mat,axis,mass,grid,density_scale,vibration_scale)
+    field=None if random else fields(mat,axis,mass,grid,density_scale,vibration_scale,
+                                     metal_density_scale=metal_density_scale)
     xy=rng.random((n,2))*(1 if random else field['lengths'][:2])
     z=np.zeros(n); path=np.zeros(n); y=np.zeros((n,2)); encounter=np.zeros(n)
     eloss=np.zeros(n); nloss=np.zeros((n,2)); back=np.zeros(n,bool)
@@ -345,6 +346,8 @@ def main():
     parser.add_argument('--energy',type=float,help='Selected lab keV')
     parser.add_argument('--divergence',type=float)
     parser.add_argument('--density-scale',type=float,default=1.)
+    parser.add_argument('--metal-density-scale',type=float,default=1.,
+                        help='Additional multiplier on the host electronic radial width only')
     parser.add_argument('--vibration-scale',type=float,default=1.)
     parser.add_argument('--switch-angle',type=float,default=.20)
     args=parser.parse_args(); start=time.monotonic()
@@ -368,7 +371,7 @@ def main():
                     rr,uu=run_batch(mat,axis,mass,scatter,args.nions,913+mi*1000+ai*100+(mass==MT)*17,
                                     grid=args.grid,step=args.step,only=cases,
                                     density_scale=args.density_scale,vibration_scale=args.vibration_scale,
-                                    switch_angle=args.switch_angle)
+                                    switch_angle=args.switch_angle,metal_density_scale=args.metal_density_scale)
                     rows+=rr; usage.append(dict(material=name,isotope='D' if mass==MD else 'T',axis=axis,**uu))
         refs={(r['material'],r['isotope'],r['E_lab_keV'],r['divergence_rms_deg']):r for r in rows if r['axis']=='random'}
         for r in rows:
@@ -377,6 +380,11 @@ def main():
                 r[quantity+'_relative_random']=r[quantity]/ref[quantity] if ref[quantity] else None
             # Independent ensembles; this is a delta-method standard error, not a bound.
             r['yield_ratio_se']=0. if r is ref else r['yield_total_relative_random']*np.hypot(r['yield_se']/r['yield_total'],ref['yield_se']/ref['yield_total'])
+            random_return=ref['energy_return']
+            r['energy_return_ratio_se']=(
+                None if not random_return else 0. if r is ref else
+                np.hypot(r['energy_return_se'],
+                         r['energy_return_relative_random']*ref['energy_return_se'])/random_return)
         payload=dict(rows=rows,usage=usage)
     payload.update(stage=args.stage,nions=args.nions,grid=args.grid,step_nm=args.step,
                    total_seconds=time.monotonic()-start,peak_rss_MiB=resource.getrusage(resource.RUSAGE_SELF).ru_maxrss/1024,
