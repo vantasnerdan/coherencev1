@@ -1,0 +1,10 @@
+DEFECT_RUN_START case=C stage=production
+DEFECT_SCF_START case=C state=occupied-host
+DEFECT_SCF_COMPLETE case=C state=occupied-host cpu_s=58.676275061
+DEFECT_SCF_START case=C state=occupied-probe-R0p100
+DEFECT_SCF_COMPLETE case=C state=occupied-probe-R0p100 cpu_s=65.482316696
+DEFECT_SCF_START case=C state=vacant-host
+DEFECT_SCF_COMPLETE case=C state=vacant-host cpu_s=67.79076632499999
+DEFECT_SCF_START case=C state=vacant-probe-R0p100
+DEFECT_SCF_COMPLETE case=C state=vacant-probe-R0p100 cpu_s=58.459184496999995
+DEFECT_RUN_COMPLETE case=C stage=production cpu_s=251.567552517

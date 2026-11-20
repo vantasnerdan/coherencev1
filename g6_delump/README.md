@@ -41,5 +41,5 @@ Dilution pays below 2.9 keV, where the screening gain beats the extra drag per T
 
 **Levers, with the number each must reach:**
 - Drag per fuel nucleus, the binding spec. It must fall under the ceiling: below 2.8 eV per 10^15 T/cm^2 at 1 keV. Insulating, fuel-dense hosts (LiT, solid T2) are already there and then need U_e of about 107-126 keV.
-- Screening, in a host under the ceiling. Measured D-D values in metals at low loading are 0.3-0.8 keV (`g4_beam/priordata/`), and the UC Davis fits give 0.25-2 keV, against the 107 keV target. `g7_defect/` computes whether defects or low loading supply it.
+- Screening, in a host under the ceiling. Measured D-D values in metals at low loading are 0.3-0.8 keV (`g4_beam/priordata/`), and the UC Davis fits give 0.25-2 keV, against the 107 keV target. `g7_defect/` finds that neither a vacancy nor low loading does: static screening stays at 37-41 eV in all four cells.
 - Fuel fraction. A metal host gains from dilution only below about 3 keV beam energy.

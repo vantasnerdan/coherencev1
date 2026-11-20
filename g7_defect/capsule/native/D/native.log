@@ -1,0 +1,54 @@
+DEFECT_RUN_START case=D stage=production
+DEFECT_RELAX_STEP case=D step=0 raw_fmax=0.1900879629471212
+DEFECT_RELAX_STEP case=D step=1 raw_fmax=0.15202567585926094
+DEFECT_RELAX_STEP case=D step=2 raw_fmax=0.15779981982576144
+DEFECT_RELAX_STEP case=D step=3 raw_fmax=0.16407862640640833
+DEFECT_RELAX_STEP case=D step=4 raw_fmax=0.19013171153602423
+DEFECT_RELAX_STEP case=D step=5 raw_fmax=0.21026784089390815
+DEFECT_RELAX_STEP case=D step=6 raw_fmax=0.19306921211796246
+DEFECT_RELAX_STEP case=D step=7 raw_fmax=0.17897370872110968
+DEFECT_RELAX_STEP case=D step=8 raw_fmax=0.17916991652312778
+DEFECT_RELAX_STEP case=D step=9 raw_fmax=0.17409233523410297
+DEFECT_RELAX_STEP case=D step=10 raw_fmax=0.16464303489269608
+DEFECT_RELAX_STEP case=D step=11 raw_fmax=0.1768391095969106
+DEFECT_RELAX_STEP case=D step=12 raw_fmax=0.27688557433752253
+DEFECT_RELAX_STEP case=D step=13 raw_fmax=0.25516577895147585
+DEFECT_RELAX_STEP case=D step=14 raw_fmax=0.1772211236821653
+DEFECT_RELAX_STEP case=D step=15 raw_fmax=0.1039566584415209
+DEFECT_RELAX_STEP case=D step=16 raw_fmax=0.11456708592673945
+DEFECT_RELAX_STEP case=D step=17 raw_fmax=0.11818564135404458
+DEFECT_RELAX_STEP case=D step=18 raw_fmax=0.12113279147606172
+DEFECT_RELAX_STEP case=D step=19 raw_fmax=0.12121094626023922
+DEFECT_RELAX_STEP case=D step=20 raw_fmax=0.12970887214546575
+DEFECT_RELAX_STEP case=D step=21 raw_fmax=0.10843141381346182
+DEFECT_RELAX_STEP case=D step=22 raw_fmax=0.10052773532600981
+DEFECT_RELAX_STEP case=D step=23 raw_fmax=0.06395311145951646
+DEFECT_SCF_START case=D state=occupied-host
+DEFECT_SCF_COMPLETE case=D state=occupied-host cpu_s=48.394867761
+DEFECT_SCF_START case=D state=occupied-probe-R1p600
+DEFECT_SCF_COMPLETE case=D state=occupied-probe-R1p600 cpu_s=50.73649288999991
+DEFECT_SCF_START case=D state=occupied-probe-R1p000
+DEFECT_SCF_COMPLETE case=D state=occupied-probe-R1p000 cpu_s=35.80437427800007
+DEFECT_SCF_START case=D state=occupied-probe-R0p500
+DEFECT_SCF_COMPLETE case=D state=occupied-probe-R0p500 cpu_s=37.874054118000004
+DEFECT_SCF_START case=D state=occupied-probe-R0p300
+DEFECT_SCF_COMPLETE case=D state=occupied-probe-R0p300 cpu_s=31.810126224999976
+DEFECT_SCF_START case=D state=occupied-probe-R0p200
+DEFECT_SCF_COMPLETE case=D state=occupied-probe-R0p200 cpu_s=30.260232467000037
+DEFECT_SCF_START case=D state=occupied-probe-R0p100
+DEFECT_SCF_COMPLETE case=D state=occupied-probe-R0p100 cpu_s=30.533138135999934
+DEFECT_SCF_START case=D state=vacant-host
+DEFECT_SCF_COMPLETE case=D state=vacant-host cpu_s=46.30002750699987
+DEFECT_SCF_START case=D state=vacant-probe-R1p600
+DEFECT_SCF_COMPLETE case=D state=vacant-probe-R1p600 cpu_s=46.04726645300002
+DEFECT_SCF_START case=D state=vacant-probe-R1p000
+DEFECT_SCF_COMPLETE case=D state=vacant-probe-R1p000 cpu_s=43.45258177400001
+DEFECT_SCF_START case=D state=vacant-probe-R0p500
+DEFECT_SCF_COMPLETE case=D state=vacant-probe-R0p500 cpu_s=33.75654018199998
+DEFECT_SCF_START case=D state=vacant-probe-R0p300
+DEFECT_SCF_COMPLETE case=D state=vacant-probe-R0p300 cpu_s=42.27040150800008
+DEFECT_SCF_START case=D state=vacant-probe-R0p200
+DEFECT_SCF_COMPLETE case=D state=vacant-probe-R0p200 cpu_s=29.44722356400007
+DEFECT_SCF_START case=D state=vacant-probe-R0p100
+DEFECT_SCF_COMPLETE case=D state=vacant-probe-R0p100 cpu_s=28.795092707000094
+DEFECT_RUN_COMPLETE case=D stage=production cpu_s=1302.52165339

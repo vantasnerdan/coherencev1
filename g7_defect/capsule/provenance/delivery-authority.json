@@ -1,0 +1,23 @@
+{
+  "schema": "pd-defect-delivery-authority-v1",
+  "force_gate": {
+    "entry": "entry_2518",
+    "fmax_eV_A": 0.1,
+    "NO_FIRE": true,
+    "original_failed_records_unchanged": true
+  },
+  "cell_scope": {
+    "entry": "entry_2535",
+    "source_packet": {
+      "path": "axiom-cell-scope-inbox-1157.json",
+      "bytes": 20011,
+      "sha256": "8bb101c2ceaf89807816bce2cdb6c58e1b151fece7168b35f718d298add3c0c5"
+    },
+    "converged_cell_qualification": "waived",
+    "optional": "27-site R0.1 unrelaxed embedded-local-geometry sensitivity before12:50; omit if incomplete",
+    "interpretation": "Scope direction is not an independently verified bound on cell-size error."
+  },
+  "whole_budget_core_min": 800,
+  "absolute_stop_utc": "2026-11-20T13:00:00Z",
+  "publication": "Draft capsule only; no direct main push"
+}

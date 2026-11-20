@@ -1,0 +1,281 @@
+{
+  "B_source": {
+    "bytes": 4117,
+    "path": "B-reused.json",
+    "sha256": "e9d99da16b79c67f9abfbab5a525e8b53cc99e03fdde79e57f2d31472ad183cb"
+  },
+  "C_controls": {
+    "cell": {
+      "R_A": 0.1,
+      "absolute_difference_eV": 0.10477382972567284,
+      "base_lowering_eV": 38.27610245165222,
+      "converged": false,
+      "original_tolerance_eV": 5.0,
+      "scope": "Unrelaxed far field and embedded 8-site local geometry; NOT a converged cell-size check.",
+      "sensitivity_lowering_eV": 38.380876281377894,
+      "source": {
+        "bytes": 5888,
+        "path": "cell-sensitivity.json",
+        "sha256": "80657d5b995d233303368a6fdf16533a5041baec999ec124985ced4c9cb95782"
+      },
+      "status": "unrelaxed_sensitivity",
+      "within_original_tolerance": true
+    },
+    "h": {
+      "R_A": 0.1,
+      "absolute_difference_eV": 0.42739230475248746,
+      "base": {
+        "bytes": 9910,
+        "path": "run-result.json",
+        "sha256": "f298776ff5adedc81e097454367c5ae00afcf1782c3574088b0407eb009665a9"
+      },
+      "base_lowering_eV": 38.27610245165222,
+      "control": {
+        "bytes": 8823,
+        "path": "run-result.json",
+        "sha256": "ccac343ab804b65fc553b472b508747ed0f9254b2039684da5d8fb1a7a2e904a"
+      },
+      "control_lowering_eV": 38.70349475640471,
+      "kind": "h",
+      "passed": true,
+      "tolerance_eV": 5.0
+    }
+  },
+  "E_required": false,
+  "cell_qualified": false,
+  "contrasts_R01": {
+    "defect_high": {
+      "delta_eV": -2.6750656033273685,
+      "denominator": "B",
+      "numerator": "D",
+      "positive_lowering_factor": 0.9340301153480045
+    },
+    "defect_low": {
+      "delta_eV": 1.0280045220654301,
+      "denominator": "A",
+      "numerator": "C",
+      "positive_lowering_factor": 1.0275988460943362
+    },
+    "loading_perfect": {
+      "delta_eV": 3.30170168638773,
+      "denominator": "A",
+      "numerator": "B",
+      "positive_lowering_factor": 1.0886408130860592
+    },
+    "loading_vacancy": {
+      "delta_eV": -0.40136843900506847,
+      "denominator": "C",
+      "numerator": "D",
+      "positive_lowering_factor": 0.9895138633952595
+    }
+  },
+  "point_qualified": true,
+  "qualification_scope": "Force-qualified actual A/C/D and representative C grid check; NO converged cell-size qualification, per Axiom revised scope.",
+  "rows": {
+    "A": [
+      {
+        "BO_quartet_soft_eV": 27.551297210852738,
+        "R_A": 0.1,
+        "V_pair_total_eV": 106.74835675709134,
+        "lowering_eV": 37.24809792958679,
+        "point_minus_gaussian_eV": 79.1970595462386
+      },
+      {
+        "BO_quartet_soft_eV": 20.90230006986198,
+        "R_A": 0.2,
+        "V_pair_total_eV": 37.58950804288279,
+        "lowering_eV": 34.408719300456276,
+        "point_minus_gaussian_eV": 16.68720797302081
+      },
+      {
+        "BO_quartet_soft_eV": 13.705727011063942,
+        "R_A": 0.3,
+        "V_pair_total_eV": 17.192319244111992,
+        "lowering_eV": 30.806498984780724,
+        "point_minus_gaussian_eV": 3.486592233048051
+      },
+      {
+        "BO_quartet_soft_eV": 4.772192198865405,
+        "R_A": 0.5,
+        "V_pair_total_eV": 4.835156039444704,
+        "lowering_eV": 23.964134897890926,
+        "point_minus_gaussian_eV": 0.06296384057929978
+      },
+      {
+        "BO_quartet_soft_eV": 0.5334282187559509,
+        "R_A": 1.0,
+        "V_pair_total_eV": 0.515499590214808,
+        "lowering_eV": 13.884145878453007,
+        "point_minus_gaussian_eV": -0.017928628541142935
+      },
+      {
+        "BO_quartet_soft_eV": 0.0008217518713067307,
+        "R_A": 1.6,
+        "V_pair_total_eV": -0.01710690963197726,
+        "lowering_eV": 9.01688532754936,
+        "point_minus_gaussian_eV": -0.01792866150328399
+      }
+    ],
+    "B": [
+      {
+        "R_A": 0.1,
+        "V_pair_total_eV": 103.44665507070361,
+        "lowering_eV": 40.54979961597452
+      },
+      {
+        "R_A": 0.2,
+        "V_pair_total_eV": 36.089410526086795,
+        "lowering_eV": 35.90881681725227
+      },
+      {
+        "R_A": 0.3,
+        "V_pair_total_eV": 15.58104333679571,
+        "lowering_eV": 32.41777489209701
+      },
+      {
+        "R_A": 0.5,
+        "V_pair_total_eV": 4.817774529690019,
+        "lowering_eV": 23.98151640764561
+      },
+      {
+        "R_A": 1.0,
+        "V_pair_total_eV": 0.6608556272195389,
+        "lowering_eV": 13.738789841448277
+      },
+      {
+        "R_A": 1.6,
+        "V_pair_total_eV": -0.18119548138581432,
+        "lowering_eV": 9.180973899303197
+      }
+    ],
+    "C": [
+      {
+        "BO_quartet_soft_eV": 26.52329268878731,
+        "R_A": 0.1,
+        "V_pair_total_eV": 105.72035223502591,
+        "lowering_eV": 38.27610245165222,
+        "point_minus_gaussian_eV": 79.1970595462386
+      },
+      {
+        "BO_quartet_soft_eV": 20.30700956337913,
+        "R_A": 0.2,
+        "V_pair_total_eV": 36.994217536399944,
+        "lowering_eV": 35.00400980693912,
+        "point_minus_gaussian_eV": 16.68720797302081
+      },
+      {
+        "BO_quartet_soft_eV": 13.80488767405716,
+        "R_A": 0.3,
+        "V_pair_total_eV": 17.291479907105206,
+        "lowering_eV": 30.70733832178751,
+        "point_minus_gaussian_eV": 3.486592233048048
+      },
+      {
+        "BO_quartet_soft_eV": 4.888598603587457,
+        "R_A": 0.5,
+        "V_pair_total_eV": 4.951562444166757,
+        "lowering_eV": 23.847728493168873,
+        "point_minus_gaussian_eV": 0.06296384057929959
+      },
+      {
+        "BO_quartet_soft_eV": 0.6738618637471383,
+        "R_A": 1.0,
+        "V_pair_total_eV": 0.6559332352059953,
+        "lowering_eV": 13.74371223346182,
+        "point_minus_gaussian_eV": -0.017928628541142935
+      },
+      {
+        "BO_quartet_soft_eV": 0.08645003670511286,
+        "R_A": 1.6,
+        "V_pair_total_eV": 0.06852137520182888,
+        "lowering_eV": 8.931257042715554,
+        "point_minus_gaussian_eV": -0.01792866150328399
+      }
+    ],
+    "D": [
+      {
+        "BO_quartet_soft_eV": 26.924661127792376,
+        "R_A": 0.1,
+        "V_pair_total_eV": 106.12172067403098,
+        "lowering_eV": 37.87473401264715,
+        "point_minus_gaussian_eV": 79.1970595462386
+      },
+      {
+        "BO_quartet_soft_eV": 19.368322058031794,
+        "R_A": 0.2,
+        "V_pair_total_eV": 36.055530031052605,
+        "lowering_eV": 35.94269731228646,
+        "point_minus_gaussian_eV": 16.68720797302081
+      },
+      {
+        "BO_quartet_soft_eV": 13.68077389393028,
+        "R_A": 0.3,
+        "V_pair_total_eV": 17.167366126978326,
+        "lowering_eV": 30.83145210191439,
+        "point_minus_gaussian_eV": 3.486592233048045
+      },
+      {
+        "BO_quartet_soft_eV": 4.824203996112942,
+        "R_A": 0.5,
+        "V_pair_total_eV": 4.8871678366922415,
+        "lowering_eV": 23.912123100643388,
+        "point_minus_gaussian_eV": 0.06296384057929959
+      },
+      {
+        "BO_quartet_soft_eV": 0.7502919527912297,
+        "R_A": 1.0,
+        "V_pair_total_eV": 0.7323633242500868,
+        "lowering_eV": 13.667282144417728,
+        "point_minus_gaussian_eV": -0.017928628541142935
+      },
+      {
+        "BO_quartet_soft_eV": 0.19518646150302743,
+        "R_A": 1.6,
+        "V_pair_total_eV": 0.17725779999974345,
+        "lowering_eV": 8.82252061791764,
+        "point_minus_gaussian_eV": -0.01792866150328399
+      }
+    ]
+  },
+  "sample_three_times_conditions": [],
+  "schema": "pd-defect-screening-readout-v2",
+  "scope": "Static BO point estimates at the common inherited volume; no U0, rate, thermal ensemble, capacity or infinite-cell conclusion.",
+  "sources": {
+    "A": {
+      "quartet": {
+        "bytes": 48260,
+        "path": "quartet.json",
+        "sha256": "5c115e5cd700c6615836073b4f4a4e05dcf01d8d18f6d192abb004b940e56d46"
+      },
+      "run": {
+        "bytes": 37004,
+        "path": "run-result.json",
+        "sha256": "a9e629fda11fc865f8ac441ddee84566811f193062771782aa8975b217588d04"
+      }
+    },
+    "C": {
+      "quartet": {
+        "bytes": 48744,
+        "path": "quartet.json",
+        "sha256": "e3facf91fe8d6128522b19f28b7e140a7ed3e61a7a5a50f3621c64ed6644408f"
+      },
+      "run": {
+        "bytes": 9910,
+        "path": "run-result.json",
+        "sha256": "f298776ff5adedc81e097454367c5ae00afcf1782c3574088b0407eb009665a9"
+      }
+    },
+    "D": {
+      "quartet": {
+        "bytes": 99406,
+        "path": "quartet.json",
+        "sha256": "10d135a8f121bdee0efca8a8fb3ea21a849ac180eb10d35ffce4857ef4b7f860"
+      },
+      "run": {
+        "bytes": 22646,
+        "path": "run-result.json",
+        "sha256": "acf2ed267f38506b39311a2bda7a83d5a1c650d00048dcfcf6f8adb2b54fd62d"
+      }
+    }
+  }
+}

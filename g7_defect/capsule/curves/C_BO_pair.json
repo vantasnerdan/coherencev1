@@ -1,0 +1,638 @@
+{
+  "R_A": [
+    0.1,
+    0.2,
+    0.3,
+    0.5,
+    1.0,
+    1.6
+  ],
+  "V_pair_total_eV": [
+    105.72035223502591,
+    36.994217536399944,
+    17.291479907105206,
+    4.951562444166757,
+    0.6559332352059953,
+    0.06852137520182888
+  ],
+  "configuration": {
+    "BO_setups": {
+      "H": "ae",
+      "Pd": "10"
+    },
+    "actual_kpoints": 1,
+    "case": "C",
+    "geometry_H_setup": "standard_PAW",
+    "nbands": 52,
+    "path": {
+      "candidate_directions": 76,
+      "direction": [
+        -0.4319765215724017,
+        0.6576289794815603,
+        -0.6171875
+      ],
+      "matched_control_direction": false,
+      "minimum_background_clearance_A": 1.7238091429664861,
+      "sampled_radii_A": [
+        0.1,
+        0.125,
+        0.15000000000000002,
+        0.17500000000000002,
+        0.2,
+        0.225,
+        0.25,
+        0.275,
+        0.30000000000000004,
+        0.325,
+        0.35,
+        0.375,
+        0.4,
+        0.42500000000000004,
+        0.45000000000000007,
+        0.475,
+        0.5,
+        0.525,
+        0.55,
+        0.5750000000000001,
+        0.6,
+        0.625,
+        0.65,
+        0.675,
+        0.7000000000000001,
+        0.725,
+        0.75,
+        0.775,
+        0.8,
+        0.8250000000000001,
+        0.85,
+        0.875,
+        0.9,
+        0.925,
+        0.9500000000000001,
+        0.975,
+        1.0,
+        1.0250000000000001,
+        1.05,
+        1.0750000000000002,
+        1.1,
+        1.1250000000000002,
+        1.1500000000000001,
+        1.175,
+        1.2000000000000002,
+        1.225,
+        1.2500000000000002,
+        1.2750000000000001,
+        1.3000000000000003,
+        1.3250000000000002,
+        1.35,
+        1.3750000000000002,
+        1.4000000000000001,
+        1.4250000000000003,
+        1.4500000000000002,
+        1.475,
+        1.5000000000000002,
+        1.5250000000000001,
+        1.5500000000000003,
+        1.5750000000000002,
+        1.6
+      ],
+      "scope": "Best sampled head-on ray by background-nucleus clearance; vacancy-side hemisphere when target is displaced, all directions at the vacancy centre. Not a global angular optimum.",
+      "target_A": [
+        3.9659800276041977,
+        4.226328062539835,
+        3.9071389393555305
+      ],
+      "vacancy": {
+        "hydrogen_distances_A": [
+          0.3493311866802953
+        ],
+        "hydrogen_indices": [
+          7
+        ],
+        "mean_Pd_translation_A": [
+          0.03174357830935889,
+          -0.01472993598105938,
+          0.03877738315759057
+        ],
+        "occupancy_radius_A": 1.5,
+        "occupancy_sensitivity": {
+          "1.3": 1,
+          "1.5": 1,
+          "1.7": 1
+        },
+        "registered_centre_A": [
+          4.165885262977933,
+          4.119411748687514,
+          4.1729190678261645
+        ],
+        "scope": "Geometric occupancy of this relaxed fixed-inventory local basin, not a saturation capacity.",
+        "target_distance_A": 0.3493311866802953,
+        "target_offset_A": [
+          -0.1999052353737354,
+          0.10691631385232103,
+          -0.26578012847063404
+        ],
+        "trapped_n": 1
+      },
+      "vacancy_side_projection_A": 0.32070180762996
+    },
+    "realspace_shape": [
+      24,
+      24,
+      24
+    ],
+    "specification": {
+      "absolute_stop_utc": "2026-11-20T13:00:00Z",
+      "authority": "Axiom2403/2484/2491/2508; issue247; approved PAW geometry / all-electron BO production",
+      "case": "C",
+      "geometry_H_setup": "standard_PAW",
+      "h_A": 0.2,
+      "kmesh": [
+        1,
+        1,
+        1
+      ],
+      "lattice_A": 4.134141684668574,
+      "max_ionic_steps": 80,
+      "original_Pd_sites": 8,
+      "repeat_primitive": 2,
+      "requested_radii_A": [
+        0.1,
+        0.2,
+        0.3,
+        0.5,
+        1,
+        1.6
+      ]
+    },
+    "volume_A3": 141.3142850144455
+  },
+  "geometry_provenance": {
+    "authority": "Axiom2518; original0.05 optimizer outcome is unchanged",
+    "cell_A": [
+      [
+        0.0,
+        4.134141684668574,
+        4.134141684668574
+      ],
+      [
+        4.134141684668574,
+        0.0,
+        4.134141684668574
+      ],
+      [
+        4.134141684668574,
+        4.134141684668574,
+        0.0
+      ]
+    ],
+    "force_threshold_eV_A": 0.1,
+    "frames": [
+      {
+        "energy": {
+          "free_energy_eV": -28.9091329088071,
+          "internal_energy_eV": -28.624860068545676,
+          "minus_TS_eV": -0.2842728402614228
+        },
+        "gpw": {
+          "bytes": 6050228,
+          "path": "step-036.gpw",
+          "sha256": "ce32e3a6aad4fa9281ccc67363cc94274a37c480f35913a699ebce61cc585588"
+        },
+        "raw_fmax_eV_A": 0.07855681530561519,
+        "step": 36
+      }
+    ],
+    "free_energy_drift_after_selected_eV": -0.20539878223448582,
+    "initial": {
+      "case": "C",
+      "cell_A": [
+        [
+          0.0,
+          4.134141684668574,
+          4.134141684668574
+        ],
+        [
+          4.134141684668574,
+          0.0,
+          4.134141684668574
+        ],
+        [
+          4.134141684668574,
+          4.134141684668574,
+          0.0
+        ]
+      ],
+      "constraint": "No fixed ions; raw all-ion forces. Fixed lattice only.",
+      "initial_positions_A": [
+        [
+          2.084320404436931,
+          2.071976483921933,
+          4.118726305009205
+        ],
+        [
+          2.070726520364336,
+          4.121162367548891,
+          2.0856343295815787
+        ],
+        [
+          8.247943967430357,
+          6.216101955560329,
+          6.206847785334415
+        ],
+        [
+          4.119912403991296,
+          6.180960320138942,
+          6.184573150652752
+        ],
+        [
+          2.078742311353837,
+          0.01874395986282867,
+          2.0835254499109372
+        ],
+        [
+          2.0807103073341593,
+          6.180899091962926,
+          4.142910158467906
+        ],
+        [
+          4.122494193100527,
+          0.015005929015595743,
+          4.116774613723223
+        ],
+        [
+          4.134141684668573,
+          4.134141684668573,
+          4.134141684668573
+        ]
+      ],
+      "original_Pd_sites": 8,
+      "seed": "Deterministic zero-mean Pd displacement0.02A; D inventory fixed, D target initially at vacancy for C/D.",
+      "seeded_neighbour_D": [],
+      "symbols": [
+        "Pd",
+        "Pd",
+        "Pd",
+        "Pd",
+        "Pd",
+        "Pd",
+        "Pd",
+        "H"
+      ],
+      "target_index": 7,
+      "vacancy_initial_A": [
+        4.134141684668574,
+        4.134141684668574,
+        4.134141684668574
+      ]
+    },
+    "positions_A": [
+      [
+        2.6938627396849633,
+        3.0048575339280816,
+        4.3897131432343235
+      ],
+      [
+        2.7668403141319766,
+        3.9559065184249196,
+        1.8192311403405728
+      ],
+      [
+        8.187960834370292,
+        6.448799782312324,
+        6.805607663404159
+      ],
+      [
+        4.549861275954338,
+        5.430460552452318,
+        5.247676500308016
+      ],
+      [
+        1.2115532709295067,
+        -0.3453594105273568,
+        2.929825200458091
+      ],
+      [
+        1.9211138726846806,
+        5.56826289431214,
+        4.472677553841887
+      ],
+      [
+        3.695862848421198,
+        0.6388126852416032,
+        3.545702273196101
+      ],
+      [
+        3.9659800276041977,
+        4.226328062539835,
+        3.9071389393555305
+      ]
+    ],
+    "raw_fmax_eV_A": 0.07855681530561519,
+    "scope": "Selected actual PAW force boundary admitted at0.1eV/A, not a claim the original0.05 optimization passed.",
+    "source_frame": {
+      "bytes": 3091,
+      "path": "step-036.json",
+      "sha256": "5229455c7b885856fb6a798f325a6de578bf0ebb307393d702662020d10bc916"
+    },
+    "source_last_completed_fmax_eV_A": 0.5904798684855879,
+    "source_last_completed_frame": {
+      "bytes": 3077,
+      "path": "step-080.json",
+      "sha256": "93c70d8d42148df0094798282d02cb241f3ef20694487945fb20191d85fcb526"
+    },
+    "symbols": [
+      "Pd",
+      "Pd",
+      "Pd",
+      "Pd",
+      "Pd",
+      "Pd",
+      "Pd",
+      "H"
+    ],
+    "target_index": 7,
+    "vacancy": {
+      "hydrogen_distances_A": [
+        0.3493311866802953
+      ],
+      "hydrogen_indices": [
+        7
+      ],
+      "mean_Pd_translation_A": [
+        0.03174357830935889,
+        -0.01472993598105938,
+        0.03877738315759057
+      ],
+      "occupancy_radius_A": 1.5,
+      "occupancy_sensitivity": {
+        "1.3": 1,
+        "1.5": 1,
+        "1.7": 1
+      },
+      "registered_centre_A": [
+        4.165885262977933,
+        4.119411748687514,
+        4.1729190678261645
+      ],
+      "scope": "Geometric occupancy of this relaxed fixed-inventory local basin, not a saturation capacity.",
+      "target_distance_A": 0.3493311866802953,
+      "target_offset_A": [
+        -0.1999052353737354,
+        0.10691631385232103,
+        -0.26578012847063404
+      ],
+      "trapped_n": 1
+    }
+  },
+  "mapping_provenance": {
+    "Hae_alpha1_Bohr_minus2": 10,
+    "energy_combination": "Eprobe,o-Eprobe,v-Ehost,o+Ehost,v, frozen relaxed background; target-only neutral removal.",
+    "gaussian_width_inverse_A": 4.225556076228694,
+    "rows": [
+      {
+        "BO_quartet_soft_eV": 26.52329268878731,
+        "R_A": 0.1,
+        "V_pair_total_eV": 105.72035223502591,
+        "lowering_eV": 38.27610245165222,
+        "point_minus_gaussian_eV": 79.1970595462386
+      },
+      {
+        "BO_quartet_soft_eV": 20.30700956337913,
+        "R_A": 0.2,
+        "V_pair_total_eV": 36.994217536399944,
+        "lowering_eV": 35.00400980693912,
+        "point_minus_gaussian_eV": 16.68720797302081
+      },
+      {
+        "BO_quartet_soft_eV": 13.80488767405716,
+        "R_A": 0.3,
+        "V_pair_total_eV": 17.291479907105206,
+        "lowering_eV": 30.70733832178751,
+        "point_minus_gaussian_eV": 3.486592233048048
+      },
+      {
+        "BO_quartet_soft_eV": 4.888598603587457,
+        "R_A": 0.5,
+        "V_pair_total_eV": 4.951562444166757,
+        "lowering_eV": 23.847728493168873,
+        "point_minus_gaussian_eV": 0.06296384057929959
+      },
+      {
+        "BO_quartet_soft_eV": 0.6738618637471383,
+        "R_A": 1.0,
+        "V_pair_total_eV": 0.6559332352059953,
+        "lowering_eV": 13.74371223346182,
+        "point_minus_gaussian_eV": -0.017928628541142935
+      },
+      {
+        "BO_quartet_soft_eV": 0.08645003670511286,
+        "R_A": 1.6,
+        "V_pair_total_eV": 0.06852137520182888,
+        "lowering_eV": 8.931257042715554,
+        "point_minus_gaussian_eV": -0.01792866150328399
+      }
+    ],
+    "zero_G": "same zero-G periodic convention for point and Gaussian"
+  },
+  "observable": "target_conditioned_BO_total_interaction",
+  "qualification": {
+    "C_controls": {
+      "cell": {
+        "R_A": 0.1,
+        "absolute_difference_eV": 0.10477382972567284,
+        "base_lowering_eV": 38.27610245165222,
+        "converged": false,
+        "original_tolerance_eV": 5.0,
+        "scope": "Unrelaxed far field and embedded 8-site local geometry; NOT a converged cell-size check.",
+        "sensitivity_lowering_eV": 38.380876281377894,
+        "source": {
+          "bytes": 5888,
+          "path": "cell-sensitivity.json",
+          "sha256": "80657d5b995d233303368a6fdf16533a5041baec999ec124985ced4c9cb95782"
+        },
+        "status": "unrelaxed_sensitivity",
+        "within_original_tolerance": true
+      },
+      "h": {
+        "R_A": 0.1,
+        "absolute_difference_eV": 0.42739230475248746,
+        "base": {
+          "bytes": 9910,
+          "path": "run-result.json",
+          "sha256": "f298776ff5adedc81e097454367c5ae00afcf1782c3574088b0407eb009665a9"
+        },
+        "base_lowering_eV": 38.27610245165222,
+        "control": {
+          "bytes": 8823,
+          "path": "run-result.json",
+          "sha256": "ccac343ab804b65fc553b472b508747ed0f9254b2039684da5d8fb1a7a2e904a"
+        },
+        "control_lowering_eV": 38.70349475640471,
+        "kind": "h",
+        "passed": true,
+        "tolerance_eV": 5.0
+      }
+    },
+    "E_required": false,
+    "cell_qualified": false,
+    "point_qualified": true,
+    "sample_three_times_conditions": [],
+    "scope": "Force-qualified actual A/C/D and representative C grid check; NO converged cell-size qualification, per Axiom revised scope.",
+    "sources": {
+      "A": {
+        "quartet": {
+          "bytes": 48260,
+          "path": "quartet.json",
+          "sha256": "5c115e5cd700c6615836073b4f4a4e05dcf01d8d18f6d192abb004b940e56d46"
+        },
+        "run": {
+          "bytes": 37004,
+          "path": "run-result.json",
+          "sha256": "a9e629fda11fc865f8ac441ddee84566811f193062771782aa8975b217588d04"
+        }
+      },
+      "C": {
+        "quartet": {
+          "bytes": 48744,
+          "path": "quartet.json",
+          "sha256": "e3facf91fe8d6128522b19f28b7e140a7ed3e61a7a5a50f3621c64ed6644408f"
+        },
+        "run": {
+          "bytes": 9910,
+          "path": "run-result.json",
+          "sha256": "f298776ff5adedc81e097454367c5ae00afcf1782c3574088b0407eb009665a9"
+        }
+      },
+      "D": {
+        "quartet": {
+          "bytes": 99406,
+          "path": "quartet.json",
+          "sha256": "10d135a8f121bdee0efca8a8fb3ea21a849ac180eb10d35ffce4857ef4b7f860"
+        },
+        "run": {
+          "bytes": 22646,
+          "path": "run-result.json",
+          "sha256": "acf2ed267f38506b39311a2bda7a83d5a1c650d00048dcfcf6f8adb2b54fd62d"
+        }
+      }
+    }
+  },
+  "reference": {
+    "bare": "isolated_unit_charge_coulomb",
+    "configuration": "Actual frozen standard-H PAW geometry followed by all four PBE/Pd10/Hae BO references; actual cell, volume, target ray, grid, k sampling and force provenance below. Neutral occupied/vacant hosts, target-only neutral removal, charge+1 probes with no added electron.",
+    "energy_zero": "E_probe,occupied - E_probe,vacant - E_host,occupied + E_host,vacant on the same frozen background, using E_internal = E_free - minus_TS at Fermi-Dirac width 0.1 eV. No fitted offset or far-point subtraction; no standard-H PAW energy enters the Hae quartet.",
+    "periodic_to_isolated": "Native Hae alpha1=10 Bohr^-2 nuclear compensation replaced by the same-zero-G periodic point-minus-Gaussian Green block, width sqrt(5)/Bohr, independently replayed from the actual cell/ray. Representative C h0.20->0.16 comparison passes at R0.1 under max(5 eV,10% of control lowering). Converged cell-size qualification is explicitly missing and waived. Any optional 27-site unrelaxed sensitivity is metadata only, never a passed convergence check or an exact isolated limit. No bare-only image subtraction.",
+    "source": "P255/issue247 actual completed Native C neutral-host quartet; SHA256 e3facf91fe8d6128522b19f28b7e140a7ed3e61a7a5a50f3621c64ed6644408f"
+  },
+  "schema": "coherencev1-target-conditioned-pair-v1",
+  "source_bindings": {
+    "cell_sensitivity": {
+      "bytes": 5888,
+      "path": "cell-sensitivity.json",
+      "sha256": "80657d5b995d233303368a6fdf16533a5041baec999ec124985ced4c9cb95782"
+    },
+    "frozen_executable_source": {
+      "bytes": 2010,
+      "path": "source-manifest.json",
+      "sha256": "e43e99273a83334da4dd39d8361b97d1857a2a1354f1ccc3a8fe6eab905853d1"
+    },
+    "geometry": {
+      "bytes": 7164,
+      "path": "geometry-selection.json",
+      "sha256": "cc735ecbf8be36113463ceb159a9b3c674c8e110a59759699e5b54e16c92430a"
+    },
+    "native_input": {
+      "bytes": 451,
+      "path": "input.json",
+      "sha256": "4f239604b4cc170872f0bae27ec44df8eb0ceb610504da16f97b029fff3e3d49"
+    },
+    "point_qualified_readout": {
+      "bytes": 8607,
+      "sha256": "edf16977feaa6a96b42610b5a6427bddb5c8a28c623762ecde5a05e32bad282f"
+    },
+    "quartet": {
+      "bytes": 48744,
+      "path": "quartet.json",
+      "sha256": "e3facf91fe8d6128522b19f28b7e140a7ed3e61a7a5a50f3621c64ed6644408f"
+    },
+    "run": {
+      "bytes": 9910,
+      "path": "run-result.json",
+      "sha256": "f298776ff5adedc81e097454367c5ae00afcf1782c3574088b0407eb009665a9"
+    },
+    "states": {
+      "occupied-host": {
+        "bytes": 2242,
+        "path": "occupied-host.json",
+        "sha256": "bcf45ef67fb8676ed21ec44401c10b6bf52db5cb5fe51f9a6747a8a21267d08a"
+      },
+      "occupied-probe-R0p100": {
+        "bytes": 2352,
+        "path": "occupied-probe-R0p100.json",
+        "sha256": "d5b7b2135283d92cc538abc7a788a7d382903042f821305e1fa3e8dc37da5789"
+      },
+      "occupied-probe-R0p200": {
+        "bytes": 2351,
+        "path": "occupied-probe-R0p200.json",
+        "sha256": "fae09ccdec625e86bf651c327aa2afbc6ad8bbe0322b4843941dd263589a559f"
+      },
+      "occupied-probe-R0p300": {
+        "bytes": 2353,
+        "path": "occupied-probe-R0p300.json",
+        "sha256": "a9211582fc2a4e703c2896b29a23294697ebbbfa4fb3ec55a665b4910ab8aaa3"
+      },
+      "occupied-probe-R0p500": {
+        "bytes": 2352,
+        "path": "occupied-probe-R0p500.json",
+        "sha256": "c60b1a884f0b9d914f390d4629546d6ba58d27c8c990b2337c9c74164ef39def"
+      },
+      "occupied-probe-R1p000": {
+        "bytes": 2345,
+        "path": "occupied-probe-R1p000.json",
+        "sha256": "6a492d2061e8b0db599c532bf6d749dfb978adc5c5ce52d9d63ddbdced8be414"
+      },
+      "occupied-probe-R1p600": {
+        "bytes": 2345,
+        "path": "occupied-probe-R1p600.json",
+        "sha256": "8ea0470e56052c71ed2d789e05b17b4380cd32bd9897f52ae4e937845ba5b264"
+      },
+      "vacant-host": {
+        "bytes": 2142,
+        "path": "vacant-host.json",
+        "sha256": "1f171604fc3ba9f916cc0d8f6c2a8ac99511cd9f4249a81c10fc7a5eb8943559"
+      },
+      "vacant-probe-R0p100": {
+        "bytes": 2251,
+        "path": "vacant-probe-R0p100.json",
+        "sha256": "27192b54dc945e555cb9934872f1971ac6b77003aa5d2f5ebb03503a48edb8ec"
+      },
+      "vacant-probe-R0p200": {
+        "bytes": 2252,
+        "path": "vacant-probe-R0p200.json",
+        "sha256": "6a53fb256d252d23df7b2f739b1d636e85bdc3fcc442e559e9858924e27d7cce"
+      },
+      "vacant-probe-R0p300": {
+        "bytes": 2250,
+        "path": "vacant-probe-R0p300.json",
+        "sha256": "0b1b44cedc166c840de8c8a120242bb402fbb42e3d8e3653188ff4aa48c125b4"
+      },
+      "vacant-probe-R0p500": {
+        "bytes": 2250,
+        "path": "vacant-probe-R0p500.json",
+        "sha256": "ba1a89f73e1b979cc92d4b0a54a71e24c72633849ba540f0e5b650a896c99bcd"
+      },
+      "vacant-probe-R1p000": {
+        "bytes": 2252,
+        "path": "vacant-probe-R1p000.json",
+        "sha256": "029f0e130ac222dd8ba6e1349e73f73581dc5a11ce2a232bcbc1c0469c5a522a"
+      },
+      "vacant-probe-R1p600": {
+        "bytes": 2251,
+        "path": "vacant-probe-R1p600.json",
+        "sha256": "b0600ee6b6a7d26b07746eb06fcba18f43046c61309d505e23a9e4059c0bc22b"
+      }
+    }
+  },
+  "support": "Only the six supplied 0.1-1.6 A samples. Static BO on the common inherited expanded lattice; no U(0), prepared state, rate, thermal/ZPE/dynamics, saturation, global-ground-state or infinite-cell conclusion. Missing converged cell-size qualification remains an omission. Actual vacancy counts and target displacements are geometry descriptors, not stable VH_n assignments. Force thresholds and energy drift are provenance, not a certified force-to-screening error bound."
+}

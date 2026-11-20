@@ -1,0 +1,240 @@
+{
+  "R_A": 0.1,
+  "base_force_frame": {
+    "bytes": 3091,
+    "path": "step-036.json",
+    "sha256": "5229455c7b885856fb6a798f325a6de578bf0ebb307393d702662020d10bc916"
+  },
+  "cell_A": [
+    [
+      0.0,
+      6.201212527002861,
+      6.201212527002861
+    ],
+    [
+      6.201212527002861,
+      0.0,
+      6.201212527002861
+    ],
+    [
+      6.201212527002861,
+      6.201212527002861,
+      0.0
+    ]
+  ],
+  "cell_converged": false,
+  "direction": [
+    -0.4319765215724017,
+    0.6576289794815603,
+    -0.6171875
+  ],
+  "electronic_states_converged": true,
+  "force_converged": false,
+  "forces_computed": false,
+  "frozen_source": {
+    "bytes": 2185,
+    "path": "source-manifest.json",
+    "sha256": "c24ebb3b30b9d6ba9767a5255d4de0556e93e92f871bcfdcbd42c8e6de2f6d58"
+  },
+  "input": {
+    "bytes": 6695,
+    "path": "input.json",
+    "sha256": "91f72032a4715cf7b031e874445bbed7e97ed356a51838447ffd4a352a56c4f9"
+  },
+  "row": {
+    "BO_quartet_soft_eV": 26.405902393559316,
+    "R_A": 0.1,
+    "V_pair_total_eV": 105.61557840530024,
+    "lowering_eV": 38.380876281377894,
+    "point_minus_gaussian_eV": 79.20967601174092
+  },
+  "schema": "pd-defect-cell-sensitivity-v1",
+  "scope": "8-site relaxed local Pd/D patch embedded in a 27-site cell with the far field unrelaxed. One R0.1 electronic sensitivity only; NOT a relaxed or converged cell-size check.",
+  "source_geometry": {
+    "far_field_Pd_indices": [
+      1,
+      3,
+      4,
+      5,
+      7,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      19,
+      21,
+      22,
+      23,
+      25
+    ],
+    "far_field_relaxed": false,
+    "force_frame": {
+      "bytes": 3091,
+      "path": "step-036.json",
+      "sha256": "5229455c7b885856fb6a798f325a6de578bf0ebb307393d702662020d10bc916"
+    },
+    "geometry": {
+      "bytes": 7164,
+      "path": "C-selected-step036.json",
+      "sha256": "cc735ecbf8be36113463ceb159a9b3c674c8e110a59759699e5b54e16c92430a"
+    },
+    "kind": "Exact seven-Pd/one-D minimum-image local patch; nineteen far-field Pd remain ideal fcc",
+    "mapped_Pd": [
+      {
+        "ideal_relative_A": [
+          2.067070842334287,
+          2.067070842334287,
+          0.0
+        ],
+        "large_Pd_index": 0,
+        "relaxed_relative_A": [
+          2.6621191613756046,
+          3.0195874699091414,
+          0.216794075408159
+        ],
+        "source_Pd_index": 0
+      },
+      {
+        "ideal_relative_A": [
+          2.067070842334287,
+          0.0,
+          2.067070842334287
+        ],
+        "large_Pd_index": 2,
+        "relaxed_relative_A": [
+          2.7350967358226175,
+          -0.16350523026259495,
+          1.7804537571829826
+        ],
+        "source_Pd_index": 1
+      },
+      {
+        "ideal_relative_A": [
+          0.0,
+          2.067070842334287,
+          -2.067070842334287
+        ],
+        "large_Pd_index": 6,
+        "relaxed_relative_A": [
+          -0.11206611327621438,
+          2.32938803362481,
+          -1.501453089090579
+        ],
+        "source_Pd_index": 2
+      },
+      {
+        "ideal_relative_A": [
+          0.0,
+          2.067070842334287,
+          2.067070842334287
+        ],
+        "large_Pd_index": 8,
+        "relaxed_relative_A": [
+          0.38397601297640566,
+          1.3110488037648036,
+          1.0747574324818514
+        ],
+        "source_Pd_index": 3
+      },
+      {
+        "ideal_relative_A": [
+          2.067070842334287,
+          0.0,
+          -2.067070842334287
+        ],
+        "large_Pd_index": 18,
+        "relaxed_relative_A": [
+          1.1798096926201476,
+          -0.330629474546297,
+          -1.243093867368074
+        ],
+        "source_Pd_index": 4
+      },
+      {
+        "ideal_relative_A": [
+          2.067070842334287,
+          -2.067070842334287,
+          0.0
+        ],
+        "large_Pd_index": 20,
+        "relaxed_relative_A": [
+          1.8893702943753214,
+          -2.6852905390439488,
+          0.2997584860157228
+        ],
+        "source_Pd_index": 5
+      },
+      {
+        "ideal_relative_A": [
+          0.0,
+          0.0,
+          -4.134141684668574
+        ],
+        "large_Pd_index": 24,
+        "relaxed_relative_A": [
+          -0.4700224145567347,
+          0.6535426212226629,
+          -4.7613584792986385
+        ],
+        "source_Pd_index": 6
+      }
+    ],
+    "source_raw_fmax_eV_A": 0.07855681530561519,
+    "whole_cell_force_qualified": false
+  },
+  "states": {
+    "occupied-host": {
+      "role": {
+        "bytes": 717,
+        "path": "cell-role.json",
+        "sha256": "baa7cdc763df8940a7a8abd6070a87f4827a49281e427b6547522997be7c6313"
+      },
+      "state": {
+        "bytes": 11011,
+        "path": "state.json",
+        "sha256": "5157d309cd05419a2e668ba2d8de5520d3cba4b5963bb18724c9f21c70f2632f"
+      }
+    },
+    "occupied-probe": {
+      "role": {
+        "bytes": 718,
+        "path": "cell-role.json",
+        "sha256": "6195adf15280e7e2d79b31b15e91e8939db2ce14de96b1329cb11d27d809d19a"
+      },
+      "state": {
+        "bytes": 11106,
+        "path": "state.json",
+        "sha256": "8fe2ff92bae9a404940273607f56a11ef59b1bc1a1a51a872a1be64e00b4bafc"
+      }
+    },
+    "vacant-host": {
+      "role": {
+        "bytes": 715,
+        "path": "cell-role.json",
+        "sha256": "d3523b581e618fe36cb557f33055e68601129d7a0177a2fb84c5b09f36dc0de2"
+      },
+      "state": {
+        "bytes": 10919,
+        "path": "state.json",
+        "sha256": "db8e6bd0a2abc4dbd73d3f9657ab35c24855eca45ae5d3719ae36b69b78c9699"
+      }
+    },
+    "vacant-probe": {
+      "role": {
+        "bytes": 716,
+        "path": "cell-role.json",
+        "sha256": "5bb15e02510495240fb54aa70fa81d9f3a4ae7473201a2979436e1291914fec5"
+      },
+      "state": {
+        "bytes": 11012,
+        "path": "state.json",
+        "sha256": "830c1dc3e044d26c7309ff8fbff1792f1579c8dcdd241af8f829db4226914713"
+      }
+    }
+  }
+}

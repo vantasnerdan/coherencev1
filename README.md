@@ -93,6 +93,12 @@ Pass 6 replaces seven lumped inputs with resolved quantities: the fitted screeni
 | `g6_delump/` | The pass 6 energy-return rerun, in progress. First piece: fuel fraction against screening for D into a metal holding tritium. Removing the whole Coulomb barrier caps the D-T cross section at 159 b at 1 keV lab and 52 b at 13 keV, so a metal host must also cut drag per T nucleus by 1.2-2 times at 1 keV (11-19 times at 13 keV). LiT (52 b) and pure tritium (62 b) are already under the cap and need U_e of 107-126 keV. Diluting T in Ti at its measured screening pays only below 2.9 keV beam energy. |
 | `g6_plateau/` | What each of four causes of the low-energy excess (rising screening, surface layer, fast neutrals, lattice state) predicts for D-T, LiD and a pair at rest, plus a keyed per-run scorer for the Zenodo data. Swapping D for T in the target at 0.5 keV lab gives 55.6 times the yield if fast neutrals cause the excess, and 2.5-3.2 times if the target does. |
 
+## Pass 7: material levers found in pass 6
+
+| Directory | What it is |
+|---|---|
+| `g7_defect/` | Static screening of a deuteron at a Pd vacancy and at low loading, by the `g6_collision/` method. At 0.1 A, low-loading Pd gives 37.2 eV, PdD 40.5 eV, a D at a vacancy 38.3 eV and a vacancy in PdD 37.9 eV. Neither loading nor a vacancy moves static screening by more than 10 percent, so the cold-work and loading trends in the published data are not static screening at a vacancy or at low loading. |
+
 ## Reproducibility
 
 NumPy and SciPy are enough for everything except `p1_pysr/` (PySR), `p1_sindy/` (PySINDy) and `p2_input/frozen_phonon.py` (GPAW). Those three were run on one machine only; all other outputs were reproduced on a second.

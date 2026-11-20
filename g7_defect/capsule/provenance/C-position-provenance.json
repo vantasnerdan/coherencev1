@@ -1,0 +1,99 @@
+{
+  "Pd_max_displacement_A": 0.5209774020859441,
+  "Pd_rms_displacement_A": 0.27666398615402005,
+  "ae_trace_converged": false,
+  "ae_trace_fmax_eV_A": 0.5218707906538247,
+  "cell_A": [
+    [
+      0.0,
+      4.134141684668574,
+      4.134141684668574
+    ],
+    [
+      4.134141684668574,
+      0.0,
+      4.134141684668574
+    ],
+    [
+      4.134141684668574,
+      4.134141684668574,
+      0.0
+    ]
+  ],
+  "displacement_PAW_minus_AE_A": [
+    [
+      -0.17264586288264594,
+      0.06472492800747176,
+      -0.010888500028650496
+    ],
+    [
+      0.18905252732302147,
+      0.10256832549653483,
+      -0.01430268755730335
+    ],
+    [
+      0.14865817369358503,
+      0.1288709063220228,
+      0.09155029385648741
+    ],
+    [
+      -0.03725636334451555,
+      -0.510916061704159,
+      0.09483772860667285
+    ],
+    [
+      -0.04756734635795912,
+      0.024562300719622954,
+      -0.29593232312157003
+    ],
+    [
+      -0.028004799897461297,
+      0.13642040483986673,
+      -0.010675252687800453
+    ],
+    [
+      -0.05223632853402505,
+      0.05376919631864343,
+      0.14541074093216536
+    ],
+    [
+      0.24294531840981248,
+      -0.5299319327973313,
+      -0.23861091236629453
+    ]
+  ],
+  "global_translation_sensitivity_A": 8.881784197001252e-16,
+  "paw_admission_fmax_eV_A": 0.07855681530561519,
+  "paw_force_gate_eV_A": 0.1,
+  "registration": "Same seeded atom labels; each configuration relative to its own registered vacancy centre; periodic minimum images via ASE.",
+  "schema": "pd-defect-position-provenance-v1",
+  "scope": "Provenance against an unconverged AE optimization trace, not two converged setup geometries, a relaxation-energy comparison, or a physical screening error bound.",
+  "sources": {
+    "ae_trace": {
+      "bytes": 22685,
+      "path": "relaxation.json",
+      "sha256": "49198b0602560cc4dd18200e09a4902e139ebac14e55dab06de76f55acd724e1"
+    },
+    "paw": {
+      "bytes": 7164,
+      "path": "C-selected-step036.json",
+      "sha256": "cc735ecbf8be36113463ceb159a9b3c674c8e110a59759699e5b54e16c92430a"
+    }
+  },
+  "target_displacement_A": [
+    0.24294531840981248,
+    -0.5299319327973313,
+    -0.23861091236629453
+  ],
+  "target_displacement_norm_A": 0.6299090796581964,
+  "target_offset_AE_trace_A": [
+    -0.4428505537835479,
+    0.6368482466496523,
+    -0.027169216104339533
+  ],
+  "target_offset_PAW_A": [
+    -0.1999052353737354,
+    0.10691631385232103,
+    -0.26578012847063404
+  ]
+}

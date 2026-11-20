@@ -1,0 +1,3902 @@
+{
+  "cell_qualified": false,
+  "excluded_payloads": [
+    "GPW wavefunctions",
+    "PDFs",
+    "credentials/provider-session blobs",
+    "complete agent reports"
+  ],
+  "files": {
+    "README.md": {
+      "EXPORTED": {
+        "bytes": 7857,
+        "sha256": "57efc4b8f7fc36446e7512cf44468fd384293680566c040da6b8cf12e55b7c9d"
+      },
+      "ORIGINAL": {
+        "bytes": 7857,
+        "sha256": "57efc4b8f7fc36446e7512cf44468fd384293680566c040da6b8cf12e55b7c9d"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "baseline/B-reused.json": {
+      "EXPORTED": {
+        "bytes": 4117,
+        "sha256": "e9d99da16b79c67f9abfbab5a525e8b53cc99e03fdde79e57f2d31472ad183cb"
+      },
+      "ORIGINAL": {
+        "bytes": 4117,
+        "sha256": "e9d99da16b79c67f9abfbab5a525e8b53cc99e03fdde79e57f2d31472ad183cb"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "build_capsule.py": {
+      "EXPORTED": {
+        "bytes": 11127,
+        "sha256": "c0d2fc5db2abc48932629356943bb59c7aee524e6ec39a5b22a36a8b64d66d78"
+      },
+      "ORIGINAL": {
+        "bytes": 11127,
+        "sha256": "c0d2fc5db2abc48932629356943bb59c7aee524e6ec39a5b22a36a8b64d66d78"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "capsule.py": {
+      "EXPORTED": {
+        "bytes": 14194,
+        "sha256": "93c1e9b4e9fdd0fe969041c25f8ca5435835ee54accff186fe419f5920f6574d"
+      },
+      "ORIGINAL": {
+        "bytes": 14194,
+        "sha256": "93c1e9b4e9fdd0fe969041c25f8ca5435835ee54accff186fe419f5920f6574d"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "capsule_io.py": {
+      "EXPORTED": {
+        "bytes": 1811,
+        "sha256": "9097601567b5498c66d83190d04ae99bf1139e4ffb53dcb201c862b8525e169f"
+      },
+      "ORIGINAL": {
+        "bytes": 1811,
+        "sha256": "9097601567b5498c66d83190d04ae99bf1139e4ffb53dcb201c862b8525e169f"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "cell_sensitivity.py": {
+      "EXPORTED": {
+        "bytes": 5517,
+        "sha256": "89e96365f0414dd488536bfd616568e36f127efffd84facff34e2fec31f2f1be"
+      },
+      "ORIGINAL": {
+        "bytes": 5517,
+        "sha256": "89e96365f0414dd488536bfd616568e36f127efffd84facff34e2fec31f2f1be"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "compare_relaxation.py": {
+      "EXPORTED": {
+        "bytes": 3997,
+        "sha256": "3d9b7f5695ae09a858096e56f2f879a4ac5d6d3a39d8a2c0af46ecdd711fffeb"
+      },
+      "ORIGINAL": {
+        "bytes": 3997,
+        "sha256": "3d9b7f5695ae09a858096e56f2f879a4ac5d6d3a39d8a2c0af46ecdd711fffeb"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "curves/A_BO_pair.json": {
+      "EXPORTED": {
+        "bytes": 46232,
+        "sha256": "90236dac2b0b8a1a5570cea00cb3d7c132e5b3898e44ec47ef40a6cead5a5610"
+      },
+      "ORIGINAL": {
+        "bytes": 46232,
+        "sha256": "90236dac2b0b8a1a5570cea00cb3d7c132e5b3898e44ec47ef40a6cead5a5610"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "curves/B_BO_pair.json": {
+      "EXPORTED": {
+        "bytes": 4117,
+        "sha256": "e9d99da16b79c67f9abfbab5a525e8b53cc99e03fdde79e57f2d31472ad183cb"
+      },
+      "ORIGINAL": {
+        "bytes": 4117,
+        "sha256": "e9d99da16b79c67f9abfbab5a525e8b53cc99e03fdde79e57f2d31472ad183cb"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "curves/C_BO_pair.json": {
+      "EXPORTED": {
+        "bytes": 19177,
+        "sha256": "7df0896cb5047ef71e2929c922f5698ab75780381627023ccb197e8d0a2351e3"
+      },
+      "ORIGINAL": {
+        "bytes": 19177,
+        "sha256": "7df0896cb5047ef71e2929c922f5698ab75780381627023ccb197e8d0a2351e3"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "curves/D_BO_pair.json": {
+      "EXPORTED": {
+        "bytes": 34065,
+        "sha256": "e30c60bbecfc9568e4dcd96d80672f1a69ebda20fb12407cb96bce84e8086573"
+      },
+      "ORIGINAL": {
+        "bytes": 34065,
+        "sha256": "e30c60bbecfc9568e4dcd96d80672f1a69ebda20fb12407cb96bce84e8086573"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "export_defect_pair.py": {
+      "EXPORTED": {
+        "bytes": 17853,
+        "sha256": "71fd3fa750239801e79f846611be3759c470f4573706e57872831e625ff4484b"
+      },
+      "ORIGINAL": {
+        "bytes": 17853,
+        "sha256": "71fd3fa750239801e79f846611be3759c470f4573706e57872831e625ff4484b"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "green.py": {
+      "EXPORTED": {
+        "bytes": 2499,
+        "sha256": "08e5e5c10536e57b3a319b9385808c2a7cbf0bf4e32faf7f91c9d1bb07746ada"
+      },
+      "ORIGINAL": {
+        "bytes": 2499,
+        "sha256": "08e5e5c10536e57b3a319b9385808c2a7cbf0bf4e32faf7f91c9d1bb07746ada"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "inputs.json": {
+      "EXPORTED": {
+        "bytes": 2930,
+        "sha256": "943eeb8709f33be6f37924084d0c8f4beef90a59494cce25f635b0cf7100741f"
+      },
+      "ORIGINAL": {
+        "bytes": 2930,
+        "sha256": "943eeb8709f33be6f37924084d0c8f4beef90a59494cce25f635b0cf7100741f"
+      },
+      "provenance": "generated delivery source/evidence",
+      "transformation": []
+    },
+    "native/A/bo/occupied-host.json": {
+      "EXPORTED": {
+        "bytes": 2337,
+        "sha256": "81514feb62b497b4dff122fb47df1eb568bb389b81324de2d0209367649b3866"
+      },
+      "ORIGINAL": {
+        "bytes": 2337,
+        "sha256": "81514feb62b497b4dff122fb47df1eb568bb389b81324de2d0209367649b3866"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/A/bo/occupied-host.txt": {
+      "EXPORTED": {
+        "bytes": 15570,
+        "sha256": "e46edec3da553131b2578d62fa2a417178639f6b63c0ac460e2b4151c2698414"
+      },
+      "ORIGINAL": {
+        "bytes": 16276,
+        "sha256": "920ab56c168376cc2cf25ca6bfd54aa4efb404ea885c72ca2e7765e67571ddbf"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": [
+        {
+          "gpaw_user_headers_removed": 1,
+          "private_path_values_removed": 9
+        }
+      ]
+    },
+    "native/A/bo/occupied-probe-R0p100.json": {
+      "EXPORTED": {
+        "bytes": 2441,
+        "sha256": "f0243e3e6fc9817030bee92ae42f740d9d7cbd750bbfebe3bea2d7b8acb78c3e"
+      },
+      "ORIGINAL": {
+        "bytes": 2441,
+        "sha256": "f0243e3e6fc9817030bee92ae42f740d9d7cbd750bbfebe3bea2d7b8acb78c3e"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/A/bo/occupied-probe-R0p200.json": {
+      "EXPORTED": {
+        "bytes": 2441,
+        "sha256": "22e602d31c05e1034f07f3af12f13d9d094f78e791b2cf7d1360496ab1f584d2"
+      },
+      "ORIGINAL": {
+        "bytes": 2441,
+        "sha256": "22e602d31c05e1034f07f3af12f13d9d094f78e791b2cf7d1360496ab1f584d2"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/A/bo/occupied-probe-R0p300.json": {
+      "EXPORTED": {
+        "bytes": 2441,
+        "sha256": "6560b775175b7f17776a123478127db7fc74a12571aad5f41016d04917a6e2ea"
+      },
+      "ORIGINAL": {
+        "bytes": 2441,
+        "sha256": "6560b775175b7f17776a123478127db7fc74a12571aad5f41016d04917a6e2ea"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/A/bo/occupied-probe-R0p500.json": {
+      "EXPORTED": {
+        "bytes": 2443,
+        "sha256": "d6bd43f79fa6874d9b0bb2397e32fd9751608f072d1da1db6f521563813d7ff6"
+      },
+      "ORIGINAL": {
+        "bytes": 2443,
+        "sha256": "d6bd43f79fa6874d9b0bb2397e32fd9751608f072d1da1db6f521563813d7ff6"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/A/bo/occupied-probe-R1p000.json": {
+      "EXPORTED": {
+        "bytes": 2439,
+        "sha256": "0139511a2fcae486601d63840097bf7b0e980175cabddc555847e926e27197ff"
+      },
+      "ORIGINAL": {
+        "bytes": 2439,
+        "sha256": "0139511a2fcae486601d63840097bf7b0e980175cabddc555847e926e27197ff"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/A/bo/occupied-probe-R1p600.json": {
+      "EXPORTED": {
+        "bytes": 2440,
+        "sha256": "0a22f01a1f67b8de9386e9796590774c8041c046346f8056438bcf9dde22546d"
+      },
+      "ORIGINAL": {
+        "bytes": 2440,
+        "sha256": "0a22f01a1f67b8de9386e9796590774c8041c046346f8056438bcf9dde22546d"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/A/bo/occupied-probe-R1p600.txt": {
+      "EXPORTED": {
+        "bytes": 45066,
+        "sha256": "f8af35f973b8148c84f10dc02b4af93457b2819b14066a8692eb4867c8a11818"
+      },
+      "ORIGINAL": {
+        "bytes": 46300,
+        "sha256": "08b5cfd035a70c990177ed562232d8785abda8bc5099ca5589d3a374eb84db92"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": [
+        {
+          "gpaw_user_headers_removed": 1,
+          "private_path_values_removed": 14
+        }
+      ]
+    },
+    "native/A/bo/quartet.json": {
+      "EXPORTED": {
+        "bytes": 48260,
+        "sha256": "5c115e5cd700c6615836073b4f4a4e05dcf01d8d18f6d192abb004b940e56d46"
+      },
+      "ORIGINAL": {
+        "bytes": 48260,
+        "sha256": "5c115e5cd700c6615836073b4f4a4e05dcf01d8d18f6d192abb004b940e56d46"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/A/bo/vacant-host.json": {
+      "EXPORTED": {
+        "bytes": 2238,
+        "sha256": "a4b128a26a23c2f5d0393a928368f4a4182b8409582627e25ed003ac7124862a"
+      },
+      "ORIGINAL": {
+        "bytes": 2238,
+        "sha256": "a4b128a26a23c2f5d0393a928368f4a4182b8409582627e25ed003ac7124862a"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/A/bo/vacant-host.txt": {
+      "EXPORTED": {
+        "bytes": 15012,
+        "sha256": "85b316ba04fdf370176d4b7928b3ac204db854d6b124118f9dd9cc2fd2a14f40"
+      },
+      "ORIGINAL": {
+        "bytes": 15622,
+        "sha256": "cce8664cc81ee5264048d1bc1a6a757278a88ff0faa137103b8111142b2cf875"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": [
+        {
+          "gpaw_user_headers_removed": 1,
+          "private_path_values_removed": 8
+        }
+      ]
+    },
+    "native/A/bo/vacant-probe-R0p100.json": {
+      "EXPORTED": {
+        "bytes": 2339,
+        "sha256": "02cd2ad477cb3deef29714225a11d2f00b9afc384851cf32afefe4a47fe68a78"
+      },
+      "ORIGINAL": {
+        "bytes": 2339,
+        "sha256": "02cd2ad477cb3deef29714225a11d2f00b9afc384851cf32afefe4a47fe68a78"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/A/bo/vacant-probe-R0p200.json": {
+      "EXPORTED": {
+        "bytes": 2341,
+        "sha256": "28747538afd0591671fe43f2ac2b5ef108e8d5c46fd95b1b0de1c72fee6c9bc4"
+      },
+      "ORIGINAL": {
+        "bytes": 2341,
+        "sha256": "28747538afd0591671fe43f2ac2b5ef108e8d5c46fd95b1b0de1c72fee6c9bc4"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/A/bo/vacant-probe-R0p300.json": {
+      "EXPORTED": {
+        "bytes": 2343,
+        "sha256": "451442c75a41ae25633db943b5c507a0fb1e09f1e0fcf36c4af466fd25da149d"
+      },
+      "ORIGINAL": {
+        "bytes": 2343,
+        "sha256": "451442c75a41ae25633db943b5c507a0fb1e09f1e0fcf36c4af466fd25da149d"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/A/bo/vacant-probe-R0p500.json": {
+      "EXPORTED": {
+        "bytes": 2343,
+        "sha256": "a06c79e65baf95dce3d116c12c513ad3f33c4a707050390526c40828632a48a3"
+      },
+      "ORIGINAL": {
+        "bytes": 2343,
+        "sha256": "a06c79e65baf95dce3d116c12c513ad3f33c4a707050390526c40828632a48a3"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/A/bo/vacant-probe-R1p000.json": {
+      "EXPORTED": {
+        "bytes": 2341,
+        "sha256": "5840d3a1b3500b9c0ee9dac929ce80aecc4f7b93c6d06fb0afc9dbddfff0281d"
+      },
+      "ORIGINAL": {
+        "bytes": 2341,
+        "sha256": "5840d3a1b3500b9c0ee9dac929ce80aecc4f7b93c6d06fb0afc9dbddfff0281d"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/A/bo/vacant-probe-R1p600.json": {
+      "EXPORTED": {
+        "bytes": 2343,
+        "sha256": "bacce1f3e0ccc68f4a13ad5510653680539ba8577b37809777b4bc74acf83051"
+      },
+      "ORIGINAL": {
+        "bytes": 2343,
+        "sha256": "bacce1f3e0ccc68f4a13ad5510653680539ba8577b37809777b4bc74acf83051"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/A/bo/vacant-probe-R1p600.txt": {
+      "EXPORTED": {
+        "bytes": 43395,
+        "sha256": "b80db28d1f2d2b36f70ecfe69a007e4a8ef3482bb9549ebe9ebbca60a43e0296"
+      },
+      "ORIGINAL": {
+        "bytes": 44617,
+        "sha256": "89ab4001e2e4dcb07e4227352148abb4c7e07929c5e58b0df86466cfa1c3ca24"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": [
+        {
+          "gpaw_user_headers_removed": 1,
+          "private_path_values_removed": 14
+        }
+      ]
+    },
+    "native/A/input.json": {
+      "EXPORTED": {
+        "bytes": 451,
+        "sha256": "38c18a0d2669f006d33f344a5cda9c33fc5e86a7274d8b91a1aa25c79c5df42a"
+      },
+      "ORIGINAL": {
+        "bytes": 451,
+        "sha256": "38c18a0d2669f006d33f344a5cda9c33fc5e86a7274d8b91a1aa25c79c5df42a"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/A/native.log": {
+      "EXPORTED": {
+        "bytes": 6289,
+        "sha256": "fa530e82e62ec91bb2f26d7fd9e517e37baaab97599861dd54c5750c449b894c"
+      },
+      "ORIGINAL": {
+        "bytes": 6289,
+        "sha256": "fa530e82e62ec91bb2f26d7fd9e517e37baaab97599861dd54c5750c449b894c"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/A/relax/initial.json": {
+      "EXPORTED": {
+        "bytes": 1473,
+        "sha256": "222f319b4c93908634e0c7c93719404c31557f38d52c0d60ae2bb096da0567d6"
+      },
+      "ORIGINAL": {
+        "bytes": 1473,
+        "sha256": "222f319b4c93908634e0c7c93719404c31557f38d52c0d60ae2bb096da0567d6"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/A/relax/optimizer.json": {
+      "EXPORTED": {
+        "bytes": 15677,
+        "sha256": "6e6ffc16f7f6beeb2ca3869d0fbc71a43b39015716e29f472c6976472445033f"
+      },
+      "ORIGINAL": {
+        "bytes": 15677,
+        "sha256": "6e6ffc16f7f6beeb2ca3869d0fbc71a43b39015716e29f472c6976472445033f"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/A/relax/optimizer.log": {
+      "EXPORTED": {
+        "bytes": 3794,
+        "sha256": "ba01f2cbe78a7f56f747a3da42d92d3092cdaaa02659bbabebe0f7089520debb"
+      },
+      "ORIGINAL": {
+        "bytes": 3794,
+        "sha256": "ba01f2cbe78a7f56f747a3da42d92d3092cdaaa02659bbabebe0f7089520debb"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/A/relax/relax-scf.txt": {
+      "EXPORTED": {
+        "bytes": 421750,
+        "sha256": "c4e2ff481ce16736e52bdb3763d4d36ae7f63ffb7f596538d88ceae1be898885"
+      },
+      "ORIGINAL": {
+        "bytes": 429122,
+        "sha256": "e2e85b524e9e0072182b73d87322cee62afcf2e929fd1161c6076ffe60fd2a75"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": [
+        {
+          "gpaw_user_headers_removed": 1,
+          "private_path_values_removed": 80
+        }
+      ]
+    },
+    "native/A/relax/relaxation.json": {
+      "EXPORTED": {
+        "bytes": 32542,
+        "sha256": "acda83d0a0e1e2047664165ebc5ec656860460177a87529e81c8c22251691697"
+      },
+      "ORIGINAL": {
+        "bytes": 32542,
+        "sha256": "acda83d0a0e1e2047664165ebc5ec656860460177a87529e81c8c22251691697"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/A/relax/step-000.json": {
+      "EXPORTED": {
+        "bytes": 3246,
+        "sha256": "a295c706800ddb252e9445c53739817df69099ab1eff24914e7b7f2b419d14da"
+      },
+      "ORIGINAL": {
+        "bytes": 3246,
+        "sha256": "a295c706800ddb252e9445c53739817df69099ab1eff24914e7b7f2b419d14da"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/A/relax/step-001.json": {
+      "EXPORTED": {
+        "bytes": 3252,
+        "sha256": "a6e5b203a49149512c8daf3f0a441a84d08c47bee0d26b25b282168b599a795f"
+      },
+      "ORIGINAL": {
+        "bytes": 3252,
+        "sha256": "a6e5b203a49149512c8daf3f0a441a84d08c47bee0d26b25b282168b599a795f"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/A/relax/step-002.json": {
+      "EXPORTED": {
+        "bytes": 3245,
+        "sha256": "82564603ca5117687be273cf484981e19382a495564441374b568fbb91e699de"
+      },
+      "ORIGINAL": {
+        "bytes": 3245,
+        "sha256": "82564603ca5117687be273cf484981e19382a495564441374b568fbb91e699de"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/A/relax/step-003.json": {
+      "EXPORTED": {
+        "bytes": 3242,
+        "sha256": "5b8cfba294c5d93bb2b59cd008487445f9f99ff79c8de15fb8cb2d9e09f63ad1"
+      },
+      "ORIGINAL": {
+        "bytes": 3242,
+        "sha256": "5b8cfba294c5d93bb2b59cd008487445f9f99ff79c8de15fb8cb2d9e09f63ad1"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/A/relax/step-004.json": {
+      "EXPORTED": {
+        "bytes": 3242,
+        "sha256": "ed90ca60f1f514919c64cc5497d13c178ba506ad341de97d284e5eccd2f94ea0"
+      },
+      "ORIGINAL": {
+        "bytes": 3242,
+        "sha256": "ed90ca60f1f514919c64cc5497d13c178ba506ad341de97d284e5eccd2f94ea0"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/A/relax/step-005.json": {
+      "EXPORTED": {
+        "bytes": 3239,
+        "sha256": "6fec071f1b9b71216facd0b58b8d44cbdfff77721da36c1487652ea6653c966d"
+      },
+      "ORIGINAL": {
+        "bytes": 3239,
+        "sha256": "6fec071f1b9b71216facd0b58b8d44cbdfff77721da36c1487652ea6653c966d"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/A/relax/step-006.json": {
+      "EXPORTED": {
+        "bytes": 3243,
+        "sha256": "9e2ea0421f9e68fef0a49c898030cf5f21664b79d5f6381cee27fc6c8103e58c"
+      },
+      "ORIGINAL": {
+        "bytes": 3243,
+        "sha256": "9e2ea0421f9e68fef0a49c898030cf5f21664b79d5f6381cee27fc6c8103e58c"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/A/relax/step-007.json": {
+      "EXPORTED": {
+        "bytes": 3243,
+        "sha256": "7cccfc0cc5b115a78387857aaab06d3b361460880bd2779ec395534655823be0"
+      },
+      "ORIGINAL": {
+        "bytes": 3243,
+        "sha256": "7cccfc0cc5b115a78387857aaab06d3b361460880bd2779ec395534655823be0"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/A/relax/step-008.json": {
+      "EXPORTED": {
+        "bytes": 3239,
+        "sha256": "ead8739a54b417873fd5cc17ac040a537791d68bcf7c887e9e249c8d974eae85"
+      },
+      "ORIGINAL": {
+        "bytes": 3239,
+        "sha256": "ead8739a54b417873fd5cc17ac040a537791d68bcf7c887e9e249c8d974eae85"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/A/relax/step-009.json": {
+      "EXPORTED": {
+        "bytes": 3234,
+        "sha256": "852def67cfef579f7e84744c8abe9ae69df649d7d30fc9ab7b43e4877d7ebe3f"
+      },
+      "ORIGINAL": {
+        "bytes": 3234,
+        "sha256": "852def67cfef579f7e84744c8abe9ae69df649d7d30fc9ab7b43e4877d7ebe3f"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/A/relax/step-010.json": {
+      "EXPORTED": {
+        "bytes": 3242,
+        "sha256": "4f606b190b0e8743b237e5afce77912216bf1ba01334f3be3263bd52db61508d"
+      },
+      "ORIGINAL": {
+        "bytes": 3242,
+        "sha256": "4f606b190b0e8743b237e5afce77912216bf1ba01334f3be3263bd52db61508d"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/A/relax/step-011.json": {
+      "EXPORTED": {
+        "bytes": 3237,
+        "sha256": "1d0445679d3735152878d3e5678b2a72a9363a4a02425044cea30e4abd96cff0"
+      },
+      "ORIGINAL": {
+        "bytes": 3237,
+        "sha256": "1d0445679d3735152878d3e5678b2a72a9363a4a02425044cea30e4abd96cff0"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/A/relax/step-012.json": {
+      "EXPORTED": {
+        "bytes": 3245,
+        "sha256": "50b53f218078e00e01da9127c54af1f923848831b3403d088aa2f3a123d5c611"
+      },
+      "ORIGINAL": {
+        "bytes": 3245,
+        "sha256": "50b53f218078e00e01da9127c54af1f923848831b3403d088aa2f3a123d5c611"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/A/relax/step-013.json": {
+      "EXPORTED": {
+        "bytes": 3249,
+        "sha256": "5a4d535b848fffea02bb8164ea6b20094725ce4f9f8f178d12b4dcc1d22db928"
+      },
+      "ORIGINAL": {
+        "bytes": 3249,
+        "sha256": "5a4d535b848fffea02bb8164ea6b20094725ce4f9f8f178d12b4dcc1d22db928"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/A/relax/step-014.json": {
+      "EXPORTED": {
+        "bytes": 3246,
+        "sha256": "bbc1f3a4ba5d1712c423a19dc26ca4920e29bd649dc492b7742b64691678fc9f"
+      },
+      "ORIGINAL": {
+        "bytes": 3246,
+        "sha256": "bbc1f3a4ba5d1712c423a19dc26ca4920e29bd649dc492b7742b64691678fc9f"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/A/relax/step-015.json": {
+      "EXPORTED": {
+        "bytes": 3247,
+        "sha256": "e14066e7446af442f6c50158fcc6758dbaf26319606e4f2627ab31d3d8343a72"
+      },
+      "ORIGINAL": {
+        "bytes": 3247,
+        "sha256": "e14066e7446af442f6c50158fcc6758dbaf26319606e4f2627ab31d3d8343a72"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/A/relax/step-016.json": {
+      "EXPORTED": {
+        "bytes": 3251,
+        "sha256": "ee8794a476ba0062793a824bb0fd6c035e3998c3d3cd508f74602dd2778d225b"
+      },
+      "ORIGINAL": {
+        "bytes": 3251,
+        "sha256": "ee8794a476ba0062793a824bb0fd6c035e3998c3d3cd508f74602dd2778d225b"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/A/relax/step-017.json": {
+      "EXPORTED": {
+        "bytes": 3249,
+        "sha256": "34be0994b780cb1e2b58bcb5390618456f61b785ef123bb2cd1cdc038eb4cb38"
+      },
+      "ORIGINAL": {
+        "bytes": 3249,
+        "sha256": "34be0994b780cb1e2b58bcb5390618456f61b785ef123bb2cd1cdc038eb4cb38"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/A/relax/step-018.json": {
+      "EXPORTED": {
+        "bytes": 3246,
+        "sha256": "12a2f62e5321c5efa53849d9f8569c94b08e66bac62097bfccb4e0229d4d1eeb"
+      },
+      "ORIGINAL": {
+        "bytes": 3246,
+        "sha256": "12a2f62e5321c5efa53849d9f8569c94b08e66bac62097bfccb4e0229d4d1eeb"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/A/relax/step-019.json": {
+      "EXPORTED": {
+        "bytes": 3251,
+        "sha256": "0d94006f50889b4189d80384758b4ff039b4ae5d333175c7b0d25580c1d10856"
+      },
+      "ORIGINAL": {
+        "bytes": 3251,
+        "sha256": "0d94006f50889b4189d80384758b4ff039b4ae5d333175c7b0d25580c1d10856"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/A/relax/step-020.json": {
+      "EXPORTED": {
+        "bytes": 3254,
+        "sha256": "71739130358046ba104b86df9f40e74dca6c629f4b28096882a8d612a08ea427"
+      },
+      "ORIGINAL": {
+        "bytes": 3254,
+        "sha256": "71739130358046ba104b86df9f40e74dca6c629f4b28096882a8d612a08ea427"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/A/relax/step-021.json": {
+      "EXPORTED": {
+        "bytes": 3262,
+        "sha256": "dbed44673c6dad75add8e91a30669b339d3613458f34144d760c0ab12c37dccf"
+      },
+      "ORIGINAL": {
+        "bytes": 3262,
+        "sha256": "dbed44673c6dad75add8e91a30669b339d3613458f34144d760c0ab12c37dccf"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/A/relax/step-022.json": {
+      "EXPORTED": {
+        "bytes": 3268,
+        "sha256": "5f99766e89fdfd3863dbf079b96e2b6ac797842660eee5e64f2b11edee5490bd"
+      },
+      "ORIGINAL": {
+        "bytes": 3268,
+        "sha256": "5f99766e89fdfd3863dbf079b96e2b6ac797842660eee5e64f2b11edee5490bd"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/A/relax/step-023.json": {
+      "EXPORTED": {
+        "bytes": 3268,
+        "sha256": "518839bd68d6b15537389024df73b1d5657a4f6e8869c7425d2f36d042e88263"
+      },
+      "ORIGINAL": {
+        "bytes": 3268,
+        "sha256": "518839bd68d6b15537389024df73b1d5657a4f6e8869c7425d2f36d042e88263"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/A/relax/step-024.json": {
+      "EXPORTED": {
+        "bytes": 3263,
+        "sha256": "6dcd8c1c01abfd85752e8c4e0b3655f6c53a83a9a250ab8dbf61aa8fc522e8b0"
+      },
+      "ORIGINAL": {
+        "bytes": 3263,
+        "sha256": "6dcd8c1c01abfd85752e8c4e0b3655f6c53a83a9a250ab8dbf61aa8fc522e8b0"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/A/relax/step-025.json": {
+      "EXPORTED": {
+        "bytes": 3254,
+        "sha256": "7ff0f5d50d1679c168ed2e364c0a7da219784e9986cfba7937324033a84d1306"
+      },
+      "ORIGINAL": {
+        "bytes": 3254,
+        "sha256": "7ff0f5d50d1679c168ed2e364c0a7da219784e9986cfba7937324033a84d1306"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/A/relax/step-026.json": {
+      "EXPORTED": {
+        "bytes": 3264,
+        "sha256": "2e9ec906cd497e4d55759baa4101fbc9f242047c5e7e55e335d2ce29cbb1edde"
+      },
+      "ORIGINAL": {
+        "bytes": 3264,
+        "sha256": "2e9ec906cd497e4d55759baa4101fbc9f242047c5e7e55e335d2ce29cbb1edde"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/A/relax/step-027.json": {
+      "EXPORTED": {
+        "bytes": 3263,
+        "sha256": "f6d8411dc926e08d38550b5ff5265c79736f6cb2aedd0ede96335179f9688123"
+      },
+      "ORIGINAL": {
+        "bytes": 3263,
+        "sha256": "f6d8411dc926e08d38550b5ff5265c79736f6cb2aedd0ede96335179f9688123"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/A/relax/step-028.json": {
+      "EXPORTED": {
+        "bytes": 3262,
+        "sha256": "1cddec0c4d4ce82ebf5f82239782793fff45a97289b10d1d7df709a8fb85e4ed"
+      },
+      "ORIGINAL": {
+        "bytes": 3262,
+        "sha256": "1cddec0c4d4ce82ebf5f82239782793fff45a97289b10d1d7df709a8fb85e4ed"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/A/relax/step-029.json": {
+      "EXPORTED": {
+        "bytes": 3265,
+        "sha256": "f9c34e99bc984b66a771eb1d8bee751e0c51e2ab87ba3cb2983b14c9bc214fa4"
+      },
+      "ORIGINAL": {
+        "bytes": 3265,
+        "sha256": "f9c34e99bc984b66a771eb1d8bee751e0c51e2ab87ba3cb2983b14c9bc214fa4"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/A/relax/step-030.json": {
+      "EXPORTED": {
+        "bytes": 3254,
+        "sha256": "a91fee8bd0afef66eabe785b382b32ab312752cfd33bdbffc097d85efa72ae5e"
+      },
+      "ORIGINAL": {
+        "bytes": 3254,
+        "sha256": "a91fee8bd0afef66eabe785b382b32ab312752cfd33bdbffc097d85efa72ae5e"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/A/relax/step-031.json": {
+      "EXPORTED": {
+        "bytes": 3260,
+        "sha256": "9b0910ecb01eb09da66bed03a48b4fce897aaf993eb15366ba98cd85f18e663f"
+      },
+      "ORIGINAL": {
+        "bytes": 3260,
+        "sha256": "9b0910ecb01eb09da66bed03a48b4fce897aaf993eb15366ba98cd85f18e663f"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/A/relax/step-032.json": {
+      "EXPORTED": {
+        "bytes": 3269,
+        "sha256": "30f632aa62fb2620899d7cbc5ebc66720d3f569f4bab13c5af6e477421ccb11c"
+      },
+      "ORIGINAL": {
+        "bytes": 3269,
+        "sha256": "30f632aa62fb2620899d7cbc5ebc66720d3f569f4bab13c5af6e477421ccb11c"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/A/relax/step-033.json": {
+      "EXPORTED": {
+        "bytes": 3262,
+        "sha256": "046d3157740b008cfb89642ad66945a560c977b6a0a592f8460fa24ae33ea692"
+      },
+      "ORIGINAL": {
+        "bytes": 3262,
+        "sha256": "046d3157740b008cfb89642ad66945a560c977b6a0a592f8460fa24ae33ea692"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/A/relax/step-034.json": {
+      "EXPORTED": {
+        "bytes": 3255,
+        "sha256": "d94d85c6f8a64e07b0466c2b5dce0ed60e217eb67a6c6fc9d79fd340c005e258"
+      },
+      "ORIGINAL": {
+        "bytes": 3255,
+        "sha256": "d94d85c6f8a64e07b0466c2b5dce0ed60e217eb67a6c6fc9d79fd340c005e258"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/A/relax/step-035.json": {
+      "EXPORTED": {
+        "bytes": 3260,
+        "sha256": "e038f5b8d7832dcddeb3bf982bbb0f15e2e920d58968d350b91b40795ed91922"
+      },
+      "ORIGINAL": {
+        "bytes": 3260,
+        "sha256": "e038f5b8d7832dcddeb3bf982bbb0f15e2e920d58968d350b91b40795ed91922"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/A/relax/step-036.json": {
+      "EXPORTED": {
+        "bytes": 3262,
+        "sha256": "cd5749414d7a5837970f4486bf52c315c17c0482d82df3247baeeadf6105c165"
+      },
+      "ORIGINAL": {
+        "bytes": 3262,
+        "sha256": "cd5749414d7a5837970f4486bf52c315c17c0482d82df3247baeeadf6105c165"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/A/relax/step-037.json": {
+      "EXPORTED": {
+        "bytes": 3278,
+        "sha256": "38a09e615fbd1b7c256049416167ba6a2709a48d816780d43206d62b2a75e766"
+      },
+      "ORIGINAL": {
+        "bytes": 3278,
+        "sha256": "38a09e615fbd1b7c256049416167ba6a2709a48d816780d43206d62b2a75e766"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/A/relax/step-038.json": {
+      "EXPORTED": {
+        "bytes": 3270,
+        "sha256": "f3379da60e5144e2472493b237b54fc43e129e78ad213d854bbf27ec36f24b9e"
+      },
+      "ORIGINAL": {
+        "bytes": 3270,
+        "sha256": "f3379da60e5144e2472493b237b54fc43e129e78ad213d854bbf27ec36f24b9e"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/A/relax/step-039.json": {
+      "EXPORTED": {
+        "bytes": 3267,
+        "sha256": "4a80af19d24e479384155b0f72c842795ca5e498ec9f6afccd5bf866f6c7fe61"
+      },
+      "ORIGINAL": {
+        "bytes": 3267,
+        "sha256": "4a80af19d24e479384155b0f72c842795ca5e498ec9f6afccd5bf866f6c7fe61"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/A/relax/step-040.json": {
+      "EXPORTED": {
+        "bytes": 3279,
+        "sha256": "70d89432dcc320d533f33c0661ebd9ed60004d18bf4b4677514887b0a4172192"
+      },
+      "ORIGINAL": {
+        "bytes": 3279,
+        "sha256": "70d89432dcc320d533f33c0661ebd9ed60004d18bf4b4677514887b0a4172192"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/A/relax/step-041.json": {
+      "EXPORTED": {
+        "bytes": 3270,
+        "sha256": "bf1bd0cde60baa09642aedc555fa82b56341a1b96221ea6e29dbc0a57d97d277"
+      },
+      "ORIGINAL": {
+        "bytes": 3270,
+        "sha256": "bf1bd0cde60baa09642aedc555fa82b56341a1b96221ea6e29dbc0a57d97d277"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/A/relax/step-042.json": {
+      "EXPORTED": {
+        "bytes": 3271,
+        "sha256": "46cbb617e32610fe19f6f5be5d6c41cdeac4a73eac14b277a00fefcb840779bd"
+      },
+      "ORIGINAL": {
+        "bytes": 3271,
+        "sha256": "46cbb617e32610fe19f6f5be5d6c41cdeac4a73eac14b277a00fefcb840779bd"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/A/relax/step-043.json": {
+      "EXPORTED": {
+        "bytes": 3274,
+        "sha256": "c850dc8bc36e5ac3f1a7ed55778f4b0434f03110e39d60d7afde95800797a7c5"
+      },
+      "ORIGINAL": {
+        "bytes": 3274,
+        "sha256": "c850dc8bc36e5ac3f1a7ed55778f4b0434f03110e39d60d7afde95800797a7c5"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/A/relax/step-044.json": {
+      "EXPORTED": {
+        "bytes": 3284,
+        "sha256": "5842920f4287dd20e32f9a268e7c179abfc647ca5c4189cd55903eface5c3b60"
+      },
+      "ORIGINAL": {
+        "bytes": 3284,
+        "sha256": "5842920f4287dd20e32f9a268e7c179abfc647ca5c4189cd55903eface5c3b60"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/A/relax/step-045.json": {
+      "EXPORTED": {
+        "bytes": 3281,
+        "sha256": "602a1723db75f1e383b71514e5dfa6772d1d99ca765a0c066a8e7be8d34d3e09"
+      },
+      "ORIGINAL": {
+        "bytes": 3281,
+        "sha256": "602a1723db75f1e383b71514e5dfa6772d1d99ca765a0c066a8e7be8d34d3e09"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/A/relax/step-046.json": {
+      "EXPORTED": {
+        "bytes": 3282,
+        "sha256": "95c3b1334af9c84171524c544d05ef4f160886f6cefe017988752c8f9b9d1e6f"
+      },
+      "ORIGINAL": {
+        "bytes": 3282,
+        "sha256": "95c3b1334af9c84171524c544d05ef4f160886f6cefe017988752c8f9b9d1e6f"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/A/relax/step-047.json": {
+      "EXPORTED": {
+        "bytes": 3273,
+        "sha256": "a27217e237e20741c2a96bd2639ffa50d81ad02de629d9ca3f474d1f65a2cbf6"
+      },
+      "ORIGINAL": {
+        "bytes": 3273,
+        "sha256": "a27217e237e20741c2a96bd2639ffa50d81ad02de629d9ca3f474d1f65a2cbf6"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/A/relax/step-048.json": {
+      "EXPORTED": {
+        "bytes": 3279,
+        "sha256": "b6146df17515824f14e81d1e24e589c6474bf953107f928b278c742f477d4555"
+      },
+      "ORIGINAL": {
+        "bytes": 3279,
+        "sha256": "b6146df17515824f14e81d1e24e589c6474bf953107f928b278c742f477d4555"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/A/relax/step-049.json": {
+      "EXPORTED": {
+        "bytes": 3276,
+        "sha256": "2e89edbc269e5f79850f6d1f2abbd54184a4adc6fc7e5f87ef692d2bce8724ff"
+      },
+      "ORIGINAL": {
+        "bytes": 3276,
+        "sha256": "2e89edbc269e5f79850f6d1f2abbd54184a4adc6fc7e5f87ef692d2bce8724ff"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/A/relax/step-050.json": {
+      "EXPORTED": {
+        "bytes": 3266,
+        "sha256": "dffb3f9d18d2a8a82aadd7bbfbfb5510236d5642acb423c76f03134e185ef6db"
+      },
+      "ORIGINAL": {
+        "bytes": 3266,
+        "sha256": "dffb3f9d18d2a8a82aadd7bbfbfb5510236d5642acb423c76f03134e185ef6db"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/A/relax/step-051.json": {
+      "EXPORTED": {
+        "bytes": 3269,
+        "sha256": "e784786c39c5112d794d4dff76eb3254109016b116e34d953b84e96aab95ff56"
+      },
+      "ORIGINAL": {
+        "bytes": 3269,
+        "sha256": "e784786c39c5112d794d4dff76eb3254109016b116e34d953b84e96aab95ff56"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/A/relax/step-052.json": {
+      "EXPORTED": {
+        "bytes": 3274,
+        "sha256": "f444a8b03c30396970d0432ec3dc684c8dcd259c91f2281ca3cbe47334a64fa3"
+      },
+      "ORIGINAL": {
+        "bytes": 3274,
+        "sha256": "f444a8b03c30396970d0432ec3dc684c8dcd259c91f2281ca3cbe47334a64fa3"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/A/relax/step-053.json": {
+      "EXPORTED": {
+        "bytes": 3272,
+        "sha256": "edae751c244afe58f5c91ff73110608fde0a007f8b461b53321c37b70bb1f5bc"
+      },
+      "ORIGINAL": {
+        "bytes": 3272,
+        "sha256": "edae751c244afe58f5c91ff73110608fde0a007f8b461b53321c37b70bb1f5bc"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/A/relax/step-054.json": {
+      "EXPORTED": {
+        "bytes": 3269,
+        "sha256": "5b45dd825b0764dadbedd088eaf987164f89719d1e231c7a5790ab8d64052b43"
+      },
+      "ORIGINAL": {
+        "bytes": 3269,
+        "sha256": "5b45dd825b0764dadbedd088eaf987164f89719d1e231c7a5790ab8d64052b43"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/A/relax/step-055.json": {
+      "EXPORTED": {
+        "bytes": 3257,
+        "sha256": "086d1b37bbc2d414e5c7139572c9f2e46d54cbf8abed525050e523b0e5027a3d"
+      },
+      "ORIGINAL": {
+        "bytes": 3257,
+        "sha256": "086d1b37bbc2d414e5c7139572c9f2e46d54cbf8abed525050e523b0e5027a3d"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/A/relax/step-056.json": {
+      "EXPORTED": {
+        "bytes": 3265,
+        "sha256": "68b427df643f051f8e193ebe061b1ab201470790e1651e76b38e7e78adad0f3a"
+      },
+      "ORIGINAL": {
+        "bytes": 3265,
+        "sha256": "68b427df643f051f8e193ebe061b1ab201470790e1651e76b38e7e78adad0f3a"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/A/relax/step-057.json": {
+      "EXPORTED": {
+        "bytes": 3267,
+        "sha256": "2187747209ed90eee30ee7e60adc81d2ebc61cc8cb908187b3187e2eb911d15d"
+      },
+      "ORIGINAL": {
+        "bytes": 3267,
+        "sha256": "2187747209ed90eee30ee7e60adc81d2ebc61cc8cb908187b3187e2eb911d15d"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/A/relax/step-058.json": {
+      "EXPORTED": {
+        "bytes": 3263,
+        "sha256": "cc80432e833e33d0b88d2f5726504b382b68207a277ad9712daa37fea24ad372"
+      },
+      "ORIGINAL": {
+        "bytes": 3263,
+        "sha256": "cc80432e833e33d0b88d2f5726504b382b68207a277ad9712daa37fea24ad372"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/A/relax/step-059.json": {
+      "EXPORTED": {
+        "bytes": 3259,
+        "sha256": "4d8c4048c61eecae264098163ef6ac5ed10c3c149f4af3528ea3c4bb70e56cfa"
+      },
+      "ORIGINAL": {
+        "bytes": 3259,
+        "sha256": "4d8c4048c61eecae264098163ef6ac5ed10c3c149f4af3528ea3c4bb70e56cfa"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/A/relax/step-060.json": {
+      "EXPORTED": {
+        "bytes": 3267,
+        "sha256": "1178bac8b2e9230564abdb8d6f6d8208308bc6451e3155e337099c5904fa11d6"
+      },
+      "ORIGINAL": {
+        "bytes": 3267,
+        "sha256": "1178bac8b2e9230564abdb8d6f6d8208308bc6451e3155e337099c5904fa11d6"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/A/relax/step-061.json": {
+      "EXPORTED": {
+        "bytes": 3267,
+        "sha256": "493f07bf93e2402b390a9e42cc7089f59b36a76fe8937f1ef4b7a276b8b3e8e1"
+      },
+      "ORIGINAL": {
+        "bytes": 3267,
+        "sha256": "493f07bf93e2402b390a9e42cc7089f59b36a76fe8937f1ef4b7a276b8b3e8e1"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/A/relax/step-062.json": {
+      "EXPORTED": {
+        "bytes": 3273,
+        "sha256": "24542a6c6228bbe4dc4e54a72180a5f782c51b9de18f4660e54828fcd633ed43"
+      },
+      "ORIGINAL": {
+        "bytes": 3273,
+        "sha256": "24542a6c6228bbe4dc4e54a72180a5f782c51b9de18f4660e54828fcd633ed43"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/A/relax/step-063.json": {
+      "EXPORTED": {
+        "bytes": 3271,
+        "sha256": "0aaf80b861f92415e239fd295fcca9ccacf7876c9c8b28a321d0a87667246bf2"
+      },
+      "ORIGINAL": {
+        "bytes": 3271,
+        "sha256": "0aaf80b861f92415e239fd295fcca9ccacf7876c9c8b28a321d0a87667246bf2"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/A/relax/step-064.json": {
+      "EXPORTED": {
+        "bytes": 3271,
+        "sha256": "e47ac357404d4282ba23fd9a845969edb1d3436f30a584c50b4f37f368f0d15f"
+      },
+      "ORIGINAL": {
+        "bytes": 3271,
+        "sha256": "e47ac357404d4282ba23fd9a845969edb1d3436f30a584c50b4f37f368f0d15f"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/A/relax/step-065.json": {
+      "EXPORTED": {
+        "bytes": 3275,
+        "sha256": "eaa590ed0bedd3488e0a2de37f8e85b64b03944635e80f3f778a990c83702b60"
+      },
+      "ORIGINAL": {
+        "bytes": 3275,
+        "sha256": "eaa590ed0bedd3488e0a2de37f8e85b64b03944635e80f3f778a990c83702b60"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/A/relax/step-066.json": {
+      "EXPORTED": {
+        "bytes": 3273,
+        "sha256": "bdc8d28dbaad762c040be8ae7df01dcb0c3e101e2370586b3a157acc1fd58657"
+      },
+      "ORIGINAL": {
+        "bytes": 3273,
+        "sha256": "bdc8d28dbaad762c040be8ae7df01dcb0c3e101e2370586b3a157acc1fd58657"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/A/relax/step-067.json": {
+      "EXPORTED": {
+        "bytes": 3274,
+        "sha256": "950bace4a00895f6c791b30b294e42b4e2e14e3cdd2a9a80910cef10122f08b6"
+      },
+      "ORIGINAL": {
+        "bytes": 3274,
+        "sha256": "950bace4a00895f6c791b30b294e42b4e2e14e3cdd2a9a80910cef10122f08b6"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/A/relax/step-068.json": {
+      "EXPORTED": {
+        "bytes": 3274,
+        "sha256": "4c48ea56d2cb96740e8f5e4912e1574828b3ead7058515d594b6372cb2d7f8a0"
+      },
+      "ORIGINAL": {
+        "bytes": 3274,
+        "sha256": "4c48ea56d2cb96740e8f5e4912e1574828b3ead7058515d594b6372cb2d7f8a0"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/A/relax/step-069.json": {
+      "EXPORTED": {
+        "bytes": 3282,
+        "sha256": "c9328bdb28398028f2bfa1566646ebe92cb9872d926bb08ee46cb248b7e36078"
+      },
+      "ORIGINAL": {
+        "bytes": 3282,
+        "sha256": "c9328bdb28398028f2bfa1566646ebe92cb9872d926bb08ee46cb248b7e36078"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/A/relax/step-070.json": {
+      "EXPORTED": {
+        "bytes": 3282,
+        "sha256": "c8f91bd347dcbf5f019544170dc4266d5a606ac52f1b8900a728180302e804a1"
+      },
+      "ORIGINAL": {
+        "bytes": 3282,
+        "sha256": "c8f91bd347dcbf5f019544170dc4266d5a606ac52f1b8900a728180302e804a1"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/A/relax/step-071.json": {
+      "EXPORTED": {
+        "bytes": 3283,
+        "sha256": "4407fd0a5ca3bbc000b9624e42b3b51b9767b706c02fdd32377cf95971e1a98e"
+      },
+      "ORIGINAL": {
+        "bytes": 3283,
+        "sha256": "4407fd0a5ca3bbc000b9624e42b3b51b9767b706c02fdd32377cf95971e1a98e"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/A/run-result.json": {
+      "EXPORTED": {
+        "bytes": 37004,
+        "sha256": "a9e629fda11fc865f8ac441ddee84566811f193062771782aa8975b217588d04"
+      },
+      "ORIGINAL": {
+        "bytes": 37004,
+        "sha256": "a9e629fda11fc865f8ac441ddee84566811f193062771782aa8975b217588d04"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/A/source-manifest.json": {
+      "EXPORTED": {
+        "bytes": 2010,
+        "sha256": "3c9ca4d2d9e5c8f484cb5efa05094857d65cc36828727d4ede1d1e2c18232f5a"
+      },
+      "ORIGINAL": {
+        "bytes": 2010,
+        "sha256": "3c9ca4d2d9e5c8f484cb5efa05094857d65cc36828727d4ede1d1e2c18232f5a"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/A/source/collision_geometry.py": {
+      "EXPORTED": {
+        "bytes": 2107,
+        "sha256": "077eb638330c142ce710bd359780d0123d74d411e1bd9f26c7022a1e9bd1cc23"
+      },
+      "ORIGINAL": {
+        "bytes": 2107,
+        "sha256": "077eb638330c142ce710bd359780d0123d74d411e1bd9f26c7022a1e9bd1cc23"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/A/source/collision_ground.py": {
+      "EXPORTED": {
+        "bytes": 2508,
+        "sha256": "7ec514b422fbe2d43c8e1e60db71636ef6827d3bcbedd1f8291fc25241f070eb"
+      },
+      "ORIGINAL": {
+        "bytes": 2508,
+        "sha256": "7ec514b422fbe2d43c8e1e60db71636ef6827d3bcbedd1f8291fc25241f070eb"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/A/source/defect_screening/defect_bo.py": {
+      "EXPORTED": {
+        "bytes": 3769,
+        "sha256": "108036f46fb0cd031001362f6465b505374834cbfba3ba7c2bad5325030802b7"
+      },
+      "ORIGINAL": {
+        "bytes": 3769,
+        "sha256": "108036f46fb0cd031001362f6465b505374834cbfba3ba7c2bad5325030802b7"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/A/source/defect_screening/defect_calculator.py": {
+      "EXPORTED": {
+        "bytes": 3031,
+        "sha256": "9b6e301084f33f4c81d022c1affccc03dff82283c60701b3463cc34a66d5e5fb"
+      },
+      "ORIGINAL": {
+        "bytes": 3031,
+        "sha256": "9b6e301084f33f4c81d022c1affccc03dff82283c60701b3463cc34a66d5e5fb"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/A/source/defect_screening/defect_geometry.py": {
+      "EXPORTED": {
+        "bytes": 6031,
+        "sha256": "b4f65a23c4edb8a5102570344fd36254b1c31040b00cc752170befd11b3da399"
+      },
+      "ORIGINAL": {
+        "bytes": 6031,
+        "sha256": "b4f65a23c4edb8a5102570344fd36254b1c31040b00cc752170befd11b3da399"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/A/source/defect_screening/preflight_defect.py": {
+      "EXPORTED": {
+        "bytes": 3197,
+        "sha256": "d98140ba778dc09cca6f590f95ebc3c5e67ad5dedad2912fa918b7565c5bd159"
+      },
+      "ORIGINAL": {
+        "bytes": 3197,
+        "sha256": "d98140ba778dc09cca6f590f95ebc3c5e67ad5dedad2912fa918b7565c5bd159"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/A/source/defect_screening/relax_defect.py": {
+      "EXPORTED": {
+        "bytes": 2172,
+        "sha256": "eb5c2b3fc0efc785a1863f1c8f685d1a34b5e571621ceaa1b42da32fc57e1502"
+      },
+      "ORIGINAL": {
+        "bytes": 2172,
+        "sha256": "eb5c2b3fc0efc785a1863f1c8f685d1a34b5e571621ceaa1b42da32fc57e1502"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/A/source/defect_screening/run_defect.py": {
+      "EXPORTED": {
+        "bytes": 3956,
+        "sha256": "edfc9e584c40c944d0f2430d6e7a828a53dc4d183e3db3df7637b6c81ea9e3af"
+      },
+      "ORIGINAL": {
+        "bytes": 3956,
+        "sha256": "edfc9e584c40c944d0f2430d6e7a828a53dc4d183e3db3df7637b6c81ea9e3af"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/A/source/screen_io.py": {
+      "EXPORTED": {
+        "bytes": 1409,
+        "sha256": "dcab99128fbb312083bdccf440c4c32c214e58e78c59a8a52126300c25d3420c"
+      },
+      "ORIGINAL": {
+        "bytes": 1409,
+        "sha256": "dcab99128fbb312083bdccf440c4c32c214e58e78c59a8a52126300c25d3420c"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/A/source/substrate_framework/__init__.py": {
+      "EXPORTED": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "ORIGINAL": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/A/source/substrate_framework/collision_bare_reference.py": {
+      "EXPORTED": {
+        "bytes": 3022,
+        "sha256": "05ccba36601567b71a12af42c309cd978e1637b454454740c0f2909725598f09"
+      },
+      "ORIGINAL": {
+        "bytes": 3022,
+        "sha256": "05ccba36601567b71a12af42c309cd978e1637b454454740c0f2909725598f09"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/A/source/substrate_framework/collision_observables.py": {
+      "EXPORTED": {
+        "bytes": 4961,
+        "sha256": "b8a4ec9b0b68d5d2ffdc215625cd409e298daf7a34690db156f4feb9f05a9fdd"
+      },
+      "ORIGINAL": {
+        "bytes": 4961,
+        "sha256": "b8a4ec9b0b68d5d2ffdc215625cd409e298daf7a34690db156f4feb9f05a9fdd"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/C/bo/occupied-host.json": {
+      "EXPORTED": {
+        "bytes": 2242,
+        "sha256": "bcf45ef67fb8676ed21ec44401c10b6bf52db5cb5fe51f9a6747a8a21267d08a"
+      },
+      "ORIGINAL": {
+        "bytes": 2242,
+        "sha256": "bcf45ef67fb8676ed21ec44401c10b6bf52db5cb5fe51f9a6747a8a21267d08a"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/C/bo/occupied-host.txt": {
+      "EXPORTED": {
+        "bytes": 15357,
+        "sha256": "380b877f3c44b4aadb17ad4b0270a6d238f1049168de960b3a6a010a4b39eee1"
+      },
+      "ORIGINAL": {
+        "bytes": 16051,
+        "sha256": "7d9baf4410fae417d4f6161c68ee93bb466aa68e6405aa1fd299a55c8e1bf43d"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": [
+        {
+          "gpaw_user_headers_removed": 1,
+          "private_path_values_removed": 9
+        }
+      ]
+    },
+    "native/C/bo/occupied-probe-R0p100.json": {
+      "EXPORTED": {
+        "bytes": 2352,
+        "sha256": "d5b7b2135283d92cc538abc7a788a7d382903042f821305e1fa3e8dc37da5789"
+      },
+      "ORIGINAL": {
+        "bytes": 2352,
+        "sha256": "d5b7b2135283d92cc538abc7a788a7d382903042f821305e1fa3e8dc37da5789"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/C/bo/occupied-probe-R0p200.json": {
+      "EXPORTED": {
+        "bytes": 2351,
+        "sha256": "fae09ccdec625e86bf651c327aa2afbc6ad8bbe0322b4843941dd263589a559f"
+      },
+      "ORIGINAL": {
+        "bytes": 2351,
+        "sha256": "fae09ccdec625e86bf651c327aa2afbc6ad8bbe0322b4843941dd263589a559f"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/C/bo/occupied-probe-R0p300.json": {
+      "EXPORTED": {
+        "bytes": 2353,
+        "sha256": "a9211582fc2a4e703c2896b29a23294697ebbbfa4fb3ec55a665b4910ab8aaa3"
+      },
+      "ORIGINAL": {
+        "bytes": 2353,
+        "sha256": "a9211582fc2a4e703c2896b29a23294697ebbbfa4fb3ec55a665b4910ab8aaa3"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/C/bo/occupied-probe-R0p500.json": {
+      "EXPORTED": {
+        "bytes": 2352,
+        "sha256": "c60b1a884f0b9d914f390d4629546d6ba58d27c8c990b2337c9c74164ef39def"
+      },
+      "ORIGINAL": {
+        "bytes": 2352,
+        "sha256": "c60b1a884f0b9d914f390d4629546d6ba58d27c8c990b2337c9c74164ef39def"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/C/bo/occupied-probe-R1p000.json": {
+      "EXPORTED": {
+        "bytes": 2345,
+        "sha256": "6a492d2061e8b0db599c532bf6d749dfb978adc5c5ce52d9d63ddbdced8be414"
+      },
+      "ORIGINAL": {
+        "bytes": 2345,
+        "sha256": "6a492d2061e8b0db599c532bf6d749dfb978adc5c5ce52d9d63ddbdced8be414"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/C/bo/occupied-probe-R1p600.json": {
+      "EXPORTED": {
+        "bytes": 2345,
+        "sha256": "8ea0470e56052c71ed2d789e05b17b4380cd32bd9897f52ae4e937845ba5b264"
+      },
+      "ORIGINAL": {
+        "bytes": 2345,
+        "sha256": "8ea0470e56052c71ed2d789e05b17b4380cd32bd9897f52ae4e937845ba5b264"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/C/bo/occupied-probe-R1p600.txt": {
+      "EXPORTED": {
+        "bytes": 43975,
+        "sha256": "8eaae13ea000af20d1aefa4dc9f96fc63982e8c92849a224980811c9549f53f6"
+      },
+      "ORIGINAL": {
+        "bytes": 45167,
+        "sha256": "07945bb5835513a90d0f799ebd10fa482754d0aa33ae1588011898a4a724f95b"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": [
+        {
+          "gpaw_user_headers_removed": 1,
+          "private_path_values_removed": 14
+        }
+      ]
+    },
+    "native/C/bo/quartet.json": {
+      "EXPORTED": {
+        "bytes": 48744,
+        "sha256": "e3facf91fe8d6128522b19f28b7e140a7ed3e61a7a5a50f3621c64ed6644408f"
+      },
+      "ORIGINAL": {
+        "bytes": 48744,
+        "sha256": "e3facf91fe8d6128522b19f28b7e140a7ed3e61a7a5a50f3621c64ed6644408f"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/C/bo/vacant-host.json": {
+      "EXPORTED": {
+        "bytes": 2142,
+        "sha256": "1f171604fc3ba9f916cc0d8f6c2a8ac99511cd9f4249a81c10fc7a5eb8943559"
+      },
+      "ORIGINAL": {
+        "bytes": 2142,
+        "sha256": "1f171604fc3ba9f916cc0d8f6c2a8ac99511cd9f4249a81c10fc7a5eb8943559"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/C/bo/vacant-host.txt": {
+      "EXPORTED": {
+        "bytes": 14980,
+        "sha256": "07a866e0caa4dff14af5ab6b5fe06bba8bd0b00e870439f6cfdabd0575755edb"
+      },
+      "ORIGINAL": {
+        "bytes": 15578,
+        "sha256": "aa28a6e5521e6441da86334217463b3064e88b58adc32fcef7eacd42136bcac2"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": [
+        {
+          "gpaw_user_headers_removed": 1,
+          "private_path_values_removed": 8
+        }
+      ]
+    },
+    "native/C/bo/vacant-probe-R0p100.json": {
+      "EXPORTED": {
+        "bytes": 2251,
+        "sha256": "27192b54dc945e555cb9934872f1971ac6b77003aa5d2f5ebb03503a48edb8ec"
+      },
+      "ORIGINAL": {
+        "bytes": 2251,
+        "sha256": "27192b54dc945e555cb9934872f1971ac6b77003aa5d2f5ebb03503a48edb8ec"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/C/bo/vacant-probe-R0p200.json": {
+      "EXPORTED": {
+        "bytes": 2252,
+        "sha256": "6a53fb256d252d23df7b2f739b1d636e85bdc3fcc442e559e9858924e27d7cce"
+      },
+      "ORIGINAL": {
+        "bytes": 2252,
+        "sha256": "6a53fb256d252d23df7b2f739b1d636e85bdc3fcc442e559e9858924e27d7cce"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/C/bo/vacant-probe-R0p300.json": {
+      "EXPORTED": {
+        "bytes": 2250,
+        "sha256": "0b1b44cedc166c840de8c8a120242bb402fbb42e3d8e3653188ff4aa48c125b4"
+      },
+      "ORIGINAL": {
+        "bytes": 2250,
+        "sha256": "0b1b44cedc166c840de8c8a120242bb402fbb42e3d8e3653188ff4aa48c125b4"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/C/bo/vacant-probe-R0p500.json": {
+      "EXPORTED": {
+        "bytes": 2250,
+        "sha256": "ba1a89f73e1b979cc92d4b0a54a71e24c72633849ba540f0e5b650a896c99bcd"
+      },
+      "ORIGINAL": {
+        "bytes": 2250,
+        "sha256": "ba1a89f73e1b979cc92d4b0a54a71e24c72633849ba540f0e5b650a896c99bcd"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/C/bo/vacant-probe-R1p000.json": {
+      "EXPORTED": {
+        "bytes": 2252,
+        "sha256": "029f0e130ac222dd8ba6e1349e73f73581dc5a11ce2a232bcbc1c0469c5a522a"
+      },
+      "ORIGINAL": {
+        "bytes": 2252,
+        "sha256": "029f0e130ac222dd8ba6e1349e73f73581dc5a11ce2a232bcbc1c0469c5a522a"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/C/bo/vacant-probe-R1p600.json": {
+      "EXPORTED": {
+        "bytes": 2251,
+        "sha256": "b0600ee6b6a7d26b07746eb06fcba18f43046c61309d505e23a9e4059c0bc22b"
+      },
+      "ORIGINAL": {
+        "bytes": 2251,
+        "sha256": "b0600ee6b6a7d26b07746eb06fcba18f43046c61309d505e23a9e4059c0bc22b"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/C/bo/vacant-probe-R1p600.txt": {
+      "EXPORTED": {
+        "bytes": 43293,
+        "sha256": "67bb06afa78a0e264b1fd6bafa73c5d9127b9b38bff1f93383e7bce9a25ac8a0"
+      },
+      "ORIGINAL": {
+        "bytes": 44473,
+        "sha256": "5c8f8ae29f7eec3be3b4ed71ca351d8af21c791136f9f3cf9ad461e865e7bbfc"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": [
+        {
+          "gpaw_user_headers_removed": 1,
+          "private_path_values_removed": 14
+        }
+      ]
+    },
+    "native/C/geometry-selection.json": {
+      "EXPORTED": {
+        "bytes": 7164,
+        "sha256": "cc735ecbf8be36113463ceb159a9b3c674c8e110a59759699e5b54e16c92430a"
+      },
+      "ORIGINAL": {
+        "bytes": 7164,
+        "sha256": "cc735ecbf8be36113463ceb159a9b3c674c8e110a59759699e5b54e16c92430a"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/C/input.json": {
+      "EXPORTED": {
+        "bytes": 451,
+        "sha256": "4f239604b4cc170872f0bae27ec44df8eb0ceb610504da16f97b029fff3e3d49"
+      },
+      "ORIGINAL": {
+        "bytes": 451,
+        "sha256": "4f239604b4cc170872f0bae27ec44df8eb0ceb610504da16f97b029fff3e3d49"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/C/native.log": {
+      "EXPORTED": {
+        "bytes": 1870,
+        "sha256": "e35ece3f05a67c19fd342cc24553c543eae1cd732b7981cbd9a60ad081941424"
+      },
+      "ORIGINAL": {
+        "bytes": 1870,
+        "sha256": "e35ece3f05a67c19fd342cc24553c543eae1cd732b7981cbd9a60ad081941424"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/C/run-result.json": {
+      "EXPORTED": {
+        "bytes": 9910,
+        "sha256": "f298776ff5adedc81e097454367c5ae00afcf1782c3574088b0407eb009665a9"
+      },
+      "ORIGINAL": {
+        "bytes": 9910,
+        "sha256": "f298776ff5adedc81e097454367c5ae00afcf1782c3574088b0407eb009665a9"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/C/source-manifest.json": {
+      "EXPORTED": {
+        "bytes": 2010,
+        "sha256": "e43e99273a83334da4dd39d8361b97d1857a2a1354f1ccc3a8fe6eab905853d1"
+      },
+      "ORIGINAL": {
+        "bytes": 2010,
+        "sha256": "e43e99273a83334da4dd39d8361b97d1857a2a1354f1ccc3a8fe6eab905853d1"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/C/source/collision_geometry.py": {
+      "EXPORTED": {
+        "bytes": 2107,
+        "sha256": "077eb638330c142ce710bd359780d0123d74d411e1bd9f26c7022a1e9bd1cc23"
+      },
+      "ORIGINAL": {
+        "bytes": 2107,
+        "sha256": "077eb638330c142ce710bd359780d0123d74d411e1bd9f26c7022a1e9bd1cc23"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/C/source/collision_ground.py": {
+      "EXPORTED": {
+        "bytes": 2508,
+        "sha256": "7ec514b422fbe2d43c8e1e60db71636ef6827d3bcbedd1f8291fc25241f070eb"
+      },
+      "ORIGINAL": {
+        "bytes": 2508,
+        "sha256": "7ec514b422fbe2d43c8e1e60db71636ef6827d3bcbedd1f8291fc25241f070eb"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/C/source/defect_screening/defect_bo.py": {
+      "EXPORTED": {
+        "bytes": 3769,
+        "sha256": "108036f46fb0cd031001362f6465b505374834cbfba3ba7c2bad5325030802b7"
+      },
+      "ORIGINAL": {
+        "bytes": 3769,
+        "sha256": "108036f46fb0cd031001362f6465b505374834cbfba3ba7c2bad5325030802b7"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/C/source/defect_screening/defect_calculator.py": {
+      "EXPORTED": {
+        "bytes": 3031,
+        "sha256": "9b6e301084f33f4c81d022c1affccc03dff82283c60701b3463cc34a66d5e5fb"
+      },
+      "ORIGINAL": {
+        "bytes": 3031,
+        "sha256": "9b6e301084f33f4c81d022c1affccc03dff82283c60701b3463cc34a66d5e5fb"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/C/source/defect_screening/defect_geometry.py": {
+      "EXPORTED": {
+        "bytes": 6733,
+        "sha256": "6ed3a11ec7c33450d748cc792b3693cf9b3201b94d0bab1031b82532100369e2"
+      },
+      "ORIGINAL": {
+        "bytes": 6733,
+        "sha256": "6ed3a11ec7c33450d748cc792b3693cf9b3201b94d0bab1031b82532100369e2"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/C/source/defect_screening/preflight_defect.py": {
+      "EXPORTED": {
+        "bytes": 3197,
+        "sha256": "d98140ba778dc09cca6f590f95ebc3c5e67ad5dedad2912fa918b7565c5bd159"
+      },
+      "ORIGINAL": {
+        "bytes": 3197,
+        "sha256": "d98140ba778dc09cca6f590f95ebc3c5e67ad5dedad2912fa918b7565c5bd159"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/C/source/defect_screening/relax_defect.py": {
+      "EXPORTED": {
+        "bytes": 2232,
+        "sha256": "f9b2108ed28261e6b759673adccf11c7fdcdaae26ed6309c82cf9e9714598da9"
+      },
+      "ORIGINAL": {
+        "bytes": 2232,
+        "sha256": "f9b2108ed28261e6b759673adccf11c7fdcdaae26ed6309c82cf9e9714598da9"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/C/source/defect_screening/run_defect.py": {
+      "EXPORTED": {
+        "bytes": 5860,
+        "sha256": "b6fc87b43aafd50b8a1d3bd03e10ab2725d955a2fe8e7af2b05d63e9369674ee"
+      },
+      "ORIGINAL": {
+        "bytes": 5860,
+        "sha256": "b6fc87b43aafd50b8a1d3bd03e10ab2725d955a2fe8e7af2b05d63e9369674ee"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/C/source/screen_io.py": {
+      "EXPORTED": {
+        "bytes": 1409,
+        "sha256": "dcab99128fbb312083bdccf440c4c32c214e58e78c59a8a52126300c25d3420c"
+      },
+      "ORIGINAL": {
+        "bytes": 1409,
+        "sha256": "dcab99128fbb312083bdccf440c4c32c214e58e78c59a8a52126300c25d3420c"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/C/source/substrate_framework/__init__.py": {
+      "EXPORTED": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "ORIGINAL": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/C/source/substrate_framework/collision_bare_reference.py": {
+      "EXPORTED": {
+        "bytes": 3022,
+        "sha256": "05ccba36601567b71a12af42c309cd978e1637b454454740c0f2909725598f09"
+      },
+      "ORIGINAL": {
+        "bytes": 3022,
+        "sha256": "05ccba36601567b71a12af42c309cd978e1637b454454740c0f2909725598f09"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/C/source/substrate_framework/collision_observables.py": {
+      "EXPORTED": {
+        "bytes": 4961,
+        "sha256": "b8a4ec9b0b68d5d2ffdc215625cd409e298daf7a34690db156f4feb9f05a9fdd"
+      },
+      "ORIGINAL": {
+        "bytes": 4961,
+        "sha256": "b8a4ec9b0b68d5d2ffdc215625cd409e298daf7a34690db156f4feb9f05a9fdd"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/D/bo/occupied-host.json": {
+      "EXPORTED": {
+        "bytes": 4930,
+        "sha256": "d4d655e8b02c5fb5945c6428ce7809d564d31bfb8fabae8f33b6b121d1e8a6e5"
+      },
+      "ORIGINAL": {
+        "bytes": 4930,
+        "sha256": "d4d655e8b02c5fb5945c6428ce7809d564d31bfb8fabae8f33b6b121d1e8a6e5"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/D/bo/occupied-host.txt": {
+      "EXPORTED": {
+        "bytes": 16175,
+        "sha256": "230efb048ab76494f18510deb14e5b9cd570c35cad6deb52228cedb11ed69a85"
+      },
+      "ORIGINAL": {
+        "bytes": 16877,
+        "sha256": "2d86062783bc574a4fce939140e6d0ce32e3ba9317cf42ebb96418f537831221"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": [
+        {
+          "gpaw_user_headers_removed": 1,
+          "private_path_values_removed": 9
+        }
+      ]
+    },
+    "native/D/bo/occupied-probe-R0p100.json": {
+      "EXPORTED": {
+        "bytes": 5042,
+        "sha256": "a510d69b5fe2466565e60638d127d5ff1e24e68ee45e561eae1d0d5633890618"
+      },
+      "ORIGINAL": {
+        "bytes": 5042,
+        "sha256": "a510d69b5fe2466565e60638d127d5ff1e24e68ee45e561eae1d0d5633890618"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/D/bo/occupied-probe-R0p200.json": {
+      "EXPORTED": {
+        "bytes": 5041,
+        "sha256": "f4c234735c82adfedd7d92f5a9b00263707cca480a5d0edc5ded7c808ee523cb"
+      },
+      "ORIGINAL": {
+        "bytes": 5041,
+        "sha256": "f4c234735c82adfedd7d92f5a9b00263707cca480a5d0edc5ded7c808ee523cb"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/D/bo/occupied-probe-R0p300.json": {
+      "EXPORTED": {
+        "bytes": 5039,
+        "sha256": "9760e4299b8b4560ead2325b386489c4f0038289366aaf9c7382f6be4659c723"
+      },
+      "ORIGINAL": {
+        "bytes": 5039,
+        "sha256": "9760e4299b8b4560ead2325b386489c4f0038289366aaf9c7382f6be4659c723"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/D/bo/occupied-probe-R0p500.json": {
+      "EXPORTED": {
+        "bytes": 5039,
+        "sha256": "6a1a17f467d2ba8ef5f888ae89448d05600c3c42ae02a1e496fdf640d4822114"
+      },
+      "ORIGINAL": {
+        "bytes": 5039,
+        "sha256": "6a1a17f467d2ba8ef5f888ae89448d05600c3c42ae02a1e496fdf640d4822114"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/D/bo/occupied-probe-R1p000.json": {
+      "EXPORTED": {
+        "bytes": 5038,
+        "sha256": "6944b17560666e6eb5ee370ece78d960ce0fff73260834fc0d5689319ec27946"
+      },
+      "ORIGINAL": {
+        "bytes": 5038,
+        "sha256": "6944b17560666e6eb5ee370ece78d960ce0fff73260834fc0d5689319ec27946"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/D/bo/occupied-probe-R1p600.json": {
+      "EXPORTED": {
+        "bytes": 5039,
+        "sha256": "6d48448c308425f8c1838645f85ed941ffdf84a8fb82510400af32486a950cf6"
+      },
+      "ORIGINAL": {
+        "bytes": 5039,
+        "sha256": "6d48448c308425f8c1838645f85ed941ffdf84a8fb82510400af32486a950cf6"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/D/bo/occupied-probe-R1p600.txt": {
+      "EXPORTED": {
+        "bytes": 47784,
+        "sha256": "86473a6094e246828b84b2efd0123047e1c676f1b6b56c98c14b203e6e3fd046"
+      },
+      "ORIGINAL": {
+        "bytes": 49004,
+        "sha256": "0cce82a5a80ddd562c7ee58b4354573127917e43d0bd77e4248838f78ad338d7"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": [
+        {
+          "gpaw_user_headers_removed": 1,
+          "private_path_values_removed": 14
+        }
+      ]
+    },
+    "native/D/bo/quartet.json": {
+      "EXPORTED": {
+        "bytes": 99406,
+        "sha256": "10d135a8f121bdee0efca8a8fb3ea21a849ac180eb10d35ffce4857ef4b7f860"
+      },
+      "ORIGINAL": {
+        "bytes": 99406,
+        "sha256": "10d135a8f121bdee0efca8a8fb3ea21a849ac180eb10d35ffce4857ef4b7f860"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/D/bo/vacant-host.json": {
+      "EXPORTED": {
+        "bytes": 4833,
+        "sha256": "dbb1b20e103632037a3dae5f8b5b5e3de3bef04648d5b1bc52a07edbd9bc59a4"
+      },
+      "ORIGINAL": {
+        "bytes": 4833,
+        "sha256": "dbb1b20e103632037a3dae5f8b5b5e3de3bef04648d5b1bc52a07edbd9bc59a4"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/D/bo/vacant-host.txt": {
+      "EXPORTED": {
+        "bytes": 16007,
+        "sha256": "83243dbbf8f59fe6cbe80e7e1e721ebc7b688148d3ce592529201a0917010e11"
+      },
+      "ORIGINAL": {
+        "bytes": 16707,
+        "sha256": "c5968408cff7ffb25d703cb310b9df4ba9db0698b7a060345d9fbe0013d38fd1"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": [
+        {
+          "gpaw_user_headers_removed": 1,
+          "private_path_values_removed": 9
+        }
+      ]
+    },
+    "native/D/bo/vacant-probe-R0p100.json": {
+      "EXPORTED": {
+        "bytes": 4941,
+        "sha256": "f6070e63eb9075236443ba58f1291b2a1e84db1bf3b2c924139830cb7a35e690"
+      },
+      "ORIGINAL": {
+        "bytes": 4941,
+        "sha256": "f6070e63eb9075236443ba58f1291b2a1e84db1bf3b2c924139830cb7a35e690"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/D/bo/vacant-probe-R0p200.json": {
+      "EXPORTED": {
+        "bytes": 4940,
+        "sha256": "eb03166eb949c9cb53832e3468ba8a9a22e957205c384a9274db76d7a1fbf1d1"
+      },
+      "ORIGINAL": {
+        "bytes": 4940,
+        "sha256": "eb03166eb949c9cb53832e3468ba8a9a22e957205c384a9274db76d7a1fbf1d1"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/D/bo/vacant-probe-R0p300.json": {
+      "EXPORTED": {
+        "bytes": 4937,
+        "sha256": "66fe739be0139410327d15e7be8ed91acabc2b0dac78c39ab577e722095a60da"
+      },
+      "ORIGINAL": {
+        "bytes": 4937,
+        "sha256": "66fe739be0139410327d15e7be8ed91acabc2b0dac78c39ab577e722095a60da"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/D/bo/vacant-probe-R0p500.json": {
+      "EXPORTED": {
+        "bytes": 4939,
+        "sha256": "69fe05ab870214694959da84f82e02d658718cfe24be5800f56ced6cd48f5eb8"
+      },
+      "ORIGINAL": {
+        "bytes": 4939,
+        "sha256": "69fe05ab870214694959da84f82e02d658718cfe24be5800f56ced6cd48f5eb8"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/D/bo/vacant-probe-R1p000.json": {
+      "EXPORTED": {
+        "bytes": 4940,
+        "sha256": "1707b1368568475b71842ad437473e9c7e2465657ce7fc2040ed2fda9e465f45"
+      },
+      "ORIGINAL": {
+        "bytes": 4940,
+        "sha256": "1707b1368568475b71842ad437473e9c7e2465657ce7fc2040ed2fda9e465f45"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/D/bo/vacant-probe-R1p600.json": {
+      "EXPORTED": {
+        "bytes": 4938,
+        "sha256": "1bc2e76d6364839e6a836ae3aa3cd49e356095f5b1d6552a9fc3178650ec2139"
+      },
+      "ORIGINAL": {
+        "bytes": 4938,
+        "sha256": "1bc2e76d6364839e6a836ae3aa3cd49e356095f5b1d6552a9fc3178650ec2139"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/D/bo/vacant-probe-R1p600.txt": {
+      "EXPORTED": {
+        "bytes": 47941,
+        "sha256": "42168563fb2143dbb5044079a15b618e815ef5c601645d378de4a52ff115917f"
+      },
+      "ORIGINAL": {
+        "bytes": 49149,
+        "sha256": "a4e365cb797441995dd2d636296b1bc21c95fff2e58aebb4c2001758fd2ee182"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": [
+        {
+          "gpaw_user_headers_removed": 1,
+          "private_path_values_removed": 14
+        }
+      ]
+    },
+    "native/D/input.json": {
+      "EXPORTED": {
+        "bytes": 2275,
+        "sha256": "8e6ae2da63eae881d850ba658a9a90d2f4c021819e772828e8d92b8f6757d2e2"
+      },
+      "ORIGINAL": {
+        "bytes": 2275,
+        "sha256": "8e6ae2da63eae881d850ba658a9a90d2f4c021819e772828e8d92b8f6757d2e2"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/D/native.log": {
+      "EXPORTED": {
+        "bytes": 3353,
+        "sha256": "cc0926d7a11d08f6074ff4fe53e3f1f0a3e9def08fb9e1c416adea201ff06688"
+      },
+      "ORIGINAL": {
+        "bytes": 3353,
+        "sha256": "cc0926d7a11d08f6074ff4fe53e3f1f0a3e9def08fb9e1c416adea201ff06688"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/D/relax/initial.json": {
+      "EXPORTED": {
+        "bytes": 3091,
+        "sha256": "0ca42fb3380c8610b35b8006d3a0c6db0c7aae713fa19b814926a92d9b923fd8"
+      },
+      "ORIGINAL": {
+        "bytes": 3091,
+        "sha256": "0ca42fb3380c8610b35b8006d3a0c6db0c7aae713fa19b814926a92d9b923fd8"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/D/relax/optimizer.json": {
+      "EXPORTED": {
+        "bytes": 42964,
+        "sha256": "549bd3679396f094a9f3691a7299dead0608b921cce665c0d8412c5773a369d2"
+      },
+      "ORIGINAL": {
+        "bytes": 42964,
+        "sha256": "549bd3679396f094a9f3691a7299dead0608b921cce665c0d8412c5773a369d2"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/D/relax/optimizer.log": {
+      "EXPORTED": {
+        "bytes": 1298,
+        "sha256": "beed1332ad64d7e2b9a093ca869044e953813bcc80f17575f3703822b961b0d0"
+      },
+      "ORIGINAL": {
+        "bytes": 1298,
+        "sha256": "beed1332ad64d7e2b9a093ca869044e953813bcc80f17575f3703822b961b0d0"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/D/relax/relax-scf.txt": {
+      "EXPORTED": {
+        "bytes": 163726,
+        "sha256": "caf0a53fffe0c34c280ac0737e6c5261c6c372e5b0abe3c3e28a1a83b310707c"
+      },
+      "ORIGINAL": {
+        "bytes": 166536,
+        "sha256": "cd29273f311ce88905f7f77e2cb95b0962d4c1d665616a540086f161e4f24100"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": [
+        {
+          "gpaw_user_headers_removed": 1,
+          "private_path_values_removed": 32
+        }
+      ]
+    },
+    "native/D/relax/relaxation.json": {
+      "EXPORTED": {
+        "bytes": 18985,
+        "sha256": "428a5bfa8fea168e2311b5ebbdf12d68f0f59649473697268928006ad91fe98e"
+      },
+      "ORIGINAL": {
+        "bytes": 18985,
+        "sha256": "428a5bfa8fea168e2311b5ebbdf12d68f0f59649473697268928006ad91fe98e"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/D/relax/step-000.json": {
+      "EXPORTED": {
+        "bytes": 6438,
+        "sha256": "068a4a419aa6f97728e6aaa85cc12d00d4af7b2679bae1e706ad9c78026a28b1"
+      },
+      "ORIGINAL": {
+        "bytes": 6438,
+        "sha256": "068a4a419aa6f97728e6aaa85cc12d00d4af7b2679bae1e706ad9c78026a28b1"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/D/relax/step-001.json": {
+      "EXPORTED": {
+        "bytes": 6442,
+        "sha256": "07b01335351da5db31b78ed3aeac33b2be3967442fb7eb75c10ec1746d0ecda0"
+      },
+      "ORIGINAL": {
+        "bytes": 6442,
+        "sha256": "07b01335351da5db31b78ed3aeac33b2be3967442fb7eb75c10ec1746d0ecda0"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/D/relax/step-002.json": {
+      "EXPORTED": {
+        "bytes": 6452,
+        "sha256": "fc11b0b9a64f4f4ee8c266691b98cf3d730b07845b48c92df8f395e4b7f83634"
+      },
+      "ORIGINAL": {
+        "bytes": 6452,
+        "sha256": "fc11b0b9a64f4f4ee8c266691b98cf3d730b07845b48c92df8f395e4b7f83634"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/D/relax/step-003.json": {
+      "EXPORTED": {
+        "bytes": 6434,
+        "sha256": "d4a07e4fa4d6fd8e52f88cdba413179ee23f9beb6a6ebd874ec350aa63c182f3"
+      },
+      "ORIGINAL": {
+        "bytes": 6434,
+        "sha256": "d4a07e4fa4d6fd8e52f88cdba413179ee23f9beb6a6ebd874ec350aa63c182f3"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/D/relax/step-004.json": {
+      "EXPORTED": {
+        "bytes": 6457,
+        "sha256": "ba80e66118b2da44d1626365d1b2902db0fd145e072eae9df1570fe2d153bc43"
+      },
+      "ORIGINAL": {
+        "bytes": 6457,
+        "sha256": "ba80e66118b2da44d1626365d1b2902db0fd145e072eae9df1570fe2d153bc43"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/D/relax/step-005.json": {
+      "EXPORTED": {
+        "bytes": 6445,
+        "sha256": "fdcc74fdbc6b0e9563a62caa89626dce50dc6ff2d09b5bf421b19d6e3de6d4a3"
+      },
+      "ORIGINAL": {
+        "bytes": 6445,
+        "sha256": "fdcc74fdbc6b0e9563a62caa89626dce50dc6ff2d09b5bf421b19d6e3de6d4a3"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/D/relax/step-006.json": {
+      "EXPORTED": {
+        "bytes": 6437,
+        "sha256": "37bc3c9e57fde6d01d9badd0ba32fb210915965b9124dafcb680ce4134ea894d"
+      },
+      "ORIGINAL": {
+        "bytes": 6437,
+        "sha256": "37bc3c9e57fde6d01d9badd0ba32fb210915965b9124dafcb680ce4134ea894d"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/D/relax/step-007.json": {
+      "EXPORTED": {
+        "bytes": 6442,
+        "sha256": "3c9bd373975964204b8bd6db3f89dbe90b634863ebf83b8bd40a260361900874"
+      },
+      "ORIGINAL": {
+        "bytes": 6442,
+        "sha256": "3c9bd373975964204b8bd6db3f89dbe90b634863ebf83b8bd40a260361900874"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/D/relax/step-008.json": {
+      "EXPORTED": {
+        "bytes": 6440,
+        "sha256": "20cb8b2bd522dcf10802a7ca9cabc417245f862cde4014be490a2d525b43b6d2"
+      },
+      "ORIGINAL": {
+        "bytes": 6440,
+        "sha256": "20cb8b2bd522dcf10802a7ca9cabc417245f862cde4014be490a2d525b43b6d2"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/D/relax/step-009.json": {
+      "EXPORTED": {
+        "bytes": 6447,
+        "sha256": "e07017799d8abaa68c9100f99438f4e1d2e736e5d2f0cbda63270dc953905826"
+      },
+      "ORIGINAL": {
+        "bytes": 6447,
+        "sha256": "e07017799d8abaa68c9100f99438f4e1d2e736e5d2f0cbda63270dc953905826"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/D/relax/step-010.json": {
+      "EXPORTED": {
+        "bytes": 6442,
+        "sha256": "7f1a67c62089ae0ae149ae5a2489481dde85d2fd4ee438a909714da0cc370c4b"
+      },
+      "ORIGINAL": {
+        "bytes": 6442,
+        "sha256": "7f1a67c62089ae0ae149ae5a2489481dde85d2fd4ee438a909714da0cc370c4b"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/D/relax/step-011.json": {
+      "EXPORTED": {
+        "bytes": 6441,
+        "sha256": "b3061642ba6331d5302ef4d4178cad30cdd5f908e9a515caa46aba1658df860c"
+      },
+      "ORIGINAL": {
+        "bytes": 6441,
+        "sha256": "b3061642ba6331d5302ef4d4178cad30cdd5f908e9a515caa46aba1658df860c"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/D/relax/step-012.json": {
+      "EXPORTED": {
+        "bytes": 6441,
+        "sha256": "965159cfc45fb8388594e10ef52c88ede09dc2730873652d7d7cdb4e15f98a65"
+      },
+      "ORIGINAL": {
+        "bytes": 6441,
+        "sha256": "965159cfc45fb8388594e10ef52c88ede09dc2730873652d7d7cdb4e15f98a65"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/D/relax/step-013.json": {
+      "EXPORTED": {
+        "bytes": 6435,
+        "sha256": "e6844550d3aa6e4daab1c05a6ef122d5beed480a44db0b9b4f3852f293f385e0"
+      },
+      "ORIGINAL": {
+        "bytes": 6435,
+        "sha256": "e6844550d3aa6e4daab1c05a6ef122d5beed480a44db0b9b4f3852f293f385e0"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/D/relax/step-014.json": {
+      "EXPORTED": {
+        "bytes": 6455,
+        "sha256": "36dd13c3482fba5a2819222ea57c60d2a673da3b5d64221dc56d968cc37af2f9"
+      },
+      "ORIGINAL": {
+        "bytes": 6455,
+        "sha256": "36dd13c3482fba5a2819222ea57c60d2a673da3b5d64221dc56d968cc37af2f9"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/D/relax/step-015.json": {
+      "EXPORTED": {
+        "bytes": 6445,
+        "sha256": "26a29453e79bb7295bdd64699b40c8ee9be0e0b455aacb1adb79042d07f7c052"
+      },
+      "ORIGINAL": {
+        "bytes": 6445,
+        "sha256": "26a29453e79bb7295bdd64699b40c8ee9be0e0b455aacb1adb79042d07f7c052"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/D/relax/step-016.json": {
+      "EXPORTED": {
+        "bytes": 6465,
+        "sha256": "be5917708446c2c06fc8e2e3a5451a11adfbfac9e779444051854d77301ee434"
+      },
+      "ORIGINAL": {
+        "bytes": 6465,
+        "sha256": "be5917708446c2c06fc8e2e3a5451a11adfbfac9e779444051854d77301ee434"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/D/relax/step-017.json": {
+      "EXPORTED": {
+        "bytes": 6466,
+        "sha256": "b6df861faae857e8352a19fc288f08e7445da18ca295dd17e15051eea74b38bc"
+      },
+      "ORIGINAL": {
+        "bytes": 6466,
+        "sha256": "b6df861faae857e8352a19fc288f08e7445da18ca295dd17e15051eea74b38bc"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/D/relax/step-018.json": {
+      "EXPORTED": {
+        "bytes": 6468,
+        "sha256": "5830d6c503957c95f1cbd1221006aaf5c29636f67e2130c515a4397a057fe4e8"
+      },
+      "ORIGINAL": {
+        "bytes": 6468,
+        "sha256": "5830d6c503957c95f1cbd1221006aaf5c29636f67e2130c515a4397a057fe4e8"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/D/relax/step-019.json": {
+      "EXPORTED": {
+        "bytes": 6462,
+        "sha256": "f9a077aea40ef3d643762b31d3ea7223d654702afbb8e6538d0431df2b344b56"
+      },
+      "ORIGINAL": {
+        "bytes": 6462,
+        "sha256": "f9a077aea40ef3d643762b31d3ea7223d654702afbb8e6538d0431df2b344b56"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/D/relax/step-020.json": {
+      "EXPORTED": {
+        "bytes": 6468,
+        "sha256": "2913e5abe0937f7d2aa371b652b7bc3d2db8169e80a1cdbf785706bcaa07f379"
+      },
+      "ORIGINAL": {
+        "bytes": 6468,
+        "sha256": "2913e5abe0937f7d2aa371b652b7bc3d2db8169e80a1cdbf785706bcaa07f379"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/D/relax/step-021.json": {
+      "EXPORTED": {
+        "bytes": 6458,
+        "sha256": "60c64bb811a90c5ce8b12fe12a6e2b7eb9c876ff5259db4b57b7a51e53f6e305"
+      },
+      "ORIGINAL": {
+        "bytes": 6458,
+        "sha256": "60c64bb811a90c5ce8b12fe12a6e2b7eb9c876ff5259db4b57b7a51e53f6e305"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/D/relax/step-022.json": {
+      "EXPORTED": {
+        "bytes": 6458,
+        "sha256": "f909fe438219998e7e01d2667ef2e04f09c2c3caf6ef47f5c3f0104a6f3ba4e7"
+      },
+      "ORIGINAL": {
+        "bytes": 6458,
+        "sha256": "f909fe438219998e7e01d2667ef2e04f09c2c3caf6ef47f5c3f0104a6f3ba4e7"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/D/relax/step-023.json": {
+      "EXPORTED": {
+        "bytes": 6455,
+        "sha256": "7cb15272d4b2f025df2642f35e0dda3bbf29e8af12ad592641b4bc33e8b303da"
+      },
+      "ORIGINAL": {
+        "bytes": 6455,
+        "sha256": "7cb15272d4b2f025df2642f35e0dda3bbf29e8af12ad592641b4bc33e8b303da"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/D/run-result.json": {
+      "EXPORTED": {
+        "bytes": 22646,
+        "sha256": "acf2ed267f38506b39311a2bda7a83d5a1c650d00048dcfcf6f8adb2b54fd62d"
+      },
+      "ORIGINAL": {
+        "bytes": 22646,
+        "sha256": "acf2ed267f38506b39311a2bda7a83d5a1c650d00048dcfcf6f8adb2b54fd62d"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/D/source-manifest.json": {
+      "EXPORTED": {
+        "bytes": 2010,
+        "sha256": "7e2822f3415bc0925d0361a023481adc44a2e60de7a344b80d6e95ee4647e81b"
+      },
+      "ORIGINAL": {
+        "bytes": 2010,
+        "sha256": "7e2822f3415bc0925d0361a023481adc44a2e60de7a344b80d6e95ee4647e81b"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/D/source/collision_geometry.py": {
+      "EXPORTED": {
+        "bytes": 2107,
+        "sha256": "077eb638330c142ce710bd359780d0123d74d411e1bd9f26c7022a1e9bd1cc23"
+      },
+      "ORIGINAL": {
+        "bytes": 2107,
+        "sha256": "077eb638330c142ce710bd359780d0123d74d411e1bd9f26c7022a1e9bd1cc23"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/D/source/collision_ground.py": {
+      "EXPORTED": {
+        "bytes": 2508,
+        "sha256": "7ec514b422fbe2d43c8e1e60db71636ef6827d3bcbedd1f8291fc25241f070eb"
+      },
+      "ORIGINAL": {
+        "bytes": 2508,
+        "sha256": "7ec514b422fbe2d43c8e1e60db71636ef6827d3bcbedd1f8291fc25241f070eb"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/D/source/defect_screening/defect_bo.py": {
+      "EXPORTED": {
+        "bytes": 3769,
+        "sha256": "108036f46fb0cd031001362f6465b505374834cbfba3ba7c2bad5325030802b7"
+      },
+      "ORIGINAL": {
+        "bytes": 3769,
+        "sha256": "108036f46fb0cd031001362f6465b505374834cbfba3ba7c2bad5325030802b7"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/D/source/defect_screening/defect_calculator.py": {
+      "EXPORTED": {
+        "bytes": 3031,
+        "sha256": "9b6e301084f33f4c81d022c1affccc03dff82283c60701b3463cc34a66d5e5fb"
+      },
+      "ORIGINAL": {
+        "bytes": 3031,
+        "sha256": "9b6e301084f33f4c81d022c1affccc03dff82283c60701b3463cc34a66d5e5fb"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/D/source/defect_screening/defect_geometry.py": {
+      "EXPORTED": {
+        "bytes": 7503,
+        "sha256": "5eaa3da89b7ab1a297ddae18186aba5499cf8da85261a3d419d6dff6e28b4f6c"
+      },
+      "ORIGINAL": {
+        "bytes": 7503,
+        "sha256": "5eaa3da89b7ab1a297ddae18186aba5499cf8da85261a3d419d6dff6e28b4f6c"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/D/source/defect_screening/preflight_defect.py": {
+      "EXPORTED": {
+        "bytes": 3197,
+        "sha256": "d98140ba778dc09cca6f590f95ebc3c5e67ad5dedad2912fa918b7565c5bd159"
+      },
+      "ORIGINAL": {
+        "bytes": 3197,
+        "sha256": "d98140ba778dc09cca6f590f95ebc3c5e67ad5dedad2912fa918b7565c5bd159"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/D/source/defect_screening/relax_defect.py": {
+      "EXPORTED": {
+        "bytes": 2291,
+        "sha256": "cdee6361db2eca7c0c5943055da2a5795fa422cc518cc4cbc5cc7cf2a09d0a13"
+      },
+      "ORIGINAL": {
+        "bytes": 2291,
+        "sha256": "cdee6361db2eca7c0c5943055da2a5795fa422cc518cc4cbc5cc7cf2a09d0a13"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/D/source/defect_screening/run_defect.py": {
+      "EXPORTED": {
+        "bytes": 5860,
+        "sha256": "b6fc87b43aafd50b8a1d3bd03e10ab2725d955a2fe8e7af2b05d63e9369674ee"
+      },
+      "ORIGINAL": {
+        "bytes": 5860,
+        "sha256": "b6fc87b43aafd50b8a1d3bd03e10ab2725d955a2fe8e7af2b05d63e9369674ee"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/D/source/screen_io.py": {
+      "EXPORTED": {
+        "bytes": 1409,
+        "sha256": "dcab99128fbb312083bdccf440c4c32c214e58e78c59a8a52126300c25d3420c"
+      },
+      "ORIGINAL": {
+        "bytes": 1409,
+        "sha256": "dcab99128fbb312083bdccf440c4c32c214e58e78c59a8a52126300c25d3420c"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/D/source/substrate_framework/__init__.py": {
+      "EXPORTED": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "ORIGINAL": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/D/source/substrate_framework/collision_bare_reference.py": {
+      "EXPORTED": {
+        "bytes": 3022,
+        "sha256": "05ccba36601567b71a12af42c309cd978e1637b454454740c0f2909725598f09"
+      },
+      "ORIGINAL": {
+        "bytes": 3022,
+        "sha256": "05ccba36601567b71a12af42c309cd978e1637b454454740c0f2909725598f09"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/D/source/substrate_framework/collision_observables.py": {
+      "EXPORTED": {
+        "bytes": 4961,
+        "sha256": "b8a4ec9b0b68d5d2ffdc215625cd409e298daf7a34690db156f4feb9f05a9fdd"
+      },
+      "ORIGINAL": {
+        "bytes": 4961,
+        "sha256": "b8a4ec9b0b68d5d2ffdc215625cd409e298daf7a34690db156f4feb9f05a9fdd"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/h016/bo/occupied-host.json": {
+      "EXPORTED": {
+        "bytes": 2243,
+        "sha256": "94946e8253ab9eeda213d7183ab5f902b1edc03a657d824427b1429ef1b0d794"
+      },
+      "ORIGINAL": {
+        "bytes": 2243,
+        "sha256": "94946e8253ab9eeda213d7183ab5f902b1edc03a657d824427b1429ef1b0d794"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/h016/bo/occupied-host.txt": {
+      "EXPORTED": {
+        "bytes": 15406,
+        "sha256": "63e2644447485c036bba6fde11720ab488ba42b6a97d73362dfe8fd958353a3e"
+      },
+      "ORIGINAL": {
+        "bytes": 16104,
+        "sha256": "0284e4f43ce87fd8e0ccd609a4d6db17042a561918a891ff922fe5ff7c186523"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": [
+        {
+          "gpaw_user_headers_removed": 1,
+          "private_path_values_removed": 9
+        }
+      ]
+    },
+    "native/h016/bo/occupied-probe-R0p100.json": {
+      "EXPORTED": {
+        "bytes": 2347,
+        "sha256": "ddbf8fdc5493a418b4f2b6b83affc5264d2d036c9a063edcd6c65b8687b9a1b6"
+      },
+      "ORIGINAL": {
+        "bytes": 2347,
+        "sha256": "ddbf8fdc5493a418b4f2b6b83affc5264d2d036c9a063edcd6c65b8687b9a1b6"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/h016/bo/occupied-probe-R0p100.txt": {
+      "EXPORTED": {
+        "bytes": 15682,
+        "sha256": "f64cef68a1ed4e37dbce8ff7aeb41376a714ee4347f272f8434402e456f7a26d"
+      },
+      "ORIGINAL": {
+        "bytes": 16388,
+        "sha256": "cdbbca6bd76756b1030fcfcd1e39af9241a9d7aea692b1934219fcb11f88d840"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": [
+        {
+          "gpaw_user_headers_removed": 1,
+          "private_path_values_removed": 9
+        }
+      ]
+    },
+    "native/h016/bo/quartet.json": {
+      "EXPORTED": {
+        "bytes": 15614,
+        "sha256": "1774d8b32c8f9393858163cebc5a12d827d7abdb0062eafe9b47326ee997cb5a"
+      },
+      "ORIGINAL": {
+        "bytes": 15614,
+        "sha256": "1774d8b32c8f9393858163cebc5a12d827d7abdb0062eafe9b47326ee997cb5a"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/h016/bo/vacant-host.json": {
+      "EXPORTED": {
+        "bytes": 2149,
+        "sha256": "f97446ccf19eebedc0dd7ac9f995bf4305bfc500cda2a3de9282ccb837d42e31"
+      },
+      "ORIGINAL": {
+        "bytes": 2149,
+        "sha256": "f97446ccf19eebedc0dd7ac9f995bf4305bfc500cda2a3de9282ccb837d42e31"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/h016/bo/vacant-host.txt": {
+      "EXPORTED": {
+        "bytes": 15355,
+        "sha256": "02db81f0038f45bce638f150572c658cca84f16ba8550b43ccadc1591dec6a30"
+      },
+      "ORIGINAL": {
+        "bytes": 15957,
+        "sha256": "8c4482400cc8d215b3c4f3b6677005fd6bd2a3f01ba347f2b3a89764739a0c37"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": [
+        {
+          "gpaw_user_headers_removed": 1,
+          "private_path_values_removed": 8
+        }
+      ]
+    },
+    "native/h016/bo/vacant-probe-R0p100.json": {
+      "EXPORTED": {
+        "bytes": 2254,
+        "sha256": "ed5e6f0b43c4659467ac9d2981167879af2b2a2e6b070991a8a155f9fd846f97"
+      },
+      "ORIGINAL": {
+        "bytes": 2254,
+        "sha256": "ed5e6f0b43c4659467ac9d2981167879af2b2a2e6b070991a8a155f9fd846f97"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/h016/bo/vacant-probe-R0p100.txt": {
+      "EXPORTED": {
+        "bytes": 15439,
+        "sha256": "606597c16cacb555d749137a888dce4433ba43152515a2b95dd44c97d9116a56"
+      },
+      "ORIGINAL": {
+        "bytes": 16143,
+        "sha256": "de56eaefe19a4ad93977f2a7b94c4968d88a7163710035c9de2f23fe7dae713f"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": [
+        {
+          "gpaw_user_headers_removed": 1,
+          "private_path_values_removed": 9
+        }
+      ]
+    },
+    "native/h016/geometry-selection.json": {
+      "EXPORTED": {
+        "bytes": 7164,
+        "sha256": "cc735ecbf8be36113463ceb159a9b3c674c8e110a59759699e5b54e16c92430a"
+      },
+      "ORIGINAL": {
+        "bytes": 7164,
+        "sha256": "cc735ecbf8be36113463ceb159a9b3c674c8e110a59759699e5b54e16c92430a"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/h016/input.json": {
+      "EXPORTED": {
+        "bytes": 452,
+        "sha256": "416f2caf3857e65ac394e0813b63010e47cb2ebb4bcb4778540cc8d0e6459aff"
+      },
+      "ORIGINAL": {
+        "bytes": 452,
+        "sha256": "416f2caf3857e65ac394e0813b63010e47cb2ebb4bcb4778540cc8d0e6459aff"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/h016/native.log": {
+      "EXPORTED": {
+        "bytes": 580,
+        "sha256": "0ae4dfdd459166c60e24a6aebe6f31f46cf6ff459e022b1f638103b5c7633574"
+      },
+      "ORIGINAL": {
+        "bytes": 580,
+        "sha256": "0ae4dfdd459166c60e24a6aebe6f31f46cf6ff459e022b1f638103b5c7633574"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/h016/run-result.json": {
+      "EXPORTED": {
+        "bytes": 8823,
+        "sha256": "ccac343ab804b65fc553b472b508747ed0f9254b2039684da5d8fb1a7a2e904a"
+      },
+      "ORIGINAL": {
+        "bytes": 8823,
+        "sha256": "ccac343ab804b65fc553b472b508747ed0f9254b2039684da5d8fb1a7a2e904a"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/h016/source-manifest.json": {
+      "EXPORTED": {
+        "bytes": 2010,
+        "sha256": "e43e99273a83334da4dd39d8361b97d1857a2a1354f1ccc3a8fe6eab905853d1"
+      },
+      "ORIGINAL": {
+        "bytes": 2010,
+        "sha256": "e43e99273a83334da4dd39d8361b97d1857a2a1354f1ccc3a8fe6eab905853d1"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/h016/source/collision_geometry.py": {
+      "EXPORTED": {
+        "bytes": 2107,
+        "sha256": "077eb638330c142ce710bd359780d0123d74d411e1bd9f26c7022a1e9bd1cc23"
+      },
+      "ORIGINAL": {
+        "bytes": 2107,
+        "sha256": "077eb638330c142ce710bd359780d0123d74d411e1bd9f26c7022a1e9bd1cc23"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/h016/source/collision_ground.py": {
+      "EXPORTED": {
+        "bytes": 2508,
+        "sha256": "7ec514b422fbe2d43c8e1e60db71636ef6827d3bcbedd1f8291fc25241f070eb"
+      },
+      "ORIGINAL": {
+        "bytes": 2508,
+        "sha256": "7ec514b422fbe2d43c8e1e60db71636ef6827d3bcbedd1f8291fc25241f070eb"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/h016/source/defect_screening/defect_bo.py": {
+      "EXPORTED": {
+        "bytes": 3769,
+        "sha256": "108036f46fb0cd031001362f6465b505374834cbfba3ba7c2bad5325030802b7"
+      },
+      "ORIGINAL": {
+        "bytes": 3769,
+        "sha256": "108036f46fb0cd031001362f6465b505374834cbfba3ba7c2bad5325030802b7"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/h016/source/defect_screening/defect_calculator.py": {
+      "EXPORTED": {
+        "bytes": 3031,
+        "sha256": "9b6e301084f33f4c81d022c1affccc03dff82283c60701b3463cc34a66d5e5fb"
+      },
+      "ORIGINAL": {
+        "bytes": 3031,
+        "sha256": "9b6e301084f33f4c81d022c1affccc03dff82283c60701b3463cc34a66d5e5fb"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/h016/source/defect_screening/defect_geometry.py": {
+      "EXPORTED": {
+        "bytes": 6733,
+        "sha256": "6ed3a11ec7c33450d748cc792b3693cf9b3201b94d0bab1031b82532100369e2"
+      },
+      "ORIGINAL": {
+        "bytes": 6733,
+        "sha256": "6ed3a11ec7c33450d748cc792b3693cf9b3201b94d0bab1031b82532100369e2"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/h016/source/defect_screening/preflight_defect.py": {
+      "EXPORTED": {
+        "bytes": 3197,
+        "sha256": "d98140ba778dc09cca6f590f95ebc3c5e67ad5dedad2912fa918b7565c5bd159"
+      },
+      "ORIGINAL": {
+        "bytes": 3197,
+        "sha256": "d98140ba778dc09cca6f590f95ebc3c5e67ad5dedad2912fa918b7565c5bd159"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/h016/source/defect_screening/relax_defect.py": {
+      "EXPORTED": {
+        "bytes": 2232,
+        "sha256": "f9b2108ed28261e6b759673adccf11c7fdcdaae26ed6309c82cf9e9714598da9"
+      },
+      "ORIGINAL": {
+        "bytes": 2232,
+        "sha256": "f9b2108ed28261e6b759673adccf11c7fdcdaae26ed6309c82cf9e9714598da9"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/h016/source/defect_screening/run_defect.py": {
+      "EXPORTED": {
+        "bytes": 5860,
+        "sha256": "b6fc87b43aafd50b8a1d3bd03e10ab2725d955a2fe8e7af2b05d63e9369674ee"
+      },
+      "ORIGINAL": {
+        "bytes": 5860,
+        "sha256": "b6fc87b43aafd50b8a1d3bd03e10ab2725d955a2fe8e7af2b05d63e9369674ee"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/h016/source/screen_io.py": {
+      "EXPORTED": {
+        "bytes": 1409,
+        "sha256": "dcab99128fbb312083bdccf440c4c32c214e58e78c59a8a52126300c25d3420c"
+      },
+      "ORIGINAL": {
+        "bytes": 1409,
+        "sha256": "dcab99128fbb312083bdccf440c4c32c214e58e78c59a8a52126300c25d3420c"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/h016/source/substrate_framework/__init__.py": {
+      "EXPORTED": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "ORIGINAL": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/h016/source/substrate_framework/collision_bare_reference.py": {
+      "EXPORTED": {
+        "bytes": 3022,
+        "sha256": "05ccba36601567b71a12af42c309cd978e1637b454454740c0f2909725598f09"
+      },
+      "ORIGINAL": {
+        "bytes": 3022,
+        "sha256": "05ccba36601567b71a12af42c309cd978e1637b454454740c0f2909725598f09"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "native/h016/source/substrate_framework/collision_observables.py": {
+      "EXPORTED": {
+        "bytes": 4961,
+        "sha256": "b8a4ec9b0b68d5d2ffdc215625cd409e298daf7a34690db156f4feb9f05a9fdd"
+      },
+      "ORIGINAL": {
+        "bytes": 4961,
+        "sha256": "b8a4ec9b0b68d5d2ffdc215625cd409e298daf7a34690db156f4feb9f05a9fdd"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "portability_proof.py": {
+      "EXPORTED": {
+        "bytes": 11289,
+        "sha256": "49236f194a33b2d262f45ecce527d1aa5214afd36241ff996aa05367314ec6f5"
+      },
+      "ORIGINAL": {
+        "bytes": 11289,
+        "sha256": "49236f194a33b2d262f45ecce527d1aa5214afd36241ff996aa05367314ec6f5"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "provenance/C-AE-unconverged/relaxation.json": {
+      "EXPORTED": {
+        "bytes": 22685,
+        "sha256": "49198b0602560cc4dd18200e09a4902e139ebac14e55dab06de76f55acd724e1"
+      },
+      "ORIGINAL": {
+        "bytes": 22685,
+        "sha256": "49198b0602560cc4dd18200e09a4902e139ebac14e55dab06de76f55acd724e1"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "provenance/C-h-admission.json": {
+      "EXPORTED": {
+        "bytes": 506,
+        "sha256": "59527aab67b2a02398ac8c9710efb616c81f1b75982abe45e8ba4553079b0ddf"
+      },
+      "ORIGINAL": {
+        "bytes": 506,
+        "sha256": "59527aab67b2a02398ac8c9710efb616c81f1b75982abe45e8ba4553079b0ddf"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "provenance/C-original/relaxation.json": {
+      "EXPORTED": {
+        "bytes": 39054,
+        "sha256": "e87e72ff83fc762dfb8da8f1b491f7ffe9c3489d162b8cfd3e77bcc9689aea4a"
+      },
+      "ORIGINAL": {
+        "bytes": 39054,
+        "sha256": "e87e72ff83fc762dfb8da8f1b491f7ffe9c3489d162b8cfd3e77bcc9689aea4a"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "provenance/C-original/step-036.json": {
+      "EXPORTED": {
+        "bytes": 3091,
+        "sha256": "5229455c7b885856fb6a798f325a6de578bf0ebb307393d702662020d10bc916"
+      },
+      "ORIGINAL": {
+        "bytes": 3091,
+        "sha256": "5229455c7b885856fb6a798f325a6de578bf0ebb307393d702662020d10bc916"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "provenance/C-original/step-080.json": {
+      "EXPORTED": {
+        "bytes": 3077,
+        "sha256": "93c70d8d42148df0094798282d02cb241f3ef20694487945fb20191d85fcb526"
+      },
+      "ORIGINAL": {
+        "bytes": 3077,
+        "sha256": "93c70d8d42148df0094798282d02cb241f3ef20694487945fb20191d85fcb526"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "provenance/C-position-provenance.json": {
+      "EXPORTED": {
+        "bytes": 2442,
+        "sha256": "e7956edb7e926b3a744c4c02ab594ba35758dca724f3bb09578699b4e2c40495"
+      },
+      "ORIGINAL": {
+        "bytes": 2442,
+        "sha256": "e7956edb7e926b3a744c4c02ab594ba35758dca724f3bb09578699b4e2c40495"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "provenance/C-selected-step036.json": {
+      "EXPORTED": {
+        "bytes": 7164,
+        "sha256": "cc735ecbf8be36113463ceb159a9b3c674c8e110a59759699e5b54e16c92430a"
+      },
+      "ORIGINAL": {
+        "bytes": 7164,
+        "sha256": "cc735ecbf8be36113463ceb159a9b3c674c8e110a59759699e5b54e16c92430a"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "provenance/D-original/relaxation.json": {
+      "EXPORTED": {
+        "bytes": 41628,
+        "sha256": "8ef7d884d343099fc7accbe792889f6519790522357f31538ad8b2a160321bdb"
+      },
+      "ORIGINAL": {
+        "bytes": 41628,
+        "sha256": "8ef7d884d343099fc7accbe792889f6519790522357f31538ad8b2a160321bdb"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "provenance/D-original/step-075.json": {
+      "EXPORTED": {
+        "bytes": 4422,
+        "sha256": "7e5e1112b27764b22a264ff3e08fb928e6bcb3fbf3d96c8130b1d75aa02b6af9"
+      },
+      "ORIGINAL": {
+        "bytes": 4422,
+        "sha256": "7e5e1112b27764b22a264ff3e08fb928e6bcb3fbf3d96c8130b1d75aa02b6af9"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "provenance/accounting/g7-cell-occ-host-001.txt": {
+      "EXPORTED": {
+        "bytes": 108,
+        "sha256": "b39f5854774ab98232e382ebef7bf892a36e7d87c56ff69ffc782f470d1ce132"
+      },
+      "ORIGINAL": {
+        "bytes": 108,
+        "sha256": "b39f5854774ab98232e382ebef7bf892a36e7d87c56ff69ffc782f470d1ce132"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "provenance/accounting/g7-cell-occ-probe-001.txt": {
+      "EXPORTED": {
+        "bytes": 108,
+        "sha256": "43a9bb340aac7e70d5da0e80d1153cf74ce3ee0de57e458cd770ac1e3139106f"
+      },
+      "ORIGINAL": {
+        "bytes": 108,
+        "sha256": "43a9bb340aac7e70d5da0e80d1153cf74ce3ee0de57e458cd770ac1e3139106f"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "provenance/accounting/g7-cell-vac-host-001.txt": {
+      "EXPORTED": {
+        "bytes": 108,
+        "sha256": "93b436a98c0e6fc31bfce31cf88505baf3fde791abbd1237f811b1522896128d"
+      },
+      "ORIGINAL": {
+        "bytes": 108,
+        "sha256": "93b436a98c0e6fc31bfce31cf88505baf3fde791abbd1237f811b1522896128d"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "provenance/accounting/g7-cell-vac-probe-001.txt": {
+      "EXPORTED": {
+        "bytes": 108,
+        "sha256": "86643a63d69c9cf0e1b17a7a0146e1420dce2d38690888989b9d25052f413d97"
+      },
+      "ORIGINAL": {
+        "bytes": 108,
+        "sha256": "86643a63d69c9cf0e1b17a7a0146e1420dce2d38690888989b9d25052f413d97"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "provenance/accounting/g7-defect-a-standard-001.txt": {
+      "EXPORTED": {
+        "bytes": 109,
+        "sha256": "008e9d232b2add0e837212624be5037ff77e83f3b521dd585aa8431bff5d3dbf"
+      },
+      "ORIGINAL": {
+        "bytes": 109,
+        "sha256": "008e9d232b2add0e837212624be5037ff77e83f3b521dd585aa8431bff5d3dbf"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "provenance/accounting/g7-defect-c-ae-001.txt": {
+      "EXPORTED": {
+        "bytes": 108,
+        "sha256": "320c6c651fd84f93fa7f64f12e16a2d38e2c764c48d74758a75b992ec91e5d56"
+      },
+      "ORIGINAL": {
+        "bytes": 108,
+        "sha256": "320c6c651fd84f93fa7f64f12e16a2d38e2c764c48d74758a75b992ec91e5d56"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "provenance/accounting/g7-defect-c-cell3-001.txt": {
+      "EXPORTED": {
+        "bytes": 109,
+        "sha256": "46de8b1f0f5c1c81e32ff35116bbfd4cf922c2c4de5c015d73512c3ba4c13bbc"
+      },
+      "ORIGINAL": {
+        "bytes": 109,
+        "sha256": "46de8b1f0f5c1c81e32ff35116bbfd4cf922c2c4de5c015d73512c3ba4c13bbc"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "provenance/accounting/g7-defect-c-h016-001.txt": {
+      "EXPORTED": {
+        "bytes": 108,
+        "sha256": "a86362a5545ebc94c1b529a4990e03684dbf37e8658e2d8004b24f2132e497fc"
+      },
+      "ORIGINAL": {
+        "bytes": 108,
+        "sha256": "a86362a5545ebc94c1b529a4990e03684dbf37e8658e2d8004b24f2132e497fc"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "provenance/accounting/g7-defect-c-pilot-002.txt": {
+      "EXPORTED": {
+        "bytes": 109,
+        "sha256": "a431288e70a1de1f8ea6e48cdddd3310d6078c916c441f6a771bf4c20d855a15"
+      },
+      "ORIGINAL": {
+        "bytes": 109,
+        "sha256": "a431288e70a1de1f8ea6e48cdddd3310d6078c916c441f6a771bf4c20d855a15"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "provenance/accounting/g7-defect-c-pilot-003.txt": {
+      "EXPORTED": {
+        "bytes": 111,
+        "sha256": "0506a4bd9a4914b35d3c291d757f3867934bf0d564a46403fb64f804e6083490"
+      },
+      "ORIGINAL": {
+        "bytes": 111,
+        "sha256": "0506a4bd9a4914b35d3c291d757f3867934bf0d564a46403fb64f804e6083490"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "provenance/accounting/g7-defect-c-standard-001.txt": {
+      "EXPORTED": {
+        "bytes": 111,
+        "sha256": "6d0337f0c96c832b3573bcc20774d6f77697f9ca4a6d29ec68c348f9ca4b65ae"
+      },
+      "ORIGINAL": {
+        "bytes": 111,
+        "sha256": "6d0337f0c96c832b3573bcc20774d6f77697f9ca4a6d29ec68c348f9ca4b65ae"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "provenance/accounting/g7-defect-d-refine-001.txt": {
+      "EXPORTED": {
+        "bytes": 109,
+        "sha256": "29e18b5dfc987722dd943f0f96d4b6866e52a6bc2d35b00dc7b633938916ae2b"
+      },
+      "ORIGINAL": {
+        "bytes": 109,
+        "sha256": "29e18b5dfc987722dd943f0f96d4b6866e52a6bc2d35b00dc7b633938916ae2b"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "provenance/accounting/g7-defect-d-standard-001.txt": {
+      "EXPORTED": {
+        "bytes": 111,
+        "sha256": "77ba150c6859822006790c13a63eb2a275ea54accac8978308a742183eeb1b38"
+      },
+      "ORIGINAL": {
+        "bytes": 111,
+        "sha256": "77ba150c6859822006790c13a63eb2a275ea54accac8978308a742183eeb1b38"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "provenance/accounting/g7-defect-force-gradient-001.txt": {
+      "EXPORTED": {
+        "bytes": 107,
+        "sha256": "91a63b13f8a90fb6aaa250e24eca88cb90ecfebc31e58bc0d252efc3c2a63840"
+      },
+      "ORIGINAL": {
+        "bytes": 107,
+        "sha256": "91a63b13f8a90fb6aaa250e24eca88cb90ecfebc31e58bc0d252efc3c2a63840"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "provenance/delivery-authority.json": {
+      "EXPORTED": {
+        "bytes": 818,
+        "sha256": "eb0636f741c3fa899c2f19afc1ef9a94e99ea5dc051f5d98149b5bd1c47d55d6"
+      },
+      "ORIGINAL": {
+        "bytes": 818,
+        "sha256": "eb0636f741c3fa899c2f19afc1ef9a94e99ea5dc051f5d98149b5bd1c47d55d6"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "provenance/native-accounting.json": {
+      "EXPORTED": {
+        "bytes": 6137,
+        "sha256": "8734fc5fde07b274308c43e2d7b273cce983999cc4431fa058272c9713cb2436"
+      },
+      "ORIGINAL": {
+        "bytes": 6137,
+        "sha256": "8734fc5fde07b274308c43e2d7b273cce983999cc4431fa058272c9713cb2436"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "reader.py": {
+      "EXPORTED": {
+        "bytes": 13766,
+        "sha256": "291e0e5e65e37a7b618e83c0cd988a7f0fd6d4051a0d6ea6e77b0160454745ad"
+      },
+      "ORIGINAL": {
+        "bytes": 13766,
+        "sha256": "291e0e5e65e37a7b618e83c0cd988a7f0fd6d4051a0d6ea6e77b0160454745ad"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "readout_defect.py": {
+      "EXPORTED": {
+        "bytes": 10861,
+        "sha256": "5491d43f42a660e3a5d1a0ef17e421350f182b6c2d5cb66221726df6f87a83cc"
+      },
+      "ORIGINAL": {
+        "bytes": 10861,
+        "sha256": "5491d43f42a660e3a5d1a0ef17e421350f182b6c2d5cb66221726df6f87a83cc"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "results/readout.json": {
+      "EXPORTED": {
+        "bytes": 8607,
+        "sha256": "edf16977feaa6a96b42610b5a6427bddb5c8a28c623762ecde5a05e32bad282f"
+      },
+      "ORIGINAL": {
+        "bytes": 8607,
+        "sha256": "edf16977feaa6a96b42610b5a6427bddb5c8a28c623762ecde5a05e32bad282f"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "reuse_baseline.py": {
+      "EXPORTED": {
+        "bytes": 1667,
+        "sha256": "11b676cc80c5d5d8153d851615412c00a82ef7d6a4d26d27f12816bf9b78b133"
+      },
+      "ORIGINAL": {
+        "bytes": 1667,
+        "sha256": "11b676cc80c5d5d8153d851615412c00a82ef7d6a4d26d27f12816bf9b78b133"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "sensitivity/cell-sensitivity.json": {
+      "EXPORTED": {
+        "bytes": 5888,
+        "sha256": "80657d5b995d233303368a6fdf16533a5041baec999ec124985ced4c9cb95782"
+      },
+      "ORIGINAL": {
+        "bytes": 5888,
+        "sha256": "80657d5b995d233303368a6fdf16533a5041baec999ec124985ced4c9cb95782"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "sensitivity/input.json": {
+      "EXPORTED": {
+        "bytes": 6695,
+        "sha256": "91f72032a4715cf7b031e874445bbed7e97ed356a51838447ffd4a352a56c4f9"
+      },
+      "ORIGINAL": {
+        "bytes": 6695,
+        "sha256": "91f72032a4715cf7b031e874445bbed7e97ed356a51838447ffd4a352a56c4f9"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "sensitivity/roles/occupied-host/cell-role.json": {
+      "EXPORTED": {
+        "bytes": 717,
+        "sha256": "baa7cdc763df8940a7a8abd6070a87f4827a49281e427b6547522997be7c6313"
+      },
+      "ORIGINAL": {
+        "bytes": 717,
+        "sha256": "baa7cdc763df8940a7a8abd6070a87f4827a49281e427b6547522997be7c6313"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "sensitivity/roles/occupied-host/native.log": {
+      "EXPORTED": {
+        "bytes": 213,
+        "sha256": "3f19ce20c9576257dca85ed55f16930601dd1dd29c42929bc95db3f668ba2f91"
+      },
+      "ORIGINAL": {
+        "bytes": 213,
+        "sha256": "3f19ce20c9576257dca85ed55f16930601dd1dd29c42929bc95db3f668ba2f91"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "sensitivity/roles/occupied-host/state.json": {
+      "EXPORTED": {
+        "bytes": 11011,
+        "sha256": "5157d309cd05419a2e668ba2d8de5520d3cba4b5963bb18724c9f21c70f2632f"
+      },
+      "ORIGINAL": {
+        "bytes": 11011,
+        "sha256": "5157d309cd05419a2e668ba2d8de5520d3cba4b5963bb18724c9f21c70f2632f"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "sensitivity/roles/occupied-host/state.txt": {
+      "EXPORTED": {
+        "bytes": 22399,
+        "sha256": "2532300240f20717bb1141539baabe5acb875241ec9d148478535614d5815195"
+      },
+      "ORIGINAL": {
+        "bytes": 23086,
+        "sha256": "c5ed46b78388f0de6b35d33ff6104294a44c151f3f09ce77011eb0a3f2b71a6a"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": [
+        {
+          "gpaw_user_headers_removed": 1,
+          "private_path_values_removed": 9
+        }
+      ]
+    },
+    "sensitivity/roles/occupied-probe/cell-role.json": {
+      "EXPORTED": {
+        "bytes": 718,
+        "sha256": "6195adf15280e7e2d79b31b15e91e8939db2ce14de96b1329cb11d27d809d19a"
+      },
+      "ORIGINAL": {
+        "bytes": 718,
+        "sha256": "6195adf15280e7e2d79b31b15e91e8939db2ce14de96b1329cb11d27d809d19a"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "sensitivity/roles/occupied-probe/native.log": {
+      "EXPORTED": {
+        "bytes": 215,
+        "sha256": "ce307595965aeb79fafb010f45c6c4a6f11e20d0ef720b77f57b306e807b9ea3"
+      },
+      "ORIGINAL": {
+        "bytes": 215,
+        "sha256": "ce307595965aeb79fafb010f45c6c4a6f11e20d0ef720b77f57b306e807b9ea3"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "sensitivity/roles/occupied-probe/state.json": {
+      "EXPORTED": {
+        "bytes": 11106,
+        "sha256": "8fe2ff92bae9a404940273607f56a11ef59b1bc1a1a51a872a1be64e00b4bafc"
+      },
+      "ORIGINAL": {
+        "bytes": 11106,
+        "sha256": "8fe2ff92bae9a404940273607f56a11ef59b1bc1a1a51a872a1be64e00b4bafc"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "sensitivity/roles/occupied-probe/state.txt": {
+      "EXPORTED": {
+        "bytes": 22582,
+        "sha256": "27f358cd76366068cc9b920d797c2142bc7148ecfae86d56559eee795b5d5ee0"
+      },
+      "ORIGINAL": {
+        "bytes": 23271,
+        "sha256": "e25bf983d65f0dc3653203a95e9749381f1382e4e581431ffb0c30b758db2948"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": [
+        {
+          "gpaw_user_headers_removed": 1,
+          "private_path_values_removed": 9
+        }
+      ]
+    },
+    "sensitivity/roles/vacant-host/cell-role.json": {
+      "EXPORTED": {
+        "bytes": 715,
+        "sha256": "d3523b581e618fe36cb557f33055e68601129d7a0177a2fb84c5b09f36dc0de2"
+      },
+      "ORIGINAL": {
+        "bytes": 715,
+        "sha256": "d3523b581e618fe36cb557f33055e68601129d7a0177a2fb84c5b09f36dc0de2"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "sensitivity/roles/vacant-host/native.log": {
+      "EXPORTED": {
+        "bytes": 217,
+        "sha256": "0492cc3d22e07048cba62bbfbe1e3e595f2a52f43ff84f261a64f0f0eda2a5d9"
+      },
+      "ORIGINAL": {
+        "bytes": 217,
+        "sha256": "0492cc3d22e07048cba62bbfbe1e3e595f2a52f43ff84f261a64f0f0eda2a5d9"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "sensitivity/roles/vacant-host/state.json": {
+      "EXPORTED": {
+        "bytes": 10919,
+        "sha256": "db8e6bd0a2abc4dbd73d3f9657ab35c24855eca45ae5d3719ae36b69b78c9699"
+      },
+      "ORIGINAL": {
+        "bytes": 10919,
+        "sha256": "db8e6bd0a2abc4dbd73d3f9657ab35c24855eca45ae5d3719ae36b69b78c9699"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "sensitivity/roles/vacant-host/state.txt": {
+      "EXPORTED": {
+        "bytes": 21599,
+        "sha256": "e509fb297effaa3b09aacbc8a805b15d0bb01ba6944480cb0f000cf563cdef75"
+      },
+      "ORIGINAL": {
+        "bytes": 22192,
+        "sha256": "79546689a2afae7641d08f13ba58ed74f7b58ef8176855ba9a75695f93580ca2"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": [
+        {
+          "gpaw_user_headers_removed": 1,
+          "private_path_values_removed": 8
+        }
+      ]
+    },
+    "sensitivity/roles/vacant-probe/cell-role.json": {
+      "EXPORTED": {
+        "bytes": 716,
+        "sha256": "5bb15e02510495240fb54aa70fa81d9f3a4ae7473201a2979436e1291914fec5"
+      },
+      "ORIGINAL": {
+        "bytes": 716,
+        "sha256": "5bb15e02510495240fb54aa70fa81d9f3a4ae7473201a2979436e1291914fec5"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "sensitivity/roles/vacant-probe/native.log": {
+      "EXPORTED": {
+        "bytes": 211,
+        "sha256": "c63b66125c2e5921854173f5dd3cf671054effa7a95da8c3d6abd39117269623"
+      },
+      "ORIGINAL": {
+        "bytes": 211,
+        "sha256": "c63b66125c2e5921854173f5dd3cf671054effa7a95da8c3d6abd39117269623"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "sensitivity/roles/vacant-probe/state.json": {
+      "EXPORTED": {
+        "bytes": 11012,
+        "sha256": "830c1dc3e044d26c7309ff8fbff1792f1579c8dcdd241af8f829db4226914713"
+      },
+      "ORIGINAL": {
+        "bytes": 11012,
+        "sha256": "830c1dc3e044d26c7309ff8fbff1792f1579c8dcdd241af8f829db4226914713"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "sensitivity/roles/vacant-probe/state.txt": {
+      "EXPORTED": {
+        "bytes": 22240,
+        "sha256": "cf6d2cf806f7a21b93c74e0d9e83b1401079a9c355e9eed80a9fdcf8c77b22a3"
+      },
+      "ORIGINAL": {
+        "bytes": 22929,
+        "sha256": "85f09b60e62e1b45ddf4bbb9a93261de984514e66caac0828022380cb1071362"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": [
+        {
+          "gpaw_user_headers_removed": 1,
+          "private_path_values_removed": 9
+        }
+      ]
+    },
+    "sensitivity/source-manifest.json": {
+      "EXPORTED": {
+        "bytes": 2185,
+        "sha256": "c24ebb3b30b9d6ba9767a5255d4de0556e93e92f871bcfdcbd42c8e6de2f6d58"
+      },
+      "ORIGINAL": {
+        "bytes": 2185,
+        "sha256": "c24ebb3b30b9d6ba9767a5255d4de0556e93e92f871bcfdcbd42c8e6de2f6d58"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "sensitivity/source/collision_geometry.py": {
+      "EXPORTED": {
+        "bytes": 2107,
+        "sha256": "077eb638330c142ce710bd359780d0123d74d411e1bd9f26c7022a1e9bd1cc23"
+      },
+      "ORIGINAL": {
+        "bytes": 2107,
+        "sha256": "077eb638330c142ce710bd359780d0123d74d411e1bd9f26c7022a1e9bd1cc23"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "sensitivity/source/collision_ground.py": {
+      "EXPORTED": {
+        "bytes": 2508,
+        "sha256": "7ec514b422fbe2d43c8e1e60db71636ef6827d3bcbedd1f8291fc25241f070eb"
+      },
+      "ORIGINAL": {
+        "bytes": 2508,
+        "sha256": "7ec514b422fbe2d43c8e1e60db71636ef6827d3bcbedd1f8291fc25241f070eb"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "sensitivity/source/defect_screening/defect_bo.py": {
+      "EXPORTED": {
+        "bytes": 3769,
+        "sha256": "108036f46fb0cd031001362f6465b505374834cbfba3ba7c2bad5325030802b7"
+      },
+      "ORIGINAL": {
+        "bytes": 3769,
+        "sha256": "108036f46fb0cd031001362f6465b505374834cbfba3ba7c2bad5325030802b7"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "sensitivity/source/defect_screening/defect_calculator.py": {
+      "EXPORTED": {
+        "bytes": 3031,
+        "sha256": "9b6e301084f33f4c81d022c1affccc03dff82283c60701b3463cc34a66d5e5fb"
+      },
+      "ORIGINAL": {
+        "bytes": 3031,
+        "sha256": "9b6e301084f33f4c81d022c1affccc03dff82283c60701b3463cc34a66d5e5fb"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "sensitivity/source/defect_screening/defect_geometry.py": {
+      "EXPORTED": {
+        "bytes": 7503,
+        "sha256": "5eaa3da89b7ab1a297ddae18186aba5499cf8da85261a3d419d6dff6e28b4f6c"
+      },
+      "ORIGINAL": {
+        "bytes": 7503,
+        "sha256": "5eaa3da89b7ab1a297ddae18186aba5499cf8da85261a3d419d6dff6e28b4f6c"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "sensitivity/source/defect_screening/preflight_defect.py": {
+      "EXPORTED": {
+        "bytes": 3197,
+        "sha256": "d98140ba778dc09cca6f590f95ebc3c5e67ad5dedad2912fa918b7565c5bd159"
+      },
+      "ORIGINAL": {
+        "bytes": 3197,
+        "sha256": "d98140ba778dc09cca6f590f95ebc3c5e67ad5dedad2912fa918b7565c5bd159"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "sensitivity/source/defect_screening/relax_defect.py": {
+      "EXPORTED": {
+        "bytes": 2291,
+        "sha256": "cdee6361db2eca7c0c5943055da2a5795fa422cc518cc4cbc5cc7cf2a09d0a13"
+      },
+      "ORIGINAL": {
+        "bytes": 2291,
+        "sha256": "cdee6361db2eca7c0c5943055da2a5795fa422cc518cc4cbc5cc7cf2a09d0a13"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "sensitivity/source/defect_screening/run_cell_sensitivity.py": {
+      "EXPORTED": {
+        "bytes": 2644,
+        "sha256": "2c2837822a7421fd2a06801a883c92a4f96b6bd1dfb48c858140d6ed6207f0e8"
+      },
+      "ORIGINAL": {
+        "bytes": 2644,
+        "sha256": "2c2837822a7421fd2a06801a883c92a4f96b6bd1dfb48c858140d6ed6207f0e8"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "sensitivity/source/defect_screening/run_defect.py": {
+      "EXPORTED": {
+        "bytes": 5860,
+        "sha256": "b6fc87b43aafd50b8a1d3bd03e10ab2725d955a2fe8e7af2b05d63e9369674ee"
+      },
+      "ORIGINAL": {
+        "bytes": 5860,
+        "sha256": "b6fc87b43aafd50b8a1d3bd03e10ab2725d955a2fe8e7af2b05d63e9369674ee"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "sensitivity/source/screen_io.py": {
+      "EXPORTED": {
+        "bytes": 1409,
+        "sha256": "dcab99128fbb312083bdccf440c4c32c214e58e78c59a8a52126300c25d3420c"
+      },
+      "ORIGINAL": {
+        "bytes": 1409,
+        "sha256": "dcab99128fbb312083bdccf440c4c32c214e58e78c59a8a52126300c25d3420c"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "sensitivity/source/substrate_framework/__init__.py": {
+      "EXPORTED": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "ORIGINAL": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "sensitivity/source/substrate_framework/collision_bare_reference.py": {
+      "EXPORTED": {
+        "bytes": 3022,
+        "sha256": "05ccba36601567b71a12af42c309cd978e1637b454454740c0f2909725598f09"
+      },
+      "ORIGINAL": {
+        "bytes": 3022,
+        "sha256": "05ccba36601567b71a12af42c309cd978e1637b454454740c0f2909725598f09"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    },
+    "sensitivity/source/substrate_framework/collision_observables.py": {
+      "EXPORTED": {
+        "bytes": 4961,
+        "sha256": "b8a4ec9b0b68d5d2ffdc215625cd409e298daf7a34690db156f4feb9f05a9fdd"
+      },
+      "ORIGINAL": {
+        "bytes": 4961,
+        "sha256": "b8a4ec9b0b68d5d2ffdc215625cd409e298daf7a34690db156f4feb9f05a9fdd"
+      },
+      "provenance": "original-byte inventory; EXPORTED differs only by declared private paths or GPAW User headers",
+      "transformation": []
+    }
+  },
+  "native_invocations": 0,
+  "omissions": [
+    "Converged cell size and sampling: no converged two-cell qualification; any larger-cell result is unrelaxed sensitivity only, with finite k sampling and vacancy density unresolved.",
+    "Alpha-Pd volume: common expanded PdD lattice retained; alpha-Pd near a=3.89 A was not computed.",
+    "Model and ensemble: static non-spin-polarized PBE/PAW-geometry/Hae-BO only, without thermal ionic ensemble, ZPE, dynamics or fusion rates; one fixed-inventory local basin is not a global basin search or saturation capacity."
+  ],
+  "point_qualified": true,
+  "portability_command": "python portability_proof.py ARCHIVE OUTPUT_DIRECTORY",
+  "provenance": "ORIGINAL binds immutable source bytes; only declared private paths and GPAW User headers may differ in EXPORTED text. Scientific Native JSON and reused B are exact. Manifest is externally bound by archive SHA256, not a signature.",
+  "publishing": false,
+  "qualification_scope": "Force-qualified actual A/C/D and representative C grid check; NO converged cell-size qualification, per Axiom revised scope.",
+  "reader_command": "python reader.py CAPSULE_DIRECTORY",
+  "schema": "pdd-defect-screening-capsule-v2"
+}

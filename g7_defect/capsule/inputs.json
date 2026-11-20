@@ -1,0 +1,98 @@
+{
+  "baseline": "baseline/B-reused.json",
+  "cell_sensitivity": "sensitivity",
+  "curves": "curves",
+  "extra": [
+    {
+      "destination": "provenance/delivery-authority.json"
+    },
+    {
+      "destination": "provenance/native-accounting.json"
+    },
+    {
+      "destination": "provenance/C-h-admission.json"
+    },
+    {
+      "destination": "provenance/C-position-provenance.json"
+    },
+    {
+      "destination": "provenance/C-selected-step036.json"
+    },
+    {
+      "destination": "provenance/C-original/step-036.json"
+    },
+    {
+      "destination": "provenance/C-original/step-080.json"
+    },
+    {
+      "destination": "provenance/C-original/relaxation.json"
+    },
+    {
+      "destination": "provenance/C-AE-unconverged/relaxation.json"
+    },
+    {
+      "destination": "provenance/D-original/relaxation.json"
+    },
+    {
+      "destination": "provenance/D-original/step-075.json"
+    },
+    {
+      "destination": "provenance/accounting/g7-defect-c-pilot-002.txt"
+    },
+    {
+      "destination": "provenance/accounting/g7-defect-c-pilot-003.txt"
+    },
+    {
+      "destination": "provenance/accounting/g7-defect-force-gradient-001.txt"
+    },
+    {
+      "destination": "provenance/accounting/g7-defect-a-standard-001.txt"
+    },
+    {
+      "destination": "provenance/accounting/g7-defect-c-standard-001.txt"
+    },
+    {
+      "destination": "provenance/accounting/g7-defect-d-standard-001.txt"
+    },
+    {
+      "destination": "provenance/accounting/g7-defect-c-ae-001.txt"
+    },
+    {
+      "destination": "provenance/accounting/g7-defect-c-h016-001.txt"
+    },
+    {
+      "destination": "provenance/accounting/g7-defect-d-refine-001.txt"
+    },
+    {
+      "destination": "provenance/accounting/g7-defect-c-cell3-001.txt"
+    },
+    {
+      "destination": "provenance/accounting/g7-cell-occ-host-001.txt"
+    },
+    {
+      "destination": "provenance/accounting/g7-cell-vac-host-001.txt"
+    },
+    {
+      "destination": "provenance/accounting/g7-cell-occ-probe-001.txt"
+    },
+    {
+      "destination": "provenance/accounting/g7-cell-vac-probe-001.txt"
+    }
+  ],
+  "omissions": [
+    "Converged cell size and sampling: no converged two-cell qualification; any larger-cell result is unrelaxed sensitivity only, with finite k sampling and vacancy density unresolved.",
+    "Alpha-Pd volume: common expanded PdD lattice retained; alpha-Pd near a=3.89 A was not computed.",
+    "Model and ensemble: static non-spin-polarized PBE/PAW-geometry/Hae-BO only, without thermal ionic ensemble, ZPE, dynamics or fusion rates; one fixed-inventory local basin is not a global basin search or saturation capacity."
+  ],
+  "original_private_configuration": {
+    "bytes": 5871,
+    "sha256": "453774cb4d26deffae782bd3fc55ff16628dabfd819fda20c9d4461a95f7f5a1"
+  },
+  "readout": "results/readout.json",
+  "runs": {
+    "A": "native/A",
+    "C": "native/C",
+    "D": "native/D",
+    "h016": "native/h016"
+  }
+}

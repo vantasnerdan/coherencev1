@@ -1,0 +1,364 @@
+{
+  "case": "C",
+  "completed": true,
+  "frozen_source": {
+    "bytes": 2010,
+    "path": "source-manifest.json",
+    "sha256": "e43e99273a83334da4dd39d8361b97d1857a2a1354f1ccc3a8fe6eab905853d1"
+  },
+  "input": {
+    "bytes": 452,
+    "path": "input.json",
+    "sha256": "416f2caf3857e65ac394e0813b63010e47cb2ebb4bcb4778540cc8d0e6459aff"
+  },
+  "process_cpu_s": 251.567552517,
+  "quartet": {
+    "bytes": 15614,
+    "path": "quartet.json",
+    "sha256": "1774d8b32c8f9393858163cebc5a12d827d7abdb0062eafe9b47326ee997cb5a"
+  },
+  "relaxation": {
+    "authority": "Axiom2518; original0.05 optimizer outcome is unchanged",
+    "cell_A": [
+      [
+        0.0,
+        4.134141684668574,
+        4.134141684668574
+      ],
+      [
+        4.134141684668574,
+        0.0,
+        4.134141684668574
+      ],
+      [
+        4.134141684668574,
+        4.134141684668574,
+        0.0
+      ]
+    ],
+    "force_threshold_eV_A": 0.1,
+    "frames": [
+      {
+        "energy": {
+          "free_energy_eV": -28.9091329088071,
+          "internal_energy_eV": -28.624860068545676,
+          "minus_TS_eV": -0.2842728402614228
+        },
+        "gpw": {
+          "bytes": 6050228,
+          "path": "step-036.gpw",
+          "sha256": "ce32e3a6aad4fa9281ccc67363cc94274a37c480f35913a699ebce61cc585588"
+        },
+        "raw_fmax_eV_A": 0.07855681530561519,
+        "step": 36
+      }
+    ],
+    "free_energy_drift_after_selected_eV": -0.20539878223448582,
+    "initial": {
+      "case": "C",
+      "cell_A": [
+        [
+          0.0,
+          4.134141684668574,
+          4.134141684668574
+        ],
+        [
+          4.134141684668574,
+          0.0,
+          4.134141684668574
+        ],
+        [
+          4.134141684668574,
+          4.134141684668574,
+          0.0
+        ]
+      ],
+      "constraint": "No fixed ions; raw all-ion forces. Fixed lattice only.",
+      "initial_positions_A": [
+        [
+          2.084320404436931,
+          2.071976483921933,
+          4.118726305009205
+        ],
+        [
+          2.070726520364336,
+          4.121162367548891,
+          2.0856343295815787
+        ],
+        [
+          8.247943967430357,
+          6.216101955560329,
+          6.206847785334415
+        ],
+        [
+          4.119912403991296,
+          6.180960320138942,
+          6.184573150652752
+        ],
+        [
+          2.078742311353837,
+          0.01874395986282867,
+          2.0835254499109372
+        ],
+        [
+          2.0807103073341593,
+          6.180899091962926,
+          4.142910158467906
+        ],
+        [
+          4.122494193100527,
+          0.015005929015595743,
+          4.116774613723223
+        ],
+        [
+          4.134141684668573,
+          4.134141684668573,
+          4.134141684668573
+        ]
+      ],
+      "original_Pd_sites": 8,
+      "seed": "Deterministic zero-mean Pd displacement0.02A; D inventory fixed, D target initially at vacancy for C/D.",
+      "seeded_neighbour_D": [],
+      "symbols": [
+        "Pd",
+        "Pd",
+        "Pd",
+        "Pd",
+        "Pd",
+        "Pd",
+        "Pd",
+        "H"
+      ],
+      "target_index": 7,
+      "vacancy_initial_A": [
+        4.134141684668574,
+        4.134141684668574,
+        4.134141684668574
+      ]
+    },
+    "passed": true,
+    "path": {
+      "candidate_directions": 76,
+      "direction": [
+        -0.4319765215724017,
+        0.6576289794815603,
+        -0.6171875
+      ],
+      "matched_control_direction": false,
+      "minimum_background_clearance_A": 1.7238091429664861,
+      "sampled_radii_A": [
+        0.1,
+        0.125,
+        0.15000000000000002,
+        0.17500000000000002,
+        0.2,
+        0.225,
+        0.25,
+        0.275,
+        0.30000000000000004,
+        0.325,
+        0.35,
+        0.375,
+        0.4,
+        0.42500000000000004,
+        0.45000000000000007,
+        0.475,
+        0.5,
+        0.525,
+        0.55,
+        0.5750000000000001,
+        0.6,
+        0.625,
+        0.65,
+        0.675,
+        0.7000000000000001,
+        0.725,
+        0.75,
+        0.775,
+        0.8,
+        0.8250000000000001,
+        0.85,
+        0.875,
+        0.9,
+        0.925,
+        0.9500000000000001,
+        0.975,
+        1.0,
+        1.0250000000000001,
+        1.05,
+        1.0750000000000002,
+        1.1,
+        1.1250000000000002,
+        1.1500000000000001,
+        1.175,
+        1.2000000000000002,
+        1.225,
+        1.2500000000000002,
+        1.2750000000000001,
+        1.3000000000000003,
+        1.3250000000000002,
+        1.35,
+        1.3750000000000002,
+        1.4000000000000001,
+        1.4250000000000003,
+        1.4500000000000002,
+        1.475,
+        1.5000000000000002,
+        1.5250000000000001,
+        1.5500000000000003,
+        1.5750000000000002,
+        1.6
+      ],
+      "scope": "Best sampled head-on ray by background-nucleus clearance; vacancy-side hemisphere when target is displaced, all directions at the vacancy centre. Not a global angular optimum.",
+      "target_A": [
+        3.9659800276041977,
+        4.226328062539835,
+        3.9071389393555305
+      ],
+      "vacancy": {
+        "hydrogen_distances_A": [
+          0.3493311866802953
+        ],
+        "hydrogen_indices": [
+          7
+        ],
+        "mean_Pd_translation_A": [
+          0.03174357830935889,
+          -0.01472993598105938,
+          0.03877738315759057
+        ],
+        "occupancy_radius_A": 1.5,
+        "occupancy_sensitivity": {
+          "1.3": 1,
+          "1.5": 1,
+          "1.7": 1
+        },
+        "registered_centre_A": [
+          4.165885262977933,
+          4.119411748687514,
+          4.1729190678261645
+        ],
+        "scope": "Geometric occupancy of this relaxed fixed-inventory local basin, not a saturation capacity.",
+        "target_distance_A": 0.3493311866802953,
+        "target_offset_A": [
+          -0.1999052353737354,
+          0.10691631385232103,
+          -0.26578012847063404
+        ],
+        "trapped_n": 1
+      },
+      "vacancy_side_projection_A": 0.32070180762996
+    },
+    "positions_A": [
+      [
+        2.6938627396849633,
+        3.0048575339280816,
+        4.3897131432343235
+      ],
+      [
+        2.7668403141319766,
+        3.9559065184249196,
+        1.8192311403405728
+      ],
+      [
+        8.187960834370292,
+        6.448799782312324,
+        6.805607663404159
+      ],
+      [
+        4.549861275954338,
+        5.430460552452318,
+        5.247676500308016
+      ],
+      [
+        1.2115532709295067,
+        -0.3453594105273568,
+        2.929825200458091
+      ],
+      [
+        1.9211138726846806,
+        5.56826289431214,
+        4.472677553841887
+      ],
+      [
+        3.695862848421198,
+        0.6388126852416032,
+        3.545702273196101
+      ],
+      [
+        3.9659800276041977,
+        4.226328062539835,
+        3.9071389393555305
+      ]
+    ],
+    "raw_fmax_eV_A": 0.07855681530561519,
+    "scope": "Selected actual PAW force boundary admitted at0.1eV/A, not a claim the original0.05 optimization passed.",
+    "source_frame": {
+      "bytes": 3091,
+      "path": "step-036.json",
+      "sha256": "5229455c7b885856fb6a798f325a6de578bf0ebb307393d702662020d10bc916"
+    },
+    "source_last_completed_fmax_eV_A": 0.5904798684855879,
+    "source_last_completed_frame": {
+      "bytes": 3077,
+      "path": "step-080.json",
+      "sha256": "93c70d8d42148df0094798282d02cb241f3ef20694487945fb20191d85fcb526"
+    },
+    "symbols": [
+      "Pd",
+      "Pd",
+      "Pd",
+      "Pd",
+      "Pd",
+      "Pd",
+      "Pd",
+      "H"
+    ],
+    "target_index": 7,
+    "vacancy": {
+      "hydrogen_distances_A": [
+        0.3493311866802953
+      ],
+      "hydrogen_indices": [
+        7
+      ],
+      "mean_Pd_translation_A": [
+        0.03174357830935889,
+        -0.01472993598105938,
+        0.03877738315759057
+      ],
+      "occupancy_radius_A": 1.5,
+      "occupancy_sensitivity": {
+        "1.3": 1,
+        "1.5": 1,
+        "1.7": 1
+      },
+      "registered_centre_A": [
+        4.165885262977933,
+        4.119411748687514,
+        4.1729190678261645
+      ],
+      "scope": "Geometric occupancy of this relaxed fixed-inventory local basin, not a saturation capacity.",
+      "target_distance_A": 0.3493311866802953,
+      "target_offset_A": [
+        -0.1999052353737354,
+        0.10691631385232103,
+        -0.26578012847063404
+      ],
+      "trapped_n": 1
+    }
+  },
+  "rows": [
+    {
+      "BO_quartet_soft_eV": 26.095900384034817,
+      "R_A": 0.1,
+      "V_pair_total_eV": 105.29295993027343,
+      "lowering_eV": 38.70349475640471,
+      "point_minus_gaussian_eV": 79.1970595462386
+    }
+  ],
+  "schema": "pd-defect-native-run-v1",
+  "scope": "Standard-H PAW relaxed geometry, all four BO energies recomputed with Hae; C numerical admission remains separate.",
+  "stage": "production",
+  "wall_s": 251.89397207833827
+}

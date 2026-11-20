@@ -1,0 +1,668 @@
+{
+  "case": "C",
+  "energy_zero": "Eprobe,o-Eprobe,v-Ehost,o+Ehost,v, frozen relaxed background; target-only neutral removal.",
+  "material_pair_export_eligible": false,
+  "path": {
+    "candidate_directions": 76,
+    "direction": [
+      -0.4319765215724017,
+      0.6576289794815603,
+      -0.6171875
+    ],
+    "matched_control_direction": false,
+    "minimum_background_clearance_A": 1.7238091429664861,
+    "sampled_radii_A": [
+      0.1,
+      0.125,
+      0.15000000000000002,
+      0.17500000000000002,
+      0.2,
+      0.225,
+      0.25,
+      0.275,
+      0.30000000000000004,
+      0.325,
+      0.35,
+      0.375,
+      0.4,
+      0.42500000000000004,
+      0.45000000000000007,
+      0.475,
+      0.5,
+      0.525,
+      0.55,
+      0.5750000000000001,
+      0.6,
+      0.625,
+      0.65,
+      0.675,
+      0.7000000000000001,
+      0.725,
+      0.75,
+      0.775,
+      0.8,
+      0.8250000000000001,
+      0.85,
+      0.875,
+      0.9,
+      0.925,
+      0.9500000000000001,
+      0.975,
+      1.0,
+      1.0250000000000001,
+      1.05,
+      1.0750000000000002,
+      1.1,
+      1.1250000000000002,
+      1.1500000000000001,
+      1.175,
+      1.2000000000000002,
+      1.225,
+      1.2500000000000002,
+      1.2750000000000001,
+      1.3000000000000003,
+      1.3250000000000002,
+      1.35,
+      1.3750000000000002,
+      1.4000000000000001,
+      1.4250000000000003,
+      1.4500000000000002,
+      1.475,
+      1.5000000000000002,
+      1.5250000000000001,
+      1.5500000000000003,
+      1.5750000000000002,
+      1.6
+    ],
+    "scope": "Best sampled head-on ray by background-nucleus clearance; vacancy-side hemisphere when target is displaced, all directions at the vacancy centre. Not a global angular optimum.",
+    "target_A": [
+      3.9659800276041977,
+      4.226328062539835,
+      3.9071389393555305
+    ],
+    "vacancy": {
+      "hydrogen_distances_A": [
+        0.3493311866802953
+      ],
+      "hydrogen_indices": [
+        7
+      ],
+      "mean_Pd_translation_A": [
+        0.03174357830935889,
+        -0.01472993598105938,
+        0.03877738315759057
+      ],
+      "occupancy_radius_A": 1.5,
+      "occupancy_sensitivity": {
+        "1.3": 1,
+        "1.5": 1,
+        "1.7": 1
+      },
+      "registered_centre_A": [
+        4.165885262977933,
+        4.119411748687514,
+        4.1729190678261645
+      ],
+      "scope": "Geometric occupancy of this relaxed fixed-inventory local basin, not a saturation capacity.",
+      "target_distance_A": 0.3493311866802953,
+      "target_offset_A": [
+        -0.1999052353737354,
+        0.10691631385232103,
+        -0.26578012847063404
+      ],
+      "trapped_n": 1
+    },
+    "vacancy_side_projection_A": 0.32070180762996
+  },
+  "process_cpu_s": 250.848062274,
+  "relaxation_raw_fmax_eV_A": 0.07855681530561519,
+  "rows": [
+    {
+      "BO_quartet_soft_eV": 26.095900384034817,
+      "R_A": 0.1,
+      "V_pair_total_eV": 105.29295993027343,
+      "lowering_eV": 38.70349475640471,
+      "point_minus_gaussian_eV": 79.1970595462386
+    }
+  ],
+  "schema": "pd-defect-neutral-quartet-v1",
+  "scope": "Current-cell static point-regularized BO; representative C h/cell controls still required. No U0/rate/dynamic observable.",
+  "specification": {
+    "absolute_stop_utc": "2026-11-20T13:00:00Z",
+    "authority": "Axiom2403/2484/2491/2508; issue247; approved PAW geometry / all-electron BO production",
+    "case": "C",
+    "geometry_H_setup": "standard_PAW",
+    "h_A": 0.16,
+    "kmesh": [
+      1,
+      1,
+      1
+    ],
+    "lattice_A": 4.134141684668574,
+    "max_ionic_steps": 80,
+    "original_Pd_sites": 8,
+    "repeat_primitive": 2,
+    "requested_radii_A": [
+      0.1,
+      0.2,
+      0.3,
+      0.5,
+      1,
+      1.6
+    ]
+  },
+  "states": {
+    "occupied-host": {
+      "actual_kpoints": 1,
+      "cell_A": [
+        [
+          0.0,
+          4.134141684668574,
+          4.134141684668574
+        ],
+        [
+          4.134141684668574,
+          0.0,
+          4.134141684668574
+        ],
+        [
+          4.134141684668574,
+          4.134141684668574,
+          0.0
+        ]
+      ],
+      "charge": 0,
+      "electrons": 71.0,
+      "energy": {
+        "free_energy_eV": -40.474690383464036,
+        "internal_energy_eV": -40.1905371527884,
+        "minus_TS_eV": -0.28415323067563575
+      },
+      "gpw": {
+        "bytes": 9559096,
+        "path": "occupied-host.gpw",
+        "sha256": "ca3466eef1c79164628a90524036cec084f05603e89c6f633874f03d26e87466"
+      },
+      "nbands": 52,
+      "positions_A": [
+        [
+          2.6938627396849633,
+          3.0048575339280816,
+          4.3897131432343235
+        ],
+        [
+          2.7668403141319766,
+          3.9559065184249196,
+          1.8192311403405728
+        ],
+        [
+          8.187960834370292,
+          6.448799782312324,
+          6.805607663404159
+        ],
+        [
+          4.549861275954338,
+          5.430460552452318,
+          5.247676500308016
+        ],
+        [
+          1.2115532709295067,
+          -0.3453594105273568,
+          2.929825200458091
+        ],
+        [
+          1.9211138726846806,
+          5.56826289431214,
+          4.472677553841887
+        ],
+        [
+          3.695862848421198,
+          0.6388126852416032,
+          3.545702273196101
+        ],
+        [
+          3.9659800276041977,
+          4.226328062539835,
+          3.9071389393555305
+        ]
+      ],
+      "process_cpu_s": 58.676275061,
+      "realspace_shape": [
+        28,
+        28,
+        28
+      ],
+      "scf_converged": true,
+      "scf_iterations": 35,
+      "schema": "pd-defect-native-state-v1",
+      "setups": {
+        "H": "ae",
+        "Pd": "10"
+      },
+      "specification": {
+        "absolute_stop_utc": "2026-11-20T13:00:00Z",
+        "authority": "Axiom2403/2484/2491/2508; issue247; approved PAW geometry / all-electron BO production",
+        "case": "C",
+        "geometry_H_setup": "standard_PAW",
+        "h_A": 0.16,
+        "kmesh": [
+          1,
+          1,
+          1
+        ],
+        "lattice_A": 4.134141684668574,
+        "max_ionic_steps": 80,
+        "original_Pd_sites": 8,
+        "repeat_primitive": 2,
+        "requested_radii_A": [
+          0.1,
+          0.2,
+          0.3,
+          0.5,
+          1,
+          1.6
+        ]
+      },
+      "symbols": [
+        "Pd",
+        "Pd",
+        "Pd",
+        "Pd",
+        "Pd",
+        "Pd",
+        "Pd",
+        "H"
+      ],
+      "wavefunction_predictor": "NullWfsMover",
+      "xc": "PBE"
+    },
+    "occupied-probes": [
+      {
+        "R_A": 0.1,
+        "actual_kpoints": 1,
+        "cell_A": [
+          [
+            0.0,
+            4.134141684668574,
+            4.134141684668574
+          ],
+          [
+            4.134141684668574,
+            0.0,
+            4.134141684668574
+          ],
+          [
+            4.134141684668574,
+            4.134141684668574,
+            0.0
+          ]
+        ],
+        "charge": 1,
+        "electrons": 71.0,
+        "energy": {
+          "free_energy_eV": -36.204506717244364,
+          "internal_energy_eV": -35.653818819732486,
+          "minus_TS_eV": -0.55068789751188
+        },
+        "gpw": {
+          "bytes": 9559173,
+          "path": "occupied-probe-R0p100.gpw",
+          "sha256": "cb83646a92f3aea31f939c062895adcbbdfdb08721181afd8fdb824d66c664a0"
+        },
+        "nbands": 52,
+        "positions_A": [
+          [
+            2.6938627396849633,
+            3.0048575339280816,
+            4.3897131432343235
+          ],
+          [
+            2.7668403141319766,
+            3.9559065184249196,
+            1.8192311403405728
+          ],
+          [
+            8.187960834370292,
+            6.448799782312324,
+            6.805607663404159
+          ],
+          [
+            4.549861275954338,
+            5.430460552452318,
+            5.247676500308016
+          ],
+          [
+            1.2115532709295067,
+            -0.3453594105273568,
+            2.929825200458091
+          ],
+          [
+            1.9211138726846806,
+            5.56826289431214,
+            4.472677553841887
+          ],
+          [
+            3.695862848421198,
+            0.6388126852416032,
+            3.545702273196101
+          ],
+          [
+            3.9659800276041977,
+            4.226328062539835,
+            3.9071389393555305
+          ],
+          [
+            4.009177679761438,
+            4.160565164591679,
+            3.9688576893555303
+          ]
+        ],
+        "process_cpu_s": 65.482316696,
+        "projectile_A": [
+          4.009177679761438,
+          4.160565164591679,
+          3.9688576893555303
+        ],
+        "realspace_shape": [
+          28,
+          28,
+          28
+        ],
+        "scf_converged": true,
+        "scf_iterations": 39,
+        "schema": "pd-defect-native-state-v1",
+        "setups": {
+          "H": "ae",
+          "Pd": "10"
+        },
+        "specification": {
+          "absolute_stop_utc": "2026-11-20T13:00:00Z",
+          "authority": "Axiom2403/2484/2491/2508; issue247; approved PAW geometry / all-electron BO production",
+          "case": "C",
+          "geometry_H_setup": "standard_PAW",
+          "h_A": 0.16,
+          "kmesh": [
+            1,
+            1,
+            1
+          ],
+          "lattice_A": 4.134141684668574,
+          "max_ionic_steps": 80,
+          "original_Pd_sites": 8,
+          "repeat_primitive": 2,
+          "requested_radii_A": [
+            0.1,
+            0.2,
+            0.3,
+            0.5,
+            1,
+            1.6
+          ]
+        },
+        "symbols": [
+          "Pd",
+          "Pd",
+          "Pd",
+          "Pd",
+          "Pd",
+          "Pd",
+          "Pd",
+          "H",
+          "H"
+        ],
+        "wavefunction_predictor": "NullWfsMover",
+        "xc": "PBE"
+      }
+    ],
+    "vacant-host": {
+      "actual_kpoints": 1,
+      "cell_A": [
+        [
+          0.0,
+          4.134141684668574,
+          4.134141684668574
+        ],
+        [
+          4.134141684668574,
+          0.0,
+          4.134141684668574
+        ],
+        [
+          4.134141684668574,
+          4.134141684668574,
+          0.0
+        ]
+      ],
+      "charge": 0,
+      "electrons": 70.0,
+      "energy": {
+        "free_energy_eV": -24.846337361077783,
+        "internal_energy_eV": -24.39094172647638,
+        "minus_TS_eV": -0.45539563460140425
+      },
+      "gpw": {
+        "bytes": 9382393,
+        "path": "vacant-host.gpw",
+        "sha256": "211768444d24bfccae1a46e5054ed2991f3579534b4a2e667f9203c051d04f57"
+      },
+      "nbands": 51,
+      "positions_A": [
+        [
+          2.6938627396849633,
+          3.0048575339280816,
+          4.3897131432343235
+        ],
+        [
+          2.7668403141319766,
+          3.9559065184249196,
+          1.8192311403405728
+        ],
+        [
+          8.187960834370292,
+          6.448799782312324,
+          6.805607663404159
+        ],
+        [
+          4.549861275954338,
+          5.430460552452318,
+          5.247676500308016
+        ],
+        [
+          1.2115532709295067,
+          -0.3453594105273568,
+          2.929825200458091
+        ],
+        [
+          1.9211138726846806,
+          5.56826289431214,
+          4.472677553841887
+        ],
+        [
+          3.695862848421198,
+          0.6388126852416032,
+          3.545702273196101
+        ]
+      ],
+      "process_cpu_s": 67.79076632499999,
+      "realspace_shape": [
+        28,
+        28,
+        28
+      ],
+      "scf_converged": true,
+      "scf_iterations": 42,
+      "schema": "pd-defect-native-state-v1",
+      "setups": {
+        "H": "ae",
+        "Pd": "10"
+      },
+      "specification": {
+        "absolute_stop_utc": "2026-11-20T13:00:00Z",
+        "authority": "Axiom2403/2484/2491/2508; issue247; approved PAW geometry / all-electron BO production",
+        "case": "C",
+        "geometry_H_setup": "standard_PAW",
+        "h_A": 0.16,
+        "kmesh": [
+          1,
+          1,
+          1
+        ],
+        "lattice_A": 4.134141684668574,
+        "max_ionic_steps": 80,
+        "original_Pd_sites": 8,
+        "repeat_primitive": 2,
+        "requested_radii_A": [
+          0.1,
+          0.2,
+          0.3,
+          0.5,
+          1,
+          1.6
+        ]
+      },
+      "symbols": [
+        "Pd",
+        "Pd",
+        "Pd",
+        "Pd",
+        "Pd",
+        "Pd",
+        "Pd"
+      ],
+      "wavefunction_predictor": "NullWfsMover",
+      "xc": "PBE"
+    },
+    "vacant-probes": [
+      {
+        "R_A": 0.1,
+        "actual_kpoints": 1,
+        "cell_A": [
+          [
+            0.0,
+            4.134141684668574,
+            4.134141684668574
+          ],
+          [
+            4.134141684668574,
+            0.0,
+            4.134141684668574
+          ],
+          [
+            4.134141684668574,
+            4.134141684668574,
+            0.0
+          ]
+        ],
+        "charge": 1,
+        "electrons": 70.0,
+        "energy": {
+          "free_energy_eV": -46.398784353047766,
+          "internal_energy_eV": -45.95012377745528,
+          "minus_TS_eV": -0.4486605755924809
+        },
+        "gpw": {
+          "bytes": 9382469,
+          "path": "vacant-probe-R0p100.gpw",
+          "sha256": "d855c2d0069976d48e6b8668698ff546ddc41511f3b58bdf9d5c8e32d8fb90a3"
+        },
+        "nbands": 51,
+        "positions_A": [
+          [
+            2.6938627396849633,
+            3.0048575339280816,
+            4.3897131432343235
+          ],
+          [
+            2.7668403141319766,
+            3.9559065184249196,
+            1.8192311403405728
+          ],
+          [
+            8.187960834370292,
+            6.448799782312324,
+            6.805607663404159
+          ],
+          [
+            4.549861275954338,
+            5.430460552452318,
+            5.247676500308016
+          ],
+          [
+            1.2115532709295067,
+            -0.3453594105273568,
+            2.929825200458091
+          ],
+          [
+            1.9211138726846806,
+            5.56826289431214,
+            4.472677553841887
+          ],
+          [
+            3.695862848421198,
+            0.6388126852416032,
+            3.545702273196101
+          ],
+          [
+            4.009177679761438,
+            4.160565164591679,
+            3.9688576893555303
+          ]
+        ],
+        "process_cpu_s": 58.459184496999995,
+        "projectile_A": [
+          4.009177679761438,
+          4.160565164591679,
+          3.9688576893555303
+        ],
+        "realspace_shape": [
+          28,
+          28,
+          28
+        ],
+        "scf_converged": true,
+        "scf_iterations": 36,
+        "schema": "pd-defect-native-state-v1",
+        "setups": {
+          "H": "ae",
+          "Pd": "10"
+        },
+        "specification": {
+          "absolute_stop_utc": "2026-11-20T13:00:00Z",
+          "authority": "Axiom2403/2484/2491/2508; issue247; approved PAW geometry / all-electron BO production",
+          "case": "C",
+          "geometry_H_setup": "standard_PAW",
+          "h_A": 0.16,
+          "kmesh": [
+            1,
+            1,
+            1
+          ],
+          "lattice_A": 4.134141684668574,
+          "max_ionic_steps": 80,
+          "original_Pd_sites": 8,
+          "repeat_primitive": 2,
+          "requested_radii_A": [
+            0.1,
+            0.2,
+            0.3,
+            0.5,
+            1,
+            1.6
+          ]
+        },
+        "symbols": [
+          "Pd",
+          "Pd",
+          "Pd",
+          "Pd",
+          "Pd",
+          "Pd",
+          "Pd",
+          "H"
+        ],
+        "wavefunction_predictor": "NullWfsMover",
+        "xc": "PBE"
+      }
+    ]
+  }
+}

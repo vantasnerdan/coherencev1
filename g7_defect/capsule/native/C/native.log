@@ -1,0 +1,30 @@
+DEFECT_RUN_START case=C stage=production
+DEFECT_SCF_START case=C state=occupied-host
+DEFECT_SCF_COMPLETE case=C state=occupied-host cpu_s=41.467521208
+DEFECT_SCF_START case=C state=occupied-probe-R1p600
+DEFECT_SCF_COMPLETE case=C state=occupied-probe-R1p600 cpu_s=42.989212136
+DEFECT_SCF_START case=C state=occupied-probe-R1p000
+DEFECT_SCF_COMPLETE case=C state=occupied-probe-R1p000 cpu_s=32.506377141
+DEFECT_SCF_START case=C state=occupied-probe-R0p500
+DEFECT_SCF_COMPLETE case=C state=occupied-probe-R0p500 cpu_s=33.263192279999984
+DEFECT_SCF_START case=C state=occupied-probe-R0p300
+DEFECT_SCF_COMPLETE case=C state=occupied-probe-R0p300 cpu_s=30.788408962000005
+DEFECT_SCF_START case=C state=occupied-probe-R0p200
+DEFECT_SCF_COMPLETE case=C state=occupied-probe-R0p200 cpu_s=26.56299610900001
+DEFECT_SCF_START case=C state=occupied-probe-R0p100
+DEFECT_SCF_COMPLETE case=C state=occupied-probe-R0p100 cpu_s=28.406960905999995
+DEFECT_SCF_START case=C state=vacant-host
+DEFECT_SCF_COMPLETE case=C state=vacant-host cpu_s=38.884897626
+DEFECT_SCF_START case=C state=vacant-probe-R1p600
+DEFECT_SCF_COMPLETE case=C state=vacant-probe-R1p600 cpu_s=46.63338133100001
+DEFECT_SCF_START case=C state=vacant-probe-R1p000
+DEFECT_SCF_COMPLETE case=C state=vacant-probe-R1p000 cpu_s=32.216039851000005
+DEFECT_SCF_START case=C state=vacant-probe-R0p500
+DEFECT_SCF_COMPLETE case=C state=vacant-probe-R0p500 cpu_s=33.04840409100001
+DEFECT_SCF_START case=C state=vacant-probe-R0p300
+DEFECT_SCF_COMPLETE case=C state=vacant-probe-R0p300 cpu_s=30.050060807999955
+DEFECT_SCF_START case=C state=vacant-probe-R0p200
+DEFECT_SCF_COMPLETE case=C state=vacant-probe-R0p200 cpu_s=25.255239727000003
+DEFECT_SCF_START case=C state=vacant-probe-R0p100
+DEFECT_SCF_COMPLETE case=C state=vacant-probe-R0p100 cpu_s=28.33700979599996
+DEFECT_RUN_COMPLETE case=C stage=production cpu_s=471.94506713699997
