@@ -98,6 +98,7 @@ Pass 6 replaces seven lumped inputs with resolved quantities: the fitted screeni
 | Directory | What it is |
 |---|---|
 | `g7_defect/` | Static screening of a deuteron at a Pd vacancy and at low loading, by the `g6_collision/` method. At 0.1 A, low-loading Pd gives 37.2 eV, PdD 40.5 eV, a D at a vacancy 38.3 eV and a vacancy in PdD 37.9 eV. Neither loading nor a vacancy moves static screening by more than 10 percent, so the cold-work and loading trends in the published data are not static screening at a vacancy or at low loading. |
+| `g7_micro/` | Screening treated as a distribution over real sites instead of one ideal site. A small share of strong sites near the surface reproduces the UC Davis curves about as well as the earlier rising-screening law: about 1.6 percent of the deuterium at 2.6 keV in PdD and 2.7 percent at 1.7 keV in TiD. Site count and screening trade along a curve. Fine grain boundaries, wide dislocation cores and Ti grain bands have room for the needed share; coarse annealed Pd grain boundaries do not. Cold-rolled Pd needs more strong sites, not only lower loading. |
 
 ## Reproducibility
 
