@@ -1,0 +1,126 @@
+{
+  "bridge": {
+    "binding": {
+      "bytes": 73217,
+      "path": "li-h-tabulated-bridge.json",
+      "sha256": "646242d52ae3b0bd2d051f921d0cce0623fa379cd27c82891ba1116af3b0134a"
+    },
+    "path": "data/li-h-tabulated-bridge.json"
+  },
+  "constants": {
+    "Bohr_A": 0.5291772105638411,
+    "Hartree_eV": 27.211386024367243,
+    "inherited_forward_mass_D_u": 2.0141,
+    "velocity_mass_D_over_e": 3670.48296788
+  },
+  "control_analysis": {
+    "binding": {
+      "bytes": 104727,
+      "path": "expected-control-analysis.json",
+      "sha256": "7d2e074379870ddc5a2961641bc65b1d7507195f9b75f7954ebeb421dcc11ead"
+    },
+    "path": "data/expected-control-analysis.json"
+  },
+  "datasets": [
+    {
+      "name": "q2-fine",
+      "stopping": {
+        "binding": {
+          "bytes": 127537,
+          "path": "stopping.json",
+          "sha256": "f32447c79c4122300771166c16c248cce27da9c743b4ffc82b78f30a782115af"
+        },
+        "path": "data/q2-fine/stopping.json"
+      }
+    },
+    {
+      "name": "eta-half",
+      "stopping": {
+        "binding": {
+          "bytes": 127864,
+          "path": "stopping.json",
+          "sha256": "a20049835fd0daa64d9e63f2e5d673380c9f9486c8495ee594e8d6b6de68d425"
+        },
+        "path": "data/eta-half/stopping.json"
+      }
+    },
+    {
+      "name": "bands72",
+      "stopping": {
+        "binding": {
+          "bytes": 127543,
+          "path": "stopping.json",
+          "sha256": "ccd3fba2d791e4eb80612c6ecdb301bd305d3c230940497644c76a0ef4ddb5e0"
+        },
+        "path": "data/bands72/stopping.json"
+      }
+    },
+    {
+      "name": "PW700",
+      "stopping": {
+        "binding": {
+          "bytes": 127508,
+          "path": "stopping.json",
+          "sha256": "8c79b91b0cd84db9f9a5b048ec73bd0b0b5bddf9560949f7b303d4ccb187b7cf"
+        },
+        "path": "data/PW700/stopping.json"
+      }
+    },
+    {
+      "name": "k16",
+      "stopping": {
+        "binding": {
+          "bytes": 127456,
+          "path": "stopping.json",
+          "sha256": "986e8227b96131d33c6aa036a59a071c32d371dfbb5c7132d412088ca00802b7"
+        },
+        "path": "data/k16/stopping.json"
+      }
+    },
+    {
+      "name": "G100",
+      "stopping": {
+        "binding": {
+          "bytes": 127562,
+          "path": "stopping.json",
+          "sha256": "5a3ffcef4d8492b111a14cd2fd9b7ced2274dd49b92a3ddd0e3a0b793e01438d"
+        },
+        "path": "data/G100/stopping.json"
+      }
+    },
+    {
+      "name": "q4",
+      "stopping": {
+        "binding": {
+          "bytes": 133106,
+          "path": "stopping.json",
+          "sha256": "087ec4adb1ed2fe810d7093eb433db3b7b176ef24c7739bb93d8d3ea6c5aaf4b"
+        },
+        "path": "data/q4/stopping.json"
+      }
+    }
+  ],
+  "original_bridge": {
+    "bytes": 73412,
+    "path": "li-h-tabulated-bridge.json",
+    "sha256": "bb70e5aa7a671128133a87be50d1d2df53658026112aa48405edfc5aba579429"
+  },
+  "prior_controls": {
+    "binding": {
+      "bytes": 30617,
+      "path": "prior-controls.json",
+      "sha256": "e52c78cf54df88685aec10bb9003c20b994be68c8023ad7884163c1a32cb9882"
+    },
+    "path": "data/prior-controls.json"
+  },
+  "q4_returns": {
+    "binding": {
+      "bytes": 7150526,
+      "path": "expected-q4-returns.json",
+      "sha256": "af8e76c119da858c59ada035838b61dfa135acb99653744517cd77d074a95e28"
+    },
+    "path": "data/expected-q4-returns.json"
+  },
+  "schema": "P257-portable-loss-index-v1",
+  "scope": "Actual projected saved-loss replay; full inverses retained unbundled, not absent primary data."
+}
