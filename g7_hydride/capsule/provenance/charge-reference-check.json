@@ -1,0 +1,19 @@
+{
+  "schema": "hydride-charge-reference-check-v1",
+  "passed": true,
+  "source": {
+    "bytes": 1917,
+    "sha256": "0bc71a8eeff52cd3833c9ac67bf0802eed68c6122c8e182314d89cd5e752929d"
+  },
+  "matched_charge_expression": "0",
+  "wrong_charge_expression": "k/volume**(1/3) + phi",
+  "wrong_charge_sensitivity_nonzero": true,
+  "gas_atomic_reference_count_coefficients": [
+    2,
+    -1,
+    -1,
+    0
+  ],
+  "scope": "An identical same-cell q-squared background/gauge term cancels in the quartet. This does NOT cancel geometry-dependent electronic/multipole images; actual F two-cell checks are still required.",
+  "empty_reference": "With zero nuclei/electrons the electronic/ionic/atomic-reference sums are empty and the adopted Hamiltonian zero is explicit; no failed Native state is substituted."
+}

@@ -1,0 +1,45 @@
+{
+  "curves": "curves",
+  "extra": [
+    {
+      "destination": "provenance/g6-gap-LiD-ground-original.json"
+    },
+    {
+      "destination": "provenance/native-accounting.json"
+    },
+    {
+      "destination": "provenance/pilot-disposition.json"
+    },
+    {
+      "destination": "provenance/pinned-consumer-proof.json"
+    },
+    {
+      "destination": "provenance/charge-reference-check.json"
+    },
+    {
+      "destination": "provenance/verify_charge_reference.py"
+    },
+    {
+      "destination": "provenance/gpaw-ae-original.py"
+    },
+    {
+      "destination": "provenance/setup-basis-bindings.json"
+    }
+  ],
+  "omissions": [
+    "Static nonspin PBE/FD0.1 electronic ensemble only: no thermal ionic/ZPE/dynamic treatment or experimental fitted U0.",
+    "Finite periodic cells and representative F h/cell checks, not an exact isolated electronic limit or exhaustive k-space convergence.",
+    "One ideal ordered LiD environment and atomic-D reference, not a microstructure/configuration or experimental molecular-gas ensemble."
+  ],
+  "original_private_configuration": {
+    "bytes": 2360,
+    "sha256": "a2f5cf3a718bd3d13c02aac6f9f1ef19475b4a20ee7aa3c27afa52bab25654c1"
+  },
+  "readout": "results/readout-mandatory-001.json",
+  "runs": {
+    "F": "native/F/calculation",
+    "F_cell": "native/F_cell/calculation",
+    "F_h": "native/F_h/calculation",
+    "G": "native/G/calculation"
+  }
+}

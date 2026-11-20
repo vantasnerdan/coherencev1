@@ -1,0 +1,45 @@
+{
+  "schema": "hydride-pinned-consumer-proof-v1",
+  "pinned_ref": "2645b19a",
+  "module": "g6_pairlaw.script.material_pair",
+  "prepared_state_requested": false,
+  "checks": {
+    "F_q0": {
+      "curve": {
+        "bytes": 45971,
+        "sha256": "ab2a3e17d65f7894009f9e5238b273534651c7c7954b8639001b10c3b7537ba2"
+      },
+      "arrays_preserved_exactly": true,
+      "source_sha_matched": true,
+      "max_lowering_constant_roundoff_eV": 6.514255801448599e-10
+    },
+    "F_q1": {
+      "curve": {
+        "bytes": 45984,
+        "sha256": "f625e725be4c22b6237063f15e5069b0fe9d47ec93999b924464070974e8e226"
+      },
+      "arrays_preserved_exactly": true,
+      "source_sha_matched": true,
+      "max_lowering_constant_roundoff_eV": 6.514255801448599e-10
+    },
+    "G_q0": {
+      "curve": {
+        "bytes": 39653,
+        "sha256": "17e4a465f88b85a8d4eb2ddda99adc3297176f2837b96c20e63aaca1bc059dea"
+      },
+      "arrays_preserved_exactly": true,
+      "source_sha_matched": true,
+      "max_lowering_constant_roundoff_eV": 6.514255801448599e-10
+    },
+    "G_q1": {
+      "curve": {
+        "bytes": 39667,
+        "sha256": "332a657f9f5c38a5beeb1e71bff6bbfbe111f028d1718cd2fa217584a5b4fb9f"
+      },
+      "arrays_preserved_exactly": true,
+      "source_sha_matched": true,
+      "max_lowering_constant_roundoff_eV": 6.514255801448599e-10
+    }
+  },
+  "passed": true
+}
