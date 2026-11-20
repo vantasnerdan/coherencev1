@@ -1,0 +1,89 @@
+{
+  "rows": [
+    {
+      "coarse_grid": [
+        15,
+        15,
+        15
+      ],
+      "cuts": [
+        {
+          "Ng": 274,
+          "Q_max_Ainv": 10.175532326953237,
+          "admissible": true,
+          "ecut_eV": 400
+        },
+        {
+          "Ng": 492,
+          "Q_max_Ainv": 12.53093332742568,
+          "admissible": true,
+          "ecut_eV": 600
+        },
+        {
+          "Ng": 757,
+          "Q_max_Ainv": 14.46383983113733,
+          "admissible": true,
+          "ecut_eV": 800
+        }
+      ],
+      "host": "Pd"
+    },
+    {
+      "coarse_grid": [
+        16,
+        16,
+        16
+      ],
+      "cuts": [
+        {
+          "Ng": 314,
+          "Q_max_Ainv": 10.216535985725917,
+          "admissible": true,
+          "ecut_eV": 400
+        },
+        {
+          "Ng": 580,
+          "Q_max_Ainv": 12.503993772728998,
+          "admissible": true,
+          "ecut_eV": 600
+        },
+        {
+          "Ng": 911,
+          "Q_max_Ainv": 14.473322076793908,
+          "admissible": true,
+          "ecut_eV": 800
+        }
+      ],
+      "host": "PdD"
+    },
+    {
+      "coarse_grid": [
+        18,
+        18,
+        18
+      ],
+      "cuts": [
+        {
+          "Ng": 386,
+          "Q_max_Ainv": 10.213217682947493,
+          "admissible": true,
+          "ecut_eV": 400
+        },
+        {
+          "Ng": 721,
+          "Q_max_Ainv": 12.521184012793766,
+          "admissible": true,
+          "ecut_eV": 600
+        },
+        {
+          "Ng": 1101,
+          "Q_max_Ainv": 14.465485913899093,
+          "admissible": true,
+          "ecut_eV": 800
+        }
+      ],
+      "host": "TiD2"
+    }
+  ],
+  "scope": "Descriptor construction only on actual retained grid; no SCF/RPA, no new ground, no convergence claimed"
+}

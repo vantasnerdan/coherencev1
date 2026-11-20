@@ -1,0 +1,56 @@
+{
+  "rows": [
+    {
+      "host": "Pd",
+      "kmesh": [
+        12,
+        12,
+        12
+      ],
+      "metadata": {
+        "bytes": 2876,
+        "path": "ground.json",
+        "sha256": "89601e2e2bab251dc0b0550331dc92022c27cd1dbd33c59b9fb4ba5e5844b07e"
+      },
+      "nocc1": 2,
+      "nocc2": 6,
+      "saved_nbands": 156,
+      "volume_A3": 14.715967249999999
+    },
+    {
+      "host": "PdD",
+      "kmesh": [
+        12,
+        12,
+        12
+      ],
+      "metadata": {
+        "bytes": 5286,
+        "path": "ground.json",
+        "sha256": "394b0fe8dfab92858eedd5bb608db7faa7ebdfbe5920927b4859a295c74d5f5a"
+      },
+      "nocc1": 2,
+      "nocc2": 6,
+      "saved_nbands": 156,
+      "volume_A3": 17.664285626805682
+    },
+    {
+      "host": "TiD2",
+      "kmesh": [
+        12,
+        12,
+        12
+      ],
+      "metadata": {
+        "bytes": 5001,
+        "path": "ground.json",
+        "sha256": "f188d6b44483c05f36df3c2393eb0439140d022222e779e6748587ebda3d0651"
+      },
+      "nocc1": 5,
+      "nocc2": 9,
+      "saved_nbands": 96,
+      "volume_A3": 21.63067831255701
+    }
+  ],
+  "scope": "Read-only actual retained occupation/block dimensions through FakeWFS; no default occupation getter, no SCF/RPA and no GPW save"
+}

@@ -1,0 +1,957 @@
+{
+  "ICRU": {
+    "H_per_metal": 0.0,
+    "effective_A1": [
+      4.399905897595107,
+      3.5412792182268196,
+      3.047339102111034,
+      2.9016503266271725,
+      3.24386847150769,
+      4.100487968248777,
+      4.30370001755918
+    ],
+    "expected_formula_unit_A1": 5.238,
+    "host_A1": 5.238,
+    "hydrogen_A1": 1.254,
+    "metal_number_density_Ainv3": 0.06795339939343777,
+    "relative_difference": [
+      -0.1600026923262493,
+      -0.3239253115259987,
+      -0.41822468459124984,
+      -0.44603850198030315,
+      -0.3807047591623349,
+      -0.21716533634043977,
+      -0.17836960336785412
+    ],
+    "scope": "Untuned Bragg comparison at actual source stoichiometry/density, not transported foil loading",
+    "stopping_eV_A": [
+      1.7798992170862038,
+      2.5171576124605637,
+      3.5597984341724076,
+      4.359844875440466,
+      5.628535531542892,
+      7.119596868344815,
+      9.075740840151076
+    ],
+    "tuned": false,
+    "within30percent": false
+  },
+  "coupled_screening_absolute_estimate_eV": 1.5060373953559818,
+  "coupled_stopping_relative_estimate": [
+    0.2520558672557635,
+    0.2872214074122099,
+    0.2906534054589303,
+    0.3619718936767515,
+    0.4427906633507423,
+    0.32182534328974194,
+    0.2694367766077082
+  ],
+  "eligible": false,
+  "energy_lab_keV": [
+    0.5,
+    1.0,
+    2.0,
+    3.0,
+    5.0,
+    8.0,
+    13.0
+  ],
+  "epsilon_macro_static_curve": [
+    {
+      "Q_head_Ainv": 1.3988169904119934,
+      "epsilon_M_imag": -1.2005622125935836e-19,
+      "epsilon_M_real": 3.8407027556199873,
+      "eta_eV": 0.1,
+      "group": "primary-N3",
+      "kmesh": [
+        12,
+        12,
+        12
+      ],
+      "nbands": 96,
+      "q_fractional": [
+        -0.5,
+        -0.5,
+        -0.5
+      ],
+      "response_cutoff_eV": 200
+    },
+    {
+      "Q_head_Ainv": 1.3988169904119934,
+      "epsilon_M_imag": 4.1618310412742067e-20,
+      "epsilon_M_real": 3.7948627077245694,
+      "eta_eV": 0.1,
+      "group": "primary-N3",
+      "kmesh": [
+        12,
+        12,
+        12
+      ],
+      "nbands": 96,
+      "q_fractional": [
+        -0.5,
+        -0.5,
+        -0.16666666666666666
+      ],
+      "response_cutoff_eV": 200
+    },
+    {
+      "Q_head_Ainv": 1.173426298094918,
+      "epsilon_M_imag": 7.350612256963128e-21,
+      "epsilon_M_real": 5.0373432233568955,
+      "eta_eV": 0.1,
+      "group": "primary-N3",
+      "kmesh": [
+        12,
+        12,
+        12
+      ],
+      "nbands": 96,
+      "q_fractional": [
+        -0.5,
+        -0.16666666666666666,
+        -0.16666666666666666
+      ],
+      "response_cutoff_eV": 200
+    },
+    {
+      "Q_head_Ainv": 1.5926232034821637,
+      "epsilon_M_imag": 1.818213914450481e-20,
+      "epsilon_M_real": 3.1617907652434742,
+      "eta_eV": 0.1,
+      "group": "primary-N3",
+      "kmesh": [
+        12,
+        12,
+        12
+      ],
+      "nbands": 96,
+      "q_fractional": [
+        -0.5,
+        -0.16666666666666666,
+        0.16666666666666666
+      ],
+      "response_cutoff_eV": 200
+    },
+    {
+      "Q_head_Ainv": 0.4662723301373311,
+      "epsilon_M_imag": 9.392608486376879e-20,
+      "epsilon_M_real": 26.47238020774268,
+      "eta_eV": 0.1,
+      "group": "primary-N3",
+      "kmesh": [
+        12,
+        12,
+        12
+      ],
+      "nbands": 96,
+      "q_fractional": [
+        -0.16666666666666666,
+        -0.16666666666666666,
+        -0.16666666666666666
+      ],
+      "response_cutoff_eV": 200
+    },
+    {
+      "Q_head_Ainv": 0.8928435369403868,
+      "epsilon_M_imag": 4.757061143523481e-19,
+      "epsilon_M_real": 8.001930257961387,
+      "eta_eV": 0.1,
+      "group": "primary-N3",
+      "kmesh": [
+        12,
+        12,
+        12
+      ],
+      "nbands": 96,
+      "q_fractional": [
+        -0.16666666666666666,
+        -0.16666666666666666,
+        0.16666666666666666
+      ],
+      "response_cutoff_eV": 200
+    },
+    {
+      "Q_head_Ainv": 0.6994084952059967,
+      "epsilon_M_imag": 4.040814954975668e-19,
+      "epsilon_M_real": 12.347465129047142,
+      "eta_eV": 0.1,
+      "group": "primary-N2",
+      "kmesh": [
+        12,
+        12,
+        12
+      ],
+      "nbands": 96,
+      "q_fractional": [
+        -0.25,
+        -0.25,
+        -0.25
+      ],
+      "response_cutoff_eV": 200
+    },
+    {
+      "Q_head_Ainv": 1.3392653054105799,
+      "epsilon_M_imag": -1.106861219560271e-19,
+      "epsilon_M_real": 4.083273475876987,
+      "eta_eV": 0.1,
+      "group": "primary-N2",
+      "kmesh": [
+        12,
+        12,
+        12
+      ],
+      "nbands": 96,
+      "q_fractional": [
+        -0.25,
+        -0.25,
+        0.25
+      ],
+      "response_cutoff_eV": 200
+    },
+    {
+      "Q_head_Ainv": 0.6994084952059967,
+      "epsilon_M_imag": 2.36594165958946e-19,
+      "epsilon_M_real": 12.352565865026548,
+      "eta_eV": 0.1,
+      "group": "band",
+      "kmesh": [
+        12,
+        12,
+        12
+      ],
+      "nbands": 156,
+      "q_fractional": [
+        -0.25,
+        -0.25,
+        -0.25
+      ],
+      "response_cutoff_eV": 200
+    },
+    {
+      "Q_head_Ainv": 1.3392653054105799,
+      "epsilon_M_imag": -1.3161605892042522e-19,
+      "epsilon_M_real": 4.084346975661301,
+      "eta_eV": 0.1,
+      "group": "band",
+      "kmesh": [
+        12,
+        12,
+        12
+      ],
+      "nbands": 156,
+      "q_fractional": [
+        -0.25,
+        -0.25,
+        0.25
+      ],
+      "response_cutoff_eV": 200
+    },
+    {
+      "Q_head_Ainv": 0.6994084952059967,
+      "epsilon_M_imag": 4.1309318132239577e-19,
+      "epsilon_M_real": 12.320818383837029,
+      "eta_eV": 0.1,
+      "group": "G",
+      "kmesh": [
+        12,
+        12,
+        12
+      ],
+      "nbands": 96,
+      "q_fractional": [
+        -0.25,
+        -0.25,
+        -0.25
+      ],
+      "response_cutoff_eV": 400
+    },
+    {
+      "Q_head_Ainv": 1.3392653054105799,
+      "epsilon_M_imag": -1.1140551922400854e-19,
+      "epsilon_M_real": 4.077469482384043,
+      "eta_eV": 0.1,
+      "group": "G",
+      "kmesh": [
+        12,
+        12,
+        12
+      ],
+      "nbands": 96,
+      "q_fractional": [
+        -0.25,
+        -0.25,
+        0.25
+      ],
+      "response_cutoff_eV": 400
+    },
+    {
+      "Q_head_Ainv": 0.6994084952059967,
+      "epsilon_M_imag": 5.054781949398856e-19,
+      "epsilon_M_real": 12.669976487938104,
+      "eta_eV": 0.05,
+      "group": "eta",
+      "kmesh": [
+        12,
+        12,
+        12
+      ],
+      "nbands": 96,
+      "q_fractional": [
+        -0.25,
+        -0.25,
+        -0.25
+      ],
+      "response_cutoff_eV": 200
+    },
+    {
+      "Q_head_Ainv": 1.3392653054105799,
+      "epsilon_M_imag": -1.3643164045091918e-19,
+      "epsilon_M_real": 4.109619829980939,
+      "eta_eV": 0.05,
+      "group": "eta",
+      "kmesh": [
+        12,
+        12,
+        12
+      ],
+      "nbands": 96,
+      "q_fractional": [
+        -0.25,
+        -0.25,
+        0.25
+      ],
+      "response_cutoff_eV": 200
+    },
+    {
+      "Q_head_Ainv": 0.6994084952059967,
+      "epsilon_M_imag": 4.040814954975668e-19,
+      "epsilon_M_real": 12.347465129047142,
+      "eta_eV": 0.1,
+      "group": "frequency",
+      "kmesh": [
+        12,
+        12,
+        12
+      ],
+      "nbands": 96,
+      "q_fractional": [
+        -0.25,
+        -0.25,
+        -0.25
+      ],
+      "response_cutoff_eV": 200
+    },
+    {
+      "Q_head_Ainv": 1.3392653054105799,
+      "epsilon_M_imag": -1.106861219560271e-19,
+      "epsilon_M_real": 4.083273475876987,
+      "eta_eV": 0.1,
+      "group": "frequency",
+      "kmesh": [
+        12,
+        12,
+        12
+      ],
+      "nbands": 96,
+      "q_fractional": [
+        -0.25,
+        -0.25,
+        0.25
+      ],
+      "response_cutoff_eV": 200
+    },
+    {
+      "Q_head_Ainv": 0.23313616506866555,
+      "epsilon_M_imag": 7.205239238045846e-18,
+      "epsilon_M_real": 104.09047445003027,
+      "eta_eV": 0.1,
+      "group": "lambda",
+      "kmesh": [
+        12,
+        12,
+        12
+      ],
+      "nbands": 96,
+      "q_fractional": [
+        0.08333333333333333,
+        0,
+        0
+      ],
+      "response_cutoff_eV": 100
+    },
+    {
+      "Q_head_Ainv": 0.4662723301373311,
+      "epsilon_M_imag": 2.073711457206072e-18,
+      "epsilon_M_real": 26.533154833398537,
+      "eta_eV": 0.1,
+      "group": "lambda",
+      "kmesh": [
+        12,
+        12,
+        12
+      ],
+      "nbands": 96,
+      "q_fractional": [
+        0.16666666666666666,
+        0,
+        0
+      ],
+      "response_cutoff_eV": 100
+    },
+    {
+      "Q_head_Ainv": 0.6994084952059967,
+      "epsilon_M_imag": 6.0842463993591845e-19,
+      "epsilon_M_real": 12.373071026006075,
+      "eta_eV": 0.1,
+      "group": "lambda",
+      "kmesh": [
+        12,
+        12,
+        12
+      ],
+      "nbands": 96,
+      "q_fractional": [
+        0.25,
+        0,
+        0
+      ],
+      "response_cutoff_eV": 100
+    },
+    {
+      "Q_head_Ainv": 0.23313616506866555,
+      "epsilon_M_imag": 9.249342942647225e-18,
+      "epsilon_M_real": 104.13654341176763,
+      "eta_eV": 0.1,
+      "group": "lambda-band",
+      "kmesh": [
+        12,
+        12,
+        12
+      ],
+      "nbands": 156,
+      "q_fractional": [
+        0.08333333333333333,
+        0,
+        0
+      ],
+      "response_cutoff_eV": 100
+    },
+    {
+      "Q_head_Ainv": 0.4662723301373311,
+      "epsilon_M_imag": 4.754935540087743e-18,
+      "epsilon_M_real": 26.54375512679818,
+      "eta_eV": 0.1,
+      "group": "lambda-band",
+      "kmesh": [
+        12,
+        12,
+        12
+      ],
+      "nbands": 156,
+      "q_fractional": [
+        0.16666666666666666,
+        0,
+        0
+      ],
+      "response_cutoff_eV": 100
+    },
+    {
+      "Q_head_Ainv": 0.6994084952059967,
+      "epsilon_M_imag": -4.1038040932896815e-19,
+      "epsilon_M_real": 12.377746440630418,
+      "eta_eV": 0.1,
+      "group": "lambda-band",
+      "kmesh": [
+        12,
+        12,
+        12
+      ],
+      "nbands": 156,
+      "q_fractional": [
+        0.25,
+        0,
+        0
+      ],
+      "response_cutoff_eV": 100
+    },
+    {
+      "Q_head_Ainv": 0.23313616506866555,
+      "epsilon_M_imag": 8.324433447381862e-18,
+      "epsilon_M_real": 103.70916486607513,
+      "eta_eV": 0.1,
+      "group": "lambda-G",
+      "kmesh": [
+        12,
+        12,
+        12
+      ],
+      "nbands": 96,
+      "q_fractional": [
+        0.08333333333333333,
+        0,
+        0
+      ],
+      "response_cutoff_eV": 200
+    },
+    {
+      "Q_head_Ainv": 0.4662723301373311,
+      "epsilon_M_imag": 2.3722531686938242e-18,
+      "epsilon_M_real": 26.47237990281111,
+      "eta_eV": 0.1,
+      "group": "lambda-G",
+      "kmesh": [
+        12,
+        12,
+        12
+      ],
+      "nbands": 96,
+      "q_fractional": [
+        0.16666666666666666,
+        0,
+        0
+      ],
+      "response_cutoff_eV": 200
+    },
+    {
+      "Q_head_Ainv": 0.6994084952059967,
+      "epsilon_M_imag": 6.023115134912142e-19,
+      "epsilon_M_real": 12.347465127399945,
+      "eta_eV": 0.1,
+      "group": "lambda-G",
+      "kmesh": [
+        12,
+        12,
+        12
+      ],
+      "nbands": 96,
+      "q_fractional": [
+        0.25,
+        0,
+        0
+      ],
+      "response_cutoff_eV": 200
+    },
+    {
+      "Q_head_Ainv": 0.23313616506866555,
+      "epsilon_M_imag": -2.09156418442061e-17,
+      "epsilon_M_real": 111.61667647131671,
+      "eta_eV": 0.05,
+      "group": "lambda-eta",
+      "kmesh": [
+        12,
+        12,
+        12
+      ],
+      "nbands": 96,
+      "q_fractional": [
+        0.08333333333333333,
+        0,
+        0
+      ],
+      "response_cutoff_eV": 100
+    },
+    {
+      "Q_head_Ainv": 0.4662723301373311,
+      "epsilon_M_imag": -2.5119628155180473e-19,
+      "epsilon_M_real": 27.55809831662058,
+      "eta_eV": 0.05,
+      "group": "lambda-eta",
+      "kmesh": [
+        12,
+        12,
+        12
+      ],
+      "nbands": 96,
+      "q_fractional": [
+        0.16666666666666666,
+        0,
+        0
+      ],
+      "response_cutoff_eV": 100
+    },
+    {
+      "Q_head_Ainv": 0.6994084952059967,
+      "epsilon_M_imag": -5.939486864564872e-20,
+      "epsilon_M_real": 12.701613349712735,
+      "eta_eV": 0.05,
+      "group": "lambda-eta",
+      "kmesh": [
+        12,
+        12,
+        12
+      ],
+      "nbands": 96,
+      "q_fractional": [
+        0.25,
+        0,
+        0
+      ],
+      "response_cutoff_eV": 100
+    },
+    {
+      "Q_head_Ainv": 0.6994084952059967,
+      "epsilon_M_imag": -4.754520865316936e-19,
+      "epsilon_M_real": 12.5577546164236,
+      "eta_eV": 0.1,
+      "group": "k",
+      "kmesh": [
+        24,
+        24,
+        24
+      ],
+      "nbands": 96,
+      "q_fractional": [
+        -0.25,
+        -0.25,
+        -0.25
+      ],
+      "response_cutoff_eV": 200
+    },
+    {
+      "Q_head_Ainv": 1.3392653054105799,
+      "epsilon_M_imag": 1.3155259835577079e-21,
+      "epsilon_M_real": 4.085753915893582,
+      "eta_eV": 0.1,
+      "group": "k",
+      "kmesh": [
+        24,
+        24,
+        24
+      ],
+      "nbands": 96,
+      "q_fractional": [
+        -0.25,
+        -0.25,
+        0.25
+      ],
+      "response_cutoff_eV": 200
+    },
+    {
+      "Q_head_Ainv": 0.23313616506866555,
+      "epsilon_M_imag": 7.397861812194807e-18,
+      "epsilon_M_real": 102.44783745909162,
+      "eta_eV": 0.1,
+      "group": "lambda-k",
+      "kmesh": [
+        24,
+        24,
+        24
+      ],
+      "nbands": 96,
+      "q_fractional": [
+        0.08333333333333333,
+        0,
+        0
+      ],
+      "response_cutoff_eV": 100
+    },
+    {
+      "Q_head_Ainv": 0.4662723301373311,
+      "epsilon_M_imag": -8.124852745812464e-19,
+      "epsilon_M_real": 27.264053633785426,
+      "eta_eV": 0.1,
+      "group": "lambda-k",
+      "kmesh": [
+        24,
+        24,
+        24
+      ],
+      "nbands": 96,
+      "q_fractional": [
+        0.16666666666666666,
+        0,
+        0
+      ],
+      "response_cutoff_eV": 100
+    },
+    {
+      "Q_head_Ainv": 0.6994084952059967,
+      "epsilon_M_imag": -1.1208830333146768e-19,
+      "epsilon_M_real": 12.582891793800567,
+      "eta_eV": 0.1,
+      "group": "lambda-k",
+      "kmesh": [
+        24,
+        24,
+        24
+      ],
+      "nbands": 96,
+      "q_fractional": [
+        0.25,
+        0,
+        0
+      ],
+      "response_cutoff_eV": 100
+    }
+  ],
+  "error_estimate_scope": "Conservative sum of observed two-point absolute changes; empirical numerical estimate, not rigorous enclosure.",
+  "friction_definition": "Effective S(v)/v at each stated speed; no fitted coefficient or strict v->0 extrapolation.",
+  "friction_eV_A_per_vau": [
+    14.94205203037432,
+    12.026161368985205,
+    10.348743922642722,
+    9.853985781403562,
+    11.016156392674537,
+    13.925230674816433,
+    14.615337482704003
+  ],
+  "historical_lowq_screening": {
+    "reference_lambda_A": 0.39747864274672146,
+    "relative_difference": 0.06387682578058085,
+    "source": "Pinned Pd-length control; PdD/TiD2 rounded screening README values; comparison is not fitted"
+  },
+  "host": "Pd",
+  "lowq_Yukawa_proxy_eV": 34.0523155346504,
+  "lowq_lambda_A": 0.4228683167609555,
+  "lowq_proxy_over_friction_A_vau": [
+    2.278958436594156,
+    2.831519924759151,
+    3.2904781284755744,
+    3.455689534169403,
+    3.091124918786948,
+    2.4453681472030113,
+    2.329902787051506
+  ],
+  "lowq_proxy_over_stopping_A": [
+    22.775784391464708,
+    20.0097453825678,
+    16.44242808372378,
+    14.099250632585143,
+    9.769076137887136,
+    6.109718455603594,
+    4.5665484013596735
+  ],
+  "model": "PBE Pd10 frozen4s/4p PW500; fixedfcc a3.89A",
+  "numerical_eligibility_scope": "Adopted low-Q protocol: k/q/band/G each host, eta/frequency diagnosed on Pd only. Unmeasured host-specific terms are not asserted zero.",
+  "omission": "FrozenPd4s/4p response is omitted, not assumed zero. No highQ25/Angstrom screening result.",
+  "protocol_diagnostics_unmeasured_for_host": [],
+  "readout_source": {
+    "bytes": 7882,
+    "path": "lowq_readout.py",
+    "sha256": "58c915084512710427478ab24e2439afda7ae3c3c16dd3c8c736d8c0551daa59"
+  },
+  "schema": "g6-lowq-controlled-observables-v1",
+  "scope": "Authorized low-Q finite-G linear RPA only; C/lambda is an explicitly low-Q Yukawa merit numerator, not short-range screening.",
+  "screening_controls_relative": {
+    "lambda-G": 0.0017793562574512922,
+    "lambda-band": 0.00022170391521458832,
+    "lambda-eta": 0.03396961842314028,
+    "lambda-k": 0.0033923849707093723
+  },
+  "screening_details": {
+    "lambda": {
+      "Ue_static_Yukawa_proxy_eV": 34.0523155346504,
+      "fit": "q^2(epsilon_M-1)=kappa^2+regular*q^2",
+      "kappa_squared_Ainv2": 5.59229027517051,
+      "lambda_A": 0.4228683167609555,
+      "model": "Valence-PAW static RPA low-q length; C/lambda is a Yukawa proxy, not near-origin screening",
+      "q_Ainv": [
+        0.23313616506866555,
+        0.4662723301373311,
+        0.6994084952059967
+      ],
+      "q_squared_epsilon_minus_one_Ainv2": [
+        5.6032220706445734,
+        5.551160277762864,
+        5.563390665481235
+      ],
+      "q_window_lambda_span_A": [
+        0.4218029255795978,
+        0.4244319966201744
+      ],
+      "q_window_pass_10percent": true,
+      "q_window_relative_spread": 0.003697793845602426
+    },
+    "lambda-G": {
+      "Ue_static_Yukawa_proxy_eV": 33.99183195575768,
+      "fit": "q^2(epsilon_M-1)=kappa^2+regular*q^2",
+      "kappa_squared_Ainv2": 5.572441913437819,
+      "lambda_A": 0.423620750146462,
+      "model": "Valence-PAW static RPA low-q length; C/lambda is a Yukawa proxy, not near-origin screening",
+      "q_Ainv": [
+        0.23313616506866555,
+        0.4662723301373311,
+        0.6994084952059967
+      ],
+      "q_squared_epsilon_minus_one_Ainv2": [
+        5.582496952364112,
+        5.537947207041206,
+        5.5508649706217845
+      ],
+      "q_window_lambda_span_A": [
+        0.42267726590526494,
+        0.4249380242763115
+      ],
+      "q_window_pass_10percent": true,
+      "q_window_relative_spread": 0.003109559976450793
+    },
+    "lambda-band": {
+      "Ue_static_Yukawa_proxy_eV": 34.05986674045844,
+      "fit": "q^2(epsilon_M-1)=kappa^2+regular*q^2",
+      "kappa_squared_Ainv2": 5.594770765339643,
+      "lambda_A": 0.4227745651995094,
+      "model": "Valence-PAW static RPA low-q length; C/lambda is a Yukawa proxy, not near-origin screening",
+      "q_Ainv": [
+        0.23313616506866555,
+        0.4662723301373311,
+        0.6994084952059967
+      ],
+      "q_squared_epsilon_minus_one_Ainv2": [
+        5.60572603257273,
+        5.553464886340874,
+        5.5656777485407565
+      ],
+      "q_window_lambda_span_A": [
+        0.42170650877021804,
+        0.4243439208745989
+      ],
+      "q_window_pass_10percent": true,
+      "q_window_relative_spread": 0.003712039002036205
+    },
+    "lambda-eta": {
+      "Ue_static_Yukawa_proxy_eV": 35.24973560258685,
+      "fit": "q^2(epsilon_M-1)=kappa^2+regular*q^2",
+      "kappa_squared_Ainv2": 5.99250128226579,
+      "lambda_A": 0.40850364139735024,
+      "model": "Valence-PAW static RPA low-q length; C/lambda is a Yukawa proxy, not near-origin screening",
+      "q_Ainv": [
+        0.23313616506866555,
+        0.4662723301373311,
+        0.6994084952059967
+      ],
+      "q_squared_epsilon_minus_one_Ainv2": [
+        6.012289751230746,
+        5.773993123454607,
+        5.724104450943896
+      ],
+      "q_window_lambda_span_A": [
+        0.4051631729093591,
+        0.4179710719511381
+      ],
+      "q_window_pass_10percent": true,
+      "q_window_relative_spread": 0.02317587799561105
+    },
+    "lambda-k": {
+      "Ue_static_Yukawa_proxy_eV": 33.93718752972641,
+      "fit": "q^2(epsilon_M-1)=kappa^2+regular*q^2",
+      "kappa_squared_Ainv2": 5.554540075449126,
+      "lambda_A": 0.4243028488833245,
+      "model": "Valence-PAW static RPA low-q length; C/lambda is a Yukawa proxy, not near-origin screening",
+      "q_Ainv": [
+        0.23313616506866555,
+        0.4662723301373311,
+        0.6994084952059967
+      ],
+      "q_squared_epsilon_minus_one_Ainv2": [
+        5.513940690470637,
+        5.710064902524119,
+        5.666029161126145
+      ],
+      "q_window_lambda_span_A": [
+        0.4184845969798546,
+        0.4284093037996574
+      ],
+      "q_window_pass_10percent": true,
+      "q_window_relative_spread": 0.013712497850962624
+    }
+  },
+  "screening_qualified": true,
+  "source": {
+    "bytes": 44555,
+    "path": "completed.json",
+    "sha256": "9a38516ce92f1204528275d293d7aabb2abec787dac4a1ded55bb46d8ac51433"
+  },
+  "stopping_controls_relative": {
+    "G": 0.33967900041728144,
+    "band": 0.007397240006861886,
+    "eta": 0.02442590139707275,
+    "frequency": 0.08975446370419102,
+    "k": 0.03675276302494882,
+    "primary-N2": 0.05512502642691227
+  },
+  "stopping_eV_A": [
+    1.495110550283028,
+    1.7017865486842365,
+    2.0710028568322274,
+    2.415186198332499,
+    3.4857252675702104,
+    5.573467219822372,
+    7.4569045462238925
+  ],
+  "stopping_groups": {
+    "G": [
+      1.633488490400233,
+      1.8493431777468285,
+      2.227825368385892,
+      2.7809705313523163,
+      4.465257354045061,
+      6.5794159548342455,
+      8.119614884900425
+    ],
+    "band": [
+      1.4184165417115784,
+      1.6002580261644999,
+      1.9489186547550967,
+      2.277230543588013,
+      3.316272998487651,
+      5.369119670157965,
+      7.231411558461026
+    ],
+    "eta": [
+      1.3927783827384905,
+      1.5716776165426336,
+      1.914388136605853,
+      2.2318929980477806,
+      3.251666568518087,
+      5.307538603956163,
+      7.172557839467705
+    ],
+    "frequency": [
+      1.4404735864169114,
+      1.6585560183338433,
+      2.05351705338681,
+      2.3923283127023467,
+      3.3859275767798667,
+      5.235385313175356,
+      6.631279333490503
+    ],
+    "k": [
+      1.4722983113898067,
+      1.667161963941467,
+      2.026583085047761,
+      2.3658037971068846,
+      3.4406360785909658,
+      5.552843413966325,
+      7.467893624700848
+    ],
+    "primary-N2": [
+      1.4266623138225398,
+      1.608061269185494,
+      1.95683876961914,
+      2.285467888032942,
+      3.3330800532472544,
+      5.409132320159055,
+      7.285154465547952
+    ],
+    "primary-N3": [
+      1.495110550283028,
+      1.7017865486842365,
+      2.0710028568322274,
+      2.415186198332499,
+      3.4857252675702104,
+      5.573467219822372,
+      7.4569045462238925
+    ]
+  },
+  "stopping_qualified": false,
+  "velocity_au": [
+    0.10006059055635434,
+    0.14150704422385754,
+    0.20012118111270868,
+    0.2450973902246173,
+    0.31641937017961447,
+    0.40024236222541737,
+    0.5102109037884687
+  ]
+}

@@ -1,0 +1,210 @@
+{
+  "accuracy_unresolved": "G600 overlap and updated controls have not been calculated. Present G200 stopping is disqualified. Even a G400->600 plateau would remain an empirical cutoff diagnostic, not a certified infinite-Q tail bound; coupled15% may still fail and require finer frequency/q controls absent from this cheapest repair estimate.",
+  "active_transition_factors": {
+    "Pd": 1.0,
+    "PdD": 1.0,
+    "TiD2": 1.452127659574468
+  },
+  "actual_retained_blocks": {
+    "Pd": {
+      "host": "Pd",
+      "kmesh": [
+        12,
+        12,
+        12
+      ],
+      "metadata": {
+        "bytes": 2876,
+        "path": "ground.json",
+        "sha256": "89601e2e2bab251dc0b0550331dc92022c27cd1dbd33c59b9fb4ba5e5844b07e"
+      },
+      "nocc1": 2,
+      "nocc2": 6,
+      "saved_nbands": 156,
+      "volume_A3": 14.715967249999999
+    },
+    "PdD": {
+      "host": "PdD",
+      "kmesh": [
+        12,
+        12,
+        12
+      ],
+      "metadata": {
+        "bytes": 5286,
+        "path": "ground.json",
+        "sha256": "394b0fe8dfab92858eedd5bb608db7faa7ebdfbe5920927b4859a295c74d5f5a"
+      },
+      "nocc1": 2,
+      "nocc2": 6,
+      "saved_nbands": 156,
+      "volume_A3": 17.664285626805682
+    },
+    "TiD2": {
+      "host": "TiD2",
+      "kmesh": [
+        12,
+        12,
+        12
+      ],
+      "metadata": {
+        "bytes": 5001,
+        "path": "ground.json",
+        "sha256": "f188d6b44483c05f36df3c2393eb0439140d022222e779e6748587ebda3d0651"
+      },
+      "nocc1": 5,
+      "nocc2": 9,
+      "saved_nbands": 96,
+      "volume_A3": 21.63067831255701
+    }
+  },
+  "already_saved_reused": [
+    "Pd lambda all controls",
+    "Pd G400 N2 baseline"
+  ],
+  "authorization": "NO launch: 30% buffered complete-family forecast exceeds800 including160reserve. Await Root route decision; no other host run.",
+  "bindings": [
+    {
+      "bytes": 44555,
+      "path": "completed.json",
+      "sha256": "9a38516ce92f1204528275d293d7aabb2abec787dac4a1ded55bb46d8ac51433"
+    },
+    {
+      "bytes": 1251,
+      "path": "retained-response-blocks.json",
+      "sha256": "bd3b19c7a0236add20f7a0c0db6c4f8a187c0b563f2a4816f6432206d8beb16e"
+    },
+    {
+      "bytes": 1777,
+      "path": "repair-cutoff-descriptors.json",
+      "sha256": "51738443c86830e40a30e32075e877514f94e504c6c5e61880cbc1ac2ba29010"
+    }
+  ],
+  "fft_factors": {
+    "Pd": 1.0,
+    "PdD": 1.15,
+    "TiD2": 2.4
+  },
+  "fits_seconds": [
+    {
+      "a": 67.51079286194714,
+      "b": 0.0009269026956291345,
+      "q_fractional": [
+        -0.25,
+        -0.25,
+        -0.25
+      ]
+    },
+    {
+      "a": 154.43427660688383,
+      "b": 0.002618309016875989,
+      "q_fractional": [
+        -0.25,
+        -0.25,
+        0.25
+      ]
+    }
+  ],
+  "largest_G600_two_matrix_output_bytes": 266158592,
+  "maximum_uniform_remaining_buffer_fraction_with160reserve": 0.14811003559477753,
+  "measured_Pd_groups_core_min": {
+    "G": 7.92339944926667,
+    "band": 6.711832368466665,
+    "eta": 4.10070376453333,
+    "frequency": 4.767498010933332,
+    "k": 31.36401462811666,
+    "lambda": 3.0875072925666625,
+    "lambda-G": 3.6223847334166597,
+    "lambda-band": 4.925441428116665,
+    "lambda-eta": 3.0802798481499924,
+    "lambda-k": 21.231406739049998,
+    "primary-N2": 4.224095746166669,
+    "primary-N3": 13.725825108333334
+  },
+  "measured_total_native_core_min": 115.98679356666668,
+  "model": "Each actual N2 class fitted t=a+b*Ng^2 at G200/G400. N3 extrapolates its actual t using average a/b ratio. This is a timing model, not a scientific tail bound.",
+  "proposed_error_measure": "Compare new full-inverse G400 vs G600 N2 stopping and G400 N3 vs N2, band, k, eta and frequency controls. Report individual and coupled observed changes. No uncomputed-Q tail set to zero, no rigorous infinite-cutoff bound asserted.",
+  "proposed_new_terms_core_min": {
+    "PdD": {
+      "G600_control_N2": 24.33394827930756,
+      "band_control_N2_G400": 16.19128263558712,
+      "k8_control_N2_G400": 3.0192573288393736,
+      "lambda_k12_controls": 13.380633472214983,
+      "lambda_k8": 0.9043006574039811,
+      "new_k8_ground_cap": 15.0,
+      "primary_N2_G400": 10.189993484832888,
+      "primary_N3_G400": 33.771317872586565
+    },
+    "Pd_repair": {
+      "G600_control_N2": 17.78827624678439,
+      "band156_N2_G400": 12.58980195705551,
+      "eta005_N2_G400": 7.691945425004847,
+      "frequency31_N2_G400": 11.883694722503689,
+      "k24_N2_G400": 58.83143545141743,
+      "primary_N3_G400": 25.68204200915763
+    },
+    "TiD2": {
+      "G600_control_N2": 52.75406172361719,
+      "band_control_N2_G400": 14.333321322091795,
+      "k8_control_N2_G400": 6.550318846505225,
+      "lambda_k12_controls": 20.908037924199967,
+      "lambda_k8": 1.8872361545822216,
+      "new_k8_ground_cap": 15.0,
+      "primary_N2_G400": 22.107326106955142,
+      "primary_N3_G400": 71.61551809618054
+    }
+  },
+  "proposed_remaining_nominal_core_min": {
+    "PdD": 116.79073373077247,
+    "Pd_repair": 134.4671958119235,
+    "TiD2": 205.1558201741321
+  },
+  "q2_matrix_dimensions": {
+    "Pd": {
+      "200": [
+        95,
+        94
+      ],
+      "400": [
+        274,
+        265
+      ],
+      "600": [
+        492,
+        487
+      ]
+    },
+    "PdD": {
+      "200": [
+        117,
+        113
+      ],
+      "400": [
+        314,
+        318
+      ],
+      "600": [
+        580,
+        584
+      ]
+    },
+    "TiD2": {
+      "200": [
+        144,
+        136
+      ],
+      "400": [
+        386,
+        395
+      ],
+      "600": [
+        721,
+        713
+      ]
+    }
+  },
+  "schema": "g6-response-saved-output-cutoff-repair-forecast-v1",
+  "whole_buffered20percent_including160reserve": 823.6832932268603,
+  "whole_buffered30percent_including160reserve": 869.3246681985431,
+  "whole_nominal_including160reserve": 732.4005432834947
+}

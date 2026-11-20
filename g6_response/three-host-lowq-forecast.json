@@ -1,0 +1,57 @@
+{
+  "Pd_actual_points": 33,
+  "Pd_projected_terms_core_min": {
+    "GcontrolN2": 4.850636507975434,
+    "bandN2": 6.925009334869683,
+    "etaN2": 4.408957583010197,
+    "frequencyN2": 5.731644857913256,
+    "k24N2": 35.27166066408157,
+    "lambda12": 3.0224999999999995,
+    "lambda24": 24.179999999999996,
+    "lambda_G12": 3.4758749999999994,
+    "lambda_band12": 4.747344541326518,
+    "lambda_eta12": 3.0224999999999995,
+    "primaryN2": 4.408957583010197,
+    "primaryN3": 14.554455773177994
+  },
+  "band96_to156_factor": 0.6366717169332401,
+  "baseline_frequency_count": 16,
+  "buffered30percent_core_min": {
+    "Pd": 148.9794043989743,
+    "PdD": 85.5591046869417,
+    "TiD2": 157.36247934666093
+  },
+  "dynamic_frequency_factor": 1.2,
+  "matrix_dimensions": "95 atPdG200,274atG400; <=75MB two-matrix31frequency G400 output; one host/process/thread CPU8,4GBcap",
+  "measured_Pd10_static_family_core_min": {
+    "G-control": 6.348950302756081,
+    "band-control": 3.6741313191751637,
+    "primary-q2": 5.770841112391403,
+    "primary-q3": 19.050183668810252
+  },
+  "nominal_core_min": {
+    "Pd": 114.59954184536484,
+    "PdD": 65.81469591303207,
+    "TiD2": 121.04806103589301
+  },
+  "production_headroom_core_min": 142.87530000000004,
+  "prospective_unit_caps_core_min": {
+    "Pd": 160,
+    "PdD": 110,
+    "TiD2": 220
+  },
+  "qualifications": [
+    "Source-based projection; only Pd first family is commissioned",
+    "PdD1.15 andTi2.4 timing factors are explicit estimates from retained q timings; newk8 prep15min each",
+    "k24 onlyPd; otherhost stoppingk8/12 uses identicalN2q, lambda fitted-window change retained as coupled numerical error",
+    "Actual host cost must be reported before others; failures stop expansion, not automatically retry"
+  ],
+  "refined_frequency_count": 31,
+  "retained_k24_binding": {
+    "bytes": 2226,
+    "path": "ground.json",
+    "sha256": "f4adb7a213df213b8cd241f121881717cfb52d9b3e46132b3afe8bf28da64739"
+  },
+  "schema": "g6-response-adopted-three-host-forecast-v1",
+  "whole_prospective_core_min": 657.1247000000001
+}

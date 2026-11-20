@@ -1,0 +1,1881 @@
+{
+  "affinity": [
+    8
+  ],
+  "coulomb_eV_A": 14.399645351950548,
+  "cpu_s": 6530.3035493570005,
+  "eligible": false,
+  "hartree_eV": 27.211386024367243,
+  "host": "Pd",
+  "peak_rss_kB": 318412,
+  "points": [
+    {
+      "Q_max_Ainv": 6.994084952059966,
+      "arrays": {
+        "bytes": 1542511,
+        "path": "point-000.npz",
+        "sha256": "55af971a6fd8bc2adb3e3912005f8913bb3aba3df5313f7e49d73c9ddbd27ea3"
+      },
+      "cpu_s": 36.783807165000006,
+      "dyson_residual": 1.0597220665565881e-14,
+      "epsilon_macro_static": [
+        3.8407027556199873,
+        -1.2005622125935836e-19
+      ],
+      "index": 0,
+      "matrix_dimension": 90,
+      "minimum_loss": -8.138861614334903e-21,
+      "settings": {
+        "bank": "k12",
+        "ecut_eV": 200,
+        "energy_eV": [
+          0,
+          0.1,
+          0.25,
+          0.5,
+          1,
+          2,
+          4,
+          8,
+          12,
+          16,
+          24,
+          32,
+          48,
+          64,
+          80,
+          96
+        ],
+        "eta_eV": 0.1,
+        "group": "primary-N3",
+        "nbands": 96,
+        "q_fractional": [
+          -0.5,
+          -0.5,
+          -0.5
+        ],
+        "weight": 0.037037037037037035
+      }
+    },
+    {
+      "Q_max_Ainv": 7.238493109084155,
+      "arrays": {
+        "bytes": 3760749,
+        "path": "point-001.npz",
+        "sha256": "8beaf70fdea0547f68df4cafb4aaa1ff54ffc9082e29b324a2a8b28e1dec55aa"
+      },
+      "cpu_s": 182.24887906299998,
+      "dyson_residual": 1.0637994594208813e-14,
+      "epsilon_macro_static": [
+        3.7948627077245694,
+        4.1618310412742067e-20
+      ],
+      "index": 1,
+      "matrix_dimension": 99,
+      "minimum_loss": -9.161389666087734e-21,
+      "settings": {
+        "bank": "k12",
+        "ecut_eV": 200,
+        "energy_eV": [
+          0,
+          0.1,
+          0.25,
+          0.5,
+          1,
+          2,
+          4,
+          8,
+          12,
+          16,
+          24,
+          32,
+          48,
+          64,
+          80,
+          96
+        ],
+        "eta_eV": 0.1,
+        "group": "primary-N3",
+        "nbands": 96,
+        "q_fractional": [
+          -0.5,
+          -0.5,
+          -0.16666666666666666
+        ],
+        "weight": 0.2222222222222222
+      }
+    },
+    {
+      "Q_max_Ainv": 7.198334723715915,
+      "arrays": {
+        "bytes": 2942131,
+        "path": "point-002.npz",
+        "sha256": "9ae392e43d2f164aeeaa51a7c7af65f5cd2ba75bb97e0fa64ef09fe9f7d90cac"
+      },
+      "cpu_s": 180.822599617,
+      "dyson_residual": 9.247096428172988e-15,
+      "epsilon_macro_static": [
+        5.0373432233568955,
+        7.350612256963128e-21
+      ],
+      "index": 2,
+      "matrix_dimension": 94,
+      "minimum_loss": -1.7984620411657546e-20,
+      "settings": {
+        "bank": "k12",
+        "ecut_eV": 200,
+        "energy_eV": [
+          0,
+          0.1,
+          0.25,
+          0.5,
+          1,
+          2,
+          4,
+          8,
+          12,
+          16,
+          24,
+          32,
+          48,
+          64,
+          80,
+          96
+        ],
+        "eta_eV": 0.1,
+        "group": "primary-N3",
+        "nbands": 96,
+        "q_fractional": [
+          -0.5,
+          -0.16666666666666666,
+          -0.16666666666666666
+        ],
+        "weight": 0.2222222222222222
+      }
+    },
+    {
+      "Q_max_Ainv": 7.157951040559704,
+      "arrays": {
+        "bytes": 3647414,
+        "path": "point-003.npz",
+        "sha256": "88b34d9c5306d7dd71bc46082166bdc6384643fa9e7f87cac80d56e23a1b4078"
+      },
+      "cpu_s": 172.25770894800002,
+      "dyson_residual": 9.302148264015274e-15,
+      "epsilon_macro_static": [
+        3.1617907652434742,
+        1.818213914450481e-20
+      ],
+      "index": 3,
+      "matrix_dimension": 94,
+      "minimum_loss": -6.912153876253454e-21,
+      "settings": {
+        "bank": "k12",
+        "ecut_eV": 200,
+        "energy_eV": [
+          0,
+          0.1,
+          0.25,
+          0.5,
+          1,
+          2,
+          4,
+          8,
+          12,
+          16,
+          24,
+          32,
+          48,
+          64,
+          80,
+          96
+        ],
+        "eta_eV": 0.1,
+        "group": "primary-N3",
+        "nbands": 96,
+        "q_fractional": [
+          -0.5,
+          -0.16666666666666666,
+          0.16666666666666666
+        ],
+        "weight": 0.2222222222222222
+      }
+    },
+    {
+      "Q_max_Ainv": 7.11733822460653,
+      "arrays": {
+        "bytes": 2055078,
+        "path": "point-004.npz",
+        "sha256": "5e2029c5d510b5ddabc7eabd5b8f6c515ad8a6fb49fe69907d87a9487662f377"
+      },
+      "cpu_s": 71.58328244400002,
+      "dyson_residual": 2.5242668922144696e-14,
+      "epsilon_macro_static": [
+        26.47238020774268,
+        9.392608486376879e-20
+      ],
+      "index": 4,
+      "matrix_dimension": 95,
+      "minimum_loss": -7.065144949288508e-21,
+      "settings": {
+        "bank": "k12",
+        "ecut_eV": 200,
+        "energy_eV": [
+          0,
+          0.1,
+          0.25,
+          0.5,
+          1,
+          2,
+          4,
+          8,
+          12,
+          16,
+          24,
+          32,
+          48,
+          64,
+          80,
+          96
+        ],
+        "eta_eV": 0.1,
+        "group": "primary-N3",
+        "nbands": 96,
+        "q_fractional": [
+          -0.16666666666666666,
+          -0.16666666666666666,
+          -0.16666666666666666
+        ],
+        "weight": 0.07407407407407407
+      }
+    },
+    {
+      "Q_max_Ainv": 7.157951040559705,
+      "arrays": {
+        "bytes": 2962628,
+        "path": "point-005.npz",
+        "sha256": "700ee0799ee139ecad84df54c20cf1eb7f87d1126b16834635a1e847af82bb0f"
+      },
+      "cpu_s": 179.853229263,
+      "dyson_residual": 1.0237336756357861e-14,
+      "epsilon_macro_static": [
+        8.001930257961387,
+        4.757061143523481e-19
+      ],
+      "index": 5,
+      "matrix_dimension": 89,
+      "minimum_loss": -1.560736530229528e-20,
+      "settings": {
+        "bank": "k12",
+        "ecut_eV": 200,
+        "energy_eV": [
+          0,
+          0.1,
+          0.25,
+          0.5,
+          1,
+          2,
+          4,
+          8,
+          12,
+          16,
+          24,
+          32,
+          48,
+          64,
+          80,
+          96
+        ],
+        "eta_eV": 0.1,
+        "group": "primary-N3",
+        "nbands": 96,
+        "q_fractional": [
+          -0.16666666666666666,
+          -0.16666666666666666,
+          0.16666666666666666
+        ],
+        "weight": 0.2222222222222222
+      }
+    },
+    {
+      "Q_max_Ainv": 7.166804415669737,
+      "arrays": {
+        "bytes": 2003414,
+        "path": "point-006.npz",
+        "sha256": "2934d49106dce85ec4d20eea69a40ff911d1f163cba71a633dae63c03ef9ce87"
+      },
+      "cpu_s": 75.87608969000007,
+      "dyson_residual": 2.6015672537635508e-14,
+      "epsilon_macro_static": [
+        12.347465129047142,
+        4.040814954975668e-19
+      ],
+      "index": 6,
+      "matrix_dimension": 95,
+      "minimum_loss": -3.3228265303353867e-20,
+      "settings": {
+        "bank": "k12",
+        "ecut_eV": 200,
+        "energy_eV": [
+          0,
+          0.1,
+          0.25,
+          0.5,
+          1,
+          2,
+          4,
+          8,
+          12,
+          16,
+          24,
+          32,
+          48,
+          64,
+          80,
+          96
+        ],
+        "eta_eV": 0.1,
+        "group": "primary-N2",
+        "nbands": 96,
+        "q_fractional": [
+          -0.25,
+          -0.25,
+          -0.25
+        ],
+        "weight": 0.25
+      }
+    },
+    {
+      "Q_max_Ainv": 7.166804415669737,
+      "arrays": {
+        "bytes": 3422555,
+        "path": "point-007.npz",
+        "sha256": "331523964a38c6e23b7557d0000fab064deefa602e7faba978497ddb83ca9cf0"
+      },
+      "cpu_s": 177.56965508000008,
+      "dyson_residual": 8.89614476467759e-15,
+      "epsilon_macro_static": [
+        4.083273475876987,
+        -1.106861219560271e-19
+      ],
+      "index": 7,
+      "matrix_dimension": 94,
+      "minimum_loss": -9.158672842081749e-21,
+      "settings": {
+        "bank": "k12",
+        "ecut_eV": 200,
+        "energy_eV": [
+          0,
+          0.1,
+          0.25,
+          0.5,
+          1,
+          2,
+          4,
+          8,
+          12,
+          16,
+          24,
+          32,
+          48,
+          64,
+          80,
+          96
+        ],
+        "eta_eV": 0.1,
+        "group": "primary-N2",
+        "nbands": 96,
+        "q_fractional": [
+          -0.25,
+          -0.25,
+          0.25
+        ],
+        "weight": 0.75
+      }
+    },
+    {
+      "Q_max_Ainv": 7.166804415669737,
+      "arrays": {
+        "bytes": 1957367,
+        "path": "point-008.npz",
+        "sha256": "f2b9ca59f29c227006fd1aea44575de3e56619e334d1820aecdfdebb6dd4de0e"
+      },
+      "cpu_s": 112.2362695679999,
+      "dyson_residual": 2.2510740472869855e-14,
+      "epsilon_macro_static": [
+        12.352565865026548,
+        2.36594165958946e-19
+      ],
+      "index": 8,
+      "matrix_dimension": 95,
+      "minimum_loss": -2.904427589245461e-20,
+      "settings": {
+        "bank": "k12",
+        "ecut_eV": 200,
+        "energy_eV": [
+          0,
+          0.1,
+          0.25,
+          0.5,
+          1,
+          2,
+          4,
+          8,
+          12,
+          16,
+          24,
+          32,
+          48,
+          64,
+          80,
+          96
+        ],
+        "eta_eV": 0.1,
+        "group": "band",
+        "nbands": 156,
+        "q_fractional": [
+          -0.25,
+          -0.25,
+          -0.25
+        ],
+        "weight": 0.25
+      }
+    },
+    {
+      "Q_max_Ainv": 7.166804415669737,
+      "arrays": {
+        "bytes": 2998453,
+        "path": "point-009.npz",
+        "sha256": "e61035c1fadf6b8fbdce20d24cbe101c513c3813da4c2b46b966b89884cb3ac3"
+      },
+      "cpu_s": 290.47367254000005,
+      "dyson_residual": 7.730202277798126e-15,
+      "epsilon_macro_static": [
+        4.084346975661301,
+        -1.3161605892042522e-19
+      ],
+      "index": 9,
+      "matrix_dimension": 94,
+      "minimum_loss": -1.2457475154701041e-20,
+      "settings": {
+        "bank": "k12",
+        "ecut_eV": 200,
+        "energy_eV": [
+          0,
+          0.1,
+          0.25,
+          0.5,
+          1,
+          2,
+          4,
+          8,
+          12,
+          16,
+          24,
+          32,
+          48,
+          64,
+          80,
+          96
+        ],
+        "eta_eV": 0.1,
+        "group": "band",
+        "nbands": 156,
+        "q_fractional": [
+          -0.25,
+          -0.25,
+          0.25
+        ],
+        "weight": 0.75
+      }
+    },
+    {
+      "Q_max_Ainv": 10.175532326953237,
+      "arrays": {
+        "bytes": 27971235,
+        "path": "point-010.npz",
+        "sha256": "db8aaa1af8d8bbd2fe094df5ade901a72cd06ac2d86b86d96c0ae7f95ef2fa88"
+      },
+      "cpu_s": 137.09893963900004,
+      "dyson_residual": 2.328908651818769e-14,
+      "epsilon_macro_static": [
+        12.320818383837029,
+        4.1309318132239577e-19
+      ],
+      "index": 10,
+      "matrix_dimension": 274,
+      "minimum_loss": -3.3426236838764853e-20,
+      "settings": {
+        "bank": "k12",
+        "ecut_eV": 400,
+        "energy_eV": [
+          0,
+          0.1,
+          0.25,
+          0.5,
+          1,
+          2,
+          4,
+          8,
+          12,
+          16,
+          24,
+          32,
+          48,
+          64,
+          80,
+          96
+        ],
+        "eta_eV": 0.1,
+        "group": "G",
+        "nbands": 96,
+        "q_fractional": [
+          -0.25,
+          -0.25,
+          -0.25
+        ],
+        "weight": 0.25
+      }
+    },
+    {
+      "Q_max_Ainv": 10.239429547195513,
+      "arrays": {
+        "bytes": 32483594,
+        "path": "point-011.npz",
+        "sha256": "c8fb4662e7b030f7589a8327e212d49da83e6e9b69fb29e7dae3c48df4765ee8"
+      },
+      "cpu_s": 338.30502731700017,
+      "dyson_residual": 1.469409027909878e-14,
+      "epsilon_macro_static": [
+        4.077469482384043,
+        -1.1140551922400854e-19
+      ],
+      "index": 11,
+      "matrix_dimension": 265,
+      "minimum_loss": -9.119575373621595e-21,
+      "settings": {
+        "bank": "k12",
+        "ecut_eV": 400,
+        "energy_eV": [
+          0,
+          0.1,
+          0.25,
+          0.5,
+          1,
+          2,
+          4,
+          8,
+          12,
+          16,
+          24,
+          32,
+          48,
+          64,
+          80,
+          96
+        ],
+        "eta_eV": 0.1,
+        "group": "G",
+        "nbands": 96,
+        "q_fractional": [
+          -0.25,
+          -0.25,
+          0.25
+        ],
+        "weight": 0.75
+      }
+    },
+    {
+      "Q_max_Ainv": 7.166804415669737,
+      "arrays": {
+        "bytes": 2008307,
+        "path": "point-012.npz",
+        "sha256": "baaec21cffd3a2f7a5166d9ceba1bf09ae81d51573162f90c17eddb9a23e06cb"
+      },
+      "cpu_s": 71.97798332899993,
+      "dyson_residual": 1.8816685905350808e-14,
+      "epsilon_macro_static": [
+        12.669976487938104,
+        5.054781949398856e-19
+      ],
+      "index": 12,
+      "matrix_dimension": 95,
+      "minimum_loss": -1.2925440603296096e-20,
+      "settings": {
+        "bank": "k12",
+        "ecut_eV": 200,
+        "energy_eV": [
+          0,
+          0.1,
+          0.25,
+          0.5,
+          1,
+          2,
+          4,
+          8,
+          12,
+          16,
+          24,
+          32,
+          48,
+          64,
+          80,
+          96
+        ],
+        "eta_eV": 0.05,
+        "group": "eta",
+        "nbands": 96,
+        "q_fractional": [
+          -0.25,
+          -0.25,
+          -0.25
+        ],
+        "weight": 0.25
+      }
+    },
+    {
+      "Q_max_Ainv": 7.166804415669737,
+      "arrays": {
+        "bytes": 3419445,
+        "path": "point-013.npz",
+        "sha256": "0d1613888b8b75545b784e3a9809912c37924cd42083d270334837a6def0651b"
+      },
+      "cpu_s": 174.06424254299986,
+      "dyson_residual": 8.135643127338291e-15,
+      "epsilon_macro_static": [
+        4.109619829980939,
+        -1.3643164045091918e-19
+      ],
+      "index": 13,
+      "matrix_dimension": 94,
+      "minimum_loss": -8.078147979001274e-21,
+      "settings": {
+        "bank": "k12",
+        "ecut_eV": 200,
+        "energy_eV": [
+          0,
+          0.1,
+          0.25,
+          0.5,
+          1,
+          2,
+          4,
+          8,
+          12,
+          16,
+          24,
+          32,
+          48,
+          64,
+          80,
+          96
+        ],
+        "eta_eV": 0.05,
+        "group": "eta",
+        "nbands": 96,
+        "q_fractional": [
+          -0.25,
+          -0.25,
+          0.25
+        ],
+        "weight": 0.75
+      }
+    },
+    {
+      "Q_max_Ainv": 7.166804415669737,
+      "arrays": {
+        "bytes": 3825886,
+        "path": "point-014.npz",
+        "sha256": "17724c2730ab899543cac2835eb7ca0eb3e30dcf473f74351772ada142db0a04"
+      },
+      "cpu_s": 84.42719185099986,
+      "dyson_residual": 2.6015672537635508e-14,
+      "epsilon_macro_static": [
+        12.347465129047142,
+        4.040814954975668e-19
+      ],
+      "index": 14,
+      "matrix_dimension": 95,
+      "minimum_loss": -3.3228265303353867e-20,
+      "settings": {
+        "bank": "k12",
+        "ecut_eV": 200,
+        "energy_eV": [
+          0,
+          0.05,
+          0.1,
+          0.175,
+          0.25,
+          0.375,
+          0.5,
+          0.75,
+          1,
+          1.5,
+          2,
+          3.0,
+          4,
+          6.0,
+          8,
+          10.0,
+          12,
+          14.0,
+          16,
+          20.0,
+          24,
+          28.0,
+          32,
+          40.0,
+          48,
+          56.0,
+          64,
+          72.0,
+          80,
+          88.0,
+          96
+        ],
+        "eta_eV": 0.1,
+        "group": "frequency",
+        "nbands": 96,
+        "q_fractional": [
+          -0.25,
+          -0.25,
+          -0.25
+        ],
+        "weight": 0.25
+      }
+    },
+    {
+      "Q_max_Ainv": 7.166804415669737,
+      "arrays": {
+        "bytes": 6649641,
+        "path": "point-015.npz",
+        "sha256": "99d408c71ad85256006d15a0dcddf304457de1c091fa4c6e78e439ac94a6c0e7"
+      },
+      "cpu_s": 201.62268880500005,
+      "dyson_residual": 8.89614476467759e-15,
+      "epsilon_macro_static": [
+        4.083273475876987,
+        -1.106861219560271e-19
+      ],
+      "index": 15,
+      "matrix_dimension": 94,
+      "minimum_loss": -9.158672842081749e-21,
+      "settings": {
+        "bank": "k12",
+        "ecut_eV": 200,
+        "energy_eV": [
+          0,
+          0.05,
+          0.1,
+          0.175,
+          0.25,
+          0.375,
+          0.5,
+          0.75,
+          1,
+          1.5,
+          2,
+          3.0,
+          4,
+          6.0,
+          8,
+          10.0,
+          12,
+          14.0,
+          16,
+          20.0,
+          24,
+          28.0,
+          32,
+          40.0,
+          48,
+          56.0,
+          64,
+          72.0,
+          80,
+          88.0,
+          96
+        ],
+        "eta_eV": 0.1,
+        "group": "frequency",
+        "nbands": 96,
+        "q_fractional": [
+          -0.25,
+          -0.25,
+          0.25
+        ],
+        "weight": 0.75
+      }
+    },
+    {
+      "Q_max_Ainv": 4.760775209988321,
+      "arrays": {
+        "bytes": 134681,
+        "path": "point-016.npz",
+        "sha256": "82bc9683067d6f857120f1c0685282a8c88bc7818e3a90fd8ca6dcff3fccb657"
+      },
+      "cpu_s": 61.28536177499973,
+      "dyson_residual": 9.052305692639313e-14,
+      "epsilon_macro_static": [
+        104.09047445003027,
+        7.205239238045846e-18
+      ],
+      "index": 16,
+      "matrix_dimension": 27,
+      "minimum_loss": -2.4623059076794724e-20,
+      "settings": {
+        "bank": "k12",
+        "ecut_eV": 100,
+        "energy_eV": [
+          0,
+          0.1,
+          0.25,
+          0.5,
+          1,
+          2,
+          4,
+          8,
+          12,
+          16,
+          24,
+          32,
+          48,
+          64,
+          80,
+          96
+        ],
+        "eta_eV": 0.1,
+        "group": "lambda",
+        "nbands": 96,
+        "q_fractional": [
+          0.08333333333333333,
+          0,
+          0
+        ],
+        "weight": 1
+      }
+    },
+    {
+      "Q_max_Ainv": 4.956542857803378,
+      "arrays": {
+        "bytes": 166724,
+        "path": "point-017.npz",
+        "sha256": "7dc9b1abfbb69e8622270b877588111dfa24ab3f4cf8d6d8036feb68632bbce0"
+      },
+      "cpu_s": 61.54874695599983,
+      "dyson_residual": 1.5821349051194642e-14,
+      "epsilon_macro_static": [
+        26.533154833398537,
+        2.073711457206072e-18
+      ],
+      "index": 17,
+      "matrix_dimension": 30,
+      "minimum_loss": -1.0216820566220253e-20,
+      "settings": {
+        "bank": "k12",
+        "ecut_eV": 100,
+        "energy_eV": [
+          0,
+          0.1,
+          0.25,
+          0.5,
+          1,
+          2,
+          4,
+          8,
+          12,
+          16,
+          24,
+          32,
+          48,
+          64,
+          80,
+          96
+        ],
+        "eta_eV": 0.1,
+        "group": "lambda",
+        "nbands": 96,
+        "q_fractional": [
+          0.16666666666666666,
+          0,
+          0
+        ],
+        "weight": 1
+      }
+    },
+    {
+      "Q_max_Ainv": 5.027315310407703,
+      "arrays": {
+        "bytes": 214477,
+        "path": "point-018.npz",
+        "sha256": "0234c89c69af7180c0e92946850fb1b74c9d1637e01052fd13328881fb20baba"
+      },
+      "cpu_s": 62.416328823000185,
+      "dyson_residual": 8.890486621980916e-15,
+      "epsilon_macro_static": [
+        12.373071026006075,
+        6.0842463993591845e-19
+      ],
+      "index": 18,
+      "matrix_dimension": 34,
+      "minimum_loss": -6.3715457039806746e-21,
+      "settings": {
+        "bank": "k12",
+        "ecut_eV": 100,
+        "energy_eV": [
+          0,
+          0.1,
+          0.25,
+          0.5,
+          1,
+          2,
+          4,
+          8,
+          12,
+          16,
+          24,
+          32,
+          48,
+          64,
+          80,
+          96
+        ],
+        "eta_eV": 0.1,
+        "group": "lambda",
+        "nbands": 96,
+        "q_fractional": [
+          0.25,
+          0,
+          0
+        ],
+        "weight": 1
+      }
+    },
+    {
+      "Q_max_Ainv": 4.760775209988321,
+      "arrays": {
+        "bytes": 131117,
+        "path": "point-019.npz",
+        "sha256": "45f05b1d9a8720968f32d05a100517fdf0583c85c3b591366f13d1cbe5890f5a"
+      },
+      "cpu_s": 98.5359480279999,
+      "dyson_residual": 3.982202995601246e-14,
+      "epsilon_macro_static": [
+        104.13654341176763,
+        9.249342942647225e-18
+      ],
+      "index": 19,
+      "matrix_dimension": 27,
+      "minimum_loss": -2.6351935387546853e-20,
+      "settings": {
+        "bank": "k12",
+        "ecut_eV": 100,
+        "energy_eV": [
+          0,
+          0.1,
+          0.25,
+          0.5,
+          1,
+          2,
+          4,
+          8,
+          12,
+          16,
+          24,
+          32,
+          48,
+          64,
+          80,
+          96
+        ],
+        "eta_eV": 0.1,
+        "group": "lambda-band",
+        "nbands": 156,
+        "q_fractional": [
+          0.08333333333333333,
+          0,
+          0
+        ],
+        "weight": 1
+      }
+    },
+    {
+      "Q_max_Ainv": 4.956542857803378,
+      "arrays": {
+        "bytes": 162087,
+        "path": "point-020.npz",
+        "sha256": "9c1a41a3f9c9d1b48ebb705b1b18b6f423256a210b1265125894764c073cc5f9"
+      },
+      "cpu_s": 97.85057396699995,
+      "dyson_residual": 1.6986106358703494e-14,
+      "epsilon_macro_static": [
+        26.54375512679818,
+        4.754935540087743e-18
+      ],
+      "index": 20,
+      "matrix_dimension": 30,
+      "minimum_loss": -1.3629783771221675e-20,
+      "settings": {
+        "bank": "k12",
+        "ecut_eV": 100,
+        "energy_eV": [
+          0,
+          0.1,
+          0.25,
+          0.5,
+          1,
+          2,
+          4,
+          8,
+          12,
+          16,
+          24,
+          32,
+          48,
+          64,
+          80,
+          96
+        ],
+        "eta_eV": 0.1,
+        "group": "lambda-band",
+        "nbands": 156,
+        "q_fractional": [
+          0.16666666666666666,
+          0,
+          0
+        ],
+        "weight": 1
+      }
+    },
+    {
+      "Q_max_Ainv": 5.027315310407703,
+      "arrays": {
+        "bytes": 208379,
+        "path": "point-021.npz",
+        "sha256": "c7ac4c1f74f806c9de2ccb8f1f4805d5107533cb0661fd74421b588a27a2d6a9"
+      },
+      "cpu_s": 99.13996369200004,
+      "dyson_residual": 8.543270821816624e-15,
+      "epsilon_macro_static": [
+        12.377746440630418,
+        -4.1038040932896815e-19
+      ],
+      "index": 21,
+      "matrix_dimension": 34,
+      "minimum_loss": -5.604177744790586e-21,
+      "settings": {
+        "bank": "k12",
+        "ecut_eV": 100,
+        "energy_eV": [
+          0,
+          0.1,
+          0.25,
+          0.5,
+          1,
+          2,
+          4,
+          8,
+          12,
+          16,
+          24,
+          32,
+          48,
+          64,
+          80,
+          96
+        ],
+        "eta_eV": 0.1,
+        "group": "lambda-band",
+        "nbands": 156,
+        "q_fractional": [
+          0.25,
+          0,
+          0
+        ],
+        "weight": 1
+      }
+    },
+    {
+      "Q_max_Ainv": 7.197076163565774,
+      "arrays": {
+        "bytes": 2166391,
+        "path": "point-022.npz",
+        "sha256": "9f33bbfb79f7b23d5d3df3eaf920d60082389f7cbcf35338019449e6bfb331f7"
+      },
+      "cpu_s": 75.03907551099974,
+      "dyson_residual": 8.077259704670069e-14,
+      "epsilon_macro_static": [
+        103.70916486607513,
+        8.324433447381862e-18
+      ],
+      "index": 22,
+      "matrix_dimension": 98,
+      "minimum_loss": -2.551985317102088e-20,
+      "settings": {
+        "bank": "k12",
+        "ecut_eV": 200,
+        "energy_eV": [
+          0,
+          0.1,
+          0.25,
+          0.5,
+          1,
+          2,
+          4,
+          8,
+          12,
+          16,
+          24,
+          32,
+          48,
+          64,
+          80,
+          96
+        ],
+        "eta_eV": 0.1,
+        "group": "lambda-G",
+        "nbands": 96,
+        "q_fractional": [
+          0.08333333333333333,
+          0,
+          0
+        ],
+        "weight": 1
+      }
+    },
+    {
+      "Q_max_Ainv": 7.11733822460653,
+      "arrays": {
+        "bytes": 2053593,
+        "path": "point-023.npz",
+        "sha256": "c0787c55f11778e124091c1f8a8839fd528a318b172abfdd74c11c86275e0cd1"
+      },
+      "cpu_s": 71.05008344999987,
+      "dyson_residual": 2.74263035296926e-14,
+      "epsilon_macro_static": [
+        26.47237990281111,
+        2.3722531686938242e-18
+      ],
+      "index": 23,
+      "matrix_dimension": 95,
+      "minimum_loss": -8.240285003074084e-21,
+      "settings": {
+        "bank": "k12",
+        "ecut_eV": 200,
+        "energy_eV": [
+          0,
+          0.1,
+          0.25,
+          0.5,
+          1,
+          2,
+          4,
+          8,
+          12,
+          16,
+          24,
+          32,
+          48,
+          64,
+          80,
+          96
+        ],
+        "eta_eV": 0.1,
+        "group": "lambda-G",
+        "nbands": 96,
+        "q_fractional": [
+          0.16666666666666666,
+          0,
+          0
+        ],
+        "weight": 1
+      }
+    },
+    {
+      "Q_max_Ainv": 7.166804415669738,
+      "arrays": {
+        "bytes": 2064012,
+        "path": "point-024.npz",
+        "sha256": "304efec8350adf4db2e27d6c8735f377c63f7ad4c58c63b9b6d9d0a01bf4d430"
+      },
+      "cpu_s": 71.25392504399997,
+      "dyson_residual": 1.649928311154876e-14,
+      "epsilon_macro_static": [
+        12.347465127399945,
+        6.023115134912142e-19
+      ],
+      "index": 24,
+      "matrix_dimension": 95,
+      "minimum_loss": -6.421610866226948e-21,
+      "settings": {
+        "bank": "k12",
+        "ecut_eV": 200,
+        "energy_eV": [
+          0,
+          0.1,
+          0.25,
+          0.5,
+          1,
+          2,
+          4,
+          8,
+          12,
+          16,
+          24,
+          32,
+          48,
+          64,
+          80,
+          96
+        ],
+        "eta_eV": 0.1,
+        "group": "lambda-G",
+        "nbands": 96,
+        "q_fractional": [
+          0.25,
+          0,
+          0
+        ],
+        "weight": 1
+      }
+    },
+    {
+      "Q_max_Ainv": 4.760775209988321,
+      "arrays": {
+        "bytes": 135388,
+        "path": "point-025.npz",
+        "sha256": "755abb3991ed8f1f6384431147b6592d816b4a2f4714b31e8a1d2e5cc1d575ed"
+      },
+      "cpu_s": 61.87285239599987,
+      "dyson_residual": 9.091617668938637e-14,
+      "epsilon_macro_static": [
+        111.61667647131671,
+        -2.09156418442061e-17
+      ],
+      "index": 25,
+      "matrix_dimension": 27,
+      "minimum_loss": -4.0953400707408075e-20,
+      "settings": {
+        "bank": "k12",
+        "ecut_eV": 100,
+        "energy_eV": [
+          0,
+          0.1,
+          0.25,
+          0.5,
+          1,
+          2,
+          4,
+          8,
+          12,
+          16,
+          24,
+          32,
+          48,
+          64,
+          80,
+          96
+        ],
+        "eta_eV": 0.05,
+        "group": "lambda-eta",
+        "nbands": 96,
+        "q_fractional": [
+          0.08333333333333333,
+          0,
+          0
+        ],
+        "weight": 1
+      }
+    },
+    {
+      "Q_max_Ainv": 4.956542857803378,
+      "arrays": {
+        "bytes": 167170,
+        "path": "point-026.npz",
+        "sha256": "fd331d7ad6bc3ba917b7444bc186c2e57f57565615cb74f7065135e2c5de2458"
+      },
+      "cpu_s": 60.518861273999846,
+      "dyson_residual": 2.240845165228279e-14,
+      "epsilon_macro_static": [
+        27.55809831662058,
+        -2.5119628155180473e-19
+      ],
+      "index": 26,
+      "matrix_dimension": 30,
+      "minimum_loss": -8.234208908313502e-21,
+      "settings": {
+        "bank": "k12",
+        "ecut_eV": 100,
+        "energy_eV": [
+          0,
+          0.1,
+          0.25,
+          0.5,
+          1,
+          2,
+          4,
+          8,
+          12,
+          16,
+          24,
+          32,
+          48,
+          64,
+          80,
+          96
+        ],
+        "eta_eV": 0.05,
+        "group": "lambda-eta",
+        "nbands": 96,
+        "q_fractional": [
+          0.16666666666666666,
+          0,
+          0
+        ],
+        "weight": 1
+      }
+    },
+    {
+      "Q_max_Ainv": 5.027315310407703,
+      "arrays": {
+        "bytes": 215232,
+        "path": "point-027.npz",
+        "sha256": "7b2517ba92916c595744c1d0ce82e99981297f3b6f18476b666b3d654e557e80"
+      },
+      "cpu_s": 62.42507721899983,
+      "dyson_residual": 9.62527804891354e-15,
+      "epsilon_macro_static": [
+        12.701613349712735,
+        -5.939486864564872e-20
+      ],
+      "index": 27,
+      "matrix_dimension": 34,
+      "minimum_loss": -9.307086824981615e-21,
+      "settings": {
+        "bank": "k12",
+        "ecut_eV": 100,
+        "energy_eV": [
+          0,
+          0.1,
+          0.25,
+          0.5,
+          1,
+          2,
+          4,
+          8,
+          12,
+          16,
+          24,
+          32,
+          48,
+          64,
+          80,
+          96
+        ],
+        "eta_eV": 0.05,
+        "group": "lambda-eta",
+        "nbands": 96,
+        "q_fractional": [
+          0.25,
+          0,
+          0
+        ],
+        "weight": 1
+      }
+    },
+    {
+      "Q_max_Ainv": 7.166804415669737,
+      "arrays": {
+        "bytes": 1988577,
+        "path": "point-028.npz",
+        "sha256": "e4b2ad57f0196d75d9f7bbb429362b3b964faec994650c03efec52734de123b2"
+      },
+      "cpu_s": 498.427592088,
+      "dyson_residual": 2.24078205061676e-14,
+      "epsilon_macro_static": [
+        12.5577546164236,
+        -4.754520865316936e-19
+      ],
+      "index": 28,
+      "matrix_dimension": 95,
+      "minimum_loss": -9.77855081707892e-21,
+      "settings": {
+        "bank": "k24",
+        "ecut_eV": 200,
+        "energy_eV": [
+          0,
+          0.1,
+          0.25,
+          0.5,
+          1,
+          2,
+          4,
+          8,
+          12,
+          16,
+          24,
+          32,
+          48,
+          64,
+          80,
+          96
+        ],
+        "eta_eV": 0.1,
+        "group": "k",
+        "nbands": 96,
+        "q_fractional": [
+          -0.25,
+          -0.25,
+          -0.25
+        ],
+        "weight": 0.25
+      }
+    },
+    {
+      "Q_max_Ainv": 7.166804415669737,
+      "arrays": {
+        "bytes": 3354299,
+        "path": "point-029.npz",
+        "sha256": "9ccb4c4f46fbd702ac6d077e0ec07c624a14de3157e0d4c6b5e7727cbb225172"
+      },
+      "cpu_s": 1383.4132855989997,
+      "dyson_residual": 8.607632879918912e-15,
+      "epsilon_macro_static": [
+        4.085753915893582,
+        1.3155259835577079e-21
+      ],
+      "index": 29,
+      "matrix_dimension": 94,
+      "minimum_loss": -1.3459479901719897e-21,
+      "settings": {
+        "bank": "k24",
+        "ecut_eV": 200,
+        "energy_eV": [
+          0,
+          0.1,
+          0.25,
+          0.5,
+          1,
+          2,
+          4,
+          8,
+          12,
+          16,
+          24,
+          32,
+          48,
+          64,
+          80,
+          96
+        ],
+        "eta_eV": 0.1,
+        "group": "k",
+        "nbands": 96,
+        "q_fractional": [
+          -0.25,
+          -0.25,
+          0.25
+        ],
+        "weight": 0.75
+      }
+    },
+    {
+      "Q_max_Ainv": 4.760775209988321,
+      "arrays": {
+        "bytes": 133838,
+        "path": "point-030.npz",
+        "sha256": "73e2e99a0b7cf1f560d4a2287dc44151917660aa0bd510bb903ba8cdc0168719"
+      },
+      "cpu_s": 417.4040998800001,
+      "dyson_residual": 6.696844977895051e-14,
+      "epsilon_macro_static": [
+        102.44783745909162,
+        7.397861812194807e-18
+      ],
+      "index": 30,
+      "matrix_dimension": 27,
+      "minimum_loss": -2.9969124856383602e-21,
+      "settings": {
+        "bank": "k24",
+        "ecut_eV": 100,
+        "energy_eV": [
+          0,
+          0.1,
+          0.25,
+          0.5,
+          1,
+          2,
+          4,
+          8,
+          12,
+          16,
+          24,
+          32,
+          48,
+          64,
+          80,
+          96
+        ],
+        "eta_eV": 0.1,
+        "group": "lambda-k",
+        "nbands": 96,
+        "q_fractional": [
+          0.08333333333333333,
+          0,
+          0
+        ],
+        "weight": 1
+      }
+    },
+    {
+      "Q_max_Ainv": 4.956542857803378,
+      "arrays": {
+        "bytes": 164405,
+        "path": "point-031.npz",
+        "sha256": "d71ca248c74067e368a32ed01667f5e73e257c4f72b068366209590d2ddd15fb"
+      },
+      "cpu_s": 429.3868026729997,
+      "dyson_residual": 1.7184594554766598e-14,
+      "epsilon_macro_static": [
+        27.264053633785426,
+        -8.124852745812464e-19
+      ],
+      "index": 31,
+      "matrix_dimension": 30,
+      "minimum_loss": -7.182662840390386e-21,
+      "settings": {
+        "bank": "k24",
+        "ecut_eV": 100,
+        "energy_eV": [
+          0,
+          0.1,
+          0.25,
+          0.5,
+          1,
+          2,
+          4,
+          8,
+          12,
+          16,
+          24,
+          32,
+          48,
+          64,
+          80,
+          96
+        ],
+        "eta_eV": 0.1,
+        "group": "lambda-k",
+        "nbands": 96,
+        "q_fractional": [
+          0.16666666666666666,
+          0,
+          0
+        ],
+        "weight": 1
+      }
+    },
+    {
+      "Q_max_Ainv": 5.027315310407703,
+      "arrays": {
+        "bytes": 212215,
+        "path": "point-032.npz",
+        "sha256": "f29d65be91f4e3f00e88f6db7d6896b907cba6a7049667ce9080784aba5eec9d"
+      },
+      "cpu_s": 427.0935017900001,
+      "dyson_residual": 7.661147761600331e-15,
+      "epsilon_macro_static": [
+        12.582891793800567,
+        -1.1208830333146768e-19
+      ],
+      "index": 32,
+      "matrix_dimension": 34,
+      "minimum_loss": -2.0917783348179903e-21,
+      "settings": {
+        "bank": "k24",
+        "ecut_eV": 100,
+        "energy_eV": [
+          0,
+          0.1,
+          0.25,
+          0.5,
+          1,
+          2,
+          4,
+          8,
+          12,
+          16,
+          24,
+          32,
+          48,
+          64,
+          80,
+          96
+        ],
+        "eta_eV": 0.1,
+        "group": "lambda-k",
+        "nbands": 96,
+        "q_fractional": [
+          0.25,
+          0,
+          0
+        ],
+        "weight": 1
+      }
+    }
+  ],
+  "producer": {
+    "bytes": 4764,
+    "path": "lowq_producer.py",
+    "sha256": "1be1242e12bc8bd4f0735d9e659feeec13cf12836995110abbbabfb768e2136c"
+  },
+  "reason": "Readout must evaluate numerical controls",
+  "schema": "g6-lowq-actual-frequency-family-v1",
+  "sources": {
+    "k12": {
+      "ground": {
+        "case": "Pd-pristine-api-fingerprint-a3.890A",
+        "cell_volume_A3": 14.715967249999999,
+        "dos": {
+          "D_projection_present": false,
+          "eligible": false,
+          "fermi_energy_eV": 9.943081902788055,
+          "n_EF_states_per_eV_per_cell": {
+            "0.05": 2.519327121331099,
+            "0.1": 2.2578666962522007
+          },
+          "numerical_electron_count": 9.99999999999098,
+          "occupied_d_centre_relative_EF_eV": -2.4238674357280985,
+          "occupied_d_rms_width_eV": 1.4875662615790624,
+          "occupied_d_states_per_cell": 9.184878629673518,
+          "reason": "Fingerprint only; k-mesh and observable convergence not established",
+          "settings": {
+            "metal_indices": [
+              0
+            ],
+            "moment_width_eV": 0.1,
+            "occupied_window_eV": [
+              -20,
+              0.005,
+              0.01
+            ],
+            "widths_eV": [
+              0.1,
+              0.05
+            ]
+          },
+          "spectrum": {
+            "bytes": 16708,
+            "path": "dos.npz",
+            "sha256": "b6a09af00379df8cc52a6f464abfcc3b3724f701fbd669b09cc38952db534546"
+          }
+        },
+        "forces_eV_A": [
+          [
+            2.2153821330545137e-25,
+            -5.5384553326362845e-25,
+            -4.153841499477213e-25
+          ]
+        ],
+        "free_energy_eV": -3.6037754079082656,
+        "geometry": {
+          "cell_A": [
+            [
+              0,
+              1.945,
+              1.945
+            ],
+            [
+              1.945,
+              0,
+              1.945
+            ],
+            [
+              1.945,
+              1.945,
+              0
+            ]
+          ],
+          "positions_A": [
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "symbols": [
+            "Pd"
+          ]
+        },
+        "gpaw_version": "26.7.0",
+        "gpw": {
+          "bytes": 73443754,
+          "path": "ground.gpw",
+          "sha256": "c82007760fd7164a3ad10df21dc92fb99bc2504acd648e56ed4f991c010fd3d1"
+        },
+        "ground_state_settings": {
+          "convergence": {
+            "bands": "occupied",
+            "density": 1e-06,
+            "eigenstates": 1e-09,
+            "energy": 1e-07
+          },
+          "ecut_eV": 500,
+          "kmesh": [
+            12,
+            12,
+            12
+          ],
+          "occupation_width_eV": 0.1,
+          "saved_nbands": 156,
+          "scf_nbands": 16,
+          "setups": {
+            "Pd": "10"
+          },
+          "spinpol": false
+        },
+        "magnetic_moment_muB": 0.0,
+        "model": "neutral nonmagnetic PBE/Pd10 frozen-core PAW; static direct valence RPA",
+        "neutral_electrons": 10.0,
+        "saved_state_reuse": {
+          "method": "Full saved-potential Hamiltonian diagonalization only; no new SCF",
+          "observed_spin_channels": 1,
+          "original_gpw": {
+            "bytes": 45311909,
+            "path": "ground.gpw",
+            "sha256": "2234bcd142bd594a415c685695fb6874174f16fd7d545853ff1ca1f965f8d965"
+          },
+          "original_ground_record": {
+            "bytes": 2178,
+            "path": "ground.json",
+            "sha256": "3625e3bb1e99faf85621cf8c13c042b34b93415ba888d20d185a970203f46749"
+          },
+          "original_input": {
+            "bytes": 4557,
+            "path": "input.json",
+            "sha256": "ef08b7716baa57a29648008092ad426bedf5ec96be5de4af14e39e068f0d5336"
+          }
+        },
+        "schema": "coherence-screen-ground-v1"
+      },
+      "ground_binding": {
+        "bytes": 2876,
+        "path": "ground.json",
+        "sha256": "89601e2e2bab251dc0b0550331dc92022c27cd1dbd33c59b9fb4ba5e5844b07e"
+      }
+    },
+    "k24": {
+      "ground": {
+        "case": "Pd-pristine-api-fingerprint-a3.890A",
+        "cell_volume_A3": 14.715967249999999,
+        "dos": {
+          "D_projection_present": false,
+          "eligible": false,
+          "fermi_energy_eV": 9.974475835961009,
+          "n_EF_states_per_eV_per_cell": {
+            "0.05": 1.8738284132873515,
+            "0.1": 2.0976820422491746
+          },
+          "n_EF_tetrahedron_states_per_eV_per_cell": 2.0451809356135753,
+          "numerical_electron_count": 9.999999999992914,
+          "occupied_d_centre_relative_EF_eV": -2.448214012665076,
+          "occupied_d_rms_width_eV": 1.4884766477776952,
+          "occupied_d_states_per_cell": 9.174704610076324,
+          "reason": "Fingerprint only; k-mesh and observable convergence not established",
+          "settings": {
+            "metal_indices": [
+              0
+            ],
+            "moment_width_eV": 0.1,
+            "occupied_window_eV": [
+              -20,
+              0.005,
+              0.01
+            ],
+            "widths_eV": [
+              0.1,
+              0.05
+            ]
+          },
+          "spectrum": {
+            "bytes": 16714,
+            "path": "dos.npz",
+            "sha256": "2f7637b4aa741d82194b71b2629211f07ab4017157100a33821bf608acf46f54"
+          }
+        },
+        "forces_eV_A": [
+          [
+            2.769227666318142e-26,
+            0.0,
+            -1.0384603748693033e-25
+          ]
+        ],
+        "free_energy_eV": -3.600024080665549,
+        "geometry": {
+          "cell_A": [
+            [
+              0,
+              1.945,
+              1.945
+            ],
+            [
+              1.945,
+              0,
+              1.945
+            ],
+            [
+              1.945,
+              1.945,
+              0
+            ]
+          ],
+          "positions_A": [
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "symbols": [
+            "Pd"
+          ]
+        },
+        "gpaw_version": "26.7.0",
+        "gpw": {
+          "bytes": 259415972,
+          "path": "ground.gpw",
+          "sha256": "6d341062c83d466c0207aa39f3f745e201b3084531c7cbf18104323b3da48699"
+        },
+        "ground_state_settings": {
+          "convergence": {
+            "bands": "occupied",
+            "density": 1e-06,
+            "eigenstates": 1e-09,
+            "energy": 1e-07
+          },
+          "ecut_eV": 500,
+          "kmesh": [
+            24,
+            24,
+            24
+          ],
+          "occupation_width_eV": 0.1,
+          "saved_nbands": 96,
+          "scf_nbands": 16,
+          "setups": {
+            "Pd": "10"
+          }
+        },
+        "model": "neutral nonmagnetic PBE/Pd10 frozen-core PAW; static direct valence RPA",
+        "neutral_electrons": 10.0,
+        "schema": "coherence-screen-ground-v1"
+      },
+      "ground_binding": {
+        "bytes": 2226,
+        "path": "ground.json",
+        "sha256": "f4adb7a213df213b8cd241f121881717cfb52d9b3e46132b3afe8bf28da64739"
+      }
+    }
+  },
+  "wall_s": 6537.514165950008
+}

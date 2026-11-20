@@ -1,0 +1,96 @@
+{
+  "adapter": "Only canonical-package import is changed to bundled_upstream; arithmetic unchanged",
+  "canonical_math": {
+    "bytes": 7314,
+    "path": "dielectric_observables.py",
+    "sha256": "86f6361095048ba40b51f8c0991806da9bda173a55c2401c874e2fd7fb87389a"
+  },
+  "lineage": [
+    {
+      "exported_completed": {
+        "bytes": 41530,
+        "path": "completed.json",
+        "sha256": "0467a5707396c8c8ebd67e367664ea3781f178e5b5a84ac7cc57434e779b8d1c"
+      },
+      "host": "Pd",
+      "original_completed": {
+        "bytes": 44555,
+        "path": "completed.json",
+        "sha256": "9a38516ce92f1204528275d293d7aabb2abec787dac4a1ded55bb46d8ac51433"
+      },
+      "transformation": "Bank locator keys replaced by k-mesh labels; all matrices, numerical settings and values unchanged"
+    }
+  ],
+  "native_producer": {
+    "bytes": 4764,
+    "path": "lowq_producer.py",
+    "sha256": "1be1242e12bc8bd4f0735d9e659feeec13cf12836995110abbbabfb768e2136c"
+  },
+  "original_readout": {
+    "bytes": 7882,
+    "path": "lowq_readout.py",
+    "sha256": "58c915084512710427478ab24e2439afda7ae3c3c16dd3c8c736d8c0551daa59"
+  },
+  "paw_datasets": [
+    {
+      "bytes": 106793,
+      "path": "Pd.10.PBE.gz",
+      "sha256": "3c6cfd1de7e6d6815d58c9521b2bc7cec27ede8e83554ed1f0151f979761bbb4"
+    },
+    {
+      "bytes": 12501,
+      "path": "H.PBE.gz",
+      "sha256": "3136ad73c02d471f99dd5f82e451b2061952970556a260d38b53b5020dc94ae7"
+    },
+    {
+      "bytes": 101840,
+      "path": "Ti.PBE.gz",
+      "sha256": "64143c102107cae1ac7766e2a3292fb5ab6d0fa8122b7f8be5b25c29a4a40a2c"
+    }
+  ],
+  "portable_readout": {
+    "bytes": 7872,
+    "path": "readout.py",
+    "sha256": "b06fdb84e99dfb6e2c948f8d5c32acfb01ccc2236d194c016f00c6ea7c56c257"
+  },
+  "private_boundary": "Original PDFs, exact original machine paths and full private input ledger are deliberately not included",
+  "proposal": "P256/issue245",
+  "runtime_sources": [
+    {
+      "bytes": 34912,
+      "module": "gpaw.response.df",
+      "sha256": "4a12cd747199418babe7b03be947ce011e1cbc58f229979d398e44eb577ed4ef"
+    },
+    {
+      "bytes": 19740,
+      "module": "gpaw.response.chi0",
+      "sha256": "1c3829261cef1d066d75e711e76af225b53d2d1fc14605b17a534c89b026b7d6"
+    },
+    {
+      "bytes": 16980,
+      "module": "gpaw.response.groundstate",
+      "sha256": "c4ed7ee5387be2d98c9332d17cd24ace6340fbb81a6ed09a5b8bdc72cac1a3e2"
+    },
+    {
+      "bytes": 28239,
+      "module": "gpaw.new.ase_interface",
+      "sha256": "570c92ca14dd54fa46cd8c7137f1a822cba66392271b1d97229a7c2090275f0f"
+    },
+    {
+      "bytes": 19146,
+      "module": "gpaw.new.backwards_compatibility",
+      "sha256": "2150890fe2c6ac7ab5ff04ea92ddd727f0f32eef2ee1ee95251de8ac5489441a"
+    }
+  ],
+  "runtime_versions": {
+    "ase": "3.29.0",
+    "gpaw": "26.7.0",
+    "numpy": "2.5.3",
+    "scipy": "1.18.1"
+  },
+  "scope_authority": "Axiom2092 and Root adoption",
+  "source_papers": [
+    "Yan et al.arXiv1104.1273v1 Eqs4,8,11",
+    "Campillo et al.cond-mat9808113v1 Eqs3.5\u20133.15"
+  ]
+}
