@@ -1,0 +1,135 @@
+{
+  "geometry": {
+    "case": "G2",
+    "cell_A": [
+      [
+        10.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        10.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        10.0
+      ]
+    ],
+    "forces_eV_A": [
+      [
+        0.0053042798659802435,
+        0.005317436897742301,
+        0.005285820837699751
+      ],
+      [
+        -0.005356235714431139,
+        -0.005343845614086999,
+        -0.005374918349142143
+      ]
+    ],
+    "gpw": {
+      "bytes": 6196967,
+      "path": "step-001.gpw",
+      "sha256": "cb05eccf70072042de671a439edafd1a343a4df1ae59bacc5add0614f31a672b"
+    },
+    "masses_u": [
+      2.01410177812,
+      2.01410177812
+    ],
+    "passed": true,
+    "path": {
+      "description": "Head-on [111]; open tetrahedral side for F, outside the bond for G2.",
+      "direction": [
+        0.5773502691896258,
+        0.5773502691896258,
+        0.5773502691896258
+      ],
+      "minimum_background_clearance_A": 0.8523205149682941,
+      "target_A": [
+        4.782823692765626,
+        4.782823675360052,
+        4.7828236262270085
+      ]
+    },
+    "positions_A": [
+      [
+        4.782823692765626,
+        4.782823675360052,
+        4.7828236262270085
+      ],
+      [
+        5.217176150955777,
+        5.217176124866889,
+        5.217176074031489
+      ]
+    ],
+    "raw_fmax_eV_A": 0.009280931754715655,
+    "relaxation_h_A": 0.2,
+    "state": {
+      "bytes": 2052,
+      "path": "step-001.json",
+      "sha256": "a2ab7d3ed57e1af4509badd14d8c3e3bf8ff5e1346c4ad34403938c778121ee3"
+    },
+    "steps": 1,
+    "symbols": [
+      "H",
+      "H"
+    ],
+    "target_index": 0,
+    "volume_source": null
+  },
+  "geometry_file": {
+    "bytes": 1493,
+    "path": "geometry/relaxation.json",
+    "sha256": "3611a688dafc3e10019bc75692081cb0203832ac36658845b7eabf83abbc8f02"
+  },
+  "process_cpu_s": 464.198437778,
+  "quartet": {
+    "bytes": 85361,
+    "path": "bo/quartet.json",
+    "sha256": "17dc800c9e6edcc21b4d28917092beec3937da43dfeb187ca6c9fb5a3df9588d"
+  },
+  "schema": "hydride-run-v1",
+  "source_epoch": {
+    "input": {
+      "bytes": 575,
+      "path": "input.json",
+      "sha256": "32ed33780078542975b44ecaf1925cebb906a2776a0d77479018bd7e9c205f86"
+    },
+    "source_manifest": {
+      "bytes": 1994,
+      "path": "source-manifest.json",
+      "sha256": "3a530cd7bd8bb167037e59f0375424e6860a5b17aae539af10b8e358f66b50c6"
+    }
+  },
+  "specification": {
+    "absolute_stop_utc": "2026-11-20T18:00:00Z",
+    "box_A": 10,
+    "case": "G2",
+    "force_tolerance_eV_A": 0.1,
+    "h_A": 0.2,
+    "ionic_steps": 20,
+    "kmesh": [
+      1,
+      1,
+      1
+    ],
+    "method": {
+      "BO_H_setup": "ae",
+      "Hae_alpha1_Bohr_m2": 10,
+      "Li_setup": "default_1valence",
+      "energy_convention": "internal=free-minus-negativeTS",
+      "geometry_H_setup": "standard_PAW",
+      "occupation_width_eV": 0.1,
+      "spinpol": false,
+      "xc": "PBE"
+    },
+    "nband_padding": 4,
+    "repeat_primitive": 1,
+    "schema": "hydride-specification-v1",
+    "volume_source": null
+  }
+}

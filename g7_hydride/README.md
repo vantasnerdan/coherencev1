@@ -11,6 +11,7 @@ Static Born-Oppenheimer lowering at R = 0.1 A, by the `g6_collision/` method, wi
 | D on its anion site in LiD | 40.9 | 43.7 |
 | Isolated D atom, same code | 50.7 | 37.0 |
 | PdD (`g6_collision/`, bare probe) | | 40.5 |
+| D2 molecule, same code (`d2/`) | 33.8 | 43.1 |
 
 At 0.1 A the hydride anion gives the same static lowering as the metal electron sea: 1.01 times PdD with a neutral probe and 1.08 times with a bare probe. Against the isolated atom with the same probe charge it gives 0.81 times (neutral) and 1.18 times (bare). Lowering against R from 0.1 to 1.6 A for all four cases is in `capsule/README.md`. The curves are exported in the `g6_pairlaw` material-pair schema under `capsule/curves/`.
 
@@ -49,3 +50,5 @@ Each lies about 3 eV above its 0.1 A value, and the picture is unchanged: the hy
 `capsule/` is the delivered archive `hydride-screening-delivery.tar.gz` (SHA-256 7b553071782e30084cfc67a3e473aff06c7bf2972aa6dbbea7e4dc6c9f4a23f6, 203 files), unchanged. The GPAW logs in it had machine user and path lines removed before export; their ORIGINAL and EXPORTED hashes and the transform counts are in `capsule/manifest.json`. Replay with `python capsule/reader.py capsule` from this directory (NumPy only). The lead's isolated replay under NumPy 1.26.4, with SciPy, ASE and GPAW blocked, qualified all four curves and both controls, and refused a curve altered by 1 eV. Compute used: 23.5 core-min of a 400 core-min budget, including a failed pilot publication.
 
 `contact/` is the separate supplement `contact` archive (SHA-256 6f9429941ab6586621320d9947b5e93454b34c49e6e9b140e34f0160d609c2e3, 593 files), unchanged. Its four copied curves are byte-identical to those in `capsule/`. Replay with `python contact/contact_export.py --replay contact` (NumPy only). The lead's isolated replay passed and refused a contact value altered by 1 eV. Compute: 4.9 core-min.
+
+`d2/` is the D2-molecule supplement (SHA-256 b686af62280c008a14d3827c54ae90d3006e8f887b6ae5bcbd59b99bedc2bfe9, 264 files), unchanged. The probe approaches one D of a relaxed D2 (bond 0.752 A) from outside the bond. It is one frozen orientation, with no separate grid or cell check for the molecule. Its copies of the LiD and atom curves carry the same numbers as `capsule/` and add only combined metadata. Replay with `python d2/reader.py d2`; the lead's isolated replay qualified all six curves. Compute: 7.8 core-min. Total for this node: 36.2 core-min of 400.

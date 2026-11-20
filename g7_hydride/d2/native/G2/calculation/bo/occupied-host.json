@@ -1,0 +1,100 @@
+{
+  "actual_kpoints": 1,
+  "backend": "gpaw-native",
+  "cell_A": [
+    [
+      10.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      10.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      10.0
+    ]
+  ],
+  "charge": 0,
+  "electrons": 2.0,
+  "energy": {
+    "free_energy_eV": -32.20371902960456,
+    "internal_energy_eV": -32.20371902960456,
+    "minus_TS_eV": -2.0262428704233615e-16
+  },
+  "gpw": {
+    "bytes": 6196127,
+    "path": "occupied-host.gpw",
+    "sha256": "922e1d527a2a7956efcefd0e14676899f806e6482e09b6f3c834e2c417453d9c"
+  },
+  "masses_u": [
+    2.01410177812,
+    2.01410177812
+  ],
+  "nbands": 5,
+  "occupation_width_eV": 0.1,
+  "positions_A": [
+    [
+      4.782823692765626,
+      4.782823675360052,
+      4.7828236262270085
+    ],
+    [
+      5.217176150955777,
+      5.217176124866889,
+      5.217176074031489
+    ]
+  ],
+  "process_cpu_s": 18.145727668,
+  "realspace_shape": [
+    48,
+    48,
+    48
+  ],
+  "scf_converged": true,
+  "scf_iterations": 28,
+  "schema": "hydride-native-state-v1",
+  "setup_valence": {
+    "H": 1.0
+  },
+  "setups": {
+    "H": "ae"
+  },
+  "specification": {
+    "absolute_stop_utc": "2026-11-20T18:00:00Z",
+    "box_A": 10,
+    "case": "G2",
+    "force_tolerance_eV_A": 0.1,
+    "h_A": 0.2,
+    "ionic_steps": 20,
+    "kmesh": [
+      1,
+      1,
+      1
+    ],
+    "method": {
+      "BO_H_setup": "ae",
+      "Hae_alpha1_Bohr_m2": 10,
+      "Li_setup": "default_1valence",
+      "energy_convention": "internal=free-minus-negativeTS",
+      "geometry_H_setup": "standard_PAW",
+      "occupation_width_eV": 0.1,
+      "spinpol": false,
+      "xc": "PBE"
+    },
+    "nband_padding": 4,
+    "repeat_primitive": 1,
+    "schema": "hydride-specification-v1",
+    "volume_source": null
+  },
+  "spinpol": false,
+  "symbols": [
+    "H",
+    "H"
+  ],
+  "wavefunction_predictor": "NullWfsMover",
+  "xc": "PBE"
+}

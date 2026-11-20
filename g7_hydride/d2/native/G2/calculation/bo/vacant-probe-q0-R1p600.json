@@ -1,0 +1,106 @@
+{
+  "R_A": 1.6,
+  "actual_kpoints": 1,
+  "backend": "gpaw-native",
+  "cell_A": [
+    [
+      10.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      10.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      10.0
+    ]
+  ],
+  "charge": 0,
+  "electrons": 2.0,
+  "energy": {
+    "free_energy_eV": -26.551238759204498,
+    "internal_energy_eV": -26.549600997844077,
+    "minus_TS_eV": -0.0016377613604213561
+  },
+  "gpw": {
+    "bytes": 6196131,
+    "path": "vacant-probe-q0-R1p600.gpw",
+    "sha256": "baaeac458cdbf6b1ba7d223e7d4a9a838b0c8b164f766d29d73f48adbedb8713"
+  },
+  "masses_u": [
+    2.01410177812,
+    2.01410177812
+  ],
+  "nbands": 5,
+  "occupation_width_eV": 0.1,
+  "positions_A": [
+    [
+      5.217176150955777,
+      5.217176124866889,
+      5.217176074031489
+    ],
+    [
+      3.8590632620622243,
+      3.8590632446566504,
+      3.859063195523607
+    ]
+  ],
+  "process_cpu_s": 15.530315344999991,
+  "projectile_A": [
+    3.8590632620622243,
+    3.8590632446566504,
+    3.859063195523607
+  ],
+  "realspace_shape": [
+    48,
+    48,
+    48
+  ],
+  "scf_converged": true,
+  "scf_iterations": 23,
+  "schema": "hydride-native-state-v1",
+  "setup_valence": {
+    "H": 1.0
+  },
+  "setups": {
+    "H": "ae"
+  },
+  "specification": {
+    "absolute_stop_utc": "2026-11-20T18:00:00Z",
+    "box_A": 10,
+    "case": "G2",
+    "force_tolerance_eV_A": 0.1,
+    "h_A": 0.2,
+    "ionic_steps": 20,
+    "kmesh": [
+      1,
+      1,
+      1
+    ],
+    "method": {
+      "BO_H_setup": "ae",
+      "Hae_alpha1_Bohr_m2": 10,
+      "Li_setup": "default_1valence",
+      "energy_convention": "internal=free-minus-negativeTS",
+      "geometry_H_setup": "standard_PAW",
+      "occupation_width_eV": 0.1,
+      "spinpol": false,
+      "xc": "PBE"
+    },
+    "nband_padding": 4,
+    "repeat_primitive": 1,
+    "schema": "hydride-specification-v1",
+    "volume_source": null
+  },
+  "spinpol": false,
+  "symbols": [
+    "H",
+    "H"
+  ],
+  "wavefunction_predictor": "NullWfsMover",
+  "xc": "PBE"
+}

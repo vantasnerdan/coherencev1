@@ -1,0 +1,1470 @@
+{
+  "R_A": [
+    0.1,
+    0.2,
+    0.3,
+    0.5,
+    1.0,
+    1.6
+  ],
+  "V_pair_total_eV": [
+    100.33501781275619,
+    32.860843333970394,
+    12.878914256947397,
+    3.149188715842069,
+    1.83086045128557,
+    2.9284913254713594
+  ],
+  "charge_gauge_scope": "q0: neutral H/D probe adds one electron; q1: bare unit-charge probe adds none. Occupied and target-removed hosts are neutral, differing by one nucleus and one electron. Matched same-cell probe charges cancel a gauge/background constant proportional to q^2 within each quartet, not between unlike charges or cells. Residual finite-cell electronic and multipole effects are checked at R=0.1 A for BOTH F charges.",
+  "configuration": {
+    "BO_setups": {
+      "H": "ae"
+    },
+    "actual_kpoints": 1,
+    "case": "F",
+    "isotope": "D",
+    "nbands": 24,
+    "occupied_host_electrons": 16.0,
+    "occupied_probe_electrons": [
+      16.0,
+      16.0,
+      16.0,
+      16.0,
+      16.0,
+      16.0
+    ],
+    "path": {
+      "description": "Head-on [111]; open tetrahedral side for F, outside the bond for G2.",
+      "direction": [
+        0.5773502691896258,
+        0.5773502691896258,
+        0.5773502691896258
+      ],
+      "minimum_background_clearance_A": 1.6446978536480903,
+      "target_A": [
+        2.01433373614844,
+        1.1673464910447805e-20,
+        5.4952540871213985e-21
+      ]
+    },
+    "probe_added_electrons": 0,
+    "probe_charge": 1,
+    "realspace_shape": [
+      24,
+      24,
+      24
+    ],
+    "specification": {
+      "absolute_stop_utc": "2026-11-20T18:00:00Z",
+      "case": "F",
+      "force_tolerance_eV_A": 0.1,
+      "h_A": 0.2,
+      "ionic_steps": 20,
+      "kmesh": [
+        1,
+        1,
+        1
+      ],
+      "method": {
+        "BO_H_setup": "ae",
+        "Hae_alpha1_Bohr_m2": 10,
+        "Li_setup": "default_1valence",
+        "energy_convention": "internal=free-minus-negativeTS",
+        "geometry_H_setup": "standard_PAW",
+        "occupation_width_eV": 0.1,
+        "spinpol": false,
+        "xc": "PBE"
+      },
+      "nband_padding": 16,
+      "primitive_cell_A": [
+        [
+          0,
+          2.01433373614844,
+          2.01433373614844
+        ],
+        [
+          2.01433373614844,
+          0,
+          2.01433373614844
+        ],
+        [
+          2.01433373614844,
+          2.01433373614844,
+          0
+        ]
+      ],
+      "primitive_positions_A": [
+        [
+          -1.9531333022900028e-28,
+          7.83654346385769e-18,
+          5.715158423526139e-21
+        ],
+        [
+          2.01433373614844,
+          1.1673464910447805e-20,
+          5.4952540871213985e-21
+        ]
+      ],
+      "primitive_symbols": [
+        "Li",
+        "H"
+      ],
+      "repeat_primitive": 2,
+      "schema": "hydride-specification-v1",
+      "volume_source": {
+        "bytes": 3075,
+        "path": "g6-gap-LiD-ground-original.json",
+        "sha256": "01e4b1b4022b9d540a581f5e270262c1177a6b43f946f97a783cf71444830d4e"
+      }
+    },
+    "vacant_host_electrons": 15.0,
+    "vacant_probe_electrons": [
+      15.0,
+      15.0,
+      15.0,
+      15.0,
+      15.0,
+      15.0
+    ],
+    "volume_A3": 130.77184823496154,
+    "volume_scope": "Inherited original PW volume; fresh FD ionic relaxation only"
+  },
+  "consumer_contract": "g6_pairlaw/script/material_pair.py@2645b19a",
+  "geometry_provenance": {
+    "case": "F",
+    "cell_A": [
+      [
+        0.0,
+        4.02866747229688,
+        4.02866747229688
+      ],
+      [
+        4.02866747229688,
+        0.0,
+        4.02866747229688
+      ],
+      [
+        4.02866747229688,
+        4.02866747229688,
+        0.0
+      ]
+    ],
+    "forces_eV_A": [
+      [
+        8.429440496679105e-13,
+        -6.024681794359017e-13,
+        -2.3871225121627036e-14
+      ],
+      [
+        4.976759470487663e-13,
+        -4.994898388173408e-13,
+        1.753198341918784e-13
+      ],
+      [
+        8.832762951540678e-13,
+        -9.261111547590387e-13,
+        5.891175632312184e-14
+      ],
+      [
+        1.3015390740936233e-12,
+        -2.514874014679426e-13,
+        -4.3400621751109795e-14
+      ],
+      [
+        -8.146913758014266e-13,
+        7.289210894969849e-13,
+        1.7750116371258997e-13
+      ],
+      [
+        -4.0923754633169534e-13,
+        7.33109185615808e-13,
+        1.0285584901896764e-13
+      ],
+      [
+        -7.518003322775537e-13,
+        1.0701409027133784e-12,
+        -2.1034847479510933e-13
+      ],
+      [
+        -2.1074920366752628e-13,
+        6.665736580559334e-13,
+        1.9575020079025636e-13
+      ],
+      [
+        -7.506771474169255e-13,
+        1.0291481474541797e-12,
+        -2.54308857904586e-13
+      ],
+      [
+        -4.74412027756008e-13,
+        4.0755978696168744e-13,
+        2.416251243436053e-13
+      ],
+      [
+        -7.63408297516833e-13,
+        7.578050732178143e-13,
+        1.6505340496563103e-13
+      ],
+      [
+        3.9550384153843805e-14,
+        1.2488258967904539e-12,
+        -1.431594040110629e-13
+      ],
+      [
+        9.047274986294243e-13,
+        -9.494031570107176e-13,
+        4.45360923316729e-14
+      ],
+      [
+        8.066653644487931e-13,
+        -5.205846296348435e-13,
+        -1.2755514767678276e-13
+      ],
+      [
+        9.718566395960578e-13,
+        -5.242040838046747e-13,
+        -2.5275094757346335e-14
+      ],
+      [
+        7.2350570968913e-13,
+        4.801888732985559e-14,
+        1.5780173671500453e-13
+      ]
+    ],
+    "gpw": {
+      "bytes": 2899026,
+      "path": "step-000.gpw",
+      "sha256": "e723532002f5e904ab0e6e2c849dc5775f1f9f66144e01582246f84d6f95dfc9"
+    },
+    "masses_u": [
+      6.0151228874,
+      2.01410177812,
+      6.0151228874,
+      2.01410177812,
+      6.0151228874,
+      2.01410177812,
+      6.0151228874,
+      2.01410177812,
+      6.0151228874,
+      2.01410177812,
+      6.0151228874,
+      2.01410177812,
+      6.0151228874,
+      2.01410177812,
+      6.0151228874,
+      2.01410177812
+    ],
+    "passed": true,
+    "path": {
+      "description": "Head-on [111]; open tetrahedral side for F, outside the bond for G2.",
+      "direction": [
+        0.5773502691896258,
+        0.5773502691896258,
+        0.5773502691896258
+      ],
+      "minimum_background_clearance_A": 1.6446978536480903,
+      "target_A": [
+        2.01433373614844,
+        1.1673464910447805e-20,
+        5.4952540871213985e-21
+      ]
+    },
+    "positions_A": [
+      [
+        -1.9531333022900028e-28,
+        7.83654346385769e-18,
+        5.715158423526139e-21
+      ],
+      [
+        2.01433373614844,
+        1.1673464910447805e-20,
+        5.4952540871213985e-21
+      ],
+      [
+        2.01433373614844,
+        2.01433373614844,
+        5.715158423526139e-21
+      ],
+      [
+        4.02866747229688,
+        2.01433373614844,
+        5.4952540871213985e-21
+      ],
+      [
+        2.01433373614844,
+        7.83654346385769e-18,
+        2.01433373614844
+      ],
+      [
+        4.02866747229688,
+        1.1673464910447805e-20,
+        2.01433373614844
+      ],
+      [
+        4.02866747229688,
+        2.01433373614844,
+        2.01433373614844
+      ],
+      [
+        6.04300120844532,
+        2.01433373614844,
+        2.01433373614844
+      ],
+      [
+        -1.9531333022900028e-28,
+        2.01433373614844,
+        2.01433373614844
+      ],
+      [
+        2.01433373614844,
+        2.01433373614844,
+        2.01433373614844
+      ],
+      [
+        2.01433373614844,
+        4.02866747229688,
+        2.01433373614844
+      ],
+      [
+        4.02866747229688,
+        4.02866747229688,
+        2.01433373614844
+      ],
+      [
+        2.01433373614844,
+        2.01433373614844,
+        4.02866747229688
+      ],
+      [
+        4.02866747229688,
+        2.01433373614844,
+        4.02866747229688
+      ],
+      [
+        4.02866747229688,
+        4.02866747229688,
+        4.02866747229688
+      ],
+      [
+        6.04300120844532,
+        4.02866747229688,
+        4.02866747229688
+      ]
+    ],
+    "raw_fmax_eV_A": 1.326323297110462e-12,
+    "relaxation_h_A": 0.2,
+    "state": {
+      "bytes": 5897,
+      "path": "step-000.json",
+      "sha256": "fc525bb9aebe986bf8b2441120fad216db006447a2076b3433e774c0584be05f"
+    },
+    "steps": 0,
+    "symbols": [
+      "Li",
+      "H",
+      "Li",
+      "H",
+      "Li",
+      "H",
+      "Li",
+      "H",
+      "Li",
+      "H",
+      "Li",
+      "H",
+      "Li",
+      "H",
+      "Li",
+      "H"
+    ],
+    "target_index": 1,
+    "volume_source": {
+      "bytes": 3075,
+      "path": "g6-gap-LiD-ground-original.json",
+      "sha256": "01e4b1b4022b9d540a581f5e270262c1177a6b43f946f97a783cf71444830d4e"
+    }
+  },
+  "mapping_provenance": {
+    "Hae_alpha1_Bohr_minus2": 10,
+    "gaussian_width_inverse_A": 4.225556076228694,
+    "lowering_definition": "14.399645468667815/R_A - V_pair_total_eV",
+    "rows": [
+      {
+        "BO_quartet_soft_eV": 21.139403621790876,
+        "R_A": 0.1,
+        "V_pair_total_eV": 100.33501781275619,
+        "lowering_eV": 43.66143687392194,
+        "point_minus_gaussian_eV": 79.19561419096532
+      },
+      {
+        "BO_quartet_soft_eV": 16.17508071622285,
+        "R_A": 0.2,
+        "V_pair_total_eV": 32.860843333970394,
+        "lowering_eV": 39.137384009368674,
+        "point_minus_gaussian_eV": 16.685762617747546
+      },
+      {
+        "BO_quartet_soft_eV": 9.393767379172601,
+        "R_A": 0.3,
+        "V_pair_total_eV": 12.878914256947397,
+        "lowering_eV": 35.11990397194532,
+        "point_minus_gaussian_eV": 3.485146877774795
+      },
+      {
+        "BO_quartet_soft_eV": 3.0876702305360197,
+        "R_A": 0.5,
+        "V_pair_total_eV": 3.149188715842069,
+        "lowering_eV": 25.65010222149356,
+        "point_minus_gaussian_eV": 0.061518485306048906
+      },
+      {
+        "BO_quartet_soft_eV": 1.8502344350999635,
+        "R_A": 1.0,
+        "V_pair_total_eV": 1.83086045128557,
+        "lowering_eV": 12.568785017382245,
+        "point_minus_gaussian_eV": -0.019373983814393612
+      },
+      {
+        "BO_quartet_soft_eV": 2.947865342247894,
+        "R_A": 1.6,
+        "V_pair_total_eV": 2.9284913254713594,
+        "lowering_eV": 6.071287092446024,
+        "point_minus_gaussian_eV": -0.01937401677653467
+      }
+    ],
+    "zero_G": "same zero-G periodic point and Gaussian convention"
+  },
+  "observable": "target_conditioned_BO_total_interaction",
+  "original_volume_provenance": {
+    "relaxation": {
+      "forces_eV_A": [
+        [
+          0.0,
+          -3.245188671466573e-28,
+          -5.915708515694274e-28
+        ],
+        [
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "interpretation": "Stationary ordered phase; no global phase or phonon stability claim",
+      "mode": "hydrostatic",
+      "relaxed": true,
+      "settings": {
+        "force_tolerance_eV_A": 0.02,
+        "max_steps": 25,
+        "mode": "hydrostatic",
+        "stress_tolerance_eV_A3": 0.0005
+      },
+      "steps": 2,
+      "stress_eV_A3": [
+        -0.000152412462809067,
+        -0.000152412462809067,
+        -0.0001524124628090666,
+        -3.318228491948615e-18,
+        4.1477856149357687e-19,
+        4.147785614935769e-18
+      ]
+    },
+    "scope": "Original PW500/k4 hydrostatic volume/stress; not FD volume reoptimization",
+    "settings": {
+      "ecut_eV": 500,
+      "kmesh": [
+        4,
+        4,
+        4
+      ],
+      "occupation_width_eV": 0.01,
+      "saved_bands": 48,
+      "scf_bands": 8
+    },
+    "source": {
+      "bytes": 3075,
+      "path": "g6-gap-LiD-ground-original.json",
+      "sha256": "01e4b1b4022b9d540a581f5e270262c1177a6b43f946f97a783cf71444830d4e"
+    },
+    "stress_eV_A3": [
+      -0.000152412462809067,
+      -0.000152412462809067,
+      -0.0001524124628090666,
+      -3.318228491948615e-18,
+      4.1477856149357687e-19,
+      4.147785614935769e-18
+    ],
+    "volume_A3": 16.346481029370203
+  },
+  "qualification": {
+    "PdD_reference": {
+      "original_probe_charge": 1,
+      "scope": "Stated comparison value, not a new same-code PdD calculation; q0 comparison changes probe charge.",
+      "stated_lowering_eV": 40.5
+    },
+    "both_F_charge_h_and_cell_controls": {
+      "cell": {
+        "q0": {
+          "R_A": 0.1,
+          "absolute_difference_eV": 3.157219054244763,
+          "base": {
+            "bytes": 7384,
+            "path": "run-result.json",
+            "sha256": "d8c5a87ad3cc832c48fffbd167606410bfbee690e69cc938cee6cbfc380ff0da"
+          },
+          "base_geometry": {
+            "bytes": 4761,
+            "path": "geometry/relaxation.json",
+            "sha256": "35d7ef033731af1ab1399944560fc36c9103100188c0e0af42a4a8bf7ae88926"
+          },
+          "base_lowering_eV": 40.85227167545274,
+          "base_raw_fmax_eV_A": 1.326323297110462e-12,
+          "charge": 0,
+          "control": {
+            "bytes": 16448,
+            "path": "run-result.json",
+            "sha256": "044831c17efdae7a765366071bde5b566615d257929b5d24ccea4516bb14c7a5"
+          },
+          "control_geometry": {
+            "bytes": 12913,
+            "path": "geometry/relaxation.json",
+            "sha256": "8d23313ff6a5a6db0a1972a490554e36ff614f3b780aad03464eeb031f30e8ab"
+          },
+          "control_lowering_eV": 37.69505262120798,
+          "control_raw_fmax_eV_A": 2.0641614403984037e-12,
+          "kind": "cell",
+          "passed": true,
+          "scope": "Actual independently force-qualified finite FD geometry; no inherited cell waiver.",
+          "tolerance_eV": 5.0
+        },
+        "q1": {
+          "R_A": 0.1,
+          "absolute_difference_eV": 0.12999964895533367,
+          "base": {
+            "bytes": 7384,
+            "path": "run-result.json",
+            "sha256": "d8c5a87ad3cc832c48fffbd167606410bfbee690e69cc938cee6cbfc380ff0da"
+          },
+          "base_geometry": {
+            "bytes": 4761,
+            "path": "geometry/relaxation.json",
+            "sha256": "35d7ef033731af1ab1399944560fc36c9103100188c0e0af42a4a8bf7ae88926"
+          },
+          "base_lowering_eV": 43.66143687392194,
+          "base_raw_fmax_eV_A": 1.326323297110462e-12,
+          "charge": 1,
+          "control": {
+            "bytes": 16448,
+            "path": "run-result.json",
+            "sha256": "044831c17efdae7a765366071bde5b566615d257929b5d24ccea4516bb14c7a5"
+          },
+          "control_geometry": {
+            "bytes": 12913,
+            "path": "geometry/relaxation.json",
+            "sha256": "8d23313ff6a5a6db0a1972a490554e36ff614f3b780aad03464eeb031f30e8ab"
+          },
+          "control_lowering_eV": 43.53143722496661,
+          "control_raw_fmax_eV_A": 2.0641614403984037e-12,
+          "kind": "cell",
+          "passed": true,
+          "scope": "Actual independently force-qualified finite FD geometry; no inherited cell waiver.",
+          "tolerance_eV": 5.0
+        }
+      },
+      "h": {
+        "q0": {
+          "R_A": 0.1,
+          "absolute_difference_eV": 0.8268259323250078,
+          "base": {
+            "bytes": 7384,
+            "path": "run-result.json",
+            "sha256": "d8c5a87ad3cc832c48fffbd167606410bfbee690e69cc938cee6cbfc380ff0da"
+          },
+          "base_geometry": {
+            "bytes": 4761,
+            "path": "geometry/relaxation.json",
+            "sha256": "35d7ef033731af1ab1399944560fc36c9103100188c0e0af42a4a8bf7ae88926"
+          },
+          "base_lowering_eV": 40.85227167545274,
+          "base_raw_fmax_eV_A": 1.326323297110462e-12,
+          "charge": 0,
+          "control": {
+            "bytes": 7395,
+            "path": "run-result.json",
+            "sha256": "c73c76fc7a4b39f2d71c7b1ee88989e9f7e8d418d7ea8fa47ffc35475555ad1c"
+          },
+          "control_geometry": {
+            "bytes": 4772,
+            "path": "geometry/relaxation.json",
+            "sha256": "481b724306e2b72a78dcc3a7652de988c8246c64244ceced563df7ed065c57b4"
+          },
+          "control_lowering_eV": 40.02544574312773,
+          "control_raw_fmax_eV_A": 9.996150464238552e-06,
+          "kind": "h",
+          "passed": true,
+          "scope": "Actual independently force-qualified finite FD geometry; no inherited cell waiver.",
+          "tolerance_eV": 5.0
+        },
+        "q1": {
+          "R_A": 0.1,
+          "absolute_difference_eV": 0.9176645837559505,
+          "base": {
+            "bytes": 7384,
+            "path": "run-result.json",
+            "sha256": "d8c5a87ad3cc832c48fffbd167606410bfbee690e69cc938cee6cbfc380ff0da"
+          },
+          "base_geometry": {
+            "bytes": 4761,
+            "path": "geometry/relaxation.json",
+            "sha256": "35d7ef033731af1ab1399944560fc36c9103100188c0e0af42a4a8bf7ae88926"
+          },
+          "base_lowering_eV": 43.66143687392194,
+          "base_raw_fmax_eV_A": 1.326323297110462e-12,
+          "charge": 1,
+          "control": {
+            "bytes": 7395,
+            "path": "run-result.json",
+            "sha256": "c73c76fc7a4b39f2d71c7b1ee88989e9f7e8d418d7ea8fa47ffc35475555ad1c"
+          },
+          "control_geometry": {
+            "bytes": 4772,
+            "path": "geometry/relaxation.json",
+            "sha256": "481b724306e2b72a78dcc3a7652de988c8246c64244ceced563df7ed065c57b4"
+          },
+          "control_lowering_eV": 42.74377229016599,
+          "control_raw_fmax_eV_A": 9.996150464238552e-06,
+          "kind": "h",
+          "passed": true,
+          "scope": "Actual independently force-qualified finite FD geometry; no inherited cell waiver.",
+          "tolerance_eV": 5.0
+        }
+      }
+    },
+    "qualified": true,
+    "ratios_R01": {
+      "F_q0_over_G_q0": {
+        "delta_eV": -9.805328275132538,
+        "denominator": "G_q0",
+        "denominator_lowering_eV": 50.65759995058528,
+        "factor_scope": "Positive-lowering factor defined only when both lowerings are positive; signed factor undefined for a zero denominator.",
+        "numerator": "F_q0",
+        "numerator_lowering_eV": 40.85227167545274,
+        "positive_lowering_factor": 0.8064391466493223,
+        "signed_factor": 0.8064391466493223
+      },
+      "F_q0_over_PdD40p5": {
+        "delta_eV": 0.35227167545274085,
+        "denominator": "stated PdD 40.5 eV (original bare probe)",
+        "denominator_lowering_eV": 40.5,
+        "factor_scope": "Positive-lowering factor defined only when both lowerings are positive; signed factor undefined for a zero denominator.",
+        "numerator": "F_q0",
+        "numerator_lowering_eV": 40.85227167545274,
+        "positive_lowering_factor": 1.0086980660605616,
+        "signed_factor": 1.0086980660605616
+      },
+      "F_q1_over_G_q1": {
+        "delta_eV": 6.676220603415274,
+        "denominator": "G_q1",
+        "denominator_lowering_eV": 36.98521627050667,
+        "factor_scope": "Positive-lowering factor defined only when both lowerings are positive; signed factor undefined for a zero denominator.",
+        "numerator": "F_q1",
+        "numerator_lowering_eV": 43.66143687392194,
+        "positive_lowering_factor": 1.180510519516392,
+        "signed_factor": 1.180510519516392
+      },
+      "F_q1_over_PdD40p5": {
+        "delta_eV": 3.161436873921943,
+        "denominator": "stated PdD 40.5 eV (original bare probe)",
+        "denominator_lowering_eV": 40.5,
+        "factor_scope": "Positive-lowering factor defined only when both lowerings are positive; signed factor undefined for a zero denominator.",
+        "numerator": "F_q1",
+        "numerator_lowering_eV": 43.66143687392194,
+        "positive_lowering_factor": 1.0780601697264678,
+        "signed_factor": 1.0780601697264678
+      }
+    }
+  },
+  "reference": {
+    "bare": "isolated_unit_charge_coulomb",
+    "configuration": "Force-relaxed rocksalt LiD finite FD cell at inherited original PW volume. Neutral occupied and target-removed hosts; one target nucleus and one electron removed. Bare unit-charge probe adds no electron.",
+    "energy_zero": "E_probe,occupied - E_probe,vacant - E_host,occupied + E_host,vacant, each actual PBE/Hae nonspin Native internal energy = free energy - negative TS, FD width 0.1 eV. Only one-atom G vacant-host is the analytic zero-nucleus/zero-electron empty Hamiltonian; all one-H zero-electron q1 probe states are actual converged Native. No fitted offset or far-point subtraction; no geometry PAW energy enters the quartet.",
+    "periodic_to_isolated": "Replace the Hae alpha1=10 Bohr^-2 Gaussian nuclear block with the independently replayed periodic same-zero-G point-minus-Gaussian block, width sqrt(5)/Bohr. Both F charges pass actual h0.20/0.16 and relaxed repeat2/repeat3 comparisons at R0.1 within max(5 eV,10% of control lowering). No bare-only image subtraction and no exact isolated electronic limit is claimed; gas remains a finite-box method reference.",
+    "source": "P255/issue248 same-code actual Native F_q1; quartet SHA256 3972a0bfe13f5dad2485085edfcea448d961b8ef88d5416cedd00a787141aa89"
+  },
+  "schema": "coherencev1-target-conditioned-pair-v1",
+  "source_bindings": {
+    "all_controls": {
+      "F": {
+        "geometry": {
+          "bytes": 4761,
+          "path": "geometry/relaxation.json",
+          "sha256": "35d7ef033731af1ab1399944560fc36c9103100188c0e0af42a4a8bf7ae88926"
+        },
+        "quartet": {
+          "bytes": 179957,
+          "path": "bo/quartet.json",
+          "sha256": "3972a0bfe13f5dad2485085edfcea448d961b8ef88d5416cedd00a787141aa89"
+        },
+        "run": {
+          "bytes": 7384,
+          "path": "run-result.json",
+          "sha256": "d8c5a87ad3cc832c48fffbd167606410bfbee690e69cc938cee6cbfc380ff0da"
+        },
+        "source_epoch": {
+          "input": {
+            "bytes": 1220,
+            "path": "input.json",
+            "sha256": "4c7248884bde53841518d88006350f0db0735fc2b1ab70ee75e8f27f1cc6c0eb"
+          },
+          "source_manifest": {
+            "bytes": 1994,
+            "path": "source-manifest.json",
+            "sha256": "3a530cd7bd8bb167037e59f0375424e6860a5b17aae539af10b8e358f66b50c6"
+          }
+        },
+        "states": {
+          "occupied-host": {
+            "bytes": 4282,
+            "path": "occupied-host.json",
+            "sha256": "e2030d12192190d5446920a312bcf60f3c252cc0572baec9eaddb534c94f46e4"
+          },
+          "q0-occupied-probe-R0.100": {
+            "bytes": 4532,
+            "path": "occupied-probe-q0-R0p100.json",
+            "sha256": "2a4f69c2057038323f3a4846ae1cd8c47f408ef6c0aa975b6d4a8d2f4aa79864"
+          },
+          "q0-occupied-probe-R0.200": {
+            "bytes": 4529,
+            "path": "occupied-probe-q0-R0p200.json",
+            "sha256": "3c9700e0f3a363a6b5a02c4deb71080daaca3e0d91213e71c65bb8a9344599fe"
+          },
+          "q0-occupied-probe-R0.300": {
+            "bytes": 4531,
+            "path": "occupied-probe-q0-R0p300.json",
+            "sha256": "8df9fec643618e9584a39910fad69f8b8babee138d73c04d27bb842134ebbec8"
+          },
+          "q0-occupied-probe-R0.500": {
+            "bytes": 4527,
+            "path": "occupied-probe-q0-R0p500.json",
+            "sha256": "d2c8b9e65a04eda90bde37ce370c7fa354876fe08704ff9ca75ce26c69bf4ba3"
+          },
+          "q0-occupied-probe-R1.000": {
+            "bytes": 4529,
+            "path": "occupied-probe-q0-R1p000.json",
+            "sha256": "9d9b7b056a078ab367902e18767b343bf82a18c58795a4e571282c0f7009ab2f"
+          },
+          "q0-occupied-probe-R1.600": {
+            "bytes": 4528,
+            "path": "occupied-probe-q0-R1p600.json",
+            "sha256": "b5a1b65d72b641bac50a8bc3acb5a31a6724a7922c67c60a9b3bda0f7c21fe20"
+          },
+          "q0-vacant-probe-R0.100": {
+            "bytes": 4408,
+            "path": "vacant-probe-q0-R0p100.json",
+            "sha256": "aa63488d88e56f7e64de04824d2b08e9085589fede4a5dba6d81a19eafff5e88"
+          },
+          "q0-vacant-probe-R0.200": {
+            "bytes": 4406,
+            "path": "vacant-probe-q0-R0p200.json",
+            "sha256": "04ee5b72932b4972afc7be9c39d7cacd1c9a6ffb681b246a40f74621e92ae103"
+          },
+          "q0-vacant-probe-R0.300": {
+            "bytes": 4408,
+            "path": "vacant-probe-q0-R0p300.json",
+            "sha256": "d00c066d720f8ebd0b5d329990dc65a7c48d48988e384994a252af6e285f51e7"
+          },
+          "q0-vacant-probe-R0.500": {
+            "bytes": 4402,
+            "path": "vacant-probe-q0-R0p500.json",
+            "sha256": "613c5e857df9aa90ffc4d0fb27f9fd2115c9a937e980da66af9a7571402aa057"
+          },
+          "q0-vacant-probe-R1.000": {
+            "bytes": 4405,
+            "path": "vacant-probe-q0-R1p000.json",
+            "sha256": "5c0263b4752746a46d1613ad3b9a0a966d5f9236bcdc121a07963e9a4de8f4ba"
+          },
+          "q0-vacant-probe-R1.600": {
+            "bytes": 4404,
+            "path": "vacant-probe-q0-R1p600.json",
+            "sha256": "b86b724d55b04afe6ee4ee404c52d376abd6c3b0ad0275d2a2898d8d71054c35"
+          },
+          "q1-occupied-probe-R0.100": {
+            "bytes": 4535,
+            "path": "occupied-probe-q1-R0p100.json",
+            "sha256": "d145d11644b132ce242befad3adc215398ea7c4787ba30e07d9458c0440626d1"
+          },
+          "q1-occupied-probe-R0.200": {
+            "bytes": 4531,
+            "path": "occupied-probe-q1-R0p200.json",
+            "sha256": "2a0fae85e4c5c2734d0a68f2bf7b9614cbcf93c791792ebb7909235c05a06556"
+          },
+          "q1-occupied-probe-R0.300": {
+            "bytes": 4534,
+            "path": "occupied-probe-q1-R0p300.json",
+            "sha256": "74cc5f9a5222ad343071f60ce24da19c2b5149def88e35c9d81cc13ad828f027"
+          },
+          "q1-occupied-probe-R0.500": {
+            "bytes": 4529,
+            "path": "occupied-probe-q1-R0p500.json",
+            "sha256": "952cfa28e8da10c668ed94faa0d3a142d633e289e1e55be3d8e3ae1ba1433854"
+          },
+          "q1-occupied-probe-R1.000": {
+            "bytes": 4527,
+            "path": "occupied-probe-q1-R1p000.json",
+            "sha256": "874f53243169442fa3293af17143572d641ced4405bd733344f7ccb7512a8655"
+          },
+          "q1-occupied-probe-R1.600": {
+            "bytes": 4528,
+            "path": "occupied-probe-q1-R1p600.json",
+            "sha256": "a40839016953f0325173a0ce2aed3f1f40711a6a26b41ed3945b6d1a0ba00598"
+          },
+          "q1-vacant-probe-R0.100": {
+            "bytes": 4406,
+            "path": "vacant-probe-q1-R0p100.json",
+            "sha256": "74a8e5b0329e004bbcdad6a07f443d63df9275a11332478886c47c47f7e1b17f"
+          },
+          "q1-vacant-probe-R0.200": {
+            "bytes": 4403,
+            "path": "vacant-probe-q1-R0p200.json",
+            "sha256": "aedbfe9248e7014d4509e5a83fd3b503d5b9ad7f5a060b7d1c16b711c6820e4c"
+          },
+          "q1-vacant-probe-R0.300": {
+            "bytes": 4406,
+            "path": "vacant-probe-q1-R0p300.json",
+            "sha256": "a572226ef9e352b5f93f735f810c0852d9839b9b32379a16c063b1060b4b1935"
+          },
+          "q1-vacant-probe-R0.500": {
+            "bytes": 4402,
+            "path": "vacant-probe-q1-R0p500.json",
+            "sha256": "d199ba1b946937a4659abe1f6037f8735ef7b62df3a8cab3e426b4e27e2fa75e"
+          },
+          "q1-vacant-probe-R1.000": {
+            "bytes": 4400,
+            "path": "vacant-probe-q1-R1p000.json",
+            "sha256": "7972835a8eef5aa6f120f6a57fa4ee381164755e4d0399ea6b7ee5b0947229d4"
+          },
+          "q1-vacant-probe-R1.600": {
+            "bytes": 4396,
+            "path": "vacant-probe-q1-R1p600.json",
+            "sha256": "e6c20f8fa35bb919d7e17a9234a2a8a29f299416db9d732cf98a0ee4f0117313"
+          },
+          "vacant-host": {
+            "bytes": 4158,
+            "path": "vacant-host.json",
+            "sha256": "29c19ba4e04753a0603d3c24979a51041e2d9f3ac75e01f5ec452d4bba71b7d9"
+          }
+        }
+      },
+      "F_cell": {
+        "geometry": {
+          "bytes": 12913,
+          "path": "geometry/relaxation.json",
+          "sha256": "8d23313ff6a5a6db0a1972a490554e36ff614f3b780aad03464eeb031f30e8ab"
+        },
+        "quartet": {
+          "bytes": 90504,
+          "path": "bo/quartet.json",
+          "sha256": "507021e45b1a0c739372d575d8c97faed62984faa8d2dd2358541d4f7ffc4094"
+        },
+        "run": {
+          "bytes": 16448,
+          "path": "run-result.json",
+          "sha256": "044831c17efdae7a765366071bde5b566615d257929b5d24ccea4516bb14c7a5"
+        },
+        "source_epoch": {
+          "input": {
+            "bytes": 1220,
+            "path": "input.json",
+            "sha256": "ebbbe5234195e81b740ef1d39824d462ff77d4c87a88dcee765c9e5501c9c321"
+          },
+          "source_manifest": {
+            "bytes": 1994,
+            "path": "source-manifest.json",
+            "sha256": "3a530cd7bd8bb167037e59f0375424e6860a5b17aae539af10b8e358f66b50c6"
+          }
+        },
+        "states": {
+          "occupied-host": {
+            "bytes": 8578,
+            "path": "occupied-host.json",
+            "sha256": "1325c30e92c728775318b868560735cfcb348f20cf2214af7f50d08bc7c1a2a9"
+          },
+          "q0-occupied-probe-R0.100": {
+            "bytes": 8823,
+            "path": "occupied-probe-q0-R0p100.json",
+            "sha256": "4a4fa8a6e4d61c67d4315b79d6b50b269bd0b5673c2cf8484b620b63486e1d39"
+          },
+          "q0-vacant-probe-R0.100": {
+            "bytes": 8698,
+            "path": "vacant-probe-q0-R0p100.json",
+            "sha256": "ecdee36d7ff5ea85e4025a9a7b69bb6b7683ceca27e6c4e0370d35decef85b54"
+          },
+          "q1-occupied-probe-R0.100": {
+            "bytes": 8825,
+            "path": "occupied-probe-q1-R0p100.json",
+            "sha256": "d3051320d96ca9cce84dee06fcfce46a0bbcec4aff0297929672e6c2cba02d11"
+          },
+          "q1-vacant-probe-R0.100": {
+            "bytes": 8694,
+            "path": "vacant-probe-q1-R0p100.json",
+            "sha256": "1cea73d4f983c95ea68993493b1d54e1c4ba1cf97b5db56effb81870d139919c"
+          },
+          "vacant-host": {
+            "bytes": 8449,
+            "path": "vacant-host.json",
+            "sha256": "7cbe5b145563a336db9a64b1481936de8cc9ee8db8392d3deb4c4d66b7dec8d1"
+          }
+        }
+      },
+      "F_h": {
+        "geometry": {
+          "bytes": 4772,
+          "path": "geometry/relaxation.json",
+          "sha256": "481b724306e2b72a78dcc3a7652de988c8246c64244ceced563df7ed065c57b4"
+        },
+        "quartet": {
+          "bytes": 45071,
+          "path": "bo/quartet.json",
+          "sha256": "4d1cc8dbfd59d2f817bbea28eb9e013a86d98221138760a6e284dbc78eec11f6"
+        },
+        "run": {
+          "bytes": 7395,
+          "path": "run-result.json",
+          "sha256": "c73c76fc7a4b39f2d71c7b1ee88989e9f7e8d418d7ea8fa47ffc35475555ad1c"
+        },
+        "source_epoch": {
+          "input": {
+            "bytes": 1221,
+            "path": "input.json",
+            "sha256": "229e42fd912d307f71dfee717b0a92b41855b480f5bf3634def6c45b9a00738f"
+          },
+          "source_manifest": {
+            "bytes": 1994,
+            "path": "source-manifest.json",
+            "sha256": "3a530cd7bd8bb167037e59f0375424e6860a5b17aae539af10b8e358f66b50c6"
+          }
+        },
+        "states": {
+          "occupied-host": {
+            "bytes": 4289,
+            "path": "occupied-host.json",
+            "sha256": "63792d09a5711e31ca7480fb12fbed42848e15a3965df681d0953a474e3e9ede"
+          },
+          "q0-occupied-probe-R0.100": {
+            "bytes": 4528,
+            "path": "occupied-probe-q0-R0p100.json",
+            "sha256": "3e9aea268985cf439acf4af0545aae3d0a3909fa16ced5a18f1a105e5e86e270"
+          },
+          "q0-vacant-probe-R0.100": {
+            "bytes": 4404,
+            "path": "vacant-probe-q0-R0p100.json",
+            "sha256": "4478ed3560d2c8c4c1bb6544a868857d741232d74da6a2f837a07849bb3e97aa"
+          },
+          "q1-occupied-probe-R0.100": {
+            "bytes": 4536,
+            "path": "occupied-probe-q1-R0p100.json",
+            "sha256": "dbb97e90681b7b261f7450c14a6952f4b6dc174ae6dffafd97848da4878e0b4e"
+          },
+          "q1-vacant-probe-R0.100": {
+            "bytes": 4406,
+            "path": "vacant-probe-q1-R0p100.json",
+            "sha256": "4c3d430ac5efcae18338d76ec8277cfa673bf08495d3bdd338c7e49e3a4b2521"
+          },
+          "vacant-host": {
+            "bytes": 4160,
+            "path": "vacant-host.json",
+            "sha256": "927b1237d335fdf47ede1f4d00e0300d3171bba6d9a569bb237d3d33a9a70abd"
+          }
+        }
+      },
+      "G": {
+        "geometry": {
+          "bytes": 1186,
+          "path": "geometry/relaxation.json",
+          "sha256": "4083fcb33c3963b5a4b767dbbc1a6e1e8d9252a199f56092913e309690d8684b"
+        },
+        "quartet": {
+          "bytes": 79665,
+          "path": "bo/quartet.json",
+          "sha256": "06560e043ae4f7b70ee155e160a5c667896839f435d8790e339df300a7660ed2"
+        },
+        "run": {
+          "bytes": 2721,
+          "path": "run-result.json",
+          "sha256": "f22d6f9706ba374e9a98a6bcdeb7566044510a48bb418420f7529b568ab1749c"
+        },
+        "source_epoch": {
+          "input": {
+            "bytes": 574,
+            "path": "input.json",
+            "sha256": "1f897348aedeb2185b853d995f2f2784c8ab6cfc129153039fb3c183acede37f"
+          },
+          "source_manifest": {
+            "bytes": 1994,
+            "path": "source-manifest.json",
+            "sha256": "3a530cd7bd8bb167037e59f0375424e6860a5b17aae539af10b8e358f66b50c6"
+          }
+        },
+        "states": {
+          "occupied-host": {
+            "bytes": 1695,
+            "path": "occupied-host.json",
+            "sha256": "8de74e63c66874714aceec103867765108e54285a8dad9d110bc23e5e863174f"
+          },
+          "q0-occupied-probe-R0.100": {
+            "bytes": 1928,
+            "path": "occupied-probe-q0-R0p100.json",
+            "sha256": "f185c12870d6349d8d89e4ad52911f4985286661a8c9126a46700f3754e9780e"
+          },
+          "q0-occupied-probe-R0.200": {
+            "bytes": 1937,
+            "path": "occupied-probe-q0-R0p200.json",
+            "sha256": "069499cd871298257e20b1544f1504bc41c2a9455abbbe51063456a253f69cd6"
+          },
+          "q0-occupied-probe-R0.300": {
+            "bytes": 1936,
+            "path": "occupied-probe-q0-R0p300.json",
+            "sha256": "443e624dac997d61ac7e92536ae2b1b66696ae99c40689fdfd530af91ba3b893"
+          },
+          "q0-occupied-probe-R0.500": {
+            "bytes": 1931,
+            "path": "occupied-probe-q0-R0p500.json",
+            "sha256": "46a5af21ad98491309a05b83bcbbe35e098bf32d924167ce57d35c408a6726a6"
+          },
+          "q0-occupied-probe-R1.000": {
+            "bytes": 1929,
+            "path": "occupied-probe-q0-R1p000.json",
+            "sha256": "87964ec1fa3b86a994f53e53ad78445886cec678e553dc830f52eed93a93613b"
+          },
+          "q0-occupied-probe-R1.600": {
+            "bytes": 1940,
+            "path": "occupied-probe-q0-R1p600.json",
+            "sha256": "ee4217fbc4ed323d9f71c8ea84598082d2e957c9552ea8483de263ed7ad4a68d"
+          },
+          "q0-vacant-probe-R0.100": {
+            "bytes": 1859,
+            "path": "vacant-probe-q0-R0p100.json",
+            "sha256": "69ce483138926b7903c519dee6839ae76bb77d78759f5268fe2a113919b12029"
+          },
+          "q0-vacant-probe-R0.200": {
+            "bytes": 1858,
+            "path": "vacant-probe-q0-R0p200.json",
+            "sha256": "b6d050b7aa0efc20f02f80e6248bd8e3b3f8b04ad2660e8e85fc1238c0553411"
+          },
+          "q0-vacant-probe-R0.300": {
+            "bytes": 1858,
+            "path": "vacant-probe-q0-R0p300.json",
+            "sha256": "33564be08203e8adfcd35195cc7df045bc7273463d21825d4760269762a94483"
+          },
+          "q0-vacant-probe-R0.500": {
+            "bytes": 1858,
+            "path": "vacant-probe-q0-R0p500.json",
+            "sha256": "54974c7a8f7c77ad2c7e52f4d7e5b48c40215d7f5f3999c4baf682ef1f4797de"
+          },
+          "q0-vacant-probe-R1.000": {
+            "bytes": 1859,
+            "path": "vacant-probe-q0-R1p000.json",
+            "sha256": "09456938baac7d34601b6b648196f1086bac90e56c54d4fd6661efadfaadeac7"
+          },
+          "q0-vacant-probe-R1.600": {
+            "bytes": 1864,
+            "path": "vacant-probe-q0-R1p600.json",
+            "sha256": "df4eef065dd4b097af0ab608e96e06ce8e645d3a64b404cf7ae9b5d64978d839"
+          },
+          "q1-occupied-probe-R0.100": {
+            "bytes": 1932,
+            "path": "occupied-probe-q1-R0p100.json",
+            "sha256": "3ff45fb7416a3af00f8ea92baa22ffbd0c740cb23f9e8b11ea1923a7f04c2889"
+          },
+          "q1-occupied-probe-R0.200": {
+            "bytes": 1929,
+            "path": "occupied-probe-q1-R0p200.json",
+            "sha256": "c02ba61d6748176b086861a3e984fe6729a765003bd4c2898cfe6b1fb5b16b9d"
+          },
+          "q1-occupied-probe-R0.300": {
+            "bytes": 1932,
+            "path": "occupied-probe-q1-R0p300.json",
+            "sha256": "daae31d803b836932704b7d8de4f846a40ff50e20055524871d3efe70f850482"
+          },
+          "q1-occupied-probe-R0.500": {
+            "bytes": 1932,
+            "path": "occupied-probe-q1-R0p500.json",
+            "sha256": "0bbaf80588c155c92c07b7d711a7e3f0cd27a557927caf9ec5813ec321255bb9"
+          },
+          "q1-occupied-probe-R1.000": {
+            "bytes": 1927,
+            "path": "occupied-probe-q1-R1p000.json",
+            "sha256": "e7f03e53fdd5b893029b85a277624f4f1365b36c6d20457cc461b5aca9607954"
+          },
+          "q1-occupied-probe-R1.600": {
+            "bytes": 1938,
+            "path": "occupied-probe-q1-R1p600.json",
+            "sha256": "aeff50f0f809ad509e1ab0abdd8507f952172a869baeb807af3e7ea6abb5a2b7"
+          },
+          "q1-vacant-probe-R0.100": {
+            "bytes": 1839,
+            "path": "vacant-probe-q1-R0p100.json",
+            "sha256": "0c5d90c9afbab9f3b881578683401d7a2e55efb972ba7bece768ec9abbb97a9b"
+          },
+          "q1-vacant-probe-R0.200": {
+            "bytes": 1841,
+            "path": "vacant-probe-q1-R0p200.json",
+            "sha256": "74becd1901f137b5296ee153db3563c856de70369cd5bf60427bda1dbd6f6d56"
+          },
+          "q1-vacant-probe-R0.300": {
+            "bytes": 1840,
+            "path": "vacant-probe-q1-R0p300.json",
+            "sha256": "96fcd1ec0d721983c1d96ca896bd9648c6c2e63a201f29683d5e5033657f770c"
+          },
+          "q1-vacant-probe-R0.500": {
+            "bytes": 1839,
+            "path": "vacant-probe-q1-R0p500.json",
+            "sha256": "86ad8bec05549073fe75cd1f9054df0fa120ef4cc6f60f0401d5925278e7001c"
+          },
+          "q1-vacant-probe-R1.000": {
+            "bytes": 1841,
+            "path": "vacant-probe-q1-R1p000.json",
+            "sha256": "d97aab610a2b40d94e236226903064d3b2096e039ae4f97eed17b461aea75823"
+          },
+          "q1-vacant-probe-R1.600": {
+            "bytes": 1845,
+            "path": "vacant-probe-q1-R1p600.json",
+            "sha256": "31f9cdcac46897e76b8df94165059cde42c906b1b4324a523e0e8aaf71bd68c8"
+          },
+          "vacant-host": {
+            "bytes": 1376,
+            "path": "vacant-host.json",
+            "sha256": "1d1a6d408fa33c28e342380594aaa461a7fe9238ebb8969d5f94fe9bfb0ed1ea"
+          }
+        }
+      },
+      "G2": {
+        "geometry": {
+          "bytes": 1493,
+          "path": "geometry/relaxation.json",
+          "sha256": "3611a688dafc3e10019bc75692081cb0203832ac36658845b7eabf83abbc8f02"
+        },
+        "quartet": {
+          "bytes": 85361,
+          "path": "bo/quartet.json",
+          "sha256": "17dc800c9e6edcc21b4d28917092beec3937da43dfeb187ca6c9fb5a3df9588d"
+        },
+        "run": {
+          "bytes": 3053,
+          "path": "run-result.json",
+          "sha256": "04c18513eb9e2bda3de776c67831b963c5312a00c22c13fb131834edb468b173"
+        },
+        "source_epoch": {
+          "input": {
+            "bytes": 575,
+            "path": "input.json",
+            "sha256": "32ed33780078542975b44ecaf1925cebb906a2776a0d77479018bd7e9c205f86"
+          },
+          "source_manifest": {
+            "bytes": 1994,
+            "path": "source-manifest.json",
+            "sha256": "3a530cd7bd8bb167037e59f0375424e6860a5b17aae539af10b8e358f66b50c6"
+          }
+        },
+        "states": {
+          "occupied-host": {
+            "bytes": 1855,
+            "path": "occupied-host.json",
+            "sha256": "c29554e83cabd1fc459419579947f334506766b8e6756c90c88b48fb92da9c4a"
+          },
+          "q0-occupied-probe-R0.100": {
+            "bytes": 2087,
+            "path": "occupied-probe-q0-R0p100.json",
+            "sha256": "75b3036faf1c589c87733d300ce39aa347e3e2804b10672fc7cd35f804948e36"
+          },
+          "q0-occupied-probe-R0.200": {
+            "bytes": 2088,
+            "path": "occupied-probe-q0-R0p200.json",
+            "sha256": "733816e0a5965aacc1678e686b1e642545091d359299339b02ef99a2a220504b"
+          },
+          "q0-occupied-probe-R0.300": {
+            "bytes": 2092,
+            "path": "occupied-probe-q0-R0p300.json",
+            "sha256": "a4134d1f49de5d7638632155921907f0e2f778179e6b45da711509c1961eb86d"
+          },
+          "q0-occupied-probe-R0.500": {
+            "bytes": 2089,
+            "path": "occupied-probe-q0-R0p500.json",
+            "sha256": "f214c7a2aa4042740f223f96d594d3bad1acd3b6a47ae8957be66e883075af79"
+          },
+          "q0-occupied-probe-R1.000": {
+            "bytes": 2085,
+            "path": "occupied-probe-q0-R1p000.json",
+            "sha256": "da8995f2ff15f347711fb93e26c41094530e5dea2bb01bbfb357a99f2113e730"
+          },
+          "q0-occupied-probe-R1.600": {
+            "bytes": 2095,
+            "path": "occupied-probe-q0-R1p600.json",
+            "sha256": "fe3c477cb3eedb453f5309cc5b08ac3a69c79f5f5b73f2f9d51f3735357be56d"
+          },
+          "q0-vacant-probe-R0.100": {
+            "bytes": 1972,
+            "path": "vacant-probe-q0-R0p100.json",
+            "sha256": "f6e6861c34eaa24eaab9c14748c45cbf2f7a95101b42dae927f2c87ae044a30e"
+          },
+          "q0-vacant-probe-R0.200": {
+            "bytes": 1975,
+            "path": "vacant-probe-q0-R0p200.json",
+            "sha256": "ea132400c5cc482ec86c5aa38c1ec0f0e1ba3eceb2720a23bb2d1ac02a81a47c"
+          },
+          "q0-vacant-probe-R0.300": {
+            "bytes": 1972,
+            "path": "vacant-probe-q0-R0p300.json",
+            "sha256": "5f66a52a965ff2e3c476f69ffae733491686447e796e5195cd773d1efdc7d108"
+          },
+          "q0-vacant-probe-R0.500": {
+            "bytes": 1978,
+            "path": "vacant-probe-q0-R0p500.json",
+            "sha256": "766704bffffea01598c360b21793a4215a9f97bee5c4dd981f52033a53ce0f3f"
+          },
+          "q0-vacant-probe-R1.000": {
+            "bytes": 1971,
+            "path": "vacant-probe-q0-R1p000.json",
+            "sha256": "bd9d1963c586d2584fc2774ce67be208f7dedd93d3697ed7486ff547f3698c34"
+          },
+          "q0-vacant-probe-R1.600": {
+            "bytes": 1981,
+            "path": "vacant-probe-q0-R1p600.json",
+            "sha256": "15acc9e95dad5f55429021a55dce9b0b225c7df087952323f0f099204025fa4f"
+          },
+          "q1-occupied-probe-R0.100": {
+            "bytes": 2089,
+            "path": "occupied-probe-q1-R0p100.json",
+            "sha256": "ee0026b144c996d80c8009d1db2dc21c61579a034c02275ef34d984433a7c849"
+          },
+          "q1-occupied-probe-R0.200": {
+            "bytes": 2087,
+            "path": "occupied-probe-q1-R0p200.json",
+            "sha256": "ddf4d77a4df4f3f7fb276407f748b39801ccecde0deaf067f34deb0ec8f770e3"
+          },
+          "q1-occupied-probe-R0.300": {
+            "bytes": 2087,
+            "path": "occupied-probe-q1-R0p300.json",
+            "sha256": "36a92e42b78a1a7d85ef97e134efe7a67d8da12bc76d25a1236a803f16555c43"
+          },
+          "q1-occupied-probe-R0.500": {
+            "bytes": 2093,
+            "path": "occupied-probe-q1-R0p500.json",
+            "sha256": "acb792dc12ac803d92f0857f072c1bed00b5b4f04f5ed56178eb3485b3d86b14"
+          },
+          "q1-occupied-probe-R1.000": {
+            "bytes": 2088,
+            "path": "occupied-probe-q1-R1p000.json",
+            "sha256": "67e080772d8a8cf2f8b5ee1e1f2e150321643dc604618298180e531fa582fa94"
+          },
+          "q1-occupied-probe-R1.600": {
+            "bytes": 2099,
+            "path": "occupied-probe-q1-R1p600.json",
+            "sha256": "35d023fd09c53703948e97908258242e83aa83b337bafa21daaf8ea855098ce2"
+          },
+          "q1-vacant-probe-R0.100": {
+            "bytes": 1974,
+            "path": "vacant-probe-q1-R0p100.json",
+            "sha256": "bb64e84a2ecfb09df208284630854442cdf9b3c0613cf0b8f74fb6d0ca62c9a4"
+          },
+          "q1-vacant-probe-R0.200": {
+            "bytes": 1973,
+            "path": "vacant-probe-q1-R0p200.json",
+            "sha256": "213c7193c7bcd273c319c8e04b220a789bc1c8f84909914f441e50a568a0f211"
+          },
+          "q1-vacant-probe-R0.300": {
+            "bytes": 1975,
+            "path": "vacant-probe-q1-R0p300.json",
+            "sha256": "1df5c2bcfe986a93be241bd90f9f5763f04a01577178c9cc2954d56d68100f98"
+          },
+          "q1-vacant-probe-R0.500": {
+            "bytes": 1974,
+            "path": "vacant-probe-q1-R0p500.json",
+            "sha256": "447856364eaa6695a4bb0939ad030810740f6ab49280d1ed834cb4aa4ce6bcea"
+          },
+          "q1-vacant-probe-R1.000": {
+            "bytes": 1969,
+            "path": "vacant-probe-q1-R1p000.json",
+            "sha256": "f6800f48647870d099e02d10e2fb2be4c94b7c61b10aef64976aacf4920c91e8"
+          },
+          "q1-vacant-probe-R1.600": {
+            "bytes": 1977,
+            "path": "vacant-probe-q1-R1p600.json",
+            "sha256": "f72b7337fc973dc9c9c71a6fe1ef3c868147765ae262591e605ac5b0214a362e"
+          },
+          "vacant-host": {
+            "bytes": 1742,
+            "path": "vacant-host.json",
+            "sha256": "c5331c23439b3fc528ba36253f7695429be70671fc8be24d9b338ef06a6beebb"
+          }
+        }
+      }
+    },
+    "native": {
+      "geometry": {
+        "bytes": 4761,
+        "path": "geometry/relaxation.json",
+        "sha256": "35d7ef033731af1ab1399944560fc36c9103100188c0e0af42a4a8bf7ae88926"
+      },
+      "quartet": {
+        "bytes": 179957,
+        "path": "bo/quartet.json",
+        "sha256": "3972a0bfe13f5dad2485085edfcea448d961b8ef88d5416cedd00a787141aa89"
+      },
+      "run": {
+        "bytes": 7384,
+        "path": "run-result.json",
+        "sha256": "d8c5a87ad3cc832c48fffbd167606410bfbee690e69cc938cee6cbfc380ff0da"
+      },
+      "source_epoch": {
+        "input": {
+          "bytes": 1220,
+          "path": "input.json",
+          "sha256": "4c7248884bde53841518d88006350f0db0735fc2b1ab70ee75e8f27f1cc6c0eb"
+        },
+        "source_manifest": {
+          "bytes": 1994,
+          "path": "source-manifest.json",
+          "sha256": "3a530cd7bd8bb167037e59f0375424e6860a5b17aae539af10b8e358f66b50c6"
+        }
+      },
+      "states": {
+        "occupied-host": {
+          "bytes": 4282,
+          "path": "occupied-host.json",
+          "sha256": "e2030d12192190d5446920a312bcf60f3c252cc0572baec9eaddb534c94f46e4"
+        },
+        "q0-occupied-probe-R0.100": {
+          "bytes": 4532,
+          "path": "occupied-probe-q0-R0p100.json",
+          "sha256": "2a4f69c2057038323f3a4846ae1cd8c47f408ef6c0aa975b6d4a8d2f4aa79864"
+        },
+        "q0-occupied-probe-R0.200": {
+          "bytes": 4529,
+          "path": "occupied-probe-q0-R0p200.json",
+          "sha256": "3c9700e0f3a363a6b5a02c4deb71080daaca3e0d91213e71c65bb8a9344599fe"
+        },
+        "q0-occupied-probe-R0.300": {
+          "bytes": 4531,
+          "path": "occupied-probe-q0-R0p300.json",
+          "sha256": "8df9fec643618e9584a39910fad69f8b8babee138d73c04d27bb842134ebbec8"
+        },
+        "q0-occupied-probe-R0.500": {
+          "bytes": 4527,
+          "path": "occupied-probe-q0-R0p500.json",
+          "sha256": "d2c8b9e65a04eda90bde37ce370c7fa354876fe08704ff9ca75ce26c69bf4ba3"
+        },
+        "q0-occupied-probe-R1.000": {
+          "bytes": 4529,
+          "path": "occupied-probe-q0-R1p000.json",
+          "sha256": "9d9b7b056a078ab367902e18767b343bf82a18c58795a4e571282c0f7009ab2f"
+        },
+        "q0-occupied-probe-R1.600": {
+          "bytes": 4528,
+          "path": "occupied-probe-q0-R1p600.json",
+          "sha256": "b5a1b65d72b641bac50a8bc3acb5a31a6724a7922c67c60a9b3bda0f7c21fe20"
+        },
+        "q0-vacant-probe-R0.100": {
+          "bytes": 4408,
+          "path": "vacant-probe-q0-R0p100.json",
+          "sha256": "aa63488d88e56f7e64de04824d2b08e9085589fede4a5dba6d81a19eafff5e88"
+        },
+        "q0-vacant-probe-R0.200": {
+          "bytes": 4406,
+          "path": "vacant-probe-q0-R0p200.json",
+          "sha256": "04ee5b72932b4972afc7be9c39d7cacd1c9a6ffb681b246a40f74621e92ae103"
+        },
+        "q0-vacant-probe-R0.300": {
+          "bytes": 4408,
+          "path": "vacant-probe-q0-R0p300.json",
+          "sha256": "d00c066d720f8ebd0b5d329990dc65a7c48d48988e384994a252af6e285f51e7"
+        },
+        "q0-vacant-probe-R0.500": {
+          "bytes": 4402,
+          "path": "vacant-probe-q0-R0p500.json",
+          "sha256": "613c5e857df9aa90ffc4d0fb27f9fd2115c9a937e980da66af9a7571402aa057"
+        },
+        "q0-vacant-probe-R1.000": {
+          "bytes": 4405,
+          "path": "vacant-probe-q0-R1p000.json",
+          "sha256": "5c0263b4752746a46d1613ad3b9a0a966d5f9236bcdc121a07963e9a4de8f4ba"
+        },
+        "q0-vacant-probe-R1.600": {
+          "bytes": 4404,
+          "path": "vacant-probe-q0-R1p600.json",
+          "sha256": "b86b724d55b04afe6ee4ee404c52d376abd6c3b0ad0275d2a2898d8d71054c35"
+        },
+        "q1-occupied-probe-R0.100": {
+          "bytes": 4535,
+          "path": "occupied-probe-q1-R0p100.json",
+          "sha256": "d145d11644b132ce242befad3adc215398ea7c4787ba30e07d9458c0440626d1"
+        },
+        "q1-occupied-probe-R0.200": {
+          "bytes": 4531,
+          "path": "occupied-probe-q1-R0p200.json",
+          "sha256": "2a0fae85e4c5c2734d0a68f2bf7b9614cbcf93c791792ebb7909235c05a06556"
+        },
+        "q1-occupied-probe-R0.300": {
+          "bytes": 4534,
+          "path": "occupied-probe-q1-R0p300.json",
+          "sha256": "74cc5f9a5222ad343071f60ce24da19c2b5149def88e35c9d81cc13ad828f027"
+        },
+        "q1-occupied-probe-R0.500": {
+          "bytes": 4529,
+          "path": "occupied-probe-q1-R0p500.json",
+          "sha256": "952cfa28e8da10c668ed94faa0d3a142d633e289e1e55be3d8e3ae1ba1433854"
+        },
+        "q1-occupied-probe-R1.000": {
+          "bytes": 4527,
+          "path": "occupied-probe-q1-R1p000.json",
+          "sha256": "874f53243169442fa3293af17143572d641ced4405bd733344f7ccb7512a8655"
+        },
+        "q1-occupied-probe-R1.600": {
+          "bytes": 4528,
+          "path": "occupied-probe-q1-R1p600.json",
+          "sha256": "a40839016953f0325173a0ce2aed3f1f40711a6a26b41ed3945b6d1a0ba00598"
+        },
+        "q1-vacant-probe-R0.100": {
+          "bytes": 4406,
+          "path": "vacant-probe-q1-R0p100.json",
+          "sha256": "74a8e5b0329e004bbcdad6a07f443d63df9275a11332478886c47c47f7e1b17f"
+        },
+        "q1-vacant-probe-R0.200": {
+          "bytes": 4403,
+          "path": "vacant-probe-q1-R0p200.json",
+          "sha256": "aedbfe9248e7014d4509e5a83fd3b503d5b9ad7f5a060b7d1c16b711c6820e4c"
+        },
+        "q1-vacant-probe-R0.300": {
+          "bytes": 4406,
+          "path": "vacant-probe-q1-R0p300.json",
+          "sha256": "a572226ef9e352b5f93f735f810c0852d9839b9b32379a16c063b1060b4b1935"
+        },
+        "q1-vacant-probe-R0.500": {
+          "bytes": 4402,
+          "path": "vacant-probe-q1-R0p500.json",
+          "sha256": "d199ba1b946937a4659abe1f6037f8735ef7b62df3a8cab3e426b4e27e2fa75e"
+        },
+        "q1-vacant-probe-R1.000": {
+          "bytes": 4400,
+          "path": "vacant-probe-q1-R1p000.json",
+          "sha256": "7972835a8eef5aa6f120f6a57fa4ee381164755e4d0399ea6b7ee5b0947229d4"
+        },
+        "q1-vacant-probe-R1.600": {
+          "bytes": 4396,
+          "path": "vacant-probe-q1-R1p600.json",
+          "sha256": "e6c20f8fa35bb919d7e17a9234a2a8a29f299416db9d732cf98a0ee4f0117313"
+        },
+        "vacant-host": {
+          "bytes": 4158,
+          "path": "vacant-host.json",
+          "sha256": "29c19ba4e04753a0603d3c24979a51041e2d9f3ac75e01f5ec452d4bba71b7d9"
+        }
+      }
+    },
+    "readout": {
+      "bytes": 90953,
+      "path": "readout-with-D2-001.json",
+      "sha256": "eccb07724afea37fcca0e6ff236dec201c80936c0106dff8e175a4983d70b4d4"
+    }
+  },
+  "support": "Static target-conditioned BO total interactions at the six supplied radii only. F uses freshly force-relaxed finite FD cells at the original PBE PW500/k4 LiD volume; this is not FD volume/stress reoptimization. G is a D atom in a periodic 10 A box; isotope label D does not change the nonspin BO electronic energy. No fitted offset, U0, drag, rate, prepared state, experimental gas screening value, thermal/ZPE correction, or exact isolated electronic limit is inferred."
+}

@@ -1,0 +1,63 @@
+{
+  "schema": "hydride-specification-v1",
+  "h_A": 0.2,
+  "kmesh": [
+    1,
+    1,
+    1
+  ],
+  "force_tolerance_eV_A": 0.1,
+  "ionic_steps": 20,
+  "absolute_stop_utc": "2026-11-20T18:00:00Z",
+  "method": {
+    "xc": "PBE",
+    "spinpol": false,
+    "occupation_width_eV": 0.1,
+    "geometry_H_setup": "standard_PAW",
+    "BO_H_setup": "ae",
+    "Li_setup": "default_1valence",
+    "Hae_alpha1_Bohr_m2": 10,
+    "energy_convention": "internal=free-minus-negativeTS"
+  },
+  "case": "F",
+  "repeat_primitive": 3,
+  "nband_padding": 54,
+  "primitive_symbols": [
+    "Li",
+    "H"
+  ],
+  "primitive_cell_A": [
+    [
+      0,
+      2.01433373614844,
+      2.01433373614844
+    ],
+    [
+      2.01433373614844,
+      0,
+      2.01433373614844
+    ],
+    [
+      2.01433373614844,
+      2.01433373614844,
+      0
+    ]
+  ],
+  "primitive_positions_A": [
+    [
+      -1.9531333022900028e-28,
+      7.83654346385769e-18,
+      5.715158423526139e-21
+    ],
+    [
+      2.01433373614844,
+      1.1673464910447805e-20,
+      5.4952540871213985e-21
+    ]
+  ],
+  "volume_source": {
+    "path": "g6-gap-LiD-ground-original.json",
+    "bytes": 3075,
+    "sha256": "01e4b1b4022b9d540a581f5e270262c1177a6b43f946f97a783cf71444830d4e"
+  }
+}

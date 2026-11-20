@@ -1,0 +1,110 @@
+{
+  "actual_kpoints": 1,
+  "backend": "gpaw-native",
+  "cell_A": [
+    [
+      10.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      10.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      10.0
+    ]
+  ],
+  "charge": 0,
+  "electrons": 2.0,
+  "energy": {
+    "free_energy_eV": -6.722655606679674,
+    "internal_energy_eV": -6.722655606679665,
+    "minus_TS_eV": -9.230885282240802e-15
+  },
+  "forces_eV_A": [
+    [
+      -0.24896953439485597,
+      -0.24897075278505532,
+      -0.24897419209806634
+    ],
+    [
+      0.2489585948930805,
+      0.24895676867084074,
+      0.24895321019290265
+    ]
+  ],
+  "gpw": {
+    "bytes": 6196963,
+    "path": "step-000.gpw",
+    "sha256": "73511e919e575070fe4d9d03130f74b4024122fcd896cefb7047bd8a20171540"
+  },
+  "ionic_step": 0,
+  "masses_u": [
+    2.01410177812,
+    2.01410177812
+  ],
+  "nbands": 5,
+  "occupation_width_eV": 0.1,
+  "positions_A": [
+    [
+      4.786380400399838,
+      4.786380400399838,
+      4.786380400399838
+    ],
+    [
+      5.213619599600162,
+      5.213619599600162,
+      5.213619599600162
+    ]
+  ],
+  "realspace_shape": [
+    48,
+    48,
+    48
+  ],
+  "scf_converged": true,
+  "scf_iterations": 17,
+  "schema": "hydride-native-state-v1",
+  "setup_valence": {
+    "H": 1.0
+  },
+  "setups": {},
+  "specification": {
+    "absolute_stop_utc": "2026-11-20T18:00:00Z",
+    "box_A": 10,
+    "case": "G2",
+    "force_tolerance_eV_A": 0.1,
+    "h_A": 0.2,
+    "ionic_steps": 20,
+    "kmesh": [
+      1,
+      1,
+      1
+    ],
+    "method": {
+      "BO_H_setup": "ae",
+      "Hae_alpha1_Bohr_m2": 10,
+      "Li_setup": "default_1valence",
+      "energy_convention": "internal=free-minus-negativeTS",
+      "geometry_H_setup": "standard_PAW",
+      "occupation_width_eV": 0.1,
+      "spinpol": false,
+      "xc": "PBE"
+    },
+    "nband_padding": 4,
+    "repeat_primitive": 1,
+    "schema": "hydride-specification-v1",
+    "volume_source": null
+  },
+  "spinpol": false,
+  "symbols": [
+    "H",
+    "H"
+  ],
+  "wavefunction_predictor": "PseudoPartialWaveWfsMover",
+  "xc": "PBE"
+}

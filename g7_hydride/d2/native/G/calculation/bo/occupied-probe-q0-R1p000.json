@@ -1,0 +1,106 @@
+{
+  "R_A": 1.0,
+  "actual_kpoints": 1,
+  "backend": "gpaw-native",
+  "cell_A": [
+    [
+      10.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      10.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      10.0
+    ]
+  ],
+  "charge": 0,
+  "electrons": 2.0,
+  "energy": {
+    "free_energy_eV": -30.99664944583656,
+    "internal_energy_eV": -30.99664944583655,
+    "minus_TS_eV": -1.0446965415735597e-14
+  },
+  "gpw": {
+    "bytes": 6196126,
+    "path": "occupied-probe-q0-R1p000.gpw",
+    "sha256": "56f7a23fffdfa7aab33d6c009525fbb5b1fe6fa2bd259eef25ff84b3d7c98bc7"
+  },
+  "masses_u": [
+    2.01410177812,
+    2.01410177812
+  ],
+  "nbands": 5,
+  "occupation_width_eV": 0.1,
+  "positions_A": [
+    [
+      5.0,
+      5.0,
+      5.0
+    ],
+    [
+      4.422649730810374,
+      4.422649730810374,
+      4.422649730810374
+    ]
+  ],
+  "process_cpu_s": 16.717370814,
+  "projectile_A": [
+    4.422649730810374,
+    4.422649730810374,
+    4.422649730810374
+  ],
+  "realspace_shape": [
+    48,
+    48,
+    48
+  ],
+  "scf_converged": true,
+  "scf_iterations": 27,
+  "schema": "hydride-native-state-v1",
+  "setup_valence": {
+    "H": 1.0
+  },
+  "setups": {
+    "H": "ae"
+  },
+  "specification": {
+    "absolute_stop_utc": "2026-11-20T18:00:00Z",
+    "box_A": 10,
+    "case": "G",
+    "force_tolerance_eV_A": 0.1,
+    "h_A": 0.2,
+    "ionic_steps": 20,
+    "kmesh": [
+      1,
+      1,
+      1
+    ],
+    "method": {
+      "BO_H_setup": "ae",
+      "Hae_alpha1_Bohr_m2": 10,
+      "Li_setup": "default_1valence",
+      "energy_convention": "internal=free-minus-negativeTS",
+      "geometry_H_setup": "standard_PAW",
+      "occupation_width_eV": 0.1,
+      "spinpol": false,
+      "xc": "PBE"
+    },
+    "nband_padding": 4,
+    "repeat_primitive": 1,
+    "schema": "hydride-specification-v1",
+    "volume_source": null
+  },
+  "spinpol": false,
+  "symbols": [
+    "H",
+    "H"
+  ],
+  "wavefunction_predictor": "NullWfsMover",
+  "xc": "PBE"
+}

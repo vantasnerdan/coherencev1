@@ -1,0 +1,27 @@
+{
+  "schema": "hydride-specification-v1",
+  "h_A": 0.2,
+  "kmesh": [
+    1,
+    1,
+    1
+  ],
+  "force_tolerance_eV_A": 0.1,
+  "ionic_steps": 20,
+  "absolute_stop_utc": "2026-11-20T18:00:00Z",
+  "method": {
+    "xc": "PBE",
+    "spinpol": false,
+    "occupation_width_eV": 0.1,
+    "geometry_H_setup": "standard_PAW",
+    "BO_H_setup": "ae",
+    "Li_setup": "default_1valence",
+    "Hae_alpha1_Bohr_m2": 10,
+    "energy_convention": "internal=free-minus-negativeTS"
+  },
+  "case": "G2",
+  "repeat_primitive": 1,
+  "nband_padding": 4,
+  "box_A": 10,
+  "volume_source": null
+}

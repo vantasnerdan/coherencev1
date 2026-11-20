@@ -1,0 +1,113 @@
+{
+  "R_A": 0.1,
+  "actual_kpoints": 1,
+  "backend": "gpaw-native",
+  "cell_A": [
+    [
+      10.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      10.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      10.0
+    ]
+  ],
+  "charge": 1,
+  "electrons": 2.0,
+  "energy": {
+    "free_energy_eV": -14.575632621865,
+    "internal_energy_eV": -14.575632621865,
+    "minus_TS_eV": -7.440151952041674e-43
+  },
+  "gpw": {
+    "bytes": 6196186,
+    "path": "occupied-probe-q1-R0p100.gpw",
+    "sha256": "cf0507a60d8d9bebc40d771247b9b022c70fc11a0ee3dd096e53573d3a67054d"
+  },
+  "masses_u": [
+    2.01410177812,
+    2.01410177812,
+    2.01410177812
+  ],
+  "nbands": 5,
+  "occupation_width_eV": 0.1,
+  "positions_A": [
+    [
+      4.782823692765626,
+      4.782823675360052,
+      4.7828236262270085
+    ],
+    [
+      5.217176150955777,
+      5.217176124866889,
+      5.217176074031489
+    ],
+    [
+      4.7250886658466635,
+      4.72508864844109,
+      4.725088599308046
+    ]
+  ],
+  "process_cpu_s": 11.160395814000026,
+  "projectile_A": [
+    4.7250886658466635,
+    4.72508864844109,
+    4.725088599308046
+  ],
+  "realspace_shape": [
+    48,
+    48,
+    48
+  ],
+  "scf_converged": true,
+  "scf_iterations": 17,
+  "schema": "hydride-native-state-v1",
+  "setup_valence": {
+    "H": 1.0
+  },
+  "setups": {
+    "H": "ae"
+  },
+  "specification": {
+    "absolute_stop_utc": "2026-11-20T18:00:00Z",
+    "box_A": 10,
+    "case": "G2",
+    "force_tolerance_eV_A": 0.1,
+    "h_A": 0.2,
+    "ionic_steps": 20,
+    "kmesh": [
+      1,
+      1,
+      1
+    ],
+    "method": {
+      "BO_H_setup": "ae",
+      "Hae_alpha1_Bohr_m2": 10,
+      "Li_setup": "default_1valence",
+      "energy_convention": "internal=free-minus-negativeTS",
+      "geometry_H_setup": "standard_PAW",
+      "occupation_width_eV": 0.1,
+      "spinpol": false,
+      "xc": "PBE"
+    },
+    "nband_padding": 4,
+    "repeat_primitive": 1,
+    "schema": "hydride-specification-v1",
+    "volume_source": null
+  },
+  "spinpol": false,
+  "symbols": [
+    "H",
+    "H",
+    "H"
+  ],
+  "wavefunction_predictor": "NullWfsMover",
+  "xc": "PBE"
+}

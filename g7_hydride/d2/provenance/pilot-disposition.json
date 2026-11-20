@@ -1,0 +1,20 @@
+{
+  "schema": "hydride-pilot-admission-v1",
+  "original": {
+    "bytes": 14313,
+    "sha256": "1aed90a28fe3e9d4d3a53f73a416eff36027d97db8fa4008c21dfeffe18bce38"
+  },
+  "service_exit": 1,
+  "failure": "Second publication of pilot.json rejected after all scientific pilot states had completed; original artifact unchanged.",
+  "physical_findings": {
+    "F_raw_fmax_eV_A": 1.326323297110462e-12,
+    "F_host_CPU_s": 10.818091841000001,
+    "F_host_iterations": 23,
+    "G_zero_electron_CPU_s": 3.0633324259999988,
+    "G_zero_electron_actual_native": true
+  },
+  "decision": "Consume completed feasibility/cost result, correct immutable publication at source, NO second pilot. Production fresh SCF under one corrected frozen epoch; completed pilot GPWs retained, source/failed exit preserved. Do not build provenance machinery to avoid ~14s fresh-SCF cost.",
+  "working_cap": 300,
+  "reserve": 100,
+  "absolute_stop_utc": "2026-11-20T18:00:00Z"
+}
