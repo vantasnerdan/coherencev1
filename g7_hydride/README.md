@@ -45,6 +45,21 @@ What it means:
 
 Each lies about 3 eV above its 0.1 A value, and the picture is unchanged: the hydride and the isolated atom screen alike at contact. Changing the grid from h 0.20 to 0.16 A moves each value by 2.9-4.2 eV, within the registered tolerance. The slope at contact was not computed, so the converter treats the shape between 0 and 0.1 A as a stated sensitivity.
 
+## What a beam fit would read
+
+The same curves carried through the D-D barrier by the converter in `g7_micro/zr_calibration/action/` (Marvin), as an equivalent screening shift in eV:
+
+| D-D energy, centre of mass (keV) | LiD, bare probe | LiD, neutral probe | D atom, bare probe | D atom, neutral probe |
+|---:|---:|---:|---:|---:|
+| 0.05 | 43.5 | 40.5 | 37.2 | 51.5 |
+| 0.25 | 48.5 | 45.6 | 40.5 | 55.8 |
+| 1 | 51.1 | 48.1 | 42.8 | 58.7 |
+| 2.5 | 52.5 | 49.5 | 43.9 | 60.3 |
+| 4 | 53.3 | 50.3 | 44.6 | 61.3 |
+| 6.5 | 54.4 | 51.3 | 45.5 | 62.5 |
+
+The equivalent shift is 37-62 eV. It starts at the 0.1 A lowering and rises by up to 12 eV with energy, so the static curves do not hide a shift of hundreds of eV. The three ways of joining each curve to its contact value differ by under 1 eV. These are single-site values, not a fit to a thick target. The table is Marvin's record on the `g7_micro` node; the lead has replayed the converter on the zirconium inputs but not on these.
+
 ## Lead's note
 
 `capsule/` is the delivered archive `hydride-screening-delivery.tar.gz` (SHA-256 7b553071782e30084cfc67a3e473aff06c7bf2972aa6dbbea7e4dc6c9f4a23f6, 203 files), unchanged. The GPAW logs in it had machine user and path lines removed before export; their ORIGINAL and EXPORTED hashes and the transform counts are in `capsule/manifest.json`. Replay with `python capsule/reader.py capsule` from this directory (NumPy only). The lead's isolated replay under NumPy 1.26.4, with SciPy, ASE and GPAW blocked, qualified all four curves and both controls, and refused a curve altered by 1 eV. Compute used: 23.5 core-min of a 400 core-min budget, including a failed pilot publication.
