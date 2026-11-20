@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "<PRIVATE_PATH>", line 112, in <module>
+    write_json(args.output,analyze(args.occupied,args.vacant,args.bare))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<PRIVATE_PATH>", line 86, in analyze
+    occupied=load_case(occupied_run);vacant=load_case(vacant_run);match_cases(occupied,vacant)
+                                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<PRIVATE_PATH>", line 29, in match_cases
+    require(a['occupied_target'] and not b['occupied_target'],'Require occupied then vacant roles')
+  File "<PRIVATE_PATH>", line 13, in require
+    raise ValueError(message)
+ValueError: Require occupied then vacant roles

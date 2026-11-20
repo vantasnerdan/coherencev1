@@ -1,0 +1,16 @@
+ROOT_KEYS ['version', 'gpaw_version', 'ha', 'bohr', 'atoms', 'results', 'parameters', 'density', 'hamiltonian', 'scf', 'wave_functions', 'tddft']
+WAVEFUNCTION_KEYS ['version', 'ha', 'fermi_levels', 'kpts', 'projections', 'eigenvalues', 'occupations', 'values']
+{
+  "scope": "Reader-only diagnosis of already produced GPWs; no Native propagation replay",
+  "shape": [
+    1,
+    8,
+    30,
+    20,
+    20,
+    20
+  ],
+  "dtype": "complex128",
+  "raw_saved_max_abs": 9.912364624486796e-09,
+  "raw_saved_relative_l2": 1.1556863045092442e-09
+}

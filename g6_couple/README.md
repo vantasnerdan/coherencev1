@@ -40,6 +40,8 @@ Machine-readable rows are `response.json.projections`, keyed by `intervention` a
 
 The collision handoff requests a **paired frozen electronic calculation**: undisplaced PdD versus an imposed Gamma, x-polarized hydrogen-sublattice displacement, **0.0768 Angstrom per D**, with the metal host fixed, at **2 keV lab**. This is the updated primary intervention, rounded from the cold pumped PdD record maximum. The original **0.0432 Angstrom** intervention remains a budget-conditional linearity check; the archived preliminary part-(d) result refers to that original control. This shape is taken from the corrected NiH Gamma mode; it is not a verified uniform locked PdD domain. Include the struck target in the common displacement and reference its collision coordinate consistently, so moving the target does not fake screening. The displacement-induced electronic difference must be reported separately from the ionic spectator term. The parent owns that handoff; this directory does not run or fabricate it.
 
+Forward: the paired calculation is in `g6_collision/`. At 0.0768 A the displaced cell changes the lowering by −0.69 eV at R 0.1 A, and by −0.01 to −1.07 eV over R 0.1-1.6 A.
+
 ## Settled matched-case results: (a)–(c)
 
 These are pump-on/off contrasts, **not three verified locked/unlocked phases**. Corrected cold NiH is Gamma-led and locked across its finite box; cold PdD is patchy, and the 300 K partially loaded PdD pair remains unlocked. The phasor amplitudes are 0.0636121, 0.0379761 and 0.0091872 Angstrom, respectively; the last is a thermal finite-window phasor, not the total thermal RMS. Native-step observation covers 20.7266 ps for NiH and 5.77436 ps for PdD. No corrected warm NiH record is substituted from the older epoch.

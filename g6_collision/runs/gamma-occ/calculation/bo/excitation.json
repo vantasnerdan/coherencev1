@@ -1,0 +1,321 @@
+{
+  "checkpoints": [
+    {
+      "R_A": 1.6,
+      "actual_checkpoint": {
+        "bytes": 1010,
+        "path": "checkpoint-00.json",
+        "sha256": "d335cc1078536f8d4f4043dc6a50cf3370d56f1b216d4ee3edbcf753fdce2b7b"
+      },
+      "bo": {
+        "free_energy_eV": -102.71696568786234,
+        "internal_energy_eV": -102.53703510680008,
+        "minus_TS_eV": -0.1799305810622747
+      },
+      "closure_residual_eV": 0.0,
+      "excitation_internal_energy_eV": 1.2900187584818923e-09,
+      "external_work_eV": 0.0,
+      "gpw": {
+        "bytes": 31142948,
+        "path": "ground.gpw",
+        "sha256": "05b10fb97688db1475807e0a8f4043ea7ca5bdebbc22570acf4f6e95f43702da"
+      },
+      "row_index": 0,
+      "td_internal_energy_eV": -102.53703510551006
+    },
+    {
+      "R_A": 1.0,
+      "actual_checkpoint": {
+        "bytes": 1012,
+        "path": "checkpoint-01.json",
+        "sha256": "a44ccd3b0fd9e389c402de28353f8efd7df2527339860cc8a3a85baa3f64e379"
+      },
+      "bo": {
+        "free_energy_eV": -102.95133996901454,
+        "internal_energy_eV": -102.78173523400201,
+        "minus_TS_eV": -0.16960473501252557
+      },
+      "closure_residual_eV": 0.0015363887602550808,
+      "excitation_internal_energy_eV": 1.1448272871125482,
+      "external_work_eV": 0.9016635473808468,
+      "gpw": {
+        "bytes": 31142829,
+        "path": "bo-01.gpw",
+        "sha256": "66b0dda5a6002d5caa606c856199c2eb5a05d24b6f78b30499cf4f9d2000360b"
+      },
+      "row_index": 69,
+      "td_internal_energy_eV": -101.63690794688947
+    },
+    {
+      "R_A": 0.5,
+      "actual_checkpoint": {
+        "bytes": 1013,
+        "path": "checkpoint-02.json",
+        "sha256": "11ec714b348637e26365e5fe224ab79ce696eef54ef7415b852487804c706b6a"
+      },
+      "bo": {
+        "free_energy_eV": -99.11089828531878,
+        "internal_energy_eV": -98.97312614746788,
+        "minus_TS_eV": -0.13777213785091277
+      },
+      "closure_residual_eV": -0.0020168271343985467,
+      "excitation_internal_energy_eV": 2.5079589023395386,
+      "external_work_eV": 6.069851033247317,
+      "gpw": {
+        "bytes": 31142825,
+        "path": "bo-02.gpw",
+        "sha256": "40a667f2c16f635ba1d7ac908c1cec14a51768b46273ee0052ab8426ead75376"
+      },
+      "row_index": 127,
+      "td_internal_energy_eV": -96.46516724512834
+    },
+    {
+      "R_A": 0.4,
+      "actual_checkpoint": {
+        "bytes": 1011,
+        "path": "checkpoint-03.json",
+        "sha256": "c737848c8725561646715ceeda52a5a1bac1175ac9d626e51622f8d82d034d81"
+      },
+      "bo": {
+        "free_energy_eV": -96.30963149501147,
+        "internal_energy_eV": -96.16955515569278,
+        "minus_TS_eV": -0.14007633931869976
+      },
+      "closure_residual_eV": 0.002951268878643276,
+      "excitation_internal_energy_eV": 2.727313707477819,
+      "external_work_eV": 9.097744926173743,
+      "gpw": {
+        "bytes": 31142827,
+        "path": "bo-03.gpw",
+        "sha256": "d0d6b31e6749239aabc23e945310d0061b9247f14033df176d3e73217c008239"
+      },
+      "row_index": 139,
+      "td_internal_energy_eV": -93.44224144821496
+    },
+    {
+      "R_A": 0.3,
+      "actual_checkpoint": {
+        "bytes": 1013,
+        "path": "checkpoint-04.json",
+        "sha256": "e26b3bd2c039c79654bede82b5341fab2b501b0ebf3529a580f7268a1b0e7771"
+      },
+      "bo": {
+        "free_energy_eV": -91.1637214993881,
+        "internal_energy_eV": -91.01123312407259,
+        "minus_TS_eV": -0.15248837531551646
+      },
+      "closure_residual_eV": -0.00045446361025902604,
+      "excitation_internal_energy_eV": 2.9053728434222847,
+      "external_work_eV": 14.430720361249493,
+      "gpw": {
+        "bytes": 31142823,
+        "path": "bo-04.gpw",
+        "sha256": "896cbdba91d1fa75e4bdb6bad36b578c4ced6112e2a8f7d56ba299c3df78a889"
+      },
+      "row_index": 151,
+      "td_internal_energy_eV": -88.1058602806503
+    },
+    {
+      "R_A": 0.2,
+      "actual_checkpoint": {
+        "bytes": 1013,
+        "path": "checkpoint-05.json",
+        "sha256": "e4f8d1a92e662bd04ef5dab4b57381d2ba24633c3f8042851d4b2a7a4c707601"
+      },
+      "bo": {
+        "free_energy_eV": -84.06559974260028,
+        "internal_energy_eV": -83.90967224869111,
+        "minus_TS_eV": -0.15592749390917374
+      },
+      "closure_residual_eV": -0.00351197840608819,
+      "excitation_internal_energy_eV": 3.1017233406152798,
+      "external_work_eV": 21.72557421902814,
+      "gpw": {
+        "bytes": 31142825,
+        "path": "bo-05.gpw",
+        "sha256": "644bfcad6f3ea80a33b32387d83b694340bf9d97b99ef9d98b5827001334c4a1"
+      },
+      "row_index": 163,
+      "td_internal_energy_eV": -80.80794890807583
+    },
+    {
+      "R_A": 0.1,
+      "actual_checkpoint": {
+        "bytes": 1013,
+        "path": "checkpoint-06.json",
+        "sha256": "e2c0c33ccabe3057b5ac2d63ed7f5435c3dbb09f47a7dc92e7dca237056a1bd8"
+      },
+      "bo": {
+        "free_energy_eV": -79.40642508553377,
+        "internal_energy_eV": -79.2541262805061,
+        "minus_TS_eV": -0.1522988050276788
+      },
+      "closure_residual_eV": -0.001048208115328464,
+      "excitation_internal_energy_eV": 3.3700679023607307,
+      "external_work_eV": 26.65192851924936,
+      "gpw": {
+        "bytes": 31142825,
+        "path": "bo-06.gpw",
+        "sha256": "e05adb76b14dd9c2d06ba7fcf7afca191bac6cf8e31835fe3a88e0da445de053"
+      },
+      "row_index": 175,
+      "td_internal_energy_eV": -75.88405837814537
+    }
+  ],
+  "interpretation": "Internal-energy excess relative to independently equilibrated BO at Fermi width0.1eV; signed, no clipping",
+  "neutral_host_reference": {
+    "cell_A": [
+      [
+        4.134141684668574,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        4.134141684668574,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        4.134141684668574
+      ]
+    ],
+    "charge": 0,
+    "electrons": 44.0,
+    "energy": {
+      "free_energy_eV": -79.42636784043947,
+      "internal_energy_eV": -79.21577987188697,
+      "minus_TS_eV": -0.21058796855250322
+    },
+    "gpw": {
+      "bytes": 31142763,
+      "path": "host-reference.gpw",
+      "sha256": "5ee7381fcb2105a3d5a9f9e549ee13168e94c29286405925b795afe7c7b600a1"
+    },
+    "positions_A": [
+      [
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        2.143870842334287,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        2.067070842334287,
+        2.067070842334287
+      ],
+      [
+        2.143870842334287,
+        2.067070842334287,
+        2.067070842334287
+      ],
+      [
+        2.067070842334287,
+        0.0,
+        2.067070842334287
+      ],
+      [
+        0.0768,
+        0.0,
+        2.067070842334287
+      ],
+      [
+        2.067070842334287,
+        2.067070842334287,
+        0.0
+      ],
+      [
+        0.0768,
+        2.067070842334287,
+        0.0
+      ]
+    ],
+    "scope": "Neutral host-only state; same frozen host/settings, projectile removed",
+    "symbols": [
+      "Pd",
+      "H",
+      "Pd",
+      "H",
+      "Pd",
+      "H",
+      "Pd",
+      "H"
+    ]
+  },
+  "schema": "pdd-collision-bo-excitation-v1",
+  "specification": {
+    "D_displacement_A": [
+      0.0768,
+      0,
+      0
+    ],
+    "bo_checkpoints_A": [
+      1.6,
+      1,
+      0.5,
+      0.4,
+      0.3,
+      0.2,
+      0.1
+    ],
+    "checkpoints_A": [
+      1.6,
+      1,
+      0.5,
+      0.4,
+      0.3,
+      0.2,
+      0.1
+    ],
+    "collision_whole_core_min_cap": 3000,
+    "direction": [
+      1,
+      1,
+      0
+    ],
+    "dt_as": 2,
+    "eligibility": "Production at2keV/head-on only; mapping and numerical controls gate downstream consumption; U_phi diagnostic only",
+    "end_R_A": 0.1,
+    "energy_keV": 2,
+    "external_work_closure": {
+      "absolute_eV": 0.5,
+      "fraction_of_absolute_work": 0.01
+    },
+    "h_A": 0.2,
+    "impact_A": 0,
+    "kmesh": [
+      2,
+      2,
+      2
+    ],
+    "maximum_ten_step_wall_s": 900,
+    "occupied_target": true,
+    "production_authority": "Axiom2177, output contract2159",
+    "production_case_hard_core_min": 160,
+    "relaxed_ground_record": "<PRIVATE_PATH>",
+    "relaxed_ground_sha256": "a4c40d17f51c6f32a2ce6795ee4e2028a8464ad48980230a4563b1aade8cb5c7",
+    "repeat": [
+      1,
+      1,
+      1
+    ],
+    "schema": "pdd-prescribed-collision-input-v2",
+    "screening_accuracy": {
+      "absolute_eV": 5,
+      "relative": 0.1
+    },
+    "solver_tolerance": 1e-09,
+    "start_R_A": 1.6,
+    "stopping_relative_accuracy": 0.15
+  },
+  "trajectory": {
+    "bytes": 113621,
+    "path": "trajectory.json",
+    "sha256": "1af4b6dc00c5eb21cea7624bf7a6283dbd0494f7581de9b51f65d456b7540224"
+  }
+}

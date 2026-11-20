@@ -1,0 +1,37 @@
+{
+  "passed": true,
+  "phases": {
+    "baseline": {
+      "actual_consumer_output": {
+        "bytes": 2083,
+        "path": "collision-baseline-main-consumer-001.stdout",
+        "sha256": "78b268fbfc1074267be72260d5c0197d64c49921e8f84953e59774afe7465459"
+      },
+      "minimum_radius_A": 0.1,
+      "minimum_radius_lowering_eV": 40.549799615323096,
+      "source": {
+        "bytes": 3730,
+        "path": "baseline_BO_pair.json",
+        "sha256": "854c570dc53ac5f0ff792f38393dea18c66dab7aa474d4f03b29d5e4e98a32a5"
+      }
+    },
+    "gamma": {
+      "actual_consumer_output": {
+        "bytes": 2082,
+        "path": "collision-gamma-main-consumer-001.stdout",
+        "sha256": "aa664075010ddbd6d264ac0af325e255fd14ce1ec74a5f6af4d44f0ed9a4ba7c"
+      },
+      "minimum_radius_A": 0.1,
+      "minimum_radius_lowering_eV": 39.862656333381466,
+      "source": {
+        "bytes": 3731,
+        "path": "gamma_BO_pair.json",
+        "sha256": "b94ce34a94d7cc7c87fe07b84db3726cc7721212c96121d3303620f7db979a5c"
+      }
+    }
+  },
+  "pinned_main": "2645b19ae7fb2435c74220feaa674fd79fc8398f",
+  "schema": "pdd-qualified-BO-actual-main-consumer-proof-v1",
+  "unprepared_state_refused": true,
+  "wrong_image_cell_refusal": "Wrong approved static control cell"
+}

@@ -1,0 +1,22 @@
+Traceback (most recent call last):
+  File "<PRIVATE_PATH>", line 109, in <module>
+    print(json.dumps(run(args.ground,args.output),indent=2))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<PRIVATE_PATH>", line 67, in run
+    calc.set_positions(calc.atoms)
+  File "<PRIVATE_PATH>", line 723, in set_positions
+    self.initialize_positions(atoms)
+  File "<PRIVATE_PATH>", line 717, in initialize_positions
+    self.wfs.set_positions(self.spos_ac, atom_partition)
+  File "<PRIVATE_PATH>", line 73, in set_positions
+    super().set_positions(spos_ac, atom_partition)
+  File "<PRIVATE_PATH>", line 265, in set_positions
+    paste_wfs = self.wfs_mover.cut_wfs(self, spos_ac)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<PRIVATE_PATH>", line 48, in cut_wfs
+    for phit in setup.get_partial_waves_for_atomic_orbitals()]
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<PRIVATE_PATH>", line 173, in get_partial_waves_for_atomic_orbitals
+    for n, phit in zip(self.n_j, self.pseudo_partial_waves_j):
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not iterable

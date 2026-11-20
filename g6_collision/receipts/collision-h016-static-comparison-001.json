@@ -1,0 +1,87 @@
+{
+  "authority": "Axiom2250",
+  "baseline_bindings": {
+    "occupied": {
+      "bo": {
+        "bytes": 8624,
+        "path": "excitation.json",
+        "sha256": "fd92605a7ed17b1bd6b258ee1c1cd76ead617438d9e4e1a0ab48526cfe5edbb4"
+      },
+      "ground": {
+        "bytes": 3020,
+        "path": "ground.json",
+        "sha256": "03fe0ccbfb9510016fae485b6f565c8e00f3bc82f27c9c15b34973688617b4af"
+      },
+      "trajectory": {
+        "bytes": 113679,
+        "path": "trajectory.json",
+        "sha256": "9675739fb79f48939c35aab7867ecd6522b47f3760c1df76038c81cf62d53b6a"
+      }
+    },
+    "vacant": {
+      "bo": {
+        "bytes": 8503,
+        "path": "excitation.json",
+        "sha256": "00409beb5f1243bf7470c27ebdb7560355e56f816391477b1997eb434f18e4d5"
+      },
+      "ground": {
+        "bytes": 2924,
+        "path": "ground.json",
+        "sha256": "49cda91e28f4ee6ec78700687a6a65008f8b8a54f5d324b6a0176983925371bd"
+      },
+      "trajectory": {
+        "bytes": 112763,
+        "path": "trajectory.json",
+        "sha256": "3c81cb2d692f604715d873048d5abe98eb2ca30f182c00037737624775eaa336"
+      }
+    }
+  },
+  "baseline_pair_reference": {
+    "bytes": 8712,
+    "path": "collision-base-periodic-pair-readout-001.json",
+    "sha256": "b99021a9b3e648b02eb030be4e5b02af98e27fcde0c197de51a86860458f85ef"
+  },
+  "candidate_positive_lowering_h016_eV": 40.09875796515504,
+  "candidate_positive_lowering_h020_eV": 40.54979961597452,
+  "coarse_grid": [
+    20,
+    20,
+    20
+  ],
+  "delta_V_pair_h016_minus_h020_eV": 0.45104165081948366,
+  "delta_positive_lowering_eV": -0.45104165081948366,
+  "delta_signed_electronic_correction_eV": 0.45104165081948366,
+  "fine_grid": [
+    24,
+    24,
+    24
+  ],
+  "passed": true,
+  "raw_quartet_h016_eV": 24.718565836787924,
+  "raw_quartet_h020_eV": 24.26752418596844,
+  "schema": "pdd-R0p1-static-h-comparison-v1",
+  "scope": "Fixed cell/k/phase,R0.1A neutral-host quartet; common bare correction cancels in Delta_h. Image/dt/drag qualifications remain distinct. No h-TD family or isolated pair export is authorized by this file.",
+  "state_bindings": {
+    "occupied-host": {
+      "bytes": 3274,
+      "path": "state.json",
+      "sha256": "6214a7ffdf4a13676a5d224a59e8072d540dff21070130578f086dd1861f6c01"
+    },
+    "occupied-probe": {
+      "bytes": 3373,
+      "path": "state.json",
+      "sha256": "cd0584bf869bd56db59dad5c6f374ccac4f30d7ba67a4b209a6120373ad75899"
+    },
+    "vacant-host": {
+      "bytes": 3180,
+      "path": "state.json",
+      "sha256": "6fdb90d0fbf125ecd5e1e6089a335f234be8924246cfac91f56348933f5c3f35"
+    },
+    "vacant-probe": {
+      "bytes": 3277,
+      "path": "state.json",
+      "sha256": "0e90d957d4cdedd24a33b7c003d9c23e64f893dd6fb5e3a79ea0c9db33e17758"
+    }
+  },
+  "tolerance_eV": 5.0
+}

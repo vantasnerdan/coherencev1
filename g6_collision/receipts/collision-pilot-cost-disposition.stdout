@@ -1,0 +1,50 @@
+{
+  "schema": "pdd-collision-pilot-performance-disposition-v1",
+  "cases": [
+    {
+      "phase": "p6collision-occ-repair-002",
+      "ten_step_wall_s": 1262.0,
+      "steps_at_marker": 10,
+      "actual_manager_cpu_ns": 1394334480000,
+      "actual_core_min": 23.238908,
+      "actual_log_sha256": "d24a5258738b307b77e8a223b3cd5fe981577d72dda22f19996eebb5e387c9a4",
+      "exposing_failure": "Propagation cost trigger reached; stop before scaling the trajectory",
+      "recoverable_state": "Initial R=1.6A checkpoint and completed ground only; eleven advanced steps were not checkpointed"
+    },
+    {
+      "phase": "p6collision-vac-base-001",
+      "ten_step_wall_s": 1248.0,
+      "steps_at_marker": 10,
+      "actual_manager_cpu_ns": 1580391364000,
+      "actual_core_min": 26.339856066666666,
+      "actual_log_sha256": "5e7bff3c6876bc9e0d32c71e4b231c32cda034f450091685315c1b8b3cae5877",
+      "exposing_failure": "Propagation cost trigger reached; stop before scaling the trajectory",
+      "recoverable_state": "Initial R=1.6A checkpoint and completed ground only; eleven advanced steps were not checkpointed"
+    }
+  ],
+  "all_native_manager_core_min": 53.179317016666666,
+  "conservative_unit_counter_tail_core_min": 4.0,
+  "pure_readout_cpu_s": 4.995865582,
+  "original_pilot_cap_core_min": 400,
+  "original_whole_cap_core_min": 3000,
+  "early_step_linear_scenarios": [
+    {
+      "energy_keV": 0.5,
+      "steps": 345,
+      "scenario_minutes_per_trajectory": 721.625
+    },
+    {
+      "energy_keV": 2.0,
+      "steps": 175,
+      "scenario_minutes_per_trajectory": 366.0416666666667
+    },
+    {
+      "energy_keV": 10.0,
+      "steps": 81,
+      "scenario_minutes_per_trajectory": 169.425
+    }
+  ],
+  "baseline_three_energy_three_impact_pair_scenario_core_min": 7542.55,
+  "scenario_scope": "Unqualified early-step linear extrapolation, excluding BO/controls/second direction/displacement; not a lower bound",
+  "disposition": "Hold all trajectory production. One <=5 core-minute instrumented identical step may diagnose the TD operator bottleneck; no budget renewal or physical no-go claim."
+}

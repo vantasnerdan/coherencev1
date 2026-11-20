@@ -1,0 +1,168 @@
+{
+  "actual_kpoints": 8,
+  "cell_A": [
+    [
+      4.134141684668574,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      4.134141684668574,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      4.134141684668574
+    ]
+  ],
+  "charge": 0,
+  "electrons": 44.0,
+  "energy": {
+    "free_energy_eV": -79.41437049407813,
+    "internal_energy_eV": -79.20360700999144,
+    "minus_TS_eV": -0.2107634840866837
+  },
+  "gpw": {
+    "bytes": 53600219,
+    "path": "state.gpw",
+    "sha256": "8eb976fc1b468bc6bddc974773263240fea0bc7d9e4839eb753531553dc8057e"
+  },
+  "path": {
+    "direction": [
+      0.7071067811865475,
+      0.7071067811865475,
+      0.0
+    ],
+    "lattice_A": 4.134141684668574,
+    "projectile_index": 8,
+    "target_A": [
+      2.067070842334287,
+      2.067070842334287,
+      2.067070842334287
+    ],
+    "target_present": true,
+    "transverse": [
+      0.7071067811865476,
+      -0.7071067811865476,
+      0.0
+    ]
+  },
+  "positions_A": [
+    [
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      2.067070842334287,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      2.067070842334287,
+      2.067070842334287
+    ],
+    [
+      2.067070842334287,
+      2.067070842334287,
+      2.067070842334287
+    ],
+    [
+      2.067070842334287,
+      0.0,
+      2.067070842334287
+    ],
+    [
+      0.0,
+      0.0,
+      2.067070842334287
+    ],
+    [
+      2.067070842334287,
+      2.067070842334287,
+      0.0
+    ],
+    [
+      0.0,
+      2.067070842334287,
+      0.0
+    ]
+  ],
+  "realspace_shape": [
+    24,
+    24,
+    24
+  ],
+  "role": "occupied",
+  "schema": "pdd-static-quartet-state-v1",
+  "scope": "One fixed-geometry SCF state, not a trajectory or an isolated-material qualification",
+  "specification": {
+    "D_displacement_A": [
+      0,
+      0,
+      0
+    ],
+    "bo_checkpoints_A": [
+      0.1
+    ],
+    "checkpoints_A": [
+      0.1
+    ],
+    "collision_whole_core_min_cap": 3000,
+    "control_authority": "Axiom2250",
+    "control_scope": "One static occupied/vacant neutral-host quartet atR0.1, baseline phase/cell/k; no TD or enlarged family",
+    "direction": [
+      1,
+      1,
+      0
+    ],
+    "dt_as": 2,
+    "eligibility": "Production at2keV/head-on only; mapping and numerical controls gate downstream consumption; U_phi diagnostic only",
+    "end_R_A": 0.1,
+    "energy_keV": 2,
+    "external_work_closure": {
+      "absolute_eV": 0.5,
+      "fraction_of_absolute_work": 0.01
+    },
+    "h_A": 0.16,
+    "impact_A": 0,
+    "kmesh": [
+      2,
+      2,
+      2
+    ],
+    "maximum_ten_step_wall_s": 900,
+    "occupied_target": true,
+    "production_authority": "Axiom2177, output contract2159",
+    "production_case_hard_core_min": 80,
+    "relaxed_ground_record": "<PRIVATE_PATH>",
+    "relaxed_ground_sha256": "a4c40d17f51c6f32a2ce6795ee4e2028a8464ad48980230a4563b1aade8cb5c7",
+    "repeat": [
+      1,
+      1,
+      1
+    ],
+    "schema": "pdd-prescribed-collision-input-v2",
+    "screening_accuracy": {
+      "absolute_eV": 5,
+      "relative": 0.1
+    },
+    "solver_tolerance": 1e-09,
+    "start_R_A": 0.1,
+    "stopping_relative_accuracy": 0.15
+  },
+  "state": "host",
+  "symbols": [
+    "Pd",
+    "H",
+    "Pd",
+    "H",
+    "Pd",
+    "H",
+    "Pd",
+    "H"
+  ]
+}

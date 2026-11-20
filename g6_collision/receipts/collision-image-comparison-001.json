@@ -1,0 +1,49 @@
+{
+  "R_A": 0.1,
+  "V_pair_periodic_point_2x_eV": 103.1978205906193,
+  "authority": "Axiom2291",
+  "bare_qualification": {
+    "bytes": 8212,
+    "path": "collision-native-nuclear-kernel-002.json",
+    "sha256": "2a572a8a17317e994d5de01073c0026274538cfd656a1a3ef82266c16f9337c4"
+  },
+  "baseline": {
+    "bytes": 8712,
+    "path": "collision-base-periodic-pair-readout-001.json",
+    "sha256": "b99021a9b3e648b02eb030be4e5b02af98e27fcde0c197de51a86860458f85ef"
+  },
+  "candidate_lowering_2x_eV": 40.798634096058834,
+  "candidate_lowering_base_eV": 40.54979961597452,
+  "delta_2x_minus_base_lowering_eV": 0.2488344800843123,
+  "passed": true,
+  "periodic_bare_point_kernel_delta_eV": 4.937567251217359,
+  "point_minus_soft_2x_eV": 79.21050604236592,
+  "point_minus_soft_delta_eV": 0.03137515763074816,
+  "raw_neutral_quartet_2x_eV": 23.98731454825338,
+  "raw_quartet_delta_eV": -0.28020963771506047,
+  "schema": "pdd-neutral-image-quartet-comparison-v1",
+  "scope": "One baseline-phaseR0.1 representative cell check. A pass admits original-cell BO curves under2291, not a prepared state or dt/drag convergence. The reported bare point-kernel delta is diagnostic and is not subtracted from the total neutral-material comparison.",
+  "state_bindings": {
+    "occupied-host": {
+      "bytes": 8372,
+      "path": "state.json",
+      "sha256": "63457d583d1b606a4c32c58542787b23087410896e3466369ec0d52ed428be79"
+    },
+    "occupied-probe": {
+      "bytes": 8469,
+      "path": "state.json",
+      "sha256": "cfa2db398df3faf6d329199c3742781ffdbdff125893e211dbffd7efcf21cb4a"
+    },
+    "vacant-host": {
+      "bytes": 8276,
+      "path": "state.json",
+      "sha256": "1b487ae3f3927a39b9376be0b5c993694ee2f120b09aac8ce93a5ae0451f33c0"
+    },
+    "vacant-probe": {
+      "bytes": 8374,
+      "path": "state.json",
+      "sha256": "8fbb423f1f8432f2be7ba2d047ea208493d39bcdc5509eb049e0d82baba42cb8"
+    }
+  },
+  "tolerance_eV": 5.0
+}

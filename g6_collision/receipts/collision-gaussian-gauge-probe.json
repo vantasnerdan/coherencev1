@@ -1,0 +1,52 @@
+{
+  "alpha_inverse_A": 2.0,
+  "analytic_isolated_contact": "2*a*c/sqrt(pi)",
+  "coulomb_eV_A": 14.399645468667815,
+  "grid_refinement_difference_eV": [
+    1.7763568394002505e-14,
+    2.4868995751603507e-14
+  ],
+  "module": {
+    "bytes": 4961,
+    "path": "<PRIVATE_PATH>",
+    "sha256": "b8a4ec9b0b68d5d2ffdc215625cd409e298daf7a34690db156f4feb9f05a9fdd"
+  },
+  "normalization": "1",
+  "poisson_symbolic_residual": "0",
+  "rows": [
+    {
+      "electrons": 1.0000000000000002,
+      "grid": 40,
+      "isolated_U_eV": 32.49651992081212,
+      "isolated_minus_periodic_eV": 9.722541189328869,
+      "periodic_U_eV": 22.77397873148325,
+      "side_A": 4.134141684668574
+    },
+    {
+      "electrons": 1.0000000000000009,
+      "grid": 80,
+      "isolated_U_eV": 32.49651992081212,
+      "isolated_minus_periodic_eV": 4.9212934814350895,
+      "periodic_U_eV": 27.57522643937703,
+      "side_A": 8.268283369337148
+    },
+    {
+      "electrons": 0.9999999999999998,
+      "grid": 48,
+      "isolated_U_eV": 32.49651992081212,
+      "isolated_minus_periodic_eV": 9.722541189328886,
+      "periodic_U_eV": 22.773978731483233,
+      "side_A": 4.134141684668574
+    },
+    {
+      "electrons": 1.0,
+      "grid": 96,
+      "isolated_U_eV": 32.49651992081212,
+      "isolated_minus_periodic_eV": 4.921293481435114,
+      "periodic_U_eV": 27.575226439377005,
+      "side_A": 8.268283369337148
+    }
+  ],
+  "schema": "periodic-electron-field-gaussian-gauge-v1",
+  "scope": "Analytic unit-electron gauge discriminator, NOT a measured PdD finite-cell correction"
+}

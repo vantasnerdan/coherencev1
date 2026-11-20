@@ -1,0 +1,30 @@
+{
+  "schema": "collision-actual-bo-field-admission-v1",
+  "actual": {
+    "electron_potential_eV": 57.29911230752906,
+    "integrated_electrons": 188.00000000030818,
+    "projectile_A": [
+      0.9356999924358109,
+      0.9356999924358109,
+      2.067070842334287
+    ],
+    "actual_gpw": {
+      "path": "ground.gpw",
+      "bytes": 31142949,
+      "sha256": "b96b41f6390d5c89ff1cf3faeaa42c898aaa46a03c9f457b5675966a4410e05b"
+    }
+  },
+  "td_initial_fixture": {
+    "path": "collision-actual-initial-density.npz",
+    "bytes": 353125,
+    "sha256": "348a2cb0f28605d09091e7397518f53cafbd8cc669b890f0ea6c12a3b1132743"
+  },
+  "td_initial_field_eV": 57.29922088727229,
+  "bo_td_field_difference_eV": 0.00010857974323386088,
+  "acceptance_eV": 0.01,
+  "altered_projectile_position_refused": true,
+  "cpu_s": 1.5826858710000002,
+  "wall_s": 1.5990589605644345,
+  "peak_rss_kB": 553772,
+  "scope": "Actual saved initial GPW static-field readout; no material/time-step/trajectory convergence claim"
+}

@@ -1,0 +1,210 @@
+{
+  "blocked_imports": [
+    "scipy",
+    "ase",
+    "gpaw"
+  ],
+  "controls": {
+    "h016": {
+      "differences": {
+        "candidate_positive_lowering_h016_eV": 0.0,
+        "candidate_positive_lowering_h020_eV": 0.0,
+        "delta_V_pair_h016_minus_h020_eV": 0.0,
+        "delta_positive_lowering_eV": 0.0,
+        "delta_signed_electronic_correction_eV": 0.0,
+        "raw_quartet_h016_eV": 0.0,
+        "raw_quartet_h020_eV": 0.0,
+        "tolerance_eV": 0.0
+      },
+      "passed": true,
+      "values": {
+        "candidate_positive_lowering_h016_eV": 40.09875796515504,
+        "candidate_positive_lowering_h020_eV": 40.54979961597452,
+        "delta_V_pair_h016_minus_h020_eV": 0.45104165081948366,
+        "delta_positive_lowering_eV": -0.45104165081948366,
+        "delta_signed_electronic_correction_eV": 0.45104165081948366,
+        "raw_quartet_h016_eV": 24.718565836787924,
+        "raw_quartet_h020_eV": 24.26752418596844,
+        "tolerance_eV": 5.0
+      }
+    },
+    "image-2x": {
+      "differences": {
+        "V_pair_periodic_point_2x_eV": 0.0,
+        "candidate_lowering_2x_eV": 0.0,
+        "candidate_lowering_base_eV": 0.0,
+        "delta_2x_minus_base_lowering_eV": 0.0,
+        "periodic_bare_point_kernel_delta_eV": 0.0,
+        "point_minus_soft_2x_eV": 0.0,
+        "point_minus_soft_delta_eV": 0.0,
+        "raw_neutral_quartet_2x_eV": 0.0,
+        "raw_quartet_delta_eV": 0.0,
+        "tolerance_eV": 0.0
+      },
+      "passed": true,
+      "values": {
+        "V_pair_periodic_point_2x_eV": 103.1978205906193,
+        "candidate_lowering_2x_eV": 40.798634096058834,
+        "candidate_lowering_base_eV": 40.54979961597452,
+        "delta_2x_minus_base_lowering_eV": 0.2488344800843123,
+        "periodic_bare_point_kernel_delta_eV": 4.937567251217359,
+        "point_minus_soft_2x_eV": 79.21050604236592,
+        "point_minus_soft_delta_eV": 0.03137515763074816,
+        "raw_neutral_quartet_2x_eV": 23.98731454825338,
+        "raw_quartet_delta_eV": -0.28020963771506047,
+        "tolerance_eV": 5.0
+      }
+    }
+  },
+  "encounter_excitation_dt_checked": false,
+  "full_trajectory_rows": {
+    "base-occ": 176,
+    "base-vac": 176,
+    "gamma-occ": 176,
+    "gamma-vac": 176
+  },
+  "halfdt_drag": "pending; may be second asset",
+  "isolated_python": true,
+  "passed": true,
+  "replay_differences": {
+    "contrasts": {
+      "R_A": 0,
+      "base_candidate_lowering_eV": 0,
+      "base_vacancy_mean_loss_eV_A": 0,
+      "delta_gamma_minus_base_encounter_excitation_eV": 0,
+      "delta_gamma_minus_base_lowering_eV": 0,
+      "gamma_candidate_lowering_eV": 0,
+      "gamma_vacancy_mean_loss_eV_A": 0
+    },
+    "exact_BO_exports": {
+      "base": {
+        "R_A": 0.0,
+        "V_pair_total_eV": 0.0
+      },
+      "gamma": {
+        "R_A": 0.0,
+        "V_pair_total_eV": 0.0
+      }
+    },
+    "geometry_A": {
+      "occ": 1.3877787807814457e-17,
+      "vac": 1.3877787807814457e-17
+    },
+    "pair_columns": {
+      "base": {
+        "BO_quartet_soft_eV": 0,
+        "R_A": 0,
+        "U_phi_diagnostic_eV": 0,
+        "V_pair_periodic_point_eV": 0,
+        "anchored_encounter_work_profile_eV": 0,
+        "bare_periodic_point_minus_soft_eV": 2.0816681711721685e-17,
+        "candidate_lowering_vs_isolated_C_over_R_eV": 0,
+        "encounter_excitation_change_eV": 0,
+        "encounter_external_work_mapped_increment_eV": 0,
+        "encounter_external_work_raw_eV": 0,
+        "independent_force_work_identity_residual_eV": 0,
+        "occupied_excitation_eV": 0,
+        "path_length_A": 0,
+        "signed_electronic_candidate_eV": 0,
+        "vacancy_loss_change_eV": 0,
+        "vacancy_mean_loss_eV_A": 0,
+        "vacant_excitation_eV": 0
+      },
+      "gamma": {
+        "BO_quartet_soft_eV": 0,
+        "R_A": 0,
+        "U_phi_diagnostic_eV": 0,
+        "V_pair_periodic_point_eV": 0,
+        "anchored_encounter_work_profile_eV": 0,
+        "bare_periodic_point_minus_soft_eV": 3.552713678800501e-15,
+        "candidate_lowering_vs_isolated_C_over_R_eV": 0,
+        "encounter_excitation_change_eV": 0,
+        "encounter_external_work_mapped_increment_eV": 0,
+        "encounter_external_work_raw_eV": 0,
+        "independent_force_work_identity_residual_eV": 0,
+        "occupied_excitation_eV": 0,
+        "path_length_A": 0,
+        "signed_electronic_candidate_eV": 0,
+        "vacancy_loss_change_eV": 0,
+        "vacancy_mean_loss_eV_A": 0,
+        "vacant_excitation_eV": 0
+      }
+    },
+    "pinned_consumer_different_C_eV": {
+      "base": 6.514255801448599e-10,
+      "gamma": 6.514255801448599e-10
+    },
+    "trajectory": {
+      "base-occ": {
+        "density_potential_eV": 0,
+        "force_work_eV": 0.0
+      },
+      "base-vac": {
+        "density_potential_eV": 0,
+        "force_work_eV": 0.0
+      },
+      "gamma-occ": {
+        "density_potential_eV": 0,
+        "force_work_eV": 0.0
+      },
+      "gamma-vac": {
+        "density_potential_eV": 0,
+        "force_work_eV": 0.0
+      }
+    }
+  },
+  "results": {
+    "actual-replay": {
+      "expected": "accept",
+      "returncode": 0,
+      "stderr": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stdout": {
+        "bytes": 21869,
+        "sha256": "4889667c9fab7ebba83f499d82d393631935ef1f1d268325969d97a0eca96e68"
+      }
+    },
+    "byte-tamper": {
+      "expected": "refuse",
+      "refusal_reason": "EXPORTED byte integrity failed",
+      "returncode": 2,
+      "stderr": {
+        "bytes": 70,
+        "sha256": "601dfb961d4c5e7f16c8549d3552018076f91a285283ec8cc0065368d42e5f23"
+      },
+      "stdout": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    "wrong-image-cell": {
+      "expected": "refuse",
+      "refusal_reason": "Approved doubled cell",
+      "returncode": 2,
+      "stderr": {
+        "bytes": 71,
+        "sha256": "94896fc06032b7ec0b4c0c5d98aadec86a893acf8fd2b73d5988cc87835f264a"
+      },
+      "stdout": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    "wrong-source": {
+      "expected": "refuse",
+      "refusal_reason": "ORIGINAL source binding mismatch",
+      "returncode": 2,
+      "stderr": {
+        "bytes": 96,
+        "sha256": "bbbbf79bdbb7aa853ab198782de8b24c7d3b13915838a2e6607efd297f3cc7d7"
+      },
+      "stdout": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    }
+  },
+  "schema": "pdd-actual-numpy-portability-proof-v1"
+}

@@ -1,0 +1,14 @@
+{
+  "schema": "work-minus-excitation-screening-identity-v1",
+  "source_definitions": "P255 research-arc: W_i=E_TD_i(R)-E_TD_i(start), X_i=E_TD_i-E_BO_i; Axiom2136 work-minus-encounter-excitation convention",
+  "initial_excitation_retained": true,
+  "external_encounter_work": "E_TD_o - E_TD_o0 - E_TD_v + E_TD_v0",
+  "encounter_excitation": "-E_BO_o + E_BO_v + E_TD_o - E_TD_v",
+  "initial_encounter_excitation": "-E_BO_o0 + E_BO_v0 + E_TD_o0 - E_TD_v0",
+  "extracted_work_minus_excitation": "E_BO_o - E_BO_o0 - E_BO_v + E_BO_v0",
+  "matching_BO_encounter_change": "E_BO_o - E_BO_o0 - E_BO_v + E_BO_v0",
+  "symbolic_residual": "0",
+  "consequence": "After a common absolute reference/mapping, work minus all encounter excitation is identically the matched BO interaction. A 20-percent dynamic-vs-static difference of this quantity measures closure/reference error, not a physical speed dependence.",
+  "unresolved_decision": "The velocity-dependent path-work/encounter-excitation observable must remain distinct from the static BO potential; choose which nonadiabatic observable controls extending the incident-energy sweep.",
+  "scope": "Exact identity under the stated definitions, not an assertion that real collision dynamics are adiabatic"
+}

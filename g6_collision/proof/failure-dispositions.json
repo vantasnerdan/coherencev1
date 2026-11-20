@@ -1,0 +1,13 @@
+{
+  "schema": "pdd-collision-delivery-attempt-dispositions-v1",
+  "attempts": [
+    {"attempt": "exploration-find", "result": "find semantic service unavailable: account rejected all judge requests", "disposition": "Used direct literal grep and original source reads; no absence inferred."},
+    {"attempt": "exploration-python", "exit": 127, "result": "python command not found", "disposition": "Used python3 for stdlib inspection and the actual qualified venv Python for NumPy replay."},
+    {"attempt": "build-01/proof-01", "build_exit": 0, "proof_exit": 1, "reader_exit": 2, "result": "Missing exported base occupied ground/ground.json", "cause": "Path.rglob did not follow the original reused-ground directory symlink.", "disposition": "Builder now follows original symlink directories and materializes ordinary exported files; original files and bindings unchanged. Attempt-01 output retained privately."},
+    {"attempt": "build-02/proof-02", "build_exit": 0, "proof_exit": 1, "reader_exit": 2, "result": "Input epochs differ", "cause": "Ground was legitimately reused from the original admitted pilot; administrative schema/checkpoint budget fields differ from production.", "disposition": "Reader checks BO/trajectory exact specifications, all nine admitted unchanged ground-model keys and original ground GPW SHA/electron count against the original reuse admission, rather than falsely requiring administrative epoch equality. No BO-to-trajectory rebinding. Attempt-02 output retained privately."},
+    {"attempt": "build-03/proof-03", "build_exit": 0, "proof_exit": 0, "reader_exit": 0, "result": "Actual four full176-row trajectories, all seven radii, both exact BO exports and h/image outputs replayed within1e-9eV under blocked scipy/ase/gpaw imports.", "disposition": "Accepted actual replay. Actual byte tamper, wrong original BO source despite rehashed exported bytes, and altered actual image cell despite rehashed exported bytes each refused with exit2. Their stdout/stderr/exit receipts are included."}
+  ],
+  "historical_gate_attempts": "Original Native nuclear-kernel001/002, old periodic-pair main refusal, unprepared-state refusal, wrong-role refusal, step-reader diagnosis/repair and qualification receipts are retained in receipts with separate ORIGINAL/EXPORTED provenance. Historical diagnostic status is not overwritten by current BO qualification.",
+  "native_invocations_for_delivery": [],
+  "dt": "No dt waiting or mutation; production encounter excitation NOT dt-checked; halfdt finite-path vacancy drag pending and may arrive as a second asset."
+}

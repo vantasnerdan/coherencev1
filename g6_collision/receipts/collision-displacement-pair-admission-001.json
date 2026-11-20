@@ -1,0 +1,138 @@
+{
+  "actual_geometry": [
+    {
+      "base": {
+        "bytes": 3020,
+        "path": "ground.json",
+        "sha256": "03fe0ccbfb9510016fae485b6f565c8e00f3bc82f27c9c15b34973688617b4af"
+      },
+      "gamma": {
+        "bytes": 3156,
+        "path": "ground.json",
+        "sha256": "9ab0e02bca4ce1faee9f0d5437f79f59ae9b91c2b2c8f59a5048d44a96229483"
+      },
+      "max_displacement_difference_A": 1.3877787807814457e-17,
+      "role": "occ"
+    },
+    {
+      "base": {
+        "bytes": 2924,
+        "path": "ground.json",
+        "sha256": "49cda91e28f4ee6ec78700687a6a65008f8b8a54f5d324b6a0176983925371bd"
+      },
+      "gamma": {
+        "bytes": 3061,
+        "path": "ground.json",
+        "sha256": "c0c7838a98c935e2970d3f2b7d8b4a0b041a44684e3aba9e09f7ef47429f85d1"
+      },
+      "max_displacement_difference_A": 1.3877787807814457e-17,
+      "role": "vac"
+    }
+  ],
+  "baseline_pair": {
+    "bytes": 8712,
+    "path": "collision-base-periodic-pair-readout-001.json",
+    "sha256": "b99021a9b3e648b02eb030be4e5b02af98e27fcde0c197de51a86860458f85ef"
+  },
+  "contrasts": [
+    {
+      "R_A": 1.6,
+      "base_candidate_lowering_eV": 9.180973899303197,
+      "base_vacancy_mean_loss_eV_A": null,
+      "delta_gamma_minus_base_encounter_excitation_eV": 0.0,
+      "delta_gamma_minus_base_lowering_eV": -0.00756708549288021,
+      "gamma_candidate_lowering_eV": 9.173406813810317,
+      "gamma_vacancy_mean_loss_eV_A": null
+    },
+    {
+      "R_A": 1.0,
+      "base_candidate_lowering_eV": 13.738789841448277,
+      "base_vacancy_mean_loss_eV_A": 2.324497911715681,
+      "delta_gamma_minus_base_encounter_excitation_eV": 0.0048024990609576435,
+      "delta_gamma_minus_base_lowering_eV": -0.024803753198696654,
+      "gamma_candidate_lowering_eV": 13.71398608824958,
+      "gamma_vacancy_mean_loss_eV_A": 2.201796519718068
+    },
+    {
+      "R_A": 0.5,
+      "base_candidate_lowering_eV": 23.98151640764561,
+      "base_vacancy_mean_loss_eV_A": 2.321842503852348,
+      "delta_gamma_minus_base_encounter_excitation_eV": 0.03223764554333286,
+      "delta_gamma_minus_base_lowering_eV": -0.18611967815681396,
+      "gamma_candidate_lowering_eV": 23.795396729488797,
+      "gamma_vacancy_mean_loss_eV_A": 2.1886118876708913
+    },
+    {
+      "R_A": 0.4,
+      "base_candidate_lowering_eV": 27.53694851489068,
+      "base_vacancy_mean_loss_eV_A": 2.303229815487538,
+      "delta_gamma_minus_base_encounter_excitation_eV": 0.045853647861747504,
+      "delta_gamma_minus_base_lowering_eV": -0.13915384448681323,
+      "gamma_candidate_lowering_eV": 27.397794670403865,
+      "gamma_vacancy_mean_loss_eV_A": 2.169001598428745
+    },
+    {
+      "R_A": 0.3,
+      "base_candidate_lowering_eV": 32.41777489209701,
+      "base_vacancy_mean_loss_eV_A": 2.2842972689778116,
+      "delta_gamma_minus_base_encounter_excitation_eV": -0.03512724439896431,
+      "delta_gamma_minus_base_lowering_eV": -1.0669328306741512,
+      "gamma_candidate_lowering_eV": 31.350842061422856,
+      "gamma_vacancy_mean_loss_eV_A": 2.156325096301729
+    },
+    {
+      "R_A": 0.2,
+      "base_candidate_lowering_eV": 35.90881681725227,
+      "base_vacancy_mean_loss_eV_A": 2.27703763521856,
+      "delta_gamma_minus_base_encounter_excitation_eV": -0.0073863684767729865,
+      "delta_gamma_minus_base_lowering_eV": -0.7185762366439263,
+      "gamma_candidate_lowering_eV": 35.19024058060835,
+      "gamma_vacancy_mean_loss_eV_A": 2.144355455836353
+    },
+    {
+      "R_A": 0.1,
+      "base_candidate_lowering_eV": 40.54979961597452,
+      "base_vacancy_mean_loss_eV_A": 2.2513822476170255,
+      "delta_gamma_minus_base_encounter_excitation_eV": -0.021096104723326903,
+      "delta_gamma_minus_base_lowering_eV": -0.6871432819416299,
+      "gamma_candidate_lowering_eV": 39.86265633403289,
+      "gamma_vacancy_mean_loss_eV_A": 2.116375262625619
+    }
+  ],
+  "gamma_pair": {
+    "bytes": 8721,
+    "path": "collision-gamma-periodic-pair-readout-001.json",
+    "sha256": "bd91cca3364f922475ae47ddd5c708934d0215cf227ab5543d8ddb8d45ecf3db"
+  },
+  "occupied_CPUUsageNSec": 7256196918000,
+  "occupied_MemoryPeak_B": 671731712,
+  "occupied_bindings": {
+    "bo": {
+      "bytes": 8637,
+      "path": "excitation.json",
+      "sha256": "c341dabbfe5cba6b7026434bc70a0c56298fad17f3f67641838179730b94d845"
+    },
+    "ground": {
+      "bytes": 3156,
+      "path": "ground.json",
+      "sha256": "9ab0e02bca4ce1faee9f0d5437f79f59ae9b91c2b2c8f59a5048d44a96229483"
+    },
+    "trajectory": {
+      "bytes": 113621,
+      "path": "trajectory.json",
+      "sha256": "1af4b6dc00c5eb21cea7624bf7a6283dbd0494f7581de9b51f65d456b7540224"
+    }
+  },
+  "occupied_invocation": "a8bd879b2ac14935b61bd0d916309e27",
+  "occupied_max_Native_projector_difference": 1.1843535355188972e-14,
+  "occupied_max_force_work_residual_eV": 0.014524067247585037,
+  "occupied_max_particle_drift_electrons": 1.2857384490416734e-08,
+  "passed": true,
+  "schema": "pdd-imposed-displacement-pair-admission-v1",
+  "scope": "Actual all-D displacement and four matched2keV trajectories. Periodic-point diagnostics only pending approved image and dt/drag qualification; the observed small shift is not a resolved physical enhancement or a general no-go.",
+  "vacancy_admission": {
+    "bytes": 1489,
+    "path": "collision-gamma-vac-admission-001.json",
+    "sha256": "06e1f30c91b60156d223ddfc2f35e7ccb74c43646dcca95db731b2515fa15184"
+  }
+}

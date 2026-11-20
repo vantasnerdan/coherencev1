@@ -1,0 +1,25 @@
+{
+  "defect": "Original tab-create.argv receipts expand an undefined role2keV variable and incorrectly show collision (). They are not exact captures of the creation command.",
+  "exact_original_argv_recovered": false,
+  "observed_actual_effects": [
+    {
+      "case": "occ",
+      "creation_stdout_sha256": "cc5275fe8a7104c2e1da0d6d8ba4958e27791e809669d64f9ebbe85a462c680a",
+      "label": "collision (occ 2keV)",
+      "original_argv": "herdr tab create --label collision\\ \\(\\) --cwd <PRIVATE_PATH> --no-focus\n",
+      "pane_id": "w1:pAZ",
+      "tab_id": "w1:tAE"
+    },
+    {
+      "case": "vac",
+      "creation_stdout_sha256": "ca427cb06c76419bdd8ccfbe1ba3a07cae514be568a35abe2857031c0bc895fc",
+      "label": "collision (vac 2keV)",
+      "original_argv": "herdr tab create --label collision\\ \\(\\) --cwd <PRIVATE_PATH> --no-focus\n",
+      "pane_id": "w1:pA0",
+      "tab_id": "w1:tAF"
+    }
+  ],
+  "original_receipts_preserved": true,
+  "schema": "retrospective-watch-receipt-clarification-v1",
+  "scope": "Receipt correction only; no mutation replay"
+}

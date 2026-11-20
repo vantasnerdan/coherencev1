@@ -1,0 +1,93 @@
+{
+  "R_A": [
+    0.1,
+    0.2,
+    0.3,
+    0.4,
+    0.5,
+    1.0,
+    1.6
+  ],
+  "V_pair_total_eV": [
+    103.44665507070361,
+    36.089410526086795,
+    15.58104333679571,
+    8.462165156778855,
+    4.817774529690019,
+    0.6608556272195389,
+    -0.18119548138581432
+  ],
+  "excluded": "Encounter work/excitation and vacancy drag are separate trajectory outputs, not additions to BO. Encounter excitation is not dt-checked (Axiom2315).",
+  "observable": "target_conditioned_BO_total_interaction",
+  "qualification": {
+    "actual_displacement": {
+      "bytes": 5372,
+      "path": "collision-displacement-pair-admission-001.json",
+      "sha256": "024817e157240d2a7c0cec94ed369a9906e02fef423ea6ec8769b6e7adbe25a1"
+    },
+    "authority": [
+      "Axiom2291",
+      "Axiom2314"
+    ],
+    "cell": {
+      "bytes": 1924,
+      "path": "collision-image-comparison-001.json",
+      "sha256": "60bef38283bb74df4d2bc2e52edc7be8045b36d99103881035e246d806570e05"
+    },
+    "h": {
+      "bytes": 2773,
+      "path": "collision-h016-static-comparison-001.json",
+      "sha256": "04cf6882bf5a037c3921fb541f751cde94193d50a965e52ee9efc44982a7eca6"
+    }
+  },
+  "reference": {
+    "bare": "isolated_unit_charge_coulomb",
+    "configuration": "Frozen ordered PdD conventional cell; PBE,Pd10,all-electron regularizedH,h0.20A actual20^3,fullGamma-centred k2,Fermi width0.1eV. AllD[100] shift=0.0A,Pd fixed.2keV head-on[110] checkpoint geometry; not a prepared locked state.",
+    "energy_zero": "E_probe,occupied-E_probe,vacant-E_host,occupied+E_host,vacant using actual neutral host-only states; no arbitrary far-point offset.",
+    "periodic_to_isolated": "Native alpha1=10Bohr^-2 nuclear compensation replaced by same-zero-G periodic point-minus-Gaussian Green block. Neutral material image control:2x2x2,matchedGamma k1/240bands,R0.1,lowering40.54979961597->40.79863409606eV. h0.20->0.16 changes pair by0.45104165082eV. Both pass max(5eV,10%); Axiom2291/2314 admits original cell/h for both complete curves. Representative-point qualification, not an exact infinite-cell limit; no bare-only image subtraction or fitted shift.",
+    "source": "P255/issue244 actual neutral-host BO quartet; original paired output SHA256 b99021a9b3e648b02eb030be4e5b02af98e27fcde0c197de51a86860458f85ef"
+  },
+  "schema": "coherencev1-target-conditioned-pair-v1",
+  "source_bindings": {
+    "bare": {
+      "bytes": 8212,
+      "path": "collision-native-nuclear-kernel-002.json",
+      "sha256": "2a572a8a17317e994d5de01073c0026274538cfd656a1a3ef82266c16f9337c4"
+    },
+    "occupied": {
+      "bo": {
+        "bytes": 8624,
+        "path": "excitation.json",
+        "sha256": "fd92605a7ed17b1bd6b258ee1c1cd76ead617438d9e4e1a0ab48526cfe5edbb4"
+      },
+      "ground": {
+        "bytes": 3020,
+        "path": "ground.json",
+        "sha256": "03fe0ccbfb9510016fae485b6f565c8e00f3bc82f27c9c15b34973688617b4af"
+      },
+      "trajectory": {
+        "bytes": 113679,
+        "path": "trajectory.json",
+        "sha256": "9675739fb79f48939c35aab7867ecd6522b47f3760c1df76038c81cf62d53b6a"
+      }
+    },
+    "vacant": {
+      "bo": {
+        "bytes": 8503,
+        "path": "excitation.json",
+        "sha256": "00409beb5f1243bf7470c27ebdb7560355e56f816391477b1997eb434f18e4d5"
+      },
+      "ground": {
+        "bytes": 2924,
+        "path": "ground.json",
+        "sha256": "49cda91e28f4ee6ec78700687a6a65008f8b8a54f5d324b6a0176983925371bd"
+      },
+      "trajectory": {
+        "bytes": 112763,
+        "path": "trajectory.json",
+        "sha256": "3c81cb2d692f604715d873048d5abe98eb2ca30f182c00037737624775eaa336"
+      }
+    }
+  },
+  "support": "Only supplied0.1\u20131.6A samples; no U(0),prepared state,rate,core continuation or far-tail completion."
+}

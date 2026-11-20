@@ -1,0 +1,40 @@
+{
+  "BO_checkpoints": 7,
+  "case": "Gamma-vacant",
+  "host_internal_energy_eV": -63.309655553567595,
+  "host_reference": {
+    "bytes": 31142715,
+    "path": "host-reference.gpw",
+    "sha256": "c979c0a2c2fda6b608180e419a0c2fc41fc3c81c59c46b7e9645caacae4991f4"
+  },
+  "initial_all_electrons": 186.99999999991974,
+  "invocation": "0de00b67f2034502b9b2113d13ece7ac",
+  "manager_CPUUsageNSec": 7139030761000,
+  "manager_MemoryPeak_B": 684122112,
+  "manager_result": "success",
+  "max_actual_projector_operator_difference": 1.6986412276764895e-14,
+  "max_independent_force_work_residual_eV": 0.004382357361797928,
+  "max_particle_drift_electrons": 2.4440254264845862e-08,
+  "passed": true,
+  "rows": 176,
+  "schema": "pdd-production-single-case-admission-v1",
+  "scope": "One actual displaced vacancy trajectory; occupied partner and image/dt/stopping qualification remain prerequisites to a material pair or Gamma enhancement claim",
+  "source_bindings": {
+    "bo": {
+      "bytes": 8526,
+      "path": "excitation.json",
+      "sha256": "211bb5e1552320499ccdb9c12a6100840079f8f60ba876f8310c55918b94dc1a"
+    },
+    "ground": {
+      "bytes": 3061,
+      "path": "ground.json",
+      "sha256": "c0c7838a98c935e2970d3f2b7d8b4a0b041a44684e3aba9e09f7ef47429f85d1"
+    },
+    "trajectory": {
+      "bytes": 112855,
+      "path": "trajectory.json",
+      "sha256": "a9fdae74be5cc14c571b9f82e2f1f0635e629a03c1bac4c72be63d398f0a17b1"
+    }
+  },
+  "vacant_excitation_change_eV": 3.174562893938429
+}
