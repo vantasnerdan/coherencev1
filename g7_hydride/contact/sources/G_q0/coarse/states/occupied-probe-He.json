@@ -1,0 +1,142 @@
+{
+  "actual_kpoints": 1,
+  "backend": "gpaw-native",
+  "cell_A": [
+    [
+      10.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      10.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      10.0
+    ]
+  ],
+  "charge": 0,
+  "electrons": 2.0,
+  "energy": {
+    "free_energy_eV": -82.89921237841315,
+    "internal_energy_eV": -82.89921237841244,
+    "minus_TS_eV": -7.062794793455396e-13
+  },
+  "log": {
+    "bytes": 12732,
+    "path": "states/occupied-probe-He.txt",
+    "sha256": "b70158ea371207f3bfb351e628be7fc9093a3986ea333bca1af089bcf8df7202"
+  },
+  "masses_u": [
+    4.02820355624
+  ],
+  "nbands": 5,
+  "occupation_width_eV": 0.1,
+  "positions_A": [
+    [
+      5.0,
+      5.0,
+      5.0
+    ]
+  ],
+  "process_cpu_s": 20.06047169,
+  "realspace_shape": [
+    48,
+    48,
+    48
+  ],
+  "recovery": "raw converged energies/geometry/log only; no GPW serialization or wavefunction restart claimed",
+  "scf_converged": true,
+  "scf_iterations": 29,
+  "schema": "hydride-native-state-v1",
+  "setup_valence": {
+    "He": 2.0
+  },
+  "setups": {
+    "H": "ae",
+    "He": {
+      "Delta0": -0.5641895835477563,
+      "E": 0.0,
+      "M": -5.046265044040321,
+      "M_scale": 4,
+      "Nc": 0,
+      "Nv": 2,
+      "Z": 2,
+      "alpha1": 10.0,
+      "alpha2": 300.0,
+      "ghat": "unchanged normalized alpha1 Gaussian",
+      "initial_guess": "normalized real hydrogenic Z=2 1s; smooth 8-Bohr cutoff",
+      "name": "HaeZ2",
+      "ni": 0,
+      "occupation": [
+        2.0
+      ],
+      "public_path": "prebuilt BaseSetup -> setups[He] -> create_setup(setupdata); no build method",
+      "source": {
+        "ae": {
+          "bytes": 2348,
+          "path": "operator-source/ae.py",
+          "sha256": "d6daba8aa25bbeeb716c7c9a3a3c7ec67fd1b56673550b523f308400ad8064cc"
+        },
+        "basis_data": {
+          "bytes": 13250,
+          "path": "operator-source/basis_data.py",
+          "sha256": "3efd73ceff4ebed33b01d08c5602cc6aa634f13ca6554c97a7acbf3cb2ccbc86"
+        },
+        "density": {
+          "bytes": 31538,
+          "path": "operator-source/density.py",
+          "sha256": "102657fa7dc345a2ceb3d97b777e886b552abe040bb79a6ff2c7c622cbb69c94"
+        },
+        "hamiltonian": {
+          "bytes": 30840,
+          "path": "operator-source/hamiltonian.py",
+          "sha256": "8526f7ccd2522ded88c746e4f5e4f4c7109dd67489850edf02d7f76207f3d348"
+        },
+        "setup": {
+          "bytes": 57201,
+          "path": "operator-source/setup.py",
+          "sha256": "ac566b134823bf164336fd3404288fcf698c892d081047cd5e2663b070089bb2"
+        }
+      },
+      "type": "all-electron",
+      "vbar_scale": 2
+    }
+  },
+  "specification": {
+    "box_A": 10,
+    "case": "G",
+    "force_tolerance_eV_A": 0.1,
+    "h_A": 0.2,
+    "ionic_steps": 20,
+    "kmesh": [
+      1,
+      1,
+      1
+    ],
+    "method": {
+      "BO_H_setup": "ae",
+      "Hae_alpha1_Bohr_m2": 10,
+      "Li_setup": "default_1valence",
+      "contact_He_setup": "HaeZ2",
+      "energy_convention": "internal=free-minus-negativeTS",
+      "geometry_H_setup": "standard_PAW",
+      "occupation_width_eV": 0.1,
+      "spinpol": false,
+      "xc": "PBE"
+    },
+    "nband_padding": 4,
+    "repeat_primitive": 1,
+    "schema": "hydride-specification-v1",
+    "volume_source": null
+  },
+  "spinpol": false,
+  "symbols": [
+    "He"
+  ],
+  "wavefunction_predictor": "NullWfsMover",
+  "xc": "PBE"
+}

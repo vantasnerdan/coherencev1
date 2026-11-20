@@ -33,8 +33,19 @@ What it means:
 2. Finite periodic cells with representative controls, not an exact isolated limit.
 3. One ideal ordered LiD environment and one atomic reference, not a microstructure or an experimental gas.
 
-The contact value at R = 0, needed to turn these curves into a barrier-penetration shift (`g7_micro/` converter), is a separate optional supplement still being computed. It does not change these curves.
+## Contact values
+
+`contact/` holds the value at contact (R = 0), which the `g7_micro/` converter needs to turn these curves into a barrier-penetration shift. Each value is the regular part of the pair interaction as the two nuclei meet, computed with a helium nucleus on the target site. Lowering at contact, fine grid (h 0.16 A):
+
+| Target | Neutral probe (eV) | Bare probe (eV) |
+|---|---:|---:|
+| D on its anion site in LiD | 44.0 | 46.8 |
+| Isolated D atom, same code | 53.3 | 39.0 |
+
+Each lies about 3 eV above its 0.1 A value, and the picture is unchanged: the hydride and the isolated atom screen alike at contact. Changing the grid from h 0.20 to 0.16 A moves each value by 2.9-4.2 eV, within the registered tolerance. The slope at contact was not computed, so the converter treats the shape between 0 and 0.1 A as a stated sensitivity.
 
 ## Lead's note
 
 `capsule/` is the delivered archive `hydride-screening-delivery.tar.gz` (SHA-256 7b553071782e30084cfc67a3e473aff06c7bf2972aa6dbbea7e4dc6c9f4a23f6, 203 files), unchanged. The GPAW logs in it had machine user and path lines removed before export; their ORIGINAL and EXPORTED hashes and the transform counts are in `capsule/manifest.json`. Replay with `python capsule/reader.py capsule` from this directory (NumPy only). The lead's isolated replay under NumPy 1.26.4, with SciPy, ASE and GPAW blocked, qualified all four curves and both controls, and refused a curve altered by 1 eV. Compute used: 23.5 core-min of a 400 core-min budget, including a failed pilot publication.
+
+`contact/` is the separate supplement `contact` archive (SHA-256 6f9429941ab6586621320d9947b5e93454b34c49e6e9b140e34f0160d609c2e3, 593 files), unchanged. Its four copied curves are byte-identical to those in `capsule/`. Replay with `python contact/contact_export.py --replay contact` (NumPy only). The lead's isolated replay passed and refused a contact value altered by 1 eV. Compute: 4.9 core-min.

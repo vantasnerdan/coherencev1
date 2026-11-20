@@ -1,0 +1,69 @@
+{
+  "actual_kpoints": null,
+  "backend": "analytic-empty-vacuum",
+  "cell_A": [
+    [
+      10.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      10.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      10.0
+    ]
+  ],
+  "charge": 0,
+  "electrons": 0.0,
+  "energy": {
+    "free_energy_eV": 0.0,
+    "internal_energy_eV": 0.0,
+    "minus_TS_eV": 0.0
+  },
+  "nbands": 0,
+  "occupation_width_eV": 0.1,
+  "positions_A": [],
+  "realspace_shape": null,
+  "reference": "Exact empty neutral vacuum at this grid: no Native SCF or GPW claimed.",
+  "scf_converged": false,
+  "schema": "hydride-native-state-v1",
+  "setup_valence": {},
+  "setups": {
+    "H": "ae"
+  },
+  "specification": {
+    "box_A": 10,
+    "case": "G",
+    "force_tolerance_eV_A": 0.1,
+    "h_A": 0.16,
+    "ionic_steps": 20,
+    "kmesh": [
+      1,
+      1,
+      1
+    ],
+    "method": {
+      "BO_H_setup": "ae",
+      "Hae_alpha1_Bohr_m2": 10,
+      "Li_setup": "default_1valence",
+      "contact_He_setup": "HaeZ2",
+      "energy_convention": "internal=free-minus-negativeTS",
+      "geometry_H_setup": "standard_PAW",
+      "occupation_width_eV": 0.1,
+      "spinpol": false,
+      "xc": "PBE"
+    },
+    "nband_padding": 4,
+    "repeat_primitive": 1,
+    "schema": "hydride-specification-v1",
+    "volume_source": null
+  },
+  "spinpol": false,
+  "symbols": [],
+  "xc": "PBE"
+}

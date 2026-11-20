@@ -1,0 +1,285 @@
+{
+  "actual_kpoints": 1,
+  "backend": "gpaw-native",
+  "cell_A": [
+    [
+      0.0,
+      4.02866747229688,
+      4.02866747229688
+    ],
+    [
+      4.02866747229688,
+      0.0,
+      4.02866747229688
+    ],
+    [
+      4.02866747229688,
+      4.02866747229688,
+      0.0
+    ]
+  ],
+  "charge": 1,
+  "electrons": 16.0,
+  "energy": {
+    "free_energy_eV": -207.73400009878227,
+    "internal_energy_eV": -207.73392697964888,
+    "minus_TS_eV": -7.311913335491462e-05
+  },
+  "log": {
+    "bytes": 15336,
+    "path": "states/occupied-probe-He.txt",
+    "sha256": "e798f39b1a9b9587d536552e5cd62c8c390c89a40848d271203cba63b22551a5"
+  },
+  "masses_u": [
+    6.0151228874,
+    4.02820355624,
+    6.0151228874,
+    2.01410177812,
+    6.0151228874,
+    2.01410177812,
+    6.0151228874,
+    2.01410177812,
+    6.0151228874,
+    2.01410177812,
+    6.0151228874,
+    2.01410177812,
+    6.0151228874,
+    2.01410177812,
+    6.0151228874,
+    2.01410177812
+  ],
+  "nbands": 24,
+  "occupation_width_eV": 0.1,
+  "positions_A": [
+    [
+      -1.9531333022900028e-28,
+      7.83654346385769e-18,
+      5.715158423526139e-21
+    ],
+    [
+      2.01433373614844,
+      1.1673464910447805e-20,
+      5.4952540871213985e-21
+    ],
+    [
+      2.01433373614844,
+      2.01433373614844,
+      5.715158423526139e-21
+    ],
+    [
+      4.02866747229688,
+      2.01433373614844,
+      5.4952540871213985e-21
+    ],
+    [
+      2.01433373614844,
+      7.83654346385769e-18,
+      2.01433373614844
+    ],
+    [
+      4.02866747229688,
+      1.1673464910447805e-20,
+      2.01433373614844
+    ],
+    [
+      4.02866747229688,
+      2.01433373614844,
+      2.01433373614844
+    ],
+    [
+      6.04300120844532,
+      2.01433373614844,
+      2.01433373614844
+    ],
+    [
+      -1.9531333022900028e-28,
+      2.01433373614844,
+      2.01433373614844
+    ],
+    [
+      2.01433373614844,
+      2.01433373614844,
+      2.01433373614844
+    ],
+    [
+      2.01433373614844,
+      4.02866747229688,
+      2.01433373614844
+    ],
+    [
+      4.02866747229688,
+      4.02866747229688,
+      2.01433373614844
+    ],
+    [
+      2.01433373614844,
+      2.01433373614844,
+      4.02866747229688
+    ],
+    [
+      4.02866747229688,
+      2.01433373614844,
+      4.02866747229688
+    ],
+    [
+      4.02866747229688,
+      4.02866747229688,
+      4.02866747229688
+    ],
+    [
+      6.04300120844532,
+      4.02866747229688,
+      4.02866747229688
+    ]
+  ],
+  "process_cpu_s": 18.493111018,
+  "realspace_shape": [
+    28,
+    28,
+    28
+  ],
+  "recovery": "raw converged energies/geometry/log only; no GPW serialization or wavefunction restart claimed",
+  "scf_converged": true,
+  "scf_iterations": 28,
+  "schema": "hydride-native-state-v1",
+  "setup_valence": {
+    "H": 1.0,
+    "He": 2.0,
+    "Li": 1.0
+  },
+  "setups": {
+    "H": "ae",
+    "He": {
+      "Delta0": -0.5641895835477563,
+      "E": 0.0,
+      "M": -5.046265044040321,
+      "M_scale": 4,
+      "Nc": 0,
+      "Nv": 2,
+      "Z": 2,
+      "alpha1": 10.0,
+      "alpha2": 300.0,
+      "ghat": "unchanged normalized alpha1 Gaussian",
+      "initial_guess": "normalized real hydrogenic Z=2 1s; smooth 8-Bohr cutoff",
+      "name": "HaeZ2",
+      "ni": 0,
+      "occupation": [
+        2.0
+      ],
+      "public_path": "prebuilt BaseSetup -> setups[He] -> create_setup(setupdata); no build method",
+      "source": {
+        "ae": {
+          "bytes": 2348,
+          "path": "operator-source/ae.py",
+          "sha256": "d6daba8aa25bbeeb716c7c9a3a3c7ec67fd1b56673550b523f308400ad8064cc"
+        },
+        "basis_data": {
+          "bytes": 13250,
+          "path": "operator-source/basis_data.py",
+          "sha256": "3efd73ceff4ebed33b01d08c5602cc6aa634f13ca6554c97a7acbf3cb2ccbc86"
+        },
+        "density": {
+          "bytes": 31538,
+          "path": "operator-source/density.py",
+          "sha256": "102657fa7dc345a2ceb3d97b777e886b552abe040bb79a6ff2c7c622cbb69c94"
+        },
+        "hamiltonian": {
+          "bytes": 30840,
+          "path": "operator-source/hamiltonian.py",
+          "sha256": "8526f7ccd2522ded88c746e4f5e4f4c7109dd67489850edf02d7f76207f3d348"
+        },
+        "setup": {
+          "bytes": 57201,
+          "path": "operator-source/setup.py",
+          "sha256": "ac566b134823bf164336fd3404288fcf698c892d081047cd5e2663b070089bb2"
+        }
+      },
+      "type": "all-electron",
+      "vbar_scale": 2
+    }
+  },
+  "specification": {
+    "case": "F",
+    "force_tolerance_eV_A": 0.1,
+    "h_A": 0.16,
+    "ionic_steps": 20,
+    "kmesh": [
+      1,
+      1,
+      1
+    ],
+    "method": {
+      "BO_H_setup": "ae",
+      "Hae_alpha1_Bohr_m2": 10,
+      "Li_setup": "default_1valence",
+      "contact_He_setup": "HaeZ2",
+      "energy_convention": "internal=free-minus-negativeTS",
+      "geometry_H_setup": "standard_PAW",
+      "occupation_width_eV": 0.1,
+      "spinpol": false,
+      "xc": "PBE"
+    },
+    "nband_padding": 16,
+    "primitive_cell_A": [
+      [
+        0,
+        2.01433373614844,
+        2.01433373614844
+      ],
+      [
+        2.01433373614844,
+        0,
+        2.01433373614844
+      ],
+      [
+        2.01433373614844,
+        2.01433373614844,
+        0
+      ]
+    ],
+    "primitive_positions_A": [
+      [
+        -1.9531333022900028e-28,
+        7.83654346385769e-18,
+        5.715158423526139e-21
+      ],
+      [
+        2.01433373614844,
+        1.1673464910447805e-20,
+        5.4952540871213985e-21
+      ]
+    ],
+    "primitive_symbols": [
+      "Li",
+      "H"
+    ],
+    "repeat_primitive": 2,
+    "schema": "hydride-specification-v1",
+    "volume_source": {
+      "bytes": 3075,
+      "path": "g6-gap-LiD-ground-original.json",
+      "sha256": "01e4b1b4022b9d540a581f5e270262c1177a6b43f946f97a783cf71444830d4e"
+    }
+  },
+  "spinpol": false,
+  "symbols": [
+    "Li",
+    "He",
+    "Li",
+    "H",
+    "Li",
+    "H",
+    "Li",
+    "H",
+    "Li",
+    "H",
+    "Li",
+    "H",
+    "Li",
+    "H",
+    "Li",
+    "H"
+  ],
+  "wavefunction_predictor": "NullWfsMover",
+  "xc": "PBE"
+}

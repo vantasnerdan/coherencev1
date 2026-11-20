@@ -1,0 +1,163 @@
+{
+  "bands": {
+    "bytes": 3617,
+    "path": "bands.npz",
+    "sha256": "4a13df3b34e60ba884b513e0b2b3faf9a9ceccaa4fab3170f8965dfd7084cca5"
+  },
+  "cbm_eV": 2.757346747091357,
+  "cell_A": [
+    [
+      0.0,
+      2.01433373614844,
+      2.01433373614844
+    ],
+    [
+      2.01433373614844,
+      0.0,
+      2.01433373614844
+    ],
+    [
+      2.01433373614844,
+      2.01433373614844,
+      0.0
+    ]
+  ],
+  "direct_KS_gap_eV": 2.9613293302845785,
+  "fermi_eV": 1.2766820819490676,
+  "forces_eV_A": [
+    [
+      0.0,
+      -3.245188671466573e-28,
+      -5.915708515694274e-28
+    ],
+    [
+      0.0,
+      0.0,
+      0.0
+    ]
+  ],
+  "gpw": {
+    "bytes": 2777014,
+    "path": "ground.gpw",
+    "sha256": "772487ac2e6ff994ad9c6b11529168bd6cd31fdba53e4daf7bb2dbe13bfb7a25"
+  },
+  "highest_saved_band_min_above_VBM_eV": 97.45598448844707,
+  "indirect_KS_gap_eV": 2.9613293302845785,
+  "initial_geometry": {
+    "cell_A": [
+      [
+        0.0,
+        2.04,
+        2.04
+      ],
+      [
+        2.04,
+        0.0,
+        2.04
+      ],
+      [
+        2.04,
+        2.04,
+        0.0
+      ]
+    ],
+    "masses_u": [
+      6.0151228874,
+      2.01410177812
+    ],
+    "positions_A": [
+      [
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        2.04,
+        0.0,
+        0.0
+      ]
+    ],
+    "symbols": [
+      "Li",
+      "H"
+    ]
+  },
+  "interpretation": "Relaxed ordered PBE phase; KS gap not optical quasiparticle gap; no scissor",
+  "neutral_valence_electrons": 2,
+  "number_ibz_kpoints": 8,
+  "occupied_band_count": 1,
+  "positions_A": [
+    [
+      -1.9531333022900028e-28,
+      7.83654346385769e-18,
+      5.715158423526139e-21
+    ],
+    [
+      2.01433373614844,
+      1.1673464910447805e-20,
+      5.4952540871213985e-21
+    ]
+  ],
+  "relaxation": {
+    "forces_eV_A": [
+      [
+        0.0,
+        -3.245188671466573e-28,
+        -5.915708515694274e-28
+      ],
+      [
+        0.0,
+        0.0,
+        0.0
+      ]
+    ],
+    "interpretation": "Stationary ordered phase; no global phase or phonon stability claim",
+    "mode": "hydrostatic",
+    "relaxed": true,
+    "settings": {
+      "force_tolerance_eV_A": 0.02,
+      "max_steps": 25,
+      "mode": "hydrostatic",
+      "stress_tolerance_eV_A3": 0.0005
+    },
+    "steps": 2,
+    "stress_eV_A3": [
+      -0.000152412462809067,
+      -0.000152412462809067,
+      -0.0001524124628090666,
+      -3.318228491948615e-18,
+      4.1477856149357687e-19,
+      4.147785614935769e-18
+    ]
+  },
+  "settings": {
+    "ecut_eV": 500,
+    "kmesh": [
+      4,
+      4,
+      4
+    ],
+    "occupation_width_eV": 0.01,
+    "saved_bands": 48,
+    "scf_bands": 8
+  },
+  "stress_eV_A3": [
+    -0.000152412462809067,
+    -0.000152412462809067,
+    -0.0001524124628090666,
+    -3.318228491948615e-18,
+    4.1477856149357687e-19,
+    4.147785614935769e-18
+  ],
+  "timing": {
+    "affinity": [
+      9
+    ],
+    "cpu_s": 9.644841157,
+    "own_peak_rss_kB": 209712,
+    "wall_s": 9.662223584018648
+  },
+  "total_energy_eV": -6.085008926208106,
+  "vbm_eV": -0.2039825831932218,
+  "volume_A3": 16.346481029370203
+}
