@@ -4,7 +4,7 @@ Lump 1 of pass 6. The beam model shifts the collision energy by one fitted const
 
 ## What was run
 
-- Real-time TDDFT (GPAW) of one deuteron at 2 keV lab moving head-on along [100] toward an occupied octahedral D site in relaxed PdD. A matched run aims at the same site with its D removed. The difference between the two runs is the target-conditioned interaction, and the vacant run gives the drag.
+- Real-time TDDFT (GPAW) of one deuteron at 2 keV lab moving head-on along [110] toward an occupied octahedral D site in relaxed PdD. A matched run aims at the same site with its D removed. The difference between the two runs is the target-conditioned interaction, and the vacant run gives the drag.
 - Born-Oppenheimer reference states (electrons relaxed at each frozen position) at seven separations R = 0.1, 0.2, 0.3, 0.4, 0.5, 1.0 and 1.6 A, for both the occupied and the vacant site.
 - Two lattice states. The **baseline** is relaxed PdD. In the **displaced** state, every D (the struck target included) is shifted in step by 0.0768 A along [100], with Pd fixed. This is a frozen snapshot of the collective mode at the amplitude the lattice runs give for cold pumped PdD (`g3_lattice/`, `g6_couple/`).
 - Lowering is reported as positive: the bare Coulomb repulsion C/R minus the computed pair interaction V_pair. V_pair = E(probe, occupied) − E(probe, vacant) − E(host, occupied) + E(host, vacant), mapped from the periodic cell to an isolated pair.

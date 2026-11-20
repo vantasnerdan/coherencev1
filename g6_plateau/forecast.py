@@ -117,9 +117,12 @@ def uniform_bulk_fit():
     return min((fit for fit in data if fit['cand']=='bulk 2.5-6.5'), key=lambda fit: fit['chi2'])
 
 
-def forecast(lattice, out):
+def forecast(lattice, collision, out):
     fits = bestfits()
     bulk = uniform_bulk_fit()
+    near = collision['contrast_by_R'][0]
+    sensitivity = {r['E_lab_Dplus_keV']: r['hypothetical_yield_ratio']
+                   for r in collision['counterfactual']['yield_factors']}
     rows = []
     parity = []
     column = reference().profiles
@@ -137,13 +140,21 @@ def forecast(lattice, out):
             # Two independent LiD questions. Never imply a measured LiD U or sheet.
             li_transfer = projected_yield(e, lid_column, u, candidate, params, meas)
             li_unscreened = projected_yield(e, lid_column, 0., candidate, zeros, meas)
+            snapshot = cause == 'lattice'
             rows.append(dict(cause=cause, E_lab_Dplus_keV=2*e, E_cm_nominal_DD_keV=e,
                              u_PdD_bulk_keV=u, source_fit_chi2=fit['chi2'], source_fit_meas=fit['meas'],
                              PdD_DD_events_per_true_C=dd, PdT_DT_events_per_true_C=dt,
                              DT_over_DD_same_lab=dt/dd,
                              LiD_over_PdD_transfer_U_no_LiD_sheet=li_transfer/dd,
                              LiD_over_PdD_zero_U_no_LiD_sheet=li_unscreened/dd,
-                             DD_resonance_over_Bosch_Hale=dd/dd_bh))
+                             DD_resonance_over_Bosch_Hale=dd/dd_bh,
+                             lattice_collision_snapshot=('g6_couple/collision_projection.json' if snapshot else None),
+                             lattice_snapshot_BO_lowering_change_eV_at_0p1A=(
+                                 near['delta_BO_lowering_eV'] if snapshot else None),
+                             lattice_snapshot_encounter_work_change_eV_at_0p1A=(
+                                 near['delta_encounter_work_eV'] if snapshot else None),
+                             lattice_snapshot_hypothetical_rigid_shift_DDp_yield_ratio=(
+                                 sensitivity.get(2*e) if snapshot else None)))
             if cause in fits:
                 ref = 0.
                 for ch in ('p', 'n'):
@@ -208,8 +219,9 @@ def isotope_discriminator(forecasts):
 
 def main():
     lattice = json.loads((ROOT/'g6_couple/response.json').read_text())
+    collision = json.loads((ROOT/'g6_couple/collision_projection.json').read_text())
     forecasts = HERE/'forecasts.csv'
-    status = forecast(lattice, forecasts)
+    status = forecast(lattice, collision, forecasts)
     write_csv(HERE/'discriminators.csv', [*discriminators(lattice), isotope_discriminator(forecasts)])
     print(json.dumps(status, indent=2))
 

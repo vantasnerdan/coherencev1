@@ -2,7 +2,7 @@
 
 ## Levers and present part-(d) result
 
-The new axis is the **joint target displacement/velocity distribution**, not a multiplier by the number of coherent sites. The material-facing levers are relative (not common-mode) displacement, target velocity along the beam, effective charge/response spectral weight, and loss per occupied site. The electronic displacement response remains open.
+The new axis is the **joint target displacement/velocity distribution**, not a multiplier by the number of coherent sites. Relevant levers are D displacement relative to the Pd host, relative pair motion, target velocity along the beam, and loss per occupied site. The paired electronic result below tests one frozen displacement, not a prepared locked state.
 
 For the filled PdD geometry, the conditional screened point-charge spectator calculation gives `|delta U| <= 0.0639229 eV` **only if every site's instantaneous displacement is bounded by 0.0432 Angstrom**. An RMS is not such a bound. Pure uniform Gamma displacement of all D, including the struck target, gives exactly zero relative spectator change. The 0.0639 eV envelope is not an electronic-polarization bound and is not a measured locked-minus-unlocked screening shift.
 
@@ -34,13 +34,35 @@ The linear ionic benchmark saturates with domain size; **no finite domain reache
 
 | Cause | Size for beam fit | Near-surface D x50 | D2+ current fraction 0.85 | Half current | Distinctive signature |
 |---|---|---|---|---|---|
-| Lattice state | Ionic spectator envelope plus **open electronic term**; equal-pole linear contrast zero, full ionic benchmark above | Change volumetric D only in top 10 nm, retain outer sheet; state contribution also follows loading/coherence | Change constituent energies and count two D per molecular charge; no independent state multiplier for fixed pump/T | Frozen physical yield/C unchanged; a beam-maintained state may relax and needs pump/transport history | Onset/loss, hysteresis or relaxation correlated with loading, temperature, pump threshold and phase-correlation length, rather than instantaneous current alone |
+| Lattice state | Fixed-pole ionic contrast zero. For the imposed PdD [100] shift, BO lowering changes by −0.687 eV and encounter work by +0.675 eV at R=0.1 Å. Neither quantity is an inferred rigid beam shift. | Change volumetric D only in top 10 nm, retain outer sheet; state contribution also follows loading/coherence | Change constituent energies and count two D per molecular charge; no independent state multiplier for fixed pump/T | Frozen physical yield/C unchanged; a beam-maintained state may relax and needs pump/transport history | Onset/loss, hysteresis or relaxation correlated with loading, temperature, pump threshold and phase-correlation length, rather than instantaneous current alone |
 
 Machine-readable rows are `response.json.projections`, keyed by `intervention` and `E_lab_keV`; `fourth_cause` records the state signature and counterfactual missingness. No DT beam or LiD lattice response has been computed here. The approximate same-D ionic benchmark `delta_U_eV ~ 0.002588/E_lab_keV` can be used only as a labelled fixed-response counterfactual, not as an isotope-recalculated prediction. The DD threshold interference is not transferred to DT.
 
-The collision handoff requests a **paired frozen electronic calculation**: undisplaced PdD versus an imposed Gamma, x-polarized hydrogen-sublattice displacement, **0.0768 Angstrom per D**, with the metal host fixed, at **2 keV lab**. This is the updated primary intervention, rounded from the cold pumped PdD record maximum. The original **0.0432 Angstrom** intervention remains a budget-conditional linearity check; the archived preliminary part-(d) result refers to that original control. This shape is taken from the corrected NiH Gamma mode; it is not a verified uniform locked PdD domain. Include the struck target in the common displacement and reference its collision coordinate consistently, so moving the target does not fake screening. The displacement-induced electronic difference must be reported separately from the ionic spectator term. The parent owns that handoff; this directory does not run or fabricate it.
+### Matched host-electronic snapshot
 
-Forward: the paired calculation is in `g6_collision/`. At 0.0768 A the displaced cell changes the lowering by −0.69 eV at R 0.1 A, and by −0.01 to −1.07 eV over R 0.1-1.6 A.
+`collision_projection.json` carries all seven target-relative radii from the paired `g6_collision` calculation: Pd fixed, all D shifted by +0.0768 Å along [100], head-on [110] deuteron at 2 keV lab. The displacement was chosen from the cold pumped PdD maximum; it does not establish uniform locking. The 0.0432 Å spectator scenario is a separate model, not a second electronic data point.
+
+| R (Å) | Displaced − baseline BO lowering (eV) | Displaced − baseline anchored encounter work (eV) |
+|---:|---:|---:|
+| 0.1 | −0.68714 | +0.67548 |
+| 0.2 | −0.71858 | +0.71509 |
+| 0.3 | −1.06693 | +1.02346 |
+| 0.4 | −0.13915 | +0.18789 |
+| 0.5 | −0.18612 | +0.21885 |
+| 1.0 | −0.02480 | +0.02979 |
+| 1.6 | −0.00757 | +0.00757 |
+
+BO lowering is `C/R − V_pair`. The separate beam observable is work supplied to the system, so more work means less projectile kinetic energy at a matched radius, not a positive lowering. Encounter work contains encounter excitation; do not add it again to bulk drag or use it for pair contact. Vacant-run loss is reported separately in eV/Å over the sampled path. Both BO curves were admitted using representative grid and cell controls (0.45 and 0.25 eV shifts at 0.1 Å); the displacement change is below the 5 eV qualification target. The production encounter excitation is not time-step checked. The point estimates give no resolved enhancement.
+
+**Yield sensitivity, not a curve-derived yield.** For monoatomic D from 0.5 to 2.5 keV lab, the largest bare entrance turning radius is 0.0576 Å, below the 0.1 Å lower sample. The native WKB consumer also needs the 4 fm inner boundary. The single encounter does not describe other local slowing energies, oblique impact, or a prepared bound pair. To show the scale in the existing beam consumer, assume a rigid −0.67548 eV change in the 40 eV Eq. 7 background at every local energy and hold the transported 2 keV PdD profile, sheet, stopping and beam species fixed. The physical D(d,p)T yield/C ratios at 0.5, 1, 1.5, 2 and 2.5 keV lab are **0.93590, 0.97428, 0.98536, 0.99026, 0.99292**. This is an explicitly hypothetical sensitivity, not an estimated yield for the simulated path, an uncertainty bound, or a refit parameter.
+
+**Amplitude target.** The lever is coherent D displacement relative to Pd. At 0.1 Å the signed secant in the beam lowering convention is −8.80 eV/Å. Achieving +0.5 to +2 keV at 0.0768 Å would require a **positive** effective slope of 6.51–26.0 keV/Å; even granting 0.72 Å of coherent motion would require 0.694–2.78 keV/Å. The observed 0.72 Å is a local warm-record maximum, not a coherent amplitude. Merely reversing the observed slope's sign while retaining its magnitude would formally require 57–227 Å, outside this lattice and not a valid extrapolation. A different sign and magnitude of electron response, not an amplitude rescaling of this snapshot, is needed.
+
+Regenerate from the repository root using the committed collision sources:
+
+```sh
+python -m g6_couple.collision_projection g6_collision
+```
 
 ## Settled matched-case results: (a)–(c)
 
@@ -99,7 +121,7 @@ The original .0432 Angstrom cap does not bound these pumped records. `record_lim
 
 For NiH, .541 Angstrom is only a shared screening sensitivity, since no NiH screening length is identified here: its cold on-record envelope is .445309 eV under that scenario, **not a material bound**. Actual sampled nearest-neighbour relative displacements remain much smaller than twice global site maxima. A pure common Gamma component cancels exactly.
 
-For the updated **imposed** .0768 Angstrom PdD snapshot, the same spectator scenario gives **.122996 eV**; the .0432 control gives .0639229 eV. Both are recomputed, not linearly scaled. No electronic-response extrapolation is allowed before a returned paired calculation and, for amplitude scaling, a returned linearity comparison.
+For the imposed 0.0768 Å PdD snapshot, the spectator scenario gives **0.122996 eV**; at 0.0432 Å it gives 0.0639229 eV. Both are recomputed under the spectator model, not scaled from one another or combined with the paired electronic result. No electronic amplitude extrapolation follows from one imposed displacement.
 
 
 ## Reduced estimators and exact conventions
@@ -185,10 +207,10 @@ Run serially. The native corrected `g3_lattice/rerun/part2/lattice.py` observer 
 | Transported profiles and adsorbed sheet | `g4_beam.merit.api.reference` | Unchanged within every motion/screening contrast; no refit |
 | Beam/reaction/stopping semantics | actual `forward.consumer`, `forward.model` | Lab/CM, charge fractions, two molecular constituents and branch conventions retained |
 | Conditional quantum contact | `g6_pairlaw/script/pairlaw.py` | Explicit potential, normalized state and source hash; not inferred from classical minima |
-| Displacement-induced electronic response | paired collision snapshot | Open; no fabricated value |
+| Displacement-induced electronic response | `g6_collision` paired frozen snapshot | BO and encounter-work differences on seven radii only; no prepared state or calibrated beam yield |
 
 ## Three largest omissions
 
-1. **Displacement-induced host electronic/nonlinear collision-frequency response**, including changed effective charge or spectral weight: requires the paired frozen electronic calculation.
+1. **Displacement-induced electronic response outside the single frozen snapshot**, including short radii, other paths and incident speeds, nonlinear amplitude dependence and the significance of nonadiabatic changes.
 2. **Prepared many-body quantum pair density/contact**, isotope-specific state and bound-state nuclear threshold-resonance matrix element: a classical closest-approach record does not supply these.
 3. **Pump delivery/efficiency and backreaction, long-time thermal/damage/transport evolution, and high-barrier rare tails** beyond short finite periodic classical records.
