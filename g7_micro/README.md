@@ -372,3 +372,5 @@ What it means, in plain terms:
 - **Cold-rolled Pd points to more strong sites.** If each site type binds and screens the same way in both foils, lower loading alone raises the strong-site response by at most 1.5 times. The hard and soft foils differ by 16-20 times in that response (F+D data), so the hard foil would hold more strong sites, as cold work makes. The two foils also differ in source, preparation and deuterium loss, so cold work is not isolated.
 
 These keV values are effective shifts in the beam model, not the static lowering at 0.1 A. Comparing a computed site with them needs the barrier-penetration (action) calculation along the computed curve, not the 0.1 A value alone. Part (b), the DFT of the named site types, follows `g7_hydride/`.
+
+First stage of part (b): `zr_calibration/`. An interstitial oxygen atom beside the target deuteron in ZrD2 changes the static lowering by less than 1 eV. Oxygen as a neighbour atom is not a strong site.

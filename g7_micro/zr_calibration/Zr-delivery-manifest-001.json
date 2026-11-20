@@ -1,0 +1,171 @@
+{
+  "schema": "micro-Zr-private-delivery-v1",
+  "draft_id": 453206951,
+  "release_tag": "g7_micro-zr-calibration-20261120",
+  "published": false,
+  "authority": "entry_2782",
+  "source_checkpoint": "ae619f4bb2b6161c181d7d08278b9a84438275f2",
+  "full_archive": {
+    "filename": "zr-calibration-capsule-001.tar.gz",
+    "bytes": 3313597101,
+    "sha256": "3686cd12f43c3867dc2ab3623fb593f9d90009231c82cb6226e43d73b478829d"
+  },
+  "archive_parts_in_concatenation_order": [
+    {
+      "name": "zr-calibration-capsule-001.tar.gz.part-000",
+      "sha256": "88e095fcf8e327e74c4e8b07d61d36f95754b380130e5d1253355f0dbf0e5f4e",
+      "bytes": 1572864000
+    },
+    {
+      "name": "zr-calibration-capsule-001.tar.gz.part-001",
+      "sha256": "52c54e9bfb4894c8065bcf302e80ce8ec6115558c41d87b7f10377007ed6a7c9",
+      "bytes": 1572864000
+    },
+    {
+      "name": "zr-calibration-capsule-001.tar.gz.part-002",
+      "sha256": "4360ebc647f121076f7477a766754000f22809a2ba991644fcc60fab03a10202",
+      "bytes": 167869101
+    }
+  ],
+  "reassembly": "Concatenate the three part files in listed order; verify the full archive SHA256 before extracting.",
+  "extracted_directory": "zr-base-hk-001",
+  "replay_command": "python export.py replay .",
+  "roles": [
+    "plain",
+    "oxygen",
+    "plain-h",
+    "oxygen-h",
+    "plain-k",
+    "oxygen-k"
+  ],
+  "case_bindings": [
+    {
+      "bytes": 233266,
+      "path": "sources/oxygen/case.json",
+      "sha256": "07f8891e6fd1c08235acf9cec4be1d21a53b270ca34595f7f8344eda353176bb"
+    },
+    {
+      "bytes": 112934,
+      "path": "sources/oxygen-h/case.json",
+      "sha256": "0753aa482a9a85797a89dd0a3c6e559656beb84b5109b9f4c959ef5e79f36eed"
+    },
+    {
+      "bytes": 112941,
+      "path": "sources/oxygen-k/case.json",
+      "sha256": "e95b3d2e467cf95ea47f64ce908f6e8b8aeb9f9d117e73c45acd4ac9e316d261"
+    },
+    {
+      "bytes": 217403,
+      "path": "sources/plain/case.json",
+      "sha256": "d89047f97403e4515d4ae0ea70a1821aeddff60ba74ecb7196ad89559411e514"
+    },
+    {
+      "bytes": 104995,
+      "path": "sources/plain-h/case.json",
+      "sha256": "4a90554c5419c672199a7c7802e8fbc59cfc7af76b8571cb7072285e60005137"
+    },
+    {
+      "bytes": 104989,
+      "path": "sources/plain-k/case.json",
+      "sha256": "24adb814611012128e1b7ba5f03762bfb4480ff928f5c2ddb3144bedf7158b23"
+    }
+  ],
+  "small_assets": [
+    {
+      "name": "plain_q1_BO_pair.json",
+      "capsule_path": "curves/plain_q1_BO_pair.json",
+      "bytes": 35572,
+      "sha256": "c12284f83bee48af91da71b4b88538a90dde3b0f3cea3421f324118ad5e7eeba"
+    },
+    {
+      "name": "oxygen_q1_BO_pair.json",
+      "capsule_path": "curves/oxygen_q1_BO_pair.json",
+      "bytes": 38712,
+      "sha256": "8f25da98b48e66a96dd9bf8d4c6c61c42354c58dce883983c0119b613b2a03f9"
+    },
+    {
+      "name": "plain_q1_contact.json",
+      "capsule_path": "plain_q1_contact.json",
+      "bytes": 37394,
+      "sha256": "91485d85bc07a7a93bbee4e015ed96ef67af84d839bcf992e537b6fe43410976"
+    },
+    {
+      "name": "oxygen_q1_contact.json",
+      "capsule_path": "oxygen_q1_contact.json",
+      "bytes": 40396,
+      "sha256": "a9e9311f98f2b063bccbf7d86f9aa4b29150da58555d1580472c9cf0762ee9c4"
+    },
+    {
+      "name": "paired-comparisons.json",
+      "capsule_path": "paired-comparisons.json",
+      "bytes": 3100,
+      "sha256": "52f6fdb510bf10c88b067f9d30ccb36e29426b333ef66b95a12e04fcefa13950"
+    },
+    {
+      "name": "README.md",
+      "capsule_path": "README.md",
+      "bytes": 5088,
+      "sha256": "c5c1d224c09f0419f1aed0f65b952bd6643c559a92be0bf6f9f9f2a2f6d1644d"
+    },
+    {
+      "name": "Zr-actual-archive-NumPy-proof.json",
+      "capsule_path": null,
+      "bytes": 4332,
+      "sha256": "3a54ffd8b434e652cdc06bc8a99ad7d21aeb6170663a27cd029bedfc83a44e84"
+    },
+    {
+      "name": "Zr-Ne-W0-byte-refusals.json",
+      "capsule_path": null,
+      "bytes": 2257,
+      "sha256": "9a0c08e60cafac369ecb50d4a8518e085417916b1b9619252b933599991e06a3"
+    },
+    {
+      "name": "Zr-retention-negative-proof.json",
+      "capsule_path": null,
+      "bytes": 1192,
+      "sha256": "aede8c0d8efb50bfcf6b886a47101e48bf4181693830cd67603e2a446f73b23d"
+    },
+    {
+      "name": "Zr-capsule-manifest.json",
+      "capsule_path": "manifest.json",
+      "bytes": 170119,
+      "sha256": "aeffd10816a9ad4538e7801af4232c2ddecc157525a7a1e3f215297e1efd7f73"
+    },
+    {
+      "name": "Zr-scope-authority-entry_2782.json",
+      "capsule_path": null,
+      "bytes": 1614,
+      "sha256": "87409409d880cef5a24980d360a93b2b0b99ed1b770fa2a85af6950a1f3235de"
+    },
+    {
+      "name": "Zr-clean-cell-contact-failure.json",
+      "capsule_path": null,
+      "bytes": 3057,
+      "sha256": "838eed8e59a663d1c246cd1aaa14e6b52329defd40451d49bf976be584f10b88"
+    },
+    {
+      "name": "Zr-ordinary-CLI-proof.json",
+      "capsule_path": null,
+      "bytes": 3621,
+      "sha256": "436e43ff814ecccb78a28e605bea1294aaf61e5a4fc64523c0900fe61a52423d"
+    },
+    {
+      "name": "Zr-README-amendment.json",
+      "capsule_path": null,
+      "bytes": 633,
+      "sha256": "8f56e84161b64c79b64bd7e57fd410ac3a41f1a47a603b697c69dfdb2cb0d0dd"
+    }
+  ],
+  "small_asset_layout": "Place the two *_q1_BO_pair.json files under curves/; contacts and paired-comparisons.json are at the capsule root.",
+  "actual_archive_NumPy_proof": {
+    "bytes": 4332,
+    "sha256": "3a54ffd8b434e652cdc06bc8a99ad7d21aeb6170663a27cd029bedfc83a44e84"
+  },
+  "paired_hk_qualified": true,
+  "paired_cell_qualified": false,
+  "omitted_O_cell": "Geometry step2fmax0.2856681470219027eV/A; explicit Axiom2782 omission, no new Native.",
+  "omitted_clean_cell": "United-He SCF failed; four raw finite-R legs preserved, current exporter requires W0 and no rework was requested.",
+  "known_Zr_Native_CPU_ns": "33761005049000",
+  "whole_deadline_utc": "2026-11-20T23:00:00Z",
+  "part_b_status": "open"
+}

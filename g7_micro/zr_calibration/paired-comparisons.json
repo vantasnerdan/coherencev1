@@ -1,0 +1,82 @@
+{
+  "cell_limit": "O large-cell check omitted by Axiom2782 after geometry cost stop; no O finite-cell uncertainty bound.",
+  "changes": {
+    "h": {
+      "R01_lowering": {
+        "absolute_change_eV": 0.054002407680286524,
+        "base_contrast_eV": -0.5877151759855224,
+        "control_contrast_eV": -0.5337127683052358,
+        "control_minus_base_eV": 0.054002407680286524,
+        "discrimination_eV": 5.0,
+        "resolved": true
+      },
+      "signedW0": {
+        "absolute_change_eV": 1.7775639338264568,
+        "base_contrast_eV": 2.4219579805704825,
+        "control_contrast_eV": 0.6443940467440257,
+        "control_minus_base_eV": -1.7775639338264568,
+        "discrimination_eV": 5.0,
+        "resolved": true
+      }
+    },
+    "k": {
+      "R01_lowering": {
+        "absolute_change_eV": 0.5776017252761676,
+        "base_contrast_eV": -0.5877151759855224,
+        "control_contrast_eV": -0.010113450709354765,
+        "control_minus_base_eV": 0.5776017252761676,
+        "discrimination_eV": 5.0,
+        "resolved": true
+      },
+      "signedW0": {
+        "absolute_change_eV": 0.5797886489899042,
+        "base_contrast_eV": 2.4219579805704825,
+        "control_contrast_eV": 1.8421693315805783,
+        "control_minus_base_eV": -0.5797886489899042,
+        "discrimination_eV": 5.0,
+        "resolved": true
+      }
+    }
+  },
+  "clean_cell": {
+    "available": false,
+    "reason": "Not complete at this export; separate supplement if available."
+  },
+  "h_limit": "Actual h0.20 versus h0.16 at R0.1/contact on identical selected relaxed geometries.",
+  "k_limit": "Actual Gamma versus k222 at R0.1/contact; no full-curve higher-k admission.",
+  "missing_controls": [
+    "oxygen-cell"
+  ],
+  "paired_cell_qualified": false,
+  "pairs": {
+    "-h": {
+      "oxygen_R01_lowering_eV": 39.36134668302577,
+      "oxygen_minus_plain_R01_lowering_eV": -0.5337127683052358,
+      "oxygen_minus_plain_signedW0_eV": 0.6443940467440257,
+      "oxygen_signedW0_eV": -41.26140346866986,
+      "plain_R01_lowering_eV": 39.89505945133101,
+      "plain_signedW0_eV": -41.90579751541389
+    },
+    "-k": {
+      "oxygen_R01_lowering_eV": 37.37821233378207,
+      "oxygen_minus_plain_R01_lowering_eV": -0.010113450709354765,
+      "oxygen_minus_plain_signedW0_eV": 1.8421693315805783,
+      "oxygen_signedW0_eV": -38.07784262182445,
+      "plain_R01_lowering_eV": 37.38832578449143,
+      "plain_signedW0_eV": -39.92001195340503
+    },
+    "base": {
+      "oxygen_R01_lowering_eV": 38.515686841352704,
+      "oxygen_minus_plain_R01_lowering_eV": -0.5877151759855224,
+      "oxygen_minus_plain_signedW0_eV": 2.4219579805704825,
+      "oxygen_signedW0_eV": -39.23298275036063,
+      "plain_R01_lowering_eV": 39.103402017338226,
+      "plain_signedW0_eV": -41.65494073093111
+    }
+  },
+  "qualification_scope": "Axiom2782 paired h/k at R0.1/contact only",
+  "resolved": true,
+  "schema": "micro-paired-numerical-comparisons-v1",
+  "scope": "Paired O-minus-clean contrast at R0.1/contact with h/k controls; not full-curve, paired-cell or infinite-limit convergence.",
+  "threshold_eV": 5.0
+}
