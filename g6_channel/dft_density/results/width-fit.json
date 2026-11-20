@@ -1,0 +1,550 @@
+{
+  "schema": "pdd-exponential-width-fit-v1",
+  "species_order": [
+    "Pd",
+    "D"
+  ],
+  "cases": {
+    "h020": {
+      "widths_A": [
+        0.2851120368692284,
+        0.2579280987513903
+      ],
+      "widths_nm": [
+        0.028511203686922844,
+        0.025792809875139027
+      ],
+      "ratios_to_atomic_length_table": [
+        0.633582304153841,
+        0.9748273214874806
+      ],
+      "residuals": {
+        "exterior_RMS_e_A3": 0.006617121077792631,
+        "exterior_relative_RMS": 0.02062951244884207,
+        "full_plane_RMS_e_A3": 0.20783336252913934,
+        "full_plane_relative_RMS": 0.25276500054964796,
+        "model_centres_n_e_A3": [
+          0.24927344920250052,
+          0.2492734491805418,
+          0.24927344919923214,
+          0.24927344917727348,
+          0.24927344920250052,
+          0.2492734491805418,
+          0.24927344919923214,
+          0.24927344917727348
+        ],
+        "model_mean_n_e_A3": 0.6227254377786677,
+        "centre_relative_residual": [
+          0.07484591272769504,
+          0.07484592800880668,
+          0.0748459122130592,
+          0.07484592694160756,
+          0.0748459127276949,
+          0.07484592800880681,
+          0.0748459122130592,
+          0.07484592694160756
+        ]
+      },
+      "diagnostics": {
+        "multistarts": [
+          {
+            "start_A": [
+              0.15,
+              0.12
+            ],
+            "widths_A": [
+              0.2851120368692284,
+              0.2579280987513903
+            ],
+            "success": true,
+            "nfev": 11,
+            "relative_mean_square": 0.0004255767838769309,
+            "optimality": 2.979597942204198e-09
+          },
+          {
+            "start_A": [
+              0.15,
+              0.2645885
+            ],
+            "widths_A": [
+              0.2851120369088198,
+              0.25792809876618195
+            ],
+            "success": true,
+            "nfev": 11,
+            "relative_mean_square": 0.0004255767838769328,
+            "optimality": 1.5831449978011852e-06
+          },
+          {
+            "start_A": [
+              0.15,
+              0.6
+            ],
+            "widths_A": [
+              0.2851120368695752,
+              0.2579280987526054
+            ],
+            "success": true,
+            "nfev": 9,
+            "relative_mean_square": 0.00042557678387693287,
+            "optimality": 2.252070154756929e-08
+          },
+          {
+            "start_A": [
+              0.45,
+              0.12
+            ],
+            "widths_A": [
+              0.28511203684941594,
+              0.25792809868055283
+            ],
+            "success": true,
+            "nfev": 10,
+            "relative_mean_square": 0.0004255767838769334,
+            "optimality": 1.260227502355511e-06
+          },
+          {
+            "start_A": [
+              0.45,
+              0.2645885
+            ],
+            "widths_A": [
+              0.28511203686993547,
+              0.25792809875351996
+            ],
+            "success": true,
+            "nfev": 6,
+            "relative_mean_square": 0.0004255767838769336,
+            "optimality": 3.568263970934362e-08
+          },
+          {
+            "start_A": [
+              0.45,
+              0.6
+            ],
+            "widths_A": [
+              0.2851120368792202,
+              0.2579280987500668
+            ],
+            "success": true,
+            "nfev": 6,
+            "relative_mean_square": 0.00042557678387693303,
+            "optimality": 4.879152225043459e-07
+          },
+          {
+            "start_A": [
+              0.9,
+              0.12
+            ],
+            "widths_A": [
+              0.28511203687108105,
+              0.25792809875453504
+            ],
+            "success": true,
+            "nfev": 8,
+            "relative_mean_square": 0.0004255767838769326,
+            "optimality": 3.8713322319188366e-08
+          },
+          {
+            "start_A": [
+              0.9,
+              0.2645885
+            ],
+            "widths_A": [
+              0.28511203682887176,
+              0.25792809861271837
+            ],
+            "success": true,
+            "nfev": 11,
+            "relative_mean_square": 0.0004255767838769315,
+            "optimality": 2.4432613384725916e-06
+          },
+          {
+            "start_A": [
+              0.9,
+              0.6
+            ],
+            "widths_A": [
+              0.2851120368814047,
+              0.25792809875698947
+            ],
+            "success": true,
+            "nfev": 7,
+            "relative_mean_square": 0.0004255767838769345,
+            "optimality": 4.6786411342738593e-07
+          }
+        ],
+        "jacobian_log_width_singular_values": [
+          61.63830992265189,
+          28.753858331247713
+        ],
+        "jacobian_condition": 2.1436535303391833,
+        "computational_search_A": [
+          0.005,
+          20.0
+        ],
+        "near_computational_boundary": false,
+        "note": "Jacobian/multistart sensitivity is deterministic model identifiability, not a statistical or physical confidence interval."
+      },
+      "full_plane_fit_diagnostic": {
+        "widths_A": [
+          0.30916571194654374,
+          0.30534483031795584
+        ],
+        "residuals": {
+          "exterior_RMS_e_A3": 0.03639993591773609,
+          "exterior_relative_RMS": 0.11348030696794852,
+          "full_plane_RMS_e_A3": 0.19157784311303355,
+          "full_plane_relative_RMS": 0.23299518917698775,
+          "model_centres_n_e_A3": [
+            0.29714225493096547,
+            0.2971422549073551,
+            0.2971422549275131,
+            0.29714225490390256,
+            0.29714225493096547,
+            0.2971422549073551,
+            0.2971422549275131,
+            0.29714225490390256
+          ],
+          "model_mean_n_e_A3": 0.6227254377786677
+        },
+        "diagnostics": {
+          "multistarts": [
+            {
+              "start_A": [
+                0.45,
+                0.2645885
+              ],
+              "widths_A": [
+                0.30916570997879983,
+                0.3053447109534162
+              ],
+              "success": true,
+              "nfev": 10,
+              "relative_mean_square": 0.054286758179624556,
+              "optimality": 0.0005110227707944911
+            },
+            {
+              "start_A": [
+                0.2851120368692284,
+                0.2579280987513903
+              ],
+              "widths_A": [
+                0.3091657093229326,
+                0.30534467141632815
+              ],
+              "success": true,
+              "nfev": 9,
+              "relative_mean_square": 0.05428675817962664,
+              "optimality": 0.0006022420841899137
+            },
+            {
+              "start_A": [
+                0.2,
+                0.2
+              ],
+              "widths_A": [
+                0.30916571194654374,
+                0.30534483031795584
+              ],
+              "success": true,
+              "nfev": 11,
+              "relative_mean_square": 0.05428675817962034,
+              "optimality": 0.00023555012366097638
+            }
+          ],
+          "jacobian_log_width_singular_values": [
+            146.19645599362826,
+            14.470811014569069
+          ],
+          "jacobian_condition": 10.102851584920785,
+          "computational_search_A": [
+            0.005,
+            20.0
+          ],
+          "near_computational_boundary": false,
+          "note": "Jacobian/multistart sensitivity is deterministic model identifiability, not a statistical or physical confidence interval."
+        }
+      }
+    },
+    "h016": {
+      "widths_A": [
+        0.2857105825636889,
+        0.2637466961892442
+      ],
+      "widths_nm": [
+        0.02857105825636889,
+        0.02637466961892442
+      ],
+      "ratios_to_atomic_length_table": [
+        0.6349124056970865,
+        0.9968184414260037
+      ],
+      "residuals": {
+        "exterior_RMS_e_A3": 0.008028358073136791,
+        "exterior_relative_RMS": 0.025324467784248992,
+        "full_plane_RMS_e_A3": 0.20099080212571074,
+        "full_plane_relative_RMS": 0.24562216609131876,
+        "model_centres_n_e_A3": [
+          0.2513405198726416,
+          0.2513405198505825,
+          0.25134051986936,
+          0.25134051984730066,
+          0.2513405198726416,
+          0.2513405198505825,
+          0.25134051986936,
+          0.25134051984730066
+        ],
+        "model_mean_n_e_A3": 0.6227254377786677,
+        "centre_relative_residual": [
+          0.0798914496930914,
+          0.07989147451788013,
+          0.07989144940433528,
+          0.07989146505255298,
+          0.07989144969309166,
+          0.07989147451787988,
+          0.07989144940433528,
+          0.07989146505255298
+        ]
+      },
+      "diagnostics": {
+        "multistarts": [
+          {
+            "start_A": [
+              0.15,
+              0.12
+            ],
+            "widths_A": [
+              0.28571058251541676,
+              0.26374669605752793
+            ],
+            "success": true,
+            "nfev": 14,
+            "relative_mean_square": 0.0006413286685554664,
+            "optimality": 2.1483027750155e-06
+          },
+          {
+            "start_A": [
+              0.15,
+              0.2645885
+            ],
+            "widths_A": [
+              0.2857105825782573,
+              0.26374669622156444
+            ],
+            "success": true,
+            "nfev": 8,
+            "relative_mean_square": 0.0006413286685554671,
+            "optimality": 6.308071695653046e-07
+          },
+          {
+            "start_A": [
+              0.15,
+              0.6
+            ],
+            "widths_A": [
+              0.2857105825546002,
+              0.26374669619367835
+            ],
+            "success": true,
+            "nfev": 9,
+            "relative_mean_square": 0.0006413286685554672,
+            "optimality": 5.972818931944928e-08
+          },
+          {
+            "start_A": [
+              0.45,
+              0.12
+            ],
+            "widths_A": [
+              0.2857105825536257,
+              0.2637466961903611
+            ],
+            "success": true,
+            "nfev": 8,
+            "relative_mean_square": 0.0006413286685554678,
+            "optimality": 1.0634867462239023e-08
+          },
+          {
+            "start_A": [
+              0.45,
+              0.2645885
+            ],
+            "widths_A": [
+              0.2857105825565514,
+              0.2637466961998869
+            ],
+            "success": true,
+            "nfev": 6,
+            "relative_mean_square": 0.0006413286685554669,
+            "optimality": 1.4960510866454967e-07
+          },
+          {
+            "start_A": [
+              0.45,
+              0.6
+            ],
+            "widths_A": [
+              0.28571058255993936,
+              0.26374669617801944
+            ],
+            "success": true,
+            "nfev": 6,
+            "relative_mean_square": 0.0006413286685554668,
+            "optimality": 5.150430932721611e-07
+          },
+          {
+            "start_A": [
+              0.9,
+              0.12
+            ],
+            "widths_A": [
+              0.2857105825562477,
+              0.26374669619917956
+            ],
+            "success": true,
+            "nfev": 8,
+            "relative_mean_square": 0.0006413286685554666,
+            "optimality": 1.4065139771136634e-07
+          },
+          {
+            "start_A": [
+              0.9,
+              0.2645885
+            ],
+            "widths_A": [
+              0.28571058247765846,
+              0.2637466959272979
+            ],
+            "success": true,
+            "nfev": 11,
+            "relative_mean_square": 0.0006413286685554657,
+            "optimality": 4.260749064719878e-06
+          },
+          {
+            "start_A": [
+              0.9,
+              0.6
+            ],
+            "widths_A": [
+              0.2857105825636889,
+              0.2637466961892442
+            ],
+            "success": true,
+            "nfev": 7,
+            "relative_mean_square": 0.0006413286685554651,
+            "optimality": 4.983809182341026e-07
+          }
+        ],
+        "jacobian_log_width_singular_values": [
+          62.29813844907289,
+          28.097209990827224
+        ],
+        "jacobian_condition": 2.2172357493648334,
+        "computational_search_A": [
+          0.005,
+          20.0
+        ],
+        "near_computational_boundary": false,
+        "note": "Jacobian/multistart sensitivity is deterministic model identifiability, not a statistical or physical confidence interval."
+      },
+      "full_plane_fit_diagnostic": {
+        "widths_A": [
+          0.3105215869619708,
+          0.31591192563418985
+        ],
+        "residuals": {
+          "exterior_RMS_e_A3": 0.037203117031067906,
+          "exterior_relative_RMS": 0.1173526554426357,
+          "full_plane_RMS_e_A3": 0.18325926634771206,
+          "full_plane_relative_RMS": 0.2239532231354429,
+          "model_centres_n_e_A3": [
+            0.30094086270913184,
+            0.30094086268541703,
+            0.3009408627056702,
+            0.30094086268195547,
+            0.30094086270913184,
+            0.30094086268541703,
+            0.3009408627056702,
+            0.30094086268195547
+          ],
+          "model_mean_n_e_A3": 0.6227254377786677
+        },
+        "diagnostics": {
+          "multistarts": [
+            {
+              "start_A": [
+                0.45,
+                0.2645885
+              ],
+              "widths_A": [
+                0.31052158419121134,
+                0.3159117556001742
+              ],
+              "success": true,
+              "nfev": 10,
+              "relative_mean_square": 0.050155046152761194,
+              "optimality": 0.0006684519114743644
+            },
+            {
+              "start_A": [
+                0.2857105825636889,
+                0.2637466961892442
+              ],
+              "widths_A": [
+                0.3105215833554903,
+                0.31591170463220375
+              ],
+              "success": true,
+              "nfev": 9,
+              "relative_mean_square": 0.050155046152764594,
+              "optimality": 0.000772783998179572
+            },
+            {
+              "start_A": [
+                0.2,
+                0.2
+              ],
+              "widths_A": [
+                0.3105215869619708,
+                0.31591192563418985
+              ],
+              "success": true,
+              "nfev": 11,
+              "relative_mean_square": 0.050155046152753444,
+              "optimality": 0.00032028155023351533
+            }
+          ],
+          "jacobian_log_width_singular_values": [
+            146.2020539803617,
+            13.967800814144294
+          ],
+          "jacobian_condition": 10.467077525354764,
+          "computational_search_A": [
+            0.005,
+            20.0
+          ],
+          "near_computational_boundary": false,
+          "note": "Jacobian/multistart sensitivity is deterministic model identifiability, not a statistical or physical confidence interval."
+        }
+      }
+    }
+  },
+  "actual_cell_a_A": 4.134141684668574,
+  "upstream_model_cell_a_A": 4.084,
+  "h_relative_width_change": [
+    0.0020949370831480165,
+    0.02206130928623624
+  ],
+  "atomic_length_table_A": [
+    0.45,
+    0.2645885
+  ],
+  "kernel_qualification": {
+    "independent_radial_quadrature_max_error": 2.8917840344533374e-15,
+    "tolerance": 1e-09
+  },
+  "contract": "Static exp(-r/b)/(8*pi*b^3), fixed10/1valence weights; no Debye-Waller, amplitude, charge transfer or count correction. Primary fit outside Pd matching cylinders; centre predictions are extrapolations when inside those cylinders.",
+  "process_cpu_s": 1.8021620340000002,
+  "wall_s": 1.806752066127956
+}

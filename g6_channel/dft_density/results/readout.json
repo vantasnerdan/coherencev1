@@ -1,0 +1,136 @@
+{
+  "schema": "pdd-channel-density-readout-v1",
+  "cases": {
+    "h020": {
+      "native_density_binding": {
+        "bytes": 374102,
+        "sha256": "cdb94a86f6f49564eb21e148c9b1654bf0240f904dc6425fcfb2fba862bef393"
+      },
+      "grid_shape": [
+        40,
+        40,
+        40
+      ],
+      "integrated_electrons": 44.18036228667709,
+      "expected_electrons": 44,
+      "integral_difference_e": 0.18036228667708798,
+      "mean_n_e_A3": 0.6252780783225258,
+      "projected_orthocell_integrated_electrons": 88.3607245733542,
+      "centres_n_e_A3": [
+        0.23191552040227395,
+        0.23191551708469552,
+        0.23191552051027423,
+        0.23191551731192037,
+        0.23191552040227398,
+        0.2319155170846955,
+        0.23191552051027423,
+        0.23191551731192037
+      ],
+      "centres_n_without_Nyquist_e_A3": [
+        0.2344483411112816,
+        0.2344483377937024,
+        0.23444834121927294,
+        0.23444833802091825,
+        0.2344483411112816,
+        0.23444833779370233,
+        0.23444834121927294,
+        0.23444833802091825
+      ],
+      "centre_Nyquist_sensitivity_e_A3": [
+        -0.0025328207090076493,
+        -0.002532820709006872,
+        -0.002532820708998712,
+        -0.0025328207089978794,
+        -0.0025328207090076216,
+        -0.0025328207090068444,
+        -0.002532820708998712,
+        -0.0025328207089978794
+      ],
+      "outside_Pd_augmentation_samples": 1860,
+      "plotting_grid": [
+        128,
+        128
+      ],
+      "transverse_npz": {
+        "bytes": 127198,
+        "sha256": "0506f414cd836ab40fcc8847f6a6993209e4a68188cf2262c4b6bee67cbddf79"
+      }
+    },
+    "h016": {
+      "native_density_binding": {
+        "bytes": 662574,
+        "sha256": "52fbfcbe5ffa6d41eb2a405efc231b1461d153384d6ef9a16b46714e77148b41"
+      },
+      "grid_shape": [
+        48,
+        48,
+        48
+      ],
+      "integrated_electrons": 44.14122948147666,
+      "expected_electrons": 44,
+      "integral_difference_e": 0.14122948147665682,
+      "mean_n_e_A3": 0.6247242375668451,
+      "projected_orthocell_integrated_electrons": 88.28245896295333,
+      "centres_n_e_A3": [
+        0.23274609678970362,
+        0.2327460914188567,
+        0.23274609684889963,
+        0.23274609345585406,
+        0.23274609678970357,
+        0.23274609141885674,
+        0.23274609684889963,
+        0.23274609345585406
+      ],
+      "centres_n_without_Nyquist_e_A3": [
+        0.23677621172408736,
+        0.23677620635324081,
+        0.23677621178327543,
+        0.23677620839023023,
+        0.2367762117240873,
+        0.23677620635324087,
+        0.23677621178327543,
+        0.23677620839023023
+      ],
+      "centre_Nyquist_sensitivity_e_A3": [
+        -0.004030114934383738,
+        -0.004030114934384127,
+        -0.0040301149343758,
+        -0.004030114934376161,
+        -0.004030114934383738,
+        -0.004030114934384127,
+        -0.0040301149343758,
+        -0.004030114934376161
+      ],
+      "outside_Pd_augmentation_samples": 1860,
+      "plotting_grid": [
+        128,
+        128
+      ],
+      "transverse_npz": {
+        "bytes": 139302,
+        "sha256": "329ccb95986a326f8eb3c7ca65a062bd756fc73e8b6e128591991c5f7999fa2f"
+      }
+    }
+  },
+  "geometry_differential": {
+    "max_absolute_geometry_difference": 4.000000330961484e-10,
+    "tolerance": 1.1e-09
+  },
+  "centre_relative_h_change": [
+    0.0035685942702623867,
+    0.0035685855306865095,
+    0.0035685940596658894,
+    0.0035685932751916916,
+    0.00356859427026203,
+    0.0035685855306868664,
+    0.0035685940596658894,
+    0.0035685932751916916
+  ],
+  "max_centre_relative_h_change": 0.0035685942702623867,
+  "centre_tolerance": 0.05,
+  "centre_h_passed": true,
+  "representation": "Native skip_core as returned; no correction or renormalization. Canonical real Hermitian Nyquist-split trigonometric interpolant averaged continuously along110.",
+  "projected_cell": "Orthogonal (1-10,001,110), volume twice the original cubic cell; density units remain electrons/A^3, not electrons/A^2.",
+  "process_cpu_s": 0.15311897000000002,
+  "wall_s": 0.15311703085899353
+}

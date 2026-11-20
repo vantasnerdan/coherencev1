@@ -1,0 +1,62 @@
+{
+  "cases": [
+    {
+      "bytes": 374102,
+      "grid_shape": [
+        40,
+        40,
+        40
+      ],
+      "name": "h020",
+      "native_integrated_electrons": 44.18036228667709,
+      "original_gpw": {
+        "bytes": 31142763,
+        "sha256": "ad1c1df34a7889397156d9da189a45b8d33028e8df042852bb527c731b3c7ac4"
+      },
+      "path": "density/h020.npz",
+      "sha256": "cdb94a86f6f49564eb21e148c9b1654bf0240f904dc6425fcfb2fba862bef393"
+    },
+    {
+      "bytes": 662574,
+      "grid_shape": [
+        48,
+        48,
+        48
+      ],
+      "name": "h016",
+      "native_integrated_electrons": 44.14122948147666,
+      "original_gpw": {
+        "bytes": 53600219,
+        "sha256": "8eb976fc1b468bc6bddc974773263240fea0bc7d9e4839eb753531553dc8057e"
+      },
+      "path": "density/h016.npz",
+      "sha256": "52fbfcbe5ffa6d41eb2a405efc231b1461d153384d6ef9a16b46714e77148b41"
+    }
+  ],
+  "h016_spline_radius_note": "Original reader metadata augmentation_support_radii_A is the 5Bohr spline truncation, NOT the 2.5Bohr PAW matching radius used for the fit mask.",
+  "h020_admission": "Original strict count failed; Native as-returned output admitted unchanged under Axiom2421, no correction/rescale.",
+  "native_Bohr_A": 0.5291772105638411,
+  "original_private_input_configuration": {
+    "bytes": 1942,
+    "sha256": "17f34da1fe3b3992490db3e4ec56f1d216aaab2d7456c5a8a6d8b78571c15c8c"
+  },
+  "pd_augmentation_matching_radius_A": 1.322943026409603,
+  "pd_matching_radii_Bohr": [
+    2.3,
+    2.5,
+    2.2,
+    2.3,
+    2.5,
+    2.2
+  ],
+  "pinned_channel_source": {
+    "bytes": 21020,
+    "path": "source/upstream-channel.py",
+    "sha256": "95de761e4a2d6bfa168d6c0c8b08038f185ec25df356556165a2e818726989f9"
+  },
+  "radius_receipt_binding": {
+    "bytes": 2210,
+    "sha256": "9a2235749590ba71a961fe47713c6ffef4b9e9aa3d1dbb4c937692996473fb71"
+  },
+  "schema": "pdd-channel-inputs-v1"
+}

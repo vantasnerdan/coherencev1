@@ -1,0 +1,129 @@
+{
+  "schema": "pdd-pristine-valence-density-v1",
+  "case": "h016",
+  "original_gpw": {
+    "bytes": 53600219,
+    "sha256": "8eb976fc1b468bc6bddc974773263240fea0bc7d9e4839eb753531553dc8057e"
+  },
+  "cell_A": [
+    [
+      4.134141684668574,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      4.134141684668574,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      4.134141684668574
+    ]
+  ],
+  "positions_A": [
+    [
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      2.067070842334287,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      2.067070842334287,
+      2.067070842334287
+    ],
+    [
+      2.067070842334287,
+      2.067070842334287,
+      2.067070842334287
+    ],
+    [
+      2.067070842334287,
+      0.0,
+      2.067070842334287
+    ],
+    [
+      0.0,
+      0.0,
+      2.067070842334287
+    ],
+    [
+      2.067070842334287,
+      2.067070842334287,
+      0.0
+    ],
+    [
+      0.0,
+      2.067070842334287,
+      0.0
+    ]
+  ],
+  "symbols": [
+    "Pd",
+    "H",
+    "Pd",
+    "H",
+    "Pd",
+    "H",
+    "Pd",
+    "H"
+  ],
+  "electrons_expected": 44,
+  "electrons_integrated": 44.14122948147666,
+  "integration_error_e": 0.14122948147665682,
+  "count_exact": false,
+  "integral_policy": "Native skip_core count is reported, not corrected/renormalized; Axiom accepts its finite-grid PAW count discrepancy for the open-channel use.",
+  "augmentation_support_radii_A": [
+    2.645886052819206,
+    0.0,
+    2.645886052819206,
+    0.0,
+    2.645886052819206,
+    0.0,
+    2.645886052819206,
+    0.0
+  ],
+  "grid_shape": [
+    48,
+    48,
+    48
+  ],
+  "coarse_shape": [
+    24,
+    24,
+    24
+  ],
+  "actual_kpoints": 8,
+  "xc": "PBE",
+  "setups": {
+    "Pd": "10",
+    "H": "ae"
+  },
+  "charge": 0,
+  "skip_core": true,
+  "minimum_density_e_A3": 0.04486934381870799,
+  "density_npz": {
+    "bytes": 662574,
+    "sha256": "52fbfcbe5ffa6d41eb2a405efc231b1461d153384d6ef9a16b46714e77148b41"
+  },
+  "native_reader_sources": {
+    "calculator.py": {
+      "bytes": 86553,
+      "sha256": "a436fbfa57c20b47febfdb016aa79c83b2efa9145aed034acf62d06bc5cfa330"
+    },
+    "density.py": {
+      "bytes": 31538,
+      "sha256": "102657fa7dc345a2ceb3d97b777e886b552abe040bb79a6ff2c7c622cbb69c94"
+    }
+  },
+  "process_cpu_s": 2.354781947,
+  "wall_s": 2.3573414040729403,
+  "passed": true,
+  "scope": "Native all-electron VALENCE as returned, frozen Pd core excluded; no charge correction, rescale or new SCF. Centre h-convergence is the deciding accuracy check."
+}

@@ -1,0 +1,20 @@
+{
+  "schema": "pdd-projection-qualification-v1",
+  "errors": {
+    "zero_longitudinal": 6.661338147750939e-16,
+    "nonzero_longitudinal": 0.0,
+    "Nyquist_product_half_weight": 6.661338147750939e-16,
+    "transverse_Nyquist": 5.551115123125783e-16,
+    "h020_direct_continuous_line_quadrature": 3.0531133177191805e-16,
+    "h016_direct_continuous_line_quadrature": 9.43689570931383e-16
+  },
+  "tolerance": 1e-10,
+  "wrong_inputs_refused": [
+    "odd_grid",
+    "aliased_output",
+    "nonfinite"
+  ],
+  "process_cpu_s": 0.12845302899999997,
+  "passed": true,
+  "Nyquist_scope": "Sampled Nyquist aliases are not distinguishable physical fields; the oracle integrates the explicitly declared canonical real interpolant, not an unseen continuous density."
+}
