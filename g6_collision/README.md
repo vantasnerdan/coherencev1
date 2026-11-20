@@ -19,7 +19,7 @@ Screening lowering against bare C/R, eV:
 | All D displaced 0.0768 A | 39.86 | 35.19 | 31.35 | 27.40 | 23.80 | 13.71 | 9.17 |
 | Change | −0.69 | −0.72 | −1.07 | −0.14 | −0.19 | −0.02 | −0.01 |
 
-- **Electron excitation during the pass** at 2 keV is 0.22 eV at R 0.1 A, 0.005 of the lowering. The static (adiabatic) value therefore holds at beam speed. The node's second batch (LiD, Pd without D) was conditional on a speed dependence above 20 percent, so it does not run.
+- **Electron excitation during the pass** at 2 keV is 0.22 eV at R 0.1 A, 0.005 of the lowering. This is the dynamic share at one speed; no speed scan was run. The node's second batch (LiD, Pd without D) was to run only if the dynamic share exceeded 20 percent, and at 2 keV it is 40 times below that, so the batch does not run.
 - **Drag on the head-on path** (vacant site) is 2.25 eV/A in the baseline and 2.12 eV/A in the displaced cell.
 - Both curves are exported in the `g6_pairlaw` material-pair schema (`curves/baseline_BO_pair.json`, `curves/gamma_BO_pair.json`) and pass that reader at commit 2645b19.
 
