@@ -363,12 +363,12 @@ This directory is part (a) of `g7_micro`, delivered as `g7-micro-a-2ca008a.tar.g
 The one large parameter difference is a diagnostic high-energy-only fit whose site fraction is about 2e-9, so its U value is not determined; its χ² is unchanged.
 
 What it means, in plain terms:
-- **Rare strong sites reproduce the measured curves.** The beam data are reproduced about as well by a mixture of ordinary sites and a small share of strong sites as by the old rising-screening law. With one strong-site value, 1.6 percent of the deuterium in PdD needs about 2.6 keV of screening, and 2.7 percent of the deuterium in TiD needs about 1.7 keV. Placing the strong sites in the top 10-20 nm fits the low-energy rise better than spreading them through the depth.
+- **A spread of site screening fits the measured curves.** A continuous tail of site values above the ordinary 40 eV fits the UC Davis curves about as well as the old rising-screening law (χ² 52.6 against 51.5 on 48 points). A single strong-site value fits somewhat worse (59.5): it puts 1.6 percent of the deuterium in PdD at about 2.6 keV and 2.7 percent in TiD at about 1.7 keV. Placing the strong sites in the top 10-20 nm reproduces the low-energy rise better than spreading them through the depth. None of these fits identifies a site type.
 - **The data fix a curve, not a single site.** Fewer sites with stronger screening fit as well as more sites with weaker screening. In the titanium loading series the fit holds from 0.15 sites per Ti at 0.3 keV to about 1e-5 sites per Ti at 30 keV.
 - **Some site types have enough room and some do not.**
   - Fine grain boundaries in polished foils, wide dislocation cores and grain-boundary bands in Ti have enough room for the share the UC Davis curves need.
   - Coarse grain boundaries in annealed Pd do not.
   - No usable count exists yet for vacancy clusters or second phases.
-- **Cold-rolled Pd needs more strong sites.** Lower loading alone can raise the strong-site share by at most 1.5 times, against the 16-20 times the hard and soft foils need. The hard foil must hold more strong sites, as cold work would make.
+- **Cold-rolled Pd points to more strong sites.** If each site type binds and screens the same way in both foils, lower loading alone raises the strong-site response by at most 1.5 times. The hard and soft foils differ by 16-20 times in that response (F+D data), so the hard foil would hold more strong sites, as cold work makes. The two foils also differ in source, preparation and deuterium loss, so cold work is not isolated.
 
 These keV values are effective shifts in the beam model, not the static lowering at 0.1 A. Comparing a computed site with them needs the barrier-penetration (action) calculation along the computed curve, not the 0.1 A value alone. Part (b), the DFT of the named site types, follows `g7_hydride/`.
