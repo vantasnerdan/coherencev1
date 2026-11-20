@@ -20,7 +20,7 @@ Screening lowering against bare C/R, eV:
 | Change | −0.69 | −0.72 | −1.07 | −0.14 | −0.19 | −0.02 | −0.01 |
 
 - **Electron excitation during the pass** at 2 keV is 0.22 eV at R 0.1 A, 0.005 of the lowering. This is the dynamic share at one speed; no speed scan was run. The node's second batch (LiD, Pd without D) was to run only if the dynamic share exceeded 20 percent, and at 2 keV it is 40 times below that, so the batch does not run.
-- **Drag on the head-on path** (vacant site) is 2.25 eV/A in the baseline and 2.12 eV/A in the displaced cell.
+- **Drag on the head-on path** (vacant site) is 2.25 eV/A in the baseline and 2.12 eV/A in the displaced cell. Halving the time step moves the baseline value by 0.03 percent.
 - Both curves are exported in the `g6_pairlaw` material-pair schema (`curves/baseline_BO_pair.json`, `curves/gamma_BO_pair.json`) and pass that reader at commit 2645b19.
 
 ## Checks
@@ -29,7 +29,7 @@ Screening lowering against bare C/R, eV:
 - Cell size, 2x2x2 cell with one target vacancy: the R 0.1 A lowering moves by +0.25 eV.
 - Both are within the declared tolerance of max(5 eV, 10 percent), so the original cell stands for all four production runs.
 - Force-work identity along each trajectory: residual at most 0.012 eV.
-- Time step: a half-step rerun of the baseline vacant trajectory is running. It checks the drag only, with acceptance within 10 percent. Encounter excitation is reported from the production step and is not time-step checked.
+- Time step: halving it (2 to 1 attosecond) on the baseline vacant trajectory moves the drag at 0.1 A from 2.2514 to 2.2506 eV/A, a change of 0.03 percent against an acceptance of 10 percent. Encounter excitation is reported from the production step and is not time-step checked. Files are in `dt_check/`.
 
 ## Three largest omissions
 
@@ -39,7 +39,7 @@ Screening lowering against bare C/R, eV:
 
 ## Lead's note
 
-Repository copy: the 30 saved density and kernel arrays (`*.npz`, about 10.4 MB) and the 44 GPAW text logs (`*.txt` other than `README.txt`, about 2.4 MB) are not committed. They are in the delivery archive `collision-delivery.tar.gz` (SHA-256 8aaaf01cae63199cacd3caeddd9cb34a0b7860e1cf6165bcd47e75715da50cbe) on the draft release `g6-collision-pass6-20261120`, and their hashes are in `manifest.json`. The reader requires exactly the manifest files, so extract the archive into a fresh directory and run `python reader.py <that directory>` to replay. This README is a lead's addition and is not in the manifest. The lead's replay (NumPy 1.26.4, isolated Python, SciPy, ASE and GPAW imports blocked) reproduced the delivered output to 6e-13 eV and refused a curve altered by 1 eV.
+Repository copy: the 30 saved density and kernel arrays (`*.npz`, about 10.4 MB) and the 44 GPAW text logs (`*.txt` other than `README.txt`, about 2.4 MB) are not committed. They are in the delivery archive `collision-delivery.tar.gz` (SHA-256 8aaaf01cae63199cacd3caeddd9cb34a0b7860e1cf6165bcd47e75715da50cbe) on the draft release `g6-collision-pass6-20261120`, and their hashes are in `manifest.json`. The reader requires exactly the manifest files, so extract the archive into a fresh directory and run `python reader.py <that directory>` to replay. This README is a lead's addition and is not in the manifest. The time-step check is a second capsule, `collision-dt1-delivery.tar.gz` (SHA-256 d15c00be424bfbc8c02f912313d1e75557920aa64939d88b600c128578ad8c2f) on the same release; `dt_check/` holds its own files without its 7 density arrays and GPAW log, and its shared files (`capsule_io.py`, `replay.py`, `green.py`, `runs/base-vac/`) are byte-identical to those here. Extract it into a fresh directory and run `python dt_drag.py <that directory>`; the lead's isolated replay matched the delivered output, with the density-potential replay differing by 4e-13 eV. The lead's replay (NumPy 1.26.4, isolated Python, SciPy, ASE and GPAW imports blocked) reproduced the delivered output to 6e-13 eV and refused a curve altered by 1 eV.
 
 What it means:
 - The static first-principles lowering in PdD is about 40 eV at 0.1 A. It is settled to under 0.5 eV in grid and cell size. The electron response during a 2 keV pass adds 0.2 eV to it.

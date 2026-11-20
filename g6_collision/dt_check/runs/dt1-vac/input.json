@@ -1,0 +1,65 @@
+{
+  "D_displacement_A": [
+    0,
+    0,
+    0
+  ],
+  "bo_checkpoints_A": [
+    1.6,
+    1,
+    0.5,
+    0.4,
+    0.3,
+    0.2,
+    0.1
+  ],
+  "checkpoints_A": [
+    1.6,
+    1,
+    0.5,
+    0.4,
+    0.3,
+    0.2,
+    0.1
+  ],
+  "collision_whole_core_min_cap": 3000,
+  "direction": [
+    1,
+    1,
+    0
+  ],
+  "dt_as": 1,
+  "eligibility": "Production at2keV/head-on only; mapping and numerical controls gate downstream consumption; U_phi diagnostic only",
+  "end_R_A": 0.1,
+  "energy_keV": 2,
+  "external_work_closure": {
+    "absolute_eV": 0.5,
+    "fraction_of_absolute_work": 0.01
+  },
+  "h_A": 0.2,
+  "impact_A": 0,
+  "kmesh": [
+    2,
+    2,
+    2
+  ],
+  "maximum_ten_step_wall_s": 900,
+  "occupied_target": false,
+  "production_authority": "Axiom2177, output contract2159",
+  "production_case_hard_core_min": 160,
+  "relaxed_ground_record": "<PRIVATE_PATH>",
+  "relaxed_ground_sha256": "a4c40d17f51c6f32a2ce6795ee4e2028a8464ad48980230a4563b1aade8cb5c7",
+  "repeat": [
+    1,
+    1,
+    1
+  ],
+  "schema": "pdd-prescribed-collision-input-v2",
+  "screening_accuracy": {
+    "absolute_eV": 5,
+    "relative": 0.1
+  },
+  "solver_tolerance": 1e-09,
+  "start_R_A": 1.6,
+  "stopping_relative_accuracy": 0.15
+}
