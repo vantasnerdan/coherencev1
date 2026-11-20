@@ -52,9 +52,11 @@ Dilution pays below 2.9 keV, where the screening gain beats the extra drag per T
 - Pure tritium uses ICRU-49 hydrogen electronic stopping plus ZBL on T.
 - "T as only scatterer" keeps only ZBL nuclear drag on T. It is the floor for a host with no electronic drag.
 
-Three screening levels are carried from D-D to D-T unchanged: 0.04 keV (computed static lowering, `g6_collision/` and `g7_defect/`), 0.3 keV (measured D-D in metals at low loading) and 1.4 keV (the uniform UC Davis PdD fit). Channelling multiplies the PdT return by 1.78 at the one point where `g6_channel/` computed it: Pd(D/T) `<110>`, 13 keV, 2 degrees. That gain was computed without screening and is applied to the screened rows unchanged. The slowing-down integral runs from the beam energy down to 0.1 keV lab, the `g6_gap/` convention. Below 0.83 keV lab the Bosch-Hale fit is an extrapolation.
+Three screening levels are carried from D-D to D-T unchanged: 0.04 keV (computed static lowering, `g6_collision/` and `g7_defect/`), 0.3 keV (measured D-D in metals at low loading) and 1.4 keV (our uniform fit to the UC Davis PdD data in `g4_beam/forward`; the paper itself reports 0.8 and 1.7 keV for PdD). Channelling multiplies the PdT return by 1.78 at the one point where `g6_channel/` computed it: Pd(D/T) `<110>`, 13 keV, 2 degrees. That gain was computed without screening and is applied to the screened rows unchanged. The slowing-down integral runs from the beam energy down to 0.1 keV lab, the `g6_gap/` convention. Below 0.83 keV lab the Bosch-Hale fit is an extrapolation.
 
-**Screening needed for G = 1**, keV. "None" means that even removing the whole barrier leaves G below 1; the largest G reachable is given in brackets.
+**How screening enters the cross section.** Two forms are carried. The Eq 7 form used throughout `g4_beam/` and `g6_gap/` is S(E)/sqrt(E(E+U)) exp(-B_G/sqrt(E+U)). The standard Assenbaum-Langanke-Rolfs shift ("form A") is S(E+U)/E exp(-B_G/sqrt(E+U)): the incoming flux stays at the true energy and the nuclear factor is read at E+U. Both forms are capped at the s-wave unitarity limit for D-T (604 b at 1 keV lab, 46.5 b at 13 keV). The cap changes none of the values below. Where tens of keV of screening are needed, the choice of form moves the requirement by 2 to 5 times, and in Eq 7 it also hides the metal hosts. Neither form holds exactly once U is far above E, because a constant shift then has to hold out to a turning radius of tens of femtometres. The penetration computed through the actual site potential (`g7_micro/`, converter planned) replaces both.
+
+**Screening needed for G = 1 in the Eq 7 form**, keV. "None" means that even removing the whole barrier leaves G below 1; the largest G reachable is given in brackets.
 
 | Target | 1 keV beam | 2 keV | 5 keV | 13 keV |
 |---|---|---|---|---|
@@ -66,12 +68,26 @@ Three screening levels are carried from D-D to D-T unchanged: 0.04 keV (computed
 | Pure tritium | 87 | 111 | 196 | none (0.92) |
 | T as only scatterer | 45 | 42 | 38 | 31 |
 
+**The same in form A**, keV:
+
+| Target | 1 keV beam | 2 keV | 5 keV | 13 keV |
+|---|---|---|---|---|
+| TiT1.7 | 29 | 33 | 42 | 63 |
+| PdT | 32 | 37 | 48 | none (0.77) |
+| PdT, channelled `<110>` | | | | 55 |
+| Ti, T/Ti 0.2 | 50 | 76 | none (0.46) | none (0.19) |
+| LiT, computed drag | 24 | 26 | 31 | 41 |
+| Pure tritium | 22 | 25 | 30 | 39 |
+| T as only scatterer | 18 | 18 | 19 | 18 |
+
+A 13 keV beam into pure tritium needs 182 b locally at 13 keV, above the 46.5 b unitarity limit there. The thick-target return still reaches G = 1 in form A, because the beam fuses as it slows, where the limit is higher.
+
 **Return at the fitted screening.** At U_e = 1.4 keV, G is 8e-11 to 2e-5 for every target with electronic drag. It is 1.7e-3 at 13 keV for T as only scatterer, 580 times short of G = 1. At the computed static 0.04 keV, G is lower again: 3 times lower with a 13 keV beam and up to 5e8 times lower with a 1 keV beam. Channelling raises the PdT return at 13 keV from 4.1e-6 to 7.3e-6 at 1.4 keV screening.
 
 **Integration floor.** The floor matters only where tens of keV of screening are needed. Stopping at 0.2 keV instead of 0.1 keV raises the screening needed for LiT and pure tritium at 1 to 2 keV by 8 to 19 percent, and for T as only scatterer by under 7 percent. Stopping at the fit floor (0.83 keV) removes most of a 1 keV beam's path and is not used. Both floors are in `combined.csv`.
 
 **Levers, with the number each must reach:**
-- Host. No metal tritide reaches G = 1 at any screening, except TiT1.7 with a 1 keV beam at 297 keV of screening, which depends on the integration floor. Channelling does not change this. The fuel must sit in a host with no metal electrons on the beam's path.
-- Electronic drag. With it, as in LiT or pure tritium, a 1-2 keV beam needs 87-116 keV of screening, and no screening gives G = 1 at 13 keV. Without it, the need falls to 31-45 keV at every beam energy from 1 to 13 keV, and the largest reachable G is 12-21. A band gap cuts electronic stopping for slow ions, so a gapped, fuel-dense solid such as solid T2 lies between these two rows at 1-2 keV.
-- Screening in that host: 31-45 keV, against 0.3-2 keV measured in metals and fitted to the UC Davis data, and 0.04 keV computed statically.
+- Host. In form A a metal tritide reaches G = 1 with a 1-2 keV beam at 29-37 keV of screening. In the Eq 7 form no metal does, apart from TiT1.7 at 1 keV. The insulating, fuel-dense hosts need less screening in both forms.
+- Electronic drag. With it, as in LiT or pure tritium, a 1-2 keV beam needs 22-26 keV of screening in form A (87-116 keV in Eq 7). Without it, the need is 18-19 keV in form A (31-45 keV in Eq 7) at every beam energy from 1 to 13 keV. A band gap cuts electronic stopping for slow ions, so a gapped, fuel-dense solid such as solid T2 lies between these two rows at 1-2 keV.
+- Screening at the fuel site: 18-26 keV in form A for the insulating hosts, against 0.3-1.7 keV measured or fitted in metals, about 3 keV effective at the lowest UC Davis energies, and 0.04 keV computed statically.
 
