@@ -1,0 +1,467 @@
+{
+  "Q_He_eV": -44.79157850840428,
+  "R_A": 0.0,
+  "absolute_convention": {
+    "ASE_CODATA_version": "2014",
+    "ASE_Hartree_eV": 27.211386024367243,
+    "ASE_units_source": {
+      "bytes": 9085,
+      "path": "operator-source/ase_units.py",
+      "sha256": "1c49db1fbc894e087f94ec8fb8b3746d2c9228845332c5821b459e7104a5d097"
+    },
+    "B_native_eV": 68.65793304732587,
+    "H_E_reference_Hartree": 0.0,
+    "H_M_Hartree": -1.2615662610100802,
+    "He_E_reference_Hartree": 0.0,
+    "He_M_Hartree": -5.046265044040321,
+    "alpha1": 10.0,
+    "alpha2": 300.0,
+    "arbitrary_atomic_offset_eV": 0.0,
+    "energy": "internal=free-minus-negativeTS",
+    "formula": "W0=Q_He+B_native-B_source+regular_images",
+    "representation": "same-alpha all-electron Z2"
+  },
+  "case": "pd-plain-compact-recovered",
+  "charge": 1,
+  "definition": "lim_R->0(V_pair_total_eV-C_eV_A/R_A)",
+  "derivative_eV_per_A": null,
+  "derivative_status": "Not qualified: no matched internal-energy/entropy-force derivative calculation; no zero-slope assumption",
+  "electronic_branch": "bare-no-added-electron",
+  "finite_curve": {
+    "bytes": 59266,
+    "path": "plain_q1_BO_pair.json",
+    "sha256": "71a3f04e1fa23732fa70d171598f23b4e6eb66e3af6430791ab18d5c12b187a0"
+  },
+  "force_qualified": true,
+  "free_fmax_eV_A": 0.03603609470523719,
+  "full_scientific_qualification": false,
+  "functional_identity_replay": {
+    "actual_radial_max_abs_residuals": {
+      "Delta0_times_ghat_0": 0.0,
+      "Delta0_times_ghat_1": 0.0,
+      "compensation_He_equals_two_H": 0.0,
+      "ghat_He_equals_H": 0.0,
+      "nct_radial_0": 0.0,
+      "nct_radial_1": 0.0,
+      "tauct_radial_0": 0.0,
+      "tauct_radial_1": 0.0,
+      "vbar_He_equals_two_H": 1.3877787807814457e-16
+    },
+    "charge": 1,
+    "coincident_Native_performed": false,
+    "constructed_operator_difference_eV": 68.65793304732587,
+    "density_functional_trials": [
+      {
+        "electrons": 151.0,
+        "exponent_Bohr_m2": 0.5,
+        "residual_eV": 8.483653811924414e-16,
+        "wrong_He_vbar_scale": 1.01,
+        "wrong_vbar_residual_eV": 2.065753575759308
+      },
+      {
+        "electrons": 151.0,
+        "exponent_Bohr_m2": 1.0,
+        "residual_eV": 1.5547547586357004e-15,
+        "wrong_He_vbar_scale": 1.01,
+        "wrong_vbar_residual_eV": 4.361876744981088
+      },
+      {
+        "electrons": 151.0,
+        "exponent_Bohr_m2": 2.0,
+        "residual_eV": 2.939442900554781e-15,
+        "wrong_He_vbar_scale": 1.01,
+        "wrong_vbar_residual_eV": 11.003442703297456
+      }
+    ],
+    "electrons": 151.0,
+    "guard_sources": {
+      "legacy_calculator": {
+        "bytes": 86553,
+        "sha256": "a436fbfa57c20b47febfdb016aa79c83b2efa9145aed034acf62d06bc5cfa330"
+      },
+      "utilities": {
+        "bytes": 13446,
+        "sha256": "1b4298e5bb8e6a26c791a4f88d9b4d33c9a36f36114a54baeb3b1ce299a8d4a3"
+      }
+    },
+    "passed": true,
+    "proof_kind": "source-bound actual-operator functional identity; not coincident Native SCF",
+    "public_guard_obstruction": "Coincident atoms rejected; guard unchanged",
+    "residual_eV": 0.0,
+    "schema": "hydride-contact-functional-identity-replay-v1",
+    "scope": "Common-density operator identity for actual charge/Ne; He SCF and h qualification separate",
+    "sensitivity": {
+      "one_eV_He_offset_residual_eV": -1.0,
+      "wrong_branch_electrons": 152.0,
+      "wrong_charge_electron_mismatch": 1.0,
+      "wrong_charge_would_be_rejected": true,
+      "wrong_linear_He_M_residual_eV": -68.65793304732587
+    },
+    "source_expected_difference_eV": 68.65793304732587,
+    "sources": {
+      "ae": {
+        "bytes": 2348,
+        "sha256": "d6daba8aa25bbeeb716c7c9a3a3c7ec67fd1b56673550b523f308400ad8064cc"
+      },
+      "basis_data": {
+        "bytes": 13250,
+        "sha256": "3efd73ceff4ebed33b01d08c5602cc6aa634f13ca6554c97a7acbf3cb2ccbc86"
+      },
+      "density": {
+        "bytes": 31538,
+        "sha256": "102657fa7dc345a2ceb3d97b777e886b552abe040bb79a6ff2c7c622cbb69c94"
+      },
+      "hamiltonian": {
+        "bytes": 30840,
+        "sha256": "8526f7ccd2522ded88c746e4f5e4f4c7109dd67489850edf02d7f76207f3d348"
+      },
+      "setup": {
+        "bytes": 57201,
+        "sha256": "ac566b134823bf164336fd3404288fcf698c892d081047cd5e2663b070089bb2"
+      }
+    },
+    "symbolic_functional_difference": {
+      "EH[n+2g]": "0",
+      "E_H": "0",
+      "M_H": "-2",
+      "T[n]": "0",
+      "XC[n]": "0",
+      "external[n,2v]": "0"
+    }
+  },
+  "geometry_error_bound_eV": null,
+  "geometry_force_qualified": false,
+  "mapping_proof": {
+    "B_native_eV": 68.65793304732587,
+    "derivation": {
+      "W0": "Q_He + B_native - B_source + regular_images",
+      "erfc_regular_limit": "-2*width/sqrt(pi)",
+      "erfc_regular_series_coefficients": [
+        "-2",
+        "2/3",
+        "-1/5"
+      ],
+      "gaussian_pair_width": "sqrt(alpha1/2)BOHR_A",
+      "self_reference_coefficient": "-2"
+    },
+    "executed": true,
+    "finite_R_mapping_source": {
+      "bytes": 3022,
+      "sha256": "05ccba36601567b71a12af42c309cd978e1637b454454740c0f2909725598f09"
+    },
+    "mapping": {
+      "BOHR_A": 0.5291772105638411,
+      "B_source_eV": 68.65793360383724,
+      "C_eV_A": 14.399645468667815,
+      "gaussian_width_inverse_A": 4.225556076228694,
+      "nonzero_image_eV": 2.0519240236928052e-293,
+      "real_image_shell": 4,
+      "regular_images_eV": -0.0030528420283448287,
+      "volume_A3": 829.9073316205062,
+      "zero_G_background_eV": -0.0030528420283448287
+    },
+    "numerical_continuum_samples": [
+      {
+        "R_A": 0.01,
+        "limit_error_eV": 0.04084177562788227,
+        "regularized_eV": -68.62014467023769
+      },
+      {
+        "R_A": 0.001,
+        "limit_error_eV": 0.0004086343645326451,
+        "regularized_eV": -68.66057781150104
+      },
+      {
+        "R_A": 0.0001,
+        "limit_error_eV": 4.0863653367750885e-06,
+        "regularized_eV": -68.66098235950024
+      },
+      {
+        "R_A": 1e-05,
+        "limit_error_eV": 4.086366800493124e-08,
+        "regularized_eV": -68.6609864050019
+      }
+    ],
+    "operator_source": {
+      "bytes": 2348,
+      "sha256": "d6daba8aa25bbeeb716c7c9a3a3c7ec67fd1b56673550b523f308400ad8064cc"
+    },
+    "schema": "hydride-contact-mapping-proof-v1",
+    "scope": "Source algebra and numerical Gaussian mapping only; no Native or isolation validation",
+    "sensitivity": {
+      "atomic_offset_permitted": false,
+      "one_eV_atomic_offset_identity_error_eV": -1.0,
+      "wrong_linear_He_M_error_eV": -68.65793304732587,
+      "wrong_linear_He_M_predicted_shift_eV": 0.0
+    },
+    "unit_constant_residual_eV": -5.56511366767154e-07
+  },
+  "material": "Pd",
+  "numerical_controls": {
+    "changes": {},
+    "complete": false,
+    "deadline_scope": "Configured/consumed stops only; no runtime authorization inferred",
+    "final_coated_admitted": true,
+    "final_frame_optimum_claim": false,
+    "full_curve_higher_k_qualified": false,
+    "full_scientific_qualification": false,
+    "geometry_by_role": {
+      "oxygen": {
+        "force_qualified": false,
+        "free_fmax_eV_A": 0.42174246367039653,
+        "geometry_error_bound_eV": null,
+        "raw_fmax_eV_A": 0.42174246367039653,
+        "relaxation_status": "partly-relaxed"
+      },
+      "plain": {
+        "force_qualified": true,
+        "free_fmax_eV_A": 0.03603609470523719,
+        "geometry_error_bound_eV": null,
+        "raw_fmax_eV_A": 0.22639077804335472,
+        "relaxation_status": "force-qualified"
+      }
+    },
+    "geometry_error_bound_eV": null,
+    "geometry_force_qualified": false,
+    "isolation_claim": false,
+    "material": "Pd",
+    "missing_controls": [
+      "plain-h",
+      "oxygen-h",
+      "plain-k",
+      "oxygen-k"
+    ],
+    "omitted_controls": [
+      "geometry-convergence error bound",
+      "slab-thickness",
+      "cell/vacuum",
+      "full-radius h/k"
+    ],
+    "paired_cell_qualified": false,
+    "paired_hk_qualified": false,
+    "pairs": {
+      "base": {
+        "geometries": {
+          "oxygen": {
+            "force_qualified": false,
+            "free_fmax_eV_A": 0.42174246367039653,
+            "geometry_error_bound_eV": null,
+            "raw_fmax_eV_A": 0.42174246367039653,
+            "relaxation_status": "partly-relaxed"
+          },
+          "plain": {
+            "force_qualified": true,
+            "free_fmax_eV_A": 0.03603609470523719,
+            "geometry_error_bound_eV": null,
+            "raw_fmax_eV_A": 0.22639077804335472,
+            "relaxation_status": "force-qualified"
+          }
+        },
+        "geometry_error_bound_eV": null,
+        "geometry_error_status": "Unbounded; actual forces do not bound contrast error",
+        "oxygen_R01_lowering_eV": 37.89137304098119,
+        "oxygen_minus_plain_R01_lowering_eV": -1.4966897374852408,
+        "oxygen_minus_plain_signedW0_eV": 5.010453174926148,
+        "oxygen_signedW0_eV": -39.78417873201784,
+        "plain_R01_lowering_eV": 39.388062778466434,
+        "plain_signedW0_eV": -44.79463190694399
+      }
+    },
+    "qualification_scope": "Separate paired R0.1/contact h/k criterion and geometry force stationarity; h/k checks do not qualify geometry or bound geometry-convergence error",
+    "qualified": false,
+    "ray_by_role": {
+      "oxygen": {
+        "authority_entry": "entry_2971",
+        "clearance": {
+          "R_interval_A": [
+            0.0,
+            1.6
+          ],
+          "at_R_A": 1.328702976195565,
+          "excludes": "target index and all its periodic images only",
+          "method": "all periodic images inside triangle-bound sphere; exact closed-segment projection",
+          "min_clearance_A": 1.5121158685782417,
+          "search_radius_A": 3.4770967676283595,
+          "spectator_image": [
+            -1,
+            -1,
+            0
+          ],
+          "spectator_index": 6,
+          "spectator_symbol": "Pd"
+        },
+        "coated_witness": {
+          "bo_eligible": false,
+          "boundary": {
+            "bytes": 14216,
+            "path": "provenance/ray/pd-coat-shared-final-step5-001-evidence/precommit/pd-precommit-current-001-evidence/witness/geometry-step-005-boundary.json",
+            "sha256": "8cf9e5c155192fcbcf887e05e14810322104f4dd147cb3e2afc6e3e66fa9315a"
+          },
+          "force_qualified": false,
+          "not_final": true,
+          "schema": "micro-pd-coated-boundary-witness-v1"
+        },
+        "consumed_policy": {
+          "bytes": 78616,
+          "path": "provenance/ray/probe-ray.json",
+          "sha256": "30cda7b723c4982d934de8cd0283bb90b3d87c04b5f2a16646dd707bd60e692a"
+        },
+        "direction_n_hat": [
+          0.43301270189221946,
+          0.75,
+          0.4999999999999998
+        ],
+        "final_coated_admitted": true,
+        "final_frame_optimum_claim": false,
+        "precommit": {
+          "bytes": 402245,
+          "path": "provenance/ray/pd-coat-shared-final-step5-001-evidence/precommit/probe-ray.json",
+          "sha256": "46226e56d769012f4a7cdafc7c161a488a74f2b82039a9fa706cf5e933391dd0"
+        },
+        "status": "precommitted shared-open"
+      },
+      "plain": {
+        "authority_entry": "entry_2971",
+        "clearance": {
+          "R_interval_A": [
+            0.0,
+            1.6
+          ],
+          "at_R_A": 1.2495190724801475,
+          "excludes": "target index and all its periodic images only",
+          "method": "all periodic images inside triangle-bound sphere; exact closed-segment projection",
+          "min_clearance_A": 1.506644280092414,
+          "search_radius_A": 3.5466586014081174,
+          "spectator_image": [
+            -1,
+            -1,
+            0
+          ],
+          "spectator_index": 6,
+          "spectator_symbol": "Pd"
+        },
+        "coated_witness": {
+          "bo_eligible": false,
+          "boundary": {
+            "bytes": 14216,
+            "path": "provenance/ray/pd-precommit-current-001-evidence/witness/geometry-step-005-boundary.json",
+            "sha256": "8cf9e5c155192fcbcf887e05e14810322104f4dd147cb3e2afc6e3e66fa9315a"
+          },
+          "force_qualified": false,
+          "not_final": true,
+          "schema": "micro-pd-coated-boundary-witness-v1"
+        },
+        "consumed_policy": {
+          "bytes": 402245,
+          "path": "provenance/ray/probe-ray.json",
+          "sha256": "46226e56d769012f4a7cdafc7c161a488a74f2b82039a9fa706cf5e933391dd0"
+        },
+        "direction_n_hat": [
+          0.43301270189221946,
+          0.75,
+          0.4999999999999998
+        ],
+        "final_coated_admitted": false,
+        "final_frame_optimum_claim": false,
+        "precommit": {
+          "bytes": 402245,
+          "path": "provenance/ray/probe-ray.json",
+          "sha256": "46226e56d769012f4a7cdafc7c161a488a74f2b82039a9fa706cf5e933391dd0"
+        },
+        "status": "precommitted ray; final coated shared-open admission pending"
+      }
+    },
+    "ray_policy_entry": "entry_2971",
+    "recorded_deadlines_utc": {
+      "oxygen": "2026-11-21T03:00:00Z",
+      "plain": "2026-11-21T03:00:00Z"
+    },
+    "resolved": false,
+    "schema": "micro-pd-paired-comparisons-v1",
+    "scope": "Actual finite-cell target-conditioned internal BO screening for compact Pd and a coherent added 4Pd+4O sheet, not oxygen insertion at fixed Pd inventory. D is unconstrained and its actual migrated/relaxed site is used. Pd10/O6 frozen-core PAW; q+1 Hae probe adds no electron. Paired h/k checks apply only at R0.1/contact. Slab-thickness, cell/vacuum and full-radius h/k controls omitted. Geometry-convergence error is unbounded (geometry_error_bound_eV=null), including for force-qualified frames; residual forces do not bound pair-lowering error. No isolated limit, site-retention, bulk-PdO, Ueq, action/Eq7 or experimental phase claim.",
+    "shared_precommit": {
+      "bytes": 402245,
+      "sha256": "46226e56d769012f4a7cdafc7c161a488a74f2b82039a9fa706cf5e933391dd0"
+    },
+    "tolerance_definition": "max(5 eV, 0.1*abs(base coated-minus-bare contrast)) per observable"
+  },
+  "observable": "signed_regular_contact_limit_of_target_conditioned_BO_total",
+  "paired_hk_qualified": false,
+  "raw_fmax_eV_A": 0.22639077804335472,
+  "ray_policy": {
+    "authority_entry": "entry_2971",
+    "clearance": {
+      "R_interval_A": [
+        0.0,
+        1.6
+      ],
+      "at_R_A": 1.2495190724801475,
+      "excludes": "target index and all its periodic images only",
+      "method": "all periodic images inside triangle-bound sphere; exact closed-segment projection",
+      "min_clearance_A": 1.506644280092414,
+      "search_radius_A": 3.5466586014081174,
+      "spectator_image": [
+        -1,
+        -1,
+        0
+      ],
+      "spectator_index": 6,
+      "spectator_symbol": "Pd"
+    },
+    "coated_witness": {
+      "bo_eligible": false,
+      "boundary": {
+        "bytes": 14216,
+        "path": "provenance/ray/pd-precommit-current-001-evidence/witness/geometry-step-005-boundary.json",
+        "sha256": "8cf9e5c155192fcbcf887e05e14810322104f4dd147cb3e2afc6e3e66fa9315a"
+      },
+      "force_qualified": false,
+      "not_final": true,
+      "schema": "micro-pd-coated-boundary-witness-v1"
+    },
+    "consumed_policy": {
+      "bytes": 402245,
+      "path": "provenance/ray/probe-ray.json",
+      "sha256": "46226e56d769012f4a7cdafc7c161a488a74f2b82039a9fa706cf5e933391dd0"
+    },
+    "direction_n_hat": [
+      0.43301270189221946,
+      0.75,
+      0.4999999999999998
+    ],
+    "final_coated_admitted": false,
+    "final_frame_optimum_claim": false,
+    "precommit": {
+      "bytes": 402245,
+      "path": "provenance/ray/probe-ray.json",
+      "sha256": "46226e56d769012f4a7cdafc7c161a488a74f2b82039a9fa706cf5e933391dd0"
+    },
+    "status": "precommitted ray; final coated shared-open admission pending"
+  },
+  "relaxation_status": "force-qualified",
+  "schema": "hydride-signed-contact-sidecar-v1",
+  "scope": "Signed regular W0, not singular Vtotal(0), positive screening magnitude or Ueq. Actual finite-cell target-conditioned internal BO screening for compact Pd and a coherent added 4Pd+4O sheet, not oxygen insertion at fixed Pd inventory. D is unconstrained and its actual migrated/relaxed site is used. Pd10/O6 frozen-core PAW; q+1 Hae probe adds no electron. Paired h/k checks apply only at R0.1/contact. Slab-thickness, cell/vacuum and full-radius h/k controls omitted. Geometry-convergence error is unbounded (geometry_error_bound_eV=null), including for force-qualified frames; residual forces do not bound pair-lowering error. No isolated limit, site-retention, bulk-PdO, Ueq, action/Eq7 or experimental phase claim.",
+  "signedW0_eV": -44.79463190694399,
+  "source_bindings": {
+    "original_case": {
+      "bytes": 467909,
+      "path": "case.json",
+      "sha256": "ac9c6ae11655414c0c3b7580f1ae6ab2dec465e2aa1ed85e2f757a79f89a0915"
+    },
+    "source_epoch": {
+      "bytes": 9360,
+      "path": "provenance/source-manifest.json",
+      "sha256": "71592ef8dfdc94b2572d5849d7edf7922e8f9c1bebaaf944bca64b108e5d22f2"
+    }
+  },
+  "unit_source_proof": {
+    "CODATA_version": "2014",
+    "actual_Hartree_eV": 27.211386024367243,
+    "independently_derived_Hartree_eV": 27.211386024367243,
+    "residual_eV": 0.0,
+    "source": {
+      "bytes": 9085,
+      "sha256": "1c49db1fbc894e087f94ec8fb8b3746d2c9228845332c5821b459e7104a5d097"
+    }
+  }
+}

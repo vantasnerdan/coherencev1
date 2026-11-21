@@ -1,0 +1,188 @@
+{
+  "changes": {},
+  "complete": false,
+  "deadline_scope": "Configured/consumed stops only; no runtime authorization inferred",
+  "final_coated_admitted": true,
+  "final_frame_optimum_claim": false,
+  "full_curve_higher_k_qualified": false,
+  "full_scientific_qualification": false,
+  "geometry_by_role": {
+    "oxygen": {
+      "force_qualified": false,
+      "free_fmax_eV_A": 0.42174246367039653,
+      "geometry_error_bound_eV": null,
+      "raw_fmax_eV_A": 0.42174246367039653,
+      "relaxation_status": "partly-relaxed"
+    },
+    "plain": {
+      "force_qualified": true,
+      "free_fmax_eV_A": 0.03603609470523719,
+      "geometry_error_bound_eV": null,
+      "raw_fmax_eV_A": 0.22639077804335472,
+      "relaxation_status": "force-qualified"
+    }
+  },
+  "geometry_error_bound_eV": null,
+  "geometry_force_qualified": false,
+  "isolation_claim": false,
+  "material": "Pd",
+  "missing_controls": [
+    "plain-h",
+    "oxygen-h",
+    "plain-k",
+    "oxygen-k"
+  ],
+  "omitted_controls": [
+    "geometry-convergence error bound",
+    "slab-thickness",
+    "cell/vacuum",
+    "full-radius h/k"
+  ],
+  "paired_cell_qualified": false,
+  "paired_hk_qualified": false,
+  "pairs": {
+    "base": {
+      "geometries": {
+        "oxygen": {
+          "force_qualified": false,
+          "free_fmax_eV_A": 0.42174246367039653,
+          "geometry_error_bound_eV": null,
+          "raw_fmax_eV_A": 0.42174246367039653,
+          "relaxation_status": "partly-relaxed"
+        },
+        "plain": {
+          "force_qualified": true,
+          "free_fmax_eV_A": 0.03603609470523719,
+          "geometry_error_bound_eV": null,
+          "raw_fmax_eV_A": 0.22639077804335472,
+          "relaxation_status": "force-qualified"
+        }
+      },
+      "geometry_error_bound_eV": null,
+      "geometry_error_status": "Unbounded; actual forces do not bound contrast error",
+      "oxygen_R01_lowering_eV": 37.89137304098119,
+      "oxygen_minus_plain_R01_lowering_eV": -1.4966897374852408,
+      "oxygen_minus_plain_signedW0_eV": 5.010453174926148,
+      "oxygen_signedW0_eV": -39.78417873201784,
+      "plain_R01_lowering_eV": 39.388062778466434,
+      "plain_signedW0_eV": -44.79463190694399
+    }
+  },
+  "qualification_scope": "Separate paired R0.1/contact h/k criterion and geometry force stationarity; h/k checks do not qualify geometry or bound geometry-convergence error",
+  "qualified": false,
+  "ray_by_role": {
+    "oxygen": {
+      "authority_entry": "entry_2971",
+      "clearance": {
+        "R_interval_A": [
+          0.0,
+          1.6
+        ],
+        "at_R_A": 1.328702976195565,
+        "excludes": "target index and all its periodic images only",
+        "method": "all periodic images inside triangle-bound sphere; exact closed-segment projection",
+        "min_clearance_A": 1.5121158685782417,
+        "search_radius_A": 3.4770967676283595,
+        "spectator_image": [
+          -1,
+          -1,
+          0
+        ],
+        "spectator_index": 6,
+        "spectator_symbol": "Pd"
+      },
+      "coated_witness": {
+        "bo_eligible": false,
+        "boundary": {
+          "bytes": 14216,
+          "path": "provenance/ray/pd-coat-shared-final-step5-001-evidence/precommit/pd-precommit-current-001-evidence/witness/geometry-step-005-boundary.json",
+          "sha256": "8cf9e5c155192fcbcf887e05e14810322104f4dd147cb3e2afc6e3e66fa9315a"
+        },
+        "force_qualified": false,
+        "not_final": true,
+        "schema": "micro-pd-coated-boundary-witness-v1"
+      },
+      "consumed_policy": {
+        "bytes": 78616,
+        "path": "provenance/ray/probe-ray.json",
+        "sha256": "30cda7b723c4982d934de8cd0283bb90b3d87c04b5f2a16646dd707bd60e692a"
+      },
+      "direction_n_hat": [
+        0.43301270189221946,
+        0.75,
+        0.4999999999999998
+      ],
+      "final_coated_admitted": true,
+      "final_frame_optimum_claim": false,
+      "precommit": {
+        "bytes": 402245,
+        "path": "provenance/ray/pd-coat-shared-final-step5-001-evidence/precommit/probe-ray.json",
+        "sha256": "46226e56d769012f4a7cdafc7c161a488a74f2b82039a9fa706cf5e933391dd0"
+      },
+      "status": "precommitted shared-open"
+    },
+    "plain": {
+      "authority_entry": "entry_2971",
+      "clearance": {
+        "R_interval_A": [
+          0.0,
+          1.6
+        ],
+        "at_R_A": 1.2495190724801475,
+        "excludes": "target index and all its periodic images only",
+        "method": "all periodic images inside triangle-bound sphere; exact closed-segment projection",
+        "min_clearance_A": 1.506644280092414,
+        "search_radius_A": 3.5466586014081174,
+        "spectator_image": [
+          -1,
+          -1,
+          0
+        ],
+        "spectator_index": 6,
+        "spectator_symbol": "Pd"
+      },
+      "coated_witness": {
+        "bo_eligible": false,
+        "boundary": {
+          "bytes": 14216,
+          "path": "provenance/ray/pd-precommit-current-001-evidence/witness/geometry-step-005-boundary.json",
+          "sha256": "8cf9e5c155192fcbcf887e05e14810322104f4dd147cb3e2afc6e3e66fa9315a"
+        },
+        "force_qualified": false,
+        "not_final": true,
+        "schema": "micro-pd-coated-boundary-witness-v1"
+      },
+      "consumed_policy": {
+        "bytes": 402245,
+        "path": "provenance/ray/probe-ray.json",
+        "sha256": "46226e56d769012f4a7cdafc7c161a488a74f2b82039a9fa706cf5e933391dd0"
+      },
+      "direction_n_hat": [
+        0.43301270189221946,
+        0.75,
+        0.4999999999999998
+      ],
+      "final_coated_admitted": false,
+      "final_frame_optimum_claim": false,
+      "precommit": {
+        "bytes": 402245,
+        "path": "provenance/ray/probe-ray.json",
+        "sha256": "46226e56d769012f4a7cdafc7c161a488a74f2b82039a9fa706cf5e933391dd0"
+      },
+      "status": "precommitted ray; final coated shared-open admission pending"
+    }
+  },
+  "ray_policy_entry": "entry_2971",
+  "recorded_deadlines_utc": {
+    "oxygen": "2026-11-21T03:00:00Z",
+    "plain": "2026-11-21T03:00:00Z"
+  },
+  "resolved": false,
+  "schema": "micro-pd-paired-comparisons-v1",
+  "scope": "Actual finite-cell target-conditioned internal BO screening for compact Pd and a coherent added 4Pd+4O sheet, not oxygen insertion at fixed Pd inventory. D is unconstrained and its actual migrated/relaxed site is used. Pd10/O6 frozen-core PAW; q+1 Hae probe adds no electron. Paired h/k checks apply only at R0.1/contact. Slab-thickness, cell/vacuum and full-radius h/k controls omitted. Geometry-convergence error is unbounded (geometry_error_bound_eV=null), including for force-qualified frames; residual forces do not bound pair-lowering error. No isolated limit, site-retention, bulk-PdO, Ueq, action/Eq7 or experimental phase claim.",
+  "shared_precommit": {
+    "bytes": 402245,
+    "sha256": "46226e56d769012f4a7cdafc7c161a488a74f2b82039a9fa706cf5e933391dd0"
+  },
+  "tolerance_definition": "max(5 eV, 0.1*abs(base coated-minus-bare contrast)) per observable"
+}

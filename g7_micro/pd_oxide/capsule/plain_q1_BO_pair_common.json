@@ -1,0 +1,1735 @@
+{
+  "R_A": [
+    0.1,
+    0.2,
+    0.4,
+    0.8,
+    1.2,
+    1.6
+  ],
+  "V_pair_total_eV": [
+    104.6083919082117,
+    36.72791632870983,
+    9.090490468076883,
+    1.6856613266363012,
+    0.5996638376359901,
+    0.19566402246558684
+  ],
+  "actual_completed_radii_A": [
+    0.1,
+    0.2,
+    0.4,
+    0.8,
+    1.2,
+    1.6
+  ],
+  "completed_radii_A": [
+    0.1,
+    0.2,
+    0.4,
+    0.8,
+    1.2,
+    1.6
+  ],
+  "configuration": {
+    "core_scope": "Pd10/O6 frozen-core PAW; projector-free Hae/H1; no core-response correction",
+    "electronic_symbol": "H",
+    "geometry": {
+      "accepted_steps": 5,
+      "cell_A": [
+        [
+          6.13639979955674,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          6.13639979955674,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          22.039528899485433
+        ]
+      ],
+      "coated_witness": {
+        "bo_eligible": false,
+        "boundary": {
+          "bytes": 14216,
+          "path": "provenance/ray/pd-precommit-current-001-evidence/witness/geometry-step-005-boundary.json",
+          "sha256": "8cf9e5c155192fcbcf887e05e14810322104f4dd147cb3e2afc6e3e66fa9315a"
+        },
+        "force_qualified": false,
+        "gpw": {
+          "bytes": 108700534,
+          "path": "provenance/ray/pd-precommit-current-001-evidence/witness/geometry-step-005.gpw",
+          "sha256": "02eeacd2c89bfc67195bf780abc8b3fef3def69e52e621befd75e7cae3a91ac0"
+        },
+        "initial_frame": {
+          "bytes": 10284,
+          "path": "provenance/ray/pd-precommit-current-001-evidence/witness/initial-frame.json",
+          "sha256": "a33e7721d15bc023f70f8cfab2310bee1a001c754e99d52842cfa398535e4559"
+        },
+        "not_final": true,
+        "original_input": {
+          "bytes": 3113,
+          "path": "provenance/ray/pd-precommit-current-001-evidence/witness/provenance/input.json",
+          "sha256": "db5cbcf2cefc9e12c16aa9eeff3aee7a613b6b0b2f068ec3e21ca9f3af1c5154"
+        },
+        "original_source_epoch": {
+          "bytes": 8719,
+          "path": "provenance/ray/pd-precommit-current-001-evidence/witness/provenance/source-manifest.json",
+          "sha256": "bfb479cd2cc62824e3f05e4e82dde733931e526f4a4077b1076a5eb735a6f979"
+        },
+        "schema": "micro-pd-coated-boundary-witness-v1",
+        "source_files": [
+          {
+            "bytes": 11328,
+            "path": "provenance/ray/pd-precommit-current-001-evidence/witness/provenance/source/artifacts/P255-g7-micro-calibration-20261120/PLAN.md",
+            "sha256": "a17a477165085d32ff41391a1dd8c7825e006d70dc3b6da23f6216246aa3c3bb"
+          },
+          {
+            "bytes": 2610,
+            "path": "provenance/ray/pd-precommit-current-001-evidence/witness/provenance/source/artifacts/P255-g7-micro-calibration-20261120/geometry-pd/COD-1009031-PdO-original.cif",
+            "sha256": "7bfb22fa748f24d860b368935dd22733b129f7702dc769ec45eac48d4b2c9b43"
+          },
+          {
+            "bytes": 4673,
+            "path": "provenance/ray/pd-precommit-current-001-evidence/witness/provenance/source/artifacts/P255-g7-micro-calibration-20261120/geometry-pd/COD-1011106-Pd-original.cif",
+            "sha256": "534544f15709f43bf7d88291e3835f4cdd823159585598f0f3b73383c4e4624d"
+          },
+          {
+            "bytes": 646674,
+            "path": "provenance/ray/pd-precommit-current-001-evidence/witness/provenance/source/artifacts/P255-g7-micro-calibration-20261120/geometry-pd/Todorova2003-original.pdf",
+            "sha256": "99b55c281ce30ecbc6670d5e388e6028a88e7e0140238b85ccdbd752f1ad43f5"
+          },
+          {
+            "bytes": 5505,
+            "path": "provenance/ray/pd-precommit-current-001-evidence/witness/provenance/source/artifacts/P255-g7-micro-calibration-20261120/geometry-pd/structure-binding.json",
+            "sha256": "6e75aacbfe41aaa1dd71de79962f77102c6ae225fca1aebb4a6bdd1290547417"
+          },
+          {
+            "bytes": 10172,
+            "path": "provenance/ray/pd-precommit-current-001-evidence/witness/provenance/source/artifacts/P255-g7-micro-calibration-20261120/pd-production/PLAN.md",
+            "sha256": "23498021bad8bf0585ed5619a0b5ad1b5133ebaa420c14f0033f831cf25b3795"
+          },
+          {
+            "bytes": 2107,
+            "path": "provenance/ray/pd-precommit-current-001-evidence/witness/provenance/source/campaigns/P255-pdd-collision/collision_geometry.py",
+            "sha256": "077eb638330c142ce710bd359780d0123d74d411e1bd9f26c7022a1e9bd1cc23"
+          },
+          {
+            "bytes": 2508,
+            "path": "provenance/ray/pd-precommit-current-001-evidence/witness/provenance/source/campaigns/P255-pdd-collision/collision_ground.py",
+            "sha256": "7ec514b422fbe2d43c8e1e60db71636ef6827d3bcbedd1f8291fc25241f070eb"
+          },
+          {
+            "bytes": 2499,
+            "path": "provenance/ray/pd-precommit-current-001-evidence/witness/provenance/source/campaigns/P255-pdd-collision/delivery/green.py",
+            "sha256": "08e5e5c10536e57b3a319b9385808c2a7cbf0bf4e32faf7f91c9d1bb07746ada"
+          },
+          {
+            "bytes": 16747,
+            "path": "provenance/ray/pd-precommit-current-001-evidence/witness/provenance/source/campaigns/P255-pdd-collision/hydride_screening/contact_export.py",
+            "sha256": "1b159abc650a0cc10eaa2cae867fbf14a2182089bdc488ed08ed35c55502c4b9"
+          },
+          {
+            "bytes": 19534,
+            "path": "provenance/ray/pd-precommit-current-001-evidence/witness/provenance/source/campaigns/P255-pdd-collision/hydride_screening/contact_native.py",
+            "sha256": "45067370e860b9a8b48f1ae197f163c5f39b04678a4813f6a3866328f15fc2b1"
+          },
+          {
+            "bytes": 19945,
+            "path": "provenance/ray/pd-precommit-current-001-evidence/witness/provenance/source/campaigns/P255-pdd-collision/hydride_screening/contact_replay.py",
+            "sha256": "7bf17b84616d2ab887147e20b9a0f996752f9e2b01935c07bd9848f8f25921f4"
+          },
+          {
+            "bytes": 2761,
+            "path": "provenance/ray/pd-precommit-current-001-evidence/witness/provenance/source/campaigns/P255-pdd-collision/hydride_screening/contact_setup.py",
+            "sha256": "94a9069f911d2c25b28032b73b936dacde0bc82847dd78f42b0aa89cb4e817ad"
+          },
+          {
+            "bytes": 8293,
+            "path": "provenance/ray/pd-precommit-current-001-evidence/witness/provenance/source/campaigns/P255-pdd-collision/hydride_screening/contact_state.py",
+            "sha256": "0bea8674eccb401de39cf61085d8f0b3fbd73c145c85ddc4ea2d6e102a85d2e0"
+          },
+          {
+            "bytes": 7520,
+            "path": "provenance/ray/pd-precommit-current-001-evidence/witness/provenance/source/campaigns/P255-pdd-collision/hydride_screening/export_pairs.py",
+            "sha256": "0cf6c540bba755af5f2fbc9342a4eb743b908894f23af3520349c8acbb23b85f"
+          },
+          {
+            "bytes": 2826,
+            "path": "provenance/ray/pd-precommit-current-001-evidence/witness/provenance/source/campaigns/P255-pdd-collision/hydride_screening/geometry.py",
+            "sha256": "a731e52e868cc8c1430f92300659b8b54cf9f3da051cc3fd2e74928a9f66a22b"
+          },
+          {
+            "bytes": 21272,
+            "path": "provenance/ray/pd-precommit-current-001-evidence/witness/provenance/source/campaigns/P255-pdd-collision/hydride_screening/hydride_replay.py",
+            "sha256": "0e688e4f11e50c824e3cf1cc3d4686c900bfa14f0d0b87b0546f6f65871450f7"
+          },
+          {
+            "bytes": 7001,
+            "path": "provenance/ray/pd-precommit-current-001-evidence/witness/provenance/source/campaigns/P255-pdd-collision/hydride_screening/launch_contact.py",
+            "sha256": "138c0826660c944b46ce2e2bda7216674ef737968185474e3c286c3a0d0b40a3"
+          },
+          {
+            "bytes": 7628,
+            "path": "provenance/ray/pd-precommit-current-001-evidence/witness/provenance/source/campaigns/P255-pdd-collision/hydride_screening/launch_hydride.py",
+            "sha256": "3c49127ece3e59d5800239302d0c31d09f269b2e25c01dc8a8fda4e9f9229153"
+          },
+          {
+            "bytes": 1788,
+            "path": "provenance/ray/pd-precommit-current-001-evidence/witness/provenance/source/campaigns/P255-pdd-collision/hydride_screening/log_privacy.py",
+            "sha256": "2a5842a86aecf96ebf13a59d678cf7101cae67dec65d5df98fc3c98835c05a8b"
+          },
+          {
+            "bytes": 6246,
+            "path": "provenance/ray/pd-precommit-current-001-evidence/witness/provenance/source/campaigns/P255-pdd-collision/hydride_screening/native_state.py",
+            "sha256": "f945f17ed252a75385cafad2b80c64352537c41d1cc2e468d5ed2643c795f011"
+          },
+          {
+            "bytes": 2356,
+            "path": "provenance/ray/pd-precommit-current-001-evidence/witness/provenance/source/campaigns/P255-pdd-collision/hydride_screening/preflight.py",
+            "sha256": "857d11c5d8e9a1280e1b382ba7154fd5cd9cdd52d74286bc709325bf14dd04ab"
+          },
+          {
+            "bytes": 4467,
+            "path": "provenance/ray/pd-precommit-current-001-evidence/witness/provenance/source/campaigns/P255-pdd-collision/hydride_screening/quartet.py",
+            "sha256": "88136cda3a302e4f08ce3d3902af1eb1ebef5475d70129c4726c2b8518285646"
+          },
+          {
+            "bytes": 9526,
+            "path": "provenance/ray/pd-precommit-current-001-evidence/witness/provenance/source/campaigns/P255-pdd-collision/hydride_screening/readout.py",
+            "sha256": "802bf03d259884d15f3b46ebdb3e4275f1f71908327565d3eea01a6cba87ffd5"
+          },
+          {
+            "bytes": 3349,
+            "path": "provenance/ray/pd-precommit-current-001-evidence/witness/provenance/source/campaigns/P255-pdd-collision/hydride_screening/relaxation.py",
+            "sha256": "5aec4066a8a5360bfb9c29200beb7259b22e21b5e6c5b23cac612caa19e0241e"
+          },
+          {
+            "bytes": 4980,
+            "path": "provenance/ray/pd-precommit-current-001-evidence/witness/provenance/source/campaigns/P255-pdd-collision/hydride_screening/run_hydride.py",
+            "sha256": "95caba7166dd05295440d39847a141b3a4af50d70b745c585ca9583ecc006880"
+          },
+          {
+            "bytes": 1917,
+            "path": "provenance/ray/pd-precommit-current-001-evidence/witness/provenance/source/campaigns/P255-pdd-collision/hydride_screening/verify_charge_reference.py",
+            "sha256": "0bc71a8eeff52cd3833c9ac67bf0802eed68c6122c8e182314d89cd5e752929d"
+          },
+          {
+            "bytes": 17846,
+            "path": "provenance/ray/pd-precommit-current-001-evidence/witness/provenance/source/campaigns/P255-pdd-collision/hydride_screening/verify_contact_mapping.py",
+            "sha256": "d06924dd9ba0ffff3d7c131dc7e677ec18bc7bb8053a296a20da6171aec0eb03"
+          },
+          {
+            "bytes": 4855,
+            "path": "provenance/ray/pd-precommit-current-001-evidence/witness/provenance/source/campaigns/P255-pdd-collision/micro_calibration/contact_zr.py",
+            "sha256": "f59db2978eef2fc6acc10b924266be9a1c9822e7a0d1f5278564d7b9ba9331ff"
+          },
+          {
+            "bytes": 3876,
+            "path": "provenance/ray/pd-precommit-current-001-evidence/witness/provenance/source/campaigns/P255-pdd-collision/micro_calibration/cost_readout.py",
+            "sha256": "0b45ae3cd42831cb136ea6da519620afe5a8220ba516994cc8b319510d5aa4ed"
+          },
+          {
+            "bytes": 9720,
+            "path": "provenance/ray/pd-precommit-current-001-evidence/witness/provenance/source/campaigns/P255-pdd-collision/micro_calibration/geometry_pd.py",
+            "sha256": "d766d5d82f4418468847dc1b64ef2ae4afff6b358ea4ae1c10cf56c60bc8a510"
+          },
+          {
+            "bytes": 8159,
+            "path": "provenance/ray/pd-precommit-current-001-evidence/witness/provenance/source/campaigns/P255-pdd-collision/micro_calibration/geometry_zr.py",
+            "sha256": "91d9ad13dd30e359aa1cba70c0e9e9855d9e4646f9a80422920dc055e363cb24"
+          },
+          {
+            "bytes": 9168,
+            "path": "provenance/ray/pd-precommit-current-001-evidence/witness/provenance/source/campaigns/P255-pdd-collision/micro_calibration/launch_micro.py",
+            "sha256": "87625ea8dc454254e4baa7d35fca3f4fc96b6cec6fdff88d0012a2beddfb78c2"
+          },
+          {
+            "bytes": 9258,
+            "path": "provenance/ray/pd-precommit-current-001-evidence/witness/provenance/source/campaigns/P255-pdd-collision/micro_calibration/native.py",
+            "sha256": "b49aac201d964ac1004d3a7e651e62ddce9dfd39ae8bcd97e6bb76918f68a76f"
+          },
+          {
+            "bytes": 7271,
+            "path": "provenance/ray/pd-precommit-current-001-evidence/witness/provenance/source/campaigns/P255-pdd-collision/micro_calibration/pd_ray.py",
+            "sha256": "5d972cfbd3f6ef1bbcd56d375e4d9909879094a2b7884e9b5008ec07288c8b26"
+          },
+          {
+            "bytes": 14291,
+            "path": "provenance/ray/pd-precommit-current-001-evidence/witness/provenance/source/campaigns/P255-pdd-collision/micro_calibration/pd_relax.py",
+            "sha256": "3c3f9860e5d86e518402ab371a5539c1872aad1fd443c44e84fa957b22813190"
+          },
+          {
+            "bytes": 7113,
+            "path": "provenance/ray/pd-precommit-current-001-evidence/witness/provenance/source/campaigns/P255-pdd-collision/micro_calibration/pd_run.py",
+            "sha256": "3ef2274ec2954bf191dd5ad373b418ce916801acf4b3417ef70a7109810f9c2d"
+          },
+          {
+            "bytes": 4550,
+            "path": "provenance/ray/pd-precommit-current-001-evidence/witness/provenance/source/campaigns/P255-pdd-collision/micro_calibration/pilot_pd.py",
+            "sha256": "9e8d3c059a76523cf52b35a6b77a8aea968c4c13ebe897f5ac825dbbf7c4d9ed"
+          },
+          {
+            "bytes": 8160,
+            "path": "provenance/ray/pd-precommit-current-001-evidence/witness/provenance/source/campaigns/P255-pdd-collision/micro_calibration/preflight.py",
+            "sha256": "693491a484a68c7483c46b6484c732e3e70d73d9bcdfa369b9db128ed549a9ef"
+          },
+          {
+            "bytes": 6305,
+            "path": "provenance/ray/pd-precommit-current-001-evidence/witness/provenance/source/campaigns/P255-pdd-collision/micro_calibration/quartet_zr.py",
+            "sha256": "a881c7987cef3bfd135186827dd93ffc55e4c281fe9901cd1a6e4468bf90663d"
+          },
+          {
+            "bytes": 13116,
+            "path": "provenance/ray/pd-precommit-current-001-evidence/witness/provenance/source/campaigns/P255-pdd-collision/micro_calibration/relax_zr.py",
+            "sha256": "675297e4a68d0426bce942d3e7f3fca1d374c7f0c130652d7dd2f795bbb0e3e2"
+          },
+          {
+            "bytes": 8251,
+            "path": "provenance/ray/pd-precommit-current-001-evidence/witness/provenance/source/campaigns/P255-pdd-collision/micro_calibration/run_zr.py",
+            "sha256": "4304ce4c3bdfb63cc151a62cad20035f5e3d29c5f10ea3955b4304017710fdde"
+          },
+          {
+            "bytes": 1409,
+            "path": "provenance/ray/pd-precommit-current-001-evidence/witness/provenance/source/campaigns/P255-pdd-collision/screen_io.py",
+            "sha256": "dcab99128fbb312083bdccf440c4c32c214e58e78c59a8a52126300c25d3420c"
+          },
+          {
+            "bytes": 3022,
+            "path": "provenance/ray/pd-precommit-current-001-evidence/witness/provenance/source/src/substrate_framework/collision_bare_reference.py",
+            "sha256": "05ccba36601567b71a12af42c309cd978e1637b454454740c0f2909725598f09"
+          }
+        ]
+      },
+      "constrained_forces_eV_A": [
+        [
+          -1.3462523859967413e-13,
+          -7.635370342855261e-13,
+          0.014123901742785782
+        ],
+        [
+          0.011713831994885624,
+          0.004651753102997679,
+          0.02037496500685654
+        ],
+        [
+          0.0046517530981728915,
+          -0.011713831997500875,
+          0.020374965003592777
+        ],
+        [
+          -0.004651753101136109,
+          0.011713831999567926,
+          0.020374965005934
+        ],
+        [
+          -0.011713831992993605,
+          -0.004651753102325082,
+          0.020374965009587936
+        ],
+        [
+          -0.00898143653508934,
+          -0.025084307964654596,
+          0.00526719251051063
+        ],
+        [
+          0.008981436533858427,
+          0.02508430796453268,
+          0.00526719251226413
+        ],
+        [
+          -0.025084307978174392,
+          0.008981436532772646,
+          0.0052671925156384716
+        ],
+        [
+          -1.5505498435909341e-13,
+          8.574190852587932e-13,
+          -0.0071999714197459735
+        ],
+        [
+          0.02508430797439829,
+          -0.00898143653346165,
+          0.005267192516704436
+        ],
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          2.6435211988836924e-13,
+          2.215971999322917e-14,
+          -0.03603609470523719
+        ]
+      ],
+      "coordination": {
+        "actual_target_A": [
+          -4.089503498474233e-14,
+          -2.123399238638252e-14,
+          9.446658600408119
+        ],
+        "final_O_indices_within_3_A": [],
+        "final_Pd_indices_within_3_A": [
+          0,
+          5,
+          6,
+          7,
+          9,
+          10
+        ],
+        "initial_Pd_indices_within_3_A": [
+          0,
+          5,
+          6,
+          7,
+          9,
+          10
+        ],
+        "nearest_O": null,
+        "nearest_Pd": {
+          "distance_A": 1.946658600408119,
+          "image": [
+            0,
+            0,
+            0
+          ],
+          "index": 10,
+          "symbol": "Pd"
+        },
+        "neighbors_within_3_5_A": [
+          {
+            "distance_A": 1.946658600408119,
+            "image": [
+              0,
+              0,
+              0
+            ],
+            "index": 10,
+            "symbol": "Pd"
+          },
+          {
+            "distance_A": 1.9573642735123873,
+            "image": [
+              0,
+              -1,
+              0
+            ],
+            "index": 7,
+            "symbol": "Pd"
+          },
+          {
+            "distance_A": 1.9573642735124863,
+            "image": [
+              -1,
+              0,
+              0
+            ],
+            "index": 9,
+            "symbol": "Pd"
+          },
+          {
+            "distance_A": 1.9573642735132997,
+            "image": [
+              0,
+              0,
+              0
+            ],
+            "index": 5,
+            "symbol": "Pd"
+          },
+          {
+            "distance_A": 1.95736427351345,
+            "image": [
+              -1,
+              -1,
+              0
+            ],
+            "index": 6,
+            "symbol": "Pd"
+          },
+          {
+            "distance_A": 2.0697221604463802,
+            "image": [
+              0,
+              0,
+              0
+            ],
+            "index": 0,
+            "symbol": "Pd"
+          },
+          {
+            "distance_A": 3.3646040192781514,
+            "image": [
+              -1,
+              -1,
+              0
+            ],
+            "index": 12,
+            "symbol": "Pd"
+          },
+          {
+            "distance_A": 3.3646040192781594,
+            "image": [
+              -1,
+              0,
+              0
+            ],
+            "index": 14,
+            "symbol": "Pd"
+          },
+          {
+            "distance_A": 3.364604019278204,
+            "image": [
+              0,
+              -1,
+              0
+            ],
+            "index": 11,
+            "symbol": "Pd"
+          },
+          {
+            "distance_A": 3.3646040192782123,
+            "image": [
+              0,
+              0,
+              0
+            ],
+            "index": 13,
+            "symbol": "Pd"
+          },
+          {
+            "distance_A": 3.4164757146543687,
+            "image": [
+              0,
+              -1,
+              0
+            ],
+            "index": 1,
+            "symbol": "Pd"
+          },
+          {
+            "distance_A": 3.416475714654427,
+            "image": [
+              -1,
+              0,
+              0
+            ],
+            "index": 4,
+            "symbol": "Pd"
+          },
+          {
+            "distance_A": 3.416475714654555,
+            "image": [
+              0,
+              0,
+              0
+            ],
+            "index": 3,
+            "symbol": "Pd"
+          },
+          {
+            "distance_A": 3.416475714654734,
+            "image": [
+              -1,
+              -1,
+              0
+            ],
+            "index": 2,
+            "symbol": "Pd"
+          }
+        ],
+        "physical_site": "actual relaxed site; migration permitted, no retained-site qualification",
+        "target_index": 15,
+        "target_symbol": "H"
+      },
+      "direction": [
+        0.43301270189221946,
+        0.75,
+        0.4999999999999998
+      ],
+      "direction_n_hat": [
+        0.43301270189221946,
+        0.75,
+        0.4999999999999998
+      ],
+      "direction_status": "precommitted ray; final coated shared-open admission pending",
+      "displacements": {
+        "distances_A": [
+          0.135380760854499,
+          0.08221455726005279,
+          0.08221455726001192,
+          0.0822145572595613,
+          0.0822145572597385,
+          0.055890688520981044,
+          0.05589068852109058,
+          0.05589068852010556,
+          0.03252394651324231,
+          0.05589068852018983,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.006158600408118885
+        ],
+        "maximum_A": 0.135380760854499,
+        "target_A": 0.006158600408118885,
+        "unwrapped_target_vector_A": [
+          -4.089503498474233e-14,
+          -2.123399238638252e-14,
+          0.006158600408118886
+        ],
+        "vectors_A": [
+          [
+            -6.787474314575588e-14,
+            8.719427491256067e-14,
+            0.135380760854499
+          ],
+          [
+            0.011715857599281064,
+            -0.009148321461041498,
+            0.08085963344355028
+          ],
+          [
+            -0.009148321460614284,
+            -0.011715857600173685,
+            0.08085963344342773
+          ],
+          [
+            0.009148321460697106,
+            0.011715857600183455,
+            0.08085963344295877
+          ],
+          [
+            -0.01171585759972382,
+            0.009148321461072806,
+            0.08085963344316303
+          ],
+          [
+            0.012756594735591875,
+            0.01324498159590437,
+            0.0527788671404128
+          ],
+          [
+            -0.0127565947358077,
+            -0.013244981596017167,
+            0.05277886714044833
+          ],
+          [
+            0.013244981595938008,
+            -0.012756594734690374,
+            0.052778867139695144
+          ],
+          [
+            -1.5853984791647235e-13,
+            6.616929226765933e-14,
+            0.03252394651324231
+          ],
+          [
+            -0.01324498159621079,
+            0.012756594734688152,
+            0.05277886713971647
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            -4.0895034984742325e-14,
+            -2.123399238638252e-14,
+            0.006158600408118885
+          ]
+        ]
+      },
+      "fixed_fmax_eV_A": 0.22639077804335472,
+      "fixed_indices": [
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "force_qualification": "free atoms only <=0.05 eV/A; fixed raw reaction forces reported separately",
+      "force_qualified": true,
+      "forces_eV_A": [
+        [
+          -1.3462523859967413e-13,
+          -7.635370342855261e-13,
+          0.014123901742785782
+        ],
+        [
+          0.011713831994885624,
+          0.004651753102997679,
+          0.02037496500685654
+        ],
+        [
+          0.0046517530981728915,
+          -0.011713831997500875,
+          0.020374965003592777
+        ],
+        [
+          -0.004651753101136109,
+          0.011713831999567926,
+          0.020374965005934
+        ],
+        [
+          -0.011713831992993605,
+          -0.004651753102325082,
+          0.020374965009587936
+        ],
+        [
+          -0.00898143653508934,
+          -0.025084307964654596,
+          0.00526719251051063
+        ],
+        [
+          0.008981436533858427,
+          0.02508430796453268,
+          0.00526719251226413
+        ],
+        [
+          -0.025084307978174392,
+          0.008981436532772646,
+          0.0052671925156384716
+        ],
+        [
+          -1.5505498435909341e-13,
+          8.574190852587932e-13,
+          -0.0071999714197459735
+        ],
+        [
+          0.02508430797439829,
+          -0.00898143653346165,
+          0.005267192516704436
+        ],
+        [
+          6.051663237235103e-13,
+          1.31239249432899e-13,
+          -0.19871709794390216
+        ],
+        [
+          0.17920587717126113,
+          -0.09003339977802205,
+          -0.10503344655234507
+        ],
+        [
+          -0.0900333997650412,
+          -0.1792058771716326,
+          -0.1050334465515567
+        ],
+        [
+          0.09003339976402017,
+          0.17920587717210718,
+          -0.10503344655076868
+        ],
+        [
+          -0.17920587717144576,
+          0.09003339977832317,
+          -0.1050334465522523
+        ],
+        [
+          2.6435211988836924e-13,
+          2.215971999322917e-14,
+          -0.03603609470523719
+        ]
+      ],
+      "free_fmax_eV_A": 0.03603609470523719,
+      "free_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        15
+      ],
+      "geometry_error_bound_eV": null,
+      "gpw": {
+        "bytes": 79137010,
+        "path": "provenance/geometry/geometry-step-005.gpw",
+        "sha256": "6a30f8f64b3938f83a2ff440b545dada13ba74f2e6cf7ba040bce297500b0738"
+      },
+      "initial_design": {
+        "cell_control": {
+          "actual_interperiod_empty_gap_A": 18.158528899485432,
+          "base_to_large_changes": null,
+          "cell_A": [
+            [
+              6.13639979955674,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              6.13639979955674,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              22.039528899485433
+            ]
+          ],
+          "compact_cost_model": "Three metal layers with the source base lateral registry and PdO sheet; Unrelaxed source-built model; actual constrained relaxation is separate, no interface/thickness convergence.",
+          "metal_geometric_thickness_A": 3.881,
+          "metal_layers": 3,
+          "no_convergence_waiver": true,
+          "oxide_coated_interperiod_vacuum_A": 15.0,
+          "oxide_geometric_thickness_A": 0.0,
+          "oxide_sheet_count": 0,
+          "surface_repeat": [
+            1,
+            1
+          ]
+        },
+        "constraints": [],
+        "direction": [
+          0.8944271909999159,
+          -0.4472135954999579,
+          0.0
+        ],
+        "execution_status": "Candidate construction source only; no Native or builder execution by author",
+        "limitations": [
+          "All positions must be relaxed with no fixed atoms. Fixed cell starts from measured rather than PBE-optimized Pd, and the film strain is calculated against experimental CIF metrics, not the paper's theoretical area strain.",
+          "Single-sided coating plus three-dimensional PBC can introduce a slab dipole and artificial interslab electrostatics. No cancellation or vacuum convergence is claimed.",
+          "Base four-layer Pd is thin; opposite bare surface can affect the selected D. Large changes x image separation, thickness and D dilution together; y separation and oxide thickness are not controlled.",
+          "An infinite coherent stoichiometric one-sheet surface oxide is not bulk PdO, a 30 nm foil, an oxide island, a measured experimental interface, or an oxygen adatom phase.",
+          "Bulk-cut sheet coordinates omit experimental/DFT rumpling and lateral relaxation. PdO phase retention, D retention, interface adhesion and film reconstruction are open Root acceptance gates.",
+          "Alternative symmetric two-sided coating suppresses the coating dipole but costs36host at four metal layers, or31host with only three metal layers and D adjacent to both interfaces. Exact total-Pd matching to ideal clean sqrt5 fcc slabs is impossible without introducing a Pd vacancy, changing metal thickness/lateral strain, or a different loading convention."
+        ],
+        "matching": {
+          "D": 1,
+          "D_per_metal_Pd": 0.06666666666666667,
+          "D_per_surface_area_A2": 0.026556614286621958,
+          "D_per_total_Pd": 0.06666666666666667,
+          "O": 0,
+          "comparison_loading": "Matched one D per cell and per identical metallic substrate: base D/Pd_metal=1/20, large=1/60. Total D/Pd differs by the explicit deposited oxide Pd: oxygen base1/24, large1/68 versus plain1/20,1/60; this is a coating comparison, not fixed-total-Pd oxygen insertion.",
+          "different": "oxygen adds 4Pd+4O per sqrt5 tile, including its own Pd sublattice",
+          "identical": [
+            "cell",
+            "metallic Pd positions and inventory",
+            "one D per cell",
+            "D position and isotope mass",
+            "incoming ray",
+            "metal lattice"
+          ],
+          "metal_Pd": 15,
+          "metal_a_A": 3.881,
+          "oxide_area_strain": 0.013490454048159739,
+          "oxide_in_plane_engineering_strain": [
+            0.012607227649627184,
+            0.0008722299964052382
+          ],
+          "oxide_orientation": "simulation x parallel PdO[010], simulation y parallel PdO[10-1], simulation z parallel the (101) reciprocal normal; two [010] repeats",
+          "oxide_pd_mean_height_above_top_metal_A": 2.5,
+          "oxide_stoichiometry_per_tile": {
+            "O": 4,
+            "Pd": 4
+          },
+          "registry_fractional_shift": [
+            0.3,
+            0.1
+          ],
+          "registry_status": "One two-O-coordinated sheet Pd is initially above the fourfold hollow of the metal top layer. This is a fully recorded chosen registry, not the optimized Todorova coordinates.",
+          "total_Pd": 15
+        },
+        "nominal_site": {
+          "depth_below_top_metal_A": 1.9405,
+          "description": "One D, nominal first fully coordinated subsurface octahedral site, directly below top metal Pd at (0,0), z=top_metal-a_Pd/2; six ideal Pd neighbors at a_Pd/2. Never an identified relaxed site.",
+          "ideal_metal_coordination": 6,
+          "ideal_nearest_Pd_A": 1.9405,
+          "initial_target_A": [
+            0.0,
+            0.0,
+            9.4405
+          ],
+          "site_status": "Intended initial site only; no stable-site or retention claim"
+        },
+        "pair": "pd-oxide",
+        "ray": {
+          "R_interval_A": [
+            0.1,
+            1.6
+          ],
+          "analytic_initial_metal_clearance_lower_bound_A": 1.3721407088924953,
+          "description": "In the subsurface plane along a Pd(100) surface primitive axis. Analytic ideal metallic spectator clearance over R=0.1..1.6 A is at least a_Pd/(2*sqrt(2))=1.3721407088924953 A; Root must recalculate after full relaxation.",
+          "numerically_executed": false,
+          "post_relaxation_recheck_required": true
+        },
+        "relaxation_status": "Not run; all atomic positions unconstrained and require Root relaxation",
+        "scope": "One D in metallic Pd adjacent to a coherent stoichiometric PdO(101) surface sheet versus the identical bare metallic substrate. This is an added-PdO-layer intervention, not oxygen insertion at fixed total Pd, bulk PdO, an oxide island, or an experimental foil reconstruction.",
+        "size": "compact",
+        "structural_sources": [
+          {
+            "bytes": 4673,
+            "relative_name": "artifacts/P255-g7-micro-calibration-20261120/geometry-pd/COD-1011106-Pd-original.cif",
+            "role": "fcc Pd structure and a=3.881(2) A; Barth and Lunde, 1926; synthetic specimen; not a PBE equilibrium lattice",
+            "sha256": "534544f15709f43bf7d88291e3835f4cdd823159585598f0f3b73383c4e4624d",
+            "url": "http1011106.cif"
+          },
+          {
+            "bytes": 2610,
+            "relative_name": "artifacts/P255-g7-micro-calibration-20261120/geometry-pd/COD-1009031-PdO-original.cif",
+            "role": "Waser, Levy and Peterson, Acta Cryst. 6 (1953) 661-663, DOI10.1107/S0365110X53001800; tetragonal PdO, SG131 in the CIF's shifted setting",
+            "sha256": "7bfb22fa748f24d860b368935dd22733b129f7702dc769ec45eac48d4b2c9b43",
+            "url": "http1009031.cif"
+          },
+          {
+            "bytes": 646674,
+            "relative_name": "artifacts/P255-g7-micro-calibration-20261120/geometry-pd/Todorova2003-original.pdf",
+            "role": "Surface Science 541 (2003) 101-112, DOI10.1016/S0039-6028(03)00873-2; sections3.2-3.5 support a stoichiometric 4Pd/4O PdO(101) sheet on sqrt5 Pd(100); no optimized coordinates are claimed copied",
+            "sha256": "99b55c281ce30ecbc6670d5e388e6028a88e7e0140238b85ccdbd752f1ad43f5",
+            "url": "httpSS-541-101-2003.pdf"
+          },
+          {
+            "bytes": 5505,
+            "relative_name": "artifacts/P255-g7-micro-calibration-20261120/geometry-pd/structure-binding.json",
+            "role": "Transcribed structure, analytic cut and explicit microscopic hypotheses",
+            "sha256": "6e75aacbfe41aaa1dd71de79962f77102c6ae225fca1aebb4a6bdd1290547417",
+            "url": null
+          }
+        ],
+        "target_index": 15,
+        "variant": "plain"
+      },
+      "initial_frame": {
+        "bytes": 9385,
+        "path": "provenance/geometry/initial-frame.json",
+        "sha256": "492467579611659959ba5735b367b76ef58c64382c2715376c572000bdc4bb16"
+      },
+      "log": {
+        "bytes": 63689,
+        "path": "provenance/geometry/geometry.txt",
+        "sha256": "62ffbce8222a97877729bc453d44cfb432fc960218eb0ca7aaa94b1bcd3e6aa4"
+      },
+      "log_privacy_transforms": [
+        {
+          "dataset_path_prefixes_removed": 2,
+          "gpaw_cwd_headers_removed": 1,
+          "gpaw_library_path_blocks_removed": 1,
+          "gpaw_user_headers_removed": 1,
+          "gpw_path_prefixes_removed": 6
+        }
+      ],
+      "masses_u": [
+        106.42,
+        106.42,
+        106.42,
+        106.42,
+        106.42,
+        106.42,
+        106.42,
+        106.42,
+        106.42,
+        106.42,
+        106.42,
+        106.42,
+        106.42,
+        106.42,
+        106.42,
+        2.01410177812
+      ],
+      "max_force_eV_A": 0.22639077804335472,
+      "passed": true,
+      "positions_A": [
+        [
+          -6.787474314575588e-14,
+          8.719427491256069e-14,
+          11.5163807608545
+        ],
+        [
+          2.466275777421977,
+          4.89997151818435,
+          11.46185963344355
+        ],
+        [
+          4.899971518184778,
+          3.6701240221338702,
+          11.461859633443428
+        ],
+        [
+          1.2364282813720449,
+          2.4662757774228794,
+          11.461859633442959
+        ],
+        [
+          3.6701240221343205,
+          1.2364282813724206,
+          11.461859633443163
+        ],
+        [
+          1.8536765346026138,
+          0.6268849615515784,
+          9.493278867140413
+        ],
+        [
+          4.28272326495391,
+          5.509514838005049,
+          9.493278867140448
+        ],
+        [
+          0.6268849615516126,
+          4.2827232649550275,
+          9.493278867139695
+        ],
+        [
+          3.0681998997782114,
+          3.068199899778436,
+          9.473023946513242
+        ],
+        [
+          5.509514838004856,
+          1.8536765346017097,
+          9.493278867139717
+        ],
+        [
+          0.0,
+          0.0,
+          7.5
+        ],
+        [
+          2.454559919822696,
+          4.909119839645392,
+          7.5
+        ],
+        [
+          4.909119839645392,
+          3.681839879734044,
+          7.5
+        ],
+        [
+          1.2272799599113478,
+          2.454559919822696,
+          7.5
+        ],
+        [
+          3.6818398797340444,
+          1.2272799599113478,
+          7.5
+        ],
+        [
+          -4.089503498474233e-14,
+          -2.123399238638252e-14,
+          9.446658600408119
+        ]
+      ],
+      "probe_ray": {
+        "bytes": 402245,
+        "path": "provenance/ray/probe-ray.json",
+        "sha256": "46226e56d769012f4a7cdafc7c161a488a74f2b82039a9fa706cf5e933391dd0"
+      },
+      "probe_ray_members": {
+        "plain": {
+          "bytes": 24215,
+          "path": "provenance/ray/pd-precommit-current-001-evidence/plain/geometry.json",
+          "sha256": "6eb0bec56cc9cfd65d8b60329ce64d793fee664279c78035a0afc324d41bf3a1"
+        }
+      },
+      "probe_ray_precommit": {
+        "bytes": 402245,
+        "path": "provenance/ray/probe-ray.json",
+        "sha256": "46226e56d769012f4a7cdafc7c161a488a74f2b82039a9fa706cf5e933391dd0"
+      },
+      "raw_fmax_eV_A": 0.22639077804335472,
+      "raw_forces_eV_A": [
+        [
+          -1.3462523859967413e-13,
+          -7.635370342855261e-13,
+          0.014123901742785782
+        ],
+        [
+          0.011713831994885624,
+          0.004651753102997679,
+          0.02037496500685654
+        ],
+        [
+          0.0046517530981728915,
+          -0.011713831997500875,
+          0.020374965003592777
+        ],
+        [
+          -0.004651753101136109,
+          0.011713831999567926,
+          0.020374965005934
+        ],
+        [
+          -0.011713831992993605,
+          -0.004651753102325082,
+          0.020374965009587936
+        ],
+        [
+          -0.00898143653508934,
+          -0.025084307964654596,
+          0.00526719251051063
+        ],
+        [
+          0.008981436533858427,
+          0.02508430796453268,
+          0.00526719251226413
+        ],
+        [
+          -0.025084307978174392,
+          0.008981436532772646,
+          0.0052671925156384716
+        ],
+        [
+          -1.5505498435909341e-13,
+          8.574190852587932e-13,
+          -0.0071999714197459735
+        ],
+        [
+          0.02508430797439829,
+          -0.00898143653346165,
+          0.005267192516704436
+        ],
+        [
+          6.051663237235103e-13,
+          1.31239249432899e-13,
+          -0.19871709794390216
+        ],
+        [
+          0.17920587717126113,
+          -0.09003339977802205,
+          -0.10503344655234507
+        ],
+        [
+          -0.0900333997650412,
+          -0.1792058771716326,
+          -0.1050334465515567
+        ],
+        [
+          0.09003339976402017,
+          0.17920587717210718,
+          -0.10503344655076868
+        ],
+        [
+          -0.17920587717144576,
+          0.09003339977832317,
+          -0.1050334465522523
+        ],
+        [
+          2.6435211988836924e-13,
+          2.215971999322917e-14,
+          -0.03603609470523719
+        ]
+      ],
+      "ray_clearance": {
+        "R_interval_A": [
+          0.0,
+          1.6
+        ],
+        "at_R_A": 1.2495190724801475,
+        "excludes": "target index and all its periodic images only",
+        "method": "all periodic images inside triangle-bound sphere; exact closed-segment projection",
+        "min_clearance_A": 1.506644280092414,
+        "search_radius_A": 3.5466586014081174,
+        "spectator_image": [
+          -1,
+          -1,
+          0
+        ],
+        "spectator_index": 6,
+        "spectator_symbol": "Pd"
+      },
+      "relaxation_status": "force-qualified",
+      "sanitized_log": {
+        "bytes": 62270,
+        "path": "provenance/geometry/geometry.private-metadata-removed.txt",
+        "sha256": "5bb52907046f42028032ae70eb4a429322139e78eded4c8cfa1e3111af73a3bf"
+      },
+      "schema": "micro-site-geometry-v1",
+      "source_geometry": null,
+      "specification": {
+        "absolute_stop_utc": "2026-11-21T03:00:00Z",
+        "authority_entry": "entry_2841",
+        "case": "pd-plain-compact",
+        "cpu_limit_s": 2280,
+        "dataset_bindings": [
+          {
+            "atom": {
+              "Z": "46",
+              "core": "36.0",
+              "symbol": "Pd",
+              "valence": "10"
+            },
+            "bytes": 106793,
+            "filename": "Pd.10.PBE.gz",
+            "path": "Pd.10.PBE.gz",
+            "sha256": "3c6cfd1de7e6d6815d58c9521b2bc7cec27ede8e83554ed1f0151f979761bbb4"
+          },
+          {
+            "atom": {
+              "Z": "40",
+              "core": "28",
+              "symbol": "Zr",
+              "valence": "12"
+            },
+            "bytes": 151929,
+            "filename": "Zr.PBE.gz",
+            "path": "Zr.PBE.gz",
+            "sha256": "24ed27d12701673908a0f4ca4210ab7eb1a2891251720b904466a5507f984d4d"
+          },
+          {
+            "atom": {
+              "Z": "8",
+              "core": "2",
+              "symbol": "O",
+              "valence": "6"
+            },
+            "bytes": 51385,
+            "filename": "O.PBE.gz",
+            "path": "O.PBE.gz",
+            "sha256": "1426eb21d028c017410e7f9d6aa37d3f0836890374b7c9435e599a96fa8c293d"
+          },
+          {
+            "atom": {
+              "Z": "1",
+              "core": "0.0",
+              "symbol": "H",
+              "valence": "1"
+            },
+            "bytes": 12501,
+            "filename": "H.PBE.gz",
+            "path": "H.PBE.gz",
+            "sha256": "3136ad73c02d471f99dd5f82e451b2061952970556a260d38b53b5020dc94ae7"
+          }
+        ],
+        "deadline_authority_entry": "entry_2865",
+        "eigensolver": {
+          "name": "davidson",
+          "niter": 2
+        },
+        "force_tolerance_eV_A": 0.05,
+        "frozen_source_manifest": {
+          "bytes": 8719,
+          "path": "source-manifest.json",
+          "sha256": "bfb479cd2cc62824e3f05e4e82dde733931e526f4a4077b1076a5eb735a6f979"
+        },
+        "h_A": 0.2,
+        "initial_geometry": null,
+        "ionic_steps": 60,
+        "kmesh": [
+          1,
+          1,
+          1
+        ],
+        "library_bindings": [
+          {
+            "bytes": 2348,
+            "path": "ae.py",
+            "sha256": "d6daba8aa25bbeeb716c7c9a3a3c7ec67fd1b56673550b523f308400ad8064cc"
+          },
+          {
+            "bytes": 57201,
+            "path": "setup.py",
+            "sha256": "ac566b134823bf164336fd3404288fcf698c892d081047cd5e2663b070089bb2"
+          },
+          {
+            "bytes": 9085,
+            "path": "units.py",
+            "sha256": "1c49db1fbc894e087f94ec8fb8b3746d2c9228845332c5821b459e7104a5d097"
+          }
+        ],
+        "material": "pd",
+        "maximum_five_scf_iterations_wall_s": 120,
+        "phase": "geometry",
+        "probe_ray": null,
+        "radii_A": [
+          1.6,
+          1.2,
+          0.8,
+          0.4,
+          0.2,
+          0.1
+        ],
+        "schema": "micro-pd-production-input-v1",
+        "selected_geometry": null,
+        "size": "compact",
+        "variant": "plain"
+      },
+      "state_file": {
+        "bytes": 11579,
+        "path": "provenance/geometry/geometry-step-005.json",
+        "sha256": "74d931c5e1f1fee6d70d0ea2fe544bfe1997f6fd22adb378097d9b4ac557e0ef"
+      },
+      "symbols": [
+        "Pd",
+        "Pd",
+        "Pd",
+        "Pd",
+        "Pd",
+        "Pd",
+        "Pd",
+        "Pd",
+        "Pd",
+        "Pd",
+        "Pd",
+        "Pd",
+        "Pd",
+        "Pd",
+        "Pd",
+        "H"
+      ],
+      "target_index": 15
+    },
+    "isotope": "D",
+    "probe_added_electrons": 0,
+    "probe_charge": 1,
+    "specification": {
+      "absolute_stop_utc": "2026-11-21T03:00:00Z",
+      "authority_entry": "entry_2841",
+      "case": "pd-plain-compact-recovered",
+      "cpu_limit_s": 7080,
+      "dataset_bindings": [
+        {
+          "atom": {
+            "Z": "46",
+            "core": "36.0",
+            "symbol": "Pd",
+            "valence": "10"
+          },
+          "bytes": 106793,
+          "filename": "Pd.10.PBE.gz",
+          "path": "Pd.10.PBE.gz",
+          "sha256": "3c6cfd1de7e6d6815d58c9521b2bc7cec27ede8e83554ed1f0151f979761bbb4"
+        },
+        {
+          "atom": {
+            "Z": "40",
+            "core": "28",
+            "symbol": "Zr",
+            "valence": "12"
+          },
+          "bytes": 151929,
+          "filename": "Zr.PBE.gz",
+          "path": "Zr.PBE.gz",
+          "sha256": "24ed27d12701673908a0f4ca4210ab7eb1a2891251720b904466a5507f984d4d"
+        },
+        {
+          "atom": {
+            "Z": "8",
+            "core": "2",
+            "symbol": "O",
+            "valence": "6"
+          },
+          "bytes": 51385,
+          "filename": "O.PBE.gz",
+          "path": "O.PBE.gz",
+          "sha256": "1426eb21d028c017410e7f9d6aa37d3f0836890374b7c9435e599a96fa8c293d"
+        },
+        {
+          "atom": {
+            "Z": "1",
+            "core": "0.0",
+            "symbol": "H",
+            "valence": "1"
+          },
+          "bytes": 12501,
+          "filename": "H.PBE.gz",
+          "path": "H.PBE.gz",
+          "sha256": "3136ad73c02d471f99dd5f82e451b2061952970556a260d38b53b5020dc94ae7"
+        }
+      ],
+      "deadline_authority_entry": "entry_2865",
+      "eigensolver": {
+        "name": "davidson",
+        "niter": 2
+      },
+      "force_tolerance_eV_A": 0.05,
+      "frozen_source_manifest": {
+        "bytes": 9360,
+        "path": "source-manifest.json",
+        "sha256": "71592ef8dfdc94b2572d5849d7edf7922e8f9c1bebaaf944bca64b108e5d22f2"
+      },
+      "geometry_policy_entry": "entry_2904",
+      "h_A": 0.2,
+      "initial_geometry": null,
+      "ionic_steps": 60,
+      "kmesh": [
+        1,
+        1,
+        1
+      ],
+      "library_bindings": [
+        {
+          "bytes": 2348,
+          "path": "ae.py",
+          "sha256": "d6daba8aa25bbeeb716c7c9a3a3c7ec67fd1b56673550b523f308400ad8064cc"
+        },
+        {
+          "bytes": 57201,
+          "path": "setup.py",
+          "sha256": "ac566b134823bf164336fd3404288fcf698c892d081047cd5e2663b070089bb2"
+        },
+        {
+          "bytes": 9085,
+          "path": "units.py",
+          "sha256": "1c49db1fbc894e087f94ec8fb8b3746d2c9228845332c5821b459e7104a5d097"
+        }
+      ],
+      "material": "pd",
+      "maximum_five_scf_iterations_wall_s": 120,
+      "phase": "bo",
+      "probe_ray": {
+        "bytes": 402245,
+        "path": "pd-precommit-current-001.json",
+        "sha256": "46226e56d769012f4a7cdafc7c161a488a74f2b82039a9fa706cf5e933391dd0"
+      },
+      "radii_A": [
+        1.6,
+        1.2,
+        0.8,
+        0.4,
+        0.2,
+        0.1
+      ],
+      "ray_policy_entry": "entry_2971",
+      "schema": "micro-pd-production-input-v1",
+      "selected_geometry": {
+        "binding": {
+          "bytes": 24215,
+          "path": "geometry.json",
+          "sha256": "6eb0bec56cc9cfd65d8b60329ce64d793fee664279c78035a0afc324d41bf3a1"
+        },
+        "gpw_binding": {
+          "bytes": 79137010,
+          "path": "geometry-step-005.gpw",
+          "sha256": "6a30f8f64b3938f83a2ff440b545dada13ba74f2e6cf7ba040bce297500b0738"
+        },
+        "json_path": "geometry.json"
+      },
+      "size": "compact",
+      "variant": "plain"
+    }
+  },
+  "curve_support": "actual measured bare/coated common support only; no interpolation",
+  "force_qualified": true,
+  "free_fmax_eV_A": 0.03603609470523719,
+  "full_scientific_qualification": false,
+  "geometry_error_bound_eV": null,
+  "geometry_force_qualified": false,
+  "material": "Pd",
+  "missing_radii_A": [],
+  "observable": "target_conditioned_BO_total_interaction",
+  "paired_hk_qualified": false,
+  "qualification": {
+    "controls": {
+      "changes": {},
+      "complete": false,
+      "deadline_scope": "Configured/consumed stops only; no runtime authorization inferred",
+      "final_coated_admitted": true,
+      "final_frame_optimum_claim": false,
+      "full_curve_higher_k_qualified": false,
+      "full_scientific_qualification": false,
+      "geometry_by_role": {
+        "oxygen": {
+          "force_qualified": false,
+          "free_fmax_eV_A": 0.42174246367039653,
+          "geometry_error_bound_eV": null,
+          "raw_fmax_eV_A": 0.42174246367039653,
+          "relaxation_status": "partly-relaxed"
+        },
+        "plain": {
+          "force_qualified": true,
+          "free_fmax_eV_A": 0.03603609470523719,
+          "geometry_error_bound_eV": null,
+          "raw_fmax_eV_A": 0.22639077804335472,
+          "relaxation_status": "force-qualified"
+        }
+      },
+      "geometry_error_bound_eV": null,
+      "geometry_force_qualified": false,
+      "isolation_claim": false,
+      "material": "Pd",
+      "missing_controls": [
+        "plain-h",
+        "oxygen-h",
+        "plain-k",
+        "oxygen-k"
+      ],
+      "omitted_controls": [
+        "geometry-convergence error bound",
+        "slab-thickness",
+        "cell/vacuum",
+        "full-radius h/k"
+      ],
+      "paired_cell_qualified": false,
+      "paired_hk_qualified": false,
+      "pairs": {
+        "base": {
+          "geometries": {
+            "oxygen": {
+              "force_qualified": false,
+              "free_fmax_eV_A": 0.42174246367039653,
+              "geometry_error_bound_eV": null,
+              "raw_fmax_eV_A": 0.42174246367039653,
+              "relaxation_status": "partly-relaxed"
+            },
+            "plain": {
+              "force_qualified": true,
+              "free_fmax_eV_A": 0.03603609470523719,
+              "geometry_error_bound_eV": null,
+              "raw_fmax_eV_A": 0.22639077804335472,
+              "relaxation_status": "force-qualified"
+            }
+          },
+          "geometry_error_bound_eV": null,
+          "geometry_error_status": "Unbounded; actual forces do not bound contrast error",
+          "oxygen_R01_lowering_eV": 37.89137304098119,
+          "oxygen_minus_plain_R01_lowering_eV": -1.4966897374852408,
+          "oxygen_minus_plain_signedW0_eV": 5.010453174926148,
+          "oxygen_signedW0_eV": -39.78417873201784,
+          "plain_R01_lowering_eV": 39.388062778466434,
+          "plain_signedW0_eV": -44.79463190694399
+        }
+      },
+      "qualification_scope": "Separate paired R0.1/contact h/k criterion and geometry force stationarity; h/k checks do not qualify geometry or bound geometry-convergence error",
+      "qualified": false,
+      "ray_by_role": {
+        "oxygen": {
+          "authority_entry": "entry_2971",
+          "clearance": {
+            "R_interval_A": [
+              0.0,
+              1.6
+            ],
+            "at_R_A": 1.328702976195565,
+            "excludes": "target index and all its periodic images only",
+            "method": "all periodic images inside triangle-bound sphere; exact closed-segment projection",
+            "min_clearance_A": 1.5121158685782417,
+            "search_radius_A": 3.4770967676283595,
+            "spectator_image": [
+              -1,
+              -1,
+              0
+            ],
+            "spectator_index": 6,
+            "spectator_symbol": "Pd"
+          },
+          "coated_witness": {
+            "bo_eligible": false,
+            "boundary": {
+              "bytes": 14216,
+              "path": "provenance/ray/pd-coat-shared-final-step5-001-evidence/precommit/pd-precommit-current-001-evidence/witness/geometry-step-005-boundary.json",
+              "sha256": "8cf9e5c155192fcbcf887e05e14810322104f4dd147cb3e2afc6e3e66fa9315a"
+            },
+            "force_qualified": false,
+            "not_final": true,
+            "schema": "micro-pd-coated-boundary-witness-v1"
+          },
+          "consumed_policy": {
+            "bytes": 78616,
+            "path": "provenance/ray/probe-ray.json",
+            "sha256": "30cda7b723c4982d934de8cd0283bb90b3d87c04b5f2a16646dd707bd60e692a"
+          },
+          "direction_n_hat": [
+            0.43301270189221946,
+            0.75,
+            0.4999999999999998
+          ],
+          "final_coated_admitted": true,
+          "final_frame_optimum_claim": false,
+          "precommit": {
+            "bytes": 402245,
+            "path": "provenance/ray/pd-coat-shared-final-step5-001-evidence/precommit/probe-ray.json",
+            "sha256": "46226e56d769012f4a7cdafc7c161a488a74f2b82039a9fa706cf5e933391dd0"
+          },
+          "status": "precommitted shared-open"
+        },
+        "plain": {
+          "authority_entry": "entry_2971",
+          "clearance": {
+            "R_interval_A": [
+              0.0,
+              1.6
+            ],
+            "at_R_A": 1.2495190724801475,
+            "excludes": "target index and all its periodic images only",
+            "method": "all periodic images inside triangle-bound sphere; exact closed-segment projection",
+            "min_clearance_A": 1.506644280092414,
+            "search_radius_A": 3.5466586014081174,
+            "spectator_image": [
+              -1,
+              -1,
+              0
+            ],
+            "spectator_index": 6,
+            "spectator_symbol": "Pd"
+          },
+          "coated_witness": {
+            "bo_eligible": false,
+            "boundary": {
+              "bytes": 14216,
+              "path": "provenance/ray/pd-precommit-current-001-evidence/witness/geometry-step-005-boundary.json",
+              "sha256": "8cf9e5c155192fcbcf887e05e14810322104f4dd147cb3e2afc6e3e66fa9315a"
+            },
+            "force_qualified": false,
+            "not_final": true,
+            "schema": "micro-pd-coated-boundary-witness-v1"
+          },
+          "consumed_policy": {
+            "bytes": 402245,
+            "path": "provenance/ray/probe-ray.json",
+            "sha256": "46226e56d769012f4a7cdafc7c161a488a74f2b82039a9fa706cf5e933391dd0"
+          },
+          "direction_n_hat": [
+            0.43301270189221946,
+            0.75,
+            0.4999999999999998
+          ],
+          "final_coated_admitted": false,
+          "final_frame_optimum_claim": false,
+          "precommit": {
+            "bytes": 402245,
+            "path": "provenance/ray/probe-ray.json",
+            "sha256": "46226e56d769012f4a7cdafc7c161a488a74f2b82039a9fa706cf5e933391dd0"
+          },
+          "status": "precommitted ray; final coated shared-open admission pending"
+        }
+      },
+      "ray_policy_entry": "entry_2971",
+      "recorded_deadlines_utc": {
+        "oxygen": "2026-11-21T03:00:00Z",
+        "plain": "2026-11-21T03:00:00Z"
+      },
+      "resolved": false,
+      "schema": "micro-pd-paired-comparisons-v1",
+      "scope": "Actual finite-cell target-conditioned internal BO screening for compact Pd and a coherent added 4Pd+4O sheet, not oxygen insertion at fixed Pd inventory. D is unconstrained and its actual migrated/relaxed site is used. Pd10/O6 frozen-core PAW; q+1 Hae probe adds no electron. Paired h/k checks apply only at R0.1/contact. Slab-thickness, cell/vacuum and full-radius h/k controls omitted. Geometry-convergence error is unbounded (geometry_error_bound_eV=null), including for force-qualified frames; residual forces do not bound pair-lowering error. No isolated limit, site-retention, bulk-PdO, Ueq, action/Eq7 or experimental phase claim.",
+      "shared_precommit": {
+        "bytes": 402245,
+        "sha256": "46226e56d769012f4a7cdafc7c161a488a74f2b82039a9fa706cf5e933391dd0"
+      },
+      "tolerance_definition": "max(5 eV, 0.1*abs(base coated-minus-bare contrast)) per observable"
+    },
+    "full_curve_higher_k_qualified": false,
+    "full_scientific_qualification": false,
+    "geometry_error_bound_eV": null,
+    "geometry_force_qualified": false,
+    "isolation_claim": false,
+    "paired_cell_qualified": false,
+    "paired_hk_qualified": false,
+    "qualified": false
+  },
+  "raw_fmax_eV_A": 0.22639077804335472,
+  "ray_policy": {
+    "authority_entry": "entry_2971",
+    "clearance": {
+      "R_interval_A": [
+        0.0,
+        1.6
+      ],
+      "at_R_A": 1.2495190724801475,
+      "excludes": "target index and all its periodic images only",
+      "method": "all periodic images inside triangle-bound sphere; exact closed-segment projection",
+      "min_clearance_A": 1.506644280092414,
+      "search_radius_A": 3.5466586014081174,
+      "spectator_image": [
+        -1,
+        -1,
+        0
+      ],
+      "spectator_index": 6,
+      "spectator_symbol": "Pd"
+    },
+    "coated_witness": {
+      "bo_eligible": false,
+      "boundary": {
+        "bytes": 14216,
+        "path": "provenance/ray/pd-precommit-current-001-evidence/witness/geometry-step-005-boundary.json",
+        "sha256": "8cf9e5c155192fcbcf887e05e14810322104f4dd147cb3e2afc6e3e66fa9315a"
+      },
+      "force_qualified": false,
+      "not_final": true,
+      "schema": "micro-pd-coated-boundary-witness-v1"
+    },
+    "consumed_policy": {
+      "bytes": 402245,
+      "path": "provenance/ray/probe-ray.json",
+      "sha256": "46226e56d769012f4a7cdafc7c161a488a74f2b82039a9fa706cf5e933391dd0"
+    },
+    "direction_n_hat": [
+      0.43301270189221946,
+      0.75,
+      0.4999999999999998
+    ],
+    "final_coated_admitted": false,
+    "final_frame_optimum_claim": false,
+    "precommit": {
+      "bytes": 402245,
+      "path": "provenance/ray/probe-ray.json",
+      "sha256": "46226e56d769012f4a7cdafc7c161a488a74f2b82039a9fa706cf5e933391dd0"
+    },
+    "status": "precommitted ray; final coated shared-open admission pending"
+  },
+  "reference": {
+    "bare": "isolated_unit_charge_coulomb",
+    "energy_zero": "Eop-Evp-Eho+Ehv; internal=free-minus-negativeTS; no fitted offset or far-point subtraction",
+    "periodic_to_isolated": "Accepted same-zero-G point-minus-Hae-Gaussian nuclear block only; electronic periodic images remain"
+  },
+  "relaxation_status": "force-qualified",
+  "schema": "coherencev1-target-conditioned-pair-v1",
+  "scope": "Actual finite-cell target-conditioned internal BO screening for compact Pd and a coherent added 4Pd+4O sheet, not oxygen insertion at fixed Pd inventory. D is unconstrained and its actual migrated/relaxed site is used. Pd10/O6 frozen-core PAW; q+1 Hae probe adds no electron. Paired h/k checks apply only at R0.1/contact. Slab-thickness, cell/vacuum and full-radius h/k controls omitted. Geometry-convergence error is unbounded (geometry_error_bound_eV=null), including for force-qualified frames; residual forces do not bound pair-lowering error. No isolated limit, site-retention, bulk-PdO, Ueq, action/Eq7 or experimental phase claim.",
+  "source_bindings": {
+    "original_case": {
+      "bytes": 467909,
+      "path": "case.json",
+      "sha256": "ac9c6ae11655414c0c3b7580f1ae6ab2dec465e2aa1ed85e2f757a79f89a0915"
+    },
+    "source_epoch": {
+      "bytes": 9360,
+      "path": "provenance/source-manifest.json",
+      "sha256": "71592ef8dfdc94b2572d5849d7edf7922e8f9c1bebaaf944bca64b108e5d22f2"
+    }
+  }
+}

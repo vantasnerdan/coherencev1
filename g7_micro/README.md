@@ -374,3 +374,5 @@ What it means, in plain terms:
 These keV values are effective shifts in the beam model, not the static lowering at 0.1 A. Comparing a computed site with them needs the barrier-penetration (action) calculation along the computed curve, not the 0.1 A value alone. Part (b), the DFT of the named site types, follows `g7_hydride/`.
 
 First stage of part (b): `zr_calibration/`. An interstitial oxygen atom beside the target deuteron in ZrD2 changes the static lowering by less than 1 eV. Oxygen as a neighbour atom is not a strong site.
+
+Second stage of part (b): `pd_oxide/`. A PdO sheet on a Pd slab lowers the static screening at the deuteron beneath it by 1.5 eV at 0.1 A and 5 eV at contact. An oxide layer above the site is not a strong static site either.

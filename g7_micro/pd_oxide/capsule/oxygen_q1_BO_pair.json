@@ -1,0 +1,2950 @@
+{
+  "R_A": [
+    0.1,
+    0.2,
+    0.4,
+    0.8,
+    1.2,
+    1.6
+  ],
+  "V_pair_total_eV": [
+    106.10508164569694,
+    37.63049379208464,
+    9.668945851563631,
+    1.7293466818080545,
+    0.6142632766829511,
+    0.22396614037519075
+  ],
+  "completed_radii_A": [
+    0.1,
+    0.2,
+    0.4,
+    0.8,
+    1.2,
+    1.6
+  ],
+  "configuration": {
+    "core_scope": "Pd10/O6 frozen-core PAW; projector-free Hae/H1; no core-response correction",
+    "electronic_symbol": "H",
+    "geometry": {
+      "accepted_steps": 5,
+      "cell_A": [
+        [
+          6.13639979955674,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          6.13639979955674,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          22.039528899485433
+        ]
+      ],
+      "coated_witness": {
+        "bo_eligible": false,
+        "boundary": {
+          "bytes": 14216,
+          "path": "provenance/ray/pd-coat-shared-final-step5-001-evidence/precommit/pd-precommit-current-001-evidence/witness/geometry-step-005-boundary.json",
+          "sha256": "8cf9e5c155192fcbcf887e05e14810322104f4dd147cb3e2afc6e3e66fa9315a"
+        },
+        "force_qualified": false,
+        "gpw": {
+          "bytes": 108700534,
+          "path": "provenance/ray/pd-coat-shared-final-step5-001-evidence/precommit/pd-precommit-current-001-evidence/witness/geometry-step-005.gpw",
+          "sha256": "02eeacd2c89bfc67195bf780abc8b3fef3def69e52e621befd75e7cae3a91ac0"
+        },
+        "initial_frame": {
+          "bytes": 10284,
+          "path": "provenance/ray/pd-coat-shared-final-step5-001-evidence/precommit/pd-precommit-current-001-evidence/witness/initial-frame.json",
+          "sha256": "a33e7721d15bc023f70f8cfab2310bee1a001c754e99d52842cfa398535e4559"
+        },
+        "not_final": true,
+        "original_input": {
+          "bytes": 3113,
+          "path": "provenance/ray/pd-coat-shared-final-step5-001-evidence/precommit/pd-precommit-current-001-evidence/witness/provenance/input.json",
+          "sha256": "db5cbcf2cefc9e12c16aa9eeff3aee7a613b6b0b2f068ec3e21ca9f3af1c5154"
+        },
+        "original_source_epoch": {
+          "bytes": 8719,
+          "path": "provenance/ray/pd-coat-shared-final-step5-001-evidence/precommit/pd-precommit-current-001-evidence/witness/provenance/source-manifest.json",
+          "sha256": "bfb479cd2cc62824e3f05e4e82dde733931e526f4a4077b1076a5eb735a6f979"
+        },
+        "schema": "micro-pd-coated-boundary-witness-v1",
+        "source_files": [
+          {
+            "bytes": 11328,
+            "path": "provenance/ray/pd-coat-shared-final-step5-001-evidence/precommit/pd-precommit-current-001-evidence/witness/provenance/source/artifacts/P255-g7-micro-calibration-20261120/PLAN.md",
+            "sha256": "a17a477165085d32ff41391a1dd8c7825e006d70dc3b6da23f6216246aa3c3bb"
+          },
+          {
+            "bytes": 2610,
+            "path": "provenance/ray/pd-coat-shared-final-step5-001-evidence/precommit/pd-precommit-current-001-evidence/witness/provenance/source/artifacts/P255-g7-micro-calibration-20261120/geometry-pd/COD-1009031-PdO-original.cif",
+            "sha256": "7bfb22fa748f24d860b368935dd22733b129f7702dc769ec45eac48d4b2c9b43"
+          },
+          {
+            "bytes": 4673,
+            "path": "provenance/ray/pd-coat-shared-final-step5-001-evidence/precommit/pd-precommit-current-001-evidence/witness/provenance/source/artifacts/P255-g7-micro-calibration-20261120/geometry-pd/COD-1011106-Pd-original.cif",
+            "sha256": "534544f15709f43bf7d88291e3835f4cdd823159585598f0f3b73383c4e4624d"
+          },
+          {
+            "bytes": 646674,
+            "path": "provenance/ray/pd-coat-shared-final-step5-001-evidence/precommit/pd-precommit-current-001-evidence/witness/provenance/source/artifacts/P255-g7-micro-calibration-20261120/geometry-pd/Todorova2003-original.pdf",
+            "sha256": "99b55c281ce30ecbc6670d5e388e6028a88e7e0140238b85ccdbd752f1ad43f5"
+          },
+          {
+            "bytes": 5505,
+            "path": "provenance/ray/pd-coat-shared-final-step5-001-evidence/precommit/pd-precommit-current-001-evidence/witness/provenance/source/artifacts/P255-g7-micro-calibration-20261120/geometry-pd/structure-binding.json",
+            "sha256": "6e75aacbfe41aaa1dd71de79962f77102c6ae225fca1aebb4a6bdd1290547417"
+          },
+          {
+            "bytes": 10172,
+            "path": "provenance/ray/pd-coat-shared-final-step5-001-evidence/precommit/pd-precommit-current-001-evidence/witness/provenance/source/artifacts/P255-g7-micro-calibration-20261120/pd-production/PLAN.md",
+            "sha256": "23498021bad8bf0585ed5619a0b5ad1b5133ebaa420c14f0033f831cf25b3795"
+          },
+          {
+            "bytes": 2107,
+            "path": "provenance/ray/pd-coat-shared-final-step5-001-evidence/precommit/pd-precommit-current-001-evidence/witness/provenance/source/campaigns/P255-pdd-collision/collision_geometry.py",
+            "sha256": "077eb638330c142ce710bd359780d0123d74d411e1bd9f26c7022a1e9bd1cc23"
+          },
+          {
+            "bytes": 2508,
+            "path": "provenance/ray/pd-coat-shared-final-step5-001-evidence/precommit/pd-precommit-current-001-evidence/witness/provenance/source/campaigns/P255-pdd-collision/collision_ground.py",
+            "sha256": "7ec514b422fbe2d43c8e1e60db71636ef6827d3bcbedd1f8291fc25241f070eb"
+          },
+          {
+            "bytes": 2499,
+            "path": "provenance/ray/pd-coat-shared-final-step5-001-evidence/precommit/pd-precommit-current-001-evidence/witness/provenance/source/campaigns/P255-pdd-collision/delivery/green.py",
+            "sha256": "08e5e5c10536e57b3a319b9385808c2a7cbf0bf4e32faf7f91c9d1bb07746ada"
+          },
+          {
+            "bytes": 16747,
+            "path": "provenance/ray/pd-coat-shared-final-step5-001-evidence/precommit/pd-precommit-current-001-evidence/witness/provenance/source/campaigns/P255-pdd-collision/hydride_screening/contact_export.py",
+            "sha256": "1b159abc650a0cc10eaa2cae867fbf14a2182089bdc488ed08ed35c55502c4b9"
+          },
+          {
+            "bytes": 19534,
+            "path": "provenance/ray/pd-coat-shared-final-step5-001-evidence/precommit/pd-precommit-current-001-evidence/witness/provenance/source/campaigns/P255-pdd-collision/hydride_screening/contact_native.py",
+            "sha256": "45067370e860b9a8b48f1ae197f163c5f39b04678a4813f6a3866328f15fc2b1"
+          },
+          {
+            "bytes": 19945,
+            "path": "provenance/ray/pd-coat-shared-final-step5-001-evidence/precommit/pd-precommit-current-001-evidence/witness/provenance/source/campaigns/P255-pdd-collision/hydride_screening/contact_replay.py",
+            "sha256": "7bf17b84616d2ab887147e20b9a0f996752f9e2b01935c07bd9848f8f25921f4"
+          },
+          {
+            "bytes": 2761,
+            "path": "provenance/ray/pd-coat-shared-final-step5-001-evidence/precommit/pd-precommit-current-001-evidence/witness/provenance/source/campaigns/P255-pdd-collision/hydride_screening/contact_setup.py",
+            "sha256": "94a9069f911d2c25b28032b73b936dacde0bc82847dd78f42b0aa89cb4e817ad"
+          },
+          {
+            "bytes": 8293,
+            "path": "provenance/ray/pd-coat-shared-final-step5-001-evidence/precommit/pd-precommit-current-001-evidence/witness/provenance/source/campaigns/P255-pdd-collision/hydride_screening/contact_state.py",
+            "sha256": "0bea8674eccb401de39cf61085d8f0b3fbd73c145c85ddc4ea2d6e102a85d2e0"
+          },
+          {
+            "bytes": 7520,
+            "path": "provenance/ray/pd-coat-shared-final-step5-001-evidence/precommit/pd-precommit-current-001-evidence/witness/provenance/source/campaigns/P255-pdd-collision/hydride_screening/export_pairs.py",
+            "sha256": "0cf6c540bba755af5f2fbc9342a4eb743b908894f23af3520349c8acbb23b85f"
+          },
+          {
+            "bytes": 2826,
+            "path": "provenance/ray/pd-coat-shared-final-step5-001-evidence/precommit/pd-precommit-current-001-evidence/witness/provenance/source/campaigns/P255-pdd-collision/hydride_screening/geometry.py",
+            "sha256": "a731e52e868cc8c1430f92300659b8b54cf9f3da051cc3fd2e74928a9f66a22b"
+          },
+          {
+            "bytes": 21272,
+            "path": "provenance/ray/pd-coat-shared-final-step5-001-evidence/precommit/pd-precommit-current-001-evidence/witness/provenance/source/campaigns/P255-pdd-collision/hydride_screening/hydride_replay.py",
+            "sha256": "0e688e4f11e50c824e3cf1cc3d4686c900bfa14f0d0b87b0546f6f65871450f7"
+          },
+          {
+            "bytes": 7001,
+            "path": "provenance/ray/pd-coat-shared-final-step5-001-evidence/precommit/pd-precommit-current-001-evidence/witness/provenance/source/campaigns/P255-pdd-collision/hydride_screening/launch_contact.py",
+            "sha256": "138c0826660c944b46ce2e2bda7216674ef737968185474e3c286c3a0d0b40a3"
+          },
+          {
+            "bytes": 7628,
+            "path": "provenance/ray/pd-coat-shared-final-step5-001-evidence/precommit/pd-precommit-current-001-evidence/witness/provenance/source/campaigns/P255-pdd-collision/hydride_screening/launch_hydride.py",
+            "sha256": "3c49127ece3e59d5800239302d0c31d09f269b2e25c01dc8a8fda4e9f9229153"
+          },
+          {
+            "bytes": 1788,
+            "path": "provenance/ray/pd-coat-shared-final-step5-001-evidence/precommit/pd-precommit-current-001-evidence/witness/provenance/source/campaigns/P255-pdd-collision/hydride_screening/log_privacy.py",
+            "sha256": "2a5842a86aecf96ebf13a59d678cf7101cae67dec65d5df98fc3c98835c05a8b"
+          },
+          {
+            "bytes": 6246,
+            "path": "provenance/ray/pd-coat-shared-final-step5-001-evidence/precommit/pd-precommit-current-001-evidence/witness/provenance/source/campaigns/P255-pdd-collision/hydride_screening/native_state.py",
+            "sha256": "f945f17ed252a75385cafad2b80c64352537c41d1cc2e468d5ed2643c795f011"
+          },
+          {
+            "bytes": 2356,
+            "path": "provenance/ray/pd-coat-shared-final-step5-001-evidence/precommit/pd-precommit-current-001-evidence/witness/provenance/source/campaigns/P255-pdd-collision/hydride_screening/preflight.py",
+            "sha256": "857d11c5d8e9a1280e1b382ba7154fd5cd9cdd52d74286bc709325bf14dd04ab"
+          },
+          {
+            "bytes": 4467,
+            "path": "provenance/ray/pd-coat-shared-final-step5-001-evidence/precommit/pd-precommit-current-001-evidence/witness/provenance/source/campaigns/P255-pdd-collision/hydride_screening/quartet.py",
+            "sha256": "88136cda3a302e4f08ce3d3902af1eb1ebef5475d70129c4726c2b8518285646"
+          },
+          {
+            "bytes": 9526,
+            "path": "provenance/ray/pd-coat-shared-final-step5-001-evidence/precommit/pd-precommit-current-001-evidence/witness/provenance/source/campaigns/P255-pdd-collision/hydride_screening/readout.py",
+            "sha256": "802bf03d259884d15f3b46ebdb3e4275f1f71908327565d3eea01a6cba87ffd5"
+          },
+          {
+            "bytes": 3349,
+            "path": "provenance/ray/pd-coat-shared-final-step5-001-evidence/precommit/pd-precommit-current-001-evidence/witness/provenance/source/campaigns/P255-pdd-collision/hydride_screening/relaxation.py",
+            "sha256": "5aec4066a8a5360bfb9c29200beb7259b22e21b5e6c5b23cac612caa19e0241e"
+          },
+          {
+            "bytes": 4980,
+            "path": "provenance/ray/pd-coat-shared-final-step5-001-evidence/precommit/pd-precommit-current-001-evidence/witness/provenance/source/campaigns/P255-pdd-collision/hydride_screening/run_hydride.py",
+            "sha256": "95caba7166dd05295440d39847a141b3a4af50d70b745c585ca9583ecc006880"
+          },
+          {
+            "bytes": 1917,
+            "path": "provenance/ray/pd-coat-shared-final-step5-001-evidence/precommit/pd-precommit-current-001-evidence/witness/provenance/source/campaigns/P255-pdd-collision/hydride_screening/verify_charge_reference.py",
+            "sha256": "0bc71a8eeff52cd3833c9ac67bf0802eed68c6122c8e182314d89cd5e752929d"
+          },
+          {
+            "bytes": 17846,
+            "path": "provenance/ray/pd-coat-shared-final-step5-001-evidence/precommit/pd-precommit-current-001-evidence/witness/provenance/source/campaigns/P255-pdd-collision/hydride_screening/verify_contact_mapping.py",
+            "sha256": "d06924dd9ba0ffff3d7c131dc7e677ec18bc7bb8053a296a20da6171aec0eb03"
+          },
+          {
+            "bytes": 4855,
+            "path": "provenance/ray/pd-coat-shared-final-step5-001-evidence/precommit/pd-precommit-current-001-evidence/witness/provenance/source/campaigns/P255-pdd-collision/micro_calibration/contact_zr.py",
+            "sha256": "f59db2978eef2fc6acc10b924266be9a1c9822e7a0d1f5278564d7b9ba9331ff"
+          },
+          {
+            "bytes": 3876,
+            "path": "provenance/ray/pd-coat-shared-final-step5-001-evidence/precommit/pd-precommit-current-001-evidence/witness/provenance/source/campaigns/P255-pdd-collision/micro_calibration/cost_readout.py",
+            "sha256": "0b45ae3cd42831cb136ea6da519620afe5a8220ba516994cc8b319510d5aa4ed"
+          },
+          {
+            "bytes": 9720,
+            "path": "provenance/ray/pd-coat-shared-final-step5-001-evidence/precommit/pd-precommit-current-001-evidence/witness/provenance/source/campaigns/P255-pdd-collision/micro_calibration/geometry_pd.py",
+            "sha256": "d766d5d82f4418468847dc1b64ef2ae4afff6b358ea4ae1c10cf56c60bc8a510"
+          },
+          {
+            "bytes": 8159,
+            "path": "provenance/ray/pd-coat-shared-final-step5-001-evidence/precommit/pd-precommit-current-001-evidence/witness/provenance/source/campaigns/P255-pdd-collision/micro_calibration/geometry_zr.py",
+            "sha256": "91d9ad13dd30e359aa1cba70c0e9e9855d9e4646f9a80422920dc055e363cb24"
+          },
+          {
+            "bytes": 9168,
+            "path": "provenance/ray/pd-coat-shared-final-step5-001-evidence/precommit/pd-precommit-current-001-evidence/witness/provenance/source/campaigns/P255-pdd-collision/micro_calibration/launch_micro.py",
+            "sha256": "87625ea8dc454254e4baa7d35fca3f4fc96b6cec6fdff88d0012a2beddfb78c2"
+          },
+          {
+            "bytes": 9258,
+            "path": "provenance/ray/pd-coat-shared-final-step5-001-evidence/precommit/pd-precommit-current-001-evidence/witness/provenance/source/campaigns/P255-pdd-collision/micro_calibration/native.py",
+            "sha256": "b49aac201d964ac1004d3a7e651e62ddce9dfd39ae8bcd97e6bb76918f68a76f"
+          },
+          {
+            "bytes": 7271,
+            "path": "provenance/ray/pd-coat-shared-final-step5-001-evidence/precommit/pd-precommit-current-001-evidence/witness/provenance/source/campaigns/P255-pdd-collision/micro_calibration/pd_ray.py",
+            "sha256": "5d972cfbd3f6ef1bbcd56d375e4d9909879094a2b7884e9b5008ec07288c8b26"
+          },
+          {
+            "bytes": 14291,
+            "path": "provenance/ray/pd-coat-shared-final-step5-001-evidence/precommit/pd-precommit-current-001-evidence/witness/provenance/source/campaigns/P255-pdd-collision/micro_calibration/pd_relax.py",
+            "sha256": "3c3f9860e5d86e518402ab371a5539c1872aad1fd443c44e84fa957b22813190"
+          },
+          {
+            "bytes": 7113,
+            "path": "provenance/ray/pd-coat-shared-final-step5-001-evidence/precommit/pd-precommit-current-001-evidence/witness/provenance/source/campaigns/P255-pdd-collision/micro_calibration/pd_run.py",
+            "sha256": "3ef2274ec2954bf191dd5ad373b418ce916801acf4b3417ef70a7109810f9c2d"
+          },
+          {
+            "bytes": 4550,
+            "path": "provenance/ray/pd-coat-shared-final-step5-001-evidence/precommit/pd-precommit-current-001-evidence/witness/provenance/source/campaigns/P255-pdd-collision/micro_calibration/pilot_pd.py",
+            "sha256": "9e8d3c059a76523cf52b35a6b77a8aea968c4c13ebe897f5ac825dbbf7c4d9ed"
+          },
+          {
+            "bytes": 8160,
+            "path": "provenance/ray/pd-coat-shared-final-step5-001-evidence/precommit/pd-precommit-current-001-evidence/witness/provenance/source/campaigns/P255-pdd-collision/micro_calibration/preflight.py",
+            "sha256": "693491a484a68c7483c46b6484c732e3e70d73d9bcdfa369b9db128ed549a9ef"
+          },
+          {
+            "bytes": 6305,
+            "path": "provenance/ray/pd-coat-shared-final-step5-001-evidence/precommit/pd-precommit-current-001-evidence/witness/provenance/source/campaigns/P255-pdd-collision/micro_calibration/quartet_zr.py",
+            "sha256": "a881c7987cef3bfd135186827dd93ffc55e4c281fe9901cd1a6e4468bf90663d"
+          },
+          {
+            "bytes": 13116,
+            "path": "provenance/ray/pd-coat-shared-final-step5-001-evidence/precommit/pd-precommit-current-001-evidence/witness/provenance/source/campaigns/P255-pdd-collision/micro_calibration/relax_zr.py",
+            "sha256": "675297e4a68d0426bce942d3e7f3fca1d374c7f0c130652d7dd2f795bbb0e3e2"
+          },
+          {
+            "bytes": 8251,
+            "path": "provenance/ray/pd-coat-shared-final-step5-001-evidence/precommit/pd-precommit-current-001-evidence/witness/provenance/source/campaigns/P255-pdd-collision/micro_calibration/run_zr.py",
+            "sha256": "4304ce4c3bdfb63cc151a62cad20035f5e3d29c5f10ea3955b4304017710fdde"
+          },
+          {
+            "bytes": 1409,
+            "path": "provenance/ray/pd-coat-shared-final-step5-001-evidence/precommit/pd-precommit-current-001-evidence/witness/provenance/source/campaigns/P255-pdd-collision/screen_io.py",
+            "sha256": "dcab99128fbb312083bdccf440c4c32c214e58e78c59a8a52126300c25d3420c"
+          },
+          {
+            "bytes": 3022,
+            "path": "provenance/ray/pd-coat-shared-final-step5-001-evidence/precommit/pd-precommit-current-001-evidence/witness/provenance/source/src/substrate_framework/collision_bare_reference.py",
+            "sha256": "05ccba36601567b71a12af42c309cd978e1637b454454740c0f2909725598f09"
+          }
+        ]
+      },
+      "constrained_forces_eV_A": [
+        [
+          0.009341047408522605,
+          -0.08886508286074855,
+          -0.050176292446433846
+        ],
+        [
+          -0.024540303906736196,
+          0.15311334039528363,
+          0.3089193016833991
+        ],
+        [
+          0.08870592204279824,
+          0.08228024701590768,
+          0.2561474429743462
+        ],
+        [
+          0.02054718934073688,
+          0.014430944860129746,
+          0.07285623698942542
+        ],
+        [
+          -0.14590953180106703,
+          -0.12101391362240968,
+          0.10793967596262916
+        ],
+        [
+          -0.31040132876301924,
+          0.2601514389624966,
+          0.05760193087426337
+        ],
+        [
+          0.39066874790545403,
+          0.008463176808417835,
+          -0.0732381040765666
+        ],
+        [
+          -0.007628677209496424,
+          0.35283842372569746,
+          -0.1506281281181576
+        ],
+        [
+          -0.02825925083681684,
+          -0.10210044055743601,
+          0.011853178831088941
+        ],
+        [
+          -0.1405131731343705,
+          -0.3860247832501335,
+          -0.09543385434516193
+        ],
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          -0.022207196052860152,
+          0.24127643563389223,
+          0.24764455110160097
+        ],
+        [
+          0.057296165018840245,
+          0.06763527871638432,
+          -0.061886618738920755
+        ],
+        [
+          -0.11435191451692157,
+          -0.03801291234484317,
+          0.15954841711500634
+        ],
+        [
+          -0.14762724622519593,
+          -0.31149280796886225,
+          -0.08524164573484026
+        ],
+        [
+          0.05840764154901923,
+          0.07611207417051506,
+          0.07000164018764633
+        ],
+        [
+          0.24008697401608173,
+          -0.16173279006780306,
+          0.19267201733795306
+        ],
+        [
+          -0.17656984445323493,
+          -0.019135270396750535,
+          0.052574348121149014
+        ],
+        [
+          0.009881613466320521,
+          -0.11636465397651506,
+          0.0375652323860055
+        ],
+        [
+          0.02981275485242481,
+          -0.0257133040882703,
+          0.1884705830651034
+        ]
+      ],
+      "coordination": {
+        "actual_target_A": [
+          0.022995204074890533,
+          -0.022950950330891926,
+          9.558917381440644
+        ],
+        "final_O_indices_within_3_A": [],
+        "final_Pd_indices_within_3_A": [
+          0,
+          5,
+          6,
+          7,
+          9,
+          10
+        ],
+        "initial_Pd_indices_within_3_A": [
+          0,
+          5,
+          6,
+          7,
+          9,
+          10
+        ],
+        "nearest_O": {
+          "distance_A": 4.189807312980599,
+          "image": [
+            -1,
+            -1,
+            0
+          ],
+          "index": 21,
+          "symbol": "O"
+        },
+        "nearest_Pd": {
+          "distance_A": 1.8770967666283593,
+          "image": [
+            0,
+            0,
+            0
+          ],
+          "index": 0,
+          "symbol": "Pd"
+        },
+        "neighbors_within_3_5_A": [
+          {
+            "distance_A": 1.8770967666283596,
+            "image": [
+              0,
+              0,
+              0
+            ],
+            "index": 0,
+            "symbol": "Pd"
+          },
+          {
+            "distance_A": 1.9446467144320827,
+            "image": [
+              0,
+              -1,
+              0
+            ],
+            "index": 7,
+            "symbol": "Pd"
+          },
+          {
+            "distance_A": 1.9686873473390156,
+            "image": [
+              0,
+              0,
+              0
+            ],
+            "index": 5,
+            "symbol": "Pd"
+          },
+          {
+            "distance_A": 2.012944609013642,
+            "image": [
+              -1,
+              -1,
+              0
+            ],
+            "index": 6,
+            "symbol": "Pd"
+          },
+          {
+            "distance_A": 2.051778079467675,
+            "image": [
+              -1,
+              0,
+              0
+            ],
+            "index": 9,
+            "symbol": "Pd"
+          },
+          {
+            "distance_A": 2.059173695716302,
+            "image": [
+              0,
+              0,
+              0
+            ],
+            "index": 10,
+            "symbol": "Pd"
+          },
+          {
+            "distance_A": 3.2874828895208936,
+            "image": [
+              0,
+              -1,
+              0
+            ],
+            "index": 1,
+            "symbol": "Pd"
+          },
+          {
+            "distance_A": 3.3238747985748742,
+            "image": [
+              -1,
+              -1,
+              0
+            ],
+            "index": 2,
+            "symbol": "Pd"
+          },
+          {
+            "distance_A": 3.361280541147015,
+            "image": [
+              0,
+              0,
+              0
+            ],
+            "index": 3,
+            "symbol": "Pd"
+          },
+          {
+            "distance_A": 3.4061791077078056,
+            "image": [
+              0,
+              -1,
+              0
+            ],
+            "index": 11,
+            "symbol": "Pd"
+          },
+          {
+            "distance_A": 3.4227256609012944,
+            "image": [
+              -1,
+              -1,
+              0
+            ],
+            "index": 12,
+            "symbol": "Pd"
+          },
+          {
+            "distance_A": 3.439113645762184,
+            "image": [
+              0,
+              0,
+              0
+            ],
+            "index": 13,
+            "symbol": "Pd"
+          },
+          {
+            "distance_A": 3.4428431014696526,
+            "image": [
+              -1,
+              0,
+              0
+            ],
+            "index": 4,
+            "symbol": "Pd"
+          },
+          {
+            "distance_A": 3.4555024966674126,
+            "image": [
+              -1,
+              0,
+              0
+            ],
+            "index": 14,
+            "symbol": "Pd"
+          }
+        ],
+        "physical_site": "actual relaxed site; migration permitted, no retained-site qualification",
+        "target_index": 23,
+        "target_symbol": "H"
+      },
+      "direction": [
+        0.43301270189221946,
+        0.75,
+        0.4999999999999998
+      ],
+      "direction_n_hat": [
+        0.43301270189221946,
+        0.75,
+        0.4999999999999998
+      ],
+      "direction_status": "precommitted shared-open",
+      "displacements": {
+        "distances_A": [
+          0.10418302063466976,
+          0.07498176867168722,
+          0.06893174552969172,
+          0.07760002540189162,
+          0.17175771582388052,
+          0.04855693362834353,
+          0.05852707415472384,
+          0.03259850807780825,
+          0.01735044815006571,
+          0.08263051821940483,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.23000465885554602,
+          0.15381881865425395,
+          0.24091017281465202,
+          0.1492294323896119,
+          0.02504234970148352,
+          0.1281156876975213,
+          0.1250250997323573,
+          0.10277535339580267,
+          0.12279332945561738
+        ],
+        "maximum_A": 0.24091017281465202,
+        "target_A": 0.12279332945561738,
+        "unwrapped_target_vector_A": [
+          0.022995204074890533,
+          -0.022950950330891926,
+          0.11841738144064351
+        ],
+        "vectors_A": [
+          [
+            0.000693668477119387,
+            0.09059314163987824,
+            0.05144417654530819
+          ],
+          [
+            -0.008148196223485282,
+            0.03427574445695303,
+            0.06618946950504778
+          ],
+          [
+            -0.004879365350825004,
+            0.0030884693260881946,
+            0.06868943654423987
+          ],
+          [
+            0.00272110946011761,
+            0.021299281754521893,
+            0.07457010193382985
+          ],
+          [
+            -0.009193261714612877,
+            0.08883363458770388,
+            0.14671326541939497
+          ],
+          [
+            0.033382577402404356,
+            0.016055681869280636,
+            -0.031394177948662616
+          ],
+          [
+            -0.057019798456201976,
+            -0.0016469368805616111,
+            0.013093837941493545
+          ],
+          [
+            0.011052159242031956,
+            -0.028190046919915446,
+            0.012076164939278653
+          ],
+          [
+            -0.001234928740611707,
+            0.017227489089824743,
+            -0.0016512485196660265
+          ],
+          [
+            -0.03748694072169644,
+            0.07139973592094906,
+            0.018016923348733727
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            -0.02309816874017589,
+            0.15407911015097553,
+            -0.1691988342489097
+          ],
+          [
+            -0.00387766704594128,
+            -0.06258605253127623,
+            0.14045703506419113
+          ],
+          [
+            0.01168547535321851,
+            0.025430946941790822,
+            0.2392789751921356
+          ],
+          [
+            0.0012250213205649008,
+            -0.031669443277479115,
+            0.14582513218435444
+          ],
+          [
+            0.001053739999376191,
+            0.02501686237856371,
+            0.0004068259051610567
+          ],
+          [
+            -5.116737328719755e-05,
+            -0.051362751556170316,
+            0.11736905285759036
+          ],
+          [
+            0.01127034643381286,
+            -0.04841435787070125,
+            0.1147183717035567
+          ],
+          [
+            -0.001797786868708684,
+            -0.06446400492668802,
+            0.08002457932922091
+          ],
+          [
+            0.022995204074890533,
+            -0.022950950330891926,
+            0.11841738144064351
+          ]
+        ]
+      },
+      "fixed_fmax_eV_A": 0.3968294154433548,
+      "fixed_indices": [
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "force_qualification": "authority-labelled original frame; target 0.05 eV/A unchanged; no geometry error bound",
+      "force_qualified": false,
+      "forces_eV_A": [
+        [
+          0.009341047408522605,
+          -0.08886508286074855,
+          -0.050176292446433846
+        ],
+        [
+          -0.024540303906736196,
+          0.15311334039528363,
+          0.3089193016833991
+        ],
+        [
+          0.08870592204279824,
+          0.08228024701590768,
+          0.2561474429743462
+        ],
+        [
+          0.02054718934073688,
+          0.014430944860129746,
+          0.07285623698942542
+        ],
+        [
+          -0.14590953180106703,
+          -0.12101391362240968,
+          0.10793967596262916
+        ],
+        [
+          -0.31040132876301924,
+          0.2601514389624966,
+          0.05760193087426337
+        ],
+        [
+          0.39066874790545403,
+          0.008463176808417835,
+          -0.0732381040765666
+        ],
+        [
+          -0.007628677209496424,
+          0.35283842372569746,
+          -0.1506281281181576
+        ],
+        [
+          -0.02825925083681684,
+          -0.10210044055743601,
+          0.011853178831088941
+        ],
+        [
+          -0.1405131731343705,
+          -0.3860247832501335,
+          -0.09543385434516193
+        ],
+        [
+          -0.14184414849467727,
+          0.08039088338464119,
+          -0.08577737221804999
+        ],
+        [
+          0.06073236551135942,
+          -0.1373983939492457,
+          -0.367296673114088
+        ],
+        [
+          -0.1501093723827569,
+          -0.04167726495561679,
+          -0.2606298174666168
+        ],
+        [
+          0.10176974649649323,
+          0.19459172336082656,
+          -0.23360466951956807
+        ],
+        [
+          -0.01781091797347893,
+          0.15600592061623303,
+          -0.28938225791210376
+        ],
+        [
+          -0.022207196052860152,
+          0.24127643563389223,
+          0.24764455110160097
+        ],
+        [
+          0.057296165018840245,
+          0.06763527871638432,
+          -0.061886618738920755
+        ],
+        [
+          -0.11435191451692157,
+          -0.03801291234484317,
+          0.15954841711500634
+        ],
+        [
+          -0.14762724622519593,
+          -0.31149280796886225,
+          -0.08524164573484026
+        ],
+        [
+          0.05840764154901923,
+          0.07611207417051506,
+          0.07000164018764633
+        ],
+        [
+          0.24008697401608173,
+          -0.16173279006780306,
+          0.19267201733795306
+        ],
+        [
+          -0.17656984445323493,
+          -0.019135270396750535,
+          0.052574348121149014
+        ],
+        [
+          0.009881613466320521,
+          -0.11636465397651506,
+          0.0375652323860055
+        ],
+        [
+          0.02981275485242481,
+          -0.0257133040882703,
+          0.1884705830651034
+        ]
+      ],
+      "free_fmax_eV_A": 0.42174246367039653,
+      "free_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "geometry_error_bound_eV": null,
+      "gpw": {
+        "bytes": 108700534,
+        "path": "provenance/geometry/geometry-step-005.gpw",
+        "sha256": "02eeacd2c89bfc67195bf780abc8b3fef3def69e52e621befd75e7cae3a91ac0"
+      },
+      "initial_design": {
+        "cell_control": {
+          "actual_interperiod_empty_gap_A": 15.0,
+          "base_to_large_changes": null,
+          "cell_A": [
+            [
+              6.13639979955674,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              6.13639979955674,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              22.039528899485433
+            ]
+          ],
+          "compact_cost_model": "Three metal layers with the source base lateral registry and PdO sheet; Unrelaxed source-built model; actual constrained relaxation is separate, no interface/thickness convergence.",
+          "metal_geometric_thickness_A": 3.881,
+          "metal_layers": 3,
+          "no_convergence_waiver": true,
+          "oxide_coated_interperiod_vacuum_A": 15.0,
+          "oxide_geometric_thickness_A": 1.3170577989708674,
+          "oxide_sheet_count": 1,
+          "surface_repeat": [
+            1,
+            1
+          ]
+        },
+        "constraints": [],
+        "direction": [
+          0.8944271909999159,
+          -0.4472135954999579,
+          0.0
+        ],
+        "execution_status": "Candidate construction source only; no Native or builder execution by author",
+        "limitations": [
+          "All positions must be relaxed with no fixed atoms. Fixed cell starts from measured rather than PBE-optimized Pd, and the film strain is calculated against experimental CIF metrics, not the paper's theoretical area strain.",
+          "Single-sided coating plus three-dimensional PBC can introduce a slab dipole and artificial interslab electrostatics. No cancellation or vacuum convergence is claimed.",
+          "Base four-layer Pd is thin; opposite bare surface can affect the selected D. Large changes x image separation, thickness and D dilution together; y separation and oxide thickness are not controlled.",
+          "An infinite coherent stoichiometric one-sheet surface oxide is not bulk PdO, a 30 nm foil, an oxide island, a measured experimental interface, or an oxygen adatom phase.",
+          "Bulk-cut sheet coordinates omit experimental/DFT rumpling and lateral relaxation. PdO phase retention, D retention, interface adhesion and film reconstruction are open Root acceptance gates.",
+          "Alternative symmetric two-sided coating suppresses the coating dipole but costs36host at four metal layers, or31host with only three metal layers and D adjacent to both interfaces. Exact total-Pd matching to ideal clean sqrt5 fcc slabs is impossible without introducing a Pd vacancy, changing metal thickness/lateral strain, or a different loading convention."
+        ],
+        "matching": {
+          "D": 1,
+          "D_per_metal_Pd": 0.06666666666666667,
+          "D_per_surface_area_A2": 0.026556614286621958,
+          "D_per_total_Pd": 0.05263157894736842,
+          "O": 4,
+          "comparison_loading": "Matched one D per cell and per identical metallic substrate: base D/Pd_metal=1/20, large=1/60. Total D/Pd differs by the explicit deposited oxide Pd: oxygen base1/24, large1/68 versus plain1/20,1/60; this is a coating comparison, not fixed-total-Pd oxygen insertion.",
+          "different": "oxygen adds 4Pd+4O per sqrt5 tile, including its own Pd sublattice",
+          "identical": [
+            "cell",
+            "metallic Pd positions and inventory",
+            "one D per cell",
+            "D position and isotope mass",
+            "incoming ray",
+            "metal lattice"
+          ],
+          "metal_Pd": 15,
+          "metal_a_A": 3.881,
+          "oxide_area_strain": 0.013490454048159739,
+          "oxide_in_plane_engineering_strain": [
+            0.012607227649627184,
+            0.0008722299964052382
+          ],
+          "oxide_orientation": "simulation x parallel PdO[010], simulation y parallel PdO[10-1], simulation z parallel the (101) reciprocal normal; two [010] repeats",
+          "oxide_pd_mean_height_above_top_metal_A": 2.5,
+          "oxide_stoichiometry_per_tile": {
+            "O": 4,
+            "Pd": 4
+          },
+          "registry_fractional_shift": [
+            0.3,
+            0.1
+          ],
+          "registry_status": "One two-O-coordinated sheet Pd is initially above the fourfold hollow of the metal top layer. This is a fully recorded chosen registry, not the optimized Todorova coordinates.",
+          "total_Pd": 19
+        },
+        "nominal_site": {
+          "depth_below_top_metal_A": 1.9405,
+          "description": "One D, nominal first fully coordinated subsurface octahedral site, directly below top metal Pd at (0,0), z=top_metal-a_Pd/2; six ideal Pd neighbors at a_Pd/2. Never an identified relaxed site.",
+          "ideal_metal_coordination": 6,
+          "ideal_nearest_Pd_A": 1.9405,
+          "initial_target_A": [
+            0.0,
+            0.0,
+            9.4405
+          ],
+          "site_status": "Intended initial site only; no stable-site or retention claim"
+        },
+        "pair": "pd-oxide",
+        "ray": {
+          "R_interval_A": [
+            0.1,
+            1.6
+          ],
+          "analytic_initial_metal_clearance_lower_bound_A": 1.3721407088924953,
+          "description": "In the subsurface plane along a Pd(100) surface primitive axis. Analytic ideal metallic spectator clearance over R=0.1..1.6 A is at least a_Pd/(2*sqrt(2))=1.3721407088924953 A; Root must recalculate after full relaxation.",
+          "numerically_executed": false,
+          "post_relaxation_recheck_required": true
+        },
+        "relaxation_status": "Not run; all atomic positions unconstrained and require Root relaxation",
+        "scope": "One D in metallic Pd adjacent to a coherent stoichiometric PdO(101) surface sheet versus the identical bare metallic substrate. This is an added-PdO-layer intervention, not oxygen insertion at fixed total Pd, bulk PdO, an oxide island, or an experimental foil reconstruction.",
+        "size": "compact",
+        "structural_sources": [
+          {
+            "bytes": 4673,
+            "relative_name": "artifacts/P255-g7-micro-calibration-20261120/geometry-pd/COD-1011106-Pd-original.cif",
+            "role": "fcc Pd structure and a=3.881(2) A; Barth and Lunde, 1926; synthetic specimen; not a PBE equilibrium lattice",
+            "sha256": "534544f15709f43bf7d88291e3835f4cdd823159585598f0f3b73383c4e4624d",
+            "url": "http1011106.cif"
+          },
+          {
+            "bytes": 2610,
+            "relative_name": "artifacts/P255-g7-micro-calibration-20261120/geometry-pd/COD-1009031-PdO-original.cif",
+            "role": "Waser, Levy and Peterson, Acta Cryst. 6 (1953) 661-663, DOI10.1107/S0365110X53001800; tetragonal PdO, SG131 in the CIF's shifted setting",
+            "sha256": "7bfb22fa748f24d860b368935dd22733b129f7702dc769ec45eac48d4b2c9b43",
+            "url": "http1009031.cif"
+          },
+          {
+            "bytes": 646674,
+            "relative_name": "artifacts/P255-g7-micro-calibration-20261120/geometry-pd/Todorova2003-original.pdf",
+            "role": "Surface Science 541 (2003) 101-112, DOI10.1016/S0039-6028(03)00873-2; sections3.2-3.5 support a stoichiometric 4Pd/4O PdO(101) sheet on sqrt5 Pd(100); no optimized coordinates are claimed copied",
+            "sha256": "99b55c281ce30ecbc6670d5e388e6028a88e7e0140238b85ccdbd752f1ad43f5",
+            "url": "httpSS-541-101-2003.pdf"
+          },
+          {
+            "bytes": 5505,
+            "relative_name": "artifacts/P255-g7-micro-calibration-20261120/geometry-pd/structure-binding.json",
+            "role": "Transcribed structure, analytic cut and explicit microscopic hypotheses",
+            "sha256": "6e75aacbfe41aaa1dd71de79962f77102c6ae225fca1aebb4a6bdd1290547417",
+            "url": null
+          }
+        ],
+        "target_index": 23,
+        "variant": "oxygen"
+      },
+      "initial_frame": {
+        "bytes": 10284,
+        "path": "provenance/geometry/initial-frame.json",
+        "sha256": "a33e7721d15bc023f70f8cfab2310bee1a001c754e99d52842cfa398535e4559"
+      },
+      "labelled_admission": {
+        "accepted_boundaries": [
+          {
+            "bytes": 13882,
+            "path": "geometry-step-000-boundary.json",
+            "sha256": "31224953d0241c1a9e87c7fc7f72e81f97d6ee1424b823356afcd320abda5364"
+          },
+          {
+            "bytes": 14154,
+            "path": "geometry-step-001-boundary.json",
+            "sha256": "d8523e071d2f41740cea7419c8ddb2ebb8103e7150c4cc599a303eb6acc1e0eb"
+          },
+          {
+            "bytes": 14144,
+            "path": "geometry-step-002-boundary.json",
+            "sha256": "2647fb2d321a5977c3e21513765b7a1121789a3040f1ce292bb71f18d8b43256"
+          },
+          {
+            "bytes": 14169,
+            "path": "geometry-step-003-boundary.json",
+            "sha256": "f04eb4cd26a563c51b375063fce146ecdd7b809967b5870f34b2fc923c5e40c0"
+          },
+          {
+            "bytes": 14180,
+            "path": "geometry-step-004-boundary.json",
+            "sha256": "cf282feb640ad518b9548c3d7b20f7080bf90dfce52f63d99d3d544e699b0cea"
+          },
+          {
+            "bytes": 14216,
+            "path": "geometry-step-005-boundary.json",
+            "sha256": "8cf9e5c155192fcbcf887e05e14810322104f4dd147cb3e2afc6e3e66fa9315a"
+          },
+          {
+            "bytes": 14236,
+            "path": "geometry-step-006-boundary.json",
+            "sha256": "d2c506eece8fc41ea77fb5cc0c4cc7786cda34524165561cfcb7d176d2877f0c"
+          }
+        ],
+        "adoption_source": {
+          "bytes": 9446,
+          "path": "labelled-admission/pd_label.py",
+          "sha256": "78a57499abf74956f26a1a02ec3f9b73dc8d75d7cb1a879259c93e1661c39c84"
+        },
+        "authority": {
+          "bytes": 7354,
+          "path": "labelled-admission/authority.json",
+          "sha256": "14b58a2ebb1d0bf6bcec5ba311fa4077675cc4ac45274ddd7859c5bf9d5ce1a5"
+        },
+        "authority_entry": "entry_2994",
+        "checkpoint_import_qualified": false,
+        "failed_attempt": {
+          "attempt": {
+            "bytes": 381,
+            "path": "labelled-admission/checkpoint-resume-attempt.json",
+            "sha256": "4a666765bbc853f42b27319995f456d5735aaf4b69dd3356f46fd39886f9c984"
+          },
+          "files": [
+            {
+              "bytes": 17508,
+              "path": "labelled-admission/failed-attempt/calculation/checkpoint-resume/manifest.json",
+              "sha256": "9fe89c4b56285564b76ba5c094a18443f71cd783297e3696008bf894d94388f0"
+            },
+            {
+              "bytes": 4677,
+              "path": "labelled-admission/failed-attempt/calculation/checkpoint-resume/pd-oxygen-checkpoint-resume-001-files/authority.json",
+              "sha256": "283e4bb2f45ffb64a7026aa7a243acf9047aad809a421621f8e76ab920eef664"
+            },
+            {
+              "bytes": 13882,
+              "path": "labelled-admission/failed-attempt/calculation/checkpoint-resume/pd-oxygen-checkpoint-resume-001-files/boundaries/geometry-step-000-boundary.json",
+              "sha256": "31224953d0241c1a9e87c7fc7f72e81f97d6ee1424b823356afcd320abda5364"
+            },
+            {
+              "bytes": 14154,
+              "path": "labelled-admission/failed-attempt/calculation/checkpoint-resume/pd-oxygen-checkpoint-resume-001-files/boundaries/geometry-step-001-boundary.json",
+              "sha256": "d8523e071d2f41740cea7419c8ddb2ebb8103e7150c4cc599a303eb6acc1e0eb"
+            },
+            {
+              "bytes": 14144,
+              "path": "labelled-admission/failed-attempt/calculation/checkpoint-resume/pd-oxygen-checkpoint-resume-001-files/boundaries/geometry-step-002-boundary.json",
+              "sha256": "2647fb2d321a5977c3e21513765b7a1121789a3040f1ce292bb71f18d8b43256"
+            },
+            {
+              "bytes": 14169,
+              "path": "labelled-admission/failed-attempt/calculation/checkpoint-resume/pd-oxygen-checkpoint-resume-001-files/boundaries/geometry-step-003-boundary.json",
+              "sha256": "f04eb4cd26a563c51b375063fce146ecdd7b809967b5870f34b2fc923c5e40c0"
+            },
+            {
+              "bytes": 14180,
+              "path": "labelled-admission/failed-attempt/calculation/checkpoint-resume/pd-oxygen-checkpoint-resume-001-files/boundaries/geometry-step-004-boundary.json",
+              "sha256": "cf282feb640ad518b9548c3d7b20f7080bf90dfce52f63d99d3d544e699b0cea"
+            },
+            {
+              "bytes": 14216,
+              "path": "labelled-admission/failed-attempt/calculation/checkpoint-resume/pd-oxygen-checkpoint-resume-001-files/boundaries/geometry-step-005-boundary.json",
+              "sha256": "8cf9e5c155192fcbcf887e05e14810322104f4dd147cb3e2afc6e3e66fa9315a"
+            },
+            {
+              "bytes": 14236,
+              "path": "labelled-admission/failed-attempt/calculation/checkpoint-resume/pd-oxygen-checkpoint-resume-001-files/boundaries/geometry-step-006-boundary.json",
+              "sha256": "d2c506eece8fc41ea77fb5cc0c4cc7786cda34524165561cfcb7d176d2877f0c"
+            },
+            {
+              "bytes": 106793,
+              "path": "labelled-admission/failed-attempt/calculation/checkpoint-resume/pd-oxygen-checkpoint-resume-001-files/consumed/dataset/0-Pd.10.PBE.gz",
+              "sha256": "3c6cfd1de7e6d6815d58c9521b2bc7cec27ede8e83554ed1f0151f979761bbb4"
+            },
+            {
+              "bytes": 151929,
+              "path": "labelled-admission/failed-attempt/calculation/checkpoint-resume/pd-oxygen-checkpoint-resume-001-files/consumed/dataset/1-Zr.PBE.gz",
+              "sha256": "24ed27d12701673908a0f4ca4210ab7eb1a2891251720b904466a5507f984d4d"
+            },
+            {
+              "bytes": 51385,
+              "path": "labelled-admission/failed-attempt/calculation/checkpoint-resume/pd-oxygen-checkpoint-resume-001-files/consumed/dataset/2-O.PBE.gz",
+              "sha256": "1426eb21d028c017410e7f9d6aa37d3f0836890374b7c9435e599a96fa8c293d"
+            },
+            {
+              "bytes": 12501,
+              "path": "labelled-admission/failed-attempt/calculation/checkpoint-resume/pd-oxygen-checkpoint-resume-001-files/consumed/dataset/3-H.PBE.gz",
+              "sha256": "3136ad73c02d471f99dd5f82e451b2061952970556a260d38b53b5020dc94ae7"
+            },
+            {
+              "bytes": 2348,
+              "path": "labelled-admission/failed-attempt/calculation/checkpoint-resume/pd-oxygen-checkpoint-resume-001-files/consumed/library/0-ae.py",
+              "sha256": "d6daba8aa25bbeeb716c7c9a3a3c7ec67fd1b56673550b523f308400ad8064cc"
+            },
+            {
+              "bytes": 57201,
+              "path": "labelled-admission/failed-attempt/calculation/checkpoint-resume/pd-oxygen-checkpoint-resume-001-files/consumed/library/1-setup.py",
+              "sha256": "ac566b134823bf164336fd3404288fcf698c892d081047cd5e2663b070089bb2"
+            },
+            {
+              "bytes": 9085,
+              "path": "labelled-admission/failed-attempt/calculation/checkpoint-resume/pd-oxygen-checkpoint-resume-001-files/consumed/library/2-units.py",
+              "sha256": "1c49db1fbc894e087f94ec8fb8b3746d2c9228845332c5821b459e7104a5d097"
+            },
+            {
+              "bytes": 7481,
+              "path": "labelled-admission/failed-attempt/calculation/checkpoint-resume/pd-oxygen-checkpoint-resume-001-files/energy-convention/bfgslinesearch.py",
+              "sha256": "b8bac1f388bd577001c7f56b0cdb6a4bb99d020e49003973855002eaf6dde178"
+            },
+            {
+              "bytes": 19034,
+              "path": "labelled-admission/failed-attempt/calculation/checkpoint-resume/pd-oxygen-checkpoint-resume-001-files/energy-convention/optimize.py",
+              "sha256": "6ec1b31733b7bd6c6ed824ebcd1682e3978f033b68717c8ab391d94a160d0433"
+            },
+            {
+              "bytes": 2992,
+              "path": "labelled-admission/failed-attempt/calculation/checkpoint-resume/pd-oxygen-checkpoint-resume-001-files/launch_receipt.json",
+              "sha256": "d525d22c8066e2855dfcac48bdc170e0667357ba63a4bbd1f710381fe3659a42"
+            },
+            {
+              "bytes": 201,
+              "path": "labelled-admission/failed-attempt/calculation/checkpoint-resume/pd-oxygen-checkpoint-resume-001-files/manager_accounting.stdout",
+              "sha256": "1d33e75afd65160bd5b3ab5ab0c7e785bb42f21993240fb9aa63d4ff1c967122"
+            },
+            {
+              "bytes": 182,
+              "path": "labelled-admission/failed-attempt/calculation/checkpoint-resume/pd-oxygen-checkpoint-resume-001-files/manager_bounds.stdout",
+              "sha256": "d59d3892cc666682320e63249c8edcd2c5a19cb91da97ce7587dd35e0ed17cbc"
+            },
+            {
+              "bytes": 313,
+              "path": "labelled-admission/failed-attempt/calculation/checkpoint-resume/pd-oxygen-checkpoint-resume-001-files/manager_query_argv.json",
+              "sha256": "28ab4aed3ff1b157d97cd8f3b4ed61f785bdd25ec37e3dc9de857939e79a95bb"
+            },
+            {
+              "bytes": 4967,
+              "path": "labelled-admission/failed-attempt/calculation/checkpoint-resume/pd-oxygen-checkpoint-resume-001-files/native_log.log",
+              "sha256": "b829d7627fde3fc17240c5cd853e33ae0e054594f9f6f83871bf7265c65c4b04"
+            },
+            {
+              "bytes": 108700535,
+              "path": "labelled-admission/failed-attempt/calculation/checkpoint-resume/pd-oxygen-checkpoint-resume-001-files/original_gpw.gpw",
+              "sha256": "35dc23d707b1db49b50d0f4267a62742857cff768d89f6b3d360503f7fef5054"
+            },
+            {
+              "bytes": 10284,
+              "path": "labelled-admission/failed-attempt/calculation/checkpoint-resume/pd-oxygen-checkpoint-resume-001-files/original_initial_frame.json",
+              "sha256": "a33e7721d15bc023f70f8cfab2310bee1a001c754e99d52842cfa398535e4559"
+            },
+            {
+              "bytes": 3113,
+              "path": "labelled-admission/failed-attempt/calculation/checkpoint-resume/pd-oxygen-checkpoint-resume-001-files/original_input.json",
+              "sha256": "db5cbcf2cefc9e12c16aa9eeff3aee7a613b6b0b2f068ec3e21ca9f3af1c5154"
+            },
+            {
+              "bytes": 8719,
+              "path": "labelled-admission/failed-attempt/calculation/checkpoint-resume/pd-oxygen-checkpoint-resume-001-files/original_source_epoch.json",
+              "sha256": "bfb479cd2cc62824e3f05e4e82dde733931e526f4a4077b1076a5eb735a6f979"
+            },
+            {
+              "bytes": 11328,
+              "path": "labelled-admission/failed-attempt/calculation/checkpoint-resume/pd-oxygen-checkpoint-resume-001-files/source/artifacts/P255-g7-micro-calibration-20261120/PLAN.md",
+              "sha256": "a17a477165085d32ff41391a1dd8c7825e006d70dc3b6da23f6216246aa3c3bb"
+            },
+            {
+              "bytes": 2610,
+              "path": "labelled-admission/failed-attempt/calculation/checkpoint-resume/pd-oxygen-checkpoint-resume-001-files/source/artifacts/P255-g7-micro-calibration-20261120/geometry-pd/COD-1009031-PdO-original.cif",
+              "sha256": "7bfb22fa748f24d860b368935dd22733b129f7702dc769ec45eac48d4b2c9b43"
+            },
+            {
+              "bytes": 4673,
+              "path": "labelled-admission/failed-attempt/calculation/checkpoint-resume/pd-oxygen-checkpoint-resume-001-files/source/artifacts/P255-g7-micro-calibration-20261120/geometry-pd/COD-1011106-Pd-original.cif",
+              "sha256": "534544f15709f43bf7d88291e3835f4cdd823159585598f0f3b73383c4e4624d"
+            },
+            {
+              "bytes": 646674,
+              "path": "labelled-admission/failed-attempt/calculation/checkpoint-resume/pd-oxygen-checkpoint-resume-001-files/source/artifacts/P255-g7-micro-calibration-20261120/geometry-pd/Todorova2003-original.pdf",
+              "sha256": "99b55c281ce30ecbc6670d5e388e6028a88e7e0140238b85ccdbd752f1ad43f5"
+            },
+            {
+              "bytes": 5505,
+              "path": "labelled-admission/failed-attempt/calculation/checkpoint-resume/pd-oxygen-checkpoint-resume-001-files/source/artifacts/P255-g7-micro-calibration-20261120/geometry-pd/structure-binding.json",
+              "sha256": "6e75aacbfe41aaa1dd71de79962f77102c6ae225fca1aebb4a6bdd1290547417"
+            },
+            {
+              "bytes": 10172,
+              "path": "labelled-admission/failed-attempt/calculation/checkpoint-resume/pd-oxygen-checkpoint-resume-001-files/source/artifacts/P255-g7-micro-calibration-20261120/pd-production/PLAN.md",
+              "sha256": "23498021bad8bf0585ed5619a0b5ad1b5133ebaa420c14f0033f831cf25b3795"
+            },
+            {
+              "bytes": 2107,
+              "path": "labelled-admission/failed-attempt/calculation/checkpoint-resume/pd-oxygen-checkpoint-resume-001-files/source/campaigns/P255-pdd-collision/collision_geometry.py",
+              "sha256": "077eb638330c142ce710bd359780d0123d74d411e1bd9f26c7022a1e9bd1cc23"
+            },
+            {
+              "bytes": 2508,
+              "path": "labelled-admission/failed-attempt/calculation/checkpoint-resume/pd-oxygen-checkpoint-resume-001-files/source/campaigns/P255-pdd-collision/collision_ground.py",
+              "sha256": "7ec514b422fbe2d43c8e1e60db71636ef6827d3bcbedd1f8291fc25241f070eb"
+            },
+            {
+              "bytes": 2499,
+              "path": "labelled-admission/failed-attempt/calculation/checkpoint-resume/pd-oxygen-checkpoint-resume-001-files/source/campaigns/P255-pdd-collision/delivery/green.py",
+              "sha256": "08e5e5c10536e57b3a319b9385808c2a7cbf0bf4e32faf7f91c9d1bb07746ada"
+            },
+            {
+              "bytes": 16747,
+              "path": "labelled-admission/failed-attempt/calculation/checkpoint-resume/pd-oxygen-checkpoint-resume-001-files/source/campaigns/P255-pdd-collision/hydride_screening/contact_export.py",
+              "sha256": "1b159abc650a0cc10eaa2cae867fbf14a2182089bdc488ed08ed35c55502c4b9"
+            },
+            {
+              "bytes": 19534,
+              "path": "labelled-admission/failed-attempt/calculation/checkpoint-resume/pd-oxygen-checkpoint-resume-001-files/source/campaigns/P255-pdd-collision/hydride_screening/contact_native.py",
+              "sha256": "45067370e860b9a8b48f1ae197f163c5f39b04678a4813f6a3866328f15fc2b1"
+            },
+            {
+              "bytes": 19945,
+              "path": "labelled-admission/failed-attempt/calculation/checkpoint-resume/pd-oxygen-checkpoint-resume-001-files/source/campaigns/P255-pdd-collision/hydride_screening/contact_replay.py",
+              "sha256": "7bf17b84616d2ab887147e20b9a0f996752f9e2b01935c07bd9848f8f25921f4"
+            },
+            {
+              "bytes": 2761,
+              "path": "labelled-admission/failed-attempt/calculation/checkpoint-resume/pd-oxygen-checkpoint-resume-001-files/source/campaigns/P255-pdd-collision/hydride_screening/contact_setup.py",
+              "sha256": "94a9069f911d2c25b28032b73b936dacde0bc82847dd78f42b0aa89cb4e817ad"
+            },
+            {
+              "bytes": 8293,
+              "path": "labelled-admission/failed-attempt/calculation/checkpoint-resume/pd-oxygen-checkpoint-resume-001-files/source/campaigns/P255-pdd-collision/hydride_screening/contact_state.py",
+              "sha256": "0bea8674eccb401de39cf61085d8f0b3fbd73c145c85ddc4ea2d6e102a85d2e0"
+            },
+            {
+              "bytes": 7520,
+              "path": "labelled-admission/failed-attempt/calculation/checkpoint-resume/pd-oxygen-checkpoint-resume-001-files/source/campaigns/P255-pdd-collision/hydride_screening/export_pairs.py",
+              "sha256": "0cf6c540bba755af5f2fbc9342a4eb743b908894f23af3520349c8acbb23b85f"
+            },
+            {
+              "bytes": 2826,
+              "path": "labelled-admission/failed-attempt/calculation/checkpoint-resume/pd-oxygen-checkpoint-resume-001-files/source/campaigns/P255-pdd-collision/hydride_screening/geometry.py",
+              "sha256": "a731e52e868cc8c1430f92300659b8b54cf9f3da051cc3fd2e74928a9f66a22b"
+            },
+            {
+              "bytes": 21272,
+              "path": "labelled-admission/failed-attempt/calculation/checkpoint-resume/pd-oxygen-checkpoint-resume-001-files/source/campaigns/P255-pdd-collision/hydride_screening/hydride_replay.py",
+              "sha256": "0e688e4f11e50c824e3cf1cc3d4686c900bfa14f0d0b87b0546f6f65871450f7"
+            },
+            {
+              "bytes": 7001,
+              "path": "labelled-admission/failed-attempt/calculation/checkpoint-resume/pd-oxygen-checkpoint-resume-001-files/source/campaigns/P255-pdd-collision/hydride_screening/launch_contact.py",
+              "sha256": "138c0826660c944b46ce2e2bda7216674ef737968185474e3c286c3a0d0b40a3"
+            },
+            {
+              "bytes": 7628,
+              "path": "labelled-admission/failed-attempt/calculation/checkpoint-resume/pd-oxygen-checkpoint-resume-001-files/source/campaigns/P255-pdd-collision/hydride_screening/launch_hydride.py",
+              "sha256": "3c49127ece3e59d5800239302d0c31d09f269b2e25c01dc8a8fda4e9f9229153"
+            },
+            {
+              "bytes": 1788,
+              "path": "labelled-admission/failed-attempt/calculation/checkpoint-resume/pd-oxygen-checkpoint-resume-001-files/source/campaigns/P255-pdd-collision/hydride_screening/log_privacy.py",
+              "sha256": "2a5842a86aecf96ebf13a59d678cf7101cae67dec65d5df98fc3c98835c05a8b"
+            },
+            {
+              "bytes": 6246,
+              "path": "labelled-admission/failed-attempt/calculation/checkpoint-resume/pd-oxygen-checkpoint-resume-001-files/source/campaigns/P255-pdd-collision/hydride_screening/native_state.py",
+              "sha256": "f945f17ed252a75385cafad2b80c64352537c41d1cc2e468d5ed2643c795f011"
+            },
+            {
+              "bytes": 2356,
+              "path": "labelled-admission/failed-attempt/calculation/checkpoint-resume/pd-oxygen-checkpoint-resume-001-files/source/campaigns/P255-pdd-collision/hydride_screening/preflight.py",
+              "sha256": "857d11c5d8e9a1280e1b382ba7154fd5cd9cdd52d74286bc709325bf14dd04ab"
+            },
+            {
+              "bytes": 4467,
+              "path": "labelled-admission/failed-attempt/calculation/checkpoint-resume/pd-oxygen-checkpoint-resume-001-files/source/campaigns/P255-pdd-collision/hydride_screening/quartet.py",
+              "sha256": "88136cda3a302e4f08ce3d3902af1eb1ebef5475d70129c4726c2b8518285646"
+            },
+            {
+              "bytes": 9526,
+              "path": "labelled-admission/failed-attempt/calculation/checkpoint-resume/pd-oxygen-checkpoint-resume-001-files/source/campaigns/P255-pdd-collision/hydride_screening/readout.py",
+              "sha256": "802bf03d259884d15f3b46ebdb3e4275f1f71908327565d3eea01a6cba87ffd5"
+            },
+            {
+              "bytes": 3349,
+              "path": "labelled-admission/failed-attempt/calculation/checkpoint-resume/pd-oxygen-checkpoint-resume-001-files/source/campaigns/P255-pdd-collision/hydride_screening/relaxation.py",
+              "sha256": "5aec4066a8a5360bfb9c29200beb7259b22e21b5e6c5b23cac612caa19e0241e"
+            },
+            {
+              "bytes": 4980,
+              "path": "labelled-admission/failed-attempt/calculation/checkpoint-resume/pd-oxygen-checkpoint-resume-001-files/source/campaigns/P255-pdd-collision/hydride_screening/run_hydride.py",
+              "sha256": "95caba7166dd05295440d39847a141b3a4af50d70b745c585ca9583ecc006880"
+            },
+            {
+              "bytes": 1917,
+              "path": "labelled-admission/failed-attempt/calculation/checkpoint-resume/pd-oxygen-checkpoint-resume-001-files/source/campaigns/P255-pdd-collision/hydride_screening/verify_charge_reference.py",
+              "sha256": "0bc71a8eeff52cd3833c9ac67bf0802eed68c6122c8e182314d89cd5e752929d"
+            },
+            {
+              "bytes": 17846,
+              "path": "labelled-admission/failed-attempt/calculation/checkpoint-resume/pd-oxygen-checkpoint-resume-001-files/source/campaigns/P255-pdd-collision/hydride_screening/verify_contact_mapping.py",
+              "sha256": "d06924dd9ba0ffff3d7c131dc7e677ec18bc7bb8053a296a20da6171aec0eb03"
+            },
+            {
+              "bytes": 4855,
+              "path": "labelled-admission/failed-attempt/calculation/checkpoint-resume/pd-oxygen-checkpoint-resume-001-files/source/campaigns/P255-pdd-collision/micro_calibration/contact_zr.py",
+              "sha256": "f59db2978eef2fc6acc10b924266be9a1c9822e7a0d1f5278564d7b9ba9331ff"
+            },
+            {
+              "bytes": 3876,
+              "path": "labelled-admission/failed-attempt/calculation/checkpoint-resume/pd-oxygen-checkpoint-resume-001-files/source/campaigns/P255-pdd-collision/micro_calibration/cost_readout.py",
+              "sha256": "0b45ae3cd42831cb136ea6da519620afe5a8220ba516994cc8b319510d5aa4ed"
+            },
+            {
+              "bytes": 9720,
+              "path": "labelled-admission/failed-attempt/calculation/checkpoint-resume/pd-oxygen-checkpoint-resume-001-files/source/campaigns/P255-pdd-collision/micro_calibration/geometry_pd.py",
+              "sha256": "d766d5d82f4418468847dc1b64ef2ae4afff6b358ea4ae1c10cf56c60bc8a510"
+            },
+            {
+              "bytes": 8159,
+              "path": "labelled-admission/failed-attempt/calculation/checkpoint-resume/pd-oxygen-checkpoint-resume-001-files/source/campaigns/P255-pdd-collision/micro_calibration/geometry_zr.py",
+              "sha256": "91d9ad13dd30e359aa1cba70c0e9e9855d9e4646f9a80422920dc055e363cb24"
+            },
+            {
+              "bytes": 9168,
+              "path": "labelled-admission/failed-attempt/calculation/checkpoint-resume/pd-oxygen-checkpoint-resume-001-files/source/campaigns/P255-pdd-collision/micro_calibration/launch_micro.py",
+              "sha256": "87625ea8dc454254e4baa7d35fca3f4fc96b6cec6fdff88d0012a2beddfb78c2"
+            },
+            {
+              "bytes": 9258,
+              "path": "labelled-admission/failed-attempt/calculation/checkpoint-resume/pd-oxygen-checkpoint-resume-001-files/source/campaigns/P255-pdd-collision/micro_calibration/native.py",
+              "sha256": "b49aac201d964ac1004d3a7e651e62ddce9dfd39ae8bcd97e6bb76918f68a76f"
+            },
+            {
+              "bytes": 7271,
+              "path": "labelled-admission/failed-attempt/calculation/checkpoint-resume/pd-oxygen-checkpoint-resume-001-files/source/campaigns/P255-pdd-collision/micro_calibration/pd_ray.py",
+              "sha256": "5d972cfbd3f6ef1bbcd56d375e4d9909879094a2b7884e9b5008ec07288c8b26"
+            },
+            {
+              "bytes": 14291,
+              "path": "labelled-admission/failed-attempt/calculation/checkpoint-resume/pd-oxygen-checkpoint-resume-001-files/source/campaigns/P255-pdd-collision/micro_calibration/pd_relax.py",
+              "sha256": "3c3f9860e5d86e518402ab371a5539c1872aad1fd443c44e84fa957b22813190"
+            },
+            {
+              "bytes": 7113,
+              "path": "labelled-admission/failed-attempt/calculation/checkpoint-resume/pd-oxygen-checkpoint-resume-001-files/source/campaigns/P255-pdd-collision/micro_calibration/pd_run.py",
+              "sha256": "3ef2274ec2954bf191dd5ad373b418ce916801acf4b3417ef70a7109810f9c2d"
+            },
+            {
+              "bytes": 4550,
+              "path": "labelled-admission/failed-attempt/calculation/checkpoint-resume/pd-oxygen-checkpoint-resume-001-files/source/campaigns/P255-pdd-collision/micro_calibration/pilot_pd.py",
+              "sha256": "9e8d3c059a76523cf52b35a6b77a8aea968c4c13ebe897f5ac825dbbf7c4d9ed"
+            },
+            {
+              "bytes": 8160,
+              "path": "labelled-admission/failed-attempt/calculation/checkpoint-resume/pd-oxygen-checkpoint-resume-001-files/source/campaigns/P255-pdd-collision/micro_calibration/preflight.py",
+              "sha256": "693491a484a68c7483c46b6484c732e3e70d73d9bcdfa369b9db128ed549a9ef"
+            },
+            {
+              "bytes": 6305,
+              "path": "labelled-admission/failed-attempt/calculation/checkpoint-resume/pd-oxygen-checkpoint-resume-001-files/source/campaigns/P255-pdd-collision/micro_calibration/quartet_zr.py",
+              "sha256": "a881c7987cef3bfd135186827dd93ffc55e4c281fe9901cd1a6e4468bf90663d"
+            },
+            {
+              "bytes": 13116,
+              "path": "labelled-admission/failed-attempt/calculation/checkpoint-resume/pd-oxygen-checkpoint-resume-001-files/source/campaigns/P255-pdd-collision/micro_calibration/relax_zr.py",
+              "sha256": "675297e4a68d0426bce942d3e7f3fca1d374c7f0c130652d7dd2f795bbb0e3e2"
+            },
+            {
+              "bytes": 8251,
+              "path": "labelled-admission/failed-attempt/calculation/checkpoint-resume/pd-oxygen-checkpoint-resume-001-files/source/campaigns/P255-pdd-collision/micro_calibration/run_zr.py",
+              "sha256": "4304ce4c3bdfb63cc151a62cad20035f5e3d29c5f10ea3955b4304017710fdde"
+            },
+            {
+              "bytes": 1409,
+              "path": "labelled-admission/failed-attempt/calculation/checkpoint-resume/pd-oxygen-checkpoint-resume-001-files/source/campaigns/P255-pdd-collision/screen_io.py",
+              "sha256": "dcab99128fbb312083bdccf440c4c32c214e58e78c59a8a52126300c25d3420c"
+            },
+            {
+              "bytes": 3022,
+              "path": "labelled-admission/failed-attempt/calculation/checkpoint-resume/pd-oxygen-checkpoint-resume-001-files/source/src/substrate_framework/collision_bare_reference.py",
+              "sha256": "05ccba36601567b71a12af42c309cd978e1637b454454740c0f2909725598f09"
+            },
+            {
+              "bytes": 6942,
+              "path": "labelled-admission/failed-attempt/calculation/geometry.private-metadata-removed.txt",
+              "sha256": "807b2fe64f3df65df376643f437c1fd0e7e393ea8d3804ffee6045ddbd20763c"
+            },
+            {
+              "bytes": 8032,
+              "path": "labelled-admission/failed-attempt/calculation/geometry.txt",
+              "sha256": "2cbb43b41e17625b2c465ec3358b4dc27092a3c79f2e822ce92bef620f74d4af"
+            },
+            {
+              "bytes": 10284,
+              "path": "labelled-admission/failed-attempt/calculation/initial-frame.json",
+              "sha256": "a33e7721d15bc023f70f8cfab2310bee1a001c754e99d52842cfa398535e4559"
+            },
+            {
+              "bytes": 106793,
+              "path": "labelled-admission/failed-attempt/calculation/provenance/datasets/0-Pd.10.PBE.gz",
+              "sha256": "3c6cfd1de7e6d6815d58c9521b2bc7cec27ede8e83554ed1f0151f979761bbb4"
+            },
+            {
+              "bytes": 151929,
+              "path": "labelled-admission/failed-attempt/calculation/provenance/datasets/1-Zr.PBE.gz",
+              "sha256": "24ed27d12701673908a0f4ca4210ab7eb1a2891251720b904466a5507f984d4d"
+            },
+            {
+              "bytes": 51385,
+              "path": "labelled-admission/failed-attempt/calculation/provenance/datasets/2-O.PBE.gz",
+              "sha256": "1426eb21d028c017410e7f9d6aa37d3f0836890374b7c9435e599a96fa8c293d"
+            },
+            {
+              "bytes": 12501,
+              "path": "labelled-admission/failed-attempt/calculation/provenance/datasets/3-H.PBE.gz",
+              "sha256": "3136ad73c02d471f99dd5f82e451b2061952970556a260d38b53b5020dc94ae7"
+            },
+            {
+              "bytes": 3354,
+              "path": "labelled-admission/failed-attempt/calculation/provenance/input.json",
+              "sha256": "0774fbd66827e42bcad6be01852f64b9c585f0c19ec85bf2a98cbdf37bc92ea9"
+            },
+            {
+              "bytes": 2348,
+              "path": "labelled-admission/failed-attempt/calculation/provenance/librarys/0-ae.py",
+              "sha256": "d6daba8aa25bbeeb716c7c9a3a3c7ec67fd1b56673550b523f308400ad8064cc"
+            },
+            {
+              "bytes": 57201,
+              "path": "labelled-admission/failed-attempt/calculation/provenance/librarys/1-setup.py",
+              "sha256": "ac566b134823bf164336fd3404288fcf698c892d081047cd5e2663b070089bb2"
+            },
+            {
+              "bytes": 9085,
+              "path": "labelled-admission/failed-attempt/calculation/provenance/librarys/2-units.py",
+              "sha256": "1c49db1fbc894e087f94ec8fb8b3746d2c9228845332c5821b459e7104a5d097"
+            },
+            {
+              "bytes": 11328,
+              "path": "labelled-admission/failed-attempt/calculation/provenance/source/artifacts/P255-g7-micro-calibration-20261120/PLAN.md",
+              "sha256": "a17a477165085d32ff41391a1dd8c7825e006d70dc3b6da23f6216246aa3c3bb"
+            },
+            {
+              "bytes": 2610,
+              "path": "labelled-admission/failed-attempt/calculation/provenance/source/artifacts/P255-g7-micro-calibration-20261120/geometry-pd/COD-1009031-PdO-original.cif",
+              "sha256": "7bfb22fa748f24d860b368935dd22733b129f7702dc769ec45eac48d4b2c9b43"
+            },
+            {
+              "bytes": 4673,
+              "path": "labelled-admission/failed-attempt/calculation/provenance/source/artifacts/P255-g7-micro-calibration-20261120/geometry-pd/COD-1011106-Pd-original.cif",
+              "sha256": "534544f15709f43bf7d88291e3835f4cdd823159585598f0f3b73383c4e4624d"
+            },
+            {
+              "bytes": 646674,
+              "path": "labelled-admission/failed-attempt/calculation/provenance/source/artifacts/P255-g7-micro-calibration-20261120/geometry-pd/Todorova2003-original.pdf",
+              "sha256": "99b55c281ce30ecbc6670d5e388e6028a88e7e0140238b85ccdbd752f1ad43f5"
+            },
+            {
+              "bytes": 5505,
+              "path": "labelled-admission/failed-attempt/calculation/provenance/source/artifacts/P255-g7-micro-calibration-20261120/geometry-pd/structure-binding.json",
+              "sha256": "6e75aacbfe41aaa1dd71de79962f77102c6ae225fca1aebb4a6bdd1290547417"
+            },
+            {
+              "bytes": 11135,
+              "path": "labelled-admission/failed-attempt/calculation/provenance/source/artifacts/P255-g7-micro-calibration-20261120/pd-production/PLAN.md",
+              "sha256": "53395c5180b1fc2dc0dd518f4282bd65e79e2dbefefb21719c2a881c9ccb3921"
+            },
+            {
+              "bytes": 3275,
+              "path": "labelled-admission/failed-attempt/calculation/provenance/source/artifacts/P255-g7-micro-calibration-20261120/pd-production/endpoint-delivery-amendment.md",
+              "sha256": "7287782d9c1e43b19a9bacc2d01bb3c76894a2cd64fd444a5e740f6ec19f6d10"
+            },
+            {
+              "bytes": 2825,
+              "path": "labelled-admission/failed-attempt/calculation/provenance/source/artifacts/P255-g7-micro-calibration-20261120/pd-production/partial-geometry-amendment.md",
+              "sha256": "9ec12ac4278490247c9fd4fe19145a2735593a512c1bb6958c9b2a05182b7cdb"
+            },
+            {
+              "bytes": 4565,
+              "path": "labelled-admission/failed-attempt/calculation/provenance/source/artifacts/P255-g7-micro-calibration-20261120/pd-production/precommitted-ray-amendment.md",
+              "sha256": "b6f86c7458059c07c8c2b82d1b7dd747d49e719ebc65f83409a3cdac29b1fca5"
+            },
+            {
+              "bytes": 2107,
+              "path": "labelled-admission/failed-attempt/calculation/provenance/source/campaigns/P255-pdd-collision/collision_geometry.py",
+              "sha256": "077eb638330c142ce710bd359780d0123d74d411e1bd9f26c7022a1e9bd1cc23"
+            },
+            {
+              "bytes": 2508,
+              "path": "labelled-admission/failed-attempt/calculation/provenance/source/campaigns/P255-pdd-collision/collision_ground.py",
+              "sha256": "7ec514b422fbe2d43c8e1e60db71636ef6827d3bcbedd1f8291fc25241f070eb"
+            },
+            {
+              "bytes": 2499,
+              "path": "labelled-admission/failed-attempt/calculation/provenance/source/campaigns/P255-pdd-collision/delivery/green.py",
+              "sha256": "08e5e5c10536e57b3a319b9385808c2a7cbf0bf4e32faf7f91c9d1bb07746ada"
+            },
+            {
+              "bytes": 16747,
+              "path": "labelled-admission/failed-attempt/calculation/provenance/source/campaigns/P255-pdd-collision/hydride_screening/contact_export.py",
+              "sha256": "1b159abc650a0cc10eaa2cae867fbf14a2182089bdc488ed08ed35c55502c4b9"
+            },
+            {
+              "bytes": 19534,
+              "path": "labelled-admission/failed-attempt/calculation/provenance/source/campaigns/P255-pdd-collision/hydride_screening/contact_native.py",
+              "sha256": "45067370e860b9a8b48f1ae197f163c5f39b04678a4813f6a3866328f15fc2b1"
+            },
+            {
+              "bytes": 19945,
+              "path": "labelled-admission/failed-attempt/calculation/provenance/source/campaigns/P255-pdd-collision/hydride_screening/contact_replay.py",
+              "sha256": "7bf17b84616d2ab887147e20b9a0f996752f9e2b01935c07bd9848f8f25921f4"
+            },
+            {
+              "bytes": 2761,
+              "path": "labelled-admission/failed-attempt/calculation/provenance/source/campaigns/P255-pdd-collision/hydride_screening/contact_setup.py",
+              "sha256": "94a9069f911d2c25b28032b73b936dacde0bc82847dd78f42b0aa89cb4e817ad"
+            },
+            {
+              "bytes": 8293,
+              "path": "labelled-admission/failed-attempt/calculation/provenance/source/campaigns/P255-pdd-collision/hydride_screening/contact_state.py",
+              "sha256": "0bea8674eccb401de39cf61085d8f0b3fbd73c145c85ddc4ea2d6e102a85d2e0"
+            },
+            {
+              "bytes": 7520,
+              "path": "labelled-admission/failed-attempt/calculation/provenance/source/campaigns/P255-pdd-collision/hydride_screening/export_pairs.py",
+              "sha256": "0cf6c540bba755af5f2fbc9342a4eb743b908894f23af3520349c8acbb23b85f"
+            },
+            {
+              "bytes": 2826,
+              "path": "labelled-admission/failed-attempt/calculation/provenance/source/campaigns/P255-pdd-collision/hydride_screening/geometry.py",
+              "sha256": "a731e52e868cc8c1430f92300659b8b54cf9f3da051cc3fd2e74928a9f66a22b"
+            },
+            {
+              "bytes": 21272,
+              "path": "labelled-admission/failed-attempt/calculation/provenance/source/campaigns/P255-pdd-collision/hydride_screening/hydride_replay.py",
+              "sha256": "0e688e4f11e50c824e3cf1cc3d4686c900bfa14f0d0b87b0546f6f65871450f7"
+            },
+            {
+              "bytes": 7001,
+              "path": "labelled-admission/failed-attempt/calculation/provenance/source/campaigns/P255-pdd-collision/hydride_screening/launch_contact.py",
+              "sha256": "138c0826660c944b46ce2e2bda7216674ef737968185474e3c286c3a0d0b40a3"
+            },
+            {
+              "bytes": 7628,
+              "path": "labelled-admission/failed-attempt/calculation/provenance/source/campaigns/P255-pdd-collision/hydride_screening/launch_hydride.py",
+              "sha256": "3c49127ece3e59d5800239302d0c31d09f269b2e25c01dc8a8fda4e9f9229153"
+            },
+            {
+              "bytes": 1788,
+              "path": "labelled-admission/failed-attempt/calculation/provenance/source/campaigns/P255-pdd-collision/hydride_screening/log_privacy.py",
+              "sha256": "2a5842a86aecf96ebf13a59d678cf7101cae67dec65d5df98fc3c98835c05a8b"
+            },
+            {
+              "bytes": 6246,
+              "path": "labelled-admission/failed-attempt/calculation/provenance/source/campaigns/P255-pdd-collision/hydride_screening/native_state.py",
+              "sha256": "f945f17ed252a75385cafad2b80c64352537c41d1cc2e468d5ed2643c795f011"
+            },
+            {
+              "bytes": 2356,
+              "path": "labelled-admission/failed-attempt/calculation/provenance/source/campaigns/P255-pdd-collision/hydride_screening/preflight.py",
+              "sha256": "857d11c5d8e9a1280e1b382ba7154fd5cd9cdd52d74286bc709325bf14dd04ab"
+            },
+            {
+              "bytes": 4467,
+              "path": "labelled-admission/failed-attempt/calculation/provenance/source/campaigns/P255-pdd-collision/hydride_screening/quartet.py",
+              "sha256": "88136cda3a302e4f08ce3d3902af1eb1ebef5475d70129c4726c2b8518285646"
+            },
+            {
+              "bytes": 9526,
+              "path": "labelled-admission/failed-attempt/calculation/provenance/source/campaigns/P255-pdd-collision/hydride_screening/readout.py",
+              "sha256": "802bf03d259884d15f3b46ebdb3e4275f1f71908327565d3eea01a6cba87ffd5"
+            },
+            {
+              "bytes": 3349,
+              "path": "labelled-admission/failed-attempt/calculation/provenance/source/campaigns/P255-pdd-collision/hydride_screening/relaxation.py",
+              "sha256": "5aec4066a8a5360bfb9c29200beb7259b22e21b5e6c5b23cac612caa19e0241e"
+            },
+            {
+              "bytes": 4980,
+              "path": "labelled-admission/failed-attempt/calculation/provenance/source/campaigns/P255-pdd-collision/hydride_screening/run_hydride.py",
+              "sha256": "95caba7166dd05295440d39847a141b3a4af50d70b745c585ca9583ecc006880"
+            },
+            {
+              "bytes": 1917,
+              "path": "labelled-admission/failed-attempt/calculation/provenance/source/campaigns/P255-pdd-collision/hydride_screening/verify_charge_reference.py",
+              "sha256": "0bc71a8eeff52cd3833c9ac67bf0802eed68c6122c8e182314d89cd5e752929d"
+            },
+            {
+              "bytes": 17846,
+              "path": "labelled-admission/failed-attempt/calculation/provenance/source/campaigns/P255-pdd-collision/hydride_screening/verify_contact_mapping.py",
+              "sha256": "d06924dd9ba0ffff3d7c131dc7e677ec18bc7bb8053a296a20da6171aec0eb03"
+            },
+            {
+              "bytes": 4855,
+              "path": "labelled-admission/failed-attempt/calculation/provenance/source/campaigns/P255-pdd-collision/micro_calibration/contact_zr.py",
+              "sha256": "f59db2978eef2fc6acc10b924266be9a1c9822e7a0d1f5278564d7b9ba9331ff"
+            },
+            {
+              "bytes": 3876,
+              "path": "labelled-admission/failed-attempt/calculation/provenance/source/campaigns/P255-pdd-collision/micro_calibration/cost_readout.py",
+              "sha256": "0b45ae3cd42831cb136ea6da519620afe5a8220ba516994cc8b319510d5aa4ed"
+            },
+            {
+              "bytes": 9720,
+              "path": "labelled-admission/failed-attempt/calculation/provenance/source/campaigns/P255-pdd-collision/micro_calibration/geometry_pd.py",
+              "sha256": "d766d5d82f4418468847dc1b64ef2ae4afff6b358ea4ae1c10cf56c60bc8a510"
+            },
+            {
+              "bytes": 8159,
+              "path": "labelled-admission/failed-attempt/calculation/provenance/source/campaigns/P255-pdd-collision/micro_calibration/geometry_zr.py",
+              "sha256": "91d9ad13dd30e359aa1cba70c0e9e9855d9e4646f9a80422920dc055e363cb24"
+            },
+            {
+              "bytes": 9541,
+              "path": "labelled-admission/failed-attempt/calculation/provenance/source/campaigns/P255-pdd-collision/micro_calibration/launch_micro.py",
+              "sha256": "f708a79ab17afd86080b343a76fa424851559f39c66adb6d35ee261d58119483"
+            },
+            {
+              "bytes": 9258,
+              "path": "labelled-admission/failed-attempt/calculation/provenance/source/campaigns/P255-pdd-collision/micro_calibration/native.py",
+              "sha256": "b49aac201d964ac1004d3a7e651e62ddce9dfd39ae8bcd97e6bb76918f68a76f"
+            },
+            {
+              "bytes": 12064,
+              "path": "labelled-admission/failed-attempt/calculation/provenance/source/campaigns/P255-pdd-collision/micro_calibration/pd_adopt.py",
+              "sha256": "7f48dcd81a65bf9473382ebca6547cc483718919e5b11bfdbfd8b3bfa7964715"
+            },
+            {
+              "bytes": 17418,
+              "path": "labelled-admission/failed-attempt/calculation/provenance/source/campaigns/P255-pdd-collision/micro_calibration/pd_ray.py",
+              "sha256": "a8a1fcfa8be6cd7831fb7e711e4a906aeb625466f214f6204106357d3d0d7c81"
+            },
+            {
+              "bytes": 30837,
+              "path": "labelled-admission/failed-attempt/calculation/provenance/source/campaigns/P255-pdd-collision/micro_calibration/pd_relax.py",
+              "sha256": "6eea2ed01c2422a6a6d8993b35f5e36595eaa21680064d6abd53a9e601a9cd06"
+            },
+            {
+              "bytes": 21055,
+              "path": "labelled-admission/failed-attempt/calculation/provenance/source/campaigns/P255-pdd-collision/micro_calibration/pd_resume.py",
+              "sha256": "3caed7a2f8ee648a49e05c15e4714c6c5c0c9bd845c1227355f496ec8ef7d91d"
+            },
+            {
+              "bytes": 8633,
+              "path": "labelled-admission/failed-attempt/calculation/provenance/source/campaigns/P255-pdd-collision/micro_calibration/pd_run.py",
+              "sha256": "0ec5e451e70963f0c87478e99ccda673903b18d5a0090718e34c11e26d79dca2"
+            },
+            {
+              "bytes": 4550,
+              "path": "labelled-admission/failed-attempt/calculation/provenance/source/campaigns/P255-pdd-collision/micro_calibration/pilot_pd.py",
+              "sha256": "9e8d3c059a76523cf52b35a6b77a8aea968c4c13ebe897f5ac825dbbf7c4d9ed"
+            },
+            {
+              "bytes": 8160,
+              "path": "labelled-admission/failed-attempt/calculation/provenance/source/campaigns/P255-pdd-collision/micro_calibration/preflight.py",
+              "sha256": "693491a484a68c7483c46b6484c732e3e70d73d9bcdfa369b9db128ed549a9ef"
+            },
+            {
+              "bytes": 6305,
+              "path": "labelled-admission/failed-attempt/calculation/provenance/source/campaigns/P255-pdd-collision/micro_calibration/quartet_zr.py",
+              "sha256": "a881c7987cef3bfd135186827dd93ffc55e4c281fe9901cd1a6e4468bf90663d"
+            },
+            {
+              "bytes": 13116,
+              "path": "labelled-admission/failed-attempt/calculation/provenance/source/campaigns/P255-pdd-collision/micro_calibration/relax_zr.py",
+              "sha256": "675297e4a68d0426bce942d3e7f3fca1d374c7f0c130652d7dd2f795bbb0e3e2"
+            },
+            {
+              "bytes": 8251,
+              "path": "labelled-admission/failed-attempt/calculation/provenance/source/campaigns/P255-pdd-collision/micro_calibration/run_zr.py",
+              "sha256": "4304ce4c3bdfb63cc151a62cad20035f5e3d29c5f10ea3955b4304017710fdde"
+            },
+            {
+              "bytes": 1409,
+              "path": "labelled-admission/failed-attempt/calculation/provenance/source/campaigns/P255-pdd-collision/screen_io.py",
+              "sha256": "dcab99128fbb312083bdccf440c4c32c214e58e78c59a8a52126300c25d3420c"
+            },
+            {
+              "bytes": 3022,
+              "path": "labelled-admission/failed-attempt/calculation/provenance/source/src/substrate_framework/collision_bare_reference.py",
+              "sha256": "05ccba36601567b71a12af42c309cd978e1637b454454740c0f2909725598f09"
+            },
+            {
+              "bytes": 9779,
+              "path": "labelled-admission/failed-attempt/calculation/provenance/source-manifest.json",
+              "sha256": "b8425b18d6fdc6b5835e0f8b229edc284a85afa1ed093903a2959083ada40b11"
+            },
+            {
+              "bytes": 1109,
+              "path": "labelled-admission/failed-attempt/native.log",
+              "sha256": "449a47f4dc2df252abc5a23385ec551305b9c4f28d1c8f3f486af7dc54792b15"
+            },
+            {
+              "bytes": 3075,
+              "path": "labelled-admission/failed-attempt/launch-receipt.json",
+              "sha256": "e3c9bd9ac8247c41b48af31d8c724eb4720a160e2fb0e2d2580773b78bac76fa"
+            },
+            {
+              "bytes": 179,
+              "path": "labelled-admission/failed-attempt/05-manager-bounds.stdout",
+              "sha256": "999732c425362761768d9cd9a406eaf6427d8ac80e001d2322d25c376c18a6eb"
+            },
+            {
+              "bytes": 320,
+              "path": "labelled-admission/failed-attempt/05-manager-bounds.argv.json",
+              "sha256": "161b7835f6f12442c33e9f7c5093c2bba07f01a59a0eef44d20b41cb1a15b6e0"
+            },
+            {
+              "bytes": 198,
+              "path": "labelled-admission/failed-attempt/manager-accounting.txt",
+              "sha256": "4b1a43218715662df1b9e3cf4f0553f828e6c34f3fa17c261bd0991a7eac490c"
+            }
+          ],
+          "issued": {
+            "bytes": 254,
+            "path": "labelled-admission/checkpoint-resume-issued.json",
+            "sha256": "e736f58e495a9b74992dc66f346ae7af33fcf1aacc72314f67cb56b47963f3ce"
+          },
+          "manager_accounting": {
+            "bytes": 198,
+            "path": "labelled-admission/failed-attempt/manager-accounting.txt",
+            "sha256": "4b1a43218715662df1b9e3cf4f0553f828e6c34f3fa17c261bd0991a7eac490c"
+          },
+          "root": "labelled-admission/failed-attempt/calculation"
+        },
+        "force_target_eV_A": 0.05,
+        "frame_authority": {
+          "bytes": 4511,
+          "path": "labelled-admission/specific-frame-authority.json",
+          "sha256": "08c8f29684910ca7bb212d072949aa398ff3de9cedbd55ee07765fdd9806ed6a"
+        },
+        "frame_authority_entry": "entry_3001",
+        "geometry_error_bound_eV": null,
+        "label": "partly relaxed, fmax 0.42 eV/A, no geometry error bound",
+        "new_resumed_steps": 0,
+        "schema": "micro-pd-labelled-frame-admission-v1",
+        "selected_accepted_step": 5,
+        "selected_boundary": {
+          "bytes": 14216,
+          "path": "geometry-step-005-boundary.json",
+          "sha256": "8cf9e5c155192fcbcf887e05e14810322104f4dd147cb3e2afc6e3e66fa9315a"
+        },
+        "selection_kind": "lowest-original-free-force",
+        "site": {
+          "actual_target_A": [
+            0.022995204074890533,
+            -0.022950950330891926,
+            9.558917381440644
+          ],
+          "criterion": "nonempty Pd/O coordination within 3.5 A and no nuclear coincidence",
+          "description": "Actual unconstrained D position in original coated accepted step 5; its bound source-built diagnostics define the coordination. Partly relaxed at free fmax0.42174246367039653eV/A, not an equilibrium or oxide-interface retention claim; no geometry error bound.",
+          "final_O_indices_within_3_A": [],
+          "final_Pd_indices_within_3_A": [
+            0,
+            5,
+            6,
+            7,
+            9,
+            10
+          ],
+          "initial_Pd_indices_within_3_A": [
+            0,
+            5,
+            6,
+            7,
+            9,
+            10
+          ],
+          "nearest_O": {
+            "distance_A": 4.189807312980599,
+            "image": [
+              -1,
+              -1,
+              0
+            ],
+            "index": 21,
+            "symbol": "O"
+          },
+          "nearest_Pd": {
+            "distance_A": 1.8770967666283593,
+            "image": [
+              0,
+              0,
+              0
+            ],
+            "index": 0,
+            "symbol": "Pd"
+          },
+          "neighbors_within_3_5_A": [
+            {
+              "distance_A": 1.8770967666283596,
+              "image": [
+                0,
+                0,
+                0
+              ],
+              "index": 0,
+              "symbol": "Pd"
+            },
+            {
+              "distance_A": 1.9446467144320827,
+              "image": [
+                0,
+                -1,
+                0
+              ],
+              "index": 7,
+              "symbol": "Pd"
+            },
+            {
+              "distance_A": 1.9686873473390156,
+              "image": [
+                0,
+                0,
+                0
+              ],
+              "index": 5,
+              "symbol": "Pd"
+            },
+            {
+              "distance_A": 2.012944609013642,
+              "image": [
+                -1,
+                -1,
+                0
+              ],
+              "index": 6,
+              "symbol": "Pd"
+            },
+            {
+              "distance_A": 2.051778079467675,
+              "image": [
+                -1,
+                0,
+                0
+              ],
+              "index": 9,
+              "symbol": "Pd"
+            },
+            {
+              "distance_A": 2.059173695716302,
+              "image": [
+                0,
+                0,
+                0
+              ],
+              "index": 10,
+              "symbol": "Pd"
+            },
+            {
+              "distance_A": 3.2874828895208936,
+              "image": [
+                0,
+                -1,
+                0
+              ],
+              "index": 1,
+              "symbol": "Pd"
+            },
+            {
+              "distance_A": 3.3238747985748742,
+              "image": [
+                -1,
+                -1,
+                0
+              ],
+              "index": 2,
+              "symbol": "Pd"
+            },
+            {
+              "distance_A": 3.361280541147015,
+              "image": [
+                0,
+                0,
+                0
+              ],
+              "index": 3,
+              "symbol": "Pd"
+            },
+            {
+              "distance_A": 3.4061791077078056,
+              "image": [
+                0,
+                -1,
+                0
+              ],
+              "index": 11,
+              "symbol": "Pd"
+            },
+            {
+              "distance_A": 3.4227256609012944,
+              "image": [
+                -1,
+                -1,
+                0
+              ],
+              "index": 12,
+              "symbol": "Pd"
+            },
+            {
+              "distance_A": 3.439113645762184,
+              "image": [
+                0,
+                0,
+                0
+              ],
+              "index": 13,
+              "symbol": "Pd"
+            },
+            {
+              "distance_A": 3.4428431014696526,
+              "image": [
+                -1,
+                0,
+                0
+              ],
+              "index": 4,
+              "symbol": "Pd"
+            },
+            {
+              "distance_A": 3.4555024966674126,
+              "image": [
+                -1,
+                0,
+                0
+              ],
+              "index": 14,
+              "symbol": "Pd"
+            }
+          ],
+          "physical_site": "actual relaxed site; migration permitted, no retained-site qualification",
+          "target_index": 23,
+          "target_symbol": "H"
+        },
+        "source_boundary": {
+          "bytes": 14216,
+          "path": "geometry-step-005-boundary.json",
+          "sha256": "8cf9e5c155192fcbcf887e05e14810322104f4dd147cb3e2afc6e3e66fa9315a"
+        },
+        "stopping_evidence": {
+          "bytes": 1523,
+          "path": "labelled-admission/stopping-evidence.json",
+          "sha256": "7774a6a0c8c90476fa46f8ccf84a9b2e2f314cb36cb6c676157d5559d17f850f"
+        }
+      },
+      "labelled_admission_root": "provenance/geometry",
+      "log": {
+        "bytes": 92818,
+        "path": "provenance/geometry/geometry.txt",
+        "sha256": "8283c7a2f0ac32ad28f4d98343d5728e0e3de15be2de41c89eb7459449a39ecc"
+      },
+      "log_privacy_transforms": [
+        {
+          "dataset_path_prefixes_removed": 3,
+          "gpaw_cwd_headers_removed": 1,
+          "gpaw_library_path_blocks_removed": 1,
+          "gpaw_user_headers_removed": 1,
+          "gpw_path_prefixes_removed": 7
+        }
+      ],
+      "masses_u": [
+        106.42,
+        106.42,
+        106.42,
+        106.42,
+        106.42,
+        106.42,
+        106.42,
+        106.42,
+        106.42,
+        106.42,
+        106.42,
+        106.42,
+        106.42,
+        106.42,
+        106.42,
+        106.42,
+        106.42,
+        15.999,
+        15.999,
+        106.42,
+        106.42,
+        15.999,
+        15.999,
+        2.01410177812
+      ],
+      "max_force_eV_A": 0.42174246367039653,
+      "passed": true,
+      "positions_A": [
+        [
+          0.0006936684771193871,
+          0.09059314163987824,
+          11.432444176545308
+        ],
+        [
+          2.4464117235992107,
+          4.943395584102345,
+          11.447189469505048
+        ],
+        [
+          4.904240474294567,
+          3.684928349060132,
+          11.44968943654424
+        ],
+        [
+          1.2300010693714654,
+          2.475859201577218,
+          11.45557010193383
+        ],
+        [
+          3.6726466180194315,
+          1.3161135944990516,
+          11.527713265419395
+        ],
+        [
+          1.8743025172694263,
+          0.6296956618249546,
+          9.409105822051337
+        ],
+        [
+          4.238460061233516,
+          5.521112882720504,
+          9.453593837941494
+        ],
+        [
+          0.6246921391977065,
+          4.2672898127698025,
+          9.452576164939279
+        ],
+        [
+          3.0669649710377582,
+          3.0854273888681947,
+          9.438848751480334
+        ],
+        [
+          5.48527287887937,
+          1.9123196757879706,
+          9.458516923348734
+        ],
+        [
+          0.0,
+          0.0,
+          7.5
+        ],
+        [
+          2.454559919822696,
+          4.909119839645392,
+          7.5
+        ],
+        [
+          4.909119839645392,
+          3.681839879734044,
+          7.5
+        ],
+        [
+          1.2272799599113478,
+          2.454559919822696,
+          7.5
+        ],
+        [
+          3.6818398797340444,
+          1.2272799599113478,
+          7.5
+        ],
+        [
+          1.817821771126846,
+          0.7677190901066495,
+          13.71180116575109
+        ],
+        [
+          3.371142222710266,
+          3.6192538272027677,
+          14.021457035064191
+        ],
+        [
+          1.8526054152202405,
+          4.866683541465668,
+          13.461750075706702
+        ],
+        [
+          1.8421449611875869,
+          2.490757721666731,
+          14.685354031669789
+        ],
+        [
+          4.910173579644768,
+          0.6386568423342377,
+          13.881406825905161
+        ],
+        [
+          0.3067688226045501,
+          3.6304771281778736,
+          13.99836905285759
+        ],
+        [
+          4.920390186079205,
+          4.792838236653176,
+          13.337189472218123
+        ],
+        [
+          4.907322052776683,
+          2.4579631600175222,
+          14.619553478814655
+        ],
+        [
+          0.022995204074890533,
+          -0.022950950330891926,
+          9.558917381440644
+        ]
+      ],
+      "probe_ray": {
+        "bytes": 78616,
+        "path": "provenance/ray/probe-ray.json",
+        "sha256": "30cda7b723c4982d934de8cd0283bb90b3d87c04b5f2a16646dd707bd60e692a"
+      },
+      "probe_ray_members": {
+        "oxygen": {
+          "bytes": 75925,
+          "path": "provenance/geometry/geometry.json",
+          "sha256": "9de0e7f105bb96df3551603131c31f878787a1e8a28ac8b0abffe129e6cc3b99"
+        },
+        "plain": {
+          "bytes": 24215,
+          "path": "provenance/ray/pd-coat-shared-final-step5-001-evidence/precommit/pd-precommit-current-001-evidence/plain/geometry.json",
+          "sha256": "6eb0bec56cc9cfd65d8b60329ce64d793fee664279c78035a0afc324d41bf3a1"
+        }
+      },
+      "probe_ray_precommit": {
+        "bytes": 402245,
+        "path": "provenance/ray/pd-coat-shared-final-step5-001-evidence/precommit/probe-ray.json",
+        "sha256": "46226e56d769012f4a7cdafc7c161a488a74f2b82039a9fa706cf5e933391dd0"
+      },
+      "raw_fmax_eV_A": 0.42174246367039653,
+      "raw_forces_eV_A": [
+        [
+          0.009341047408522605,
+          -0.08886508286074855,
+          -0.050176292446433846
+        ],
+        [
+          -0.024540303906736196,
+          0.15311334039528363,
+          0.3089193016833991
+        ],
+        [
+          0.08870592204279824,
+          0.08228024701590768,
+          0.2561474429743462
+        ],
+        [
+          0.02054718934073688,
+          0.014430944860129746,
+          0.07285623698942542
+        ],
+        [
+          -0.14590953180106703,
+          -0.12101391362240968,
+          0.10793967596262916
+        ],
+        [
+          -0.31040132876301924,
+          0.2601514389624966,
+          0.05760193087426337
+        ],
+        [
+          0.39066874790545403,
+          0.008463176808417835,
+          -0.0732381040765666
+        ],
+        [
+          -0.007628677209496424,
+          0.35283842372569746,
+          -0.1506281281181576
+        ],
+        [
+          -0.02825925083681684,
+          -0.10210044055743601,
+          0.011853178831088941
+        ],
+        [
+          -0.1405131731343705,
+          -0.3860247832501335,
+          -0.09543385434516193
+        ],
+        [
+          -0.14184414849467727,
+          0.08039088338464119,
+          -0.08577737221804999
+        ],
+        [
+          0.06073236551135942,
+          -0.1373983939492457,
+          -0.367296673114088
+        ],
+        [
+          -0.1501093723827569,
+          -0.04167726495561679,
+          -0.2606298174666168
+        ],
+        [
+          0.10176974649649323,
+          0.19459172336082656,
+          -0.23360466951956807
+        ],
+        [
+          -0.01781091797347893,
+          0.15600592061623303,
+          -0.28938225791210376
+        ],
+        [
+          -0.022207196052860152,
+          0.24127643563389223,
+          0.24764455110160097
+        ],
+        [
+          0.057296165018840245,
+          0.06763527871638432,
+          -0.061886618738920755
+        ],
+        [
+          -0.11435191451692157,
+          -0.03801291234484317,
+          0.15954841711500634
+        ],
+        [
+          -0.14762724622519593,
+          -0.31149280796886225,
+          -0.08524164573484026
+        ],
+        [
+          0.05840764154901923,
+          0.07611207417051506,
+          0.07000164018764633
+        ],
+        [
+          0.24008697401608173,
+          -0.16173279006780306,
+          0.19267201733795306
+        ],
+        [
+          -0.17656984445323493,
+          -0.019135270396750535,
+          0.052574348121149014
+        ],
+        [
+          0.009881613466320521,
+          -0.11636465397651506,
+          0.0375652323860055
+        ],
+        [
+          0.02981275485242481,
+          -0.0257133040882703,
+          0.1884705830651034
+        ]
+      ],
+      "ray_clearance": {
+        "R_interval_A": [
+          0.0,
+          1.6
+        ],
+        "at_R_A": 1.328702976195565,
+        "excludes": "target index and all its periodic images only",
+        "method": "all periodic images inside triangle-bound sphere; exact closed-segment projection",
+        "min_clearance_A": 1.5121158685782417,
+        "search_radius_A": 3.4770967676283595,
+        "spectator_image": [
+          -1,
+          -1,
+          0
+        ],
+        "spectator_index": 6,
+        "spectator_symbol": "Pd"
+      },
+      "relaxation_status": "partly-relaxed",
+      "sanitized_log": {
+        "bytes": 91198,
+        "path": "provenance/geometry/geometry.private-metadata-removed.txt",
+        "sha256": "58810b308f374bf15ffa611d1d7fc500185e31a97217d14922c6010b5e755813"
+      },
+      "schema": "micro-site-geometry-v1",
+      "source_geometry": null,
+      "specification": {
+        "absolute_stop_utc": "2026-11-21T03:00:00Z",
+        "authority_entry": "entry_2841",
+        "case": "pd-oxygen-compact",
+        "cpu_limit_s": 5880,
+        "dataset_bindings": [
+          {
+            "atom": {
+              "Z": "46",
+              "core": "36.0",
+              "symbol": "Pd",
+              "valence": "10"
+            },
+            "bytes": 106793,
+            "filename": "Pd.10.PBE.gz",
+            "path": "Pd.10.PBE.gz",
+            "sha256": "3c6cfd1de7e6d6815d58c9521b2bc7cec27ede8e83554ed1f0151f979761bbb4"
+          },
+          {
+            "atom": {
+              "Z": "40",
+              "core": "28",
+              "symbol": "Zr",
+              "valence": "12"
+            },
+            "bytes": 151929,
+            "filename": "Zr.PBE.gz",
+            "path": "Zr.PBE.gz",
+            "sha256": "24ed27d12701673908a0f4ca4210ab7eb1a2891251720b904466a5507f984d4d"
+          },
+          {
+            "atom": {
+              "Z": "8",
+              "core": "2",
+              "symbol": "O",
+              "valence": "6"
+            },
+            "bytes": 51385,
+            "filename": "O.PBE.gz",
+            "path": "O.PBE.gz",
+            "sha256": "1426eb21d028c017410e7f9d6aa37d3f0836890374b7c9435e599a96fa8c293d"
+          },
+          {
+            "atom": {
+              "Z": "1",
+              "core": "0.0",
+              "symbol": "H",
+              "valence": "1"
+            },
+            "bytes": 12501,
+            "filename": "H.PBE.gz",
+            "path": "H.PBE.gz",
+            "sha256": "3136ad73c02d471f99dd5f82e451b2061952970556a260d38b53b5020dc94ae7"
+          }
+        ],
+        "deadline_authority_entry": "entry_2865",
+        "eigensolver": {
+          "name": "davidson",
+          "niter": 2
+        },
+        "force_tolerance_eV_A": 0.05,
+        "frozen_source_manifest": {
+          "bytes": 8719,
+          "path": "source-manifest.json",
+          "sha256": "bfb479cd2cc62824e3f05e4e82dde733931e526f4a4077b1076a5eb735a6f979"
+        },
+        "h_A": 0.2,
+        "initial_geometry": null,
+        "ionic_steps": 60,
+        "kmesh": [
+          1,
+          1,
+          1
+        ],
+        "library_bindings": [
+          {
+            "bytes": 2348,
+            "path": "ae.py",
+            "sha256": "d6daba8aa25bbeeb716c7c9a3a3c7ec67fd1b56673550b523f308400ad8064cc"
+          },
+          {
+            "bytes": 57201,
+            "path": "setup.py",
+            "sha256": "ac566b134823bf164336fd3404288fcf698c892d081047cd5e2663b070089bb2"
+          },
+          {
+            "bytes": 9085,
+            "path": "units.py",
+            "sha256": "1c49db1fbc894e087f94ec8fb8b3746d2c9228845332c5821b459e7104a5d097"
+          }
+        ],
+        "material": "pd",
+        "maximum_five_scf_iterations_wall_s": 180,
+        "phase": "geometry",
+        "probe_ray": null,
+        "radii_A": [
+          1.6,
+          1.2,
+          0.8,
+          0.4,
+          0.2,
+          0.1
+        ],
+        "schema": "micro-pd-production-input-v1",
+        "selected_geometry": null,
+        "size": "compact",
+        "variant": "oxygen"
+      },
+      "state_file": {
+        "bytes": 14891,
+        "path": "provenance/geometry/geometry-step-005-labelled.json",
+        "sha256": "313f12c71db34758906937551b9c763c1b2875220e0f0a10f879402f0f713df9"
+      },
+      "symbols": [
+        "Pd",
+        "Pd",
+        "Pd",
+        "Pd",
+        "Pd",
+        "Pd",
+        "Pd",
+        "Pd",
+        "Pd",
+        "Pd",
+        "Pd",
+        "Pd",
+        "Pd",
+        "Pd",
+        "Pd",
+        "Pd",
+        "Pd",
+        "O",
+        "O",
+        "Pd",
+        "Pd",
+        "O",
+        "O",
+        "H"
+      ],
+      "target_index": 23
+    },
+    "isotope": "D",
+    "probe_added_electrons": 0,
+    "probe_charge": 1,
+    "specification": {
+      "absolute_stop_utc": "2026-11-21T03:00:00Z",
+      "authority_entry": "entry_2841",
+      "bo_branch_role": "occupied-host",
+      "case": "pd-oxygen-compact-full",
+      "cpu_limit_s": 1680,
+      "dataset_bindings": [
+        {
+          "atom": {
+            "Z": "46",
+            "core": "36.0",
+            "symbol": "Pd",
+            "valence": "10"
+          },
+          "bytes": 106793,
+          "filename": "Pd.10.PBE.gz",
+          "path": "Pd.10.PBE.gz",
+          "sha256": "3c6cfd1de7e6d6815d58c9521b2bc7cec27ede8e83554ed1f0151f979761bbb4"
+        },
+        {
+          "atom": {
+            "Z": "40",
+            "core": "28",
+            "symbol": "Zr",
+            "valence": "12"
+          },
+          "bytes": 151929,
+          "filename": "Zr.PBE.gz",
+          "path": "Zr.PBE.gz",
+          "sha256": "24ed27d12701673908a0f4ca4210ab7eb1a2891251720b904466a5507f984d4d"
+        },
+        {
+          "atom": {
+            "Z": "8",
+            "core": "2",
+            "symbol": "O",
+            "valence": "6"
+          },
+          "bytes": 51385,
+          "filename": "O.PBE.gz",
+          "path": "O.PBE.gz",
+          "sha256": "1426eb21d028c017410e7f9d6aa37d3f0836890374b7c9435e599a96fa8c293d"
+        },
+        {
+          "atom": {
+            "Z": "1",
+            "core": "0.0",
+            "symbol": "H",
+            "valence": "1"
+          },
+          "bytes": 12501,
+          "filename": "H.PBE.gz",
+          "path": "H.PBE.gz",
+          "sha256": "3136ad73c02d471f99dd5f82e451b2061952970556a260d38b53b5020dc94ae7"
+        }
+      ],
+      "deadline_authority_entry": "entry_2865",
+      "delivery_authority_entry": "entry_2994",
+      "eigensolver": {
+        "name": "davidson",
+        "niter": 2
+      },
+      "force_tolerance_eV_A": 0.05,
+      "frozen_source_manifest": {
+        "bytes": 11193,
+        "path": "source-manifest.json",
+        "sha256": "87cd1e411bc46502134db14bf8b691ccba44b2be08ab7dcf9d567ea9cddc329a"
+      },
+      "geometry_policy_entry": "entry_3001",
+      "h_A": 0.2,
+      "initial_geometry": null,
+      "ionic_steps": 60,
+      "kmesh": [
+        1,
+        1,
+        1
+      ],
+      "library_bindings": [
+        {
+          "bytes": 2348,
+          "path": "ae.py",
+          "sha256": "d6daba8aa25bbeeb716c7c9a3a3c7ec67fd1b56673550b523f308400ad8064cc"
+        },
+        {
+          "bytes": 57201,
+          "path": "setup.py",
+          "sha256": "ac566b134823bf164336fd3404288fcf698c892d081047cd5e2663b070089bb2"
+        },
+        {
+          "bytes": 9085,
+          "path": "units.py",
+          "sha256": "1c49db1fbc894e087f94ec8fb8b3746d2c9228845332c5821b459e7104a5d097"
+        }
+      ],
+      "material": "pd",
+      "maximum_five_scf_iterations_wall_s": 180,
+      "phase": "bo",
+      "probe_ray": {
+        "bytes": 78616,
+        "path": "pd-coat-shared-final-step5-001.json",
+        "sha256": "30cda7b723c4982d934de8cd0283bb90b3d87c04b5f2a16646dd707bd60e692a"
+      },
+      "radii_A": [
+        1.6,
+        1.2,
+        0.8,
+        0.4,
+        0.2,
+        0.1
+      ],
+      "ray_policy_entry": "entry_2971",
+      "schema": "micro-pd-production-input-v1",
+      "selected_geometry": {
+        "binding": {
+          "bytes": 75925,
+          "path": "geometry-labelled.json",
+          "sha256": "9de0e7f105bb96df3551603131c31f878787a1e8a28ac8b0abffe129e6cc3b99"
+        },
+        "gpw_binding": {
+          "bytes": 108700534,
+          "path": "geometry-step-005.gpw",
+          "sha256": "02eeacd2c89bfc67195bf780abc8b3fef3def69e52e621befd75e7cae3a91ac0"
+        },
+        "json_path": "geometry-labelled.json"
+      },
+      "size": "compact",
+      "variant": "oxygen"
+    }
+  },
+  "force_qualified": false,
+  "free_fmax_eV_A": 0.42174246367039653,
+  "full_scientific_qualification": false,
+  "geometry_error_bound_eV": null,
+  "geometry_force_qualified": false,
+  "material": "Pd",
+  "missing_radii_A": [],
+  "observable": "target_conditioned_BO_total_interaction",
+  "paired_hk_qualified": false,
+  "qualification": {
+    "controls": {
+      "changes": {},
+      "complete": false,
+      "deadline_scope": "Configured/consumed stops only; no runtime authorization inferred",
+      "final_coated_admitted": true,
+      "final_frame_optimum_claim": false,
+      "full_curve_higher_k_qualified": false,
+      "full_scientific_qualification": false,
+      "geometry_by_role": {
+        "oxygen": {
+          "force_qualified": false,
+          "free_fmax_eV_A": 0.42174246367039653,
+          "geometry_error_bound_eV": null,
+          "raw_fmax_eV_A": 0.42174246367039653,
+          "relaxation_status": "partly-relaxed"
+        },
+        "plain": {
+          "force_qualified": true,
+          "free_fmax_eV_A": 0.03603609470523719,
+          "geometry_error_bound_eV": null,
+          "raw_fmax_eV_A": 0.22639077804335472,
+          "relaxation_status": "force-qualified"
+        }
+      },
+      "geometry_error_bound_eV": null,
+      "geometry_force_qualified": false,
+      "isolation_claim": false,
+      "material": "Pd",
+      "missing_controls": [
+        "plain-h",
+        "oxygen-h",
+        "plain-k",
+        "oxygen-k"
+      ],
+      "omitted_controls": [
+        "geometry-convergence error bound",
+        "slab-thickness",
+        "cell/vacuum",
+        "full-radius h/k"
+      ],
+      "paired_cell_qualified": false,
+      "paired_hk_qualified": false,
+      "pairs": {
+        "base": {
+          "geometries": {
+            "oxygen": {
+              "force_qualified": false,
+              "free_fmax_eV_A": 0.42174246367039653,
+              "geometry_error_bound_eV": null,
+              "raw_fmax_eV_A": 0.42174246367039653,
+              "relaxation_status": "partly-relaxed"
+            },
+            "plain": {
+              "force_qualified": true,
+              "free_fmax_eV_A": 0.03603609470523719,
+              "geometry_error_bound_eV": null,
+              "raw_fmax_eV_A": 0.22639077804335472,
+              "relaxation_status": "force-qualified"
+            }
+          },
+          "geometry_error_bound_eV": null,
+          "geometry_error_status": "Unbounded; actual forces do not bound contrast error",
+          "oxygen_R01_lowering_eV": 37.89137304098119,
+          "oxygen_minus_plain_R01_lowering_eV": -1.4966897374852408,
+          "oxygen_minus_plain_signedW0_eV": 5.010453174926148,
+          "oxygen_signedW0_eV": -39.78417873201784,
+          "plain_R01_lowering_eV": 39.388062778466434,
+          "plain_signedW0_eV": -44.79463190694399
+        }
+      },
+      "qualification_scope": "Separate paired R0.1/contact h/k criterion and geometry force stationarity; h/k checks do not qualify geometry or bound geometry-convergence error",
+      "qualified": false,
+      "ray_by_role": {
+        "oxygen": {
+          "authority_entry": "entry_2971",
+          "clearance": {
+            "R_interval_A": [
+              0.0,
+              1.6
+            ],
+            "at_R_A": 1.328702976195565,
+            "excludes": "target index and all its periodic images only",
+            "method": "all periodic images inside triangle-bound sphere; exact closed-segment projection",
+            "min_clearance_A": 1.5121158685782417,
+            "search_radius_A": 3.4770967676283595,
+            "spectator_image": [
+              -1,
+              -1,
+              0
+            ],
+            "spectator_index": 6,
+            "spectator_symbol": "Pd"
+          },
+          "coated_witness": {
+            "bo_eligible": false,
+            "boundary": {
+              "bytes": 14216,
+              "path": "provenance/ray/pd-coat-shared-final-step5-001-evidence/precommit/pd-precommit-current-001-evidence/witness/geometry-step-005-boundary.json",
+              "sha256": "8cf9e5c155192fcbcf887e05e14810322104f4dd147cb3e2afc6e3e66fa9315a"
+            },
+            "force_qualified": false,
+            "not_final": true,
+            "schema": "micro-pd-coated-boundary-witness-v1"
+          },
+          "consumed_policy": {
+            "bytes": 78616,
+            "path": "provenance/ray/probe-ray.json",
+            "sha256": "30cda7b723c4982d934de8cd0283bb90b3d87c04b5f2a16646dd707bd60e692a"
+          },
+          "direction_n_hat": [
+            0.43301270189221946,
+            0.75,
+            0.4999999999999998
+          ],
+          "final_coated_admitted": true,
+          "final_frame_optimum_claim": false,
+          "precommit": {
+            "bytes": 402245,
+            "path": "provenance/ray/pd-coat-shared-final-step5-001-evidence/precommit/probe-ray.json",
+            "sha256": "46226e56d769012f4a7cdafc7c161a488a74f2b82039a9fa706cf5e933391dd0"
+          },
+          "status": "precommitted shared-open"
+        },
+        "plain": {
+          "authority_entry": "entry_2971",
+          "clearance": {
+            "R_interval_A": [
+              0.0,
+              1.6
+            ],
+            "at_R_A": 1.2495190724801475,
+            "excludes": "target index and all its periodic images only",
+            "method": "all periodic images inside triangle-bound sphere; exact closed-segment projection",
+            "min_clearance_A": 1.506644280092414,
+            "search_radius_A": 3.5466586014081174,
+            "spectator_image": [
+              -1,
+              -1,
+              0
+            ],
+            "spectator_index": 6,
+            "spectator_symbol": "Pd"
+          },
+          "coated_witness": {
+            "bo_eligible": false,
+            "boundary": {
+              "bytes": 14216,
+              "path": "provenance/ray/pd-precommit-current-001-evidence/witness/geometry-step-005-boundary.json",
+              "sha256": "8cf9e5c155192fcbcf887e05e14810322104f4dd147cb3e2afc6e3e66fa9315a"
+            },
+            "force_qualified": false,
+            "not_final": true,
+            "schema": "micro-pd-coated-boundary-witness-v1"
+          },
+          "consumed_policy": {
+            "bytes": 402245,
+            "path": "provenance/ray/probe-ray.json",
+            "sha256": "46226e56d769012f4a7cdafc7c161a488a74f2b82039a9fa706cf5e933391dd0"
+          },
+          "direction_n_hat": [
+            0.43301270189221946,
+            0.75,
+            0.4999999999999998
+          ],
+          "final_coated_admitted": false,
+          "final_frame_optimum_claim": false,
+          "precommit": {
+            "bytes": 402245,
+            "path": "provenance/ray/probe-ray.json",
+            "sha256": "46226e56d769012f4a7cdafc7c161a488a74f2b82039a9fa706cf5e933391dd0"
+          },
+          "status": "precommitted ray; final coated shared-open admission pending"
+        }
+      },
+      "ray_policy_entry": "entry_2971",
+      "recorded_deadlines_utc": {
+        "oxygen": "2026-11-21T03:00:00Z",
+        "plain": "2026-11-21T03:00:00Z"
+      },
+      "resolved": false,
+      "schema": "micro-pd-paired-comparisons-v1",
+      "scope": "Actual finite-cell target-conditioned internal BO screening for compact Pd and a coherent added 4Pd+4O sheet, not oxygen insertion at fixed Pd inventory. D is unconstrained and its actual migrated/relaxed site is used. Pd10/O6 frozen-core PAW; q+1 Hae probe adds no electron. Paired h/k checks apply only at R0.1/contact. Slab-thickness, cell/vacuum and full-radius h/k controls omitted. Geometry-convergence error is unbounded (geometry_error_bound_eV=null), including for force-qualified frames; residual forces do not bound pair-lowering error. No isolated limit, site-retention, bulk-PdO, Ueq, action/Eq7 or experimental phase claim.",
+      "shared_precommit": {
+        "bytes": 402245,
+        "sha256": "46226e56d769012f4a7cdafc7c161a488a74f2b82039a9fa706cf5e933391dd0"
+      },
+      "tolerance_definition": "max(5 eV, 0.1*abs(base coated-minus-bare contrast)) per observable"
+    },
+    "full_curve_higher_k_qualified": false,
+    "full_scientific_qualification": false,
+    "geometry_error_bound_eV": null,
+    "geometry_force_qualified": false,
+    "isolation_claim": false,
+    "paired_cell_qualified": false,
+    "paired_hk_qualified": false,
+    "qualified": false
+  },
+  "raw_fmax_eV_A": 0.42174246367039653,
+  "ray_policy": {
+    "authority_entry": "entry_2971",
+    "clearance": {
+      "R_interval_A": [
+        0.0,
+        1.6
+      ],
+      "at_R_A": 1.328702976195565,
+      "excludes": "target index and all its periodic images only",
+      "method": "all periodic images inside triangle-bound sphere; exact closed-segment projection",
+      "min_clearance_A": 1.5121158685782417,
+      "search_radius_A": 3.4770967676283595,
+      "spectator_image": [
+        -1,
+        -1,
+        0
+      ],
+      "spectator_index": 6,
+      "spectator_symbol": "Pd"
+    },
+    "coated_witness": {
+      "bo_eligible": false,
+      "boundary": {
+        "bytes": 14216,
+        "path": "provenance/ray/pd-coat-shared-final-step5-001-evidence/precommit/pd-precommit-current-001-evidence/witness/geometry-step-005-boundary.json",
+        "sha256": "8cf9e5c155192fcbcf887e05e14810322104f4dd147cb3e2afc6e3e66fa9315a"
+      },
+      "force_qualified": false,
+      "not_final": true,
+      "schema": "micro-pd-coated-boundary-witness-v1"
+    },
+    "consumed_policy": {
+      "bytes": 78616,
+      "path": "provenance/ray/probe-ray.json",
+      "sha256": "30cda7b723c4982d934de8cd0283bb90b3d87c04b5f2a16646dd707bd60e692a"
+    },
+    "direction_n_hat": [
+      0.43301270189221946,
+      0.75,
+      0.4999999999999998
+    ],
+    "final_coated_admitted": true,
+    "final_frame_optimum_claim": false,
+    "precommit": {
+      "bytes": 402245,
+      "path": "provenance/ray/pd-coat-shared-final-step5-001-evidence/precommit/probe-ray.json",
+      "sha256": "46226e56d769012f4a7cdafc7c161a488a74f2b82039a9fa706cf5e933391dd0"
+    },
+    "status": "precommitted shared-open"
+  },
+  "reference": {
+    "bare": "isolated_unit_charge_coulomb",
+    "energy_zero": "Eop-Evp-Eho+Ehv; internal=free-minus-negativeTS; no fitted offset or far-point subtraction",
+    "periodic_to_isolated": "Accepted same-zero-G point-minus-Hae-Gaussian nuclear block only; electronic periodic images remain"
+  },
+  "relaxation_status": "partly-relaxed",
+  "schema": "coherencev1-target-conditioned-pair-v1",
+  "scope": "Actual finite-cell target-conditioned internal BO screening for compact Pd and a coherent added 4Pd+4O sheet, not oxygen insertion at fixed Pd inventory. D is unconstrained and its actual migrated/relaxed site is used. Pd10/O6 frozen-core PAW; q+1 Hae probe adds no electron. Paired h/k checks apply only at R0.1/contact. Slab-thickness, cell/vacuum and full-radius h/k controls omitted. Geometry-convergence error is unbounded (geometry_error_bound_eV=null), including for force-qualified frames; residual forces do not bound pair-lowering error. No isolated limit, site-retention, bulk-PdO, Ueq, action/Eq7 or experimental phase claim.",
+  "source_bindings": {
+    "original_case": {
+      "bytes": 1645820,
+      "path": "case.json",
+      "sha256": "2275e60d2765a39f02b7239f682bf0e8b7687996abb68f118caff88dbc911cf2"
+    },
+    "source_epoch": {
+      "bytes": 11193,
+      "path": "provenance/source-manifest.json",
+      "sha256": "87cd1e411bc46502134db14bf8b691ccba44b2be08ab7dcf9d567ea9cddc329a"
+    }
+  }
+}
