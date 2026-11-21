@@ -18,9 +18,11 @@ The oxide sheet lowers the static screening at the deuteron beneath it by 1.5 eV
 
 Contact values are the lowering at R = 0 (the delivered signed W0 with its sign reversed).
 
+Where the site sits: the deuteron is buried in the metal, 1.9 A below the top metal layer and 4.4 A below the oxide sheet. Its nearest oxygen is 4.2 A away and its nearest Pd 1.9 A. This run therefore tests a site one metal layer under the oxide. It does not test a deuteron at the oxide/metal interface plane or inside the oxide.
+
 What it means:
 - A deuteron under a PdO sheet screens like every other static site computed so far: about 38-39 eV at 0.1 A. The oxide changes it by a few eV, downward.
-- Two static routes for oxygen are now closed at this level: an oxygen neighbour atom (Zr) and an oxide sheet above the site (Pd). The measured oxide and oxygen effects are hundreds of eV. They are not a static property of the site.
+- Two static routes for oxygen are now closed at this level: an oxygen neighbour atom (Zr) and an oxide sheet one metal layer above the site (Pd). The measured oxide and oxygen effects are hundreds of eV. A site in the interface plane itself, or inside the oxide, is the one static oxide case not yet computed.
 - What remains for the oxide measurements is what a static cell cannot hold: a different deuterium population or depth profile under the oxide, charge trapped in or on the oxide under the beam, or the measurement normalisation (`g7_gap/`).
 
 ## Carried through the barrier
