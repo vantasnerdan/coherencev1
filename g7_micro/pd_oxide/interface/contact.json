@@ -1,0 +1,121 @@
+{
+  "Q_He_eV": -39.364935941197714,
+  "R_A": 0.0,
+  "absolute_convention": {
+    "ASE_CODATA_version": "2014",
+    "ASE_Hartree_eV": 27.211386024367243,
+    "ASE_units_source": {
+      "bytes": 9085,
+      "path": "ase_units.py",
+      "sha256": "1c49db1fbc894e087f94ec8fb8b3746d2c9228845332c5821b459e7104a5d097"
+    },
+    "B_native_eV": 68.65793304732587,
+    "H_E_reference_Hartree": 0.0,
+    "H_M_Hartree": -1.2615662610100802,
+    "He_E_reference_Hartree": 0.0,
+    "He_M_Hartree": -5.046265044040321,
+    "alpha1": 10.0,
+    "alpha2": 300.0,
+    "arbitrary_atomic_offset_eV": 0.0,
+    "energy": "internal=free-minus-negativeTS",
+    "formula": "W0=Q_He+B_native-B_source+regular_images",
+    "representation": "same-alpha all-electron Z2"
+  },
+  "case": "pd-interface-compact",
+  "convention": "signed regular W0, not Vtotal(0), positive lowering magnitude or Ueq",
+  "interface_minus_buried_signed_W0_eV": 0.4161893922804154,
+  "mapping_proof": {
+    "B_native_eV": 68.65793304732587,
+    "derivation": {
+      "W0": "Q_He + B_native - B_source + regular_images",
+      "erfc_regular_limit": "-2*width/sqrt(pi)",
+      "erfc_regular_series_coefficients": [
+        "-2",
+        "2/3",
+        "-1/5"
+      ],
+      "gaussian_pair_width": "sqrt(alpha1/2)BOHR_A",
+      "self_reference_coefficient": "-2"
+    },
+    "executed": true,
+    "finite_R_mapping_source": {
+      "bytes": 3022,
+      "sha256": "05ccba36601567b71a12af42c309cd978e1637b454454740c0f2909725598f09"
+    },
+    "mapping": {
+      "BOHR_A": 0.5291772105638411,
+      "B_source_eV": 68.65793360383724,
+      "C_eV_A": 14.399645468667815,
+      "gaussian_width_inverse_A": 4.225556076228694,
+      "nonzero_image_eV": 2.0519240236928052e-293,
+      "real_image_shell": 4,
+      "regular_images_eV": -0.0030528420283448287,
+      "volume_A3": 829.9073316205062,
+      "zero_G_background_eV": -0.0030528420283448287
+    },
+    "numerical_continuum_samples": [
+      {
+        "R_A": 0.01,
+        "limit_error_eV": 0.04084177562788227,
+        "regularized_eV": -68.62014467023769
+      },
+      {
+        "R_A": 0.001,
+        "limit_error_eV": 0.0004086343645326451,
+        "regularized_eV": -68.66057781150104
+      },
+      {
+        "R_A": 0.0001,
+        "limit_error_eV": 4.0863653367750885e-06,
+        "regularized_eV": -68.66098235950024
+      },
+      {
+        "R_A": 1e-05,
+        "limit_error_eV": 4.086366800493124e-08,
+        "regularized_eV": -68.6609864050019
+      }
+    ],
+    "operator_source": {
+      "bytes": 2348,
+      "sha256": "d6daba8aa25bbeeb716c7c9a3a3c7ec67fd1b56673550b523f308400ad8064cc"
+    },
+    "schema": "hydride-contact-mapping-proof-v1",
+    "scope": "Source algebra and numerical Gaussian mapping only; no Native or isolation validation",
+    "sensitivity": {
+      "atomic_offset_permitted": false,
+      "one_eV_atomic_offset_identity_error_eV": -1.0,
+      "wrong_linear_He_M_error_eV": -68.65793304732587,
+      "wrong_linear_He_M_predicted_shift_eV": 0.0
+    },
+    "unit_constant_residual_eV": -5.56511366767154e-07
+  },
+  "near_comparison": {
+    "R_A": 0.1,
+    "electronic_quartet_change_eV": -3.178979367552685,
+    "energy_scale_eV": 39.36798933973743,
+    "equality_required": false,
+    "finite_R_minus_contact_eV": 0.6974877573483056,
+    "finite_R_regular_eV": -38.67050158238912,
+    "interpretation": "Finite R regular energy V(R)-C/R versus signed contact W0; not positive lowering equality",
+    "nuclear_regular_change_eV": 3.8764671249009837,
+    "signed_W0_eV": -39.36798933973743,
+    "signed_difference_over_scale": 0.017717129298352875,
+    "tolerance_eV": null
+  },
+  "raw_quartet_energies_eV": {
+    "occupied-host": -102.69194624512858,
+    "occupied-probe-He": -156.26077239682533,
+    "vacant-host": -87.91694140428159,
+    "vacant-probe-H-R0": -102.12083161478063
+  },
+  "saved_buried_signed_W0_eV": -39.78417873201784,
+  "schema": "micro-pd-interface-signed-contact-v1",
+  "scope": "D-only interface geometry in the exact frozen coated step-5 host; frozen-host forces are not slab stationarity. Finite-cell q+1/no-added-electron internal BO near curve and signed regular contact only. No geometry-error bound, global minimum, site stability, isolated limit, full h/k/cell convergence, Ueq, action/Eq7 or experimental phase claim.",
+  "signed_W0_eV": -39.36798933973743,
+  "source_case": {
+    "bytes": 684468,
+    "path": "case.json",
+    "sha256": "71a7e645028909d1e3486195d53b3ecfce33658d49fba57709b19d11e577c49c"
+  },
+  "unit_constant_residual_eV": -5.56511366767154e-07
+}

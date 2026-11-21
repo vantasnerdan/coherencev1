@@ -1,0 +1,266 @@
+{
+  "case": "pd-interface-compact",
+  "completed_radii_A": [
+    0.1,
+    0.2,
+    0.4
+  ],
+  "geometry_error_bound_eV": null,
+  "matched_comparisons": [
+    {
+      "R_A": 0.1,
+      "buried_lowering_eV": 37.89137304098119,
+      "interface_lowering_eV": 38.67050158238912,
+      "interface_minus_buried_lowering_eV": 0.7791285414079283
+    },
+    {
+      "R_A": 0.2,
+      "buried_lowering_eV": 34.367733551254425,
+      "interface_lowering_eV": 35.20822417321569,
+      "interface_minus_buried_lowering_eV": 0.8404906219612656
+    },
+    {
+      "R_A": 0.4,
+      "buried_lowering_eV": 26.330167820105903,
+      "interface_lowering_eV": 27.513611095709084,
+      "interface_minus_buried_lowering_eV": 1.1834432756031816
+    }
+  ],
+  "missing_radii_A": [],
+  "omitted_far_radii_A": [
+    0.8,
+    1.2,
+    1.6
+  ],
+  "qualified": false,
+  "raw_quartet_energies_eV": {
+    "occupied-host": -102.69194624512858,
+    "occupied-probe-He": -156.26077239682533,
+    "occupied-probes": [
+      -90.91586245470859,
+      -96.85205707607788,
+      -109.04443334179422
+    ],
+    "vacant-host": -87.91694140428159,
+    "vacant-probe-H-R0": -102.12083161478063,
+    "vacant-probes": [
+      -102.25487535243707,
+      -102.16497161285852,
+      -102.15201124499492
+    ]
+  },
+  "rows": [
+    {
+      "BO_quartet_soft_eV": 26.11401773857547,
+      "R_A": 0.1,
+      "V_pair_total_eV": 105.32595310428901,
+      "lowering_eV": 38.67050158238912,
+      "point_minus_gaussian_eV": 79.21193536571354
+    },
+    {
+      "BO_quartet_soft_eV": 20.087919377627628,
+      "R_A": 0.2,
+      "V_pair_total_eV": 36.79000317012338,
+      "lowering_eV": 35.20822417321569,
+      "point_minus_gaussian_eV": 16.70208379249575
+    },
+    {
+      "BO_quartet_soft_eV": 7.882582744047696,
+      "R_A": 0.4,
+      "V_pair_total_eV": 8.48550257596045,
+      "lowering_eV": 27.513611095709084,
+      "point_minus_gaussian_eV": 0.6029198319127533
+    }
+  ],
+  "saved_buried": {
+    "interpolation": false,
+    "label": "existing coated buried-D; original bottom-layer-only geometry",
+    "original_numbers_replayed": false,
+    "reference_rewritten": false,
+    "rows": [
+      {
+        "R_A": 0.1,
+        "V_pair_total_eV": 106.10508164569694,
+        "lowering_eV": 37.89137304098119
+      },
+      {
+        "R_A": 0.2,
+        "V_pair_total_eV": 37.63049379208464,
+        "lowering_eV": 34.367733551254425
+      },
+      {
+        "R_A": 0.4,
+        "V_pair_total_eV": 9.668945851563631,
+        "lowering_eV": 26.330167820105903
+      }
+    ],
+    "signed_W0_eV": -39.78417873201784,
+    "source_contact": {
+      "bytes": 17390,
+      "path": "oxygen_q1_contact.json",
+      "sha256": "c54a9ae56410d651957e360cd7448be5dde8eee3138cea9da3fb9bf7f7f79f72"
+    },
+    "source_curve": {
+      "bytes": 118678,
+      "path": "oxygen_q1_BO_pair.json",
+      "sha256": "85e281f4f213517971eafd122f5c8d33982022c464ccc8332ab1959b45132770"
+    }
+  },
+  "schema": "micro-pd-interface-near-curve-v1",
+  "scope": "D-only interface geometry in the exact frozen coated step-5 host; frozen-host forces are not slab stationarity. Finite-cell q+1/no-added-electron internal BO near curve and signed regular contact only. No geometry-error bound, global minimum, site stability, isolated limit, full h/k/cell convergence, Ueq, action/Eq7 or experimental phase claim.",
+  "source_case": {
+    "bytes": 684468,
+    "path": "case.json",
+    "sha256": "71a7e645028909d1e3486195d53b3ecfce33658d49fba57709b19d11e577c49c"
+  },
+  "state_energies": {
+    "occupied-host": {
+      "free_energy_eV": -103.68691328527292,
+      "internal_energy_eV": -102.69194624512858,
+      "minus_TS_eV": -0.9949670401443446
+    },
+    "occupied-probe-He": {
+      "free_energy_eV": -157.38772539734435,
+      "internal_energy_eV": -156.26077239682533,
+      "minus_TS_eV": -1.1269530005190433
+    },
+    "occupied-probes": [
+      {
+        "free_energy_eV": -92.04030245075438,
+        "internal_energy_eV": -90.91586245470859,
+        "minus_TS_eV": -1.1244399960457956
+      },
+      {
+        "free_energy_eV": -97.96958191701715,
+        "internal_energy_eV": -96.85205707607788,
+        "minus_TS_eV": -1.1175248409392733
+      },
+      {
+        "free_energy_eV": -110.14140468221377,
+        "internal_energy_eV": -109.04443334179422,
+        "minus_TS_eV": -1.0969713404195494
+      }
+    ],
+    "vacant-host": {
+      "free_energy_eV": -88.99009112329188,
+      "internal_energy_eV": -87.91694140428159,
+      "minus_TS_eV": -1.073149719010296
+    },
+    "vacant-probe-H-R0": {
+      "free_energy_eV": -103.19016329051132,
+      "internal_energy_eV": -102.12083161478063,
+      "minus_TS_eV": -1.0693316757307127
+    },
+    "vacant-probes": [
+      {
+        "free_energy_eV": -103.31895671505399,
+        "internal_energy_eV": -102.25487535243707,
+        "minus_TS_eV": -1.064081362616912
+      },
+      {
+        "free_energy_eV": -103.22502721748684,
+        "internal_energy_eV": -102.16497161285852,
+        "minus_TS_eV": -1.060055604628314
+      },
+      {
+        "free_energy_eV": -103.2054942622737,
+        "internal_energy_eV": -102.15201124499492,
+        "minus_TS_eV": -1.0534830172787903
+      }
+    ]
+  },
+  "state_origins": {
+    "occupied-host": [
+      {
+        "component": "occupied-host",
+        "state_file": {
+          "bytes": 9866,
+          "path": "occupied-host.json",
+          "sha256": "5fc05e299a369df91eff4fb34910e6f3d0f11db1edc164d2726384c460f702a5"
+        }
+      }
+    ],
+    "occupied-probe-He": [
+      {
+        "component": "contact",
+        "state_file": {
+          "bytes": 10461,
+          "path": "occupied-probe-He.json",
+          "sha256": "50ff852d75d48d5cd380a5651452414155adff0dcf945f54f74cfadf3faed8b5"
+        }
+      }
+    ],
+    "occupied-probes": [
+      {
+        "component": "occupied-probes-near",
+        "state_file": {
+          "bytes": 10106,
+          "path": "occupied-probes-00.json",
+          "sha256": "01da965f7bfd9bf6bfd352b41923f8469844d013db23e30d681da237114db289"
+        }
+      },
+      {
+        "component": "occupied-probes-near",
+        "state_file": {
+          "bytes": 10109,
+          "path": "occupied-probes-01.json",
+          "sha256": "4ff7c9be57e5c908522a64230ea8b22cf757b11f4bcd893fa35c94ed06149b92"
+        }
+      },
+      {
+        "component": "occupied-probes-near",
+        "state_file": {
+          "bytes": 10107,
+          "path": "occupied-probes-02.json",
+          "sha256": "2af23e36433005035c82fae8391354e88e22ec7f49866455bb78a558b6595dba"
+        }
+      }
+    ],
+    "vacant-host": [
+      {
+        "component": "shared-vacant-host",
+        "state_file": {
+          "bytes": 8522,
+          "path": "vacant-host.json",
+          "sha256": "98f8373e8f066403f20e6b5c4fd5ed3a1d46418eca02b64a8541f0ca867a58e7"
+        }
+      }
+    ],
+    "vacant-probe-H-R0": [
+      {
+        "component": "contact",
+        "state_file": {
+          "bytes": 10558,
+          "path": "vacant-probe-H-R0.json",
+          "sha256": "f4117bd5ea8e2e7be079ce3177a37ee600f0c06d4162232f4e61a6cc5ca66c03"
+        }
+      }
+    ],
+    "vacant-probes": [
+      {
+        "component": "vacant-probes-near",
+        "state_file": {
+          "bytes": 9981,
+          "path": "vacant-probes-00.json",
+          "sha256": "0d3d26bf6288d7c6e792b6fdb7aa428e37fac500b0c77bab200d72a7ad738bfe"
+        }
+      },
+      {
+        "component": "vacant-probes-near",
+        "state_file": {
+          "bytes": 9979,
+          "path": "vacant-probes-01.json",
+          "sha256": "ceb0a475106bc6c430209eecf1cf03a59071c0cde9a41c5ba26dfbc1febbb506"
+        }
+      },
+      {
+        "component": "vacant-probes-near",
+        "state_file": {
+          "bytes": 9979,
+          "path": "vacant-probes-02.json",
+          "sha256": "d8ddb8cedfff8d13d20325c14267b51b23a9d51da41d9b402550d077d98c940f"
+        }
+      }
+    ]
+  }
+}

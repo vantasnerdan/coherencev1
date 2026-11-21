@@ -22,8 +22,23 @@ Where the site sits: the deuteron is buried in the metal, 1.9 A below the top me
 
 What it means:
 - A deuteron under a PdO sheet screens like every other static site computed so far: about 38-39 eV at 0.1 A. The oxide changes it by a few eV, downward.
-- Two static routes for oxygen are now closed at this level: an oxygen neighbour atom (Zr) and an oxide sheet one metal layer above the site (Pd). The measured oxide and oxygen effects are hundreds of eV. A site in the interface plane itself, or inside the oxide, is the one static oxide case not yet computed.
+- Two static routes for oxygen are now closed at this level: an oxygen neighbour atom (Zr) and an oxide sheet one metal layer above the site (Pd). The measured oxide and oxygen effects are hundreds of eV. The interface plane itself was computed afterwards (below) and gives the same answer.
 - What remains for the oxide measurements is what a static cell cannot hold: a different deuterium population or depth profile under the oxide, charge trapped in or on the oxide under the beam, or the measurement normalisation (`g7_gap/`).
+
+## A deuteron at the oxide/metal interface
+
+`interface/` puts the deuteron in the gap between the top Pd layer and the oxide sheet, in the same coated slab, and lets it settle. It ends 1.52 A from an oxygen and 1.56 A from a palladium. Same pair calculation, bare incoming deuteron, same approach direction.
+
+| R (A) | Bare slab, buried site (eV) | Coated slab, buried site (eV) | Coated slab, interface site (eV) |
+|---:|---:|---:|---:|
+| contact | 44.8 | 39.8 | 39.4 |
+| 0.1 | 39.4 | 37.9 | 38.7 |
+| 0.2 | 35.3 | 34.4 | 35.2 |
+| 0.4 | 26.9 | 26.3 | 27.5 |
+
+A deuteron bonded at the interface, with an oxygen 1.5 A away, screens like the buried site and like every other static site: within about 1 eV of both Pd sites at finite separation. This was the last static oxide case. Static electron structure at an oxide, at any of the three positions tried (oxygen neighbour, under the sheet, in the interface), does not produce screening above about 40 eV at 0.1 A.
+
+Limits: only the deuteron was relaxed, with the Pd and O atoms held at the partly relaxed coated frame; its residual force is 0.19 eV/A. One k-point, h 0.20 A, no grid or cell check. The three far radii were not computed. The lead recomputed the three lowerings and the contact value from the delivered state energies.
 
 ## Carried through the barrier
 
@@ -49,9 +64,9 @@ The oxide-coated site reads 1.6-5.5 eV below the bare site at every energy and f
 ## Three omissions
 
 1. Coated geometry not fully relaxed, and single k-point on a 6.1 A metal cell with no paired check.
-2. One thin model: three metal layers, one oxide sheet, one target site in the second plane. No slab-thickness or vacuum check, and no site at the oxide/metal interface itself.
+2. One thin model: three metal layers, one oxide sheet, two target sites (second metal plane, and the oxide/metal interface). No slab-thickness or vacuum check.
 3. Static calculation with a bare probe. No charge on the oxide, no beam-driven state.
 
 ## Lead's note
 
-`capsule/` is the delivered archive `g7_micro-pd-base-20261121.tar.gz` (SHA-256 97d55c55be5bb9151b5310a8ff1b0b480933279b425deba8bd4191e731895bb2), unchanged; no GPAW state files or raw logs are in it. The delivered `capsule/README.md` carries the producer's full statement of scope. `action/` is Marvin's delivered converter archive (SHA-256 b9d32d3836202cff59f529371f63c16d908274f86bcfe9941345b44618881793), unchanged. The lead's replay on `capsule/`, with GPAW and ASE blocked, reproduced `action/results.json` byte for byte. `supplement/` is the delivered geometry and second-frame record (SHA-256 47ce009c9dc0d3f22397219c20186dc4e16cc352f6288323f7344d3db257b9ae), unchanged. Compute for this stage: 465 core-min.
+`capsule/` is the delivered archive `g7_micro-pd-base-20261121.tar.gz` (SHA-256 97d55c55be5bb9151b5310a8ff1b0b480933279b425deba8bd4191e731895bb2), unchanged; no GPAW state files or raw logs are in it. The delivered `capsule/README.md` carries the producer's full statement of scope. `action/` is Marvin's delivered converter archive (SHA-256 b9d32d3836202cff59f529371f63c16d908274f86bcfe9941345b44618881793), unchanged. The lead's replay on `capsule/`, with GPAW and ASE blocked, reproduced `action/results.json` byte for byte. `supplement/` is the delivered geometry and second-frame record (SHA-256 47ce009c9dc0d3f22397219c20186dc4e16cc352f6288323f7344d3db257b9ae), unchanged. Compute for this stage: 465 core-min. `interface/` is the delivered archive `g7_micro-pd-interface-20261121.tar.gz` (SHA-256 04c4b9e79fd8be96f28d5174ea3a6186c293bf24f14ebb24d47af2d8869a3d33), unchanged: curve, contact value, geometry and the producer's README. Compute for the interface stage: 177 core-min.
