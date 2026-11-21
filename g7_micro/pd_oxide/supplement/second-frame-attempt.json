@@ -1,0 +1,82 @@
+{
+  "schema": "micro-pd-second-frame-attempt-v1",
+  "authority": "entry_3065",
+  "selected_original_step": 3,
+  "R_A": 0.1,
+  "h_A": 0.2,
+  "kmesh": [
+    1,
+    1,
+    1
+  ],
+  "probe_charge": 1,
+  "probe_added_electrons": 0,
+  "contact_computed": false,
+  "selected_frame_free_fmax_eV_A": 0.621541089029348,
+  "selected_geometry": {
+    "path": "geometry-labelled-step-003.json",
+    "bytes": 77043,
+    "sha256": "4641d02de5d3e3b576c4676affb100fba6664182aa517d5fdb608204d9e83d1d"
+  },
+  "same_precommitted_ray": true,
+  "ray": {
+    "path": "pd-coat-shared-step3-sensitivity-001.json",
+    "bytes": 81556,
+    "sha256": "b86ad450e3370453ec1e9c90c4920a880ef972fe5af03a22ae53b837b0529821"
+  },
+  "status": "unfinished-manager-timeout",
+  "completed_states": [
+    "occupied-host"
+  ],
+  "missing_states": [
+    "vacant-host",
+    "occupied-probes",
+    "vacant-probes"
+  ],
+  "R01_lowering_eV": null,
+  "step3_minus_step5_lowering_eV": null,
+  "units": [
+    {
+      "role": "occupied-host",
+      "Result": "success",
+      "CPUUsageNSec": "1008485201000",
+      "InvocationID": "e0422f1f48054bdaaf8b912305668e92",
+      "MemoryPeak": "1505669120",
+      "SCF_iterations": 84,
+      "electrons": 215,
+      "branch": {
+        "path": "branch.json",
+        "bytes": 120542,
+        "sha256": "55cd386b785bec811340b679871ae8c6631373dd362b4355ef90f498032667aa"
+      }
+    },
+    {
+      "role": "vacant-host",
+      "Result": "timeout",
+      "CPUUsageNSec": "1078449841000",
+      "InvocationID": "85e6fe29e3e24a729e2fb8af87c6763c",
+      "MemoryPeak": "1488297984",
+      "SCF_complete_marker": false,
+      "completed_state_JSON": false,
+      "GPW": false
+    }
+  ],
+  "native_CPUUsageNSec": "2086935042000",
+  "native_core_min": 34.7822507,
+  "ceiling_core_min": 80,
+  "maximum_simultaneous_units": 2,
+  "memory_max_bytes_per_unit": 4294967296,
+  "probes_launched": false,
+  "retry_launched": false,
+  "checkpoint_import": false,
+  "Native_stopped": true,
+  "absolute_stop_utc": "2026-11-21T03:00:00Z",
+  "geometry_error_bound_eV": null,
+  "decision": "No completed vacant-host JSON/GPW/boundary exists; 45.2177493 core-min remains but repeating missing host plus two cold probes forecasts more than that and presses03. Stop without retry/probe spend. No point or spread can be derived; operational timeout is not physical nonconvergence/no-go.",
+  "base_unchanged": {
+    "draft": 453374618,
+    "archive_asset": 774098833,
+    "archive_sha256": "97d55c55be5bb9151b5310a8ff1b0b480933279b425deba8bd4191e731895bb2"
+  },
+  "scope": "Geometry supplement plus honest incomplete electronic sensitivity; not a completed four-state quartet/contact, and not a geometry-error bound."
+}

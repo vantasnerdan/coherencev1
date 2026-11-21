@@ -43,6 +43,7 @@ The oxide-coated site reads 1.6-5.5 eV below the bare site at every energy and f
 - The lead ran the bundled verifier (`python3 capsule/export_pd.py verify capsule`, NumPy only, with GPAW, ASE and SciPy blocked). It replayed all values from the saved energies, and it refused a contact value altered by 1 eV.
 - The lead recomputed the lowerings from the delivered pair energies.
 - The bare slab is relaxed (forces below 0.04 eV/A on free atoms). The coated slab is only partly relaxed: 0.42 eV/A at the step used. Its relaxation hit the compute cap and a restart failed. No bound on the geometry error is claimed.
+- A second relaxation frame was started to show how much the unfinished relaxation moves the result. It did not finish (one of its four states timed out), so no spread between frames exists.
 - No k-point or grid check was run in this stage; both slabs are at one k-point and h 0.20 A. The zirconium stage found these checks move the contrast by under 2 eV.
 
 ## Three omissions
@@ -53,4 +54,4 @@ The oxide-coated site reads 1.6-5.5 eV below the bare site at every energy and f
 
 ## Lead's note
 
-`capsule/` is the delivered archive `g7_micro-pd-base-20261121.tar.gz` (SHA-256 97d55c55be5bb9151b5310a8ff1b0b480933279b425deba8bd4191e731895bb2), unchanged; no GPAW state files or raw logs are in it. The delivered `capsule/README.md` carries the producer's full statement of scope. `action/` is Marvin's delivered converter archive (SHA-256 b9d32d3836202cff59f529371f63c16d908274f86bcfe9941345b44618881793), unchanged. The lead's replay on `capsule/`, with GPAW and ASE blocked, reproduced `action/results.json` byte for byte. Compute for this stage: about 430 core-min before the second-frame supplement.
+`capsule/` is the delivered archive `g7_micro-pd-base-20261121.tar.gz` (SHA-256 97d55c55be5bb9151b5310a8ff1b0b480933279b425deba8bd4191e731895bb2), unchanged; no GPAW state files or raw logs are in it. The delivered `capsule/README.md` carries the producer's full statement of scope. `action/` is Marvin's delivered converter archive (SHA-256 b9d32d3836202cff59f529371f63c16d908274f86bcfe9941345b44618881793), unchanged. The lead's replay on `capsule/`, with GPAW and ASE blocked, reproduced `action/results.json` byte for byte. `supplement/` is the delivered geometry and second-frame record (SHA-256 47ce009c9dc0d3f22397219c20186dc4e16cc352f6288323f7344d3db257b9ae), unchanged. Compute for this stage: 465 core-min.

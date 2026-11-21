@@ -1,0 +1,56 @@
+{
+  "schema": "micro-pd-actual-target-site-geometry-v1",
+  "reference": "Signed Cartesian z relative to the mean actual z of original top substrate Pd layer (identified from bound initial frame), and mean actual z of added4Pd+4O sheet. Negative is below. Distances are minimum-image; plain has no oxide/O.",
+  "rows": [
+    {
+      "variant": "plain",
+      "geometry": {
+        "bytes": 24215,
+        "sha256": "6eb0bec56cc9cfd65d8b60329ce64d793fee664279c78035a0afc324d41bf3a1"
+      },
+      "target_D_z_A": 9.446658600408119,
+      "top_substrate_Pd_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "top_substrate_Pd_mean_z_A": 11.47276385892552,
+      "D_minus_top_metal_A": -2.0261052585174006,
+      "oxide_Pd4O4_mean_z_A": null,
+      "D_minus_oxide_sheet_A": null,
+      "nearest_Pd_index": 10,
+      "nearest_Pd_distance_A": 1.946658600408119,
+      "nearest_O_index": null,
+      "nearest_O_distance_A": null,
+      "nearest_image_oracle_residual_A": 1.7763568394002505e-15
+    },
+    {
+      "variant": "oxygen",
+      "geometry": {
+        "bytes": 75925,
+        "sha256": "9de0e7f105bb96df3551603131c31f878787a1e8a28ac8b0abffe129e6cc3b99"
+      },
+      "target_D_z_A": 9.558917381440644,
+      "top_substrate_Pd_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "top_substrate_Pd_mean_z_A": 11.462521289989564,
+      "D_minus_top_metal_A": -1.90360390854892,
+      "oxide_Pd4O4_mean_z_A": 13.964610142248414,
+      "D_minus_oxide_sheet_A": -4.405692760807771,
+      "nearest_Pd_index": 0,
+      "nearest_Pd_distance_A": 1.8770967666283593,
+      "nearest_O_index": 21,
+      "nearest_O_distance_A": 4.189807312980599,
+      "nearest_image_oracle_residual_A": 1.7763568394002505e-15
+    }
+  ],
+  "Native_invocations": 0,
+  "scope": "Actual saved-frame site geometry only; no site stability or geometry-error bound"
+}
