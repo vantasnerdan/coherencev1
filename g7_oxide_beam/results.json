@@ -1,0 +1,301 @@
+{
+  "model": {
+    "truth_U_eV": 40.0,
+    "reaction": "reaction_sigma(..., reaction='eq7'): Bosch-Hale D(d,p)T",
+    "beam": "monoenergetic D+, no molecular admixture or unstated spread",
+    "nominal_E_lab_keV": [
+      2.5,
+      3.0,
+      3.5,
+      4.0,
+      4.5,
+      5.0,
+      5.5,
+      6.0,
+      6.5,
+      7.0,
+      7.5,
+      8.0,
+      8.5,
+      9.0,
+      9.5,
+      10.0
+    ],
+    "reference_E_lab_keV": 10.0,
+    "fit": "equal weights in log R at 2.5,3,...,9.5 lab; exact own-profile 10keV reference; U only, no amplitude",
+    "density_inputs": {
+      "nPd_m3": 6.8e+28,
+      "bulk_D_per_Pd": 0.01,
+      "nPdO_formula_m3": 4.047718204726107e+28
+    },
+    "oxide_stopping": "ICRU/ZBL Pd and D + repository LS/ZBL O, Bragg sum; O electronic estimate; oxygen total stopping 0.5/1/2 sensitivity",
+    "cutoff_lab_keV": 0.1,
+    "integration_lab_grid_step_keV": 0.0005000000000000004,
+    "omissions": [
+      "straggling/backscatter/channeling",
+      "beam-induced time-dependent chemistry and D redistribution",
+      "measured local D inventory or film electrical data unavailable"
+    ]
+  },
+  "exposed_envelope": {
+    "sheet_fit": {
+      "U_app_eV": 239.84844730953122,
+      "log_rms": 0.1679713745038747,
+      "max_fractional_shape_residual": 0.2905630549066258
+    },
+    "sheet_over_uniform40_at_2p5": 4.135705399692611,
+    "sheet_over_same_model_bare_at_2p5": 6.216501385200959,
+    "uniform40_over_same_model_bare_at_2p5": 1.50312964401744,
+    "uniform600_over_same_model_bare_at_2p5": 92.56211994453814,
+    "source_comparison": "Kasagi reports about50x its own adjusted bare curve at2.5lab; not identical to this commissioned Eq7/Bosch-Hale+ICRU/ZBL comparison, and not a raw-data refit",
+    "310eV": {
+      "requested_over_uniform40_at_2p5": 9.899044381452166,
+      "requested_over_sheet_at_2p5": 2.39355646129628,
+      "frozen_Pd_reachable": false,
+      "t_max_nm": null,
+      "r_required": null,
+      "reason": "Target lowest-point normalized yield exceeds exposed-sheet envelope"
+    },
+    "600eV": {
+      "requested_over_uniform40_at_2p5": 61.57959848170235,
+      "requested_over_sheet_at_2p5": 14.889744923871822,
+      "frozen_Pd_reachable": false,
+      "t_max_nm": null,
+      "r_required": null,
+      "reason": "Target lowest-point normalized yield exceeds exposed-sheet envelope"
+    },
+    "species_monotonic_flow_max_delta": {
+      "Pd": -2741692.7663726807,
+      "D": -632750.0656108856,
+      "O": -1449039.0506973267
+    },
+    "flow_check_meaning": "finite-grid sign checks of each Bragg component s_j*d(log sigma)/dE over 0.1-10 lab; sufficient condition is analytic, sampled signs are not an interval proof",
+    "map_maxima": {
+      "Pd_D_feedback": {
+        "geometry": "Pd_D_feedback",
+        "t_nm": 0.3,
+        "r": 1000.0,
+        "D_per_host_in_rich_layer": 10.0,
+        "capacity_label": "exceeds_single_site_inventory_benchmark",
+        "R_2p5_over_10": 4.0142714420308475e-06,
+        "U_app_eV": 221.19818423919105,
+        "log_rms": 0.15806853724888453,
+        "max_fractional_shape_residual": 0.2763907986678973
+      },
+      "Pd_frozen": {
+        "geometry": "Pd_frozen",
+        "t_nm": 0.05,
+        "r": 100000.0,
+        "D_per_host_in_rich_layer": 1000.0,
+        "capacity_label": "exceeds_single_site_inventory_benchmark",
+        "R_2p5_over_10": 4.530560766900375e-06,
+        "U_app_eV": 238.80572788774458,
+        "log_rms": 0.1673653504946256,
+        "max_fractional_shape_residual": 0.28971491514948666
+      },
+      "in_30nm_PdO": {
+        "geometry": "in_30nm_PdO",
+        "t_nm": 0.1,
+        "r": 1000.0,
+        "D_per_host_in_rich_layer": 16.799588449760005,
+        "capacity_label": "exceeds_single_site_inventory_benchmark",
+        "R_2p5_over_10": 4.312292829357903e-06,
+        "U_app_eV": 230.23667878113366,
+        "log_rms": 0.1566301690674019,
+        "max_fractional_shape_residual": 0.2766629569573039
+      },
+      "under_30nm_PdO": {
+        "geometry": "under_30nm_PdO",
+        "t_nm": 0.05,
+        "r": 1.0,
+        "D_per_host_in_rich_layer": 0.01,
+        "capacity_label": "hypothetical_inventory_not_measurement",
+        "R_2p5_over_10": 7.395463042957744e-10,
+        "U_app_eV": 3.773039301454846e-08,
+        "log_rms": 2.797350346434633,
+        "max_fractional_shape_residual": 0.9989923128888172
+      }
+    },
+    "hypothetical_D_per_host_le1_map_maxima": {
+      "Pd_D_feedback": {
+        "geometry": "Pd_D_feedback",
+        "t_nm": 1.0,
+        "r": 100.0,
+        "D_per_host_in_rich_layer": 1.0,
+        "capacity_label": "hypothetical_inventory_not_measurement",
+        "R_2p5_over_10": 3.6518811250649604e-06,
+        "U_app_eV": 205.63879784233959,
+        "log_rms": 0.14216474887545166,
+        "max_fractional_shape_residual": 0.25357986957167233
+      },
+      "Pd_frozen": {
+        "geometry": "Pd_frozen",
+        "t_nm": 1.0,
+        "r": 100.0,
+        "D_per_host_in_rich_layer": 1.0,
+        "capacity_label": "hypothetical_inventory_not_measurement",
+        "R_2p5_over_10": 3.7242554729475714e-06,
+        "U_app_eV": 208.14694929136027,
+        "log_rms": 0.14247968751741166,
+        "max_fractional_shape_residual": 0.2541614162309076
+      },
+      "in_30nm_PdO": {
+        "geometry": "in_30nm_PdO",
+        "t_nm": 1.0,
+        "r": 30.0,
+        "D_per_host_in_rich_layer": 0.5039876534928001,
+        "capacity_label": "hypothetical_inventory_not_measurement",
+        "R_2p5_over_10": 3.818573268207475e-06,
+        "U_app_eV": 209.47554744940945,
+        "log_rms": 0.13079656368587958,
+        "max_fractional_shape_residual": 0.24347598203551268
+      },
+      "under_30nm_PdO": {
+        "geometry": "under_30nm_PdO",
+        "t_nm": 0.05,
+        "r": 1.0,
+        "D_per_host_in_rich_layer": 0.01,
+        "capacity_label": "hypothetical_inventory_not_measurement",
+        "R_2p5_over_10": 7.395463042957744e-10,
+        "U_app_eV": 3.773039301454846e-08,
+        "log_rms": 2.797350346434633,
+        "max_fractional_shape_residual": 0.9989923128888172
+      }
+    },
+    "oxide_stopping_sensitivity_t1nm_r30": [
+      {
+        "oxygen_scale": 0.5,
+        "U_app_eV": 204.70569653755177,
+        "log_rms": 0.12134675989271554,
+        "max_fractional_shape_residual": 0.22958464005112178
+      },
+      {
+        "oxygen_scale": 1.0,
+        "U_app_eV": 209.47554744940945,
+        "log_rms": 0.13079656368587958,
+        "max_fractional_shape_residual": 0.24347598203551268
+      },
+      {
+        "oxygen_scale": 2.0,
+        "U_app_eV": 215.22713264795567,
+        "log_rms": 0.14646730103858624,
+        "max_fractional_shape_residual": 0.2643278697528182
+      }
+    ]
+  },
+  "offsets": [
+    {
+      "U_true_eV": 40.0,
+      "target_U_app_eV": 340.0,
+      "actual_lab_gain_eV": 650.5731936243611,
+      "potential_V": -650.5731936243611,
+      "field_V_per_m": 21685773120.81204,
+      "U_app_eV": 339.99999999997016,
+      "log_rms": 0.0038450300267701553,
+      "max_fractional_shape_residual": 0.00800608423146354
+    },
+    {
+      "U_true_eV": 310.0,
+      "target_U_app_eV": 610.0,
+      "actual_lab_gain_eV": 667.3792799667448,
+      "potential_V": -667.3792799667448,
+      "field_V_per_m": 22245975998.891495,
+      "U_app_eV": 609.9999999999881,
+      "log_rms": 0.0012424122963045846,
+      "max_fractional_shape_residual": 0.0017153282462200048
+    },
+    {
+      "U_true_eV": 310.0,
+      "target_U_app_eV": 600.0,
+      "actual_lab_gain_eV": 644.7575290230387,
+      "potential_V": -644.7575290230387,
+      "field_V_per_m": 21491917634.10129,
+      "U_app_eV": 600.0000000000354,
+      "log_rms": 0.0012480146484661096,
+      "max_fractional_shape_residual": 0.0017166872832270474
+    },
+    {
+      "U_true_eV": 40.0,
+      "target_U_app_eV": 600.0,
+      "actual_lab_gain_eV": 1231.7417623366719,
+      "potential_V": -1231.7417623366719,
+      "field_V_per_m": 41058058744.55573,
+      "U_app_eV": 599.9999999999653,
+      "log_rms": 0.003956685987827122,
+      "max_fractional_shape_residual": 0.007494055094150687
+    }
+  ],
+  "current_dependent_negative_control": {
+    "monitor_potential_V": -169.55752771268772,
+    "low_energy_potential_V": -678.2301108507509,
+    "U_app_eV": 340.00000190974873,
+    "log_rms": 0.17720910274961957,
+    "max_fractional_shape_residual": 0.5371022040985711,
+    "positive_ion_charge_same_magnitude_R2p5_relative_to_uniform40": 0.011748317712629653
+  },
+  "combined_sheet_potential_lowest_point_bounds": [
+    {
+      "target_U_app_eV": 310.0,
+      "optimistic_minimum_abs_negative_potential_V": 213.73591373131896,
+      "field_V_per_m": 7124530457.710632
+    },
+    {
+      "target_U_app_eV": 340.0,
+      "optimistic_minimum_abs_negative_potential_V": 270.9440042732885,
+      "field_V_per_m": 9031466809.109617
+    },
+    {
+      "target_U_app_eV": 600.0,
+      "optimistic_minimum_abs_negative_potential_V": 774.6282507088795,
+      "field_V_per_m": 25820941690.295986
+    }
+  ],
+  "positive_monitor_only_lowest_point_bounds": [
+    {
+      "U_true_eV": 40.0,
+      "target_U_app_eV": 340.0,
+      "positive_monitor_only_potential_V": 2818.509008121046
+    },
+    {
+      "U_true_eV": 310.0,
+      "target_U_app_eV": 600.0,
+      "positive_monitor_only_potential_V": 2368.61740542488
+    }
+  ],
+  "charging": {
+    "conditioning_I_10keV_A": 6e-05,
+    "spot_diameter_m": 0.004,
+    "equal_monitor_power_current_assumption": "If I10=60uA in measurement too: I(E)=60uA*10keV/E_lab",
+    "conditional_J_10_and_2p5_A_per_m2": [
+      4.7746482927568605,
+      19.098593171027442
+    ],
+    "required_bulk_rho_ohm_m_for_abs_voltage": [
+      4541857701.583873,
+      1135464425.3959682
+    ],
+    "required_R_area_ohm_m2": [
+      136.25573104751618,
+      34.063932761879045
+    ],
+    "required_vertical_resistance_ohm": [
+      10842886.560406018,
+      2710721.6401015045
+    ],
+    "rho_comparison_note": "Vertical Ohmic steady-state demand E/J for POSITIVE ion charging; a NEGATIVE sustaining electron supply is separately required",
+    "dielectric_capacitance_per_area_F_per_m2_per_epsilon_r": 0.00029513959376,
+    "required_sheet_charge_C_per_m2_per_epsilon_r": 0.19200990807743978
+  },
+  "consumer_parity_max_relative_errors": {
+    "uniform": 5.470653701156181e-07,
+    "surface_step_with_D_stopping": 1.706916710308981e-06,
+    "oxide_buried_step": 5.0246996174951875e-06,
+    "oxide_exposed_step_exact_density_ratio": 6.513196277868616e-07,
+    "forward_yields_R": 5.389063819638551e-07
+  },
+  "zr_gate": {
+    "executed": false,
+    "reason": "No defensible Pd branch reaches the reported contrast. Mathematical negative-voltage fits do not establish a beam-driven mechanism; no Zr calculation authorized by this gate."
+  },
+  "decision": "Fixed D-rich exposed profile cannot reach 310/600 in the frozen Pd envelope; mapped feedback and in-cap/buried cases are sensitivities, not all-profile exclusion. Constant negative collision potential fits require an undocumented wrong-sign supply and cannot survive conservative return to grounded buried metal."
+}

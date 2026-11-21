@@ -23,6 +23,7 @@ Where the site sits: the deuteron is buried in the metal, 1.9 A below the top me
 What it means:
 - A deuteron under a PdO sheet screens like every other static site computed so far: about 38-39 eV at 0.1 A. The oxide changes it by a few eV, downward.
 - Two static routes for oxygen are now closed at this level: an oxygen neighbour atom (Zr) and an oxide sheet one metal layer above the site (Pd). The measured oxide and oxygen effects are hundreds of eV. The interface plane itself was computed afterwards (below) and gives the same answer.
+- The depth-profile and charging routes are sized in `../../g7_oxide_beam/`: a surface-rich profile reads as up to about 200 eV, and charging has the wrong sign.
 - What remains for the oxide measurements is what a static cell cannot hold: a different deuterium population or depth profile under the oxide, charge trapped in or on the oxide under the beam, or the measurement normalisation (`g7_gap/`).
 
 ## A deuteron at the oxide/metal interface
