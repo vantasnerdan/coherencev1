@@ -23,6 +23,19 @@ What it means:
 - Two static routes for oxygen are now closed at this level: an oxygen neighbour atom (Zr) and an oxide sheet above the site (Pd). The measured oxide and oxygen effects are hundreds of eV. They are not a static property of the site.
 - What remains for the oxide measurements is what a static cell cannot hold: a different deuterium population or depth profile under the oxide, charge trapped in or on the oxide under the beam, or the measurement normalisation (`g7_gap/`).
 
+## Carried through the barrier
+
+`action/` (Marvin) turns both curves into what a beam fit would read, with the converter from `../zr_calibration/action/`:
+
+| D-D energy, centre of mass (keV) | Bare slab (eV) | Oxide-coated (eV) | Coated minus bare (eV) |
+|---:|---:|---:|---:|
+| 0.25 | 43.5 | 39.9 | -3.6 |
+| 1.25 | 46.0 | 41.1 | -4.9 |
+| 5 | 48.1 | 42.8 | -5.3 |
+| 10 | 49.7 | 44.2 | -5.5 |
+
+The oxide-coated site reads 1.6-5.5 eV below the bare site at every energy and for all three ways of joining the curve to its contact value. Kasagi et al. (J. Phys. Soc. Jpn. 71, 2881 (2002)) fit about 310 eV for Pd and 600 eV for PdO on Pd. The computed contrast is opposite in direction and about a hundred times smaller.
+
 ## Checks and their limits
 
 - The lead ran the bundled verifier (`python3 capsule/export_pd.py verify capsule`, NumPy only, with GPAW, ASE and SciPy blocked). It replayed all values from the saved energies, and it refused a contact value altered by 1 eV.
@@ -38,4 +51,4 @@ What it means:
 
 ## Lead's note
 
-`capsule/` is the delivered archive `g7_micro-pd-base-20261121.tar.gz` (SHA-256 97d55c55be5bb9151b5310a8ff1b0b480933279b425deba8bd4191e731895bb2), unchanged; no GPAW state files or raw logs are in it. The delivered `capsule/README.md` carries the producer's full statement of scope. Compute for this stage: about 430 core-min before the second-frame supplement.
+`capsule/` is the delivered archive `g7_micro-pd-base-20261121.tar.gz` (SHA-256 97d55c55be5bb9151b5310a8ff1b0b480933279b425deba8bd4191e731895bb2), unchanged; no GPAW state files or raw logs are in it. The delivered `capsule/README.md` carries the producer's full statement of scope. `action/` is Marvin's delivered converter archive (SHA-256 b9d32d3836202cff59f529371f63c16d908274f86bcfe9941345b44618881793), unchanged. The lead's replay on `capsule/`, with GPAW and ASE blocked, reproduced `action/results.json` byte for byte. Compute for this stage: about 430 core-min before the second-frame supplement.
