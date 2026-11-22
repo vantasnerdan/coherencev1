@@ -23,10 +23,23 @@ A threshold resonance in 4He (Czerski, Phys. Rev. C 106, L011601 (2022)) changes
 
 The reaction does not explain the excess. Observable that would show a reaction change: the proton, neutron and electron-pair branching against energy and foil.
 
+## Branch: the target while the beam is on (`driven_target.md`, Marvin)
+
+If the barrier stays ordinary, the flat bottom of the curve needs deuteron pairs meeting at keV-scale relative energy. One beam ion at 0.5 keV cannot give more than 0.5 keV to any pair, so a keV tail would have to pool energy from several beam ions or from another reservoir.
+
+- Ordinary thermal and zero-point motion: 1.04 times at 0.25 keV, less above.
+- Every watt the beam deposits given to the deuterons as a 100 eV population that lives 100 ps: 1.25 times at 0.25 keV in Pd and PdD, 1.015 in Ti and TiD, nothing above.
+- A 1 keV population large enough to give the measured floor would have to hold its energy for 40 to 1600 seconds at the full beam power. Measured and computed vibration lifetimes in PdH are under a picosecond; electron-to-lattice transfer takes picoseconds.
+- Two beam ions overlap within 10 nm and 100 ps with probability about 1e-7.
+
+Heating and beam-driven excitation of the target do not explain the excess. Observable that would show pooling: a floor that pooled energy from two ions would grow with beam current per unit charge; a single-ion process gives a constant yield per coulomb.
+
+`method.md` is Marvin's note on the shared baseline and on what the published numbers mean. It records the measured low-energy signal as detected counts per coulomb of cup current: between 0.25 and 2.5 keV these stay within a factor of 2 to 8 of each other in every foil (Pd 1.1, 0.4, 0.8, 1.7; TiD 2.9, 1.8, 2.0, 15.2).
+
 ## Branches to come
 
-`collision` (giuliano), `driven-target` and `beam` (Marvin).
+`collision` (giuliano) and `beam` (Marvin).
 
 ## Lead's note
 
-`reaction.*`, `common.py` and `baseline.csv` are the delivered archive (SHA-256 c3653ee63b327c24eae7ec456251dc781ee8a28bb2264e659adf0cf3f0219962), unchanged. Run `python -m g8_why.reaction` from the repository root with `g8_why` on the path (NumPy 2). The lead's rerun reproduced the tables to rounding. The excess table uses the yields as plotted; under the other reading of the current normalisation (`g7_gap/`) the 0.25 keV values are about six times smaller, which changes nothing above.
+`reaction.*`, `common.py` and `baseline.csv` are the delivered archive (SHA-256 c3653ee63b327c24eae7ec456251dc781ee8a28bb2264e659adf0cf3f0219962), unchanged. `driven_target.*`, `readout_floats.*` and `method.md` (delivered as its README) come from the second archive (SHA-256 ae4dd59696931dd33a0782fc2d97287599afa8777d611168a6edca188d187928); the lead read the page and checked its tables against the delivered CSVs but did not rerun it. Run `python -m g8_why.reaction` from the repository root with `g8_why` on the path (NumPy 2). The lead's rerun reproduced the tables to rounding. The excess table uses the yields as plotted; under the other reading of the current normalisation (`g7_gap/`) the 0.25 keV values are about six times smaller, which changes nothing above.
