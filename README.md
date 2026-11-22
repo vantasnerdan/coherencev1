@@ -103,6 +103,12 @@ Pass 6 replaces seven lumped inputs with resolved quantities: the fitted screeni
 | `g7_hydride/` | Static screening at a deuteron in LiD, where the hydrogen carries its own electrons, with an isolated D atom from the same code. At 0.1 A LiD gives 40.9 eV (neutral probe) and 43.7 eV (bare probe), the same as the metal sea in PdD (40.5 eV); the isolated atom gives 50.7 and 37.0 eV. Static screening at this separation depends little on the host, so the measured keV values must come from what ideal static cells leave out. |
 | `g7_gap/` | A ledger of what could explain the difference between every model (about 40 eV) and reported screening (300 eV to 3 keV), tested against published data. Ordinary target motion (under 1 eV), single-ion recoils and beam-excited electrons (0.2 eV) are ruled out as the main cause, and the D-D resonance cannot explain the lithium and fluorine reactions. The material state (strong near-surface sites) and the beam normalisation remain. |
 
+## Pass 8: why and how, with the deuterium profile held fixed
+
+| Directory | What it is |
+|---|---|
+| `g8_why/` | The plain-foil D-D excess with the deuterium profile fixed, so that density cannot absorb it. The excess over the 40 eV model is 3-13 times at 2.5 keV and 1e16-1e17 at 0.25 keV, and the measured curve is nearly flat at the bottom. The reaction branch is done: a threshold resonance gives at most 6 times at 0.25 keV and cannot make the curve flat. Collision, driven-target and beam branches are open. |
+
 ## Reproducibility
 
 NumPy and SciPy are enough for everything except `p1_pysr/` (PySR), `p1_sindy/` (PySINDy) and `p2_input/frozen_phonon.py` (GPAW). Those three were run on one machine only; all other outputs were reproduced on a second.
