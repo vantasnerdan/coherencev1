@@ -108,6 +108,7 @@ Pass 6 replaces seven lumped inputs with resolved quantities: the fitted screeni
 | Directory | What it is |
 |---|---|
 | `g8_why/` | The plain-foil D-D excess with the deuterium profile fixed, so that density cannot absorb it. The excess over the 40 eV model is 3-13 times at 2.5 keV and 1e16-1e17 at 0.25 keV, and the measured curve is nearly flat at the bottom. All four branches are done. Reaction: a threshold resonance gives at most 6 times at 0.25 keV and cannot make the curve flat. Bound target: no momentum distribution of the target deuteron reaches the 0.25 keV point (short by six million in PdD, inside a spectator model). Driven target: beam heating and excitation give at most 1.25 times. Beam: composition gives at most 1.18 times; 0.1 to 5 percent of 13 keV neutral atoms per ion would reach the size of the excess, but the documented gun has no source for them at low settings and one fixed share does not follow the curves. |
+| `g9_edge/` | The instant a deuteron arrives at the foil, with the time dependence kept. Model part done (`SUMMARY.md`): screening is absent at switch-on and then overshoots by 17 eV at the surface (2.9 eV in the bulk), all within 0.15 fs; in the fixed profile 97 percent of the Pd model yield at 0.25 keV falls inside that edge; the yield ratio is 0.28 to 1.02 depending on the ion's history before the surface. First-principles part (a deuteron entering a PdD slab from vacuum) is running. |
 
 ## Reproducibility
 

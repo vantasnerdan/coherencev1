@@ -1,0 +1,69 @@
+{
+  "source_full_G_head_identity_max": 2.621209581312015e-14,
+  "scalar_before_G_inversion_wrong_witness": 0.9137760463428245,
+  "immutable_profile_consumer_max_relative": 8.881784197001252e-16,
+  "support_t_negative": "exact zero: all convolutions integrate only 0<=lag<=t; prehistory not included",
+  "kernel_t0_max": 0.0,
+  "same_spectral_static_identity_max": 9.992007221626409e-16,
+  "local_image_limit_absolute": 1.3877787807814457e-17,
+  "free_uniform_limit_absolute": 1.1102230246251565e-16,
+  "local_interface_continuity_absolute": 0.0,
+  "identical_gate_entry_bulk_absolute_eV": 3.552713678800501e-15,
+  "projectile_kinetic_reference": "causal self force minus formed moving bulk drag; CSDA drag retained once",
+  "formed_bulk_drag_at_lowest_energy_eV_A": -1.2189116716579842,
+  "step_halving_dt_fs": [
+    0.001,
+    0.0005
+  ],
+  "step_halving_pair_barrier_max_absolute_eV": 0.02130185235632709,
+  "step_halving_selected_rate_max_absolute": 0.00255752958161537,
+  "step_halving_edge_end_fs": [
+    0.14671325192522236,
+    0.1467765754985701
+  ],
+  "half_Rturn_pair_barrier_max_absolute_eV": 0.2785812883766532,
+  "image_kcap_peak_sensitivity_at_lowest_energy": [
+    {
+      "R_A": 0.0,
+      "kcap1_peak_departure_eV": 25.392059630954567,
+      "kcap2_peak_departure_eV": 35.148152073511426,
+      "max_curve_change_eV": 14.41105586968757
+    },
+    {
+      "R_A": 0.1,
+      "kcap1_peak_departure_eV": 25.01791018755823,
+      "kcap2_peak_departure_eV": 32.32775292550119,
+      "max_curve_change_eV": 12.450220257403192
+    },
+    {
+      "R_A": 0.5,
+      "kcap1_peak_departure_eV": 18.97364840205599,
+      "kcap2_peak_departure_eV": 23.790063739296272,
+      "max_curve_change_eV": 6.9928490274349855
+    },
+    {
+      "R_A": 1.0,
+      "kcap1_peak_departure_eV": 13.429000465079383,
+      "kcap2_peak_departure_eV": 16.886383712259715,
+      "max_curve_change_eV": 3.461687667441705
+    },
+    {
+      "R_A": 2.0,
+      "kcap1_peak_departure_eV": 8.929978664835705,
+      "kcap2_peak_departure_eV": 9.823628350423448,
+      "max_curve_change_eV": 0.8965885888942271
+    }
+  ],
+  "image_kcap_1_to_2_max_yield_ratio_change": 0.0064139551456980914,
+  "qcap_16_to_12_max_yield_ratio_change": 0.0017794652746826456,
+  "input_hashes": {
+    "g4_beam/merit/profiles.json": "e2e91077595de602b815ae86f45c1a675d6a553153272d0e1295b72e2a5a9943",
+    "g4_beam/merit/api.py": "1b77432a6db9fcdeb4d6cf2bb673dc88a5485a10a7b488628c3de52f9f4e6156",
+    "g4_beam/forward/consumer.py": "d8c154adecf4a82120e05548bd016bdc5d2dd2bcd49f566f6273f8d866defc27",
+    "g4_beam/forward/model.py": "76604acd39c1e47995a1290281e737076e8c01235a706e93c20be37fb4d1e84b",
+    "g4_beam/forward/profile_thermal.py": "e81574b3a56499a3d651a19aeb45722d022f1883ae727ffcc96881370019b07c",
+    "g4_beam/forward/errbars.csv": "6bb66867c8b899b66447831a193c173aa85575cf0f7f9e69d1bb8158b534f62c",
+    "g8_why/common.py": "00ce55ad546191d9db198a09236d5691674ce525ebdc98faa678c24dec82de42"
+  },
+  "script_sha256": "3cae9e04be53d863bd8aa8438ceff4a5c3ecc1e57a8f0786baf8588c68fb7f6d"
+}
