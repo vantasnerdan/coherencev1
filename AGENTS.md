@@ -83,7 +83,7 @@ Coarse-to-fine applies to physics resolution. It does not excuse an unsettled nu
 - Public. No PDFs, credentials, machine paths, personal names other than cited authors, or email addresses.
 - One writer. Specialists deliver hash-bound archives; the lead verifies hashes, reruns what it can, and commits.
 - Each directory holds a small script, its output and a README. `p*` directories are the first loop and are kept for the record. `g*` directories are the current model.
-- NumPy and SciPy cover everything except the first-principles runs (GPAW), the EMT geometry (ASE), and two first-loop tools (PySR, PySINDy).
+- NumPy and SciPy cover everything except the first-principles runs (GPAW), the EMT geometry (ASE), two first-loop tools (PySR, PySINDy), and the second toolset in `tools_marvin/` (i-PI, SSCHA, NuHamil, QuTiP, quimb).
 
 ## Open items carried forward
 
