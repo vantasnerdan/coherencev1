@@ -1,0 +1,703 @@
+{
+  "Pd_source_sumJ_error": 0.0,
+  "Ni_source_sumJ_error": 2.220446049250313e-16,
+  "x0875-spread4_clean_source_sumJ_error": 5.551115123125783e-17,
+  "x0875-spread4_near_source_sumJ_error": 1.1102230246251565e-16,
+  "x0750-bunched8_clean_source_sumJ_error": 0.0,
+  "x0750-bunched8_near_source_sumJ_error": 5.551115123125783e-17,
+  "x0875-bunched4_near_source_sumJ_error": 2.7755575615628914e-17,
+  "PdD_bead_sensitivity": [
+    {
+      "temperature_K": 300,
+      "beads_coarse": 16,
+      "beads_fine": 32,
+      "r2_difference_A2": 0.002903891987965479,
+      "conservative_sum_r2_block_SE_A2": 0.006993363078493249,
+      "mean_kinetic_difference_eV": 0.00011943577548358814,
+      "combined_kinetic_block_SE_eV": 0.000394805922549305,
+      "tail_k_A_inverse": 25.4,
+      "tail_measure_fine_A": 1.59897656326e-07,
+      "tail_measure_coarse_A": 1.53370370485e-07,
+      "fine_tail_block_SE_A": 3.81034904835e-08,
+      "coarse_tail_block_SE_A": 3.61145677046e-08,
+      "tail_numerical_signal_fine": true,
+      "tail_numerical_signal_coarse": true,
+      "scope": "same-PES bead comparison; agreement of moments is not a resolved 1e-6 coupled tail"
+    },
+    {
+      "temperature_K": 77,
+      "beads_coarse": 64,
+      "beads_fine": 128,
+      "r2_difference_A2": -0.0037438302197369475,
+      "conservative_sum_r2_block_SE_A2": 0.0023464154362950436,
+      "mean_kinetic_difference_eV": -0.0004500011514402408,
+      "combined_kinetic_block_SE_eV": 0.00021341923534895507,
+      "tail_k_A_inverse": 22.2,
+      "tail_measure_fine_A": 4.51191019926e-08,
+      "tail_measure_coarse_A": 1.49802393219e-07,
+      "fine_tail_block_SE_A": 7.8224592302e-08,
+      "coarse_tail_block_SE_A": 1.46755957826e-07,
+      "tail_numerical_signal_fine": false,
+      "tail_numerical_signal_coarse": false,
+      "scope": "same-PES bead comparison; agreement of moments is not a resolved 1e-6 coupled tail"
+    }
+  ],
+  "SSCHA_local_reference": [
+    {
+      "case": "PdD_300K",
+      "temperature_K": 300,
+      "mass_amu": 2.0135532125568343,
+      "analytic_SCHA_stiffness_eV_A2": 1.3506551366727269,
+      "SSCHA_gradient_stiffness_residual_eV_A2": 0.0016843223360320306,
+      "SSCHA_gradient_error_norm_eV_A2": 0.15150614121695305,
+      "force_rounding_1e_minus4_eV_A_gradient_change_eV_A2": 4.0797000581509446e-05,
+      "free_energy_hessian_relative_eV_A2": [
+        [
+          1.3506551366727269,
+          -6.407026214886332e-32,
+          1.8785033597558016e-31
+        ],
+        [
+          -6.555417932107658e-32,
+          1.3506551366727269,
+          -1.0287714372201144e-31
+        ],
+        [
+          1.8389237139394098e-31,
+          -9.438174636789727e-32,
+          1.3506551366727269
+        ]
+      ],
+      "hessian_convention": "relative coordinate stiffness = dimer nonzero eigenvalue/2 = four-block contraction/4",
+      "ensemble_configurations": 2048,
+      "scope": "installed SSCHA isolated-site reference; coupled lattice Gaussian stationarity separately"
+    },
+    {
+      "case": "PdD_77K",
+      "temperature_K": 77,
+      "mass_amu": 2.0135532125568343,
+      "analytic_SCHA_stiffness_eV_A2": 1.2106590210849977,
+      "SSCHA_gradient_stiffness_residual_eV_A2": 0.0015406306034751766,
+      "SSCHA_gradient_error_norm_eV_A2": 0.12355565259985424,
+      "force_rounding_1e_minus4_eV_A_gradient_change_eV_A2": 3.2508400418219254e-05,
+      "free_energy_hessian_relative_eV_A2": [
+        [
+          1.2106590210849977,
+          -9.259777175135587e-32,
+          1.631509890485547e-31
+        ],
+        [
+          -9.829170878484071e-32,
+          1.2106590210849977,
+          2.9384454491484797e-31
+        ],
+        [
+          1.8228997915842712e-31,
+          2.900338719121278e-31,
+          1.2106590210849977
+        ]
+      ],
+      "hessian_convention": "relative coordinate stiffness = dimer nonzero eigenvalue/2 = four-block contraction/4",
+      "ensemble_configurations": 2048,
+      "scope": "installed SSCHA isolated-site reference; coupled lattice Gaussian stationarity separately"
+    },
+    {
+      "case": "NiH_300K",
+      "temperature_K": 300,
+      "mass_amu": 1.0072764665741099,
+      "analytic_SCHA_stiffness_eV_A2": 2.4733909319213714,
+      "SSCHA_gradient_stiffness_residual_eV_A2": 0.0017929633816385988,
+      "SSCHA_gradient_error_norm_eV_A2": 0.18506243150745127,
+      "force_rounding_1e_minus4_eV_A_gradient_change_eV_A2": 3.6010696602336e-05,
+      "free_energy_hessian_relative_eV_A2": [
+        [
+          2.4733909319213714,
+          1.6206944184164753e-31,
+          2.2519097633595264e-32
+        ],
+        [
+          1.9598539538732117e-31,
+          2.4733909319213714,
+          2.62999431230364e-31
+        ],
+        [
+          1.5877330458080216e-34,
+          2.796653966424216e-31,
+          2.4733909319213714
+        ]
+      ],
+      "hessian_convention": "relative coordinate stiffness = dimer nonzero eigenvalue/2 = four-block contraction/4",
+      "ensemble_configurations": 2048,
+      "scope": "installed SSCHA isolated-site reference; coupled lattice Gaussian stationarity separately"
+    },
+    {
+      "case": "NiH_77K",
+      "temperature_K": 77,
+      "mass_amu": 1.0072764665741099,
+      "analytic_SCHA_stiffness_eV_A2": 2.447590941319007,
+      "SSCHA_gradient_stiffness_residual_eV_A2": 0.0017903363436630078,
+      "SSCHA_gradient_error_norm_eV_A2": 0.17877279417368813,
+      "force_rounding_1e_minus4_eV_A_gradient_change_eV_A2": 2.9995479976761105e-05,
+      "free_energy_hessian_relative_eV_A2": [
+        [
+          2.447590941319007,
+          -1.000863055701715e-32,
+          -1.841583668706301e-31
+        ],
+        [
+          -8.298248716817089e-33,
+          2.447590941319007,
+          2.552879951087484e-31
+        ],
+        [
+          -1.8588287999626744e-31,
+          2.487741552978863e-31,
+          2.447590941319007
+        ]
+      ],
+      "hessian_convention": "relative coordinate stiffness = dimer nonzero eigenvalue/2 = four-block contraction/4",
+      "ensemble_configurations": 2048,
+      "scope": "installed SSCHA isolated-site reference; coupled lattice Gaussian stationarity separately"
+    },
+    {
+      "case": "PdH_Dhost_300K",
+      "temperature_K": 300,
+      "mass_amu": 1.0072764665741099,
+      "analytic_SCHA_stiffness_eV_A2": 1.4676798835848315,
+      "SSCHA_gradient_stiffness_residual_eV_A2": 0.0020511813413217326,
+      "SSCHA_gradient_error_norm_eV_A2": 0.17480798089937633,
+      "force_rounding_1e_minus4_eV_A_gradient_change_eV_A2": 1.4064722385358423e-05,
+      "free_energy_hessian_relative_eV_A2": [
+        [
+          1.4676798835848315,
+          -2.1908939319495108e-31,
+          -5.289414536084366e-32
+        ],
+        [
+          -2.0524946778891046e-31,
+          1.4676798835848315,
+          -4.696518274641783e-31
+        ],
+        [
+          -3.8938012471382756e-32,
+          -4.285956498929053e-31,
+          1.4676798835848315
+        ]
+      ],
+      "hessian_convention": "relative coordinate stiffness = dimer nonzero eigenvalue/2 = four-block contraction/4",
+      "ensemble_configurations": 2048,
+      "scope": "installed SSCHA isolated-site reference; coupled lattice Gaussian stationarity separately"
+    },
+    {
+      "case": "PdT_Dhost_300K",
+      "temperature_K": 300,
+      "mass_amu": 3.015500715955296,
+      "analytic_SCHA_stiffness_eV_A2": 1.3092829983276297,
+      "SSCHA_gradient_stiffness_residual_eV_A2": 0.0015483334339259794,
+      "SSCHA_gradient_error_norm_eV_A2": 0.14326975720230198,
+      "force_rounding_1e_minus4_eV_A_gradient_change_eV_A2": 3.2255752213575196e-05,
+      "free_energy_hessian_relative_eV_A2": [
+        [
+          1.3092829983276297,
+          -1.9554516402653166e-31,
+          1.2393780233404174e-31
+        ],
+        [
+          -1.6915145846951947e-31,
+          1.3092829983276297,
+          7.320761809003892e-32
+        ],
+        [
+          8.676705803339909e-32,
+          3.8378530322898626e-32,
+          1.3092829983276297
+        ]
+      ],
+      "hessian_convention": "relative coordinate stiffness = dimer nonzero eigenvalue/2 = four-block contraction/4",
+      "ensemble_configurations": 2048,
+      "scope": "installed SSCHA isolated-site reference; coupled lattice Gaussian stationarity separately"
+    },
+    {
+      "case": "PdH_Dhost_77K",
+      "temperature_K": 77,
+      "mass_amu": 1.0072764665741099,
+      "analytic_SCHA_stiffness_eV_A2": 1.4038663610765727,
+      "SSCHA_gradient_stiffness_residual_eV_A2": 0.0020239153065639455,
+      "SSCHA_gradient_error_norm_eV_A2": 0.16205782748613665,
+      "force_rounding_1e_minus4_eV_A_gradient_change_eV_A2": 3.662903492603669e-05,
+      "free_energy_hessian_relative_eV_A2": [
+        [
+          1.4038663610765727,
+          -1.928738406623837e-31,
+          -8.003426333601542e-32
+        ],
+        [
+          -1.8899085986617478e-31,
+          1.4038663610765727,
+          1.1313770277921882e-31
+        ],
+        [
+          -8.591492939687204e-32,
+          1.0519950749376316e-31,
+          1.4038663610765727
+        ]
+      ],
+      "hessian_convention": "relative coordinate stiffness = dimer nonzero eigenvalue/2 = four-block contraction/4",
+      "ensemble_configurations": 2048,
+      "scope": "installed SSCHA isolated-site reference; coupled lattice Gaussian stationarity separately"
+    },
+    {
+      "case": "PdT_Dhost_77K",
+      "temperature_K": 77,
+      "mass_amu": 3.015500715955296,
+      "analytic_SCHA_stiffness_eV_A2": 1.1197016165532208,
+      "SSCHA_gradient_stiffness_residual_eV_A2": 0.0013083090977116304,
+      "SSCHA_gradient_error_norm_eV_A2": 0.10543096148145943,
+      "force_rounding_1e_minus4_eV_A_gradient_change_eV_A2": 3.0202315657068487e-05,
+      "free_energy_hessian_relative_eV_A2": [
+        [
+          1.1197016165532208,
+          3.3835033814481927e-31,
+          1.9514036699256167e-32
+        ],
+        [
+          3.3372458574327175e-31,
+          1.1197016165532208,
+          2.0442351564235785e-31
+        ],
+        [
+          2.235341253761578e-32,
+          1.9954221239249135e-31,
+          1.1197016165532208
+        ]
+      ],
+      "hessian_convention": "relative coordinate stiffness = dimer nonzero eigenvalue/2 = four-block contraction/4",
+      "ensemble_configurations": 2048,
+      "scope": "installed SSCHA isolated-site reference; coupled lattice Gaussian stationarity separately"
+    }
+  ],
+  "tracer_mass_consistency": [
+    {
+      "case": "PdH_Dhost_300K",
+      "path_transform_error_A": 0.0,
+      "logweight_error": 0.0,
+      "spring_mass_invariant_error_amu_A2": 3.3306690738754696e-16,
+      "native_kinetic_mass_factor_error_eV_A2": 4.336808689942018e-19,
+      "frame_weight_ess": 748.5241077099943,
+      "block_weight_ess": 11.977856854755844
+    },
+    {
+      "case": "PdT_Dhost_300K",
+      "path_transform_error_A": 0.0,
+      "logweight_error": 0.0,
+      "spring_mass_invariant_error_amu_A2": 2.220446049250313e-16,
+      "native_kinetic_mass_factor_error_eV_A2": 0.0,
+      "frame_weight_ess": 784.1156791120603,
+      "block_weight_ess": 11.996441705301658
+    },
+    {
+      "case": "PdH_Dhost_77K",
+      "path_transform_error_A": 0.0,
+      "logweight_error": 0.0,
+      "spring_mass_invariant_error_amu_A2": 8.881784197001252e-16,
+      "native_kinetic_mass_factor_error_eV_A2": 4.336808689942018e-19,
+      "frame_weight_ess": 270.53552499871,
+      "block_weight_ess": 11.713208105596783
+    },
+    {
+      "case": "PdT_Dhost_77K",
+      "path_transform_error_A": 0.0,
+      "logweight_error": 0.0,
+      "spring_mass_invariant_error_amu_A2": 8.881784197001252e-16,
+      "native_kinetic_mass_factor_error_eV_A2": 0.0,
+      "frame_weight_ess": 551.9752129055763,
+      "block_weight_ess": 11.812593040408444
+    }
+  ],
+  "coupled_radial_measure_identity": [
+    {
+      "case": "PdD_300K",
+      "max_radial_measure_identity_error_A": 9.20888365563144e-13
+    },
+    {
+      "case": "PdD_77K",
+      "max_radial_measure_identity_error_A": 6.341038805146582e-13
+    },
+    {
+      "case": "NiH_300K",
+      "max_radial_measure_identity_error_A": 5.673794767346862e-13
+    },
+    {
+      "case": "NiH_77K",
+      "max_radial_measure_identity_error_A": 5.941913627793838e-13
+    },
+    {
+      "case": "PdH_Dhost_300K",
+      "max_radial_measure_identity_error_A": 7.817080316385727e-13
+    },
+    {
+      "case": "PdT_Dhost_300K",
+      "max_radial_measure_identity_error_A": 8.193307143855577e-13
+    },
+    {
+      "case": "PdH_Dhost_77K",
+      "max_radial_measure_identity_error_A": 1.1179390746463014e-12
+    },
+    {
+      "case": "PdT_Dhost_77K",
+      "max_radial_measure_identity_error_A": 5.510591982726964e-13
+    },
+    {
+      "case": "PdH_300K_hostH_reference",
+      "max_radial_measure_identity_error_A": 6.365741267444491e-13
+    },
+    {
+      "case": "PdD_300K_P16",
+      "max_radial_measure_identity_error_A": 5.868361352412421e-13
+    },
+    {
+      "case": "PdD_77K_P64",
+      "max_radial_measure_identity_error_A": 7.119166367530738e-13
+    }
+  ],
+  "coupled_consumer_estimators": [
+    {
+      "case": "PdD_300K",
+      "momentum_radial_normalization": 0.9999999999998729,
+      "conditional_position_normalization": 1.001742157871726,
+      "conditional_r2_A2": 0.08258567893877743,
+      "direct_bead_r2_A2": 0.08342124031978682,
+      "momentum_kinetic_eV": 0.051614635038227934,
+      "centroid_virial_kinetic_eV": 0.05161421042355995,
+      "kinetic_difference_eV": 4.246146679820484e-07,
+      "conservative_sum_kinetic_block_SE_eV": 0.00039966177948656887,
+      "scope": "different estimators on the same closed trajectory; source-site momentum versus homogeneous site-average virial where stated, not independent continuum validation"
+    },
+    {
+      "case": "PdD_77K",
+      "momentum_radial_normalization": 1.000000000000358,
+      "conditional_position_normalization": 1.0012131490616445,
+      "conditional_r2_A2": 0.06126847897067791,
+      "direct_bead_r2_A2": 0.06073648763704547,
+      "momentum_kinetic_eV": 0.036687157826125846,
+      "centroid_virial_kinetic_eV": 0.037086349491972426,
+      "kinetic_difference_eV": -0.0003991916658465794,
+      "conservative_sum_kinetic_block_SE_eV": 0.00022780758647706332,
+      "scope": "different estimators on the same closed trajectory; source-site momentum versus homogeneous site-average virial where stated, not independent continuum validation"
+    },
+    {
+      "case": "NiH_300K",
+      "momentum_radial_normalization": 0.9999999999996936,
+      "conditional_position_normalization": 0.9993968909960621,
+      "conditional_r2_A2": 0.06847839487291082,
+      "direct_bead_r2_A2": 0.06914389053744534,
+      "momentum_kinetic_eV": 0.07893776057204613,
+      "centroid_virial_kinetic_eV": 0.07862491400959622,
+      "kinetic_difference_eV": 0.0003128465624499116,
+      "conservative_sum_kinetic_block_SE_eV": 0.00044804120346823644,
+      "scope": "different estimators on the same closed trajectory; source-site momentum versus homogeneous site-average virial where stated, not independent continuum validation"
+    },
+    {
+      "case": "NiH_77K",
+      "momentum_radial_normalization": 0.9999999999996865,
+      "conditional_position_normalization": 1.0002022119027798,
+      "conditional_r2_A2": 0.062306995175034866,
+      "direct_bead_r2_A2": 0.06197423933070647,
+      "momentum_kinetic_eV": 0.07461031504918543,
+      "centroid_virial_kinetic_eV": 0.0748165620964409,
+      "kinetic_difference_eV": -0.00020624704725547005,
+      "conservative_sum_kinetic_block_SE_eV": 0.00023630575081745977,
+      "scope": "different estimators on the same closed trajectory; source-site momentum versus homogeneous site-average virial where stated, not independent continuum validation"
+    },
+    {
+      "case": "PdH_Dhost_300K",
+      "momentum_radial_normalization": 1.0000000000002591,
+      "conditional_position_normalization": 1.0005930176377151,
+      "conditional_r2_A2": 0.09283958106396636,
+      "direct_bead_r2_A2": 0.09327176536326498,
+      "momentum_kinetic_eV": 0.06426737102701317,
+      "centroid_virial_kinetic_eV": 0.06459348915858162,
+      "kinetic_difference_eV": -0.0003261181315684508,
+      "conservative_sum_kinetic_block_SE_eV": 0.0011494602358385123,
+      "scope": "different estimators on the same closed trajectory; source-site momentum versus homogeneous site-average virial where stated, not independent continuum validation"
+    },
+    {
+      "case": "PdT_Dhost_300K",
+      "momentum_radial_normalization": 1.000000000000095,
+      "conditional_position_normalization": 1.006776606879854,
+      "conditional_r2_A2": 0.07973279122857614,
+      "direct_bead_r2_A2": 0.07903655040856482,
+      "momentum_kinetic_eV": 0.047385696952097024,
+      "centroid_virial_kinetic_eV": 0.047589154386439146,
+      "kinetic_difference_eV": -0.00020345743434212193,
+      "conservative_sum_kinetic_block_SE_eV": 0.0005377325760906668,
+      "scope": "different estimators on the same closed trajectory; source-site momentum versus homogeneous site-average virial where stated, not independent continuum validation"
+    },
+    {
+      "case": "PdH_Dhost_77K",
+      "momentum_radial_normalization": 0.9999999999997418,
+      "conditional_position_normalization": 1.0005293671534587,
+      "conditional_r2_A2": 0.0796855352673177,
+      "direct_bead_r2_A2": 0.07926987833392662,
+      "momentum_kinetic_eV": 0.05529615426367568,
+      "centroid_virial_kinetic_eV": 0.05314515059268061,
+      "kinetic_difference_eV": 0.0021510036709950706,
+      "conservative_sum_kinetic_block_SE_eV": 0.0009968808914046212,
+      "scope": "different estimators on the same closed trajectory; source-site momentum versus homogeneous site-average virial where stated, not independent continuum validation"
+    },
+    {
+      "case": "PdT_Dhost_77K",
+      "momentum_radial_normalization": 0.9999999999992611,
+      "conditional_position_normalization": 1.0021226073548102,
+      "conditional_r2_A2": 0.05271007458714339,
+      "direct_bead_r2_A2": 0.052062107518229095,
+      "momentum_kinetic_eV": 0.029079482996264464,
+      "centroid_virial_kinetic_eV": 0.02859851886097135,
+      "kinetic_difference_eV": 0.0004809641352931139,
+      "conservative_sum_kinetic_block_SE_eV": 0.0007895085047365659,
+      "scope": "different estimators on the same closed trajectory; source-site momentum versus homogeneous site-average virial where stated, not independent continuum validation"
+    },
+    {
+      "case": "PdH_300K_hostH_reference",
+      "momentum_radial_normalization": 0.9999999999996848,
+      "conditional_position_normalization": 1.0002009945001298,
+      "conditional_r2_A2": 0.0929527293097227,
+      "direct_bead_r2_A2": 0.09452868541756498,
+      "momentum_kinetic_eV": 0.06429787125546686,
+      "centroid_virial_kinetic_eV": 0.06481703505805204,
+      "kinetic_difference_eV": -0.0005191638025851819,
+      "conservative_sum_kinetic_block_SE_eV": 0.001023755125922325,
+      "scope": "different estimators on the same closed trajectory; source-site momentum versus homogeneous site-average virial where stated, not independent continuum validation"
+    },
+    {
+      "case": "PdD_300K_P16",
+      "momentum_radial_normalization": 0.9999999999999468,
+      "conditional_position_normalization": 0.9989982943353564,
+      "conditional_r2_A2": 0.08139142775010312,
+      "direct_bead_r2_A2": 0.08051734833182134,
+      "momentum_kinetic_eV": 0.051495199262744346,
+      "centroid_virial_kinetic_eV": 0.05138322622223476,
+      "kinetic_difference_eV": 0.00011197304050958312,
+      "conservative_sum_kinetic_block_SE_eV": 0.00029916031482638895,
+      "scope": "different estimators on the same closed trajectory; source-site momentum versus homogeneous site-average virial where stated, not independent continuum validation"
+    },
+    {
+      "case": "PdD_77K_P64",
+      "momentum_radial_normalization": 0.9999999999995988,
+      "conditional_position_normalization": 1.000847718564892,
+      "conditional_r2_A2": 0.06459511220976628,
+      "direct_bead_r2_A2": 0.06448031785678242,
+      "momentum_kinetic_eV": 0.03713715897756609,
+      "centroid_virial_kinetic_eV": 0.037174074529140795,
+      "kinetic_difference_eV": -3.6915551574707994e-05,
+      "conservative_sum_kinetic_block_SE_eV": 0.0002545346802057005,
+      "scope": "different estimators on the same closed trajectory; source-site momentum versus homogeneous site-average virial where stated, not independent continuum validation"
+    }
+  ],
+  "angular_sensitivity": {
+    "position": {
+      "case": "NiH_77K_joint",
+      "angular_rule": "GL16 x phi32 versus GL32 x phi64 on unchanged density grid",
+      "relative_density_change_at_1e6": 0.008226729135565283,
+      "cutoff_coarse": 0.7388888888888889,
+      "cutoff_fine": 0.7388888888888889,
+      "normalization_change": -0.0001229204228112568
+    },
+    "momentum": {
+      "case": "NiH_77K_joint",
+      "angular_rule": "GL16 x phi32 versus GL32 x phi64 on unchanged density grid",
+      "relative_density_change_at_1e6": 0.001681615713866181,
+      "cutoff_coarse": 18.400000000000002,
+      "cutoff_fine": 18.400000000000002,
+      "normalization_change": -0.0002977906432555244
+    },
+    "coupled_PdD_300K": {
+      "case": "PdD_300K_joint",
+      "orders": [
+        7,
+        11
+      ],
+      "maximum_characteristic_difference": 1.8726940070924042e-05,
+      "cutoff_k_A_inverse": 22.0,
+      "density7_A3": 7.844046514614471e-10,
+      "density11_A3": 7.740825421557268e-10,
+      "density_delta_A3": 1.0322109305720338e-11,
+      "density7_floor_A3": 3.0733512035557183e-10,
+      "scope": "one actual coupled angular control, not an all-case angular error bound"
+    }
+  },
+  "g8_actual_reader": {
+    "actual_reader": "g8_why/collision/source/bound_forward.py:BoundSpectatorKernel.fold",
+    "material": "PdD",
+    "temperature_K": 300,
+    "energies_cm_keV": [
+      0.25
+    ],
+    "fold_p_per_C": [
+      9.80779485449845e-14
+    ],
+    "reported_current_power0": 2.2933669672280877e-19,
+    "joint_probability": 1.0,
+    "joint_excitation_support_eV": [
+      0,
+      0.7591889009087758
+    ],
+    "kinetic_node_support_eV": [
+      0,
+      2.594508871339184
+    ],
+    "angular_assumption": "isotropized conditional on each exact single-site excitation",
+    "removal_eV": 0.0,
+    "removal_scope": "separate assumed favorable zero, not a binding-energy measurement",
+    "spectator_envelope_comparison": [
+      {
+        "nonnegative_common_removal": false,
+        "reported_upper": {
+          "0": 4.401242978947617e-10,
+          "1": 2.7565679710250864e-09
+        },
+        "ratio_to_upper": {
+          "0": 5.210725647727033e-10
+        }
+      },
+      {
+        "nonnegative_common_removal": true,
+        "reported_upper": {
+          "0": 1.262560592254887e-09,
+          "1": 7.907616340964818e-09
+        },
+        "ratio_to_upper": {
+          "0": 1.8164411128437157e-10
+        }
+      }
+    ]
+  },
+  "g9_actual_table_import": {
+    "normalization": 1.0000000001279374,
+    "registered_site_A": 1.0,
+    "normal_in": [
+      0.5773502691896258,
+      0.5773502691896258,
+      0.5773502691896258
+    ],
+    "frame": "bulk crystal Cartesian x100 y010 z001; n_in=+[111]/sqrt(3); s=displacement dot n_in, positive into chosen metal half-space",
+    "mapping": "z_target=Z0+s, arrival shift=s/v at fixed ballistic speed; reverse sign for the opposite slab normal",
+    "consumer_scope": "table import and frozen-ballistic mapping only; pinned g9 generic lab z has no crystallographic surface or density CSV API",
+    "transverse_meaning": "marginal integrates whole plane perpendicular to n; on_axis_line_density separately retained, not interchangeable",
+    "surface_scope": "not a slab target or target offset; actual slab geometry remains a future input"
+  },
+  "finite_basis_cutoff_comparison": [
+    {
+      "case": "PdH_300K",
+      "quantity": "position",
+      "cutoff_relative_1e6": 0.8611111111111112,
+      "basis8_vs10_relative_density_delta_at_cutoff": 0.0002646283777262516,
+      "normalization": 1.0000971275852204
+    },
+    {
+      "case": "PdH_300K",
+      "quantity": "momentum",
+      "cutoff_relative_1e6": 17.8,
+      "basis8_vs10_relative_density_delta_at_cutoff": 0.0004507157541308593,
+      "normalization": 1.0003792999894667
+    },
+    {
+      "case": "PdH_77K",
+      "quantity": "position",
+      "cutoff_relative_1e6": 0.8333333333333334,
+      "basis8_vs10_relative_density_delta_at_cutoff": 0.0004938882901920397,
+      "normalization": 1.0001169722412728
+    },
+    {
+      "case": "PdH_77K",
+      "quantity": "momentum",
+      "cutoff_relative_1e6": 17.2,
+      "basis8_vs10_relative_density_delta_at_cutoff": 0.0013840421836419819,
+      "normalization": 1.0003822307455714
+    },
+    {
+      "case": "PdD_300K",
+      "quantity": "position",
+      "cutoff_relative_1e6": 0.7944444444444445,
+      "basis8_vs10_relative_density_delta_at_cutoff": 9.619814442448985e-05,
+      "normalization": 1.0000959143075432
+    },
+    {
+      "case": "PdD_300K",
+      "quantity": "momentum",
+      "cutoff_relative_1e6": 21.8,
+      "basis8_vs10_relative_density_delta_at_cutoff": 0.0067914505076878615,
+      "normalization": 1.0002889225509466
+    },
+    {
+      "case": "PdD_77K",
+      "quantity": "position",
+      "cutoff_relative_1e6": 0.7277777777777779,
+      "basis8_vs10_relative_density_delta_at_cutoff": 0.0002860406751322112,
+      "normalization": 1.0001572919358042
+    },
+    {
+      "case": "PdD_77K",
+      "quantity": "momentum",
+      "cutoff_relative_1e6": 19.200000000000003,
+      "basis8_vs10_relative_density_delta_at_cutoff": 0.0005821868252536219,
+      "normalization": 1.0003432113852084
+    },
+    {
+      "case": "PdT_300K",
+      "quantity": "position",
+      "cutoff_relative_1e6": 0.7722222222222223,
+      "basis8_vs10_relative_density_delta_at_cutoff": 0.0005548278717827429,
+      "normalization": 1.0000897837083655
+    },
+    {
+      "case": "PdT_300K",
+      "quantity": "momentum",
+      "cutoff_relative_1e6": 25.400000000000002,
+      "basis8_vs10_relative_density_delta_at_cutoff": 0.005208057597707875,
+      "normalization": 1.0002184292978564
+    },
+    {
+      "case": "PdT_77K",
+      "quantity": "position",
+      "cutoff_relative_1e6": 0.6722222222222223,
+      "basis8_vs10_relative_density_delta_at_cutoff": 0.00012888947237674948,
+      "normalization": 1.000186046467909
+    },
+    {
+      "case": "PdT_77K",
+      "quantity": "momentum",
+      "cutoff_relative_1e6": 20.6,
+      "basis8_vs10_relative_density_delta_at_cutoff": 0.0011234656806213272,
+      "normalization": 1.0003088018673048
+    },
+    {
+      "case": "NiH_300K",
+      "quantity": "position",
+      "cutoff_relative_1e6": 0.75,
+      "basis8_vs10_relative_density_delta_at_cutoff": 9.680779180721158e-05,
+      "normalization": 1.0001583655442872
+    },
+    {
+      "case": "NiH_300K",
+      "quantity": "momentum",
+      "cutoff_relative_1e6": 18.8,
+      "basis8_vs10_relative_density_delta_at_cutoff": 0.0008694919731385626,
+      "normalization": 1.0003382411632333
+    },
+    {
+      "case": "NiH_77K",
+      "quantity": "position",
+      "cutoff_relative_1e6": 0.7388888888888889,
+      "basis8_vs10_relative_density_delta_at_cutoff": 0.00012388445137629067,
+      "normalization": 1.0001681195633418
+    },
+    {
+      "case": "NiH_77K",
+      "quantity": "momentum",
+      "cutoff_relative_1e6": 18.400000000000002,
+      "basis8_vs10_relative_density_delta_at_cutoff": 0.001252022664253309,
+      "normalization": 1.0003434220659826
+    }
+  ]
+}

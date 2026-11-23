@@ -1,0 +1,234 @@
+[
+  {
+    "case": "PdD_300K",
+    "temperature_K": 300,
+    "mass_amu": 2.0135532125568343,
+    "analytic_SCHA_stiffness_eV_A2": 1.3506551366727269,
+    "SSCHA_gradient_stiffness_residual_eV_A2": 0.0016843223360320306,
+    "SSCHA_gradient_error_norm_eV_A2": 0.15150614121695305,
+    "force_rounding_1e_minus4_eV_A_gradient_change_eV_A2": 4.0797000581509446e-05,
+    "free_energy_hessian_relative_eV_A2": [
+      [
+        1.3506551366727269,
+        -6.407026214886332e-32,
+        1.8785033597558016e-31
+      ],
+      [
+        -6.555417932107658e-32,
+        1.3506551366727269,
+        -1.0287714372201144e-31
+      ],
+      [
+        1.8389237139394098e-31,
+        -9.438174636789727e-32,
+        1.3506551366727269
+      ]
+    ],
+    "hessian_convention": "relative coordinate stiffness = dimer nonzero eigenvalue/2 = four-block contraction/4",
+    "ensemble_configurations": 2048,
+    "scope": "installed SSCHA isolated-site reference; coupled lattice Gaussian stationarity separately"
+  },
+  {
+    "case": "PdD_77K",
+    "temperature_K": 77,
+    "mass_amu": 2.0135532125568343,
+    "analytic_SCHA_stiffness_eV_A2": 1.2106590210849977,
+    "SSCHA_gradient_stiffness_residual_eV_A2": 0.0015406306034751766,
+    "SSCHA_gradient_error_norm_eV_A2": 0.12355565259985424,
+    "force_rounding_1e_minus4_eV_A_gradient_change_eV_A2": 3.2508400418219254e-05,
+    "free_energy_hessian_relative_eV_A2": [
+      [
+        1.2106590210849977,
+        -9.259777175135587e-32,
+        1.631509890485547e-31
+      ],
+      [
+        -9.829170878484071e-32,
+        1.2106590210849977,
+        2.9384454491484797e-31
+      ],
+      [
+        1.8228997915842712e-31,
+        2.900338719121278e-31,
+        1.2106590210849977
+      ]
+    ],
+    "hessian_convention": "relative coordinate stiffness = dimer nonzero eigenvalue/2 = four-block contraction/4",
+    "ensemble_configurations": 2048,
+    "scope": "installed SSCHA isolated-site reference; coupled lattice Gaussian stationarity separately"
+  },
+  {
+    "case": "NiH_300K",
+    "temperature_K": 300,
+    "mass_amu": 1.0072764665741099,
+    "analytic_SCHA_stiffness_eV_A2": 2.4733909319213714,
+    "SSCHA_gradient_stiffness_residual_eV_A2": 0.0017929633816385988,
+    "SSCHA_gradient_error_norm_eV_A2": 0.18506243150745127,
+    "force_rounding_1e_minus4_eV_A_gradient_change_eV_A2": 3.6010696602336e-05,
+    "free_energy_hessian_relative_eV_A2": [
+      [
+        2.4733909319213714,
+        1.6206944184164753e-31,
+        2.2519097633595264e-32
+      ],
+      [
+        1.9598539538732117e-31,
+        2.4733909319213714,
+        2.62999431230364e-31
+      ],
+      [
+        1.5877330458080216e-34,
+        2.796653966424216e-31,
+        2.4733909319213714
+      ]
+    ],
+    "hessian_convention": "relative coordinate stiffness = dimer nonzero eigenvalue/2 = four-block contraction/4",
+    "ensemble_configurations": 2048,
+    "scope": "installed SSCHA isolated-site reference; coupled lattice Gaussian stationarity separately"
+  },
+  {
+    "case": "NiH_77K",
+    "temperature_K": 77,
+    "mass_amu": 1.0072764665741099,
+    "analytic_SCHA_stiffness_eV_A2": 2.447590941319007,
+    "SSCHA_gradient_stiffness_residual_eV_A2": 0.0017903363436630078,
+    "SSCHA_gradient_error_norm_eV_A2": 0.17877279417368813,
+    "force_rounding_1e_minus4_eV_A_gradient_change_eV_A2": 2.9995479976761105e-05,
+    "free_energy_hessian_relative_eV_A2": [
+      [
+        2.447590941319007,
+        -1.000863055701715e-32,
+        -1.841583668706301e-31
+      ],
+      [
+        -8.298248716817089e-33,
+        2.447590941319007,
+        2.552879951087484e-31
+      ],
+      [
+        -1.8588287999626744e-31,
+        2.487741552978863e-31,
+        2.447590941319007
+      ]
+    ],
+    "hessian_convention": "relative coordinate stiffness = dimer nonzero eigenvalue/2 = four-block contraction/4",
+    "ensemble_configurations": 2048,
+    "scope": "installed SSCHA isolated-site reference; coupled lattice Gaussian stationarity separately"
+  },
+  {
+    "case": "PdH_Dhost_300K",
+    "temperature_K": 300,
+    "mass_amu": 1.0072764665741099,
+    "analytic_SCHA_stiffness_eV_A2": 1.4676798835848315,
+    "SSCHA_gradient_stiffness_residual_eV_A2": 0.0020511813413217326,
+    "SSCHA_gradient_error_norm_eV_A2": 0.17480798089937633,
+    "force_rounding_1e_minus4_eV_A_gradient_change_eV_A2": 1.4064722385358423e-05,
+    "free_energy_hessian_relative_eV_A2": [
+      [
+        1.4676798835848315,
+        -2.1908939319495108e-31,
+        -5.289414536084366e-32
+      ],
+      [
+        -2.0524946778891046e-31,
+        1.4676798835848315,
+        -4.696518274641783e-31
+      ],
+      [
+        -3.8938012471382756e-32,
+        -4.285956498929053e-31,
+        1.4676798835848315
+      ]
+    ],
+    "hessian_convention": "relative coordinate stiffness = dimer nonzero eigenvalue/2 = four-block contraction/4",
+    "ensemble_configurations": 2048,
+    "scope": "installed SSCHA isolated-site reference; coupled lattice Gaussian stationarity separately"
+  },
+  {
+    "case": "PdT_Dhost_300K",
+    "temperature_K": 300,
+    "mass_amu": 3.015500715955296,
+    "analytic_SCHA_stiffness_eV_A2": 1.3092829983276297,
+    "SSCHA_gradient_stiffness_residual_eV_A2": 0.0015483334339259794,
+    "SSCHA_gradient_error_norm_eV_A2": 0.14326975720230198,
+    "force_rounding_1e_minus4_eV_A_gradient_change_eV_A2": 3.2255752213575196e-05,
+    "free_energy_hessian_relative_eV_A2": [
+      [
+        1.3092829983276297,
+        -1.9554516402653166e-31,
+        1.2393780233404174e-31
+      ],
+      [
+        -1.6915145846951947e-31,
+        1.3092829983276297,
+        7.320761809003892e-32
+      ],
+      [
+        8.676705803339909e-32,
+        3.8378530322898626e-32,
+        1.3092829983276297
+      ]
+    ],
+    "hessian_convention": "relative coordinate stiffness = dimer nonzero eigenvalue/2 = four-block contraction/4",
+    "ensemble_configurations": 2048,
+    "scope": "installed SSCHA isolated-site reference; coupled lattice Gaussian stationarity separately"
+  },
+  {
+    "case": "PdH_Dhost_77K",
+    "temperature_K": 77,
+    "mass_amu": 1.0072764665741099,
+    "analytic_SCHA_stiffness_eV_A2": 1.4038663610765727,
+    "SSCHA_gradient_stiffness_residual_eV_A2": 0.0020239153065639455,
+    "SSCHA_gradient_error_norm_eV_A2": 0.16205782748613665,
+    "force_rounding_1e_minus4_eV_A_gradient_change_eV_A2": 3.662903492603669e-05,
+    "free_energy_hessian_relative_eV_A2": [
+      [
+        1.4038663610765727,
+        -1.928738406623837e-31,
+        -8.003426333601542e-32
+      ],
+      [
+        -1.8899085986617478e-31,
+        1.4038663610765727,
+        1.1313770277921882e-31
+      ],
+      [
+        -8.591492939687204e-32,
+        1.0519950749376316e-31,
+        1.4038663610765727
+      ]
+    ],
+    "hessian_convention": "relative coordinate stiffness = dimer nonzero eigenvalue/2 = four-block contraction/4",
+    "ensemble_configurations": 2048,
+    "scope": "installed SSCHA isolated-site reference; coupled lattice Gaussian stationarity separately"
+  },
+  {
+    "case": "PdT_Dhost_77K",
+    "temperature_K": 77,
+    "mass_amu": 3.015500715955296,
+    "analytic_SCHA_stiffness_eV_A2": 1.1197016165532208,
+    "SSCHA_gradient_stiffness_residual_eV_A2": 0.0013083090977116304,
+    "SSCHA_gradient_error_norm_eV_A2": 0.10543096148145943,
+    "force_rounding_1e_minus4_eV_A_gradient_change_eV_A2": 3.0202315657068487e-05,
+    "free_energy_hessian_relative_eV_A2": [
+      [
+        1.1197016165532208,
+        3.3835033814481927e-31,
+        1.9514036699256167e-32
+      ],
+      [
+        3.3372458574327175e-31,
+        1.1197016165532208,
+        2.0442351564235785e-31
+      ],
+      [
+        2.235341253761578e-32,
+        1.9954221239249135e-31,
+        1.1197016165532208
+      ]
+    ],
+    "hessian_convention": "relative coordinate stiffness = dimer nonzero eigenvalue/2 = four-block contraction/4",
+    "ensemble_configurations": 2048,
+    "scope": "installed SSCHA isolated-site reference; coupled lattice Gaussian stationarity separately"
+  }
+]

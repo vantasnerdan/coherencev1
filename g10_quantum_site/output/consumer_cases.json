@@ -1,0 +1,62 @@
+{
+  "g8": {
+    "actual_reader": "g8_why/collision/source/bound_forward.py:BoundSpectatorKernel.fold",
+    "material": "PdD",
+    "temperature_K": 300,
+    "energies_cm_keV": [
+      0.25
+    ],
+    "fold_p_per_C": [
+      9.80779485449845e-14
+    ],
+    "reported_current_power0": 2.2933669672280877e-19,
+    "joint_probability": 1.0,
+    "joint_excitation_support_eV": [
+      0,
+      0.7591889009087758
+    ],
+    "kinetic_node_support_eV": [
+      0,
+      2.594508871339184
+    ],
+    "angular_assumption": "isotropized conditional on each exact single-site excitation",
+    "removal_eV": 0.0,
+    "removal_scope": "separate assumed favorable zero, not a binding-energy measurement",
+    "spectator_envelope_comparison": [
+      {
+        "nonnegative_common_removal": false,
+        "reported_upper": {
+          "0": 4.401242978947617e-10,
+          "1": 2.7565679710250864e-09
+        },
+        "ratio_to_upper": {
+          "0": 5.210725647727033e-10
+        }
+      },
+      {
+        "nonnegative_common_removal": true,
+        "reported_upper": {
+          "0": 1.262560592254887e-09,
+          "1": 7.907616340964818e-09
+        },
+        "ratio_to_upper": {
+          "0": 1.8164411128437157e-10
+        }
+      }
+    ]
+  },
+  "g9": {
+    "normalization": 1.0000000001279374,
+    "registered_site_A": 1.0,
+    "normal_in": [
+      0.5773502691896258,
+      0.5773502691896258,
+      0.5773502691896258
+    ],
+    "frame": "bulk crystal Cartesian x100 y010 z001; n_in=+[111]/sqrt(3); s=displacement dot n_in, positive into chosen metal half-space",
+    "mapping": "z_target=Z0+s, arrival shift=s/v at fixed ballistic speed; reverse sign for the opposite slab normal",
+    "consumer_scope": "table import and frozen-ballistic mapping only; pinned g9 generic lab z has no crystallographic surface or density CSV API",
+    "transverse_meaning": "marginal integrates whole plane perpendicular to n; on_axis_line_density separately retained, not interchangeable",
+    "surface_scope": "not a slab target or target offset; actual slab geometry remains a future input"
+  }
+}

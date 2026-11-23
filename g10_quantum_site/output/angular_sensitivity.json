@@ -1,0 +1,29 @@
+{
+  "position": {
+    "case": "NiH_77K_joint",
+    "angular_rule": "GL16 x phi32 versus GL32 x phi64 on unchanged density grid",
+    "relative_density_change_at_1e6": 0.008226729135565283,
+    "cutoff_coarse": 0.7388888888888889,
+    "cutoff_fine": 0.7388888888888889,
+    "normalization_change": -0.0001229204228112568
+  },
+  "momentum": {
+    "case": "NiH_77K_joint",
+    "angular_rule": "GL16 x phi32 versus GL32 x phi64 on unchanged density grid",
+    "relative_density_change_at_1e6": 0.001681615713866181,
+    "cutoff_coarse": 18.400000000000002,
+    "cutoff_fine": 18.400000000000002,
+    "normalization_change": -0.0002977906432555244
+  },
+  "coupled_PdD_300K": {
+    "case": "PdD_300K_joint",
+    "orders": [7, 11],
+    "maximum_characteristic_difference": 1.8726940070924042e-05,
+    "cutoff_k_A_inverse": 22.0,
+    "density7_A3": 7.844046514614471e-10,
+    "density11_A3": 7.740825421557268e-10,
+    "density_delta_A3": 1.0322109305720338e-11,
+    "density7_floor_A3": 3.0733512035557183e-10,
+    "scope": "one actual coupled angular control, not an all-case angular error bound"
+  }
+}
