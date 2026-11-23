@@ -107,7 +107,7 @@ Pass 6 replaces seven lumped inputs with resolved quantities: the fitted screeni
 
 | Directory | What it is |
 |---|---|
-| `g8_why/` | The plain-foil D-D excess with the deuterium profile fixed, so that density cannot absorb it. The excess over the 40 eV model is 3-13 times at 2.5 keV and 1e16-1e17 at 0.25 keV, and the measured curve is nearly flat at the bottom. The reaction branch is done: a threshold resonance gives at most 6 times at 0.25 keV and cannot make the curve flat. Collision, driven-target and beam branches are open. |
+| `g8_why/` | The plain-foil D-D excess with the deuterium profile fixed, so that density cannot absorb it. The excess over the 40 eV model is 3-13 times at 2.5 keV and 1e16-1e17 at 0.25 keV, and the measured curve is nearly flat at the bottom. Three branches are done. Reaction: a threshold resonance gives at most 6 times at 0.25 keV and cannot make the curve flat. Driven target: beam heating and excitation give at most 1.25 times. Beam: composition gives at most 1.18 times; 0.1 to 5 percent of 13 keV neutral atoms per ion would reach the size of the excess, but the documented gun has no source for them at low settings and one fixed share does not follow the curves. The collision branch is open. |
 
 ## Reproducibility
 

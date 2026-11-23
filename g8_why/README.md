@@ -36,10 +36,22 @@ Heating and beam-driven excitation of the target do not explain the excess. Obse
 
 `method.md` is Marvin's note on the shared baseline and on what the published numbers mean. It records the measured low-energy signal as detected counts per coulomb of cup current: between 0.25 and 2.5 keV these stay within a factor of 2 to 8 of each other in every foil (Pd 1.1, 0.4, 0.8, 1.7; TiD 2.9, 1.8, 2.0, 15.2).
 
-## Branches to come
+## Branch: what the beam delivers (`beam.md`, Marvin)
 
-`collision` (giuliano) and `beam` (Marvin).
+The beam is not only D+ at the set energy. Three ways it could differ were sized.
+
+- Composition. The reported mix is about 85 percent D+ and 15 percent D2+ by current. A molecular ion splits its energy between its deuterons, so more molecules lower the yield. Pure D+ gives at most 1.18 times.
+- Two deuterons from one D2+ arriving together. They land within a femtosecond and an angstrom of each other, but D2+ supplies only a few parts in 1e9 of the 0.25 keV yield, and the first deuteron's wake changes the second's by parts in 1e10.
+- Fast neutrals. Deuterons that were neutralised while still at high energy would reach the foil above the set energy. A share of 3e-4 neutral atoms per ion at 13 keV multiplies the proton yield by 1e15 to 7e16 at 0.25 keV, 7e8 to 9e9 at 0.5 keV and 1e4 to 5e4 at 1 keV. Matching the measured 0.25 keV points takes 0.1 to 5 percent of 13 keV neutrals per ion (Pd 1.2, PdD 5.1, Ti 0.09, TiD 0.22 percent; about six times less under the other current reading). At 5 keV it takes 1.7 to 33 neutrals per ion.
+
+Fast neutrals are the only mechanism in the four branches that reaches the size of the excess. Two things stand against them as described. The gun as documented accelerates directly to the set voltage up to 5 kV, with no stage where ions are faster and then slowed, so no source of 13 keV atoms at the 0.5 kV setting is known. And one fixed neutral share at 13 keV does not follow the four curves across energy (chi-squared 96 to 122 on 16 points). Chamber gas over the 4 cm flight could neutralise 0.3 to 3.8 percent of the beam, but those atoms keep the set energy and add nothing.
+
+Observable: the energy spectrum of ions and neutrals at the foil plane against gun voltage, with the actual grid potentials. A constant upstream neutral rate would also give a yield per coulomb that falls as the current rises.
+
+## Branch to come
+
+`collision` (giuliano).
 
 ## Lead's note
 
-`reaction.*`, `common.py` and `baseline.csv` are the delivered archive (SHA-256 c3653ee63b327c24eae7ec456251dc781ee8a28bb2264e659adf0cf3f0219962), unchanged. `driven_target.*`, `readout_floats.*` and `method.md` (delivered as its README) come from the second archive (SHA-256 ae4dd59696931dd33a0782fc2d97287599afa8777d611168a6edca188d187928); the lead read the page and checked its tables against the delivered CSVs but did not rerun it. Run `python -m g8_why.reaction` from the repository root with `g8_why` on the path (NumPy 2). The lead's rerun reproduced the tables to rounding. The excess table uses the yields as plotted; under the other reading of the current normalisation (`g7_gap/`) the 0.25 keV values are about six times smaller, which changes nothing above.
+`reaction.*`, `common.py` and `baseline.csv` are the delivered archive (SHA-256 c3653ee63b327c24eae7ec456251dc781ee8a28bb2264e659adf0cf3f0219962), unchanged. `driven_target.*`, `readout_floats.*` and `method.md` (delivered as its README) come from the second archive (SHA-256 ae4dd59696931dd33a0782fc2d97287599afa8777d611168a6edca188d187928); the lead read the page and checked its tables against the delivered CSVs but did not rerun it. `beam.*` is the third archive (SHA-256 5b6460beadbc919ab3c7799b39f700a2b540d586009000840485c692663f88c5), unchanged; the lead's rerun of `python g8_why/beam.py` reproduced the tables to 4 parts in 1e15 and the fitted tail shares to 1 part in 1e8. `method.md` is now the README of that third archive. Run `python -m g8_why.reaction` from the repository root with `g8_why` on the path (NumPy 2). The lead's rerun reproduced the tables to rounding. The excess table uses the yields as plotted; under the other reading of the current normalisation (`g7_gap/`) the 0.25 keV values are about six times smaller, which changes nothing above.

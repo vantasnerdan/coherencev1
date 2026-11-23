@@ -60,6 +60,19 @@ The central values neither establish an energy-independent floor per C
 nor a common floor across all four foils; uncertainties/run joins are unresolved.
 The conditional model anchor and empirical detected rate must not be equated.
 
+### Beam ratio parameters
+
+`beam_neutral_requirements.csv` uses `neutral_rate_convention=0` for a neutral
+D/true charged-unit ratio at every setting. With convention1, its solved ratio
+columns and `beam_tail_fits.json.fitted_neutral_D_per_charge` instead name the
+ratio **at I_INT**; local neutral D/charge is that parameter times
+`I_INT/Itrue(E)`. They are not fractions of the total beam and can exceed1
+without a mathematical contradiction; source/current/power constraints are
+separate. Case identifiers containing `f3e4` in `beam_floats.csv` mean the
+explicit test parameter **3e-4**, as fixed by `ftest` in `beam.py`, not3e4.
+The13-keV test tail is a5%-FWHM Gaussian, not a measured Davis neutral spectrum.
+
+
 
 ## Reproduction
 
@@ -70,6 +83,7 @@ export PYTHONDONTWRITEBYTECODE=1 OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NU
 python g8_why/reaction.py
 python g8_why/readout_floats.py
 python g8_why/driven_target.py
+python g8_why/beam.py
 ```
 
 Each branch script saves its own compact floats and a targeted proof of the
@@ -78,3 +92,22 @@ enclosure, a transport rerun or a new first-principles calculation. The scripts
 have no Native/DFT or external-data dependencies. Source hashes accompany the
 branch evidence. This directory stops at the requested mechanisms; it does not
 start a new campaign.
+
+## Delivery order and evidence
+
+1. `reaction.md`: `reaction.py`, `reaction_source_notes.md`, `baseline.csv`,
+   `reaction_floats.csv`, `reaction_retained.csv`, `reaction_shape_bound.csv`,
+   `reaction_results.json`, `reaction_proof.json`, and unchanged `common.py`.
+2. `driven_target.md`: `driven_target.py`, `driven_target_floats.csv`,
+   `driven_target_budget.csv`, `driven_target_proof.json`; the shared absolute
+   reporting pair is `readout_floats.py` / `readout_floats.csv`.
+3. `beam.md`: `beam.py`, `beam_floats.csv`, `beam_neutral_requirements.csv`,
+   `beam_wake.csv`, `beam_timing.csv`, `beam_optical_depth.csv`,
+   `beam_tail_fits.json`, `beam_proof.json`.
+
+Each page was completed and sent for recording before starting the next branch.
+The original common helper and baseline remain unchanged after reaction.
+All three targeted numerical consumers exited0. No broad suite was run.
+The retained threshold law and ordinary driven heating fail the requested shape;
+a genuinely energetic beam tail remains conditional on an unmeasured energy path.
+These outcomes end this assignment, not initiate another mechanism campaign.
