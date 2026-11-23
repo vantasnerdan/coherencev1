@@ -1,0 +1,806 @@
+{
+  "cumulative_conservative_charge_seconds": 22.0,
+  "derivation": [
+    "Let L,K be nonnegative lab kinetic energies in keV, mu uniform on [-1,1], 0<=exc<=0.100 and r>=0 a common state-dependent removal. The same normalized spectral measure is used at every nominal energy, species and transport depth.",
+    "E=(L-K)/2-sqrt(L*K)*mu+exc-r = L+exc-r-(sqrt(K)-sqrt(L))^2/2-sqrt(L*K)*(1+mu) <= L+exc. Rates are zero for E<=0.",
+    "For E>0, F(E,L)=sigma_Eq7(E,0.040)*sqrt(2E/L)=sqrt(2/L)*S_BH(E)/sqrt(E+0.040)*exp(-BG/sqrt(E+0.040)). It has finite positive right limit at zero. The zero-forbidden-side extension is nondecreasing. dlogF/dE=S'/S+(BG-sqrt(E+U))/(2*(E+U)^(3/2))>0: exact rational BH coefficient bounds give S,Sprime>0 on [0,16], and BG^2>16+U.",
+    "At mu=-1, E>0 implies sqrt(K)<sqrt(L)+sqrt(2L+2exc); hence any proton-active state has K<Kcap=(sqrt(Lmax)+sqrt(2Lmax+2excmax))^2. For arbitrary r>=0 it also has r<Lmax+excmax.",
+    "Numerator for any proton-active state is <=A=sum_i w_i F(L_i+excmax,L_i). On the reference angular half mu in [-1,0], E>=(Lref-Kcap)/2-rmax, with rmax=0 or Lmax+excmax. Keep only positive reference nodes; B=sum_j wref_j F((Lref_j-Kcap)/2-rmax,Lref_j)/2>0.",
+    "If q is the measure of proton-active states, N<=q*A and D>=q*B; the remaining states add zero N and nonnegative D. Thus N<=(A/B)*D for every normalized measure. With D>0 this bounds N/D independently of n(K). If D=0, N=0 and the reported ratio is undefined, not a finite prediction. Actual common.readout(A,B) supplies the unchanged stitch, focusing and both current powers.",
+    "Premises: the finite pinned transport quadrature/profile, positive weights, isotropy conditional on spectral state, common energy/depth-independent spectral measure, 0<=exc<=100eV, common nonnegative angle/beam-independent removal (possibly K-dependent recoil), equal masses/infinite spectator, and unchanged on-shell 40eV DD amplitude. This is not an exact many-body/off-shell nuclear theorem or a continuum transport enclosure. No site/density/profile/S-factor parameters are fitted."
+  ],
+  "evidence_scope": "Exact model inequalities with audited fixed-source numerical readout",
+  "findings": [
+    {
+      "disposition": "established as stated",
+      "evidence": "Exact symbolic residuals and rational coefficient inequalities; symbolic receipt.",
+      "id": "energy-flux-monotonicity"
+    },
+    {
+      "disposition": "established as stated",
+      "evidence": "Analytic measure inequality plus saved fixed-quadrature sums and actual common.readout.",
+      "id": "distribution-free-envelope"
+    },
+    {
+      "disposition": "established as stated",
+      "evidence": "Proton-active r<Lmax+excmax and reference angular-half bound; same removal across beams.",
+      "id": "nonnegative-removal-extension"
+    },
+    {
+      "disposition": "established as stated",
+      "evidence": {
+        "CM_keV": [
+          0.25,
+          0.5
+        ],
+        "angular_order": 64,
+        "identity_failure": "Efree=(L+K)/2-sqrt(L*K)*mu can exceed L+excmax; K is supplied initial energy",
+        "model": "free on-shell isotropic shell; not bound spectator",
+        "reported": {
+          "0": [
+            0.02331803870220758,
+            0.053256173770587195
+          ],
+          "1": [
+            0.1460445581875106,
+            0.18639660819705517
+          ]
+        },
+        "reported_over_broader_bound": {
+          "0": [
+            18468847.234145343,
+            9.388519651815216
+          ],
+          "1": [
+            18468847.234145343,
+            9.388519651815214
+          ]
+        },
+        "target_K_keV": 10.0
+      },
+      "id": "hot-target-sensitivity"
+    },
+    {
+      "disposition": "scope limitation retained",
+      "evidence": "All mass at sufficiently large K has N=D=0. Universal statement is N<=C*D; reported ratio requires D>0. No zero denominator is replaced.",
+      "id": "zero-reference-degeneracy"
+    },
+    {
+      "disposition": "computed",
+      "evidence": "Zero-removal PdD upper bounds at both energies are below observation for both current powers. Broader arbitrary nonnegative-removal envelope still excludes the0.25keV point by millions, but does not exclude the0.5keV observation for current_power1 (upper0.01985 versus0.01668); current_power0 gap is only1.87 sigma_lnR. These standardized log gaps are diagnostics, not discovery significances.",
+      "id": "empirical-comparison"
+    },
+    {
+      "disposition": "limitations retained",
+      "evidence": "Floating-point fixed-quadrature sums, not outward-rounded continuum transport enclosures; no new transport discretization or experimental uncertainty reduction. Excitations above100eV and dynamical/energy-dependent off-shell physics are excluded.",
+      "id": "accuracy-and-physics"
+    },
+    {
+      "disposition": "corrected",
+      "evidence": "First actual calculation used a5keV free shell and already broke both reported bounds, but its comment incorrectly said5keV exceeded both caps (the0.5keV cap is6.520keV). Current10keV shell exceeds both. Original complete findings/results are retained unchanged.",
+      "id": "sensitivity-pilot-scope-correction",
+      "original": {
+        "bytes": 25005,
+        "path": "<PRIVATE_PATH>",
+        "sha256": "d72cfbc04a6dd4a92b9c62d293f014204aacaa3b6e8a1a1062a949d852ddce32"
+      },
+      "original_findings": [
+        {
+          "disposition": "established as stated",
+          "evidence": "Exact symbolic residuals and rational coefficient inequalities; symbolic receipt.",
+          "id": "energy-flux-monotonicity"
+        },
+        {
+          "disposition": "established as stated",
+          "evidence": "Analytic measure inequality plus saved fixed-quadrature sums and actual common.readout.",
+          "id": "distribution-free-envelope"
+        },
+        {
+          "disposition": "established as stated",
+          "evidence": "Proton-active r<Lmax+excmax and reference angular-half bound; same removal across beams.",
+          "id": "nonnegative-removal-extension"
+        },
+        {
+          "disposition": "established as stated",
+          "evidence": {
+            "CM_keV": [
+              0.25,
+              0.5
+            ],
+            "angular_order": 64,
+            "identity_failure": "Efree=(L+K)/2-sqrt(L*K)*mu can exceed L+excmax; K is supplied initial energy",
+            "model": "free on-shell isotropic shell; not bound spectator",
+            "reported": {
+              "0": [
+                0.00195552287163312,
+                0.007151120245359873
+              ],
+              "1": [
+                0.012247748511807438,
+                0.025028920858759556
+              ]
+            },
+            "reported_over_broader_bound": {
+              "0": [
+                1548854.6717117378,
+                1.260669481162288
+              ],
+              "1": [
+                1548854.671711738,
+                1.260669481162288
+              ]
+            },
+            "target_K_keV": 5.0
+          },
+          "id": "hot-target-sensitivity"
+        },
+        {
+          "disposition": "scope limitation retained",
+          "evidence": "All mass at sufficiently large K has N=D=0. Universal statement is N<=C*D; reported ratio requires D>0. No zero denominator is replaced.",
+          "id": "zero-reference-degeneracy"
+        },
+        {
+          "disposition": "computed",
+          "evidence": "Source observed R, sigma_lnR and linear half-errors retained for all four materials.",
+          "id": "empirical-comparison"
+        },
+        {
+          "disposition": "limitations retained",
+          "evidence": "Floating-point fixed-quadrature sums, not outward-rounded continuum transport enclosures; no new transport discretization or experimental uncertainty reduction. Excitations above100eV and dynamical/energy-dependent off-shell physics are excluded.",
+          "id": "accuracy-and-physics"
+        }
+      ]
+    }
+  ],
+  "outputs": [
+    {
+      "bytes": 4391362,
+      "path": "<PRIVATE_PATH>",
+      "sha256": "a19dc6622c5260f68bc5f13c648f74235f9d8dc99b65dd8a7484063c5fde0695"
+    }
+  ],
+  "prior_numerical_cpu_seconds": 10.212269,
+  "results": [
+    {
+      "CM_keV": 0.25,
+      "Kcap_keV": 3.4263153346069593,
+      "ln_observed_over_upper_over_sigma": {
+        "0": 60.11496310511319,
+        "1": 53.69998228712337
+      },
+      "local_Lmax_keV": 0.5303313446351368,
+      "material": "Pd",
+      "neutron_reference_lower_per_C": 33971.000950620604,
+      "nonnegative_common_removal": false,
+      "numerator_upper_per_C": 1.1115339441133732e-05,
+      "observed": 0.01656,
+      "observed_linear_half_error": 0.00474,
+      "observed_over_upper": {
+        "0": 29293594.960579075,
+        "1": 4677128.607151281
+      },
+      "positive_reference_nodes": 6852,
+      "proton_active_removal_cap_keV": 0.0,
+      "reference_nodes": 8782,
+      "reported_upper": {
+        "0": 5.653112915053646e-10,
+        "1": 3.5406338783757046e-09
+      },
+      "sigma_lnR": 0.286
+    },
+    {
+      "CM_keV": 0.25,
+      "Kcap_keV": 3.4263153346069593,
+      "ln_observed_over_upper_over_sigma": {
+        "0": 56.5706531068711,
+        "1": 50.15567228888127
+      },
+      "local_Lmax_keV": 0.5303313446351368,
+      "material": "Pd",
+      "neutron_reference_lower_per_C": 12327.525257203351,
+      "nonnegative_common_removal": true,
+      "numerator_upper_per_C": 1.1115339441133732e-05,
+      "observed": 0.01656,
+      "observed_linear_half_error": 0.00474,
+      "observed_over_upper": {
+        "0": 10630170.487932775,
+        "1": 1697254.1115186783
+      },
+      "positive_reference_nodes": 5976,
+      "proton_active_removal_cap_keV": 0.6303313446351367,
+      "reference_nodes": 8782,
+      "reported_upper": {
+        "0": 1.5578301419341003e-09,
+        "1": 9.756936152113575e-09
+      },
+      "sigma_lnR": 0.286
+    },
+    {
+      "CM_keV": 0.5,
+      "Kcap_keV": 6.520231664904044,
+      "ln_observed_over_upper_over_sigma": {
+        "0": 7.792590149789746,
+        "1": 4.9582847912029395
+      },
+      "local_Lmax_keV": 1.0606626892702735,
+      "material": "Pd",
+      "neutron_reference_lower_per_C": 1775.1878021889866,
+      "nonnegative_common_removal": false,
+      "numerator_upper_per_C": 0.11809248388951231,
+      "observed": 0.0036,
+      "observed_linear_half_error": 0.00159,
+      "observed_over_upper": {
+        "0": 31.32212905200587,
+        "1": 8.949179729144536
+      },
+      "positive_reference_nodes": 3688,
+      "proton_active_removal_cap_keV": 0.0,
+      "reference_nodes": 8782,
+      "reported_upper": {
+        "0": 0.00011493471577307915,
+        "1": 0.00040227150520577695
+      },
+      "sigma_lnR": 0.442
+    },
+    {
+      "CM_keV": 0.5,
+      "Kcap_keV": 6.520231664904044,
+      "ln_observed_over_upper_over_sigma": {
+        "0": -1.1825210567055398,
+        "1": -4.0168264152923445
+      },
+      "local_Lmax_keV": 1.0606626892702735,
+      "material": "Pd",
+      "neutron_reference_lower_per_C": 33.60457932415177,
+      "nonnegative_common_removal": true,
+      "numerator_upper_per_C": 0.11809248388951231,
+      "observed": 0.0036,
+      "observed_linear_half_error": 0.00159,
+      "observed_over_upper": {
+        "0": 0.5929327415564304,
+        "1": 0.1694093547304087
+      },
+      "positive_reference_nodes": 2893,
+      "proton_active_removal_cap_keV": 1.1606626892702736,
+      "reference_nodes": 8782,
+      "reported_upper": {
+        "0": 0.0060715149420659574,
+        "1": 0.02125030229723085
+      },
+      "sigma_lnR": 0.442
+    },
+    {
+      "CM_keV": 0.25,
+      "Kcap_keV": 3.4263153346069593,
+      "ln_observed_over_upper_over_sigma": {
+        "0": 37.874648882031195,
+        "1": 34.13039477193918
+      },
+      "local_Lmax_keV": 0.5303313446351368,
+      "material": "PdD",
+      "neutron_reference_lower_per_C": 43995.27865739869,
+      "nonnegative_common_removal": false,
+      "numerator_upper_per_C": 1.1209531461657135e-05,
+      "observed": 0.05052,
+      "observed_linear_half_error": 0.0248,
+      "observed_over_upper": {
+        "0": 114785755.39149138,
+        "1": 18327137.415448204
+      },
+      "positive_reference_nodes": 6852,
+      "proton_active_removal_cap_keV": 0.0,
+      "reference_nodes": 8782,
+      "reported_upper": {
+        "0": 4.401242978947617e-10,
+        "1": 2.7565679710250864e-09
+      },
+      "sigma_lnR": 0.49
+    },
+    {
+      "CM_keV": 0.25,
+      "Kcap_keV": 3.4263153346069593,
+      "ln_observed_over_upper_over_sigma": {
+        "0": 35.72395506237877,
+        "1": 31.979700952286752
+      },
+      "local_Lmax_keV": 0.5303313446351368,
+      "material": "PdD",
+      "neutron_reference_lower_per_C": 15336.60344585101,
+      "nonnegative_common_removal": true,
+      "numerator_upper_per_C": 1.1209531461657135e-05,
+      "observed": 0.05052,
+      "observed_linear_half_error": 0.0248,
+      "observed_over_upper": {
+        "0": 40013921.16141779,
+        "1": 6388777.328293597
+      },
+      "positive_reference_nodes": 5976,
+      "proton_active_removal_cap_keV": 0.6303313446351367,
+      "reference_nodes": 8782,
+      "reported_upper": {
+        "0": 1.262560592254887e-09,
+        "1": 7.907616340964818e-09
+      },
+      "sigma_lnR": 0.49
+    },
+    {
+      "CM_keV": 0.5,
+      "Kcap_keV": 6.520231664904044,
+      "ln_observed_over_upper_over_sigma": {
+        "0": 8.846617301976414,
+        "1": 6.679207321880622
+      },
+      "local_Lmax_keV": 1.0606626892702735,
+      "material": "PdD",
+      "neutron_reference_lower_per_C": 2085.5789113982887,
+      "nonnegative_common_removal": false,
+      "numerator_upper_per_C": 0.12115219425758662,
+      "observed": 0.01668,
+      "observed_linear_half_error": 0.00964,
+      "observed_over_upper": {
+        "0": 166.2254169350189,
+        "1": 47.49297626714825
+      },
+      "positive_reference_nodes": 3688,
+      "proton_active_removal_cap_keV": 0.0,
+      "reference_nodes": 8782,
+      "reported_upper": {
+        "0": 0.00010034566498648382,
+        "1": 0.0003512098274526934
+      },
+      "sigma_lnR": 0.578
+    },
+    {
+      "CM_keV": 0.5,
+      "Kcap_keV": 6.520231664904044,
+      "ln_observed_over_upper_over_sigma": {
+        "0": 1.866062783625859,
+        "1": -0.3013471964699341
+      },
+      "local_Lmax_keV": 1.0606626892702735,
+      "material": "PdD",
+      "neutron_reference_lower_per_C": 36.89371603663315,
+      "nonnegative_common_removal": true,
+      "numerator_upper_per_C": 0.12115219425758662,
+      "observed": 0.01668,
+      "observed_linear_half_error": 0.00964,
+      "observed_over_upper": {
+        "0": 2.9405136851714,
+        "1": 0.8401467671918285
+      },
+      "positive_reference_nodes": 2893,
+      "proton_active_removal_cap_keV": 1.1606626892702736,
+      "reference_nodes": 8782,
+      "reported_upper": {
+        "0": 0.005672478276198785,
+        "1": 0.01985367396669575
+      },
+      "sigma_lnR": 0.578
+    },
+    {
+      "CM_keV": 0.25,
+      "Kcap_keV": 3.4263153346069593,
+      "ln_observed_over_upper_over_sigma": {
+        "0": 23.63875210423857,
+        "1": 21.17608832713107
+      },
+      "local_Lmax_keV": 0.5303313446351368,
+      "material": "Ti",
+      "neutron_reference_lower_per_C": 2176023.4275612375,
+      "nonnegative_common_removal": false,
+      "numerator_upper_per_C": 5.524081229753083e-05,
+      "observed": 0.00195,
+      "observed_linear_half_error": 0.00145,
+      "observed_over_upper": {
+        "0": 44494240.760912105,
+        "1": 7104122.474431345
+      },
+      "positive_reference_nodes": 7294,
+      "proton_active_removal_cap_keV": 0.0,
+      "reference_nodes": 9190,
+      "reported_upper": {
+        "0": 4.382589671499827e-11,
+        "1": 2.744885110044628e-10
+      },
+      "sigma_lnR": 0.745
+    },
+    {
+      "CM_keV": 0.25,
+      "Kcap_keV": 3.4263153346069593,
+      "ln_observed_over_upper_over_sigma": {
+        "0": 22.04639551085538,
+        "1": 19.583731733747875
+      },
+      "local_Lmax_keV": 0.5303313446351368,
+      "material": "Ti",
+      "neutron_reference_lower_per_C": 664442.7451840494,
+      "nonnegative_common_removal": true,
+      "numerator_upper_per_C": 5.524081229753083e-05,
+      "observed": 0.00195,
+      "observed_linear_half_error": 0.00145,
+      "observed_over_upper": {
+        "0": 13586193.55913551,
+        "1": 2169224.181710712
+      },
+      "positive_reference_nodes": 6385,
+      "proton_active_removal_cap_keV": 0.6303313446351367,
+      "reference_nodes": 9190,
+      "reported_upper": {
+        "0": 1.4352805968149908e-10,
+        "1": 8.989389001104415e-10
+      },
+      "sigma_lnR": 0.745
+    },
+    {
+      "CM_keV": 0.5,
+      "Kcap_keV": 6.520231664904044,
+      "ln_observed_over_upper_over_sigma": {
+        "0": 6.212022925126388,
+        "1": 4.269754756916515
+      },
+      "local_Lmax_keV": 1.0606626892702735,
+      "material": "Ti",
+      "neutron_reference_lower_per_C": 69522.18361016425,
+      "nonnegative_common_removal": false,
+      "numerator_upper_per_C": 1.3187124114124182,
+      "observed": 0.0018,
+      "observed_linear_half_error": 0.00116,
+      "observed_over_upper": {
+        "0": 54.968197279282734,
+        "1": 15.705199222652206
+      },
+      "positive_reference_nodes": 3860,
+      "proton_active_removal_cap_keV": 0.0,
+      "reference_nodes": 9190,
+      "reported_upper": {
+        "0": 3.274620760900252e-05,
+        "1": 0.00011461172663150885
+      },
+      "sigma_lnR": 0.645
+    },
+    {
+      "CM_keV": 0.5,
+      "Kcap_keV": 6.520231664904044,
+      "ln_observed_over_upper_over_sigma": {
+        "0": -0.8665857552019581,
+        "1": -2.808853923411831
+      },
+      "local_Lmax_keV": 1.0606626892702735,
+      "material": "Ti",
+      "neutron_reference_lower_per_C": 723.2092290807567,
+      "nonnegative_common_removal": true,
+      "numerator_upper_per_C": 1.3187124114124182,
+      "observed": 0.0018,
+      "observed_linear_half_error": 0.00116,
+      "observed_over_upper": {
+        "0": 0.571810399414684,
+        "1": 0.16337439983276686
+      },
+      "positive_reference_nodes": 3103,
+      "proton_active_removal_cap_keV": 1.1606626892702736,
+      "reference_nodes": 9190,
+      "reported_upper": {
+        "0": 0.003147896578730492,
+        "1": 0.011017638025556723
+      },
+      "sigma_lnR": 0.645
+    },
+    {
+      "CM_keV": 0.25,
+      "Kcap_keV": 3.4263153346069593,
+      "ln_observed_over_upper_over_sigma": {
+        "0": 42.08325541984677,
+        "1": 37.90401962498325
+      },
+      "local_Lmax_keV": 0.5303313446351368,
+      "material": "TiD",
+      "neutron_reference_lower_per_C": 2197100.523468706,
+      "nonnegative_common_removal": false,
+      "numerator_upper_per_C": 5.523116700329856e-05,
+      "observed": 0.00458,
+      "observed_linear_half_error": 0.00201,
+      "observed_over_upper": {
+        "0": 105534569.40709001,
+        "1": 16850057.300291684
+      },
+      "positive_reference_nodes": 7293,
+      "proton_active_removal_cap_keV": 0.0,
+      "reference_nodes": 9190,
+      "reported_upper": {
+        "0": 4.3398101927464794e-11,
+        "1": 2.7180916470359525e-10
+      },
+      "sigma_lnR": 0.439
+    },
+    {
+      "CM_keV": 0.25,
+      "Kcap_keV": 3.4263153346069593,
+      "ln_observed_over_upper_over_sigma": {
+        "0": 39.38571532897616,
+        "1": 35.20647953411263
+      },
+      "local_Lmax_keV": 0.5303313446351368,
+      "material": "TiD",
+      "neutron_reference_lower_per_C": 672279.1972417638,
+      "nonnegative_common_removal": true,
+      "numerator_upper_per_C": 5.523116700329856e-05,
+      "observed": 0.00458,
+      "observed_linear_half_error": 0.00201,
+      "observed_over_upper": {
+        "0": 32291966.090947144,
+        "1": 5155860.132168032
+      },
+      "positive_reference_nodes": 6384,
+      "proton_active_removal_cap_keV": 0.6303313446351367,
+      "reference_nodes": 9190,
+      "reported_upper": {
+        "0": 1.4183094293797042e-10,
+        "1": 8.883095899799198e-10
+      },
+      "sigma_lnR": 0.439
+    },
+    {
+      "CM_keV": 0.5,
+      "Kcap_keV": 6.520231664904044,
+      "ln_observed_over_upper_over_sigma": {
+        "0": 7.177825483565906,
+        "1": 4.84058113935813
+      },
+      "local_Lmax_keV": 1.0606626892702735,
+      "material": "TiD",
+      "neutron_reference_lower_per_C": 70603.13654573107,
+      "nonnegative_common_removal": false,
+      "numerator_upper_per_C": 1.3176408763226841,
+      "observed": 0.00151,
+      "observed_linear_half_error": 0.00081,
+      "observed_over_upper": {
+        "0": 46.86703075097807,
+        "1": 13.390580214565162
+      },
+      "positive_reference_nodes": 3857,
+      "proton_active_removal_cap_keV": 0.0,
+      "reference_nodes": 9190,
+      "reported_upper": {
+        "0": 3.2218810874177004e-05,
+        "1": 0.0001127658380596195
+      },
+      "sigma_lnR": 0.536
+    },
+    {
+      "CM_keV": 0.5,
+      "Kcap_keV": 6.520231664904044,
+      "ln_observed_over_upper_over_sigma": {
+        "0": -1.3303534024554693,
+        "1": -3.6675977466632457
+      },
+      "local_Lmax_keV": 1.0606626892702735,
+      "material": "TiD",
+      "neutron_reference_lower_per_C": 738.3706738388341,
+      "nonnegative_common_removal": true,
+      "numerator_upper_per_C": 1.3176408763226841,
+      "observed": 0.00151,
+      "observed_linear_half_error": 0.00081,
+      "observed_over_upper": {
+        "0": 0.4901374467125908,
+        "1": 0.14003927048931164
+      },
+      "positive_reference_nodes": 3102,
+      "proton_active_removal_cap_keV": 1.1606626892702736,
+      "reference_nodes": 9190,
+      "reported_upper": {
+        "0": 0.0030807684867331536,
+        "1": 0.010782689703566039
+      },
+      "sigma_lnR": 0.536
+    }
+  ],
+  "route_verdict": "established as stated",
+  "runtime": {
+    "affinity": [
+      8
+    ],
+    "cpu_limit_seconds": 180,
+    "cpu_seconds": 7.900771449999999,
+    "maximum_rss_KiB": 168948,
+    "numpy_version": "2.5.3",
+    "sympy_version": "1.14.0",
+    "total_process_cpu_seconds": 8.724628999999998
+  },
+  "saved_consumer": {
+    "max_relative_discrepancy": 0.0,
+    "reported_values_consumed": 32
+  },
+  "schema": "g8-spectator-envelope-v1",
+  "sensitivity": {
+    "CM_keV": [
+      0.25,
+      0.5
+    ],
+    "angular_order": 64,
+    "identity_failure": "Efree=(L+K)/2-sqrt(L*K)*mu can exceed L+excmax; K is supplied initial energy",
+    "model": "free on-shell isotropic shell; not bound spectator",
+    "reported": {
+      "0": [
+        0.02331803870220758,
+        0.053256173770587195
+      ],
+      "1": [
+        0.1460445581875106,
+        0.18639660819705517
+      ]
+    },
+    "reported_over_broader_bound": {
+      "0": [
+        18468847.234145343,
+        9.388519651815216
+      ],
+      "1": [
+        18468847.234145343,
+        9.388519651815214
+      ]
+    },
+    "target_K_keV": 10.0
+  },
+  "sources": {
+    "additional_inputs": [
+      {
+        "bytes": 6680,
+        "path": "<PRIVATE_PATH>",
+        "sha256": "ff972ea578b68cc534555c7b995889979004aa425f2603abd0a2d215fe1f6db9"
+      },
+      {
+        "bytes": 13660,
+        "path": "<PRIVATE_PATH>",
+        "sha256": "d8c154adecf4a82120e05548bd016bdc5d2dd2bcd49f566f6273f8d866defc27"
+      },
+      {
+        "bytes": 16303,
+        "path": "<PRIVATE_PATH>",
+        "sha256": "76604acd39c1e47995a1290281e737076e8c01235a706e93c20be37fb4d1e84b"
+      },
+      {
+        "bytes": 3283,
+        "path": "<PRIVATE_PATH>",
+        "sha256": "e81574b3a56499a3d651a19aeb45722d022f1883ae727ffcc96881370019b07c"
+      },
+      {
+        "bytes": 1710,
+        "path": "<PRIVATE_PATH>",
+        "sha256": "c9241ad9b47bcffbc3e70e73f4a854c38f94b31a5d6e541d9b1ef41fdee473b2"
+      },
+      {
+        "bytes": 14884,
+        "path": "<PRIVATE_PATH>",
+        "sha256": "1b77432a6db9fcdeb4d6cf2bb673dc88a5485a10a7b488628c3de52f9f4e6156"
+      },
+      {
+        "bytes": 7277,
+        "path": "<PRIVATE_PATH>",
+        "sha256": "0fb5c06751a0a12385bb847296a47695f397d271a00935732948a7666446f56b"
+      },
+      {
+        "bytes": 4155,
+        "path": "<PRIVATE_PATH>",
+        "sha256": "e151ed079fe790b1d6f40e9dbc5ed50b2482301394f7716efd3a0922cc151e4f"
+      },
+      {
+        "bytes": 4282,
+        "path": "<PRIVATE_PATH>",
+        "sha256": "b28dcce71e67747cc1379169373d0c71bb95c7063502878d312f492e4a7fd5b5"
+      },
+      {
+        "bytes": 16467,
+        "path": "<PRIVATE_PATH>",
+        "sha256": "dfd781c9dc40146939ecae2cf729815fbc92be7020be85b22bf52333eb1e1e79"
+      },
+      {
+        "bytes": 5980,
+        "path": "<PRIVATE_PATH>",
+        "sha256": "ed469313fdcc0f725565fba068cee7d096c8132406d60835c99c753e518a26ba"
+      },
+      {
+        "bytes": 7417,
+        "path": "<PRIVATE_PATH>",
+        "sha256": "48bd8547767e63317144dfebec5623bab300bd5e306a54d05db422b5ac98ef59"
+      }
+    ],
+    "base_commit": "231859350047c2ed9443394e512ea1697c987664",
+    "base_root": "<PRIVATE_PATH>",
+    "files": [
+      {
+        "bytes": 5715,
+        "path": "g8_why/common.py",
+        "sha256": "00ce55ad546191d9db198a09236d5691674ce525ebdc98faa678c24dec82de42"
+      },
+      {
+        "bytes": 8897,
+        "path": "g8_why/reaction.py",
+        "sha256": "1270749a14dc43c57717754a77585877af11d9c53742af905d90c483ef1b759e"
+      },
+      {
+        "bytes": 16901,
+        "path": "g8_why/reaction_results.json",
+        "sha256": "5b50261450d5ac086af3dda2b1257902072106693e44a5f302c8a18045807756"
+      },
+      {
+        "bytes": 1372,
+        "path": "g8_why/reaction_retained.csv",
+        "sha256": "092a5c7dc9b6e4eedcf01c1d265259a559b81423a4d79edd1f557e696675562f"
+      },
+      {
+        "bytes": 346,
+        "path": "g8_why/reaction_shape_bound.csv",
+        "sha256": "6c29e44b5e397f4f4368dbe73c620d64fdae2d683a258787f56963bf2e4d7bd9"
+      },
+      {
+        "bytes": 14884,
+        "path": "g4_beam/merit/api.py",
+        "sha256": "1b77432a6db9fcdeb4d6cf2bb673dc88a5485a10a7b488628c3de52f9f4e6156"
+      },
+      {
+        "bytes": 1523730,
+        "path": "g4_beam/merit/profiles.json",
+        "sha256": "e2e91077595de602b815ae86f45c1a675d6a553153272d0e1295b72e2a5a9943"
+      },
+      {
+        "bytes": 16303,
+        "path": "g4_beam/forward/model.py",
+        "sha256": "76604acd39c1e47995a1290281e737076e8c01235a706e93c20be37fb4d1e84b"
+      },
+      {
+        "bytes": 13660,
+        "path": "g4_beam/forward/consumer.py",
+        "sha256": "d8c154adecf4a82120e05548bd016bdc5d2dd2bcd49f566f6273f8d866defc27"
+      },
+      {
+        "bytes": 3283,
+        "path": "g4_beam/forward/profile_thermal.py",
+        "sha256": "e81574b3a56499a3d651a19aeb45722d022f1883ae727ffcc96881370019b07c"
+      },
+      {
+        "bytes": 2639,
+        "path": "g4_beam/forward/errbars.csv",
+        "sha256": "6bb66867c8b899b66447831a193c173aa85575cf0f7f9e69d1bb8158b534f62c"
+      }
+    ]
+  },
+  "symbolic": {
+    "BG_squared_minus_D_minus_U_keV": "969731609/1000000",
+    "BH_lower_bounds": {
+      "n": {
+        "S_lower_keV_mb": "65513272064417/1220703125",
+        "S_prime_lower_mb": "1592793158167/4882812500",
+        "coefficients": [
+          "53701",
+          "33027/100",
+          "-6353/50000",
+          "29327/1000000000",
+          "-25151/10000000000000"
+        ]
+      },
+      "p": {
+        "S_lower_keV_mb": "868244448/15625",
+        "S_prime_lower_mb": "6546737/31250",
+        "coefficients": [
+          "55576",
+          "10527/50",
+          "-16319/500000",
+          "14987/10000000000",
+          "18181/100000000000000"
+        ]
+      }
+    },
+    "Kcap_root_residual": "0",
+    "domain_keV": [
+      0,
+      16
+    ],
+    "energy_residual": "0",
+    "flux_residual": "0",
+    "log_derivative_residual": "0",
+    "threshold_product_without_sqrt_2_over_L": {
+      "n": 1.7833358319931743e-63,
+      "p": 1.8456019850440895e-63
+    }
+  }
+}

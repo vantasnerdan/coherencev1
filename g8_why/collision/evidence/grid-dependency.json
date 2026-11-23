@@ -1,0 +1,72 @@
+{
+  "contact_assessment": "Hydride contact is a separately qualified same-functional doubled-Hae source operator, not an ordinary He PAW substitution or an automatically exact finite-R cancellation. Its existing h.20/.16 sensitivities2.9347\u20134.2212eV and stated finite-cell limits remain; no new contact or grid run or reassessment is performed.",
+  "g6_dynamic_assessment": "Reported encounter excitation uses TD internal energy minus BO internal energy at the identical checkpoint geometry. Vacancy mean loss is the change of this vacant excitation divided by path length, not raw force work alone (replay.py79-80,130-132). Thus its additive same-geometry phase term is also subtracted; no new assertion about residual dynamic/grid error or timestep convergence is made.",
+  "observed": {
+    "delta_free_energy_eV": 0.31633096221058565,
+    "hydrogen_representation": "Hae",
+    "reference": {
+      "bytes": 4956,
+      "path": "<PRIVATE_PATH>",
+      "sha256": "dab03e5ead35389c0e826270a1a340a966c2ee7639bd86d010807a66195eb3c4"
+    },
+    "requested_h_A": 0.2,
+    "rigid_translation_A": [
+      0.1,
+      0,
+      0
+    ],
+    "translated": {
+      "bytes": 4993,
+      "path": "<PRIVATE_PATH>",
+      "sha256": "c9228d370a4a020516c0a553cd3281fe8402f4a080204bae43f191d817893c5b"
+    }
+  },
+  "quartet_assessment": "The geometry-matched finite-R expression E(occupied+probe)-E(vacant+probe)-E(occupied host)+E(vacant host) cancels an additive position/grid-phase self term for probe, target and spectators by its role coefficients. This does NOT prove cancellation of all state-dependent/interaction-dependent discretization error. Existing mesh/cell controls remain the qualification; raw absolute energies/single-well differences do not receive the quartet cancellation.",
+  "retained_G8_dependency": "No retained G8 conclusion uses the contaminated Hae single-well secants/density. The well/pilot uses standard-H PAW commensurate forces and conserved PAW vacancy density; envelope, harmonic benchmark, inverse, DINS and Doppler are independent of those Hae secants. Rejected absolute energies/forces remain diagnostic evidence, not a retained physical well.",
+  "schema": "g8-grid-phase-dependency-existing-evidence-v1",
+  "scope": "Existing-source/receipt assessment only; zero new Native or grid runs",
+  "sources": [
+    {
+      "bytes": 10767,
+      "capsule_source_name": "g6_collision/replay.py",
+      "path": "<PRIVATE_PATH>",
+      "sha256": "d76822b663dcae0a15255104fc2996ec7ecdcf94d29a05d42dddd6ce2453aa6e"
+    },
+    {
+      "bytes": 5897,
+      "capsule_source_name": "g6_collision/README.md",
+      "path": "<PRIVATE_PATH>",
+      "sha256": "b1ccd1aa9020e912142dbe34d297037cce36e97d099d627070687194859012ec"
+    },
+    {
+      "bytes": 10861,
+      "capsule_source_name": "g7_defect/capsule/readout_defect.py",
+      "path": "<PRIVATE_PATH>",
+      "sha256": "5491d43f42a660e3a5d1a0ef17e421350f182b6c2d5cb66221726df6f87a83cc"
+    },
+    {
+      "bytes": 3135,
+      "capsule_source_name": "g7_defect/README.md",
+      "path": "<PRIVATE_PATH>",
+      "sha256": "3dd1e181dd9d7f0c8013c462e5f6b41ba79e19da31535137d49b2d0123ade599"
+    },
+    {
+      "bytes": 21272,
+      "capsule_source_name": "g7_hydride/capsule/hydride_replay.py",
+      "path": "<PRIVATE_PATH>",
+      "sha256": "0e688e4f11e50c824e3cf1cc3d4686c900bfa14f0d0b87b0546f6f65871450f7"
+    },
+    {
+      "bytes": 6229,
+      "capsule_source_name": "g7_hydride/README.md",
+      "path": "<PRIVATE_PATH>",
+      "sha256": "25cfc187fb3ec99ddb8dfaef1e0e85d9418bbfd22900098eb54b5aaa8008af34"
+    },
+    {
+      "bytes": 5162,
+      "capsule_source_name": "g7_hydride/contact/README.md",
+      "path": "<PRIVATE_PATH>",
+      "sha256": "9d35f675d6313f333449fa43e11fae315ab2b07a3e29fabe6bb56b66def21e13"
+    }
+  ]
+}

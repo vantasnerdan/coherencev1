@@ -1,0 +1,57 @@
+{
+  "schema": "g8-harmonic-once-v1",
+  "harmonic": {
+    "probability_sum": 0.9999999999997523,
+    "mean_kinetic_eV": 0.0422656507302678,
+    "exact_mean_kinetic_eV": 0.0422656507303846,
+    "retained_maximum_level": 32,
+    "radial_order": 32,
+    "omega_eV": 0.0271,
+    "temperature_K": 300.0,
+    "interpretation": "Quantum harmonic 3D canonical spectral mixture; no fitted target heating"
+  },
+  "rows": [
+    {
+      "E_cm_keV": 0.25,
+      "Y40": 9.434817461728263e-14,
+      "bound_spectator_Y_over_Y40": 1.034812456620286,
+      "free_onshell_diagnostic_Y_over_Y40": 1.0346642701085165
+    },
+    {
+      "E_cm_keV": 0.5,
+      "Y40": 2.8692572119558375e-07,
+      "bound_spectator_Y_over_Y40": 1.0106263029182692,
+      "free_onshell_diagnostic_Y_over_Y40": 1.0105650216725128
+    },
+    {
+      "E_cm_keV": 1.0,
+      "Y40": 0.02361912554895773,
+      "bound_spectator_Y_over_Y40": 1.0029655908447048,
+      "free_onshell_diagnostic_Y_over_Y40": 1.0029422783524133
+    },
+    {
+      "E_cm_keV": 2.5,
+      "Y40": 771.2206646478218,
+      "bound_spectator_Y_over_Y40": 1.0005224899234075,
+      "free_onshell_diagnostic_Y_over_Y40": 1.0005162040639528
+    },
+    {
+      "E_cm_keV": 6.5,
+      "Y40": 754101.4434491611,
+      "bound_spectator_Y_over_Y40": 1.000088946406765,
+      "free_onshell_diagnostic_Y_over_Y40": 1.0000872889719037
+    }
+  ],
+  "operator_checks": {
+    "stationary_consumer_max_relative": 3.3306690738754696e-16,
+    "selected_threshold_angular_relative": 1.0658141036401503e-14,
+    "symbolic_energy_residual": "0",
+    "scope": "Kinematics and the declared spectator on-shell matrix prescription, not an exact nuclear theorem"
+  },
+  "removal_energy_eV": 0.0,
+  "approximation": "Energy-conserving frozen-spectator impulse model; favorable zero removal, infinite spectator mass, unchanged +40eV on-shell DD amplitude; excludes subthreshold virtual nuclear amplitudes",
+  "source_frequency": "P2 README, pinned2318593: Gamma collective optic27.1meV, used only as a defined harmonic benchmark, not a local-well measurement",
+  "model_uncertainty": "Actual chemical removal energy and exact off-shell nuclear matrix are not measured by this benchmark",
+  "process_cpu_s": 122.825112492,
+  "process_total_CPU_s": 124.09749299999999
+}

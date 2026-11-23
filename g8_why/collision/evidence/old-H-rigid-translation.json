@@ -1,0 +1,206 @@
+{
+  "points": [
+    {
+      "cell_A": [
+        [
+          4.134141684668574,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          4.134141684668574,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          4.134141684668574
+        ]
+      ],
+      "electrons_valence": 44.0,
+      "energy": {
+        "free_energy_eV": -80.04841913880095,
+        "internal_energy_eV": -79.83711931203635,
+        "minus_TS_eV": -0.21129982676460288
+      },
+      "forces_eV_A": [
+        [
+          -0.0076443932192497045,
+          5.59655330435731e-06,
+          -1.6809331408946053e-06
+        ],
+        [
+          2.0783294607875895,
+          1.0513058548646903e-06,
+          -3.8667381540334817e-07
+        ],
+        [
+          -0.007643682106725989,
+          -2.3565501561574135e-06,
+          -5.221700069238692e-07
+        ],
+        [
+          2.0783305837577113,
+          3.410982013494578e-07,
+          -1.9079297515719025e-07
+        ],
+        [
+          -0.007650864205466873,
+          2.179919957289083e-06,
+          2.013960729406229e-06
+        ],
+        [
+          2.0783227869562997,
+          1.9148686705545077e-07,
+          3.1284798783536586e-07
+        ],
+        [
+          -0.0076514723759134795,
+          -6.287900667813405e-06,
+          1.010320533058484e-07
+        ],
+        [
+          2.0783234652196945,
+          -1.0271630549186863e-06,
+          1.8658597175907596e-07
+        ]
+      ],
+      "gpw": {
+        "bytes": 31143116,
+        "path": "point-00.gpw",
+        "sha256": "136a1eeffb3c84da4a4c0d98b22dd90a9968ed5d307164d936f9f0abceeab196"
+      },
+      "label": "point-00",
+      "offset_A": [
+        0,
+        0,
+        0
+      ],
+      "positions_A": [
+        [
+          0.1,
+          0.0,
+          0.0
+        ],
+        [
+          2.167070842334287,
+          0.0,
+          0.0
+        ],
+        [
+          0.1,
+          2.067070842334287,
+          2.067070842334287
+        ],
+        [
+          2.167070842334287,
+          2.067070842334287,
+          2.067070842334287
+        ],
+        [
+          2.167070842334287,
+          0.0,
+          2.067070842334287
+        ],
+        [
+          0.1,
+          0.0,
+          2.067070842334287
+        ],
+        [
+          2.167070842334287,
+          2.067070842334287,
+          0.0
+        ],
+        [
+          0.1,
+          2.067070842334287,
+          0.0
+        ]
+      ],
+      "process_cpu_s": 189.31647132999998,
+      "symbols": [
+        "Pd",
+        "H",
+        "Pd",
+        "H",
+        "Pd",
+        "H",
+        "Pd",
+        "H"
+      ],
+      "target_force_eV_A": [
+        2.0783305837577113,
+        3.410982013494578e-07,
+        -1.9079297515719025e-07
+      ]
+    }
+  ],
+  "process_cpu_s": 189.567031344,
+  "schema": "g8-well-points-v1",
+  "scope": "Frozen neutral PdD local-well points; no density/profile fit or pair-barrier campaign",
+  "specification": {
+    "authority": {
+      "case_core_min": 5,
+      "entry": "entry_3227",
+      "whole_core_min": 180
+    },
+    "baseline_record": {
+      "bytes": 2175,
+      "path": "<PRIVATE_PATH>",
+      "sha256": "8a6fd97608a2c5f1b3e7aec4f1b931dfdc92651a4495552a6204455dc6f6ee38"
+    },
+    "hydrogen_setup": "ae",
+    "offsets_A": [
+      [
+        0,
+        0,
+        0
+      ]
+    ],
+    "purpose": "Physical periodic crystal unchanged by common translation. One bounded discrimination of grid-phase/eggbox contamination before any well fitting; not another site or mesh family.",
+    "rigid_translation_A": [
+      0.1,
+      0,
+      0
+    ],
+    "scf_specification": {
+      "h_A": 0.2,
+      "kmesh": [
+        2,
+        2,
+        2
+      ]
+    },
+    "schema": "g8-well-points-input-v1",
+    "sources": [
+      {
+        "bytes": 5979,
+        "path": "<PRIVATE_PATH>",
+        "sha256": "167eadfd63b068257fdb4be17720c1ee80e5f712cf2c715b8d885c02dbfbe1ab"
+      },
+      {
+        "bytes": 1996,
+        "path": "<PRIVATE_PATH>",
+        "sha256": "47066ac963885881b84c7ef4a6b2f9adb364788ad97fb2871be7e92b0848317d"
+      },
+      {
+        "bytes": 1409,
+        "path": "<PRIVATE_PATH>",
+        "sha256": "dcab99128fbb312083bdccf440c4c32c214e58e78c59a8a52126300c25d3420c"
+      },
+      {
+        "bytes": 2477,
+        "path": "<PRIVATE_PATH>",
+        "sha256": "933aa0c85acf26c58cc471dc7c6026941befa293684449cfad502a378e85a31d"
+      },
+      {
+        "bytes": 2107,
+        "path": "<PRIVATE_PATH>",
+        "sha256": "077eb638330c142ce710bd359780d0123d74d411e1bd9f26c7022a1e9bd1cc23"
+      }
+    ]
+  },
+  "target_index": 3
+}

@@ -1,0 +1,57 @@
+# Fig 2 error bars digitized from paper/fig-001.png (digitize_errorbars.py).
+# Ends found by column walk (w) and cap detection (c); the up/down pair closest to symmetric is kept
+# (matplotlib bars are symmetric in linear R). half = mean half-width; sigma_lnR = half/R floored at 0.05.
+# TiD 1.0 keV marker is hidden behind Ti; its R is the linear midpoint of its caps.
+E_cm,material,R,half,sigma_lnR,method
+0.25,Pd,0.01656,0.00474,0.286,ww asym=1.03
+0.50,Pd,0.0036,0.00159,0.442,ww asym=1.02
+1.00,Pd,0.00412,0.00231,0.562,wc asym=1.02
+1.50,Pd,0.00384,0.00113,0.294,ww asym=1.00
+2.00,Pd,0.00514,0.00156,0.304,ww asym=1.03
+2.50,Pd,0.00704,0.00232,0.330,cw asym=1.01
+3.00,Pd,0.01892,0.00559,0.295,ww asym=1.04
+3.50,Pd,0.04183,0.00674,0.161,cw asym=1.09
+4.00,Pd,0.09706,0.00973,0.100,wc asym=1.04
+4.50,Pd,0.2172,0.0329,0.152,wc asym=2.04
+5.00,Pd,0.334,0.042,0.126,wc asym=1.20
+5.50,Pd,0.4213,0.037,0.088,wc asym=1.19
+6.00,Pd,0.6806,0.0634,0.093,ww asym=1.17
+6.50,Pd,1,0,0.000,ref
+0.25,PdD,0.05052,0.0248,0.490,cw asym=1.01
+0.50,PdD,0.01668,0.00964,0.578,ww asym=1.00
+1.00,PdD,0.00898,0.0023,0.256,ww asym=1.00
+1.50,PdD,0.01466,0.00738,0.504,ww asym=1.02
+2.00,PdD,0.01896,0.0077,0.406,wc asym=1.01
+2.50,PdD,0.02287,0.00859,0.375,wc asym=1.02
+3.00,PdD,0.04389,0.0144,0.329,ww asym=1.02
+3.50,PdD,0.08205,0.0148,0.180,ww asym=1.03
+4.00,PdD,0.1561,0.024,0.153,ww asym=1.01
+4.50,PdD,0.2903,0.0384,0.132,wc asym=1.18
+5.00,PdD,0.409,0.0275,0.067,ww asym=1.07
+5.50,PdD,0.5244,0.0459,0.088,ww asym=1.09
+6.50,PdD,1,0,0.000,ref
+0.25,Ti,0.00195,0.00145,0.745,ww asym=1.01
+0.50,Ti,0.0018,0.00116,0.645,wc asym=1.03
+1.00,Ti,0.00109,0.000444,0.407,ww asym=1.05
+1.50,Ti,0.00125,0.00056,0.448,visual: top cap hidden behind TiD marker; walk ends
+2.00,Ti,0.00083,0.000303,0.365,wc asym=1.00
+2.50,Ti,0.00214,0.00123,0.575,visual: upper half from walk, symmetric
+3.00,Ti,0.01062,0.0028,0.263,ww asym=1.02
+3.50,Ti,0.04694,0.0107,0.227,ww asym=1.12
+4.00,Ti,0.09132,0.00922,0.101,ww asym=1.11
+4.50,Ti,0.1295,0.0113,0.088,wc asym=1.09
+5.00,Ti,0.2751,0.0359,0.130,ww asym=1.46
+5.50,Ti,0.514,0.0484,0.094,ww asym=1.10
+6.00,Ti,0.6281,0.0547,0.087,ww asym=1.04
+6.50,Ti,1,0,0.000,ref
+0.25,TiD,0.00458,0.00201,0.439,wc asym=1.00
+0.50,TiD,0.00151,0.00081,0.536,visual: blue caps, bar hidden under Ti bar
+1.00,TiD,0.001137,0.000558,0.491,cc asym=1.00
+1.50,TiD,0.00201,0.000491,0.244,wc asym=1.01
+2.00,TiD,0.00242,0.000726,0.300,cw asym=1.00
+2.50,TiD,0.00668,0.0015,0.224,cw asym=1.01
+3.00,TiD,0.02429,0.00295,0.121,ww asym=1.13
+4.50,TiD,0.1862,0.0188,0.101,ww asym=1.11
+5.00,TiD,0.3504,0.0354,0.101,ww asym=1.11
+6.00,TiD,0.7694,0.0621,0.081,ww asym=1.08
+6.50,TiD,1,0,0.000,ref

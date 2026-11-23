@@ -1,0 +1,325 @@
+{
+  "schema": "g8-neutron-source-report-v1",
+  "created_utc": "2026-11-22T19:59:02.858721+00:00",
+  "scope": "Focused primary-material acquisition; two consumed neutron-Compton primaries plus one consumed pure-PdH INS exclusion; no broad campaign",
+  "summary": "No source-backed deuteron100/300/1000eV tail established. ZrH proton data are Gaussian-compatible; PdAg proton DINS width was constrained to IINS. PurePdH anharmonic INS is not momentum-tail evidence.",
+  "citations": [
+    {
+      "id": "Prisk2020",
+      "authors": "T.R.Prisk,A.I.Kolesnikov,G.E.Granroth,J.-L.Lin,B.J.Heuser",
+      "title": "Vibrational modes and quantum zero-point energy of hydrogen in ZrH0.0155 and ZrH2",
+      "journal": "Journal of Alloys and Compounds818(2020)152832",
+      "doi": "10.1016/j.jallcom.2019.152832",
+      "url": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=928215",
+      "original": "prisk2020.original.pdf"
+    },
+    {
+      "id": "Colognesi2020",
+      "authors": "D.Colognesi et al.",
+      "title": "Proton Dynamics in Palladium-Silver: An Inelastic Neutron Scattering Investigation",
+      "journal": "Molecules25(23)(2020)5587",
+      "doi": "10.3390/molecules25235587",
+      "url": "https://mdpi-res.com/d_attachment/molecules/molecules-25-05587/article_deploy/molecules-25-05587.pdf",
+      "original": "colognesi2020.mdpi.pdf"
+    },
+    {
+      "id": "Ross1998",
+      "authors": "D.K.Ross et al.",
+      "title": "Strong anisotropy in the inelastic neutron scattering from PdH at high energy transfer",
+      "journal": "Physical Review B58(1998)2591-2595",
+      "doi": "10.1103/PhysRevB.58.2591",
+      "url": "http://www.issp.ac.ru/lhpp/PapersAntonov/116.pdf",
+      "original": "ross1998.original.pdf"
+    },
+    {
+      "id": "Evans1996",
+      "doi": "10.1103/PhysRevB.53.3023",
+      "url": "https://link.aps.org/doi/10.1103/PhysRevB.53.3023",
+      "status": "abstract_consumed_fulltext_access_gap"
+    },
+    {
+      "id": "CODATA2022",
+      "url": "https://physics.nist.gov/cuu/Constants/Table/allascii.txt",
+      "original": "codata2022.original.txt"
+    }
+  ],
+  "findings": [
+    {
+      "id": "F01",
+      "disposition": "supported_primary_measurement",
+      "source": "Prisk2020",
+      "locator": "pp.3-4,6-8; Eqs.2-8; Fig.6; Table1",
+      "claim": "Neutron Compton scattering of protons (1H nuclei), not deuterons, was measured in epsilon-ZrH2 and nominal ZrH0.0155 (hydrogen-loaded Zircaloy-2). At 6 K the dilute-composition sample is predominantly alpha-Zr plus delta-ZrH1.6 precipitates; at 550 and 617 K alpha/delta coexist. The paper estimates 23% and 59% of H in alpha solid solution at those higher temperatures. ZrH2 results reported here are at 6 K.",
+      "limitations": "Not ZrD2 or ZrD0.0155. Trace alloy solutes are described on p.3; do not silently relabel the Zircaloy material pure Zr."
+    },
+    {
+      "id": "F02",
+      "disposition": "supported_primary_definition",
+      "source": "Prisk2020",
+      "locator": "p.3 Eqs.2-6; p.7 Eqs.7-8",
+      "claim": "The paper uses k=p/hbar, in inverse angstrom. Isotropic n(k) is a 3D momentum-space density, normalized with d^3k; J_IA(Y)=2*pi*integral_|Y|^infinity k*n(k) dk is its 1D projection. Y=m*(E-hbar^2*Q^2/(2*m))/(hbar^2*Q). J(Y,Q)=(hbar^2*Q/m)*S(Q,E). The second moment obeys integral Y^2*J dY=2*m*<K>/(3*hbar^2). The Gaussian model is n(k)=(2*pi*sigma^2)^(-3/2)*exp(-k^2/(2*sigma^2)), yielding J_IA=(2*pi*sigma^2)^(-1/2)*exp(-Y^2/(2*sigma^2)).",
+      "limitations": "Experimental spectra are in arbitrary intensity units (p.4); the normalized mathematical definition does not mean absolute tail populations were measured."
+    },
+    {
+      "id": "F03",
+      "disposition": "supported_primary_measurement",
+      "source": "Prisk2020",
+      "locator": "pp.6-8 Fig.6, Sec5.2, Table1, AppendixA",
+      "claim": "Incident neutron energy for recoil measurements was 6.2 eV. Sixteen Q groups spanning 25.0-40.0 inverse angstrom were jointly fit with resolution convolution; Fig.6 example is Q=28 inverse angstrom, 6 K. The displayed Y axis is -30 to +30 inverse angstrom, with visible data extending approximately -30 to +25 (less on the negative side for the dilute sample); this is a plot range, not a validated 3D radial cutoff. Proton recoil FWHM is approximately 10 inverse angstrom. Zr recoil near Y=-15 and fast-neutron background are explicitly modeled. Resolution FWHM falls from 3.93 to 1.54 inverse angstrom across Q=25 to40.",
+      "limitations": "Q is neutron momentum transfer, not initial target momentum k. The fast-neutron high-energy background is not evidence for a high-momentum hydrogen population; negative-Y Zr peak is not hydrogen non-Gaussianity."
+    },
+    {
+      "id": "F04",
+      "disposition": "supported_primary_measurement",
+      "source": "Prisk2020",
+      "locator": "p.7 Sec5.2 and Table1; p.8 conclusions",
+      "claim": "Reported mean proton kinetic energies (meV): ZrH2 at6K 109.0 +/-0.3; nominal ZrH0.0155 at6K112.9 +/-1.4,550K119.4 +/-1.4,617K118.3 +/-1.4. Errors are one standard deviation unless stated otherwise. Authors find a Gaussian fits at all measured temperatures and no statistical justification for a non-Gaussian n(k).",
+      "limitations": "Gaussian adequacy on this finite-range experiment is not a proof of an exactly Gaussian distribution at arbitrarily high k. Earlier Evans values in the table are cited historical data, not newly consumed independent measurements."
+    },
+    {
+      "id": "F05",
+      "disposition": "supported_primary_distinction",
+      "source": "Prisk2020",
+      "locator": "pp.5-8 Fig.4, Sec5.2 and conclusion",
+      "claim": "Anharmonicity is observed in vibrational overtones; the potential is discussed as approximately harmonic below about300meV and anharmonic above. Nevertheless the authors conclude occupied low-temperature momentum distributions are adequately Gaussian because ground and first excited states dominate.",
+      "limitations": "Anharmonic excited levels are not a demonstrated populated 100/300/1000eV kinetic-energy tail. A 300meV potential-energy scale is not 300eV."
+    },
+    {
+      "id": "F06",
+      "disposition": "supported_primary_measurement_with_model_constraint",
+      "source": "Colognesi2020",
+      "locator": "pp.8-9 Sec2.3 Fig7; pp.13-14 Sec3.3; pp.15-16 Sec4.3",
+      "claim": "VESUVIO DINS was actually performed on hydrogen in Pd0.77Ag0.23 membranes, not pure PdH and not PdD. Fig7 shows proton J(y_H), described as proportional to the one-dimensional momentum distribution, for300K/2bar and453K/1bar. Plotted y_H range is -20 to+20 inverse angstrom. Strong Pd/Ag prompt-gamma background impaired the measurement. Empty membrane spectra were subtracted; multiple scattering and FCT background corrections were neglected. Gaussian widths/kinetic energies were fixed to IINS predictions; only peak intensity was freely fit. Authors explicitly state they had to fix kinetic energy.",
+      "limitations": "Not an independent empirical n(k) shape determination or a measurement of non-Gaussian tails. No explicit 3D n(k) inversion or numerical DINS Q coverage is supplied in the consumed DINS sections. Plot range is not a sensitivity limit."
+    },
+    {
+      "id": "F07",
+      "disposition": "supported_primary_value_with_scope_limit",
+      "source": "Colognesi2020",
+      "locator": "p.11 Table1; p.14 Table3; pp.15-16 Sec4.3",
+      "claim": "IINS Table3 gives <K>_H=72.1 +/-0.9meV at453K/1bar; Table1 assigns H/M=0.092 for that IINS condition from literature thermodynamics. Table3 includes333K/2bar <K>=60.6 +/-0.6meV, but no300K entry. Zero-point IINS estimate at1bar is48.3 +/-0.2meV (p.14).",
+      "limitations": "These are IINS-derived quantities, not freely measured DINS widths. Do not assign the333K value as an exact300K DINS measurement. Absolute H/M for300K/2bar is not specified in the DINS sections consumed; only relative intensity/uptake is reported. The 453K composition is a literature-based thermodynamic estimate, not direct stoichiometric assay."
+    },
+    {
+      "id": "F08",
+      "disposition": "supported_primary_exclusion",
+      "source": "Ross1998",
+      "locator": "pp.2591-2594 SecsII-V",
+      "claim": "Actual pure-palladium primary: stoichiometric PdH0.99 +/-0.03, protons, powder and textured plates,25K; incoherent INS over2-800meV. It reports orientation-dependent anharmonic higher vibrational levels (e.g.253,364,475meV peaks along approximately[100]) while low-energy one-phonon spectra are nearly isotropic.",
+      "limitations": "This is NOT a DINS/Compton measurement of n(p). No measured momentum-distribution range, J(y), mean kinetic energy or non-Gaussian n(p) tail is reported. It cannot fill the pure-PdH/PdD DINS gap or establish a large ground-state tail."
+    },
+    {
+      "id": "F09",
+      "disposition": "explicit_access_gap",
+      "source": "Evans1996",
+      "locator": "PhysRevB53,3023-3031; DOI landing-page abstract only",
+      "claim": "Exact edition sought: A.C.Evans,D.N.Timms,J.Mayers,S.M.Bennington, Neutron-scattering study of the impulse approximation in ZrH2, PhysRevB53 (1996)3023-3031, DOI10.1103/PhysRevB.53.3023. DOI route exposed abstract and authorization-required fulltext. Direct PDF request returned HTML rather than a PDF; response bytes preserved. Exact-title author/archive search returned bibliographic/DOI routes, no usable manuscript.",
+      "limitations": "No fulltext-dependent values or unseen sections reconstructed. Consumed publisher abstract says finite-Q asymmetry/centroid shifts diminish toward IA and can be removed by symmetrization at highQ; this is final-state/IA physics, not by itself a non-Gaussian initial-state tail. No low-p deviation is imported from an unseen edition."
+    },
+    {
+      "id": "F10",
+      "disposition": "calculated_units_only",
+      "source": "CODATA2022",
+      "locator": "NIST allascii.txt; momentum_conversion.v1.json",
+      "claim": "Using nuclear masses mp=1.67262192595e-27kg and md=3.3435837768e-27kg, exact h=6.62607015e-34Js and e=1.602176634e-19C, K_D(eV)=0.001038005664243405*k^2 for k in inverse angstrom. Deuteron100/300/1000eV thresholds correspond to k=310.38458075725646/537.6018637575335/981.5222257894003 inverse angstrom. Proton thresholds are219.52951927968576/380.23628115358713/694.2132945656538 inverse angstrom.",
+      "limitations": "These conversions use actual isotope masses and no isotope scaling of measured distributions. J(y) samples one component; its finite displayed y window is not a hard limit on transverse momentum or a rigorous integrated radial-tail bound. No tail weights extrapolated."
+    },
+    {
+      "id": "F11",
+      "disposition": "not_demonstrated_stop_literature_slice",
+      "source": [
+        "Prisk2020",
+        "Colognesi2020",
+        "Ross1998"
+      ],
+      "locator": "combined scope of consumed primaries",
+      "claim": "No consumed primary demonstrates a deuteron high-momentum tail at100,300 or1000eV kinetic energy, or supplies its integrated weight. No verified measured low-p non-Gaussian deviation in these consumed papers establishes such a tail. Prisk offers a genuinely measured proton Gaussian-compatible profile; PdAg DINS is shape-constrained and Ross purePdH measures transitions, not momentum distributions.",
+      "limitations": "This focused acquisition does not prove the absence of all such measurements in the literature. PurePdH/PdD DINS and PdD/ZrD tail distributions remain explicit source gaps. The real bound-target calculation must stand on its own; these proton data cannot be relabeled as deuteron observations."
+    },
+    {
+      "id": "F12",
+      "disposition": "kinematic_interpretation_guardrail",
+      "source": "assignment contract plus measured-observable distinction",
+      "locator": "scope",
+      "claim": "A bound-state momentum component and its kinetic-operator value do not automatically constitute an on-shell free hot-deuteron population. Free-target inverse-tail diagnostics are not unqualified bound-state fusion predictions or rigorous bounds.",
+      "limitations": "No simulation, reaction yield computation, fitting of S(E), site-profile optimization, repository edit or TDDFT/SCF work performed in this slice."
+    }
+  ],
+  "source_inventory": {
+    "sources": [
+      {
+        "file": "codata2022.original.txt",
+        "bytes": 40801,
+        "sha256": "77fb90e66c40db3e6eb16630bc9c88e4c7c8beddbe5e71be406f2f26e3f67e67",
+        "url": "https://physics.nist.gov/cuu/Constants/Table/allascii.txt",
+        "status": "constants_original_bytes"
+      },
+      {
+        "file": "colognesi2020.extracted.txt",
+        "bytes": 74281,
+        "sha256": "8d2087d37d0afbe0a52242dcd3dd9e01599a64c73b4ea3a2de913747f31409d5",
+        "url": null,
+        "status": "locally_extracted_text_or_render"
+      },
+      {
+        "file": "colognesi2020.mdpi.pdf",
+        "bytes": 1990845,
+        "sha256": "08d25a4cd8ba3cd5e48c81171aa4b219618001de3b4389c126daec3a81579c81",
+        "url": "https://mdpi-res.com/d_attachment/molecules/molecules-25-05587/article_deploy/molecules-25-05587.pdf",
+        "status": "primary_original_bytes"
+      },
+      {
+        "file": "colognesi2020.original.html",
+        "bytes": 21306,
+        "sha256": "ed9ed65885765a10efa6873912b54c320c3935f5d1b1989ae2978a13e9cdcdb5",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7730539/",
+        "status": "access_response_not_paper"
+      },
+      {
+        "file": "colognesi2020.page8.png",
+        "bytes": 359433,
+        "sha256": "1d2e4bd420652cb31ec52108f278c5342fe7f4adb552fd85e7f3c2e4a335548c",
+        "url": null,
+        "status": "locally_extracted_text_or_render"
+      },
+      {
+        "file": "colognesi2020.page9.png",
+        "bytes": 532753,
+        "sha256": "3bf531485f860ef18b6c4bd6de02be8ba702cb41969aaac3e495e202447f1c2a",
+        "url": null,
+        "status": "locally_extracted_text_or_render"
+      },
+      {
+        "file": "colognesi2020.pmc_pdf_access.html",
+        "bytes": 21375,
+        "sha256": "92e4984dbac0a6711d8fb2b366a0a2f88e3ebcbe9657e0db1a04ccaddfcfc552",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7730539/pdf/molecules-25-05587.pdf",
+        "status": "access_response_not_paper"
+      },
+      {
+        "file": "evans1996.access.html",
+        "bytes": 5492,
+        "sha256": "bae359d2ce5262a72ec19bc0cfd927ca1762d39b13e571771f9b1ae5c9333984",
+        "url": "https://journals.aps.org/prb/pdf/10.1103/PhysRevB.53.3023",
+        "status": "access_response_not_paper"
+      },
+      {
+        "file": "prisk2020.extracted.txt",
+        "bytes": 77100,
+        "sha256": "57717f7be7e062e01da2566265f5d28d2578dc5ea5bfd3bfac11d2eaf62b42f6",
+        "url": null,
+        "status": "locally_extracted_text_or_render"
+      },
+      {
+        "file": "prisk2020.original.pdf",
+        "bytes": 2076692,
+        "sha256": "403dbc68f4ea2e22aff50b24f0bbb5fe0bf06a12b6b3853c5becd92333373487",
+        "url": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=928215",
+        "status": "primary_original_bytes"
+      },
+      {
+        "file": "prisk2020.page6.png",
+        "bytes": 483761,
+        "sha256": "d25aafd58fe730bc85cf1aa7082585702a90d386976d5cf1ae4e70a5188de1f0",
+        "url": null,
+        "status": "locally_extracted_text_or_render"
+      },
+      {
+        "file": "prisk2020.page7.png",
+        "bytes": 517169,
+        "sha256": "103b5e33766c78094a1a0de900aa71fee64527d05370b6778b7c5fbe122bc189",
+        "url": null,
+        "status": "locally_extracted_text_or_render"
+      },
+      {
+        "file": "ross1998.extracted.txt",
+        "bytes": 31822,
+        "sha256": "6411b7683cb230e9492a8e59c22c91bcd844514245de88540f7fb6df8a5533f9",
+        "url": null,
+        "status": "locally_extracted_text_or_render"
+      },
+      {
+        "file": "ross1998.original.pdf",
+        "bytes": 94009,
+        "sha256": "65fc9dab1c55458200e543cbe5bfd17ea927d332292227d36e52dedbc22f27cb",
+        "url": "http://www.issp.ac.ru/lhpp/PapersAntonov/116.pdf",
+        "status": "primary_original_bytes"
+      }
+    ],
+    "extraction": "pdftotext -layout; pdftoppm page renders at 1500/1800 pixel maximum dimension, single process, no simulation",
+    "consumed_sections": {
+      "prisk2020.original.pdf": [
+        "pp.1-4 sample/formalism",
+        "pp.5-8 results, discussion, Fig.6, Table1, appendix resolution"
+      ],
+      "colognesi2020.mdpi.pdf": [
+        "pp.8-9 Sec2.3 and Fig7",
+        "pp.10-14 sample/procedure, Table3",
+        "pp.15-16 Sec4.3 interpretation"
+      ],
+      "ross1998.original.pdf": [
+        "pp.2591-2595 full 5-page text, especially experimental details, results, conclusions"
+      ]
+    }
+  },
+  "conversion": {
+    "formula": "p=hbar*k, k in inverse angstrom; K_eV=hbar^2*(k*1e10)^2/(2*m*e); k_threshold=sqrt(K_eV/coefficient)",
+    "constants": {
+      "h_J_s": 6.62607015e-34,
+      "elementary_charge_C": 1.602176634e-19,
+      "proton_mass_kg": 1.67262192595e-27,
+      "deuteron_mass_kg": 3.3435837768e-27
+    },
+    "coefficients_eV_per_inverse_angstrom_squared": {
+      "proton": 0.002074981109206448,
+      "deuteron": 0.001038005664243405
+    },
+    "threshold_k_inverse_angstrom": [
+      {
+        "K_eV": 100,
+        "proton": 219.52951927968576,
+        "deuteron": 310.38458075725646
+      },
+      {
+        "K_eV": 300,
+        "proton": 380.23628115358713,
+        "deuteron": 537.6018637575335
+      },
+      {
+        "K_eV": 1000,
+        "proton": 694.2132945656538,
+        "deuteron": 981.5222257894003
+      }
+    ],
+    "deuteron_K_eV_at_k": {
+      "20": 0.41520226569736196,
+      "25": 0.648753540152128,
+      "30": 0.9342050978190644
+    },
+    "proton_gaussian_sigma_inverse_angstrom": [
+      {
+        "mean_K_meV": 109,
+        "sigma": 4.184519037290316
+      },
+      {
+        "mean_K_meV": 112.9,
+        "sigma": 4.258721791958508
+      },
+      {
+        "mean_K_meV": 119.4,
+        "sigma": 4.37960015462572
+      },
+      {
+        "mean_K_meV": 118.3,
+        "sigma": 4.359379437297853
+      },
+      {
+        "mean_K_meV": 72.1,
+        "sigma": 3.403297630786818
+      }
+    ],
+    "interpretation": "Conversions only, no distribution extrapolation; y is one component and is not a 3D momentum-radius cutoff."
+  },
+  "processing": "Sequential local PDF extraction/rendering and a tiny analytic units conversion only. No simulation. Local processing far below3core-min by command durations; no comprehensive CPU accounting claimed. Focused acquisition ended after two usable Compton primaries and explicit gaps; no new allowance requested.",
+  "disposition": "Literature slice complete. Do not infer a fusion-enhancing deuteron tail from these measurements. Stop this search; return to main bound-target calculation."
+}

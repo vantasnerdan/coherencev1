@@ -1,0 +1,110 @@
+{
+  "baseline": {
+    "bytes": 7760,
+    "path": "<PRIVATE_PATH>",
+    "sha256": "c571526e80066f4b7e75107ef5a45c19523035d5dd2f3eb81d7effedbadedd96"
+  },
+  "blend_inner_A": 0.75,
+  "blend_outer_A": 1,
+  "calibration": [
+    {
+      "bytes": 16557,
+      "path": "<PRIVATE_PATH>",
+      "sha256": "ea0e8d961de338e6dfd8da46a80bc710dd0bd1aaf2ef632d89782c3f61acbdef"
+    }
+  ],
+  "coefficient_units": [
+    "eV/A^2",
+    "eV/A^4",
+    "eV/A^6",
+    "eV/A^4"
+  ],
+  "continuation": "C-infinity exp(-1/t) partition; pure BO polynomial inside inner radius, physical frozen field outside outer radius",
+  "density": {
+    "bytes": 3182886,
+    "path": "<PRIVATE_PATH>",
+    "sha256": "4710df42aa09d3aca70f8394df07f36d7dd45c709f521c5c4197126aaf0890b4"
+  },
+  "field_diagnostics": {
+    "Coulomb_eV_A": 14.399645351950548,
+    "Ewald_eta_A_inverse": 0.7256645342189099,
+    "Pd_core_electrons": 35.999999999999815,
+    "density_binding": {
+      "bytes": 3182886,
+      "path": "<PRIVATE_PATH>",
+      "sha256": "4710df42aa09d3aca70f8394df07f36d7dd45c709f521c5c4197126aaf0890b4"
+    },
+    "ionic_charge_sum": 43.00000000000074,
+    "net_auxiliary_cell_charge": -0.9999999999861942,
+    "real_image_shell": 1,
+    "scope": "Frozen auxiliary electrons, physical point nuclei and Pd core; not the relaxed BO surface",
+    "valence_electrons": 43.99999999998693
+  },
+  "local_basis": [
+    "sum(x_i^2)/2",
+    "sum(x_i^4)/4",
+    "sum(x_i^6)/6",
+    "sum(pair x_i^2*x_j^2)/2"
+  ],
+  "local_coefficients": [
+    0.44126209610865935,
+    8.063216526150072,
+    16.594853459365343,
+    0.7595439530164426
+  ],
+  "origin_A": [
+    2.067070842334287,
+    2.067070842334287,
+    2.067070842334287
+  ],
+  "schema": "g8-force-calibrated-physical-wall-well-v2",
+  "scope": "Clamped one-body BO model; unfitted continuation is a sensitivity, not an exact correlated PdD momentum distribution",
+  "singular_values": [
+    0.9282726193043959,
+    0.14698263932993758,
+    0.0215855621681982,
+    0.006652836951020325
+  ],
+  "specification": {
+    "acceptance": {
+      "force_fit_residual_max_eV_A": 0.02,
+      "unfitted_energy_max_eV": 0.005
+    },
+    "authority": "entry_3227",
+    "baseline": {
+      "bytes": 7760,
+      "path": "<PRIVATE_PATH>",
+      "sha256": "c571526e80066f4b7e75107ef5a45c19523035d5dd2f3eb81d7effedbadedd96"
+    },
+    "baseline_row": 0,
+    "blend_inner_A": 0.75,
+    "blend_outer_A": 1,
+    "calibration": [
+      {
+        "bytes": 16557,
+        "path": "<PRIVATE_PATH>",
+        "sha256": "ea0e8d961de338e6dfd8da46a80bc710dd0bd1aaf2ef632d89782c3f61acbdef"
+      }
+    ],
+    "density": {
+      "bytes": 3182886,
+      "path": "<PRIVATE_PATH>",
+      "sha256": "4710df42aa09d3aca70f8394df07f36d7dd45c709f521c5c4197126aaf0890b4"
+    },
+    "observable": "Native forces fix the local cubic quadratic/quartic/sextic/cross terms. All five native BO free-energy changes are independent holdouts.",
+    "previous_attempt": "well-model-001 is invalid: fitted energies but incorrect restoring-force sign; original source retained in attempt-sources/well-model-001.py. Do not use it as a nuclear well.",
+    "schema": "g8-force-calibrated-well-input-v2",
+    "source_bindings": [
+      {
+        "bytes": 6741,
+        "path": "<PRIVATE_PATH>",
+        "sha256": "df4d54ef082419a6c63f3d9ec679f369c809ca921d57fb81c042498671bf43c7"
+      },
+      {
+        "bytes": 5716,
+        "path": "<PRIVATE_PATH>",
+        "sha256": "59604bbc6a770e5b4731298952a95b32008e8969577b48742d8dcc5f22493b74"
+      }
+    ]
+  }
+}

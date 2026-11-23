@@ -48,10 +48,37 @@ Fast neutrals are the only mechanism in the four branches that reaches the size 
 
 Observable: the energy spectrum of ions and neutrals at the foil plane against gun voltage, with the actual grid potentials. A constant upstream neutral rate would also give a yield per coulomb that falls as the current rises.
 
-## Branch to come
+## Branch: the collision with a bound target (`collision.md`, giuliano)
 
-`collision` (giuliano).
+The target deuteron is not at rest. It sits in a well, with zero-point and thermal motion, and its momentum could add to the beam's.
+
+- Ordinary motion in the well (harmonic, 300 K): 1.035 times at 0.25 keV, 1.011 at 0.5 keV, 1.003 at 1 keV, nothing above.
+- Any momentum distribution at all. Treat the target as a bound spectator that keeps its energy accounts: whatever momentum it has, taking it out of the well costs energy, so the collision energy cannot exceed the beam energy plus the excitation available. With up to 100 eV of excitation, the PdD proton yield at 0.25 keV relative to the reference cannot exceed 8e-9. The measured value is 0.05, six million times higher. This holds for every distribution, not only a Gaussian one.
+- At 0.5 keV the same bound is 0.006 to 0.020 against a measured 0.017, so that point is not excluded under one of the two current readings.
+- Measured momentum distributions of hydrogen in ZrH2 (neutron Compton scattering) are Gaussian with about 0.11 eV of kinetic energy, with no heavy tail.
+
+A bound target does not explain the lowest point. The statement is made inside the spectator model; it is not a full many-body result. The computed well is strongly anharmonic, but the high-momentum tail of the real wavefunction and converged anharmonic yields were not computed, because the bound above makes them unnecessary.
+
+Observable: the Doppler width of the fusion proton line. A target population at 100, 300 or 1000 eV would broaden the 3.02 MeV line to 3.4, 4.9 or 6.5 keV (one sigma, at 90 degrees).
+
+The work also found that the older hydrogen setup at 0.20 A grid spacing changes the energy by 0.32 eV when the whole crystal is shifted rigidly by 0.1 A. No number in this node uses that well. The pair curves in `g6_collision`, `g7_defect` and `g7_hydride` are four-term differences at matched geometry, which cancel this term; single-well energies from that setup would not.
+
+## The four branches together
+
+With the deuterium profile fixed and 40 eV of screening, the measured curve is 1e16 to 1e17 above the model at 0.25 keV and nearly flat below 2.5 keV.
+
+| Branch | Most it gives at 0.25 keV | Reaches the excess |
+|---|---:|---|
+| Reaction (threshold resonance) | 6 times | no |
+| Bound target (any momentum distribution) | 8e-9 of the reference against 0.05 measured | no |
+| Driven target (beam heating, 100 eV for 100 ps) | 1.25 times | no |
+| Beam composition and paired arrival | 1.18 times | no |
+| Fast neutrals at 13 keV, 0.1 to 5 percent per ion | 1e15 to 7e16 | yes, if present |
+
+Three of the four branches change the yield by order one. None of them makes the bottom of the curve flat. The only route that reaches the size is deuterium arriving well above the set energy, and the documented gun has no source for it at low settings. The flat floor says the same thing from the data side: what reacts at the lowest settings is not meeting at the set collision energy.
+
+The measurements that would separate these are an energy spectrum of ions and neutrals at the foil plane against gun voltage, the yield per coulomb against beam current at fixed energy, and the width of the proton line.
 
 ## Lead's note
 
-`reaction.*`, `common.py` and `baseline.csv` are the delivered archive (SHA-256 c3653ee63b327c24eae7ec456251dc781ee8a28bb2264e659adf0cf3f0219962), unchanged. `driven_target.*`, `readout_floats.*` and `method.md` (delivered as its README) come from the second archive (SHA-256 ae4dd59696931dd33a0782fc2d97287599afa8777d611168a6edca188d187928); the lead read the page and checked its tables against the delivered CSVs but did not rerun it. `beam.*` is the third archive (SHA-256 5b6460beadbc919ab3c7799b39f700a2b540d586009000840485c692663f88c5), unchanged; the lead's rerun of `python g8_why/beam.py` reproduced the tables to 4 parts in 1e15 and the fitted tail shares to 1 part in 1e8. `method.md` is now the README of that third archive. Run `python -m g8_why.reaction` from the repository root with `g8_why` on the path (NumPy 2). The lead's rerun reproduced the tables to rounding. The excess table uses the yields as plotted; under the other reading of the current normalisation (`g7_gap/`) the 0.25 keV values are about six times smaller, which changes nothing above.
+`reaction.*`, `common.py` and `baseline.csv` are the delivered archive (SHA-256 c3653ee63b327c24eae7ec456251dc781ee8a28bb2264e659adf0cf3f0219962), unchanged. `driven_target.*`, `readout_floats.*` and `method.md` (delivered as its README) come from the second archive (SHA-256 ae4dd59696931dd33a0782fc2d97287599afa8777d611168a6edca188d187928); the lead read the page and checked its tables against the delivered CSVs but did not rerun it. `beam.*` is the third archive (SHA-256 5b6460beadbc919ab3c7799b39f700a2b540d586009000840485c692663f88c5), unchanged; the lead's rerun of `python g8_why/beam.py` reproduced the tables to 4 parts in 1e15 and the fitted tail shares to 1 part in 1e8. `method.md` is now the README of that third archive. `collision.md` and `collision/` are the fourth archive (SHA-256 2fc68b604d43b812243fbd901e4d01e4c193f34c6a3da1fde8b56e527d37ee66), unchanged; from `g8_why`, `python collision/reader.py .` replays the 32 reported bounds (the lead's run: passed, largest difference 2 parts in 1e15). Run `python -m g8_why.reaction` from the repository root with `g8_why` on the path (NumPy 2). The lead's rerun reproduced the tables to rounding. The excess table uses the yields as plotted; under the other reading of the current normalisation (`g7_gap/`) the 0.25 keV values are about six times smaller, which changes nothing above.

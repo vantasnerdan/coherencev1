@@ -1,0 +1,201 @@
+{
+  "points": [
+    {
+      "cell_A": [
+        [
+          4.134141684668574,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          4.134141684668574,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          4.134141684668574
+        ]
+      ],
+      "electrons_valence": 44.0,
+      "energy": {
+        "free_energy_eV": -80.36475010101154,
+        "internal_energy_eV": -80.1532404173945,
+        "minus_TS_eV": -0.2115096836170482
+      },
+      "forces_eV_A": [
+        [
+          3.212303192644546e-06,
+          -1.0741850087898121e-06,
+          4.769356164359363e-07
+        ],
+        [
+          -8.723854844380417e-07,
+          -2.1132596896351929e-07,
+          1.5814066253624804e-07
+        ],
+        [
+          2.778167442498399e-06,
+          3.412363756159527e-07,
+          -4.844487920864942e-07
+        ],
+        [
+          -1.0517014016914983e-06,
+          8.31827501263748e-09,
+          -1.6925997627810414e-07
+        ],
+        [
+          -2.9038992430713703e-06,
+          8.599511696604587e-08,
+          -5.003388216100909e-07
+        ],
+        [
+          9.607570293295609e-07,
+          -1.4592487130536288e-07,
+          -1.6276741520358907e-07
+        ],
+        [
+          -2.652647197523036e-06,
+          7.389970252651497e-07,
+          3.858401582510806e-07
+        ],
+        [
+          8.405521674728845e-07,
+          3.672701299138216e-07,
+          1.652099749795534e-07
+        ]
+      ],
+      "gpw": {
+        "bytes": 31143116,
+        "path": "point-00.gpw",
+        "sha256": "e3ef86ef1c70b7ceb484c8fc62309f83c25256fb30946c0116b534b321dd6874"
+      },
+      "label": "point-00",
+      "offset_A": [
+        0,
+        0,
+        0
+      ],
+      "positions_A": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          2.067070842334287,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          2.067070842334287,
+          2.067070842334287
+        ],
+        [
+          2.067070842334287,
+          2.067070842334287,
+          2.067070842334287
+        ],
+        [
+          2.067070842334287,
+          0.0,
+          2.067070842334287
+        ],
+        [
+          0.0,
+          0.0,
+          2.067070842334287
+        ],
+        [
+          2.067070842334287,
+          2.067070842334287,
+          0.0
+        ],
+        [
+          0.0,
+          2.067070842334287,
+          0.0
+        ]
+      ],
+      "process_cpu_s": 185.398788239,
+      "symbols": [
+        "Pd",
+        "H",
+        "Pd",
+        "H",
+        "Pd",
+        "H",
+        "Pd",
+        "H"
+      ],
+      "target_force_eV_A": [
+        -1.0517014016914983e-06,
+        8.31827501263748e-09,
+        -1.6925997627810414e-07
+      ]
+    }
+  ],
+  "process_cpu_s": 185.620745705,
+  "schema": "g8-well-points-v1",
+  "scope": "Frozen neutral PdD local-well points; no density/profile fit or pair-barrier campaign",
+  "specification": {
+    "authority": {
+      "case_core_min": 5,
+      "entry": "entry_3227",
+      "whole_core_min": 180
+    },
+    "baseline_record": {
+      "bytes": 2175,
+      "path": "<PRIVATE_PATH>",
+      "sha256": "8a6fd97608a2c5f1b3e7aec4f1b931dfdc92651a4495552a6204455dc6f6ee38"
+    },
+    "hydrogen_setup": "ae",
+    "offsets_A": [
+      [
+        0,
+        0,
+        0
+      ]
+    ],
+    "purpose": "Diagnose positive energy displacement with negative force secant before any further well SCFs; compare fresh/cached energy zero and stationarity. Same physical PBE cell, not a grid/host campaign.",
+    "scf_specification": {
+      "h_A": 0.2,
+      "kmesh": [
+        2,
+        2,
+        2
+      ]
+    },
+    "schema": "g8-well-points-input-v1",
+    "sources": [
+      {
+        "bytes": 5979,
+        "path": "<PRIVATE_PATH>",
+        "sha256": "167eadfd63b068257fdb4be17720c1ee80e5f712cf2c715b8d885c02dbfbe1ab"
+      },
+      {
+        "bytes": 1917,
+        "path": "<PRIVATE_PATH>",
+        "sha256": "4260bcce55925c68b986f79ad619abc3662265362b7e05a6ad51390c7ebe9086"
+      },
+      {
+        "bytes": 1409,
+        "path": "<PRIVATE_PATH>",
+        "sha256": "dcab99128fbb312083bdccf440c4c32c214e58e78c59a8a52126300c25d3420c"
+      },
+      {
+        "bytes": 2477,
+        "path": "<PRIVATE_PATH>",
+        "sha256": "933aa0c85acf26c58cc471dc7c6026941befa293684449cfad502a378e85a31d"
+      },
+      {
+        "bytes": 2107,
+        "path": "<PRIVATE_PATH>",
+        "sha256": "077eb638330c142ce710bd359780d0123d74d411e1bd9f26c7022a1e9bd1cc23"
+      }
+    ]
+  },
+  "target_index": 3
+}
