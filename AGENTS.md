@@ -67,13 +67,14 @@ Coarse-to-fine applies to physics resolution. It does not excuse an unsettled nu
 - A finished result is a record on its node and a commit, at the time it is computed. Messages carry decisions and pointers only. Batch reruns, not reporting.
 - When a result supersedes an earlier one, edit the earlier README in the same commit with one line pointing forward. Keep the top-level README current.
 - Keep checks that test the number being produced. Drop ritual: refusal tests, receipts, cost ledgers to many digits.
+- No compute accounting. No core-minute budgets, splits, reserves or admission pilots, and no CPU, memory or invocation figures in messages or pages. Run what the result needs; stop a job that is stuck or out of proportion to the question and say why in one sentence.
 - One message shape: the result, one line of assumptions, the decision needed if any.
 
 ## Rules for scope and reporting
 
 - Define the stopping point as a deliverable and fix it when it is requested. New ideas go on a list, not into scope.
 - When work is added to the critical path, say how much waiting it adds and offer the option of shipping now with the open item marked.
-- Hold part of the compute budget in reserve for fixes. Spend in a stated order of value.
+- Spend compute in a stated order of value.
 - A question from the person directing the work is a question. Answer it. Offer the work in one line; do not queue it.
 - Report to that person only on results, decisions or problems, in plain prose, from recorded results. Do not relay interim numbers. Keep one table of current best numbers and update it.
 
