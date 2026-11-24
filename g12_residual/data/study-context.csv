@@ -1,0 +1,37 @@
+study_id,series,target,quantity,value,lower,upper,unit,scope,source_locator,citation
+czerski2409v3,implanted samples,Pd,D_per_metal,0.054,,,1,Sample composition (not point-specific),Table 1,https://arxiv.org/abs/2409.02112v3
+czerski2409v3,implanted samples,Ti,D_per_metal,1.93,,,1,Sample composition (not point-specific),Table 1,https://arxiv.org/abs/2409.02112v3
+czerski2409v3,implanted samples,Zr,D_per_metal,1.74,,,1,Sample composition (not point-specific),Table 1,https://arxiv.org/abs/2409.02112v3
+czerski2409v3,implanted samples,Pd,power,0.6,,,W,Approximate apparatus condition,Pd measurement procedure,https://arxiv.org/abs/2409.02112v3
+czerski2409v3,implanted samples,Pd,temperature,,30,32,degC,Approximate series temperature range,Pd measurement procedure,https://arxiv.org/abs/2409.02112v3
+czerski2409v3,implanted samples,Zr,temperature,,,45,degC,Upper bound on series temperature,Zr measurement procedure,https://arxiv.org/abs/2409.02112v3
+czerski2409v3,implanted samples,Pd,mass_density,12.02,,,g/cm3,Sample material property,Table 1,https://arxiv.org/abs/2409.02112v3
+czerski2409v3,implanted samples,Ti,mass_density,3.97,,,g/cm3,Sample material property,Table 1,https://arxiv.org/abs/2409.02112v3
+czerski2409v3,implanted samples,Zr,mass_density,5.61,,,g/cm3,Sample material property,Table 1,https://arxiv.org/abs/2409.02112v3
+czerski2409v3,implanted samples,Pd,thermal_conductivity,0.10,,,W/cm/K,Sample input property (not electrical conductivity),Table 1,https://arxiv.org/abs/2409.02112v3
+czerski2409v3,implanted samples,Ti,thermal_conductivity,0.09,,,W/cm/K,Sample input property (not electrical conductivity),Table 1,https://arxiv.org/abs/2409.02112v3
+czerski2409v3,implanted samples,Zr,thermal_conductivity,0.11,,,W/cm/K,Sample input property (not electrical conductivity),Table 1,https://arxiv.org/abs/2409.02112v3
+czerski2409v3,implanted samples,Pd,volumetric_heat_capacity,2.93,,,J/cm3/K,Sample input property,Table 1,https://arxiv.org/abs/2409.02112v3
+czerski2409v3,implanted samples,Ti,volumetric_heat_capacity,2.83,,,J/cm3/K,Sample input property,Table 1,https://arxiv.org/abs/2409.02112v3
+czerski2409v3,implanted samples,Zr,volumetric_heat_capacity,2.59,,,J/cm3/K,Sample input property,Table 1,https://arxiv.org/abs/2409.02112v3
+chen2025,Fig 3,Pd,PIII_plasma_current_setpoint,0.5,,,mA,Setpoint shared across conditions; not delivered D+ current trace,Fig. 1 and Methods,https://doi.org/10.1038/s41586-025-09042-7
+chen2025,Fig 3 phase II,Pd,electrochemical_cell_current,200,,,mA,Galvanostat current separate from beam,Fig. 1 and Methods,https://doi.org/10.1038/s41586-025-09042-7
+chen2025,Fig 3 phase I,Pd,vacuum_pressure,,1e-5,2e-5,Torr,Typical stabilized range not point-specific,Methods,https://doi.org/10.1038/s41586-025-09042-7
+chen2025,Fig 3 phase II,Pd,vacuum_pressure,,3.5e-5,4e-5,Torr,Typical final pressure not point-specific,Methods,https://doi.org/10.1038/s41586-025-09042-7
+chen2025,separate XRD loading experiment,Pd,D_per_metal,0.7,,,1,Approximate separate-test material estimate not target measurement during neutron count,Results and extended data XRD,https://doi.org/10.1038/s41586-025-09042-7
+chen2025,beam loading,Pd,duration,2,,,h,Approximate typical acquisition duration not a per-run setting,Methods,https://doi.org/10.1038/s41586-025-09042-7
+yuki1997,method current checks,Ti and Yb,target_current_near_2.55_keV_lab,100,,,uA,Approximate apparatus report not assigned to curve points,Experimental procedure,https://doi.org/10.1088/0954-3899/23/10/036
+yuki1997,method current checks,Ti and Yb,target_current_near_6.45_keV_lab,500,,,uA,Approximate apparatus report not assigned to curve points,Experimental procedure,https://doi.org/10.1088/0954-3899/23/10/036
+yuki1997,2.55 keV example,not identified,total_accumulated_beam_charge,0.200,,,C,Example protocol not assigned to nearby digitized energies,Experimental procedure,https://doi.org/10.1088/0954-3899/23/10/036
+yuki1997,2.55 keV example,not identified,reference_sampling_charge_interval,0.002,,,C,Example protocol not assigned to nearby digitized energies,Experimental procedure,https://doi.org/10.1088/0954-3899/23/10/036
+yuki1997,method current checks,Ti and Yb,target_to_Faraday_cup_current_ratio,,1.02,1.06,1,Reported method range for 2.45 to 7.95 keV lab,Experimental procedure,https://doi.org/10.1088/0954-3899/23/10/036
+cruz2005,O1282,all,beam_current,,,20,uA,Upper limit not point-specific,EXFOR O1282001 INC-SOURCE,https://doi.org/10.1016/j.physletb.2005.08.036
+czerski2409v3,decelerated beam,Ti and Zr,beam_spot_diameter,7,,,mm,Typical apparatus spot not used for Pd,Methods pp.16–17,https://arxiv.org/abs/2409.02112v3
+czerski2409v3,all targets,all,beam_current_relative_variation,,,0.5,percent,Upper bound not an actual point current,Methods p.16,https://arxiv.org/abs/2409.02112v3
+czerski2409v3,all targets,all,secondary_electron_collected_charge_bias,,10,15,percent,Apparatus check via positive holder bias not a per-run correction,Methods pp.16–17,https://arxiv.org/abs/2409.02112v3
+raiola2005,O1379,all,beam_current,,,2,uA,Upper limit not point-specific,EXFOR O1379001 METHOD,https://doi.org/10.1088/0954-3899/31/11/002
+raiola2005,O1379,all,beam_temperature_variation,,,2,degC,Upper limit on beam heating not measurement uncertainty,EXFOR O1379001 METHOD,https://doi.org/10.1088/0954-3899/31/11/002
+raiola2005,O1379,all,sputter_ion_nominal_energy,35,,,keV,In situ Kr target preparation not projectile energy,EXFOR O1379001 SAMPLE,https://doi.org/10.1088/0954-3899/31/11/002
+raiola2005,O1379,all,sputter_removed_material,300,,,monolayers,Approximate target preparation not an actual sample thickness,EXFOR O1379001 SAMPLE,https://doi.org/10.1088/0954-3899/31/11/002
+yuki1997,Bosch–Hale bare comparator,Ti and Yb,projected_range_at_6.45_keV,,30,40,nm,Model/analysis estimate not energy-resolved range measurement,Section 3,https://doi.org/10.1088/0954-3899/23/10/036
+yuki1997,Bosch–Hale bare comparator,Ti and Yb,assumed_D_per_metal,2,,,1,Model assumption not loading measurement,Section 3,https://doi.org/10.1088/0954-3899/23/10/036
