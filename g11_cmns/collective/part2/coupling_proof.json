@@ -1,0 +1,12 @@
+{
+  "source": "g11_cmns/coupling/coupling_results.json",
+  "source_sha256": "93ee69e4b3ff975dfe623d45599714792c1e1a6cf43738f451b8543898851875",
+  "interface_sha256": "4bbe996211a09c4c172247a8837a436d04afb0bafe3e3adeef06f73c62b6e2c3",
+  "Nmax": 6,
+  "Coulomb_fixed_T": true,
+  "contraction": "sum_r conj(C[r,0])*C[r,1]/((E_even[1]-E_odd[r])*1e6), first three odd rows",
+  "recomputed_K0_eV_inverse": [-9.082957428670418e-15, 0.0],
+  "interface_K0_eV_inverse": [-9.082957428670419e-15, 0.0],
+  "absolute_difference_eV_inverse": 1.5777218104420236e-30,
+  "scope": "frozen finite-basis coherent contraction, not continuum or physical higher-order completion; no native replay"
+}
