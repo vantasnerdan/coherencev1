@@ -1,0 +1,675 @@
+{
+  "replay_from_repo_root": "OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 OMP_NUM_THREADS=1 NUMBA_NUM_THREADS=1 python -B g10_quantum_site/bulk-refit-048/coupled_sensitivity.py quadratic quartic",
+  "well_py_sha256": "33816c41b5d3a4567c41c0576652e70a00c3fe1c861e49ce0023ce34ed1b6941",
+  "scope": "tagged-site-only sensitivity in the full PdD cell; NOT an all-cell refit",
+  "sampling": "source joint old homogeneous PdD primitive paths; mass, graph, box and host Hamiltonian held fixed; host distribution may respond through joint reweighting",
+  "weight": "one frame weight exp[-beta mean_beads(V_new(x)-V_old(x))] on all retained beads; neighbor and spring terms cancel; archived all-cell alternate weights are not used",
+  "position": "direct joint bead marginal, f(r)=dP/dr; empty bins mean unobserved, not physical zeros; shell-averaged spatial density is shell probability divided by shell volume",
+  "support": "0.24 \u00c5 is the old nominal directional extent; 0.48 \u00c5 is the new maximum signed ray radius, NOT a validated ball; even some interior off-axis points and every exterior prediction rely on continuation. 0.60/0.80 \u00c5 are diagnostics, not data limits.",
+  "uncertainty": "paired ratio influence SE across nine equal contiguous time blocks; not a formal confidence interval or a correction for remaining correlations. Frame ESS and block ESS measure sampled weight participation only. No P extrapolation, PES uncertainty or unseen-overlap guarantee.",
+  "momentum": "existing exact finite-P midpoint displaced-path characteristic in signed [111] component, with the actual co-beaded graph field, deuteron mass, four cuts and antithetic signs. Separation is conjugate to k=p/hbar; no coordinate-to-k cutoff, Gaussian momentum or dynamics.",
+  "site_original_zero_based_atom_index": 25,
+  "site_slot_in_original_occupied_graph": 12,
+  "occupied_sites": 32,
+  "mass_amu": 2.0135532125568343,
+  "old_source": "g3_loading/x1/dense_Pd/k3/final-x1-dense-readout-20261114T0213Z.json",
+  "old_stiffness_eV_A2": [
+    [
+      0.590658682890108,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.590658682890108,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.590658682890108
+    ]
+  ],
+  "old_F0_eV_A": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "old_a_b_eV_A4": [
+    11.615048217417709,
+    -2.465950498950378
+  ],
+  "cases": [
+    {
+      "temperature_K": 300,
+      "beads": 32,
+      "frames": 801,
+      "case": "PdD_300K",
+      "contiguous_blocks": 9,
+      "frames_per_block": 89,
+      "path_file": "output/coupled/PdD_300K_paths.npz",
+      "path_sha256": "e586a82c15f270e4617af122508f6db55a8c3744d9710849971f4f4f9c0d9bb9",
+      "max_saved_bead_radius_A": 0.7107214301496755,
+      "neighbor_field_rms_eV_A": 0.0483727341618547,
+      "archived_old_MSD_control_abs_error_A2": 0.0,
+      "archived_old_exterior_0.24_A_control_abs_error": 0.0,
+      "well_old_vs_archive_max_abs_bead_energy_error_eV": 1.1102230246251565e-16,
+      "variants": {
+        "old": {
+          "overlap": {
+            "frame_weight_ess": 801.0,
+            "block_weight_ess": 9.0,
+            "largest_frame_weight_fraction": 0.0012484394506866417,
+            "largest_block_weight_fraction": 0.1111111111111111,
+            "log_weight_span": 0.0,
+            "passes_participation_screen": true
+          },
+          "position": {
+            "MSD_A2": {
+              "value": 0.0833632498991965,
+              "block_se": 0.004627174594269669,
+              "change_vs_old": 0.0,
+              "paired_change_block_se": 0.0,
+              "nonzero_numerator_blocks": 9
+            },
+            "bead_fraction_gt_0.24_A": {
+              "value": 0.5779884519350812,
+              "block_se": 0.03305893058133597,
+              "change_vs_old": 0.0,
+              "paired_change_block_se": 0.0,
+              "nonzero_numerator_blocks": 9
+            },
+            "frame_any_gt_0.24_A": {
+              "value": 0.9737827715355806,
+              "block_se": 0.007490636704119852,
+              "change_vs_old": 0.0,
+              "paired_change_block_se": 0.0,
+              "nonzero_numerator_blocks": 9
+            },
+            "bead_fraction_gt_0.48_A": {
+              "value": 0.029377340823970036,
+              "block_se": 0.005558840888399491,
+              "change_vs_old": 0.0,
+              "paired_change_block_se": 0.0,
+              "nonzero_numerator_blocks": 9
+            },
+            "frame_any_gt_0.48_A": {
+              "value": 0.1947565543071161,
+              "block_se": 0.03007936030750751,
+              "change_vs_old": 0.0,
+              "paired_change_block_se": 0.0,
+              "nonzero_numerator_blocks": 9
+            },
+            "bead_fraction_gt_0.60_A": {
+              "value": 0.0017166042446941324,
+              "block_se": 0.000583578156275421,
+              "change_vs_old": 0.0,
+              "paired_change_block_se": 0.0,
+              "nonzero_numerator_blocks": 6
+            },
+            "frame_any_gt_0.60_A": {
+              "value": 0.018726591760299626,
+              "block_se": 0.0059218682774688745,
+              "change_vs_old": 0.0,
+              "paired_change_block_se": 0.0,
+              "nonzero_numerator_blocks": 6
+            },
+            "histogram_overflow_at_or_above_0.80_A": {
+              "value": 0.0,
+              "block_se": 0.0,
+              "change_vs_old": 0.0,
+              "paired_change_block_se": 0.0,
+              "nonzero_numerator_blocks": 0
+            }
+          },
+          "position_normalization": 1.0,
+          "momentum_characteristic_111": {
+            "status": "estimated at finite P; no Fourier inversion or far-tail claim",
+            "min_numerator_block_ess": 8.971727804275018,
+            "all_displacements_pass_numerator_block_ess_4": true,
+            "beta_over_beads_eV_inverse": 1.2088039709948002,
+            "kinetic_factor_eV_A2": 0.001038005664243405,
+            "direct_witness_displacement_A": 0.25,
+            "direct_witness_abs_error": 1.1102230246251565e-15,
+            "witness_numerator_share_from_any_shifted_bead_gt_0.48_A": 0.2578208818452259
+          }
+        },
+        "quadratic": {
+          "overlap": {
+            "frame_weight_ess": 796.2975640907339,
+            "block_weight_ess": 8.999039627967418,
+            "largest_frame_weight_fraction": 0.002842080185840178,
+            "largest_block_weight_fraction": 0.11308816358933922,
+            "log_weight_span": 1.0125006337042899,
+            "passes_participation_screen": true
+          },
+          "position": {
+            "MSD_A2": {
+              "value": 0.08513090618381229,
+              "block_se": 0.004945799211431645,
+              "change_vs_old": 0.0017676562846157956,
+              "paired_change_block_se": 0.00044146003314980833,
+              "nonzero_numerator_blocks": 9
+            },
+            "bead_fraction_gt_0.24_A": {
+              "value": 0.584020274149099,
+              "block_se": 0.03364543323428509,
+              "change_vs_old": 0.006031822214017768,
+              "paired_change_block_se": 0.00098867264975321,
+              "nonzero_numerator_blocks": 9
+            },
+            "frame_any_gt_0.24_A": {
+              "value": 0.974273659514185,
+              "block_se": 0.007431559643404479,
+              "change_vs_old": 0.0004908879786044151,
+              "paired_change_block_se": 7.649579641530114e-05,
+              "nonzero_numerator_blocks": 9
+            },
+            "bead_fraction_gt_0.48_A": {
+              "value": 0.03397970122242453,
+              "block_se": 0.006605656055864946,
+              "change_vs_old": 0.004602360398454495,
+              "paired_change_block_se": 0.0013790914204299815,
+              "nonzero_numerator_blocks": 9
+            },
+            "frame_any_gt_0.48_A": {
+              "value": 0.20429413860724563,
+              "block_se": 0.031224519973823167,
+              "change_vs_old": 0.00953758430012952,
+              "paired_change_block_se": 0.002179290051358901,
+              "nonzero_numerator_blocks": 9
+            },
+            "bead_fraction_gt_0.60_A": {
+              "value": 0.002731667548232341,
+              "block_se": 0.0010230008900452444,
+              "change_vs_old": 0.0010150633035382088,
+              "paired_change_block_se": 0.00047835694929185046,
+              "nonzero_numerator_blocks": 6
+            },
+            "frame_any_gt_0.60_A": {
+              "value": 0.02537666406268804,
+              "block_se": 0.007937104688236211,
+              "change_vs_old": 0.006650072302388413,
+              "paired_change_block_se": 0.0023565754197258366,
+              "nonzero_numerator_blocks": 6
+            },
+            "histogram_overflow_at_or_above_0.80_A": {
+              "value": 0.0,
+              "block_se": 0.0,
+              "change_vs_old": 0.0,
+              "paired_change_block_se": 0.0,
+              "nonzero_numerator_blocks": 0
+            }
+          },
+          "position_normalization": 0.9999999999999999,
+          "momentum_characteristic_111": {
+            "status": "estimated at finite P; no Fourier inversion or far-tail claim",
+            "min_numerator_block_ess": 8.985178483521908,
+            "all_displacements_pass_numerator_block_ess_4": true,
+            "beta_over_beads_eV_inverse": 1.2088039709948002,
+            "kinetic_factor_eV_A2": 0.001038005664243405,
+            "direct_witness_displacement_A": 0.25,
+            "direct_witness_abs_error": 4.440892098500626e-16,
+            "witness_numerator_share_from_any_shifted_bead_gt_0.48_A": 0.2695890937355023
+          }
+        },
+        "quartic": {
+          "overlap": {
+            "frame_weight_ess": 799.6188881408524,
+            "block_weight_ess": 8.999633944710146,
+            "largest_frame_weight_fraction": 0.001540872304745759,
+            "largest_block_weight_fraction": 0.11239818947379542,
+            "log_weight_span": 0.703744991575535,
+            "passes_participation_screen": true
+          },
+          "position": {
+            "MSD_A2": {
+              "value": 0.08371547741695508,
+              "block_se": 0.004730820164538941,
+              "change_vs_old": 0.00035222751775858263,
+              "paired_change_block_se": 0.0001995320830474208,
+              "nonzero_numerator_blocks": 9
+            },
+            "bead_fraction_gt_0.24_A": {
+              "value": 0.5798988503208388,
+              "block_se": 0.03333356062529664,
+              "change_vs_old": 0.0019103983857575724,
+              "paired_change_block_se": 0.0006511594867966283,
+              "nonzero_numerator_blocks": 9
+            },
+            "frame_any_gt_0.24_A": {
+              "value": 0.9740063630733266,
+              "block_se": 0.007472588644019112,
+              "change_vs_old": 0.00022359153774598184,
+              "paired_change_block_se": 4.277702595500837e-05,
+              "nonzero_numerator_blocks": 9
+            },
+            "bead_fraction_gt_0.48_A": {
+              "value": 0.029961291207990657,
+              "block_se": 0.00583701830749065,
+              "change_vs_old": 0.0005839503840206206,
+              "paired_change_block_se": 0.0005746866836993664,
+              "nonzero_numerator_blocks": 9
+            },
+            "frame_any_gt_0.48_A": {
+              "value": 0.1960267620311571,
+              "block_se": 0.03083886300348491,
+              "change_vs_old": 0.0012702077240409893,
+              "paired_change_block_se": 0.0013697315151436648,
+              "nonzero_numerator_blocks": 9
+            },
+            "bead_fraction_gt_0.60_A": {
+              "value": 0.0018414481761909818,
+              "block_se": 0.0006438433654331501,
+              "change_vs_old": 0.0001248439314968494,
+              "paired_change_block_se": 9.580549369628978e-05,
+              "nonzero_numerator_blocks": 6
+            },
+            "frame_any_gt_0.60_A": {
+              "value": 0.018841809701122963,
+              "block_se": 0.005849150266122173,
+              "change_vs_old": 0.0001152179408233367,
+              "paired_change_block_se": 0.000778444378402177,
+              "nonzero_numerator_blocks": 6
+            },
+            "histogram_overflow_at_or_above_0.80_A": {
+              "value": 0.0,
+              "block_se": 0.0,
+              "change_vs_old": 0.0,
+              "paired_change_block_se": 0.0,
+              "nonzero_numerator_blocks": 0
+            }
+          },
+          "position_normalization": 1.0,
+          "momentum_characteristic_111": {
+            "status": "estimated at finite P; no Fourier inversion or far-tail claim",
+            "min_numerator_block_ess": 8.976680702325622,
+            "all_displacements_pass_numerator_block_ess_4": true,
+            "beta_over_beads_eV_inverse": 1.2088039709948002,
+            "kinetic_factor_eV_A2": 0.001038005664243405,
+            "direct_witness_displacement_A": 0.25,
+            "direct_witness_abs_error": 0.0,
+            "witness_numerator_share_from_any_shifted_bead_gt_0.48_A": 0.25874766834177493
+          }
+        }
+      },
+      "old_characteristic_field_callback_vs_polynomial_max_abs_block_error": 3.3306690738754696e-16,
+      "quartic_minus_quadratic_position": {
+        "MSD_A2": {
+          "change": -0.001415428766857213,
+          "paired_change_block_se": 0.000357402326391386
+        },
+        "bead_fraction_gt_0.24_A": {
+          "change": -0.004121423828260196,
+          "paired_change_block_se": 0.0008185443037467319
+        },
+        "frame_any_gt_0.24_A": {
+          "change": -0.0002672964408584333,
+          "paired_change_block_se": 6.424342343675914e-05
+        },
+        "bead_fraction_gt_0.48_A": {
+          "change": -0.004018410014433874,
+          "paired_change_block_se": 0.0011052689860467453
+        },
+        "frame_any_gt_0.48_A": {
+          "change": -0.008267376576088531,
+          "paired_change_block_se": 0.0017964605587114893
+        },
+        "bead_fraction_gt_0.60_A": {
+          "change": -0.0008902193720413593,
+          "paired_change_block_se": 0.0003939957883687258
+        },
+        "frame_any_gt_0.60_A": {
+          "change": -0.006534854361565076,
+          "paired_change_block_se": 0.00216453126798411
+        },
+        "histogram_overflow_at_or_above_0.80_A": {
+          "change": 0.0,
+          "paired_change_block_se": 0.0
+        }
+      }
+    },
+    {
+      "temperature_K": 77,
+      "beads": 128,
+      "frames": 801,
+      "case": "PdD_77K",
+      "contiguous_blocks": 9,
+      "frames_per_block": 89,
+      "path_file": "output/coupled/PdD_77K_paths.npz",
+      "path_sha256": "f0fd323070b8b8c8e5e556c6b79eda46ab1a19762eb5e0ccaebad0cc1ae83d6e",
+      "max_saved_bead_radius_A": 0.7551997681838892,
+      "neighbor_field_rms_eV_A": 0.045105319159959606,
+      "archived_old_MSD_control_abs_error_A2": 0.0,
+      "archived_old_exterior_0.24_A_control_abs_error": 0.0,
+      "well_old_vs_archive_max_abs_bead_energy_error_eV": 1.1102230246251565e-16,
+      "variants": {
+        "old": {
+          "overlap": {
+            "frame_weight_ess": 801.0,
+            "block_weight_ess": 9.0,
+            "largest_frame_weight_fraction": 0.0012484394506866417,
+            "largest_block_weight_fraction": 0.1111111111111111,
+            "log_weight_span": 0.0,
+            "passes_participation_screen": true
+          },
+          "position": {
+            "MSD_A2": {
+              "value": 0.060785369017685636,
+              "block_se": 0.001289287621942766,
+              "change_vs_old": 0.0,
+              "paired_change_block_se": 0.0,
+              "nonzero_numerator_blocks": 9
+            },
+            "bead_fraction_gt_0.24_A": {
+              "value": 0.41943664169787764,
+              "block_se": 0.010636146863824419,
+              "change_vs_old": 0.0,
+              "paired_change_block_se": 0.0,
+              "nonzero_numerator_blocks": 9
+            },
+            "frame_any_gt_0.24_A": {
+              "value": 1.0,
+              "block_se": 0.0,
+              "change_vs_old": 0.0,
+              "paired_change_block_se": 0.0,
+              "nonzero_numerator_blocks": 9
+            },
+            "bead_fraction_gt_0.48_A": {
+              "value": 0.007871020599250936,
+              "block_se": 0.000789214885256389,
+              "change_vs_old": 0.0,
+              "paired_change_block_se": 0.0,
+              "nonzero_numerator_blocks": 9
+            },
+            "frame_any_gt_0.48_A": {
+              "value": 0.26841448189762795,
+              "block_se": 0.02089038767875345,
+              "change_vs_old": 0.0,
+              "paired_change_block_se": 0.0,
+              "nonzero_numerator_blocks": 9
+            },
+            "bead_fraction_gt_0.60_A": {
+              "value": 0.0001658083645443196,
+              "block_se": 8.333336986303772e-05,
+              "change_vs_old": 0.0,
+              "paired_change_block_se": 0.0,
+              "nonzero_numerator_blocks": 5
+            },
+            "frame_any_gt_0.60_A": {
+              "value": 0.009987515605493134,
+              "block_se": 0.003947912184979249,
+              "change_vs_old": 0.0,
+              "paired_change_block_se": 0.0,
+              "nonzero_numerator_blocks": 5
+            },
+            "histogram_overflow_at_or_above_0.80_A": {
+              "value": 0.0,
+              "block_se": 0.0,
+              "change_vs_old": 0.0,
+              "paired_change_block_se": 0.0,
+              "nonzero_numerator_blocks": 0
+            }
+          },
+          "position_normalization": 1.0,
+          "momentum_characteristic_111": {
+            "status": "estimated at finite P; no Fourier inversion or far-tail claim",
+            "min_numerator_block_ess": 8.631910941381593,
+            "all_displacements_pass_numerator_block_ess_4": true,
+            "beta_over_beads_eV_inverse": 1.1774064652546754,
+            "kinetic_factor_eV_A2": 0.001038005664243405,
+            "direct_witness_displacement_A": 0.25,
+            "direct_witness_abs_error": 4.440892098500626e-16,
+            "witness_numerator_share_from_any_shifted_bead_gt_0.48_A": 0.3200265659168024
+          }
+        },
+        "quadratic": {
+          "overlap": {
+            "frame_weight_ess": 798.3708656884371,
+            "block_weight_ess": 8.999525419876996,
+            "largest_frame_weight_fraction": 0.0023644082612516806,
+            "largest_block_weight_fraction": 0.11305098887437415,
+            "log_weight_span": 0.8846171893200836,
+            "passes_participation_screen": true
+          },
+          "position": {
+            "MSD_A2": {
+              "value": 0.06117283809557064,
+              "block_se": 0.0013270686784664027,
+              "change_vs_old": 0.0003874690778850054,
+              "paired_change_block_se": 0.00010765247148903203,
+              "nonzero_numerator_blocks": 9
+            },
+            "bead_fraction_gt_0.24_A": {
+              "value": 0.4218609810034583,
+              "block_se": 0.010819295588171123,
+              "change_vs_old": 0.0024243393055806695,
+              "paired_change_block_se": 0.0006110845144291871,
+              "nonzero_numerator_blocks": 9
+            },
+            "frame_any_gt_0.24_A": {
+              "value": 1.0,
+              "block_se": 1.268550931040436e-16,
+              "change_vs_old": 0.0,
+              "paired_change_block_se": 1.219624397356813e-16,
+              "nonzero_numerator_blocks": 9
+            },
+            "bead_fraction_gt_0.48_A": {
+              "value": 0.008406073124384031,
+              "block_se": 0.0009049701870443115,
+              "change_vs_old": 0.0005350525251330944,
+              "paired_change_block_se": 0.00019671617149575555,
+              "nonzero_numerator_blocks": 9
+            },
+            "frame_any_gt_0.48_A": {
+              "value": 0.27518237871570184,
+              "block_se": 0.02161137544419434,
+              "change_vs_old": 0.006767896818073882,
+              "paired_change_block_se": 0.0019242611148409118,
+              "nonzero_numerator_blocks": 9
+            },
+            "bead_fraction_gt_0.60_A": {
+              "value": 0.0002401185077602274,
+              "block_se": 0.00013698371654748958,
+              "change_vs_old": 7.431014321590781e-05,
+              "paired_change_block_se": 5.4675363875627506e-05,
+              "nonzero_numerator_blocks": 5
+            },
+            "frame_any_gt_0.60_A": {
+              "value": 0.013441463058740779,
+              "block_se": 0.005760422941840559,
+              "change_vs_old": 0.003453947453247645,
+              "paired_change_block_se": 0.0018978821269545313,
+              "nonzero_numerator_blocks": 5
+            },
+            "histogram_overflow_at_or_above_0.80_A": {
+              "value": 0.0,
+              "block_se": 0.0,
+              "change_vs_old": 0.0,
+              "paired_change_block_se": 0.0,
+              "nonzero_numerator_blocks": 0
+            }
+          },
+          "position_normalization": 1.0,
+          "momentum_characteristic_111": {
+            "status": "estimated at finite P; no Fourier inversion or far-tail claim",
+            "min_numerator_block_ess": 8.618814609866924,
+            "all_displacements_pass_numerator_block_ess_4": true,
+            "beta_over_beads_eV_inverse": 1.1774064652546754,
+            "kinetic_factor_eV_A2": 0.001038005664243405,
+            "direct_witness_displacement_A": 0.25,
+            "direct_witness_abs_error": 2.220446049250313e-16,
+            "witness_numerator_share_from_any_shifted_bead_gt_0.48_A": 0.3286073971893405
+          }
+        },
+        "quartic": {
+          "overlap": {
+            "frame_weight_ess": 799.8048353804592,
+            "block_weight_ess": 8.999910219311452,
+            "largest_frame_weight_fraction": 0.00155122106339009,
+            "largest_block_weight_fraction": 0.11169284551912909,
+            "log_weight_span": 0.48373364642156946,
+            "passes_participation_screen": true
+          },
+          "position": {
+            "MSD_A2": {
+              "value": 0.06097083561252887,
+              "block_se": 0.0012937720122575315,
+              "change_vs_old": 0.0001854665948432324,
+              "paired_change_block_se": 5.36701427780619e-05,
+              "nonzero_numerator_blocks": 9
+            },
+            "bead_fraction_gt_0.24_A": {
+              "value": 0.42083533648736865,
+              "block_se": 0.010680318736790264,
+              "change_vs_old": 0.0013986947894910062,
+              "paired_change_block_se": 0.00032812838929845286,
+              "nonzero_numerator_blocks": 9
+            },
+            "frame_any_gt_0.24_A": {
+              "value": 1.0,
+              "block_se": 8.275113844157577e-17,
+              "change_vs_old": 0.0,
+              "paired_change_block_se": 7.50358112718251e-17,
+              "nonzero_numerator_blocks": 9
+            },
+            "bead_fraction_gt_0.48_A": {
+              "value": 0.008008208974215041,
+              "block_se": 0.0007989209896729232,
+              "change_vs_old": 0.0001371883749641048,
+              "paired_change_block_se": 9.660721961124598e-05,
+              "nonzero_numerator_blocks": 9
+            },
+            "frame_any_gt_0.48_A": {
+              "value": 0.2708105748707574,
+              "block_se": 0.021032719307641015,
+              "change_vs_old": 0.0023960929731294267,
+              "paired_change_block_se": 0.0010067982558350816,
+              "nonzero_numerator_blocks": 9
+            },
+            "bead_fraction_gt_0.60_A": {
+              "value": 0.00018634789232044525,
+              "block_se": 9.398582527355265e-05,
+              "change_vs_old": 2.0539527776125647e-05,
+              "paired_change_block_se": 1.0791725416904272e-05,
+              "nonzero_numerator_blocks": 5
+            },
+            "frame_any_gt_0.60_A": {
+              "value": 0.011226353344581061,
+              "block_se": 0.004454868079818974,
+              "change_vs_old": 0.0012388377390879276,
+              "paired_change_block_se": 0.0005361020878871586,
+              "nonzero_numerator_blocks": 5
+            },
+            "histogram_overflow_at_or_above_0.80_A": {
+              "value": 0.0,
+              "block_se": 0.0,
+              "change_vs_old": 0.0,
+              "paired_change_block_se": 0.0,
+              "nonzero_numerator_blocks": 0
+            }
+          },
+          "position_normalization": 0.9999999999999999,
+          "momentum_characteristic_111": {
+            "status": "estimated at finite P; no Fourier inversion or far-tail claim",
+            "min_numerator_block_ess": 8.62771268588009,
+            "all_displacements_pass_numerator_block_ess_4": true,
+            "beta_over_beads_eV_inverse": 1.1774064652546754,
+            "kinetic_factor_eV_A2": 0.001038005664243405,
+            "direct_witness_displacement_A": 0.25,
+            "direct_witness_abs_error": 5.551115123125783e-16,
+            "witness_numerator_share_from_any_shifted_bead_gt_0.48_A": 0.32349321575250556
+          }
+        }
+      },
+      "old_characteristic_field_callback_vs_polynomial_max_abs_block_error": 2.220446049250313e-16,
+      "quartic_minus_quadratic_position": {
+        "MSD_A2": {
+          "change": -0.00020200248304177298,
+          "paired_change_block_se": 7.450240703671506e-05
+        },
+        "bead_fraction_gt_0.24_A": {
+          "change": -0.0010256445160896632,
+          "paired_change_block_se": 0.0004050265036116428
+        },
+        "frame_any_gt_0.24_A": {
+          "change": 0.0,
+          "paired_change_block_se": 8.434484179714808e-17
+        },
+        "bead_fraction_gt_0.48_A": {
+          "change": -0.0003978641501689896,
+          "paired_change_block_se": 0.0001377239298260706
+        },
+        "frame_any_gt_0.48_A": {
+          "change": -0.004371803844944455,
+          "paired_change_block_se": 0.0011229064978436855
+        },
+        "bead_fraction_gt_0.60_A": {
+          "change": -5.377061543978217e-05,
+          "paired_change_block_se": 4.4238621137853214e-05
+        },
+        "frame_any_gt_0.60_A": {
+          "change": -0.0022151097141597173,
+          "paired_change_block_se": 0.0014711159700455132
+        },
+        "histogram_overflow_at_or_above_0.80_A": {
+          "change": 0.0,
+          "paired_change_block_se": 0.0
+        }
+      }
+    }
+  ],
+  "warm_minus_cold_position": {
+    "old": {
+      "MSD_A2": {
+        "change": 0.02257788088151086,
+        "sum_of_block_se": 0.005916462216212434,
+        "warm_gt_cold_by_3_times_sum_of_se": true
+      },
+      "bead_fraction_gt_0.24_A": {
+        "change": 0.15855181023720355,
+        "sum_of_block_se": 0.043695077445160393,
+        "warm_gt_cold_by_3_times_sum_of_se": true
+      },
+      "bead_fraction_gt_0.48_A": {
+        "change": 0.0215063202247191,
+        "sum_of_block_se": 0.00634805577365588,
+        "warm_gt_cold_by_3_times_sum_of_se": true
+      }
+    },
+    "quadratic": {
+      "MSD_A2": {
+        "change": 0.02395806808824165,
+        "sum_of_block_se": 0.006272867889898047,
+        "warm_gt_cold_by_3_times_sum_of_se": true
+      },
+      "bead_fraction_gt_0.24_A": {
+        "change": 0.16215929314564065,
+        "sum_of_block_se": 0.04446472882245621,
+        "warm_gt_cold_by_3_times_sum_of_se": true
+      },
+      "bead_fraction_gt_0.48_A": {
+        "change": 0.0255736280980405,
+        "sum_of_block_se": 0.007510626242909257,
+        "warm_gt_cold_by_3_times_sum_of_se": true
+      }
+    },
+    "quartic": {
+      "MSD_A2": {
+        "change": 0.02274464180442621,
+        "sum_of_block_se": 0.006024592176796472,
+        "warm_gt_cold_by_3_times_sum_of_se": true
+      },
+      "bead_fraction_gt_0.24_A": {
+        "change": 0.15906351383347012,
+        "sum_of_block_se": 0.0440138793620869,
+        "warm_gt_cold_by_3_times_sum_of_se": true
+      },
+      "bead_fraction_gt_0.48_A": {
+        "change": 0.021953082233775616,
+        "sum_of_block_se": 0.006635939297163574,
+        "warm_gt_cold_by_3_times_sum_of_se": true
+      }
+    }
+  }
+}

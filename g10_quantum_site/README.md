@@ -1,5 +1,7 @@
 # Bulk quantum-site result
 
+Update: the PdD well has been refitted with computed points out to 0.48 A; see [bulk-refit-048](bulk-refit-048/README.md) and its [lead's note](bulk-refit-048/LEAD.md). The numbers below change by under 3 percent.
+
 At 300 K, the bulk PdD model puts about 57% of an isolated deuteron’s position probability outside 0.24 Å, the last displacement tested on the available well cuts. Coupling it to its neighbours changes the mean-square displacement from 0.081 to 0.083 Å², smaller than the coupled sampling error at this temperature. A similar width does not establish a similar far tail. The shaded bands show how the fitted tails change when energy and force data are used differently; they are not error bars on the real material.
 
 The momentum handoff gives the collision model a tested single-site input, distinct from the broader spectator bound it used before. The signed position table gives the entry model a spread in target location rather than one fixed point. Most coupled position tails remain unresolved at one millionth of their peak; no Gaussian tail is substituted.

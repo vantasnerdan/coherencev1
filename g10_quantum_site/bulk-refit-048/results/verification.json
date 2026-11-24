@@ -1,0 +1,138 @@
+{
+  "status": "passed",
+  "scope": "settled D old/new quantum distributions, exported tables, signed marginal, archived reporting positive control and actual coupled handoff; no producer or coupled rerun",
+  "environment": {
+    "python": "3.12.3",
+    "numpy": "2.5.5",
+    "scipy": "1.18.1"
+  },
+  "checks": [
+    {
+      "temperature_K": 300,
+      "variant": "old",
+      "observable": "position",
+      "full_3D_normalization": 0.9999999999954255,
+      "table_matches_actual_distribution": true
+    },
+    {
+      "temperature_K": 300,
+      "variant": "old",
+      "observable": "momentum",
+      "full_3D_normalization": 0.9999999999954257,
+      "table_matches_actual_distribution": true
+    },
+    {
+      "temperature_K": 300,
+      "variant": "old",
+      "observable": "signed111 plane marginal",
+      "normalization": 0.9999999990822402,
+      "mean_A": 1.3877787807814457e-17
+    },
+    {
+      "temperature_K": 300,
+      "variant": "quadratic",
+      "observable": "position",
+      "full_3D_normalization": 0.9999999999877316,
+      "table_matches_actual_distribution": true
+    },
+    {
+      "temperature_K": 300,
+      "variant": "quadratic",
+      "observable": "momentum",
+      "full_3D_normalization": 0.9999999999877354,
+      "table_matches_actual_distribution": true
+    },
+    {
+      "temperature_K": 300,
+      "variant": "quadratic",
+      "observable": "signed111 plane marginal",
+      "normalization": 0.9999999988085603,
+      "mean_A": -1.3877787807814457e-17
+    },
+    {
+      "temperature_K": 300,
+      "variant": "quartic",
+      "observable": "position",
+      "full_3D_normalization": 0.9999999999942235,
+      "table_matches_actual_distribution": true
+    },
+    {
+      "temperature_K": 300,
+      "variant": "quartic",
+      "observable": "momentum",
+      "full_3D_normalization": 0.9999999999942247,
+      "table_matches_actual_distribution": true
+    },
+    {
+      "temperature_K": 300,
+      "variant": "quartic",
+      "observable": "signed111 plane marginal",
+      "normalization": 0.999999998960918,
+      "mean_A": -1.3877787807814457e-17
+    },
+    {
+      "temperature_K": 77,
+      "variant": "old",
+      "observable": "position",
+      "full_3D_normalization": 0.9999999999996403,
+      "table_matches_actual_distribution": true
+    },
+    {
+      "temperature_K": 77,
+      "variant": "old",
+      "observable": "momentum",
+      "full_3D_normalization": 0.9999999999996403,
+      "table_matches_actual_distribution": true
+    },
+    {
+      "temperature_K": 77,
+      "variant": "old",
+      "observable": "signed111 plane marginal",
+      "normalization": 1.0000000087912015,
+      "mean_A": 0.0
+    },
+    {
+      "temperature_K": 77,
+      "variant": "quadratic",
+      "observable": "position",
+      "full_3D_normalization": 0.9999999999996905,
+      "table_matches_actual_distribution": true
+    },
+    {
+      "temperature_K": 77,
+      "variant": "quadratic",
+      "observable": "momentum",
+      "full_3D_normalization": 0.9999999999996916,
+      "table_matches_actual_distribution": true
+    },
+    {
+      "temperature_K": 77,
+      "variant": "quadratic",
+      "observable": "signed111 plane marginal",
+      "normalization": 1.0000000085167962,
+      "mean_A": 0.0
+    },
+    {
+      "temperature_K": 77,
+      "variant": "quartic",
+      "observable": "position",
+      "full_3D_normalization": 0.999999999999396,
+      "table_matches_actual_distribution": true
+    },
+    {
+      "temperature_K": 77,
+      "variant": "quartic",
+      "observable": "momentum",
+      "full_3D_normalization": 0.9999999999993968,
+      "table_matches_actual_distribution": true
+    },
+    {
+      "temperature_K": 77,
+      "variant": "quartic",
+      "observable": "signed111 plane marginal",
+      "normalization": 1.0000000085701752,
+      "mean_A": 0.0
+    }
+  ],
+  "limitations": "empirical basis/quadrature/grid comparison, not rigorous numerical enclosure; no electronic error bound; three rays only; coupled tagged-site finite-P and existing sampled overlap only"
+}

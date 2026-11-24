@@ -1,0 +1,337 @@
+{
+  "anchors": [
+    {
+      "ray": "100",
+      "r_A": 0.12,
+      "energy_eV": 0.004836395276925032,
+      "slope_eV_A": 0.08961242411752493,
+      "native_cases": [
+        "well100_012"
+      ],
+      "independent_native_count": 1,
+      "fitted_energy_eV": 0.004836395276925032,
+      "fitted_force_parallel_eV_A": -0.08961242411752493,
+      "old_energy_error_eV": 1.8471339474680076e-05,
+      "old_force_error_eV_A": -0.001337421148985829
+    },
+    {
+      "ray": "100",
+      "r_A": 0.24,
+      "energy_eV": 0.026440141106007786,
+      "slope_eV_A": 0.30270623915045597,
+      "native_cases": [
+        "well100_024"
+      ],
+      "independent_native_count": 1,
+      "fitted_energy_eV": 0.026440141106007786,
+      "fitted_force_parallel_eV_A": -0.30270623915045597,
+      "old_energy_error_eV": 0.00020481455468226648,
+      "old_force_error_eV_A": 0.00038172869924762987
+    },
+    {
+      "ray": "100",
+      "r_A": 0.48,
+      "energy_eV": 0.2436736511813251,
+      "slope_eV_A": 1.8866582192372023,
+      "native_cases": [
+        "p100p48"
+      ],
+      "independent_native_count": 1,
+      "fitted_energy_eV": 0.2436736511813251,
+      "fitted_force_parallel_eV_A": -1.8866582192372023,
+      "old_energy_error_eV": -0.021486001417105605,
+      "old_force_error_eV_A": 0.3186106389892913
+    },
+    {
+      "ray": "110",
+      "r_A": 0.12,
+      "energy_eV": 0.004504109828431524,
+      "slope_eV_A": 0.07780414134614089,
+      "native_cases": [
+        "p110p12",
+        "p110m12"
+      ],
+      "independent_native_count": 2,
+      "fitted_energy_eV": 0.004504109828431522,
+      "fitted_force_parallel_eV_A": -0.07780414134614087,
+      "old_energy_error_eV": -1.4222698760074474e-05,
+      "old_force_error_eV_A": -0.000979721029427838
+    },
+    {
+      "ray": "110",
+      "r_A": 0.24,
+      "energy_eV": 0.02070166077500346,
+      "slope_eV_A": 0.20130773481502878,
+      "native_cases": [
+        "p110p24",
+        "p110m24"
+      ],
+      "independent_native_count": 2,
+      "fitted_energy_eV": 0.020701660775003457,
+      "fitted_force_parallel_eV_A": -0.20130773481502875,
+      "old_energy_error_eV": 0.00010362309803441799,
+      "old_force_error_eV_A": -0.003688912508643255
+    },
+    {
+      "ray": "110",
+      "r_A": 0.48,
+      "energy_eV": 0.12118091359427297,
+      "slope_eV_A": 0.6976487338107971,
+      "native_cases": [
+        "p110p48",
+        "p110m48"
+      ],
+      "independent_native_count": 2,
+      "fitted_energy_eV": 0.12118091359427292,
+      "fitted_force_parallel_eV_A": -0.6976487338107968,
+      "old_energy_error_eV": 0.00757198756751179,
+      "old_force_error_eV_A": -0.0917759414168241
+    },
+    {
+      "ray": "111",
+      "r_A": 0.12,
+      "energy_eV": 0.004399192753481884,
+      "slope_eV_A": 0.07508008174159078,
+      "native_cases": [
+        "well111_012"
+      ],
+      "independent_native_count": 1,
+      "fitted_energy_eV": 0.004399192753481885,
+      "fitted_force_parallel_eV_A": -0.07508008174159081,
+      "old_energy_error_eV": -3.096545271985291e-05,
+      "old_force_error_eV_A": 0.0003515469963360496
+    },
+    {
+      "ray": "111",
+      "r_A": 0.24,
+      "energy_eV": 0.01896424517863693,
+      "slope_eV_A": 0.17239815175146725,
+      "native_cases": [
+        "well111_024"
+      ],
+      "independent_native_count": 1,
+      "fitted_energy_eV": 0.018964245178636933,
+      "fitted_force_parallel_eV_A": -0.1723981517514673,
+      "old_energy_error_eV": -0.00010551856814976571,
+      "old_force_error_eV_A": -0.00015587452969281768
+    },
+    {
+      "ray": "111",
+      "r_A": 0.48,
+      "energy_eV": 0.09264143331614605,
+      "slope_eV_A": 0.45895543811615225,
+      "native_cases": [
+        "p111p48"
+      ],
+      "independent_native_count": 1,
+      "fitted_energy_eV": 0.09264143331614609,
+      "fitted_force_parallel_eV_A": -0.45895543811615225,
+      "old_energy_error_eV": 0.00496655164482715,
+      "old_force_error_eV_A": -0.0709282687713726
+    }
+  ],
+  "signed_native_and_derived_residuals": [
+    {
+      "case": "p100p48",
+      "ray": "100",
+      "displacement_A": 0.48,
+      "sample_kind": "native_scf",
+      "parent_native_case": null,
+      "energy_residual_eV": 0.0,
+      "force_parallel_residual_eV_A": 0.0
+    },
+    {
+      "case": "p110p12",
+      "ray": "110",
+      "displacement_A": 0.12,
+      "sample_kind": "native_scf",
+      "parent_native_case": null,
+      "energy_residual_eV": -2.896034331458311e-06,
+      "force_parallel_residual_eV_A": 2.0187818127057056e-05
+    },
+    {
+      "case": "p110m12",
+      "ray": "110",
+      "displacement_A": -0.12,
+      "sample_kind": "native_scf",
+      "parent_native_case": null,
+      "energy_residual_eV": 2.8960343314548415e-06,
+      "force_parallel_residual_eV_A": 2.0187818127015422e-05
+    },
+    {
+      "case": "p110p24",
+      "ray": "110",
+      "displacement_A": 0.24,
+      "sample_kind": "native_scf",
+      "parent_native_case": null,
+      "energy_residual_eV": -3.6791981017705866e-07,
+      "force_parallel_residual_eV_A": -5.7772607264500175e-05
+    },
+    {
+      "case": "p110m24",
+      "ray": "110",
+      "displacement_A": -0.24,
+      "sample_kind": "native_scf",
+      "parent_native_case": null,
+      "energy_residual_eV": 3.6791981017011977e-07,
+      "force_parallel_residual_eV_A": -5.7772607264555687e-05
+    },
+    {
+      "case": "p110p48",
+      "ray": "110",
+      "displacement_A": 0.48,
+      "sample_kind": "native_scf",
+      "parent_native_case": null,
+      "energy_residual_eV": -1.1902293266946584e-06,
+      "force_parallel_residual_eV_A": -1.498986150849646e-05
+    },
+    {
+      "case": "p110m48",
+      "ray": "110",
+      "displacement_A": -0.48,
+      "sample_kind": "native_scf",
+      "parent_native_case": null,
+      "energy_residual_eV": 1.1902293266113917e-06,
+      "force_parallel_residual_eV_A": -1.498986150894055e-05
+    },
+    {
+      "case": "p111p48",
+      "ray": "111",
+      "displacement_A": 0.48,
+      "sample_kind": "native_scf",
+      "parent_native_case": null,
+      "energy_residual_eV": 4.163336342344337e-17,
+      "force_parallel_residual_eV_A": 0.0
+    },
+    {
+      "case": "p100m48",
+      "ray": "100",
+      "displacement_A": -0.48,
+      "sample_kind": "symmetry_derived",
+      "parent_native_case": "p100p48",
+      "energy_residual_eV": 0.0,
+      "force_parallel_residual_eV_A": 0.0
+    },
+    {
+      "case": "p111m48",
+      "ray": "111",
+      "displacement_A": -0.48,
+      "sample_kind": "symmetry_derived",
+      "parent_native_case": "p111p48",
+      "energy_residual_eV": 4.163336342344337e-17,
+      "force_parallel_residual_eV_A": 0.0
+    }
+  ],
+  "gradient": {
+    "old": {
+      "max_abs_force_plus_energy_gradient_eV_A": 1.8521788547332108e-09,
+      "step_A": 1e-06
+    },
+    "quadratic": {
+      "max_abs_force_plus_energy_gradient_eV_A": 1.7446577005308939e-07,
+      "step_A": 1e-06
+    },
+    "quartic": {
+      "max_abs_force_plus_energy_gradient_eV_A": 8.185697075724363e-08,
+      "step_A": 1e-06
+    }
+  },
+  "splices": {
+    "old": [
+      {
+        "r_A": 0.03,
+        "energy_two_sided_difference_eV": 3.559883522403877e-10,
+        "force_two_sided_difference_eV_A": 8.553137345948536e-09,
+        "separation_A": 2e-08
+      },
+      {
+        "r_A": 0.12,
+        "energy_two_sided_difference_eV": 1.5195419488661654e-09,
+        "force_two_sided_difference_eV_A": 1.1203133178094848e-08,
+        "separation_A": 2e-08
+      },
+      {
+        "r_A": 0.24,
+        "energy_two_sided_difference_eV": 3.6508505593668694e-09,
+        "force_two_sided_difference_eV_A": 1.9683119856228615e-08,
+        "separation_A": 2e-08
+      },
+      {
+        "r_A": 0.48,
+        "energy_two_sided_difference_eV": 1.2195834425687835e-08,
+        "force_two_sided_difference_eV_A": 5.3603066541008104e-08,
+        "separation_A": 2e-08
+      }
+    ],
+    "quadratic": [
+      {
+        "r_A": 0.03,
+        "energy_two_sided_difference_eV": 3.5598835256564834e-10,
+        "force_two_sided_difference_eV_A": 8.598591056188654e-09,
+        "separation_A": 2e-08
+      },
+      {
+        "r_A": 0.12,
+        "energy_two_sided_difference_eV": 1.520580586791831e-09,
+        "force_two_sided_difference_eV_A": 1.0791511628749362e-08,
+        "separation_A": 2e-08
+      },
+      {
+        "r_A": 0.24,
+        "energy_two_sided_difference_eV": 3.6348745749426037e-09,
+        "force_two_sided_difference_eV_A": 1.8858476225069865e-08,
+        "separation_A": 2e-08
+      },
+      {
+        "r_A": 0.48,
+        "energy_two_sided_difference_eV": 1.0935711378112778e-08,
+        "force_two_sided_difference_eV_A": 3.8116792722142634e-08,
+        "separation_A": 2e-08
+      }
+    ],
+    "quartic": [
+      {
+        "r_A": 0.03,
+        "energy_two_sided_difference_eV": 3.5598835256564834e-10,
+        "force_two_sided_difference_eV_A": 8.598591056188654e-09,
+        "separation_A": 2e-08
+      },
+      {
+        "r_A": 0.12,
+        "energy_two_sided_difference_eV": 1.520580586791831e-09,
+        "force_two_sided_difference_eV_A": 1.0791511628749362e-08,
+        "separation_A": 2e-08
+      },
+      {
+        "r_A": 0.24,
+        "energy_two_sided_difference_eV": 3.6348745749426037e-09,
+        "force_two_sided_difference_eV_A": 1.8858476225069865e-08,
+        "separation_A": 2e-08
+      },
+      {
+        "r_A": 0.48,
+        "energy_two_sided_difference_eV": 1.0935711475257293e-08,
+        "force_two_sided_difference_eV_A": 5.2576485831679065e-08,
+        "separation_A": 2e-08
+      }
+    ]
+  },
+  "radial_segment_positivity": {
+    "100": {
+      "min_slope_eV_A": 0.01803336678857352,
+      "min_energy_eV": 0.00026814845456457566
+    },
+    "110": {
+      "min_slope_eV_A": 0.01784327330590255,
+      "min_energy_eV": 0.0002667227534445434
+    },
+    "111": {
+      "min_slope_eV_A": 0.017779908811678895,
+      "min_energy_eV": 0.00026624751973786597
+    }
+  },
+  "near_K_eV_A2": 0.590658682890108,
+  "origin": "exact old cubic quartic polynomial for r <= .03 A; common harmonic K, no p/r6 angular residue at origin",
+  "closure": "w100=1-4q+9p, w110=4q-36p, w111=27p; nonnegative by Schur/AM-GM, sum=1; C1 radial joins",
+  "support": "native rays only; neither complete ball nor isotope-specific electronic surface"
+}

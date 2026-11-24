@@ -1,0 +1,12 @@
+# G10 — Bulk deuteron and hydrogen wells
+
+These are static, frozen-neighbour well samples, not a real-time impact calculation. Each point moves only original atom **25** (zero-based) along a specified crystal direction in a fully loaded rock-salt PdD or NiH cell. The other 63 ions and cell stay fixed while the electrons relax. Each material uses its own adopted G3 zero; do not compare their absolute electronic energies.
+
+## Read the data
+
+- `bulk-wells.json` is the signed export. `geometry` supplies the cell, original atom numbers and reference positions. `rows` gives the displaced positions, the electronic free-energy rise relative to the adopted zero, and the **full** Cartesian force vector for every atom in that same original order.
+- `displacement_A` is signed along the fixed `ray_unit`; `native_force_parallel_eV_A` is the force on atom 25 projected on that same axis, not on an outward unit vector that flips between branches. Energy is in eV, coordinates and displacements in Å, and forces in eV/Å.
+- `sample_kind: native_scf` means a separately converged calculation. Its matching original record is `native/<case>.json`. `symmetry_derived` means the same energy and species-permuted, reversed forces under periodic inversion about the octahedral site; `parent_native_case` and `native_row_sha256` identify the calculated positive record. These negative rows are not additional calculations. See `inversion_controls` for checks against independently computed signs: 5 meV and 0.02 eV/Å maximum absolute per-component discrepancy were the admission targets.
+- `missing_native_cases` is the exact list of not-admitted planned points. An empty list and passing inversion controls identify the complete bulk capsule. A nonempty list denotes a narrower delivery; do not extend it silently into the unsampled range. `references/` holds the exact adopted profiles and zeros (the zero records identify checkpoint hashes; checkpoints are not redistributed). `SHA256SUMS` binds each member.
+
+The G3 settings are retained: neutral, unpolarized PBE/PAW, 500 eV plane-wave cutoff, Γ-centred 3×3×3 sampling without point-group reduction, and 0.1 eV electronic smearing. Original G3 near points along PdD [100] and [111] remain separate inputs. These energies and forces constrain the assumed Born–Oppenheimer surface; the inversion check is not a cutoff, cell-size or exchange-correlation error bound. The capsule contains no equilibrium probability, momentum tail, or pair cut, and does not describe transient screening during ion arrival.
