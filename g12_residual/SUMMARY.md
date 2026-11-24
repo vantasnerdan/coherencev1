@@ -39,7 +39,9 @@ The same split was applied to each published data set in its own units. None of 
 
 ## What this narrows
 
-Stop searching in anything that changes the energy or the barrier of the collision between a beam ion and a target deuteron. That covers screening in all its forms, target motion, the arrival transient and the threshold resonance at its measured strength: each would have to grow by sixteen orders as the energy falls and still leave a flat result. The signal behaves like a second source of reactions that the beam energy does not control.
+Stop searching in anything that changes the energy or the barrier of the collision between a beam ion and a target deuteron. That covers screening in all its forms, the motion of a single target deuteron in its well, the arrival transient and the threshold resonance at its measured strength: each would have to grow by sixteen orders as the energy falls and still leave a flat result. The signal behaves like a second source of reactions that the beam energy does not control.
+
+Not covered by any of this: many deuterons moving together away from equilibrium. No node has built it. A source set by the state of the lattice and not by the beam energy is the kind of thing the flat signal asks for, and it is taken up in `g11_cmns` (collective part).
 
 Still open, and not separable with what is published: whether that source scales with beam delivered or with time elapsed, and how much of the loaded-foil increase is deuterium content and how much is surface state or history.
 
