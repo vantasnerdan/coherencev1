@@ -6,4 +6,4 @@ What is still extrapolated: everything beyond 0.48 A, and directions between the
 
 Archive SHA-256 52c9b8fc0973d274244949d00ac1eadddac9997b153f8359cfaf023e8e48d9aa; all file sums check. The lead reran `solve.py --npar 10 --order 48 --tag main` (NumPy and SciPy only): the mean-square displacements and kinetic energies agree with the delivered ones to 5 parts in 1e10. The coupled reweighting was not rerun.
 
-Not committed, for size: the spectrum and full three-dimensional distribution arrays (17 `.npz` files over 1 MB, 91 MB together). `solve.py` regenerates them. One interpreter path was replaced by `python` in `replay.md`, `coupled_sensitivity.py`, `coupled_sensitivity.json` and `results/report_table.json`, so those four files and the 17 omitted ones do not match `SHA256SUMS`.
+Not committed, for size: the spectrum and full three-dimensional distribution arrays (16 `.npz` files over 1 MB, 84 MB together). `solve.py` regenerates them. One interpreter path was replaced by `python` in `replay.md`, `coupled_sensitivity.py`, `coupled_sensitivity.json` and `results/report_table.json`, so those four files and the 16 omitted ones do not match `SHA256SUMS`.
