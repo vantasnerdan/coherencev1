@@ -2,7 +2,7 @@
 
 Every earlier model in this repository treats the arrival of a beam deuteron as settled at each instant: one static screening energy, a tabulated drag, a target at rest. This node builds the part that was lumped away, the change from no ion to ion at the face of the foil. It reports peaks and durations, not lifetimes. The deuterium profile is fixed at the transported one in `g4_beam/merit`, as in `g8_why`.
 
-Two parts. The model part (Marvin) is `README.md` and `replay.md` in this directory, with its script and tables. The first-principles part (giuliano, a deuteron entering a PdD slab from vacuum, electrons followed in time) is running and will be added here.
+Two parts. The model part (Marvin) is `README.md` and `replay.md` in this directory, with its script and tables. The first-principles part (giuliano, a deuteron entering a PdD slab from vacuum, electrons followed in time) is in `first_principles/` and is summarised below.
 
 ## Model part: what it is
 
@@ -44,6 +44,24 @@ Lead's arithmetic on the first row: to put 1 keV on one pair from a region pumpe
 
 **Observable other than yield:** the recoil of the target shifts the 3.02 MeV proton line by -15 to +17 eV along the beam axis during the edge at 0.25 keV.
 
+## First-principles part: one ion entering a PdD slab
+
+A bare deuteron at 0.5 keV starts 5 A above a clean, frozen PdD(111) slab and moves along the surface normal toward the first deuteron below the surface. The electrons are followed in time, and the same geometries are computed in the settled (static) way for comparison. The run stops 0.5 A short of the target.
+
+**The electron cloud forms just before the surface.** The ion stays bare until about 1.5 A out. It reaches half of the settled charge at 1.4 to 1.6 A above the outer plane, picking it up at 1.5 to 2.5 electrons per femtosecond at the fastest. It is still 0.19 to 0.28 of an electron short where the run ends. So the real arrival lies between the two cases of the model part: not switched on unscreened at the plane, and not fully formed.
+
+**What the target deuteron sees, as the departure from the settled picture:**
+
+| | Peak | Width | Steepest rate |
+|---|---:|---:|---:|
+| Potential energy | 5.2 eV | 0.45 fs | 19 eV per fs |
+| Force, outward lobe | 2.7 eV/A | 0.21 fs | 66 eV/A per fs |
+| Force, inward lobe | 4.7 eV/A | cut off by the end of the run | |
+
+**What it hands to the target nucleus is small.** Integrating the force on a target held in place gives 0.014 eV of recoil, of which 0.002 eV is the excess over the settled picture.
+
+The transient has the shape the model part found, a departure followed by a reversal within a fraction of a femtosecond, and is a few eV in size where the model gave 17 to 25 eV. The time step (4 attoseconds) was not checked against a finer one, by decision: the result was judged enough to place the effect. One ray, a clean face with no adsorbed deuterium, and nuclei held fixed.
+
 ## Three largest omissions
 
 1. The approach through the vacuum, electron pick-up and non-linear response at the surface. The yield result turns on this.
@@ -53,3 +71,5 @@ Lead's arithmetic on the first row: to put 1 keV on one pair from a region pumpe
 ## Lead's note
 
 The archive is SHA-256 d4da0afd626eaee6e941a073ffc4eeae9045473e42def02e504ca0577468eebd, unchanged; `SHA256SUMS` checks. The script needs the palladium response matrices from the `g6_response` delivery (SHA-256 1be3de744451f7938d44bd3dced26854849643e80e8c84f1f35e77991a384c10), which are not in the repository, and NumPy 2. The lead's rerun, `python g9_edge/edge.py --matrix-dir <g6_response/data/Pd> --output <new dir>` from the repository root, reproduced every table (largest difference 1 part in 1e10). The image-term cutoff changes one near-ion curve by 14 eV and the yield ratio by 0.006; the surface treatment is the least settled part of the model.
+
+First-principles archive: SHA-256 a84c480f784a2edd5279175fd3dff3e05e0c8617db6d5818f52dd2b054c426fe, unchanged; its file sums check. The lead reran `readout/edge_readout.py` on the raw journals in `first_principles/native/`: the potential, force and charge tables are byte-identical and the recoil table agrees to 3 parts in 1e10.
