@@ -1,0 +1,162 @@
+{
+  "schema": "coherencev1.g11.coupling.v2",
+  "operator": "H[f,i]=C[f,i] Pc; C[f,i]=-i (E_i-E_f) O[f,i]/(2 m_N c^2 M_4 c^2); O=sum sigma_j cross (pi_j c), m_N c^2=938.92 MeV, M_4 c^2=4 m_N c^2 in equal-mass projection",
+  "coefficient_unit": "eV/eV",
+  "coefficient_semantics": "Signed complex Cartesian amplitude per Pc in one nuclear phase convention; reverse is its conjugate. An exact zero is not an estimate. Null indicates unavailable, not zero. No proxy is a material coupling.",
+  "energy_reference": "4He ground state, excitation energies in MeV",
+  "states": {
+    "alpha_gs": {"Jpi": "0+", "T": 0, "energy_MeV": 0.0, "total_width_eV": 0.0, "status": "bound_ground_state"},
+    "alpha_20p21": {"Jpi": "0+", "T": 0, "energy_MeV": 20.21, "total_width_eV": 500000.0, "status": "TUNL evaluated broad resonance below DD threshold; distinct from threshold-pole candidate"},
+    "dd_0plus_pole": {"Jpi": "0+", "T": 0, "energy_MeV": 23.84653, "total_width_eV": null, "partial_p_width_model_eV": 0.04, "reported_total_width_model_eV": [0.2, 0.3], "status": "Czerski arXiv:2409.02112v3 inferred near-threshold pole, E_R->0 working convention; not a discrete state or an independently fixed pole energy/width"},
+    "dd_s0": {"Jpi": "0+", "T": 0, "energy_MeV": [23.84678, 23.84903], "total_width_eV": null, "status": "D+D continuum L=0 S=0; illustrative E_cm=0.25–2.5 keV range, not mean or bin"},
+    "dd_s2": {"Jpi": "2+", "T": 0, "energy_MeV": [23.84678, 23.84903], "total_width_eV": null, "status": "D+D continuum L=0 S=2; illustrative E_cm=0.25–2.5 keV range, not mean or bin"},
+    "dd_p1": {"Jpi": "1-", "T": 0, "energy_MeV": [23.84678, 23.84903], "total_width_eV": null, "status": "D+D continuum L=1 S=1 J=1 (also J=0,2, not reached from alpha_gs by Eq.27); no discrete g"},
+    "alpha_23p64": {"Jpi": "1-", "T": 1, "energy_MeV": 23.64, "total_width_eV": 6200000.0, "status": "TUNL evaluated broad resonance; excluded in isospin symmetry; Coulomb mixing may relax isospin, not rank/parity"},
+    "alpha_24p25": {"Jpi": "1-", "T": 0, "energy_MeV": 24.25, "total_width_eV": 6100000.0, "status": "TUNL evaluated broad resonance, not a stable level; particle widths p=3.08, n=2.87, d=0.15 MeV"},
+    "alpha_25p95": {"Jpi": "1-", "T": 1, "energy_MeV": 25.95, "total_width_eV": 12660000.0, "status": "TUNL evaluated broad resonance; excluded in isospin symmetry"},
+    "alpha_28p31": {"Jpi": "1-", "T": 0, "energy_MeV": 28.31, "total_width_eV": 9890000.0, "status": "TUNL evaluated broad resonance, not a stable level"},
+    "alpha_28p37": {"Jpi": "1-", "T": 0, "energy_MeV": 28.37, "total_width_eV": 3920000.0, "status": "TUNL evaluated broad resonance, not a stable level"}
+  },
+  "transitions_to_alpha_ground": {
+    "alpha_20p21": {"status": "exact_zero_eq27", "C": [0.0, 0.0], "reason": "equal parity and rank 1 cannot connect J=0 to J=0"},
+    "dd_0plus_pole": {"status": "exact_zero_eq27", "C": [0.0, 0.0], "reason": "equal parity and rank 1 cannot connect J=0 to J=0"},
+    "dd_s0": {"status": "exact_zero_eq27", "C": [0.0, 0.0], "reason": "equal parity and rank 1 cannot connect J=0 to J=0; holds for each energy and any packet"},
+    "dd_s2": {"status": "exact_zero_eq27", "C": [0.0, 0.0], "reason": "equal parity and rank 1 cannot connect J=2 to J=0; holds for each energy and any packet"},
+    "dd_p1": {"status": "unknown_physical", "C": null, "reason": "allowed by J/parity/T, but no microscopic multichannel Coulomb-normalized DD transition; linear amplitude retains scattering phase"},
+    "alpha_23p64": {"status": "exact_zero_if_isospin_symmetric", "C": [0.0, 0.0], "C_with_isospin_breaking": null},
+    "alpha_24p25": {"status": "unknown_physical", "C": null},
+    "alpha_25p95": {"status": "exact_zero_if_isospin_symmetric", "C": [0.0, 0.0], "C_with_isospin_breaking": null},
+    "alpha_28p31": {"status": "unknown_physical", "C": null},
+    "alpha_28p37": {"status": "unknown_physical", "C": null}
+  },
+  "DD_entrance_to_excited_0plus": {
+    "alpha_20p21": {
+      "dd_s0": {"status": "exact_zero_eq27", "C": [0.0, 0.0]},
+      "dd_s2": {"status": "exact_zero_eq27", "C": [0.0, 0.0]},
+      "dd_p1": {"status": "unknown_physical", "C": null},
+      "branching": "On-shell 20.21 MeV: p+t open, n+3He closed. Reaching the real level from the DD threshold requires removal of about 3.64 MeV before its decay. An intermediate evaluated at DD energy does not inherit this on-shell branch closure."
+    },
+    "dd_0plus_pole": {
+      "dd_s0": {"status": "exact_zero_eq27", "C": [0.0, 0.0]},
+      "dd_s2": {"status": "exact_zero_eq27", "C": [0.0, 0.0]},
+      "dd_p1": {"status": "unknown_physical", "C": null},
+      "branching": "Both p+t and n+3He are open near the DD threshold. The model partial proton width and IPC interpretation do not fix the neutron residue or a p/n yield ratio."
+    }
+  },
+  "particle_exit_thresholds_MeV_from_alpha_ground": {"p+t": 19.814, "n+3He": 20.578, "DD": 23.84653},
+  "higher_order": {
+    "status": "unknown_physical",
+    "C": null,
+    "physical_second_order_operator": null,
+    "reason": "The first path generated by Eq.27 between even states takes two insertions through 1- (T=0 in the isospin limit). Two insertions alone are frame-dependent; the physical same-order contact/transformation terms, odd continuum amplitudes and energy-conserving lattice spectrum are not supplied."
+  },
+  "physical_odd_continuum": {"per_energy_C_unit": "eV^(-1/2)", "normalization": "delta(E-E') with E in eV; multiply by sqrt(dE) only for a declared bin/packet under a fixed phase and smooth-amplitude approximation, not a material spin coefficient", "packet_C_unit": "eV/eV", "flux_conversion": "requires a specified incoming partial wave, scattering boundary condition and incident current/density; no such physical flux coefficient supplied", "status": "unknown_physical", "C": null},
+  "momentum": {
+    "m_D_c2_eV": 1875612942.57,
+    "m_Pd_u": 106.42,
+    "M4_equal_nucleon_c2_eV": 3755680000.0,
+    "normalization": "Sum over atoms |e_a|^2=1 (mass weighted), Pc_pair_0to1= i sqrt(hbar omega/2) sum_over_pair sqrt(m_a c^2) e_a, and reverse is its complex conjugate. Harmonic +i convention for p=i p0(a†-a). Multiply by C exactly once; no independent 1/sqrt(N) on an already normalized mode and no independent penetrability on Coulomb-dressed amplitude.",
+    "optical_37meV_two_mass_reference": {
+      "status": "measured energy scale, two-mass Gamma eigenvector model, full loading; not a measured foil mode shape",
+      "phonon_eV": 0.037,
+      "fraction_mass_weighted_D": 0.9814305337202673,
+      "mass_weighted_eigenvector_uniform_N_cells": "e_D=+sqrt(f_D/N), e_Pd=-sqrt((1-f_D)/N) along common polarization",
+      "one_D_frozen_host_abs_Pc_eV": 5890.572080667971,
+      "D_displacement_effective_mass_c2_eV_per_cell": 1911101069.4360538,
+      "one_cell_one_moving_D_abs_Pc_eV": 5835.6234036016795,
+      "uniform_N_cell_one_D_abs_Pc_eV": "5835.6234036016795/sqrt(N)",
+      "beam_pair_one_moving_target_abs_Pc_eV": "same as one D; incident beam particle not assigned lattice mode momentum",
+      "two_distinct_D_in_phase_abs_Pc_eV": "11671.246807203359/sqrt(N), N>=2; add signed D vectors first for arbitrary phase"
+    },
+    "pumped_PdD_archived": {
+      "status": "g9_edge prepared-state harmonic energy projected from g3_lattice; equivalent uniform coherent-mode amplitude is conditional, not measured foil occupation",
+      "phonon_eV": 0.04162028883288571,
+      "N_sites": 32768,
+      "excess_eV_per_D": 0.000601687,
+      "uniform_one_mode_equivalent_occupation": 473.7131857773559,
+      "uniform_0to1_one_D_abs_Pc_eV": 34.19117081748411,
+      "one_D_coherent_rms_Pc_eV": 1052.4142193343348,
+      "one_D_coherent_peak_Pc_eV": 1488.3384622169096,
+      "demodulated_spatial_rms_of_site_peak_amplitudes_A": 0.03796842587407105,
+      "spatial_rms_of_site_peak_Pc_eV_from_mass_times_velocity": 1502.050148985786,
+      "pumped_pair_rule": "beam + one target takes one D; two co-moving targets double amplitudes; opposite phases can cancel; use actual mode eigenvector if supplied"
+    },
+    "isolated_particle_rms_not_mode": {"status": "g10_quantum_site model, cubic one-component rms sqrt(2 m_D c2 <K>/3)", "Pc_eV_77K": 6846.7378712760865, "Pc_eV_300K": 8049.2964592030075}
+  },
+  "collective_model_inputs": {
+    "physical": {
+      "even_DD_s0_s2_to_0plus_ground_20p21_threshold_eq27": {"status": "exact_zero", "g_eV_per_Pc": [0.0, 0.0]},
+      "odd_DD_p1_to_0plus_eq27": {"status": "unknown_physical", "g_eV_per_Pc": null},
+      "even_to_even_total_second_order": {"status": "unknown_physical", "kernel_per_Pc_squared_eV_inverse": null},
+      "foil_mass_normalized_mode_eigenvector": null,
+      "foil_coherent_participation_and_occupation": null,
+      "foil_mode_damping_eV": null,
+      "matched_nuclear_particle_and_gamma_loss_eV": null,
+      "nuclear_source_comparison": "The evaluated level widths and branch thresholds in states and particle_exit_thresholds_MeV_from_alpha_ground apply to their named on-shell nuclear sources, not to the finite model states or as a physical odd denominator or model loss. The candidate 0+ pole widths are model-inferred; neither source is input to the additive 40 eV G12 readout."
+    },
+    "standalone_odd_witness": {
+      "status": "conditional_finite_basis_non_rate",
+      "source": "coupling_results.json, intrinsic_witness Nmax=6 Coulomb_fixed_T=true, Jz=0, fixed T=0 EM500, one Cartesian component",
+      "initial": "lowest 0+ basis eigenstate",
+      "final": "lowest 1- basis eigenstate, not a DD entrance or a physical evaluated level",
+      "gap_eV": 33980312.65027593,
+      "g_eV_per_Pc": [0.0, -0.0010377543122587877],
+      "reverse_rule": "complex conjugate",
+      "mode": {
+        "status": "conditional_one_cell_PdD_two_mass_reference",
+        "phonon_eV": 0.037,
+        "N_cells": 1,
+        "signed_mass_weighted_site_e_along_z": {"D": 0.9906717588183622, "Pd": -0.13626982894145226},
+        "extension_to_uniform_N_cells": "divide each entry by sqrt(N_cells); sum the signed momenta of actual pair members before multiplication by g",
+        "pair_members_in_mode": "one moving D, other D has zero amplitude; Pd is not a reacting particle",
+        "pair_Pc_0to1_eV": [0.0, 5835.6234036016795],
+        "pair_P_over_Mc_abs_0to1": 1.553812732608124e-6,
+        "conditional_g_times_Pc_0to1_eV": [6.055943351805947, 0.0]
+      },
+      "nuclear_loss_eV": null
+    },
+    "standalone_even_path": {
+      "status": "conditional_three_pseudostate_ordered_eq27_only_non_rate",
+      "source": "coupling_results.json intrinsic_witness, first three odd rows and first two even columns in each marked basis; not a complete odd spectral sum",
+      "orientation": "f=even0, i=even1, both Jz=0, fixed T=0; states are labelled by basis index only",
+      "kernel": "K(x)=sum_r conj(C_z[r,f])*C_z[r,i]/(E_i-E_r+x+i0), all energies in eV; x is energy lost by the lattice at the first insertion. K has units eV^-1. Multiply by the corresponding ordered lattice Pc matrix elements, not by a width or an entrance penetrability.",
+      "K_x0_eV_inverse_by_basis": [
+        {"Nmax": 4, "Coulomb_fixed_T": true, "real_imag": [-2.0691994546443017e-14, 0.0]},
+        {"Nmax": 6, "Coulomb_fixed_T": true, "real_imag": [-9.082957428670419e-15, 0.0]},
+        {"Nmax": 6, "Coulomb_fixed_T": false, "real_imag": [-9.176015732571686e-15, 0.0]}
+      ],
+      "reference_Nmax": 6,
+      "reference_Coulomb_fixed_T": true,
+      "E_i_minus_E_f_eV": 34317372.905632205,
+      "E_i_minus_E_r_eV": [337060.2553562669, -25592535.28859352, -35771230.16167701],
+      "K_x0_terms_eV_inverse_real": [-8.407744634864837e-15, 1.1375470871811654e-18, -6.763503408927632e-16],
+      "optical_37meV_one_cell": {
+        "n_i_0_to_n_f_0_H2_eV": [-3.093156097813394e-7, 0.0],
+        "n_i_0_to_n_f_2_H2_eV": [4.374383304064742e-7, 0.0],
+        "n_i_0_to_n_f_2_final_minus_initial_total_energy_eV": -34317372.831632204,
+        "on_shell": false
+      },
+      "archived_peak_as_single_classical_harmonic_drive": {
+        "status": "separate comparison, collinear one moving D at spatial RMS of archived site peak Pc, not a globally matched coherent state",
+        "drive_quantum_eV": 0.04162028883288571,
+        "pair_peak_Pc_eV": 1502.050148985786,
+        "pair_peak_P_over_Mc": 3.999409292021115e-7,
+        "positive_and_negative_frequency_Pc_each_eV": 751.025074492893,
+        "linear_peak_mixing_for_odd_witness_eV": 1.558759019338954,
+        "H2_zero_net_frequency_eV": [-1.0246278319533378e-8, 0.0],
+        "H2_net_emission_two_quanta_eV": [-5.123139744903457e-9, 0.0],
+        "H2_net_absorption_two_quanta_eV": [-5.1231385746299216e-9, 0.0],
+        "on_shell": false
+      },
+      "total_physical_H2_eV": null,
+      "physical_rate": null
+    }
+  },
+  "dimensionless_placeholder": {"status": "synthetic_only", "parameter": "g/(hbar omega)", "material_default": null},
+  "evidence": {
+    "retained_input_v1_sha256": "3057f45c807c15d90068b553e3adaa189c53554ac9d3f713e0c5a83e97c335af",
+    "retained_coupling_results_sha256": "93ee69e4b3ff975dfe623d45599714792c1e1a6cf43738f451b8543898851875",
+    "provenance": "The retained first-order and Coulomb-packet evidence has the original v1 input hash. The conditional second-order numbers use its stored signed matrix elements and levels; no refit, continuum matching or native rerun."
+  },
+  "sources": {"boost": "https://doi.org/10.1088/1361-6455/acf3be", "level_table": "https://nucldata.tunl.duke.edu/nucldata/HTML/A=4/04_03_1992.pdf", "threshold_inference": "https://arxiv.org/abs/2409.02112v3", "optical": "g3_loading/README.md", "particle_rms": "g10_quantum_site/README.md", "drive": "g9_edge/stored_energy.csv"}
+}

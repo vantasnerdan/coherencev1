@@ -1,0 +1,522 @@
+{
+  "schema": "coherencev1.g11.coupling.evidence.v1",
+  "NuHamil_revision": "eb65165f5ecf11fde6e188a65385c98e7526ccb6",
+  "interaction_file": "N3LO_EM500_kmax8_N100_Jmax8.bin",
+  "interaction_sha256": "0f3af5611bdc0d187120ebf3e2cb1312d094b6b738c5a1593a4914344ac0f64a",
+  "collective_input_sha256": "3057f45c807c15d90068b553e3adaa189c53554ac9d3f713e0c5a83e97c335af",
+  "boost_source_sha256": "2cf57a6ff19d4590d254046d7aeaa7da7c0140db98f6a4006cf0460884c6e7ea",
+  "intrinsic_status": "4-nucleon Jacobi finite HO NN eigenvectors, positive-energy Eq.27 witness; no computed microscopic DD continuum or pole normalization",
+  "intrinsic_witness": [
+    {
+      "Nmax": 4,
+      "hw_MeV": 28,
+      "Coulomb_fixed_T": true,
+      "dimensions_even_odd": [
+        20,
+        12
+      ],
+      "phase": "largest absolute native eigenvector component chosen positive (zero-based anchor row); cross-truncation signs need not be gauge aligned",
+      "E_absolute_even_MeV_first_3": [
+        -6.26250853310784,
+        28.59835209119636,
+        43.07906597700408
+      ],
+      "E_absolute_odd_MeV_first_3": [
+        31.928405573833214,
+        75.19326868148835,
+        83.88682026230846
+      ],
+      "phase_anchor_basis_rows_even_first_3": [
+        0,
+        2,
+        4
+      ],
+      "phase_anchor_basis_rows_odd_first_3": [
+        0,
+        11,
+        3
+      ],
+      "O_z_odd_bra_even_ket_MeV_first_3_by_3": [
+        [
+          -238.38610456475067,
+          -115.05813028952949,
+          -4.209422380517637
+        ],
+        [
+          6.540856763334419,
+          0.09935160143877791,
+          -9.989184182502312
+        ],
+        [
+          -13.005458058767383,
+          15.66874034021475,
+          48.07681464303107
+        ]
+      ],
+      "C_z_odd_bra_even_ket_eV_per_eV_first_3_by_3": [
+        [
+          [
+            -0.0,
+            -0.0012909036334228
+          ],
+          [
+            -0.0,
+            -5.432770432046118e-05
+          ],
+          [
+            0.0,
+            6.655427058104415e-06
+          ]
+        ],
+        [
+          [
+            0.0,
+            7.554563280870623e-05
+          ],
+          [
+            0.0,
+            6.56396479810692e-07
+          ],
+          [
+            -0.0,
+            -4.5486235750436525e-05
+          ]
+        ],
+        [
+          [
+            -0.0,
+            -0.00016624208732876167
+          ],
+          [
+            0.0,
+            0.00012283481437330124
+          ],
+          [
+            0.0,
+            0.00027818340193842546
+          ]
+        ]
+      ],
+      "same_parity_blocks_nonzero_elements": 0,
+      "O_z_alpha_to_all_retained_odd_norm_MeV": 245.99953799838255,
+      "H_1phonon_odd0_alpha_one_cell_one_D_eV": [
+        7.533227454996535,
+        0.0
+      ],
+      "H_drive_peak_abs_odd0_alpha_one_moving_D_eV": 1.9390019949090094,
+      "max_eigen_residual_MeV_even_odd": [
+        1.4911944343913098e-13,
+        1.0258364623880504e-13
+      ],
+      "max_orthogonality_error_even_odd": [
+        2.1094237467877974e-15,
+        1.3322676295501878e-15
+      ],
+      "O_z_reverse_transpose_max_error_MeV": 1.1368683772161603e-13,
+      "m_pair_reduced_c2_MeV": 469.45926231350154,
+      "stretched_pair_O_z_MeV": 81.0705228328337,
+      "stretched_pair_analytic_MeV": 81.07052283283377,
+      "intrinsic_0s4_O_z_squared_norm_MeV2": 105158.87475822435,
+      "intrinsic_0s4_analytic_MeV2": 105158.87475822435
+    },
+    {
+      "Nmax": 6,
+      "hw_MeV": 28,
+      "Coulomb_fixed_T": true,
+      "dimensions_even_odd": [
+        64,
+        61
+      ],
+      "phase": "largest absolute native eigenvector component chosen positive (zero-based anchor row); cross-truncation signs need not be gauge aligned",
+      "E_absolute_even_MeV_first_3": [
+        -13.032820326612136,
+        21.28455257902007,
+        32.14846128538527
+      ],
+      "E_absolute_odd_MeV_first_3": [
+        20.947492323663802,
+        46.87708786761359,
+        57.05578274069708
+      ],
+      "phase_anchor_basis_rows_even_first_3": [
+        0,
+        2,
+        4
+      ],
+      "phase_anchor_basis_rows_odd_first_3": [
+        0,
+        11,
+        8
+      ],
+      "O_z_odd_bra_even_ket_MeV_first_3_by_3": [
+        [
+          -215.38444894454625,
+          -57.138933899066664,
+          -16.82221481706518
+        ],
+        [
+          -1.304492839605551,
+          0.72397465631429,
+          -9.282512897497467
+        ],
+        [
+          -5.924509657222994,
+          -81.01514837384235,
+          -63.387172093287695
+        ]
+      ],
+      "C_z_odd_bra_even_ket_eV_per_eV_first_3_by_3": [
+        [
+          [
+            -0.0,
+            -0.0010377543122587877
+          ],
+          [
+            0.0,
+            2.730816456382138e-06
+          ],
+          [
+            0.0,
+            2.6717240579961397e-05
+          ]
+        ],
+        [
+          [
+            -0.0,
+            -1.108136312470079e-05
+          ],
+          [
+            0.0,
+            2.6271780505258756e-06
+          ],
+          [
+            -0.0,
+            -1.9385662419686613e-05
+          ]
+        ],
+        [
+          [
+            -0.0,
+            -5.8877945702139644e-05
+          ],
+          [
+            -0.0,
+            -0.00041091589432143736
+          ],
+          [
+            -0.0,
+            -0.00022386244128731796
+          ]
+        ]
+      ],
+      "same_parity_blocks_nonzero_elements": 0,
+      "O_z_alpha_to_all_retained_odd_norm_MeV": 244.4864461740085,
+      "H_1phonon_odd0_alpha_one_cell_one_D_eV": [
+        6.055943351805947,
+        0.0
+      ],
+      "H_drive_peak_abs_odd0_alpha_one_moving_D_eV": 1.558759019338954,
+      "max_eigen_residual_MeV_even_odd": [
+        2.9837516435674903e-13,
+        2.790276288942949e-13
+      ],
+      "max_orthogonality_error_even_odd": [
+        4.218847493575595e-15,
+        2.6645352591003757e-15
+      ],
+      "O_z_reverse_transpose_max_error_MeV": 1.1368683772161603e-13,
+      "m_pair_reduced_c2_MeV": 469.45926231350154,
+      "stretched_pair_O_z_MeV": 81.0705228328337,
+      "stretched_pair_analytic_MeV": 81.07052283283377,
+      "intrinsic_0s4_O_z_squared_norm_MeV2": 105158.87475822435,
+      "intrinsic_0s4_analytic_MeV2": 105158.87475822435
+    },
+    {
+      "Nmax": 6,
+      "hw_MeV": 28,
+      "Coulomb_fixed_T": false,
+      "dimensions_even_odd": [
+        64,
+        61
+      ],
+      "phase": "largest absolute native eigenvector component chosen positive (zero-based anchor row); cross-truncation signs need not be gauge aligned",
+      "E_absolute_even_MeV_first_3": [
+        -13.776261072275998,
+        20.62836509223668,
+        31.63431605407626
+      ],
+      "E_absolute_odd_MeV_first_3": [
+        20.37791542633591,
+        46.217106586724135,
+        56.49442858435585
+      ],
+      "phase_anchor_basis_rows_even_first_3": [
+        0,
+        2,
+        4
+      ],
+      "phase_anchor_basis_rows_odd_first_3": [
+        0,
+        11,
+        8
+      ],
+      "O_z_odd_bra_even_ket_MeV_first_3_by_3": [
+        [
+          -215.78072947234764,
+          -56.151609410160326,
+          -15.856443320522528
+        ],
+        [
+          -1.330154524135073,
+          0.7233346280172269,
+          -9.319618687155588
+        ],
+        [
+          -7.347207994619919,
+          -82.57678689610778,
+          -64.05606120887067
+        ]
+      ],
+      "C_z_odd_bra_even_ket_eV_per_eV_first_3_by_3": [
+        [
+          [
+            -0.0,
+            -0.0010449831993484349
+          ],
+          [
+            0.0,
+            1.994047493486228e-06
+          ],
+          [
+            0.0,
+            2.5308019127569587e-05
+          ]
+        ],
+        [
+          [
+            -0.0,
+            -1.1315094098400136e-05
+          ],
+          [
+            0.0,
+            2.6244663950701167e-06
+          ],
+          [
+            -0.0,
+            -1.9270439245894204e-05
+          ]
+        ],
+        [
+          [
+            -0.0,
+            -7.32064560938492e-05
+          ],
+          [
+            -0.0,
+            -0.0004199470415014824
+          ],
+          [
+            -0.0,
+            -0.0002257959528878671
+          ]
+        ]
+      ],
+      "same_parity_blocks_nonzero_elements": 0,
+      "O_z_alpha_to_all_retained_odd_norm_MeV": 245.27138958074985,
+      "H_1phonon_odd0_alpha_one_cell_one_D_eV": [
+        6.0981284144882855,
+        0.0
+      ],
+      "H_drive_peak_abs_odd0_alpha_one_moving_D_eV": 1.56961717026896,
+      "max_eigen_residual_MeV_even_odd": [
+        2.3802975203646985e-13,
+        2.640695188866287e-13
+      ],
+      "max_orthogonality_error_even_odd": [
+        3.552713678800501e-15,
+        3.3306690738754696e-15
+      ],
+      "O_z_reverse_transpose_max_error_MeV": 1.1368683772161603e-13,
+      "m_pair_reduced_c2_MeV": 469.45926231350154,
+      "stretched_pair_O_z_MeV": 81.0705228328337,
+      "stretched_pair_analytic_MeV": 81.07052283283377,
+      "intrinsic_0s4_O_z_squared_norm_MeV2": 105158.87475822435,
+      "intrinsic_0s4_analytic_MeV2": 105158.87475822435
+    }
+  ],
+  "cluster_status": "single-partition pure Coulomb sensitivity, frozen pointlike spin-1 D, Gaussian surrogate alpha; incoming convention adds e^(i sigma_1); packet not a material g or cross section",
+  "cluster_DD_s_wave_direct_eq27_C": [
+    0.0,
+    0.0
+  ],
+  "cluster_coulomb_dd_sensitivity": [
+    {
+      "gaussian_b_fm": 1.2,
+      "mid_Ecm_eV": 250.0,
+      "packet_Ecm_eV": [
+        237.5,
+        262.5
+      ],
+      "Coulomb_eta": 9.993944647252205,
+      "Coulomb_incoming_phase_e_i_sigma1": [
+        -0.9013460731470188,
+        0.4330995918059137
+      ],
+      "u_s_u_p_at_7fm_per_sqrt_eV_fm": [
+        1.1829986722955997e-17,
+        8.58702470142992e-19
+      ],
+      "Coulomb_F_relative_difference_from_origin_series_at_7fm": 5.706546346573305e-14,
+      "separable_form_factor_denominator_MeV": 46.8256696832829,
+      "O_z_standing_per_energy_MeV_per_sqrt_eV": -3.173762915922573e-17,
+      "C_standing_per_energy_per_sqrt_eV": [
+        0.0,
+        1.073141670991838e-22
+      ],
+      "C_incoming_per_energy_per_sqrt_eV": [
+        -4.647772196564812e-23,
+        -9.672720310789233e-23
+      ],
+      "C_standing_packet_eV_per_eV": [
+        0.0,
+        5.873116477019964e-22
+      ],
+      "C_incoming_packet_eV_per_eV": [
+        -3.097445694936986e-22,
+        -4.658651858928576e-22
+      ],
+      "H_incoming_packet_1phonon_one_cell_one_D_eV": [
+        2.7186137817196068e-18,
+        -1.8075526588759542e-18
+      ],
+      "H_incoming_packet_drive_peak_abs_one_moving_D_eV": 8.40305534032467e-19,
+      "relative_packet_quadrature_difference": 6.620619663879203e-15
+    },
+    {
+      "gaussian_b_fm": 2.0,
+      "mid_Ecm_eV": 250.0,
+      "packet_Ecm_eV": [
+        237.5,
+        262.5
+      ],
+      "Coulomb_eta": 9.993944647252205,
+      "Coulomb_incoming_phase_e_i_sigma1": [
+        -0.9013460731470188,
+        0.4330995918059137
+      ],
+      "u_s_u_p_at_7fm_per_sqrt_eV_fm": [
+        1.1829986722955997e-17,
+        8.58702470142992e-19
+      ],
+      "Coulomb_F_relative_difference_from_origin_series_at_7fm": 5.706546346573305e-14,
+      "separable_form_factor_denominator_MeV": 32.44398548509247,
+      "O_z_standing_per_energy_MeV_per_sqrt_eV": -7.031902528683761e-17,
+      "C_standing_per_energy_per_sqrt_eV": [
+        0.0,
+        2.377691034205631e-22
+      ],
+      "C_incoming_per_energy_per_sqrt_eV": [
+        -1.0297770163550396e-22,
+        -2.1431224768381193e-22
+      ],
+      "C_standing_packet_eV_per_eV": [
+        0.0,
+        1.3012684246149379e-21
+      ],
+      "C_incoming_packet_eV_per_eV": [
+        -6.86280862107126e-22,
+        -1.0321874328121815e-21
+      ],
+      "H_incoming_packet_1phonon_one_cell_one_D_eV": [
+        6.023457139822303e-18,
+        -4.0048766603562814e-18
+      ],
+      "H_incoming_packet_drive_peak_abs_one_moving_D_eV": 1.8618105899696127e-18,
+      "relative_packet_quadrature_difference": 8.838883186273296e-15
+    },
+    {
+      "gaussian_b_fm": 1.2,
+      "mid_Ecm_eV": 2500.0,
+      "packet_Ecm_eV": [
+        2375.0,
+        2625.0
+      ],
+      "Coulomb_eta": 3.1603627894965,
+      "Coulomb_incoming_phase_e_i_sigma1": [
+        -0.8008496479888557,
+        0.5988654617826327
+      ],
+      "u_s_u_p_at_7fm_per_sqrt_eV_fm": [
+        2.4900327155101083e-08,
+        1.8869157234540005e-09
+      ],
+      "Coulomb_F_relative_difference_from_origin_series_at_7fm": 6.661338147750939e-16,
+      "separable_form_factor_denominator_MeV": 46.8256696832829,
+      "O_z_standing_per_energy_MeV_per_sqrt_eV": -6.977103523408067e-08,
+      "C_standing_per_energy_per_sqrt_eV": [
+        0.0,
+        2.359384487112241e-13
+      ],
+      "C_incoming_per_energy_per_sqrt_eV": [
+        -1.412953880397252e-13,
+        -1.889512235974205e-13
+      ],
+      "C_standing_packet_eV_per_eV": [
+        0.0,
+        3.757942133631176e-12
+      ],
+      "C_incoming_packet_eV_per_eV": [
+        -2.2670002528390875e-12,
+        -2.9896137584220355e-12
+      ],
+      "H_incoming_packet_1phonon_one_cell_one_D_eV": [
+        1.7446260016377206e-08,
+        -1.3229359731438704e-08
+      ],
+      "H_incoming_packet_drive_peak_abs_one_moving_D_eV": 5.635607401998786e-09,
+      "relative_packet_quadrature_difference": 1.0066283812360042e-14
+    },
+    {
+      "gaussian_b_fm": 2.0,
+      "mid_Ecm_eV": 2500.0,
+      "packet_Ecm_eV": [
+        2375.0,
+        2625.0
+      ],
+      "Coulomb_eta": 3.1603627894965,
+      "Coulomb_incoming_phase_e_i_sigma1": [
+        -0.8008496479888557,
+        0.5988654617826327
+      ],
+      "u_s_u_p_at_7fm_per_sqrt_eV_fm": [
+        2.4900327155101083e-08,
+        1.8869157234540005e-09
+      ],
+      "Coulomb_F_relative_difference_from_origin_series_at_7fm": 6.661338147750939e-16,
+      "separable_form_factor_denominator_MeV": 32.44398548509247,
+      "O_z_standing_per_energy_MeV_per_sqrt_eV": -1.5456588135611584e-07,
+      "C_standing_per_energy_per_sqrt_eV": [
+        0.0,
+        5.226815704897516e-13
+      ],
+      "C_incoming_per_energy_per_sqrt_eV": [
+        -3.1301594007661676e-13,
+        -4.1858935173697984e-13
+      ],
+      "C_standing_packet_eV_per_eV": [
+        0.0,
+        8.325077398686984e-12
+      ],
+      "C_incoming_packet_eV_per_eV": [
+        -5.0221492748708604e-12,
+        -6.622978665682205e-12
+      ],
+      "H_incoming_packet_1phonon_one_cell_one_D_eV": [
+        3.86492093030097e-08,
+        -2.9307371844817597e-08
+      ],
+      "H_incoming_packet_drive_peak_abs_one_moving_D_eV": 1.2484723306240361e-08,
+      "relative_packet_quadrature_difference": 1.2598683319656546e-14
+    }
+  ]
+}
