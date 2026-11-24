@@ -1,0 +1,42 @@
+feature,unit,meaning,use,available,missing,distinct,common_by_energy
+E_cm_keV,keV,nominal setting,search,48,0,13,True
+host_Z,1,host identity,search,48,0,2,False
+electrochemical_loading,1,"preparation indicator, not measured D loading",search,48,0,2,False
+foil_thickness_um,um,"source foil property, constant",diagnostic,48,0,1,True
+chart_cup_current_uA,uA,"published setting proxy, not run current",diagnostic,48,0,13,True
+model_beam_time_s,s,"fixed-model assumed time, not measured run",diagnostic,48,0,2,True
+model_target_temperature_K,K,"fixed-model assumed temperature, not measured run",diagnostic,48,0,48,False
+model_csda_Dplus_depth_nm,nm,"fixed-model derived depth, not independent measurement",diagnostic only,48,0,48,False
+run_current_uA,uA,"run measurement, unavailable unless published",missing,0,48,0,
+run_time_s,s,"run measurement, unavailable unless published",missing,0,48,0,
+run_dose_C,C,"run measurement, unavailable unless published",missing,0,48,0,
+source_temperature_K,K,unpublished run temperature,diagnostic; not independent feature,0,48,0,
+source_actual_D_per_metal,1,unpublished actual loading,diagnostic; not independent feature,0,48,0,
+source_current_density_uA_cm2,uA/cm2,unpublished run current density,diagnostic; not independent feature,0,48,0,
+source_accumulated_dose_C,C,unpublished accumulated dose,diagnostic; not independent feature,0,48,0,
+source_cup_IV_current_uA,uA,"published I–V setting proxy, not run current",diagnostic; not independent feature,48,0,13,True
+source_stated_run_duration_lo_h,h,"stated lower duration bound, not assigned exposure",diagnostic; not independent feature,20,28,1,True
+source_stated_run_duration_hi_h,h,"stated upper duration bound, not assigned exposure",diagnostic; not independent feature,20,28,1,True
+source_spot_area_typical_cm2,cm2,"typical apparatus area, not point measurement",diagnostic; not independent feature,48,0,1,True
+source_beam_current_typical_uA,uA,typical apparatus current,diagnostic; not independent feature,48,0,1,True
+source_D_flux_typical_per_cm2_s,1/cm2/s,typical apparatus flux,diagnostic; not independent feature,48,0,1,True
+source_Dplus_fraction_typical,1,typical ion composition,diagnostic; not independent feature,48,0,1,True
+source_D2plus_fraction_typical,1,typical ion composition,diagnostic; not independent feature,48,0,1,True
+source_retarding_spread_typical_percent,percent,"typical energy spread, convention unspecified",diagnostic; not independent feature,48,0,1,True
+source_range_SRIM_reported_endpoint_nm,nm,"published simulated endpoint, intermediate values absent",diagnostic; not independent feature,4,44,1,True
+source_purity_stated_min_pct,percent,host purity bound,diagnostic; not independent feature,48,0,2,False
+source_anneal_temperature_C,degC,"preparation temperature, not point temperature",diagnostic; not independent feature,48,0,1,True
+source_anneal_duration_h,h,"preparation duration, not exposure",diagnostic; not independent feature,48,0,1,True
+source_vacuum_side_renewal_nm,nm,surface preparation,diagnostic; not independent feature,48,0,1,True
+source_electrolyte_side_Pd_nm,nm,opposite-face coating,diagnostic; not independent feature,23,25,1,True
+source_operating_pressure_lo_Torr,Torr,apparatus pressure bound,diagnostic; not independent feature,48,0,1,True
+source_operating_pressure_hi_Torr,Torr,apparatus pressure bound,diagnostic; not independent feature,48,0,1,True
+source_electrolyte_D2SO4_M,mol/L,preparation electrolyte,diagnostic; not independent feature,22,26,1,True
+source_galvanostatic_lo_mA_cm2,mA/cm2,"preparation current bound, not beam current",diagnostic; not independent feature,22,26,1,True
+source_galvanostatic_hi_mA_cm2,mA/cm2,"preparation current bound, not beam current",diagnostic; not independent feature,22,26,1,True
+source_host_atom_density_cm3,1/cm3,"source host context, not actual D density",diagnostic; not independent feature,48,0,2,False
+source_D_solubility_terminal_per_host,1,"source terminal solubility, not point loading",diagnostic; not independent feature,48,0,2,False
+source_D_diffusivity_m2_s,m2/s,unpublished numeric diffusivity,diagnostic; not independent feature,0,48,0,
+source_electron_density_m3,1/m3,unpublished electron density,diagnostic; not independent feature,0,48,0,
+source_Debye_temperature_K,K,unpublished Debye temperature,diagnostic; not independent feature,0,48,0,
+source_conductivity_S_m,S/m,unpublished conductivity,diagnostic; not independent feature,0,48,0,

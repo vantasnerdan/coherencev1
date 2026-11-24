@@ -1,0 +1,3906 @@
+{
+  "runs": [
+    {
+      "reading": "k0",
+      "normalization": "plotted",
+      "split": "all",
+      "seed": 20261124,
+      "train_ids": [
+        "karahadian2026:fig2:Pd:0.25",
+        "karahadian2026:fig2:Pd:0.50",
+        "karahadian2026:fig2:Pd:1.00",
+        "karahadian2026:fig2:Pd:1.50",
+        "karahadian2026:fig2:Pd:2.00",
+        "karahadian2026:fig2:Pd:2.50",
+        "karahadian2026:fig2:PdD:0.25",
+        "karahadian2026:fig2:PdD:0.50",
+        "karahadian2026:fig2:PdD:1.00",
+        "karahadian2026:fig2:PdD:1.50",
+        "karahadian2026:fig2:PdD:2.00",
+        "karahadian2026:fig2:PdD:2.50",
+        "karahadian2026:fig2:Ti:0.25",
+        "karahadian2026:fig2:Ti:0.50",
+        "karahadian2026:fig2:Ti:1.00",
+        "karahadian2026:fig2:Ti:1.50",
+        "karahadian2026:fig2:Ti:2.00",
+        "karahadian2026:fig2:Ti:2.50",
+        "karahadian2026:fig2:TiD:0.25",
+        "karahadian2026:fig2:TiD:0.50",
+        "karahadian2026:fig2:TiD:1.00",
+        "karahadian2026:fig2:TiD:1.50",
+        "karahadian2026:fig2:TiD:2.00",
+        "karahadian2026:fig2:TiD:2.50"
+      ],
+      "held_ids": [],
+      "selected_complexity": 5,
+      "selected_equation": "(z * 0.7350059164464033) + -0.2196955141420807",
+      "front": [
+        {
+          "complexity": 1,
+          "equation": "0.156731775127713",
+          "search_loss_candidate_scaled": 0.021530203233418903,
+          "training_original_deltaR": {
+            "n": 24,
+            "weighted_rmse_deltaR": 0.0014673173901177247,
+            "rmse_deltaR": 0.01261136717579033,
+            "chi2": 74.84742834323384,
+            "max_abs_deltaR": 0.04895268224872287
+          },
+          "held_original_deltaR": {
+            "n": 0,
+            "weighted_rmse_deltaR": null,
+            "rmse_deltaR": null,
+            "chi2": null,
+            "max_abs_deltaR": null
+          },
+          "held_nonfinite": 0
+        },
+        {
+          "complexity": 3,
+          "equation": "z + -0.3554100741382391",
+          "search_loss_candidate_scaled": 0.013761324947636005,
+          "training_original_deltaR": {
+            "n": 24,
+            "weighted_rmse_deltaR": 0.001173086737954019,
+            "rmse_deltaR": 0.010506577513169336,
+            "chi2": 47.839761276725426,
+            "max_abs_deltaR": 0.04407410074138239
+          },
+          "held_original_deltaR": {
+            "n": 0,
+            "weighted_rmse_deltaR": null,
+            "rmse_deltaR": null,
+            "chi2": null,
+            "max_abs_deltaR": null
+          },
+          "held_nonfinite": 0
+        },
+        {
+          "complexity": 4,
+          "equation": "log(z + 0.6630155729785091)",
+          "search_loss_candidate_scaled": 0.012603610437394419,
+          "training_original_deltaR": {
+            "n": 24,
+            "weighted_rmse_deltaR": 0.001122658026176913,
+            "rmse_deltaR": 0.011024782323635067,
+            "chi2": 43.81509170404209,
+            "max_abs_deltaR": 0.04543367435444294
+          },
+          "held_original_deltaR": {
+            "n": 0,
+            "weighted_rmse_deltaR": null,
+            "rmse_deltaR": null,
+            "chi2": null,
+            "max_abs_deltaR": null
+          },
+          "held_nonfinite": 0
+        },
+        {
+          "complexity": 5,
+          "equation": "(z * 0.7350059164464033) + -0.2196955141420807",
+          "search_loss_candidate_scaled": 0.012600619882657134,
+          "training_original_deltaR": {
+            "n": 24,
+            "weighted_rmse_deltaR": 0.0011225248274607175,
+            "rmse_deltaR": 0.010997878850624846,
+            "chi2": 43.804695363191115,
+            "max_abs_deltaR": 0.04536689597695678
+          },
+          "held_original_deltaR": {
+            "n": 0,
+            "weighted_rmse_deltaR": null,
+            "rmse_deltaR": null,
+            "chi2": null,
+            "max_abs_deltaR": null
+          },
+          "held_nonfinite": 0
+        }
+      ],
+      "selection": "minimum TRAINING candidate-unit loss at complexity<=5, no held selection",
+      "features": "e=E/6.5; Isetting=source chart I/Iref; z=Z/46; prepared0/1; dep_model=deposition/ref; energy-linked, not independent controls",
+      "scale": "direct transformed \u0394R divided by fixed0.01; held scores invert to original \u0394R"
+    },
+    {
+      "reading": "k0",
+      "normalization": "plotted",
+      "split": "all",
+      "seed": 20261125,
+      "train_ids": [
+        "karahadian2026:fig2:Pd:0.25",
+        "karahadian2026:fig2:Pd:0.50",
+        "karahadian2026:fig2:Pd:1.00",
+        "karahadian2026:fig2:Pd:1.50",
+        "karahadian2026:fig2:Pd:2.00",
+        "karahadian2026:fig2:Pd:2.50",
+        "karahadian2026:fig2:PdD:0.25",
+        "karahadian2026:fig2:PdD:0.50",
+        "karahadian2026:fig2:PdD:1.00",
+        "karahadian2026:fig2:PdD:1.50",
+        "karahadian2026:fig2:PdD:2.00",
+        "karahadian2026:fig2:PdD:2.50",
+        "karahadian2026:fig2:Ti:0.25",
+        "karahadian2026:fig2:Ti:0.50",
+        "karahadian2026:fig2:Ti:1.00",
+        "karahadian2026:fig2:Ti:1.50",
+        "karahadian2026:fig2:Ti:2.00",
+        "karahadian2026:fig2:Ti:2.50",
+        "karahadian2026:fig2:TiD:0.25",
+        "karahadian2026:fig2:TiD:0.50",
+        "karahadian2026:fig2:TiD:1.00",
+        "karahadian2026:fig2:TiD:1.50",
+        "karahadian2026:fig2:TiD:2.00",
+        "karahadian2026:fig2:TiD:2.50"
+      ],
+      "held_ids": [],
+      "selected_complexity": 5,
+      "selected_equation": "(z * 0.7350059167897468) + -0.21969551432629153",
+      "front": [
+        {
+          "complexity": 1,
+          "equation": "0.15673177512344505",
+          "search_loss_candidate_scaled": 0.021530203233418903,
+          "training_original_deltaR": {
+            "n": 24,
+            "weighted_rmse_deltaR": 0.0014673173901177247,
+            "rmse_deltaR": 0.012611367175812325,
+            "chi2": 74.84742834323383,
+            "max_abs_deltaR": 0.048952682248765554
+          },
+          "held_original_deltaR": {
+            "n": 0,
+            "weighted_rmse_deltaR": null,
+            "rmse_deltaR": null,
+            "chi2": null,
+            "max_abs_deltaR": null
+          },
+          "held_nonfinite": 0
+        },
+        {
+          "complexity": 3,
+          "equation": "z + -0.35541007414208575",
+          "search_loss_candidate_scaled": 0.013761324947636005,
+          "training_original_deltaR": {
+            "n": 24,
+            "weighted_rmse_deltaR": 0.001173086737954019,
+            "rmse_deltaR": 0.010506577513184819,
+            "chi2": 47.83976127672542,
+            "max_abs_deltaR": 0.04407410074142086
+          },
+          "held_original_deltaR": {
+            "n": 0,
+            "weighted_rmse_deltaR": null,
+            "rmse_deltaR": null,
+            "chi2": null,
+            "max_abs_deltaR": null
+          },
+          "held_nonfinite": 0
+        },
+        {
+          "complexity": 4,
+          "equation": "sqrt(z) + -0.5548616794313453",
+          "search_loss_candidate_scaled": 0.01294259233362967,
+          "training_original_deltaR": {
+            "n": 24,
+            "weighted_rmse_deltaR": 0.0011376551469417114,
+            "rmse_deltaR": 0.011286771701617572,
+            "chi2": 44.99352568875894,
+            "max_abs_deltaR": 0.046068616794313455
+          },
+          "held_original_deltaR": {
+            "n": 0,
+            "weighted_rmse_deltaR": null,
+            "rmse_deltaR": null,
+            "chi2": null,
+            "max_abs_deltaR": null
+          },
+          "held_nonfinite": 0
+        },
+        {
+          "complexity": 5,
+          "equation": "(z * 0.7350059167897468) + -0.21969551432629153",
+          "search_loss_candidate_scaled": 0.012600619882657134,
+          "training_original_deltaR": {
+            "n": 24,
+            "weighted_rmse_deltaR": 0.0011225248274607175,
+            "rmse_deltaR": 0.010997878849989805,
+            "chi2": 43.804695363191115,
+            "max_abs_deltaR": 0.04536689597536545
+          },
+          "held_original_deltaR": {
+            "n": 0,
+            "weighted_rmse_deltaR": null,
+            "rmse_deltaR": null,
+            "chi2": null,
+            "max_abs_deltaR": null
+          },
+          "held_nonfinite": 0
+        },
+        {
+          "complexity": 7,
+          "equation": "((prepared * 0.12196185130491552) + -0.3965385812678734) + z",
+          "search_loss_candidate_scaled": 0.010436770175607369,
+          "training_original_deltaR": {
+            "n": 24,
+            "weighted_rmse_deltaR": 0.0010216051182138516,
+            "rmse_deltaR": 0.010194252633388981,
+            "chi2": 36.282305344942486,
+            "max_abs_deltaR": 0.04326576729962958
+          },
+          "held_original_deltaR": {
+            "n": 0,
+            "weighted_rmse_deltaR": null,
+            "rmse_deltaR": null,
+            "chi2": null,
+            "max_abs_deltaR": null
+          },
+          "held_nonfinite": 0
+        }
+      ],
+      "selection": "minimum TRAINING candidate-unit loss at complexity<=5, no held selection",
+      "features": "e=E/6.5; Isetting=source chart I/Iref; z=Z/46; prepared0/1; dep_model=deposition/ref; energy-linked, not independent controls",
+      "scale": "direct transformed \u0394R divided by fixed0.01; held scores invert to original \u0394R"
+    },
+    {
+      "reading": "k0",
+      "normalization": "plotted",
+      "split": "Pd",
+      "seed": 20261124,
+      "train_ids": [
+        "karahadian2026:fig2:PdD:0.25",
+        "karahadian2026:fig2:PdD:0.50",
+        "karahadian2026:fig2:PdD:1.00",
+        "karahadian2026:fig2:PdD:1.50",
+        "karahadian2026:fig2:PdD:2.00",
+        "karahadian2026:fig2:PdD:2.50",
+        "karahadian2026:fig2:Ti:0.25",
+        "karahadian2026:fig2:Ti:0.50",
+        "karahadian2026:fig2:Ti:1.00",
+        "karahadian2026:fig2:Ti:1.50",
+        "karahadian2026:fig2:Ti:2.00",
+        "karahadian2026:fig2:Ti:2.50",
+        "karahadian2026:fig2:TiD:0.25",
+        "karahadian2026:fig2:TiD:0.50",
+        "karahadian2026:fig2:TiD:1.00",
+        "karahadian2026:fig2:TiD:1.50",
+        "karahadian2026:fig2:TiD:2.00",
+        "karahadian2026:fig2:TiD:2.50"
+      ],
+      "held_ids": [
+        "karahadian2026:fig2:Pd:0.25",
+        "karahadian2026:fig2:Pd:0.50",
+        "karahadian2026:fig2:Pd:1.00",
+        "karahadian2026:fig2:Pd:1.50",
+        "karahadian2026:fig2:Pd:2.00",
+        "karahadian2026:fig2:Pd:2.50"
+      ],
+      "selected_complexity": 5,
+      "selected_equation": "(z * 1.9154008445209807) - 0.7842322188869769",
+      "front": [
+        {
+          "complexity": 1,
+          "equation": "0.1394622209117793",
+          "search_loss_candidate_scaled": 0.015483207813370028,
+          "training_original_deltaR": {
+            "n": 18,
+            "weighted_rmse_deltaR": 0.001244315386603012,
+            "rmse_deltaR": 0.014143051737298004,
+            "chi2": 50.71773129178725,
+            "max_abs_deltaR": 0.04912537779088221
+          },
+          "held_original_deltaR": {
+            "n": 6,
+            "weighted_rmse_deltaR": 0.0035408160688113603,
+            "rmse_deltaR": 0.006723585926427588,
+            "chi2": 25.16648754889763,
+            "max_abs_deltaR": 0.015165377790882206
+          },
+          "held_nonfinite": 0
+        },
+        {
+          "complexity": 3,
+          "equation": "z + -0.34278380210770987",
+          "search_loss_candidate_scaled": 0.009642332416901576,
+          "training_original_deltaR": {
+            "n": 18,
+            "weighted_rmse_deltaR": 0.0009819537879605933,
+            "rmse_deltaR": 0.011774629195427651,
+            "chi2": 31.58500683070412,
+            "max_abs_deltaR": 0.0439478380210771
+          },
+          "held_original_deltaR": {
+            "n": 6,
+            "weighted_rmse_deltaR": 0.0028937607450454715,
+            "rmse_deltaR": 0.004628065134012154,
+            "chi2": 16.80897041850977,
+            "max_abs_deltaR": 0.009987838021077097
+          },
+          "held_nonfinite": 0
+        },
+        {
+          "complexity": 4,
+          "equation": "sqrt(z + -0.46073649545712647)",
+          "search_loss_candidate_scaled": 0.009116426238300869,
+          "training_original_deltaR": {
+            "n": 18,
+            "weighted_rmse_deltaR": 0.0009547997820643275,
+            "rmse_deltaR": 0.011447828274407471,
+            "chi2": 29.86231676721941,
+            "max_abs_deltaR": 0.04317654369834699
+          },
+          "held_original_deltaR": {
+            "n": 6,
+            "weighted_rmse_deltaR": 0.00351310626149638,
+            "rmse_deltaR": 0.004739584826196659,
+            "chi2": 24.774131773074817,
+            "max_abs_deltaR": 0.009216543698346985
+          },
+          "held_nonfinite": 0
+        },
+        {
+          "complexity": 5,
+          "equation": "(z * 1.9154008445209807) - 0.7842322188869769",
+          "search_loss_candidate_scaled": 0.007913347856253566,
+          "training_original_deltaR": {
+            "n": 18,
+            "weighted_rmse_deltaR": 0.0008895700004077008,
+            "rmse_deltaR": 0.009905561779566132,
+            "chi2": 25.92144050700778,
+            "max_abs_deltaR": 0.03920831374365996
+          },
+          "held_original_deltaR": {
+            "n": 6,
+            "weighted_rmse_deltaR": 0.0071808579405499865,
+            "rmse_deltaR": 0.006829783635395076,
+            "chi2": 103.50671872492735,
+            "max_abs_deltaR": 0.007711686257297137
+          },
+          "held_nonfinite": 0
+        },
+        {
+          "complexity": 7,
+          "equation": "(prepared + 0.8752177672623511) * (z + -0.3726094441812274)",
+          "search_loss_candidate_scaled": 0.005799940317270681,
+          "training_original_deltaR": {
+            "n": 18,
+            "weighted_rmse_deltaR": 0.0007615733922131656,
+            "rmse_deltaR": 0.009723054616750632,
+            "chi2": 18.998635041617504,
+            "max_abs_deltaR": 0.03875506082716036
+          },
+          "held_original_deltaR": {
+            "n": 6,
+            "weighted_rmse_deltaR": 0.0021941959467121487,
+            "rmse_deltaR": 0.004685868361616707,
+            "chi2": 9.664217330114019,
+            "max_abs_deltaR": 0.011068966385348081
+          },
+          "held_nonfinite": 0
+        }
+      ],
+      "selection": "minimum TRAINING candidate-unit loss at complexity<=5, no held selection",
+      "features": "e=E/6.5; Isetting=source chart I/Iref; z=Z/46; prepared0/1; dep_model=deposition/ref; energy-linked, not independent controls",
+      "scale": "direct transformed \u0394R divided by fixed0.01; held scores invert to original \u0394R"
+    },
+    {
+      "reading": "k0",
+      "normalization": "plotted",
+      "split": "PdD",
+      "seed": 20261124,
+      "train_ids": [
+        "karahadian2026:fig2:Pd:0.25",
+        "karahadian2026:fig2:Pd:0.50",
+        "karahadian2026:fig2:Pd:1.00",
+        "karahadian2026:fig2:Pd:1.50",
+        "karahadian2026:fig2:Pd:2.00",
+        "karahadian2026:fig2:Pd:2.50",
+        "karahadian2026:fig2:Ti:0.25",
+        "karahadian2026:fig2:Ti:0.50",
+        "karahadian2026:fig2:Ti:1.00",
+        "karahadian2026:fig2:Ti:1.50",
+        "karahadian2026:fig2:Ti:2.00",
+        "karahadian2026:fig2:Ti:2.50",
+        "karahadian2026:fig2:TiD:0.25",
+        "karahadian2026:fig2:TiD:0.50",
+        "karahadian2026:fig2:TiD:1.00",
+        "karahadian2026:fig2:TiD:1.50",
+        "karahadian2026:fig2:TiD:2.00",
+        "karahadian2026:fig2:TiD:2.50"
+      ],
+      "held_ids": [
+        "karahadian2026:fig2:PdD:0.25",
+        "karahadian2026:fig2:PdD:0.50",
+        "karahadian2026:fig2:PdD:1.00",
+        "karahadian2026:fig2:PdD:1.50",
+        "karahadian2026:fig2:PdD:2.00",
+        "karahadian2026:fig2:PdD:2.50"
+      ],
+      "selected_complexity": 5,
+      "selected_equation": "(z * 0.5878756637693193) + -0.14932887156522046",
+      "front": [
+        {
+          "complexity": 1,
+          "equation": "0.14966774640954705",
+          "search_loss_candidate_scaled": 0.012935970824541858,
+          "training_original_deltaR": {
+            "n": 18,
+            "weighted_rmse_deltaR": 0.001137364094058796,
+            "rmse_deltaR": 0.004047367215591673,
+            "chi2": 44.64684634378087,
+            "max_abs_deltaR": 0.015063322535904528
+          },
+          "held_original_deltaR": {
+            "n": 6,
+            "weighted_rmse_deltaR": 0.011018085403045687,
+            "rmse_deltaR": 0.024305049836605058,
+            "chi2": 30.374055709236472,
+            "max_abs_deltaR": 0.04902332253590453
+          },
+          "held_nonfinite": 0
+        },
+        {
+          "complexity": 3,
+          "equation": "z * 0.310272830326362",
+          "search_loss_candidate_scaled": 0.008998078636657183,
+          "training_original_deltaR": {
+            "n": 18,
+            "weighted_rmse_deltaR": 0.000948582027905715,
+            "rmse_deltaR": 0.003482711118882282,
+            "chi2": 31.055715858443776,
+            "max_abs_deltaR": 0.013457271696736378
+          },
+          "held_original_deltaR": {
+            "n": 6,
+            "weighted_rmse_deltaR": 0.009615133851142923,
+            "rmse_deltaR": 0.022981907318159803,
+            "chi2": 23.1313609331771,
+            "max_abs_deltaR": 0.04741727169673638
+          },
+          "held_nonfinite": 0
+        },
+        {
+          "complexity": 4,
+          "equation": "sqrt(z) + -0.5598349499492588",
+          "search_loss_candidate_scaled": 0.007782908262857727,
+          "training_original_deltaR": {
+            "n": 18,
+            "weighted_rmse_deltaR": 0.000882207926900327,
+            "rmse_deltaR": 0.003177401526237998,
+            "chi2": 26.861710963379352,
+            "max_abs_deltaR": 0.012158349499492585
+          },
+          "held_original_deltaR": {
+            "n": 6,
+            "weighted_rmse_deltaR": 0.008533018364028176,
+            "rmse_deltaR": 0.021939437390900637,
+            "chi2": 18.21779778013456,
+            "max_abs_deltaR": 0.04611834949949259
+          },
+          "held_nonfinite": 0
+        },
+        {
+          "complexity": 5,
+          "equation": "(z * 0.5878756637693193) + -0.14932887156522046",
+          "search_loss_candidate_scaled": 0.0077827465508063624,
+          "training_original_deltaR": {
+            "n": 18,
+            "weighted_rmse_deltaR": 0.0008821987616635133,
+            "rmse_deltaR": 0.003180438981642877,
+            "chi2": 26.861152834947617,
+            "max_abs_deltaR": 0.012174532077959009
+          },
+          "held_original_deltaR": {
+            "n": 6,
+            "weighted_rmse_deltaR": 0.008546128285306211,
+            "rmse_deltaR": 0.021952256703932485,
+            "chi2": 18.273819542621204,
+            "max_abs_deltaR": 0.04613453207795901
+          },
+          "held_nonfinite": 0
+        }
+      ],
+      "selection": "minimum TRAINING candidate-unit loss at complexity<=5, no held selection",
+      "features": "e=E/6.5; Isetting=source chart I/Iref; z=Z/46; prepared0/1; dep_model=deposition/ref; energy-linked, not independent controls",
+      "scale": "direct transformed \u0394R divided by fixed0.01; held scores invert to original \u0394R"
+    },
+    {
+      "reading": "k0",
+      "normalization": "plotted",
+      "split": "Ti",
+      "seed": 20261124,
+      "train_ids": [
+        "karahadian2026:fig2:Pd:0.25",
+        "karahadian2026:fig2:Pd:0.50",
+        "karahadian2026:fig2:Pd:1.00",
+        "karahadian2026:fig2:Pd:1.50",
+        "karahadian2026:fig2:Pd:2.00",
+        "karahadian2026:fig2:Pd:2.50",
+        "karahadian2026:fig2:PdD:0.25",
+        "karahadian2026:fig2:PdD:0.50",
+        "karahadian2026:fig2:PdD:1.00",
+        "karahadian2026:fig2:PdD:1.50",
+        "karahadian2026:fig2:PdD:2.00",
+        "karahadian2026:fig2:PdD:2.50",
+        "karahadian2026:fig2:TiD:0.25",
+        "karahadian2026:fig2:TiD:0.50",
+        "karahadian2026:fig2:TiD:1.00",
+        "karahadian2026:fig2:TiD:1.50",
+        "karahadian2026:fig2:TiD:2.00",
+        "karahadian2026:fig2:TiD:2.50"
+      ],
+      "held_ids": [
+        "karahadian2026:fig2:Ti:0.25",
+        "karahadian2026:fig2:Ti:0.50",
+        "karahadian2026:fig2:Ti:1.00",
+        "karahadian2026:fig2:Ti:1.50",
+        "karahadian2026:fig2:Ti:2.00",
+        "karahadian2026:fig2:Ti:2.50"
+      ],
+      "selected_complexity": 5,
+      "selected_equation": "(z * 0.6142431371255356) - 0.09893273469245722",
+      "front": [
+        {
+          "complexity": 1,
+          "equation": "0.24752677230502934",
+          "search_loss_candidate_scaled": 0.03948242015698441,
+          "training_original_deltaR": {
+            "n": 18,
+            "weighted_rmse_deltaR": 0.0019870183732664482,
+            "rmse_deltaR": 0.01403314031910682,
+            "chi2": 54.21156416378791,
+            "max_abs_deltaR": 0.048044732276949706
+          },
+          "held_original_deltaR": {
+            "n": 6,
+            "weighted_rmse_deltaR": 0.0015308901225455744,
+            "rmse_deltaR": 0.00122104244842114,
+            "chi2": 49.29430724995441,
+            "max_abs_deltaR": 0.0017438356768544588
+          },
+          "held_nonfinite": 0
+        },
+        {
+          "complexity": 3,
+          "equation": "z * 0.45729304038077423",
+          "search_loss_candidate_scaled": 0.026402127377089055,
+          "training_original_deltaR": {
+            "n": 18,
+            "weighted_rmse_deltaR": 0.001624873145112844,
+            "rmse_deltaR": 0.01294803814604126,
+            "chi2": 36.25159290318653,
+            "max_abs_deltaR": 0.04594706959619226
+          },
+          "held_original_deltaR": {
+            "n": 6,
+            "weighted_rmse_deltaR": 0.0012496679657002425,
+            "rmse_deltaR": 0.000955582135935493,
+            "chi2": 32.84717317119414,
+            "max_abs_deltaR": 0.001455621625190477
+          },
+          "held_nonfinite": 0
+        },
+        {
+          "complexity": 4,
+          "equation": "sqrt(z) - 0.4947489929841732",
+          "search_loss_candidate_scaled": 0.02539253063551632,
+          "training_original_deltaR": {
+            "n": 18,
+            "weighted_rmse_deltaR": 0.0015935033930154128,
+            "rmse_deltaR": 0.012723005004373787,
+            "chi2": 34.865360288323906,
+            "max_abs_deltaR": 0.04546748992984173
+          },
+          "held_original_deltaR": {
+            "n": 6,
+            "weighted_rmse_deltaR": 0.0010386401070769065,
+            "rmse_deltaR": 0.0007650445876613371,
+            "chi2": 22.69023028100181,
+            "max_abs_deltaR": 0.0012367187720436802
+          },
+          "held_nonfinite": 0
+        },
+        {
+          "complexity": 5,
+          "equation": "(z * 0.6142431371255356) - 0.09893273469245722",
+          "search_loss_candidate_scaled": 0.025372619474258604,
+          "training_original_deltaR": {
+            "n": 18,
+            "weighted_rmse_deltaR": 0.0015928785099391168,
+            "rmse_deltaR": 0.012676343888171251,
+            "chi2": 34.83802115379753,
+            "max_abs_deltaR": 0.045366895975669216
+          },
+          "held_original_deltaR": {
+            "n": 6,
+            "weighted_rmse_deltaR": 0.0010197222787241811,
+            "rmse_deltaR": 0.0007485810767543732,
+            "chi2": 21.87119644544785,
+            "max_abs_deltaR": 0.0012169251757408505
+          },
+          "held_nonfinite": 0
+        },
+        {
+          "complexity": 7,
+          "equation": "(e - -0.3905807071989297) * (z - 0.14956740556676115)",
+          "search_loss_candidate_scaled": 0.025295897833977905,
+          "training_original_deltaR": {
+            "n": 18,
+            "weighted_rmse_deltaR": 0.0015904684163471437,
+            "rmse_deltaR": 0.0129821293548105,
+            "chi2": 34.73267806418218,
+            "max_abs_deltaR": 0.046871284899015056
+          },
+          "held_original_deltaR": {
+            "n": 6,
+            "weighted_rmse_deltaR": 0.0012451399907356276,
+            "rmse_deltaR": 0.0009891149251918705,
+            "chi2": 32.60957129636217,
+            "max_abs_deltaR": 0.0015637457146166298
+          },
+          "held_nonfinite": 0
+        }
+      ],
+      "selection": "minimum TRAINING candidate-unit loss at complexity<=5, no held selection",
+      "features": "e=E/6.5; Isetting=source chart I/Iref; z=Z/46; prepared0/1; dep_model=deposition/ref; energy-linked, not independent controls",
+      "scale": "direct transformed \u0394R divided by fixed0.01; held scores invert to original \u0394R"
+    },
+    {
+      "reading": "k0",
+      "normalization": "plotted",
+      "split": "TiD",
+      "seed": 20261124,
+      "train_ids": [
+        "karahadian2026:fig2:Pd:0.25",
+        "karahadian2026:fig2:Pd:0.50",
+        "karahadian2026:fig2:Pd:1.00",
+        "karahadian2026:fig2:Pd:1.50",
+        "karahadian2026:fig2:Pd:2.00",
+        "karahadian2026:fig2:Pd:2.50",
+        "karahadian2026:fig2:PdD:0.25",
+        "karahadian2026:fig2:PdD:0.50",
+        "karahadian2026:fig2:PdD:1.00",
+        "karahadian2026:fig2:PdD:1.50",
+        "karahadian2026:fig2:PdD:2.00",
+        "karahadian2026:fig2:PdD:2.50",
+        "karahadian2026:fig2:Ti:0.25",
+        "karahadian2026:fig2:Ti:0.50",
+        "karahadian2026:fig2:Ti:1.00",
+        "karahadian2026:fig2:Ti:1.50",
+        "karahadian2026:fig2:Ti:2.00",
+        "karahadian2026:fig2:Ti:2.50"
+      ],
+      "held_ids": [
+        "karahadian2026:fig2:TiD:0.25",
+        "karahadian2026:fig2:TiD:0.50",
+        "karahadian2026:fig2:TiD:1.00",
+        "karahadian2026:fig2:TiD:1.50",
+        "karahadian2026:fig2:TiD:2.00",
+        "karahadian2026:fig2:TiD:2.50"
+      ],
+      "selected_complexity": 5,
+      "selected_equation": "(prepared + 0.2678797992164106) * z",
+      "front": [
+        {
+          "complexity": 1,
+          "equation": "0.13796185142406336",
+          "search_loss_candidate_scaled": 0.026481319822356072,
+          "training_original_deltaR": {
+            "n": 18,
+            "weighted_rmse_deltaR": 0.0016273082013667872,
+            "rmse_deltaR": 0.014617682993350667,
+            "chi2": 61.677329117308304,
+            "max_abs_deltaR": 0.04914038148575937
+          },
+          "held_original_deltaR": {
+            "n": 6,
+            "weighted_rmse_deltaR": 0.0011201201039468434,
+            "rmse_deltaR": 0.0022485711575537587,
+            "chi2": 14.394867049781196,
+            "max_abs_deltaR": 0.004328482499836976
+          },
+          "held_nonfinite": 0
+        },
+        {
+          "complexity": 3,
+          "equation": "z + -0.39086969754471584",
+          "search_loss_candidate_scaled": 0.012143083577379242,
+          "training_original_deltaR": {
+            "n": 18,
+            "weighted_rmse_deltaR": 0.001101956604289808,
+            "rmse_deltaR": 0.012209639047342437,
+            "chi2": 28.282312487639665,
+            "max_abs_deltaR": 0.044428696975447164
+          },
+          "held_original_deltaR": {
+            "n": 6,
+            "weighted_rmse_deltaR": 0.001444173973522879,
+            "rmse_deltaR": 0.0026127900307596507,
+            "chi2": 23.928611688107353,
+            "max_abs_deltaR": 0.004834189293872594
+          },
+          "held_nonfinite": 0
+        },
+        {
+          "complexity": 5,
+          "equation": "(prepared + 0.2678797992164106) * z",
+          "search_loss_candidate_scaled": 0.010175833353112547,
+          "training_original_deltaR": {
+            "n": 18,
+            "weighted_rmse_deltaR": 0.0010087533570260151,
+            "rmse_deltaR": 0.00994445785125966,
+            "chi2": 23.700413233669625,
+            "max_abs_deltaR": 0.037841202007835896
+          },
+          "held_original_deltaR": {
+            "n": 6,
+            "weighted_rmse_deltaR": 0.004227038202747522,
+            "rmse_deltaR": 0.0036008120613604754,
+            "chi2": 204.9985644402688,
+            "max_abs_deltaR": 0.0049267863269960325
+          },
+          "held_nonfinite": 0
+        },
+        {
+          "complexity": 6,
+          "equation": "sqrt(prepared + 0.07497240661186577) * z",
+          "search_loss_candidate_scaled": 0.010063582945069888,
+          "training_original_deltaR": {
+            "n": 18,
+            "weighted_rmse_deltaR": 0.001003174109767088,
+            "rmse_deltaR": 0.0107026993663249,
+            "chi2": 23.438972134553616,
+            "max_abs_deltaR": 0.04015191239132372
+          },
+          "held_original_deltaR": {
+            "n": 6,
+            "weighted_rmse_deltaR": 0.003161181982178533,
+            "rmse_deltaR": 0.0026729091040895406,
+            "chi2": 114.65090043217641,
+            "max_abs_deltaR": 0.003821663969675766
+          },
+          "held_nonfinite": 0
+        },
+        {
+          "complexity": 7,
+          "equation": "((z + prepared) * 0.46615528828648667) * z",
+          "search_loss_candidate_scaled": 0.007182408995102409,
+          "training_original_deltaR": {
+            "n": 18,
+            "weighted_rmse_deltaR": 0.0008474909436154709,
+            "rmse_deltaR": 0.010935005030813771,
+            "chi2": 16.728463929205834,
+            "max_abs_deltaR": 0.04119689423427027
+          },
+          "held_original_deltaR": {
+            "n": 6,
+            "weighted_rmse_deltaR": 0.0016572612520821895,
+            "rmse_deltaR": 0.0017285117301401366,
+            "chi2": 31.510872378910054,
+            "max_abs_deltaR": 0.0024124095619198404
+          },
+          "held_nonfinite": 0
+        }
+      ],
+      "selection": "minimum TRAINING candidate-unit loss at complexity<=5, no held selection",
+      "features": "e=E/6.5; Isetting=source chart I/Iref; z=Z/46; prepared0/1; dep_model=deposition/ref; energy-linked, not independent controls",
+      "scale": "direct transformed \u0394R divided by fixed0.01; held scores invert to original \u0394R"
+    },
+    {
+      "reading": "k0",
+      "normalization": "cup_C",
+      "split": "all",
+      "seed": 20261124,
+      "train_ids": [
+        "karahadian2026:fig2:Pd:0.25",
+        "karahadian2026:fig2:Pd:0.50",
+        "karahadian2026:fig2:Pd:1.00",
+        "karahadian2026:fig2:Pd:1.50",
+        "karahadian2026:fig2:Pd:2.00",
+        "karahadian2026:fig2:Pd:2.50",
+        "karahadian2026:fig2:PdD:0.25",
+        "karahadian2026:fig2:PdD:0.50",
+        "karahadian2026:fig2:PdD:1.00",
+        "karahadian2026:fig2:PdD:1.50",
+        "karahadian2026:fig2:PdD:2.00",
+        "karahadian2026:fig2:PdD:2.50",
+        "karahadian2026:fig2:Ti:0.25",
+        "karahadian2026:fig2:Ti:0.50",
+        "karahadian2026:fig2:Ti:1.00",
+        "karahadian2026:fig2:Ti:1.50",
+        "karahadian2026:fig2:Ti:2.00",
+        "karahadian2026:fig2:Ti:2.50",
+        "karahadian2026:fig2:TiD:0.25",
+        "karahadian2026:fig2:TiD:0.50",
+        "karahadian2026:fig2:TiD:1.00",
+        "karahadian2026:fig2:TiD:1.50",
+        "karahadian2026:fig2:TiD:2.00",
+        "karahadian2026:fig2:TiD:2.50"
+      ],
+      "held_ids": [],
+      "selected_complexity": 5,
+      "selected_equation": "(z * 0.7350059164464033) + -0.2196955141420807",
+      "front": [
+        {
+          "complexity": 1,
+          "equation": "0.156731775127713",
+          "search_loss_candidate_scaled": 0.021530203233418903,
+          "training_original_deltaR": {
+            "n": 24,
+            "weighted_rmse_deltaR": 0.0014673173901177247,
+            "rmse_deltaR": 0.01261136717579033,
+            "chi2": 74.84742834323384,
+            "max_abs_deltaR": 0.04895268224872287
+          },
+          "held_original_deltaR": {
+            "n": 0,
+            "weighted_rmse_deltaR": null,
+            "rmse_deltaR": null,
+            "chi2": null,
+            "max_abs_deltaR": null
+          },
+          "held_nonfinite": 0
+        },
+        {
+          "complexity": 3,
+          "equation": "z + -0.3554100741382391",
+          "search_loss_candidate_scaled": 0.013761324947636005,
+          "training_original_deltaR": {
+            "n": 24,
+            "weighted_rmse_deltaR": 0.001173086737954019,
+            "rmse_deltaR": 0.010506577513169336,
+            "chi2": 47.839761276725426,
+            "max_abs_deltaR": 0.04407410074138239
+          },
+          "held_original_deltaR": {
+            "n": 0,
+            "weighted_rmse_deltaR": null,
+            "rmse_deltaR": null,
+            "chi2": null,
+            "max_abs_deltaR": null
+          },
+          "held_nonfinite": 0
+        },
+        {
+          "complexity": 4,
+          "equation": "log(z + 0.6630155729785091)",
+          "search_loss_candidate_scaled": 0.012603610437394419,
+          "training_original_deltaR": {
+            "n": 24,
+            "weighted_rmse_deltaR": 0.001122658026176913,
+            "rmse_deltaR": 0.011024782323635067,
+            "chi2": 43.81509170404209,
+            "max_abs_deltaR": 0.04543367435444294
+          },
+          "held_original_deltaR": {
+            "n": 0,
+            "weighted_rmse_deltaR": null,
+            "rmse_deltaR": null,
+            "chi2": null,
+            "max_abs_deltaR": null
+          },
+          "held_nonfinite": 0
+        },
+        {
+          "complexity": 5,
+          "equation": "(z * 0.7350059164464033) + -0.2196955141420807",
+          "search_loss_candidate_scaled": 0.012600619882657134,
+          "training_original_deltaR": {
+            "n": 24,
+            "weighted_rmse_deltaR": 0.0011225248274607175,
+            "rmse_deltaR": 0.010997878850624846,
+            "chi2": 43.804695363191115,
+            "max_abs_deltaR": 0.04536689597695678
+          },
+          "held_original_deltaR": {
+            "n": 0,
+            "weighted_rmse_deltaR": null,
+            "rmse_deltaR": null,
+            "chi2": null,
+            "max_abs_deltaR": null
+          },
+          "held_nonfinite": 0
+        }
+      ],
+      "selection": "minimum TRAINING candidate-unit loss at complexity<=5, no held selection",
+      "features": "e=E/6.5; Isetting=source chart I/Iref; z=Z/46; prepared0/1; dep_model=deposition/ref; energy-linked, not independent controls",
+      "scale": "direct transformed \u0394R divided by fixed0.01; held scores invert to original \u0394R"
+    },
+    {
+      "reading": "k0",
+      "normalization": "cup_C",
+      "split": "all",
+      "seed": 20261125,
+      "train_ids": [
+        "karahadian2026:fig2:Pd:0.25",
+        "karahadian2026:fig2:Pd:0.50",
+        "karahadian2026:fig2:Pd:1.00",
+        "karahadian2026:fig2:Pd:1.50",
+        "karahadian2026:fig2:Pd:2.00",
+        "karahadian2026:fig2:Pd:2.50",
+        "karahadian2026:fig2:PdD:0.25",
+        "karahadian2026:fig2:PdD:0.50",
+        "karahadian2026:fig2:PdD:1.00",
+        "karahadian2026:fig2:PdD:1.50",
+        "karahadian2026:fig2:PdD:2.00",
+        "karahadian2026:fig2:PdD:2.50",
+        "karahadian2026:fig2:Ti:0.25",
+        "karahadian2026:fig2:Ti:0.50",
+        "karahadian2026:fig2:Ti:1.00",
+        "karahadian2026:fig2:Ti:1.50",
+        "karahadian2026:fig2:Ti:2.00",
+        "karahadian2026:fig2:Ti:2.50",
+        "karahadian2026:fig2:TiD:0.25",
+        "karahadian2026:fig2:TiD:0.50",
+        "karahadian2026:fig2:TiD:1.00",
+        "karahadian2026:fig2:TiD:1.50",
+        "karahadian2026:fig2:TiD:2.00",
+        "karahadian2026:fig2:TiD:2.50"
+      ],
+      "held_ids": [],
+      "selected_complexity": 5,
+      "selected_equation": "(z * 0.7350059167897468) + -0.21969551432629153",
+      "front": [
+        {
+          "complexity": 1,
+          "equation": "0.15673177512344505",
+          "search_loss_candidate_scaled": 0.021530203233418903,
+          "training_original_deltaR": {
+            "n": 24,
+            "weighted_rmse_deltaR": 0.0014673173901177247,
+            "rmse_deltaR": 0.012611367175812325,
+            "chi2": 74.84742834323383,
+            "max_abs_deltaR": 0.048952682248765554
+          },
+          "held_original_deltaR": {
+            "n": 0,
+            "weighted_rmse_deltaR": null,
+            "rmse_deltaR": null,
+            "chi2": null,
+            "max_abs_deltaR": null
+          },
+          "held_nonfinite": 0
+        },
+        {
+          "complexity": 3,
+          "equation": "z + -0.35541007414208575",
+          "search_loss_candidate_scaled": 0.013761324947636005,
+          "training_original_deltaR": {
+            "n": 24,
+            "weighted_rmse_deltaR": 0.001173086737954019,
+            "rmse_deltaR": 0.010506577513184819,
+            "chi2": 47.83976127672542,
+            "max_abs_deltaR": 0.04407410074142086
+          },
+          "held_original_deltaR": {
+            "n": 0,
+            "weighted_rmse_deltaR": null,
+            "rmse_deltaR": null,
+            "chi2": null,
+            "max_abs_deltaR": null
+          },
+          "held_nonfinite": 0
+        },
+        {
+          "complexity": 4,
+          "equation": "sqrt(z) + -0.5548616794313453",
+          "search_loss_candidate_scaled": 0.01294259233362967,
+          "training_original_deltaR": {
+            "n": 24,
+            "weighted_rmse_deltaR": 0.0011376551469417114,
+            "rmse_deltaR": 0.011286771701617572,
+            "chi2": 44.99352568875894,
+            "max_abs_deltaR": 0.046068616794313455
+          },
+          "held_original_deltaR": {
+            "n": 0,
+            "weighted_rmse_deltaR": null,
+            "rmse_deltaR": null,
+            "chi2": null,
+            "max_abs_deltaR": null
+          },
+          "held_nonfinite": 0
+        },
+        {
+          "complexity": 5,
+          "equation": "(z * 0.7350059167897468) + -0.21969551432629153",
+          "search_loss_candidate_scaled": 0.012600619882657134,
+          "training_original_deltaR": {
+            "n": 24,
+            "weighted_rmse_deltaR": 0.0011225248274607175,
+            "rmse_deltaR": 0.010997878849989805,
+            "chi2": 43.804695363191115,
+            "max_abs_deltaR": 0.04536689597536545
+          },
+          "held_original_deltaR": {
+            "n": 0,
+            "weighted_rmse_deltaR": null,
+            "rmse_deltaR": null,
+            "chi2": null,
+            "max_abs_deltaR": null
+          },
+          "held_nonfinite": 0
+        },
+        {
+          "complexity": 7,
+          "equation": "((prepared * 0.12196185130491552) + -0.3965385812678734) + z",
+          "search_loss_candidate_scaled": 0.010436770175607369,
+          "training_original_deltaR": {
+            "n": 24,
+            "weighted_rmse_deltaR": 0.0010216051182138516,
+            "rmse_deltaR": 0.010194252633388981,
+            "chi2": 36.282305344942486,
+            "max_abs_deltaR": 0.04326576729962958
+          },
+          "held_original_deltaR": {
+            "n": 0,
+            "weighted_rmse_deltaR": null,
+            "rmse_deltaR": null,
+            "chi2": null,
+            "max_abs_deltaR": null
+          },
+          "held_nonfinite": 0
+        }
+      ],
+      "selection": "minimum TRAINING candidate-unit loss at complexity<=5, no held selection",
+      "features": "e=E/6.5; Isetting=source chart I/Iref; z=Z/46; prepared0/1; dep_model=deposition/ref; energy-linked, not independent controls",
+      "scale": "direct transformed \u0394R divided by fixed0.01; held scores invert to original \u0394R"
+    },
+    {
+      "reading": "k0",
+      "normalization": "cup_C",
+      "split": "Pd",
+      "seed": 20261124,
+      "train_ids": [
+        "karahadian2026:fig2:PdD:0.25",
+        "karahadian2026:fig2:PdD:0.50",
+        "karahadian2026:fig2:PdD:1.00",
+        "karahadian2026:fig2:PdD:1.50",
+        "karahadian2026:fig2:PdD:2.00",
+        "karahadian2026:fig2:PdD:2.50",
+        "karahadian2026:fig2:Ti:0.25",
+        "karahadian2026:fig2:Ti:0.50",
+        "karahadian2026:fig2:Ti:1.00",
+        "karahadian2026:fig2:Ti:1.50",
+        "karahadian2026:fig2:Ti:2.00",
+        "karahadian2026:fig2:Ti:2.50",
+        "karahadian2026:fig2:TiD:0.25",
+        "karahadian2026:fig2:TiD:0.50",
+        "karahadian2026:fig2:TiD:1.00",
+        "karahadian2026:fig2:TiD:1.50",
+        "karahadian2026:fig2:TiD:2.00",
+        "karahadian2026:fig2:TiD:2.50"
+      ],
+      "held_ids": [
+        "karahadian2026:fig2:Pd:0.25",
+        "karahadian2026:fig2:Pd:0.50",
+        "karahadian2026:fig2:Pd:1.00",
+        "karahadian2026:fig2:Pd:1.50",
+        "karahadian2026:fig2:Pd:2.00",
+        "karahadian2026:fig2:Pd:2.50"
+      ],
+      "selected_complexity": 5,
+      "selected_equation": "(z * 1.9154008445209807) - 0.7842322188869769",
+      "front": [
+        {
+          "complexity": 1,
+          "equation": "0.1394622209117793",
+          "search_loss_candidate_scaled": 0.015483207813370028,
+          "training_original_deltaR": {
+            "n": 18,
+            "weighted_rmse_deltaR": 0.001244315386603012,
+            "rmse_deltaR": 0.014143051737298004,
+            "chi2": 50.71773129178725,
+            "max_abs_deltaR": 0.04912537779088221
+          },
+          "held_original_deltaR": {
+            "n": 6,
+            "weighted_rmse_deltaR": 0.0035408160688113603,
+            "rmse_deltaR": 0.006723585926427588,
+            "chi2": 25.16648754889763,
+            "max_abs_deltaR": 0.015165377790882206
+          },
+          "held_nonfinite": 0
+        },
+        {
+          "complexity": 3,
+          "equation": "z + -0.34278380210770987",
+          "search_loss_candidate_scaled": 0.009642332416901576,
+          "training_original_deltaR": {
+            "n": 18,
+            "weighted_rmse_deltaR": 0.0009819537879605933,
+            "rmse_deltaR": 0.011774629195427651,
+            "chi2": 31.58500683070412,
+            "max_abs_deltaR": 0.0439478380210771
+          },
+          "held_original_deltaR": {
+            "n": 6,
+            "weighted_rmse_deltaR": 0.0028937607450454715,
+            "rmse_deltaR": 0.004628065134012154,
+            "chi2": 16.80897041850977,
+            "max_abs_deltaR": 0.009987838021077097
+          },
+          "held_nonfinite": 0
+        },
+        {
+          "complexity": 4,
+          "equation": "sqrt(z + -0.46073649545712647)",
+          "search_loss_candidate_scaled": 0.009116426238300869,
+          "training_original_deltaR": {
+            "n": 18,
+            "weighted_rmse_deltaR": 0.0009547997820643275,
+            "rmse_deltaR": 0.011447828274407471,
+            "chi2": 29.86231676721941,
+            "max_abs_deltaR": 0.04317654369834699
+          },
+          "held_original_deltaR": {
+            "n": 6,
+            "weighted_rmse_deltaR": 0.00351310626149638,
+            "rmse_deltaR": 0.004739584826196659,
+            "chi2": 24.774131773074817,
+            "max_abs_deltaR": 0.009216543698346985
+          },
+          "held_nonfinite": 0
+        },
+        {
+          "complexity": 5,
+          "equation": "(z * 1.9154008445209807) - 0.7842322188869769",
+          "search_loss_candidate_scaled": 0.007913347856253566,
+          "training_original_deltaR": {
+            "n": 18,
+            "weighted_rmse_deltaR": 0.0008895700004077008,
+            "rmse_deltaR": 0.009905561779566132,
+            "chi2": 25.92144050700778,
+            "max_abs_deltaR": 0.03920831374365996
+          },
+          "held_original_deltaR": {
+            "n": 6,
+            "weighted_rmse_deltaR": 0.0071808579405499865,
+            "rmse_deltaR": 0.006829783635395076,
+            "chi2": 103.50671872492735,
+            "max_abs_deltaR": 0.007711686257297137
+          },
+          "held_nonfinite": 0
+        },
+        {
+          "complexity": 7,
+          "equation": "(prepared + 0.8752177672623511) * (z + -0.3726094441812274)",
+          "search_loss_candidate_scaled": 0.005799940317270681,
+          "training_original_deltaR": {
+            "n": 18,
+            "weighted_rmse_deltaR": 0.0007615733922131656,
+            "rmse_deltaR": 0.009723054616750632,
+            "chi2": 18.998635041617504,
+            "max_abs_deltaR": 0.03875506082716036
+          },
+          "held_original_deltaR": {
+            "n": 6,
+            "weighted_rmse_deltaR": 0.0021941959467121487,
+            "rmse_deltaR": 0.004685868361616707,
+            "chi2": 9.664217330114019,
+            "max_abs_deltaR": 0.011068966385348081
+          },
+          "held_nonfinite": 0
+        }
+      ],
+      "selection": "minimum TRAINING candidate-unit loss at complexity<=5, no held selection",
+      "features": "e=E/6.5; Isetting=source chart I/Iref; z=Z/46; prepared0/1; dep_model=deposition/ref; energy-linked, not independent controls",
+      "scale": "direct transformed \u0394R divided by fixed0.01; held scores invert to original \u0394R"
+    },
+    {
+      "reading": "k0",
+      "normalization": "cup_C",
+      "split": "PdD",
+      "seed": 20261124,
+      "train_ids": [
+        "karahadian2026:fig2:Pd:0.25",
+        "karahadian2026:fig2:Pd:0.50",
+        "karahadian2026:fig2:Pd:1.00",
+        "karahadian2026:fig2:Pd:1.50",
+        "karahadian2026:fig2:Pd:2.00",
+        "karahadian2026:fig2:Pd:2.50",
+        "karahadian2026:fig2:Ti:0.25",
+        "karahadian2026:fig2:Ti:0.50",
+        "karahadian2026:fig2:Ti:1.00",
+        "karahadian2026:fig2:Ti:1.50",
+        "karahadian2026:fig2:Ti:2.00",
+        "karahadian2026:fig2:Ti:2.50",
+        "karahadian2026:fig2:TiD:0.25",
+        "karahadian2026:fig2:TiD:0.50",
+        "karahadian2026:fig2:TiD:1.00",
+        "karahadian2026:fig2:TiD:1.50",
+        "karahadian2026:fig2:TiD:2.00",
+        "karahadian2026:fig2:TiD:2.50"
+      ],
+      "held_ids": [
+        "karahadian2026:fig2:PdD:0.25",
+        "karahadian2026:fig2:PdD:0.50",
+        "karahadian2026:fig2:PdD:1.00",
+        "karahadian2026:fig2:PdD:1.50",
+        "karahadian2026:fig2:PdD:2.00",
+        "karahadian2026:fig2:PdD:2.50"
+      ],
+      "selected_complexity": 5,
+      "selected_equation": "(z * 0.5878756637693193) + -0.14932887156522046",
+      "front": [
+        {
+          "complexity": 1,
+          "equation": "0.14966774640954705",
+          "search_loss_candidate_scaled": 0.012935970824541858,
+          "training_original_deltaR": {
+            "n": 18,
+            "weighted_rmse_deltaR": 0.001137364094058796,
+            "rmse_deltaR": 0.004047367215591673,
+            "chi2": 44.64684634378087,
+            "max_abs_deltaR": 0.015063322535904528
+          },
+          "held_original_deltaR": {
+            "n": 6,
+            "weighted_rmse_deltaR": 0.011018085403045687,
+            "rmse_deltaR": 0.024305049836605058,
+            "chi2": 30.374055709236472,
+            "max_abs_deltaR": 0.04902332253590453
+          },
+          "held_nonfinite": 0
+        },
+        {
+          "complexity": 3,
+          "equation": "z * 0.310272830326362",
+          "search_loss_candidate_scaled": 0.008998078636657183,
+          "training_original_deltaR": {
+            "n": 18,
+            "weighted_rmse_deltaR": 0.000948582027905715,
+            "rmse_deltaR": 0.003482711118882282,
+            "chi2": 31.055715858443776,
+            "max_abs_deltaR": 0.013457271696736378
+          },
+          "held_original_deltaR": {
+            "n": 6,
+            "weighted_rmse_deltaR": 0.009615133851142923,
+            "rmse_deltaR": 0.022981907318159803,
+            "chi2": 23.1313609331771,
+            "max_abs_deltaR": 0.04741727169673638
+          },
+          "held_nonfinite": 0
+        },
+        {
+          "complexity": 4,
+          "equation": "sqrt(z) + -0.5598349499492588",
+          "search_loss_candidate_scaled": 0.007782908262857727,
+          "training_original_deltaR": {
+            "n": 18,
+            "weighted_rmse_deltaR": 0.000882207926900327,
+            "rmse_deltaR": 0.003177401526237998,
+            "chi2": 26.861710963379352,
+            "max_abs_deltaR": 0.012158349499492585
+          },
+          "held_original_deltaR": {
+            "n": 6,
+            "weighted_rmse_deltaR": 0.008533018364028176,
+            "rmse_deltaR": 0.021939437390900637,
+            "chi2": 18.21779778013456,
+            "max_abs_deltaR": 0.04611834949949259
+          },
+          "held_nonfinite": 0
+        },
+        {
+          "complexity": 5,
+          "equation": "(z * 0.5878756637693193) + -0.14932887156522046",
+          "search_loss_candidate_scaled": 0.0077827465508063624,
+          "training_original_deltaR": {
+            "n": 18,
+            "weighted_rmse_deltaR": 0.0008821987616635133,
+            "rmse_deltaR": 0.003180438981642877,
+            "chi2": 26.861152834947617,
+            "max_abs_deltaR": 0.012174532077959009
+          },
+          "held_original_deltaR": {
+            "n": 6,
+            "weighted_rmse_deltaR": 0.008546128285306211,
+            "rmse_deltaR": 0.021952256703932485,
+            "chi2": 18.273819542621204,
+            "max_abs_deltaR": 0.04613453207795901
+          },
+          "held_nonfinite": 0
+        }
+      ],
+      "selection": "minimum TRAINING candidate-unit loss at complexity<=5, no held selection",
+      "features": "e=E/6.5; Isetting=source chart I/Iref; z=Z/46; prepared0/1; dep_model=deposition/ref; energy-linked, not independent controls",
+      "scale": "direct transformed \u0394R divided by fixed0.01; held scores invert to original \u0394R"
+    },
+    {
+      "reading": "k0",
+      "normalization": "cup_C",
+      "split": "Ti",
+      "seed": 20261124,
+      "train_ids": [
+        "karahadian2026:fig2:Pd:0.25",
+        "karahadian2026:fig2:Pd:0.50",
+        "karahadian2026:fig2:Pd:1.00",
+        "karahadian2026:fig2:Pd:1.50",
+        "karahadian2026:fig2:Pd:2.00",
+        "karahadian2026:fig2:Pd:2.50",
+        "karahadian2026:fig2:PdD:0.25",
+        "karahadian2026:fig2:PdD:0.50",
+        "karahadian2026:fig2:PdD:1.00",
+        "karahadian2026:fig2:PdD:1.50",
+        "karahadian2026:fig2:PdD:2.00",
+        "karahadian2026:fig2:PdD:2.50",
+        "karahadian2026:fig2:TiD:0.25",
+        "karahadian2026:fig2:TiD:0.50",
+        "karahadian2026:fig2:TiD:1.00",
+        "karahadian2026:fig2:TiD:1.50",
+        "karahadian2026:fig2:TiD:2.00",
+        "karahadian2026:fig2:TiD:2.50"
+      ],
+      "held_ids": [
+        "karahadian2026:fig2:Ti:0.25",
+        "karahadian2026:fig2:Ti:0.50",
+        "karahadian2026:fig2:Ti:1.00",
+        "karahadian2026:fig2:Ti:1.50",
+        "karahadian2026:fig2:Ti:2.00",
+        "karahadian2026:fig2:Ti:2.50"
+      ],
+      "selected_complexity": 5,
+      "selected_equation": "(z * 0.6142431371255356) - 0.09893273469245722",
+      "front": [
+        {
+          "complexity": 1,
+          "equation": "0.24752677230502934",
+          "search_loss_candidate_scaled": 0.03948242015698441,
+          "training_original_deltaR": {
+            "n": 18,
+            "weighted_rmse_deltaR": 0.0019870183732664482,
+            "rmse_deltaR": 0.01403314031910682,
+            "chi2": 54.21156416378791,
+            "max_abs_deltaR": 0.048044732276949706
+          },
+          "held_original_deltaR": {
+            "n": 6,
+            "weighted_rmse_deltaR": 0.0015308901225455744,
+            "rmse_deltaR": 0.00122104244842114,
+            "chi2": 49.29430724995441,
+            "max_abs_deltaR": 0.0017438356768544588
+          },
+          "held_nonfinite": 0
+        },
+        {
+          "complexity": 3,
+          "equation": "z * 0.45729304038077423",
+          "search_loss_candidate_scaled": 0.026402127377089055,
+          "training_original_deltaR": {
+            "n": 18,
+            "weighted_rmse_deltaR": 0.001624873145112844,
+            "rmse_deltaR": 0.01294803814604126,
+            "chi2": 36.25159290318653,
+            "max_abs_deltaR": 0.04594706959619226
+          },
+          "held_original_deltaR": {
+            "n": 6,
+            "weighted_rmse_deltaR": 0.0012496679657002425,
+            "rmse_deltaR": 0.000955582135935493,
+            "chi2": 32.84717317119414,
+            "max_abs_deltaR": 0.001455621625190477
+          },
+          "held_nonfinite": 0
+        },
+        {
+          "complexity": 4,
+          "equation": "sqrt(z) - 0.4947489929841732",
+          "search_loss_candidate_scaled": 0.02539253063551632,
+          "training_original_deltaR": {
+            "n": 18,
+            "weighted_rmse_deltaR": 0.0015935033930154128,
+            "rmse_deltaR": 0.012723005004373787,
+            "chi2": 34.865360288323906,
+            "max_abs_deltaR": 0.04546748992984173
+          },
+          "held_original_deltaR": {
+            "n": 6,
+            "weighted_rmse_deltaR": 0.0010386401070769065,
+            "rmse_deltaR": 0.0007650445876613371,
+            "chi2": 22.69023028100181,
+            "max_abs_deltaR": 0.0012367187720436802
+          },
+          "held_nonfinite": 0
+        },
+        {
+          "complexity": 5,
+          "equation": "(z * 0.6142431371255356) - 0.09893273469245722",
+          "search_loss_candidate_scaled": 0.025372619474258604,
+          "training_original_deltaR": {
+            "n": 18,
+            "weighted_rmse_deltaR": 0.0015928785099391168,
+            "rmse_deltaR": 0.012676343888171251,
+            "chi2": 34.83802115379753,
+            "max_abs_deltaR": 0.045366895975669216
+          },
+          "held_original_deltaR": {
+            "n": 6,
+            "weighted_rmse_deltaR": 0.0010197222787241811,
+            "rmse_deltaR": 0.0007485810767543732,
+            "chi2": 21.87119644544785,
+            "max_abs_deltaR": 0.0012169251757408505
+          },
+          "held_nonfinite": 0
+        },
+        {
+          "complexity": 7,
+          "equation": "(e - -0.3905807071989297) * (z - 0.14956740556676115)",
+          "search_loss_candidate_scaled": 0.025295897833977905,
+          "training_original_deltaR": {
+            "n": 18,
+            "weighted_rmse_deltaR": 0.0015904684163471437,
+            "rmse_deltaR": 0.0129821293548105,
+            "chi2": 34.73267806418218,
+            "max_abs_deltaR": 0.046871284899015056
+          },
+          "held_original_deltaR": {
+            "n": 6,
+            "weighted_rmse_deltaR": 0.0012451399907356276,
+            "rmse_deltaR": 0.0009891149251918705,
+            "chi2": 32.60957129636217,
+            "max_abs_deltaR": 0.0015637457146166298
+          },
+          "held_nonfinite": 0
+        }
+      ],
+      "selection": "minimum TRAINING candidate-unit loss at complexity<=5, no held selection",
+      "features": "e=E/6.5; Isetting=source chart I/Iref; z=Z/46; prepared0/1; dep_model=deposition/ref; energy-linked, not independent controls",
+      "scale": "direct transformed \u0394R divided by fixed0.01; held scores invert to original \u0394R"
+    },
+    {
+      "reading": "k0",
+      "normalization": "cup_C",
+      "split": "TiD",
+      "seed": 20261124,
+      "train_ids": [
+        "karahadian2026:fig2:Pd:0.25",
+        "karahadian2026:fig2:Pd:0.50",
+        "karahadian2026:fig2:Pd:1.00",
+        "karahadian2026:fig2:Pd:1.50",
+        "karahadian2026:fig2:Pd:2.00",
+        "karahadian2026:fig2:Pd:2.50",
+        "karahadian2026:fig2:PdD:0.25",
+        "karahadian2026:fig2:PdD:0.50",
+        "karahadian2026:fig2:PdD:1.00",
+        "karahadian2026:fig2:PdD:1.50",
+        "karahadian2026:fig2:PdD:2.00",
+        "karahadian2026:fig2:PdD:2.50",
+        "karahadian2026:fig2:Ti:0.25",
+        "karahadian2026:fig2:Ti:0.50",
+        "karahadian2026:fig2:Ti:1.00",
+        "karahadian2026:fig2:Ti:1.50",
+        "karahadian2026:fig2:Ti:2.00",
+        "karahadian2026:fig2:Ti:2.50"
+      ],
+      "held_ids": [
+        "karahadian2026:fig2:TiD:0.25",
+        "karahadian2026:fig2:TiD:0.50",
+        "karahadian2026:fig2:TiD:1.00",
+        "karahadian2026:fig2:TiD:1.50",
+        "karahadian2026:fig2:TiD:2.00",
+        "karahadian2026:fig2:TiD:2.50"
+      ],
+      "selected_complexity": 5,
+      "selected_equation": "(prepared + 0.2678797992164106) * z",
+      "front": [
+        {
+          "complexity": 1,
+          "equation": "0.13796185142406336",
+          "search_loss_candidate_scaled": 0.026481319822356072,
+          "training_original_deltaR": {
+            "n": 18,
+            "weighted_rmse_deltaR": 0.0016273082013667872,
+            "rmse_deltaR": 0.014617682993350667,
+            "chi2": 61.677329117308304,
+            "max_abs_deltaR": 0.04914038148575937
+          },
+          "held_original_deltaR": {
+            "n": 6,
+            "weighted_rmse_deltaR": 0.0011201201039468434,
+            "rmse_deltaR": 0.0022485711575537587,
+            "chi2": 14.394867049781196,
+            "max_abs_deltaR": 0.004328482499836976
+          },
+          "held_nonfinite": 0
+        },
+        {
+          "complexity": 3,
+          "equation": "z + -0.39086969754471584",
+          "search_loss_candidate_scaled": 0.012143083577379242,
+          "training_original_deltaR": {
+            "n": 18,
+            "weighted_rmse_deltaR": 0.001101956604289808,
+            "rmse_deltaR": 0.012209639047342437,
+            "chi2": 28.282312487639665,
+            "max_abs_deltaR": 0.044428696975447164
+          },
+          "held_original_deltaR": {
+            "n": 6,
+            "weighted_rmse_deltaR": 0.001444173973522879,
+            "rmse_deltaR": 0.0026127900307596507,
+            "chi2": 23.928611688107353,
+            "max_abs_deltaR": 0.004834189293872594
+          },
+          "held_nonfinite": 0
+        },
+        {
+          "complexity": 5,
+          "equation": "(prepared + 0.2678797992164106) * z",
+          "search_loss_candidate_scaled": 0.010175833353112547,
+          "training_original_deltaR": {
+            "n": 18,
+            "weighted_rmse_deltaR": 0.0010087533570260151,
+            "rmse_deltaR": 0.00994445785125966,
+            "chi2": 23.700413233669625,
+            "max_abs_deltaR": 0.037841202007835896
+          },
+          "held_original_deltaR": {
+            "n": 6,
+            "weighted_rmse_deltaR": 0.004227038202747522,
+            "rmse_deltaR": 0.0036008120613604754,
+            "chi2": 204.9985644402688,
+            "max_abs_deltaR": 0.0049267863269960325
+          },
+          "held_nonfinite": 0
+        },
+        {
+          "complexity": 6,
+          "equation": "sqrt(prepared + 0.07497240661186577) * z",
+          "search_loss_candidate_scaled": 0.010063582945069888,
+          "training_original_deltaR": {
+            "n": 18,
+            "weighted_rmse_deltaR": 0.001003174109767088,
+            "rmse_deltaR": 0.0107026993663249,
+            "chi2": 23.438972134553616,
+            "max_abs_deltaR": 0.04015191239132372
+          },
+          "held_original_deltaR": {
+            "n": 6,
+            "weighted_rmse_deltaR": 0.003161181982178533,
+            "rmse_deltaR": 0.0026729091040895406,
+            "chi2": 114.65090043217641,
+            "max_abs_deltaR": 0.003821663969675766
+          },
+          "held_nonfinite": 0
+        },
+        {
+          "complexity": 7,
+          "equation": "((z + prepared) * 0.46615528828648667) * z",
+          "search_loss_candidate_scaled": 0.007182408995102409,
+          "training_original_deltaR": {
+            "n": 18,
+            "weighted_rmse_deltaR": 0.0008474909436154709,
+            "rmse_deltaR": 0.010935005030813771,
+            "chi2": 16.728463929205834,
+            "max_abs_deltaR": 0.04119689423427027
+          },
+          "held_original_deltaR": {
+            "n": 6,
+            "weighted_rmse_deltaR": 0.0016572612520821895,
+            "rmse_deltaR": 0.0017285117301401366,
+            "chi2": 31.510872378910054,
+            "max_abs_deltaR": 0.0024124095619198404
+          },
+          "held_nonfinite": 0
+        }
+      ],
+      "selection": "minimum TRAINING candidate-unit loss at complexity<=5, no held selection",
+      "features": "e=E/6.5; Isetting=source chart I/Iref; z=Z/46; prepared0/1; dep_model=deposition/ref; energy-linked, not independent controls",
+      "scale": "direct transformed \u0394R divided by fixed0.01; held scores invert to original \u0394R"
+    },
+    {
+      "reading": "k0",
+      "normalization": "true_C_or_D",
+      "split": "all",
+      "seed": 20261124,
+      "train_ids": [
+        "karahadian2026:fig2:Pd:0.25",
+        "karahadian2026:fig2:Pd:0.50",
+        "karahadian2026:fig2:Pd:1.00",
+        "karahadian2026:fig2:Pd:1.50",
+        "karahadian2026:fig2:Pd:2.00",
+        "karahadian2026:fig2:Pd:2.50",
+        "karahadian2026:fig2:PdD:0.25",
+        "karahadian2026:fig2:PdD:0.50",
+        "karahadian2026:fig2:PdD:1.00",
+        "karahadian2026:fig2:PdD:1.50",
+        "karahadian2026:fig2:PdD:2.00",
+        "karahadian2026:fig2:PdD:2.50",
+        "karahadian2026:fig2:Ti:0.25",
+        "karahadian2026:fig2:Ti:0.50",
+        "karahadian2026:fig2:Ti:1.00",
+        "karahadian2026:fig2:Ti:1.50",
+        "karahadian2026:fig2:Ti:2.00",
+        "karahadian2026:fig2:Ti:2.50",
+        "karahadian2026:fig2:TiD:0.25",
+        "karahadian2026:fig2:TiD:0.50",
+        "karahadian2026:fig2:TiD:1.00",
+        "karahadian2026:fig2:TiD:1.50",
+        "karahadian2026:fig2:TiD:2.00",
+        "karahadian2026:fig2:TiD:2.50"
+      ],
+      "held_ids": [],
+      "selected_complexity": 5,
+      "selected_equation": "(z * z) * 0.31854947606715966",
+      "front": [
+        {
+          "complexity": 1,
+          "equation": "0.09219516171142605",
+          "search_loss_candidate_scaled": 0.007449897312601698,
+          "training_original_deltaR": {
+            "n": 24,
+            "weighted_rmse_deltaR": 0.0014673173901177245,
+            "rmse_deltaR": 0.012611367176915226,
+            "chi2": 74.84742834323383,
+            "max_abs_deltaR": 0.04895268225090576
+          },
+          "held_original_deltaR": {
+            "n": 0,
+            "weighted_rmse_deltaR": null,
+            "rmse_deltaR": null,
+            "chi2": null,
+            "max_abs_deltaR": null
+          },
+          "held_nonfinite": 0
+        },
+        {
+          "complexity": 3,
+          "equation": "z * 0.19497806169594972",
+          "search_loss_candidate_scaled": 0.00535016147642001,
+          "training_original_deltaR": {
+            "n": 24,
+            "weighted_rmse_deltaR": 0.0012434615662276752,
+            "rmse_deltaR": 0.011780850970406789,
+            "chi2": 53.75185870732905,
+            "max_abs_deltaR": 0.047205372951168854
+          },
+          "held_original_deltaR": {
+            "n": 0,
+            "weighted_rmse_deltaR": null,
+            "rmse_deltaR": null,
+            "chi2": null,
+            "max_abs_deltaR": null
+          },
+          "held_nonfinite": 0
+        },
+        {
+          "complexity": 5,
+          "equation": "(z * z) * 0.31854947606715966",
+          "search_loss_candidate_scaled": 0.004396039801222122,
+          "training_original_deltaR": {
+            "n": 24,
+            "weighted_rmse_deltaR": 0.0011271448454183662,
+            "rmse_deltaR": 0.010896130836399766,
+            "chi2": 44.16601467236465,
+            "max_abs_deltaR": 0.04510465890685829
+          },
+          "held_original_deltaR": {
+            "n": 0,
+            "weighted_rmse_deltaR": null,
+            "rmse_deltaR": null,
+            "chi2": null,
+            "max_abs_deltaR": null
+          },
+          "held_nonfinite": 0
+        },
+        {
+          "complexity": 7,
+          "equation": "(z * (z - -0.1217925093874779)) * 0.27021376446372414",
+          "search_loss_candidate_scaled": 0.004360076083964421,
+          "training_original_deltaR": {
+            "n": 24,
+            "weighted_rmse_deltaR": 0.0011225248274607193,
+            "rmse_deltaR": 0.01099787877767616,
+            "chi2": 43.80469536319124,
+            "max_abs_deltaR": 0.04536689579255044
+          },
+          "held_original_deltaR": {
+            "n": 0,
+            "weighted_rmse_deltaR": null,
+            "rmse_deltaR": null,
+            "chi2": null,
+            "max_abs_deltaR": null
+          },
+          "held_nonfinite": 0
+        }
+      ],
+      "selection": "minimum TRAINING candidate-unit loss at complexity<=5, no held selection",
+      "features": "e=E/6.5; Isetting=source chart I/Iref; z=Z/46; prepared0/1; dep_model=deposition/ref; energy-linked, not independent controls",
+      "scale": "direct transformed \u0394R divided by fixed0.01; held scores invert to original \u0394R"
+    },
+    {
+      "reading": "k0",
+      "normalization": "true_C_or_D",
+      "split": "all",
+      "seed": 20261125,
+      "train_ids": [
+        "karahadian2026:fig2:Pd:0.25",
+        "karahadian2026:fig2:Pd:0.50",
+        "karahadian2026:fig2:Pd:1.00",
+        "karahadian2026:fig2:Pd:1.50",
+        "karahadian2026:fig2:Pd:2.00",
+        "karahadian2026:fig2:Pd:2.50",
+        "karahadian2026:fig2:PdD:0.25",
+        "karahadian2026:fig2:PdD:0.50",
+        "karahadian2026:fig2:PdD:1.00",
+        "karahadian2026:fig2:PdD:1.50",
+        "karahadian2026:fig2:PdD:2.00",
+        "karahadian2026:fig2:PdD:2.50",
+        "karahadian2026:fig2:Ti:0.25",
+        "karahadian2026:fig2:Ti:0.50",
+        "karahadian2026:fig2:Ti:1.00",
+        "karahadian2026:fig2:Ti:1.50",
+        "karahadian2026:fig2:Ti:2.00",
+        "karahadian2026:fig2:Ti:2.50",
+        "karahadian2026:fig2:TiD:0.25",
+        "karahadian2026:fig2:TiD:0.50",
+        "karahadian2026:fig2:TiD:1.00",
+        "karahadian2026:fig2:TiD:1.50",
+        "karahadian2026:fig2:TiD:2.00",
+        "karahadian2026:fig2:TiD:2.50"
+      ],
+      "held_ids": [],
+      "selected_complexity": 5,
+      "selected_equation": "(z * 0.4323564215126904) + -0.1292326554179222",
+      "front": [
+        {
+          "complexity": 1,
+          "equation": "0.0921951618398753",
+          "search_loss_candidate_scaled": 0.007449897312601696,
+          "training_original_deltaR": {
+            "n": 24,
+            "weighted_rmse_deltaR": 0.0014673173901177245,
+            "rmse_deltaR": 0.012611367175789943,
+            "chi2": 74.84742834323383,
+            "max_abs_deltaR": 0.048952682248722124
+          },
+          "held_original_deltaR": {
+            "n": 0,
+            "weighted_rmse_deltaR": null,
+            "rmse_deltaR": null,
+            "chi2": null,
+            "max_abs_deltaR": null
+          },
+          "held_nonfinite": 0
+        },
+        {
+          "complexity": 3,
+          "equation": "z * 0.1949780616892721",
+          "search_loss_candidate_scaled": 0.00535016147642001,
+          "training_original_deltaR": {
+            "n": 24,
+            "weighted_rmse_deltaR": 0.0012434615662276752,
+            "rmse_deltaR": 0.011780850970459604,
+            "chi2": 53.75185870732905,
+            "max_abs_deltaR": 0.047205372951282375
+          },
+          "held_original_deltaR": {
+            "n": 0,
+            "weighted_rmse_deltaR": null,
+            "rmse_deltaR": null,
+            "chi2": null,
+            "max_abs_deltaR": null
+          },
+          "held_nonfinite": 0
+        },
+        {
+          "complexity": 4,
+          "equation": "sqrt(z) + -0.6193982929830701",
+          "search_loss_candidate_scaled": 0.0047769632586641,
+          "training_original_deltaR": {
+            "n": 24,
+            "weighted_rmse_deltaR": 0.001174964842773572,
+            "rmse_deltaR": 0.010497877871178755,
+            "chi2": 47.99306623949405,
+            "max_abs_deltaR": 0.044049770980712194
+          },
+          "held_original_deltaR": {
+            "n": 0,
+            "weighted_rmse_deltaR": null,
+            "rmse_deltaR": null,
+            "chi2": null,
+            "max_abs_deltaR": null
+          },
+          "held_nonfinite": 0
+        },
+        {
+          "complexity": 5,
+          "equation": "(z * 0.4323564215126904) + -0.1292326554179222",
+          "search_loss_candidate_scaled": 0.004360076083964407,
+          "training_original_deltaR": {
+            "n": 24,
+            "weighted_rmse_deltaR": 0.0011225248274607175,
+            "rmse_deltaR": 0.010997878850398738,
+            "chi2": 43.804695363191115,
+            "max_abs_deltaR": 0.045366895976388946
+          },
+          "held_original_deltaR": {
+            "n": 0,
+            "weighted_rmse_deltaR": null,
+            "rmse_deltaR": null,
+            "chi2": null,
+            "max_abs_deltaR": null
+          },
+          "held_nonfinite": 0
+        },
+        {
+          "complexity": 7,
+          "equation": "(z * 0.20889868786380236) * (prepared + z)",
+          "search_loss_candidate_scaled": 0.0035937346784594842,
+          "training_original_deltaR": {
+            "n": 24,
+            "weighted_rmse_deltaR": 0.0010191120262634482,
+            "rmse_deltaR": 0.010331283990327256,
+            "chi2": 36.10543710120689,
+            "max_abs_deltaR": 0.04341744461263072
+          },
+          "held_original_deltaR": {
+            "n": 0,
+            "weighted_rmse_deltaR": null,
+            "rmse_deltaR": null,
+            "chi2": null,
+            "max_abs_deltaR": null
+          },
+          "held_nonfinite": 0
+        }
+      ],
+      "selection": "minimum TRAINING candidate-unit loss at complexity<=5, no held selection",
+      "features": "e=E/6.5; Isetting=source chart I/Iref; z=Z/46; prepared0/1; dep_model=deposition/ref; energy-linked, not independent controls",
+      "scale": "direct transformed \u0394R divided by fixed0.01; held scores invert to original \u0394R"
+    },
+    {
+      "reading": "k0",
+      "normalization": "true_C_or_D",
+      "split": "Pd",
+      "seed": 20261124,
+      "train_ids": [
+        "karahadian2026:fig2:PdD:0.25",
+        "karahadian2026:fig2:PdD:0.50",
+        "karahadian2026:fig2:PdD:1.00",
+        "karahadian2026:fig2:PdD:1.50",
+        "karahadian2026:fig2:PdD:2.00",
+        "karahadian2026:fig2:PdD:2.50",
+        "karahadian2026:fig2:Ti:0.25",
+        "karahadian2026:fig2:Ti:0.50",
+        "karahadian2026:fig2:Ti:1.00",
+        "karahadian2026:fig2:Ti:1.50",
+        "karahadian2026:fig2:Ti:2.00",
+        "karahadian2026:fig2:Ti:2.50",
+        "karahadian2026:fig2:TiD:0.25",
+        "karahadian2026:fig2:TiD:0.50",
+        "karahadian2026:fig2:TiD:1.00",
+        "karahadian2026:fig2:TiD:1.50",
+        "karahadian2026:fig2:TiD:2.00",
+        "karahadian2026:fig2:TiD:2.50"
+      ],
+      "held_ids": [
+        "karahadian2026:fig2:Pd:0.25",
+        "karahadian2026:fig2:Pd:0.50",
+        "karahadian2026:fig2:Pd:1.00",
+        "karahadian2026:fig2:Pd:1.50",
+        "karahadian2026:fig2:Pd:2.00",
+        "karahadian2026:fig2:Pd:2.50"
+      ],
+      "selected_complexity": 5,
+      "selected_equation": "(0.40943503922821706 - z) * -1.12670638303017",
+      "front": [
+        {
+          "complexity": 1,
+          "equation": "0.08203660053819234",
+          "search_loss_candidate_scaled": 0.005357511354107276,
+          "training_original_deltaR": {
+            "n": 18,
+            "weighted_rmse_deltaR": 0.001244315386603012,
+            "rmse_deltaR": 0.014143051737281828,
+            "chi2": 50.71773129178726,
+            "max_abs_deltaR": 0.04912537779085073
+          },
+          "held_original_deltaR": {
+            "n": 6,
+            "weighted_rmse_deltaR": 0.0035408160687847726,
+            "rmse_deltaR": 0.006723585926404714,
+            "chi2": 25.16648754851968,
+            "max_abs_deltaR": 0.01516537779085073
+          },
+          "held_nonfinite": 0
+        },
+        {
+          "complexity": 3,
+          "equation": "z + -0.40020942249751085",
+          "search_loss_candidate_scaled": 0.0027713083800670903,
+          "training_original_deltaR": {
+            "n": 18,
+            "weighted_rmse_deltaR": 0.0008949347025562195,
+            "rmse_deltaR": 0.010310564951830891,
+            "chi2": 26.235030493993516,
+            "max_abs_deltaR": 0.04032356018245768
+          },
+          "held_original_deltaR": {
+            "n": 6,
+            "weighted_rmse_deltaR": 0.006112251198947486,
+            "rmse_deltaR": 0.006055401291886981,
+            "chi2": 74.99257389981923,
+            "max_abs_deltaR": 0.006596439818499415
+          },
+          "held_nonfinite": 0
+        },
+        {
+          "complexity": 5,
+          "equation": "(0.40943503922821706 - z) * -1.12670638303017",
+          "search_loss_candidate_scaled": 0.0027381826492226882,
+          "training_original_deltaR": {
+            "n": 18,
+            "weighted_rmse_deltaR": 0.0008895700004077008,
+            "rmse_deltaR": 0.009905561769694303,
+            "chi2": 25.92144050700778,
+            "max_abs_deltaR": 0.039208313714776
+          },
+          "held_original_deltaR": {
+            "n": 6,
+            "weighted_rmse_deltaR": 0.007180857968409701,
+            "rmse_deltaR": 0.006829783656672197,
+            "chi2": 103.50671952808142,
+            "max_abs_deltaR": 0.007711686286181104
+          },
+          "held_nonfinite": 0
+        }
+      ],
+      "selection": "minimum TRAINING candidate-unit loss at complexity<=5, no held selection",
+      "features": "e=E/6.5; Isetting=source chart I/Iref; z=Z/46; prepared0/1; dep_model=deposition/ref; energy-linked, not independent controls",
+      "scale": "direct transformed \u0394R divided by fixed0.01; held scores invert to original \u0394R"
+    },
+    {
+      "reading": "k0",
+      "normalization": "true_C_or_D",
+      "split": "PdD",
+      "seed": 20261124,
+      "train_ids": [
+        "karahadian2026:fig2:Pd:0.25",
+        "karahadian2026:fig2:Pd:0.50",
+        "karahadian2026:fig2:Pd:1.00",
+        "karahadian2026:fig2:Pd:1.50",
+        "karahadian2026:fig2:Pd:2.00",
+        "karahadian2026:fig2:Pd:2.50",
+        "karahadian2026:fig2:Ti:0.25",
+        "karahadian2026:fig2:Ti:0.50",
+        "karahadian2026:fig2:Ti:1.00",
+        "karahadian2026:fig2:Ti:1.50",
+        "karahadian2026:fig2:Ti:2.00",
+        "karahadian2026:fig2:Ti:2.50",
+        "karahadian2026:fig2:TiD:0.25",
+        "karahadian2026:fig2:TiD:0.50",
+        "karahadian2026:fig2:TiD:1.00",
+        "karahadian2026:fig2:TiD:1.50",
+        "karahadian2026:fig2:TiD:2.00",
+        "karahadian2026:fig2:TiD:2.50"
+      ],
+      "held_ids": [
+        "karahadian2026:fig2:PdD:0.25",
+        "karahadian2026:fig2:PdD:0.50",
+        "karahadian2026:fig2:PdD:1.00",
+        "karahadian2026:fig2:PdD:1.50",
+        "karahadian2026:fig2:PdD:2.00",
+        "karahadian2026:fig2:PdD:2.50"
+      ],
+      "selected_complexity": 5,
+      "selected_equation": "(z + -0.2538254656352684) / 2.892272651027356",
+      "front": [
+        {
+          "complexity": 1,
+          "equation": "0.08803985082652725",
+          "search_loss_candidate_scaled": 0.004476114472159813,
+          "training_original_deltaR": {
+            "n": 18,
+            "weighted_rmse_deltaR": 0.0011373640940587962,
+            "rmse_deltaR": 0.004047367215613654,
+            "chi2": 44.64684634378087,
+            "max_abs_deltaR": 0.015063322535949036
+          },
+          "held_original_deltaR": {
+            "n": 6,
+            "weighted_rmse_deltaR": 0.011018085403085336,
+            "rmse_deltaR": 0.0243050498366422,
+            "chi2": 30.37405570945507,
+            "max_abs_deltaR": 0.049023322535949036
+          },
+          "held_nonfinite": 0
+        },
+        {
+          "complexity": 3,
+          "equation": "z * 0.1825134296034819",
+          "search_loss_candidate_scaled": 0.0031135220196045624,
+          "training_original_deltaR": {
+            "n": 18,
+            "weighted_rmse_deltaR": 0.000948582027905715,
+            "rmse_deltaR": 0.003482711118883879,
+            "chi2": 31.05571585844377,
+            "max_abs_deltaR": 0.013457271696740805
+          },
+          "held_original_deltaR": {
+            "n": 6,
+            "weighted_rmse_deltaR": 0.009615133851146703,
+            "rmse_deltaR": 0.0229819073181634,
+            "chi2": 23.131360933195282,
+            "max_abs_deltaR": 0.04741727169674081
+          },
+          "held_nonfinite": 0
+        },
+        {
+          "complexity": 5,
+          "equation": "(z + -0.2538254656352684) / 2.892272651027356",
+          "search_loss_candidate_scaled": 0.002692994435735146,
+          "training_original_deltaR": {
+            "n": 18,
+            "weighted_rmse_deltaR": 0.0008821991792829197,
+            "rmse_deltaR": 0.0031802256978497485,
+            "chi2": 26.861178266271814,
+            "max_abs_deltaR": 0.0121741869682671
+          },
+          "held_original_deltaR": {
+            "n": 6,
+            "weighted_rmse_deltaR": 0.008545848593197075,
+            "rmse_deltaR": 0.02195198327287476,
+            "chi2": 18.2726234549137,
+            "max_abs_deltaR": 0.046134186968267106
+          },
+          "held_nonfinite": 0
+        },
+        {
+          "complexity": 6,
+          "equation": "log(z + 0.6932828820074275) * 0.48980420639024097",
+          "search_loss_candidate_scaled": 0.0026929918871676467,
+          "training_original_deltaR": {
+            "n": 18,
+            "weighted_rmse_deltaR": 0.0008821987618396717,
+            "rmse_deltaR": 0.003180451001074959,
+            "chi2": 26.86115284567495,
+            "max_abs_deltaR": 0.012174598757838193
+          },
+          "held_original_deltaR": {
+            "n": 6,
+            "weighted_rmse_deltaR": 0.008546182326171313,
+            "rmse_deltaR": 0.021952309534758935,
+            "chi2": 18.27405064987963,
+            "max_abs_deltaR": 0.046134598757838194
+          },
+          "held_nonfinite": 0
+        }
+      ],
+      "selection": "minimum TRAINING candidate-unit loss at complexity<=5, no held selection",
+      "features": "e=E/6.5; Isetting=source chart I/Iref; z=Z/46; prepared0/1; dep_model=deposition/ref; energy-linked, not independent controls",
+      "scale": "direct transformed \u0394R divided by fixed0.01; held scores invert to original \u0394R"
+    },
+    {
+      "reading": "k0",
+      "normalization": "true_C_or_D",
+      "split": "Ti",
+      "seed": 20261124,
+      "train_ids": [
+        "karahadian2026:fig2:Pd:0.25",
+        "karahadian2026:fig2:Pd:0.50",
+        "karahadian2026:fig2:Pd:1.00",
+        "karahadian2026:fig2:Pd:1.50",
+        "karahadian2026:fig2:Pd:2.00",
+        "karahadian2026:fig2:Pd:2.50",
+        "karahadian2026:fig2:PdD:0.25",
+        "karahadian2026:fig2:PdD:0.50",
+        "karahadian2026:fig2:PdD:1.00",
+        "karahadian2026:fig2:PdD:1.50",
+        "karahadian2026:fig2:PdD:2.00",
+        "karahadian2026:fig2:PdD:2.50",
+        "karahadian2026:fig2:TiD:0.25",
+        "karahadian2026:fig2:TiD:0.50",
+        "karahadian2026:fig2:TiD:1.00",
+        "karahadian2026:fig2:TiD:1.50",
+        "karahadian2026:fig2:TiD:2.00",
+        "karahadian2026:fig2:TiD:2.50"
+      ],
+      "held_ids": [
+        "karahadian2026:fig2:Ti:0.25",
+        "karahadian2026:fig2:Ti:0.50",
+        "karahadian2026:fig2:Ti:1.00",
+        "karahadian2026:fig2:Ti:1.50",
+        "karahadian2026:fig2:Ti:2.00",
+        "karahadian2026:fig2:Ti:2.50"
+      ],
+      "selected_complexity": 5,
+      "selected_equation": "(z * 0.36131949245031836) - 0.058195726301380854",
+      "front": [
+        {
+          "complexity": 1,
+          "equation": "0.1456039837312466",
+          "search_loss_candidate_scaled": 0.01366173707854132,
+          "training_original_deltaR": {
+            "n": 18,
+            "weighted_rmse_deltaR": 0.0019870183732664482,
+            "rmse_deltaR": 0.014033140318894109,
+            "chi2": 54.21156416378791,
+            "max_abs_deltaR": 0.04804473227656881
+          },
+          "held_original_deltaR": {
+            "n": 6,
+            "weighted_rmse_deltaR": 0.0015308901229189515,
+            "rmse_deltaR": 0.0012210424487787857,
+            "chi2": 49.29430727399971,
+            "max_abs_deltaR": 0.0017438356772353576
+          },
+          "held_nonfinite": 0
+        },
+        {
+          "complexity": 3,
+          "equation": "z * 0.2689959061058593",
+          "search_loss_candidate_scaled": 0.009135684213525626,
+          "training_original_deltaR": {
+            "n": 18,
+            "weighted_rmse_deltaR": 0.001624873145112844,
+            "rmse_deltaR": 0.012948038146045287,
+            "chi2": 36.25159290318652,
+            "max_abs_deltaR": 0.045947069596200395
+          },
+          "held_original_deltaR": {
+            "n": 6,
+            "weighted_rmse_deltaR": 0.001249667965696468,
+            "rmse_deltaR": 0.0009555821359319986,
+            "chi2": 32.84717317099571,
+            "max_abs_deltaR": 0.0014556216251865864
+          },
+          "held_nonfinite": 0
+        },
+        {
+          "complexity": 5,
+          "equation": "(z * 0.36131949245031836) - 0.058195726301380854",
+          "search_loss_candidate_scaled": 0.008779453105279797,
+          "training_original_deltaR": {
+            "n": 18,
+            "weighted_rmse_deltaR": 0.0015928785099391166,
+            "rmse_deltaR": 0.012676343888077533,
+            "chi2": 34.83802115379753,
+            "max_abs_deltaR": 0.045366895975468065
+          },
+          "held_original_deltaR": {
+            "n": 6,
+            "weighted_rmse_deltaR": 0.0010197222787169512,
+            "rmse_deltaR": 0.0007485810767481066,
+            "chi2": 21.871196445137713,
+            "max_abs_deltaR": 0.0012169251757332793
+          },
+          "held_nonfinite": 0
+        },
+        {
+          "complexity": 7,
+          "equation": "((dep_model - 0.3334465475069339) + z) * 0.33966786067122373",
+          "search_loss_candidate_scaled": 0.008324599759036495,
+          "training_original_deltaR": {
+            "n": 18,
+            "weighted_rmse_deltaR": 0.001551067158559405,
+            "rmse_deltaR": 0.012926353269665987,
+            "chi2": 33.03310343189864,
+            "max_abs_deltaR": 0.04649854866751327
+          },
+          "held_original_deltaR": {
+            "n": 6,
+            "weighted_rmse_deltaR": 0.0014519135910204734,
+            "rmse_deltaR": 0.0012411428038025761,
+            "chi2": 44.3394464568962,
+            "max_abs_deltaR": 0.0018707544951679887
+          },
+          "held_nonfinite": 0
+        }
+      ],
+      "selection": "minimum TRAINING candidate-unit loss at complexity<=5, no held selection",
+      "features": "e=E/6.5; Isetting=source chart I/Iref; z=Z/46; prepared0/1; dep_model=deposition/ref; energy-linked, not independent controls",
+      "scale": "direct transformed \u0394R divided by fixed0.01; held scores invert to original \u0394R"
+    },
+    {
+      "reading": "k0",
+      "normalization": "true_C_or_D",
+      "split": "TiD",
+      "seed": 20261124,
+      "train_ids": [
+        "karahadian2026:fig2:Pd:0.25",
+        "karahadian2026:fig2:Pd:0.50",
+        "karahadian2026:fig2:Pd:1.00",
+        "karahadian2026:fig2:Pd:1.50",
+        "karahadian2026:fig2:Pd:2.00",
+        "karahadian2026:fig2:Pd:2.50",
+        "karahadian2026:fig2:PdD:0.25",
+        "karahadian2026:fig2:PdD:0.50",
+        "karahadian2026:fig2:PdD:1.00",
+        "karahadian2026:fig2:PdD:1.50",
+        "karahadian2026:fig2:PdD:2.00",
+        "karahadian2026:fig2:PdD:2.50",
+        "karahadian2026:fig2:Ti:0.25",
+        "karahadian2026:fig2:Ti:0.50",
+        "karahadian2026:fig2:Ti:1.00",
+        "karahadian2026:fig2:Ti:1.50",
+        "karahadian2026:fig2:Ti:2.00",
+        "karahadian2026:fig2:Ti:2.50"
+      ],
+      "held_ids": [
+        "karahadian2026:fig2:TiD:0.25",
+        "karahadian2026:fig2:TiD:0.50",
+        "karahadian2026:fig2:TiD:1.00",
+        "karahadian2026:fig2:TiD:1.50",
+        "karahadian2026:fig2:TiD:2.00",
+        "karahadian2026:fig2:TiD:2.50"
+      ],
+      "selected_complexity": 5,
+      "selected_equation": "(z * z) * 0.2859244753576918",
+      "front": [
+        {
+          "complexity": 1,
+          "equation": "0.08115403025844445",
+          "search_loss_candidate_scaled": 0.009163086443721826,
+          "training_original_deltaR": {
+            "n": 18,
+            "weighted_rmse_deltaR": 0.0016273082013667872,
+            "rmse_deltaR": 0.014617682993262623,
+            "chi2": 61.677329117308304,
+            "max_abs_deltaR": 0.04914038148560645
+          },
+          "held_original_deltaR": {
+            "n": 6,
+            "weighted_rmse_deltaR": 0.0011201201038691976,
+            "rmse_deltaR": 0.002248571157451898,
+            "chi2": 14.394867047785517,
+            "max_abs_deltaR": 0.004328482499684054
+          },
+          "held_nonfinite": 0
+        },
+        {
+          "complexity": 3,
+          "equation": "z * 0.17839780940318156",
+          "search_loss_candidate_scaled": 0.006090253934151115,
+          "training_original_deltaR": {
+            "n": 18,
+            "weighted_rmse_deltaR": 0.001326681343416599,
+            "rmse_deltaR": 0.013697443448899034,
+            "chi2": 40.99389420930181,
+            "max_abs_deltaR": 0.04748723724014592
+          },
+          "held_original_deltaR": {
+            "n": 6,
+            "weighted_rmse_deltaR": 0.001085870703135958,
+            "rmse_deltaR": 0.0022020232662920535,
+            "chi2": 13.528034620781579,
+            "max_abs_deltaR": 0.004257649259364786
+          },
+          "held_nonfinite": 0
+        },
+        {
+          "complexity": 5,
+          "equation": "(z * z) * 0.2859244753576918",
+          "search_loss_candidate_scaled": 0.003962352391898686,
+          "training_original_deltaR": {
+            "n": 18,
+            "weighted_rmse_deltaR": 0.0010701027246291454,
+            "rmse_deltaR": 0.0127693529138533,
+            "chi2": 26.67085092505411,
+            "max_abs_deltaR": 0.04565928391891924
+          },
+          "held_original_deltaR": {
+            "n": 6,
+            "weighted_rmse_deltaR": 0.001277113641816018,
+            "rmse_deltaR": 0.002435164853209535,
+            "chi2": 18.712747692107758,
+            "max_abs_deltaR": 0.0045962926098984565
+          },
+          "held_nonfinite": 0
+        },
+        {
+          "complexity": 7,
+          "equation": "(prepared + z) * (z * 0.27420899297168727)",
+          "search_loss_candidate_scaled": 0.0024852626280631182,
+          "training_original_deltaR": {
+            "n": 18,
+            "weighted_rmse_deltaR": 0.0008474909436154709,
+            "rmse_deltaR": 0.010935005032715432,
+            "chi2": 16.728463929205837,
+            "max_abs_deltaR": 0.04119689423896264
+          },
+          "held_original_deltaR": {
+            "n": 6,
+            "weighted_rmse_deltaR": 0.0016572612507336545,
+            "rmse_deltaR": 0.0017285117297387144,
+            "chi2": 31.510872327628437,
+            "max_abs_deltaR": 0.0024124095635785787
+          },
+          "held_nonfinite": 0
+        }
+      ],
+      "selection": "minimum TRAINING candidate-unit loss at complexity<=5, no held selection",
+      "features": "e=E/6.5; Isetting=source chart I/Iref; z=Z/46; prepared0/1; dep_model=deposition/ref; energy-linked, not independent controls",
+      "scale": "direct transformed \u0394R divided by fixed0.01; held scores invert to original \u0394R"
+    },
+    {
+      "reading": "k0",
+      "normalization": "time",
+      "split": "all",
+      "seed": 20261124,
+      "train_ids": [
+        "karahadian2026:fig2:Pd:0.25",
+        "karahadian2026:fig2:Pd:0.50",
+        "karahadian2026:fig2:Pd:1.00",
+        "karahadian2026:fig2:Pd:1.50",
+        "karahadian2026:fig2:Pd:2.00",
+        "karahadian2026:fig2:Pd:2.50",
+        "karahadian2026:fig2:PdD:0.25",
+        "karahadian2026:fig2:PdD:0.50",
+        "karahadian2026:fig2:PdD:1.00",
+        "karahadian2026:fig2:PdD:1.50",
+        "karahadian2026:fig2:PdD:2.00",
+        "karahadian2026:fig2:PdD:2.50",
+        "karahadian2026:fig2:Ti:0.25",
+        "karahadian2026:fig2:Ti:0.50",
+        "karahadian2026:fig2:Ti:1.00",
+        "karahadian2026:fig2:Ti:1.50",
+        "karahadian2026:fig2:Ti:2.00",
+        "karahadian2026:fig2:Ti:2.50",
+        "karahadian2026:fig2:TiD:0.25",
+        "karahadian2026:fig2:TiD:0.50",
+        "karahadian2026:fig2:TiD:1.00",
+        "karahadian2026:fig2:TiD:1.50",
+        "karahadian2026:fig2:TiD:2.00",
+        "karahadian2026:fig2:TiD:2.50"
+      ],
+      "held_ids": [],
+      "selected_complexity": 5,
+      "selected_equation": "(z * 0.2919285841183876) - 0.08145295454128153",
+      "front": [
+        {
+          "complexity": 1,
+          "equation": "0.06961272023366347",
+          "search_loss_candidate_scaled": 0.004005876674238346,
+          "training_original_deltaR": {
+            "n": 24,
+            "weighted_rmse_deltaR": 0.00144430849188875,
+            "rmse_deltaR": 0.01204839313632606,
+            "chi2": 72.51847843212033,
+            "max_abs_deltaR": 0.046141726280040644
+          },
+          "held_original_deltaR": {
+            "n": 0,
+            "weighted_rmse_deltaR": null,
+            "rmse_deltaR": null,
+            "chi2": null,
+            "max_abs_deltaR": null
+          },
+          "held_nonfinite": 0
+        },
+        {
+          "complexity": 3,
+          "equation": "z * 0.14491225930199356",
+          "search_loss_candidate_scaled": 0.002831194525621408,
+          "training_original_deltaR": {
+            "n": 24,
+            "weighted_rmse_deltaR": 0.0012142162260174497,
+            "rmse_deltaR": 0.010662647104490278,
+            "chi2": 51.25318022488807,
+            "max_abs_deltaR": 0.0414057815860062
+          },
+          "held_original_deltaR": {
+            "n": 0,
+            "weighted_rmse_deltaR": null,
+            "rmse_deltaR": null,
+            "chi2": null,
+            "max_abs_deltaR": null
+          },
+          "held_nonfinite": 0
+        },
+        {
+          "complexity": 5,
+          "equation": "(z * 0.2919285841183876) - 0.08145295454128153",
+          "search_loss_candidate_scaled": 0.0023933265111176745,
+          "training_original_deltaR": {
+            "n": 24,
+            "weighted_rmse_deltaR": 0.001116380271378954,
+            "rmse_deltaR": 0.009559425446592966,
+            "chi2": 43.32644539300717,
+            "max_abs_deltaR": 0.03728219066607149
+          },
+          "held_original_deltaR": {
+            "n": 0,
+            "weighted_rmse_deltaR": null,
+            "rmse_deltaR": null,
+            "chi2": null,
+            "max_abs_deltaR": null
+          },
+          "held_nonfinite": 0
+        },
+        {
+          "complexity": 7,
+          "equation": "(prepared + z) * (z * dep_model)",
+          "search_loss_candidate_scaled": 0.0023297994467174803,
+          "training_original_deltaR": {
+            "n": 24,
+            "weighted_rmse_deltaR": 0.0011014643521079033,
+            "rmse_deltaR": 0.010683172829115463,
+            "chi2": 42.176413471358615,
+            "max_abs_deltaR": 0.04676144762371587
+          },
+          "held_original_deltaR": {
+            "n": 0,
+            "weighted_rmse_deltaR": null,
+            "rmse_deltaR": null,
+            "chi2": null,
+            "max_abs_deltaR": null
+          },
+          "held_nonfinite": 0
+        }
+      ],
+      "selection": "minimum TRAINING candidate-unit loss at complexity<=5, no held selection",
+      "features": "e=E/6.5; Isetting=source chart I/Iref; z=Z/46; prepared0/1; dep_model=deposition/ref; energy-linked, not independent controls",
+      "scale": "direct transformed \u0394R divided by fixed0.01; held scores invert to original \u0394R"
+    },
+    {
+      "reading": "k0",
+      "normalization": "time",
+      "split": "all",
+      "seed": 20261125,
+      "train_ids": [
+        "karahadian2026:fig2:Pd:0.25",
+        "karahadian2026:fig2:Pd:0.50",
+        "karahadian2026:fig2:Pd:1.00",
+        "karahadian2026:fig2:Pd:1.50",
+        "karahadian2026:fig2:Pd:2.00",
+        "karahadian2026:fig2:Pd:2.50",
+        "karahadian2026:fig2:PdD:0.25",
+        "karahadian2026:fig2:PdD:0.50",
+        "karahadian2026:fig2:PdD:1.00",
+        "karahadian2026:fig2:PdD:1.50",
+        "karahadian2026:fig2:PdD:2.00",
+        "karahadian2026:fig2:PdD:2.50",
+        "karahadian2026:fig2:Ti:0.25",
+        "karahadian2026:fig2:Ti:0.50",
+        "karahadian2026:fig2:Ti:1.00",
+        "karahadian2026:fig2:Ti:1.50",
+        "karahadian2026:fig2:Ti:2.00",
+        "karahadian2026:fig2:Ti:2.50",
+        "karahadian2026:fig2:TiD:0.25",
+        "karahadian2026:fig2:TiD:0.50",
+        "karahadian2026:fig2:TiD:1.00",
+        "karahadian2026:fig2:TiD:1.50",
+        "karahadian2026:fig2:TiD:2.00",
+        "karahadian2026:fig2:TiD:2.50"
+      ],
+      "held_ids": [],
+      "selected_complexity": 5,
+      "selected_equation": "z * (z * 0.22763614468294935)",
+      "front": [
+        {
+          "complexity": 1,
+          "equation": "0.06961272018016382",
+          "search_loss_candidate_scaled": 0.004005876674238346,
+          "training_original_deltaR": {
+            "n": 24,
+            "weighted_rmse_deltaR": 0.00144430849188875,
+            "rmse_deltaR": 0.012048393137325388,
+            "chi2": 72.51847843212033,
+            "max_abs_deltaR": 0.04614172628340549
+          },
+          "held_original_deltaR": {
+            "n": 0,
+            "weighted_rmse_deltaR": null,
+            "rmse_deltaR": null,
+            "chi2": null,
+            "max_abs_deltaR": null
+          },
+          "held_nonfinite": 0
+        },
+        {
+          "complexity": 3,
+          "equation": "z * 0.14491225930083249",
+          "search_loss_candidate_scaled": 0.002831194525621408,
+          "training_original_deltaR": {
+            "n": 24,
+            "weighted_rmse_deltaR": 0.00121421622601745,
+            "rmse_deltaR": 0.010662647104510517,
+            "chi2": 51.253180224888084,
+            "max_abs_deltaR": 0.04140578158607922
+          },
+          "held_original_deltaR": {
+            "n": 0,
+            "weighted_rmse_deltaR": null,
+            "rmse_deltaR": null,
+            "chi2": null,
+            "max_abs_deltaR": null
+          },
+          "held_nonfinite": 0
+        },
+        {
+          "complexity": 5,
+          "equation": "z * (z * 0.22763614468294935)",
+          "search_loss_candidate_scaled": 0.002449840008996439,
+          "training_original_deltaR": {
+            "n": 24,
+            "weighted_rmse_deltaR": 0.0011294838844123326,
+            "rmse_deltaR": 0.009294064596282226,
+            "chi2": 44.3495105570949,
+            "max_abs_deltaR": 0.0362028845844145
+          },
+          "held_original_deltaR": {
+            "n": 0,
+            "weighted_rmse_deltaR": null,
+            "rmse_deltaR": null,
+            "chi2": null,
+            "max_abs_deltaR": null
+          },
+          "held_nonfinite": 0
+        },
+        {
+          "complexity": 6,
+          "equation": "(z * sqrt(z)) * 0.19061409859881523",
+          "search_loss_candidate_scaled": 0.0024450017318337508,
+          "training_original_deltaR": {
+            "n": 24,
+            "weighted_rmse_deltaR": 0.0011283680040146415,
+            "rmse_deltaR": 0.009880533141771291,
+            "chi2": 44.26192311329577,
+            "max_abs_deltaR": 0.03853137643023241
+          },
+          "held_original_deltaR": {
+            "n": 0,
+            "weighted_rmse_deltaR": null,
+            "rmse_deltaR": null,
+            "chi2": null,
+            "max_abs_deltaR": null
+          },
+          "held_nonfinite": 0
+        },
+        {
+          "complexity": 7,
+          "equation": "((z + prepared) * dep_model) * z",
+          "search_loss_candidate_scaled": 0.0023297994467174803,
+          "training_original_deltaR": {
+            "n": 24,
+            "weighted_rmse_deltaR": 0.0011014643521079033,
+            "rmse_deltaR": 0.010683172829115463,
+            "chi2": 42.176413471358615,
+            "max_abs_deltaR": 0.04676144762371587
+          },
+          "held_original_deltaR": {
+            "n": 0,
+            "weighted_rmse_deltaR": null,
+            "rmse_deltaR": null,
+            "chi2": null,
+            "max_abs_deltaR": null
+          },
+          "held_nonfinite": 0
+        }
+      ],
+      "selection": "minimum TRAINING candidate-unit loss at complexity<=5, no held selection",
+      "features": "e=E/6.5; Isetting=source chart I/Iref; z=Z/46; prepared0/1; dep_model=deposition/ref; energy-linked, not independent controls",
+      "scale": "direct transformed \u0394R divided by fixed0.01; held scores invert to original \u0394R"
+    },
+    {
+      "reading": "k0",
+      "normalization": "time",
+      "split": "Pd",
+      "seed": 20261124,
+      "train_ids": [
+        "karahadian2026:fig2:PdD:0.25",
+        "karahadian2026:fig2:PdD:0.50",
+        "karahadian2026:fig2:PdD:1.00",
+        "karahadian2026:fig2:PdD:1.50",
+        "karahadian2026:fig2:PdD:2.00",
+        "karahadian2026:fig2:PdD:2.50",
+        "karahadian2026:fig2:Ti:0.25",
+        "karahadian2026:fig2:Ti:0.50",
+        "karahadian2026:fig2:Ti:1.00",
+        "karahadian2026:fig2:Ti:1.50",
+        "karahadian2026:fig2:Ti:2.00",
+        "karahadian2026:fig2:Ti:2.50",
+        "karahadian2026:fig2:TiD:0.25",
+        "karahadian2026:fig2:TiD:0.50",
+        "karahadian2026:fig2:TiD:1.00",
+        "karahadian2026:fig2:TiD:1.50",
+        "karahadian2026:fig2:TiD:2.00",
+        "karahadian2026:fig2:TiD:2.50"
+      ],
+      "held_ids": [
+        "karahadian2026:fig2:Pd:0.25",
+        "karahadian2026:fig2:Pd:0.50",
+        "karahadian2026:fig2:Pd:1.00",
+        "karahadian2026:fig2:Pd:1.50",
+        "karahadian2026:fig2:Pd:2.00",
+        "karahadian2026:fig2:Pd:2.50"
+      ],
+      "selected_complexity": 5,
+      "selected_equation": "-0.35790515095589126 - (z * -0.8699649948257486)",
+      "front": [
+        {
+          "complexity": 1,
+          "equation": "0.06153747784312985",
+          "search_loss_candidate_scaled": 0.002997003675577002,
+          "training_original_deltaR": {
+            "n": 18,
+            "weighted_rmse_deltaR": 0.0012422885479529114,
+            "rmse_deltaR": 0.013678160292980211,
+            "chi2": 50.552639808554744,
+            "max_abs_deltaR": 0.046649616525129466
+          },
+          "held_original_deltaR": {
+            "n": 6,
+            "weighted_rmse_deltaR": 0.0033957297538829163,
+            "rmse_deltaR": 0.005848697690043394,
+            "chi2": 23.146328418853006,
+            "max_abs_deltaR": 0.012689616525129463
+          },
+          "held_nonfinite": 0
+        },
+        {
+          "complexity": 3,
+          "equation": "z - 0.4205998854969916",
+          "search_loss_candidate_scaled": 0.001511600659851967,
+          "training_original_deltaR": {
+            "n": 18,
+            "weighted_rmse_deltaR": 0.0008822616063676895,
+            "rmse_deltaR": 0.005045440953243996,
+            "chi2": 25.497267258825826,
+            "max_abs_deltaR": 0.014078782272047632
+          },
+          "held_original_deltaR": {
+            "n": 6,
+            "weighted_rmse_deltaR": 0.010056871600711849,
+            "rmse_deltaR": 0.011982581857264812,
+            "chi2": 203.02133616235724,
+            "max_abs_deltaR": 0.01988121772795237
+          },
+          "held_nonfinite": 0
+        },
+        {
+          "complexity": 5,
+          "equation": "-0.35790515095589126 - (z * -0.8699649948257486)",
+          "search_loss_candidate_scaled": 0.0014776557848630548,
+          "training_original_deltaR": {
+            "n": 18,
+            "weighted_rmse_deltaR": 0.0008722992178807239,
+            "rmse_deltaR": 0.005937207064863329,
+            "chi2": 24.924694374566513,
+            "max_abs_deltaR": 0.018314130872395813
+          },
+          "held_original_deltaR": {
+            "n": 6,
+            "weighted_rmse_deltaR": 0.008415353740338078,
+            "rmse_deltaR": 0.009782150371518396,
+            "chi2": 142.15450373828477,
+            "max_abs_deltaR": 0.01564586912760419
+          },
+          "held_nonfinite": 0
+        },
+        {
+          "complexity": 7,
+          "equation": "sqrt(sqrt(dep_model) * (z - 0.4694363911422587))",
+          "search_loss_candidate_scaled": 0.0013660813270991484,
+          "training_original_deltaR": {
+            "n": 18,
+            "weighted_rmse_deltaR": 0.0008387202359057685,
+            "rmse_deltaR": 0.008376894132121995,
+            "chi2": 23.042686881169743,
+            "max_abs_deltaR": 0.031472976822012416
+          },
+          "held_original_deltaR": {
+            "n": 6,
+            "weighted_rmse_deltaR": 0.006457952012404747,
+            "rmse_deltaR": 0.005960516479204135,
+            "chi2": 83.71542724761625,
+            "max_abs_deltaR": 0.009506068379758517
+          },
+          "held_nonfinite": 0
+        }
+      ],
+      "selection": "minimum TRAINING candidate-unit loss at complexity<=5, no held selection",
+      "features": "e=E/6.5; Isetting=source chart I/Iref; z=Z/46; prepared0/1; dep_model=deposition/ref; energy-linked, not independent controls",
+      "scale": "direct transformed \u0394R divided by fixed0.01; held scores invert to original \u0394R"
+    },
+    {
+      "reading": "k0",
+      "normalization": "time",
+      "split": "PdD",
+      "seed": 20261124,
+      "train_ids": [
+        "karahadian2026:fig2:Pd:0.25",
+        "karahadian2026:fig2:Pd:0.50",
+        "karahadian2026:fig2:Pd:1.00",
+        "karahadian2026:fig2:Pd:1.50",
+        "karahadian2026:fig2:Pd:2.00",
+        "karahadian2026:fig2:Pd:2.50",
+        "karahadian2026:fig2:Ti:0.25",
+        "karahadian2026:fig2:Ti:0.50",
+        "karahadian2026:fig2:Ti:1.00",
+        "karahadian2026:fig2:Ti:1.50",
+        "karahadian2026:fig2:Ti:2.00",
+        "karahadian2026:fig2:Ti:2.50",
+        "karahadian2026:fig2:TiD:0.25",
+        "karahadian2026:fig2:TiD:0.50",
+        "karahadian2026:fig2:TiD:1.00",
+        "karahadian2026:fig2:TiD:1.50",
+        "karahadian2026:fig2:TiD:2.00",
+        "karahadian2026:fig2:TiD:2.50"
+      ],
+      "held_ids": [
+        "karahadian2026:fig2:PdD:0.25",
+        "karahadian2026:fig2:PdD:0.50",
+        "karahadian2026:fig2:PdD:1.00",
+        "karahadian2026:fig2:PdD:1.50",
+        "karahadian2026:fig2:PdD:2.00",
+        "karahadian2026:fig2:PdD:2.50"
+      ],
+      "selected_complexity": 5,
+      "selected_equation": "(z * 0.2332842135157825) + -0.053405646862243306",
+      "front": [
+        {
+          "complexity": 1,
+          "equation": "0.06652832818793229",
+          "search_loss_candidate_scaled": 0.00235789145369865,
+          "training_original_deltaR": {
+            "n": 18,
+            "weighted_rmse_deltaR": 0.0011082380349546129,
+            "rmse_deltaR": 0.0035247985581645155,
+            "chi2": 42.389457896529926,
+            "max_abs_deltaR": 0.012375718306074783
+          },
+          "held_original_deltaR": {
+            "n": 6,
+            "weighted_rmse_deltaR": 0.011004871229619914,
+            "rmse_deltaR": 0.023430278478248637,
+            "chi2": 30.301243175765652,
+            "max_abs_deltaR": 0.04633571830607479
+          },
+          "held_nonfinite": 0
+        },
+        {
+          "complexity": 3,
+          "equation": "z * 0.1358274274171664",
+          "search_loss_candidate_scaled": 0.001586261215740899,
+          "training_original_deltaR": {
+            "n": 18,
+            "weighted_rmse_deltaR": 0.0009089887325010285,
+            "rmse_deltaR": 0.0024593624062493697,
+            "chi2": 28.517323353486702,
+            "max_abs_deltaR": 0.008017169696657164
+          },
+          "held_original_deltaR": {
+            "n": 6,
+            "weighted_rmse_deltaR": 0.009621961447667008,
+            "rmse_deltaR": 0.02122158035478356,
+            "chi2": 23.16422322602947,
+            "max_abs_deltaR": 0.04197716969665717
+          },
+          "held_nonfinite": 0
+        },
+        {
+          "complexity": 5,
+          "equation": "(z * 0.2332842135157825) + -0.053405646862243306",
+          "search_loss_candidate_scaled": 0.0014099134574400533,
+          "training_original_deltaR": {
+            "n": 18,
+            "weighted_rmse_deltaR": 0.0008569734652100878,
+            "rmse_deltaR": 0.001960568818705539,
+            "chi2": 25.346996804350937,
+            "max_abs_deltaR": 0.00524658488679056
+          },
+          "held_original_deltaR": {
+            "n": 6,
+            "weighted_rmse_deltaR": 0.008772161426062066,
+            "rmse_deltaR": 0.019829419050105254,
+            "chi2": 19.253236539750016,
+            "max_abs_deltaR": 0.03920658488679056
+          },
+          "held_nonfinite": 0
+        }
+      ],
+      "selection": "minimum TRAINING candidate-unit loss at complexity<=5, no held selection",
+      "features": "e=E/6.5; Isetting=source chart I/Iref; z=Z/46; prepared0/1; dep_model=deposition/ref; energy-linked, not independent controls",
+      "scale": "direct transformed \u0394R divided by fixed0.01; held scores invert to original \u0394R"
+    },
+    {
+      "reading": "k0",
+      "normalization": "time",
+      "split": "Ti",
+      "seed": 20261124,
+      "train_ids": [
+        "karahadian2026:fig2:Pd:0.25",
+        "karahadian2026:fig2:Pd:0.50",
+        "karahadian2026:fig2:Pd:1.00",
+        "karahadian2026:fig2:Pd:1.50",
+        "karahadian2026:fig2:Pd:2.00",
+        "karahadian2026:fig2:Pd:2.50",
+        "karahadian2026:fig2:PdD:0.25",
+        "karahadian2026:fig2:PdD:0.50",
+        "karahadian2026:fig2:PdD:1.00",
+        "karahadian2026:fig2:PdD:1.50",
+        "karahadian2026:fig2:PdD:2.00",
+        "karahadian2026:fig2:PdD:2.50",
+        "karahadian2026:fig2:TiD:0.25",
+        "karahadian2026:fig2:TiD:0.50",
+        "karahadian2026:fig2:TiD:1.00",
+        "karahadian2026:fig2:TiD:1.50",
+        "karahadian2026:fig2:TiD:2.00",
+        "karahadian2026:fig2:TiD:2.50"
+      ],
+      "held_ids": [
+        "karahadian2026:fig2:Ti:0.25",
+        "karahadian2026:fig2:Ti:0.50",
+        "karahadian2026:fig2:Ti:1.00",
+        "karahadian2026:fig2:Ti:1.50",
+        "karahadian2026:fig2:Ti:2.00",
+        "karahadian2026:fig2:Ti:2.50"
+      ],
+      "selected_complexity": 5,
+      "selected_equation": "(e + 0.032339471981765476) * z",
+      "front": [
+        {
+          "complexity": 1,
+          "equation": "0.09975143603891945",
+          "search_loss_candidate_scaled": 0.007252280482341232,
+          "training_original_deltaR": {
+            "n": 18,
+            "weighted_rmse_deltaR": 0.0020609457063979334,
+            "rmse_deltaR": 0.013245288361478242,
+            "chi2": 58.32050475468607,
+            "max_abs_deltaR": 0.044246159680710065
+          },
+          "held_original_deltaR": {
+            "n": 6,
+            "weighted_rmse_deltaR": 0.0012069858003904337,
+            "rmse_deltaR": 0.0020277666139835106,
+            "chi2": 30.641713494234473,
+            "max_abs_deltaR": 0.004323840319289934
+          },
+          "held_nonfinite": 0
+        },
+        {
+          "complexity": 3,
+          "equation": "z * e",
+          "search_loss_candidate_scaled": 0.004579435637856142,
+          "training_original_deltaR": {
+            "n": 18,
+            "weighted_rmse_deltaR": 0.0016377033394207124,
+            "rmse_deltaR": 0.013442622006314393,
+            "chi2": 36.82634704237871,
+            "max_abs_deltaR": 0.04810097165991903
+          },
+          "held_original_deltaR": {
+            "n": 6,
+            "weighted_rmse_deltaR": 0.001481137036965062,
+            "rmse_deltaR": 0.0012689125140385653,
+            "chi2": 46.14229694023904,
+            "max_abs_deltaR": 0.002031094957894753
+          },
+          "held_nonfinite": 0
+        },
+        {
+          "complexity": 5,
+          "equation": "(e + 0.032339471981765476) * z",
+          "search_loss_candidate_scaled": 0.004203739124797026,
+          "training_original_deltaR": {
+            "n": 18,
+            "weighted_rmse_deltaR": 0.0015690873936250371,
+            "rmse_deltaR": 0.012745315511534823,
+            "chi2": 33.80511664050246,
+            "max_abs_deltaR": 0.046066989080013256
+          },
+          "held_original_deltaR": {
+            "n": 6,
+            "weighted_rmse_deltaR": 0.0017300946254897392,
+            "rmse_deltaR": 0.0014244232970100706,
+            "chi2": 62.95763998678096,
+            "max_abs_deltaR": 0.002298960338613283
+          },
+          "held_nonfinite": 0
+        },
+        {
+          "complexity": 6,
+          "equation": "(z * 0.5026533066131864) * sqrt(dep_model)",
+          "search_loss_candidate_scaled": 0.004076486356578538,
+          "training_original_deltaR": {
+            "n": 18,
+            "weighted_rmse_deltaR": 0.0015451557108894958,
+            "rmse_deltaR": 0.012644027496203995,
+            "chi2": 32.7817908477392,
+            "max_abs_deltaR": 0.04505524115758706
+          },
+          "held_original_deltaR": {
+            "n": 6,
+            "weighted_rmse_deltaR": 0.0013349215895518908,
+            "rmse_deltaR": 0.0010788956691257013,
+            "chi2": 37.48178279623204,
+            "max_abs_deltaR": 0.001622965495748503
+          },
+          "held_nonfinite": 0
+        },
+        {
+          "complexity": 7,
+          "equation": "((dep_model * 0.6125867887988705) + 0.09593404098653173) * z",
+          "search_loss_candidate_scaled": 0.003729748581131853,
+          "training_original_deltaR": {
+            "n": 18,
+            "weighted_rmse_deltaR": 0.0014779816208728193,
+            "rmse_deltaR": 0.012187238793976407,
+            "chi2": 29.99343729042623,
+            "max_abs_deltaR": 0.04333503397259222
+          },
+          "held_original_deltaR": {
+            "n": 6,
+            "weighted_rmse_deltaR": 0.0013657151367433178,
+            "rmse_deltaR": 0.001240712249982786,
+            "chi2": 39.23096324536386,
+            "max_abs_deltaR": 0.0016624520900225142
+          },
+          "held_nonfinite": 0
+        }
+      ],
+      "selection": "minimum TRAINING candidate-unit loss at complexity<=5, no held selection",
+      "features": "e=E/6.5; Isetting=source chart I/Iref; z=Z/46; prepared0/1; dep_model=deposition/ref; energy-linked, not independent controls",
+      "scale": "direct transformed \u0394R divided by fixed0.01; held scores invert to original \u0394R"
+    },
+    {
+      "reading": "k0",
+      "normalization": "time",
+      "split": "TiD",
+      "seed": 20261124,
+      "train_ids": [
+        "karahadian2026:fig2:Pd:0.25",
+        "karahadian2026:fig2:Pd:0.50",
+        "karahadian2026:fig2:Pd:1.00",
+        "karahadian2026:fig2:Pd:1.50",
+        "karahadian2026:fig2:Pd:2.00",
+        "karahadian2026:fig2:Pd:2.50",
+        "karahadian2026:fig2:PdD:0.25",
+        "karahadian2026:fig2:PdD:0.50",
+        "karahadian2026:fig2:PdD:1.00",
+        "karahadian2026:fig2:PdD:1.50",
+        "karahadian2026:fig2:PdD:2.00",
+        "karahadian2026:fig2:PdD:2.50",
+        "karahadian2026:fig2:Ti:0.25",
+        "karahadian2026:fig2:Ti:0.50",
+        "karahadian2026:fig2:Ti:1.00",
+        "karahadian2026:fig2:Ti:1.50",
+        "karahadian2026:fig2:Ti:2.00",
+        "karahadian2026:fig2:Ti:2.50"
+      ],
+      "held_ids": [
+        "karahadian2026:fig2:TiD:0.25",
+        "karahadian2026:fig2:TiD:0.50",
+        "karahadian2026:fig2:TiD:1.00",
+        "karahadian2026:fig2:TiD:1.50",
+        "karahadian2026:fig2:TiD:2.00",
+        "karahadian2026:fig2:TiD:2.50"
+      ],
+      "selected_complexity": 5,
+      "selected_equation": "(z * 0.31615746558409974) + -0.10568183598130956",
+      "front": [
+        {
+          "complexity": 1,
+          "equation": "0.06517350239708317",
+          "search_loss_candidate_scaled": 0.005033474361091619,
+          "training_original_deltaR": {
+            "n": 18,
+            "weighted_rmse_deltaR": 0.0015711274916202064,
+            "rmse_deltaR": 0.013961509088478086,
+            "chi2": 57.492181537153016,
+            "max_abs_deltaR": 0.04642092971765714
+          },
+          "held_original_deltaR": {
+            "n": 6,
+            "weighted_rmse_deltaR": 0.0011579290385741701,
+            "rmse_deltaR": 0.001990947186594416,
+            "chi2": 15.38304691961176,
+            "max_abs_deltaR": 0.0045793715160411695
+          },
+          "held_nonfinite": 0
+        },
+        {
+          "complexity": 3,
+          "equation": "z * 0.13802241749468178",
+          "search_loss_candidate_scaled": 0.003173392845696793,
+          "training_original_deltaR": {
+            "n": 18,
+            "weighted_rmse_deltaR": 0.0012474967323882606,
+            "rmse_deltaR": 0.012399032523246504,
+            "chi2": 36.24639056151573,
+            "max_abs_deltaR": 0.0418391163733608
+          },
+          "held_original_deltaR": {
+            "n": 6,
+            "weighted_rmse_deltaR": 0.0011530304324361854,
+            "rmse_deltaR": 0.001983339230857661,
+            "chi2": 15.25316660696372,
+            "max_abs_deltaR": 0.0045648718534175015
+          },
+          "held_nonfinite": 0
+        },
+        {
+          "complexity": 5,
+          "equation": "(z * 0.31615746558409974) + -0.10568183598130956",
+          "search_loss_candidate_scaled": 0.002178346558559184,
+          "training_original_deltaR": {
+            "n": 18,
+            "weighted_rmse_deltaR": 0.0010335725925601405,
+            "rmse_deltaR": 0.01096847381375151,
+            "chi2": 24.881004016549024,
+            "max_abs_deltaR": 0.037282190664456094
+          },
+          "held_original_deltaR": {
+            "n": 6,
+            "weighted_rmse_deltaR": 0.0013568021790553002,
+            "rmse_deltaR": 0.0022628017932949276,
+            "chi2": 21.120857131043792,
+            "max_abs_deltaR": 0.004919679701439489
+          },
+          "held_nonfinite": 0
+        },
+        {
+          "complexity": 7,
+          "equation": "((z + prepared) * 0.31615746558409974) + -0.10568183598130956",
+          "search_loss_candidate_scaled": 0.0011827044696730927,
+          "training_original_deltaR": {
+            "n": 18,
+            "weighted_rmse_deltaR": 0.000761580151156794,
+            "rmse_deltaR": 0.005733340548301822,
+            "chi2": 13.508812243259595,
+            "max_abs_deltaR": 0.01739755006587719
+          },
+          "held_original_deltaR": {
+            "n": 6,
+            "weighted_rmse_deltaR": 0.006955814805455817,
+            "rmse_deltaR": 0.009515752111872397,
+            "chi2": 555.1041770686286,
+            "max_abs_deltaR": 0.018167854839212075
+          },
+          "held_nonfinite": 0
+        }
+      ],
+      "selection": "minimum TRAINING candidate-unit loss at complexity<=5, no held selection",
+      "features": "e=E/6.5; Isetting=source chart I/Iref; z=Z/46; prepared0/1; dep_model=deposition/ref; energy-linked, not independent controls",
+      "scale": "direct transformed \u0394R divided by fixed0.01; held scores invert to original \u0394R"
+    },
+    {
+      "reading": "k0",
+      "normalization": "deposited_J",
+      "split": "all",
+      "seed": 20261124,
+      "train_ids": [
+        "karahadian2026:fig2:Pd:0.25",
+        "karahadian2026:fig2:Pd:0.50",
+        "karahadian2026:fig2:Pd:1.00",
+        "karahadian2026:fig2:Pd:1.50",
+        "karahadian2026:fig2:Pd:2.00",
+        "karahadian2026:fig2:Pd:2.50",
+        "karahadian2026:fig2:PdD:0.25",
+        "karahadian2026:fig2:PdD:0.50",
+        "karahadian2026:fig2:PdD:1.00",
+        "karahadian2026:fig2:PdD:1.50",
+        "karahadian2026:fig2:PdD:2.00",
+        "karahadian2026:fig2:PdD:2.50",
+        "karahadian2026:fig2:Ti:0.25",
+        "karahadian2026:fig2:Ti:0.50",
+        "karahadian2026:fig2:Ti:1.00",
+        "karahadian2026:fig2:Ti:1.50",
+        "karahadian2026:fig2:Ti:2.00",
+        "karahadian2026:fig2:Ti:2.50",
+        "karahadian2026:fig2:TiD:0.25",
+        "karahadian2026:fig2:TiD:0.50",
+        "karahadian2026:fig2:TiD:1.00",
+        "karahadian2026:fig2:TiD:1.50",
+        "karahadian2026:fig2:TiD:2.00",
+        "karahadian2026:fig2:TiD:2.50"
+      ],
+      "held_ids": [],
+      "selected_complexity": 5,
+      "selected_equation": "z * (z + prepared)",
+      "front": [
+        {
+          "complexity": 1,
+          "equation": "z",
+          "search_loss_candidate_scaled": 0.14790689093502568,
+          "training_original_deltaR": {
+            "n": 24,
+            "weighted_rmse_deltaR": 0.0015665143844977047,
+            "rmse_deltaR": 0.012262943914196212,
+            "chi2": 85.30952583791293,
+            "max_abs_deltaR": 0.05001204501358169
+          },
+          "held_original_deltaR": {
+            "n": 0,
+            "weighted_rmse_deltaR": null,
+            "rmse_deltaR": null,
+            "chi2": null,
+            "max_abs_deltaR": null
+          },
+          "held_nonfinite": 0
+        },
+        {
+          "complexity": 3,
+          "equation": "z * z",
+          "search_loss_candidate_scaled": 0.12002158807241693,
+          "training_original_deltaR": {
+            "n": 24,
+            "weighted_rmse_deltaR": 0.001411139236488765,
+            "rmse_deltaR": 0.012280975084379017,
+            "chi2": 69.22588057962152,
+            "max_abs_deltaR": 0.05001204501358169
+          },
+          "held_original_deltaR": {
+            "n": 0,
+            "weighted_rmse_deltaR": null,
+            "rmse_deltaR": null,
+            "chi2": null,
+            "max_abs_deltaR": null
+          },
+          "held_nonfinite": 0
+        },
+        {
+          "complexity": 4,
+          "equation": "z * sqrt(z)",
+          "search_loss_candidate_scaled": 0.11726127639072408,
+          "training_original_deltaR": {
+            "n": 24,
+            "weighted_rmse_deltaR": 0.001394817834281635,
+            "rmse_deltaR": 0.01226900242775668,
+            "chi2": 67.63379194033347,
+            "max_abs_deltaR": 0.05001204501358169
+          },
+          "held_original_deltaR": {
+            "n": 0,
+            "weighted_rmse_deltaR": null,
+            "rmse_deltaR": null,
+            "chi2": null,
+            "max_abs_deltaR": null
+          },
+          "held_nonfinite": 0
+        },
+        {
+          "complexity": 5,
+          "equation": "z * (z + prepared)",
+          "search_loss_candidate_scaled": 0.08084772546141404,
+          "training_original_deltaR": {
+            "n": 24,
+            "weighted_rmse_deltaR": 0.001158174733320984,
+            "rmse_deltaR": 0.01147341389880858,
+            "chi2": 46.63123591190096,
+            "max_abs_deltaR": 0.04950409002716337
+          },
+          "held_original_deltaR": {
+            "n": 0,
+            "weighted_rmse_deltaR": null,
+            "rmse_deltaR": null,
+            "chi2": null,
+            "max_abs_deltaR": null
+          },
+          "held_nonfinite": 0
+        },
+        {
+          "complexity": 7,
+          "equation": "z * ((prepared * z) + z)",
+          "search_loss_candidate_scaled": 0.07685811014011765,
+          "training_original_deltaR": {
+            "n": 24,
+            "weighted_rmse_deltaR": 0.0011292368289465564,
+            "rmse_deltaR": 0.011483184019684303,
+            "chi2": 44.33011127069015,
+            "max_abs_deltaR": 0.04950409002716337
+          },
+          "held_original_deltaR": {
+            "n": 0,
+            "weighted_rmse_deltaR": null,
+            "rmse_deltaR": null,
+            "chi2": null,
+            "max_abs_deltaR": null
+          },
+          "held_nonfinite": 0
+        }
+      ],
+      "selection": "minimum TRAINING candidate-unit loss at complexity<=5, no held selection",
+      "features": "e=E/6.5; Isetting=source chart I/Iref; z=Z/46; prepared0/1; dep_model=deposition/ref; energy-linked, not independent controls",
+      "scale": "direct transformed \u0394R divided by fixed0.01; held scores invert to original \u0394R"
+    },
+    {
+      "reading": "k0",
+      "normalization": "deposited_J",
+      "split": "all",
+      "seed": 20261125,
+      "train_ids": [
+        "karahadian2026:fig2:Pd:0.25",
+        "karahadian2026:fig2:Pd:0.50",
+        "karahadian2026:fig2:Pd:1.00",
+        "karahadian2026:fig2:Pd:1.50",
+        "karahadian2026:fig2:Pd:2.00",
+        "karahadian2026:fig2:Pd:2.50",
+        "karahadian2026:fig2:PdD:0.25",
+        "karahadian2026:fig2:PdD:0.50",
+        "karahadian2026:fig2:PdD:1.00",
+        "karahadian2026:fig2:PdD:1.50",
+        "karahadian2026:fig2:PdD:2.00",
+        "karahadian2026:fig2:PdD:2.50",
+        "karahadian2026:fig2:Ti:0.25",
+        "karahadian2026:fig2:Ti:0.50",
+        "karahadian2026:fig2:Ti:1.00",
+        "karahadian2026:fig2:Ti:1.50",
+        "karahadian2026:fig2:Ti:2.00",
+        "karahadian2026:fig2:Ti:2.50",
+        "karahadian2026:fig2:TiD:0.25",
+        "karahadian2026:fig2:TiD:0.50",
+        "karahadian2026:fig2:TiD:1.00",
+        "karahadian2026:fig2:TiD:1.50",
+        "karahadian2026:fig2:TiD:2.00",
+        "karahadian2026:fig2:TiD:2.50"
+      ],
+      "held_ids": [],
+      "selected_complexity": 5,
+      "selected_equation": "z * (z + prepared)",
+      "front": [
+        {
+          "complexity": 1,
+          "equation": "z",
+          "search_loss_candidate_scaled": 0.14790689093502568,
+          "training_original_deltaR": {
+            "n": 24,
+            "weighted_rmse_deltaR": 0.0015665143844977047,
+            "rmse_deltaR": 0.012262943914196212,
+            "chi2": 85.30952583791293,
+            "max_abs_deltaR": 0.05001204501358169
+          },
+          "held_original_deltaR": {
+            "n": 0,
+            "weighted_rmse_deltaR": null,
+            "rmse_deltaR": null,
+            "chi2": null,
+            "max_abs_deltaR": null
+          },
+          "held_nonfinite": 0
+        },
+        {
+          "complexity": 3,
+          "equation": "z * z",
+          "search_loss_candidate_scaled": 0.12002158807241693,
+          "training_original_deltaR": {
+            "n": 24,
+            "weighted_rmse_deltaR": 0.001411139236488765,
+            "rmse_deltaR": 0.012280975084379017,
+            "chi2": 69.22588057962152,
+            "max_abs_deltaR": 0.05001204501358169
+          },
+          "held_original_deltaR": {
+            "n": 0,
+            "weighted_rmse_deltaR": null,
+            "rmse_deltaR": null,
+            "chi2": null,
+            "max_abs_deltaR": null
+          },
+          "held_nonfinite": 0
+        },
+        {
+          "complexity": 4,
+          "equation": "z * sqrt(z)",
+          "search_loss_candidate_scaled": 0.11726127639072408,
+          "training_original_deltaR": {
+            "n": 24,
+            "weighted_rmse_deltaR": 0.001394817834281635,
+            "rmse_deltaR": 0.01226900242775668,
+            "chi2": 67.63379194033347,
+            "max_abs_deltaR": 0.05001204501358169
+          },
+          "held_original_deltaR": {
+            "n": 0,
+            "weighted_rmse_deltaR": null,
+            "rmse_deltaR": null,
+            "chi2": null,
+            "max_abs_deltaR": null
+          },
+          "held_nonfinite": 0
+        },
+        {
+          "complexity": 5,
+          "equation": "z * (z + prepared)",
+          "search_loss_candidate_scaled": 0.08084772546141404,
+          "training_original_deltaR": {
+            "n": 24,
+            "weighted_rmse_deltaR": 0.001158174733320984,
+            "rmse_deltaR": 0.01147341389880858,
+            "chi2": 46.63123591190096,
+            "max_abs_deltaR": 0.04950409002716337
+          },
+          "held_original_deltaR": {
+            "n": 0,
+            "weighted_rmse_deltaR": null,
+            "rmse_deltaR": null,
+            "chi2": null,
+            "max_abs_deltaR": null
+          },
+          "held_nonfinite": 0
+        },
+        {
+          "complexity": 7,
+          "equation": "((z * prepared) + z) * z",
+          "search_loss_candidate_scaled": 0.07685811014011765,
+          "training_original_deltaR": {
+            "n": 24,
+            "weighted_rmse_deltaR": 0.0011292368289465564,
+            "rmse_deltaR": 0.011483184019684303,
+            "chi2": 44.33011127069015,
+            "max_abs_deltaR": 0.04950409002716337
+          },
+          "held_original_deltaR": {
+            "n": 0,
+            "weighted_rmse_deltaR": null,
+            "rmse_deltaR": null,
+            "chi2": null,
+            "max_abs_deltaR": null
+          },
+          "held_nonfinite": 0
+        }
+      ],
+      "selection": "minimum TRAINING candidate-unit loss at complexity<=5, no held selection",
+      "features": "e=E/6.5; Isetting=source chart I/Iref; z=Z/46; prepared0/1; dep_model=deposition/ref; energy-linked, not independent controls",
+      "scale": "direct transformed \u0394R divided by fixed0.01; held scores invert to original \u0394R"
+    },
+    {
+      "reading": "k0",
+      "normalization": "deposited_J",
+      "split": "Pd",
+      "seed": 20261124,
+      "train_ids": [
+        "karahadian2026:fig2:PdD:0.25",
+        "karahadian2026:fig2:PdD:0.50",
+        "karahadian2026:fig2:PdD:1.00",
+        "karahadian2026:fig2:PdD:1.50",
+        "karahadian2026:fig2:PdD:2.00",
+        "karahadian2026:fig2:PdD:2.50",
+        "karahadian2026:fig2:Ti:0.25",
+        "karahadian2026:fig2:Ti:0.50",
+        "karahadian2026:fig2:Ti:1.00",
+        "karahadian2026:fig2:Ti:1.50",
+        "karahadian2026:fig2:Ti:2.00",
+        "karahadian2026:fig2:Ti:2.50",
+        "karahadian2026:fig2:TiD:0.25",
+        "karahadian2026:fig2:TiD:0.50",
+        "karahadian2026:fig2:TiD:1.00",
+        "karahadian2026:fig2:TiD:1.50",
+        "karahadian2026:fig2:TiD:2.00",
+        "karahadian2026:fig2:TiD:2.50"
+      ],
+      "held_ids": [
+        "karahadian2026:fig2:Pd:0.25",
+        "karahadian2026:fig2:Pd:0.50",
+        "karahadian2026:fig2:Pd:1.00",
+        "karahadian2026:fig2:Pd:1.50",
+        "karahadian2026:fig2:Pd:2.00",
+        "karahadian2026:fig2:Pd:2.50"
+      ],
+      "selected_complexity": 5,
+      "selected_equation": "(z + prepared) * z",
+      "front": [
+        {
+          "complexity": 1,
+          "equation": "0.3092268953852054",
+          "search_loss_candidate_scaled": 0.11425873979928425,
+          "training_original_deltaR": {
+            "n": 18,
+            "weighted_rmse_deltaR": 0.001379039200653524,
+            "rmse_deltaR": 0.014441237450559892,
+            "chi2": 62.29484345874576,
+            "max_abs_deltaR": 0.05036292665655443
+          },
+          "held_original_deltaR": {
+            "n": 6,
+            "weighted_rmse_deltaR": 0.0038342120769252292,
+            "rmse_deltaR": 0.007256469608146335,
+            "chi2": 29.50992681942875,
+            "max_abs_deltaR": 0.016402926656554427
+          },
+          "held_nonfinite": 0
+        },
+        {
+          "complexity": 3,
+          "equation": "z * prepared",
+          "search_loss_candidate_scaled": 0.09906718582549612,
+          "training_original_deltaR": {
+            "n": 18,
+            "weighted_rmse_deltaR": 0.0012840939798371097,
+            "rmse_deltaR": 0.013621869170205697,
+            "chi2": 54.01227813066091,
+            "max_abs_deltaR": 0.05001204501358169
+          },
+          "held_original_deltaR": {
+            "n": 6,
+            "weighted_rmse_deltaR": 0.004777504500346292,
+            "rmse_deltaR": 0.00779613524495904,
+            "chi2": 45.81609605172815,
+            "max_abs_deltaR": 0.01656
+          },
+          "held_nonfinite": 0
+        },
+        {
+          "complexity": 4,
+          "equation": "log(prepared + 1.1720546152956919)",
+          "search_loss_candidate_scaled": 0.09050469443485769,
+          "training_original_deltaR": {
+            "n": 18,
+            "weighted_rmse_deltaR": 0.001227347239000398,
+            "rmse_deltaR": 0.013854095299025981,
+            "chi2": 49.34393449468447,
+            "max_abs_deltaR": 0.05012599275400955
+          },
+          "held_original_deltaR": {
+            "n": 6,
+            "weighted_rmse_deltaR": 0.004275310640529239,
+            "rmse_deltaR": 0.007500026938761495,
+            "chi2": 36.69029657931429,
+            "max_abs_deltaR": 0.016479357934882696
+          },
+          "held_nonfinite": 0
+        },
+        {
+          "complexity": 5,
+          "equation": "(z + prepared) * z",
+          "search_loss_candidate_scaled": 0.058215297562272755,
+          "training_original_deltaR": {
+            "n": 18,
+            "weighted_rmse_deltaR": 0.0009843520669898871,
+            "rmse_deltaR": 0.012671137565438835,
+            "chi2": 31.739478791002746,
+            "max_abs_deltaR": 0.04950409002716337
+          },
+          "held_original_deltaR": {
+            "n": 6,
+            "weighted_rmse_deltaR": 0.002723736161532141,
+            "rmse_deltaR": 0.006699531652785127,
+            "chi2": 14.891757120898214,
+            "max_abs_deltaR": 0.016052045013581682
+          },
+          "held_nonfinite": 0
+        },
+        {
+          "complexity": 7,
+          "equation": "(z + (prepared * z)) * z",
+          "search_loss_candidate_scaled": 0.053994665692478475,
+          "training_original_deltaR": {
+            "n": 18,
+            "weighted_rmse_deltaR": 0.0009479977903201739,
+            "rmse_deltaR": 0.012682932580875004,
+            "chi2": 29.43835414979193,
+            "max_abs_deltaR": 0.04950409002716337
+          },
+          "held_original_deltaR": {
+            "n": 6,
+            "weighted_rmse_deltaR": 0.002723736161532141,
+            "rmse_deltaR": 0.006699531652785127,
+            "chi2": 14.891757120898214,
+            "max_abs_deltaR": 0.016052045013581682
+          },
+          "held_nonfinite": 0
+        }
+      ],
+      "selection": "minimum TRAINING candidate-unit loss at complexity<=5, no held selection",
+      "features": "e=E/6.5; Isetting=source chart I/Iref; z=Z/46; prepared0/1; dep_model=deposition/ref; energy-linked, not independent controls",
+      "scale": "direct transformed \u0394R divided by fixed0.01; held scores invert to original \u0394R"
+    },
+    {
+      "reading": "k0",
+      "normalization": "deposited_J",
+      "split": "PdD",
+      "seed": 20261124,
+      "train_ids": [
+        "karahadian2026:fig2:Pd:0.25",
+        "karahadian2026:fig2:Pd:0.50",
+        "karahadian2026:fig2:Pd:1.00",
+        "karahadian2026:fig2:Pd:1.50",
+        "karahadian2026:fig2:Pd:2.00",
+        "karahadian2026:fig2:Pd:2.50",
+        "karahadian2026:fig2:Ti:0.25",
+        "karahadian2026:fig2:Ti:0.50",
+        "karahadian2026:fig2:Ti:1.00",
+        "karahadian2026:fig2:Ti:1.50",
+        "karahadian2026:fig2:Ti:2.00",
+        "karahadian2026:fig2:Ti:2.50",
+        "karahadian2026:fig2:TiD:0.25",
+        "karahadian2026:fig2:TiD:0.50",
+        "karahadian2026:fig2:TiD:1.00",
+        "karahadian2026:fig2:TiD:1.50",
+        "karahadian2026:fig2:TiD:2.00",
+        "karahadian2026:fig2:TiD:2.50"
+      ],
+      "held_ids": [
+        "karahadian2026:fig2:PdD:0.25",
+        "karahadian2026:fig2:PdD:0.50",
+        "karahadian2026:fig2:PdD:1.00",
+        "karahadian2026:fig2:PdD:1.50",
+        "karahadian2026:fig2:PdD:2.00",
+        "karahadian2026:fig2:PdD:2.50"
+      ],
+      "selected_complexity": 5,
+      "selected_equation": "(z / Isetting) - Isetting",
+      "front": [
+        {
+          "complexity": 1,
+          "equation": "0.3323575516235913",
+          "search_loss_candidate_scaled": 0.10189152822107023,
+          "training_original_deltaR": {
+            "n": 18,
+            "weighted_rmse_deltaR": 0.0013021198151144755,
+            "rmse_deltaR": 0.004438493771046708,
+            "chi2": 58.51856341416989,
+            "max_abs_deltaR": 0.016391177324379013
+          },
+          "held_original_deltaR": {
+            "n": 6,
+            "weighted_rmse_deltaR": 0.011414828904886085,
+            "rmse_deltaR": 0.024819057415161442,
+            "chi2": 32.60088044136698,
+            "max_abs_deltaR": 0.050351177324379014
+          },
+          "held_nonfinite": 0
+        },
+        {
+          "complexity": 3,
+          "equation": "z - 0.17458288239958025",
+          "search_loss_candidate_scaled": 0.07832342844013479,
+          "training_original_deltaR": {
+            "n": 18,
+            "weighted_rmse_deltaR": 0.0011416362611975691,
+            "rmse_deltaR": 0.0041910964070641125,
+            "chi2": 44.98288124646486,
+            "max_abs_deltaR": 0.016140725259239833
+          },
+          "held_original_deltaR": {
+            "n": 6,
+            "weighted_rmse_deltaR": 0.010029392290879503,
+            "rmse_deltaR": 0.02379429878767006,
+            "chi2": 25.1674812573102,
+            "max_abs_deltaR": 0.05010072525923984
+          },
+          "held_nonfinite": 0
+        },
+        {
+          "complexity": 4,
+          "equation": "z * sqrt(z)",
+          "search_loss_candidate_scaled": 0.07802592381779247,
+          "training_original_deltaR": {
+            "n": 18,
+            "weighted_rmse_deltaR": 0.0011394659961146733,
+            "rmse_deltaR": 0.004156672671149013,
+            "chi2": 44.81201774669699,
+            "max_abs_deltaR": 0.016052045013581682
+          },
+          "held_original_deltaR": {
+            "n": 6,
+            "weighted_rmse_deltaR": 0.009550573336282366,
+            "rmse_deltaR": 0.023458045511166654,
+            "chi2": 22.82177419363648,
+            "max_abs_deltaR": 0.05001204501358169
+          },
+          "held_nonfinite": 0
+        },
+        {
+          "complexity": 5,
+          "equation": "(z / Isetting) - Isetting",
+          "search_loss_candidate_scaled": 0.056037403951865614,
+          "training_original_deltaR": {
+            "n": 18,
+            "weighted_rmse_deltaR": 0.0009656525987130223,
+            "rmse_deltaR": 0.003509276857880692,
+            "chi2": 32.183523340702905,
+            "max_abs_deltaR": 0.013445993197664326
+          },
+          "held_original_deltaR": {
+            "n": 6,
+            "weighted_rmse_deltaR": 0.008088948433878095,
+            "rmse_deltaR": 0.021844969859252904,
+            "chi2": 16.370978953202723,
+            "max_abs_deltaR": 0.04740599319766433
+          },
+          "held_nonfinite": 0
+        },
+        {
+          "complexity": 7,
+          "equation": "((z / Isetting) - Isetting) * 0.8358843761396169",
+          "search_loss_candidate_scaled": 0.04977007382688291,
+          "training_original_deltaR": {
+            "n": 18,
+            "weighted_rmse_deltaR": 0.000910051672843326,
+            "rmse_deltaR": 0.003584494182164089,
+            "chi2": 28.584056714188055,
+            "max_abs_deltaR": 0.013957050366735122
+          },
+          "held_original_deltaR": {
+            "n": 6,
+            "weighted_rmse_deltaR": 0.008761312134014845,
+            "rmse_deltaR": 0.022413490657277674,
+            "chi2": 19.20564169887255,
+            "max_abs_deltaR": 0.047917050366735124
+          },
+          "held_nonfinite": 0
+        }
+      ],
+      "selection": "minimum TRAINING candidate-unit loss at complexity<=5, no held selection",
+      "features": "e=E/6.5; Isetting=source chart I/Iref; z=Z/46; prepared0/1; dep_model=deposition/ref; energy-linked, not independent controls",
+      "scale": "direct transformed \u0394R divided by fixed0.01; held scores invert to original \u0394R"
+    },
+    {
+      "reading": "k0",
+      "normalization": "deposited_J",
+      "split": "Ti",
+      "seed": 20261124,
+      "train_ids": [
+        "karahadian2026:fig2:Pd:0.25",
+        "karahadian2026:fig2:Pd:0.50",
+        "karahadian2026:fig2:Pd:1.00",
+        "karahadian2026:fig2:Pd:1.50",
+        "karahadian2026:fig2:Pd:2.00",
+        "karahadian2026:fig2:Pd:2.50",
+        "karahadian2026:fig2:PdD:0.25",
+        "karahadian2026:fig2:PdD:0.50",
+        "karahadian2026:fig2:PdD:1.00",
+        "karahadian2026:fig2:PdD:1.50",
+        "karahadian2026:fig2:PdD:2.00",
+        "karahadian2026:fig2:PdD:2.50",
+        "karahadian2026:fig2:TiD:0.25",
+        "karahadian2026:fig2:TiD:0.50",
+        "karahadian2026:fig2:TiD:1.00",
+        "karahadian2026:fig2:TiD:1.50",
+        "karahadian2026:fig2:TiD:2.00",
+        "karahadian2026:fig2:TiD:2.50"
+      ],
+      "held_ids": [
+        "karahadian2026:fig2:Ti:0.25",
+        "karahadian2026:fig2:Ti:0.50",
+        "karahadian2026:fig2:Ti:1.00",
+        "karahadian2026:fig2:Ti:1.50",
+        "karahadian2026:fig2:Ti:2.00",
+        "karahadian2026:fig2:Ti:2.50"
+      ],
+      "selected_complexity": 5,
+      "selected_equation": "z / (Isetting + dep_model)",
+      "front": [
+        {
+          "complexity": 1,
+          "equation": "z",
+          "search_loss_candidate_scaled": 0.25481299794596296,
+          "training_original_deltaR": {
+            "n": 18,
+            "weighted_rmse_deltaR": 0.001850093171012296,
+            "rmse_deltaR": 0.014137510118280204,
+            "chi2": 46.99756665997907,
+            "max_abs_deltaR": 0.05001204501358169
+          },
+          "held_original_deltaR": {
+            "n": 6,
+            "weighted_rmse_deltaR": 0.0013496240781596905,
+            "rmse_deltaR": 0.0013826050547652185,
+            "chi2": 38.311959177933836,
+            "max_abs_deltaR": 0.0019277899695099572
+          },
+          "held_nonfinite": 0
+        },
+        {
+          "complexity": 3,
+          "equation": "z / 0.8566105127471996",
+          "search_loss_candidate_scaled": 0.24441699632891206,
+          "training_original_deltaR": {
+            "n": 18,
+            "weighted_rmse_deltaR": 0.0018119596100982624,
+            "rmse_deltaR": 0.01396501807400923,
+            "chi2": 45.080133942915694,
+            "max_abs_deltaR": 0.0499270175664909
+          },
+          "held_original_deltaR": {
+            "n": 6,
+            "weighted_rmse_deltaR": 0.0016690689590467382,
+            "rmse_deltaR": 0.0016055362060278223,
+            "chi2": 58.59455851944168,
+            "max_abs_deltaR": 0.0024437639807379083
+          },
+          "held_nonfinite": 0
+        },
+        {
+          "complexity": 4,
+          "equation": "z / sqrt(Isetting)",
+          "search_loss_candidate_scaled": 0.24089187124102718,
+          "training_original_deltaR": {
+            "n": 18,
+            "weighted_rmse_deltaR": 0.0017988455823944693,
+            "rmse_deltaR": 0.013597062494950728,
+            "chi2": 44.429961845581126,
+            "max_abs_deltaR": 0.04924610867494093
+          },
+          "held_original_deltaR": {
+            "n": 6,
+            "weighted_rmse_deltaR": 0.0020078868799614544,
+            "rmse_deltaR": 0.0017961302557538328,
+            "chi2": 84.7983124754662,
+            "max_abs_deltaR": 0.002901872263085642
+          },
+          "held_nonfinite": 0
+        },
+        {
+          "complexity": 5,
+          "equation": "z / (Isetting + dep_model)",
+          "search_loss_candidate_scaled": 0.20376856601016435,
+          "training_original_deltaR": {
+            "n": 18,
+            "weighted_rmse_deltaR": 0.001654441464041296,
+            "rmse_deltaR": 0.013267065962630132,
+            "chi2": 37.582960215796845,
+            "max_abs_deltaR": 0.047830636212810224
+          },
+          "held_original_deltaR": {
+            "n": 6,
+            "weighted_rmse_deltaR": 0.0016922264239440034,
+            "rmse_deltaR": 0.001382486455764169,
+            "chi2": 60.231776174205145,
+            "max_abs_deltaR": 0.0021118568829327357
+          },
+          "held_nonfinite": 0
+        },
+        {
+          "complexity": 7,
+          "equation": "((z / Isetting) - z) * 1.3176356513748844",
+          "search_loss_candidate_scaled": 0.18661660361084628,
+          "training_original_deltaR": {
+            "n": 18,
+            "weighted_rmse_deltaR": 0.0015832808243083879,
+            "rmse_deltaR": 0.013097557269102313,
+            "chi2": 34.419461875016154,
+            "max_abs_deltaR": 0.04697975738212942
+          },
+          "held_original_deltaR": {
+            "n": 6,
+            "weighted_rmse_deltaR": 0.0014400907016850286,
+            "rmse_deltaR": 0.0011692503241384935,
+            "chi2": 43.62027691895412,
+            "max_abs_deltaR": 0.0018179212851550134
+          },
+          "held_nonfinite": 0
+        }
+      ],
+      "selection": "minimum TRAINING candidate-unit loss at complexity<=5, no held selection",
+      "features": "e=E/6.5; Isetting=source chart I/Iref; z=Z/46; prepared0/1; dep_model=deposition/ref; energy-linked, not independent controls",
+      "scale": "direct transformed \u0394R divided by fixed0.01; held scores invert to original \u0394R"
+    },
+    {
+      "reading": "k0",
+      "normalization": "deposited_J",
+      "split": "TiD",
+      "seed": 20261124,
+      "train_ids": [
+        "karahadian2026:fig2:Pd:0.25",
+        "karahadian2026:fig2:Pd:0.50",
+        "karahadian2026:fig2:Pd:1.00",
+        "karahadian2026:fig2:Pd:1.50",
+        "karahadian2026:fig2:Pd:2.00",
+        "karahadian2026:fig2:Pd:2.50",
+        "karahadian2026:fig2:PdD:0.25",
+        "karahadian2026:fig2:PdD:0.50",
+        "karahadian2026:fig2:PdD:1.00",
+        "karahadian2026:fig2:PdD:1.50",
+        "karahadian2026:fig2:PdD:2.00",
+        "karahadian2026:fig2:PdD:2.50",
+        "karahadian2026:fig2:Ti:0.25",
+        "karahadian2026:fig2:Ti:0.50",
+        "karahadian2026:fig2:Ti:1.00",
+        "karahadian2026:fig2:Ti:1.50",
+        "karahadian2026:fig2:Ti:2.00",
+        "karahadian2026:fig2:Ti:2.50"
+      ],
+      "held_ids": [
+        "karahadian2026:fig2:TiD:0.25",
+        "karahadian2026:fig2:TiD:0.50",
+        "karahadian2026:fig2:TiD:1.00",
+        "karahadian2026:fig2:TiD:1.50",
+        "karahadian2026:fig2:TiD:2.00",
+        "karahadian2026:fig2:TiD:2.50"
+      ],
+      "selected_complexity": 5,
+      "selected_equation": "z + (prepared - dep_model)",
+      "front": [
+        {
+          "complexity": 1,
+          "equation": "0.2741221097660643",
+          "search_loss_candidate_scaled": 0.1734887045567586,
+          "training_original_deltaR": {
+            "n": 18,
+            "weighted_rmse_deltaR": 0.0017821066516883798,
+            "rmse_deltaR": 0.015020762595311415,
+            "chi2": 73.96960757410524,
+            "max_abs_deltaR": 0.05038075830745682
+          },
+          "held_original_deltaR": {
+            "n": 6,
+            "weighted_rmse_deltaR": 0.0013221038600508064,
+            "rmse_deltaR": 0.0025379594662085993,
+            "chi2": 20.05439757331107,
+            "max_abs_deltaR": 0.004440758307456818
+          },
+          "held_nonfinite": 0
+        },
+        {
+          "complexity": 3,
+          "equation": "z * z",
+          "search_loss_candidate_scaled": 0.10571501970344895,
+          "training_original_deltaR": {
+            "n": 18,
+            "weighted_rmse_deltaR": 0.0013911259008708196,
+            "rmse_deltaR": 0.014097682895973683,
+            "chi2": 45.07324290726159,
+            "max_abs_deltaR": 0.05001204501358169
+          },
+          "held_original_deltaR": {
+            "n": 6,
+            "weighted_rmse_deltaR": 0.0014509185932078655,
+            "rmse_deltaR": 0.0026562016087386888,
+            "chi2": 24.152637672359923,
+            "max_abs_deltaR": 0.00446381369875876
+          },
+          "held_nonfinite": 0
+        },
+        {
+          "complexity": 5,
+          "equation": "z + (prepared - dep_model)",
+          "search_loss_candidate_scaled": 0.08005024148789847,
+          "training_original_deltaR": {
+            "n": 18,
+            "weighted_rmse_deltaR": 0.001210540746655181,
+            "rmse_deltaR": 0.013400376071499395,
+            "chi2": 34.13066553353045,
+            "max_abs_deltaR": 0.049519267572353205
+          },
+          "held_original_deltaR": {
+            "n": 6,
+            "weighted_rmse_deltaR": 0.0026008806451470376,
+            "rmse_deltaR": 0.002672146261191042,
+            "chi2": 77.61029239978632,
+            "max_abs_deltaR": 0.003844287565267109
+          },
+          "held_nonfinite": 0
+        },
+        {
+          "complexity": 7,
+          "equation": "(z + (prepared * 2.647610598266837)) - e",
+          "search_loss_candidate_scaled": 0.06033707701450573,
+          "training_original_deltaR": {
+            "n": 18,
+            "weighted_rmse_deltaR": 0.0010509697665170078,
+            "rmse_deltaR": 0.012493150430163903,
+            "chi2": 25.725651248213698,
+            "max_abs_deltaR": 0.048686714738344926
+          },
+          "held_original_deltaR": {
+            "n": 6,
+            "weighted_rmse_deltaR": 0.008421285309536492,
+            "rmse_deltaR": 0.008402553638339017,
+            "chi2": 813.6455184209456,
+            "max_abs_deltaR": 0.012122582487766272
+          },
+          "held_nonfinite": 0
+        }
+      ],
+      "selection": "minimum TRAINING candidate-unit loss at complexity<=5, no held selection",
+      "features": "e=E/6.5; Isetting=source chart I/Iref; z=Z/46; prepared0/1; dep_model=deposition/ref; energy-linked, not independent controls",
+      "scale": "direct transformed \u0394R divided by fixed0.01; held scores invert to original \u0394R"
+    }
+  ],
+  "score_unit": "original own6.5-relative \u0394R, not logarithmic",
+  "pysr_version": "2.7.2"
+}

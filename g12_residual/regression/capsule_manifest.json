@@ -1,0 +1,489 @@
+{
+  "format": "g12-regression-whitelist-v1",
+  "base_commit": "bf114e0874f2a01dc62505e7c7520cadf46fd20f",
+  "excludes": [
+    "provisional_preledger",
+    "pysr-work",
+    "logs",
+    "PDFs",
+    "underlying raw datasets",
+    "source-owner data partition"
+  ],
+  "files": [
+    {
+      "path": "g12_residual/regression/README.md",
+      "bytes": 39260,
+      "sha256": "6051d672314392a70971b8d71d2b920b56bc2265880c76f94807edd1b98d80bc"
+    },
+    {
+      "path": "g12_residual/regression/SI1_normalization_shapes.png",
+      "bytes": 213200,
+      "sha256": "880f0b3300c504c6afac9e90d8965b094e7423eb66ec9993585732807fba685b"
+    },
+    {
+      "path": "g12_residual/regression/SI1_normalization_summary.csv",
+      "bytes": 4687,
+      "sha256": "db0b6f633153df06b687310f0b4322eedb7799c232a5646269a67fe26c5dd4cd"
+    },
+    {
+      "path": "g12_residual/regression/SI1_normalizations.csv",
+      "bytes": 8417,
+      "sha256": "9ab66682b3379f7a625a1c42f27b13f899a5ac27f021ad4a1492625f4a8f550f"
+    },
+    {
+      "path": "g12_residual/regression/additive_fold_scores.csv",
+      "bytes": 27302,
+      "sha256": "2112cb5fd10c8102e6899554a07ee073a526feae48fbd61e0460202be67e0a54"
+    },
+    {
+      "path": "g12_residual/regression/additive_fronts.json",
+      "bytes": 143578,
+      "sha256": "e61095ea23751e7ee0c1b2547cd5f69554496c3c934139cddd917c0311298205"
+    },
+    {
+      "path": "g12_residual/regression/additive_fronts.png",
+      "bytes": 351070,
+      "sha256": "c0508a156bbe974ce9daeba7f7f463433e9f84e3990eab02fb69feedf04c79e7"
+    },
+    {
+      "path": "g12_residual/regression/additive_held_predictions.csv",
+      "bytes": 72218,
+      "sha256": "4d97f438c5c3783d22ee078cd885a66d5e67284c567804504eec3ba5d5755fad"
+    },
+    {
+      "path": "g12_residual/regression/additive_loaded_ratios.csv",
+      "bytes": 1980,
+      "sha256": "499d0c700403fffad0625da9e0ef3c589e6682e0282a78f7357a9b266111a370"
+    },
+    {
+      "path": "g12_residual/regression/additive_recurrence.csv",
+      "bytes": 5884,
+      "sha256": "7a7bd18f22b56f468c77c67f107d20e53901d16768f571b28c1ad13fbd399ff8"
+    },
+    {
+      "path": "g12_residual/regression/additive_rows.csv",
+      "bytes": 14526,
+      "sha256": "24f911911339cdbdb92e39930cc65862375f0315edc167fe1e204adcd86c8a16"
+    },
+    {
+      "path": "g12_residual/regression/additive_scatter.png",
+      "bytes": 270783,
+      "sha256": "6f53b6c1a5d31e07706ca7e35ef172673a2181ac5b83534cb3974b0307d933a5"
+    },
+    {
+      "path": "g12_residual/regression/additive_simple_baselines.json",
+      "bytes": 40529,
+      "sha256": "83e3fa20c21642beb29a88e9d25901b6ac48b55dc87cbeaf580bf569823cddd4"
+    },
+    {
+      "path": "g12_residual/regression/additive_summary.csv",
+      "bytes": 8821,
+      "sha256": "7267345124cfe944297ce7aae74af54689d95d65391d0aa9c2818d2d08aff157"
+    },
+    {
+      "path": "g12_residual/regression/analysis_rows.csv",
+      "bytes": 81748,
+      "sha256": "60fa1afae687375ad04e5f9ad90b671fec390f4cee75c97a0d290867111fa241"
+    },
+    {
+      "path": "g12_residual/regression/analyze.py",
+      "bytes": 80668,
+      "sha256": "f03146f65d78200a65d85dcd27a96f38bd481d1ba68fff67b4d341415a8430da"
+    },
+    {
+      "path": "g12_residual/regression/baseline_held_predictions.csv",
+      "bytes": 41056,
+      "sha256": "ddb5fa82f0a26f47b279db552d91ea2ee237e278465bbc181e7e0e2e0c56a8ce"
+    },
+    {
+      "path": "g12_residual/regression/complexity_scores.csv",
+      "bytes": 28558,
+      "sha256": "734e89b812e0137ca57334349b075b7cfa39969063f6f6d0fb6a3a4522947ed2"
+    },
+    {
+      "path": "g12_residual/regression/consumer_proof.json",
+      "bytes": 810,
+      "sha256": "12d811d60647dcad582ed05bb605fee59264ccaaaf3f54bc47b129e0499fa3b2"
+    },
+    {
+      "path": "g12_residual/regression/current_readings.png",
+      "bytes": 63143,
+      "sha256": "178a3b6faa59e53232b2ec7cd0b50b99b5a7d41b667024ba8266b13822fca9a0"
+    },
+    {
+      "path": "g12_residual/regression/davis_baseline.json",
+      "bytes": 25646,
+      "sha256": "bd6e2a2f8a819180c758ee1f78d1afb471cfa30613d012d63fc2f3174dd65f30"
+    },
+    {
+      "path": "g12_residual/regression/davis_forward.py",
+      "bytes": 24871,
+      "sha256": "3214a71d671a8fb11f326b0960e5be7b6087867bda81d6e64cd5472f80fa509d"
+    },
+    {
+      "path": "g12_residual/regression/davis_residuals.csv",
+      "bytes": 59644,
+      "sha256": "102f84f8bb979f90f91a69dc55985bcff8517902293fada9835926da77cfc2c3"
+    },
+    {
+      "path": "g12_residual/regression/denominator_diagnostic.csv",
+      "bytes": 902,
+      "sha256": "cc966548c3ba861004b2556df39b68cf34252011effd6436c44bf74b31083aed"
+    },
+    {
+      "path": "g12_residual/regression/denominator_shape.csv",
+      "bytes": 6380,
+      "sha256": "3106eee823378e00989d8e7fe8befa3e5aa9d421208967b80cc05476287d0f73"
+    },
+    {
+      "path": "g12_residual/regression/denominator_shape.png",
+      "bytes": 107081,
+      "sha256": "6963c267fe600c729b0af476c5edff5c194b72de5a32d3eebc0a4d2158889d30"
+    },
+    {
+      "path": "g12_residual/regression/deposition.csv",
+      "bytes": 6653,
+      "sha256": "7ac8ad092f56974c10b5bc60e02924d5dac35023e6a801d7ae01e9f77bbe9fb5"
+    },
+    {
+      "path": "g12_residual/regression/deposition_provenance.json",
+      "bytes": 742,
+      "sha256": "798ebc633140fe5b35ec469b82278eb69a0b7430ce427c6da31d6415ac2fab9d"
+    },
+    {
+      "path": "g12_residual/regression/energy_alias_audit.csv",
+      "bytes": 6917,
+      "sha256": "17db6754efa1dca94c73e62894da0cd2de7ff905d5c0c59997467b70902c9955"
+    },
+    {
+      "path": "g12_residual/regression/expression_recurrence.csv",
+      "bytes": 5672,
+      "sha256": "b047892b74f4dc365c42a7b66e6d60054fbc1a9c0190ee92c0a514cdfef9d2f2"
+    },
+    {
+      "path": "g12_residual/regression/external_added_summary.csv",
+      "bytes": 47215,
+      "sha256": "c340b0ae31d75c634a76a82f3d6519002c6f77cc95182d927b66cfb518e9906d"
+    },
+    {
+      "path": "g12_residual/regression/external_added_terms.csv",
+      "bytes": 958936,
+      "sha256": "0eb0cd28b3742bd3f0a1489cd2237b436df0e9015bd4de3df8efc3bfc0646b38"
+    },
+    {
+      "path": "g12_residual/regression/external_input.json",
+      "bytes": 652,
+      "sha256": "404044e6a6f59fb31e02af01770938a67cd7f10e0bf4ba8f1d8c9b3db07d1972"
+    },
+    {
+      "path": "g12_residual/regression/external_residuals.csv",
+      "bytes": 2488608,
+      "sha256": "4da5eb55e6b468aa2ee71f4b2be046978690489636fe629a8d88d9b4c3e3f805"
+    },
+    {
+      "path": "g12_residual/regression/external_support_grid.csv",
+      "bytes": 21406,
+      "sha256": "5d3b4ed023da590c43e0ff35a958052e73cff792136e6d30d806b85cdd169523"
+    },
+    {
+      "path": "g12_residual/regression/feature_inventory.csv",
+      "bytes": 4491,
+      "sha256": "24f9d9fb0dc88da043178bbe4ef6850b7b44006653e177d5716b53799a771211"
+    },
+    {
+      "path": "g12_residual/regression/foil_support.csv",
+      "bytes": 679,
+      "sha256": "2bc841c5176e5e7258c7d9624d93f394afc062390e59c486a2e84d1387352c1c"
+    },
+    {
+      "path": "g12_residual/regression/held_observed_reconstruction.png",
+      "bytes": 260434,
+      "sha256": "3a4951d5ca2cb82e093c484da711da8ac1d5f83b21d5cbd0d6858352b5bb808c"
+    },
+    {
+      "path": "g12_residual/regression/held_predictions.csv",
+      "bytes": 241353,
+      "sha256": "3d487d8a6487d01da4ea29bdf7a3bc7f7ec6cf61e75de46a389bba7685936b2b"
+    },
+    {
+      "path": "g12_residual/regression/independent_interventions.csv",
+      "bytes": 639,
+      "sha256": "0baa2e24ecbb46a53eeab5ca9ef1a7827fd949c63609bd60e4723a2feeeb59d3"
+    },
+    {
+      "path": "g12_residual/regression/independent_observables.png",
+      "bytes": 180678,
+      "sha256": "d818d719457ecf77b606542f38dc5a3168b5534b168d0d38e9ddd61cb0a94604"
+    },
+    {
+      "path": "g12_residual/regression/inputs_ledger.md",
+      "bytes": 11808,
+      "sha256": "120f99b3cb3b252c940e546436e82bee9546fb8608a69e2b097efd2aa9352ab9"
+    },
+    {
+      "path": "g12_residual/regression/k1/SI1_normalization_shapes.png",
+      "bytes": 213200,
+      "sha256": "880f0b3300c504c6afac9e90d8965b094e7423eb66ec9993585732807fba685b"
+    },
+    {
+      "path": "g12_residual/regression/k1/SI1_normalization_summary.csv",
+      "bytes": 4687,
+      "sha256": "db0b6f633153df06b687310f0b4322eedb7799c232a5646269a67fe26c5dd4cd"
+    },
+    {
+      "path": "g12_residual/regression/k1/SI1_normalizations.csv",
+      "bytes": 8417,
+      "sha256": "9ab66682b3379f7a625a1c42f27b13f899a5ac27f021ad4a1492625f4a8f550f"
+    },
+    {
+      "path": "g12_residual/regression/k1/additive_fold_scores.csv",
+      "bytes": 27587,
+      "sha256": "b0ae7db9949df70266706da3ce7d93bdd143156cc411bc8c3c367ce5f50d9440"
+    },
+    {
+      "path": "g12_residual/regression/k1/additive_fronts.json",
+      "bytes": 143843,
+      "sha256": "e305d7f36fcf43008f587132db02daff68a808526901b50ba434c962a08ec0ec"
+    },
+    {
+      "path": "g12_residual/regression/k1/additive_fronts.png",
+      "bytes": 368904,
+      "sha256": "5bdcfd1dbf5756bc11af1842d848845c067650e3814d2a9f86c33452fe862c01"
+    },
+    {
+      "path": "g12_residual/regression/k1/additive_held_predictions.csv",
+      "bytes": 74216,
+      "sha256": "1bd9db13dc56c46dfc8856aab6555c24ed6f36416d678e29d4e87ad0e8583f0b"
+    },
+    {
+      "path": "g12_residual/regression/k1/additive_loaded_ratios.csv",
+      "bytes": 1986,
+      "sha256": "cdde57fb1bfb64a13e000493e1a32636d9ebf5db3aac82883d39a81024153434"
+    },
+    {
+      "path": "g12_residual/regression/k1/additive_recurrence.csv",
+      "bytes": 5804,
+      "sha256": "3fe618f3e425fbd8463fd756bb3826f29e7a417271003c0d3dfbef4c2c0bc98c"
+    },
+    {
+      "path": "g12_residual/regression/k1/additive_rows.csv",
+      "bytes": 14702,
+      "sha256": "5beecd226e4b7891cff08ab1182a9a12d17fbfebb1b7ab1d6285edeb994764f7"
+    },
+    {
+      "path": "g12_residual/regression/k1/additive_scatter.png",
+      "bytes": 211969,
+      "sha256": "b9870b62bb62becee69e8ae43ac7eeb975a20e50deaef604f2d35cfd0d178aa9"
+    },
+    {
+      "path": "g12_residual/regression/k1/additive_simple_baselines.json",
+      "bytes": 40545,
+      "sha256": "444fa9c520ab4027e40b7da81018112432822218a9e4d77f02d80ee09dff884f"
+    },
+    {
+      "path": "g12_residual/regression/k1/additive_summary.csv",
+      "bytes": 8933,
+      "sha256": "985ac50b8749c4ed5341c49ba18d38ad7ebf9a1571420b372e38aa025496ec1f"
+    },
+    {
+      "path": "g12_residual/regression/k1/analysis_rows.csv",
+      "bytes": 83708,
+      "sha256": "ca9e755db2fbfca5d50a7f7a224e3192d55818e1cac92045825b9872f258a685"
+    },
+    {
+      "path": "g12_residual/regression/k1/baseline_held_predictions.csv",
+      "bytes": 41097,
+      "sha256": "c039f153ac0b1fa92f1726a85cb28ecbf08274b3a7839fafdce39b01b2a2c40f"
+    },
+    {
+      "path": "g12_residual/regression/k1/complexity_scores.csv",
+      "bytes": 26207,
+      "sha256": "56bb36289a698c37fcd05a3f06bae440ad5c3a2b87aa6d3ff57bf499935eee44"
+    },
+    {
+      "path": "g12_residual/regression/k1/consumer_proof.json",
+      "bytes": 810,
+      "sha256": "12d811d60647dcad582ed05bb605fee59264ccaaaf3f54bc47b129e0499fa3b2"
+    },
+    {
+      "path": "g12_residual/regression/k1/current_readings.png",
+      "bytes": 63143,
+      "sha256": "178a3b6faa59e53232b2ec7cd0b50b99b5a7d41b667024ba8266b13822fca9a0"
+    },
+    {
+      "path": "g12_residual/regression/k1/denominator_diagnostic.csv",
+      "bytes": 902,
+      "sha256": "9edfb6525220f86b986c6ded67d6e580c6a29ea35d2fe09edf4d298069e6b4ae"
+    },
+    {
+      "path": "g12_residual/regression/k1/denominator_shape.csv",
+      "bytes": 5682,
+      "sha256": "cc288382599e3b91e9ac961421597f434d15bc717d85d7a32cc1e7e26ae7bda7"
+    },
+    {
+      "path": "g12_residual/regression/k1/denominator_shape.png",
+      "bytes": 109724,
+      "sha256": "cae237560161c926a59bbd3ac52a2cd177012ef5945128026afddfd2b3cb6584"
+    },
+    {
+      "path": "g12_residual/regression/k1/energy_alias_audit.csv",
+      "bytes": 6917,
+      "sha256": "17db6754efa1dca94c73e62894da0cd2de7ff905d5c0c59997467b70902c9955"
+    },
+    {
+      "path": "g12_residual/regression/k1/expression_recurrence.csv",
+      "bytes": 5640,
+      "sha256": "e1a9d20f97e81ccdc64411b8bed17e696ef80a9eca9ba82156442b9114b80764"
+    },
+    {
+      "path": "g12_residual/regression/k1/feature_inventory.csv",
+      "bytes": 4491,
+      "sha256": "24f9d9fb0dc88da043178bbe4ef6850b7b44006653e177d5716b53799a771211"
+    },
+    {
+      "path": "g12_residual/regression/k1/foil_support.csv",
+      "bytes": 679,
+      "sha256": "2bc841c5176e5e7258c7d9624d93f394afc062390e59c486a2e84d1387352c1c"
+    },
+    {
+      "path": "g12_residual/regression/k1/held_observed_reconstruction.png",
+      "bytes": 263536,
+      "sha256": "fad87701c3b6d8fc1e6d15d8d643f40589dfc66317db2f872f8a0d419393bb51"
+    },
+    {
+      "path": "g12_residual/regression/k1/held_predictions.csv",
+      "bytes": 225203,
+      "sha256": "7452a86b49e89b575a5e0faca09d0c8acc1a4d7d9d9c10c196104d50323a78e0"
+    },
+    {
+      "path": "g12_residual/regression/k1/laboratory_shape_stress.json",
+      "bytes": 11477,
+      "sha256": "b42d8e127582fd0c74f1b83fac9a9cc94c624c2731e126b652208f25dda5722e"
+    },
+    {
+      "path": "g12_residual/regression/k1/measured_model_overlay.png",
+      "bytes": 144749,
+      "sha256": "2639602bb97a4fe43b12a99c71982287c2720c92ced2b56af55120c4c1ba90b3"
+    },
+    {
+      "path": "g12_residual/regression/k1/model_sensitivity_summary.csv",
+      "bytes": 917,
+      "sha256": "2f570388428e37e66052ce2e9882730e0aeb174d0d446f3a7d4cb89eced2099c"
+    },
+    {
+      "path": "g12_residual/regression/k1/pareto_fronts.png",
+      "bytes": 153070,
+      "sha256": "3ab93c61210357c9ced8e435b56529a090caefb090a3bb3726c290833f22e664"
+    },
+    {
+      "path": "g12_residual/regression/k1/profile_policy_step.csv",
+      "bytes": 13335,
+      "sha256": "9ca629a48886e3296a59885700299a0f820584c9b8a167e314e0b68d99d19ce8"
+    },
+    {
+      "path": "g12_residual/regression/k1/profile_policy_step.png",
+      "bytes": 258058,
+      "sha256": "116bfd988a87ae98e28bba9c2b3862a7b6124795b238022f9ab796a703674d6d"
+    },
+    {
+      "path": "g12_residual/regression/k1/pysr_fronts.json",
+      "bytes": 251999,
+      "sha256": "34f9140a92a48a9489c30e650cc8472e34cc8ec1029c4fe5b872a131188418ff"
+    },
+    {
+      "path": "g12_residual/regression/k1/raw_covariates.png",
+      "bytes": 1173108,
+      "sha256": "a25e0636ea12986e44c1ffe63a613b98cf0bc002bfa2975a6e3ef03fa50f6297"
+    },
+    {
+      "path": "g12_residual/regression/k1/readout_sensitivity.csv",
+      "bytes": 5901,
+      "sha256": "ff5a0d59d7a7faa854aa04cbecfc3ad0235671a76850956f0f7821c2ab8266f6"
+    },
+    {
+      "path": "g12_residual/regression/k1/residual_by_foil.png",
+      "bytes": 81529,
+      "sha256": "87a2444a135e2c7f61d9c6fa3a306b43fd0c58971f050042bd1c5f2d37d3106f"
+    },
+    {
+      "path": "g12_residual/regression/k1/same_energy_contrasts.csv",
+      "bytes": 3321,
+      "sha256": "6b1a2d2ad0c8a54c72c0791467b620fe9a26dedf30cbe56ce26493bc40b144fb"
+    },
+    {
+      "path": "g12_residual/regression/k1/simple_baselines.json",
+      "bytes": 13477,
+      "sha256": "bab8247d431ffa0bea629e8d12a36a3ed155ffd6f78fb25a0fe4850a238b00f9"
+    },
+    {
+      "path": "g12_residual/regression/k1/split_support.csv",
+      "bytes": 16141,
+      "sha256": "2766334d3179c5cb171d3c324edd09e3d0f9caf9daa889bdeed43407fd58778d"
+    },
+    {
+      "path": "g12_residual/regression/laboratory_shape_stress.json",
+      "bytes": 11846,
+      "sha256": "e88977090770421b764a7159db13e48b23db64dc948a309a41f7e6a550e36c51"
+    },
+    {
+      "path": "g12_residual/regression/measured_model_overlay.png",
+      "bytes": 139481,
+      "sha256": "0bf4ee613abb0952438af3ded23d9f06aa89e46cbe5c16461d05a0e06fba6f61"
+    },
+    {
+      "path": "g12_residual/regression/model_sensitivity_summary.csv",
+      "bytes": 917,
+      "sha256": "2f570388428e37e66052ce2e9882730e0aeb174d0d446f3a7d4cb89eced2099c"
+    },
+    {
+      "path": "g12_residual/regression/pareto_fronts.png",
+      "bytes": 162390,
+      "sha256": "56581c41b0e5b764b88bdeae86895f665ad98794c74ebcb0afc7f544d1387f95"
+    },
+    {
+      "path": "g12_residual/regression/profile_policy_step.csv",
+      "bytes": 13333,
+      "sha256": "a8515f99acce47decc75f5a4f0250bea5825c0f50ce5d7e88bac4001b48a1fa1"
+    },
+    {
+      "path": "g12_residual/regression/profile_policy_step.png",
+      "bytes": 250166,
+      "sha256": "1cc3379fb8fd9e6bdaf405b39781220bccd9c231a39c02b0374926b9458e0f69"
+    },
+    {
+      "path": "g12_residual/regression/pysr_fronts.json",
+      "bytes": 267546,
+      "sha256": "d81474227b86091e3aaa6028167a1c52b39a54cbd88220e28bdd4db8a754a933"
+    },
+    {
+      "path": "g12_residual/regression/raw_covariates.png",
+      "bytes": 1111486,
+      "sha256": "3ab1f3a8e743023135535c33e457908a0f64ad0d4bee74aff7144131a5216fa5"
+    },
+    {
+      "path": "g12_residual/regression/readout_sensitivity.csv",
+      "bytes": 5901,
+      "sha256": "ff5a0d59d7a7faa854aa04cbecfc3ad0235671a76850956f0f7821c2ab8266f6"
+    },
+    {
+      "path": "g12_residual/regression/residual_by_foil.png",
+      "bytes": 80305,
+      "sha256": "1f6a59a8897ceea19fe541975a1bf2805b25caca0e8f724444e5be63228b43ed"
+    },
+    {
+      "path": "g12_residual/regression/same_energy_contrasts.csv",
+      "bytes": 3320,
+      "sha256": "81b89c7ef11142e75d74306bd190c61286d7fc2a637bf4aa27f158b0847c93f6"
+    },
+    {
+      "path": "g12_residual/regression/simple_baselines.json",
+      "bytes": 13485,
+      "sha256": "07fe0855290206a4b23d96ee92d949a9f62329007930d31d7299ab56d227806e"
+    },
+    {
+      "path": "g12_residual/regression/split_support.csv",
+      "bytes": 16141,
+      "sha256": "2766334d3179c5cb171d3c324edd09e3d0f9caf9daa889bdeed43407fd58778d"
+    }
+  ]
+}

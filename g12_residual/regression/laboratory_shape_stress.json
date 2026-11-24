@@ -1,0 +1,351 @@
+{
+  "status": "conditional domain-transfer stress only",
+  "differences": "adjacent-energy log-residual differences within overlap, cancel own-reference level; no held-lab intercept fitted",
+  "limitations": "Ti only; proton numerator; Davis n6.5 vs Yuki p3.225 reference; fixed transported vs homogeneous x2/changed stopping; adjacent differences dependent, no significance",
+  "runs": [
+    {
+      "training_lab": "UC Davis",
+      "held_lab": "Tohoku",
+      "train_ids": [
+        "karahadian2026:fig2:Ti:0.25",
+        "karahadian2026:fig2:Ti:0.50",
+        "karahadian2026:fig2:Ti:1.00",
+        "karahadian2026:fig2:Ti:1.50",
+        "karahadian2026:fig2:Ti:2.00",
+        "karahadian2026:fig2:Ti:2.50",
+        "karahadian2026:fig2:Ti:3.00",
+        "karahadian2026:fig2:Ti:3.50",
+        "karahadian2026:fig2:Ti:4.00"
+      ],
+      "held_ids": [
+        "exfor:O1084003:001",
+        "exfor:O1084003:002",
+        "exfor:O1084003:003",
+        "exfor:O1084003:004",
+        "exfor:O1084003:005",
+        "exfor:O1084003:006",
+        "exfor:O1084003:007",
+        "exfor:O1084003:008",
+        "exfor:O1084003:009",
+        "exfor:O1084003:010",
+        "exfor:O1084003:011",
+        "exfor:O1084003:012",
+        "exfor:O1084003:013",
+        "exfor:O1084003:014",
+        "exfor:O1084003:015",
+        "exfor:O1084003:016",
+        "exfor:O1084003:017",
+        "exfor:O1084003:018",
+        "exfor:O1084003:019"
+      ],
+      "training_weight_status": "published plot-uncertainty weights",
+      "feature": "e=E_cm/(6.5keV); no yield/denominator input",
+      "front": [
+        {
+          "complexity": 1,
+          "equation": "2.100152781068004",
+          "search_loss": 29.052943822386233,
+          "held_shape": {
+            "supported_rows": 19,
+            "adjacent_differences": 18,
+            "adjacent_difference_rmse_log": 0.14371148782142268,
+            "nonfinite_predictions": 0
+          }
+        },
+        {
+          "complexity": 3,
+          "equation": "1.3756155937848917 / e",
+          "search_loss": 3.860917737569837,
+          "held_shape": {
+            "supported_rows": 19,
+            "adjacent_differences": 18,
+            "adjacent_difference_rmse_log": 0.30319059039941454,
+            "nonfinite_predictions": 0
+          }
+        },
+        {
+          "complexity": 5,
+          "equation": "(1.748749346968695 / e) + -2.313014596648767",
+          "search_loss": 0.6889206741385815,
+          "held_shape": {
+            "supported_rows": 19,
+            "adjacent_differences": 18,
+            "adjacent_difference_rmse_log": 0.3691562883474934,
+            "nonfinite_predictions": 0
+          }
+        },
+        {
+          "complexity": 6,
+          "equation": "log(e) / (-0.04053661812976687 - e)",
+          "search_loss": 0.4006035151901376,
+          "held_shape": {
+            "supported_rows": 19,
+            "adjacent_differences": 18,
+            "adjacent_difference_rmse_log": 0.39049268383577906,
+            "nonfinite_predictions": 0
+          }
+        },
+        {
+          "complexity": 7,
+          "equation": "(-2.3585562289505106 / (-0.015154522006164607 - e)) - 3.395822311970215",
+          "search_loss": 0.3853836642011718,
+          "held_shape": {
+            "supported_rows": 19,
+            "adjacent_differences": 18,
+            "adjacent_difference_rmse_log": 0.43328848782393997,
+            "nonfinite_predictions": 0
+          }
+        },
+        {
+          "complexity": 8,
+          "equation": "(log(e) / (-0.039896574913830675 - e)) + -0.18951970448245425",
+          "search_loss": 0.3662810510260994,
+          "held_shape": {
+            "supported_rows": 19,
+            "adjacent_differences": 18,
+            "adjacent_difference_rmse_log": 0.39165671322763,
+            "nonfinite_predictions": 0
+          }
+        },
+        {
+          "complexity": 9,
+          "equation": "log(e) / (log(1.2187309338852041 - e) - 0.2457084980024684)",
+          "search_loss": 0.2618822906525043,
+          "held_shape": {
+            "supported_rows": 19,
+            "adjacent_differences": 18,
+            "adjacent_difference_rmse_log": 0.42118284225201075,
+            "nonfinite_predictions": 0
+          }
+        },
+        {
+          "complexity": 10,
+          "equation": "(log(e) - -0.30573803858136084) / ((-0.07286111744156865 - e) / 1.5285493847311735)",
+          "search_loss": 0.22674905111383126,
+          "held_shape": {
+            "supported_rows": 19,
+            "adjacent_differences": 18,
+            "adjacent_difference_rmse_log": 0.4420370731009813,
+            "nonfinite_predictions": 0
+          }
+        },
+        {
+          "complexity": 11,
+          "equation": "(log(e) / (log(1.3356550785031587 - e) - 0.3401040555567649)) - 0.28944556592489035",
+          "search_loss": 0.21660356972670047,
+          "held_shape": {
+            "supported_rows": 19,
+            "adjacent_differences": 18,
+            "adjacent_difference_rmse_log": 0.440672266470716,
+            "nonfinite_predictions": 0
+          }
+        }
+      ],
+      "selected_complexity": 9,
+      "selected_equation": "log(e) / (log(1.2187309338852041 - e) - 0.2457084980024684)",
+      "selection": "training loss only at complexity<=9",
+      "simple_baselines": [
+        {
+          "model": "energy_q_degree0",
+          "held_shape": {
+            "supported_rows": 19,
+            "adjacent_differences": 18,
+            "adjacent_difference_rmse_log": 0.14371148782142268,
+            "nonfinite_predictions": 0
+          }
+        },
+        {
+          "model": "energy_q_degree1",
+          "held_shape": {
+            "supported_rows": 19,
+            "adjacent_differences": 18,
+            "adjacent_difference_rmse_log": 0.4970071386577153,
+            "nonfinite_predictions": 0
+          }
+        },
+        {
+          "model": "energy_q_degree2",
+          "held_shape": {
+            "supported_rows": 19,
+            "adjacent_differences": 18,
+            "adjacent_difference_rmse_log": 0.4161334359941918,
+            "nonfinite_predictions": 0
+          }
+        }
+      ],
+      "supported_held_ids": [
+        "exfor:O1084003:001",
+        "exfor:O1084003:002",
+        "exfor:O1084003:003",
+        "exfor:O1084003:004",
+        "exfor:O1084003:005",
+        "exfor:O1084003:006",
+        "exfor:O1084003:007",
+        "exfor:O1084003:008",
+        "exfor:O1084003:009",
+        "exfor:O1084003:010",
+        "exfor:O1084003:011",
+        "exfor:O1084003:012",
+        "exfor:O1084003:013",
+        "exfor:O1084003:014",
+        "exfor:O1084003:015",
+        "exfor:O1084003:016",
+        "exfor:O1084003:017",
+        "exfor:O1084003:018",
+        "exfor:O1084003:019"
+      ],
+      "excluded_held_ids": []
+    },
+    {
+      "training_lab": "Tohoku",
+      "held_lab": "UC Davis",
+      "train_ids": [
+        "exfor:O1084003:001",
+        "exfor:O1084003:002",
+        "exfor:O1084003:003",
+        "exfor:O1084003:004",
+        "exfor:O1084003:005",
+        "exfor:O1084003:006",
+        "exfor:O1084003:007",
+        "exfor:O1084003:008",
+        "exfor:O1084003:009",
+        "exfor:O1084003:010",
+        "exfor:O1084003:011",
+        "exfor:O1084003:012",
+        "exfor:O1084003:013",
+        "exfor:O1084003:014",
+        "exfor:O1084003:015",
+        "exfor:O1084003:016",
+        "exfor:O1084003:017",
+        "exfor:O1084003:018",
+        "exfor:O1084003:019"
+      ],
+      "held_ids": [
+        "karahadian2026:fig2:Ti:0.25",
+        "karahadian2026:fig2:Ti:0.50",
+        "karahadian2026:fig2:Ti:1.00",
+        "karahadian2026:fig2:Ti:1.50",
+        "karahadian2026:fig2:Ti:2.00",
+        "karahadian2026:fig2:Ti:2.50",
+        "karahadian2026:fig2:Ti:3.00",
+        "karahadian2026:fig2:Ti:3.50",
+        "karahadian2026:fig2:Ti:4.00"
+      ],
+      "training_weight_status": "unit optimization weights only; most source errors unpublished, no uncertainty imputed",
+      "feature": "e=E_cm/(6.5keV); no yield/denominator input",
+      "front": [
+        {
+          "complexity": 1,
+          "equation": "-0.126249621506017",
+          "search_loss": 0.010478167741376956,
+          "held_shape": {
+            "supported_rows": 4,
+            "adjacent_differences": 3,
+            "adjacent_difference_rmse_log": 2.3077967348159523,
+            "nonfinite_predictions": 0
+          }
+        },
+        {
+          "complexity": 3,
+          "equation": "-0.041244762057746145 / e",
+          "search_loss": 0.008492873034943494,
+          "held_shape": {
+            "supported_rows": 4,
+            "adjacent_differences": 3,
+            "adjacent_difference_rmse_log": 2.337514022382203,
+            "nonfinite_predictions": 0
+          }
+        },
+        {
+          "complexity": 6,
+          "equation": "(log(e) + 0.3680494233797483) * 0.1710763626918884",
+          "search_loss": 0.008472011142692432,
+          "held_shape": {
+            "supported_rows": 4,
+            "adjacent_differences": 3,
+            "adjacent_difference_rmse_log": 2.3423957076804105,
+            "nonfinite_predictions": 0
+          }
+        },
+        {
+          "complexity": 8,
+          "equation": "((log(e) + 0.30214367562783634) * 0.17107637796677183) - -0.011274927489308586",
+          "search_loss": 0.008472011142692417,
+          "held_shape": {
+            "supported_rows": 4,
+            "adjacent_differences": 3,
+            "adjacent_difference_rmse_log": 2.3423957107776583,
+            "nonfinite_predictions": 0
+          }
+        },
+        {
+          "complexity": 9,
+          "equation": "-0.6673776342993926 - (e * (-2.817215312584984 - (e * -3.4015925494164607)))",
+          "search_loss": 0.008150559420901357,
+          "held_shape": {
+            "supported_rows": 4,
+            "adjacent_differences": 3,
+            "adjacent_difference_rmse_log": 2.3558897563281507,
+            "nonfinite_predictions": 0
+          }
+        },
+        {
+          "complexity": 11,
+          "equation": "-0.5621256554354113 - (e * (-1.755926302373357 - (e * (e * -3.4763213488844387))))",
+          "search_loss": 0.008106984075369238,
+          "held_shape": {
+            "supported_rows": 4,
+            "adjacent_differences": 3,
+            "adjacent_difference_rmse_log": 2.3568282292639626,
+            "nonfinite_predictions": 0
+          }
+        }
+      ],
+      "selected_complexity": 9,
+      "selected_equation": "-0.6673776342993926 - (e * (-2.817215312584984 - (e * -3.4015925494164607)))",
+      "selection": "training loss only at complexity<=9",
+      "simple_baselines": [
+        {
+          "model": "energy_q_degree0",
+          "held_shape": {
+            "supported_rows": 4,
+            "adjacent_differences": 3,
+            "adjacent_difference_rmse_log": 2.3077967348159523,
+            "nonfinite_predictions": 0
+          }
+        },
+        {
+          "model": "energy_q_degree1",
+          "held_shape": {
+            "supported_rows": 4,
+            "adjacent_differences": 3,
+            "adjacent_difference_rmse_log": 2.3446236198671464,
+            "nonfinite_predictions": 0
+          }
+        },
+        {
+          "model": "energy_q_degree2",
+          "held_shape": {
+            "supported_rows": 4,
+            "adjacent_differences": 3,
+            "adjacent_difference_rmse_log": 2.3485573663277983,
+            "nonfinite_predictions": 0
+          }
+        }
+      ],
+      "supported_held_ids": [
+        "karahadian2026:fig2:Ti:1.50",
+        "karahadian2026:fig2:Ti:2.00",
+        "karahadian2026:fig2:Ti:2.50",
+        "karahadian2026:fig2:Ti:3.00"
+      ],
+      "excluded_held_ids": [
+        "karahadian2026:fig2:Ti:0.25",
+        "karahadian2026:fig2:Ti:0.50",
+        "karahadian2026:fig2:Ti:1.00",
+        "karahadian2026:fig2:Ti:3.50",
+        "karahadian2026:fig2:Ti:4.00"
+      ]
+    }
+  ]
+}

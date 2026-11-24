@@ -1,0 +1,556 @@
+{
+  "baseline_id": "g12_davis_fixed_smooth40_ordinary_thermal_formed_sheet_no_join_k0",
+  "input_commit": "bf114e0874f2a01dc62505e7c7520cadf46fd20f",
+  "source_sha256": {
+    "g4_beam/forward/errbars.csv": "6bb66867c8b899b66447831a193c173aa85575cf0f7f9e69d1bb8158b534f62c",
+    "g4_beam/merit/profiles.json": "e2e91077595de602b815ae86f45c1a675d6a553153272d0e1295b72e2a5a9943",
+    "g4_beam/forward/consumer.py": "d8c154adecf4a82120e05548bd016bdc5d2dd2bcd49f566f6273f8d866defc27",
+    "g4_beam/forward/model.py": "76604acd39c1e47995a1290281e737076e8c01235a706e93c20be37fb4d1e84b",
+    "g4_beam/forward/profile_thermal.py": "e81574b3a56499a3d651a19aeb45722d022f1883ae727ffcc96881370019b07c",
+    "g4_beam/merit/api.py": "1b77432a6db9fcdeb4d6cf2bb673dc88a5485a10a7b488628c3de52f9f4e6156",
+    "g7_micro/analyze.py": "ef1164a6a30377482dfe6f59f72ff9a9b15f595031a70c4e4b36c7fbb80f2628",
+    "g8_why/common.py": "00ce55ad546191d9db198a09236d5691674ce525ebdc98faa678c24dec82de42",
+    "g8_why/reaction.py": "1270749a14dc43c57717754a77585877af11d9c53742af905d90c483ef1b759e",
+    "g8_why/reaction_source_notes.md": "04f62128f6c0c0cd9060a6c1ceae68ff51f628a79f6bd072fe2697cf59ed4985",
+    "g8_why/driven_target.py": "6b2badb544bb999ab4f43f879d2836016eb21f3bb933d85ad4bd3f2473e6b447",
+    "g8_why/driven_target.md": "ecc26b06c81082b9785fb440c72da0c9dfc6375faba91787b90e87099c09cc8b",
+    "g8_why/beam.md": "9905f82a2a3c405a1d2915d2da23dc1534a6d5abe8c23aed705c276e53093130",
+    "g10_quantum_site/replay.md": "fcd54f9ae07b05a17721ae791e49d8c645bb5d7d43d3c8d0e7c77a915370307b",
+    "g9_edge/output/yields.csv": "23a4b04c2535164ffa39b5a0dbdc028aaa196d1744101feb9fedd13d52da713f",
+    "g9_edge/output/sensitivity.csv": "859e6b64670c91798e4f40140903c8dd2d63ac7cf301ab40f2907e32729ec673",
+    "g9_edge/replay.md": "2d5350e8c84b3b7ff38e938b355ec305e7d6b28144b96e15591baa2b038c7a82",
+    "g9_edge/first_principles/README.md": "abd7e37cd406b12021ba049520c17e0f97db25821d7565eceb6a44fce945b4ae",
+    "g8_why/baseline.csv": "90060361b7fbb21a6688c2bbf5801e813f8ee569b12c00fdd79df0fe8e85c4f0",
+    "g8_why/reaction_retained.csv": "092a5c7dc9b6e4eedcf01c1d265259a559b81423a4d79edd1f557e696675562f",
+    "g8_why/driven_target_floats.csv": "e94ab45932d9ea96ca29f458051eeba4960becafaea259828e78b8ecb684ac60"
+  },
+  "producer_sha256": "3214a71d671a8fb11f326b0960e5be7b6087867bda81d6e64cd5472f80fa509d",
+  "observed": {
+    "citation": "https://doi.org/10.1038/s41467-026-74421-1",
+    "source": "g4_beam/forward/errbars.csv",
+    "kind": "dimensionless Fig. 2 relative yield as plotted (k0), not raw counts/C or S(E)",
+    "sigma_linear": "source digitized mean symmetric half-width, copied to sigma_minus and sigma_plus",
+    "sigma_log_residual": "source sigma_lnR: digitized relative bars, first-order log scale; observed only",
+    "shared_reference": "one nuisance per foil; uncertainties of individual points and reference not separable from the published digitization; covariance/magnitude unknown, do not add a fabricated common variance",
+    "missing_keys": [
+      "PdD:6.00",
+      "TiD:3.50",
+      "TiD:4.00",
+      "TiD:5.50"
+    ],
+    "run_id": "not published for these figure rows; row_id is a digitization ID, not a run join"
+  },
+  "transport": {
+    "source": "g4_beam/merit/profiles.json",
+    "profile_key": [
+      "material/condition",
+      "exact nominal CM energy"
+    ],
+    "reactions_unit": "reactions per true charged coulomb",
+    "current_fractions": {
+      "D+": 0.85,
+      "D2+": 0.15,
+      "D3+": 0.0
+    },
+    "species_atoms_per_charge": 1.15,
+    "relative_energy_FWHM": 0.05,
+    "spread_hermite_nodes": 5,
+    "csda_legendre_nodes_per_interval": 12,
+    "lab_cutoff_keV": 0.1,
+    "static_screening_keV": 0.04,
+    "screening_radial_form": "Eq. 7 constant energy-shift approximation, not a resolved radial V(r)",
+    "nominal_exposure": "12 h for E_cm <= 2.0 keV; 2 h above; 1 h preload on loaded foils. Same saved profile throughout; discrete denominator change across 2.0\u21922.5 also includes energy effects, not an isolated time effect.",
+    "sheet": "stored adsorbed-D column included once at each incident quadrature energy",
+    "high_energy_neutrals": "not adopted: G8 tail sensitivities are not an established Davis beam component"
+  },
+  "normalization": {
+    "channel": "proton at E<=4.0, neutron at E>=4.5; observed keys only",
+    "join": "Primary p and n multipliers are both 1: no p/n amplitude imposed. Sensitivity only: multiply p by the same foil smooth40 raw n/p at 4.5 keV, n unchanged. No same-Davis fitted stitch.",
+    "focus": "g4 collected_fraction(E,1,0), divide numerator and denominator each once; is a retained focusing convention, not measured detector acceptance",
+    "reference": "same foil 6.5 keV n, with same baseline/variant as its numerator",
+    "formula": "S_ch(E)=Y_ch(E)/c(E)/I_cup(E)^k; primary R_model=S_ch(E)/S_n(6.5)",
+    "primary_current_power": 0,
+    "k0_paper_basis": "Methods, Yield extraction and screening metrics: \u201cAll yields were reported per delivered Coulomb.\u201d",
+    "k1": "Historical G7/G8 sensitivity, not an established correction. Keep R_observed unchanged; R_model_k1 = R_model \u00d7 I_cup(6.5)/I_cup(E). Thus log_residual_k1 = ln(R_observed/R_model_k1) = log_residual + ln(I_cup(E)/I_cup(6.5)). The observation log error and raw model physics are unchanged.",
+    "k1_paper_context": "Dose was inferred from the Faraday-cup I\u2013V characteristic, not per-run measured charge; the relative-yield equation is written in terms of a net-count ratio. This motivates a sensitivity, but does not establish a missing current division.",
+    "paired_axis_control": "R_observed_k1 is the old paired-axis control (plotted R rescaled by I_cup(6.5)/I_cup(E)); comparing it to R_model_k1 cancels the factors and is NOT the historical k1 residual.",
+    "log_residual": "natural log of R_observed/R_model, one ratio; observation bars do not include baseline sensitivities"
+  },
+  "layers": {
+    "smooth40": "fixed G8 response, Bosch-Hale p and n",
+    "threshold_reaction": "Not in primary. Named sensitivity uses the independent external Zr-derived, source-literal Eq. 17 proton amplitude: Gamma_p=0.040 eV, phase 115 degrees, radius 7 fm, ER\u21920; neutrons smooth. The Davis-fitted resonance_common and basis_common are not consumed.",
+    "ordinary_thermal": "single G8 Motion(48) Maxwell target-rate case theta=k_B*saved conditional T, with relative flux and smooth40; ratios computed at every row and n reference. No thermal_ZPM, collision harmonic, g10 bound-state momentum, or hot100/hot1000 terms stacked. The G10 joint spectrum is a PdD case, not a four-foil replacement.",
+    "approach_edge": {
+      "adopted": "sheet_formed_bulk_wake",
+      "source": "g9_edge/output/sensitivity.csv",
+      "alternate": "gated_atom_at_t0",
+      "alternate_source": "g9_edge/output/yields.csv",
+      "evidence": "Native 0.25 keV CM nominal clean PdD(111) ray develops an electronic cloud before crossing the plane, motivating a nonzero sheet prehistory. It stops 0.5 \u00c5 short of the buried D center. It supplies no exact yield or evidence of a fully formed bulk wake in all foils. The adopted model changes the G9 surface-sheet prehistory only; it is not a solved vacuum approach.",
+      "proxy": "All G9 foils use pure-Pd bulk RPA inverse-head response plus Mermin continuation; Ti/TiD transport profiles differ but no Ti dielectric calculation is used.",
+      "support": "exact saved ratio only at G9 nodes; between nodes interpolate log(raw ratio) linearly in nominal E_cm within the same foil/channel; bracket recorded per row. No extrapolation, no channel averaging, not an interpolation error bound.",
+      "nodes_E_cm_keV": [
+        0.25,
+        0.5,
+        1.0,
+        2.5,
+        6.5
+      ]
+    },
+    "composition": "Raw primary yield = smooth40 times ordinary thermal factor times formed-sheet G9 approach factor. Factors are each relative to the same smooth40 setting and channel. Factorizing yield ratios is not coupled reweighting; overlap of the thermal velocity, edge impulse and barrier response remains unresolved. G9 replaces its finite edge subtotal and subtracts settled projectile drag already in CSDA; no second drag, sheet or static barrier correction. Same product on n6.5 before normalization."
+  },
+  "features": {
+    "E_cm_keV": "nominal center-of-mass setting in keV; use as an independent design axis",
+    "host_Z": "nominal host atomic number (not fitted); encodes the same contrast as host",
+    "electrochemical_loading": "0 or 1, nominal preparation only, not a measured D/metal ratio",
+    "foil_thickness_um": "source methods nominal common 250 \u03bcm membrane; no variation",
+    "chart_cup_current_uA": "g4 literal SI Fig. S3 I\u2013V interpolation at V_lab[kV]=2*E_cm[keV]; microamperes. Common across foils at a setting; not per-run current or an independent energy contrast.",
+    "model_beam_time_s": "merit profiles exact nominal beam history in seconds; not actual beam-on time or detector live time",
+    "model_target_temperature_K": "merit profiles conditional target temperature in kelvin; not a measured foil temperature",
+    "model_csda_Dplus_depth_nm": "terminal depth in nm from fixed CSDA for monoenergetic nominal D+ at lab energy 2*E_cm to 0.1 keV lab cutoff or layer end; not SRIM range or a measured reaction-depth moment",
+    "model_adsorbed_D_sheet_m2": "saved number of D atoms per square meter in modeled adsorbed sheet; not measured surface loading",
+    "missing": "Blank run_current_uA, run_time_s, run_dose_C and run_id mean unavailable per Fig. 2 row, not zero. No imputed spot, flux or loading density.",
+    "eligibility": "The chart and transport proxies describe settings or the denominator; not new independent measured variation. Do not regress on baseline terms, response-derived quantities, fitted U, or the plotted observation itself."
+  },
+  "reference_anchors": [
+    {
+      "row_id": "karahadian2026:fig2:Pd:6.50",
+      "study_id": "karahadian2026",
+      "lab": "UC Davis",
+      "run_id": null,
+      "reaction": "D+D",
+      "channel": "n",
+      "target": "Pd",
+      "host": "Pd",
+      "E_cm_keV": "6.50",
+      "target_preparation": "beam_only",
+      "host_Z": 46,
+      "electrochemical_loading": 0,
+      "foil_thickness_um": 250,
+      "energy_frame_source": "Fig. 2 nominal CM; published acceleration-potential convention",
+      "observable_kind": "own_reference_relative_yield",
+      "observable_source": "g4_beam/forward/errbars.csv",
+      "observable_unit": "1",
+      "reference_E_cm_keV": 6.5,
+      "reference_group": "karahadian2026:fig2:Pd:n:6.50",
+      "evidence_class": "published_fig2_digitization",
+      "citation": "https://doi.org/10.1038/s41467-026-74421-1",
+      "model_smooth40_raw_reactions_per_true_C": 511049.28040440695,
+      "primary_pn_join": 1.0,
+      "sensitivity_smooth40_pn_join": 0.9759468032966616,
+      "cup_focusing_fraction": 1.7,
+      "threshold_reaction_raw_factor": 1.0,
+      "ordinary_thermal_raw_factor": 1.0000789411310962,
+      "formed_sheet_raw_factor": 1.000620123898613,
+      "gated_atom_raw_factor": 0.9924291326099157,
+      "baseline_id": "g12_davis_fixed_smooth40_ordinary_thermal_formed_sheet_no_join_k0",
+      "status": "deterministic_own_reference_not_fit_row",
+      "R_observed": 1.0,
+      "sigma_log_residual": null,
+      "edge_energy_support": "saved_G9_node",
+      "normalizers": {
+        "smooth40": {
+          "raw_neutron_reactions_per_true_C": 511049.28040440695,
+          "k0_focus_corrected_signal": 300617.2237672982,
+          "k1_focus_corrected_signal": 1263.0975788541941
+        },
+        "no_edge": {
+          "raw_neutron_reactions_per_true_C": 511089.623212648,
+          "k0_focus_corrected_signal": 300640.9548309694,
+          "k1_focus_corrected_signal": 1263.1972892057538
+        },
+        "formed_sheet": {
+          "raw_neutron_reactions_per_true_C": 511406.5621023353,
+          "k0_focus_corrected_signal": 300827.38947196194,
+          "k1_focus_corrected_signal": 1263.9806280334535
+        },
+        "gated_atom": {
+          "raw_neutron_reactions_per_true_C": 507220.2314508569,
+          "k0_focus_corrected_signal": 298364.84202991583,
+          "k1_focus_corrected_signal": 1253.6337900416631
+        },
+        "threshold40meV": {
+          "raw_neutron_reactions_per_true_C": 511406.5621023353,
+          "k0_focus_corrected_signal": 300827.38947196194,
+          "k1_focus_corrected_signal": 1263.9806280334535
+        },
+        "smooth40_join": {
+          "raw_neutron_reactions_per_true_C": 511406.5621023353,
+          "k0_focus_corrected_signal": 300827.38947196194,
+          "k1_focus_corrected_signal": 1263.9806280334535
+        }
+      },
+      "R_model": 1.0,
+      "R_model_k1": 1.0,
+      "log_residual": null,
+      "log_residual_k1": null
+    },
+    {
+      "row_id": "karahadian2026:fig2:PdD:6.50",
+      "study_id": "karahadian2026",
+      "lab": "UC Davis",
+      "run_id": null,
+      "reaction": "D+D",
+      "channel": "n",
+      "target": "PdD",
+      "host": "Pd",
+      "E_cm_keV": "6.50",
+      "target_preparation": "beam_plus_electrochemical",
+      "host_Z": 46,
+      "electrochemical_loading": 1,
+      "foil_thickness_um": 250,
+      "energy_frame_source": "Fig. 2 nominal CM; published acceleration-potential convention",
+      "observable_kind": "own_reference_relative_yield",
+      "observable_source": "g4_beam/forward/errbars.csv",
+      "observable_unit": "1",
+      "reference_E_cm_keV": 6.5,
+      "reference_group": "karahadian2026:fig2:PdD:n:6.50",
+      "evidence_class": "published_fig2_digitization",
+      "citation": "https://doi.org/10.1038/s41467-026-74421-1",
+      "model_smooth40_raw_reactions_per_true_C": 738682.1551799458,
+      "primary_pn_join": 1.0,
+      "sensitivity_smooth40_pn_join": 0.9757685805190822,
+      "cup_focusing_fraction": 1.7,
+      "threshold_reaction_raw_factor": 1.0,
+      "ordinary_thermal_raw_factor": 1.0000820999173279,
+      "formed_sheet_raw_factor": 1.0004299345826257,
+      "gated_atom_raw_factor": 0.9947611147222257,
+      "baseline_id": "g12_davis_fixed_smooth40_ordinary_thermal_formed_sheet_no_join_k0",
+      "status": "deterministic_own_reference_not_fit_row",
+      "R_observed": 1.0,
+      "sigma_log_residual": null,
+      "edge_energy_support": "saved_G9_node",
+      "normalizers": {
+        "smooth40": {
+          "raw_neutron_reactions_per_true_C": 738682.1551799458,
+          "k0_focus_corrected_signal": 434518.91481173283,
+          "k1_focus_corrected_signal": 1825.7097260997177
+        },
+        "no_edge": {
+          "raw_neutron_reactions_per_true_C": 738742.8009238176,
+          "k0_focus_corrected_signal": 434554.5887787162,
+          "k1_focus_corrected_signal": 1825.859616717295
+        },
+        "formed_sheet": {
+          "raw_neutron_reactions_per_true_C": 739060.4120016005,
+          "k0_focus_corrected_signal": 434741.4188244709,
+          "k1_focus_corrected_signal": 1826.6446169095416
+        },
+        "gated_atom": {
+          "raw_neutron_reactions_per_true_C": 734872.612139996,
+          "k0_focus_corrected_signal": 432278.00714117417,
+          "k1_focus_corrected_signal": 1816.2941476519923
+        },
+        "threshold40meV": {
+          "raw_neutron_reactions_per_true_C": 739060.4120016005,
+          "k0_focus_corrected_signal": 434741.4188244709,
+          "k1_focus_corrected_signal": 1826.6446169095416
+        },
+        "smooth40_join": {
+          "raw_neutron_reactions_per_true_C": 739060.4120016005,
+          "k0_focus_corrected_signal": 434741.4188244709,
+          "k1_focus_corrected_signal": 1826.6446169095416
+        }
+      },
+      "R_model": 1.0,
+      "R_model_k1": 1.0,
+      "log_residual": null,
+      "log_residual_k1": null
+    },
+    {
+      "row_id": "karahadian2026:fig2:Ti:6.50",
+      "study_id": "karahadian2026",
+      "lab": "UC Davis",
+      "run_id": null,
+      "reaction": "D+D",
+      "channel": "n",
+      "target": "Ti",
+      "host": "Ti",
+      "E_cm_keV": "6.50",
+      "target_preparation": "beam_only",
+      "host_Z": 22,
+      "electrochemical_loading": 0,
+      "foil_thickness_um": 250,
+      "energy_frame_source": "Fig. 2 nominal CM; published acceleration-potential convention",
+      "observable_kind": "own_reference_relative_yield",
+      "observable_source": "g4_beam/forward/errbars.csv",
+      "observable_unit": "1",
+      "reference_E_cm_keV": 6.5,
+      "reference_group": "karahadian2026:fig2:Ti:n:6.50",
+      "evidence_class": "published_fig2_digitization",
+      "citation": "https://doi.org/10.1038/s41467-026-74421-1",
+      "model_smooth40_raw_reactions_per_true_C": 46351116.86842837,
+      "primary_pn_join": 1.0,
+      "sensitivity_smooth40_pn_join": 0.975185406645344,
+      "cup_focusing_fraction": 1.7,
+      "threshold_reaction_raw_factor": 1.0,
+      "ordinary_thermal_raw_factor": 1.0001157069253725,
+      "formed_sheet_raw_factor": 1.0000060112787803,
+      "gated_atom_raw_factor": 0.9999331014784549,
+      "baseline_id": "g12_davis_fixed_smooth40_ordinary_thermal_formed_sheet_no_join_k0",
+      "status": "deterministic_own_reference_not_fit_row",
+      "R_observed": 1.0,
+      "sigma_log_residual": null,
+      "edge_energy_support": "saved_G9_node",
+      "normalizers": {
+        "smooth40": {
+          "raw_neutron_reactions_per_true_C": 46351116.86842837,
+          "k0_focus_corrected_signal": 27265362.863781396,
+          "k1_focus_corrected_signal": 114560.34816714872
+        },
+        "no_edge": {
+          "raw_neutron_reactions_per_true_C": 46356480.0136488,
+          "k0_focus_corrected_signal": 27268517.65508753,
+          "k1_focus_corrected_signal": 114573.60359280475
+        },
+        "formed_sheet": {
+          "raw_neutron_reactions_per_true_C": 46356758.675373435,
+          "k0_focus_corrected_signal": 27268681.57374908,
+          "k1_focus_corrected_signal": 114574.2923266768
+        },
+        "gated_atom": {
+          "raw_neutron_reactions_per_true_C": 46353378.83367185,
+          "k0_focus_corrected_signal": 27266693.431571677,
+          "k1_focus_corrected_signal": 114565.9387881163
+        },
+        "threshold40meV": {
+          "raw_neutron_reactions_per_true_C": 46356758.675373435,
+          "k0_focus_corrected_signal": 27268681.57374908,
+          "k1_focus_corrected_signal": 114574.2923266768
+        },
+        "smooth40_join": {
+          "raw_neutron_reactions_per_true_C": 46356758.675373435,
+          "k0_focus_corrected_signal": 27268681.57374908,
+          "k1_focus_corrected_signal": 114574.2923266768
+        }
+      },
+      "R_model": 1.0,
+      "R_model_k1": 1.0,
+      "log_residual": null,
+      "log_residual_k1": null
+    },
+    {
+      "row_id": "karahadian2026:fig2:TiD:6.50",
+      "study_id": "karahadian2026",
+      "lab": "UC Davis",
+      "run_id": null,
+      "reaction": "D+D",
+      "channel": "n",
+      "target": "TiD",
+      "host": "Ti",
+      "E_cm_keV": "6.50",
+      "target_preparation": "beam_plus_electrochemical",
+      "host_Z": 22,
+      "electrochemical_loading": 1,
+      "foil_thickness_um": 250,
+      "energy_frame_source": "Fig. 2 nominal CM; published acceleration-potential convention",
+      "observable_kind": "own_reference_relative_yield",
+      "observable_source": "g4_beam/forward/errbars.csv",
+      "observable_unit": "1",
+      "reference_E_cm_keV": 6.5,
+      "reference_group": "karahadian2026:fig2:TiD:n:6.50",
+      "evidence_class": "published_fig2_digitization",
+      "citation": "https://doi.org/10.1038/s41467-026-74421-1",
+      "model_smooth40_raw_reactions_per_true_C": 46611787.10205176,
+      "primary_pn_join": 1.0,
+      "sensitivity_smooth40_pn_join": 0.9751901710166329,
+      "cup_focusing_fraction": 1.7,
+      "threshold_reaction_raw_factor": 1.0,
+      "ordinary_thermal_raw_factor": 1.0000929023031795,
+      "formed_sheet_raw_factor": 1.0000063712881104,
+      "gated_atom_raw_factor": 0.9999286900043712,
+      "baseline_id": "g12_davis_fixed_smooth40_ordinary_thermal_formed_sheet_no_join_k0",
+      "status": "deterministic_own_reference_not_fit_row",
+      "R_observed": 1.0,
+      "sigma_log_residual": null,
+      "edge_energy_support": "saved_G9_node",
+      "normalizers": {
+        "smooth40": {
+          "raw_neutron_reactions_per_true_C": 46611787.10205176,
+          "k0_focus_corrected_signal": 27418698.295324564,
+          "k1_focus_corrected_signal": 115204.61468623766
+        },
+        "no_edge": {
+          "raw_neutron_reactions_per_true_C": 46616117.444428846,
+          "k0_focus_corrected_signal": 27421245.55554638,
+          "k1_focus_corrected_signal": 115215.31746027891
+        },
+        "formed_sheet": {
+          "raw_neutron_reactions_per_true_C": 46616414.44914368,
+          "k0_focus_corrected_signal": 27421420.264202163,
+          "k1_focus_corrected_signal": 115216.05153026119
+        },
+        "gated_atom": {
+          "raw_neutron_reactions_per_true_C": 46612793.249297656,
+          "k0_focus_corrected_signal": 27419290.14664568,
+          "k1_focus_corrected_signal": 115207.10145649445
+        },
+        "threshold40meV": {
+          "raw_neutron_reactions_per_true_C": 46616414.44914368,
+          "k0_focus_corrected_signal": 27421420.264202163,
+          "k1_focus_corrected_signal": 115216.05153026119
+        },
+        "smooth40_join": {
+          "raw_neutron_reactions_per_true_C": 46616414.44914368,
+          "k0_focus_corrected_signal": 27421420.264202163,
+          "k1_focus_corrected_signal": 115216.05153026119
+        }
+      },
+      "R_model": 1.0,
+      "R_model_k1": 1.0,
+      "log_residual": null,
+      "log_residual_k1": null
+    }
+  ],
+  "nominal_exposure_boundary": [
+    {
+      "target": "Pd",
+      "E_cm_keV": [
+        2.0,
+        2.5
+      ],
+      "nominal_beam_time_s": [
+        43200.0,
+        7200.0
+      ],
+      "ln_R_model_k0": [
+        -8.171616131876764,
+        -6.065810644593729
+      ],
+      "delta_ln_R_model_k0": 2.1058054872830345,
+      "log_residual_k0": [
+        2.9009139323617004,
+        1.1096635357815434
+      ]
+    },
+    {
+      "target": "PdD",
+      "E_cm_keV": [
+        2.0,
+        2.5
+      ],
+      "nominal_beam_time_s": [
+        43200.0,
+        7200.0
+      ],
+      "ln_R_model_k0": [
+        -8.45847724310713,
+        -6.332114940502774
+      ],
+      "delta_ln_R_model_k0": 2.126362302604355,
+      "log_residual_k0": [
+        4.4930534609518675,
+        2.5541856695553267
+      ]
+    },
+    {
+      "target": "Ti",
+      "E_cm_keV": [
+        2.0,
+        2.5
+      ],
+      "nominal_beam_time_s": [
+        43200.0,
+        7200.0
+      ],
+      "ln_R_model_k0": [
+        -9.224764361311715,
+        -6.922508522931699
+      ],
+      "delta_ln_R_model_k0": 2.302255838380016,
+      "log_residual_k0": [
+        2.1306795041380844,
+        0.7755590729833225
+      ]
+    },
+    {
+      "target": "TiD",
+      "E_cm_keV": [
+        2.0,
+        2.5
+      ],
+      "nominal_beam_time_s": [
+        43200.0,
+        7200.0
+      ],
+      "ln_R_model_k0": [
+        -9.237055951756721,
+        -6.93625868285246
+      ],
+      "delta_ln_R_model_k0": 2.300797268904261,
+      "log_residual_k0": [
+        3.213068212943179,
+        1.9276213914188778
+      ]
+    }
+  ],
+  "summary": {
+    "log_residual_min": -0.10665300797765585,
+    "log_residual_max": 40.70815654654928,
+    "log_residual_k1_min": -0.2462048883837615,
+    "log_residual_k1_max": 38.87347203260419,
+    "max_abs_log_residual_delta": {
+      "smooth40": 0.047756580972842154,
+      "no_edge": 0.016564063593918953,
+      "gated_atom": 1.2916243033870414,
+      "threshold40meV": 1.8578399526021965,
+      "smooth40_join": 0.02512766540064543
+    }
+  },
+  "verification": {
+    "incompatible_references_rejected": [
+      "wrong_target",
+      "wrong_channel",
+      "wrong_energy"
+    ],
+    "exact_digitized_key_count": 48,
+    "deterministic_anchor_count": 4,
+    "matched_k1_common_current_factor_cancels": true,
+    "historical_k1_shift": {
+      "rows": 48,
+      "unchanged_plot_observation": true,
+      "max_abs_shift_error": 3.9968028886505635e-15
+    },
+    "clean_cutover": {
+      "comparisons": 144,
+      "max_relative_error": 4.440892098500626e-16,
+      "independently_removed_legacy_proton_join_and_threshold": true,
+      "all_observations_and_errors_unchanged": true,
+      "pure_smooth_join_recomputed_from_frozen_4p5_profiles": true
+    },
+    "reused_raw_evidence": {
+      "residual_source_sha256": "e76bf388cf79a4ed2c4af05eb7787e997c05dab8c9bbae6cefe5da0c580e4d41",
+      "producer_source_sha256": "d3f36cc8708c361eaa29705925ad388570daffcc23b5c936b4b52fea50474358",
+      "previously_exercised_controls": {
+        "smooth_raw": {
+          "comparisons": 40,
+          "max_relative_error": 0.0
+        },
+        "smooth_k0": {
+          "comparisons": 20,
+          "max_relative_error": 3.3306690738754696e-16
+        },
+        "smooth_k1": {
+          "comparisons": 20,
+          "max_relative_error": 4.440892098500626e-16
+        },
+        "literal_resonance": {
+          "comparisons": 60,
+          "max_relative_error": 3.3306690738754696e-16
+        },
+        "ordinary_thermal": {
+          "comparisons": 120,
+          "max_relative_error": 4.440892098500626e-16
+        },
+        "g9_smooth_raw": {
+          "comparisons": 80,
+          "max_relative_error": 8.881784197001252e-16
+        },
+        "g9_raw_ratio": {
+          "comparisons": 80,
+          "max_relative_error": 1.1102230246251565e-15
+        }
+      }
+    }
+  },
+  "residual_csv_sha256": "102f84f8bb979f90f91a69dc55985bcff8517902293fada9835926da77cfc2c3"
+}
