@@ -4,4 +4,6 @@
 
 [Part 2](part2/README.md) follows energy in one shared vibration and a set of nuclear states. In the small model, the optical bath drains the initial phonons. A high-energy excitation decays through the nuclear channels when those channels are enabled.
 
+[Part 2b](part2b/README.md) is the scaled family: gaps of 3 to 21 quanta, 2 to 8 cells, loss on both sides or one side. Many quanta move at once without loss; finite loss removes the transfer, and the rate falls with each added cell.
+
 The separate [coupling report](../coupling/README.md) gives the first allowed matrix elements and their limits. Neither calculation changes the foil profile, loading or G12 baseline.

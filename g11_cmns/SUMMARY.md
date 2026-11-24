@@ -41,12 +41,33 @@ A small quantum model: one 37 meV vibration shared by one, two or four cells, co
 - Starting from the nuclear excitation, it stays put unless nuclear decay is switched on, and then it leaves by the decay channels put in, not into the vibration.
 - Going from one to four cells at fixed occupation changes nothing; going from zero to four quanta raises the (very small) mixing in proportion to 2n+1.
 
-This model is far from the regime the collective-transfer proposals describe. It holds at most four quanta and four cells, and the gap is about a billion quanta wide. It shows the small-number behaviour and gives no scaling law for large numbers. A scaled family (a gap of a few to a few tens of quanta, then size, occupation and loss varied) has been asked for, so that a scaling law comes from runs.
+This model is far from the regime the collective-transfer proposals describe. It holds at most four quanta and four cells, and the gap is about a billion quanta wide. Part 2b below is the scaled family.
+
+## Collective part 2b: exchanging many quanta at once, and what loss does to it
+
+The same kind of model, now with the gap set to 3, 5, 9, 15 and 21 vibration quanta, 2 to 8 cells, and tens of thousands of quanta in the vibration. The coupling is a chosen model value, not the nuclear one. "Transfer" means the whole gap is exchanged in one step, in either direction.
+
+- **Without loss, many quanta do move at once.** With a gap of 15 quanta, two cells and 30,000 quanta in the vibration, the chance of finding the gap exchanged reaches 0.17 within 210 ps (taking the vibration quantum as 41.6 meV). With a gap of 21 quanta it reaches 0.015.
+- **Realistic loss removes it.** With loss on the intermediate states at 100 times the vibration frequency, placed on both sides, nothing arrives and everything is lost. Placed only on the low-energy side, which is the condition the published lossy models rely on, 2e-8 arrives and 95 percent is lost. Only in the limit of infinitely fast loss does transfer come back: 0.003 in the same 210 ps, and 0.32 if the model is followed for 7.5 ns.
+- **Up and down are the same.** The chance of arriving is identical in the two directions. What is lost on the way differs.
+- **More cells sharing the vibration makes it slower, not faster,** when the coupling of each cell is divided as the model divides it. Fitted from the runs without loss:
+
+| Gap, in quanta | Rate goes as (number of cells) to the power | as (quanta in the vibration) to the power | as (coupling) to the power |
+|---|---:|---:|---:|
+| 3 | -1.1 | 1.1 | 2.6 |
+| 5 | -2.0 | 2.2 | 4.2 |
+| 9 | -3.9 | 3.6 | 7.3 |
+
+Each power grows in step with the gap. For gaps of 15 and above with four or more cells the runs did not hold a clean branch, and no law is given there. A separate exact calculation at weak coupling shows that one-sided loss in the infinite limit removes the penalty for adding cells.
+
+**Carried to the real gap.** The real gap (23.85 MeV, two deuterons to helium-4) is 573 million quanta of this vibration. The pumped lattice run holds 0.6 meV per deuteron, so the 32,768-deuteron box holds 472 quanta and a million deuterons hold 14,000. Neither holds enough energy to supply one gap. About 1e11 deuterons moving as one would. At that size the weak-coupling law gives an amplitude with an exponent of minus several billion before the unknown coupling is put in. That is a formula carried far outside where it was fitted, and the page says so; it is not a predicted number.
 
 ## What this says so far
 
 The collective part shows that the pattern of motion, not its size, is what changes the distance between deuterons, and that concentrated motion lasts. Whether that gives a reaction rate of the size of the added signal cannot be said until the pair energy between 2.4 and 1.3 A is computed. The coupling, as built, acts through the same barrier as the ordinary reaction, so by itself it follows the beam energy and does not give a flat signal.
 
+The many-quanta route works in the model only without loss or with infinitely fast one-sided loss, gets steeply harder with the size of the gap, and needs more stored energy in one shared motion than the pumped lattice run holds by a factor of about a million. The open route for the flat signal is therefore the first one: concentrated motion bringing pairs closer, which waits on the pair energy.
+
 ## Lead's note
 
-Collective part 1 archive SHA-256 54e98dc8425a7c28b36927b8c071c23a6ef75596974259c677d0816bccab00b9. The lead reran `python g11_cmns/collective/part1/motion.py` (NumPy and SciPy only): all 19 cases reproduce, the largest differences being in the energy-balance checks at 1e-9 eV or less; the committed files are the delivered ones. Coupling archive SHA-256 e0e5b2f47389681ff94d6ccac32a582492605822dfce0eb36d01bee1c1784e35; not rerun (the nuclear code is not installed on the lead's machine). The percentages of the ion's energy and the comparison with the deuterium molecule are the lead's arithmetic. Collective part 2 archive SHA-256 4c2a255493188736f16f178ca1d80fb6174a4931e9e567bea34540b5d90448ac; not rerun (QuTiP and quimb are not installed on the lead's machine). Titanium has no wells yet, so nothing here applies to the titanium foils.
+Collective part 1 archive SHA-256 54e98dc8425a7c28b36927b8c071c23a6ef75596974259c677d0816bccab00b9. The lead reran `python g11_cmns/collective/part1/motion.py` (NumPy and SciPy only): all 19 cases reproduce, the largest differences being in the energy-balance checks at 1e-9 eV or less; the committed files are the delivered ones. Coupling archive SHA-256 e0e5b2f47389681ff94d6ccac32a582492605822dfce0eb36d01bee1c1784e35; not rerun (the nuclear code is not installed on the lead's machine). The percentages of the ion's energy and the comparison with the deuterium molecule are the lead's arithmetic. Collective part 2 archive SHA-256 4c2a255493188736f16f178ca1d80fb6174a4931e9e567bea34540b5d90448ac; not rerun (QuTiP and quimb are not installed on the lead's machine). Titanium has no wells yet, so nothing here applies to the titanium foils. Collective part 2b archive SHA-256 19e5928a67c9372d0e04c8d5252f1819acbb94283dd762dc5535dac61b54e0d9; not rerun (QuTiP and quimb are not installed on the lead's machine). `results.json` (64 MB) is committed compressed as `results.json.gz`; unpack it before running `figures.py`. A plain refit by the lead of the three exponents from `transfer.csv` gives the same signs and the same growth with the gap; the cell-number powers come out less steep at gaps of 5 and 9 (-1.7 and -3.0), with a row selection that is not the delivered one. Part 2b uses a 41.6 meV quantum and the 23.85 MeV gap; part 2 used 37 meV and 34 MeV.
