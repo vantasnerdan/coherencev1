@@ -1,0 +1,22 @@
+{
+  "schema": "g10-slab-vacancy-sources-v1",
+  "software": {"gpaw": "26.7.0", "ase": "3.29.0"},
+  "g9_geometry_line": {"line": 1, "bytes_including_lf": 2220, "sha256": "a682073f2757513f13a672c03852e81f6a0b7cbfb4ee032f9eb3e8d1bbc2054e"},
+  "files": {
+    "g9_pilot_journal": ["coherence-g9-edge/pilot-001-raw/pilot.jsonl", 5481, "525a72ed1059e58f9b180217d3ca9be04530bd31197d0154038293605dcecf7c"],
+    "g9_host_log": ["coherence-g9-edge/pilot-001-raw/host.log", 18276, "2c67c4bb01de0cb45a1e51740973159d7d8cefc2149543f4efd2f95d1cd378aa"],
+    "g9_slab_recipe": ["coherence-g9-edge/substrate/proposals/g9-pdd-foil-edge/slab.py", 5037, "9b9840da6e92bb6e2292685e8b4e1c3c54e70ba62930b5d049cc336c4cc73589"],
+    "g9_calculator": ["coherence-g9-edge/substrate/proposals/g9-pdd-foil-edge/pilot.py", 7774, "781b7fa450e5de550ba0c2b0ea3bf5970729e1cff0266a252030fd08b98b78c0"],
+    "g7_selected": ["coherence-g7-defect/C-selected-step036.json", 7164, "cc735ecbf8be36113463ceb159a9b3c674c8e110a59759699e5b54e16c92430a"],
+    "g7_standard_record": ["coherence-g7-defect/runs/g7-defect-c-standard-001/calculation/relax/step-036.json", 3091, "5229455c7b885856fb6a798f325a6de578bf0ebb307393d702662020d10bc916"],
+    "g7_standard_gpw": ["coherence-g7-defect/runs/g7-defect-c-standard-001/calculation/relax/step-036.gpw", 6050228, "ce32e3a6aad4fa9281ccc67363cc94274a37c480f35913a699ebce61cc585588"],
+    "g7_scf_log": ["coherence-g7-defect/runs/g7-defect-c-standard-001/calculation/relax/relax-scf.txt", 471820, "2387f53948d6fe9fe1542ea1bab8034319be2d87707225c6e10b7dd4d4b2bb51"],
+    "g7_calculator": ["coherence-g7-defect/runs/g7-defect-c-standard-001/source/defect_screening/defect_calculator.py", 3031, "9b6e301084f33f4c81d022c1affccc03dff82283c60701b3463cc34a66d5e5fb"],
+    "g7_calculator_base": ["coherence-g7-defect/runs/g7-defect-c-standard-001/source/collision_ground.py", 2508, "7ec514b422fbe2d43c8e1e60db71636ef6827d3bcbedd1f8291fc25241f070eb"],
+    "g7_relaxation": ["coherence-g7-defect/runs/g7-defect-c-standard-001/source/defect_screening/relax_defect.py", 2172, "eb5c2b3fc0efc785a1863f1c8f685d1a34b5e571621ceaa1b42da32fc57e1502"],
+    "g7_charged_probe": ["coherence-g7-defect/runs/g7-defect-c-standard-001/source/defect_screening/defect_bo.py", 3769, "108036f46fb0cd031001362f6465b505374834cbfba3ba7c2bad5325030802b7"],
+    "atomic_writer": ["coherence-g7-defect/runs/g7-defect-c-standard-001/source/screen_io.py", 1409, "dcab99128fbb312083bdccf440c4c32c214e58e78c59a8a52126300c25d3420c"],
+    "Pd_PAW": ["well2/setups/Pd.10.PBE.gz", 106793, "3c6cfd1de7e6d6815d58c9521b2bc7cec27ede8e83554ed1f0151f979761bbb4"],
+    "H_PAW": ["well2/setups/H.PBE.gz", 12501, "3136ad73c02d471f99dd5f82e451b2061952970556a260d38b53b5020dc94ae7"]
+  }
+}
