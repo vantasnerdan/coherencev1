@@ -1,0 +1,567 @@
+{
+  "model": {
+    "schema": "g10-fluorite-tid2-v1",
+    "material": "cubic-fluorite-TiD2",
+    "software": {
+      "gpaw": "26.7.0",
+      "ase": "3.29.0",
+      "numpy": "2.5.3",
+      "scipy": "1.18.1"
+    },
+    "seed_source": {
+      "a_A": 4.424,
+      "citation": "Er et al., arXiv:0910.1003v1, Table 1, p. 7",
+      "role": "documented f-TiH2 electronic-structure geometry, not measured TiD"
+    },
+    "source_artifacts": [
+      {
+        "file": "er-et-al-0910.1003v1.pdf",
+        "bytes": 963946,
+        "sha256": "79339285761f7ab2fd1e3262d068ac684da53f0d2514dedb8e9a52992f4db16c"
+      },
+      {
+        "file": "Ti.PBE.gz",
+        "bytes": 101840,
+        "sha256": "64143c102107cae1ac7766e2a3292fb5ab6d0fa8122b7f8be5b25c29a4a40a2c"
+      },
+      {
+        "file": "H.PBE.gz",
+        "bytes": 12501,
+        "sha256": "3136ad73c02d471f99dd5f82e451b2061952970556a260d38b53b5020dc94ae7"
+      }
+    ],
+    "code": {
+      "file": "fluorite_tid2.py",
+      "bytes": 23367,
+      "sha256": "9a4870941f4639aab92bc452ba98cbbf7edaa035a48e048f285474e9cc405273"
+    },
+    "energy_convention": "GPAW force-consistent electronic free energy, eV per simulated cell",
+    "force_convention": "native full Cartesian electronic forces, eV/angstrom, zero-based atom_index",
+    "stress_convention": "native ASE Cartesian tensile-positive stress, eV/angstrom^3",
+    "scope": "periodic frozen-ion Born\u2013Oppenheimer fingerprint; no isotope-dependent statics or foil phase assignment"
+  },
+  "a_A": 4.423103262516868,
+  "primitive_final": {
+    "pbc": [
+      true,
+      true,
+      true
+    ],
+    "cell_A": [
+      [
+        0.0,
+        2.211551631258434,
+        2.211551631258434
+      ],
+      [
+        2.211551631258434,
+        0.0,
+        2.211551631258434
+      ],
+      [
+        2.211551631258434,
+        2.211551631258434,
+        0.0
+      ]
+    ],
+    "ase_symbols": [
+      "Ti",
+      "H",
+      "H"
+    ],
+    "atom_index": [
+      0,
+      1,
+      2
+    ],
+    "physical_species": [
+      "Ti",
+      "D",
+      "D"
+    ],
+    "masses_u": [
+      47.867,
+      2.01410177812,
+      2.01410177812
+    ],
+    "positions_A": [
+      [
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        1.105775815629217,
+        1.105775815629217,
+        1.105775815629217
+      ],
+      [
+        -1.105775815629217,
+        -1.105775815629217,
+        -1.105775815629217
+      ]
+    ],
+    "energy_free_eV": -14.89496436834812,
+    "forces_eV_A": [
+      [
+        -1.26765182479163e-30,
+        -4.225506082638767e-31,
+        -1.1884235857421531e-31
+      ],
+      [
+        0.0,
+        1.0163109843030244e-19,
+        -4.6459930710995395e-19
+      ],
+      [
+        0.0,
+        -7.259364173593031e-20,
+        -4.6459930710995395e-19
+      ]
+    ],
+    "stress_eV_A3": [
+      [
+        -1.8855744052474486e-06,
+        -3.1108392112018265e-19,
+        -2.0738928074678843e-19
+      ],
+      [
+        -3.1108392112018265e-19,
+        -1.8855744052465152e-06,
+        -1.2443356844807306e-18
+      ],
+      [
+        -2.0738928074678843e-19,
+        -1.2443356844807306e-18,
+        -1.8855744052477597e-06
+      ]
+    ],
+    "mean_stress_eV_A3": -1.885574405247241e-06,
+    "net_force_eV_A": [
+      -1.26765182479163e-30,
+      2.903745669394958e-20,
+      -9.291986142200267e-19
+    ],
+    "max_force_eV_A": 4.755853197221284e-19,
+    "electron_count": 14.0,
+    "actual_nbands": 11,
+    "scf_iterations": 26,
+    "actual_eigensolver": "Davidson",
+    "ibz_kpoints": 29,
+    "scf_log": {
+      "file": "trial-07.scf",
+      "bytes": 12574,
+      "sha256": "6a8df05c8b896086291d09fd4da5de9583c1c9c3fcb33eb08870983bed700550"
+    },
+    "a_A": 4.423103262516868,
+    "settings": {
+      "label": "relax",
+      "mode": "PW",
+      "cutoff_eV": 500,
+      "xc": "PBE",
+      "setups": {
+        "Ti": "paw",
+        "H": "paw"
+      },
+      "kmesh": [
+        8,
+        8,
+        8
+      ],
+      "gamma": true,
+      "nbands": 11,
+      "charge": 0,
+      "spinpol": false,
+      "smearing_eV": 0.1,
+      "symmetry": {
+        "point_group": true,
+        "time_reversal": true
+      },
+      "eigensolver": {
+        "name": "davidson",
+        "niter": 2
+      },
+      "mixer": [
+        0.05,
+        5,
+        50
+      ],
+      "maxiter": 160,
+      "convergence": {
+        "energy": 1e-07,
+        "density": 0.0001,
+        "forces": 0.0001,
+        "eigenstates": 4e-08,
+        "bands": "occupied"
+      },
+      "zero_external_pressure": true
+    },
+    "model": {
+      "schema": "g10-fluorite-tid2-v1",
+      "material": "cubic-fluorite-TiD2",
+      "software": {
+        "gpaw": "26.7.0",
+        "ase": "3.29.0",
+        "numpy": "2.5.3",
+        "scipy": "1.18.1"
+      },
+      "seed_source": {
+        "a_A": 4.424,
+        "citation": "Er et al., arXiv:0910.1003v1, Table 1, p. 7",
+        "role": "documented f-TiH2 electronic-structure geometry, not measured TiD"
+      },
+      "source_artifacts": [
+        {
+          "file": "er-et-al-0910.1003v1.pdf",
+          "bytes": 963946,
+          "sha256": "79339285761f7ab2fd1e3262d068ac684da53f0d2514dedb8e9a52992f4db16c"
+        },
+        {
+          "file": "Ti.PBE.gz",
+          "bytes": 101840,
+          "sha256": "64143c102107cae1ac7766e2a3292fb5ab6d0fa8122b7f8be5b25c29a4a40a2c"
+        },
+        {
+          "file": "H.PBE.gz",
+          "bytes": 12501,
+          "sha256": "3136ad73c02d471f99dd5f82e451b2061952970556a260d38b53b5020dc94ae7"
+        }
+      ],
+      "code": {
+        "file": "fluorite_tid2.py",
+        "bytes": 23367,
+        "sha256": "9a4870941f4639aab92bc452ba98cbbf7edaa035a48e048f285474e9cc405273"
+      },
+      "energy_convention": "GPAW force-consistent electronic free energy, eV per simulated cell",
+      "force_convention": "native full Cartesian electronic forces, eV/angstrom, zero-based atom_index",
+      "stress_convention": "native ASE Cartesian tensile-positive stress, eV/angstrom^3",
+      "scope": "periodic frozen-ion Born\u2013Oppenheimer fingerprint; no isotope-dependent statics or foil phase assignment"
+    }
+  },
+  "sampling_reference": {
+    "pbc": [
+      true,
+      true,
+      true
+    ],
+    "cell_A": [
+      [
+        0.0,
+        4.423103262516868,
+        4.423103262516868
+      ],
+      [
+        4.423103262516868,
+        0.0,
+        4.423103262516868
+      ],
+      [
+        4.423103262516868,
+        4.423103262516868,
+        0.0
+      ]
+    ],
+    "ase_symbols": [
+      "Ti",
+      "Ti",
+      "Ti",
+      "Ti",
+      "Ti",
+      "Ti",
+      "Ti",
+      "Ti",
+      "H",
+      "H",
+      "H",
+      "H",
+      "H",
+      "H",
+      "H",
+      "H",
+      "H",
+      "H",
+      "H",
+      "H",
+      "H",
+      "H",
+      "H",
+      "H"
+    ],
+    "atom_index": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23
+    ],
+    "physical_species": [
+      "Ti",
+      "Ti",
+      "Ti",
+      "Ti",
+      "Ti",
+      "Ti",
+      "Ti",
+      "Ti",
+      "D",
+      "D",
+      "D",
+      "D",
+      "D",
+      "D",
+      "D",
+      "D",
+      "D",
+      "D",
+      "D",
+      "D",
+      "D",
+      "D",
+      "D",
+      "D"
+    ],
+    "masses_u": [
+      47.867,
+      47.867,
+      47.867,
+      47.867,
+      47.867,
+      47.867,
+      47.867,
+      47.867,
+      2.01410177812,
+      2.01410177812,
+      2.01410177812,
+      2.01410177812,
+      2.01410177812,
+      2.01410177812,
+      2.01410177812,
+      2.01410177812,
+      2.01410177812,
+      2.01410177812,
+      2.01410177812,
+      2.01410177812,
+      2.01410177812,
+      2.01410177812,
+      2.01410177812,
+      2.01410177812
+    ],
+    "positions_A": [
+      [
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        2.211551631258434,
+        2.211551631258434,
+        0.0
+      ],
+      [
+        2.211551631258434,
+        0.0,
+        2.211551631258434
+      ],
+      [
+        4.423103262516868,
+        2.211551631258434,
+        2.211551631258434
+      ],
+      [
+        0.0,
+        2.211551631258434,
+        2.211551631258434
+      ],
+      [
+        2.211551631258434,
+        4.423103262516868,
+        2.211551631258434
+      ],
+      [
+        2.211551631258434,
+        2.211551631258434,
+        4.423103262516868
+      ],
+      [
+        4.423103262516868,
+        4.423103262516868,
+        4.423103262516868
+      ],
+      [
+        1.105775815629217,
+        1.105775815629217,
+        1.105775815629217
+      ],
+      [
+        3.317327446887651,
+        3.317327446887651,
+        1.105775815629217
+      ],
+      [
+        3.317327446887651,
+        1.105775815629217,
+        3.317327446887651
+      ],
+      [
+        5.528879078146085,
+        3.317327446887651,
+        3.317327446887651
+      ],
+      [
+        1.105775815629217,
+        3.317327446887651,
+        3.317327446887651
+      ],
+      [
+        3.317327446887651,
+        5.528879078146085,
+        3.317327446887651
+      ],
+      [
+        3.317327446887651,
+        3.317327446887651,
+        5.528879078146085
+      ],
+      [
+        5.528879078146085,
+        5.528879078146085,
+        5.528879078146085
+      ],
+      [
+        -1.105775815629217,
+        -1.105775815629217,
+        -1.105775815629217
+      ],
+      [
+        1.105775815629217,
+        1.105775815629217,
+        -1.105775815629217
+      ],
+      [
+        1.105775815629217,
+        -1.105775815629217,
+        1.105775815629217
+      ],
+      [
+        3.317327446887651,
+        1.105775815629217,
+        1.105775815629217
+      ],
+      [
+        -1.105775815629217,
+        1.105775815629217,
+        1.105775815629217
+      ],
+      [
+        1.105775815629217,
+        3.317327446887651,
+        1.105775815629217
+      ],
+      [
+        1.105775815629217,
+        1.105775815629217,
+        3.317327446887651
+      ],
+      [
+        3.317327446887651,
+        3.317327446887651,
+        3.317327446887651
+      ]
+    ]
+  },
+  "pair": {
+    "A_index": 8,
+    "B_index": 19,
+    "A_to_B_A": [
+      2.211551631258434,
+      0.0,
+      0.0
+    ],
+    "B_image_cell_translation": [
+      0,
+      0,
+      0
+    ],
+    "d0_A": 2.211551631258434,
+    "closing_amplitudes_per_site_A": [
+      0.12,
+      0.24,
+      0.48,
+      0.6
+    ]
+  },
+  "bracket_A": [
+    4.24704,
+    4.600960000000001
+  ],
+  "root_xtol_A": 5e-05,
+  "trial_sources": [
+    {
+      "file": "trial-00.json",
+      "bytes": 3877,
+      "sha256": "c0d5ccdd32486751ca70dd548667d702d92a85259247d078391ac4f83b472492"
+    },
+    {
+      "file": "trial-01.json",
+      "bytes": 3996,
+      "sha256": "09a8a7038ad1ff43d09214a50f15fa63a46456308d3bca58eb90a7e15425479d"
+    },
+    {
+      "file": "trial-02.json",
+      "bytes": 4131,
+      "sha256": "3f668ed164323378f2fe59b486ca760cf4a88c6544251bf9ad19c4410a0ec3d3"
+    },
+    {
+      "file": "trial-03.json",
+      "bytes": 4147,
+      "sha256": "db048335197e2b21323d8c74ca5f48a9c612a3b337546a0d7272f72223e5432b"
+    },
+    {
+      "file": "trial-04.json",
+      "bytes": 3984,
+      "sha256": "817dc5c6eb153cfc4b85c4a274b769da477ab2530fb8f8a5f2297cbeb1bcd1c0"
+    },
+    {
+      "file": "trial-05.json",
+      "bytes": 4183,
+      "sha256": "2e25d7f9628add50a91309923cd5d771958f0c82bdc07067ddb5be01d51a319d"
+    },
+    {
+      "file": "trial-06.json",
+      "bytes": 4108,
+      "sha256": "2032b0addfb6f75ab9d1e59c035a19e9d8fc08b60c5cd40ad656f9e8ffc80783"
+    },
+    {
+      "file": "trial-07.json",
+      "bytes": 4140,
+      "sha256": "0f70bf29da4285d75db257e8c244e1172dca538ad6b69c5b9d8aba5b7a9cdb91"
+    },
+    {
+      "file": "trial-08.json",
+      "bytes": 4128,
+      "sha256": "62b9870b308eb8b5a70fff3e2a1f1241e88403cc0b1a1b301e2f68fb809670b2"
+    }
+  ],
+  "stress_tolerance_eV_A3": 0.0005,
+  "force_tolerance_eV_A": 0.005,
+  "relaxation": "Only isotropic cubic a varied; Ti 4a and D 8c stay at exact fluorite Wyckoff positions."
+}

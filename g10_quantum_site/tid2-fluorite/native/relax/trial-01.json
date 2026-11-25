@@ -1,0 +1,197 @@
+{
+  "pbc": [
+    true,
+    true,
+    true
+  ],
+  "cell_A": [
+    [
+      0.0,
+      2.12352,
+      2.12352
+    ],
+    [
+      2.12352,
+      0.0,
+      2.12352
+    ],
+    [
+      2.12352,
+      2.12352,
+      0.0
+    ]
+  ],
+  "ase_symbols": [
+    "Ti",
+    "H",
+    "H"
+  ],
+  "atom_index": [
+    0,
+    1,
+    2
+  ],
+  "physical_species": [
+    "Ti",
+    "D",
+    "D"
+  ],
+  "masses_u": [
+    47.867,
+    2.01410177812,
+    2.01410177812
+  ],
+  "positions_A": [
+    [
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      1.06176,
+      1.06176,
+      1.06176
+    ],
+    [
+      -1.06176,
+      -1.06176,
+      -1.06176
+    ]
+  ],
+  "energy_free_eV": -14.72636344335615,
+  "forces_eV_A": [
+    [
+      0.0,
+      0.0,
+      -2.1127530413193833e-31
+    ],
+    [
+      2.3229965355497697e-19,
+      -6.097865905818146e-19,
+      -1.161498267774885e-18
+    ],
+    [
+      2.3229965355497697e-19,
+      3.1941202363809336e-19,
+      2.3229965355497697e-19
+    ]
+  ],
+  "stress_eV_A3": [
+    [
+      -0.13697381771481595,
+      -6.221678422403653e-19,
+      -4.1477856149357687e-19
+    ],
+    [
+      -6.221678422403653e-19,
+      -0.1369738177148159,
+      -1.6591142459743075e-18
+    ],
+    [
+      -4.1477856149357687e-19,
+      -1.6591142459743075e-18,
+      -0.1369738177148159
+    ]
+  ],
+  "mean_stress_eV_A3": -0.1369738177148159,
+  "net_force_eV_A": [
+    4.6459930710995395e-19,
+    -2.9037456694372123e-19,
+    -9.291986142201192e-19
+  ],
+  "max_force_eV_A": 1.332246614234472e-18,
+  "electron_count": 14.0,
+  "actual_nbands": 11,
+  "scf_iterations": 25,
+  "actual_eigensolver": "Davidson",
+  "ibz_kpoints": 29,
+  "scf_log": {
+    "file": "trial-01.scf",
+    "bytes": 12509,
+    "sha256": "d7c556ffc548b3b79b75197a5f6d704b6364e4ec90b689fdfd172adad4b6e5b7"
+  },
+  "a_A": 4.24704,
+  "settings": {
+    "label": "relax",
+    "mode": "PW",
+    "cutoff_eV": 500,
+    "xc": "PBE",
+    "setups": {
+      "Ti": "paw",
+      "H": "paw"
+    },
+    "kmesh": [
+      8,
+      8,
+      8
+    ],
+    "gamma": true,
+    "nbands": 11,
+    "charge": 0,
+    "spinpol": false,
+    "smearing_eV": 0.1,
+    "symmetry": {
+      "point_group": true,
+      "time_reversal": true
+    },
+    "eigensolver": {
+      "name": "davidson",
+      "niter": 2
+    },
+    "mixer": [
+      0.05,
+      5,
+      50
+    ],
+    "maxiter": 160,
+    "convergence": {
+      "energy": 1e-07,
+      "density": 0.0001,
+      "forces": 0.0001,
+      "eigenstates": 4e-08,
+      "bands": "occupied"
+    },
+    "zero_external_pressure": true
+  },
+  "model": {
+    "schema": "g10-fluorite-tid2-v1",
+    "material": "cubic-fluorite-TiD2",
+    "software": {
+      "gpaw": "26.7.0",
+      "ase": "3.29.0",
+      "numpy": "2.5.3",
+      "scipy": "1.18.1"
+    },
+    "seed_source": {
+      "a_A": 4.424,
+      "citation": "Er et al., arXiv:0910.1003v1, Table 1, p. 7",
+      "role": "documented f-TiH2 electronic-structure geometry, not measured TiD"
+    },
+    "source_artifacts": [
+      {
+        "file": "er-et-al-0910.1003v1.pdf",
+        "bytes": 963946,
+        "sha256": "79339285761f7ab2fd1e3262d068ac684da53f0d2514dedb8e9a52992f4db16c"
+      },
+      {
+        "file": "Ti.PBE.gz",
+        "bytes": 101840,
+        "sha256": "64143c102107cae1ac7766e2a3292fb5ab6d0fa8122b7f8be5b25c29a4a40a2c"
+      },
+      {
+        "file": "H.PBE.gz",
+        "bytes": 12501,
+        "sha256": "3136ad73c02d471f99dd5f82e451b2061952970556a260d38b53b5020dc94ae7"
+      }
+    ],
+    "code": {
+      "file": "fluorite_tid2.py",
+      "bytes": 23367,
+      "sha256": "9a4870941f4639aab92bc452ba98cbbf7edaa035a48e048f285474e9cc405273"
+    },
+    "energy_convention": "GPAW force-consistent electronic free energy, eV per simulated cell",
+    "force_convention": "native full Cartesian electronic forces, eV/angstrom, zero-based atom_index",
+    "stress_convention": "native ASE Cartesian tensile-positive stress, eV/angstrom^3",
+    "scope": "periodic frozen-ion Born\u2013Oppenheimer fingerprint; no isotope-dependent statics or foil phase assignment"
+  }
+}
