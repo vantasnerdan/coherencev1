@@ -1,0 +1,84 @@
+{
+  "schema": "g11-settled-consumer-proof-v1",
+  "source_projection_max_error": 5.551115123125783e-17,
+  "adopted_one_body_source_check": {
+    "native_force_and_energy_projection_max_error": 5.551115123125783e-17,
+    "adopted_one_body_energy_and_derivative_max_error": 0.0,
+    "all_five_connected_knots_matched": true,
+    "old_J_added": false,
+    "checks": "Exact source/implemented scalar model contract; not another spectral or readout run"
+  },
+  "final_log10_readout_vs_actual_part1_max_error": 1.4210854715202004e-14,
+  "final_readout_assertions": 80,
+  "final_log10_contact_refinement_max_change": 2.980159749199629e-06,
+  "final_log10_event_refinement_max_change": 3.7216099570969163e-06,
+  "interpolation_shelves": [
+    {
+      "join_A": 1.28782409436586,
+      "include_flagged": true,
+      "extrema_R_A": [
+        1.2160061812564968,
+        1.2796123446458718
+      ],
+      "extrema_U_eV": [
+        1.3884551271973429,
+        1.3904310726427571
+      ],
+      "shelf_depth_eV": 0.00197594544541424,
+      "localization_kinetic_scale_eV": 0.5131346218770958,
+      "eigenvalues_in_shelf_interval": [],
+      "thermal_300K_Z_weight_above_inner_floor": 7.192009260337242e-24
+    },
+    {
+      "join_A": 1.6,
+      "include_flagged": true,
+      "extrema_R_A": [
+        1.2160061812564968,
+        1.2796123446458711
+      ],
+      "extrema_U_eV": [
+        1.3304406355633704,
+        1.3324165810087865
+      ],
+      "shelf_depth_eV": 0.0019759454454160164,
+      "localization_kinetic_scale_eV": 0.5131346218771066,
+      "eigenvalues_in_shelf_interval": [],
+      "thermal_300K_Z_weight_above_inner_floor": 8.26853986434872e-13
+    },
+    {
+      "join_A": 1.28782409436586,
+      "include_flagged": false,
+      "extrema_R_A": [
+        1.2160061812564968,
+        1.2796123446458718
+      ],
+      "extrema_U_eV": [
+        1.1523587750902184,
+        1.1543347205356327
+      ],
+      "shelf_depth_eV": 0.00197594544541424,
+      "localization_kinetic_scale_eV": 0.5131346218770958,
+      "eigenvalues_in_shelf_interval": [],
+      "thermal_300K_Z_weight_above_inner_floor": 6.330147845261128e-20
+    },
+    {
+      "join_A": 1.6,
+      "include_flagged": false,
+      "extrema_R_A": [
+        1.2160061812564968,
+        1.2796123446458711
+      ],
+      "extrema_U_eV": [
+        1.2556751306970801,
+        1.2576510761424962
+      ],
+      "shelf_depth_eV": 0.0019759454454160164,
+      "localization_kinetic_scale_eV": 0.5131346218771066,
+      "eigenvalues_in_shelf_interval": [],
+      "thermal_300K_Z_weight_above_inner_floor": 1.3586199904399409e-11
+    }
+  ],
+  "results_sha256": "ed4ec3bcd24bccd654ff42e9e6e2aabcbbfc3d65823fcb6761bcddf4147a5bef",
+  "independent_scope": "PairRateReadout independently bound Part1 preparation/proton/G12 semantics; radial numerics and integration are delivery-owner checks.",
+  "limitation": "Finite conditional l=0 model comparison, not physical foil rate or rigorous continuum/electronic enclosure."
+}

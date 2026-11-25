@@ -6,4 +6,6 @@
 
 [Part 2b](part2b/README.md) is the scaled family: gaps of 3 to 21 quanta, 2 to 8 cells, loss on both sides or one side. Many quanta move at once without loss; finite loss removes the transfer, and the rate falls with each added cell.
 
+[Contact](contact/README.md) turns the computed pair energy into a contact chance and a rate for one pair on the nearest-neighbour line, cold, at 300 K and for the concentrated motion of part 1. All are about a hundred powers of ten below the added signal per pair.
+
 The separate [coupling report](../coupling/README.md) gives the first allowed matrix elements and their limits. Neither calculation changes the foil profile, loading or G12 baseline.
