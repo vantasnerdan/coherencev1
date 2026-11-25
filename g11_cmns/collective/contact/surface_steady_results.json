@@ -1,0 +1,1172 @@
+{
+  "site_wells_sha256": "3ad2ed3b2cdf6d54bcc14408bbb3ed7e06bd945a13e508c41eac270e6162c89d",
+  "bulk_pair_sha256": "7bcd74342a1ff22599eb0f98e0f8ed55aa5a722d450c40331de4a3c7c0163966",
+  "energy_cutoff_eV": 3.0,
+  "cases": {
+    "distance_only": {
+      "descriptor": {
+        "schema": "g11-site-pair-v1",
+        "pair_id": "bulk-wells-short-distance-counterfactual",
+        "R0_A": 2.4370398315432267,
+        "axis": [
+          0.7071067811865476,
+          0.7071067811865476,
+          0.0
+        ],
+        "sites": [
+          {
+            "id": "D25",
+            "well": "octahedral-110"
+          },
+          {
+            "id": "D63",
+            "well": "octahedral-110"
+          }
+        ],
+        "wells": {
+          "octahedral-110": {
+            "source": "g10_quantum_site/bulk-refit-080/well.py adopted wide_quadratic [110]",
+            "inward": {
+              "K_eV_A2": 0.590658682890108,
+              "K4_eV_A4": 4.574548859233666,
+              "origin_cut_A": 0.03,
+              "q_A": [
+                0.12,
+                0.24,
+                0.48,
+                0.8
+              ],
+              "E_eV": [
+                0.004504109828431524,
+                0.02070166077500346,
+                0.12118091359427297,
+                0.5069705004072205
+              ],
+              "dE_dq_eV_A": [
+                0.07780414134614089,
+                0.20130773481502878,
+                0.6976487338107971,
+                1.7189864225642446
+              ]
+            },
+            "outward": "reflect"
+          }
+        },
+        "connected": {
+          "u_A": [
+            0.12,
+            0.24,
+            0.36,
+            0.48,
+            0.8
+          ],
+          "W_eV": [
+            0.0027074222961971373,
+            0.012627486155508905,
+            0.03389455258036378,
+            0.07366871427427668,
+            0.3763843714251607
+          ],
+          "dW_du_eV_A": [
+            0.05077944191875313,
+            0.12311477932401911,
+            0.24180333349471023,
+            0.4370120159800962,
+            1.7167879037929286
+          ],
+          "flagged": [
+            false,
+            false,
+            false,
+            true,
+            true
+          ],
+          "source_sha256": "9bb7ee706522386f281bdf79e02bf1494e9453727f1bb396223f5e9e09032ce4"
+        },
+        "inner": {
+          "R_A": [
+            0.1,
+            0.2,
+            0.3,
+            0.4,
+            0.5,
+            1.0,
+            1.6
+          ],
+          "V_total_eV": [
+            103.44665507070361,
+            36.089410526086795,
+            15.58104333679571,
+            8.462165156778855,
+            4.817774529690019,
+            0.6608556272195389,
+            -0.18119548138581432
+          ],
+          "source": "g6_collision/curves/baseline_BO_pair.json"
+        },
+        "joins_A": [
+          1.28782409436586,
+          1.6
+        ],
+        "preparation": {
+          "thermal_K": [
+            300.0
+          ]
+        },
+        "pulse_drive": {
+          "flat_below_A": 1.0,
+          "transition_width_A": 0.4
+        },
+        "readout": "g12-pdd-0.25"
+      },
+      "variants": [
+        {
+          "join_A": 1.28782409436586,
+          "include_flagged": true,
+          "join_lattice_eV": 0.5266599405534961,
+          "ground_energy_eV": 0.019953127260401736,
+          "ground": {
+            "preparation": "cold_ground",
+            "log10_contact_A_minus3": -97.43051127039512,
+            "steady_one_pair": {
+              "log10_emitted_p_per_s": -89.66617044597407,
+              "log10_emitted_p_per_true_C": -85.24595404259088,
+              "log10_delta_R_k0": -90.8841850609966,
+              "log10_delta_R_k1": -90.08739170055689
+            }
+          },
+          "thermal_300K": {
+            "preparation": "thermal_300K",
+            "log10_contact_A_minus3": -93.52361398483262,
+            "contact_peak_energy_eV": 0.596891364772391,
+            "contact_last_1eV_fraction": 3.8275491873017904e-16,
+            "partition_last_1eV_fraction": 4.382769541024444e-34,
+            "contact_weighted_mean_energy_eV": 0.49362008174001465,
+            "steady_one_pair": {
+              "log10_emitted_p_per_s": -85.75927316041158,
+              "log10_emitted_p_per_true_C": -81.33905675702839,
+              "log10_delta_R_k0": -86.9772877754341,
+              "log10_delta_R_k1": -86.1804944149944
+            }
+          },
+          "thermal_cut_check_change_dex": 0.0,
+          "thermal_contact_peak_energy_eV": 0.596891364772391
+        },
+        {
+          "join_A": 1.6,
+          "include_flagged": true,
+          "join_lattice_eV": 0.21718093021540721,
+          "ground_energy_eV": 0.019955268688178214,
+          "ground": {
+            "preparation": "cold_ground",
+            "log10_contact_A_minus3": -101.00914686971187,
+            "steady_one_pair": {
+              "log10_emitted_p_per_s": -93.24480604529083,
+              "log10_emitted_p_per_true_C": -88.82458964190764,
+              "log10_delta_R_k0": -94.46282066031335,
+              "log10_delta_R_k1": -93.66602729987365
+            }
+          },
+          "thermal_300K": {
+            "preparation": "thermal_300K",
+            "log10_contact_A_minus3": -98.29520266510711,
+            "contact_peak_energy_eV": 0.8671879994595022,
+            "contact_last_1eV_fraction": 1.7209023921201028e-12,
+            "partition_last_1eV_fraction": 4.220507128751647e-34,
+            "contact_weighted_mean_energy_eV": 0.5986947980711808,
+            "steady_one_pair": {
+              "log10_emitted_p_per_s": -90.53086184068607,
+              "log10_emitted_p_per_true_C": -86.11064543730288,
+              "log10_delta_R_k0": -91.7488764557086,
+              "log10_delta_R_k1": -90.95208309526889
+            }
+          },
+          "thermal_cut_check_change_dex": 7.389644451905042e-13,
+          "thermal_contact_peak_energy_eV": 0.8671879994595022
+        },
+        {
+          "join_A": 1.28782409436586,
+          "include_flagged": false,
+          "join_lattice_eV": 0.48835580627006514,
+          "ground_energy_eV": 0.01995292797207661,
+          "ground": {
+            "preparation": "cold_ground",
+            "log10_contact_A_minus3": -97.01593640980416,
+            "steady_one_pair": {
+              "log10_emitted_p_per_s": -89.25159558538311,
+              "log10_emitted_p_per_true_C": -84.83137918199992,
+              "log10_delta_R_k0": -90.46961020040564,
+              "log10_delta_R_k1": -89.67281683996593
+            }
+          },
+          "thermal_300K": {
+            "preparation": "thermal_300K",
+            "log10_contact_A_minus3": -92.92948140820619,
+            "contact_peak_energy_eV": 0.5341154399719261,
+            "contact_last_1eV_fraction": 1.7375883288069693e-17,
+            "partition_last_1eV_fraction": 3.417903984036416e-35,
+            "contact_weighted_mean_energy_eV": 0.4802390854506673,
+            "steady_one_pair": {
+              "log10_emitted_p_per_s": -85.16514058378515,
+              "log10_emitted_p_per_true_C": -80.74492418040195,
+              "log10_delta_R_k0": -86.38315519880767,
+              "log10_delta_R_k1": -85.58636183836796
+            }
+          },
+          "thermal_cut_check_change_dex": 0.0,
+          "thermal_contact_peak_energy_eV": 0.5341154399719261
+        },
+        {
+          "join_A": 1.6,
+          "include_flagged": false,
+          "join_lattice_eV": 0.21485519998527886,
+          "ground_energy_eV": 0.019955156361951033,
+          "ground": {
+            "preparation": "cold_ground",
+            "log10_contact_A_minus3": -100.98055403520739,
+            "steady_one_pair": {
+              "log10_emitted_p_per_s": -93.21621321078635,
+              "log10_emitted_p_per_true_C": -88.79599680740316,
+              "log10_delta_R_k0": -94.43422782580888,
+              "log10_delta_R_k1": -93.63743446536917
+            }
+          },
+          "thermal_300K": {
+            "preparation": "thermal_300K",
+            "log10_contact_A_minus3": -98.25862979793153,
+            "contact_peak_energy_eV": 0.8661134942846145,
+            "contact_last_1eV_fraction": 1.6470294289297783e-12,
+            "partition_last_1eV_fraction": 4.325099884370462e-34,
+            "contact_weighted_mean_energy_eV": 0.5991430493870498,
+            "steady_one_pair": {
+              "log10_emitted_p_per_s": -90.49428897351049,
+              "log10_emitted_p_per_true_C": -86.0740725701273,
+              "log10_delta_R_k0": -91.71230358853302,
+              "log10_delta_R_k1": -90.91551022809331
+            }
+          },
+          "thermal_cut_check_change_dex": 7.247535904753022e-13,
+          "thermal_contact_peak_energy_eV": 0.8661134942846145
+        }
+      ]
+    },
+    "terminal": {
+      "descriptor": {
+        "schema": "g11-site-pair-v1",
+        "pair_id": "covered-PdD-D28-D26-terminal",
+        "R0_A": 2.4370398315432267,
+        "axis": [
+          -0.005452232903479853,
+          -0.003152909799016573,
+          -0.9999801659613882
+        ],
+        "sites": [
+          {
+            "id": "D28",
+            "well": "adsorbed"
+          },
+          {
+            "id": "D26",
+            "well": "subsurface"
+          }
+        ],
+        "wells": {
+          "adsorbed": {
+            "source": "native signed slab normal; projected onto near-normal pair line",
+            "inward": {
+              "K_eV_A2": 1.10789849379977,
+              "K4_eV_A4": 0.0,
+              "origin_cut_A": 0.0,
+              "q_A": [
+                0.12000238013184104,
+                0.3600071403955231
+              ],
+              "E_eV": [
+                0.026820498030545536,
+                0.19320414302382005
+              ],
+              "dE_dq_eV_A": [
+                0.392022843927565,
+                0.9103409619716657
+              ],
+              "dE_dq_at_zero_eV_A": 0.03947504640173243,
+              "last_sample_curvature_eV_A2": 1.10789849379977,
+              "near_secant_curvature_eV_A2": 3.1249324667391813
+            },
+            "outward": {
+              "K_eV_A2": 2.469479755770773,
+              "K4_eV_A4": 0.0,
+              "origin_cut_A": 0.0,
+              "q_A": [
+                0.12000238013184104,
+                0.3600071403955231
+              ],
+              "E_eV": [
+                0.019946281871284555,
+                0.1975863537094682
+              ],
+              "dE_dq_eV_A": [
+                0.3579758235923689,
+                1.0794122406321345
+              ],
+              "dE_dq_at_zero_eV_A": -0.03947504640173243,
+              "last_sample_curvature_eV_A2": 2.469479755770773,
+              "near_secant_curvature_eV_A2": 3.1249324667391813
+            }
+          },
+          "subsurface": {
+            "source": "native signed slab normal; projected onto near-normal pair line",
+            "inward": {
+              "K_eV_A2": 0.5161646267858813,
+              "K4_eV_A4": 0.0,
+              "origin_cut_A": 0.0,
+              "q_A": [
+                0.12000238013184104,
+                0.3600071403955231
+              ],
+              "E_eV": [
+                0.010383037642384352,
+                0.07553637794138979
+              ],
+              "dE_dq_eV_A": [
+                0.16879467551249122,
+                0.3537734544029531
+              ],
+              "dE_dq_at_zero_eV_A": 0.002407550192835972,
+              "last_sample_curvature_eV_A2": 0.5161646267858813,
+              "near_secant_curvature_eV_A2": 1.3532953552408709
+            },
+            "outward": {
+              "K_eV_A2": 0.8168959838130893,
+              "K4_eV_A4": 0.0,
+              "origin_cut_A": 0.0,
+              "q_A": [
+                0.12000238013184104,
+                0.3600071403955231
+              ],
+              "E_eV": [
+                0.008856239612171635,
+                0.08312347612192639
+              ],
+              "dE_dq_eV_A": [
+                0.1560026517880485,
+                0.4351744271105709
+              ],
+              "dE_dq_at_zero_eV_A": -0.002407550192835972,
+              "last_sample_curvature_eV_A2": 0.8168959838130893,
+              "near_secant_curvature_eV_A2": 1.3532953552408709
+            }
+          }
+        },
+        "connected": {
+          "u_A": [
+            0.12,
+            0.24,
+            0.36,
+            0.48,
+            0.8
+          ],
+          "W_eV": [
+            0.0027074222961971373,
+            0.012627486155508905,
+            0.03389455258036378,
+            0.07366871427427668,
+            0.3763843714251607
+          ],
+          "dW_du_eV_A": [
+            0.05077944191875313,
+            0.12311477932401911,
+            0.24180333349471023,
+            0.4370120159800962,
+            1.7167879037929286
+          ],
+          "flagged": [
+            false,
+            false,
+            false,
+            true,
+            true
+          ],
+          "source_sha256": "9bb7ee706522386f281bdf79e02bf1494e9453727f1bb396223f5e9e09032ce4"
+        },
+        "inner": {
+          "R_A": [
+            0.1,
+            0.2,
+            0.3,
+            0.4,
+            0.5,
+            1.0,
+            1.6
+          ],
+          "V_total_eV": [
+            103.44665507070361,
+            36.089410526086795,
+            15.58104333679571,
+            8.462165156778855,
+            4.817774529690019,
+            0.6608556272195389,
+            -0.18119548138581432
+          ],
+          "source": "g6_collision/curves/baseline_BO_pair.json"
+        },
+        "joins_A": [
+          1.28782409436586,
+          1.6
+        ],
+        "preparation": {
+          "thermal_K": [
+            300.0
+          ]
+        },
+        "pulse_drive": {
+          "flat_below_A": 1.0,
+          "transition_width_A": 0.4
+        },
+        "readout": "g12-pdd-0.25"
+      },
+      "variants": [
+        {
+          "join_A": 1.28782409436586,
+          "include_flagged": true,
+          "join_lattice_eV": 0.7015088532858069,
+          "ground_energy_eV": 0.03495066068621648,
+          "ground": {
+            "preparation": "cold_ground",
+            "log10_contact_A_minus3": -101.00779576946057,
+            "steady_one_pair": {
+              "log10_emitted_p_per_s": -93.24345494503953,
+              "log10_emitted_p_per_true_C": -88.82323854165634,
+              "log10_delta_R_k0": -94.46146956006206,
+              "log10_delta_R_k1": -93.66467619962235
+            }
+          },
+          "thermal_300K": {
+            "preparation": "thermal_300K",
+            "log10_contact_A_minus3": -96.17410064411217,
+            "contact_peak_energy_eV": 0.7567915907681735,
+            "contact_last_1eV_fraction": 3.921846408709719e-14,
+            "partition_last_1eV_fraction": 3.6425496717220674e-34,
+            "contact_weighted_mean_energy_eV": 0.6786171730425913,
+            "steady_one_pair": {
+              "log10_emitted_p_per_s": -88.40975981969113,
+              "log10_emitted_p_per_true_C": -83.98954341630794,
+              "log10_delta_R_k0": -89.62777443471366,
+              "log10_delta_R_k1": -88.83098107427395
+            }
+          },
+          "thermal_cut_check_change_dex": 2.842170943040401e-14,
+          "thermal_contact_peak_energy_eV": 0.7567915907681735
+        },
+        {
+          "join_A": 1.6,
+          "include_flagged": true,
+          "join_lattice_eV": 0.39585814627886096,
+          "ground_energy_eV": 0.03495070313187196,
+          "ground": {
+            "preparation": "cold_ground",
+            "log10_contact_A_minus3": -104.24863004979227,
+            "steady_one_pair": {
+              "log10_emitted_p_per_s": -96.48428922537123,
+              "log10_emitted_p_per_true_C": -92.06407282198803,
+              "log10_delta_R_k0": -97.70230384039375,
+              "log10_delta_R_k1": -96.90551047995405
+            }
+          },
+          "thermal_300K": {
+            "preparation": "thermal_300K",
+            "log10_contact_A_minus3": -100.95270982059375,
+            "contact_peak_energy_eV": 1.0379758951505336,
+            "contact_last_1eV_fraction": 1.2046371850492297e-10,
+            "partition_last_1eV_fraction": 3.0182750027670096e-34,
+            "contact_weighted_mean_energy_eV": 0.7398392251310625,
+            "steady_one_pair": {
+              "log10_emitted_p_per_s": -93.18836899617271,
+              "log10_emitted_p_per_true_C": -88.76815259278952,
+              "log10_delta_R_k0": -94.40638361119524,
+              "log10_delta_R_k1": -93.60959025075553
+            }
+          },
+          "thermal_cut_check_change_dex": 5.2310156206658576e-11,
+          "thermal_contact_peak_energy_eV": 1.0379758951505336
+        },
+        {
+          "join_A": 1.28782409436586,
+          "include_flagged": false,
+          "join_lattice_eV": 0.663204719002376,
+          "ground_energy_eV": 0.03495065556197148,
+          "ground": {
+            "preparation": "cold_ground",
+            "log10_contact_A_minus3": -100.63470190332897,
+            "steady_one_pair": {
+              "log10_emitted_p_per_s": -92.87036107890793,
+              "log10_emitted_p_per_true_C": -88.45014467552474,
+              "log10_delta_R_k0": -94.08837569393046,
+              "log10_delta_R_k1": -93.29158233349075
+            }
+          },
+          "thermal_300K": {
+            "preparation": "thermal_300K",
+            "log10_contact_A_minus3": -95.57659686417688,
+            "contact_peak_energy_eV": 0.6904052846593631,
+            "contact_last_1eV_fraction": 1.7771212840147948e-14,
+            "partition_last_1eV_fraction": 5.023299940294967e-34,
+            "contact_weighted_mean_energy_eV": 0.664146897366127,
+            "steady_one_pair": {
+              "log10_emitted_p_per_s": -87.81225603975584,
+              "log10_emitted_p_per_true_C": -83.39203963637264,
+              "log10_delta_R_k0": -89.03027065477836,
+              "log10_delta_R_k1": -88.23347729433866
+            }
+          },
+          "thermal_cut_check_change_dex": 1.4210854715202004e-14,
+          "thermal_contact_peak_energy_eV": 0.6904052846593631
+        },
+        {
+          "join_A": 1.6,
+          "include_flagged": false,
+          "join_lattice_eV": 0.39353241604873257,
+          "ground_energy_eV": 0.03495069932268684,
+          "ground": {
+            "preparation": "cold_ground",
+            "log10_contact_A_minus3": -104.22271701546318,
+            "steady_one_pair": {
+              "log10_emitted_p_per_s": -96.45837619104213,
+              "log10_emitted_p_per_true_C": -92.03815978765894,
+              "log10_delta_R_k0": -97.67639080606466,
+              "log10_delta_R_k1": -96.87959744562495
+            }
+          },
+          "thermal_300K": {
+            "preparation": "thermal_300K",
+            "log10_contact_A_minus3": -100.91664649558315,
+            "contact_peak_energy_eV": 1.036932407157155,
+            "contact_last_1eV_fraction": 1.1568150525272708e-10,
+            "partition_last_1eV_fraction": 3.0938624151069143e-34,
+            "contact_weighted_mean_energy_eV": 0.7408670158657206,
+            "steady_one_pair": {
+              "log10_emitted_p_per_s": -93.15230567116211,
+              "log10_emitted_p_per_true_C": -88.73208926777892,
+              "log10_delta_R_k0": -94.37032028618464,
+              "log10_delta_R_k1": -93.57352692574493
+            }
+          },
+          "thermal_cut_check_change_dex": 5.023537141823908e-11,
+          "thermal_contact_peak_energy_eV": 1.036932407157155
+        }
+      ]
+    },
+    "near": {
+      "descriptor": {
+        "schema": "g11-site-pair-v1",
+        "pair_id": "covered-PdD-D28-D26-near",
+        "R0_A": 2.4370398315432267,
+        "axis": [
+          -0.005452232903479853,
+          -0.003152909799016573,
+          -0.9999801659613882
+        ],
+        "sites": [
+          {
+            "id": "D28",
+            "well": "adsorbed"
+          },
+          {
+            "id": "D26",
+            "well": "subsurface"
+          }
+        ],
+        "wells": {
+          "adsorbed": {
+            "source": "native signed slab normal; projected onto near-normal pair line",
+            "inward": {
+              "K_eV_A2": 3.1249324667391813,
+              "K4_eV_A4": 0.0,
+              "origin_cut_A": 0.0,
+              "q_A": [
+                0.12000238013184104,
+                0.3600071403955231
+              ],
+              "E_eV": [
+                0.026820498030545536,
+                0.19320414302382005
+              ],
+              "dE_dq_eV_A": [
+                0.392022843927565,
+                0.9103409619716657
+              ],
+              "dE_dq_at_zero_eV_A": 0.03947504640173243,
+              "last_sample_curvature_eV_A2": 1.10789849379977,
+              "near_secant_curvature_eV_A2": 3.1249324667391813
+            },
+            "outward": {
+              "K_eV_A2": 3.1249324667391813,
+              "K4_eV_A4": 0.0,
+              "origin_cut_A": 0.0,
+              "q_A": [
+                0.12000238013184104,
+                0.3600071403955231
+              ],
+              "E_eV": [
+                0.019946281871284555,
+                0.1975863537094682
+              ],
+              "dE_dq_eV_A": [
+                0.3579758235923689,
+                1.0794122406321345
+              ],
+              "dE_dq_at_zero_eV_A": -0.03947504640173243,
+              "last_sample_curvature_eV_A2": 2.469479755770773,
+              "near_secant_curvature_eV_A2": 3.1249324667391813
+            }
+          },
+          "subsurface": {
+            "source": "native signed slab normal; projected onto near-normal pair line",
+            "inward": {
+              "K_eV_A2": 1.3532953552408709,
+              "K4_eV_A4": 0.0,
+              "origin_cut_A": 0.0,
+              "q_A": [
+                0.12000238013184104,
+                0.3600071403955231
+              ],
+              "E_eV": [
+                0.010383037642384352,
+                0.07553637794138979
+              ],
+              "dE_dq_eV_A": [
+                0.16879467551249122,
+                0.3537734544029531
+              ],
+              "dE_dq_at_zero_eV_A": 0.002407550192835972,
+              "last_sample_curvature_eV_A2": 0.5161646267858813,
+              "near_secant_curvature_eV_A2": 1.3532953552408709
+            },
+            "outward": {
+              "K_eV_A2": 1.3532953552408709,
+              "K4_eV_A4": 0.0,
+              "origin_cut_A": 0.0,
+              "q_A": [
+                0.12000238013184104,
+                0.3600071403955231
+              ],
+              "E_eV": [
+                0.008856239612171635,
+                0.08312347612192639
+              ],
+              "dE_dq_eV_A": [
+                0.1560026517880485,
+                0.4351744271105709
+              ],
+              "dE_dq_at_zero_eV_A": -0.002407550192835972,
+              "last_sample_curvature_eV_A2": 0.8168959838130893,
+              "near_secant_curvature_eV_A2": 1.3532953552408709
+            }
+          }
+        },
+        "connected": {
+          "u_A": [
+            0.12,
+            0.24,
+            0.36,
+            0.48,
+            0.8
+          ],
+          "W_eV": [
+            0.0027074222961971373,
+            0.012627486155508905,
+            0.03389455258036378,
+            0.07366871427427668,
+            0.3763843714251607
+          ],
+          "dW_du_eV_A": [
+            0.05077944191875313,
+            0.12311477932401911,
+            0.24180333349471023,
+            0.4370120159800962,
+            1.7167879037929286
+          ],
+          "flagged": [
+            false,
+            false,
+            false,
+            true,
+            true
+          ],
+          "source_sha256": "9bb7ee706522386f281bdf79e02bf1494e9453727f1bb396223f5e9e09032ce4"
+        },
+        "inner": {
+          "R_A": [
+            0.1,
+            0.2,
+            0.3,
+            0.4,
+            0.5,
+            1.0,
+            1.6
+          ],
+          "V_total_eV": [
+            103.44665507070361,
+            36.089410526086795,
+            15.58104333679571,
+            8.462165156778855,
+            4.817774529690019,
+            0.6608556272195389,
+            -0.18119548138581432
+          ],
+          "source": "g6_collision/curves/baseline_BO_pair.json"
+        },
+        "joins_A": [
+          1.28782409436586,
+          1.6
+        ],
+        "preparation": {
+          "thermal_K": [
+            300.0
+          ]
+        },
+        "pulse_drive": {
+          "flat_below_A": 1.0,
+          "transition_width_A": 0.4
+        },
+        "readout": "g12-pdd-0.25"
+      },
+      "variants": [
+        {
+          "join_A": 1.28782409436586,
+          "include_flagged": true,
+          "join_lattice_eV": 0.7672309511374356,
+          "ground_energy_eV": 0.034950682673401956,
+          "ground": {
+            "preparation": "cold_ground",
+            "log10_contact_A_minus3": -101.64098223678262,
+            "steady_one_pair": {
+              "log10_emitted_p_per_s": -93.87664141236158,
+              "log10_emitted_p_per_true_C": -89.45642500897839,
+              "log10_delta_R_k0": -95.0946560273841,
+              "log10_delta_R_k1": -94.2978626669444
+            }
+          },
+          "thermal_300K": {
+            "preparation": "thermal_300K",
+            "log10_contact_A_minus3": -97.18001868904405,
+            "contact_peak_energy_eV": 0.8384655684618509,
+            "contact_last_1eV_fraction": 2.6410875725501047e-13,
+            "partition_last_1eV_fraction": 4.357302021005472e-34,
+            "contact_weighted_mean_energy_eV": 0.6902581343043027,
+            "steady_one_pair": {
+              "log10_emitted_p_per_s": -89.415677864623,
+              "log10_emitted_p_per_true_C": -84.99546146123981,
+              "log10_delta_R_k0": -90.63369247964553,
+              "log10_delta_R_k1": -89.83689911920582
+            }
+          },
+          "thermal_cut_check_change_dex": 9.947598300641403e-14,
+          "thermal_contact_peak_energy_eV": 0.8384655684618509
+        },
+        {
+          "join_A": 1.6,
+          "include_flagged": true,
+          "join_lattice_eV": 0.4007441121735567,
+          "ground_energy_eV": 0.034950722619866745,
+          "ground": {
+            "preparation": "cold_ground",
+            "log10_contact_A_minus3": -104.30305361822802,
+            "steady_one_pair": {
+              "log10_emitted_p_per_s": -96.53871279380698,
+              "log10_emitted_p_per_true_C": -92.11849639042379,
+              "log10_delta_R_k0": -97.7567274088295,
+              "log10_delta_R_k1": -96.9599340483898
+            }
+          },
+          "thermal_300K": {
+            "preparation": "thermal_300K",
+            "log10_contact_A_minus3": -101.02837211351054,
+            "contact_peak_energy_eV": 1.0499532201957473,
+            "contact_last_1eV_fraction": 2.3347575620721077e-10,
+            "partition_last_1eV_fraction": 6.019423219297255e-34,
+            "contact_weighted_mean_energy_eV": 0.7375871485224345,
+            "steady_one_pair": {
+              "log10_emitted_p_per_s": -93.2640312890895,
+              "log10_emitted_p_per_true_C": -88.84381488570631,
+              "log10_delta_R_k0": -94.48204590411203,
+              "log10_delta_R_k1": -93.68525254367232
+            }
+          },
+          "thermal_cut_check_change_dex": 1.014086592476815e-10,
+          "thermal_contact_peak_energy_eV": 1.0499532201957473
+        },
+        {
+          "join_A": 1.28782409436586,
+          "include_flagged": false,
+          "join_lattice_eV": 0.7289268168540046,
+          "ground_energy_eV": 0.03495067765830295,
+          "ground": {
+            "preparation": "cold_ground",
+            "log10_contact_A_minus3": -101.27875606737423,
+            "steady_one_pair": {
+              "log10_emitted_p_per_s": -93.51441524295319,
+              "log10_emitted_p_per_true_C": -89.09419883957,
+              "log10_delta_R_k0": -94.73242985797572,
+              "log10_delta_R_k1": -93.93563649753601
+            }
+          },
+          "thermal_300K": {
+            "preparation": "thermal_300K",
+            "log10_contact_A_minus3": -96.6007927928684,
+            "contact_peak_energy_eV": 0.7693323676085315,
+            "contact_last_1eV_fraction": 1.2773878761798676e-13,
+            "partition_last_1eV_fraction": 6.1323403516266165e-34,
+            "contact_weighted_mean_energy_eV": 0.6872022713920604,
+            "steady_one_pair": {
+              "log10_emitted_p_per_s": -88.83645196844736,
+              "log10_emitted_p_per_true_C": -84.41623556506417,
+              "log10_delta_R_k0": -90.05446658346989,
+              "log10_delta_R_k1": -89.25767322303018
+            }
+          },
+          "thermal_cut_check_change_dex": 4.263256414560601e-14,
+          "thermal_contact_peak_energy_eV": 0.7693323676085315
+        },
+        {
+          "join_A": 1.6,
+          "include_flagged": false,
+          "join_lattice_eV": 0.3984183819434283,
+          "ground_energy_eV": 0.03495071884888272,
+          "ground": {
+            "preparation": "cold_ground",
+            "log10_contact_A_minus3": -104.2771980785726,
+            "steady_one_pair": {
+              "log10_emitted_p_per_s": -96.51285725415156,
+              "log10_emitted_p_per_true_C": -92.09264085076836,
+              "log10_delta_R_k0": -97.73087186917408,
+              "log10_delta_R_k1": -96.93407850873437
+            }
+          },
+          "thermal_300K": {
+            "preparation": "thermal_300K",
+            "log10_contact_A_minus3": -100.9924027972485,
+            "contact_peak_energy_eV": 1.048841111184894,
+            "contact_last_1eV_fraction": 2.2445936839749747e-10,
+            "partition_last_1eV_fraction": 6.17848799262361e-34,
+            "contact_weighted_mean_energy_eV": 0.738701621822846,
+            "steady_one_pair": {
+              "log10_emitted_p_per_s": -93.22806197282746,
+              "log10_emitted_p_per_true_C": -88.80784556944427,
+              "log10_delta_R_k0": -94.44607658784999,
+              "log10_delta_R_k1": -93.64928322741028
+            }
+          },
+          "thermal_cut_check_change_dex": 9.747225249157054e-11,
+          "thermal_contact_peak_energy_eV": 1.048841111184894
+        }
+      ]
+    },
+    "stiff": {
+      "descriptor": {
+        "schema": "g11-site-pair-v1",
+        "pair_id": "covered-PdD-D28-D26-stiff",
+        "R0_A": 2.4370398315432267,
+        "axis": [
+          -0.005452232903479853,
+          -0.003152909799016573,
+          -0.9999801659613882
+        ],
+        "sites": [
+          {
+            "id": "D28",
+            "well": "adsorbed"
+          },
+          {
+            "id": "D26",
+            "well": "subsurface"
+          }
+        ],
+        "wells": {
+          "adsorbed": {
+            "source": "native signed slab normal; projected onto near-normal pair line",
+            "inward": {
+              "K_eV_A2": 12.499729866956725,
+              "K4_eV_A4": 0.0,
+              "origin_cut_A": 0.0,
+              "q_A": [
+                0.12000238013184104,
+                0.3600071403955231
+              ],
+              "E_eV": [
+                0.026820498030545536,
+                0.19320414302382005
+              ],
+              "dE_dq_eV_A": [
+                0.392022843927565,
+                0.9103409619716657
+              ],
+              "dE_dq_at_zero_eV_A": 0.03947504640173243,
+              "last_sample_curvature_eV_A2": 1.10789849379977,
+              "near_secant_curvature_eV_A2": 3.1249324667391813
+            },
+            "outward": {
+              "K_eV_A2": 12.499729866956725,
+              "K4_eV_A4": 0.0,
+              "origin_cut_A": 0.0,
+              "q_A": [
+                0.12000238013184104,
+                0.3600071403955231
+              ],
+              "E_eV": [
+                0.019946281871284555,
+                0.1975863537094682
+              ],
+              "dE_dq_eV_A": [
+                0.3579758235923689,
+                1.0794122406321345
+              ],
+              "dE_dq_at_zero_eV_A": -0.03947504640173243,
+              "last_sample_curvature_eV_A2": 2.469479755770773,
+              "near_secant_curvature_eV_A2": 3.1249324667391813
+            }
+          },
+          "subsurface": {
+            "source": "native signed slab normal; projected onto near-normal pair line",
+            "inward": {
+              "K_eV_A2": 5.413181420963483,
+              "K4_eV_A4": 0.0,
+              "origin_cut_A": 0.0,
+              "q_A": [
+                0.12000238013184104,
+                0.3600071403955231
+              ],
+              "E_eV": [
+                0.010383037642384352,
+                0.07553637794138979
+              ],
+              "dE_dq_eV_A": [
+                0.16879467551249122,
+                0.3537734544029531
+              ],
+              "dE_dq_at_zero_eV_A": 0.002407550192835972,
+              "last_sample_curvature_eV_A2": 0.5161646267858813,
+              "near_secant_curvature_eV_A2": 1.3532953552408709
+            },
+            "outward": {
+              "K_eV_A2": 5.413181420963483,
+              "K4_eV_A4": 0.0,
+              "origin_cut_A": 0.0,
+              "q_A": [
+                0.12000238013184104,
+                0.3600071403955231
+              ],
+              "E_eV": [
+                0.008856239612171635,
+                0.08312347612192639
+              ],
+              "dE_dq_eV_A": [
+                0.1560026517880485,
+                0.4351744271105709
+              ],
+              "dE_dq_at_zero_eV_A": -0.002407550192835972,
+              "last_sample_curvature_eV_A2": 0.8168959838130893,
+              "near_secant_curvature_eV_A2": 1.3532953552408709
+            }
+          }
+        },
+        "connected": {
+          "u_A": [
+            0.12,
+            0.24,
+            0.36,
+            0.48,
+            0.8
+          ],
+          "W_eV": [
+            0.0027074222961971373,
+            0.012627486155508905,
+            0.03389455258036378,
+            0.07366871427427668,
+            0.3763843714251607
+          ],
+          "dW_du_eV_A": [
+            0.05077944191875313,
+            0.12311477932401911,
+            0.24180333349471023,
+            0.4370120159800962,
+            1.7167879037929286
+          ],
+          "flagged": [
+            false,
+            false,
+            false,
+            true,
+            true
+          ],
+          "source_sha256": "9bb7ee706522386f281bdf79e02bf1494e9453727f1bb396223f5e9e09032ce4"
+        },
+        "inner": {
+          "R_A": [
+            0.1,
+            0.2,
+            0.3,
+            0.4,
+            0.5,
+            1.0,
+            1.6
+          ],
+          "V_total_eV": [
+            103.44665507070361,
+            36.089410526086795,
+            15.58104333679571,
+            8.462165156778855,
+            4.817774529690019,
+            0.6608556272195389,
+            -0.18119548138581432
+          ],
+          "source": "g6_collision/curves/baseline_BO_pair.json"
+        },
+        "joins_A": [
+          1.28782409436586,
+          1.6
+        ],
+        "preparation": {
+          "thermal_K": [
+            300.0
+          ]
+        },
+        "pulse_drive": {
+          "flat_below_A": 1.0,
+          "transition_width_A": 0.4
+        },
+        "readout": "g12-pdd-0.25"
+      },
+      "variants": [
+        {
+          "join_A": 1.28782409436586,
+          "include_flagged": true,
+          "join_lattice_eV": 1.0765878641855189,
+          "ground_energy_eV": 0.03495085111165562,
+          "ground": {
+            "preparation": "cold_ground",
+            "log10_contact_A_minus3": -104.41360430677926,
+            "steady_one_pair": {
+              "log10_emitted_p_per_s": -96.64926348235822,
+              "log10_emitted_p_per_true_C": -92.22904707897503,
+              "log10_delta_R_k0": -97.86727809738075,
+              "log10_delta_R_k1": -97.07048473694104
+            }
+          },
+          "thermal_300K": {
+            "preparation": "thermal_300K",
+            "log10_contact_A_minus3": -101.22276920494473,
+            "contact_peak_energy_eV": 0.4527225646278616,
+            "contact_last_1eV_fraction": 1.252417055361091e-10,
+            "partition_last_1eV_fraction": 3.43762174068335e-34,
+            "contact_weighted_mean_energy_eV": 0.5072177131018369,
+            "steady_one_pair": {
+              "log10_emitted_p_per_s": -93.45842838052369,
+              "log10_emitted_p_per_true_C": -89.03821197714049,
+              "log10_delta_R_k0": -94.67644299554621,
+              "log10_delta_R_k1": -93.8796496351065
+            }
+          },
+          "thermal_cut_check_change_dex": 5.439915184979327e-11,
+          "thermal_contact_peak_energy_eV": 0.4527225646278616
+        },
+        {
+          "join_A": 1.6,
+          "include_flagged": true,
+          "join_lattice_eV": 0.42374257655388736,
+          "ground_energy_eV": 0.03495088106699329,
+          "ground": {
+            "preparation": "cold_ground",
+            "log10_contact_A_minus3": -104.557625128218,
+            "steady_one_pair": {
+              "log10_emitted_p_per_s": -96.79328430379697,
+              "log10_emitted_p_per_true_C": -92.37306790041377,
+              "log10_delta_R_k0": -98.01129891881949,
+              "log10_delta_R_k1": -97.21450555837978
+            }
+          },
+          "thermal_300K": {
+            "preparation": "thermal_300K",
+            "log10_contact_A_minus3": -101.38172427983238,
+            "contact_peak_energy_eV": 1.0587347335913104,
+            "contact_last_1eV_fraction": 3.355177354910166e-10,
+            "partition_last_1eV_fraction": 3.5839672248750343e-34,
+            "contact_weighted_mean_energy_eV": 0.7245170984775249,
+            "steady_one_pair": {
+              "log10_emitted_p_per_s": -93.61738345541134,
+              "log10_emitted_p_per_true_C": -89.19716705202815,
+              "log10_delta_R_k0": -94.83539807043387,
+              "log10_delta_R_k1": -94.03860470999416
+            }
+          },
+          "thermal_cut_check_change_dex": 1.4570389339496614e-10,
+          "thermal_contact_peak_energy_eV": 1.0587347335913104
+        },
+        {
+          "join_A": 1.28782409436586,
+          "include_flagged": false,
+          "join_lattice_eV": 1.038283729902088,
+          "ground_energy_eV": 0.034950846527683224,
+          "ground": {
+            "preparation": "cold_ground",
+            "log10_contact_A_minus3": -104.09036335582176,
+            "steady_one_pair": {
+              "log10_emitted_p_per_s": -96.32602253140072,
+              "log10_emitted_p_per_true_C": -91.90580612801753,
+              "log10_delta_R_k0": -97.54403714642325,
+              "log10_delta_R_k1": -96.74724378598354
+            }
+          },
+          "thermal_300K": {
+            "preparation": "thermal_300K",
+            "log10_contact_A_minus3": -100.79780717185356,
+            "contact_peak_energy_eV": 0.4524004561059675,
+            "contact_last_1eV_fraction": 9.805620940430051e-11,
+            "partition_last_1eV_fraction": 5.331198982394936e-34,
+            "contact_weighted_mean_energy_eV": 0.5346584983460829,
+            "steady_one_pair": {
+              "log10_emitted_p_per_s": -93.03346634743252,
+              "log10_emitted_p_per_true_C": -88.61324994404933,
+              "log10_delta_R_k0": -94.25148096245505,
+              "log10_delta_R_k1": -93.45468760201534
+            }
+          },
+          "thermal_cut_check_change_dex": 4.2589931581460405e-11,
+          "thermal_contact_peak_energy_eV": 0.4524004561059675
+        },
+        {
+          "join_A": 1.6,
+          "include_flagged": false,
+          "join_lattice_eV": 0.421416846323759,
+          "ground_energy_eV": 0.03495087743789904,
+          "ground": {
+            "preparation": "cold_ground",
+            "log10_contact_A_minus3": -104.53203395136107,
+            "steady_one_pair": {
+              "log10_emitted_p_per_s": -96.76769312694003,
+              "log10_emitted_p_per_true_C": -92.34747672355684,
+              "log10_delta_R_k0": -97.98570774196256,
+              "log10_delta_R_k1": -97.18891438152285
+            }
+          },
+          "thermal_300K": {
+            "preparation": "thermal_300K",
+            "log10_contact_A_minus3": -101.34623344307704,
+            "contact_peak_energy_eV": 1.0576170799536628,
+            "contact_last_1eV_fraction": 3.2431537763140835e-10,
+            "partition_last_1eV_fraction": 3.7005318198662173e-34,
+            "contact_weighted_mean_energy_eV": 0.72604604588876,
+            "steady_one_pair": {
+              "log10_emitted_p_per_s": -93.581892618656,
+              "log10_emitted_p_per_true_C": -89.1616762152728,
+              "log10_delta_R_k0": -94.79990723367852,
+              "log10_delta_R_k1": -94.00311387323882
+            }
+          },
+          "thermal_cut_check_change_dex": 1.4084378108236706e-10,
+          "thermal_contact_peak_energy_eV": 1.0576170799536628
+        }
+      ]
+    }
+  }
+}
