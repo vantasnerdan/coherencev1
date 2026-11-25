@@ -1,0 +1,362 @@
+{
+  "schema": "pdd-nonlinear-consumer-proof-v1",
+  "cases": {
+    "N2048_4.8meV": {
+      "saved_launch_constraints": true,
+      "all_step_saved_readouts_exact": true,
+      "selected_launch_constraints": {
+        "K": {
+          "initial_total_Ne_eV": 9.8304,
+          "actual_initial_kinetic_eV": 9.830400000000003,
+          "squared_norm_relative_error": 4.4191844406441543e-16,
+          "max_speed_A_fs": 0.013571469213337078,
+          "cap_A_fs": 0.013571469213337075,
+          "target_velocity_max_A_fs": 0.0,
+          "initial_displacement_max_A": 0.0,
+          "initial_potential_eV": 0.0,
+          "kinetic_IPR": 830.9556466124718,
+          "minimum_IPR_from_cap": 511.5,
+          "valid": true
+        },
+        "inward": {
+          "initial_total_Ne_eV": 9.8304,
+          "actual_initial_kinetic_eV": 9.830400000000003,
+          "squared_norm_relative_error": 4.4191844406441543e-16,
+          "max_speed_A_fs": 0.013571469213337078,
+          "cap_A_fs": 0.013571469213337075,
+          "target_velocity_max_A_fs": 0.0,
+          "initial_displacement_max_A": 0.0,
+          "initial_potential_eV": 0.0,
+          "kinetic_IPR": 830.9556466124718,
+          "minimum_IPR_from_cap": 511.5,
+          "valid": true
+        },
+        "distance": {
+          "initial_total_Ne_eV": 9.8304,
+          "actual_initial_kinetic_eV": 9.830400000000001,
+          "squared_norm_relative_error": 2.946122960429436e-16,
+          "max_speed_A_fs": 0.013571469213337078,
+          "cap_A_fs": 0.013571469213337075,
+          "target_velocity_max_A_fs": 0.0,
+          "initial_displacement_max_A": 0.0,
+          "initial_potential_eV": 0.0,
+          "kinetic_IPR": 830.8160801170442,
+          "minimum_IPR_from_cap": 511.5,
+          "valid": true
+        },
+        "loss_K": {
+          "initial_total_Ne_eV": 9.8304,
+          "actual_initial_kinetic_eV": 9.830399999999997,
+          "squared_norm_relative_error": 1.473061480214718e-16,
+          "max_speed_A_fs": 0.013571469213337078,
+          "cap_A_fs": 0.013571469213337075,
+          "target_velocity_max_A_fs": 0.0,
+          "initial_displacement_max_A": 0.0,
+          "initial_potential_eV": 0.0,
+          "kinetic_IPR": 830.9631256935189,
+          "minimum_IPR_from_cap": 511.5,
+          "valid": true
+        }
+      },
+      "original_bank_comparison": {
+        "K": {
+          "original_score": 0.477576980311796,
+          "selected_score": 0.5691127171394433,
+          "gain_fraction": 0.19166697852121417,
+          "score_units": "eV"
+        },
+        "inward": {
+          "original_score": 0.4775769803117962,
+          "selected_score": 0.5691127171394433,
+          "gain_fraction": 0.19166697852121373,
+          "score_units": "eV"
+        },
+        "distance": {
+          "original_score": 1.1021701228315073,
+          "selected_score": 1.1842418772428553,
+          "gain_fraction": 0.07446378078232008,
+          "score_units": "Angstrom approach Rref-R"
+        }
+      },
+      "actual_minimum_target_R_reduction_A": 0.08207175441134806,
+      "accepted_history_strictly_improving": true,
+      "every_selected_objective_dominates_every_recorded_feasible_trial": true,
+      "selected_local_stops": {
+        "K": true,
+        "inward": true,
+        "distance": false,
+        "loss_K": true
+      },
+      "available_original_bindings_unchanged": true,
+      "intentionally_omitted_original_bindings": [],
+      "execution_settings": {
+        "endpoint_prefilter": false,
+        "initial_RMS_step": 0.03,
+        "max_RMS_step": 0.12,
+        "minimum_RMS_step": 1e-05,
+        "accepted_relative_gain_floor": 1e-06,
+        "meaningful_relative_gain": 0.002,
+        "plateau_successes": 3,
+        "plateau_challenge_multiplier": 8,
+        "iteration_safety_cap": 60,
+        "numerical_threads": 1,
+        "per_objective_budget_seconds": 1500.0
+      },
+      "resolved": {
+        "K": true,
+        "inward": true,
+        "distance": true,
+        "loss_K": true
+      }
+    },
+    "N2048_25meV": {
+      "saved_launch_constraints": true,
+      "all_step_saved_readouts_exact": true,
+      "selected_launch_constraints": {
+        "K": {
+          "initial_total_Ne_eV": 51.2,
+          "actual_initial_kinetic_eV": 51.200000000000024,
+          "squared_norm_relative_error": 3.3939336504147097e-16,
+          "max_speed_A_fs": 0.03097249927763171,
+          "cap_A_fs": 0.030972499277631703,
+          "target_velocity_max_A_fs": 0.0,
+          "initial_displacement_max_A": 0.0,
+          "initial_potential_eV": 0.0,
+          "kinetic_IPR": 827.3657186557832,
+          "minimum_IPR_from_cap": 511.5,
+          "valid": true
+        },
+        "inward": {
+          "initial_total_Ne_eV": 51.2,
+          "actual_initial_kinetic_eV": 51.200000000000024,
+          "squared_norm_relative_error": 3.3939336504147097e-16,
+          "max_speed_A_fs": 0.03097249927763171,
+          "cap_A_fs": 0.030972499277631703,
+          "target_velocity_max_A_fs": 0.0,
+          "initial_displacement_max_A": 0.0,
+          "initial_potential_eV": 0.0,
+          "kinetic_IPR": 827.3657186557832,
+          "minimum_IPR_from_cap": 511.5,
+          "valid": true
+        },
+        "distance": {
+          "initial_total_Ne_eV": 51.2,
+          "actual_initial_kinetic_eV": 51.200000000000024,
+          "squared_norm_relative_error": 3.3939336504147097e-16,
+          "max_speed_A_fs": 0.03097249927763171,
+          "cap_A_fs": 0.030972499277631703,
+          "target_velocity_max_A_fs": 0.0,
+          "initial_displacement_max_A": 0.0,
+          "initial_potential_eV": 0.0,
+          "kinetic_IPR": 827.3657186557832,
+          "minimum_IPR_from_cap": 511.5,
+          "valid": true
+        },
+        "loss_K": {
+          "initial_total_Ne_eV": 51.2,
+          "actual_initial_kinetic_eV": 51.20000000000001,
+          "squared_norm_relative_error": 1.1313112168049032e-16,
+          "max_speed_A_fs": 0.030972499277631706,
+          "cap_A_fs": 0.030972499277631703,
+          "target_velocity_max_A_fs": 0.0,
+          "initial_displacement_max_A": 0.0,
+          "initial_potential_eV": 0.0,
+          "kinetic_IPR": 828.0995841852115,
+          "minimum_IPR_from_cap": 511.5,
+          "valid": true
+        }
+      },
+      "original_bank_comparison": {
+        "K": {
+          "original_score": 0.8257418507749268,
+          "selected_score": 1.0273239098662128,
+          "gain_fraction": 0.24412237178254803,
+          "score_units": "eV"
+        },
+        "inward": {
+          "original_score": 0.8089203457939388,
+          "selected_score": 0.9690859730213596,
+          "gain_fraction": 0.19799925673796914,
+          "score_units": "eV"
+        },
+        "distance": {
+          "original_score": 1.3357627559982566,
+          "selected_score": 1.4288773062574314,
+          "gain_fraction": 0.0697088984110712,
+          "score_units": "Angstrom approach Rref-R"
+        }
+      },
+      "actual_minimum_target_R_reduction_A": 0.09311455025917481,
+      "accepted_history_strictly_improving": true,
+      "every_selected_objective_dominates_every_recorded_feasible_trial": true,
+      "selected_local_stops": {
+        "K": false,
+        "inward": false,
+        "distance": true,
+        "loss_K": true
+      },
+      "available_original_bindings_unchanged": true,
+      "intentionally_omitted_original_bindings": [],
+      "execution_settings": {
+        "endpoint_prefilter": true,
+        "initial_RMS_step": 0.03,
+        "max_RMS_step": 0.12,
+        "minimum_RMS_step": 1e-05,
+        "accepted_relative_gain_floor": 1e-06,
+        "meaningful_relative_gain": 0.002,
+        "plateau_successes": 3,
+        "plateau_challenge_multiplier": 8,
+        "per_objective_budget_seconds": 1500.0,
+        "iteration_safety_cap": 60,
+        "numerical_threads": 1
+      },
+      "resolved": {
+        "K": true,
+        "inward": true,
+        "distance": true,
+        "loss_K": true
+      }
+    },
+    "N16384_0.6meV": {
+      "saved_launch_constraints": true,
+      "all_step_saved_readouts_exact": true,
+      "selected_launch_constraints": {
+        "K": {
+          "initial_total_Ne_eV": 9.8304,
+          "actual_initial_kinetic_eV": 9.830400000000001,
+          "squared_norm_relative_error": 1.473061480214718e-16,
+          "max_speed_A_fs": 0.004796188238351014,
+          "cap_A_fs": 0.004796188238351013,
+          "target_velocity_max_A_fs": 0.0,
+          "initial_displacement_max_A": 0.0,
+          "initial_potential_eV": 0.0,
+          "kinetic_IPR": 6873.583291902824,
+          "minimum_IPR_from_cap": 4095.5,
+          "valid": true
+        },
+        "inward": {
+          "initial_total_Ne_eV": 9.8304,
+          "actual_initial_kinetic_eV": 9.830400000000001,
+          "squared_norm_relative_error": 1.473061480214718e-16,
+          "max_speed_A_fs": 0.004796188238351014,
+          "cap_A_fs": 0.004796188238351013,
+          "target_velocity_max_A_fs": 0.0,
+          "initial_displacement_max_A": 0.0,
+          "initial_potential_eV": 0.0,
+          "kinetic_IPR": 6873.583291902824,
+          "minimum_IPR_from_cap": 4095.5,
+          "valid": true
+        },
+        "distance": {
+          "initial_total_Ne_eV": 9.8304,
+          "actual_initial_kinetic_eV": 9.830400000000001,
+          "squared_norm_relative_error": 1.473061480214718e-16,
+          "max_speed_A_fs": 0.004796188238351014,
+          "cap_A_fs": 0.004796188238351013,
+          "target_velocity_max_A_fs": 0.0,
+          "initial_displacement_max_A": 0.0,
+          "initial_potential_eV": 0.0,
+          "kinetic_IPR": 6873.583291902824,
+          "minimum_IPR_from_cap": 4095.5,
+          "valid": true
+        },
+        "loss_K": {
+          "initial_total_Ne_eV": 9.8304,
+          "actual_initial_kinetic_eV": 9.830399999999996,
+          "squared_norm_relative_error": 2.946122960429436e-16,
+          "max_speed_A_fs": 0.004796188238351014,
+          "cap_A_fs": 0.004796188238351013,
+          "target_velocity_max_A_fs": 0.0,
+          "initial_displacement_max_A": 0.0,
+          "initial_potential_eV": 0.0,
+          "kinetic_IPR": 6920.261817464159,
+          "minimum_IPR_from_cap": 4095.5,
+          "valid": true
+        }
+      },
+      "original_bank_comparison": {
+        "K": {
+          "original_score": 0.12483784143540816,
+          "selected_score": 0.29466113525792276,
+          "gain_fraction": 1.3603510912224652,
+          "score_units": "eV"
+        },
+        "inward": {
+          "original_score": 0.1160442783488931,
+          "selected_score": 0.2946611352565502,
+          "gain_fraction": 1.5392129577525253,
+          "score_units": "eV"
+        },
+        "distance": {
+          "original_score": 0.6649830883716432,
+          "selected_score": 0.9636738010012516,
+          "gain_fraction": 0.4491703892215033,
+          "score_units": "Angstrom approach Rref-R"
+        }
+      },
+      "actual_minimum_target_R_reduction_A": 0.29869071262960833,
+      "accepted_history_strictly_improving": true,
+      "every_selected_objective_dominates_every_recorded_feasible_trial": true,
+      "selected_local_stops": {
+        "K": false,
+        "inward": false,
+        "distance": false,
+        "loss_K": false
+      },
+      "available_original_bindings_unchanged": true,
+      "intentionally_omitted_original_bindings": [],
+      "execution_settings": {
+        "endpoint_prefilter": true,
+        "initial_RMS_step": 0.03,
+        "max_RMS_step": 0.12,
+        "minimum_RMS_step": 1e-05,
+        "accepted_relative_gain_floor": 1e-06,
+        "meaningful_relative_gain": 0.002,
+        "plateau_successes": 3,
+        "plateau_challenge_multiplier": 8,
+        "iteration_safety_cap": 60,
+        "numerical_threads": 1,
+        "per_objective_budget_seconds": 1425.0
+      },
+      "resolved": {
+        "K": false,
+        "inward": false,
+        "distance": false,
+        "loss_K": false
+      }
+    }
+  },
+  "actual_nonlinear_gradient_witnesses": [
+    {
+      "tau_fs": 0.0,
+      "objective_value": 0.009549720143641522,
+      "directional_fd": -0.4767691702631943,
+      "gradient_dot_direction": -0.4770589742386504,
+      "relative_defect": 0.0006074803978241624,
+      "endpoint_x_max_abs_difference_A": 0.0,
+      "endpoint_v_max_abs_difference_A_fs": 0.0,
+      "opposite_sign_rejected": true
+    },
+    {
+      "tau_fs": 4100.0,
+      "objective_value": 0.005503363880406929,
+      "directional_fd": 0.3595635845966491,
+      "gradient_dot_direction": 0.35947115189159196,
+      "relative_defect": 0.0002570691499831498,
+      "endpoint_x_max_abs_difference_A": 0.0,
+      "endpoint_v_max_abs_difference_A_fs": 0.0,
+      "opposite_sign_rejected": true
+    }
+  ],
+  "omitted_loss_callback_rejected": true,
+  "actual_receding_inward_value_and_gradient_zero": true,
+  "exact_original_files_unchanged": 35,
+  "immutable_source_check_scope": "all prior manifest entries except the two edited pages",
+  "actual_selected_endpoint_replays": 12,
+  "unique_native_endpoint_propagations": 10,
+  "exterior_dependent_supported_winners": 0,
+  "finite_difference_scope": "unconstrained launch derivative along a target-zero sphere tangent; not a global optimum proof",
+  "interpretation": "finite-model implementation/consumer evidence, not timestep or electronic validation",
+  "posthoc_scope": "kinetic exponential applied to the conservative trace only; its R/extent/total E fields, if present, remain conservative reference geometry and are not a lossy simultaneous state",
+  "archive_roundtrip": "recorded independently by nonlinear_package.py"
+}

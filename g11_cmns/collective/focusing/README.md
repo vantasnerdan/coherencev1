@@ -2,7 +2,77 @@
 
 **Finite-model result, unpublished.** The target is the actual D25→D63 [110] bond; every launch uses the same total N e. Wave/direct launches start with zero target velocity and zero displacement. Reverse recovery and localized collisions are shown, but are not silently promoted to collective preparation.
 
-The **.25-fs direct re-selection** at N=2048/25 meV/D gives **.82574185 eV**, receding, after all 11 allowed trials. This is the selected fine-step peak, **not a converged peak or an incident incoming state**. The original .5-fs optimum was .98026130 eV and inward. At pumped .6 meV/D, the supported 131k direct peak is **.35082778 eV**, inward; its energy fraction is only .4461%.
+## Actual nonlinear launch feedback
+
+The new launches use **the same initial N e, zero displacements, zero target velocities and original per-site speed cap**. They are adjusted against the actual nonlinear motion, not another harmonic proposal bank. All scoring remains on the **2400-fs, strictly pre-first-exit** trajectory. The original data and quantum/rate readouts below are unchanged; **none of these new peaks is mapped to a nuclear rate or physical emission**.
+
+At N=2048, dt=.25 fs, the best observed total peaks move **.47757698→.56911272 eV** at 4.8 meV/D and **.82574185→1.02732391 eV** at 25 meV/D. The latter is **receding**: its simultaneous inward energy is zero. The 25-meV launch nevertheless has a different inward pulse of **.96908597 eV**, and reaches **R=1.45894679 Å** at another time. These are not one common state.
+
+At **N=16384/.6 meV/D, the original dt=.5 fs**, nonlinear feedback gives **.29466114 eV**, inward, versus the original **.12483784-eV receding** maximum. The inward baseline is **.11604428 eV**. The selected launch reaches **R=1.92415029 Å**, versus **2.22284101 Å** originally, and stays inside the original extent through 2400 fs. Its searches stopped while still improving: **no plateau or asymptotic ceiling is established**.
+
+### Simultaneous target states, conservative dynamics
+
+`c` is signed inward speed; **negative means receding**. “Min R” is selected separately, not inferred from energy. Each row gives the quantities at the **same sample**.
+
+| N; meV/D | Objective | Krel (eV) | Strictly inward K (eV) | c (Å/fs) | Time (fs) | Actual R (Å) |
+|---|---|---:|---:|---:|---:|---:|
+| 2048; 4.8 | Max total K | .56911272 | .56911272 | +.10444273 | 678 | 2.83577493 |
+| 2048; 4.8 | Max inward K | .56911272 | .56911272 | +.10444273 | 678 | 2.83577493 |
+| 2048; 4.8 | Min R | .00001077 | 0 | −.00045437 | 2217.25 | 1.70358222 |
+| 2048; 25 | Max total K | 1.02732391 | 0 | −.14032427 | 1380.25 | 2.92819174 |
+| 2048; 25 | Max inward K | .96908597 | .96908597 | +.13628882 | 1351.5 | 2.78767232 |
+| 2048; 25 | Min R | .00007027 | 0 | −.00116052 | 1365.5 | 1.45894679 |
+| 16384; .6 | Max total K | .29466114 | .29466114 | +.07515200 | 1551.5 | 2.83610421 |
+| 16384; .6 | Max inward K | .29466114 | .29466114 | +.07515200 | 1551.5 | 2.83610421 |
+| 16384; .6 | Min R | .00002186 | .00002186 | +.00064732 | 1569 | 1.92415029 |
+
+The objective-matched original inward baselines are **.47757698/.80892035 eV**, not the wrong-signed total peak at 25 meV. Original closest target separations were **1.78565397/1.55206134 Å**. At 4.8 meV the final closest approach belongs to a late pulse, not the energy maximum at 678 fs.
+
+| N; meV/D; selected objective | Half-objective hold (fs) | Largest site radius in scored prefix (Å) | Smallest NN R in scored prefix (Å) | First original exit (fs) |
+|---|---:|---:|---:|---:|
+| 2048; 4.8; total / inward K | 18.5 | .72426968 | 1.70578315 | none |
+| 2048; 4.8; min R | 20.5 | .76631554 | 1.70358222 | none |
+| 2048; 25; total K | 17.75 | .79720556 | 1.45894679 | 1578.25 |
+| 2048; 25; inward K | 18 | .79720556 | 1.45894679 | 1578.25 |
+| 2048; 25; min R | 18.25 | .79720556 | 1.45894679 | 1578.25 |
+| 16384; .6; total / inward K | 22 | .51831795 | 1.92415029 | none |
+| 16384; .6; min R | 23 | .51831795 | 1.92415029 | none |
+
+All these holds are completed sampled intervals. A min-R half-approach hold is **not** an energy-pulse duration. The 25-meV exit is **after every scored target state**; no selected state uses an artificial exterior before its score. The near-edge excursion does not establish a material ceiling or validate the missing outer force surface.
+
+### One 4100-fs amplitude loss, inside the dynamics
+
+The same initial energy, cap, dt and horizon are retained. Post-hoc damping of the conservative trace is a separate kinetic-only comparison, **not** a lossy trajectory or its geometry.
+
+| N; meV/D | Original seed under loss: K (eV) | Post-hoc conservative K (eV) | Selected conservative launch under actual loss: K (eV) | Reoptimized under loss: K (eV) |
+|---|---:|---:|---:|---:|
+| 2048; 4.8 | .41198849 | .40884937 | .48022764 | .48249979 |
+| 2048; 25 | .33108957 | .52402469 | .56077189 | .77735349 |
+| 16384; .6 | .08153605 | .13826370 | .21670233 | .26806682 |
+
+| N; meV/D; lossy K maximum | Inward K (eV) | c (Å/fs) | Time (fs) | R (Å) | Half-K hold (fs) | Max scored radius (Å); first exit (fs) |
+|---|---:|---:|---:|---:|---:|---|
+| 2048; 4.8 | .48249979 | +.09616735 | 683.75 | 2.85565968 | 19 | .64829510; none |
+| 2048; 25 | 0 | −.12206421 | 1052.25 | 2.88584379 | 18.5 | .79785178; 1259.75 |
+| 16384; .6 | 0 | −.07168043 | 1695 | 2.86436454 | 22 | .51605484; none |
+
+The high-energy and pumped-16k lossy maxima are **receding**. The high-energy support exit occurs later, not before the quoted peak. On the pumped lossy launch, the separate maximum inward energy is **.23853523 eV at 1734.5 fs, R=2.99092882 Å**; its separate closest approach is **1.99519349 Å at 1677 fs**, with only **.00004629 eV** inward energy. They do not co-occur with its total-energy maximum. No other loss value, thermal model, electronic input or rate change enters this comparison.
+
+### What actually stopped
+
+Independent objective searches retain their accepted histories and feasible rejected steps. Final selection reranks **all observed feasible trials**, including a rejected inward-search step that supplies the best 4.8-meV min R. The 25-meV and pumped-16k distance-search launches supply their best observed total and inward energy as well as min R; the independent energy searches found smaller local winners. The delivered inward result is never replaced by an inferior independently optimized branch.
+
+The declared local gain-plateau resolution is **0.2%**, challenged by a larger feasible step. It is not an assertion of exact stationarity.
+
+The 4.8-meV total/inward and both N2048 lossy energy searches have measured local gain-plateau/backtracking stops. The 25-meV min-R branch has a measured feasible fixed-time backtracking stall. **No objective-matched plateau is claimed** for the 4.8-meV cross-selected min R, the 25-meV cross-selected K/inward winners, or any pumped-16k objective, including loss. The latter branches were still improving at their declared search stops. Those are best observed states, not global optima. A local plateau is not a convergence proof for timestep, horizon, preparation class or the real material.
+
+Exact independent histories are in `nonlinear_N*.json/.npz`; the delivered cross-objective selections are in `nonlinear_selection.json/.npz`. Simultaneous vectors, first-exit geometry, the settled changed-consumer proof and the new unpublished delta capsule are described in [method.md](method.md). Overlay the delta on the accepted baseline for its unchanged original figure and tables.
+
+The settled consumer proof passes: the saved selections satisfy the fixed launch constraints, dominate every observed feasible trial for their objective, and reproduce the actual native readout. Conservative/4100-fs-loss directional derivative defects are **.061%/.026%**; native and adjoint endpoint x/v are bitwise equal in that witness, and wrong-sign/omitted-loss controls are rejected. All **35 prior manifest entries outside the two edited pages** are byte-unchanged. This is finite-model implementation evidence, not electronic or timestep validation.
+
+## Retained eleven-candidate and original comparisons
+
+The retained **.25-fs direct re-selection** at N=2048/25 meV/D gives **.82574185 eV**, receding, after all 11 allowed trials. This is the selected fine-step bank peak, **not a converged peak or an incident incoming state**. The original .5-fs optimum was .98026130 eV and inward. At pumped .6 meV/D, the supported 131k direct peak is **.35082778 eV**, inward; its energy fraction is only .4461%.
 
 ## Pumped-size continuation: .6 meV/D
 
@@ -16,7 +86,7 @@ The original target-zero preparations, N-scaled energy, .5-fs step, 2400-fs hori
 
 At 16k, wave/direct peaks occur at **1623.5/1799 fs**, with **28/22-fs** holds and signed inward speeds **+.011086/−.048916 Å/fs**. Both selected traces complete the horizon without support exit. Wave/direct maximum site radii are **.12965/.34750 Å**, minimum actual NN separations **2.67221/2.22284 Å**, and positive-site launch participations **8237.4/6889.6 D**. Both target preloads and initial potential energies are zero. The direct winner is `direct_mixture_-0.25`; its negative sign is receding, not an incident beam energy.
 
-At 131k, wave/direct peaks occur at **678/1781.5 fs**, with **27.5/21-fs** holds and inward speeds **+.010603/+.082002 Å/fs**. Maximum site radii are **.14960/.54806 Å**, minimum actual NN separations **2.68105/1.90329 Å**, and positive-site launch participations **67456.6/47490.0 D**. Both target preloads and initial potential energies are zero; both complete 2400 fs without support exit. Direct again selects `direct_mixture_-0.25`. The same fixed search completes at this size; its deciding measured resource case and actual execution are retained in the JSON.
+At 131k, wave/direct peaks occur at **678/1781.5 fs**, with **27.5/21-fs** holds and inward speeds **+.010603/+.082002 Å/fs**. Maximum site radii are **.14960/.54806 Å**, minimum actual NN R **2.68105/1.90329 Å**, and positive-site launch participations **67456.6/47490.0 D**. Both target preloads and initial potential energies are zero; both complete 2400 fs without support exit. Direct again selects `direct_mixture_-0.25`.
 
 Adjacent direct finite peak exponents are **.4204, .8771, −.02816, .49690**; wave exponents are **.3871, −.1045, −.05062, −.04913**. The ~6% direct decrease at 16k **does not persist** at 131k: gain recovers while the energy fraction still falls. Neither saturation nor an asymptotic power law follows. No selected large-size trace is clipped by support, and the selected pulses are not at the horizon; the bounded launch class and finite 2400-fs search remain limitations. These waves are only the unchanged capped family, not all wave fields.
 

@@ -1,0 +1,242 @@
+{
+  "schema": "pdd-nonlinear-delivery-manifest-v1",
+  "publication": "unpublished local only",
+  "accepted_baseline": "fcf949c21784331e44181ec81c5580cb084db51a",
+  "plan": "coherencev1-g11-nonlinear-focusing-20261125",
+  "files": [
+    {
+      "path": "g11_cmns/collective/focusing/README.md",
+      "bytes": 25762,
+      "sha256": "d1c79c49860be4743728461d55d953ced6dee0f348b914489e28c75e52862639",
+      "role": "owned delivery"
+    },
+    {
+      "path": "g11_cmns/collective/focusing/method.md",
+      "bytes": 25667,
+      "sha256": "1f25e73db0895afb9df54c2f70f0efc5e7817c8c05536116cdf068f9d6a3293c",
+      "role": "owned delivery"
+    },
+    {
+      "path": "g11_cmns/collective/focusing/adjoint.py",
+      "bytes": 7041,
+      "sha256": "7e5a50bbdfe8a3d7a985315b05855e8eaba9976c5d5aa1bef3893e302c0b0543",
+      "role": "integrated peer source"
+    },
+    {
+      "path": "g11_cmns/collective/focusing/nonlinear.py",
+      "bytes": 18543,
+      "sha256": "5f4da615635f9dfaa1ec1c881731185b6c622cbed1c46f915ecc0d05f0aab1f0",
+      "role": "owned delivery"
+    },
+    {
+      "path": "g11_cmns/collective/focusing/nonlinear_select.py",
+      "bytes": 15610,
+      "sha256": "7b41041d0bebe55ffdb47a257c652422f4b6226f3ff650f9d70fb134754aa21e",
+      "role": "owned delivery"
+    },
+    {
+      "path": "g11_cmns/collective/focusing/nonlinear_verify.py",
+      "bytes": 12509,
+      "sha256": "af093286ccb7ea0341aa84f57bcc743adb605d843a0ba67b5ae8480ab7bd8cdb",
+      "role": "owned delivery"
+    },
+    {
+      "path": "g11_cmns/collective/focusing/nonlinear_package.py",
+      "bytes": 6432,
+      "sha256": "77f34392928792b9345e2caa07e29c950a3ba3da7449df5f786fb3a7bda6a7b7",
+      "role": "owned delivery"
+    },
+    {
+      "path": "g11_cmns/collective/focusing/nonlinear_proof.json",
+      "bytes": 13544,
+      "sha256": "da88a3a2d8f129041d74b9a617a9c952c1d9a8539ba89b973b0ba9d52268dd28",
+      "role": "owned delivery"
+    },
+    {
+      "path": "g11_cmns/collective/focusing/nonlinear_probe.json",
+      "bytes": 437,
+      "sha256": "29c4f47d3db376220f00702f057815bfc2339d0fe86a822a54505c9c96fc250b",
+      "role": "owned delivery"
+    },
+    {
+      "path": "g11_cmns/collective/focusing/nonlinear_states.npz",
+      "bytes": 3643936,
+      "sha256": "77e9b81bf142ec1421b6dbdae35d0111c3a3b32d6ba46667b79a5e90642018c7",
+      "role": "owned delivery"
+    },
+    {
+      "path": "g11_cmns/collective/focusing/nonlinear_geometry.json",
+      "bytes": 97197,
+      "sha256": "d3869087f52ac59e230e44f18574d841a3f58de76afe651d0646c83b601486ab",
+      "role": "owned delivery"
+    },
+    {
+      "path": "g11_cmns/collective/focusing/nonlinear_selection.json",
+      "bytes": 104180,
+      "sha256": "b03595aba7289078512ed7331fae863ab8259b57375cf95f409416cedbcfc7f8",
+      "role": "owned delivery"
+    },
+    {
+      "path": "g11_cmns/collective/focusing/nonlinear_selection.npz",
+      "bytes": 2764103,
+      "sha256": "f8de798965f79668cfb7aa99e478f8b445c74a895ad3d75db82b19cbb488480d",
+      "role": "owned delivery"
+    },
+    {
+      "path": "g11_cmns/collective/focusing/nonlinear_N2048_4.8meV.json",
+      "bytes": 589303,
+      "sha256": "203a4fc70d37c3676f5ecdc2f6c19a11b1cf72119a943483af9aef32a4a30f31",
+      "role": "new finite-model output"
+    },
+    {
+      "path": "g11_cmns/collective/focusing/nonlinear_N2048_4.8meV.npz",
+      "bytes": 5712753,
+      "sha256": "6caf2c5a9353f0e7fcf26c3bbd67784c3d880389d160bcd25a570d667b993d04",
+      "role": "new finite-model output"
+    },
+    {
+      "path": "g11_cmns/collective/focusing/nonlinear_N2048_25meV.json",
+      "bytes": 344137,
+      "sha256": "1e666333356d9b9ddac043d631a00ea246d2ff348fc510ab557bcd854eb785e0",
+      "role": "new finite-model output"
+    },
+    {
+      "path": "g11_cmns/collective/focusing/nonlinear_N2048_25meV.npz",
+      "bytes": 4512961,
+      "sha256": "5b54cef2292aba609727a4e08aa737000342eec6a248bbd9419a2ad67931a8cf",
+      "role": "new finite-model output"
+    },
+    {
+      "path": "g11_cmns/collective/focusing/nonlinear_N16384_0.6meV.json",
+      "bytes": 365835,
+      "sha256": "c280adf600f30bd839e644d634ef0852287257a9b94ba5124186b692d0b478be",
+      "role": "new finite-model output"
+    },
+    {
+      "path": "g11_cmns/collective/focusing/nonlinear_N16384_0.6meV.npz",
+      "bytes": 6712789,
+      "sha256": "efb16f0e87c07b76c1dd32f8f54c68da58685c49b8dbe240f7275ed35e1162c4",
+      "role": "new finite-model output"
+    },
+    {
+      "path": "g11_cmns/collective/focusing/engine.py",
+      "bytes": 13258,
+      "sha256": "24088eebe9c43161fc1b3feb598268e330211703acc4ea5353e1d5bf9b65a262",
+      "role": "immutable exact replay binding"
+    },
+    {
+      "path": "g11_cmns/collective/focusing/patterns.py",
+      "bytes": 9203,
+      "sha256": "0c3da558cfa2822b408d58614583e700a68fb6472b04aa65a1647e73b0163a57",
+      "role": "immutable exact replay binding"
+    },
+    {
+      "path": "g11_cmns/collective/focusing/exterior.py",
+      "bytes": 15182,
+      "sha256": "9b6299b9494ebf265d08519400723acbd782d6796bb640e8788ccd3db24da6ea",
+      "role": "immutable exact replay binding"
+    },
+    {
+      "path": "g11_cmns/collective/focusing/large_geometry.py",
+      "bytes": 4710,
+      "sha256": "f5c88d79f5179dee67ccfd1840a980759e4a1714545e52556a95c3014109e8f1",
+      "role": "immutable exact replay binding"
+    },
+    {
+      "path": "g11_cmns/collective/focusing/continuation_results.json",
+      "bytes": 647678,
+      "sha256": "ded1794a837cc3b8b28a0f6f91d9380c4495226d350b7c5fbbc11b0ee6c74b71",
+      "role": "immutable exact replay binding"
+    },
+    {
+      "path": "g11_cmns/collective/focusing/continuation_states.npz",
+      "bytes": 2328962,
+      "sha256": "2a258d8fdaa853c0d923cdc20f964b54fad94709bb312ad7b7a5ef9d1fa7e6bb",
+      "role": "immutable exact replay binding"
+    },
+    {
+      "path": "g11_cmns/collective/focusing/input_manifest.json",
+      "bytes": 4737,
+      "sha256": "7df99f83cb829755e14112e3fabb091254ce7612fc7cf0cd0680ccb499a4685a",
+      "role": "immutable exact replay binding"
+    },
+    {
+      "path": "g10_quantum_site/model.py",
+      "bytes": 8852,
+      "sha256": "2f0f6f90dc6a813dab64695415bfb9bee44a92308ab412831254d5624a7ac03b",
+      "role": "immutable imported physical model input"
+    },
+    {
+      "path": "g3_loading/x1/dense_Pd/k3/final-x1-dense-readout-20261114T0213Z.json",
+      "bytes": 51609,
+      "sha256": "c87e06ae646d2311c77d6cc8bfb3b9548bafa06d6342914a4fe14fd6c182d3cf",
+      "role": "immutable imported physical model input"
+    },
+    {
+      "path": "g10_quantum_site/bulk-refit-080/well.py",
+      "bytes": 2881,
+      "sha256": "a791fe4a4b13e5cf60ab0fc1e20c8c4c8be2e49a67ad2b2e0b373465a314bc9e",
+      "role": "immutable imported physical model input"
+    },
+    {
+      "path": "g10_quantum_site/bulk-refit-048/well.py",
+      "bytes": 4683,
+      "sha256": "33816c41b5d3a4567c41c0576652e70a00c3fe1c861e49ce0023ce34ed1b6941",
+      "role": "immutable imported physical model input"
+    },
+    {
+      "path": "g10_quantum_site/bulk-refit-048/inputs/old-readout.json",
+      "bytes": 51609,
+      "sha256": "c87e06ae646d2311c77d6cc8bfb3b9548bafa06d6342914a4fe14fd6c182d3cf",
+      "role": "immutable imported physical model input"
+    },
+    {
+      "path": "g10_quantum_site/bulk-refit-048/inputs/bulk-wells.json",
+      "bytes": 153191,
+      "sha256": "000612c601ee3cce30fc6c904ba527607ef3680ca2cec4d54ecf2d674d364a82",
+      "role": "immutable imported physical model input"
+    },
+    {
+      "path": "g10_quantum_site/.input-080/g10_quantum_site/bulk-wide-wells/bulk-wells.json",
+      "bytes": 319722,
+      "sha256": "18fa6232525243391b84f2fb495cfe9947f7d41eef270931fb3dc8b99857e28d",
+      "role": "immutable imported physical model input"
+    },
+    {
+      "path": "g11_cmns/collective/.pair-input/g10_quantum_site/pdd-nearest-pair/pair-cut.csv",
+      "bytes": 844,
+      "sha256": "8b610c379ab585b01a2a17b140de97835d0733fe29a09d5bfe2e350f3b30f8b6",
+      "role": "immutable imported physical model input"
+    }
+  ],
+  "trace_columns": [
+    "time_fs",
+    "target_Krel_eV",
+    "target_Krad_eV",
+    "target_R_A",
+    "max_site_radius_A",
+    "min_NN_R_A",
+    "total_E_eV",
+    "potential_E_eV",
+    "same_trace_max_NN_Krel_eV",
+    "target_signed_inward_A_fs",
+    "max_site_local_E_eV",
+    "max_site_harmonic_E_eV"
+  ],
+  "trace_sampling": "every integration step; first unsupported sample retained as crossing evidence, never scored",
+  "state_units": {
+    "x": "equilibrium-relative Cartesian Angstrom",
+    "v": "Cartesian Angstrom/fs"
+  },
+  "score_semantics": {
+    "K": "full relative kinetic eV",
+    "inward": "strictly positive closing radial kinetic eV",
+    "distance": "reference R minus actual target R, Angstrom",
+    "loss_K": "full relative kinetic eV under one 4100-fs amplitude decay"
+  },
+  "supported": "scored strictly before first all-site radius or original-NN separation exit; not measured angular coverage",
+  "excluded": "all unrelated old results, contact/rate data, prior archives and checkpoints",
+  "external_replay": "exact necessary source, accepted seed bytes and imported inputs only",
+  "archive": "nonlinear.tar.gz",
+  "archive_hash": "reported separately; no circular identity"
+}

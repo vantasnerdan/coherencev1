@@ -59,13 +59,11 @@ Production diagnostic arrays have the original ten columns in `results.json`; th
 
 Energy-budget lower bounds for 100 eV and 1 keV assume perfect concentration. Finite-size power-law slopes and optional constant-efficiency scenarios are separately labelled extrapolations; three finite sizes do not establish a limit or absence of saturation. The retained contact excitation ends near 7.9 eV, so 100-eV/1-keV G12 remains unresolved even if a classical scaling law is assumed.
 
-## Reproduction and resource controls
+## Reproduction
 
 Use an existing scientific Python environment with NumPy, SciPy, Numba and Matplotlib; no package install or environment mutation is part of this capsule. From this directory:
 
 ```sh
-export OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 NUMBA_NUM_THREADS=1
-ulimit -v 2097152
 python run.py --run
 python analyze.py
 python verify.py
@@ -73,13 +71,13 @@ python analyze.py
 python package.py
 ```
 
-The second analysis only incorporates the settled proof into the page; it does not simulate. One numerical runtime thread per job, ≤2 GiB virtual-memory cap, no GPU, and a bounded N=2048/100-fs post-compilation smoke preceded production. The 36 comparisons share a single process; no unbounded search or >2-h job is required. Exact duration and candidate counts live in `results.json`, not the short result page. `launches.npz` stores only this campaign's selected launches; `trajectories.npz` stores 2-fs diagnostic samples, while scoring and support use every .5-fs step. Capsule packing is whitelist-only with a fresh safe extraction and byte equality; the parent owns actual cross-host delivery.
+The second analysis only incorporates the settled proof into the page; it does not simulate. `launches.npz` stores only the original campaign's selected launches; `trajectories.npz` stores 2-fs diagnostic samples, while scoring and support use every .5-fs step. Capsule packing is whitelist-only with a fresh safe extraction and byte equality; the parent owns actual cross-host delivery.
 
 ## Ordered continuation on this same page
 
 The added `continuation.py` does not import or call the contact/rate adapter. The old comparison, arrays and contact tables are retained unchanged. It carries out these decisions in order:
 
-1. At .6 meV/D extend **only waves and direct** to 16,384 and 131,072 D, at .5 fs, 2400 fs and the original support censor. `LargeLattice` preserves the original tile order, shortest-image stencil, target and exact finite-cell dispersion. The wave preparation still has at most **16 reciprocal modes**; this launch-subspace cap is not a truncation of the lattice dispersion. Three wave trials and exactly the original 3+4+4 direct trials are evaluated. Two independent one-thread workers evaluate independent candidates, preserving declaration order and first-wins ties; refinements wait for the three direct proposals. Old small-N results are reused, not simulated again.
+1. At .6 meV/D extend **only waves and direct** to 16,384 and 131,072 D, at .5 fs, 2400 fs and the original support censor. `LargeLattice` preserves the original tile order, shortest-image stencil, target and exact finite-cell dispersion. The wave preparation still has at most **16 reciprocal modes**; this launch-subspace cap is not a truncation of the lattice dispersion. Three wave trials and exactly the original 3+4+4 direct trials are evaluated. Candidate declaration order and first-wins ties are preserved; refinements follow the three direct proposals. Old small-N results are reused, not simulated again.
 2. At N=2048/25 meV/D reselect the direct launch at **.25 fs**, using the same three harmonic proposals, four phase rotations and four mixtures. The base winner and hence the dependent trials are chosen anew at that timestep. This is a fine-step selected result, **not a convergence certificate** and not the already archived same-launch comparison.
 3. Only after that result, at N=2048 and 4.8/25 meV/D evaluate the full direct search at .25 fs with the original .8-Å/1.28782409436586-Å support stop lifted, separately under two declared artificial exteriors. Every step still checks the original support; all enter/reentry transitions are retained. Selection uses the full model-valid extended trace, not its supported prefix. `peak_after_original_exit` is distinct from the actual peak/neighbourhood being inside the extent after a reentry.
 
@@ -98,7 +96,6 @@ Each case declares its trace columns: original supported trajectories retain the
 After unpacking the continuation capsule at its root, enter `g11_cmns/collective/focusing/` and use the existing scientific environment:
 
 ```sh
-export OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 NUMBA_NUM_THREADS=1
 python continuation.py probe
 python continuation.py size16
 python continuation.py size32
@@ -108,5 +105,63 @@ python continuation_verify.py
 python continuation_package.py
 ```
 
-The measured 131k resource decision and actual runtime are retained in the results, not inferred from N alone. The capsule includes exact prior input bytes at the imported root-relative paths, including the original hidden staging paths; no baseline source identity is rebound. `continuation_manifest.json` hashes the source/data whitelist, excluding itself; the archive hash is reported separately to avoid a circular identity. No push, publication, damping sweep or electronic/contact calculation is part of this continuation.
+The capsule includes exact prior input bytes at the imported root-relative paths, including the original hidden staging paths; no baseline source identity is rebound. `continuation_manifest.json` hashes the source/data whitelist, excluding itself; the archive hash is reported separately to avoid a circular identity. No push, publication, damping sweep or electronic/contact calculation is part of this continuation.
+
+
+## Actual nonlinear launch feedback
+
+`nonlinear.py` adds a new search; it does not rewrite the accepted eleven-candidate banks, engine, input curves, old comparisons or contact/rate adapter. The cases are N=2048 at .0048/.025 eV/D and dt=.25 fs, and N=16384 at .0006 eV/D and the original dt=.5 fs. Every scoring horizon is 2400 fs. The saved accepted launches seed each objective independently. The 16k mixture is reconstructed from its stored proposal times and **stored** base rankings, not by repeating or changing the old bank selection.
+
+The admissible launch has x(0)=0, both target velocities zero, `sum_i |v_i|²=2 N e/M`, and
+
+`max_i |v_i| ≤ CAP = 2 sqrt[N/(N−2)] sqrt(2 e/M)`.
+
+The existing capped linear optimizer gives the nearest Euclidean point on this fixed-norm/site-cap intersection: minimizing `|u−z|²` at fixed `|u|²` is exactly maximizing `z·u`. Its null-field tie convention remains unchanged. Kinetic IPR, realized total energy, target preload, sphere residual and cap residual are saved for the actual selected launch. No target displacement or velocity is preloaded.
+
+There is also a direct projected-step witness. For feasible v, `z=v+alpha*g` and its nearest feasible u, comparison with the feasible competitor v gives `2 alpha g·(u−v) ≥ |u−v|² ≥ 0`. This is an algebraic statement about the proposed direction, not proof that the finite nonlinear objective improves. The actual propagated acceptance test remains authoritative, especially with an approximate force-Jacobian pullback and a moving peak time.
+
+Three **different** full-trajectory readouts are maximized on each launch: total `Krel=M|v_i−v_j|²/4`, strictly inward `Kin=M max(0,c)²/4`, and approach `Rref−R` (equivalently minimize actual R), where `c=(v_i−v_j)·Rhat`. Receding radial kinetic energy is never counted as inward. Each selected state reports simultaneous Krel, Kin, signed c, R, time, all-site extent and its contiguous half-objective hold. The closest approach and energy maximum need not occur together; a half-approach hold is not an energy-pulse duration.
+
+### Discrete gradient and actual acceptance
+
+The adjoint differentiates the executed nonlinear split, not the harmonic proposal kernel. Write `h=dt/2`, `k=h/M`, `d=exp(−dt/tau)` (d=1 without loss):
+
+`w=v+k F(x); x'=x+h w+h d w; v'=d w+k F(x')`.
+
+For endpoint duals a_x', a_v', first add `k DF(x')ᵀ a_v'` to a_x'. Then `a_w=d a_v'+h(1+d) a_x'`, `a_x=a_x'+k DF(x)ᵀ a_w`, `a_v=a_w`. The force derives from the same energy, so its locally differentiable Jacobian is symmetric; centered directional differences of that **actual force** supply the Hessian-vector product. Adjacent kicks at an identical x share the pullback. Checkpoint replay bounds storage without storing every full x/v state. At a force-Hessian knot a unique derivative is not asserted.
+
+`adjoint.endpoint_gradient` returns the unprojected initial-velocity gradient and simultaneous endpoint x/v. Its smooth soft/stiff force branch does **not** confer support. The search removes the sphere-normal component, projects trial launches with the original cap and checks their actual nonlinear trajectories. An optional fixed-time prefix prefilter can reject a nonimproving proposal; every improving proposal is completed to the same horizon or its first original exit, rescored on all steps, and retargeted to its new actual maximum. Joining prefix and remaining propagation preserves the original split and elapsed physical time.
+
+The first unsupported sample is never scored. A later support exit does not invalidate an earlier supported peak, but its truncated hold and horizon remain explicit. Soft/stiff exteriors are available only as separately labelled artificial scenarios; none of their post-exit states may enter the supported ranking. The optimizer does not silently change forces to obtain a derivative.
+
+Accepted histories and feasible rejected steps distinguish a measured local plateau/backtracking stall from a safety/resource stop. The declared meaningful relative-gain threshold and the larger-step plateau challenge are saved with the trials. An unresolved cap is reported as **best observed, no demonstrated plateau**, never as convergence or global optimality. A supported edge can be an active constraint; it is not a material ceiling.
+
+Final delivery reranks **every observed feasible conservative trial**, including rejected steps, across all three objectives. A separate `nonlinear_select.py` recovers a genuinely winning unsaved launch from the exact stored seed, accepted-prefix gradients and trial scale, then completes its actual trajectory. It does not repeat the original candidate bank. Independent search histories remain intact. A cross-objective winner is labelled best observed without an objective-matched plateau unless the active inward radial K pulse and endpoint gradient are identical to the total-K case; only then can the same rejected-step evidence be reused.
+
+### One loss value, no condition drift
+
+Exactly one new amplitude decay, tau=4100 fs, is inserted once per step between the two half-drifts. The original seed under loss, conservative optimum propagated under the same loss, and newly optimized launch under loss share the same initial total N e, cap, dt, horizon and support. Post-hoc `exp(−2t/tau)` scaling of the conservative kinetic trace is shown only as a different, non-dynamical comparison; it does not damp the nonlinear trajectory or supply its R. No thermal, electronic or rate input changes. The older 4136.03694-fs sensitivity remains part of the immutable prior result, not the decay used in this new comparison.
+
+The actual-loss comparator is propagated from the **delivered cross-selected conservative K winner**, not accidentally retained from a smaller independent K-search finalist. Loss-search seed lineage remains explicit when those launches differ. A staged comparator is reused only for an identical launch, dt, tau, horizon and frozen-model fingerprint; this does not substitute post-hoc scaling for propagation.
+
+The settled `nonlinear_verify.py` exercises the actual changed nonlinear consumer and saved objective readouts; `nonlinear_package.py` verifies an exact fresh archive roundtrip and cold extracted saved consumer. These are finite-model implementation witnesses, not timestep convergence, new electronic support or a physical emission/rate calculation.
+
+```sh
+python nonlinear.py N2048_4.8meV --no-prefilter
+python nonlinear.py N2048_25meV
+python nonlinear.py N16384_0.6meV
+python nonlinear_select.py
+python nonlinear_verify.py
+python nonlinear_package.py
+```
+
+`nonlinear_manifest.json` separates this delivery from the exact necessary external replay bindings. `nonlinear.tar.gz` is one unpublished local capsule; unrelated old results, rate data and prior archives are not copied into it. Physical times and timesteps above define the calculation; execution accounting is retained only in JSON.
+
+Selected finals reference their exact arrays in the corresponding case NPZ rather than copying a large trajectory for each objective label. `nonlinear_selection.npz` carries only the recovered unsaved trial states and the matched-loss comparator traces; `selected_result` is the shared resolver used by verification and the extracted consumer.
+
+In a fresh capsule without the intentionally omitted original outputs, use `python nonlinear_verify.py --replay-only`: this replays the new selected states and changed consumer, while explicitly not rechecking the absent old-output bytes. The recorded source-workspace proof retains that separate byte-preservation result.
+
+Exact selected-state reproduction uses the archived launch arrays and the verifier. Restarting the optimizer is not required and can produce a different bounded-search endpoint; the recorded settings, histories and stopping reasons identify this result.
+
+The new commands have all necessary replay bindings in the delta capsule. Earlier sections, their original commands and their figure/data links refer to the unchanged accepted baseline tree; overlay this capsule there to render the complete same page.
 
