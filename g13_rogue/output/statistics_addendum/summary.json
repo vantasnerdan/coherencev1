@@ -1,0 +1,59 @@
+{
+  "schema": "g13-fixed-site-statistics-v1",
+  "base": "09b1b0779ed83f014d3e9ab21328fcd106f2a1bb",
+  "scope": "retained loaded-surface counterfactual only; not the fixed-profile track or deep receiver",
+  "all_source_phases": 64,
+  "focused_phases": 256,
+  "target": {
+    "phases": 256,
+    "threshold_eV": 0.09328814888270068,
+    "nonlinear_minus_linear_per_D_s": 75.60257888662585,
+    "empirical_cluster_SE_per_D_s": 139.5612078313785,
+    "simultaneous_95_category_interval_per_D_s": [
+      -901.3506007858177,
+      1047.9360843780587
+    ],
+    "interval_error_budget": "0.025 at each of at most two focused looks; overall simultaneous coverage at least 95%",
+    "nonzero_phase_counts_by_radial_stratum": [
+      41,
+      32,
+      31
+    ],
+    "largest_stratum_single_phase_resolution_per_D_s": 24.52027857461547,
+    "all_responses_zero": false,
+    "stop_interval_excludes_zero": false,
+    "stop_half_width_at_most_1000": true
+  },
+  "interval": "Pointwise in threshold. Simultaneous exact Clopper-Pearson intervals for all four nonzero signed categories in each radial stratum, Bonferroni family 95%; focused cases reserve alpha=0.025 per look for at most two looks, preserving at least 95% overall coverage. Correlation between strata is retained within each independent phase cluster.",
+  "zero_sample_semantics": "A zero empirical SE is not a zero physical response; category intervals and one-phase resolution remain nonzero.",
+  "stochastic_model": "Harmonic Bose OU bath in fixed site order; the nonlinear branch uses the same bath, not an exact nonlinear quantum canonical ensemble.",
+  "closing_score": "Projected relative kinetic energy m max(c,0)^2/4 only; local quartic energy is not added to that score.",
+  "common_clock": "Use the same nonlinear fields with only the shared linear L/loss coordinate derivative; removes the explicit chi*n phase-frequency term without changing field evolution.",
+  "nonlinear_peak_decomposition": "At the same actual peak: K=m*c0^2/4 + m*c0*cchi/2 + m*cchi^2/4. These are not independently selected extrema.",
+  "local_scores": "Both branches retain the common harmonic score Delta01*|a|^2; own nonlinear score adds chi*|a|^4/2.",
+  "window_maximum_t_intervals": "Approximate independent phase-cluster t intervals; focused comparisons reserve half the error budget at each of at most two looks, not independent time/site samples.",
+  "physical_rate": null,
+  "remaining_uncertainty": "Finite independent phase count, short supported envelope closure and finite time/radial support; no material enhancement is inferred.",
+  "support": {
+    "all_source_64": {
+      "linear": {
+        "coordinate_support_fraction": 1.0,
+        "low_action_support_fraction": 0.9833840704338671
+      },
+      "nonlinear": {
+        "coordinate_support_fraction": 1.0,
+        "low_action_support_fraction": 0.9869416280252288
+      }
+    },
+    "focused": {
+      "linear": {
+        "coordinate_support_fraction": 1.0,
+        "low_action_support_fraction": 0.9834315917105378
+      },
+      "nonlinear": {
+        "coordinate_support_fraction": 1.0,
+        "low_action_support_fraction": 0.986426104642176
+      }
+    }
+  }
+}

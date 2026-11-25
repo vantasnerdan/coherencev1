@@ -1,9 +1,13 @@
-# G13 rogue-wave envelope — Pass 1
+# G13 rogue-wave envelope — fixed-profile replacement addendum
 
-Unpublished seven-item first-pass capsule. Apply only the `g13_rogue/` directory overlay to accepted base `02fe7cc19a121706b70ca201195b36fc779e0fb8`.
+Unpublished replacement capsule based on accepted commit `09b1b0779ed83f014d3e9ab21328fcd106f2a1bb`, containing only `g13_rogue/`. It supersedes draft release `458639020`, asset `793110859`, archive SHA-256 `c82650415c8aa2188251cc918c89aec0960cb3b805e0eb9eebc78b95404a2ea8`. Apply only listed members; compare any later edits to this directory and preserve unrelated additions.
 
 The README contains the pre-code keep/drop, coefficient derivation and input semantics, signed instability grid, a prepared finite-time hot spot, transported remote-arrival/Palm peak statistics against a normalized linear comparator, the missing electron derivative, and actual pair-history contact replay. Source/fit continuations, finite phase/radial/time support and conditional quantum preparation remain explicit; no material reaction rate is inferred.
 
 The main loss convention is locally reconciled with the existing engine: 4.1-ps viscous energy lifetime corresponds to 8.2-ps harmonic amplitude lifetime. Only the wrongly named terminal track-depth field is converted from SI metres; timeline coordinates retain their already-correct angstrom units. No source outside `g13_rogue/` is changed.
+
+The README now opens with the exact fixed Pd/PdD layer application: the dilute track, transition at 30 µm, partial loading at 50/200 µm, and absence of `x=1` anywhere in the foil. Original Pass 1 outputs remain the explicit loaded-surface counterfactual. The new `g13_rogue/depth.py` gives scalar host-wave density, separately normalized survival-weighted launch counts, attenuation sensitivity through 250 µm, a named first rear echo, and conditional local optical conversion against full-chart reference energies. No stopping split, prepared seed or contact replay is repeated.
+
+Item 5 is additive in `g13_rogue/output/statistics_addendum/`: fixed-site Philox draws with a fixed Fourier covariance root, 64 phases for all sources and 256 for the focused 2.5-keV/eta=0.1 comparison. The paired closing-maximum excess is +75.6 ±139.6 per D/s, category interval [-901.4,1047.9]; its sign is unresolved. The near-source extreme ratio is 1.670, typical paired ratio 1.310. The larger kinetic peak is predominantly the explicit hardening frequency-to-velocity contribution, not local quartic energy added to the closing score. Original scientific input/output payloads remain byte-identical; full continued tails and finite-support caveats are retained. The actual integrated saved-array consumer completed.
 
 `g13_rogue/manifest.json` binds every scientific input/output member; the asset's SHA-256 and size are separately supplied by authenticated delivery readback. Nothing is pushed, merged or published. Later passes and other campaigns remain unstarted.

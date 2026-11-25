@@ -1,0 +1,23 @@
+{
+  "first_focused_result": {
+    "phases": 128,
+    "threshold_eV": 0.09328814888270068,
+    "nonlinear_minus_linear_per_D_s": 46.993973831135946,
+    "empirical_cluster_SE_per_D_s": 206.55823551816252,
+    "simultaneous_95_category_interval_per_D_s": [
+      -1579.6712640723179,
+      1667.9580341521978
+    ],
+    "interval_error_budget": "0.025 at each of at most two focused looks; overall simultaneous coverage at least 95%",
+    "nonzero_phase_counts_by_radial_stratum": [
+      20,
+      15,
+      17
+    ],
+    "largest_stratum_single_phase_resolution_per_D_s": 49.04055714923094,
+    "all_responses_zero": false,
+    "stop_interval_excludes_zero": false,
+    "stop_half_width_at_most_1000": false
+  },
+  "criterion": "interval excludes zero or half-width <=1000 per D/s; otherwise extend only focused case to 256"
+}

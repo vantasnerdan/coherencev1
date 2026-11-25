@@ -1,0 +1,56 @@
+{
+  "schema": "g13-fixed-profile-depth-v1",
+  "source_base": "09b1b0779ed83f014d3e9ab21328fcd106f2a1bb",
+  "sources": {
+    "g4_beam/merit/profiles.json": {
+      "bytes": 1523730,
+      "sha256": "e2e91077595de602b815ae86f45c1a675d6a553153272d0e1295b72e2a5a9943"
+    },
+    "g4_beam/merit/README.md": {
+      "bytes": 7887,
+      "sha256": "db94a20173022ca5180735908681235e3ed1c6a072522676b914a1036292aef1"
+    },
+    "g4_beam/forward/model.py": {
+      "bytes": 16303,
+      "sha256": "76604acd39c1e47995a1290281e737076e8c01235a706e93c20be37fb4d1e84b"
+    },
+    "g11_cmns/collective/part1/stopping.json": {
+      "bytes": 222637,
+      "sha256": "e0f54ed8776e792afdb1bbb727d628df3c936aee6ce11e44462d55f602b7b51e"
+    },
+    "g11_cmns/collective/part1/motion.py": {
+      "bytes": 31701,
+      "sha256": "1cd4023dae69772cf437c4b433cfdbff615bd3469b79664cc52c78267968e89b"
+    }
+  },
+  "model": {
+    "spot_area_m2": 0.0001,
+    "spot_radius_m": 0.005641895835477563,
+    "foil_thickness_m": 0.00025,
+    "speed_m_s": 4000.0,
+    "optical_amplitude_lifetime_ps": 8.2,
+    "optical_energy_lifetime_ps": 4.1,
+    "eta_host": 0.1,
+    "local_host_to_D_fraction": 0.1,
+    "isotropic": "downward hemisphere; thin surface launch; receiver at disk center",
+    "reflection": "one specular rear-face image only; energy reflectivity 0.9; same launches",
+    "count": "survival-weighted source-age/residence model, not packet duration or modes",
+    "optical": "local attenuation power (v/L_E)*u times fraction times tau_E/n_D; not coherent action",
+    "threshold_reference_eV": 0.0006423,
+    "thermal_reference_eV": 0.0101847
+  },
+  "checks": {
+    "profile_anchors": true,
+    "column_anchors": true,
+    "scalar_density_vs_angular_quadrature": true,
+    "residence_vs_disk_quadrature": true,
+    "first_echo_ordering": true,
+    "hemisphere_energy_balance": true,
+    "plane_flux_below_launch": true,
+    "charge_energy_normalization": true
+  },
+  "rows": {
+    "profile": 52,
+    "waves": 80
+  }
+}

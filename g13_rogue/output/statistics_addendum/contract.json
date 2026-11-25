@@ -1,0 +1,23 @@
+{
+  "scope": "item 5 only; statistics of the retained loaded-surface counterfactual, not the fixed depth profile",
+  "base": "09b1b0779ed83f014d3e9ab21328fcd106f2a1bb",
+  "keeps": [
+    "Accepted 32-site full-loading graph, coefficient bytes, optical loss, time step, burn-in, observation window, source energies/shapes/radial weights and per-D normalization",
+    "Identical thermal innovations and packet phase in the linear and nonlinear branches; ambient and packet scenarios remain paired by phase identifier",
+    "Whole threshold distributions, occupancy and upward crossing counts; current scaling is physical Palm weighting, not faster artificial arrivals"
+  ],
+  "changes": [
+    "Draw circular complex Gaussian variates in exact source-site order, with independent per-phase counter-based streams; apply the positive covariance root constructed with a fixed exact Fourier basis",
+    "Use 64 phases for every retained source scenario and focus additional phases only on 2.5-keV eta=0.1, preserving explicit phase/scenario identities",
+    "Separate inward projected kinetic energy from a common velocity-clock diagnostic and separate common harmonic/action scores from each branch's own local energy",
+    "Report phase-cluster uncertainty and simultaneous finite-sample category intervals, including nonzero unresolved bounds for zero observed rare responses"
+  ],
+  "drops": [
+    "Any change to the seed, contact replay, source stopping, deterministic transport or profile",
+    "Any inference of enhancement from one unmatched maximum, empirical zero standard error, or an eigensolver-dependent random draw"
+  ],
+  "target": {"E_cm_keV": 2.5, "eta": 0.1, "threshold_eV": 0.09328814888270068, "quantity": "paired nonlinear-minus-linear arrival-centered Palm inward-maximum excess per D per second"},
+  "sampling": {"all_source_phases": 64, "first_focused_phase_count": 128, "maximum_focused_phase_count": 256, "phase_batch_size": 16},
+  "stopping": "After 128 focused phases, stop if the simultaneous 95% finite-category interval excludes zero or its half-width is at most 1000 per D/s; otherwise use the remaining focused phases to 256 and report the achieved interval without promoting an unresolved sign. This absolute resolution bounds the contribution against a separately reported ambient-window rate; it is not a relative-precision claim about a near-zero excess.",
+  "numerical_claim": "Fixed variate assignment removes solver-mode ambiguity. Floating-point evolution can differ across libraries; no cross-host bitwise equality is claimed before an observed cross-host comparison."
+}

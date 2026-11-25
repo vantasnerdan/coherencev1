@@ -1,5 +1,113 @@
 # Continuously driven PdD waves: Pass 1
 
+## Fixed-profile addendum: where the model sits
+
+**The retained Pass 1 lattice, seed, stochastic outputs and contact replay describe a loaded-surface scenario absent from the fixed profile.** They place the full-loading 32-D cell (58.7223 D/nm³, `x=n_D/n_Pd=1`) at the beam track. They are preserved, not silently reinterpreted as a calculation in the transported foil. The following depth application reads the unchanged `g4_beam/merit/profiles.json` piecewise layers and accepted G11 stopping archive. The foil is **250 µm** thick; even its deepest PdD layers reach only `x≈0.61`, never the `x=1` calibration.
+
+| Material / CM energy (keV) | x at 30 µm (12% of foil) | x at 50 µm (20%) | x at 200 µm (80%) |
+|---|---:|---:|---:|
+| PdD / 0.25 | 0.0115374 | 0.349625 | 0.610243 |
+| PdD / 2.5 | 0.0107212 | 0.318560 | 0.608777 |
+| PdD / 6.5 | 0.00971612 | 0.199051 | 0.603822 |
+| Pd / 0.25 | 3.21731e-5 | 3.21731e-5 | 3.21731e-5 |
+| Pd / 2.5 | 3.08955e-5 | 3.08955e-5 | 3.08955e-5 |
+| Pd / 6.5 | 2.68888e-5 | 2.68888e-5 | 2.68888e-5 |
+
+**30 µm is a dilute transition point, not a fully loaded region.** The samples are layer values, not interpolated loading. At 0.25 keV the PdD central D+ track ends at **23.5032 nm**: its traversed column `∫n_D dz/∫n_Pd dz=8.30593e-4`, with layer minimum/maximum `4.15309e-5/0.0136249`. At 2.5 keV it ends at **128.944 nm**, with column ratio **0.0116457** and minimum/maximum **7.78584e-5/0.0192581**: the beam-enriched mobile skin extends farther. Thus “about 1e-4 from 2–150 nm” is not an energy-independent description. These depths are only 0.00940%/0.0516% of the foil. `g13_rogue/output/depth_profile.csv` includes Pd and PdD point samples, containing-layer boundaries, actual SI densities and D+ column summaries; its 6.5-keV profile is exact, not a recomputed stopping track.
+
+The stopping source is `g11_cmns/collective/part1/motion.py:stopping_split`: direct D recoil is `n_D*sn_zbl(e,1,M_D)` with SI densities (and the source cross-section conversion); it imposes **no recoil-transfer-energy cut**. Tracks stop at **100 eV incident energy**. No stopping split was rerun. The small direct-D channel therefore reflects this fixed track composition, not an absent D–D stopping term.
+
+### Host waves reaching depth
+
+The depth model keeps a thin near-surface source (24–129 nm versus the nearest 30-µm receiver), a uniform 1-cm² disk, its centerline receiver, isotropic downward-hemisphere emission, speed `v=4 km/s`, and energy survival `exp(-s/L_E)`. `L_E=5,30,50,100,250 µm` is a named **acoustic** attenuation sensitivity, not an optical lifetime measurement. Optical amplitude/energy lifetimes remain **8.2/4.1 ps**. No coherent phase preparation, acoustic anisotropy or measured host-to-optical conversion is supplied.
+
+The source uses the accepted PdD host-recoil **90.7856/631.325 J per true C** at 0.25/2.5 keV separately from the chart's **38/138 µA true current**. Numerically J/C is eV per elementary charge: with `F_q=I_true/(e A)`, the launch power per area is `P=F_q E_host eta_host`. The 85/15 ion mixture is already in `E_host`; **do not multiply that power by 1.15 again**. Nucleus counts use `F_n=1.15 F_q` separately. The examples use one shared source fraction `eta_host=0.1` and one local conversion fraction `f_host→D=0.1`; they are sensitivities, not fitted efficiencies. All levels and active counts scale linearly with current; energy also scales with the source fraction, but impact count does not.
+
+For `s_max=sqrt(z²+R_spot²)`, the scalar wave energy density is
+
+`u(z) = P/v [E1(z/L_E)-E1(s_max/L_E)] = P/v ∫_z^s_max exp(-s/L_E) ds/s`.
+
+It follows from each launch's `1/(2πs²)` hemisphere spreading and annular source area `2πr dr`. An extra angular cosine belongs to **plane-normal flux**, not this local scalar density. `u/n_D(z)` is acoustic energy divided by the local D inventory; it is neither coherent D-mode energy nor a bound on phase alignment. The CSV also gives division by the counterfactual `x=1` density to expose the denominator dependence.
+
+The causal count alongside it is the declared survival-weighted **source-age/residence** model:
+
+`N_n(z) = ∫_disk F_n ∫_(s/v)^∞ exp(-vt/L_E) dt dA`
+
+`= (2π F_n L_E²/v)[(z+L_E)exp(-z/L_E)-(s_max+L_E)exp(-s_max/L_E)]`.
+
+It counts weighted old launches whose wave has had time to arrive, not a finite acoustic packet duration, a number of modes or overlapping reaction events. Minimum direct arrival times at 30/50/200 µm are **7.5/12.5/50 ns**. The acoustic energy residence `L_E/v` is separate again (62.5 ns for 250 µm).
+
+| CM keV | Depth µm | Active nucleus impacts, L_E=250 µm | Acoustic eV/local D | Local-conversion optical eV/D |
+|---|---:|---:|---:|---:|
+| 0.25 | 30 | 6.650e4 | 1.141e-11 | 7.484e-17 |
+| 0.25 | 50 | 6.577e4 | 2.923e-13 | 1.918e-18 |
+| 0.25 | 200 | 5.414e4 | 4.423e-14 | 2.901e-19 |
+| 2.5 | 30 | 2.415e5 | 3.100e-10 | 2.034e-15 |
+| 2.5 | 50 | 2.389e5 | 8.064e-12 | 5.290e-17 |
+| 2.5 | 200 | 1.966e5 | 1.119e-12 | 7.343e-18 |
+
+The last column uses **only local conversion of attenuated power**:
+
+`E_opt,local/D = (v/L_E) u(z) f_host→D tau_E/n_D(z)`, with `tau_E=4.1 ps`.
+
+At 2.5 keV and 30 µm, it is **3.166e-12** times the full-chart coherent-carrier reference **0.6423 meV/D**, and **1.997e-13** times the full-chart 300-K reference **10.1847 meV/D per polarization**. At 50 µm these ratios are **8.236e-14/5.194e-15**, and at 200 µm **1.143e-14/7.210e-16**. These are reference comparisons, **not thresholds calibrated at `x≈0.01–0.61`**, nor a probability that incoherent energy forms a carrier. The acoustic inventory must not be substituted for the optical column.
+
+Attenuation changes the count and the stored energy differently. At **2.5 keV, 50 µm**, the same source gives:
+
+| L_E µm | Active nucleus impacts | Acoustic eV/local D | Local optical eV/D |
+|---:|---:|---:|---:|
+| 5 | 9.713e-4 | 2.742e-17 | 8.993e-21 |
+| 30 | 2.116e2 | 5.167e-13 | 2.824e-17 |
+| 50 | 1.431e3 | 1.447e-12 | 4.746e-17 |
+| 100 | 1.416e4 | 3.692e-12 | 6.055e-17 |
+| 250 | 2.389e5 | 8.064e-12 | 5.290e-17 |
+
+Longer acoustic survival increases the acoustic inventory; local loss power also contains `v/L_E`, so the converted optical level need not increase monotonically. `g13_rogue/output/depth_waves.csv` retains every depth/length combination through **250 µm**, with the two true-current/source values separate.
+
+**First reflected return, separate high-reflectivity scenario:** a specular rear-face image replaces vertical distance `z` by `2H-z`, with **energy reflectivity 0.9** multiplying that path once. For 2.5 keV and `L_E=250 µm`, direct plus first echo gives acoustic levels **3.197e-10, 8.448e-12, 1.633e-12 eV/local D** at 30/50/200 µm, versus the direct values above. Echo/direct energy ratios are **0.03135/0.04764/0.4590**. At the rear face the interior limiting sum is 1.9 times direct. These are returns of the **same launches**, not independent extra impacts; separate weighted echo counts are retained, not added as an independent Poisson population. Only this one rear reflection is included; no front-face or repeated-reflection series or interference phase is assumed.
+
+### What replaces the D band in the track
+
+In the dilute-track approximation, D atoms have **local vibrations in Pd wells**, not the connected nearest-neighbour D hopping band used by the full-loading envelope. Rare occupied neighbour pairs are not zero: an iid occupied-site illustration gives mean `12x` occupied nearest neighbours per D (not a measured spatial correlation or a connectivity proof). Such finite pairs/clusters do not supply the extended carrier and modulation assumed in that instability formula. The full-band 0.6423-meV/D threshold consequently has no calibrated meaning for isolated deuterons; it cannot simply be divided by loading. Host-mediated longer-range effective coupling would be a different, uncalibrated mechanism. Even the deeper `x≈0.6` region needs its own disordered/nonlinear calibration; this addendum supplies the beam-to-depth energy link, not that missing Hamiltonian.
+
+Reproduce only this addendum with `python g13_rogue/depth.py` (NumPy/SciPy). It writes the two depth CSVs and `g13_rogue/output/depth.json`, including exact consumed-source hashes. Its actual invocation checked piecewise dilution and column anchors, independent angular/disk quadrature, direct/reflected ordering, hemisphere energy balance, plane-flux normalization and charge/nucleus units once. No old stochastic, stopping, seed or contact producer was rerun for this depth result.
+
+## Fixed-basis stochastic addendum (item 5)
+
+This is an **additive refinement of the same loaded-surface counterfactual**, not a simulation of the dilute track or deep receivers above. Original `g13_rogue/output/` files remain byte-identical. The new ensembles and full threshold readouts are separate in `g13_rogue/output/statistics_addendum/`.
+
+**Reproducible realization definition.** `g13_rogue/statistics_addendum.py` draws complex Gaussian variates in fixed original **site order**, using per-phase Philox raw streams and an explicitly ordered Box–Muller transform. It applies the principal Bose covariance root constructed in a fixed 32-wave FCC Fourier gauge (exact fourth roots of unity). Neither the initial draw nor thermal innovations are assigned to a solver's arbitrarily signed/rotated eigenvectors. Linear/nonlinear, ambient/packet, and radial strata share each phase's thermal stream; packet phases have independent stable case keys. `g13_rogue/output/statistics_addendum/basis.json` records covariance/root defects below 5e-16. A deliberately rotated degenerate eigenspace changes the old mode-assigned draw by **1.818**, versus **1.49e-15** for the site-root draw. This removes the identified realization ambiguity; library transcendental functions and floating-point evolution may still differ. **Cross-host bitwise trajectory equality has not been observed or claimed.**
+
+**Paired closing excess.** All original source scenarios use **64 independent phases**; only the prespecified **2.5-keV, eta=0.1** case extends to **256**, with explicit phase and ensemble identifiers. At the retained **0.0932881-eV** inward-closing threshold and chart current:
+
+| Quantity | Added 256-phase result |
+|---|---:|
+| Nonlinear minus linear Palm maximum excess | +75.60 per D/s |
+| Paired phase-cluster standard error | 139.56 per D/s |
+| Simultaneous category interval, coverage at least 95% | [-901.35, 1047.94] per D/s |
+| Nonzero paired phases in the three radial strata | 41 / 32 / 31 of 256 |
+
+The sign is unresolved. These are **arrival-centered packet-minus-paired-ambient maximum** differences, not a stationary arbitrary-window CDF or reaction rate. The finite-category interval bounds the signed {-2,-1,0,1,2} phase responses with simultaneous Clopper–Pearson intervals across strata/categories. It is **pointwise in energy threshold**, not a simultaneous band over the whole tail. Half the error budget is reserved at each of two focused looks; the 128-phase interval was [-1579.67,1667.96], and the preset absolute half-width of 1000 per D/s was reached at 256 (achieved 974.64), without choosing a favorable maximum or sign. For scale only, ambient maximum-survival divided by `32 D × 32.8 ps` is **3.76e8/8.71e8 per D/s** (linear/nonlinear); that window normalization is not an independent-event rate. Zero empirical errors elsewhere retain nonzero category bounds and one-phase resolution. No near-zero relative-precision claim is made.
+
+**Does the roughly 1.6 tallest-closing ratio survive?** In the matched near-source 256-phase sample, the linear/nonlinear maxima are **0.14567/0.24323 eV**, ratio **1.670**. Thus the extreme ratio persists in this sample, but it is not a universal amplification factor: paired geometric-mean ratio is **1.310**, approximate phase interval **[1.262,1.359]**, and median maxima are **0.08999/0.11736 eV**. `g13_rogue/output/statistics_addendum/phase_maxima.csv`, `g13_rogue/output/statistics_addendum/comparison.json`, `g13_rogue/output/statistics_addendum/survivals.csv`, `g13_rogue/output/statistics_addendum/rates.csv` and `g13_rogue/output/statistics_addendum/current_maxima.csv` retain all sources, strata, thresholds, individual phase maxima and their distinct normalizations.
+
+**Motion versus extra quartic score.** Closing is always **projected inward relative kinetic energy** `m max(c,0)²/4`; no local `chi*n²/2` energy is added to it. The solved nonlinear field has a frequency-dependent coordinate derivative. Decompose its signed closing speed as `c=c0+c_chi`, where `c0` uses the common linear `L` and damping clock on the **same** field, and `c_chi` is the explicit hardening-frequency term. At each nonlinear window's actual peak, the mean same-time kinetic decomposition is
+
+`<K> = <m c0²/4> + <m c0 c_chi/2> + <m c_chi²/4>`
+
+`= 0.088581 + 0.029387 + 0.002551 = 0.120519 eV`.
+
+These terms are evaluated at the same peak, not separately maximized. With the hardening clock removed only from the diagnostic derivative, the paired maximum difference is **−2.347 ±1.340 meV** (phase SE), interval **[−5.368,0.673] meV**. Mean common harmonic local maxima are **0.10179 eV linear / 0.09084 eV nonlinear**, while the nonlinear branch's own local score is **0.10316 eV**. The larger derivative-based closing peak therefore comes predominantly from the **frequency-to-velocity term**, not extra quartic energy added to the closing score or demonstrated spatial concentration. This is a diagnostic decomposition, not a new evolution with `chi=0`. Some sampled action still exceeds the two-transition law's `n≤1` range (about **1.66% linear / 1.36% nonlinear** in the focused ensemble); the full continued tails remain visible, and coordinate support alone does not extend that calibration.
+
+Reproduce the new statistics only (NumPy/SciPy/**Numba**) with:
+
+```sh
+PYTHONDONTWRITEBYTECODE=1 OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 NUMBA_NUM_THREADS=1 python g13_rogue/statistics_addendum.py --workers 4
+```
+
+Use `--readout-only` instead of `--workers 4` to consume the retained arrays without sampling. The producer and finalized array consumer completed in the statistics slice; the integrated replacement's actual `--readout-only` consumer also completed. Source/producer/consumer hashes are in `g13_rogue/output/statistics_addendum/inputs.json`; the readout revision is distinguished from the production revision. No original deterministic producer, stopping split, seed or contact replay was repeated.
+
+
 ## What this model keeps and drops (recorded before code)
 
 This adds a driven-wave axis, not a new material or a changed deuterium profile. It keeps a single polarized deuterium vibration, the repository's local well and discrete excitation spectrum, signed neighbour forces on the occupied graph, amplitude loss with the focusing convention, transported impact energy and the beam-current readout. It compares nonlinear and linear evolution with identical dispersion, packet energy, random phases and thermal preparation. Travelling waves arriving from other impact positions are included explicitly through their causal footprint and attenuation, rather than counting only impacts on the observed pair. A separately prepared modulated carrier illustrates instability and its resulting finite-time hot spot; it is not identified with spontaneous beam preparation.
@@ -8,7 +116,7 @@ It drops new electronic-force calculations, changes to the foil loading/depth pr
 
 The deliverable contains only `g13_rogue/`. Source files elsewhere remain unchanged. Full equations, consumed-input ledger, output paths, finite sampling support, replay results and the three largest omissions are completed below with the capsule.
 
-## Computed sizes
+## Original loaded-surface scenario: computed sizes
 
 The [110] restricted well gives first/second transition energies **42.6473/47.9886 meV**, hence hardening **5.34132 meV per quantum**. At the engine-equivalent 8.2-ps amplitude lifetime, the lowest sampled full-loading threshold is **0.01505 quanta/D**, **0.6423 meV/D**, peak displacement **0.03827 Å**, at modulation wavelength **11.29 nm**. This is a coherent-carrier threshold, not a threshold on incoherent thermal energy.
 
@@ -136,7 +244,7 @@ python g11_cmns/collective/focusing/pulse/replay.py --pair g11_cmns/collective/c
 
 The successful settled invocation was `python g13_rogue/run.py --spectrum g13_rogue/input/contact_spectrum.json --reuse-solved`, with the thread environment shown above. It preserved the already computed transitions and deterministic seed after the local coordinate interpretation repair, produced the drive/transport/full-tail/current tables and figure, and naturally completed the **actual unchanged pulse CLI with exit 0**. The final `python g13_rogue/readout.py` consumed those saved results and produced the current-maximum uncertainty and reaction-size tables. No broad test suite, upstream force run or later pass was run.
 
-`g13_rogue/package.py` builds `g13_rogue/capsule.tar.gz` as an exactly scoped new-directory overlay on base `02fe7cc19a121706b70ca201195b36fc779e0fb8`. `g13_rogue/manifest.json` and `g13_rogue/SHA256SUMS` bind its source/input/output members; the archive hash and authenticated unpublished-release/asset identities are external delivery facts, avoiding a self-hash cycle. Only this directory is packaged. The retained numerical result does not depend on publication, merge or any later scientific pass.
+`g13_rogue/package.py` builds `g13_rogue/capsule.tar.gz` as an exactly scoped replacement-directory overlay on accepted commit `09b1b0779ed83f014d3e9ab21328fcd106f2a1bb`. It supersedes original draft asset `793110859` (archive SHA-256 `c82650415c8aa2188251cc918c89aec0960cb3b805e0eb9eebc78b95404a2ea8`), not its scientific evidence. Apply only listed `g13_rogue/` members; if that directory has subsequently changed, compare those members before replacing it and preserve unrelated additions. `g13_rogue/manifest.json` and `g13_rogue/SHA256SUMS` bind its source/input/output members; archive hash and authenticated unpublished-release/asset identities remain external delivery facts, avoiding a self-hash cycle. Nothing outside this directory is packaged. The retained result does not depend on publication, merge or a later pass.
 
 ## Biggest three omissions
 

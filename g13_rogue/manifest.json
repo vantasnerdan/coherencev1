@@ -1,12 +1,25 @@
 {
-  "schema": "g13-rogue-pass1-capsule-v1",
-  "patch_base": "02fe7cc19a121706b70ca201195b36fc779e0fb8",
-  "patch_kind": "new directory overlay; no source outside g13_rogue/",
+  "schema": "g13-rogue-pass1-addendum-capsule-v1",
+  "patch_base": "09b1b0779ed83f014d3e9ab21328fcd106f2a1bb",
+  "patch_kind": "replacement directory overlay; only listed g13_rogue/ members",
+  "supersedes_asset": 793110859,
+  "supersedes_archive_sha256": "c82650415c8aa2188251cc918c89aec0960cb3b805e0eb9eebc78b95404a2ea8",
+  "apply_note": "Compare listed members against accepted base before replacing; preserve unrelated later additions.",
   "files": [
     {
       "path": "g13_rogue/README.md",
-      "bytes": 27356,
-      "sha256": "3390c3904ec8d3c4364c7033e21612e62403bb13fe4cdf25e57efe55570cd7b7"
+      "bytes": 42313,
+      "sha256": "f4475574c0244dc8c8ab325238f77b2ef98795d8b7756b77c5e29a5b17fa3c3c"
+    },
+    {
+      "path": "g13_rogue/SUMMARY.md",
+      "bytes": 15217,
+      "sha256": "6d4c951c1d1c635d3570c4703e1689d1797500a48f1d76549bd86ca937237a88"
+    },
+    {
+      "path": "g13_rogue/depth.py",
+      "bytes": 11792,
+      "sha256": "1518a994bda97d7904085a3845e464f1cfd1f9ab1143e6336740899bbfd74073"
     },
     {
       "path": "g13_rogue/input/contact_spectrum.json",
@@ -37,6 +50,21 @@
       "path": "g13_rogue/output/current_maxima.csv",
       "bytes": 658833,
       "sha256": "0372b663009487fab62c71c5838d50026d8e652fbb0e7467eaa6ce0705211a5b"
+    },
+    {
+      "path": "g13_rogue/output/depth.json",
+      "bytes": 1995,
+      "sha256": "6c088247ea8df2d027535c7b27688966a28ed39cf7b2deeb7dc35458bc75dd0b"
+    },
+    {
+      "path": "g13_rogue/output/depth_profile.csv",
+      "bytes": 7534,
+      "sha256": "bd201ffa842b1f4ea248edff5632ee1a3e17f5947a6fceac6b5f85448eb31d69"
+    },
+    {
+      "path": "g13_rogue/output/depth_waves.csv",
+      "bytes": 34962,
+      "sha256": "5f1ff5724bcd752319b3b079095919d9087b97f7827bd410515666752df55871"
     },
     {
       "path": "g13_rogue/output/dispersion.csv",
@@ -124,6 +152,66 @@
       "sha256": "357126d753f79df22dde6b675c30d9e23977087af1549771ec7c8379c3d5b948"
     },
     {
+      "path": "g13_rogue/output/statistics_addendum/basis.json",
+      "bytes": 2251,
+      "sha256": "76acfa39375ef35c3bb700c71edcb42373e04c27a3c9c9e0b657f72a22e4098c"
+    },
+    {
+      "path": "g13_rogue/output/statistics_addendum/comparison.json",
+      "bytes": 38802,
+      "sha256": "a4c5c5caadae6f116a0e9ec593037cf7c87c38813bb980e3e1eb578b191f36e1"
+    },
+    {
+      "path": "g13_rogue/output/statistics_addendum/contract.json",
+      "bytes": 2606,
+      "sha256": "6ce5a5eaa20f79b6a62bd66d163b62aa8ba69e42c0b061119eb24a30e7983e34"
+    },
+    {
+      "path": "g13_rogue/output/statistics_addendum/current_maxima.csv",
+      "bytes": 465209,
+      "sha256": "6aa1e9b8ee33f9afd573401e8d8bf385cab0e41762a039769dfa273b79179aab"
+    },
+    {
+      "path": "g13_rogue/output/statistics_addendum/ensemble_all.npz",
+      "bytes": 2430812,
+      "sha256": "6016fd8bb57e32e9651738a6e0d30bde610484209bd7af3455630a0f4f80bbf3"
+    },
+    {
+      "path": "g13_rogue/output/statistics_addendum/ensemble_focus_extra.npz",
+      "bytes": 1651818,
+      "sha256": "d45c6e21f1c7c8cd6264762711f9b25042f3dde25e8131df1edcd0e4c71ee5db"
+    },
+    {
+      "path": "g13_rogue/output/statistics_addendum/inputs.json",
+      "bytes": 12163,
+      "sha256": "7e8d12bbb2f99b055caa98ff62ea50c98d46ee368a765c875cfce80afc7cc9f3"
+    },
+    {
+      "path": "g13_rogue/output/statistics_addendum/phase_maxima.csv",
+      "bytes": 1185552,
+      "sha256": "a67c81edcf46e8432889a2ce8dc53faee02be49fdd4426b30b811f4dcc41bd89"
+    },
+    {
+      "path": "g13_rogue/output/statistics_addendum/rates.csv",
+      "bytes": 954735,
+      "sha256": "c1e6b91833117a229dcd64a234c08925111c0051a47a42fbf45e624dba5c5858"
+    },
+    {
+      "path": "g13_rogue/output/statistics_addendum/sampling_decision.json",
+      "bytes": 827,
+      "sha256": "cd2cd65788ede811c8bface3ef7e93a722f75661b3c1d6bfd7014b8484a664b9"
+    },
+    {
+      "path": "g13_rogue/output/statistics_addendum/summary.json",
+      "bytes": 3178,
+      "sha256": "e8cb458888b36b2ede50823a4cebddbab8efd244a228ef52f4d55618e81840fa"
+    },
+    {
+      "path": "g13_rogue/output/statistics_addendum/survivals.csv",
+      "bytes": 807541,
+      "sha256": "6d78b7ad12e837cf92bd78624d8790855f7507293f009b21f9cf709754e2ccbd"
+    },
+    {
       "path": "g13_rogue/output/survivals.csv",
       "bytes": 1129256,
       "sha256": "89fffa7624b0edfcb89c67ae9adf599352ce083fcafe678b33cfac032fef922b"
@@ -145,8 +233,8 @@
     },
     {
       "path": "g13_rogue/package.py",
-      "bytes": 2317,
-      "sha256": "a4478346b552f580ffc47603ab03abfad19414202ecbb87258def01297fe5b6b"
+      "bytes": 2595,
+      "sha256": "e83b0533236ac509365f48f532618d25d702dfa669ab0b39a48c029f66d2464e"
     },
     {
       "path": "g13_rogue/readout.py",
@@ -155,13 +243,18 @@
     },
     {
       "path": "g13_rogue/release-notes.md",
-      "bytes": 1242,
-      "sha256": "75e7c2ba3b3cabb673198db00e5c6482a358944ebf5bce82d8ff82a980df321e"
+      "bytes": 2807,
+      "sha256": "aec32ddc675c21fea6bcd83b713986716764cbc60456209dabde0ff2fc13c9b9"
     },
     {
       "path": "g13_rogue/run.py",
       "bytes": 40320,
       "sha256": "f95bb41dedd209eb78a80763b798975be0f13c2b9a51aa2844ea36032dde6684"
+    },
+    {
+      "path": "g13_rogue/statistics_addendum.py",
+      "bytes": 33620,
+      "sha256": "f089d93736a4f039286f1f9733c335a401e15b7d269e1de0cb45b87a6d656f37"
     }
   ],
   "self_excluded": [
