@@ -74,3 +74,39 @@ python package.py
 ```
 
 The second analysis only incorporates the settled proof into the page; it does not simulate. One numerical runtime thread per job, ≤2 GiB virtual-memory cap, no GPU, and a bounded N=2048/100-fs post-compilation smoke preceded production. The 36 comparisons share a single process; no unbounded search or >2-h job is required. Exact duration and candidate counts live in `results.json`, not the short result page. `launches.npz` stores only this campaign's selected launches; `trajectories.npz` stores 2-fs diagnostic samples, while scoring and support use every .5-fs step. Capsule packing is whitelist-only with a fresh safe extraction and byte equality; the parent owns actual cross-host delivery.
+
+## Ordered continuation on this same page
+
+The added `continuation.py` does not import or call the contact/rate adapter. The old comparison, arrays and contact tables are retained unchanged. It carries out these decisions in order:
+
+1. At .6 meV/D extend **only waves and direct** to 16,384 and 131,072 D, at .5 fs, 2400 fs and the original support censor. `LargeLattice` preserves the original tile order, shortest-image stencil, target and exact finite-cell dispersion. The wave preparation still has at most **16 reciprocal modes**; this launch-subspace cap is not a truncation of the lattice dispersion. Three wave trials and exactly the original 3+4+4 direct trials are evaluated. Two independent one-thread workers evaluate independent candidates, preserving declaration order and first-wins ties; refinements wait for the three direct proposals. Old small-N results are reused, not simulated again.
+2. At N=2048/25 meV/D reselect the direct launch at **.25 fs**, using the same three harmonic proposals, four phase rotations and four mixtures. The base winner and hence the dependent trials are chosen anew at that timestep. This is a fine-step selected result, **not a convergence certificate** and not the already archived same-launch comparison.
+3. Only after that result, at N=2048 and 4.8/25 meV/D evaluate the full direct search at .25 fs with the original .8-Å/1.28782409436586-Å support stop lifted, separately under two declared artificial exteriors. Every step still checks the original support; all enter/reentry transitions are retained. Selection uses the full model-valid extended trace, not its supported prefix. `peak_after_original_exit` is distinct from the actual peak/neighbourhood being inside the extent after a reentry.
+
+For `delta=r-.8>0`, the soft local rays use `E(.8)+S(.8)*delta+K*delta²/2`. The stiff rays use the accepted `wide_quartic` exterior: add `K4_ray*(1.5*.8²*delta²+.8*delta³+delta⁴/4)`. Both retain the same angular interpolation and its analytic gradient. Below .8 Å the radial functions, angular closure and forces are unchanged, not refitted.
+
+For `delta=q-.8>0`, both pair exteriors use `W(.8)+W′(.8)*delta+C*delta²/2`, retaining the exact same projected `q` and force chain rule. Soft `C=max(2 Jnn,.1 eV/Å²)` and stiff `C=max(W″(.8−),4 Jnn,4 Csoft)`. Thus both curvatures are positive, soft is no smaller than `2 Jnn`, and neither silently extrapolates the final cubic. Actual numerical coefficients are saved in `continuation_results.json`. These are C1 **model choices outside the computed electronic range**, not new PdD force data.
+
+An extended branch stops separately on actual NN separation <.3 Å, reversal of the reference-axis NN lineage, nonfinite energy or >1% energy drift. These are declared model/numerical failures, not material thresholds or physical peaks. A failing branch is not preferred over a complete model-valid branch. Original support crossing, model failure and finite-horizon censor are separate fields.
+
+The retained geometry includes actual Cartesian displacement vectors for all D simultaneously at each selected peak, ±10-fs neighbourhood, largest radius, smallest NN separation and first original exit, plus the all-candidate largest-radius and smallest-NN states. JSON names the lattice row, original D index, tile translation, unit crystal direction, actual target and minimum-NN vectors, actual R and effective symmetric q; `continuation_states.npz` retains full simultaneous x/v arrays. An off-axis state is never replaced by invented collinear coordinates.
+
+`continuation_verify.py` is the single settled changed-consumer check: exact on-domain force equality, shared on-domain trajectory equality, synthetic C1 boundary/outer-force checks, and an actual selected-state force gradient plus the full extended trace's measured energy drift. It does not reselect again, run another timestep campaign or claim convergence. The selected traces retain every integration step. Raw nonselected candidates retain all-step summary/extrema/support-transition records and compact 2-fs traces with peak/extrema/crossing samples, labelled in the JSON; `peak_index` indexes the saved trace and `peak_integration_step` names the original all-step position.
+
+Each case declares its trace columns: original supported trajectories retain the engine's 12 diagnostics; extended trajectories retain the first 10 physical/support/energy diagnostics only. No missing local-wall diagnostic is represented by a numerical zero. The all-candidate crossing states additionally retain full simultaneous vectors at each such candidate's largest-radius step, including the noncollinear phase-2/3 states.
+
+After unpacking the continuation capsule at its root, enter `g11_cmns/collective/focusing/` and use the existing scientific environment:
+
+```sh
+export OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 NUMBA_NUM_THREADS=1
+python continuation.py probe
+python continuation.py size16
+python continuation.py size32
+python continuation.py fine
+python continuation.py outside
+python continuation_verify.py
+python continuation_package.py
+```
+
+The measured 131k resource decision and actual runtime are retained in the results, not inferred from N alone. The capsule includes exact prior input bytes at the imported root-relative paths, including the original hidden staging paths; no baseline source identity is rebound. `continuation_manifest.json` hashes the source/data whitelist, excluding itself; the archive hash is reported separately to avoid a circular identity. No push, publication, damping sweep or electronic/contact calculation is part of this continuation.
+
