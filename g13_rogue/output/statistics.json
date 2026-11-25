@@ -1,0 +1,31 @@
+{
+  "ensemble_phases": 12,
+  "window_fs": 32800.0,
+  "timestep_fs": 2.0,
+  "bath": "discrete exact linear Bose OU bath, common complex innovations; Kerr dynamics has the same bath, not an exact nonlinear quantum canonical ensemble",
+  "event": "discrete upward crossings at 2 fs, per D; no count is an independent lifetime or nuclear event",
+  "origin": "single-arrival Palm response, phase-paired ambient subtraction; no accelerated flux",
+  "radial_energy_fraction_beyond_sampling_radius": 0.006737946999085467,
+  "thermal_energy_eV_per_polarization": 0.010184683724128027,
+  "thermal_quanta_per_D": 0.2438250757457956,
+  "thermal_vacuum_used": false,
+  "total_probability_at_least_two": "finite-memory Poisson probability only, not a bound on missing tail amplification or an inferred overlap initiation rate",
+  "sampling": "12 paired phases; radial area midpoint quadrature in three explicit strata, not a spatial convergence claim",
+  "long_time": "response window is four amplitude lifetimes; isolated linear residual energy fraction exp(-8)=0.00033546, nonlinear residual is unresolved rather than zero",
+  "support": [
+    {
+      "model": "linear",
+      "maximum_local_eV": 0.14033796446281815,
+      "maximum_closing_eV": 0.11466714218841134,
+      "coordinate_support_fraction": 1.0,
+      "low_action_support_fraction": 0.9845849000836492
+    },
+    {
+      "model": "nonlinear",
+      "maximum_local_eV": 0.1514260558801722,
+      "maximum_closing_eV": 0.1835813484090005,
+      "coordinate_support_fraction": 1.0,
+      "low_action_support_fraction": 0.9842730375474538
+    }
+  ]
+}

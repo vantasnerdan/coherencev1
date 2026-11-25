@@ -1,0 +1,67 @@
+{
+  "thresholds": [
+    {
+      "case": "Pd",
+      "wavelength_nm": 11.294549996535874,
+      "threshold_action_quanta": 0.015047354481609137,
+      "threshold_meV_per_D": 0.6423338938011932,
+      "threshold_displacement_A": 0.03827490404384975
+    },
+    {
+      "case": "x0875-spread4_clean",
+      "wavelength_nm": 12.763864024947194,
+      "threshold_action_quanta": 0.015028374856345852,
+      "threshold_meV_per_D": 0.6856926014540988,
+      "threshold_displacement_A": 0.03699714775153817
+    },
+    {
+      "case": "x0875-spread4_near",
+      "wavelength_nm": 12.763864024947194,
+      "threshold_action_quanta": 0.015028074520102111,
+      "threshold_meV_per_D": 0.685173906075295,
+      "threshold_displacement_A": 0.03701042105712871
+    },
+    {
+      "case": "x0750-bunched8_clean",
+      "wavelength_nm": 8.31928189383418,
+      "threshold_action_quanta": 0.01502994270184203,
+      "threshold_meV_per_D": 0.8428461311537052,
+      "threshold_displacement_A": 0.03337094619562942
+    },
+    {
+      "case": "x0750-bunched8_near",
+      "wavelength_nm": 6.924939527360301,
+      "threshold_action_quanta": 0.0150468009112073,
+      "threshold_meV_per_D": 0.8257227567283528,
+      "threshold_displacement_A": 0.033753279402341047
+    },
+    {
+      "case": "x0875-bunched4_near",
+      "wavelength_nm": 8.31928189383418,
+      "threshold_action_quanta": 0.015030880354805834,
+      "threshold_meV_per_D": 0.7284480637711782,
+      "threshold_displacement_A": 0.03590003869647942
+    }
+  ],
+  "contact_log10_proton_chance_range": [
+    -114.24844886216033,
+    -110.33036989488303
+  ],
+  "contact_log10_peak_proton_hazard_range": [
+    -101.03197434739083,
+    -96.8217761746288
+  ],
+  "contact_band_shift_dex": [
+    1.5649547175393508,
+    1.6804865490090037
+  ],
+  "quantum_classical_R_mismatch_A": [
+    0.11413223101645582,
+    0.17225953528951485
+  ],
+  "physical_pair_preparation_probability": null,
+  "physical_reaction_rate": null,
+  "reaction_scope": "pumped prepared seed, normalized spatial l=0; two-transition Kerr continuation crossed, no material population inferred",
+  "runtime_readout": "python g13_rogue/readout.py",
+  "rate_semantics": "current_maxima.csv counts signed Palm excess of one arrival-centered maximum per packet window, distinct from rates.csv multiple upward crossings and occupancy"
+}

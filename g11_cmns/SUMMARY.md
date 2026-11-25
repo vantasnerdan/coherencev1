@@ -73,7 +73,7 @@ This is one pair on one line, with the neighbours held still, relative motion wi
 - **The gain falls as the energy per deuteron rises:** 221, 100 and 33 at 0.6, 4.8 and 25 meV with 2048 deuterons.
 - **The highest case, redone with the finer step throughout:** all 11 patterns rerun at 0.25 fs give 0.83 eV as the best, and at that instant the pair is moving apart. The 0.98 eV found earlier with the coarser step, with the pair closing, is not reproduced. The closest the pair comes anywhere in that search is 1.55 A.
 - **The edge of the computed wells does not set these peaks.** The searches at 4.8 and 25 meV were repeated with the stop at 0.8 A removed and the wells continued beyond it in two different ways, one soft and one stiff. Both give the same best patterns and the same peaks (0.478 and 0.826 eV), and those runs never leave the computed range. Three of the eleven patterns at 25 meV do leave it, reaching 0.84 A on a deuteron that is not in the chosen pair, and none of them beats the best one. What holds the peak near 1 eV at the higher energies is therefore inside the model: the motion is no longer close to harmonic there, and patterns designed from the harmonic picture lose their timing. A search that works on the full motion has not been made.
-- **With loss switched on** (one value, amplitude decay time 4.1 ps) the coarse-step peak of 0.98 eV fell to 0.32 eV. The larger boxes and the fine-step case were not run with loss.
+- **With loss switched on** (one value, decay time 4.1 ps, which `g13_rogue` later found is the lifetime of the energy, the amplitude living 8.2 ps) the coarse-step peak of 0.98 eV fell to 0.32 eV. The larger boxes and the fine-step case were not run with loss.
 - **As a rate:** a pair at 0.8 to 1.0 eV gives 1e-82 to 1e-88 of the signal units per pair, against 1e-105 for a cold pair. Focusing buys about twenty powers of ten and leaves about eighty. The new peaks were not converted to rates.
 - **Energy needed, before any inefficiency:** 100 eV on one pair is all the energy of 167,000 deuterons at the pumped level, and 1 keV that of 1.7 million. The largest box run holds 79 eV in all. At the 0.45 percent share found there, 100 eV on a pair would take the energy of 37 million deuterons, and the share is still falling with size.
 
@@ -91,7 +91,7 @@ The starting pattern is now improved step by step against the actual, non-harmon
 - **About 1 eV while closing takes a pair to 1.46 A,** which is where the computed pair energy says it should turn round. The pair closes, stops and rebounds within about 30 fs.
 - **The 25 meV runs now reach the edge of the computed wells** (0.80 A) and leave it after the peaks counted here. Going higher than about 1 eV on a pair in this model needs wells and pair energies beyond what is computed.
 
-**With loss designed in** (amplitude decay time 4.1 ps, the pattern optimised with the loss acting):
+**With loss designed in** (decay time 4.1 ps, which `g13_rogue` later found is the lifetime of the energy, the amplitude living 8.2 ps, the pattern optimised with the loss acting):
 
 | Deuterons, energy each | Old pattern, with loss (eV) | Pattern above, with loss (eV) | Pattern optimised with loss (eV) | Without loss (eV) |
 |---|---:|---:|---:|---:|
