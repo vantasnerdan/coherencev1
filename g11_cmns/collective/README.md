@@ -8,6 +8,6 @@
 
 [Contact](contact/README.md) turns the computed pair energy into a contact chance and a rate for one pair on the nearest-neighbour line, cold, at 300 K and for the concentrated motion of part 1. All are about a hundred powers of ten below the added signal per pair.
 
-[Focusing](focusing/README.md) searches for starting patterns that gather shared energy onto one pair. With 2048 deuterons at the pumped level the best pattern found gives a gain of 221; the peaks reach about 1 eV, at the edge of the computed wells.
+[Focusing](focusing/README.md) searches for starting patterns that gather shared energy onto one pair. With 2048 deuterons at the pumped level the best pattern found gives a gain of 221; the peaks reach about 1 eV, with the deuterons close to the edge of the computed wells.
 
 The separate [coupling report](../coupling/README.md) gives the first allowed matrix elements and their limits. Neither calculation changes the foil profile, loading or G12 baseline.
