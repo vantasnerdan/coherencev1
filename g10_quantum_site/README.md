@@ -1,6 +1,6 @@
 # Bulk quantum-site result
 
-Update: the PdD well has been refitted with computed points out to 0.48 A and then to 0.8 A; see [bulk-refit-080](bulk-refit-080/README.md) and its [lead's note](bulk-refit-080/LEAD.md) (the 0.48 A step is in [bulk-refit-048](bulk-refit-048/README.md)). The numbers below change by under 2 percent.
+Update: the PdD well has been refitted with computed points out to 0.48 A and then to 0.8 A; see [bulk-refit-080](bulk-refit-080/README.md) and its [lead's note](bulk-refit-080/LEAD.md) (the 0.48 A step is in [bulk-refit-048](bulk-refit-048/README.md)). The numbers below change by under 2 percent. The energy of two neighbouring deuterons pushed together is in [pdd-nearest-pair](pdd-nearest-pair/LEAD.md).
 
 At 300 K, the bulk PdD model puts about 57% of an isolated deuteron’s position probability outside 0.24 Å, the last displacement tested on the available well cuts. Coupling it to its neighbours changes the mean-square displacement from 0.081 to 0.083 Å², smaller than the coupled sampling error at this temperature. A similar width does not establish a similar far tail. The shaded bands show how the fitted tails change when energy and force data are used differently; they are not error bars on the real material.
 
