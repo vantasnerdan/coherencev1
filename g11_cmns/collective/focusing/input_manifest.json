@@ -1,0 +1,108 @@
+{
+  "schema": "focusing-assumed-inputs-v1",
+  "inputs": [
+    {
+      "path": "g10_quantum_site/model.py",
+      "bytes": 8852,
+      "sha256": "2f0f6f90dc6a813dab64695415bfb9bee44a92308ab412831254d5624a7ac03b"
+    },
+    {
+      "path": "g3_loading/x1/dense_Pd/k3/final-x1-dense-readout-20261114T0213Z.json",
+      "bytes": 51609,
+      "sha256": "c87e06ae646d2311c77d6cc8bfb3b9548bafa06d6342914a4fe14fd6c182d3cf"
+    },
+    {
+      "path": "g10_quantum_site/bulk-refit-080/well.py",
+      "bytes": 2881,
+      "sha256": "a791fe4a4b13e5cf60ab0fc1e20c8c4c8be2e49a67ad2b2e0b373465a314bc9e"
+    },
+    {
+      "path": "g10_quantum_site/bulk-refit-048/well.py",
+      "bytes": 4683,
+      "sha256": "33816c41b5d3a4567c41c0576652e70a00c3fe1c861e49ce0023ce34ed1b6941"
+    },
+    {
+      "path": "g10_quantum_site/bulk-refit-048/inputs/old-readout.json",
+      "bytes": 51609,
+      "sha256": "c87e06ae646d2311c77d6cc8bfb3b9548bafa06d6342914a4fe14fd6c182d3cf"
+    },
+    {
+      "path": "g10_quantum_site/bulk-refit-048/inputs/bulk-wells.json",
+      "bytes": 153191,
+      "sha256": "000612c601ee3cce30fc6c904ba527607ef3680ca2cec4d54ecf2d674d364a82"
+    },
+    {
+      "path": "g10_quantum_site/.input-080/g10_quantum_site/bulk-wide-wells/bulk-wells.json",
+      "bytes": 319722,
+      "sha256": "18fa6232525243391b84f2fb495cfe9947f7d41eef270931fb3dc8b99857e28d"
+    },
+    {
+      "path": "g11_cmns/collective/.pair-input/g10_quantum_site/pdd-nearest-pair/pair-cut.csv",
+      "bytes": 844,
+      "sha256": "8b610c379ab585b01a2a17b140de97835d0733fe29a09d5bfe2e350f3b30f8b6"
+    },
+    {
+      "path": "g11_cmns/collective/contact/results.json",
+      "bytes": 53175,
+      "sha256": "ed4ec3bcd24bccd654ff42e9e6e2aabcbbfc3d65823fcb6761bcddf4147a5bef"
+    },
+    {
+      "path": "g11_cmns/collective/contact/g12_readout.py",
+      "bytes": 2298,
+      "sha256": "7671c4b38542c728c99fd9d9a8633f0934f00c0d0369c55c0d526d05cd5e01a9"
+    }
+  ],
+  "checked_equivalences": [
+    {
+      "first": "g3_loading/x1/dense_Pd/k3/final-x1-dense-readout-20261114T0213Z.json",
+      "second": "g10_quantum_site/bulk-refit-048/inputs/old-readout.json",
+      "byte_equal": true,
+      "sha256_first": "c87e06ae646d2311c77d6cc8bfb3b9548bafa06d6342914a4fe14fd6c182d3cf",
+      "sha256_second": "c87e06ae646d2311c77d6cc8bfb3b9548bafa06d6342914a4fe14fd6c182d3cf"
+    },
+    {
+      "first": "g11_cmns/collective/.pair-input/g10_quantum_site/pdd-nearest-pair/pair-cut.csv",
+      "second": "g11_cmns/collective/contact/sources/pair-cut.csv",
+      "byte_equal": true,
+      "sha256_first": "8b610c379ab585b01a2a17b140de97835d0733fe29a09d5bfe2e350f3b30f8b6",
+      "sha256_second": "8b610c379ab585b01a2a17b140de97835d0733fe29a09d5bfe2e350f3b30f8b6"
+    }
+  ],
+  "verified_main_equivalences": [
+    {
+      "local": "g10_quantum_site/.input-080/g10_quantum_site/bulk-wide-wells/bulk-wells.json",
+      "canonical": "g10_quantum_site/bulk-wide-wells/bulk-wells.json",
+      "bytes": 319722,
+      "sha256": "18fa6232525243391b84f2fb495cfe9947f7d41eef270931fb3dc8b99857e28d",
+      "revision": "c6f079ce30333158160aed50a391f0cae6ccc0f0",
+      "verification": "GitHub contents API bytes decoded and compared directly to this local input; byte-equal"
+    },
+    {
+      "local": "g11_cmns/collective/.pair-input/g10_quantum_site/pdd-nearest-pair/pair-cut.csv",
+      "canonical": "g10_quantum_site/pdd-nearest-pair/pair-cut.csv",
+      "bytes": 844,
+      "sha256": "8b610c379ab585b01a2a17b140de97835d0733fe29a09d5bfe2e350f3b30f8b6",
+      "revision": "c6f079ce30333158160aed50a391f0cae6ccc0f0",
+      "verification": "GitHub contents API bytes decoded and compared directly to this local input; byte-equal"
+    },
+    {
+      "local": "g10_quantum_site/bulk-refit-080/well.py",
+      "canonical": "g10_quantum_site/bulk-refit-080/well.py",
+      "bytes": 2881,
+      "sha256": "a791fe4a4b13e5cf60ab0fc1e20c8c4c8be2e49a67ad2b2e0b373465a314bc9e",
+      "revision": "c6f079ce30333158160aed50a391f0cae6ccc0f0",
+      "verification": "GitHub contents API bytes decoded and compared directly to this local input; byte-equal"
+    }
+  ],
+  "source_revisions": {
+    "workspace_input_HEAD": "7349c26e626d41262f9ad66ab94e9e266373425c",
+    "accepted_080": "e07c49e",
+    "pair_source": "e8f7286",
+    "accepted_contact": "c6f079ce30333158160aed50a391f0cae6ccc0f0"
+  },
+  "pair_asset": {
+    "id": 790324076,
+    "archive_sha256": "716978d9797e12683a937a5f1fe79c715b4d3d000e8ac4da5614cc2f25ef7777"
+  },
+  "assumptions": "Extract at g11_cmns/collective/focusing/ in the adopted source tree with the exact hashed prior inputs. Prior arrays are not duplicated. No contact rerun. Revision labels are authoritative supplied provenance; exact current input bytes are recorded above."
+}

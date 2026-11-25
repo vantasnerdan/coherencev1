@@ -1,0 +1,147 @@
+{
+  "spectral": [
+    {
+      "n_D": 32,
+      "min_curvature_eV_A2": 0.2016463600671755,
+      "max_curvature_eV_A2": 0.8476334668607527,
+      "fft_force_error_eV_A": 1.5543122344752192e-15
+    },
+    {
+      "n_D": 256,
+      "min_curvature_eV_A2": 0.2016463600671755,
+      "max_curvature_eV_A2": 0.8476334668607527,
+      "fft_force_error_eV_A": 1.1102230246251565e-15
+    },
+    {
+      "n_D": 2048,
+      "min_curvature_eV_A2": 0.2016463600671755,
+      "max_curvature_eV_A2": 0.8476334668607527,
+      "fft_force_error_eV_A": 2.220446049250313e-15
+    }
+  ],
+  "folded_32_graph_max_error": 0.0,
+  "small_signal_old_match": {
+    "energy_difference_eV": 7.025865327872279e-22,
+    "max_force_difference_eV_A": 2.640040760331676e-16
+  },
+  "one_site_limit": {
+    "correction_energy_eV": -1.734723475976807e-18,
+    "correction_force_max_eV_A": 0.0,
+    "C1_reason": "Origin correction is A[u+]\u00b2[v+]\u00b2/r0^4+B[u+]\u00b3[v+]\u00b3/r0^6; its first derivatives vanish at either one-site limit."
+  },
+  "updated_well_equivalence_max_error": 1.7763568394002505e-15,
+  "total_directional_gradient_error_eV_A": 2.5516361246147312e-09,
+  "symmetric_cut": [
+    {
+      "q_A": 0.12,
+      "connected_eV": 0.002707422296197139,
+      "connected_dE_du_eV_A": 0.05077944191875314
+    },
+    {
+      "q_A": 0.24,
+      "connected_eV": 0.012627486155508905,
+      "connected_dE_du_eV_A": 0.12311477932401915
+    },
+    {
+      "q_A": 0.36,
+      "connected_eV": 0.03389455258036378,
+      "connected_dE_du_eV_A": 0.2418033334947104
+    },
+    {
+      "q_A": 0.48,
+      "connected_eV": 0.07366871427427671,
+      "connected_dE_du_eV_A": 0.43701201598009654
+    },
+    {
+      "q_A": 0.8,
+      "connected_eV": 0.3763843714251609,
+      "connected_dE_du_eV_A": 1.7167879037929294
+    }
+  ],
+  "energy_bound": {
+    "domain": "all site |x|<=.80 \u00c5, nearest bond R>=1.28782409436586 \u00c5, N=32/256/2048",
+    "minimum_radial_V_minus_Kr2_over2_eV": 4.5111243731737723e-07,
+    "minimum_native_connected_W_minus_Jq2_eV": 0.0024356360176212843,
+    "minimum_origin_connected_correction_eV": 0.0,
+    "conclusion": "V>=lambda_min*sum(|x|\u00b2)/2>=0 and Krel<=Ktotal<=initial N e in conservative supported motion",
+    "evidence_tier": "analytic angular inequalities plus binary64 polynomial extrema, not outward-rounded formal enclosure"
+  },
+  "single_limiting_step_refinement": {
+    "n_D": 2048,
+    "energy_per_D_eV": 0.025,
+    "dt_fs": [
+      0.5,
+      0.25
+    ],
+    "coarse_peak_eV": 0.9802612979825613,
+    "fine_peak_eV": 0.8257418507749268,
+    "fractional_peak_change": -0.1576308760997146,
+    "coarse_peak_time_fs": 2367.5,
+    "fine_peak_time_fs": 1563.0,
+    "coarse_hold_fs": 18.5,
+    "fine_hold_fs": 18.75,
+    "coarse_relative_energy_drift": 0.00026553899381318106,
+    "fine_relative_energy_drift": 6.527274259884884e-05,
+    "coarse_first_exit_fs": null,
+    "fine_first_exit_fs": null,
+    "elapsed_s": 13.720213365741074,
+    "fine_peak_in_coarse_peak_window_eV": 0.18764012780217856,
+    "coarse_peak_in_fine_peak_window_eV": 0.6863370556490423,
+    "fine_min_bond_A": 1.5520613383676032,
+    "coarse_min_bond_A": 1.4716550961737507,
+    "fine_max_site_radius_A": 0.7857760900212283,
+    "coarse_max_site_radius_A": 0.7988093597705522,
+    "window_half_width_fs": 30.0,
+    "interpretation": "one same-launch refinement only; exact rows retained, not a convergence claim"
+  },
+  "sampled_wall_comparison": {
+    "sample": "actual most-displaced site at every .25-fs refinement step",
+    "minimum_sampled_radius_A": 0.03096101423742944,
+    "maximum_sampled_radius_A": 0.7857760900212283,
+    "local_wall_over_old_harmonic_min": 1.003734652375146,
+    "local_wall_over_old_harmonic_max": 3.461437253310642,
+    "updated_local_eV_at_largest_radius": 0.48284767773131837,
+    "old_harmonic_eV_at_largest_radius": 0.1823493486966318,
+    "min_bond_A": 1.5520613383676032
+  },
+  "wall_interpretation": "The updated local wall costs 1\u20133.46 times the old harmonic wall at the actual most-displaced site's sampled directions above .03 \u00c5 (maximum radius 0.7858 \u00c5). The .25-fs trajectory reaches the finite horizon without a support exit; neither a near-end peak nor a first boundary crossing establishes saturation. The matched high-energy harmonic trajectory exits early, so its smaller supported peak is clipping, not a same-horizon nonlinear advantage.",
+  "refined_selected_row": {
+    "n_D": 2048,
+    "energy_per_D_eV": 0.025,
+    "pattern": "direct_optimized",
+    "candidate": "single_dt_refinement",
+    "scope": "target",
+    "peak_relative_kinetic_eV": 0.8257418507749268,
+    "relative_radial_kinetic_eV_at_peak": 0.8257418507749269,
+    "first_site_or_bond_exit_fs": null,
+    "exit_kind": null,
+    "candidate_supported": true,
+    "trajectory_supported": true,
+    "peak_before_support_exit": true,
+    "peak_time_fs": 1563.0,
+    "half_peak_hold_fs": 18.75,
+    "hold_left_censored": false,
+    "hold_right_censored": false,
+    "participation_at_launch": 827.3557248624963,
+    "participation_definition": "kinetic inverse participation",
+    "target_kinetic_preload_fraction": 0.0,
+    "potential_fraction_at_launch": 0.0,
+    "pair_gain": 33.02967403099707,
+    "fraction_total_energy_at_peak": 0.01612777052294779,
+    "separation_A_at_peak": 2.9062102443462985,
+    "signed_inward_speed_A_per_fs_at_peak": -0.12580596577284509,
+    "max_site_radius_A_before_exit": 0.7857760900212283,
+    "min_bond_A_before_exit": 1.5520613383676032,
+    "horizon_fs": 2400.0,
+    "relative_energy_drift": 6.527274259884884e-05,
+    "launch_total_energy_eV": 51.19999999999984,
+    "peak_index": 6252
+  },
+  "changed_consumer": {
+    "target_rows": 36,
+    "whole_cell_rows": 36,
+    "all_36_readouts_match_retained_spectra": true,
+    "candidate_score_only_pre_exit": true,
+    "direct_target_rows_zero_and_site_cap_checked": true
+  }
+}
