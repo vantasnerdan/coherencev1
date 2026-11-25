@@ -1,4 +1,4 @@
-"""Replay six archived PdD inward/rebound episodes in declared finite radial models."""
+"""Replay pair-bound inward/rebound histories in a declared D–D radial model."""
 from __future__ import annotations
 
 import argparse
@@ -20,12 +20,12 @@ from scipy.linalg import eigh_tridiagonal
 HERE = Path(__file__).resolve().parent
 CONTACT = HERE.parent.parent / 'contact'
 sys.path.insert(0, str(CONTACT))
-from contact import C, HBAR, INPUT, T, Potential, contact_log
+from contact import BULK_PAIR, C, HBAR, T, SitePair, contact_log
 from g12_readout import _LOG_D_PER_TRUE_C, _LOG_TRUE_CURRENT_A, _PROTON_A3_PER_S, _readout, event_readout
 
 MASS = HBAR**2 / (2*T)   # relative mass in eV fs²/Å²
-QUANTUM = math.sqrt(T * INPUT['one_body']['K_eV_A2'])  # ħω from outward curvature at R0
-SIGMA = math.sqrt(T / QUANTUM)
+BULK_HISTORIES = HERE / 'bulk_histories.json'
+ENERGY_REPLAY_ATOL_EV = 5e-9
 RADIUS = 1.e-5   # Å, instantaneous inside 1 fm, not first passage
 P_A = _PROTON_A3_PER_S
 DD_A = P_A * (1 + 53.701/55.576)  # same spin convention, p + n branches only
@@ -35,15 +35,20 @@ def episode(trace, readout):
     """Nearest enclosing outer–inner–outer sign changes around largest c>0."""
     n = readout['scored_samples']
     exit_fs = readout['first_original_exit_fs']
-    assert len(trace) == n + int(exit_fs is not None)
-    if exit_fs is not None:
-        assert trace[n-1, 0] < exit_fs == trace[n, 0]
+    if len(trace) != n + int(exit_fs is not None) or (
+            exit_fs is not None and not trace[n-1, 0] < exit_fs == trace[n, 0]):
+        raise ValueError("Trace does not match the declared scored prefix and first exit")
     c = trace[:n, 9]
     outer = np.flatnonzero((c[:-1] <= 0) & (c[1:] > 0)) + 1
     inner = np.flatnonzero((c[:-1] > 0) & (c[1:] <= 0)) + 1
     peak = int(np.argmax(c))
-    start, turn, end = outer[outer <= peak][-1], inner[inner > peak][0], outer[outer > peak][0]
-    assert c[peak] > 0 and start < peak < turn < end
+    before = outer[outer <= peak]
+    after = outer[outer > peak]
+    minimum = inner[inner > peak]
+    if not (c[peak] > 0 and len(before) and len(minimum) and len(after)
+            and before[-1] < peak < minimum[0] < after[0]):
+        raise ValueError("Expected a complete supported closing-and-rebound episode")
+    start, turn, end = before[-1], minimum[0], after[0]
     seg = trace[start-1:end+1]
     t, radius, closing = seg[:, 0], seg[:, 3], seg[:, 9]
     path = CubicSpline(t, radius, bc_type=((1, -closing[0]), (1, -closing[-1])))
@@ -66,9 +71,9 @@ def episode(trace, readout):
         first_original_exit_fs=exit_fs)
 
 
-def drive_profile(r):
-    z = np.clip((r-1.)/.4, 0, 1)
-    return .4*z**4*(z*z-3*z+2.5) + np.maximum(r-1.4, 0.)
+def drive_profile(r, flat_below, width):
+    z = np.clip((r-flat_below)/width, 0, 1)
+    return width*z**4*(z*z-3*z+2.5) + np.maximum(r-(flat_below+width), 0.)
 
 
 def radial_basis(potential, archive, max_cap):
@@ -78,6 +83,8 @@ def radial_basis(potential, archive, max_cap):
     h = model['h_A']
     r = np.arange(1, model['n_grid']+1)*h
     count = int(np.searchsorted(archived_e, max_cap, side='right'))
+    if count == 0 or max_cap > archived_e[-1]:
+        raise ValueError("Pulse energy band is not covered by the supplied spectrum")
     en, vec = eigh_tridiagonal(2*T/h**2 + potential(r), np.full(len(r)-1,-T/h**2),
                                select='i', select_range=(0,count-1), tol=1e-11, lapack_driver='stebz')
     lcs = np.array([contact_log(potential, float(e), r, vec[:,i]/math.sqrt(h),
@@ -88,7 +95,7 @@ def radial_basis(potential, archive, max_cap):
                  max_log10_contact_difference=float(np.max(np.abs(lcs[:,0]/math.log(10)-log_rho))))
     # A distinct LAPACK subset can change the tiny resolved matching amplitude.
     # Magnitudes consumed by the replay are the original archived ones.
-    if gauge['max_energy_difference_eV'] >= 5e-10 or gauge['max_log10_contact_difference'] >= 2e-5:
+    if gauge['max_energy_difference_eV'] >= ENERGY_REPLAY_ATOL_EV or gauge['max_log10_contact_difference'] >= 2e-5:
         raise ArithmeticError((model['join_A'], model['include_flagged'], gauge))
     return r, archived_e[:count], vec, log_rho, gauge
 
@@ -114,7 +121,8 @@ def cusp_kernel(potential, energy, amp):
 
 def reaction_log(log_xi, coefficient):
     log_hazard = log_xi + math.log10(coefficient)
-    return math.log10(-math.expm1(-10.**log_hazard))
+    # The correction to the log is beneath float resolution in this regime.
+    return log_hazard if log_hazard < -16 else math.log10(-math.expm1(-10.**log_hazard))
 
 
 def propagate(initial, eps, coupling, times, force):
@@ -136,21 +144,21 @@ def propagate(initial, eps, coupling, times, force):
     return states
 
 
-def measures(path, turns, segment, peak, pot, spectrum, caps, nlo=None, step_fs=.0625):
+def measures(path, turns, segment, peak, pot, spectrum, caps, sigma, drive, nlo=None, step_fs=.0625):
     r, energies, psi, log_rho, _ = spectrum
     count = int(np.searchsorted(energies, caps, side='right'))
     en, vec, lc = energies[:count], psi[:,:count], log_rho[:count]
     n_prepared = nlo or count
     t0, ti, tf = turns
     center = path(t0)
-    launch = np.exp(-((r-center)/(2*SIGMA))**2) - np.exp(-((r+center)/(2*SIGMA))**2)
+    launch = np.exp(-((r-center)/(2*sigma))**2) - np.exp(-((r+center)/(2*sigma))**2)
     launch /= np.linalg.norm(launch)
     initial = np.zeros(count, dtype=complex)
     initial[:n_prepared] = vec[:,:n_prepared].T@launch
     kept = float(np.vdot(initial,initial).real)
     initial /= math.sqrt(kept)
     R = vec.T@(r[:,None]*vec)
-    D = vec.T@(drive_profile(r)[:,None]*vec)
+    D = vec.T@(drive_profile(r, *drive)[:,None]*vec)
     reference = float(np.max(lc))
     slopes = np.exp((lc-reference)*(.5*math.log(10)))
     gap = en-en[0]
@@ -229,8 +237,10 @@ def measures(path, turns, segment, peak, pot, spectrum, caps, nlo=None, step_fs=
                   signed_excess_Xi=dict(sign=int(np.sign(excess)),log10_magnitude_A_minus3_s=log_excess),
                   log10_probability_proton_per_pair_pulse=log_pp,
                   log10_probability_either_DD_branch_per_pair_pulse=reaction_log(log_xi,DD_A),
-                  one_pulse_per_incident_D_total_G12=_readout(log_per_c+_LOG_TRUE_CURRENT_A,log_per_c),
-                  one_pulse_per_incident_D_excess_G12=event_readout(log_excess) if excess > 0 else None,
+                  one_pulse_per_incident_D_total_G12=(
+                      _readout(log_per_c+_LOG_TRUE_CURRENT_A,log_per_c) if pot.pair.g12 else None),
+                  one_pulse_per_incident_D_excess_G12=(
+                      event_readout(log_excess) if excess > 0 and pot.pair.g12 else None),
                   finite_subspace_log10_rho_cap_A_minus3=log_bound_rho,
                   finite_subspace_log10_Xi_cap_A_minus3_s=log_bound_rho+math.log10(tf-t0)-15.,
                   finite_span_log10_snapshot_cap_R_lt_1fm=reference+2*math.log10(float(np.linalg.norm(kernel,ord=2))),
@@ -245,55 +255,64 @@ def measures(path, turns, segment, peak, pot, spectrum, caps, nlo=None, step_fs=
 
 def main():
     argp = argparse.ArgumentParser(description=__doc__)
-    argp.add_argument('--trace-dir', type=Path, default=HERE.parent,
-                      help='directory containing the unpacked original nonlinear replay assets')
-    argp.add_argument('--output', type=Path, default=HERE/'results.json')
+    argp.add_argument('--pair', type=Path, default=BULK_PAIR, help='Site-pair JSON used to solve the spectrum')
+    argp.add_argument('--spectrum', type=Path, required=True, help='Spectrum output of contact.py for this pair')
+    argp.add_argument('--histories', type=Path, default=BULK_HISTORIES, help='Manifest of pair-bound pulse traces')
+    argp.add_argument('--trace-dir', type=Path, default=HERE.parent, help='Root for manifest-relative trace files')
+    argp.add_argument('--output', type=Path, required=True, help='Write a new pulse result; archived results are not defaults')
     args = argp.parse_args()
-    hashes = {}
+    pair = SitePair(args.pair)
+    quantum = math.sqrt(2*T*pair.outward_curvature)
+    sigma = math.sqrt(T/quantum)
+    profile = pair.pulse_drive
+    if profile is None or not (profile['flat_below_A'] > 0 and profile['transition_width_A'] > 0):
+        argp.error("Pulse input needs positive flat_below_A and transition_width_A")
+    drive = profile['flat_below_A'], profile['transition_width_A']
+    hashes = {'pair':pair.sha256}
     def bind(p, name):
         hashes[name] = sha256(p.read_bytes()).hexdigest()
         return p
-    sel = json.loads(bind(args.trace_dir/'nonlinear_selection.json','nonlinear_selection.json').read_text())
-    archive = json.loads(bind(CONTACT/'results.json','../contact/results.json').read_text())
-    for name in ('contact.py','inputs.json','g12_readout.py'):
+    source = json.loads(bind(args.histories,'histories').read_text())
+    archive = json.loads(bind(args.spectrum,'spectrum').read_text())
+    if source['schema'] != 'g11-radial-histories-v1' or source['pair_sha256'] != pair.sha256:
+        argp.error("Pulse histories are not bound to this site-pair description")
+    if archive['inputs_sha256'] != pair.sha256:
+        argp.error("Spectrum was not computed for this site-pair description")
+    for name in ('contact.py','g12_readout.py'):
         bind(CONTACT/name,'../contact/'+name)
-    assert hashes['../contact/inputs.json'] == archive['inputs_sha256']
-    models = [(Potential(row['model']['join_A'],row['model']['include_flagged']),row)
-              for row in archive['variants']]
+    rows = {(row['model']['join_A'],row['model']['include_flagged']):row for row in archive['variants']}
+    potentials = pair.potentials()
+    if len(rows) != len(potentials) or any((p.join, p.include_flagged) not in rows for p in potentials):
+        argp.error("Spectrum variants do not match the pair joins and flag treatments")
+    models = [(p, rows[p.join,p.include_flagged]) for p in potentials]
     histories = []
-    for case_id, case in sel.items():
-        name = f'nonlinear_{case_id}.npz'
-        with np.load(bind(args.trace_dir/name, name)) as case_arrays:
-            for mode in ('inward','loss_K'):
-                selected = case['selected'][mode]
-                if selected['source_trial_index'] is None:
-                    trace_key = selected['source_search']+'_trace'
-                    trace = case_arrays[trace_key]
-                    source = name
-                else:
-                    source = 'nonlinear_selection.npz'
-                    trace_key = f'{case_id}__{mode}__trace'
-                    with np.load(bind(args.trace_dir/source,source)) as selected_arrays:
-                        trace = selected_arrays[trace_key]
-                path, turns, segment, summary = episode(trace,selected['readout'])
-                assert np.isclose(summary['closing_peak_K_radial_eV'],
-                                  selected['readout']['joint_events']['inward']['inward_K_eV'], atol=1e-12, rtol=0)
-                envelope = max(np.max(segment[:,2]+pot(segment[:,3])) for pot,_ in models)
-                histories.append((path,turns,segment,summary,envelope,dict(
-                    case=case_id, launch='conservative' if mode == 'inward' else 'loss_designed_4100fs',
-                    archived_trace=source, trace_key=trace_key)))
-    cut_max = max(row[4] for row in histories) + 4.5*QUANTUM
+    for spec in source['histories']:
+        name, key = spec['archived_trace'], spec['trace_key']
+        path_to_trace = args.trace_dir/name
+        if name not in hashes:
+            bind(path_to_trace, name)
+        with np.load(path_to_trace) as arrays:
+            path, turns, segment, summary = episode(arrays[key], spec)
+        if path(turns[1]) < sum(drive):
+            argp.error(f"{spec['case']} reaches inside the force's unit-slope region")
+        expected = spec.get('expected_inward_peak_eV')
+        if expected is not None and not np.isclose(
+                summary['closing_peak_K_radial_eV'], expected, atol=1e-12, rtol=0):
+            raise ValueError(f"Wrong selected inward trace for {spec['case']} / {spec['launch']}")
+        envelope = max(np.max(segment[:,2]+pot(segment[:,3])) for pot,_ in models)
+        identity = dict(case=spec['case'], launch=spec['launch'], archived_trace=name, trace_key=key)
+        histories.append((path,turns,segment,summary,envelope,identity,spec.get('half_step_control')))
+    cut_max = max(row[4] for row in histories) + 4.5*quantum
     spectra = [radial_basis(pot,row,cut_max) for pot,row in models]
     pulses = []
-    for path,turns,segment,episode_summary,envelope,identity in histories:
+    for path,turns,segment,episode_summary,envelope,identity,control in histories:
         variants = []
         for (pot,archived), spectrum in zip(models,spectra):
             peak = episode_summary['closing_peak_fs']
-            lo = measures(path,turns,segment,peak,pot,spectrum,envelope+1.5*QUANTUM)
-            hi = measures(path,turns,segment,peak,pot,spectrum,envelope+4.5*QUANTUM, nlo=lo['levels'])
-            if (identity['case'] == 'N2048_25meV' and identity['launch'] == 'conservative'
-                    and pot.join == 1.6 and not pot.include_flagged):
-                fine = measures(path,turns,segment,peak,pot,spectrum,envelope+4.5*QUANTUM,
+            lo = measures(path,turns,segment,peak,pot,spectrum,envelope+1.5*quantum,sigma,drive)
+            hi = measures(path,turns,segment,peak,pot,spectrum,envelope+4.5*quantum,sigma,drive,nlo=lo['levels'])
+            if control == {'join_A':pot.join, 'include_flagged':pot.include_flagged}:
+                fine = measures(path,turns,segment,peak,pot,spectrum,envelope+4.5*quantum,sigma,drive,
                                 nlo=lo['levels'],step_fs=.03125)
                 hi['half_step_control'] = dict(
                     step_fs=.03125,
@@ -302,11 +321,11 @@ def main():
             variants.append(dict(join_A=pot.join, include_flagged=pot.include_flagged,
                                  lower_band=lo, upper_band=hi,
                                  upper_minus_lower_log10_Xi=hi['log10_total_Xi_A_minus3_s']-lo['log10_total_Xi_A_minus3_s'],
-                                 archived_concentrated_event_G12=archived['preparation']['excess_event']))
+                                 archived_concentrated_event_G12=archived['preparation'].get('excess_event')))
         pulses.append(dict(**identity, **episode_summary, shared_radial_energy_envelope_eV=float(envelope),variants=variants))
-    result = dict(schema='pdd-focusing-conditional-pulses-v1', input_sha256=hashes,
+    result = dict(schema='pdd-focusing-conditional-pulses-v1', pair_id=pair.id, input_sha256=hashes,
                   finite_model='normalized pure spatial l=0; no inferred material state or pair population',
-                  preparation=dict(outward_local_curvature_quantum_eV=QUANTUM, nominal_sigma_A=SIGMA,
+                  preparation=dict(outward_local_curvature_quantum_eV=quantum, nominal_sigma_A=sigma,
                                    relative_mass_eV_fs2_A_minus2=MASS, near_origin_probability_radius_A=RADIUS,
                                    additive_energy_support_quanta=[1.5,4.5]),
                   spectrum_gauge=[dict(join_A=pot.join, include_flagged=pot.include_flagged, **spectrum[-1])

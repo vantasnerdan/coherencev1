@@ -32,6 +32,23 @@ The matched reference is the **same joined Hamiltonian's cold radial ground**, n
 
 ## Numerical decision and replay
 
-Run `python contact.py --refine` from this folder (NumPy/SciPy; one thread each). `inputs.json` is a compact, frozen exact-binary input projection with source bindings in `provenance.json`. No electronic jobs or old-well edits occur. The finite-difference half-line eigensystem uses uR=vector/√h, so its normalization is the radial integral, not a 3D volume sum. Tiny inner eigenvector tails are **not** trusted. The regular cusp solution uR(R)=R[1+CR/(2t)+O(R²)], t=ℏ²/(2μ), is propagated outward in logarithmic radius using y=(log φ)′, log φ and uR=√Rφ, then matched to the resolved normalized inner-barrier eigen-amplitude. This directly gives log |uR′(0)|²/(4π), without underflow.
+The finite-difference half-line eigensystem uses uR=vector/√h, so its normalization is the radial integral, not a 3D volume sum. Tiny inner eigenvector tails are **not** trusted. The regular cusp solution uR(R)=R[1+CR/(2t)+O(R²)], t=ℏ²/(2μ), is propagated outward in logarithmic radius using y=(log φ)′, log φ and uR=√Rφ, then matched to the resolved normalized inner-barrier eigen-amplitude. This directly gives log |uR′(0)|²/(4π), without underflow.
 
 The `--refine` comparison changes h=.001→.0005, Rmax=9→10, Ecut=8→10 eV, forbidden match height .15→.25 eV and ODE tolerance 2e−9→3e−10. It reports changes in the **final log contact/event excess**, which are also changes in final log G12 readouts, plus contact-weighted energy support. This is a finite numerical convergence comparison, not a rigorous enclosure or electronic-model uncertainty band. `consumer_proof.json` records the settled source/normalization/readout regression. `results.json` retains all levels/contact logs and all four model variants; the short README table is the decision readout.
+
+## Site-pair input
+
+`bulk_pair.json` is the replay description for the historical [110] model. `inputs.json` remains the original input snapshot, not a second supported input format. From this directory:
+
+```sh
+python contact.py --pair bulk_pair.json --refine --output <levels file>
+```
+
+`--output` supplies the spectrum for `pulse/replay.py`; do not overwrite the committed reference. Both programs use the same `g11-site-pair-v1` JSON. It supplies:
+
+- `pair_id`, `R0_A`, the unit `axis` from site A to B, and `sites` in A/B order. Each site names its own entry in `wells`; equivalent sites can refer to the same well. On the current equal-and-opposite path, each site moves by \(u=(R_0-R)/2\) toward the other, or by \(-u\) outward if \(u<0\). This is a directional, reduced D–D operator, not a general vector or unequal-displacement Hamiltonian.
+- Each well contains `inward` and `outward` ray records. `q_A` increases away from that site's reference along the named ray. `E_eV` is referenced to the same site's zero; `dE_dq_eV_A` is the **negative** force along the ray, even for the outward ray. `K_eV_A2`, `K4_eV_A4`, `origin_cut_A`, and optional `dE_dq_at_zero_eV_A` define the local polynomial through the origin splice; the two zero slopes must be opposite. Beyond its last knot a ray uses the endpoint value/slope and quadratic curvature `K_eV_A2`. Use `"outward": "reflect"` only when that reflection is a stated assumption.
+- `connected` is the registered **nonadditive** approach curve \(W=E_{AB}-E_A-E_B+E_0\) versus per-site \(u\), with \(dW/du\) and flag labels. The solver inserts W(0)=W′(0)=0, uses W=0 outward and uses a tangent continuation past the last retained approach knot. `inner` is the **total** D–D interaction versus \(R\), not another connected term. `joins_A` selects the energy-continuous joins within its sampled range. The lattice energy is \(V_A(u)+V_B(u)+W(u)\), not twice either unequal well. No new electronic input is generated.
+- Optional `preparation` supplies `thermal_K`, and `projected_approach_A` with `window_fs` if a two-level preparation is wanted. There is no automatic excitation if it is absent. `pulse_drive` supplies the flat inner cutoff and positive transition width for pulse replay. `readout: "g12-pdd-0.25"` explicitly opts into the existing comparison convention; omitting it does not apply the bulk G12 normalization to a new pair.
+
+The default radial grid, near-origin continuation and state normalization are unchanged. For new environments the input producer still has to establish the site axes, common reference/units, connected subtraction and actual inner support; a successful replay does not establish these physical assumptions.

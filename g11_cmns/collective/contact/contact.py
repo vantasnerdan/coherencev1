@@ -1,7 +1,7 @@
-"""Conditional one-path l=0 PdD contact; NumPy/SciPy, eV/Å/fs.
+"""Conditional one-path l=0 D–D contact; NumPy/SciPy, eV/Å/fs.
 
 No electronic jobs, physical foil occupancy or angular population are inferred.
-Run python contact.py [--refine]; outputs are beside this file.
+Run python contact.py --pair pair.json --output spectrum.json [--refine].
 """
 from pathlib import Path
 import argparse
@@ -21,52 +21,100 @@ from scipy.linalg import eigh_tridiagonal
 from scipy.special import logsumexp
 
 HERE = Path(__file__).resolve().parent
-INPUT = json.loads((HERE / "inputs.json").read_text())
+BULK_PAIR = HERE / "bulk_pair.json"
 C = alpha * hbar * c / elementary_charge / 1e-10
 MU = physical_constants["deuteron mass"][0] / 2
 T = hbar**2 / (2 * MU) / elementary_charge / 1e-20
 HBAR = hbar / elementary_charge / 1e-15
 KB = physical_constants["Boltzmann constant in eV/K"][0]
 LN10 = math.log(10)
-R0 = INPUT["R0_A"]
+
+
+class WellRay:
+    """Single-site energy at a positive displacement along a declared ray."""
+    def __init__(self, data):
+        self.k, self.k4 = data["K_eV_A2"], data["K4_eV_A4"]
+        self.cut = data["origin_cut_A"]
+        self.slope0 = data.get("dE_dq_at_zero_eV_A", 0.)
+        x = np.r_[self.cut, data["q_A"]]
+        e = np.r_[self.slope0*self.cut+.5*self.k*self.cut**2+self.k4*self.cut**4/4, data["E_eV"]]
+        s = np.r_[self.slope0+self.k*self.cut+self.k4*self.cut**3, data["dE_dq_eV_A"]]
+        if self.cut < 0 or self.k <= 0 or len(x) < 2:
+            raise ValueError("A well ray needs a nonnegative origin cut, positive K, and a nonzero knot")
+        self.body = CubicHermiteSpline(x, e, s, extrapolate=False)
+        self.end = (float(x[-1]), float(e[-1]), float(s[-1]))
+
+    def __call__(self, q, derivative=0):
+        x = np.clip(q, self.cut, self.end[0])
+        if derivative:
+            near = self.slope0+self.k*q+self.k4*q**3
+        else:
+            near = self.slope0*q+.5*self.k*q*q+self.k4*q**4/4
+        end, value, slope = self.end
+        beyond = np.maximum(q-end, 0.)
+        outer = slope+self.k*beyond if derivative else value+slope*beyond+.5*self.k*beyond*beyond
+        return np.where(q<self.cut, near, np.where(q>end, outer, self.body(x, derivative)))
+
+
+class SitePair:
+    """Two D sites on one registered equal-and-opposite displacement path."""
+    def __init__(self, path):
+        raw = path.read_bytes()
+        data = json.loads(raw)
+        if data["schema"] != "g11-site-pair-v1":
+            raise ValueError("Expected g11-site-pair-v1 input")
+        self.sha256 = hashlib.sha256(raw).hexdigest()
+        self.id = data["pair_id"]
+        self.r0 = float(data["R0_A"])
+        self.axis = tuple(data["axis"])
+        sites = data["sites"]
+        if len(sites) != 2 or sites[0]["id"] == sites[1]["id"] or self.r0 <= 0:
+            raise ValueError("Supply distinct sites and a positive rest separation")
+        def rays(model):
+            inward = WellRay(model["inward"])
+            outward = inward if model["outward"] == "reflect" else WellRay(model["outward"])
+            if inward.slope0 != -outward.slope0:
+                raise ValueError("Opposite rays must have opposite slopes at zero displacement")
+            return inward, outward
+        models = {name:rays(model) for name, model in data["wells"].items()}
+        a, b = (models[site["well"]] for site in sites)
+        self.inward = (a[0], b[0])
+        self.outward = (a[1], b[1])
+        self.outward_curvature = (a[1].k+b[1].k)/4
+        self.connected = data["connected"]
+        self.inner = data["inner"]
+        self.joins = tuple(data["joins_A"])
+        if not self.joins or len(set(self.joins)) != len(self.joins) or any(
+            not self.inner["R_A"][0] <= r <= self.inner["R_A"][-1] or r >= self.r0 for r in self.joins
+        ):
+            raise ValueError("Joins must be distinct, covered by the inner curve, and inside R0")
+        self.preparation = data.get("preparation", {})
+        self.pulse_drive = data.get("pulse_drive")
+        self.g12 = data.get("readout") == "g12-pdd-0.25"
+
+    def potentials(self):
+        flag_modes = (True, False) if any(self.connected["flagged"]) else (True,)
+        return [Potential(self, join, flagged) for flagged in flag_modes for join in self.joins]
 
 
 class Potential:
-    def __init__(self, join, include_flagged):
-        self.join = join
-        self.include_flagged = include_flagged
-        b = INPUT["one_body"]
-        self.k, self.k4 = b["K_eV_A2"], b["K4_eV_A4"]
-        self.cut = b["origin_cut_A"]
-        x = np.r_[self.cut, b["u_A"]]
-        e = np.r_[.5*self.k*self.cut**2+self.k4*self.cut**4/4, b["E_eV"]]
-        s = np.r_[self.k*self.cut+self.k4*self.cut**3, b["dE_du_eV_A"]]
-        self.body = CubicHermiteSpline(x, e, s, extrapolate=False)
-        self.body_end = (float(x[-1]), float(e[-1]), float(s[-1]))
-        w = INPUT["connected"]
-        keep = np.ones(len(w["u_A"]), dtype=bool) if include_flagged else ~np.array(w["flagged"])
+    def __init__(self, pair, join, include_flagged):
+        self.pair, self.join, self.include_flagged = pair, join, include_flagged
+        w = pair.connected
+        keep = np.ones(len(w["u_A"]), dtype=bool) if include_flagged else ~np.array(w["flagged"], dtype=bool)
+        if len(keep) != len(w["u_A"]) or not np.any(keep):
+            raise ValueError("Each requested connected-curve treatment needs at least one retained knot")
         x = np.r_[0., np.array(w["u_A"])[keep]]
         e = np.r_[0., np.array(w["W_eV"])[keep]]
         s = np.r_[0., np.array(w["dW_du_eV_A"])[keep]]
         self.connected = CubicHermiteSpline(x, e, s, extrapolate=False)
         self.w_end = (float(x[-1]), float(e[-1]), float(s[-1]))
-        core = INPUT["inner"]
+        core = pair.inner
         self.core_r = np.array(core["R_A"])
         self.electronic = PchipInterpolator(self.core_r, np.array(core["V_total_eV"])-C/self.core_r,
                                            extrapolate=False)
         self.shift = float(self.lattice(join)-self.inner(join))
 
-    def one_body(self, u, derivative=0):
-        u = np.asarray(u)
-        x = np.clip(u, self.cut, self.body_end[0])
-        if derivative:
-            near = self.k*u+self.k4*u**3
-        else:
-            near = .5*self.k*u*u+self.k4*u**4/4
-        end, value, slope = self.body_end
-        beyond = np.maximum(u-end, 0.)
-        outer = slope+self.k*beyond if derivative else value+slope*beyond+.5*self.k*beyond*beyond
-        return np.where(u<self.cut, near, np.where(u>end, outer, self.body(x, derivative)))
 
     def w(self, u, derivative=0):
         end, value, slope = self.w_end
@@ -75,10 +123,17 @@ class Potential:
         return np.where(u<=0, 0., np.where(u>end, bridge, self.connected(x, derivative)))
 
     def lattice(self, r, derivative=0):
-        u = (R0-np.asarray(r))/2
+        u = (self.pair.r0-np.asarray(r))/2
+        q = np.abs(u)
+        i, o = self.pair.inward, self.pair.outward
+        def sum_rays(rays):
+            a, b = rays
+            return 2*a(q, derivative) if a is b else a(q, derivative)+b(q, derivative)
+        inward = sum_rays(i)
+        outward = inward if i == o else sum_rays(o)
         if derivative:
-            return -.5*(2*np.sign(u)*self.one_body(np.abs(u), 1)+self.w(u, 1))
-        return 2*self.one_body(np.abs(u))+self.w(u)
+            return -.5*(np.where(u<0, -outward, inward)+self.w(u, 1))
+        return np.where(u<0, outward, inward)+self.w(u)
 
     def inner(self, r, derivative=0):
         r = np.asarray(r)
@@ -115,6 +170,8 @@ def contact_log(potential, energy, r, amplitude, match_height, rtol):
     fixes the origin slope; match z to normalized resolved eigen-amplitude.
     """
     candidates = np.flatnonzero((r<potential.join+1.) & (potential(r)>energy+match_height))
+    if not len(candidates):
+        raise ArithmeticError("No radial barrier sample for the regular contact match")
     j = int(candidates[-1])
     # The outermost barrier point must lie inside the first classical turning point.
     if abs(amplitude[j]) < np.max(np.abs(amplitude))*1e-8:
@@ -152,7 +209,8 @@ def solve(potential, h=.001, rmax=9., ecut=8., match_height=.15, rtol=2e-9):
     # Fix every eigenfunction to positive regular origin slope, preserving coherent signs.
     amplitudes *= np.array(signs)[None, :]
     rows = []
-    for temperature in INPUT["preparation"]["thermal_K"]:
+    pinput = potential.pair.preparation
+    for temperature in pinput.get("thermal_K", ()):
         lw = -(energy-energy[0])/(KB*temperature)
         logz = float(logsumexp(lw))
         terms = lw+lc
@@ -165,9 +223,24 @@ def solve(potential, h=.001, rmax=9., ecut=8., match_height=.15, rtol=2e-9):
                          contact_last_1eV_fraction=float(np.sum(contribution[energy>ecut-1.])),
                          partition_last_1eV_fraction=float(np.exp(logsumexp(lw[energy>ecut-1.])-logz)),
                          contact_weighted_mean_energy_eV=float(contribution@energy)))
-    pinput = INPUT["preparation"]
+    rows.append(dict(preparation="cold_ground", log10_contact_A_minus3=float(lc[0]/LN10)))
+    details = dict(ground_energy_eV=float(energy[0]))
+    if pinput.get("projected_approach_A") is not None:
+        concentrated, details = concentrated_pulse(potential, pinput, h, r, energy, amplitudes, lc)
+        rows.append(concentrated)
+    diagnostics = potential.diagnostics()
+    diagnostics.update(n_grid=n, h_A=h, rmax_A=rmax, energy_cutoff_eV=ecut, levels=len(energy),
+                       match_height_eV=match_height, ode_rtol=rtol,
+                       ground_match_A=matches[0],
+                       maximum_last_100_grid_probability=float(np.max(h*np.sum(amplitudes[-100:]**2, axis=0))))
+    return dict(model=diagnostics, preparation=details, observables=rows,
+                spectrum=dict(energy_eV=energy.tolist(), log10_contact_A_minus3=(lc/LN10).tolist()))
+
+
+def concentrated_pulse(potential, pinput, h, r, energy, amplitudes, lc):
     delta = pinput["projected_approach_A"]
-    work = float(potential.lattice(R0-delta)-potential.lattice(R0))
+    r0 = potential.pair.r0
+    work = float(potential.lattice(r0-delta)-potential.lattice(r0))
     gap = float(energy[1]-energy[0])
     pop = work/gap
     if not 0<pop<1:
@@ -186,10 +259,8 @@ def solve(potential, h=.001, rmax=9., ecut=8., match_height=.15, rtol=2e-9):
     mean0 = float(h*np.dot(amplitudes[:, 0]**2, r))
     mean1 = float(h*np.dot(amplitudes[:, 1]**2, r))
     initial_mean = (1-pop)*mean0+pop*mean1+2*csign*math.sqrt(pop*(1-pop))*r01
-    rows.extend([
-        dict(preparation="cold_ground", log10_contact_A_minus3=float(lc[0]/LN10)),
-        dict(preparation="concentrated_2level_0_2ps", log10_contact_A_minus3=float((scale+math.log(averaged))/LN10)),
-    ])
+    row = dict(preparation=f"concentrated_2level_0_{duration/1000:g}ps",
+               log10_contact_A_minus3=float((scale+math.log(averaged))/LN10))
     details = dict(ground_energy_eV=float(energy[0]), gap_eV=gap, level1_log10_contact=float(lc[1]/LN10),
                    projected_turning_work_eV=work, excited_population=pop,
                    initial_mean_R_A=initial_mean, ground_mean_R_A=mean0,
@@ -197,27 +268,22 @@ def solve(potential, h=.001, rmax=9., ecut=8., match_height=.15, rtol=2e-9):
                    log10_excess_Xi_A_minus3_s=float((scale+math.log(excess)+math.log(duration*1e-15))/LN10),
                    concentrated_over_ground=float(averaged/c0),
                    highest_preparation_energy_eV=float(energy[1]))
-    diagnostics = potential.diagnostics()
-    diagnostics.update(n_grid=n, h_A=h, rmax_A=rmax, energy_cutoff_eV=ecut, levels=len(energy),
-                       match_height_eV=match_height, ode_rtol=rtol,
-                       ground_match_A=matches[0],
-                       maximum_last_100_grid_probability=float(np.max(h*np.sum(amplitudes[-100:]**2, axis=0))))
-    return dict(model=diagnostics, preparation=details, observables=rows,
-                spectrum=dict(energy_eV=energy.tolist(), log10_contact_A_minus3=(lc/LN10).tolist()))
+    return row, details
 
 
 def attach_readout(result):
     from g12_readout import event_readout, rate_readout
     for row in result["observables"]:
         row["steady_one_pair"] = rate_readout(row["log10_contact_A_minus3"])
-    result["preparation"]["excess_event"] = event_readout(result["preparation"]["log10_excess_Xi_A_minus3_s"])
+    prep = result["preparation"]
+    if "log10_excess_Xi_A_minus3_s" in prep:
+        prep["excess_event"] = event_readout(prep["log10_excess_Xi_A_minus3_s"])
 
 
-def consumer_proof(output):
+def consumer_proof(pair, output, output_path):
     """One settled regression at final proton/G12 columns, using frozen source rows."""
     import csv
     from scipy.optimize import brentq
-
     source = json.loads((HERE/"sources/pair-wells.json").read_text())
     axis = np.array(source["closing_axis"])
     ia, ib = source["target_indices"]
@@ -228,12 +294,13 @@ def consumer_proof(output):
         fab = np.array(row["pair_AB"]["forces_eV_A"])
         slope = -float(axis@(fab[ia]-fa[ia]))+float(axis@(fab[ib]-fb[ib]))
         projection_errors.extend([
-            abs(slope-INPUT["connected"]["dW_du_eV_A"][i]),
-            abs(row["pair_nonadditive_energy_eV"]-INPUT["connected"]["W_eV"][i])])
-        assert row["widest_tabulated_Pd_H_partial_wave_overlap"] == INPUT["connected"]["flagged"][i]
+            abs(slope-pair.connected["dW_du_eV_A"][i]),
+            abs(row["pair_nonadditive_energy_eV"]-pair.connected["W_eV"][i])])
+        assert row["widest_tabulated_Pd_H_partial_wave_overlap"] == pair.connected["flagged"][i]
     arc = json.loads((HERE/"sources/baseline_BO_pair.json").read_text())
-    assert arc["R_A"] == INPUT["inner"]["R_A"]
-    assert arc["V_pair_total_eV"] == INPUT["inner"]["V_total_eV"]
+    assert tuple(axis) == pair.axis
+    assert arc["R_A"] == pair.inner["R_A"]
+    assert arc["V_pair_total_eV"] == pair.inner["V_total_eV"]
     with (HERE/"sources/part1-rates.csv").open() as stream:
         rates = {row["reading"]: row for row in csv.DictReader(stream)
                  if row["target"] == "PdD" and float(row["E_cm_keV"]) == .25}
@@ -257,7 +324,7 @@ def consumer_proof(output):
         for reading in ("k0", "k1"):
             expected = prep["log10_excess_Xi_A_minus3_s"]+math.log10(float(rates[reading]["conditional_event_deltaR_per_Xi"]))
             readout_errors.append(abs(prep["excess_event"][f"log10_delta_R_{reading}"]-expected))
-        p = Potential(variant["model"]["join_A"], variant["model"]["include_flagged"])
+        p = Potential(pair, variant["model"]["join_A"], variant["model"]["include_flagged"])
         radius = np.linspace(.1, p.join, 12001)
         slope = p.inner(radius, 1)
         roots = [brentq(lambda z: float(p.inner(z, 1)), radius[i], radius[i+1])
@@ -288,42 +355,47 @@ def consumer_proof(output):
                 final_log10_contact_refinement_max_change=maximum_change,
                 final_log10_event_refinement_max_change=event_change,
                 interpolation_shelves=shelves,
-                results_sha256=hashlib.sha256((HERE/"results.json").read_bytes()).hexdigest(),
+                results_sha256=hashlib.sha256(output_path.read_bytes()).hexdigest(),
                 independent_scope="PairRateReadout independently bound Part1 preparation/proton/G12 semantics; radial numerics and integration are delivery-owner checks.",
                 limitation="Finite conditional l=0 model comparison, not physical foil rate or rigorous continuum/electronic enclosure.")
 
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--refine", action="store_true", help="Compare final rates with finer grid, larger domain/cutoff and moved cusp match")
-    parser.add_argument("--no-readout", action="store_true", help="Model-only development run")
+    parser.add_argument("--pair", type=Path, default=BULK_PAIR, help="Site-pair JSON description")
+    parser.add_argument("--output", type=Path, required=True, help="Write a new spectrum; archived results are not defaults")
+    parser.add_argument("--refine", action="store_true", help="Compare contact with a finer grid and moved cusp match")
+    parser.add_argument("--no-readout", action="store_true", help="Omit the optional G12 normalization")
+    parser.add_argument("--bulk-proof-output", type=Path, help="Run the historical bulk consumer check")
     args = parser.parse_args()
+    pair = SitePair(args.pair)
+    g12 = pair.g12 and not args.no_readout
+    if args.bulk_proof_output and (args.pair.resolve() != BULK_PAIR or not g12):
+        parser.error("--bulk-proof-output requires the shipped bulk pair and its readout")
     variants = []
-    for flagged in (True, False):
-        for join in (R0-1.6, 1.6):
-            potential = Potential(join, flagged)
-            result = solve(potential)
-            if not args.no_readout:
-                attach_readout(result)
-            if args.refine:
-                refined = solve(potential, h=.0005, rmax=10., ecut=10., match_height=.25, rtol=3e-10)
-                if not args.no_readout:
-                    attach_readout(refined)
-                result["convergence"] = dict(
-                    refined_model=refined["model"],
-                    final_log10_contact_change={row["preparation"]: row["log10_contact_A_minus3"]-base["log10_contact_A_minus3"]
-                                                for row, base in zip(refined["observables"], result["observables"])},
-                    final_log10_excess_Xi_change=refined["preparation"]["log10_excess_Xi_A_minus3_s"]-result["preparation"]["log10_excess_Xi_A_minus3_s"],
-                    refined_thermal_support=refined["observables"][:2])
-            variants.append(result)
-            print(json.dumps(dict(model=result["model"], observables=result["observables"],
-                                  preparation=result["preparation"], convergence=result.get("convergence")), allow_nan=False), flush=True)
-    output = dict(schema="g11-conditional-contact-v1", inputs_sha256=hashlib.sha256((HERE/"inputs.json").read_bytes()).hexdigest(),
+    for potential in pair.potentials():
+        result = solve(potential)
+        if g12:
+            attach_readout(result)
+        if args.refine:
+            refined = solve(potential, h=.0005, rmax=10., ecut=10., match_height=.25, rtol=3e-10)
+            if g12:
+                attach_readout(refined)
+            result["convergence"] = dict(
+                refined_model=refined["model"],
+                final_log10_contact_change={row["preparation"]: row["log10_contact_A_minus3"]-base["log10_contact_A_minus3"]
+                                            for row, base in zip(refined["observables"], result["observables"])},
+                refined_thermal_support=[row for row in refined["observables"] if row["preparation"].startswith("thermal_")])
+            if "log10_excess_Xi_A_minus3_s" in result["preparation"]:
+                k = "log10_excess_Xi_A_minus3_s"
+                result["convergence"]["final_log10_excess_Xi_change"] = refined["preparation"][k]-result["preparation"][k]
+        variants.append(result)
+    output = dict(schema="g11-conditional-contact-v1", pair_id=pair.id, inputs_sha256=pair.sha256,
                   constants=dict(C_eV_A=C, kinetic_eV_A2=T, relative_mass_kg=MU, hbar_eV_fs=HBAR), variants=variants)
-    (HERE/"results.json").write_text(json.dumps(output, indent=2, allow_nan=False)+"\n")
-    if not args.no_readout:
-        proof = consumer_proof(output)
-        (HERE/"consumer_proof.json").write_text(json.dumps(proof, indent=2, allow_nan=False)+"\n")
+    args.output.write_text(json.dumps(output, indent=2, allow_nan=False)+"\n")
+    if args.bulk_proof_output:
+        proof = consumer_proof(pair, output, args.output)
+        args.bulk_proof_output.write_text(json.dumps(proof, indent=2, allow_nan=False)+"\n")
 
 
 if __name__ == "__main__":

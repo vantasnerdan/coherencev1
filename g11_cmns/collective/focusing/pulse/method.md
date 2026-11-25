@@ -84,4 +84,13 @@ Base-10 ranges below span the named joins, flag treatments and energy bands, wit
 
 The adjacent legacy concentrated preparation's one-event-per-D readout is log₁₀ emitted p/s `−100.99` to `−98.79` over the four branches (`k0`: `−102.20` to `−100.01`). The [original stationary comparison](../README.md#conditional-quantum-contact-and-g12) has same-launch fine-step `k0` spans `−88.31…−85.26` and `−87.32…−84.23` for the lower and upper levels (emitted p/s `−87.10…−84.04` and `−86.10…−83.01`); the original coarse-step `k0` spans are `−86.31…−82.19` and `−85.26…−81.16`. Those are the different **continuously active normalized pair** hypothesis. The rows are unmodified, not stationary approximations to the pulse exposure, and not physical rates.
 
-From the unpacked project tree, run `python g11_cmns/collective/focusing/pulse/replay.py`; if the original nonlinear assets have been unpacked elsewhere, give `--trace-dir` pointing to their containing focusing directory. [`results.json`](results.json) includes exact input hashes, sign brackets, projected path and current comparisons, both absolute energy bands and all four contact variants per history. No independent lattice rerun is required.
+Replay the committed bulk case from the repository root without a lattice run:
+
+```sh
+python g11_cmns/collective/contact/contact.py --pair g11_cmns/collective/contact/bulk_pair.json --refine --output <levels file>
+python g11_cmns/collective/focusing/pulse/replay.py --pair g11_cmns/collective/contact/bulk_pair.json --spectrum <levels file> --output <pulses file>
+```
+
+Both the spectrum and the `--histories` manifest bind the exact [site-pair description](../../contact/method.md#site-pair-input) by SHA-256. The default `bulk_histories.json` names the archived six traces. A new manifest has schema `g11-radial-histories-v1`, the descriptor's `pair_sha256`, and `histories`: each row names `case`, `launch`, an `archived_trace` NPZ relative to `--trace-dir`, its `trace_key`, `scored_samples`, and `first_original_exit_fs` (null if absent). The existing trace array layout supplies time in fs, radial energy in eV, separation in Å, and signed closing speed in Å/fs at columns 0, 2, 3, and 9, respectively. Each trace must include a complete supported closing/rebound episode. The initial packet width uses the combined outward well curvature; the entire chosen path must stay in the drive's unit-slope region. The retained energies must cover both selected energy bands.
+
+Pulse replay checks regenerated eigenenergies against the matched spectrum to \(5\times10^{-9}\) eV, allowing the observed eigensolver portability difference. The independent \(2\times10^{-5}\)-dex contact-gauge check is unchanged. The committed [`results.json`](results.json) is a historical result, not overwritten by the replay commands.

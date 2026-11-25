@@ -1,0 +1,14 @@
+{
+  "schema": "g11-radial-histories-v1",
+  "pair_sha256": "7bcd74342a1ff22599eb0f98e0f8ed55aa5a722d450c40331de4a3c7c0163966",
+  "source": "nonlinear_selection.json, accepted at 49b8831d5f5e5ed3b7f2e72bc0e7fa536765e25a",
+  "histories": [
+    {"case": "N2048_4.8meV", "launch": "conservative", "archived_trace": "nonlinear_N2048_4.8meV.npz", "trace_key": "K_trace", "scored_samples": 9601, "first_original_exit_fs": null, "expected_inward_peak_eV": 0.5691127171394433},
+    {"case": "N2048_4.8meV", "launch": "loss_designed_4100fs", "archived_trace": "nonlinear_N2048_4.8meV.npz", "trace_key": "loss_K_trace", "scored_samples": 9601, "first_original_exit_fs": null, "expected_inward_peak_eV": 0.4824997890842549},
+    {"case": "N2048_25meV", "launch": "conservative", "archived_trace": "nonlinear_N2048_25meV.npz", "trace_key": "distance_trace", "scored_samples": 6313, "first_original_exit_fs": 1578.25, "expected_inward_peak_eV": 0.9690859730213596,
+     "half_step_control": {"join_A": 1.6, "include_flagged": false}},
+    {"case": "N2048_25meV", "launch": "loss_designed_4100fs", "archived_trace": "nonlinear_N2048_25meV.npz", "trace_key": "loss_K_trace", "scored_samples": 5039, "first_original_exit_fs": 1259.75, "expected_inward_peak_eV": 0.752524418976066},
+    {"case": "N16384_0.6meV", "launch": "conservative", "archived_trace": "nonlinear_N16384_0.6meV.npz", "trace_key": "distance_trace", "scored_samples": 4801, "first_original_exit_fs": null, "expected_inward_peak_eV": 0.2946611352565502},
+    {"case": "N16384_0.6meV", "launch": "loss_designed_4100fs", "archived_trace": "nonlinear_N16384_0.6meV.npz", "trace_key": "loss_K_trace", "scored_samples": 4801, "first_original_exit_fs": null, "expected_inward_peak_eV": 0.23853523313892913}
+  ]
+}
