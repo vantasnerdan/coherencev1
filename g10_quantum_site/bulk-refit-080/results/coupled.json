@@ -1,0 +1,1461 @@
+{
+  "scope": "one changed on-site term only; same original D mass, atom order, K, F0, host graph and archived joint paths",
+  "weight": "exp[-beta mean_beads(V_variant-V_old)]",
+  "uncertainty": "nine contiguous 89-frame ratio influence blocks; paired covariance retained; no P extrapolation or unseen-overlap guarantee",
+  "momentum": "exact existing finite-P signed [111] displaced-path characteristic, not momentum density or tail",
+  "rare_tail": "zero sampled >.80 counts are unobserved, not a probability or zero-error claim; common observable is null unless at least four blocks contribute",
+  "cases": [
+    {
+      "temperature_K": 300,
+      "beads": 32,
+      "frames": 801,
+      "original_atom_index": 25,
+      "path": "g10_quantum_site/output/coupled/PdD_300K_paths.npz",
+      "path_sha256": "e586a82c15f270e4617af122508f6db55a8c3744d9710849971f4f4f9c0d9bb9",
+      "old_callback_control_max_abs_eV": 1.1102230246251565e-16,
+      "variants": {
+        "old": {
+          "position": {
+            "MSD_A2": {
+              "value": 0.0833632498991965,
+              "block_se": 0.004627174594269669,
+              "nonzero_numerator_blocks": 9,
+              "change_vs_old": 0.0,
+              "paired_change_block_se": 0.0
+            },
+            "bead_fraction_gt_0.24_A": {
+              "value": 0.5779884519350812,
+              "block_se": 0.03305893058133597,
+              "nonzero_numerator_blocks": 9,
+              "change_vs_old": 0.0,
+              "paired_change_block_se": 0.0
+            },
+            "frame_any_gt_0.24_A": {
+              "value": 0.9737827715355806,
+              "block_se": 0.007490636704119852,
+              "nonzero_numerator_blocks": 9,
+              "change_vs_old": 0.0,
+              "paired_change_block_se": 0.0
+            },
+            "bead_fraction_gt_0.48_A": {
+              "value": 0.029377340823970036,
+              "block_se": 0.005558840888399491,
+              "nonzero_numerator_blocks": 9,
+              "change_vs_old": 0.0,
+              "paired_change_block_se": 0.0
+            },
+            "frame_any_gt_0.48_A": {
+              "value": 0.1947565543071161,
+              "block_se": 0.03007936030750751,
+              "nonzero_numerator_blocks": 9,
+              "change_vs_old": 0.0,
+              "paired_change_block_se": 0.0
+            },
+            "bead_fraction_gt_0.80_A": {
+              "value": 0.0,
+              "block_se": 0.0,
+              "nonzero_numerator_blocks": 0,
+              "change_vs_old": 0.0,
+              "paired_change_block_se": 0.0
+            },
+            "frame_any_gt_0.80_A": {
+              "value": 0.0,
+              "block_se": 0.0,
+              "nonzero_numerator_blocks": 0,
+              "change_vs_old": 0.0,
+              "paired_change_block_se": 0.0
+            },
+            "histogram_overflow_at_or_above_0.80_A": {
+              "value": 0.0,
+              "block_se": 0.0,
+              "nonzero_numerator_blocks": 0,
+              "change_vs_old": 0.0,
+              "paired_change_block_se": 0.0
+            }
+          },
+          "overlap": {
+            "frame_ess": 801.0,
+            "block_ess": 9.0,
+            "log_weight_span": 0.0
+          },
+          "shifted_target_control_abs_error": 1.1102230246251565e-16,
+          "witness_numerator_share_any_shifted_bead_gt_048": 0.2578208818452256
+        },
+        "quadratic": {
+          "position": {
+            "MSD_A2": {
+              "value": 0.08513090618381226,
+              "block_se": 0.004945799211431645,
+              "nonzero_numerator_blocks": 9,
+              "change_vs_old": 0.0017676562846157678,
+              "paired_change_block_se": 0.00044146003314980725
+            },
+            "bead_fraction_gt_0.24_A": {
+              "value": 0.584020274149099,
+              "block_se": 0.03364543323428508,
+              "nonzero_numerator_blocks": 9,
+              "change_vs_old": 0.006031822214017768,
+              "paired_change_block_se": 0.0009886726497532123
+            },
+            "frame_any_gt_0.24_A": {
+              "value": 0.9742736595141847,
+              "block_se": 0.007431559643404483,
+              "nonzero_numerator_blocks": 9,
+              "change_vs_old": 0.0004908879786040821,
+              "paired_change_block_se": 7.649579641528775e-05
+            },
+            "bead_fraction_gt_0.48_A": {
+              "value": 0.033979701222424524,
+              "block_se": 0.006605656055864943,
+              "nonzero_numerator_blocks": 9,
+              "change_vs_old": 0.004602360398454488,
+              "paired_change_block_se": 0.0013790914204299804
+            },
+            "frame_any_gt_0.48_A": {
+              "value": 0.20429413860724563,
+              "block_se": 0.031224519973823164,
+              "nonzero_numerator_blocks": 9,
+              "change_vs_old": 0.00953758430012952,
+              "paired_change_block_se": 0.0021792900513589006
+            },
+            "bead_fraction_gt_0.80_A": {
+              "value": 0.0,
+              "block_se": 0.0,
+              "nonzero_numerator_blocks": 0,
+              "change_vs_old": 0.0,
+              "paired_change_block_se": 0.0
+            },
+            "frame_any_gt_0.80_A": {
+              "value": 0.0,
+              "block_se": 0.0,
+              "nonzero_numerator_blocks": 0,
+              "change_vs_old": 0.0,
+              "paired_change_block_se": 0.0
+            },
+            "histogram_overflow_at_or_above_0.80_A": {
+              "value": 0.0,
+              "block_se": 0.0,
+              "nonzero_numerator_blocks": 0,
+              "change_vs_old": 0.0,
+              "paired_change_block_se": 0.0
+            }
+          },
+          "overlap": {
+            "frame_ess": 796.2975640907339,
+            "block_ess": 8.999039627967424,
+            "log_weight_span": 1.0125006337042899
+          },
+          "shifted_target_control_abs_error": 2.220446049250313e-16,
+          "witness_numerator_share_any_shifted_bead_gt_048": 0.2695890937355023
+        },
+        "quartic": {
+          "position": {
+            "MSD_A2": {
+              "value": 0.08371547741695509,
+              "block_se": 0.004730820164538939,
+              "nonzero_numerator_blocks": 9,
+              "change_vs_old": 0.0003522275177585965,
+              "paired_change_block_se": 0.00019953208304742157
+            },
+            "bead_fraction_gt_0.24_A": {
+              "value": 0.5798988503208387,
+              "block_se": 0.03333356062529663,
+              "nonzero_numerator_blocks": 9,
+              "change_vs_old": 0.0019103983857574613,
+              "paired_change_block_se": 0.000651159486796628
+            },
+            "frame_any_gt_0.24_A": {
+              "value": 0.9740063630733264,
+              "block_se": 0.007472588644019077,
+              "nonzero_numerator_blocks": 9,
+              "change_vs_old": 0.00022359153774587082,
+              "paired_change_block_se": 4.277702595503519e-05
+            },
+            "bead_fraction_gt_0.48_A": {
+              "value": 0.02996129120799065,
+              "block_se": 0.00583701830749065,
+              "nonzero_numerator_blocks": 9,
+              "change_vs_old": 0.0005839503840206137,
+              "paired_change_block_se": 0.0005746866836993639
+            },
+            "frame_any_gt_0.48_A": {
+              "value": 0.19602676203115713,
+              "block_se": 0.03083886300348491,
+              "nonzero_numerator_blocks": 9,
+              "change_vs_old": 0.001270207724041017,
+              "paired_change_block_se": 0.0013697315151436557
+            },
+            "bead_fraction_gt_0.80_A": {
+              "value": 0.0,
+              "block_se": 0.0,
+              "nonzero_numerator_blocks": 0,
+              "change_vs_old": 0.0,
+              "paired_change_block_se": 0.0
+            },
+            "frame_any_gt_0.80_A": {
+              "value": 0.0,
+              "block_se": 0.0,
+              "nonzero_numerator_blocks": 0,
+              "change_vs_old": 0.0,
+              "paired_change_block_se": 0.0
+            },
+            "histogram_overflow_at_or_above_0.80_A": {
+              "value": 0.0,
+              "block_se": 0.0,
+              "nonzero_numerator_blocks": 0,
+              "change_vs_old": 0.0,
+              "paired_change_block_se": 0.0
+            }
+          },
+          "overlap": {
+            "frame_ess": 799.6188881408524,
+            "block_ess": 8.999633944710148,
+            "log_weight_span": 0.7037449915755347
+          },
+          "shifted_target_control_abs_error": 1.1102230246251565e-16,
+          "witness_numerator_share_any_shifted_bead_gt_048": 0.25874766834177493
+        },
+        "wide_quadratic": {
+          "position": {
+            "MSD_A2": {
+              "value": 0.08389190026938315,
+              "block_se": 0.004768614576663483,
+              "nonzero_numerator_blocks": 9,
+              "change_vs_old": 0.0005286503701866507,
+              "paired_change_block_se": 0.000246123298758546
+            },
+            "bead_fraction_gt_0.24_A": {
+              "value": 0.580377719564289,
+              "block_se": 0.03340336440912697,
+              "nonzero_numerator_blocks": 9,
+              "change_vs_old": 0.0023892676292077697,
+              "paired_change_block_se": 0.0007441255257931868
+            },
+            "frame_any_gt_0.24_A": {
+              "value": 0.9740362961522148,
+              "block_se": 0.007472070681668945,
+              "nonzero_numerator_blocks": 9,
+              "change_vs_old": 0.0002535246166341931,
+              "paired_change_block_se": 4.513889110460058e-05
+            },
+            "bead_fraction_gt_0.48_A": {
+              "value": 0.030467224671704946,
+              "block_se": 0.005965314744087049,
+              "nonzero_numerator_blocks": 9,
+              "change_vs_old": 0.0010898838477349099,
+              "paired_change_block_se": 0.000727538595414812
+            },
+            "frame_any_gt_0.48_A": {
+              "value": 0.19695258070071167,
+              "block_se": 0.03094780862669043,
+              "nonzero_numerator_blocks": 9,
+              "change_vs_old": 0.0021960263935955626,
+              "paired_change_block_se": 0.001582553532587591
+            },
+            "bead_fraction_gt_0.80_A": {
+              "value": 0.0,
+              "block_se": 0.0,
+              "nonzero_numerator_blocks": 0,
+              "change_vs_old": 0.0,
+              "paired_change_block_se": 0.0
+            },
+            "frame_any_gt_0.80_A": {
+              "value": 0.0,
+              "block_se": 0.0,
+              "nonzero_numerator_blocks": 0,
+              "change_vs_old": 0.0,
+              "paired_change_block_se": 0.0
+            },
+            "histogram_overflow_at_or_above_0.80_A": {
+              "value": 0.0,
+              "block_se": 0.0,
+              "nonzero_numerator_blocks": 0,
+              "change_vs_old": 0.0,
+              "paired_change_block_se": 0.0
+            }
+          },
+          "overlap": {
+            "frame_ess": 799.113890013346,
+            "block_ess": 8.999528541948004,
+            "log_weight_span": 0.9838823341415732
+          },
+          "shifted_target_control_abs_error": 1.1102230246251565e-16,
+          "witness_numerator_share_any_shifted_bead_gt_048": 0.25983101604125103
+        },
+        "wide_quartic": {
+          "position": {
+            "MSD_A2": {
+              "value": 0.08389190026938315,
+              "block_se": 0.004768614576663483,
+              "nonzero_numerator_blocks": 9,
+              "change_vs_old": 0.0005286503701866507,
+              "paired_change_block_se": 0.000246123298758546
+            },
+            "bead_fraction_gt_0.24_A": {
+              "value": 0.580377719564289,
+              "block_se": 0.03340336440912697,
+              "nonzero_numerator_blocks": 9,
+              "change_vs_old": 0.0023892676292077697,
+              "paired_change_block_se": 0.0007441255257931868
+            },
+            "frame_any_gt_0.24_A": {
+              "value": 0.9740362961522148,
+              "block_se": 0.007472070681668945,
+              "nonzero_numerator_blocks": 9,
+              "change_vs_old": 0.0002535246166341931,
+              "paired_change_block_se": 4.513889110460058e-05
+            },
+            "bead_fraction_gt_0.48_A": {
+              "value": 0.030467224671704946,
+              "block_se": 0.005965314744087049,
+              "nonzero_numerator_blocks": 9,
+              "change_vs_old": 0.0010898838477349099,
+              "paired_change_block_se": 0.000727538595414812
+            },
+            "frame_any_gt_0.48_A": {
+              "value": 0.19695258070071167,
+              "block_se": 0.03094780862669043,
+              "nonzero_numerator_blocks": 9,
+              "change_vs_old": 0.0021960263935955626,
+              "paired_change_block_se": 0.001582553532587591
+            },
+            "bead_fraction_gt_0.80_A": {
+              "value": 0.0,
+              "block_se": 0.0,
+              "nonzero_numerator_blocks": 0,
+              "change_vs_old": 0.0,
+              "paired_change_block_se": 0.0
+            },
+            "frame_any_gt_0.80_A": {
+              "value": 0.0,
+              "block_se": 0.0,
+              "nonzero_numerator_blocks": 0,
+              "change_vs_old": 0.0,
+              "paired_change_block_se": 0.0
+            },
+            "histogram_overflow_at_or_above_0.80_A": {
+              "value": 0.0,
+              "block_se": 0.0,
+              "nonzero_numerator_blocks": 0,
+              "change_vs_old": 0.0,
+              "paired_change_block_se": 0.0
+            }
+          },
+          "overlap": {
+            "frame_ess": 799.113890013346,
+            "block_ess": 8.999528541948004,
+            "log_weight_span": 0.9838823341415732
+          },
+          "shifted_target_control_abs_error": 0.0,
+          "witness_numerator_share_any_shifted_bead_gt_048": 0.2598307807929677
+        }
+      },
+      "paired_comparisons": {
+        "wide_quadratic_minus_quadratic": {
+          "MSD_A2": {
+            "change": -0.0012390059144291171,
+            "paired_block_se": 0.00030950337884336606
+          },
+          "bead_fraction_gt_0.24_A": {
+            "change": -0.0036425545848099983,
+            "paired_block_se": 0.0007336579409196647
+          },
+          "frame_any_gt_0.24_A": {
+            "change": -0.00023736336196988894,
+            "paired_block_se": 6.141456984762254e-05
+          },
+          "bead_fraction_gt_0.48_A": {
+            "change": -0.003512476550719578,
+            "paired_block_se": 0.000957828475151407
+          },
+          "frame_any_gt_0.48_A": {
+            "change": -0.007341557906533958,
+            "paired_block_se": 0.001595253888473095
+          },
+          "bead_fraction_gt_0.80_A": {
+            "change": 0.0,
+            "paired_block_se": 0.0
+          },
+          "frame_any_gt_0.80_A": {
+            "change": 0.0,
+            "paired_block_se": 0.0
+          },
+          "histogram_overflow_at_or_above_0.80_A": {
+            "change": 0.0,
+            "paired_block_se": 0.0
+          }
+        },
+        "wide_quartic_minus_quartic": {
+          "MSD_A2": {
+            "change": 0.00017642285242805422,
+            "paired_block_se": 6.227192633671622e-05
+          },
+          "bead_fraction_gt_0.24_A": {
+            "change": 0.00047886924345030835,
+            "paired_block_se": 0.00014567593871272954
+          },
+          "frame_any_gt_0.24_A": {
+            "change": 2.9933078888322306e-05,
+            "paired_block_se": 7.060003432477868e-06
+          },
+          "bead_fraction_gt_0.48_A": {
+            "change": 0.0005059334637142962,
+            "paired_block_se": 0.00018968025049771365
+          },
+          "frame_any_gt_0.48_A": {
+            "change": 0.0009258186695545456,
+            "paired_block_se": 0.0003178691115565998
+          },
+          "bead_fraction_gt_0.80_A": {
+            "change": 0.0,
+            "paired_block_se": 0.0
+          },
+          "frame_any_gt_0.80_A": {
+            "change": 0.0,
+            "paired_block_se": 0.0
+          },
+          "histogram_overflow_at_or_above_0.80_A": {
+            "change": 0.0,
+            "paired_block_se": 0.0
+          }
+        },
+        "quartic_minus_quadratic": {
+          "MSD_A2": {
+            "change": -0.0014154287668571713,
+            "paired_block_se": 0.00035740232639138657
+          },
+          "bead_fraction_gt_0.24_A": {
+            "change": -0.004121423828260307,
+            "paired_block_se": 0.0008185443037467236
+          },
+          "frame_any_gt_0.24_A": {
+            "change": -0.00026729644085821125,
+            "paired_block_se": 6.424342343673522e-05
+          },
+          "bead_fraction_gt_0.48_A": {
+            "change": -0.004018410014433874,
+            "paired_block_se": 0.0011052689860467449
+          },
+          "frame_any_gt_0.48_A": {
+            "change": -0.008267376576088503,
+            "paired_block_se": 0.001796460558711492
+          },
+          "bead_fraction_gt_0.80_A": {
+            "change": 0.0,
+            "paired_block_se": 0.0
+          },
+          "frame_any_gt_0.80_A": {
+            "change": 0.0,
+            "paired_block_se": 0.0
+          },
+          "histogram_overflow_at_or_above_0.80_A": {
+            "change": 0.0,
+            "paired_block_se": 0.0
+          }
+        },
+        "wide_quartic_minus_wide_quadratic": {
+          "MSD_A2": {
+            "change": 0.0,
+            "paired_block_se": 0.0
+          },
+          "bead_fraction_gt_0.24_A": {
+            "change": 0.0,
+            "paired_block_se": 0.0
+          },
+          "frame_any_gt_0.24_A": {
+            "change": 0.0,
+            "paired_block_se": 0.0
+          },
+          "bead_fraction_gt_0.48_A": {
+            "change": 0.0,
+            "paired_block_se": 0.0
+          },
+          "frame_any_gt_0.48_A": {
+            "change": 0.0,
+            "paired_block_se": 0.0
+          },
+          "bead_fraction_gt_0.80_A": {
+            "change": 0.0,
+            "paired_block_se": 0.0
+          },
+          "frame_any_gt_0.80_A": {
+            "change": 0.0,
+            "paired_block_se": 0.0
+          },
+          "histogram_overflow_at_or_above_0.80_A": {
+            "change": 0.0,
+            "paired_block_se": 0.0
+          }
+        }
+      }
+    },
+    {
+      "temperature_K": 77,
+      "beads": 128,
+      "frames": 801,
+      "original_atom_index": 25,
+      "path": "g10_quantum_site/output/coupled/PdD_77K_paths.npz",
+      "path_sha256": "f0fd323070b8b8c8e5e556c6b79eda46ab1a19762eb5e0ccaebad0cc1ae83d6e",
+      "old_callback_control_max_abs_eV": 1.1102230246251565e-16,
+      "variants": {
+        "old": {
+          "position": {
+            "MSD_A2": {
+              "value": 0.060785369017685636,
+              "block_se": 0.001289287621942766,
+              "nonzero_numerator_blocks": 9,
+              "change_vs_old": 0.0,
+              "paired_change_block_se": 0.0
+            },
+            "bead_fraction_gt_0.24_A": {
+              "value": 0.41943664169787764,
+              "block_se": 0.010636146863824419,
+              "nonzero_numerator_blocks": 9,
+              "change_vs_old": 0.0,
+              "paired_change_block_se": 0.0
+            },
+            "frame_any_gt_0.24_A": {
+              "value": 1.0,
+              "block_se": 0.0,
+              "nonzero_numerator_blocks": 9,
+              "change_vs_old": 0.0,
+              "paired_change_block_se": 0.0
+            },
+            "bead_fraction_gt_0.48_A": {
+              "value": 0.007871020599250936,
+              "block_se": 0.000789214885256389,
+              "nonzero_numerator_blocks": 9,
+              "change_vs_old": 0.0,
+              "paired_change_block_se": 0.0
+            },
+            "frame_any_gt_0.48_A": {
+              "value": 0.26841448189762795,
+              "block_se": 0.02089038767875345,
+              "nonzero_numerator_blocks": 9,
+              "change_vs_old": 0.0,
+              "paired_change_block_se": 0.0
+            },
+            "bead_fraction_gt_0.80_A": {
+              "value": 0.0,
+              "block_se": 0.0,
+              "nonzero_numerator_blocks": 0,
+              "change_vs_old": 0.0,
+              "paired_change_block_se": 0.0
+            },
+            "frame_any_gt_0.80_A": {
+              "value": 0.0,
+              "block_se": 0.0,
+              "nonzero_numerator_blocks": 0,
+              "change_vs_old": 0.0,
+              "paired_change_block_se": 0.0
+            },
+            "histogram_overflow_at_or_above_0.80_A": {
+              "value": 0.0,
+              "block_se": 0.0,
+              "nonzero_numerator_blocks": 0,
+              "change_vs_old": 0.0,
+              "paired_change_block_se": 0.0
+            }
+          },
+          "overlap": {
+            "frame_ess": 801.0,
+            "block_ess": 9.0,
+            "log_weight_span": 0.0
+          },
+          "shifted_target_control_abs_error": 4.440892098500626e-16,
+          "witness_numerator_share_any_shifted_bead_gt_048": 0.3200265659168024
+        },
+        "quadratic": {
+          "position": {
+            "MSD_A2": {
+              "value": 0.061172838095570635,
+              "block_se": 0.0013270686784664033,
+              "nonzero_numerator_blocks": 9,
+              "change_vs_old": 0.00038746907788499846,
+              "paired_change_block_se": 0.00010765247148903296
+            },
+            "bead_fraction_gt_0.24_A": {
+              "value": 0.4218609810034583,
+              "block_se": 0.010819295588171131,
+              "nonzero_numerator_blocks": 9,
+              "change_vs_old": 0.0024243393055806695,
+              "paired_change_block_se": 0.0006110845144291802
+            },
+            "frame_any_gt_0.24_A": {
+              "value": 0.9999999999999999,
+              "block_se": 9.343919099904209e-17,
+              "nonzero_numerator_blocks": 9,
+              "change_vs_old": -1.1102230246251565e-16,
+              "paired_change_block_se": 9.333734988867283e-17
+            },
+            "bead_fraction_gt_0.48_A": {
+              "value": 0.008406073124384031,
+              "block_se": 0.0009049701870443115,
+              "nonzero_numerator_blocks": 9,
+              "change_vs_old": 0.0005350525251330944,
+              "paired_change_block_se": 0.00019671617149575552
+            },
+            "frame_any_gt_0.48_A": {
+              "value": 0.27518237871570184,
+              "block_se": 0.021611375444194347,
+              "nonzero_numerator_blocks": 9,
+              "change_vs_old": 0.006767896818073882,
+              "paired_change_block_se": 0.0019242611148409048
+            },
+            "bead_fraction_gt_0.80_A": {
+              "value": 0.0,
+              "block_se": 0.0,
+              "nonzero_numerator_blocks": 0,
+              "change_vs_old": 0.0,
+              "paired_change_block_se": 0.0
+            },
+            "frame_any_gt_0.80_A": {
+              "value": 0.0,
+              "block_se": 0.0,
+              "nonzero_numerator_blocks": 0,
+              "change_vs_old": 0.0,
+              "paired_change_block_se": 0.0
+            },
+            "histogram_overflow_at_or_above_0.80_A": {
+              "value": 0.0,
+              "block_se": 0.0,
+              "nonzero_numerator_blocks": 0,
+              "change_vs_old": 0.0,
+              "paired_change_block_se": 0.0
+            }
+          },
+          "overlap": {
+            "frame_ess": 798.3708656884371,
+            "block_ess": 8.999525419876997,
+            "log_weight_span": 0.8846171893200835
+          },
+          "shifted_target_control_abs_error": 5.551115123125783e-16,
+          "witness_numerator_share_any_shifted_bead_gt_048": 0.3286073971893405
+        },
+        "quartic": {
+          "position": {
+            "MSD_A2": {
+              "value": 0.060970835612528855,
+              "block_se": 0.0012937720122575278,
+              "nonzero_numerator_blocks": 9,
+              "change_vs_old": 0.00018546659484321854,
+              "paired_change_block_se": 5.3670142778063216e-05
+            },
+            "bead_fraction_gt_0.24_A": {
+              "value": 0.42083533648736865,
+              "block_se": 0.010680318736790269,
+              "nonzero_numerator_blocks": 9,
+              "change_vs_old": 0.0013986947894910062,
+              "paired_change_block_se": 0.0003281283892984486
+            },
+            "frame_any_gt_0.24_A": {
+              "value": 1.0,
+              "block_se": 1.0789428415231563e-16,
+              "nonzero_numerator_blocks": 9,
+              "change_vs_old": 0.0,
+              "paired_change_block_se": 9.868649107779169e-17
+            },
+            "bead_fraction_gt_0.48_A": {
+              "value": 0.008008208974215043,
+              "block_se": 0.0007989209896729228,
+              "nonzero_numerator_blocks": 9,
+              "change_vs_old": 0.00013718837496410653,
+              "paired_change_block_se": 9.66072196112461e-05
+            },
+            "frame_any_gt_0.48_A": {
+              "value": 0.2708105748707574,
+              "block_se": 0.021032719307641005,
+              "nonzero_numerator_blocks": 9,
+              "change_vs_old": 0.0023960929731294267,
+              "paired_change_block_se": 0.0010067982558350775
+            },
+            "bead_fraction_gt_0.80_A": {
+              "value": 0.0,
+              "block_se": 0.0,
+              "nonzero_numerator_blocks": 0,
+              "change_vs_old": 0.0,
+              "paired_change_block_se": 0.0
+            },
+            "frame_any_gt_0.80_A": {
+              "value": 0.0,
+              "block_se": 0.0,
+              "nonzero_numerator_blocks": 0,
+              "change_vs_old": 0.0,
+              "paired_change_block_se": 0.0
+            },
+            "histogram_overflow_at_or_above_0.80_A": {
+              "value": 0.0,
+              "block_se": 0.0,
+              "nonzero_numerator_blocks": 0,
+              "change_vs_old": 0.0,
+              "paired_change_block_se": 0.0
+            }
+          },
+          "overlap": {
+            "frame_ess": 799.8048353804593,
+            "block_ess": 8.999910219311452,
+            "log_weight_span": 0.48373364642156935
+          },
+          "shifted_target_control_abs_error": 4.440892098500626e-16,
+          "witness_numerator_share_any_shifted_bead_gt_048": 0.32349321575250584
+        },
+        "wide_quadratic": {
+          "position": {
+            "MSD_A2": {
+              "value": 0.06100038725979722,
+              "block_se": 0.0012974444720233547,
+              "nonzero_numerator_blocks": 9,
+              "change_vs_old": 0.0002150182421115851,
+              "paired_change_block_se": 6.208876587393589e-05
+            },
+            "bead_fraction_gt_0.24_A": {
+              "value": 0.42096738280861,
+              "block_se": 0.010691318149368634,
+              "nonzero_numerator_blocks": 9,
+              "change_vs_old": 0.0015307411107323698,
+              "paired_change_block_se": 0.00036605615009927445
+            },
+            "frame_any_gt_0.24_A": {
+              "value": 1.0000000000000002,
+              "block_se": 9.435081445006126e-17,
+              "nonzero_numerator_blocks": 9,
+              "change_vs_old": 2.220446049250313e-16,
+              "paired_change_block_se": 7.192952276821042e-17
+            },
+            "bead_fraction_gt_0.48_A": {
+              "value": 0.008074889463291109,
+              "block_se": 0.0008185431077792887,
+              "nonzero_numerator_blocks": 9,
+              "change_vs_old": 0.00020386886404017215,
+              "paired_change_block_se": 0.00011539631935512744
+            },
+            "frame_any_gt_0.48_A": {
+              "value": 0.27146937619440004,
+              "block_se": 0.021132803200506405,
+              "nonzero_numerator_blocks": 9,
+              "change_vs_old": 0.0030548942967720816,
+              "paired_change_block_se": 0.0012169162771684598
+            },
+            "bead_fraction_gt_0.80_A": {
+              "value": 0.0,
+              "block_se": 0.0,
+              "nonzero_numerator_blocks": 0,
+              "change_vs_old": 0.0,
+              "paired_change_block_se": 0.0
+            },
+            "frame_any_gt_0.80_A": {
+              "value": 0.0,
+              "block_se": 0.0,
+              "nonzero_numerator_blocks": 0,
+              "change_vs_old": 0.0,
+              "paired_change_block_se": 0.0
+            },
+            "histogram_overflow_at_or_above_0.80_A": {
+              "value": 0.0,
+              "block_se": 0.0,
+              "nonzero_numerator_blocks": 0,
+              "change_vs_old": 0.0,
+              "paired_change_block_se": 0.0
+            }
+          },
+          "overlap": {
+            "frame_ess": 799.5279734138293,
+            "block_ess": 8.999856926584929,
+            "log_weight_span": 0.5810098859810473
+          },
+          "shifted_target_control_abs_error": 4.440892098500626e-16,
+          "witness_numerator_share_any_shifted_bead_gt_048": 0.32423376822644806
+        },
+        "wide_quartic": {
+          "position": {
+            "MSD_A2": {
+              "value": 0.06100038725979722,
+              "block_se": 0.0012974444720233547,
+              "nonzero_numerator_blocks": 9,
+              "change_vs_old": 0.0002150182421115851,
+              "paired_change_block_se": 6.208876587393589e-05
+            },
+            "bead_fraction_gt_0.24_A": {
+              "value": 0.42096738280861,
+              "block_se": 0.010691318149368634,
+              "nonzero_numerator_blocks": 9,
+              "change_vs_old": 0.0015307411107323698,
+              "paired_change_block_se": 0.00036605615009927445
+            },
+            "frame_any_gt_0.24_A": {
+              "value": 1.0000000000000002,
+              "block_se": 9.435081445006126e-17,
+              "nonzero_numerator_blocks": 9,
+              "change_vs_old": 2.220446049250313e-16,
+              "paired_change_block_se": 7.192952276821042e-17
+            },
+            "bead_fraction_gt_0.48_A": {
+              "value": 0.008074889463291109,
+              "block_se": 0.0008185431077792887,
+              "nonzero_numerator_blocks": 9,
+              "change_vs_old": 0.00020386886404017215,
+              "paired_change_block_se": 0.00011539631935512744
+            },
+            "frame_any_gt_0.48_A": {
+              "value": 0.27146937619440004,
+              "block_se": 0.021132803200506405,
+              "nonzero_numerator_blocks": 9,
+              "change_vs_old": 0.0030548942967720816,
+              "paired_change_block_se": 0.0012169162771684598
+            },
+            "bead_fraction_gt_0.80_A": {
+              "value": 0.0,
+              "block_se": 0.0,
+              "nonzero_numerator_blocks": 0,
+              "change_vs_old": 0.0,
+              "paired_change_block_se": 0.0
+            },
+            "frame_any_gt_0.80_A": {
+              "value": 0.0,
+              "block_se": 0.0,
+              "nonzero_numerator_blocks": 0,
+              "change_vs_old": 0.0,
+              "paired_change_block_se": 0.0
+            },
+            "histogram_overflow_at_or_above_0.80_A": {
+              "value": 0.0,
+              "block_se": 0.0,
+              "nonzero_numerator_blocks": 0,
+              "change_vs_old": 0.0,
+              "paired_change_block_se": 0.0
+            }
+          },
+          "overlap": {
+            "frame_ess": 799.5279734138293,
+            "block_ess": 8.999856926584929,
+            "log_weight_span": 0.5810098859810473
+          },
+          "shifted_target_control_abs_error": 6.661338147750939e-16,
+          "witness_numerator_share_any_shifted_bead_gt_048": 0.324232746403982
+        }
+      },
+      "paired_comparisons": {
+        "wide_quadratic_minus_quadratic": {
+          "MSD_A2": {
+            "change": -0.00017245083577341336,
+            "paired_block_se": 6.014872979591393e-05
+          },
+          "bead_fraction_gt_0.24_A": {
+            "change": -0.0008935981948482996,
+            "paired_block_se": 0.0003342555706174585
+          },
+          "frame_any_gt_0.24_A": {
+            "change": 3.3306690738754696e-16,
+            "paired_block_se": 1.504513910695858e-16
+          },
+          "bead_fraction_gt_0.48_A": {
+            "change": -0.00033118366109292224,
+            "paired_block_se": 0.00010737596711598722
+          },
+          "frame_any_gt_0.48_A": {
+            "change": -0.0037130025213018003,
+            "paired_block_se": 0.0008945986641317548
+          },
+          "bead_fraction_gt_0.80_A": {
+            "change": 0.0,
+            "paired_block_se": 0.0
+          },
+          "frame_any_gt_0.80_A": {
+            "change": 0.0,
+            "paired_block_se": 0.0
+          },
+          "histogram_overflow_at_or_above_0.80_A": {
+            "change": 0.0,
+            "paired_block_se": 0.0
+          }
+        },
+        "wide_quartic_minus_quartic": {
+          "MSD_A2": {
+            "change": 2.9551647268366565e-05,
+            "paired_block_se": 1.4843630691721328e-05
+          },
+          "bead_fraction_gt_0.24_A": {
+            "change": 0.00013204632124136362,
+            "paired_block_se": 7.30486489210358e-05
+          },
+          "frame_any_gt_0.24_A": {
+            "change": 2.220446049250313e-16,
+            "paired_block_se": 9.791246743253677e-17
+          },
+          "bead_fraction_gt_0.48_A": {
+            "change": 6.668048907606562e-05,
+            "paired_block_se": 3.151969666214884e-05
+          },
+          "frame_any_gt_0.48_A": {
+            "change": 0.0006588013236426549,
+            "paired_block_se": 0.000246635247978147
+          },
+          "bead_fraction_gt_0.80_A": {
+            "change": 0.0,
+            "paired_block_se": 0.0
+          },
+          "frame_any_gt_0.80_A": {
+            "change": 0.0,
+            "paired_block_se": 0.0
+          },
+          "histogram_overflow_at_or_above_0.80_A": {
+            "change": 0.0,
+            "paired_block_se": 0.0
+          }
+        },
+        "quartic_minus_quadratic": {
+          "MSD_A2": {
+            "change": -0.00020200248304177992,
+            "paired_block_se": 7.450240703671766e-05
+          },
+          "bead_fraction_gt_0.24_A": {
+            "change": -0.0010256445160896632,
+            "paired_block_se": 0.0004050265036116383
+          },
+          "frame_any_gt_0.24_A": {
+            "change": 1.1102230246251565e-16,
+            "paired_block_se": 1.5785501168023051e-16
+          },
+          "bead_fraction_gt_0.48_A": {
+            "change": -0.00039786415016898787,
+            "paired_block_se": 0.00013772392982607087
+          },
+          "frame_any_gt_0.48_A": {
+            "change": -0.004371803844944455,
+            "paired_block_se": 0.0011229064978436826
+          },
+          "bead_fraction_gt_0.80_A": {
+            "change": 0.0,
+            "paired_block_se": 0.0
+          },
+          "frame_any_gt_0.80_A": {
+            "change": 0.0,
+            "paired_block_se": 0.0
+          },
+          "histogram_overflow_at_or_above_0.80_A": {
+            "change": 0.0,
+            "paired_block_se": 0.0
+          }
+        },
+        "wide_quartic_minus_wide_quadratic": {
+          "MSD_A2": {
+            "change": 0.0,
+            "paired_block_se": 0.0
+          },
+          "bead_fraction_gt_0.24_A": {
+            "change": 0.0,
+            "paired_block_se": 0.0
+          },
+          "frame_any_gt_0.24_A": {
+            "change": 0.0,
+            "paired_block_se": 0.0
+          },
+          "bead_fraction_gt_0.48_A": {
+            "change": 0.0,
+            "paired_block_se": 0.0
+          },
+          "frame_any_gt_0.48_A": {
+            "change": 0.0,
+            "paired_block_se": 0.0
+          },
+          "bead_fraction_gt_0.80_A": {
+            "change": 0.0,
+            "paired_block_se": 0.0
+          },
+          "frame_any_gt_0.80_A": {
+            "change": 0.0,
+            "paired_block_se": 0.0
+          },
+          "histogram_overflow_at_or_above_0.80_A": {
+            "change": 0.0,
+            "paired_block_se": 0.0
+          }
+        }
+      }
+    }
+  ],
+  "observable_rows": [
+    {
+      "material": "PdD",
+      "isotope": "D",
+      "temperature_K": 300,
+      "variant": "old",
+      "msd_A2": 0.0833632498991965,
+      "kinetic_eV": null,
+      "probability_r_gt_048": 0.029377340823970036,
+      "probability_r_gt_080": null,
+      "support": {
+        "consumer": "one-site finite-P reweight",
+        "beads": 32,
+        "frames": 801,
+        "probability_r_gt_080_raw": 0.0,
+        "probability_r_gt_080_nonzero_blocks": 0,
+        "kinetic": "not inferred from three characteristic samples"
+      }
+    },
+    {
+      "material": "PdD",
+      "isotope": "D",
+      "temperature_K": 300,
+      "variant": "quadratic",
+      "msd_A2": 0.08513090618381226,
+      "kinetic_eV": null,
+      "probability_r_gt_048": 0.033979701222424524,
+      "probability_r_gt_080": null,
+      "support": {
+        "consumer": "one-site finite-P reweight",
+        "beads": 32,
+        "frames": 801,
+        "probability_r_gt_080_raw": 0.0,
+        "probability_r_gt_080_nonzero_blocks": 0,
+        "kinetic": "not inferred from three characteristic samples"
+      }
+    },
+    {
+      "material": "PdD",
+      "isotope": "D",
+      "temperature_K": 300,
+      "variant": "quartic",
+      "msd_A2": 0.08371547741695509,
+      "kinetic_eV": null,
+      "probability_r_gt_048": 0.02996129120799065,
+      "probability_r_gt_080": null,
+      "support": {
+        "consumer": "one-site finite-P reweight",
+        "beads": 32,
+        "frames": 801,
+        "probability_r_gt_080_raw": 0.0,
+        "probability_r_gt_080_nonzero_blocks": 0,
+        "kinetic": "not inferred from three characteristic samples"
+      }
+    },
+    {
+      "material": "PdD",
+      "isotope": "D",
+      "temperature_K": 300,
+      "variant": "wide_quadratic",
+      "msd_A2": 0.08389190026938315,
+      "kinetic_eV": null,
+      "probability_r_gt_048": 0.030467224671704946,
+      "probability_r_gt_080": null,
+      "support": {
+        "consumer": "one-site finite-P reweight",
+        "beads": 32,
+        "frames": 801,
+        "probability_r_gt_080_raw": 0.0,
+        "probability_r_gt_080_nonzero_blocks": 0,
+        "kinetic": "not inferred from three characteristic samples"
+      }
+    },
+    {
+      "material": "PdD",
+      "isotope": "D",
+      "temperature_K": 300,
+      "variant": "wide_quartic",
+      "msd_A2": 0.08389190026938315,
+      "kinetic_eV": null,
+      "probability_r_gt_048": 0.030467224671704946,
+      "probability_r_gt_080": null,
+      "support": {
+        "consumer": "one-site finite-P reweight",
+        "beads": 32,
+        "frames": 801,
+        "probability_r_gt_080_raw": 0.0,
+        "probability_r_gt_080_nonzero_blocks": 0,
+        "kinetic": "not inferred from three characteristic samples"
+      }
+    },
+    {
+      "material": "PdD",
+      "isotope": "D",
+      "temperature_K": 77,
+      "variant": "old",
+      "msd_A2": 0.060785369017685636,
+      "kinetic_eV": null,
+      "probability_r_gt_048": 0.007871020599250936,
+      "probability_r_gt_080": null,
+      "support": {
+        "consumer": "one-site finite-P reweight",
+        "beads": 128,
+        "frames": 801,
+        "probability_r_gt_080_raw": 0.0,
+        "probability_r_gt_080_nonzero_blocks": 0,
+        "kinetic": "not inferred from three characteristic samples"
+      }
+    },
+    {
+      "material": "PdD",
+      "isotope": "D",
+      "temperature_K": 77,
+      "variant": "quadratic",
+      "msd_A2": 0.061172838095570635,
+      "kinetic_eV": null,
+      "probability_r_gt_048": 0.008406073124384031,
+      "probability_r_gt_080": null,
+      "support": {
+        "consumer": "one-site finite-P reweight",
+        "beads": 128,
+        "frames": 801,
+        "probability_r_gt_080_raw": 0.0,
+        "probability_r_gt_080_nonzero_blocks": 0,
+        "kinetic": "not inferred from three characteristic samples"
+      }
+    },
+    {
+      "material": "PdD",
+      "isotope": "D",
+      "temperature_K": 77,
+      "variant": "quartic",
+      "msd_A2": 0.060970835612528855,
+      "kinetic_eV": null,
+      "probability_r_gt_048": 0.008008208974215043,
+      "probability_r_gt_080": null,
+      "support": {
+        "consumer": "one-site finite-P reweight",
+        "beads": 128,
+        "frames": 801,
+        "probability_r_gt_080_raw": 0.0,
+        "probability_r_gt_080_nonzero_blocks": 0,
+        "kinetic": "not inferred from three characteristic samples"
+      }
+    },
+    {
+      "material": "PdD",
+      "isotope": "D",
+      "temperature_K": 77,
+      "variant": "wide_quadratic",
+      "msd_A2": 0.06100038725979722,
+      "kinetic_eV": null,
+      "probability_r_gt_048": 0.008074889463291109,
+      "probability_r_gt_080": null,
+      "support": {
+        "consumer": "one-site finite-P reweight",
+        "beads": 128,
+        "frames": 801,
+        "probability_r_gt_080_raw": 0.0,
+        "probability_r_gt_080_nonzero_blocks": 0,
+        "kinetic": "not inferred from three characteristic samples"
+      }
+    },
+    {
+      "material": "PdD",
+      "isotope": "D",
+      "temperature_K": 77,
+      "variant": "wide_quartic",
+      "msd_A2": 0.06100038725979722,
+      "kinetic_eV": null,
+      "probability_r_gt_048": 0.008074889463291109,
+      "probability_r_gt_080": null,
+      "support": {
+        "consumer": "one-site finite-P reweight",
+        "beads": 128,
+        "frames": 801,
+        "probability_r_gt_080_raw": 0.0,
+        "probability_r_gt_080_nonzero_blocks": 0,
+        "kinetic": "not inferred from three characteristic samples"
+      }
+    }
+  ],
+  "characteristic_rows": [
+    {
+      "temperature_K": 300,
+      "variant": "old",
+      "separation_A": 0.0,
+      "characteristic": 1.0,
+      "block_se": 0.0,
+      "change_vs_old": 0.0,
+      "paired_change_block_se": 0.0,
+      "numerator_block_ess": 9.0
+    },
+    {
+      "temperature_K": 300,
+      "variant": "old",
+      "separation_A": 0.25,
+      "characteristic": 0.595443795249111,
+      "block_se": 0.0021577560892722214,
+      "change_vs_old": 0.0,
+      "paired_change_block_se": 0.0,
+      "numerator_block_ess": 8.999054612125098
+    },
+    {
+      "temperature_K": 300,
+      "variant": "old",
+      "separation_A": 0.5,
+      "characteristic": 0.12563284548746326,
+      "block_se": 0.0017628660920870037,
+      "change_vs_old": 0.0,
+      "paired_change_block_se": 0.0,
+      "numerator_block_ess": 8.98584593416508
+    },
+    {
+      "temperature_K": 300,
+      "variant": "quadratic",
+      "separation_A": 0.0,
+      "characteristic": 0.9999999999999997,
+      "block_se": 0.0,
+      "change_vs_old": -3.3306690738754696e-16,
+      "paired_change_block_se": 0.0,
+      "numerator_block_ess": 8.999039627967422
+    },
+    {
+      "temperature_K": 300,
+      "variant": "quadratic",
+      "separation_A": 0.25,
+      "characteristic": 0.5981150330190393,
+      "block_se": 0.00198583860338511,
+      "change_vs_old": 0.002671237769928392,
+      "paired_change_block_se": 0.0008018912367750423,
+      "numerator_block_ess": 8.99936077805897
+    },
+    {
+      "temperature_K": 300,
+      "variant": "quadratic",
+      "separation_A": 0.5,
+      "characteristic": 0.1292632309442695,
+      "block_se": 0.0015527733016314747,
+      "change_vs_old": 0.0036303854568062455,
+      "paired_change_block_se": 0.0007601612283798291,
+      "numerator_block_ess": 8.992497262331135
+    },
+    {
+      "temperature_K": 300,
+      "variant": "quartic",
+      "separation_A": 0.0,
+      "characteristic": 1.0,
+      "block_se": 0.0,
+      "change_vs_old": 0.0,
+      "paired_change_block_se": 0.0,
+      "numerator_block_ess": 8.999633944710148
+    },
+    {
+      "temperature_K": 300,
+      "variant": "quartic",
+      "separation_A": 0.25,
+      "characteristic": 0.5954906272503249,
+      "block_se": 0.00215606137394695,
+      "change_vs_old": 4.683200121391451e-05,
+      "paired_change_block_se": 0.00022457598559208947,
+      "numerator_block_ess": 8.999515622309604
+    },
+    {
+      "temperature_K": 300,
+      "variant": "quartic",
+      "separation_A": 0.5,
+      "characteristic": 0.12605922074465256,
+      "block_se": 0.0017496672643932086,
+      "change_vs_old": 0.00042637525718930425,
+      "paired_change_block_se": 0.00016190357994274695,
+      "numerator_block_ess": 8.988979360651255
+    },
+    {
+      "temperature_K": 300,
+      "variant": "wide_quadratic",
+      "separation_A": 0.0,
+      "characteristic": 1.0,
+      "block_se": 0.0,
+      "change_vs_old": 0.0,
+      "paired_change_block_se": 0.0,
+      "numerator_block_ess": 8.999528541948001
+    },
+    {
+      "temperature_K": 300,
+      "variant": "wide_quadratic",
+      "separation_A": 0.25,
+      "characteristic": 0.5956754732479186,
+      "block_se": 0.0021510229492389802,
+      "change_vs_old": 0.0002316779988076334,
+      "paired_change_block_se": 0.0003396297567641392,
+      "numerator_block_ess": 8.999481054097831
+    },
+    {
+      "temperature_K": 300,
+      "variant": "wide_quadratic",
+      "separation_A": 0.5,
+      "characteristic": 0.12642037808225362,
+      "block_se": 0.0017116764964353879,
+      "change_vs_old": 0.0007875325947903633,
+      "paired_change_block_se": 0.0002733102297497832,
+      "numerator_block_ess": 8.989724831116328
+    },
+    {
+      "temperature_K": 300,
+      "variant": "wide_quartic",
+      "separation_A": 0.0,
+      "characteristic": 1.0,
+      "block_se": 0.0,
+      "change_vs_old": 0.0,
+      "paired_change_block_se": 0.0,
+      "numerator_block_ess": 8.999528541948001
+    },
+    {
+      "temperature_K": 300,
+      "variant": "wide_quartic",
+      "separation_A": 0.25,
+      "characteristic": 0.5956752839241409,
+      "block_se": 0.002151011053420632,
+      "change_vs_old": 0.00023148867502997827,
+      "paired_change_block_se": 0.0003394823566091835,
+      "numerator_block_ess": 8.99948111056574
+    },
+    {
+      "temperature_K": 300,
+      "variant": "wide_quartic",
+      "separation_A": 0.5,
+      "characteristic": 0.12641593630638792,
+      "block_se": 0.0017115259080292707,
+      "change_vs_old": 0.0007830908189246644,
+      "paired_change_block_se": 0.00027019058917922956,
+      "numerator_block_ess": 8.989731323668142
+    },
+    {
+      "temperature_K": 77,
+      "variant": "old",
+      "separation_A": 0.0,
+      "characteristic": 1.0,
+      "block_se": 0.0,
+      "change_vs_old": 0.0,
+      "paired_change_block_se": 0.0,
+      "numerator_block_ess": 9.0
+    },
+    {
+      "temperature_K": 77,
+      "variant": "old",
+      "separation_A": 0.25,
+      "characteristic": 0.6895012956834246,
+      "block_se": 0.007040223436900801,
+      "change_vs_old": 0.0,
+      "paired_change_block_se": 0.0,
+      "numerator_block_ess": 8.992499794970884
+    },
+    {
+      "temperature_K": 77,
+      "variant": "old",
+      "separation_A": 0.5,
+      "characteristic": 0.22589369752468114,
+      "block_se": 0.010318797423869574,
+      "change_vs_old": 0.0,
+      "paired_change_block_se": 0.0,
+      "numerator_block_ess": 8.85222787561096
+    },
+    {
+      "temperature_K": 77,
+      "variant": "quadratic",
+      "separation_A": 0.0,
+      "characteristic": 0.9999999999999999,
+      "block_se": 0.0,
+      "change_vs_old": -1.1102230246251565e-16,
+      "paired_change_block_se": 0.0,
+      "numerator_block_ess": 8.999525419876996
+    },
+    {
+      "temperature_K": 77,
+      "variant": "quadratic",
+      "separation_A": 0.25,
+      "characteristic": 0.6920316997693722,
+      "block_se": 0.007028171455128112,
+      "change_vs_old": 0.002530404085947624,
+      "paired_change_block_se": 0.00028147034285954563,
+      "numerator_block_ess": 8.990135614904208
+    },
+    {
+      "temperature_K": 77,
+      "variant": "quadratic",
+      "separation_A": 0.5,
+      "characteristic": 0.23068062391961883,
+      "block_se": 0.010471511073168653,
+      "change_vs_old": 0.0047869263949376906,
+      "paired_change_block_se": 0.0004481389020448501,
+      "numerator_block_ess": 8.841984851991494
+    },
+    {
+      "temperature_K": 77,
+      "variant": "quartic",
+      "separation_A": 0.0,
+      "characteristic": 0.9999999999999998,
+      "block_se": 0.0,
+      "change_vs_old": -2.220446049250313e-16,
+      "paired_change_block_se": 0.0,
+      "numerator_block_ess": 8.99991021931145
+    },
+    {
+      "temperature_K": 77,
+      "variant": "quartic",
+      "separation_A": 0.25,
+      "characteristic": 0.6909426528020121,
+      "block_se": 0.007141432206870458,
+      "change_vs_old": 0.0014413571185875051,
+      "paired_change_block_se": 0.00020906161066018198,
+      "numerator_block_ess": 8.991642259850858
+    },
+    {
+      "temperature_K": 77,
+      "variant": "quartic",
+      "separation_A": 0.5,
+      "characteristic": 0.22817120197861915,
+      "block_se": 0.010457412271935156,
+      "change_vs_old": 0.002277504453938012,
+      "paired_change_block_se": 0.0002975573897553656,
+      "numerator_block_ess": 8.8477167345001
+    },
+    {
+      "temperature_K": 77,
+      "variant": "wide_quadratic",
+      "separation_A": 0.0,
+      "characteristic": 1.0,
+      "block_se": 0.0,
+      "change_vs_old": 0.0,
+      "paired_change_block_se": 0.0,
+      "numerator_block_ess": 8.999856926584929
+    },
+    {
+      "temperature_K": 77,
+      "variant": "wide_quadratic",
+      "separation_A": 0.25,
+      "characteristic": 0.6910749060957575,
+      "block_se": 0.0071332582474938275,
+      "change_vs_old": 0.0015736104123329486,
+      "paired_change_block_se": 0.0002247518921599482,
+      "numerator_block_ess": 8.991353800798565
+    },
+    {
+      "temperature_K": 77,
+      "variant": "wide_quadratic",
+      "separation_A": 0.5,
+      "characteristic": 0.22858667041287423,
+      "block_se": 0.010458795064539443,
+      "change_vs_old": 0.0026929728881930903,
+      "paired_change_block_se": 0.00033269470604614746,
+      "numerator_block_ess": 8.846606542854547
+    },
+    {
+      "temperature_K": 77,
+      "variant": "wide_quartic",
+      "separation_A": 0.0,
+      "characteristic": 1.0,
+      "block_se": 0.0,
+      "change_vs_old": 0.0,
+      "paired_change_block_se": 0.0,
+      "numerator_block_ess": 8.999856926584929
+    },
+    {
+      "temperature_K": 77,
+      "variant": "wide_quartic",
+      "separation_A": 0.25,
+      "characteristic": 0.6910738611267079,
+      "block_se": 0.007132726318522021,
+      "change_vs_old": 0.0015725654432833247,
+      "paired_change_block_se": 0.00022510527679224195,
+      "numerator_block_ess": 8.991355131755386
+    },
+    {
+      "temperature_K": 77,
+      "variant": "wide_quartic",
+      "separation_A": 0.5,
+      "characteristic": 0.22858581674935693,
+      "block_se": 0.010458183795459161,
+      "change_vs_old": 0.0026921192246757986,
+      "paired_change_block_se": 0.0003325598204935844,
+      "numerator_block_ess": 8.846622948550431
+    }
+  ]
+}

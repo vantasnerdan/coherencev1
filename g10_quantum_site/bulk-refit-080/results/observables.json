@@ -1,0 +1,714 @@
+{
+  "rows": [
+    {
+      "material": "PdD",
+      "isotope": "D",
+      "temperature_K": 300,
+      "variant": "old",
+      "msd_A2": 0.0805760499734461,
+      "kinetic_eV": 0.051544823191532405,
+      "probability_r_gt_048": 0.02685778047531546,
+      "probability_r_gt_080": 1.8386641669780718e-06,
+      "support": {
+        "consumer": "isolated 3D eigenstate/Fourier canonical",
+        "npar": 10,
+        "quadrature_order": 48,
+        "radial_data_extent_A": 0.24,
+        "angular": "same cubic closure; no angular data volume",
+        "line_density_anisotropy_at_048": 4.331291419433721,
+        "numerical_comparison": {
+          "variant": "old",
+          "temperature_K": 300,
+          "delta_msd_A2": 1.7675088753721369e-09,
+          "delta_kinetic_eV": 3.0831965036615117e-09,
+          "delta_probability_gt_048": 3.978959051131881e-09,
+          "probability_gt_080_main": 1.8386641669780718e-06,
+          "probability_gt_080_check": 1.8388937950199933e-06,
+          "probability_gt_080_empirically_resolved": true,
+          "position_density_integrated_L1_difference": 3.1370161509401483e-06,
+          "momentum_density_integrated_L1_difference": 1.992452595539838e-06
+        }
+      }
+    },
+    {
+      "material": "PdD",
+      "isotope": "D",
+      "temperature_K": 300,
+      "variant": "quadratic",
+      "msd_A2": 0.08284006126421818,
+      "kinetic_eV": 0.051265705242342766,
+      "probability_r_gt_048": 0.032909373338677064,
+      "probability_r_gt_080": 3.9596646382230575e-05,
+      "support": {
+        "consumer": "isolated 3D eigenstate/Fourier canonical",
+        "npar": 10,
+        "quadrature_order": 48,
+        "radial_data_extent_A": 0.48,
+        "angular": "same cubic closure; no angular data volume",
+        "line_density_anisotropy_at_048": 5.622519947769452,
+        "numerical_comparison": {
+          "variant": "quadratic",
+          "temperature_K": 300,
+          "delta_msd_A2": -1.3477232827519003e-06,
+          "delta_kinetic_eV": 4.277795680393548e-07,
+          "delta_probability_gt_048": -4.381783292636832e-06,
+          "probability_gt_080_main": 3.9596646382230575e-05,
+          "probability_gt_080_check": 3.960001908600588e-05,
+          "probability_gt_080_empirically_resolved": true,
+          "position_density_integrated_L1_difference": 4.287283040174159e-05,
+          "momentum_density_integrated_L1_difference": 1.3115018919623752e-05
+        }
+      }
+    },
+    {
+      "material": "PdD",
+      "isotope": "D",
+      "temperature_K": 300,
+      "variant": "quartic",
+      "msd_A2": 0.08134119756474045,
+      "kinetic_eV": 0.051566511336947674,
+      "probability_r_gt_048": 0.028539561963258808,
+      "probability_r_gt_080": 2.868542655464729e-06,
+      "support": {
+        "consumer": "isolated 3D eigenstate/Fourier canonical",
+        "npar": 10,
+        "quadrature_order": 48,
+        "radial_data_extent_A": 0.48,
+        "angular": "same cubic closure; no angular data volume",
+        "line_density_anisotropy_at_048": 5.465146147819963,
+        "numerical_comparison": {
+          "variant": "quartic",
+          "temperature_K": 300,
+          "delta_msd_A2": -5.063487000800393e-07,
+          "delta_kinetic_eV": 1.7667494109363524e-07,
+          "delta_probability_gt_048": -6.571635709183565e-07,
+          "probability_gt_080_main": 2.868542655464729e-06,
+          "probability_gt_080_check": 2.8683460156875767e-06,
+          "probability_gt_080_empirically_resolved": true,
+          "position_density_integrated_L1_difference": 2.8350814967271732e-05,
+          "momentum_density_integrated_L1_difference": 4.328696169815692e-06
+        }
+      }
+    },
+    {
+      "material": "PdD",
+      "isotope": "D",
+      "temperature_K": 300,
+      "variant": "wide_quadratic",
+      "msd_A2": 0.08159923101249487,
+      "kinetic_eV": 0.05153429012240876,
+      "probability_r_gt_048": 0.029305855109545656,
+      "probability_r_gt_080": 7.350521562854769e-06,
+      "support": {
+        "consumer": "isolated 3D eigenstate/Fourier canonical",
+        "npar": 10,
+        "quadrature_order": 48,
+        "radial_data_extent_A": 0.8,
+        "angular": "same cubic closure; no angular data volume",
+        "line_density_anisotropy_at_048": 5.574745141890824,
+        "numerical_comparison": {
+          "variant": "wide_quadratic",
+          "temperature_K": 300,
+          "delta_msd_A2": -7.059271214387985e-07,
+          "delta_kinetic_eV": 2.4629607622839167e-07,
+          "delta_probability_gt_048": -9.851929394996684e-07,
+          "probability_gt_080_main": 7.350521562854769e-06,
+          "probability_gt_080_check": 7.351132381295613e-06,
+          "probability_gt_080_empirically_resolved": true,
+          "position_density_integrated_L1_difference": 3.5707618634118794e-05,
+          "momentum_density_integrated_L1_difference": 3.7600077570175874e-06
+        }
+      }
+    },
+    {
+      "material": "PdD",
+      "isotope": "D",
+      "temperature_K": 300,
+      "variant": "wide_quartic",
+      "msd_A2": 0.08159864957741643,
+      "kinetic_eV": 0.05153438523210377,
+      "probability_r_gt_048": 0.029304614849846644,
+      "probability_r_gt_080": 7.0408257079533845e-06,
+      "support": {
+        "consumer": "isolated 3D eigenstate/Fourier canonical",
+        "npar": 10,
+        "quadrature_order": 48,
+        "radial_data_extent_A": 0.8,
+        "angular": "same cubic closure; no angular data volume",
+        "line_density_anisotropy_at_048": 5.574493531441045,
+        "numerical_comparison": {
+          "variant": "wide_quartic",
+          "temperature_K": 300,
+          "delta_msd_A2": -7.038457911640039e-07,
+          "delta_kinetic_eV": 2.4773671861849644e-07,
+          "delta_probability_gt_048": -1.0296280693149196e-06,
+          "probability_gt_080_main": 7.0408257079533845e-06,
+          "probability_gt_080_check": 7.042643924060133e-06,
+          "probability_gt_080_empirically_resolved": true,
+          "position_density_integrated_L1_difference": 3.681165089050571e-05,
+          "momentum_density_integrated_L1_difference": 3.4830249398583123e-06
+        }
+      }
+    },
+    {
+      "material": "PdD",
+      "isotope": "D",
+      "temperature_K": 77,
+      "variant": "old",
+      "msd_A2": 0.06352838618058103,
+      "kinetic_eV": 0.03721906721609776,
+      "probability_r_gt_048": 0.009268612308915835,
+      "probability_r_gt_080": 1.0036512538856391e-07,
+      "support": {
+        "consumer": "isolated 3D eigenstate/Fourier canonical",
+        "npar": 10,
+        "quadrature_order": 48,
+        "radial_data_extent_A": 0.24,
+        "angular": "same cubic closure; no angular data volume",
+        "line_density_anisotropy_at_048": 2.983766628702919,
+        "numerical_comparison": {
+          "variant": "old",
+          "temperature_K": 77,
+          "delta_msd_A2": -2.7695176707531743e-10,
+          "delta_kinetic_eV": 6.860243345618855e-10,
+          "delta_probability_gt_048": 1.5424422839145635e-07,
+          "probability_gt_080_main": 1.0036512538856391e-07,
+          "probability_gt_080_check": 1.0041635135023843e-07,
+          "probability_gt_080_empirically_resolved": true,
+          "position_density_integrated_L1_difference": 2.9921795559622133e-06,
+          "momentum_density_integrated_L1_difference": 3.39278839432231e-06
+        }
+      }
+    },
+    {
+      "material": "PdD",
+      "isotope": "D",
+      "temperature_K": 77,
+      "variant": "quadratic",
+      "msd_A2": 0.06406989791121155,
+      "kinetic_eV": 0.03695241107759166,
+      "probability_r_gt_048": 0.010191339638710994,
+      "probability_r_gt_080": 7.259048327183433e-07,
+      "support": {
+        "consumer": "isolated 3D eigenstate/Fourier canonical",
+        "npar": 10,
+        "quadrature_order": 48,
+        "radial_data_extent_A": 0.48,
+        "angular": "same cubic closure; no angular data volume",
+        "line_density_anisotropy_at_048": 3.5590392906075414,
+        "numerical_comparison": {
+          "variant": "quadratic",
+          "temperature_K": 77,
+          "delta_msd_A2": -8.196090043183224e-07,
+          "delta_kinetic_eV": 5.648465601568176e-07,
+          "delta_probability_gt_048": -1.1685772757404067e-06,
+          "probability_gt_080_main": 7.259048327183433e-07,
+          "probability_gt_080_check": 7.260259226905399e-07,
+          "probability_gt_080_empirically_resolved": true,
+          "position_density_integrated_L1_difference": 1.8943795374580554e-05,
+          "momentum_density_integrated_L1_difference": 1.72866190560233e-05
+        }
+      }
+    },
+    {
+      "material": "PdD",
+      "isotope": "D",
+      "temperature_K": 77,
+      "variant": "quartic",
+      "msd_A2": 0.06380061745011495,
+      "kinetic_eV": 0.037121358805453246,
+      "probability_r_gt_048": 0.00957425836268984,
+      "probability_r_gt_080": 1.379929239789442e-07,
+      "support": {
+        "consumer": "isolated 3D eigenstate/Fourier canonical",
+        "npar": 10,
+        "quadrature_order": 48,
+        "radial_data_extent_A": 0.48,
+        "angular": "same cubic closure; no angular data volume",
+        "line_density_anisotropy_at_048": 3.5477772765462676,
+        "numerical_comparison": {
+          "variant": "quartic",
+          "temperature_K": 77,
+          "delta_msd_A2": -4.1679832946117656e-07,
+          "delta_kinetic_eV": 2.856841252174558e-07,
+          "delta_probability_gt_048": 1.227296385786919e-07,
+          "probability_gt_080_main": 1.379929239789442e-07,
+          "probability_gt_080_check": 1.3787600792458843e-07,
+          "probability_gt_080_empirically_resolved": true,
+          "position_density_integrated_L1_difference": 2.1646284623356787e-05,
+          "momentum_density_integrated_L1_difference": 6.5228438568997975e-06
+        }
+      }
+    },
+    {
+      "material": "PdD",
+      "isotope": "D",
+      "temperature_K": 77,
+      "variant": "wide_quadratic",
+      "msd_A2": 0.06384083964100558,
+      "kinetic_eV": 0.03710051227567145,
+      "probability_r_gt_048": 0.00966762644518365,
+      "probability_r_gt_080": 2.415226317168892e-07,
+      "support": {
+        "consumer": "isolated 3D eigenstate/Fourier canonical",
+        "npar": 10,
+        "quadrature_order": 48,
+        "radial_data_extent_A": 0.8,
+        "angular": "same cubic closure; no angular data volume",
+        "line_density_anisotropy_at_048": 3.57726851147384,
+        "numerical_comparison": {
+          "variant": "wide_quadratic",
+          "temperature_K": 77,
+          "delta_msd_A2": -5.055790735786214e-07,
+          "delta_kinetic_eV": 3.5668140745126475e-07,
+          "delta_probability_gt_048": 5.571398981399356e-08,
+          "probability_gt_080_main": 2.415226317168892e-07,
+          "probability_gt_080_check": 2.414761634191451e-07,
+          "probability_gt_080_empirically_resolved": true,
+          "position_density_integrated_L1_difference": 3.0369550544670914e-05,
+          "momentum_density_integrated_L1_difference": 7.482549123946734e-06
+        }
+      }
+    },
+    {
+      "material": "PdD",
+      "isotope": "D",
+      "temperature_K": 77,
+      "variant": "wide_quartic",
+      "msd_A2": 0.0638408291244928,
+      "kinetic_eV": 0.03710051771516478,
+      "probability_r_gt_048": 0.009667621204623684,
+      "probability_r_gt_080": 2.380426240378715e-07,
+      "support": {
+        "consumer": "isolated 3D eigenstate/Fourier canonical",
+        "npar": 10,
+        "quadrature_order": 48,
+        "radial_data_extent_A": 0.8,
+        "angular": "same cubic closure; no angular data volume",
+        "line_density_anisotropy_at_048": 3.577207471613431,
+        "numerical_comparison": {
+          "variant": "wide_quartic",
+          "temperature_K": 77,
+          "delta_msd_A2": -5.054109056684686e-07,
+          "delta_kinetic_eV": 3.575449511183937e-07,
+          "delta_probability_gt_048": 3.94527023862834e-08,
+          "probability_gt_080_main": 2.380426240378715e-07,
+          "probability_gt_080_check": 2.3805969756134452e-07,
+          "probability_gt_080_empirically_resolved": true,
+          "position_density_integrated_L1_difference": 3.195198110819424e-05,
+          "momentum_density_integrated_L1_difference": 7.316894899717404e-06
+        }
+      }
+    },
+    {
+      "material": "PdD",
+      "isotope": "D",
+      "temperature_K": 300,
+      "variant": "old",
+      "msd_A2": 0.0833632498991965,
+      "kinetic_eV": null,
+      "probability_r_gt_048": 0.029377340823970036,
+      "probability_r_gt_080": null,
+      "support": {
+        "consumer": "one-site finite-P reweight",
+        "beads": 32,
+        "frames": 801,
+        "probability_r_gt_080_raw": 0.0,
+        "probability_r_gt_080_nonzero_blocks": 0,
+        "kinetic": "not inferred from three characteristic samples"
+      }
+    },
+    {
+      "material": "PdD",
+      "isotope": "D",
+      "temperature_K": 300,
+      "variant": "quadratic",
+      "msd_A2": 0.08513090618381226,
+      "kinetic_eV": null,
+      "probability_r_gt_048": 0.033979701222424524,
+      "probability_r_gt_080": null,
+      "support": {
+        "consumer": "one-site finite-P reweight",
+        "beads": 32,
+        "frames": 801,
+        "probability_r_gt_080_raw": 0.0,
+        "probability_r_gt_080_nonzero_blocks": 0,
+        "kinetic": "not inferred from three characteristic samples"
+      }
+    },
+    {
+      "material": "PdD",
+      "isotope": "D",
+      "temperature_K": 300,
+      "variant": "quartic",
+      "msd_A2": 0.08371547741695509,
+      "kinetic_eV": null,
+      "probability_r_gt_048": 0.02996129120799065,
+      "probability_r_gt_080": null,
+      "support": {
+        "consumer": "one-site finite-P reweight",
+        "beads": 32,
+        "frames": 801,
+        "probability_r_gt_080_raw": 0.0,
+        "probability_r_gt_080_nonzero_blocks": 0,
+        "kinetic": "not inferred from three characteristic samples"
+      }
+    },
+    {
+      "material": "PdD",
+      "isotope": "D",
+      "temperature_K": 300,
+      "variant": "wide_quadratic",
+      "msd_A2": 0.08389190026938315,
+      "kinetic_eV": null,
+      "probability_r_gt_048": 0.030467224671704946,
+      "probability_r_gt_080": null,
+      "support": {
+        "consumer": "one-site finite-P reweight",
+        "beads": 32,
+        "frames": 801,
+        "probability_r_gt_080_raw": 0.0,
+        "probability_r_gt_080_nonzero_blocks": 0,
+        "kinetic": "not inferred from three characteristic samples"
+      }
+    },
+    {
+      "material": "PdD",
+      "isotope": "D",
+      "temperature_K": 300,
+      "variant": "wide_quartic",
+      "msd_A2": 0.08389190026938315,
+      "kinetic_eV": null,
+      "probability_r_gt_048": 0.030467224671704946,
+      "probability_r_gt_080": null,
+      "support": {
+        "consumer": "one-site finite-P reweight",
+        "beads": 32,
+        "frames": 801,
+        "probability_r_gt_080_raw": 0.0,
+        "probability_r_gt_080_nonzero_blocks": 0,
+        "kinetic": "not inferred from three characteristic samples"
+      }
+    },
+    {
+      "material": "PdD",
+      "isotope": "D",
+      "temperature_K": 77,
+      "variant": "old",
+      "msd_A2": 0.060785369017685636,
+      "kinetic_eV": null,
+      "probability_r_gt_048": 0.007871020599250936,
+      "probability_r_gt_080": null,
+      "support": {
+        "consumer": "one-site finite-P reweight",
+        "beads": 128,
+        "frames": 801,
+        "probability_r_gt_080_raw": 0.0,
+        "probability_r_gt_080_nonzero_blocks": 0,
+        "kinetic": "not inferred from three characteristic samples"
+      }
+    },
+    {
+      "material": "PdD",
+      "isotope": "D",
+      "temperature_K": 77,
+      "variant": "quadratic",
+      "msd_A2": 0.061172838095570635,
+      "kinetic_eV": null,
+      "probability_r_gt_048": 0.008406073124384031,
+      "probability_r_gt_080": null,
+      "support": {
+        "consumer": "one-site finite-P reweight",
+        "beads": 128,
+        "frames": 801,
+        "probability_r_gt_080_raw": 0.0,
+        "probability_r_gt_080_nonzero_blocks": 0,
+        "kinetic": "not inferred from three characteristic samples"
+      }
+    },
+    {
+      "material": "PdD",
+      "isotope": "D",
+      "temperature_K": 77,
+      "variant": "quartic",
+      "msd_A2": 0.060970835612528855,
+      "kinetic_eV": null,
+      "probability_r_gt_048": 0.008008208974215043,
+      "probability_r_gt_080": null,
+      "support": {
+        "consumer": "one-site finite-P reweight",
+        "beads": 128,
+        "frames": 801,
+        "probability_r_gt_080_raw": 0.0,
+        "probability_r_gt_080_nonzero_blocks": 0,
+        "kinetic": "not inferred from three characteristic samples"
+      }
+    },
+    {
+      "material": "PdD",
+      "isotope": "D",
+      "temperature_K": 77,
+      "variant": "wide_quadratic",
+      "msd_A2": 0.06100038725979722,
+      "kinetic_eV": null,
+      "probability_r_gt_048": 0.008074889463291109,
+      "probability_r_gt_080": null,
+      "support": {
+        "consumer": "one-site finite-P reweight",
+        "beads": 128,
+        "frames": 801,
+        "probability_r_gt_080_raw": 0.0,
+        "probability_r_gt_080_nonzero_blocks": 0,
+        "kinetic": "not inferred from three characteristic samples"
+      }
+    },
+    {
+      "material": "PdD",
+      "isotope": "D",
+      "temperature_K": 77,
+      "variant": "wide_quartic",
+      "msd_A2": 0.06100038725979722,
+      "kinetic_eV": null,
+      "probability_r_gt_048": 0.008074889463291109,
+      "probability_r_gt_080": null,
+      "support": {
+        "consumer": "one-site finite-P reweight",
+        "beads": 128,
+        "frames": 801,
+        "probability_r_gt_080_raw": 0.0,
+        "probability_r_gt_080_nonzero_blocks": 0,
+        "kinetic": "not inferred from three characteristic samples"
+      }
+    },
+    {
+      "material": "NiH",
+      "isotope": "H",
+      "temperature_K": 77,
+      "variant": "isolated_old",
+      "msd_A2": 0.06254841808430957,
+      "kinetic_eV": 0.07504639009339956,
+      "probability_r_gt_048": 0.009643763763494722,
+      "probability_r_gt_080": 2.6602116641432743e-07,
+      "support": {
+        "consumer": "isolated 3D eigenstate/Fourier canonical",
+        "model_and_numeric": "nih/support.json",
+        "evidence_key": "old_77K",
+        "angular": "111 correction weighted by w or w\u00b2; 100/110 remain old-only, no measured angular volume"
+      }
+    },
+    {
+      "material": "NiH",
+      "isotope": "H",
+      "temperature_K": 77,
+      "variant": "isolated_w",
+      "msd_A2": 0.06299292387560036,
+      "kinetic_eV": 0.07456667986143249,
+      "probability_r_gt_048": 0.010200031088765034,
+      "probability_r_gt_080": 4.918506611577247e-07,
+      "support": {
+        "consumer": "isolated 3D eigenstate/Fourier canonical",
+        "model_and_numeric": "nih/support.json",
+        "evidence_key": "w_77K",
+        "angular": "111 correction weighted by w or w\u00b2; 100/110 remain old-only, no measured angular volume"
+      }
+    },
+    {
+      "material": "NiH",
+      "isotope": "H",
+      "temperature_K": 77,
+      "variant": "isolated_w2",
+      "msd_A2": 0.06281556821927717,
+      "kinetic_eV": 0.07476440929705312,
+      "probability_r_gt_048": 0.009986572853098733,
+      "probability_r_gt_080": 4.2137574154552685e-07,
+      "support": {
+        "consumer": "isolated 3D eigenstate/Fourier canonical",
+        "model_and_numeric": "nih/support.json",
+        "evidence_key": "w2_77K",
+        "angular": "111 correction weighted by w or w\u00b2; 100/110 remain old-only, no measured angular volume"
+      }
+    },
+    {
+      "material": "NiH",
+      "isotope": "H",
+      "temperature_K": 77,
+      "variant": "isolated_w_stiff_exterior",
+      "msd_A2": 0.06299290474494344,
+      "kinetic_eV": 0.0745666999239299,
+      "probability_r_gt_048": 0.010199990523848875,
+      "probability_r_gt_080": 4.846309385576365e-07,
+      "support": {
+        "consumer": "isolated 3D eigenstate/Fourier canonical",
+        "model_and_numeric": "nih/support.json",
+        "evidence_key": "w_stiff_exterior_77K",
+        "angular": "111 correction weighted by w or w\u00b2; 100/110 remain old-only, no measured angular volume"
+      }
+    },
+    {
+      "material": "NiH",
+      "isotope": "H",
+      "temperature_K": 300,
+      "variant": "isolated_old",
+      "msd_A2": 0.06501622240228848,
+      "kinetic_eV": 0.07865361483680672,
+      "probability_r_gt_048": 0.011692127370779156,
+      "probability_r_gt_080": 4.6861921491174095e-07,
+      "support": {
+        "consumer": "isolated 3D eigenstate/Fourier canonical",
+        "model_and_numeric": "nih/support.json",
+        "evidence_key": "old_300K",
+        "angular": "111 correction weighted by w or w\u00b2; 100/110 remain old-only, no measured angular volume"
+      }
+    },
+    {
+      "material": "NiH",
+      "isotope": "H",
+      "temperature_K": 300,
+      "variant": "isolated_w",
+      "msd_A2": 0.06558803824518014,
+      "kinetic_eV": 0.07823535022768911,
+      "probability_r_gt_048": 0.012480309149510793,
+      "probability_r_gt_080": 9.509815647885499e-07,
+      "support": {
+        "consumer": "isolated 3D eigenstate/Fourier canonical",
+        "model_and_numeric": "nih/support.json",
+        "evidence_key": "w_300K",
+        "angular": "111 correction weighted by w or w\u00b2; 100/110 remain old-only, no measured angular volume"
+      }
+    },
+    {
+      "material": "NiH",
+      "isotope": "H",
+      "temperature_K": 300,
+      "variant": "isolated_w2",
+      "msd_A2": 0.06536262144584319,
+      "kinetic_eV": 0.07840889971340707,
+      "probability_r_gt_048": 0.012181239872729214,
+      "probability_r_gt_080": 7.986569232524939e-07,
+      "support": {
+        "consumer": "isolated 3D eigenstate/Fourier canonical",
+        "model_and_numeric": "nih/support.json",
+        "evidence_key": "w2_300K",
+        "angular": "111 correction weighted by w or w\u00b2; 100/110 remain old-only, no measured angular volume"
+      }
+    },
+    {
+      "material": "NiH",
+      "isotope": "H",
+      "temperature_K": 300,
+      "variant": "isolated_w_stiff_exterior",
+      "msd_A2": 0.06558798971318966,
+      "kinetic_eV": 0.0782353829580011,
+      "probability_r_gt_048": 0.01248020291274975,
+      "probability_r_gt_080": 9.327155782307624e-07,
+      "support": {
+        "consumer": "isolated 3D eigenstate/Fourier canonical",
+        "model_and_numeric": "nih/support.json",
+        "evidence_key": "w_stiff_exterior_300K",
+        "angular": "111 correction weighted by w or w\u00b2; 100/110 remain old-only, no measured angular volume"
+      }
+    },
+    {
+      "material": "NiH",
+      "isotope": "H",
+      "temperature_K": 77,
+      "variant": "finite_P_tagged_old",
+      "msd_A2": 0.061992339745102036,
+      "kinetic_eV": 0.07341289226410105,
+      "probability_r_gt_048": 0.009733926342072409,
+      "probability_r_gt_080": null,
+      "support": {
+        "consumer": "one-site finite-P reweight; centroid-virial kinetic",
+        "model_and_numeric": "nih/support.json",
+        "evidence_key": "77",
+        "angular": "111 correction weighted by w or w\u00b2; 100/110 remain old-only, no measured angular volume"
+      }
+    },
+    {
+      "material": "NiH",
+      "isotope": "H",
+      "temperature_K": 77,
+      "variant": "finite_P_tagged_w",
+      "msd_A2": 0.06245931705882051,
+      "kinetic_eV": 0.07290477724236219,
+      "probability_r_gt_048": 0.010392851068610744,
+      "probability_r_gt_080": null,
+      "support": {
+        "consumer": "one-site finite-P reweight; centroid-virial kinetic",
+        "model_and_numeric": "nih/support.json",
+        "evidence_key": "77",
+        "angular": "111 correction weighted by w or w\u00b2; 100/110 remain old-only, no measured angular volume"
+      }
+    },
+    {
+      "material": "NiH",
+      "isotope": "H",
+      "temperature_K": 77,
+      "variant": "finite_P_tagged_w2",
+      "msd_A2": 0.06228781636293882,
+      "kinetic_eV": 0.07311504224640493,
+      "probability_r_gt_048": 0.010157875317364728,
+      "probability_r_gt_080": null,
+      "support": {
+        "consumer": "one-site finite-P reweight; centroid-virial kinetic",
+        "model_and_numeric": "nih/support.json",
+        "evidence_key": "77",
+        "angular": "111 correction weighted by w or w\u00b2; 100/110 remain old-only, no measured angular volume"
+      }
+    },
+    {
+      "material": "NiH",
+      "isotope": "H",
+      "temperature_K": 300,
+      "variant": "finite_P_tagged_old",
+      "msd_A2": 0.06882445249329332,
+      "kinetic_eV": 0.07909225023986945,
+      "probability_r_gt_048": 0.01775124843945069,
+      "probability_r_gt_080": null,
+      "support": {
+        "consumer": "one-site finite-P reweight; centroid-virial kinetic",
+        "model_and_numeric": "nih/support.json",
+        "evidence_key": "300",
+        "angular": "111 correction weighted by w or w\u00b2; 100/110 remain old-only, no measured angular volume"
+      }
+    },
+    {
+      "material": "NiH",
+      "isotope": "H",
+      "temperature_K": 300,
+      "variant": "finite_P_tagged_w",
+      "msd_A2": 0.0698731932041443,
+      "kinetic_eV": 0.07871814174016042,
+      "probability_r_gt_048": 0.01967979191607119,
+      "probability_r_gt_080": null,
+      "support": {
+        "consumer": "one-site finite-P reweight; centroid-virial kinetic",
+        "model_and_numeric": "nih/support.json",
+        "evidence_key": "300",
+        "angular": "111 correction weighted by w or w\u00b2; 100/110 remain old-only, no measured angular volume"
+      }
+    },
+    {
+      "material": "NiH",
+      "isotope": "H",
+      "temperature_K": 300,
+      "variant": "finite_P_tagged_w2",
+      "msd_A2": 0.06948714851542993,
+      "kinetic_eV": 0.07887807684264014,
+      "probability_r_gt_048": 0.018976777202601363,
+      "probability_r_gt_080": null,
+      "support": {
+        "consumer": "one-site finite-P reweight; centroid-virial kinetic",
+        "model_and_numeric": "nih/support.json",
+        "evidence_key": "300",
+        "angular": "111 correction weighted by w or w\u00b2; 100/110 remain old-only, no measured angular volume"
+      }
+    }
+  ],
+  "units": {
+    "msd_A2": "\u00c5\u00b2",
+    "kinetic_eV": "eV",
+    "probability": "dimensionless"
+  },
+  "separation": "support.consumer distinguishes isolated and one-site finite-P rows; null is unsupported, not zero"
+}

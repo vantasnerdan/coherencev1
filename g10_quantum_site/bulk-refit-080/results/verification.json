@@ -1,0 +1,206 @@
+{
+  "scope": "settled joined table/readback, changed PdD distribution and exact-input consumer only; not independent physical validation",
+  "python": "3.12.3",
+  "numpy": "2.5.5",
+  "scipy": "1.18.1",
+  "source_sha256": "18fa6232525243391b84f2fb495cfe9947f7d41eef270931fb3dc8b99857e28d",
+  "joined_rows": 34,
+  "materials": [
+    "NiH",
+    "PdD"
+  ],
+  "csv_readback": "exact common scalar/null agreement",
+  "normalizations": [
+    {
+      "temperature_K": 300,
+      "variant": "old",
+      "kind": "position",
+      "normalization": 1.0000000096350765
+    },
+    {
+      "temperature_K": 300,
+      "variant": "quadratic",
+      "kind": "position",
+      "normalization": 1.0000000095875001
+    },
+    {
+      "temperature_K": 300,
+      "variant": "quartic",
+      "kind": "position",
+      "normalization": 1.0000000096542454
+    },
+    {
+      "temperature_K": 300,
+      "variant": "wide_quadratic",
+      "kind": "position",
+      "normalization": 1.0000000099682615
+    },
+    {
+      "temperature_K": 300,
+      "variant": "wide_quartic",
+      "kind": "position",
+      "normalization": 1.0000000099738957
+    },
+    {
+      "temperature_K": 300,
+      "variant": "old",
+      "kind": "momentum",
+      "normalization": 1.0000001002211154
+    },
+    {
+      "temperature_K": 300,
+      "variant": "quadratic",
+      "kind": "momentum",
+      "normalization": 1.0000000981206905
+    },
+    {
+      "temperature_K": 300,
+      "variant": "quartic",
+      "kind": "momentum",
+      "normalization": 1.000000098685282
+    },
+    {
+      "temperature_K": 300,
+      "variant": "wide_quadratic",
+      "kind": "momentum",
+      "normalization": 1.0000000979443688
+    },
+    {
+      "temperature_K": 300,
+      "variant": "wide_quartic",
+      "kind": "momentum",
+      "normalization": 1.0000000979272208
+    },
+    {
+      "temperature_K": 77,
+      "variant": "old",
+      "kind": "position",
+      "normalization": 1.0000000548898205
+    },
+    {
+      "temperature_K": 77,
+      "variant": "quadratic",
+      "kind": "position",
+      "normalization": 1.0000000550880586
+    },
+    {
+      "temperature_K": 77,
+      "variant": "quartic",
+      "kind": "position",
+      "normalization": 1.0000000550081038
+    },
+    {
+      "temperature_K": 77,
+      "variant": "wide_quadratic",
+      "kind": "position",
+      "normalization": 1.0000000552343933
+    },
+    {
+      "temperature_K": 77,
+      "variant": "wide_quartic",
+      "kind": "position",
+      "normalization": 1.0000000552449997
+    },
+    {
+      "temperature_K": 77,
+      "variant": "old",
+      "kind": "momentum",
+      "normalization": 1.000000092038765
+    },
+    {
+      "temperature_K": 77,
+      "variant": "quadratic",
+      "kind": "momentum",
+      "normalization": 1.0000000811097631
+    },
+    {
+      "temperature_K": 77,
+      "variant": "quartic",
+      "kind": "momentum",
+      "normalization": 1.0000000857272515
+    },
+    {
+      "temperature_K": 77,
+      "variant": "wide_quadratic",
+      "kind": "momentum",
+      "normalization": 1.0000000843501275
+    },
+    {
+      "temperature_K": 77,
+      "variant": "wide_quartic",
+      "kind": "momentum",
+      "normalization": 1.0000000843065977
+    }
+  ],
+  "signed_plane_marginals": [
+    {
+      "temperature_K": 300,
+      "variant": "old",
+      "normalization": 0.9999999990822402,
+      "max_signed_reflection_defect": 2.220446049250313e-15
+    },
+    {
+      "temperature_K": 300,
+      "variant": "quadratic",
+      "normalization": 0.9999999988085603,
+      "max_signed_reflection_defect": 2.4424906541753444e-15
+    },
+    {
+      "temperature_K": 300,
+      "variant": "quartic",
+      "normalization": 0.999999998960918,
+      "max_signed_reflection_defect": 2.6645352591003757e-15
+    },
+    {
+      "temperature_K": 300,
+      "variant": "wide_quadratic",
+      "normalization": 0.9999999989677453,
+      "max_signed_reflection_defect": 2.220446049250313e-15
+    },
+    {
+      "temperature_K": 300,
+      "variant": "wide_quartic",
+      "normalization": 0.9999999989712982,
+      "max_signed_reflection_defect": 2.4424906541753444e-15
+    },
+    {
+      "temperature_K": 77,
+      "variant": "old",
+      "normalization": 1.0000000087912015,
+      "max_signed_reflection_defect": 2.886579864025407e-15
+    },
+    {
+      "temperature_K": 77,
+      "variant": "quadratic",
+      "normalization": 1.0000000085167962,
+      "max_signed_reflection_defect": 2.886579864025407e-15
+    },
+    {
+      "temperature_K": 77,
+      "variant": "quartic",
+      "normalization": 1.0000000085701752,
+      "max_signed_reflection_defect": 2.6645352591003757e-15
+    },
+    {
+      "temperature_K": 77,
+      "variant": "wide_quadratic",
+      "normalization": 1.0000000085658818,
+      "max_signed_reflection_defect": 2.886579864025407e-15
+    },
+    {
+      "temperature_K": 77,
+      "variant": "wide_quartic",
+      "normalization": 1.0000000085663387,
+      "max_signed_reflection_defect": 2.6645352591003757e-15
+    }
+  ],
+  "exact_anchor_max_abs_error": 1.1102230246251565e-16,
+  "shared_region_variant_max_abs_error": 0.0,
+  "coupled": "consumed recorded graph/callback/direct-shift controls; no sampling or characteristic rerun",
+  "NiH": {
+    "consumer": "source-linked shared fields read back exactly; recorded owner normalization/virial/overlap controls consumed without a numerical rerun",
+    "owner_table_sha256": "749b584349257cf4b919a4df75172b1cb1495bcc52df08ab1f7e56b17cc6aae8",
+    "owner_support_sha256": "f9830e2a3d2a544df6629aa988663ff52b08b246353bfb93f5e6641bff283e6c",
+    "owner_distributions_sha256": "666b0de6c3600ba2245d701bae32436373d4ab58e06f8573f6bc82db11e92bfe"
+  }
+}

@@ -1,5 +1,7 @@
 # Lead's note on the PdD refit through 0.48 A
 
+Superseded by the refit through 0.8 A: see [bulk-refit-080](../bulk-refit-080/LEAD.md).
+
 The well of a deuteron in PdD was refitted with first-principles points out to 0.48 A from the site (twice the earlier reach), with no quartic form assumed inside that range. The deuteron comes out slightly more spread than before: mean-square displacement 0.0806 to 0.0828 A^2 at 300 K (plus 2.8 percent) and 0.0635 to 0.0641 A^2 at 77 K (plus 0.9 percent). The share of its probability beyond 0.48 A is 3.3 percent at 300 K. The earlier quartic well was close; the picture in the parent page stands.
 
 What is still extrapolated: everything beyond 0.48 A, and directions between the three computed rays. The two continuations tried differ by more than the numerical error. Points to about 0.8 A, NiH, the pair cut and the surface sites are still to come.

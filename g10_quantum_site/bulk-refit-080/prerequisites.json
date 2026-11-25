@@ -1,0 +1,245 @@
+{
+  "source": "authenticated Giuliano Fleet entry_3684; asset 789418823",
+  "source_archive_bytes": 94239,
+  "source_archive_sha256": "8085c5623dfbbf137a097249e6637c42182565dcb3760ee544e36df1f90553f4",
+  "signed_json_sha256": "18fa6232525243391b84f2fb495cfe9947f7d41eef270931fb3dc8b99857e28d",
+  "prior_accepted_revision": "ed06115",
+  "repository_base": "7349c26e626d41262f9ad66ab94e9e266373425c",
+  "external_prerequisites": [
+    {
+      "path": "g10_quantum_site/bulk-refit-048/coupled_sensitivity.py",
+      "bytes": 16751,
+      "sha256": "5a7b84c13be1171adf5603a64012754bafbef1897744c4ae20849a42a79c00ee",
+      "role": "exact pre-portability source consumed for the scientific result; available in prior asset 789149873",
+      "accepted_replay_equivalent": {
+        "bytes": 16709,
+        "sha256": "10988fafc1061660f234101526288d885d5705af3bcc66caf1f40b9f45ddb476",
+        "accepted_main": "4f1fd691af7d797b4bea7dfedc8103154d0b36cf",
+        "difference": "one reporting-string substitution: (an interpreter path under the author home directory) -> python; callbacks/operator unchanged, as observed by Main",
+        "identity_basis": "SHA/size derived from the consumed source by the exact single substitution reported by Main",
+        "replay_selection": "keep the accepted portable script; do not overwrite it from the prior capsule"
+      }
+    },
+    {
+      "path": "g10_quantum_site/bulk-refit-048/inputs/bulk-wells.json",
+      "bytes": 153191,
+      "sha256": "000612c601ee3cce30fc6c904ba527607ef3680ca2cec4d54ecf2d674d364a82"
+    },
+    {
+      "path": "g10_quantum_site/bulk-refit-048/inputs/old-readout.json",
+      "bytes": 51609,
+      "sha256": "c87e06ae646d2311c77d6cc8bfb3b9548bafa06d6342914a4fe14fd6c182d3cf"
+    },
+    {
+      "path": "g10_quantum_site/bulk-refit-048/results/D_300_old_check_distributions.npz",
+      "bytes": 29972,
+      "sha256": "de6dd4f9bac7b7e70b64032e69e39c36e04c19610ec8afc6e030ce0ef909a98c"
+    },
+    {
+      "path": "g10_quantum_site/bulk-refit-048/results/D_300_old_main_distributions.npz",
+      "bytes": 7560789,
+      "sha256": "0a310ce4fa4ae591c413dc6652e89f707a32aca2245b5ff20a53843127c70991"
+    },
+    {
+      "path": "g10_quantum_site/bulk-refit-048/results/D_300_quadratic_check_distributions.npz",
+      "bytes": 29837,
+      "sha256": "dbe00ea72428e0fdd20682653b73d362ea131df5afda19ac45de3d25fcc0e46e"
+    },
+    {
+      "path": "g10_quantum_site/bulk-refit-048/results/D_300_quadratic_main_distributions.npz",
+      "bytes": 6943040,
+      "sha256": "a99af2cd30287bbdbd7b8dbbd5a80049ed7277770f31e340ae44bfe999c66649"
+    },
+    {
+      "path": "g10_quantum_site/bulk-refit-048/results/D_300_quartic_check_distributions.npz",
+      "bytes": 29874,
+      "sha256": "15b865d4bfa1e1e69d071bb9750fd29c73e99471c59723b7852dd57b75be1af6"
+    },
+    {
+      "path": "g10_quantum_site/bulk-refit-048/results/D_300_quartic_main_distributions.npz",
+      "bytes": 7093721,
+      "sha256": "0172b7b64130bda9b367215843fe406b25040ebcf2aa6ada53d6ff55fe6f5995"
+    },
+    {
+      "path": "g10_quantum_site/bulk-refit-048/results/D_77_old_check_distributions.npz",
+      "bytes": 30002,
+      "sha256": "783ab35fce1c0e975b3f8cff4f3194accd57e6e3e896eaeafe2b394adf8d7f4a"
+    },
+    {
+      "path": "g10_quantum_site/bulk-refit-048/results/D_77_old_main_distributions.npz",
+      "bytes": 7540628,
+      "sha256": "2c66e7c7f96ff3157d2cb27548ed6766c6f826f7af0e5bef19966f40ac87582b"
+    },
+    {
+      "path": "g10_quantum_site/bulk-refit-048/results/D_77_quadratic_check_distributions.npz",
+      "bytes": 29892,
+      "sha256": "127e8f823c9935191af024803ce12bed2285176e274634a97db1de95c32ca69e"
+    },
+    {
+      "path": "g10_quantum_site/bulk-refit-048/results/D_77_quadratic_main_distributions.npz",
+      "bytes": 6947692,
+      "sha256": "a93ca82b87d05f626f0f257a54176a3008ef98df644dd288fc45aaa68669f51e"
+    },
+    {
+      "path": "g10_quantum_site/bulk-refit-048/results/D_77_quartic_check_distributions.npz",
+      "bytes": 29909,
+      "sha256": "1fb19d289a390012f82f3ca93f4677230378793f1a7f3fc424f5459154bee7f1"
+    },
+    {
+      "path": "g10_quantum_site/bulk-refit-048/results/D_77_quartic_main_distributions.npz",
+      "bytes": 7048194,
+      "sha256": "7f1cc67dd105f5285e40847faf8151e557f15793800eeb4a08cb024ee2926e26"
+    },
+    {
+      "path": "g10_quantum_site/bulk-refit-048/results/summary_check.json",
+      "bytes": 6347,
+      "sha256": "a87388544e0aa4ea86692674652a2a0548b288cf78453fdccfff41d7286146dd"
+    },
+    {
+      "path": "g10_quantum_site/bulk-refit-048/results/summary_main.json",
+      "bytes": 6651,
+      "sha256": "b9ae58766cfef9c3c66b95f6153a41b2fc7d681dceebe9c2e429be26826d19f3"
+    },
+    {
+      "path": "g10_quantum_site/bulk-refit-048/solve.py",
+      "bytes": 11204,
+      "sha256": "1079e1da6533d8a0e02f5ecb79c9311e658e4b2d38981f4453d7b9571560960d"
+    },
+    {
+      "path": "g10_quantum_site/bulk-refit-048/well.py",
+      "bytes": 4683,
+      "sha256": "33816c41b5d3a4567c41c0576652e70a00c3fe1c861e49ce0023ce34ed1b6941"
+    },
+    {
+      "path": "g10_quantum_site/coupled_momentum.py",
+      "bytes": 18178,
+      "sha256": "9842c8e84f1dbbf9fc06a9954df8aaaa5bfce6a2433db134dcf035ec5f0e39b1"
+    },
+    {
+      "path": "g10_quantum_site/exact.py",
+      "bytes": 11324,
+      "sha256": "c96e2a2486e7e7e09ba58f80638f67037740dcfe69895cae19709ace66b0ef1c"
+    },
+    {
+      "path": "g10_quantum_site/model.py",
+      "bytes": 8852,
+      "sha256": "2f0f6f90dc6a813dab64695415bfb9bee44a92308ab412831254d5624a7ac03b"
+    },
+    {
+      "path": "g10_quantum_site/output/coupled/NiH_300K_paths.npz",
+      "bytes": 1138606,
+      "sha256": "dbe2ac8a1205df13f7200959a75e7245b86f6d05b48b67ff04281d9d6e116650"
+    },
+    {
+      "path": "g10_quantum_site/output/coupled/NiH_77K_paths.npz",
+      "bytes": 4517755,
+      "sha256": "298da5721fad14e3a8bca78ab0131e51c962b9957507b0df843291b8cb052571"
+    },
+    {
+      "path": "g10_quantum_site/output/coupled/PdD_300K_paths.npz",
+      "bytes": 1133191,
+      "sha256": "e586a82c15f270e4617af122508f6db55a8c3744d9710849971f4f4f9c0d9bb9"
+    },
+    {
+      "path": "g10_quantum_site/output/coupled/PdD_77K_paths.npz",
+      "bytes": 4521167,
+      "sha256": "f0fd323070b8b8c8e5e556c6b79eda46ab1a19762eb5e0ccaebad0cc1ae83d6e"
+    },
+    {
+      "path": "g10_quantum_site/output/coupled/trajectory_summary.json",
+      "bytes": 19037,
+      "sha256": "fba4f1fb85cdcde7aa0f7e2214328c0d8100a0f8028b615943b3c41c1d7c640d"
+    },
+    {
+      "path": "g10_quantum_site/output/exact/NiH_300K_joint.npz",
+      "bytes": 24135,
+      "sha256": "759c25959002b9ab942d91b0ce70c81879498d4480d9ad21b9d36adfe54841e9"
+    },
+    {
+      "path": "g10_quantum_site/output/exact/NiH_77K_joint.npz",
+      "bytes": 24126,
+      "sha256": "ea9f851978a79017becd088472331981ff528e1cdde9d13dec3d2809d8e26585"
+    },
+    {
+      "path": "g2_refit/computed_inputs.json",
+      "bytes": 1795,
+      "sha256": "cb813aa06b14b97983b4ab5c8f79ab49c6420b20ce9a2bc82de854fa673ee12c"
+    },
+    {
+      "path": "g3_loading/nih_x1/dense_Ni/k3/readout-20261114T0917Z.json",
+      "bytes": 47403,
+      "sha256": "ca59c4098b718b67647d493cf98e5cde872d0ba1bdbafab5e6c0b496456e00c3"
+    },
+    {
+      "path": "g3_loading/nih_x1_quartic/dense_Ni/k3/quartic/readout-100-final-20261114T1001Z.json",
+      "bytes": 13939,
+      "sha256": "9055523c121048655c929e56b5aec06cb1ab44c464b48c7ffe30a8d6d746764b"
+    },
+    {
+      "path": "g3_loading/x1/dense_Pd/k3/final-x1-dense-readout-20261114T0213Z.json",
+      "bytes": 51609,
+      "sha256": "c87e06ae646d2311c77d6cc8bfb3b9548bafa06d6342914a4fe14fd6c182d3cf"
+    }
+  ],
+  "prior_archive_overlay": {
+    "asset_id": 789149873,
+    "archive_filename": "g10-pdd-refit-048.tar.gz",
+    "archive_sha256": "52c9b8fc0973d274244949d00ac1eadddac9997b153f8359cfaf023e8e48d9aa",
+    "asset_url": "https://api.github.com/repos/vantasnerdan/coherencev1/releases/assets/789149873",
+    "accepted_main": "4f1fd691af7d797b4bea7dfedc8103154d0b36cf",
+    "members": [
+      "g10_quantum_site/bulk-refit-048/results/D_77_old_main_distributions.npz",
+      "g10_quantum_site/bulk-refit-048/results/D_77_quadratic_main_distributions.npz",
+      "g10_quantum_site/bulk-refit-048/results/D_77_quartic_main_distributions.npz",
+      "g10_quantum_site/bulk-refit-048/results/D_300_old_main_distributions.npz",
+      "g10_quantum_site/bulk-refit-048/results/D_300_quadratic_main_distributions.npz",
+      "g10_quantum_site/bulk-refit-048/results/D_300_quartic_main_distributions.npz"
+    ],
+    "scope": "extract only these six arrays into a separate replay tree; no regeneration, old/current mutation or copies in this new capsule",
+    "instructions": "replay.md: Prerequisites without duplicating old data"
+  },
+  "regenerable_generated_outputs": [
+    {
+      "path": "g10_quantum_site/bulk-refit-080/results/D_300_wide_quadratic_main_distributions.npz",
+      "bytes": 7060467,
+      "sha256": "dacc49c3a0caaf91a49245ee62b0ec540b461e391a4710470f7286488111ce0c"
+    },
+    {
+      "path": "g10_quantum_site/bulk-refit-080/results/D_300_wide_quartic_main_distributions.npz",
+      "bytes": 7070527,
+      "sha256": "1d92577584ea75d9def28cd48268dc77ed58fb51022b3abb68287b5c0bfe26a3"
+    },
+    {
+      "path": "g10_quantum_site/bulk-refit-080/results/D_77_wide_quadratic_main_distributions.npz",
+      "bytes": 7000142,
+      "sha256": "e7e1ad21c22568d31d9647c305084c8b927cc497b2d95abcebc72114b2abdb80"
+    },
+    {
+      "path": "g10_quantum_site/bulk-refit-080/results/D_77_wide_quartic_main_distributions.npz",
+      "bytes": 7008435,
+      "sha256": "412caf8e72416bae99a5ac6737f2e08345a31d02cfbb5a8eb76a351ff85e80c2"
+    },
+    {
+      "path": "g10_quantum_site/bulk-refit-080/results/D_wide_quadratic_check_spectrum.npz",
+      "bytes": 4348431,
+      "sha256": "391870365fbea7045130f0b51e3cd7dfe66528fcd5d53957768ac427545dbf72"
+    },
+    {
+      "path": "g10_quantum_site/bulk-refit-080/results/D_wide_quadratic_main_spectrum.npz",
+      "bytes": 2505445,
+      "sha256": "72e0b3d4059bc3e53d7dbd7c590a9f5d92e6d8322d9739cc0bb8ae8cf6fa32fa"
+    },
+    {
+      "path": "g10_quantum_site/bulk-refit-080/results/D_wide_quartic_check_spectrum.npz",
+      "bytes": 4030930,
+      "sha256": "84e2f64870c56ceee55dc391e7d551a390877093da9156e0fa61d9d81642512a"
+    },
+    {
+      "path": "g10_quantum_site/bulk-refit-080/results/D_wide_quartic_main_spectrum.npz",
+      "bytes": 2313099,
+      "sha256": "c2fe101c36f4e6eba566755638f07d66cdd52e187fa36b242e71a31f04dfc308"
+    }
+  ],
+  "regeneration": "Exact portable Python commands are in replay.md and nih/README.md.",
+  "rule": "external prerequisite bytes are not duplicated; >1 MB generated NPZ arrays are omitted and regenerable, not required for supplied table/figure consumption"
+}
