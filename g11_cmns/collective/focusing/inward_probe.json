@@ -1,0 +1,15 @@
+{
+  "n_D": 131072,
+  "dt_fs": 0.5,
+  "measured_endpoint_fs": 155.0,
+  "measured_gradient_seconds": 87.87101280270144,
+  "endpoint_inward_eV": 0.00037657752842002845,
+  "gradient_norm": 0.24247616056200316,
+  "estimated_1781_5fs_gradient_seconds": 1009.9497374710492,
+  "estimated_full_native_seconds": 440.0,
+  "estimated_checkpoint_bytes": 534773760,
+  "gradient_finite": true,
+  "numerical_threads": 1,
+  "correction": "100fs inward probe did not assert a nonzero pullback; replaced by archived positive-closing endpoint",
+  "decision": "use first full-pulse gradient once and admit subsequent updates by measured costs; individual search below 2h expected"
+}

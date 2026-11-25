@@ -1,0 +1,341 @@
+{
+  "schema": "pdd-pulse-size-capsule-v1",
+  "publication": "unpublished local only",
+  "accepted_nonlinear_revision": "49b8831d5f5e5ed3b7f2e72bc0e7fa536765e25a",
+  "plan": "coherencev1-g11-pulse-size-20261125",
+  "files": [
+    {
+      "path": "g10_quantum_site/.input-080/g10_quantum_site/bulk-wide-wells/bulk-wells.json",
+      "bytes": 319722,
+      "sha256": "18fa6232525243391b84f2fb495cfe9947f7d41eef270931fb3dc8b99857e28d",
+      "role": "unchanged exact nonlinear replay binding"
+    },
+    {
+      "path": "g10_quantum_site/bulk-refit-048/inputs/bulk-wells.json",
+      "bytes": 153191,
+      "sha256": "000612c601ee3cce30fc6c904ba527607ef3680ca2cec4d54ecf2d674d364a82",
+      "role": "unchanged exact nonlinear replay binding"
+    },
+    {
+      "path": "g10_quantum_site/bulk-refit-048/inputs/old-readout.json",
+      "bytes": 51609,
+      "sha256": "c87e06ae646d2311c77d6cc8bfb3b9548bafa06d6342914a4fe14fd6c182d3cf",
+      "role": "unchanged exact nonlinear replay binding"
+    },
+    {
+      "path": "g10_quantum_site/bulk-refit-048/well.py",
+      "bytes": 4683,
+      "sha256": "33816c41b5d3a4567c41c0576652e70a00c3fe1c861e49ce0023ce34ed1b6941",
+      "role": "unchanged exact nonlinear replay binding"
+    },
+    {
+      "path": "g10_quantum_site/bulk-refit-080/well.py",
+      "bytes": 2881,
+      "sha256": "a791fe4a4b13e5cf60ab0fc1e20c8c4c8be2e49a67ad2b2e0b373465a314bc9e",
+      "role": "unchanged exact nonlinear replay binding"
+    },
+    {
+      "path": "g10_quantum_site/model.py",
+      "bytes": 8852,
+      "sha256": "2f0f6f90dc6a813dab64695415bfb9bee44a92308ab412831254d5624a7ac03b",
+      "role": "unchanged exact nonlinear replay binding"
+    },
+    {
+      "path": "g11_cmns/collective/.pair-input/g10_quantum_site/pdd-nearest-pair/pair-cut.csv",
+      "bytes": 844,
+      "sha256": "8b610c379ab585b01a2a17b140de97835d0733fe29a09d5bfe2e350f3b30f8b6",
+      "role": "unchanged exact nonlinear replay binding"
+    },
+    {
+      "path": "g11_cmns/collective/contact/contact.py",
+      "bytes": 18005,
+      "sha256": "d91cddf7dccb7ac9508c69a894b953596a56a981d7d5d015d42bcb3ff5fb4cc7",
+      "role": "unchanged conditional radial model binding"
+    },
+    {
+      "path": "g11_cmns/collective/contact/g12_readout.py",
+      "bytes": 2298,
+      "sha256": "7671c4b38542c728c99fd9d9a8633f0934f00c0d0369c55c0d526d05cd5e01a9",
+      "role": "unchanged conditional radial model binding"
+    },
+    {
+      "path": "g11_cmns/collective/contact/inputs.json",
+      "bytes": 1862,
+      "sha256": "7e561e530cc5a375099340abb00546da8f87cb9dab30106d032fd220b21e3272",
+      "role": "unchanged conditional radial model binding"
+    },
+    {
+      "path": "g11_cmns/collective/contact/method.md",
+      "bytes": 7326,
+      "sha256": "c751960f5dcbfb49253182c7ccd0a7856e03c860a038bc3bacfdc78fac5169c4",
+      "role": "unchanged conditional radial model binding"
+    },
+    {
+      "path": "g11_cmns/collective/contact/readout_contract.md",
+      "bytes": 6835,
+      "sha256": "f0b08698875725faeeef67317a9e1e46d918800abfe049ce6ac1ae29a63381fc",
+      "role": "unchanged conditional radial model binding"
+    },
+    {
+      "path": "g11_cmns/collective/contact/results.json",
+      "bytes": 53175,
+      "sha256": "ed4ec3bcd24bccd654ff42e9e6e2aabcbbfc3d65823fcb6761bcddf4147a5bef",
+      "role": "unchanged conditional radial model binding"
+    },
+    {
+      "path": "g11_cmns/collective/focusing/README.md",
+      "bytes": 35930,
+      "sha256": "9ae098f4e7b79dc0ce4909aa5c6b6a08c4e9b8ed0bbd769f620520f0a0fd7365",
+      "role": "pulse/size delivery"
+    },
+    {
+      "path": "g11_cmns/collective/focusing/adjoint.py",
+      "bytes": 7041,
+      "sha256": "7e5a50bbdfe8a3d7a985315b05855e8eaba9976c5d5aa1bef3893e302c0b0543",
+      "role": "unchanged exact nonlinear replay binding"
+    },
+    {
+      "path": "g11_cmns/collective/focusing/continuation_results.json",
+      "bytes": 647678,
+      "sha256": "ded1794a837cc3b8b28a0f6f91d9380c4495226d350b7c5fbbc11b0ee6c74b71",
+      "role": "unchanged exact nonlinear replay binding"
+    },
+    {
+      "path": "g11_cmns/collective/focusing/continuation_states.npz",
+      "bytes": 2328962,
+      "sha256": "2a258d8fdaa853c0d923cdc20f964b54fad94709bb312ad7b7a5ef9d1fa7e6bb",
+      "role": "unchanged exact nonlinear replay binding"
+    },
+    {
+      "path": "g11_cmns/collective/focusing/continuation_traces.npz",
+      "bytes": 11205849,
+      "sha256": "beb9d2cf77e5b315f592e054a9a69072d9f4281845afbd89a2c6bd1b959ec22f",
+      "role": "unchanged exact accepted seed-restoration binding"
+    },
+    {
+      "path": "g11_cmns/collective/focusing/engine.py",
+      "bytes": 13258,
+      "sha256": "24088eebe9c43161fc1b3feb598268e330211703acc4ea5353e1d5bf9b65a262",
+      "role": "unchanged exact nonlinear replay binding"
+    },
+    {
+      "path": "g11_cmns/collective/focusing/exterior.py",
+      "bytes": 15182,
+      "sha256": "9b6299b9494ebf265d08519400723acbd782d6796bb640e8788ccd3db24da6ea",
+      "role": "unchanged exact nonlinear replay binding"
+    },
+    {
+      "path": "g11_cmns/collective/focusing/input_manifest.json",
+      "bytes": 4737,
+      "sha256": "7df99f83cb829755e14112e3fabb091254ce7612fc7cf0cd0680ccb499a4685a",
+      "role": "unchanged exact nonlinear replay binding"
+    },
+    {
+      "path": "g11_cmns/collective/focusing/inward.py",
+      "bytes": 23593,
+      "sha256": "62e6343e4aafd3b93f058412290c846b10e264e589218ef1cdde05ef8a1a64f9",
+      "role": "pulse/size delivery"
+    },
+    {
+      "path": "g11_cmns/collective/focusing/inward_N131072.json",
+      "bytes": 40254,
+      "sha256": "1c98814b445c39509fe816c6dad432b6b69adaedb004c12d3b3059532baf15c5",
+      "role": "pulse/size delivery"
+    },
+    {
+      "path": "g11_cmns/collective/focusing/inward_N131072.npz",
+      "bytes": 36729770,
+      "sha256": "63b5995365c7fadd85d48c99be065f471c50d871c5b9373bf0fa9cbcffbecd8c",
+      "role": "pulse/size delivery"
+    },
+    {
+      "path": "g11_cmns/collective/focusing/inward_N16384.json",
+      "bytes": 328663,
+      "sha256": "3f83d61779340723ac074a18a95eeb14f765f213434a570d2aaab51f1f735ca1",
+      "role": "pulse/size delivery"
+    },
+    {
+      "path": "g11_cmns/collective/focusing/inward_N16384.npz",
+      "bytes": 8917557,
+      "sha256": "cb2c6892d2db4db667cf477110f2a3d5f4695895690d38b63ad98ee652bb4684",
+      "role": "pulse/size delivery"
+    },
+    {
+      "path": "g11_cmns/collective/focusing/inward_consumer.py",
+      "bytes": 3536,
+      "sha256": "5b90f567e91c51eb0310cf5b3f2349e514064b7f2274672f4424f2482eeb09b8",
+      "role": "pulse/size delivery"
+    },
+    {
+      "path": "g11_cmns/collective/focusing/inward_probe.json",
+      "bytes": 662,
+      "sha256": "fc952c7f07c9bce63d01d2c2d3728732e78ec1af648cc8563cfa92ea9bf96039",
+      "role": "pulse/size delivery"
+    },
+    {
+      "path": "g11_cmns/collective/focusing/large_geometry.py",
+      "bytes": 4710,
+      "sha256": "f5c88d79f5179dee67ccfd1840a980759e4a1714545e52556a95c3014109e8f1",
+      "role": "unchanged exact nonlinear replay binding"
+    },
+    {
+      "path": "g11_cmns/collective/focusing/method.md",
+      "bytes": 33693,
+      "sha256": "ee35b0796d9bec4be2c15642956959cd98208da1434b005dbea5c301432430ed",
+      "role": "pulse/size delivery"
+    },
+    {
+      "path": "g11_cmns/collective/focusing/nonlinear.py",
+      "bytes": 18543,
+      "sha256": "5f4da615635f9dfaa1ec1c881731185b6c622cbed1c46f915ecc0d05f0aab1f0",
+      "role": "unchanged exact nonlinear replay binding"
+    },
+    {
+      "path": "g11_cmns/collective/focusing/nonlinear_N16384_0.6meV.json",
+      "bytes": 365835,
+      "sha256": "c280adf600f30bd839e644d634ef0852287257a9b94ba5124186b692d0b478be",
+      "role": "unchanged exact nonlinear replay binding"
+    },
+    {
+      "path": "g11_cmns/collective/focusing/nonlinear_N16384_0.6meV.npz",
+      "bytes": 6712789,
+      "sha256": "efb16f0e87c07b76c1dd32f8f54c68da58685c49b8dbe240f7275ed35e1162c4",
+      "role": "unchanged exact nonlinear replay binding"
+    },
+    {
+      "path": "g11_cmns/collective/focusing/nonlinear_N2048_25meV.json",
+      "bytes": 344137,
+      "sha256": "1e666333356d9b9ddac043d631a00ea246d2ff348fc510ab557bcd854eb785e0",
+      "role": "unchanged exact nonlinear replay binding"
+    },
+    {
+      "path": "g11_cmns/collective/focusing/nonlinear_N2048_25meV.npz",
+      "bytes": 4512961,
+      "sha256": "5b54cef2292aba609727a4e08aa737000342eec6a248bbd9419a2ad67931a8cf",
+      "role": "unchanged exact nonlinear replay binding"
+    },
+    {
+      "path": "g11_cmns/collective/focusing/nonlinear_N2048_4.8meV.json",
+      "bytes": 589303,
+      "sha256": "203a4fc70d37c3676f5ecdc2f6c19a11b1cf72119a943483af9aef32a4a30f31",
+      "role": "unchanged exact nonlinear replay binding"
+    },
+    {
+      "path": "g11_cmns/collective/focusing/nonlinear_N2048_4.8meV.npz",
+      "bytes": 5712753,
+      "sha256": "6caf2c5a9353f0e7fcf26c3bbd67784c3d880389d160bcd25a570d667b993d04",
+      "role": "unchanged exact nonlinear replay binding"
+    },
+    {
+      "path": "g11_cmns/collective/focusing/nonlinear_geometry.json",
+      "bytes": 97197,
+      "sha256": "d3869087f52ac59e230e44f18574d841a3f58de76afe651d0646c83b601486ab",
+      "role": "unchanged exact nonlinear replay binding"
+    },
+    {
+      "path": "g11_cmns/collective/focusing/nonlinear_manifest.json",
+      "bytes": 9225,
+      "sha256": "83429d386458b9c1639ebe9a8367d35d6a01a64e0a6698d8fe740d7ec742d1c4",
+      "role": "unchanged original nonlinear replay manifest"
+    },
+    {
+      "path": "g11_cmns/collective/focusing/nonlinear_package.py",
+      "bytes": 6432,
+      "sha256": "77f34392928792b9345e2caa07e29c950a3ba3da7449df5f786fb3a7bda6a7b7",
+      "role": "unchanged exact nonlinear replay binding"
+    },
+    {
+      "path": "g11_cmns/collective/focusing/nonlinear_probe.json",
+      "bytes": 437,
+      "sha256": "29c4f47d3db376220f00702f057815bfc2339d0fe86a822a54505c9c96fc250b",
+      "role": "unchanged exact nonlinear replay binding"
+    },
+    {
+      "path": "g11_cmns/collective/focusing/nonlinear_proof.json",
+      "bytes": 13544,
+      "sha256": "da88a3a2d8f129041d74b9a617a9c952c1d9a8539ba89b973b0ba9d52268dd28",
+      "role": "unchanged exact nonlinear replay binding"
+    },
+    {
+      "path": "g11_cmns/collective/focusing/nonlinear_select.py",
+      "bytes": 15610,
+      "sha256": "7b41041d0bebe55ffdb47a257c652422f4b6226f3ff650f9d70fb134754aa21e",
+      "role": "unchanged exact nonlinear replay binding"
+    },
+    {
+      "path": "g11_cmns/collective/focusing/nonlinear_selection.json",
+      "bytes": 104180,
+      "sha256": "b03595aba7289078512ed7331fae863ab8259b57375cf95f409416cedbcfc7f8",
+      "role": "unchanged exact nonlinear replay binding"
+    },
+    {
+      "path": "g11_cmns/collective/focusing/nonlinear_selection.npz",
+      "bytes": 2764103,
+      "sha256": "f8de798965f79668cfb7aa99e478f8b445c74a895ad3d75db82b19cbb488480d",
+      "role": "unchanged exact nonlinear replay binding"
+    },
+    {
+      "path": "g11_cmns/collective/focusing/nonlinear_states.npz",
+      "bytes": 3643936,
+      "sha256": "77e9b81bf142ec1421b6dbdae35d0111c3a3b32d6ba46667b79a5e90642018c7",
+      "role": "unchanged exact nonlinear replay binding"
+    },
+    {
+      "path": "g11_cmns/collective/focusing/nonlinear_verify.py",
+      "bytes": 12509,
+      "sha256": "af093286ccb7ea0341aa84f57bcc743adb605d843a0ba67b5ae8480ab7bd8cdb",
+      "role": "unchanged exact nonlinear replay binding"
+    },
+    {
+      "path": "g11_cmns/collective/focusing/patterns.py",
+      "bytes": 9203,
+      "sha256": "0c3da558cfa2822b408d58614583e700a68fb6472b04aa65a1647e73b0163a57",
+      "role": "unchanged exact nonlinear replay binding"
+    },
+    {
+      "path": "g11_cmns/collective/focusing/pulse/class_bounds.json",
+      "bytes": 41591,
+      "sha256": "8a16953f2f4a6aa5256f4a50702b67da7eedb6bab4c170927800420c5f135905",
+      "role": "integrated conditional pulse result/source"
+    },
+    {
+      "path": "g11_cmns/collective/focusing/pulse/method.md",
+      "bytes": 16572,
+      "sha256": "a8505feb02ad065f58d98376876ccfa21b9e606cc4f323a07a6c9e8247e75035",
+      "role": "integrated conditional pulse result/source"
+    },
+    {
+      "path": "g11_cmns/collective/focusing/pulse/replay.py",
+      "bytes": 17398,
+      "sha256": "c310557735af90cc2e2e82683bb5c8818a554e95d85dc2dea1a79bdad67bbdac",
+      "role": "integrated conditional pulse result/source"
+    },
+    {
+      "path": "g11_cmns/collective/focusing/pulse/results.json",
+      "bytes": 161225,
+      "sha256": "d267738431e9cf3976882a3454239e4fe9f663203395e6fcd393e0e90e6d58dd",
+      "role": "integrated conditional pulse result/source"
+    },
+    {
+      "path": "g11_cmns/collective/focusing/pulse_size_consumer.py",
+      "bytes": 4263,
+      "sha256": "d4b7a23acc5837a1b9353d39f6ab92696b1a8f637ee42a6d19e26c5c53e71bf8",
+      "role": "pulse/size delivery"
+    },
+    {
+      "path": "g11_cmns/collective/focusing/pulse_size_package.py",
+      "bytes": 4203,
+      "sha256": "2db867a19cbb1e2b2609723132b0811ae6ec7d02b31c8de23b83957f3c0862d1",
+      "role": "pulse/size delivery"
+    },
+    {
+      "path": "g3_loading/x1/dense_Pd/k3/final-x1-dense-readout-20261114T0213Z.json",
+      "bytes": 51609,
+      "sha256": "c87e06ae646d2311c77d6cc8bfb3b9548bafa06d6342914a4fe14fd6c182d3cf",
+      "role": "unchanged exact nonlinear replay binding"
+    }
+  ],
+  "semantics": "strictly inward classical selection and explicitly conditional radial pulse probabilities; no physical foil rate",
+  "archive": "pulse_size.tar.gz",
+  "archive_hash": "reported separately; no circular identity"
+}

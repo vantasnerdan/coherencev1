@@ -2,6 +2,64 @@
 
 **Finite-model result, unpublished.** The target is the actual D25→D63 [110] bond; every launch uses the same total N e. Wave/direct launches start with zero target velocity and zero displacement. Reverse recovery and localized collisions are shown, but are not silently promoted to collective preparation.
 
+## Actual inward episodes and conditional quantum pulses
+
+**A classical focus does not identify a quantum contact probability.** On each exact previously selected conservative-inward or loss-designed launch, the pulse below is the strongest **strictly closing** episode, from the preceding outer turn through the inward turn to the first outer rebound, always before the original lattice exit. The loss-designed launch is not selected by its possibly larger receding total K. Min R is the actual minimum sampled within that episode, not the first negative-c sample.
+
+| N; meV/D | Launch | Inward K (eV) | Closing peak (fs) | Episode min R (Å); time (fs) |
+|---|---|---:|---:|---:|
+| 2048; 4.8 | conservative | .569112717 | 678 | 1.705783147; 693.75 |
+| 2048; 4.8 | prior loss-designed | .482499789 | 683.75 | 1.772554556; 700 |
+| 2048; 25 | conservative | .969085973 | 1351.5 | 1.458946788; 1365.5 |
+| 2048; 25 | prior loss-designed | .752524419 | 1021.75 | 1.583652547; 1037 |
+| 16384; .6 | conservative | .294661135 | 1551.5 | 1.924150293; 1569 |
+| 16384; .6 | prior loss-designed | .238535233 | 1734.5 | 2.058895400; 1754.5 |
+
+The explicit quantum example prepares one normalized spatial l=0 radial Gaussian at the preceding outer turn and drives the accepted radial Hamiltonian with a **prescribed radial force flat near the Coulomb cusp**, making the supplied R(t) a **classical** solution. This spatial drive is not the lattice's outside-support continuation. Both existing radial joins and both original flagged-row treatments are retained. The quantum mean radius does **not** reproduce R(t): rms mismatch is **.132–.391 Å**, with velocity mismatch **.0133–.0338 Å/fs**. Quantum preparation, angular projection and active-pair population remain assumptions, so the unconditional physical pulse chance is unknown.
+
+For each history the two absolute energy bands end at the same path-based reference plus **1.5 / 4.5 local quanta**; the initial projected state is identical between bands. In the following **base-10 logs, lower band / upper band**, each span compares the four join/flag models, **not confidence intervals or bounds on physical probability**:
+
+| N; meV/D; launch | Maximum snapshot Pr(r<1 fm) | Proton probability per pair per pulse | Conditional emitted p/s, one pulse per incident D |
+|---|---:|---:|---:|
+| 2048; 4.8; conservative | −112.46…−109.85 / −111.60…−107.97 | −103.80…−101.40 / −103.05…−99.53 | −89.37…−86.97 / −88.61…−85.09 |
+| 2048; 4.8; prior loss | −114.51…−112.05 / −112.86…−110.09 | −105.84…−103.56 / −104.35…−101.53 | −91.41…−89.13 / −89.92…−87.10 |
+| 2048; 25; conservative | −103.53…−99.81 / −101.90…−98.86 | −94.88…−91.42 / −93.27…−90.53 | −80.45…−76.98 / −78.84…−76.09 |
+| 2048; 25; prior loss | −109.59…−105.75 / −107.83…−105.10 | −101.17…−97.30 / −99.57…−96.54 | −86.73…−82.87 / −85.13…−82.10 |
+| 16384; .6; conservative | −117.00…−114.46 / −116.31…−114.17 | −108.42…−105.76 / −107.81…−105.52 | −93.98…−91.33 / −93.38…−91.08 |
+| 16384; .6; prior loss | −118.63…−116.12 / −117.88…−114.35 | −109.87…−107.36 / −109.22…−105.91 | −95.43…−92.93 / −94.79…−91.47 |
+
+The 1-fm occupancy is a **snapshot under the declared Coulomb model**, not a chance of ever hitting contact. Proton yield uses the positive total exposure `Ξ=∫ρ(t)dt` and `Pp=1−exp(−Ap Ξ)`; the ordinary two-branch DD probability is separately retained. The **once-subtracted signed excess** over the same undriven ground is a different observable, with its sign and magnitude in JSON, not a total probability.
+
+Widening the band changes exposure by **.216–2.629 dex**, much more than the retained integration check. In one 16k-loss variant, added levels carry at most **3.23%** of norm but their isolated contribution is **103.5%** of the coherent contact exposure; interference permits this ratio above one. That branch's contact peak is about **32 fs after the inner turn**, and only **3.0%** of its exposure occurs while closing. The examples are therefore cutoff-dependent, not a converged trajectory-to-contact prediction. The accompanying finite-class theorem `ρ≤Σρn`, `Ξ≤Δt Σρn` bounds only states confined to each specified span; it does not establish that confinement in the material.
+
+All four G12 quantities—**emitted p/s, emitted p/true C, k0 and k1**—use the unchanged proton branch, own .25-keV PdD n65, model current and 85/15 beam weighting. The new total one-pulse-per-D `log10 k0` spans **−96.65…−77.31** across the declared examples. For comparison in **the same emitted-proton units**, the legacy concentrated event gives `log10 p/s≈−100.99…−98.79`; the original stationary-level table gives **−87.10…−79.94 p/s** and **−88.31…−81.16 k0**, under its different **continuously active normalized-pair** hypothesis. None is a measured foil rate or detected count. An assumed per-pair repetition f of identically re-prepared pulses gives `f Pp` emitted protons per second from that tagged pair; neither f nor one formation per incident D is inferred.
+
+Exact simultaneous R/c/K, signed turn brackets, both bands and all join/flag readouts are in [pulse/results.json](pulse/results.json); [pulse/class_bounds.json](pulse/class_bounds.json) retains the support-class ceilings, and [pulse/method.md](pulse/method.md) gives the preparation, inverse force, normalization and replay. The original stationary table below is unchanged.
+
+## New inward-first continuation at .6 meV/D
+
+At **131072 D**, the exact stored `direct_mixture_-0.25` was restored without repeating the old bank: its complete saved trace is bitwise reproduced. **One verified actual nonlinear update** improves the strongest inward pulse **.3508277818→.3651465946 eV (+4.08%)**. This is **not a local stop or plateau**.
+
+| N; condition | Inward K (eV) | Signed c (Å/fs) | Time (fs) | Simultaneous R (Å) | Simultaneous max site radius (Å) |
+|---|---:|---:|---:|---:|---:|
+| 131072; conservative update | .365146595 | +.083659009 | 1783.5 | 2.892516654 | .246916770 |
+| 131072; matched passive 4100-fs loss | .248067780 | +.068954763 | 1726 | 2.875515710 | .225190008 |
+| 16384; conservative inward search | .355276079 | +.082520542 | 1543 | 2.860965167 | .162064651 |
+| 16384; matched passive 4100-fs loss | .258517534 | +.070392127 | 1560 | 2.886159522 | .159099530 |
+| 16384; inward reoptimized under actual loss | .270273253 | +.071974826 | 1559 | 2.865175885 | .149070512 |
+
+On the **131k conservative launch**, the **separate minimum R is 1.880234468 Å at 1801 fs**, not the separation at the kinetic peak. The half-inward-energy hold is **20.5 fs**; the full **2400-fs** trajectory remains inside the original extent, with largest site radius **.543386985 Å**. No exterior is used before the score or afterward, and this result does not request an outer force calculation.
+
+The same **131k** launch under actual **4100-fs** amplitude loss gives **.2480677797 eV inward**, with a separate minimum R of **2.005609820 Å at 1744.5 fs**, a **21.5-fs** half-inward-energy hold and full-horizon support (maximum site radius **.485234304 Å**). One additional feasible launch along the retained conservative update direction gives **.2466780456 eV**, so it is rejected: **the matched passive launch remains selected, not reoptimized**. The opposite direction and a fresh lossy adjoint were not searched; no loss plateau is claimed. Its larger total K, **.2494008123 eV**, is **receding** at 1763 fs and is not the inward headline. Neither selected trajectory uses an exterior.
+
+At **16384 D**, **25 accepted actual inward updates** of the exact previous selected launch give **.2946611353→.3552760786 eV (+20.57%)**. The previous total-criterion champion was also .2946611353 eV and inward; the older .12483784-eV bank maximum was receding and is not the objective-matched baseline. The new maximum total K is .3552760787 eV at the same inward sample. Its **separate minimum R is 1.864437351 Å at 1560.5 fs**, with **21.5-fs** half-inward-energy hold and full 2400-fs support; maximum site radius is **.571939345 Å**. The branch was stopped as **out of proportion at the .2% reporting resolution**, not as converged or plateaued. No selected score uses an exterior. The different search depths at 16k and 131k do not define a size-scaling law.
+
+On the exact fixed **16k conservative winner**, matched **4100-fs** passive loss gives **.2585175345 eV inward**. **Nine accepted genuine lossy updates select a different feasible launch** giving **.2702732528 eV (+4.547%)**, also **13.305% above the prior loss-designed inward pulse .2385352331 eV**. Its separate minimum R is **1.957571435 Å at 1577 fs**, versus **1.976186875 Å** for the passive control; both half-inward-energy holds are **22.5 fs**. Both complete 2400 fs inside the original extent, with largest site radii **.512272934/.510084030 Å** for reoptimized/passive. The final accepted gain was still **.831%**, so this is a **bounded best-observed loss result, not a plateau**. The prior loss-total maximum .26806682 eV was receding and is not the inward benchmark.
+
+The launch cap is a deliberate participation/local-energy constraint, **not measured material velocity**, enforcing `IPR≥(N−2)/4`; every prior and delivered selection hits it (active sites, prior conservative/loss: **2048/4.8=24/26, 2048/25=124/32, 16k=252/244**; 131k original **11940**, new conservative/selected passive loss **10282/10282**; new 16k conservative/reoptimized loss **344/323**, with **344** retained in its matched passive control).
+
+Exact launch arrays, full selected traces, same-time readouts and stopping attribution are in [inward_N131072.json](inward_N131072.json) and [inward_N16384.json](inward_N16384.json), with their paired NPZ files. One new unpublished `pulse_size.tar.gz` overlays the accepted baseline; `pulse_size_manifest.json` binds its source/data/input bytes. No new winner is inserted into the original stationary-rate table.
+
 ## Actual nonlinear launch feedback
 
 The new launches use **the same initial N e, zero displacements, zero target velocities and original per-site speed cap**. They are adjusted against the actual nonlinear motion, not another harmonic proposal bank. All scoring remains on the **2400-fs, strictly pre-first-exit** trajectory. The original data and quantum/rate readouts below are unchanged; **none of these new peaks is mapped to a nuclear rate or physical emission**.

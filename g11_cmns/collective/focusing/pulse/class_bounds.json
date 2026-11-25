@@ -1,0 +1,1058 @@
+{
+  "scope": "normalized finite radial span only; archived contact eigenmode slopes; no physical pulse chance or measured rate",
+  "hypothesis": "upper/lower span through max archived K_rad+U(R) over four branches plus 1.5 or 4.5 outward local quanta; Xi <= duration sum rho_n by Cauchy-Schwarz; P <= A_p Xi",
+  "input_sha256": {
+    "nonlinear_selection.json": "b03595aba7289078512ed7331fae863ab8259b57375cf95f409416cedbcfc7f8",
+    "contact/results.json": "ed4ec3bcd24bccd654ff42e9e6e2aabcbbfc3d65823fcb6761bcddf4147a5bef",
+    "contact/inputs.json": "7e561e530cc5a375099340abb00546da8f87cb9dab30106d032fd220b21e3272",
+    "nonlinear_N2048_4.8meV.npz": "6caf2c5a9353f0e7fcf26c3bbd67784c3d880389d160bcd25a570d667b993d04",
+    "nonlinear_N2048_25meV.npz": "5b54cef2292aba609727a4e08aa737000342eec6a248bbd9419a2ad67931a8cf",
+    "nonlinear_N16384_0.6meV.npz": "efb16f0e87c07b76c1dd32f8f54c68da58685c49b8dbe240f7275ed35e1162c4"
+  },
+  "pulses": [
+    {
+      "case": "N2048_4.8meV",
+      "launch": "inward",
+      "archived_trace": "nonlinear_N2048_4.8meV.npz",
+      "trace_key": "K_trace",
+      "signed_turn_brackets_fs": [
+        [
+          660.25,
+          660.5
+        ],
+        [
+          693.5,
+          693.75
+        ],
+        [
+          727.75,
+          728.0
+        ]
+      ],
+      "interpolated_turns_fs": [
+        660.3103871417027,
+        693.6914831078115,
+        727.9658415440049
+      ],
+      "interpolated_turns_R_A": [
+        4.06060868391795,
+        1.7057607723245831,
+        4.162144735734197
+      ],
+      "outer_turn_sampled_R_A": [
+        4.060589727273815,
+        4.162138138554895
+      ],
+      "sampled_min_R_A": 1.7057831470135543,
+      "sampled_min_R_fs": 693.75,
+      "sampled_min_R_index": 2775,
+      "first_receding_sample_index": 2775,
+      "closing_peak_fs": 678.0,
+      "closing_peak_R_A": 2.8357749275865975,
+      "closing_peak_A_fs": 0.10444273427736779,
+      "closing_peak_K_radial_eV": 0.5691127171394433,
+      "max_c_spline_error_A_fs": 1.350549446510474e-05,
+      "first_original_exit_fs": null,
+      "caps": [
+        {
+          "join_A": 1.28782409436586,
+          "include_flagged": true,
+          "lower": {
+            "E_cap_eV": 0.623884270287147,
+            "levels": 12,
+            "last_level_eV": 0.6087525111948773,
+            "log10_contact_density_cap_A_minus3": -97.66461675888584,
+            "log10_Xi_cap_A_minus3_s": -110.834313943594,
+            "log10_proton_pulse_probability_cap": -103.06997311917296,
+            "one_pulse_per_incident_D_G12_linear_ceiling": {
+              "log10_emitted_p_per_s": -88.63420207593752,
+              "log10_emitted_p_per_true_C": -84.21398567255433,
+              "log10_delta_R_k0": -89.85221669096005,
+              "log10_delta_R_k1": -89.05542333052034
+            }
+          },
+          "upper": {
+            "E_cap_eV": 0.7289362909842315,
+            "levels": 13,
+            "last_level_eV": 0.6709747704337459,
+            "log10_contact_density_cap_A_minus3": -96.62097985660512,
+            "log10_Xi_cap_A_minus3_s": -109.79067704131327,
+            "log10_proton_pulse_probability_cap": -102.02633621689223,
+            "one_pulse_per_incident_D_G12_linear_ceiling": {
+              "log10_emitted_p_per_s": -87.5905651736568,
+              "log10_emitted_p_per_true_C": -83.1703487702736,
+              "log10_delta_R_k0": -88.80857978867932,
+              "log10_delta_R_k1": -88.01178642823962
+            }
+          }
+        },
+        {
+          "join_A": 1.6,
+          "include_flagged": true,
+          "lower": {
+            "E_cap_eV": 0.623884270287147,
+            "levels": 12,
+            "last_level_eV": 0.6091169051478134,
+            "log10_contact_density_cap_A_minus3": -97.8021312934264,
+            "log10_Xi_cap_A_minus3_s": -110.97182847813455,
+            "log10_proton_pulse_probability_cap": -103.20748765371351,
+            "one_pulse_per_incident_D_G12_linear_ceiling": {
+              "log10_emitted_p_per_s": -88.77171661047808,
+              "log10_emitted_p_per_true_C": -84.35150020709489,
+              "log10_delta_R_k0": -89.9897312255006,
+              "log10_delta_R_k1": -89.1929378650609
+            }
+          },
+          "upper": {
+            "E_cap_eV": 0.7289362909842315,
+            "levels": 13,
+            "last_level_eV": 0.6718161762527795,
+            "log10_contact_density_cap_A_minus3": -96.79103063014992,
+            "log10_Xi_cap_A_minus3_s": -109.96072781485807,
+            "log10_proton_pulse_probability_cap": -102.19638699043703,
+            "one_pulse_per_incident_D_G12_linear_ceiling": {
+              "log10_emitted_p_per_s": -87.7606159472016,
+              "log10_emitted_p_per_true_C": -83.3403995438184,
+              "log10_delta_R_k0": -88.97863056222413,
+              "log10_delta_R_k1": -88.18183720178442
+            }
+          }
+        },
+        {
+          "join_A": 1.28782409436586,
+          "include_flagged": false,
+          "lower": {
+            "E_cap_eV": 0.623884270287147,
+            "levels": 12,
+            "last_level_eV": 0.6011331464505403,
+            "log10_contact_density_cap_A_minus3": -94.9609062732948,
+            "log10_Xi_cap_A_minus3_s": -108.13060345800295,
+            "log10_proton_pulse_probability_cap": -100.36626263358191,
+            "one_pulse_per_incident_D_G12_linear_ceiling": {
+              "log10_emitted_p_per_s": -85.93049159034648,
+              "log10_emitted_p_per_true_C": -81.51027518696328,
+              "log10_delta_R_k0": -87.148506205369,
+              "log10_delta_R_k1": -86.3517128449293
+            }
+          },
+          "upper": {
+            "E_cap_eV": 0.7289362909842315,
+            "levels": 14,
+            "last_level_eV": 0.7225772281248699,
+            "log10_contact_density_cap_A_minus3": -92.81256730280263,
+            "log10_Xi_cap_A_minus3_s": -105.98226448751079,
+            "log10_proton_pulse_probability_cap": -98.21792366308975,
+            "one_pulse_per_incident_D_G12_linear_ceiling": {
+              "log10_emitted_p_per_s": -83.78215261985432,
+              "log10_emitted_p_per_true_C": -79.36193621647112,
+              "log10_delta_R_k0": -85.00016723487684,
+              "log10_delta_R_k1": -84.20337387443713
+            }
+          }
+        },
+        {
+          "join_A": 1.6,
+          "include_flagged": false,
+          "lower": {
+            "E_cap_eV": 0.623884270287147,
+            "levels": 12,
+            "last_level_eV": 0.6021146477419617,
+            "log10_contact_density_cap_A_minus3": -96.76728969153798,
+            "log10_Xi_cap_A_minus3_s": -109.93698687624614,
+            "log10_proton_pulse_probability_cap": -102.1726460518251,
+            "one_pulse_per_incident_D_G12_linear_ceiling": {
+              "log10_emitted_p_per_s": -87.73687500858966,
+              "log10_emitted_p_per_true_C": -83.31665860520647,
+              "log10_delta_R_k0": -88.95488962361219,
+              "log10_delta_R_k1": -88.15809626317248
+            }
+          },
+          "upper": {
+            "E_cap_eV": 0.7289362909842315,
+            "levels": 14,
+            "last_level_eV": 0.7267643716405405,
+            "log10_contact_density_cap_A_minus3": -94.81268421682869,
+            "log10_Xi_cap_A_minus3_s": -107.98238140153684,
+            "log10_proton_pulse_probability_cap": -100.2180405771158,
+            "one_pulse_per_incident_D_G12_linear_ceiling": {
+              "log10_emitted_p_per_s": -85.78226953388037,
+              "log10_emitted_p_per_true_C": -81.36205313049717,
+              "log10_delta_R_k0": -87.00028414890289,
+              "log10_delta_R_k1": -86.20349078846318
+            }
+          }
+        }
+      ]
+    },
+    {
+      "case": "N2048_4.8meV",
+      "launch": "loss_K",
+      "archived_trace": "nonlinear_N2048_4.8meV.npz",
+      "trace_key": "loss_K_trace",
+      "signed_turn_brackets_fs": [
+        [
+          665.75,
+          666.0
+        ],
+        [
+          700.0,
+          700.25
+        ],
+        [
+          735.25,
+          735.5
+        ]
+      ],
+      "interpolated_turns_fs": [
+        665.9211494267483,
+        700.0888032649075,
+        735.2548571214272
+      ],
+      "interpolated_turns_R_A": [
+        3.9863463654447613,
+        1.7725086328625044,
+        4.078346774497116
+      ],
+      "outer_turn_sampled_R_A": [
+        3.9863170252622266,
+        4.078346655104477
+      ],
+      "sampled_min_R_A": 1.7725545555852853,
+      "sampled_min_R_fs": 700.0,
+      "sampled_min_R_index": 2800,
+      "first_receding_sample_index": 2801,
+      "closing_peak_fs": 683.75,
+      "closing_peak_R_A": 2.855659675304685,
+      "closing_peak_A_fs": 0.09616735067286127,
+      "closing_peak_K_radial_eV": 0.4824997890842549,
+      "max_c_spline_error_A_fs": 1.2444477653819619e-05,
+      "first_original_exit_fs": null,
+      "caps": [
+        {
+          "join_A": 1.28782409436586,
+          "include_flagged": true,
+          "lower": {
+            "E_cap_eV": 0.5359054918688375,
+            "levels": 10,
+            "last_level_eV": 0.48728818925415807,
+            "log10_contact_density_cap_A_minus3": -99.8165589671652,
+            "log10_Xi_cap_A_minus3_s": -112.97561454198035,
+            "log10_proton_pulse_probability_cap": -105.21127371755931,
+            "one_pulse_per_incident_D_G12_linear_ceiling": {
+              "log10_emitted_p_per_s": -90.77550267432387,
+              "log10_emitted_p_per_true_C": -86.35528627094068,
+              "log10_delta_R_k0": -91.9935172893464,
+              "log10_delta_R_k1": -91.19672392890669
+            }
+          },
+          "upper": {
+            "E_cap_eV": 0.6409575125659219,
+            "levels": 12,
+            "last_level_eV": 0.6087525111948773,
+            "log10_contact_density_cap_A_minus3": -97.66461675888584,
+            "log10_Xi_cap_A_minus3_s": -110.823672333701,
+            "log10_proton_pulse_probability_cap": -103.05933150927996,
+            "one_pulse_per_incident_D_G12_linear_ceiling": {
+              "log10_emitted_p_per_s": -88.62356046604452,
+              "log10_emitted_p_per_true_C": -84.20334406266133,
+              "log10_delta_R_k0": -89.84157508106705,
+              "log10_delta_R_k1": -89.04478172062734
+            }
+          }
+        },
+        {
+          "join_A": 1.6,
+          "include_flagged": true,
+          "lower": {
+            "E_cap_eV": 0.5359054918688375,
+            "levels": 10,
+            "last_level_eV": 0.48733606805367213,
+            "log10_contact_density_cap_A_minus3": -99.90157399961645,
+            "log10_Xi_cap_A_minus3_s": -113.0606295744316,
+            "log10_proton_pulse_probability_cap": -105.29628875001056,
+            "one_pulse_per_incident_D_G12_linear_ceiling": {
+              "log10_emitted_p_per_s": -90.86051770677513,
+              "log10_emitted_p_per_true_C": -86.44030130339193,
+              "log10_delta_R_k0": -92.07853232179765,
+              "log10_delta_R_k1": -91.28173896135795
+            }
+          },
+          "upper": {
+            "E_cap_eV": 0.6409575125659219,
+            "levels": 12,
+            "last_level_eV": 0.6091169051478134,
+            "log10_contact_density_cap_A_minus3": -97.8021312934264,
+            "log10_Xi_cap_A_minus3_s": -110.96118686824155,
+            "log10_proton_pulse_probability_cap": -103.19684604382051,
+            "one_pulse_per_incident_D_G12_linear_ceiling": {
+              "log10_emitted_p_per_s": -88.76107500058508,
+              "log10_emitted_p_per_true_C": -84.34085859720189,
+              "log10_delta_R_k0": -89.9790896156076,
+              "log10_delta_R_k1": -89.1822962551679
+            }
+          }
+        },
+        {
+          "join_A": 1.28782409436586,
+          "include_flagged": false,
+          "lower": {
+            "E_cap_eV": 0.5359054918688375,
+            "levels": 10,
+            "last_level_eV": 0.4827959841799129,
+            "log10_contact_density_cap_A_minus3": -97.20231976230161,
+            "log10_Xi_cap_A_minus3_s": -110.36137533711677,
+            "log10_proton_pulse_probability_cap": -102.59703451269573,
+            "one_pulse_per_incident_D_G12_linear_ceiling": {
+              "log10_emitted_p_per_s": -88.1612634694603,
+              "log10_emitted_p_per_true_C": -83.7410470660771,
+              "log10_delta_R_k0": -89.37927808448282,
+              "log10_delta_R_k1": -88.58248472404311
+            }
+          },
+          "upper": {
+            "E_cap_eV": 0.6409575125659219,
+            "levels": 12,
+            "last_level_eV": 0.6011331464505403,
+            "log10_contact_density_cap_A_minus3": -94.9609062732948,
+            "log10_Xi_cap_A_minus3_s": -108.11996184810995,
+            "log10_proton_pulse_probability_cap": -100.35562102368891,
+            "one_pulse_per_incident_D_G12_linear_ceiling": {
+              "log10_emitted_p_per_s": -85.91984998045348,
+              "log10_emitted_p_per_true_C": -81.49963357707028,
+              "log10_delta_R_k0": -87.137864595476,
+              "log10_delta_R_k1": -86.3410712350363
+            }
+          }
+        },
+        {
+          "join_A": 1.6,
+          "include_flagged": false,
+          "lower": {
+            "E_cap_eV": 0.5359054918688375,
+            "levels": 10,
+            "last_level_eV": 0.4829306162159245,
+            "log10_contact_density_cap_A_minus3": -98.83732048222039,
+            "log10_Xi_cap_A_minus3_s": -111.99637605703555,
+            "log10_proton_pulse_probability_cap": -104.2320352326145,
+            "one_pulse_per_incident_D_G12_linear_ceiling": {
+              "log10_emitted_p_per_s": -89.79626418937907,
+              "log10_emitted_p_per_true_C": -85.37604778599588,
+              "log10_delta_R_k0": -91.0142788044016,
+              "log10_delta_R_k1": -90.21748544396189
+            }
+          },
+          "upper": {
+            "E_cap_eV": 0.6409575125659219,
+            "levels": 12,
+            "last_level_eV": 0.6021146477419617,
+            "log10_contact_density_cap_A_minus3": -96.76728969153798,
+            "log10_Xi_cap_A_minus3_s": -109.92634526635314,
+            "log10_proton_pulse_probability_cap": -102.1620044419321,
+            "one_pulse_per_incident_D_G12_linear_ceiling": {
+              "log10_emitted_p_per_s": -87.72623339869666,
+              "log10_emitted_p_per_true_C": -83.30601699531347,
+              "log10_delta_R_k0": -88.94424801371919,
+              "log10_delta_R_k1": -88.14745465327948
+            }
+          }
+        }
+      ]
+    },
+    {
+      "case": "N2048_25meV",
+      "launch": "inward",
+      "archived_trace": "nonlinear_N2048_25meV.npz",
+      "trace_key": "distance_trace",
+      "signed_turn_brackets_fs": [
+        [
+          1334.5,
+          1334.75
+        ],
+        [
+          1365.25,
+          1365.5
+        ],
+        [
+          1396.0,
+          1396.25
+        ]
+      ],
+      "interpolated_turns_fs": [
+        1334.6353398753001,
+        1365.4412674198795,
+        1396.1246189820913
+      ],
+      "interpolated_turns_R_A": [
+        4.374833287062877,
+        1.4589127068127656,
+        4.451007161591034
+      ],
+      "outer_turn_sampled_R_A": [
+        4.374731500199194,
+        4.450880494157173
+      ],
+      "sampled_min_R_A": 1.4589467881084284,
+      "sampled_min_R_fs": 1365.5,
+      "sampled_min_R_index": 5462,
+      "first_receding_sample_index": 5462,
+      "closing_peak_fs": 1351.5,
+      "closing_peak_R_A": 2.787672323741353,
+      "closing_peak_A_fs": 0.13628882319668964,
+      "closing_peak_K_radial_eV": 0.9690859730213596,
+      "max_c_spline_error_A_fs": 2.294685293399712e-05,
+      "first_original_exit_fs": 1578.25,
+      "caps": [
+        {
+          "join_A": 1.28782409436586,
+          "include_flagged": true,
+          "lower": {
+            "E_cap_eV": 1.2580039668671281,
+            "levels": 21,
+            "last_level_eV": 1.1951709569278246,
+            "log10_contact_density_cap_A_minus3": -88.6876920713507,
+            "log10_Xi_cap_A_minus3_s": -101.89889266989456,
+            "log10_proton_pulse_probability_cap": -94.13455184547352,
+            "one_pulse_per_incident_D_G12_linear_ceiling": {
+              "log10_emitted_p_per_s": -79.69878080223809,
+              "log10_emitted_p_per_true_C": -75.2785643988549,
+              "log10_delta_R_k0": -80.91679541726062,
+              "log10_delta_R_k1": -80.12000205682091
+            }
+          },
+          "upper": {
+            "E_cap_eV": 1.3630559875642125,
+            "levels": 23,
+            "last_level_eV": 1.329434988081612,
+            "log10_contact_density_cap_A_minus3": -86.65609643167998,
+            "log10_Xi_cap_A_minus3_s": -99.86729703022385,
+            "log10_proton_pulse_probability_cap": -92.10295620580281,
+            "one_pulse_per_incident_D_G12_linear_ceiling": {
+              "log10_emitted_p_per_s": -77.66718516256738,
+              "log10_emitted_p_per_true_C": -73.24696875918418,
+              "log10_delta_R_k0": -78.8851997775899,
+              "log10_delta_R_k1": -78.0884064171502
+            }
+          }
+        },
+        {
+          "join_A": 1.6,
+          "include_flagged": true,
+          "lower": {
+            "E_cap_eV": 1.2580039668671281,
+            "levels": 21,
+            "last_level_eV": 1.2197292593906908,
+            "log10_contact_density_cap_A_minus3": -88.21231324274616,
+            "log10_Xi_cap_A_minus3_s": -101.42351384129003,
+            "log10_proton_pulse_probability_cap": -93.65917301686899,
+            "one_pulse_per_incident_D_G12_linear_ceiling": {
+              "log10_emitted_p_per_s": -79.22340197363356,
+              "log10_emitted_p_per_true_C": -74.80318557025036,
+              "log10_delta_R_k0": -80.44141658865608,
+              "log10_delta_R_k1": -79.64462322821637
+            }
+          },
+          "upper": {
+            "E_cap_eV": 1.3630559875642125,
+            "levels": 23,
+            "last_level_eV": 1.351327793060015,
+            "log10_contact_density_cap_A_minus3": -85.38077509716702,
+            "log10_Xi_cap_A_minus3_s": -98.59197569571089,
+            "log10_proton_pulse_probability_cap": -90.82763487128985,
+            "one_pulse_per_incident_D_G12_linear_ceiling": {
+              "log10_emitted_p_per_s": -76.39186382805441,
+              "log10_emitted_p_per_true_C": -71.97164742467122,
+              "log10_delta_R_k0": -77.60987844307694,
+              "log10_delta_R_k1": -76.81308508263723
+            }
+          }
+        },
+        {
+          "join_A": 1.28782409436586,
+          "include_flagged": false,
+          "lower": {
+            "E_cap_eV": 1.2580039668671281,
+            "levels": 22,
+            "last_level_eV": 1.2180949781149994,
+            "log10_contact_density_cap_A_minus3": -84.57673663654859,
+            "log10_Xi_cap_A_minus3_s": -97.78793723509246,
+            "log10_proton_pulse_probability_cap": -90.02359641067142,
+            "one_pulse_per_incident_D_G12_linear_ceiling": {
+              "log10_emitted_p_per_s": -75.58782536743598,
+              "log10_emitted_p_per_true_C": -71.16760896405279,
+              "log10_delta_R_k0": -76.80583998245851,
+              "log10_delta_R_k1": -76.0090466220188
+            }
+          },
+          "upper": {
+            "E_cap_eV": 1.3630559875642125,
+            "levels": 24,
+            "last_level_eV": 1.3260916645188416,
+            "log10_contact_density_cap_A_minus3": -83.23901829728428,
+            "log10_Xi_cap_A_minus3_s": -96.45021889582814,
+            "log10_proton_pulse_probability_cap": -88.6858780714071,
+            "one_pulse_per_incident_D_G12_linear_ceiling": {
+              "log10_emitted_p_per_s": -74.25010702817167,
+              "log10_emitted_p_per_true_C": -69.82989062478848,
+              "log10_delta_R_k0": -75.4681216431942,
+              "log10_delta_R_k1": -74.67132828275449
+            }
+          }
+        },
+        {
+          "join_A": 1.6,
+          "include_flagged": false,
+          "lower": {
+            "E_cap_eV": 1.2580039668671281,
+            "levels": 21,
+            "last_level_eV": 1.205437233488071,
+            "log10_contact_density_cap_A_minus3": -87.01209942812817,
+            "log10_Xi_cap_A_minus3_s": -100.22330002667204,
+            "log10_proton_pulse_probability_cap": -92.458959202251,
+            "one_pulse_per_incident_D_G12_linear_ceiling": {
+              "log10_emitted_p_per_s": -78.02318815901556,
+              "log10_emitted_p_per_true_C": -73.60297175563237,
+              "log10_delta_R_k0": -79.24120277403809,
+              "log10_delta_R_k1": -78.44440941359838
+            }
+          },
+          "upper": {
+            "E_cap_eV": 1.3630559875642125,
+            "levels": 23,
+            "last_level_eV": 1.3190679035723631,
+            "log10_contact_density_cap_A_minus3": -84.47387285893359,
+            "log10_Xi_cap_A_minus3_s": -97.68507345747746,
+            "log10_proton_pulse_probability_cap": -89.92073263305642,
+            "one_pulse_per_incident_D_G12_linear_ceiling": {
+              "log10_emitted_p_per_s": -75.48496158982098,
+              "log10_emitted_p_per_true_C": -71.06474518643779,
+              "log10_delta_R_k0": -76.70297620484351,
+              "log10_delta_R_k1": -75.9061828444038
+            }
+          }
+        }
+      ]
+    },
+    {
+      "case": "N2048_25meV",
+      "launch": "loss_K",
+      "archived_trace": "nonlinear_N2048_25meV.npz",
+      "trace_key": "loss_K_trace",
+      "signed_turn_brackets_fs": [
+        [
+          1004.25,
+          1004.5
+        ],
+        [
+          1036.75,
+          1037.0
+        ],
+        [
+          1069.0,
+          1069.25
+        ]
+      ],
+      "interpolated_turns_fs": [
+        1004.4866923633947,
+        1036.9423360553171,
+        1069.0302727021303
+      ],
+      "interpolated_turns_R_A": [
+        4.280208098371511,
+        1.5836255539981088,
+        4.287781313433708
+      ],
+      "outer_turn_sampled_R_A": [
+        4.280206928827448,
+        4.28777502908651
+      ],
+      "sampled_min_R_A": 1.5836525471605092,
+      "sampled_min_R_fs": 1037.0,
+      "sampled_min_R_index": 4148,
+      "first_receding_sample_index": 4148,
+      "closing_peak_fs": 1021.75,
+      "closing_peak_R_A": 2.8656707676818103,
+      "closing_peak_A_fs": 0.12009899865150497,
+      "closing_peak_K_radial_eV": 0.752524418976066,
+      "max_c_spline_error_A_fs": 1.794757445271189e-05,
+      "first_original_exit_fs": 1259.75,
+      "caps": [
+        {
+          "join_A": 1.28782409436586,
+          "include_flagged": true,
+          "lower": {
+            "E_cap_eV": 0.8648484828424711,
+            "levels": 16,
+            "last_level_eV": 0.8627115960408718,
+            "log10_contact_density_cap_A_minus3": -93.589661852651,
+            "log10_Xi_cap_A_minus3_s": -106.7798087998845,
+            "log10_proton_pulse_probability_cap": -99.01546797546347,
+            "one_pulse_per_incident_D_G12_linear_ceiling": {
+              "log10_emitted_p_per_s": -84.57969693222803,
+              "log10_emitted_p_per_true_C": -80.15948052884484,
+              "log10_delta_R_k0": -85.79771154725056,
+              "log10_delta_R_k1": -85.00091818681085
+            }
+          },
+          "upper": {
+            "E_cap_eV": 0.9699005035395556,
+            "levels": 17,
+            "last_level_eV": 0.9281059507842893,
+            "log10_contact_density_cap_A_minus3": -92.60389015673164,
+            "log10_Xi_cap_A_minus3_s": -105.79403710396514,
+            "log10_proton_pulse_probability_cap": -98.0296962795441,
+            "one_pulse_per_incident_D_G12_linear_ceiling": {
+              "log10_emitted_p_per_s": -83.59392523630866,
+              "log10_emitted_p_per_true_C": -79.17370883292547,
+              "log10_delta_R_k0": -84.81193985133119,
+              "log10_delta_R_k1": -84.01514649089148
+            }
+          }
+        },
+        {
+          "join_A": 1.6,
+          "include_flagged": true,
+          "lower": {
+            "E_cap_eV": 0.8648484828424711,
+            "levels": 15,
+            "last_level_eV": 0.8012400154522608,
+            "log10_contact_density_cap_A_minus3": -94.81244965910807,
+            "log10_Xi_cap_A_minus3_s": -108.00259660634157,
+            "log10_proton_pulse_probability_cap": -100.23825578192053,
+            "one_pulse_per_incident_D_G12_linear_ceiling": {
+              "log10_emitted_p_per_s": -85.8024847386851,
+              "log10_emitted_p_per_true_C": -81.3822683353019,
+              "log10_delta_R_k0": -87.02049935370762,
+              "log10_delta_R_k1": -86.22370599326791
+            }
+          },
+          "upper": {
+            "E_cap_eV": 0.9699005035395556,
+            "levels": 17,
+            "last_level_eV": 0.9365099103144137,
+            "log10_contact_density_cap_A_minus3": -92.81189616467462,
+            "log10_Xi_cap_A_minus3_s": -106.00204311190812,
+            "log10_proton_pulse_probability_cap": -98.23770228748708,
+            "one_pulse_per_incident_D_G12_linear_ceiling": {
+              "log10_emitted_p_per_s": -83.80193124425165,
+              "log10_emitted_p_per_true_C": -79.38171484086845,
+              "log10_delta_R_k0": -85.01994585927417,
+              "log10_delta_R_k1": -84.22315249883447
+            }
+          }
+        },
+        {
+          "join_A": 1.28782409436586,
+          "include_flagged": false,
+          "lower": {
+            "E_cap_eV": 0.8648484828424711,
+            "levels": 16,
+            "last_level_eV": 0.8465559556456808,
+            "log10_contact_density_cap_A_minus3": -90.73354093390597,
+            "log10_Xi_cap_A_minus3_s": -103.92368788113947,
+            "log10_proton_pulse_probability_cap": -96.15934705671843,
+            "one_pulse_per_incident_D_G12_linear_ceiling": {
+              "log10_emitted_p_per_s": -81.723576013483,
+              "log10_emitted_p_per_true_C": -77.3033596100998,
+              "log10_delta_R_k0": -82.94159062850552,
+              "log10_delta_R_k1": -82.14479726806582
+            }
+          },
+          "upper": {
+            "E_cap_eV": 0.9699005035395556,
+            "levels": 17,
+            "last_level_eV": 0.9093252189679517,
+            "log10_contact_density_cap_A_minus3": -89.70969780590661,
+            "log10_Xi_cap_A_minus3_s": -102.89984475314012,
+            "log10_proton_pulse_probability_cap": -95.13550392871907,
+            "one_pulse_per_incident_D_G12_linear_ceiling": {
+              "log10_emitted_p_per_s": -80.69973288548364,
+              "log10_emitted_p_per_true_C": -76.27951648210045,
+              "log10_delta_R_k0": -81.91774750050617,
+              "log10_delta_R_k1": -81.12095414006646
+            }
+          }
+        },
+        {
+          "join_A": 1.6,
+          "include_flagged": false,
+          "lower": {
+            "E_cap_eV": 0.8648484828424711,
+            "levels": 16,
+            "last_level_eV": 0.8580492298172004,
+            "log10_contact_density_cap_A_minus3": -92.86288082367236,
+            "log10_Xi_cap_A_minus3_s": -106.05302777090586,
+            "log10_proton_pulse_probability_cap": -98.28868694648482,
+            "one_pulse_per_incident_D_G12_linear_ceiling": {
+              "log10_emitted_p_per_s": -83.85291590324938,
+              "log10_emitted_p_per_true_C": -79.43269949986619,
+              "log10_delta_R_k0": -85.07093051827191,
+              "log10_delta_R_k1": -84.2741371578322
+            }
+          },
+          "upper": {
+            "E_cap_eV": 0.9699005035395556,
+            "levels": 17,
+            "last_level_eV": 0.9261379213438332,
+            "log10_contact_density_cap_A_minus3": -91.84473181006341,
+            "log10_Xi_cap_A_minus3_s": -105.03487875729691,
+            "log10_proton_pulse_probability_cap": -97.27053793287587,
+            "one_pulse_per_incident_D_G12_linear_ceiling": {
+              "log10_emitted_p_per_s": -82.83476688964043,
+              "log10_emitted_p_per_true_C": -78.41455048625724,
+              "log10_delta_R_k0": -84.05278150466296,
+              "log10_delta_R_k1": -83.25598814422325
+            }
+          }
+        }
+      ]
+    },
+    {
+      "case": "N16384_0.6meV",
+      "launch": "inward",
+      "archived_trace": "nonlinear_N16384_0.6meV.npz",
+      "trace_key": "distance_trace",
+      "signed_turn_brackets_fs": [
+        [
+          1530.5,
+          1531.0
+        ],
+        [
+          1569.0,
+          1569.5
+        ],
+        [
+          1607.0,
+          1607.5
+        ]
+      ],
+      "interpolated_turns_fs": [
+        1530.9181277697312,
+        1569.0765404474512,
+        1607.2683671395152
+      ],
+      "interpolated_turns_R_A": [
+        3.9244600707754795,
+        1.9241254975156101,
+        3.870069343633627
+      ],
+      "outer_turn_sampled_R_A": [
+        3.9244347378869526,
+        3.8698861516329486
+      ],
+      "sampled_min_R_A": 1.9241502933646082,
+      "sampled_min_R_fs": 1569.0,
+      "sampled_min_R_index": 3138,
+      "first_receding_sample_index": 3139,
+      "closing_peak_fs": 1551.5,
+      "closing_peak_R_A": 2.8361042120998827,
+      "closing_peak_A_fs": 0.0751519954820133,
+      "closing_peak_K_radial_eV": 0.2946611352565502,
+      "max_c_spline_error_A_fs": 2.9850969635897284e-05,
+      "first_original_exit_fs": null,
+      "caps": [
+        {
+          "join_A": 1.28782409436586,
+          "include_flagged": true,
+          "lower": {
+            "E_cap_eV": 0.3719574031971393,
+            "levels": 8,
+            "last_level_eV": 0.3705272412353183,
+            "log10_contact_density_cap_A_minus3": -102.07365678451268,
+            "log10_Xi_cap_A_minus3_s": -115.19084638153788,
+            "log10_proton_pulse_probability_cap": -107.42650555711684,
+            "one_pulse_per_incident_D_G12_linear_ceiling": {
+              "log10_emitted_p_per_s": -92.9907345138814,
+              "log10_emitted_p_per_true_C": -88.57051811049821,
+              "log10_delta_R_k0": -94.20874912890393,
+              "log10_delta_R_k1": -93.41195576846422
+            }
+          },
+          "upper": {
+            "E_cap_eV": 0.47700942389422374,
+            "levels": 9,
+            "last_level_eV": 0.4282534347904132,
+            "log10_contact_density_cap_A_minus3": -100.93046389981619,
+            "log10_Xi_cap_A_minus3_s": -114.04765349684139,
+            "log10_proton_pulse_probability_cap": -106.28331267242035,
+            "one_pulse_per_incident_D_G12_linear_ceiling": {
+              "log10_emitted_p_per_s": -91.84754162918492,
+              "log10_emitted_p_per_true_C": -87.42732522580172,
+              "log10_delta_R_k0": -93.06555624420744,
+              "log10_delta_R_k1": -92.26876288376774
+            }
+          }
+        },
+        {
+          "join_A": 1.6,
+          "include_flagged": true,
+          "lower": {
+            "E_cap_eV": 0.3719574031971393,
+            "levels": 8,
+            "last_level_eV": 0.3705310607204352,
+            "log10_contact_density_cap_A_minus3": -102.12478355339343,
+            "log10_Xi_cap_A_minus3_s": -115.24197315041863,
+            "log10_proton_pulse_probability_cap": -107.47763232599759,
+            "one_pulse_per_incident_D_G12_linear_ceiling": {
+              "log10_emitted_p_per_s": -93.04186128276216,
+              "log10_emitted_p_per_true_C": -88.62164487937896,
+              "log10_delta_R_k0": -94.25987589778468,
+              "log10_delta_R_k1": -93.46308253734497
+            }
+          },
+          "upper": {
+            "E_cap_eV": 0.47700942389422374,
+            "levels": 9,
+            "last_level_eV": 0.4282678582417119,
+            "log10_contact_density_cap_A_minus3": -100.99658257026027,
+            "log10_Xi_cap_A_minus3_s": -114.11377216728548,
+            "log10_proton_pulse_probability_cap": -106.34943134286443,
+            "one_pulse_per_incident_D_G12_linear_ceiling": {
+              "log10_emitted_p_per_s": -91.913660299629,
+              "log10_emitted_p_per_true_C": -87.49344389624581,
+              "log10_delta_R_k0": -93.13167491465153,
+              "log10_delta_R_k1": -92.33488155421182
+            }
+          }
+        },
+        {
+          "join_A": 1.28782409436586,
+          "include_flagged": false,
+          "lower": {
+            "E_cap_eV": 0.3719574031971393,
+            "levels": 8,
+            "last_level_eV": 0.36843947846096825,
+            "log10_contact_density_cap_A_minus3": -99.55906392734184,
+            "log10_Xi_cap_A_minus3_s": -112.67625352436704,
+            "log10_proton_pulse_probability_cap": -104.911912699946,
+            "one_pulse_per_incident_D_G12_linear_ceiling": {
+              "log10_emitted_p_per_s": -90.47614165671057,
+              "log10_emitted_p_per_true_C": -86.05592525332737,
+              "log10_delta_R_k0": -91.69415627173309,
+              "log10_delta_R_k1": -90.89736291129338
+            }
+          },
+          "upper": {
+            "E_cap_eV": 0.47700942389422374,
+            "levels": 9,
+            "last_level_eV": 0.4250505068340208,
+            "log10_contact_density_cap_A_minus3": -98.36444468603972,
+            "log10_Xi_cap_A_minus3_s": -111.48163428306492,
+            "log10_proton_pulse_probability_cap": -103.71729345864388,
+            "one_pulse_per_incident_D_G12_linear_ceiling": {
+              "log10_emitted_p_per_s": -89.28152241540845,
+              "log10_emitted_p_per_true_C": -84.86130601202525,
+              "log10_delta_R_k0": -90.49953703043097,
+              "log10_delta_R_k1": -89.70274366999126
+            }
+          }
+        },
+        {
+          "join_A": 1.6,
+          "include_flagged": false,
+          "lower": {
+            "E_cap_eV": 0.3719574031971393,
+            "levels": 8,
+            "last_level_eV": 0.3684499006805909,
+            "log10_contact_density_cap_A_minus3": -101.069137426981,
+            "log10_Xi_cap_A_minus3_s": -114.1863270240062,
+            "log10_proton_pulse_probability_cap": -106.42198619958516,
+            "one_pulse_per_incident_D_G12_linear_ceiling": {
+              "log10_emitted_p_per_s": -91.98621515634973,
+              "log10_emitted_p_per_true_C": -87.56599875296654,
+              "log10_delta_R_k0": -93.20422977137225,
+              "log10_delta_R_k1": -92.40743641093255
+            }
+          },
+          "upper": {
+            "E_cap_eV": 0.47700942389422374,
+            "levels": 9,
+            "last_level_eV": 0.42509082344630755,
+            "log10_contact_density_cap_A_minus3": -99.93165824571167,
+            "log10_Xi_cap_A_minus3_s": -113.04884784273688,
+            "log10_proton_pulse_probability_cap": -105.28450701831584,
+            "one_pulse_per_incident_D_G12_linear_ceiling": {
+              "log10_emitted_p_per_s": -90.8487359750804,
+              "log10_emitted_p_per_true_C": -86.42851957169721,
+              "log10_delta_R_k0": -92.06675059010293,
+              "log10_delta_R_k1": -91.26995722966322
+            }
+          }
+        }
+      ]
+    },
+    {
+      "case": "N16384_0.6meV",
+      "launch": "loss_K",
+      "archived_trace": "nonlinear_N16384_0.6meV.npz",
+      "trace_key": "loss_K_trace",
+      "signed_turn_brackets_fs": [
+        [
+          1715.0,
+          1715.5
+        ],
+        [
+          1754.5,
+          1755.0
+        ],
+        [
+          1794.0,
+          1794.5
+        ]
+      ],
+      "interpolated_turns_fs": [
+        1715.4174704716215,
+        1754.5253849167345,
+        1794.1009332170283
+      ],
+      "interpolated_turns_R_A": [
+        3.8850107662431363,
+        2.058893275080006,
+        3.6891660638622445
+      ],
+      "outer_turn_sampled_R_A": [
+        3.884986734261004,
+        3.689140032436426
+      ],
+      "sampled_min_R_A": 2.0588953997936557,
+      "sampled_min_R_fs": 1754.5,
+      "sampled_min_R_index": 3509,
+      "first_receding_sample_index": 3510,
+      "closing_peak_fs": 1734.5,
+      "closing_peak_R_A": 2.9909288150347977,
+      "closing_peak_A_fs": 0.0676169155569266,
+      "closing_peak_K_radial_eV": 0.23853523313892913,
+      "max_c_spline_error_A_fs": 2.2383771186629264e-05,
+      "first_original_exit_fs": null,
+      "caps": [
+        {
+          "join_A": 1.28782409436586,
+          "include_flagged": true,
+          "lower": {
+            "E_cap_eV": 0.3219169752998643,
+            "levels": 7,
+            "last_level_eV": 0.31426695070095145,
+            "log10_contact_density_cap_A_minus3": -103.250516151197,
+            "log10_Xi_cap_A_minus3_s": -116.35463268685704,
+            "log10_proton_pulse_probability_cap": -108.590291862436,
+            "one_pulse_per_incident_D_G12_linear_ceiling": {
+              "log10_emitted_p_per_s": -94.15452081920057,
+              "log10_emitted_p_per_true_C": -89.73430441581738,
+              "log10_delta_R_k0": -95.3725354342231,
+              "log10_delta_R_k1": -94.57574207378339
+            }
+          },
+          "upper": {
+            "E_cap_eV": 0.4269689959969487,
+            "levels": 8,
+            "last_level_eV": 0.3705272412353183,
+            "log10_contact_density_cap_A_minus3": -102.07365678451268,
+            "log10_Xi_cap_A_minus3_s": -115.17777332017272,
+            "log10_proton_pulse_probability_cap": -107.41343249575168,
+            "one_pulse_per_incident_D_G12_linear_ceiling": {
+              "log10_emitted_p_per_s": -92.97766145251624,
+              "log10_emitted_p_per_true_C": -88.55744504913305,
+              "log10_delta_R_k0": -94.19567606753877,
+              "log10_delta_R_k1": -93.39888270709906
+            }
+          }
+        },
+        {
+          "join_A": 1.6,
+          "include_flagged": true,
+          "lower": {
+            "E_cap_eV": 0.3219169752998643,
+            "levels": 7,
+            "last_level_eV": 0.31426783229987454,
+            "log10_contact_density_cap_A_minus3": -103.28962160525262,
+            "log10_Xi_cap_A_minus3_s": -116.39373814091266,
+            "log10_proton_pulse_probability_cap": -108.62939731649162,
+            "one_pulse_per_incident_D_G12_linear_ceiling": {
+              "log10_emitted_p_per_s": -94.19362627325619,
+              "log10_emitted_p_per_true_C": -89.77340986987299,
+              "log10_delta_R_k0": -95.41164088827871,
+              "log10_delta_R_k1": -94.614847527839
+            }
+          },
+          "upper": {
+            "E_cap_eV": 0.4269689959969487,
+            "levels": 8,
+            "last_level_eV": 0.3705310607204352,
+            "log10_contact_density_cap_A_minus3": -102.12478355339343,
+            "log10_Xi_cap_A_minus3_s": -115.22890008905347,
+            "log10_proton_pulse_probability_cap": -107.46455926463243,
+            "one_pulse_per_incident_D_G12_linear_ceiling": {
+              "log10_emitted_p_per_s": -93.028788221397,
+              "log10_emitted_p_per_true_C": -88.6085718180138,
+              "log10_delta_R_k0": -94.24680283641952,
+              "log10_delta_R_k1": -93.45000947597981
+            }
+          }
+        },
+        {
+          "join_A": 1.28782409436586,
+          "include_flagged": false,
+          "lower": {
+            "E_cap_eV": 0.3219169752998643,
+            "levels": 7,
+            "last_level_eV": 0.31307457989627685,
+            "log10_contact_density_cap_A_minus3": -100.79206431692589,
+            "log10_Xi_cap_A_minus3_s": -113.89618085258593,
+            "log10_proton_pulse_probability_cap": -106.13184002816489,
+            "one_pulse_per_incident_D_G12_linear_ceiling": {
+              "log10_emitted_p_per_s": -91.69606898492945,
+              "log10_emitted_p_per_true_C": -87.27585258154626,
+              "log10_delta_R_k0": -92.91408359995198,
+              "log10_delta_R_k1": -92.11729023951227
+            }
+          },
+          "upper": {
+            "E_cap_eV": 0.4269689959969487,
+            "levels": 9,
+            "last_level_eV": 0.4250505068340208,
+            "log10_contact_density_cap_A_minus3": -98.36444468603972,
+            "log10_Xi_cap_A_minus3_s": -111.46856122169976,
+            "log10_proton_pulse_probability_cap": -103.70422039727872,
+            "one_pulse_per_incident_D_G12_linear_ceiling": {
+              "log10_emitted_p_per_s": -89.26844935404328,
+              "log10_emitted_p_per_true_C": -84.84823295066009,
+              "log10_delta_R_k0": -90.48646396906581,
+              "log10_delta_R_k1": -89.6896706086261
+            }
+          }
+        },
+        {
+          "join_A": 1.6,
+          "include_flagged": false,
+          "lower": {
+            "E_cap_eV": 0.3219169752998643,
+            "levels": 7,
+            "last_level_eV": 0.31307688487560026,
+            "log10_contact_density_cap_A_minus3": -102.25351797130241,
+            "log10_Xi_cap_A_minus3_s": -115.35763450696246,
+            "log10_proton_pulse_probability_cap": -107.59329368254141,
+            "one_pulse_per_incident_D_G12_linear_ceiling": {
+              "log10_emitted_p_per_s": -93.15752263930598,
+              "log10_emitted_p_per_true_C": -88.73730623592279,
+              "log10_delta_R_k0": -94.3755372543285,
+              "log10_delta_R_k1": -93.5787438938888
+            }
+          },
+          "upper": {
+            "E_cap_eV": 0.4269689959969487,
+            "levels": 9,
+            "last_level_eV": 0.42509082344630755,
+            "log10_contact_density_cap_A_minus3": -99.93165824571167,
+            "log10_Xi_cap_A_minus3_s": -113.03577478137171,
+            "log10_proton_pulse_probability_cap": -105.27143395695067,
+            "one_pulse_per_incident_D_G12_linear_ceiling": {
+              "log10_emitted_p_per_s": -90.83566291371524,
+              "log10_emitted_p_per_true_C": -86.41544651033205,
+              "log10_delta_R_k0": -92.05367752873777,
+              "log10_delta_R_k1": -91.25688416829806
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
