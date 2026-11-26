@@ -1,0 +1,5 @@
+# Pd monovacancy with two D: relaxed 27-site cell
+
+A neutral PBE calculation in a fixed 3×3×3 primitive fcc repeat (26 Pd plus two D), with standard Pd10/H PAW setups and all ions free, reached a maximum residual force of 0.04448049 eV/Å against the 0.05 eV/Å target. Both D remain near the registered vacancy centre (radii 1.5172525 and 1.5172564 Å). Their resting periodic separation is **1.94286147 Å**. This is one relaxed basin of a small periodic cell, not a size-converged result or a trigger for a pair cut.
+
+`native/reference.json` contains the unmodified atom order, coordinates, residual forces and D–D distance. `sha256sum -c SHA256SUMS` verifies the package. The top-level producer and two other replay helpers are byte-identical to the run; the shipped `replay/surface_vacancy.py` support file replaces an unused workstation-dependent CLI default with an explicit `--root`. That CLI is never invoked by `pd_multivac.py`; the original support file ran from SHA-256 `9fb636cef78b5bbaa68483767486eb67e7eac02a156db49d2b2e03c1d8b5b970`. The archived producer still requires the original literature and PAW bytes by digest; those external binaries are not redistributed.
