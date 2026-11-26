@@ -4,6 +4,8 @@ Pass 2 modelled the whole palladium foil under a live beam and counted impacts i
 
 `README.md` is the technical page, `inputs_ledger.md` the inputs and their sources, `rungs.py` the single script.
 
+Step 1b (`../rung1b/LEAD.md`) repeats this comparison with sixteen records and adds the push every impact shares. It settles the point left open below: the tall events are 1.1 to 1.3 times taller against the typical level than in the pass 2 model.
+
 ## How short the waves of pass 2 really were
 
 Pass 2 kept the foil's vibrations between 5 and 250 kHz, and its pages speak of millimetre waves. This step measured what the pass 2 model can carry as a travelling wave. A wave counts as carried when the model captures at least 95 percent of it, for every direction along the foil.
