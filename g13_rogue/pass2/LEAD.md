@@ -2,6 +2,8 @@
 
 Pass 1 treated every impact as the same small packet launched into a quiet lattice and asked whether the deuterium vibration then concentrates. Pass 2 (Marvin) turns that around, on direction from the person leading the work, whose picture was hail on a pool: there is a mean splash and a mean ripple, and then there are splashes far above the mean, from double impacts, from waves converging from several directions, and from an impact landing in a rogue hole (a rare deep trough of the waves already there). With impacts arriving continuously the surface is never at rest, and the beam itself is not an even rain.
 
+Correction from pass 3 (`../pass3/rung1/LEAD.md`): where this page speaks of the waves the model holds, the model carries travelling waves of 13.7 mm and longer, about two thirds of the foil's width, and only a small part of anything shorter. The counts below stand as counts for those waves. Pass 3 refines the same model toward shorter waves.
+
 `README.md` and `readout.md` are the technical pages, `live_method.md` the equations, `inputs_ledger.md` the inputs and their sources.
 
 ## What the model is

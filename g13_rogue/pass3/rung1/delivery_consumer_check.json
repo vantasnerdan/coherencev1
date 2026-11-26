@@ -1,0 +1,25 @@
+{
+  "decision": "Delivered frozen numerical consumers load and retain source-band energy/positive local operator without re-running propagation",
+  "checks": [
+    {
+      "rung": 0,
+      "cached_numeric_consumer_loaded": true,
+      "modes": 53,
+      "source_norm_error": 4.440892098500626e-16,
+      "parent_band_self_energy_ratio": 1.0,
+      "positive_regional_source_witness": true
+    },
+    {
+      "rung": 1,
+      "cached_numeric_consumer_loaded": true,
+      "modes": 190,
+      "source_norm_error": 5.551115123125783e-16,
+      "parent_band_self_energy_ratio": 1.0000000000000004,
+      "positive_regional_source_witness": true
+    }
+  ],
+  "numpy": "2.5.5",
+  "scipy": "1.18.1",
+  "independence": "self-check; not independent scientific review",
+  "propagation_replayed": false
+}

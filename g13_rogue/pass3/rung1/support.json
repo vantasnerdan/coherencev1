@@ -1,0 +1,32 @@
+{
+  "base": "b0a67c08661ec765c3916f1dad02c47f07cf3bdd",
+  "frozen_inputs_sha256": "4ca83f716d56cf76d6c416571fdd01f3d0bc7e70b9b39a2eb4adf485e6f7a9b1",
+  "criterion": "minimum sampled real-plane-wave physical-volume L2 projection mass >= .95; 37 directions, three phases",
+  "lambda0_screen_m": 0.013731470522362706,
+  "lambda1_target_m": 0.004577156840787569,
+  "lambda2_target_m": 0.0015257189469291895,
+  "rung1_degree": [
+    15,
+    15,
+    4
+  ],
+  "lambda1_capture": 0.9610995883775744,
+  "nominal_pass2_fmax_Hz": 250000,
+  "actual_old_max_f_Hz": 241193.03550260508,
+  "old_full_gradient_min_lambda_m": 0.0035191925200917184,
+  "nested_operator_residual": 6.109544588798173e-12,
+  "enriched_operator_residual": 3.3640264994411695e-11,
+  "old_modes": 53,
+  "enriched_modes": 190,
+  "ndof": 3840,
+  "elapsed_s": 5.241159048862755,
+  "representative_dispersion": {
+    "old_mode": 37,
+    "enriched_mode": 117,
+    "old_frequency_Hz": 127979.43464206501,
+    "enriched_frequency_Hz": 119558.35891350586,
+    "squared_mass_overlap": 0.7287872421380757,
+    "relative_frequency_change": -0.06580022604499969,
+    "old_full_gradient_lambda_m": 0.013676726540310808
+  }
+}
