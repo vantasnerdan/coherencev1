@@ -41,7 +41,18 @@ A bulk wave crosses the thickness in 54 ns. Whether a wave survives to the edge 
 
 **How tall the tall events are.** The tallest peak or hole in any region of the 48 cases is 4 to 5 times the usual size of the motion; none reached 10 times. In energy, the tallest moment in a small region is about 4 to 6 times that region's mean; larger regions are steadier (2.2 times for the whole foil). Each case is 0.2 ms of foil time, so events rarer than a few thousand per second per region could not have been seen.
 
-**Whether an uneven beam changes any of this is not settled by this pass.** The delivered table shows the three kinds of event moving up and down between beam shapes with no consistent direction. The lead's rerun, which drew different random numbers on a different machine, moved each entry by as much as the beam shapes differ from one another (for example, convergence with a peaked steady beam: 56 percent delivered, 42 percent in the rerun; impacts into peaks and holes with an even bursting beam: 1.1 and 4.7 percent). Two short records per case are too few to tell the beam shapes apart.
+**An uneven beam does not change these counts; the state-dependent launch does.** The first delivery had two short records per case, too few to tell the beam shapes apart (the lead's rerun, a different random draw, moved each entry by as much as the shapes differed). The repeat in `replication/` settles it at the main case (2.5 keV, 50 us lifetime, 0.2 m range): 32 independent records for each of the nine beam shapes, with and without the state-dependent launch, the same impacts shared across shapes so that differences are read record by record. Means across records, with the spread from record to record:
+
+| | Even, steady beam | Hot spots with bursts |
+|---|---:|---:|
+| A, launch independent of state | 92.1 +/- 4.2 % | 90.2 +/- 4.9 % |
+| A, state-dependent launch | 96.4 +/- 2.8 % | 94.9 +/- 3.1 % |
+| B, launch independent of state | 34 +/- 14 % | 34 +/- 12 % |
+| B, state-dependent launch | 36 +/- 11 % | 34 +/- 13 % |
+| C, launch independent of state | 0.06 +/- 0.14 % | 0.21 +/- 0.66 % |
+| C, state-dependent launch | 1.5 +/- 2.0 % | 1.1 +/- 2.0 % |
+
+Across all nine shapes B stays between 32 and 36 percent, and C between 0.9 and 1.7 percent with the state-dependent launch. No beam shape differs from the even steady beam in B or C by more than its uncertainty (about 5 points for B, 0.5 to 1.1 for C). The most uneven beam lowers A by 1.5 points (0.5 to 2.4). The state-dependent launch raises C for every beam shape, from about 0.1 to about 1.5 percent of impacts, and raises A by 4 to 5 points. The lead's reading of why the shape does not matter here: the waves this model holds are millimetres long and fill the foil, so they average over unevenness inside a one-centimetre spot; unevenness would act on waves shorter than its own scale, which this model does not hold.
 
 **The stiffness law adds little.** In the fixed-launch comparison, a foil whose stiffness depends on strain, at assumed strengths far beyond anything measured, changed the tallest peak by at most 2 percent.
 
@@ -74,4 +85,4 @@ The lead reran both models with NumPy and SciPy on a clean copy of the repositor
 - **Fixed-launch model** (`coarse.py`): every table reproduces, largest difference 3 parts in 1e9.
 - **Live model** (`coarse.py --live --exposure 0.0001 --realizations 2`): the time-frame table, edge-survival table and beam parameters are byte-identical, and every case received the same number of impacts. The event tables did not reproduce number for number: the random marks and signs come out differently on the lead's machine. The rerun is therefore a second independent draw. Across the eleven summary rows the two draws give A 89.6 to 98.7 percent at 2.5 keV, C 0 to 4.7 percent, B 16 to 56 percent; the largest C over the whole scan is 3.5 percent delivered and 5.3 percent in the rerun; the tallest peak or hole is 4.2 and 5.3 times the usual size; the best conversion figure is 4.7e-16 and 5.9e-16 eV per deuteron. The ranges in this page are taken across both draws. The delivered files are kept unchanged.
 
-Asked of Marvin after this delivery: draws that do not depend on the machine, and enough records per beam shape to tell the shapes apart.
+**Repeat (`replication/`).** Archive SHA-256 d885471ebc4effef2157370f66e9e01180124391dfa862a9f1859f33a97e63b9, all 14 file hashes checked, no machine paths. It draws its random numbers with its own small C routine (`portable.c`, taken from NumPy's source, licence included) so that the result does not depend on the installed library, and reads the foil's modes from a stored file (`inputs.npz`). The lead reran all four batches and the summary on a clean copy at commit 6512dbc (NumPy 2.1.2, SciPy 1.14.1, the system C compiler): all 576 records, the signed-event table and the energy ledger are byte-identical to the delivered ones, and the summary and contrast tables agree to 2 parts in 1e13. Why the first delivery's draws differed between machines was not established.

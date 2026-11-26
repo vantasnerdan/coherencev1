@@ -1,0 +1,40 @@
+{
+  "base": "6512dbc91202bb413f6bb4d188afeafcb3c69a65",
+  "accepted_sources": {
+    "g13_rogue/pass2/live.py": "df5bbeecbb1baa86c1892d75175dfbedaab1c385f530eccd74a5864f9c2945d1",
+    "g13_rogue/pass2/coarse.py": "e72da402f53ffaab5081404548d0528429f7458359b6f238f07678cf6f7f6569",
+    "g4_beam/merit/profiles.json": "e2e91077595de602b815ae86f45c1a675d6a553153272d0e1295b72e2a5a9943",
+    "g11_cmns/collective/part1/stopping.json": "e0f54ed8776e792afdb1bbb727d628df3c936aee6ce11e44462d55f602b7b51e"
+  },
+  "canonical_inputs_sha256": "4ca83f716d56cf76d6c416571fdd01f3d0bc7e70b9b39a2eb4adf485e6f7a9b1",
+  "generation_runtime": {
+    "numpy": "2.5.5",
+    "scipy": "1.18.1"
+  },
+  "distribution_upstream": "https://github.com/numpy/numpy/blob/v2.1.2/numpy/random/src/distributions/distributions.c",
+  "distribution_upstream_sha256": "461755e7126c677b596ba0c388a33c83789e93834687db788c170d85704556b1",
+  "retained_modes": 53,
+  "operator_residual": 6.109456742293192e-12,
+  "mass_error": 2.3314683517128287e-15,
+  "reference_residual": 1.0622407059279676e-15,
+  "grain_side_m": 0.0026586807763582737,
+  "basis_degree": [
+    5,
+    5,
+    2
+  ],
+  "burn_steps": 4704,
+  "exposure_s": 0.0001,
+  "dt_s": 5e-08,
+  "independent_records": 32,
+  "scope": {
+    "energy_keV": 2.5,
+    "current_A": 0.000138,
+    "intrinsic_energy_lifetime_s": 5e-05,
+    "energy_length_m": 0.2,
+    "edge_energy_reflectivity": 1.0,
+    "eta": 0.01,
+    "fmin_Hz": 5000.0,
+    "fmax_Hz": 250000.0
+  }
+}

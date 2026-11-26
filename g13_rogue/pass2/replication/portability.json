@@ -1,0 +1,149 @@
+{
+  "observed_scope": "Actual delivered space2/time2/beta0.35 batch, records 0-7, replayed in the acceptor runtime with all record fields, draw/probability digests and energy ledger identical; separate one-record signed-field byte comparison and common modal-sign gauge in both runtimes. One platform only.",
+  "runtimes": [
+    {
+      "runtime": {
+        "numpy": "2.1.2",
+        "scipy": "1.14.1"
+      },
+      "records": [
+        {
+          "record": 0,
+          "spatial": 2,
+          "timing": 2,
+          "beta": 0.35,
+          "exposure_s": 0.0001,
+          "parents": 86133178169,
+          "mark_low": 21533307693,
+          "mark_middle": 53809381433,
+          "mark_high": 10790489043,
+          "draw_sha256": "1961cf531a73ad994ae54d625552854fa536ce7b43336ba6ecaa73d8ac7c824a",
+          "probability_sha256": "1363bca1b9a98c87dcec496b0c4e4fbdab1529369f201dd01108ab3e4ce34605",
+          "A_disturbed_parents": 80572901476,
+          "A_disturbed_fraction": 0.9354455877375115,
+          "A_disturbed_rate_s": 805729014760000.0,
+          "C_any_parents": 0,
+          "C_any_fraction": 0.0,
+          "C_any_rate_s": 0.0,
+          "C_strain_positive_parents": 0,
+          "C_strain_positive_fraction": 0.0,
+          "C_strain_positive_rate_s": 0.0,
+          "C_strain_negative_parents": 0,
+          "C_strain_negative_fraction": 0.0,
+          "C_strain_negative_rate_s": 0.0,
+          "C_displacement_positive_parents": 0,
+          "C_displacement_positive_fraction": 0.0,
+          "C_displacement_positive_rate_s": 0.0,
+          "C_displacement_negative_parents": 0,
+          "C_displacement_negative_fraction": 0.0,
+          "C_displacement_negative_rate_s": 0.0,
+          "B_time_fraction": 0.2675,
+          "B_complete_events": 7,
+          "B_boundary_censored_events": 0,
+          "B_initiation_rate_s": 70000.0
+        }
+      ],
+      "energy": {
+        "spatial": 2,
+        "timing": 2,
+        "beta": 0.35,
+        "records": [
+          0
+        ],
+        "source_work_J": 8.59779105115168e-08,
+        "incoming_host_J": 8.712318176615447e-06,
+        "marked_self_J": 1.9159833679081947e-07,
+        "damping_loss_J": 1.0436411901817073e-07,
+        "energy_balance_residual_J": -8.867376166568457e-22,
+        "max_budget_violation_J": 3.308722450212111e-24,
+        "capped_record_bins": 39
+      },
+      "gauge_max_signed_difference": 0.0,
+      "gauge_class_counts_equal": true,
+      "field_signed_sha256": "6827930016db7616292ef29e0a72bf83f361c9a00d1ec56235f011ab4e1b7ea1"
+    },
+    {
+      "runtime": {
+        "numpy": "2.5.5",
+        "scipy": "1.18.1"
+      },
+      "records": [
+        {
+          "record": 0,
+          "spatial": 2,
+          "timing": 2,
+          "beta": 0.35,
+          "exposure_s": 0.0001,
+          "parents": 86133178169,
+          "mark_low": 21533307693,
+          "mark_middle": 53809381433,
+          "mark_high": 10790489043,
+          "draw_sha256": "1961cf531a73ad994ae54d625552854fa536ce7b43336ba6ecaa73d8ac7c824a",
+          "probability_sha256": "1363bca1b9a98c87dcec496b0c4e4fbdab1529369f201dd01108ab3e4ce34605",
+          "A_disturbed_parents": 80572901476,
+          "A_disturbed_fraction": 0.9354455877375115,
+          "A_disturbed_rate_s": 805729014760000.0,
+          "C_any_parents": 0,
+          "C_any_fraction": 0.0,
+          "C_any_rate_s": 0.0,
+          "C_strain_positive_parents": 0,
+          "C_strain_positive_fraction": 0.0,
+          "C_strain_positive_rate_s": 0.0,
+          "C_strain_negative_parents": 0,
+          "C_strain_negative_fraction": 0.0,
+          "C_strain_negative_rate_s": 0.0,
+          "C_displacement_positive_parents": 0,
+          "C_displacement_positive_fraction": 0.0,
+          "C_displacement_positive_rate_s": 0.0,
+          "C_displacement_negative_parents": 0,
+          "C_displacement_negative_fraction": 0.0,
+          "C_displacement_negative_rate_s": 0.0,
+          "B_time_fraction": 0.2675,
+          "B_complete_events": 7,
+          "B_boundary_censored_events": 0,
+          "B_initiation_rate_s": 70000.0
+        }
+      ],
+      "energy": {
+        "spatial": 2,
+        "timing": 2,
+        "beta": 0.35,
+        "records": [
+          0
+        ],
+        "source_work_J": 8.59779105115168e-08,
+        "incoming_host_J": 8.712318176615447e-06,
+        "marked_self_J": 1.9159833679081947e-07,
+        "damping_loss_J": 1.0436411901817073e-07,
+        "energy_balance_residual_J": -8.867376166568457e-22,
+        "max_budget_violation_J": 3.308722450212111e-24,
+        "capped_record_bins": 39
+      },
+      "gauge_max_signed_difference": 0.0,
+      "gauge_class_counts_equal": true,
+      "field_signed_sha256": "6827930016db7616292ef29e0a72bf83f361c9a00d1ec56235f011ab4e1b7ea1"
+    }
+  ],
+  "exact_record_and_mark_equality": true,
+  "field_byte_equality": true,
+  "delivered_batch_replay": {
+    "records": [0, 1, 2, 3, 4, 5, 6, 7],
+    "spatial": 2,
+    "timing": 2,
+    "beta": 0.35,
+    "all_record_fields_exactly_equal": true,
+    "energy_ledger_exactly_equal": true,
+    "record_fields_sha256": "f4d8db1a5220a81b4c6877bb26e86dccd7982d0ade91e6e1a68bdda88dbcfcae",
+    "hash_encoding": "records ascending, records.csv field order, str(value) separated by | and records by newline including final newline",
+    "one_record_vs_batch_record0": "All integer draws and reported observations match; quantized probability digest differs with batch shape. Do not infer batch-shape-independent floating field/probability digits from identical draws."
+  },
+  "law_quantization": "All binomial probabilities (including sequential multinomial conditionals) rounded to nearest 2^-40, ties upward; absolute error <=2^-41 per conditional Bernoulli probability. This is a declared fine approximation, not the exact real-valued probability law.",
+  "independent_grounding": {
+    "fixed_n_p_raw_poisson_multinomial_binomial_equal": true,
+    "probability_perturbation_changes_later_accepted_rng_consumption": true,
+    "changed_high_entries": 255,
+    "changed_next_low_entries": 288,
+    "root_cause_of_original_rerun": "not established"
+  },
+  "portability_limit": "No universal bitwise libm/platform/BLAS guarantee; full 18-arm alternate-runtime replay not observed. Frozen numeric operator/projectors avoid runtime eigensolver/grain regeneration. Quantization does not prove equality near every rounding boundary."
+}
