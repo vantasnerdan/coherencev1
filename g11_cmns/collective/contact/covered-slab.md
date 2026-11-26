@@ -1,5 +1,7 @@
 # Covered PdD(111): provisional D28–D26 steady contact
 
+**Replacement:** the [matched D26/D28 slab-pair steady-contact draft](matched-slab/README.md) uses the accepted real slab A/B/W curve, both inherited joins and cold/77/300 K; the historical borrowed-bulk-W calculation below is retained unchanged.
+
 The **1.600 Å join** gives a useful comparison **within the borrowed bulk-connected model**. The **1.288 Å join** needs too much unmeasured one-body continuation to quote a rate there. Neither result is a surface measurement or a prediction of foil emission.
 
 ## The reported join

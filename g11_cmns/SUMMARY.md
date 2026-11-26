@@ -38,7 +38,7 @@ A cell of 32 deuterons in the PdD wells and neighbour couplings of `g10_quantum_
 
 This is one pair on one line, with the neighbours held still, relative motion with no angular momentum, and a smooth assumed form below 0.1 A. The thermal rows are a quantum treatment of that one line, not the classical lattice runs above.
 
-## The closest pair at the surface (provisional)
+## The closest pair at the surface
 
 `collective/contact/covered-slab.md`. On the covered PdD(111) slab from `g10_quantum_site/pdd-surface-vacancy`, the adsorbed deuteron and the one below it rest 2.44 A apart, against 2.89 A in the bulk. The same contact calculation was run for that pair, with its two computed wells and, because the energy of this pair approaching has not been computed, the bulk pair energy used in its place.
 
@@ -51,6 +51,21 @@ This is one pair on one line, with the neighbours held still, relative motion wi
 - **Net gain 6 to 7 powers of ten,** which leaves the surface pair more than 90 short.
 - This is for the version joined at 1.6 A. Joined at 1.29 A the answer depends on how the wells are continued past their computed 0.36 A by 3 to 5 powers of ten, and Marvin gives no number there.
 - Provisional until the surface pair energy is computed (ordered from Giuliano after the titanium wells).
+
+### With the surface pair's own energy (replaces the provisional figures)
+
+`collective/contact/matched-slab/`. Giuliano computed the energy of this pair approaching (`g10_quantum_site/pdd-covered-slab-pair/`), and Marvin reran the contact calculation with it, in place of both the bulk stand-in and the earlier wells along the line. Contact density of the pair, in powers of ten relative to the bulk PdD pair:
+
+| Joined to the inner part at | Coldest state | 300 K |
+|---|---:|---:|
+| 1.6 A (inside the computed points) | +6.7 | +4.9 |
+| 1.29 A (0.09 A per deuteron beyond the last computed point) | +9.1 | +8.4 |
+
+- **The gain stands, slightly reduced.** At the 1.6 A join the surface pair is 0.7 (cold) and 0.8 (300 K) powers of ten below the provisional figure.
+- **Beside TiD2** (`g10_quantum_site/tid2-site/`) at the 1.6 A join: 0.4 powers of ten below it cold, 1.1 above it at 300 K. The surface pair's wells are softer, so heat helps it more.
+- **Sensitivities.** Using the first, coarser mesh for the whole approach lowers the figures by 0.5 to 0.8 powers of ten. The 1.29 A row depends on how the curves are continued past the last computed point (a different continuation moves it by +0.1 to +0.2) and is not on the same footing as the 1.6 A row.
+- The inner part of the pair interaction is the bulk PdD one for all three pairs; none has been computed for the surface or for titanium. Four of the five computed surface points carry the pseudo-atom overlap flag.
+- These are still more than 90 powers of ten from a signal. What the surface and TiD2 pairs show is how much the starting distance and the softness of the wells are worth: 5 to 7 powers of ten.
 
 ## Focusing: how much shared energy can arrive on one pair
 

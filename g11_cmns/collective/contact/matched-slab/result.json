@@ -1,0 +1,1669 @@
+{
+  "schema": "covered-slab-matched-contact-v1",
+  "base_commit": "6d795cc90fbf62cfca46d286447d1e46262831e4",
+  "source_sha256": {
+    "g10_quantum_site/pdd-covered-slab-pair/pair.json": "e3760bfca4a7d8d78627ad248589d2252813250dd7083d2f394873c6f0ac9036",
+    "g10_quantum_site/pdd-surface-vacancy/site-wells.json": "5b1d19e247bcaf546d3e38fe387b65ef7da78e4db26379688d69331075ea94f7",
+    "g11_cmns/collective/contact/bulk_pair.json": "7bcd74342a1ff22599eb0f98e0f8ed55aa5a722d450c40331de4a3c7c0163966",
+    "g11_cmns/collective/contact/sources/baseline_BO_pair.json": "854c570dc53ac5f0ff792f38393dea18c66dab7aa474d4f03b29d5e4e98a32a5",
+    "g10_quantum_site/tid2-site/pair/result.json": "5150f3451159318d3e7ae7a46350e3561d572d6f6075c747f11aac5601ddbc46",
+    "g10_quantum_site/tid2-site/pair/pair.json": "5b37f90ee2e33b9f5a268f5f39eff559cc87df92718d0a2f253fbca2bf489df8",
+    "g10_quantum_site/tid2-site/pair/bulk-reference.json": "c8f0efa347d5c503bfa5c5b2d989ebd5b1982eb5e439887466f29acc0acc0b19",
+    "g11_cmns/collective/contact/surface_steady_results.json": "24e432aa8d8f448cb285ba47efa99ff0ca4bfa367a4151ed273b5cb08f4745be",
+    "g11_cmns/collective/contact/contact.py": "7640d49cbf103ac8588058b0a34ddfc2298695a7ce15065a6c6817d6890028d1",
+    "g11_cmns/collective/contact/matched-slab/run.py": "004350a7294932be91a0450de91bf25931f5697f6fe433b0e53605c6ec502a78",
+    "g10_quantum_site/pdd-covered-slab-pair/native/m3-zero-0.json": "f9ad9d9e1b29560c596030b14917e053949d12d0a0df946ed41e40ca39518f7f",
+    "g10_quantum_site/pdd-covered-slab-pair/native/m3-a-6.json": "5a28dcfea756c67ffd8b248cc80301d87347f3aab2fda3ce9c621bf06059bff6",
+    "g10_quantum_site/pdd-covered-slab-pair/native/m3-b-6.json": "351cdfe8cf47bf3f5aaa89fcc6e1ca188b7b47c99e7cacaefa3b451197a9fb2c",
+    "g10_quantum_site/pdd-covered-slab-pair/native/m3-ab-6.json": "ea0883d06c68b94d56c22b034a25991c07fbb95f6b93de65db2cca6ddf03af0d",
+    "g10_quantum_site/pdd-covered-slab-pair/native/m3-a-12.json": "005f46ab4de92bf6b2619e88522edd383f6b0494582c3c82118d71ac27ac6da3",
+    "g10_quantum_site/pdd-covered-slab-pair/native/m3-b-12.json": "631993623b48e38fb51853d3dab63fd4e7f6e2dae4796635620937a839ba7ce0",
+    "g10_quantum_site/pdd-covered-slab-pair/native/m3-ab-12.json": "8aec92008a0720283f5703f8141afd3e3cf9da50125aff36cb498345b11c9a48",
+    "g10_quantum_site/pdd-covered-slab-pair/native/m3-a-24.json": "18cb457e3c676534148f55add7c0b396684743510dd90075b052435826ec9dba",
+    "g10_quantum_site/pdd-covered-slab-pair/native/m3-b-24.json": "353a164ccd60ef42900a7dfea5379b122bf64c34001bf7976fe2cf9952ae1007",
+    "g10_quantum_site/pdd-covered-slab-pair/native/m3-ab-24.json": "8806499432a7dad5da0a97024fecbef39c85e536d4b622479711fc949bbea73a",
+    "g10_quantum_site/pdd-covered-slab-pair/native/m3-a-36.json": "45e9826d31905977768f18787ef6c7599a7ed0020c58f834def677716084d54e",
+    "g10_quantum_site/pdd-covered-slab-pair/native/m3-b-36.json": "754c9ea98c74adee870254147adba8e7a4eb9f3391de9bcdbce0fe24f8124110",
+    "g10_quantum_site/pdd-covered-slab-pair/native/m3-ab-36.json": "a8b0d32f1813b064ec4487baf949a08c788936ece90fee002ab7c60fb41cef17",
+    "g10_quantum_site/pdd-covered-slab-pair/native/m3-a-48.json": "1d9bbd8d861bec6dca168500edd8aa13f014af1877eb1b365d171c615cc92961",
+    "g10_quantum_site/pdd-covered-slab-pair/native/m3-b-48.json": "75fbd4f5f46f701fe2cdf521141ce3aed129c702451f9778c1b39e0766a89ead",
+    "g10_quantum_site/pdd-covered-slab-pair/native/m3-ab-48.json": "7ace68f23a30b74230ab0def8f6538a56e598269f869552220a02aaae0354899",
+    "g10_quantum_site/pdd-covered-slab-pair/native/m2-zero-0.json": "b8d1ee15b636b2efbc3794d42810c1d1a4954b97ae7f3e601291d2dd0058daa6",
+    "g10_quantum_site/pdd-covered-slab-pair/native/m2-a-6.json": "776f5681546bdbb755e95e15a8d7759750755830c74c6a0f8e0f57b6692b3cb3",
+    "g10_quantum_site/pdd-covered-slab-pair/native/m2-b-6.json": "ad22bb64bbc2110f0422177bddde62c6c1e7a07d686906cf2f4688ea7daad5f6",
+    "g10_quantum_site/pdd-covered-slab-pair/native/m2-ab-6.json": "9053f0c9a53d8b04b15a275c091f5213358924f0636a133b16c87d8646a9acc6",
+    "g10_quantum_site/pdd-covered-slab-pair/native/m2-a-12.json": "bc8a156dc864820c629e62e020e0a96619e09dce1bb74830a77ac0c0d54e7aef",
+    "g10_quantum_site/pdd-covered-slab-pair/native/m2-b-12.json": "303ca6c9fb071f3075e72a70bafb6befa20bf4735b2c66e2a3ee849c036b9060",
+    "g10_quantum_site/pdd-covered-slab-pair/native/m2-ab-12.json": "a5f7faa9defd53997ec153eb713ab925e52f4d63fce098561810ce33792475c1",
+    "g10_quantum_site/pdd-covered-slab-pair/native/m2-a-24.json": "072ba0a3619bcc89b7f5714f054c8dc537031f9decf70dbcb58114ac6ed7170f",
+    "g10_quantum_site/pdd-covered-slab-pair/native/m2-b-24.json": "cfeecc91a7743f94a60eee1d41db90da36e13d7fbe101482ce2faac5ce11986e",
+    "g10_quantum_site/pdd-covered-slab-pair/native/m2-ab-24.json": "cbfac0fcbc73f0c9117835b976e607f1127c3c57467463c979f11c7964051f8e",
+    "g10_quantum_site/pdd-covered-slab-pair/native/m2-a-36.json": "5af8f171528ce522790f2406c30cb4030a07c4e3469e773ef9a52568212851e3",
+    "g10_quantum_site/pdd-covered-slab-pair/native/m2-b-36.json": "3f0c71fd020fded884790adcef574e347bec4076e7d5573af807cd90b40991c3",
+    "g10_quantum_site/pdd-covered-slab-pair/native/m2-ab-36.json": "8fe46f1b41349ca1c0864590deb59067be09edbd0a6ab97b7cedc13d79e11a4f",
+    "g10_quantum_site/pdd-covered-slab-pair/native/m2-a-48.json": "b26cbaba8702c642aa854998052fab0e808948f0dcfc306389ad6f7bda89e820",
+    "g10_quantum_site/pdd-covered-slab-pair/native/m2-b-48.json": "67637d6b51b21630da02b9d69f22d5b8aedb8730b560b257af66b102d42cf29d",
+    "g10_quantum_site/pdd-covered-slab-pair/native/m2-ab-48.json": "6cbaed15621eca1cb8038b57f70556d85464a4fbe63dbfab76d7b3ea53ed8cd2"
+  },
+  "normalization": "One normalized pure spatial l=0 radial pair; integral |u_R|^2 dR=1; rho=|u_R'(0)|^2/(4*pi), A^-3; canonical radial equilibrium, not lattice/foil rate.",
+  "geometry": {
+    "A": "D26 subsurface +axis inward",
+    "B": "D28 adsorbed -axis inward",
+    "axis": [
+      0.005452232903479853,
+      0.003152909799016573,
+      0.9999801659613882
+    ],
+    "R0_A": 2.4370398315432267
+  },
+  "measured": {
+    "m3": {
+      "rows": [
+        {
+          "u_A": 0.06,
+          "R_A": 2.3170398315432266,
+          "VA_eV": -0.0003014254385931281,
+          "VB_eV": 0.007098103769735076,
+          "U_eV": 0.008331164839816552,
+          "W_eV": 0.001534486508674604,
+          "dVA_du_eV_A": 0.03410859566132939,
+          "dVB_du_eV_A": 0.2072446113777018,
+          "dU_du_eV_A": 0.29509634431730836,
+          "dW_du_eV_A": 0.05374313727827715,
+          "PAW_overlap": false
+        },
+        {
+          "u_A": 0.12,
+          "R_A": 2.1970398315432265,
+          "VA_eV": 0.004574615897141143,
+          "VB_eV": 0.02516514114181234,
+          "U_eV": 0.03655893851120595,
+          "W_eV": 0.006819181472252467,
+          "dVA_du_eV_A": 0.11605221193115076,
+          "dVB_du_eV_A": 0.3822782990883099,
+          "dU_du_eV_A": 0.6239165277846747,
+          "dW_du_eV_A": 0.12558601676521397,
+          "PAW_overlap": true
+        },
+        {
+          "u_A": 0.24,
+          "R_A": 1.9570398315432267,
+          "VA_eV": 0.02420445202352539,
+          "VB_eV": 0.09226157619964681,
+          "U_eV": 0.1497971100331199,
+          "W_eV": 0.033331081809947705,
+          "dVA_du_eV_A": 0.20834823851564113,
+          "dVB_du_eV_A": 0.722201033189374,
+          "dU_du_eV_A": 1.2613061703193973,
+          "dW_du_eV_A": 0.33075689861438207,
+          "PAW_overlap": true
+        },
+        {
+          "u_A": 0.36,
+          "R_A": 1.7170398315432267,
+          "VA_eV": 0.05547728387148254,
+          "VB_eV": 0.19118407322669384,
+          "U_eV": 0.33626664226173375,
+          "W_eV": 0.08960528516355737,
+          "dVA_du_eV_A": 0.2903990110842882,
+          "dVB_du_eV_A": 0.9181193521245299,
+          "dU_du_eV_A": 1.8283061826940863,
+          "dW_du_eV_A": 0.6197878194852682,
+          "PAW_overlap": true
+        },
+        {
+          "u_A": 0.48,
+          "R_A": 1.4770398315432267,
+          "VA_eV": 0.09460662270258524,
+          "VB_eV": 0.3101058550860216,
+          "U_eV": 0.5893268955320536,
+          "W_eV": 0.18461441774344678,
+          "dVA_du_eV_A": 0.36762009895145187,
+          "dVB_du_eV_A": 1.034345604906868,
+          "dU_du_eV_A": 2.3747374433275965,
+          "dW_du_eV_A": 0.9727717394692765,
+          "PAW_overlap": true
+        }
+      ],
+      "native_zero_slopes_eV_A": [
+        -0.04159949367892177,
+        0.021804708141117343
+      ]
+    },
+    "m2": {
+      "rows": [
+        {
+          "u_A": 0.06,
+          "R_A": 2.3170398315432266,
+          "VA_eV": 0.0024587522764107916,
+          "VB_eV": 0.008055443829221076,
+          "U_eV": 0.01223935795779596,
+          "W_eV": 0.0017251618521640921,
+          "dVA_du_eV_A": 0.08232770393191584,
+          "dVB_du_eV_A": 0.22114033382509685,
+          "dU_du_eV_A": 0.36371774994315725,
+          "dW_du_eV_A": 0.060249712186144555,
+          "PAW_overlap": false
+        },
+        {
+          "u_A": 0.12,
+          "R_A": 2.1970398315432265,
+          "VA_eV": 0.010355106204983144,
+          "VB_eV": 0.026842819678321916,
+          "U_eV": 0.0447847020091956,
+          "W_eV": 0.0075867761258905375,
+          "dVA_du_eV_A": 0.16861665892117048,
+          "dVB_du_eV_A": 0.39202272260365706,
+          "dU_du_eV_A": 0.6990654302240279,
+          "dW_du_eV_A": 0.13842604869920033,
+          "PAW_overlap": true
+        },
+        {
+          "u_A": 0.24,
+          "R_A": 1.9570398315432267,
+          "VA_eV": 0.03675089523001418,
+          "VB_eV": 0.09461654337189884,
+          "U_eV": 0.16772429001103717,
+          "W_eV": 0.03635685140912415,
+          "dVA_du_eV_A": 0.26808671147374397,
+          "dVB_du_eV_A": 0.7234291566011545,
+          "dU_du_eV_A": 1.3468999105903239,
+          "dW_du_eV_A": 0.35538404251542544,
+          "PAW_overlap": true
+        },
+        {
+          "u_A": 0.36,
+          "R_A": 1.7170398315432267,
+          "VA_eV": 0.07545512708151136,
+          "VB_eV": 0.19317298463428756,
+          "U_eV": 0.36474328885904583,
+          "W_eV": 0.09611517714324691,
+          "dVA_du_eV_A": 0.3534727823192152,
+          "dVB_du_eV_A": 0.9107958737483518,
+          "dU_du_eV_A": 1.9172920775085514,
+          "dW_du_eV_A": 0.6530234214409844,
+          "PAW_overlap": true
+        },
+        {
+          "u_A": 0.48,
+          "R_A": 1.4770398315432267,
+          "VA_eV": 0.12204878947856912,
+          "VB_eV": 0.3107853595896728,
+          "U_eV": 0.6283281026085348,
+          "W_eV": 0.19549395354029286,
+          "dVA_du_eV_A": 0.42776648593091754,
+          "dVB_du_eV_A": 1.0202271600651442,
+          "dU_du_eV_A": 2.4598135240199213,
+          "dW_du_eV_A": 1.0118198780238596,
+          "PAW_overlap": true
+        }
+      ],
+      "native_zero_slopes_eV_A": [
+        0.0023172429556430393,
+        0.0396491138311006
+      ]
+    }
+  },
+  "single_finer_mesh_control": {
+    "separation_A": 1.7170398315432258,
+    "mesh_4_zero": {
+      "file": "g10_quantum_site/pdd-covered-slab-pair/native/m4-zero-0.json",
+      "bytes": 9574,
+      "sha256": "f6ede7063339e56cc8437b0200525de0d0a4a61431279850003a8f7964ea33e2"
+    },
+    "mesh_4_triplet": {
+      "displacement_per_D_A": 0.36,
+      "separation_A": 1.7170398315432258,
+      "A_eV": 0.05716334189246197,
+      "B_eV": 0.19687963834746824,
+      "AB_eV": 0.3413822413539265,
+      "connected_eV": 0.08733926111399626,
+      "AB_dE_du_eV_A": 1.845145031021996,
+      "connected_dE_du_eV_A": 0.607449138788776,
+      "mixed_forces_eV_A": [
+        [
+          -0.0007247896673921728,
+          -0.0004184416226548915,
+          -0.0007902442523751302
+        ],
+        [
+          9.90658595916849e-05,
+          -2.8281533265478442e-05,
+          0.00044571696849297904
+        ],
+        [
+          2.5060537303112085e-05,
+          9.996787011355701e-05,
+          0.0004456809948539253
+        ],
+        [
+          -0.0002716388975521622,
+          -0.00015681359146317575,
+          0.0006219475375470601
+        ],
+        [
+          -0.0005302233562912012,
+          -0.00030606982002522043,
+          -0.00012213228715335714
+        ],
+        [
+          -8.809619035213268e-05,
+          -0.0007208401460704738,
+          -0.00022652800844572343
+        ],
+        [
+          -0.0006683688887971911,
+          0.00028428948980076946,
+          -0.0002264248672329168
+        ],
+        [
+          -0.00028210745826580397,
+          -0.00016303861076224363,
+          -7.071598424958879e-05
+        ],
+        [
+          0.00016234401798027875,
+          0.0007448914769643492,
+          -0.0007615281409691296
+        ],
+        [
+          0.0006972233401300598,
+          0.00040298620813250183,
+          -0.007240671522928163
+        ],
+        [
+          -0.0007920676260365356,
+          -0.00045722779407999375,
+          -0.001453999696536215
+        ],
+        [
+          0.0007261816469477586,
+          -0.00023180509496560642,
+          -0.0007625144531776679
+        ],
+        [
+          -0.0027031616698877034,
+          -0.0015607408427289124,
+          -0.0017892382472672295
+        ],
+        [
+          -0.0009676388043398237,
+          0.020383139060106605,
+          0.006619392789181354
+        ],
+        [
+          0.017173024491886034,
+          -0.011030256296564303,
+          0.006621104577928666
+        ],
+        [
+          -0.01961407258477242,
+          -0.011322627394105653,
+          0.0047479214445062465
+        ],
+        [
+          0.000727202654799336,
+          0.000419847148998273,
+          0.00010211789309208519
+        ],
+        [
+          -0.00041167973406763814,
+          -9.643034623843527e-05,
+          5.5643051123391296e-05
+        ],
+        [
+          -0.00028935765880544473,
+          -0.0003083011080395742,
+          5.5682844469107096e-05
+        ],
+        [
+          0.00019910519599175558,
+          0.0001149426736203607,
+          0.0001875047593349749
+        ],
+        [
+          6.027479918549461e-05,
+          3.4843521389330695e-05,
+          -0.0006671957338084504
+        ],
+        [
+          0.0004846159032279862,
+          -0.00010041905290092412,
+          -0.0006144091492966881
+        ],
+        [
+          0.00015524546735077444,
+          0.0004698100634091887,
+          -0.0006145926918338018
+        ],
+        [
+          0.0002608313528165689,
+          0.00015037248473069413,
+          -0.00026590876252387263
+        ],
+        [
+          0.004039333840664294,
+          -0.0018954535963707358,
+          -0.00026845350629976783
+        ],
+        [
+          -0.0010147904724335938,
+          -0.0005855356385583155,
+          -0.0015493439931147206
+        ],
+        [
+          -0.0006695963269731028,
+          -0.00038626371448438265,
+          -0.12116789283634252
+        ],
+        [
+          0.0003785497688923445,
+          0.004445129945539819,
+          -0.00026965635108741615
+        ],
+        [
+          0.0028790776416327477,
+          0.0016636975273667878,
+          0.12191511675606317
+        ]
+      ],
+      "any_tagged_Pd_H_overlap": true,
+      "AB_min_tagged_Pd_D_A": 1.709154053434489,
+      "sources": [
+        {
+          "file": "g10_quantum_site/pdd-covered-slab-pair/native/m4-a-36.json",
+          "bytes": 9574,
+          "sha256": "e279bc50b81813fb7940c6431959593890281842ad576c2e2256b2612baf1de8"
+        },
+        {
+          "file": "g10_quantum_site/pdd-covered-slab-pair/native/m4-b-36.json",
+          "bytes": 9567,
+          "sha256": "07c61db167663eb47b092ddcbff7ea6e84c825c1e979746e522732fda1cb3d93"
+        },
+        {
+          "file": "g10_quantum_site/pdd-covered-slab-pair/native/m4-ab-36.json",
+          "bytes": 9553,
+          "sha256": "5da89135b9cbe8eebc4271b761bab7be0b4933dd0c2ac98d0ff06b373c9f318c"
+        }
+      ]
+    },
+    "mesh_3_connected_eV": 0.08960528516355737,
+    "connected_shift_eV": -0.0022660240495611106,
+    "abs_percent_shift": 2.5288955282324204,
+    "ten_percent_target_pass": true,
+    "AB_energy_rise_shift_eV": 0.005115599092192724,
+    "connected_derivative_shift_eV_A": -0.012338680696492133
+  },
+  "outward_proxy": {
+    "mesh": [
+      2,
+      2,
+      1
+    ],
+    "source_zero_energy_eV": -103.5187324510491,
+    "near_signed_normal_K_eV_A2": {
+      "subsurface": 1.3532953552408709,
+      "adsorbed": 3.1249324667391813
+    },
+    "source_normal_zero_slopes_eV_A": {
+      "A": -0.002407550192835972,
+      "B": -0.03947504640173243
+    },
+    "maximum_ignored_transverse_displacement_A": 0.002267407277466412
+  },
+  "terminal_inward_sensitivity": {
+    "A": {
+      "default_K_eV_A2": 1.3532953552408709,
+      "terminal_K_eV_A2": 0.7900956368270734
+    },
+    "B": {
+      "default_K_eV_A2": 3.1249324667391813,
+      "terminal_K_eV_A2": 0.22943359091785642
+    }
+  },
+  "actual_consumer_native_max_error_eV_or_eV_A": 5.551115123125783e-16,
+  "constants": {
+    "C_eV_A": 14.399645468602673,
+    "kinetic_eV_A2": 0.0020760113284868102,
+    "reduced_mass_kg": 1.6717918884e-27,
+    "KB_eV_K": 8.617333262145179e-05
+  },
+  "variants": [
+    {
+      "model": {
+        "join_A": 1.28782409436586,
+        "include_flagged": true,
+        "energy_shift_eV": 0.4161480628752309,
+        "continuity_eV": 0.0,
+        "slope_lattice_eV_A": -1.3992065163098353,
+        "slope_inner_eV_A": -0.026735783503415433,
+        "slope_mismatch_eV_A": -1.3724707328064198,
+        "inner_monotone_outward": false,
+        "inner_minimum_eV": 0.8321670214355387,
+        "connected_last_anchor_A": 0.48,
+        "n_grid": 19999,
+        "h_A": 0.0005,
+        "rmax_A": 10.0,
+        "energy_cutoff_eV": 4.0,
+        "levels": 53,
+        "match_height_eV": 0.25,
+        "ode_rtol": 3e-10,
+        "ground_match_A": 1.776,
+        "maximum_last_100_grid_probability": 9.944686755372604e-76
+      },
+      "preparation": {
+        "ground_energy_eV": 0.034235190819550745
+      },
+      "observables": [
+        {
+          "preparation": "thermal_77K",
+          "log10_contact_A_minus3": -102.56378842751442,
+          "contact_peak_energy_eV": 0.034235190819550745,
+          "contact_last_1eV_fraction": 8.968346121529901e-171,
+          "partition_last_1eV_fraction": 3.738500525476206e-200,
+          "contact_weighted_mean_energy_eV": 0.034483760203166944
+        },
+        {
+          "preparation": "thermal_300K",
+          "log10_contact_A_minus3": -98.29889065117601,
+          "contact_peak_energy_eV": 0.8635802240859995,
+          "contact_last_1eV_fraction": 8.475855748457064e-27,
+          "partition_last_1eV_fraction": 6.3196828573263544e-52,
+          "contact_weighted_mean_energy_eV": 0.7426857865003049
+        },
+        {
+          "preparation": "cold_ground",
+          "log10_contact_A_minus3": -102.56532467383158
+        }
+      ],
+      "spectrum": {
+        "energy_eV": [
+          0.034235190819550745,
+          0.1039726831242905,
+          0.17478718145184552,
+          0.24511098875388077,
+          0.3152312250872778,
+          0.38494034283745204,
+          0.4544931380003462,
+          0.5239509382911329,
+          0.5933477774256073,
+          0.6625660217475926,
+          0.7313538946514235,
+          0.7989957197174169,
+          0.8635802240859995,
+          0.9226464729486943,
+          0.9802274850960295,
+          1.0433782241209335,
+          1.1109445348456757,
+          1.1799705396183273,
+          1.2490470004443108,
+          1.318137526539553,
+          1.3879010364833757,
+          1.4584933780733271,
+          1.5293344671724496,
+          1.5999243183536893,
+          1.6707027842268465,
+          1.742569719732944,
+          1.815800816803911,
+          1.8899777898409926,
+          1.964752350075107,
+          2.040171364223723,
+          2.116420705328906,
+          2.193488696090953,
+          2.2711959432336775,
+          2.349466451812548,
+          2.428389890140097,
+          2.508065386321711,
+          2.588433649412602,
+          2.6693301286744804,
+          2.75064854583042,
+          2.832423597092843,
+          2.9147615476709285,
+          2.9977017306495446,
+          3.081175140957594,
+          3.1650815672205486,
+          3.24937465189716,
+          3.3340833951346207,
+          3.419250040049417,
+          3.504870084157285,
+          3.590894845205179,
+          3.6772776142416825,
+          3.7640128096970926,
+          3.8511295917038364,
+          3.9386464337108835
+        ],
+        "log10_contact_A_minus3": [
+          -102.56532467383158,
+          -100.448837873215,
+          -98.5865534477091,
+          -96.91034537416249,
+          -95.35400212674706,
+          -93.89744945457379,
+          -92.51705128805166,
+          -91.1989695693548,
+          -89.93015878564943,
+          -88.69794307508252,
+          -87.48829580912106,
+          -86.29306096024482,
+          -85.14572395817025,
+          -84.19991124367061,
+          -83.56795855982422,
+          -83.06625641870595,
+          -82.52513765355697,
+          -81.9367687307547,
+          -81.34427716917132,
+          -80.78249286013178,
+          -80.25261632303248,
+          -79.73768279525075,
+          -79.23440025824111,
+          -78.7641352571135,
+          -78.34636843187002,
+          -77.9720529668765,
+          -77.6165712102056,
+          -77.26801478129906,
+          -76.93085581888315,
+          -76.61062677242481,
+          -76.30466295548315,
+          -76.00687435329176,
+          -75.71589554953249,
+          -75.43469913550376,
+          -75.16436905289274,
+          -74.9014067150742,
+          -74.64136201919621,
+          -74.38348001342841,
+          -74.13069568821054,
+          -73.88578642243117,
+          -73.64828016307634,
+          -73.41506134924231,
+          -73.1837744857199,
+          -72.9545193328164,
+          -72.72902200608702,
+          -72.50834196172431,
+          -72.29180439516689,
+          -72.07794668338434,
+          -71.86608145870528,
+          -71.65672420536764,
+          -71.45080231900562,
+          -71.24841117455003,
+          -71.04864781260518
+        ]
+      },
+      "case": "m3",
+      "descriptor_sha256": "9c473c3ae7c6f2368e96e60cf358ed6b6a0f502c0eda8c6731eca310884b8b50",
+      "convergence": {
+        "base_model": {
+          "join_A": 1.28782409436586,
+          "include_flagged": true,
+          "energy_shift_eV": 0.4161480628752309,
+          "continuity_eV": 0.0,
+          "slope_lattice_eV_A": -1.3992065163098353,
+          "slope_inner_eV_A": -0.026735783503415433,
+          "slope_mismatch_eV_A": -1.3724707328064198,
+          "inner_monotone_outward": false,
+          "inner_minimum_eV": 0.8321670214355387,
+          "connected_last_anchor_A": 0.48,
+          "n_grid": 8999,
+          "h_A": 0.001,
+          "rmax_A": 9.0,
+          "energy_cutoff_eV": 3.0,
+          "levels": 42,
+          "match_height_eV": 0.15,
+          "ode_rtol": 2e-09,
+          "ground_match_A": 1.905,
+          "maximum_last_100_grid_probability": 7.091447556160617e-76
+        },
+        "base_observables": [
+          {
+            "preparation": "thermal_77K",
+            "log10_contact_A_minus3": -102.56379119014144,
+            "contact_peak_energy_eV": 0.034235163442316946,
+            "contact_last_1eV_fraction": 4.618213346218779e-106,
+            "partition_last_1eV_fraction": 5.1468751459184105e-132,
+            "contact_weighted_mean_energy_eV": 0.03448373256090509
+          },
+          {
+            "preparation": "thermal_300K",
+            "log10_contact_A_minus3": -98.29889343889549,
+            "contact_peak_energy_eV": 0.8635727632284291,
+            "contact_last_1eV_fraction": 1.0204710802255833e-12,
+            "partition_last_1eV_fraction": 1.9758242134388114e-34,
+            "contact_weighted_mean_energy_eV": 0.7426859953757113
+          },
+          {
+            "preparation": "cold_ground",
+            "log10_contact_A_minus3": -102.56532743703886
+          }
+        ],
+        "final_log10_contact_change": {
+          "thermal_77K": 2.7626270195924008e-06,
+          "thermal_300K": 2.787719481034401e-06,
+          "cold_ground": 2.763207277212132e-06
+        }
+      },
+      "contact_support": [
+        {
+          "temperature_K": 77.0,
+          "contact_99_9_percent_below_energy_eV": 0.1039726831242905,
+          "contact_fraction_above_2eV": 4.584551659028596e-106,
+          "log10_contact_fraction_top_1eV": -170.04728763906496,
+          "truncating_4_to_3eV_change_dex": 0.0
+        },
+        {
+          "temperature_K": 300.0,
+          "contact_99_9_percent_below_energy_eV": 1.1799705396183273,
+          "contact_fraction_above_2eV": 1.0189499592027902e-12,
+          "log10_contact_fraction_top_1eV": -26.071816443205023,
+          "truncating_4_to_3eV_change_dex": 0.0
+        }
+      ],
+      "join_support": {
+        "u_per_D_A": 0.5746078685886833,
+        "per_D_extension_A": 0.09460786858868331,
+        "last_native_R_A": 1.4770398315432267,
+        "status": "conditional continuation: quadratic A/B plus tangent W"
+      }
+    },
+    {
+      "model": {
+        "join_A": 1.6,
+        "include_flagged": true,
+        "energy_shift_eV": 0.6326741058546635,
+        "continuity_eV": 0.0,
+        "slope_lattice_eV_A": -1.052872940641826,
+        "slope_inner_eV_A": -5.058916096036661,
+        "slope_mismatch_eV_A": 4.006043155394835,
+        "inner_monotone_outward": false,
+        "inner_minimum_eV": 0.4514786244688499,
+        "connected_last_anchor_A": 0.48,
+        "n_grid": 19999,
+        "h_A": 0.0005,
+        "rmax_A": 10.0,
+        "energy_cutoff_eV": 4.0,
+        "levels": 53,
+        "match_height_eV": 0.25,
+        "ode_rtol": 3e-10,
+        "ground_match_A": 1.776,
+        "maximum_last_100_grid_probability": 7.887642351286657e-76
+      },
+      "preparation": {
+        "ground_energy_eV": 0.03423521422452109
+      },
+      "observables": [
+        {
+          "preparation": "thermal_77K",
+          "log10_contact_A_minus3": -104.99206194608475,
+          "contact_peak_energy_eV": 0.03423521422452109,
+          "contact_last_1eV_fraction": 3.771143262349295e-167,
+          "partition_last_1eV_fraction": 2.874949488157221e-198,
+          "contact_weighted_mean_energy_eV": 0.03443894122099205
+        },
+        {
+          "preparation": "thermal_300K",
+          "log10_contact_A_minus3": -101.86484338703197,
+          "contact_peak_energy_eV": 1.1257934070392759,
+          "contact_last_1eV_fraction": 1.9506433776126368e-23,
+          "partition_last_1eV_fraction": 1.930265102600992e-51,
+          "contact_weighted_mean_energy_eV": 0.754714933528231
+        },
+        {
+          "preparation": "cold_ground",
+          "log10_contact_A_minus3": -104.99331895450432
+        }
+      ],
+      "spectrum": {
+        "energy_eV": [
+          0.03423521422452109,
+          0.10397324748719824,
+          0.17479411973632847,
+          0.2451632587256116,
+          0.3155064022313076,
+          0.3859929882248996,
+          0.4575482609144281,
+          0.530956103428835,
+          0.6066600232998733,
+          0.6845611262517692,
+          0.7642765512864891,
+          0.845133631142573,
+          0.9260084296546258,
+          1.0045238158578749,
+          1.0734853961809647,
+          1.1257934070392759,
+          1.184250642180742,
+          1.2495230569157165,
+          1.3165636773415645,
+          1.3858900863736654,
+          1.4553330271443463,
+          1.525312466014125,
+          1.596921796163774,
+          1.6683432352221859,
+          1.738931870965323,
+          1.8104299361052165,
+          1.882619274626577,
+          1.9548164178561254,
+          2.0283202972276184,
+          2.1033679244731154,
+          2.178775893717776,
+          2.254628657142784,
+          2.331651758272552,
+          2.409382775963236,
+          2.487328279496709,
+          2.5660385698314903,
+          2.645835403071427,
+          2.7261592547104003,
+          2.8067215412646336,
+          2.8879369458565183,
+          2.9699505554720034,
+          3.052361038865538,
+          3.1350188470507074,
+          3.218270966992038,
+          3.302260027463177,
+          3.3866715327344856,
+          3.471300459593679,
+          3.55635082575005,
+          3.642003155625182,
+          3.7280901795612262,
+          3.814398796386598,
+          3.901019369325139,
+          3.988160104049685
+        ],
+        "log10_contact_A_minus3": [
+          -104.99331895450432,
+          -102.96316819826392,
+          -101.202792595569,
+          -99.64710119734973,
+          -98.23596408550523,
+          -96.95031004488165,
+          -95.75677186984419,
+          -94.61751994412246,
+          -93.49046405340647,
+          -92.33790620664487,
+          -91.12735970008961,
+          -89.82976330865087,
+          -88.41356542459513,
+          -86.84985855102883,
+          -85.2633771687226,
+          -84.28330556904544,
+          -83.74608466134681,
+          -83.1658114543381,
+          -82.59169599254679,
+          -82.00227129417605,
+          -81.4137512252847,
+          -80.8673264348565,
+          -80.32068224331981,
+          -79.76674994448464,
+          -79.26392504583511,
+          -78.8099148618659,
+          -78.37440265616517,
+          -77.98103836115634,
+          -77.63010996233491,
+          -77.2818875874357,
+          -76.93673431498725,
+          -76.61673751064595,
+          -76.31019452449176,
+          -76.00289203465867,
+          -75.70890331498506,
+          -75.43516065268089,
+          -75.16489607339604,
+          -74.891311205676,
+          -74.62677476305784,
+          -74.37494209896431,
+          -74.1249504804505,
+          -73.87422039429653,
+          -73.63210070266692,
+          -73.40073867562516,
+          -73.17100567721445,
+          -72.93902849546532,
+          -72.7114078721934,
+          -72.49221531999477,
+          -72.27634002193689,
+          -72.05927687904392,
+          -71.84453063544584,
+          -71.63686024626534,
+          -71.43399460050739
+        ]
+      },
+      "case": "m3",
+      "descriptor_sha256": "9c473c3ae7c6f2368e96e60cf358ed6b6a0f502c0eda8c6731eca310884b8b50",
+      "convergence": {
+        "base_model": {
+          "join_A": 1.6,
+          "include_flagged": true,
+          "energy_shift_eV": 0.6326741058546635,
+          "continuity_eV": 0.0,
+          "slope_lattice_eV_A": -1.052872940641826,
+          "slope_inner_eV_A": -5.058916096036661,
+          "slope_mismatch_eV_A": 4.006043155394835,
+          "inner_monotone_outward": false,
+          "inner_minimum_eV": 0.4514786244688499,
+          "connected_last_anchor_A": 0.48,
+          "n_grid": 8999,
+          "h_A": 0.001,
+          "rmax_A": 9.0,
+          "energy_cutoff_eV": 3.0,
+          "levels": 41,
+          "match_height_eV": 0.15,
+          "ode_rtol": 2e-09,
+          "ground_match_A": 1.905,
+          "maximum_last_100_grid_probability": 1.814248447489051e-76
+        },
+        "base_observables": [
+          {
+            "preparation": "thermal_77K",
+            "log10_contact_A_minus3": -104.99206465246858,
+            "contact_peak_energy_eV": 0.0342351868411834,
+            "contact_last_1eV_fraction": 7.058020978248522e-104,
+            "partition_last_1eV_fraction": 3.068824400335451e-131,
+            "contact_weighted_mean_energy_eV": 0.03443891514211994
+          },
+          {
+            "preparation": "thermal_300K",
+            "log10_contact_A_minus3": -101.8648428344349,
+            "contact_peak_energy_eV": 1.12578313044511,
+            "contact_last_1eV_fraction": 5.786040621541294e-10,
+            "partition_last_1eV_fraction": 3.1328497821404447e-34,
+            "contact_weighted_mean_energy_eV": 0.7547130594205232
+          },
+          {
+            "preparation": "cold_ground",
+            "log10_contact_A_minus3": -104.99332167084417
+          }
+        ],
+        "final_log10_contact_change": {
+          "thermal_77K": 2.7063838388130534e-06,
+          "thermal_300K": -5.525970721009799e-07,
+          "cold_ground": 2.7163398499396862e-06
+        }
+      },
+      "contact_support": [
+        {
+          "temperature_K": 77.0,
+          "contact_99_9_percent_below_energy_eV": 0.10397324748719824,
+          "contact_fraction_above_2eV": 7.010737041822477e-104,
+          "log10_contact_fraction_top_1eV": -166.4235269688232,
+          "truncating_4_to_3eV_change_dex": 0.0
+        },
+        {
+          "temperature_K": 300.0,
+          "contact_99_9_percent_below_energy_eV": 1.3858900863736654,
+          "contact_fraction_above_2eV": 5.778459204899101e-10,
+          "log10_contact_fraction_top_1eV": -22.70982212234909,
+          "truncating_4_to_3eV_change_dex": 0.0
+        }
+      ],
+      "join_support": {
+        "u_per_D_A": 0.4185199157716133,
+        "per_D_extension_A": 0.0,
+        "last_native_R_A": 1.4770398315432267,
+        "status": "interpolated A/B/W"
+      }
+    },
+    {
+      "model": {
+        "join_A": 1.28782409436586,
+        "include_flagged": true,
+        "energy_shift_eV": 0.46319813661389164,
+        "continuity_eV": 0.0,
+        "slope_lattice_eV_A": -1.4417445566559977,
+        "slope_inner_eV_A": -0.026735783503415433,
+        "slope_mismatch_eV_A": -1.4150087731525822,
+        "inner_monotone_outward": false,
+        "inner_minimum_eV": 0.8792170951741994,
+        "connected_last_anchor_A": 0.48,
+        "n_grid": 19999,
+        "h_A": 0.0005,
+        "rmax_A": 10.0,
+        "energy_cutoff_eV": 4.0,
+        "levels": 53,
+        "match_height_eV": 0.25,
+        "ode_rtol": 3e-10,
+        "ground_match_A": 1.8035,
+        "maximum_last_100_grid_probability": 9.073684993539808e-74
+      },
+      "preparation": {
+        "ground_energy_eV": 0.035902191463310695
+      },
+      "observables": [
+        {
+          "preparation": "thermal_77K",
+          "log10_contact_A_minus3": -103.33838105297836,
+          "contact_peak_energy_eV": 0.035902191463310695,
+          "contact_last_1eV_fraction": 1.2997464513234306e-165,
+          "partition_last_1eV_fraction": 1.9275219816912206e-195,
+          "contact_weighted_mean_energy_eV": 0.036101163198735416
+        },
+        {
+          "preparation": "thermal_300K",
+          "log10_contact_A_minus3": -99.03330582794088,
+          "contact_peak_energy_eV": 0.9427663200674667,
+          "contact_last_1eV_fraction": 3.5480767974068935e-25,
+          "partition_last_1eV_fraction": 1.0311901997135651e-50,
+          "contact_weighted_mean_energy_eV": 0.7733018166298632
+        },
+        {
+          "preparation": "cold_ground",
+          "log10_contact_A_minus3": -103.3395693109772
+        }
+      ],
+      "spectrum": {
+        "energy_eV": [
+          0.035902191463310695,
+          0.10812364490518206,
+          0.18022180653625341,
+          0.2518243317440167,
+          0.3229710389445833,
+          0.39369928188525677,
+          0.46416422020122855,
+          0.5345091651507949,
+          0.6047270095661834,
+          0.6747786225679813,
+          0.7445120010558961,
+          0.8135016061127287,
+          0.8804802995268648,
+          0.9427663200674667,
+          1.00022645532727,
+          1.0606821323542424,
+          1.1269400133344099,
+          1.1958770425566991,
+          1.2652733729392172,
+          1.3344978959338594,
+          1.4040781819225305,
+          1.4745312967829027,
+          1.5455438242588568,
+          1.6164206954616533,
+          1.6871472049497893,
+          1.758592346102116,
+          1.8314056071293852,
+          1.9053802187732145,
+          1.9800437745027273,
+          2.0552796695637063,
+          2.131277437050059,
+          2.2081337179685097,
+          2.2857041848176376,
+          2.363838854519117,
+          2.442568396339472,
+          2.5220225657203104,
+          2.6022150122988146,
+          2.6830057710881423,
+          2.764240219290543,
+          2.8458964099982476,
+          2.928070712557676,
+          3.010845530188522,
+          3.0941917408110315,
+          3.178006218540909,
+          3.262211944598942,
+          3.346813016839193,
+          3.431856732998707,
+          3.5173635886854324,
+          3.603296317016425,
+          3.689599954973553,
+          3.7762496851815133,
+          3.8632658985642623,
+          3.950677967200348
+        ],
+        "log10_contact_A_minus3": [
+          -103.3395693109772,
+          -101.17249642043896,
+          -99.29061971561316,
+          -97.59058714916834,
+          -96.0167868538219,
+          -94.5404374550561,
+          -93.14253138746331,
+          -91.80732625692843,
+          -90.52438530340375,
+          -89.28112650646071,
+          -88.06418446185752,
+          -86.86128652901749,
+          -85.67746823251665,
+          -84.60356167778116,
+          -83.82503292915635,
+          -83.29292996165046,
+          -82.77754677045088,
+          -82.20428744048444,
+          -81.60527412331942,
+          -81.02532043205899,
+          -80.48182688548444,
+          -79.96139079857713,
+          -79.45047100141201,
+          -78.9611039291358,
+          -78.51885761255376,
+          -78.1281456045585,
+          -77.76680685385566,
+          -77.41476582034284,
+          -77.07105614615776,
+          -76.74298206299633,
+          -76.43146623274416,
+          -76.13048464550204,
+          -75.83597527907337,
+          -75.54986165628013,
+          -75.27486569551847,
+          -75.00925018076501,
+          -74.74815297249,
+          -74.48888147350631,
+          -74.23322348550839,
+          -73.98466197984182,
+          -73.74423862764542,
+          -73.5095228280403,
+          -73.27740335392079,
+          -73.04691903735653,
+          -72.81947228099006,
+          -72.59665400993323,
+          -72.37849769058838,
+          -72.16359733673364,
+          -71.95077474182322,
+          -71.74011880644568,
+          -71.5325823346866,
+          -71.32871845629302,
+          -71.12796521599421
+        ]
+      },
+      "case": "m2",
+      "descriptor_sha256": "e5175fa519d334d6627f8c3afb85584280e4ba8dc29c2716d4985bfe4e9c9315",
+      "convergence": {
+        "base_model": {
+          "join_A": 1.28782409436586,
+          "include_flagged": true,
+          "energy_shift_eV": 0.46319813661389164,
+          "continuity_eV": 0.0,
+          "slope_lattice_eV_A": -1.4417445566559977,
+          "slope_inner_eV_A": -0.026735783503415433,
+          "slope_mismatch_eV_A": -1.4150087731525822,
+          "inner_monotone_outward": false,
+          "inner_minimum_eV": 0.8792170951741994,
+          "connected_last_anchor_A": 0.48,
+          "n_grid": 8999,
+          "h_A": 0.001,
+          "rmax_A": 9.0,
+          "energy_cutoff_eV": 3.0,
+          "levels": 41,
+          "match_height_eV": 0.15,
+          "ode_rtol": 2e-09,
+          "ground_match_A": 1.93,
+          "maximum_last_100_grid_probability": 6.76262178846688e-77
+        },
+        "base_observables": [
+          {
+            "preparation": "thermal_77K",
+            "log10_contact_A_minus3": -103.33838388918207,
+            "contact_peak_energy_eV": 0.035902161958747084,
+            "contact_last_1eV_fraction": 2.672701285461924e-106,
+            "partition_last_1eV_fraction": 6.788705466755306e-133,
+            "contact_weighted_mean_energy_eV": 0.03610113503888596
+          },
+          {
+            "preparation": "thermal_300K",
+            "log10_contact_A_minus3": -99.03330847892127,
+            "contact_peak_energy_eV": 0.9427579971804114,
+            "contact_last_1eV_fraction": 2.4487378294589275e-12,
+            "partition_last_1eV_fraction": 1.1828934209691127e-34,
+            "contact_weighted_mean_energy_eV": 0.7733019720839895
+          },
+          {
+            "preparation": "cold_ground",
+            "log10_contact_A_minus3": -103.33957215705112
+          }
+        ],
+        "final_log10_contact_change": {
+          "thermal_77K": 2.8362037056695044e-06,
+          "thermal_300K": 2.650980391649682e-06,
+          "cold_ground": 2.8460739258662215e-06
+        }
+      },
+      "contact_support": [
+        {
+          "temperature_K": 77.0,
+          "contact_99_9_percent_below_energy_eV": 0.10812364490518206,
+          "contact_fraction_above_2eV": 2.6532770528876718e-106,
+          "log10_contact_fraction_top_1eV": -164.88614135963988,
+          "truncating_4_to_3eV_change_dex": 0.0
+        },
+        {
+          "temperature_K": 300.0,
+          "contact_99_9_percent_below_energy_eV": 1.1958770425566991,
+          "contact_fraction_above_2eV": 2.4451197054414047e-12,
+          "log10_contact_fraction_top_1eV": -24.450006988522087,
+          "truncating_4_to_3eV_change_dex": 0.0
+        }
+      ],
+      "join_support": {
+        "u_per_D_A": 0.5746078685886833,
+        "per_D_extension_A": 0.09460786858868331,
+        "last_native_R_A": 1.4770398315432267,
+        "status": "conditional continuation: quadratic A/B plus tangent W"
+      }
+    },
+    {
+      "model": {
+        "join_A": 1.6,
+        "include_flagged": true,
+        "energy_shift_eV": 0.6663413356656154,
+        "continuity_eV": 0.0,
+        "slope_lattice_eV_A": -1.0969175011319006,
+        "slope_inner_eV_A": -5.058916096036661,
+        "slope_mismatch_eV_A": 3.9619985949047605,
+        "inner_monotone_outward": false,
+        "inner_minimum_eV": 0.4851458542798018,
+        "connected_last_anchor_A": 0.48,
+        "n_grid": 19999,
+        "h_A": 0.0005,
+        "rmax_A": 10.0,
+        "energy_cutoff_eV": 4.0,
+        "levels": 53,
+        "match_height_eV": 0.25,
+        "ode_rtol": 3e-10,
+        "ground_match_A": 1.8035,
+        "maximum_last_100_grid_probability": 3.104251361919702e-76
+      },
+      "preparation": {
+        "ground_energy_eV": 0.03590220242680331
+      },
+      "observables": [
+        {
+          "preparation": "thermal_77K",
+          "log10_contact_A_minus3": -105.60760494006796,
+          "contact_peak_energy_eV": 0.03590220242680331,
+          "contact_last_1eV_fraction": 3.478086296773365e-167,
+          "partition_last_1eV_fraction": 7.544137179176147e-199,
+          "contact_weighted_mean_energy_eV": 0.036067639082947016
+        },
+        {
+          "preparation": "thermal_300K",
+          "log10_contact_A_minus3": -102.38985660153597,
+          "contact_peak_energy_eV": 1.1442798188837442,
+          "contact_last_1eV_fraction": 3.9765388750788767e-23,
+          "partition_last_1eV_fraction": 1.3781572946080316e-51,
+          "contact_weighted_mean_energy_eV": 0.776535715936293
+        },
+        {
+          "preparation": "cold_ground",
+          "log10_contact_A_minus3": -105.60859159790137
+        }
+      ],
+      "spectrum": {
+        "energy_eV": [
+          0.03590220242680331,
+          0.10812393431779732,
+          0.18022554811948882,
+          0.2518543826623188,
+          0.3231392581371552,
+          0.3943907527993921,
+          0.4663184850047057,
+          0.5397858169669982,
+          0.6153086693340131,
+          0.6929911158578701,
+          0.77256758719025,
+          0.8534658946771112,
+          0.9347517299792227,
+          1.0146229684276518,
+          1.0879614751711597,
+          1.1442798188837442,
+          1.198947641639373,
+          1.263463040656856,
+          1.3299318135107159,
+          1.3988440264637303,
+          1.468484260435424,
+          1.5381762449283998,
+          1.6094751536319079,
+          1.6812426133199847,
+          1.7519971616374221,
+          1.8231852899226246,
+          1.895377052970099,
+          1.9675606947677333,
+          2.0406127988477687,
+          2.1153848564470525,
+          2.1908182646553946,
+          2.266502378489407,
+          2.3432347131893483,
+          2.4208998385179967,
+          2.498813983184694,
+          2.577280546198126,
+          2.656846277048894,
+          2.737127366331804,
+          2.817642809334399,
+          2.898671559850495,
+          2.980527649703122,
+          3.0629051786950807,
+          3.145509391425149,
+          3.2285967070297277,
+          3.3124330658824697,
+          3.3967973886334653,
+          3.481393713392472,
+          3.566330585759733,
+          3.6518505671034465,
+          3.7378753746799616,
+          3.824157889892968,
+          3.9106990124776244,
+          3.997714932451272
+        ],
+        "log10_contact_A_minus3": [
+          -105.60859159790137,
+          -103.52162052049783,
+          -101.73224842010703,
+          -100.14088541354506,
+          -98.69725401016755,
+          -97.37592142217068,
+          -96.15277490504693,
+          -94.99347819143179,
+          -93.85974241621787,
+          -92.7123334835295,
+          -91.51714726050469,
+          -90.24491650936407,
+          -88.86484365984579,
+          -87.34350930305867,
+          -85.7171765879066,
+          -84.49758363793292,
+          -83.90576488008352,
+          -83.34180331108071,
+          -82.7616834653644,
+          -82.17960754285644,
+          -81.58331271189117,
+          -81.02521291998464,
+          -80.48310578139191,
+          -79.92553697691126,
+          -79.40329002911213,
+          -78.93914290813906,
+          -78.49748381347497,
+          -78.08869391591521,
+          -77.72906707546406,
+          -77.38234610367331,
+          -77.0333620899113,
+          -76.70549213836249,
+          -76.39733998561877,
+          -76.08963509137911,
+          -75.78985205834013,
+          -75.51128213079674,
+          -75.2415966567782,
+          -74.96803272957273,
+          -74.69961295897151,
+          -74.44486366107108,
+          -74.19520016782938,
+          -73.9438754573895,
+          -73.69842243506987,
+          -73.46459874504716,
+          -73.23519191821619,
+          -73.00341391237826,
+          -72.77373053232793,
+          -72.55230627191658,
+          -72.33612173255874,
+          -72.11928863222586,
+          -71.9032268893812,
+          -71.69342658617559,
+          -71.4897218475908
+        ]
+      },
+      "case": "m2",
+      "descriptor_sha256": "e5175fa519d334d6627f8c3afb85584280e4ba8dc29c2716d4985bfe4e9c9315",
+      "convergence": {
+        "base_model": {
+          "join_A": 1.6,
+          "include_flagged": true,
+          "energy_shift_eV": 0.6663413356656154,
+          "continuity_eV": 0.0,
+          "slope_lattice_eV_A": -1.0969175011319006,
+          "slope_inner_eV_A": -5.058916096036661,
+          "slope_mismatch_eV_A": 3.9619985949047605,
+          "inner_monotone_outward": false,
+          "inner_minimum_eV": 0.4851458542798018,
+          "connected_last_anchor_A": 0.48,
+          "n_grid": 8999,
+          "h_A": 0.001,
+          "rmax_A": 9.0,
+          "energy_cutoff_eV": 3.0,
+          "levels": 41,
+          "match_height_eV": 0.15,
+          "ode_rtol": 2e-09,
+          "ground_match_A": 1.93,
+          "maximum_last_100_grid_probability": 1.5285728449984079e-77
+        },
+        "base_observables": [
+          {
+            "preparation": "thermal_77K",
+            "log10_contact_A_minus3": -105.60760770266283,
+            "contact_peak_energy_eV": 0.035902172921621026,
+            "contact_last_1eV_fraction": 4.675242505363044e-104,
+            "partition_last_1eV_fraction": 6.187400616699608e-132,
+            "contact_weighted_mean_energy_eV": 0.03606761073886569
+          },
+          {
+            "preparation": "thermal_300K",
+            "log10_contact_A_minus3": -102.38985618676588,
+            "contact_peak_energy_eV": 1.1442697191637272,
+            "contact_last_1eV_fraction": 1.0307519694041012e-09,
+            "partition_last_1eV_fraction": 2.0915130056807724e-34,
+            "contact_weighted_mean_energy_eV": 0.7765339731595101
+          },
+          {
+            "preparation": "cold_ground",
+            "log10_contact_A_minus3": -105.60859436894125
+          }
+        ],
+        "final_log10_contact_change": {
+          "thermal_77K": 2.762594874639035e-06,
+          "thermal_300K": -4.147700849443936e-07,
+          "cold_ground": 2.7710398882163645e-06
+        }
+      },
+      "contact_support": [
+        {
+          "temperature_K": 77.0,
+          "contact_99_9_percent_below_energy_eV": 0.10812393431779732,
+          "contact_fraction_above_2eV": 4.644042372624285e-104,
+          "log10_contact_fraction_top_1eV": -166.45865964667271,
+          "truncating_4_to_3eV_change_dex": 0.0
+        },
+        {
+          "temperature_K": 300.0,
+          "contact_99_9_percent_below_energy_eV": 1.3988440264637303,
+          "contact_fraction_above_2eV": 1.0294092419868707e-09,
+          "log10_contact_fraction_top_1eV": -22.400494767480122,
+          "truncating_4_to_3eV_change_dex": 0.0
+        }
+      ],
+      "join_support": {
+        "u_per_D_A": 0.4185199157716133,
+        "per_D_extension_A": 0.0,
+        "last_native_R_A": 1.4770398315432267,
+        "status": "interpolated A/B/W"
+      }
+    },
+    {
+      "model": {
+        "join_A": 1.28782409436586,
+        "include_flagged": true,
+        "energy_shift_eV": 0.4006692646661182,
+        "continuity_eV": 0.0,
+        "slope_lattice_eV_A": -1.235596465264205,
+        "slope_inner_eV_A": -0.026735783503415433,
+        "slope_mismatch_eV_A": -1.2088606817607896,
+        "inner_monotone_outward": false,
+        "inner_minimum_eV": 0.816688223226426,
+        "connected_last_anchor_A": 0.48,
+        "n_grid": 19999,
+        "h_A": 0.0005,
+        "rmax_A": 10.0,
+        "energy_cutoff_eV": 4.0,
+        "levels": 53,
+        "match_height_eV": 0.25,
+        "ode_rtol": 3e-10,
+        "ground_match_A": 1.776,
+        "maximum_last_100_grid_probability": 9.098381420717508e-77
+      },
+      "preparation": {
+        "ground_energy_eV": 0.03423519081969385
+      },
+      "observables": [
+        {
+          "preparation": "thermal_77K",
+          "log10_contact_A_minus3": -102.43643773245604,
+          "contact_peak_energy_eV": 0.03423519081969385,
+          "contact_last_1eV_fraction": 1.1276751225123042e-170,
+          "partition_last_1eV_fraction": 5.822818060483826e-200,
+          "contact_weighted_mean_energy_eV": 0.034485993301708553
+        },
+        {
+          "preparation": "thermal_300K",
+          "log10_contact_A_minus3": -98.08010162141426,
+          "contact_peak_energy_eV": 0.8603430589698613,
+          "contact_last_1eV_fraction": 6.210160442413647e-27,
+          "partition_last_1eV_fraction": 7.080724625207558e-52,
+          "contact_weighted_mean_energy_eV": 0.7487563799624573
+        },
+        {
+          "preparation": "cold_ground",
+          "log10_contact_A_minus3": -102.43798788381761
+        }
+      ],
+      "spectrum": {
+        "energy_eV": [
+          0.03423519081969385,
+          0.10397268300801471,
+          0.17478717948745678,
+          0.24511096686045725,
+          0.31523104672293545,
+          0.38493922863077956,
+          0.45448755964677756,
+          0.5239279921751714,
+          0.5932684730103641,
+          0.6623301394730077,
+          0.7307315717055001,
+          0.7974929550799221,
+          0.8603430589698613,
+          0.9178125631682428,
+          0.9761075414983205,
+          1.0402572038771227,
+          1.1079603035796848,
+          1.1767483200758657,
+          1.2456189996951124,
+          1.3146965551117336,
+          1.3845139932425399,
+          1.4550449362124533,
+          1.5257030390251267,
+          1.596164775261638,
+          1.667003246854442,
+          1.7390151798659303,
+          1.8123233218700294,
+          1.8865080714643554,
+          1.9613053996683587,
+          2.03679118063,
+          2.1131043914970133,
+          2.190197684875895,
+          2.267916541716768,
+          2.3462260600412312,
+          2.4252150035627382,
+          2.504946235084925,
+          2.585337860851605,
+          2.6662396141256046,
+          2.747574189412064,
+          2.8293872956819124,
+          2.911770822465302,
+          2.994744138358718,
+          3.0782350205199682,
+          3.1621549916927023,
+          3.246469862898026,
+          3.331208691516344,
+          3.41640383511469,
+          3.5020431606595404,
+          3.5880804721883353,
+          3.674477815859495,
+          3.7612355523819554,
+          3.8483796483898667,
+          3.9359201895451985
+        ],
+        "log10_contact_A_minus3": [
+          -102.43798788381761,
+          -100.31761825667638,
+          -98.45087126188538,
+          -96.7695720218326,
+          -95.20728618180978,
+          -93.74365073909375,
+          -92.3545369845554,
+          -91.02543494523833,
+          -89.7425384229478,
+          -88.49280554368482,
+          -87.26357874222889,
+          -86.05450949093266,
+          -84.9272558106791,
+          -84.0582784498623,
+          -83.47923451807476,
+          -82.97283109691047,
+          -82.41894197826419,
+          -81.82974013305619,
+          -81.24517045526504,
+          -80.69129362969117,
+          -80.16446549494925,
+          -79.65080974979251,
+          -79.15260722081693,
+          -78.69209891923904,
+          -78.28339099030121,
+          -77.91335641837722,
+          -77.55938677319475,
+          -77.21309900242257,
+          -76.87931835196207,
+          -76.56179700675132,
+          -76.25719352941692,
+          -75.9605696751708,
+          -75.67156632121149,
+          -75.39264191574536,
+          -75.12378663102199,
+          -74.86131417129532,
+          -74.60161590913734,
+          -74.34469634905567,
+          -74.09339797968809,
+          -73.84983230524078,
+          -73.61308399252742,
+          -73.3802288603864,
+          -73.14938792023459,
+          -72.92088497799386,
+          -72.69627013265625,
+          -72.47628805836655,
+          -72.26017189677356,
+          -72.04665247494663,
+          -71.83527595407851,
+          -71.62658929006865,
+          -71.4213311130095,
+          -71.21939278462604,
+          -71.01986357294952
+        ]
+      },
+      "case": "short_terminal",
+      "descriptor_sha256": "e7a82971cf08acff1493cd98a42e5b93a2227f610c618d47000eec8076517ac6",
+      "convergence": {
+        "base_model": {
+          "join_A": 1.28782409436586,
+          "include_flagged": true,
+          "energy_shift_eV": 0.4006692646661182,
+          "continuity_eV": 0.0,
+          "slope_lattice_eV_A": -1.235596465264205,
+          "slope_inner_eV_A": -0.026735783503415433,
+          "slope_mismatch_eV_A": -1.2088606817607896,
+          "inner_monotone_outward": false,
+          "inner_minimum_eV": 0.816688223226426,
+          "connected_last_anchor_A": 0.48,
+          "n_grid": 8999,
+          "h_A": 0.001,
+          "rmax_A": 9.0,
+          "energy_cutoff_eV": 3.0,
+          "levels": 42,
+          "match_height_eV": 0.15,
+          "ode_rtol": 2e-09,
+          "ground_match_A": 1.905,
+          "maximum_last_100_grid_probability": 1.3188725979324434e-76
+        },
+        "base_observables": [
+          {
+            "preparation": "thermal_77K",
+            "log10_contact_A_minus3": -102.4364406916418,
+            "contact_peak_energy_eV": 0.03423516344238116,
+            "contact_last_1eV_fraction": 6.414932712580382e-106,
+            "partition_last_1eV_fraction": 8.566059875907536e-132,
+            "contact_weighted_mean_energy_eV": 0.03448596776633723
+          },
+          {
+            "preparation": "thermal_300K",
+            "log10_contact_A_minus3": -98.08010435208867,
+            "contact_peak_energy_eV": 0.8603358983461606,
+            "contact_last_1eV_fraction": 7.858726953502889e-13,
+            "partition_last_1eV_fraction": 2.2515178641908365e-34,
+            "contact_weighted_mean_energy_eV": 0.7487565885849417
+          },
+          {
+            "preparation": "cold_ground",
+            "log10_contact_A_minus3": -102.43799085677307
+          }
+        ],
+        "final_log10_contact_change": {
+          "thermal_77K": 2.959185763984351e-06,
+          "thermal_300K": 2.730674410145184e-06,
+          "cold_ground": 2.9729554569257743e-06
+        }
+      },
+      "contact_support": [
+        {
+          "temperature_K": 77.0,
+          "contact_99_9_percent_below_energy_eV": 0.10397268300801471,
+          "contact_fraction_above_2eV": 6.368167396425651e-106,
+          "log10_contact_fraction_top_1eV": -169.9478160003724,
+          "truncating_4_to_3eV_change_dex": 0.0
+        },
+        {
+          "temperature_K": 300.0,
+          "contact_99_9_percent_below_energy_eV": 1.1767483200758657,
+          "contact_fraction_above_2eV": 7.846994533059082e-13,
+          "log10_contact_fraction_top_1eV": -26.20689717947643,
+          "truncating_4_to_3eV_change_dex": 0.0
+        }
+      ],
+      "join_support": {
+        "u_per_D_A": 0.5746078685886833,
+        "per_D_extension_A": 0.09460786858868331,
+        "last_native_R_A": 1.4770398315432267,
+        "status": "conditional continuation: quadratic A/B plus tangent W"
+      }
+    }
+  ],
+  "comparisons": [
+    {
+      "join_A": 1.28782409436586,
+      "preparation": "thermal_77K",
+      "slab_log10_rho_A_minus3": -102.56378842751442,
+      "Pd_log10_rho_A_minus3": -111.67416703658162,
+      "Ti_log10_rho_A_minus3": -104.72844069646288,
+      "log10_slab_over_Pd": 9.110378609067197,
+      "log10_slab_over_Ti": 2.1646522689484584
+    },
+    {
+      "join_A": 1.28782409436586,
+      "preparation": "thermal_300K",
+      "slab_log10_rho_A_minus3": -98.29889065117601,
+      "Pd_log10_rho_A_minus3": -106.72042009087878,
+      "Ti_log10_rho_A_minus3": -103.18759204298571,
+      "log10_slab_over_Pd": 8.421529439702766,
+      "log10_slab_over_Ti": 4.888701391809704
+    },
+    {
+      "join_A": 1.28782409436586,
+      "preparation": "cold_ground",
+      "slab_log10_rho_A_minus3": -102.56532467383158,
+      "Pd_log10_rho_A_minus3": -111.71416156868045,
+      "Ti_log10_rho_A_minus3": -104.7284478153005,
+      "log10_slab_over_Pd": 9.14883689484887,
+      "log10_slab_over_Ti": 2.1631231414689154
+    },
+    {
+      "join_A": 1.6,
+      "preparation": "thermal_77K",
+      "slab_log10_rho_A_minus3": -104.99206194608475,
+      "Pd_log10_rho_A_minus3": -111.6744654006547,
+      "Ti_log10_rho_A_minus3": -104.58815372954138,
+      "log10_slab_over_Pd": 6.68240345456995,
+      "log10_slab_over_Ti": -0.40390821654337117
+    },
+    {
+      "join_A": 1.6,
+      "preparation": "thermal_300K",
+      "slab_log10_rho_A_minus3": -101.86484338703197,
+      "Pd_log10_rho_A_minus3": -106.75255782533608,
+      "Ti_log10_rho_A_minus3": -103.01194906687734,
+      "log10_slab_over_Pd": 4.887714438304116,
+      "log10_slab_over_Ti": 1.1471056798453674
+    },
+    {
+      "join_A": 1.6,
+      "preparation": "cold_ground",
+      "slab_log10_rho_A_minus3": -104.99331895450432,
+      "Pd_log10_rho_A_minus3": -111.71408225883273,
+      "Ti_log10_rho_A_minus3": -104.58816063112779,
+      "log10_slab_over_Pd": 6.720763304328415,
+      "log10_slab_over_Ti": -0.4051583233765257
+    }
+  ],
+  "old_borrowed_bulk_W_long_join": {
+    "cold_log10_rho": -104.30305361822802,
+    "thermal_300K_log10_rho": -101.02837211351054,
+    "meaning": "Historical near-exterior provisional row reused unchanged; replacement changes inward A/B and W, not solely W."
+  },
+  "limitations": [
+    "No slab short-range electronic measurement; common borrowed PdD G6 total core including Coulomb, energy shift only, derivative mismatch retained.",
+    "Frozen one-path pure l=0 normalized equilibrium model, not angular population, pair occupancy, dynamics, foil emission or experimental material contact.",
+    "Four shortest rows retain PAW-overlap flags; coarse/finer and continuation contrasts are not error bounds. Outward normal proxy is mixed-mesh with modeled C1 origin bridge and quadratic confinement."
+  ]
+}

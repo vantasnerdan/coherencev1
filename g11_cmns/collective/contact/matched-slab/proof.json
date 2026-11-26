@@ -1,0 +1,69 @@
+{
+  "schema": "covered-slab-independent-finite-proof-v1",
+  "result_sha256": "f467076eddd84bfaa3089b64bc1f7afdbb3e138e119901f325863803d474ab09",
+  "verifier_sha256": "7dc196392a8da5650bc1bc25fa81d170ab489207a99c9330f6b73309ce60848f",
+  "descriptor_sha256": {
+    "g11_cmns/collective/contact/matched-slab/pair-m3.json": "9c473c3ae7c6f2368e96e60cf358ed6b6a0f502c0eda8c6731eca310884b8b50",
+    "g11_cmns/collective/contact/matched-slab/pair-m2.json": "e5175fa519d334d6627f8c3afb85584280e4ba8dc29c2716d4985bfe4e9c9315",
+    "g11_cmns/collective/contact/matched-slab/pair-short-terminal.json": "e7a82971cf08acff1493cd98a42e5b93a2227f610c618d47000eec8076517ac6"
+  },
+  "explicit_native_path_max_error_eV_or_eV_A": 5.551115123125783e-16,
+  "actual_G11_native_max_error_eV_or_eV_A": 5.551115123125783e-16,
+  "explicit_basis_vs_G11_max_error_eV_or_eV_A": 5.551115123125783e-16,
+  "outward_proxy_max_error_eV_or_eV_A": 0.0,
+  "signed_zero_slopes": [
+    {
+      "mesh": 3,
+      "site": "A",
+      "inward_slope_eV_A": -0.04159949367892177,
+      "outward_slope_eV_A": 0.04159949367892177
+    },
+    {
+      "mesh": 3,
+      "site": "B",
+      "inward_slope_eV_A": 0.021804708141117343,
+      "outward_slope_eV_A": -0.021804708141117343
+    },
+    {
+      "mesh": 2,
+      "site": "A",
+      "inward_slope_eV_A": 0.0023172429556430393,
+      "outward_slope_eV_A": -0.0023172429556430393
+    },
+    {
+      "mesh": 2,
+      "site": "B",
+      "inward_slope_eV_A": 0.0396491138311006,
+      "outward_slope_eV_A": -0.0396491138311006
+    }
+  ],
+  "mesh4_W_eV": 0.08733926111399626,
+  "independent_numerics": {
+    "join_A": 1.6,
+    "h_A": 0.0007499802636772717,
+    "rmax_A": 9.5,
+    "ecut_eV": 2.0,
+    "levels": 28,
+    "observables": [
+      {
+        "preparation": "cold_ground",
+        "independently_computed_log10_rho_A_minus3": -104.9933198145504,
+        "reported": -104.99331895450432,
+        "change_dex": -8.600460859042869e-07
+      },
+      {
+        "preparation": "thermal_77K",
+        "independently_computed_log10_rho_A_minus3": -104.99206280265861,
+        "reported": -104.99206194608475,
+        "change_dex": -8.565738625065933e-07
+      },
+      {
+        "preparation": "thermal_300K",
+        "independently_computed_log10_rho_A_minus3": -101.86484644548499,
+        "reported": -101.86484338703197,
+        "change_dex": -3.058453017956708e-06
+      }
+    ]
+  },
+  "scope": "Explicit finite native/consumer agreement and separate finite numerical long-join check, not rigorous interval bounds, continuum proof, electronic error bound or physical contact measurement."
+}

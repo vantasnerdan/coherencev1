@@ -1,0 +1,184 @@
+{
+  "schema": "g11-site-pair-v1",
+  "pair_id": "covered-pdd-D26-D28-m3-matched",
+  "R0_A": 2.4370398315432267,
+  "axis": [
+    0.005452232903479853,
+    0.003152909799016573,
+    0.9999801659613882
+  ],
+  "sites": [
+    {
+      "id": "D26",
+      "well": "A"
+    },
+    {
+      "id": "D28",
+      "well": "B"
+    }
+  ],
+  "wells": {
+    "A": {
+      "inward": {
+        "K_eV_A2": 1.3532953552408709,
+        "K4_eV_A4": 0.0,
+        "origin_cut_A": 0.0,
+        "dE_dq_at_zero_eV_A": -0.04159949367892177,
+        "q_A": [
+          0.06,
+          0.12,
+          0.24,
+          0.36,
+          0.48
+        ],
+        "E_eV": [
+          -0.0003014254385931281,
+          0.004574615897141143,
+          0.02420445202352539,
+          0.05547728387148254,
+          0.09460662270258524
+        ],
+        "dE_dq_eV_A": [
+          0.03410859566132939,
+          0.11605221193115076,
+          0.20834823851564113,
+          0.2903990110842882,
+          0.36762009895145187
+        ]
+      },
+      "outward": {
+        "K_eV_A2": 1.3532953552408709,
+        "K4_eV_A4": 0.0,
+        "origin_cut_A": 0.0,
+        "dE_dq_at_zero_eV_A": 0.04159949367892177,
+        "q_A": [
+          0.12000238013184104,
+          0.3600071403955231
+        ],
+        "E_eV": [
+          0.008856239612171635,
+          0.08312347612192639
+        ],
+        "dE_dq_eV_A": [
+          0.1560026517880485,
+          0.4351744271105709
+        ]
+      }
+    },
+    "B": {
+      "inward": {
+        "K_eV_A2": 3.1249324667391813,
+        "K4_eV_A4": 0.0,
+        "origin_cut_A": 0.0,
+        "dE_dq_at_zero_eV_A": 0.021804708141117343,
+        "q_A": [
+          0.06,
+          0.12,
+          0.24,
+          0.36,
+          0.48
+        ],
+        "E_eV": [
+          0.007098103769735076,
+          0.02516514114181234,
+          0.09226157619964681,
+          0.19118407322669384,
+          0.3101058550860216
+        ],
+        "dE_dq_eV_A": [
+          0.2072446113777018,
+          0.3822782990883099,
+          0.722201033189374,
+          0.9181193521245299,
+          1.034345604906868
+        ]
+      },
+      "outward": {
+        "K_eV_A2": 3.1249324667391813,
+        "K4_eV_A4": 0.0,
+        "origin_cut_A": 0.0,
+        "dE_dq_at_zero_eV_A": -0.021804708141117343,
+        "q_A": [
+          0.12000238013184104,
+          0.3600071403955231
+        ],
+        "E_eV": [
+          0.019946281871284555,
+          0.1975863537094682
+        ],
+        "dE_dq_eV_A": [
+          0.3579758235923689,
+          1.0794122406321345
+        ]
+      }
+    }
+  },
+  "connected": {
+    "u_A": [
+      0.06,
+      0.12,
+      0.24,
+      0.36,
+      0.48
+    ],
+    "W_eV": [
+      0.001534486508674604,
+      0.006819181472252467,
+      0.033331081809947705,
+      0.08960528516355737,
+      0.18461441774344678
+    ],
+    "dW_du_eV_A": [
+      0.05374313727827715,
+      0.12558601676521397,
+      0.33075689861438207,
+      0.6197878194852682,
+      0.9727717394692765
+    ],
+    "flagged": [
+      false,
+      true,
+      true,
+      true,
+      true
+    ],
+    "flag_meaning": "Native tagged D-Pd PAW overlap flags retained; all five knots are primary, no error bound."
+  },
+  "inner": {
+    "R_A": [
+      0.1,
+      0.2,
+      0.3,
+      0.4,
+      0.5,
+      1.0,
+      1.6
+    ],
+    "V_total_eV": [
+      103.44665507070361,
+      36.089410526086795,
+      15.58104333679571,
+      8.462165156778855,
+      4.817774529690019,
+      0.6608556272195389,
+      -0.18119548138581432
+    ],
+    "source": "g6_collision/curves/baseline_BO_pair.json"
+  },
+  "joins_A": [
+    1.28782409436586,
+    1.6
+  ],
+  "preparation": {
+    "thermal_K": [
+      77.0,
+      300.0
+    ]
+  },
+  "assumptions": {
+    "origin": "Own matched mesh signed actual-axis zero force, not a stationary minimum. Outward origin slope is its negative for C1.",
+    "outward": "Same original mesh2 signed normal samples relative to their own accepted zero, q=|z|/|n_z| and slope=-F_z*dz/dq. Ignore transverse response. First segment bridges the own-mesh actual-axis zero slope to mesh2 endpoints, preserving endpoints, not native mesh3 outward data.",
+    "exterior": "Signed endpoint quadratic one-body rays, K from original +/-0.12 normal slope secant projected by n_z^2. W=0 outward, tangent after last inward knot.",
+    "inner": "Common bulk PdD G6 total incl Coulomb and unchanged smooth electronic core; additive energy match, no slab electronic measurement or derivative fit."
+  }
+}
