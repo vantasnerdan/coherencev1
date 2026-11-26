@@ -1,0 +1,100 @@
+{
+  "setting_change": "Gamma-centered kmesh 4x4x4 -> 6x6x6 only, exactly fixed reference cell and positions",
+  "point": "111m480",
+  "coarse_delta_eV": 1.202917463854547,
+  "check_delta_eV": 1.205309638467014,
+  "change_delta_eV": 0.0023921746124671017,
+  "max_change_force_response_eV_A": 0.010781986651845514,
+  "max_change_raw_force_at_point_eV_A": 0.010781978995647536,
+  "change_zero_stress_eV_A3": [
+    [
+      -3.3896042530944914e-05,
+      4.2532670258323286e-08,
+      4.1635416541188715e-08
+    ],
+    [
+      4.2532670258323286e-08,
+      -3.38952209757894e-05,
+      4.1834501962703416e-08
+    ],
+    [
+      4.1635416541188715e-08,
+      4.1834501962703416e-08,
+      -3.389384428337019e-05
+    ]
+  ],
+  "energy_target_eV": 0.005,
+  "force_target_eV_A": 0.02,
+  "tested_pair_within_targets": true,
+  "limits": "One two-point k-mesh comparison, not a cutoff, cell-size, stress, fit or whole-curve error bound.",
+  "point_sources": [
+    {
+      "file": "point.json",
+      "bytes": 7847,
+      "sha256": "92ff6c834477250c9abe8a52517f58bc18e70019903c3ef2ac06658542f61057"
+    },
+    {
+      "file": "point.json",
+      "bytes": 7526,
+      "sha256": "04318a67afa3b0313aa74505466ed3b04afeb62f1cc409a533592d7aa7a0db4f"
+    },
+    {
+      "file": "point.json",
+      "bytes": 7874,
+      "sha256": "7062b007d6bc49ece70168c84752104eb5994297b3448b78956afe929f68f980"
+    },
+    {
+      "file": "point.json",
+      "bytes": 7541,
+      "sha256": "c17cb767ca06751aee56c7f8e1d375431b07ef5d9aef7e25aac07fb12eaba61c"
+    }
+  ],
+  "schema": "g10-fluorite-tid2-v1",
+  "model": {
+    "schema": "g10-fluorite-tid2-v1",
+    "material": "cubic-fluorite-TiD2",
+    "software": {
+      "gpaw": "26.7.0",
+      "ase": "3.29.0",
+      "numpy": "2.5.3",
+      "scipy": "1.18.1"
+    },
+    "seed_source": {
+      "a_A": 4.424,
+      "citation": "Er et al., arXiv:0910.1003v1, Table 1, p. 7",
+      "role": "documented f-TiH2 electronic-structure geometry, not measured TiD"
+    },
+    "source_artifacts": [
+      {
+        "file": "er-et-al-0910.1003v1.pdf",
+        "bytes": 963946,
+        "sha256": "79339285761f7ab2fd1e3262d068ac684da53f0d2514dedb8e9a52992f4db16c"
+      },
+      {
+        "file": "Ti.PBE.gz",
+        "bytes": 101840,
+        "sha256": "64143c102107cae1ac7766e2a3292fb5ab6d0fa8122b7f8be5b25c29a4a40a2c"
+      },
+      {
+        "file": "H.PBE.gz",
+        "bytes": 12501,
+        "sha256": "3136ad73c02d471f99dd5f82e451b2061952970556a260d38b53b5020dc94ae7"
+      }
+    ],
+    "code": {
+      "file": "fluorite_tid2.py",
+      "bytes": 23367,
+      "sha256": "9a4870941f4639aab92bc452ba98cbbf7edaa035a48e048f285474e9cc405273"
+    },
+    "energy_convention": "GPAW force-consistent electronic free energy, eV per simulated cell",
+    "force_convention": "native full Cartesian electronic forces, eV/angstrom, zero-based atom_index",
+    "stress_convention": "native ASE Cartesian tensile-positive stress, eV/angstrom^3",
+    "scope": "periodic frozen-ion Born\u2013Oppenheimer fingerprint; no isotope-dependent statics or foil phase assignment"
+  },
+  "a_A": 4.423103262516868,
+  "reference": {
+    "file": "reference.json",
+    "bytes": 11971,
+    "sha256": "65e96d2877061a97f4cfdd5e808551517aa666748734c8a840a94fb5a22e1108"
+  }
+}

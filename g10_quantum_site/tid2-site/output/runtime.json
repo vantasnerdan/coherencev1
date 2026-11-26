@@ -1,0 +1,12 @@
+{
+  "python": "3.12.3",
+  "numpy": "2.5.4",
+  "scipy": "1.18.1",
+  "matplotlib": "3.11.2",
+  "constants": "scipy.constants SI hbar and atomic_mass; CODATA 2022",
+  "mass_convention": "G10 neutral-atom isotope masses in u; electron mass neglected",
+  "finite_model": "20 Cartesian oscillator functions per axis; Gauss-Hermite potential order 40",
+  "basis_comparison": "16 versus 20 for all isotopes at both temperatures",
+  "deciding_support_controls": "H 300K: potential quadrature 40 versus 48; finer density/angle grid; ray-preserving angular penalty plus exterior curvature 4 versus 8 eV/A^2",
+  "verification_scope": "Native byte/sign/force meaning, finite-model normalized tails, actual G8 D-state parser/model, applicable G9 signed table mapping, and directly reused pair evidence; no electronic or envelope runs"
+}

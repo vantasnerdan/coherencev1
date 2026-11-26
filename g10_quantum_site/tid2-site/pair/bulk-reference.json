@@ -1,0 +1,203 @@
+{
+  "schema": "tid2-pair-reused-bulk-reference-v1",
+  "spectrum_sha256": "5f40e1dc03e2127a1f29930de197c263a06e672b68338bceddb0ad0b008573f6",
+  "spectrum_origin": "Previously generated matching g11-site-pair-v1 bulk spectrum, reused without rerunning PdD.",
+  "inputs_sha256": "7bcd74342a1ff22599eb0f98e0f8ed55aa5a722d450c40331de4a3c7c0163966",
+  "pair_id": "bulk-pdd-D25-D63-110",
+  "constants": {
+    "C_eV_A": 14.399645468602673,
+    "kinetic_eV_A2": 0.0020760113284868102,
+    "relative_mass_kg": 1.6717918884e-27,
+    "hbar_eV_fs": 0.6582119569509066
+  },
+  "descriptor_path": "g11_cmns/collective/contact/bulk_pair.json",
+  "variants": [
+    {
+      "model": {
+        "join_A": 1.28782409436586,
+        "include_flagged": true,
+        "energy_shift_eV": 0.972436169373827,
+        "continuity_eV": 0.0,
+        "slope_lattice_eV_A": -2.577380374460709,
+        "slope_inner_eV_A": -0.026735783503415433,
+        "slope_mismatch_eV_A": -2.5506445909572935,
+        "inner_monotone_outward": false,
+        "inner_minimum_eV": 1.3884551279341348,
+        "connected_last_anchor_A": 0.8,
+        "n_grid": 8999,
+        "h_A": 0.001,
+        "rmax_A": 9.0,
+        "energy_cutoff_eV": 8.0,
+        "levels": 116,
+        "match_height_eV": 0.15,
+        "ode_rtol": 2e-09,
+        "ground_match_A": 2.124,
+        "maximum_last_100_grid_probability": 2.763967281051562e-33
+      },
+      "observables": [
+        {
+          "preparation": "thermal_77K",
+          "log10_contact_A_minus3": -111.67416703658162,
+          "contact_peak_energy_eV": 0.019953127423041485,
+          "contact_last_1eV_fraction": 0.0,
+          "partition_last_1eV_fraction": 0.0,
+          "contact_weighted_mean_energy_eV": 0.02385337948789117
+        },
+        {
+          "preparation": "thermal_300K",
+          "log10_contact_A_minus3": -106.72042009087878,
+          "contact_peak_energy_eV": 0.6087525111948773,
+          "contact_last_1eV_fraction": 3.463203875498642e-78,
+          "partition_last_1eV_fraction": 1.2694404088202196e-118,
+          "contact_weighted_mean_energy_eV": 0.7042116999342178
+        },
+        {
+          "preparation": "cold_ground",
+          "log10_contact_A_minus3": -111.71416156868045
+        }
+      ]
+    },
+    {
+      "model": {
+        "join_A": 1.6,
+        "include_flagged": true,
+        "energy_shift_eV": 0.9144216777398546,
+        "continuity_eV": 0.0,
+        "slope_lattice_eV_A": -1.66486459929593,
+        "slope_inner_eV_A": -5.058916096036661,
+        "slope_mismatch_eV_A": 3.3940514967407314,
+        "inner_monotone_outward": false,
+        "inner_minimum_eV": 0.733226196354041,
+        "connected_last_anchor_A": 0.8,
+        "n_grid": 8999,
+        "h_A": 0.001,
+        "rmax_A": 9.0,
+        "energy_cutoff_eV": 8.0,
+        "levels": 116,
+        "match_height_eV": 0.15,
+        "ode_rtol": 2e-09,
+        "ground_match_A": 2.124,
+        "maximum_last_100_grid_probability": 2.5662383486010035e-33
+      },
+      "observables": [
+        {
+          "preparation": "thermal_77K",
+          "log10_contact_A_minus3": -111.6744654006547,
+          "contact_peak_energy_eV": 0.01995312742328432,
+          "contact_last_1eV_fraction": 0.0,
+          "partition_last_1eV_fraction": 0.0,
+          "contact_weighted_mean_energy_eV": 0.023817350730993406
+        },
+        {
+          "preparation": "thermal_300K",
+          "log10_contact_A_minus3": -106.75255782533608,
+          "contact_peak_energy_eV": 1.4004763090406342,
+          "contact_last_1eV_fraction": 5.054068748641455e-78,
+          "partition_last_1eV_fraction": 1.3957934381014063e-118,
+          "contact_weighted_mean_energy_eV": 0.8690139111959798
+        },
+        {
+          "preparation": "cold_ground",
+          "log10_contact_A_minus3": -111.71408225883273
+        }
+      ]
+    },
+    {
+      "model": {
+        "join_A": 1.28782409436586,
+        "include_flagged": false,
+        "energy_shift_eV": 0.7363398172667026,
+        "continuity_eV": 0.0,
+        "slope_lattice_eV_A": -1.8398880893115996,
+        "slope_inner_eV_A": -0.026735783503415433,
+        "slope_mismatch_eV_A": -1.8131523058081842,
+        "inner_monotone_outward": false,
+        "inner_minimum_eV": 1.1523587758270104,
+        "connected_last_anchor_A": 0.36,
+        "n_grid": 8999,
+        "h_A": 0.001,
+        "rmax_A": 9.0,
+        "energy_cutoff_eV": 8.0,
+        "levels": 117,
+        "match_height_eV": 0.15,
+        "ode_rtol": 2e-09,
+        "ground_match_A": 2.124,
+        "maximum_last_100_grid_probability": 1.0061843251850808e-32
+      },
+      "observables": [
+        {
+          "preparation": "thermal_77K",
+          "log10_contact_A_minus3": -109.51871684005368,
+          "contact_peak_energy_eV": 0.019952928157376502,
+          "contact_last_1eV_fraction": 0.0,
+          "partition_last_1eV_fraction": 0.0,
+          "contact_weighted_mean_energy_eV": 0.02419381212963298
+        },
+        {
+          "preparation": "thermal_300K",
+          "log10_contact_A_minus3": -103.66597852413885,
+          "contact_peak_energy_eV": 0.7842839201323561,
+          "contact_last_1eV_fraction": 2.362582332239014e-80,
+          "partition_last_1eV_fraction": 4.566865416672116e-118,
+          "contact_weighted_mean_energy_eV": 0.8676130393996411
+        },
+        {
+          "preparation": "cold_ground",
+          "log10_contact_A_minus3": -109.5622822349329
+        }
+      ]
+    },
+    {
+      "model": {
+        "join_A": 1.6,
+        "include_flagged": false,
+        "energy_shift_eV": 0.8396561728735643,
+        "continuity_eV": 0.0,
+        "slope_lattice_eV_A": -1.3376200133608522,
+        "slope_inner_eV_A": -5.058916096036661,
+        "slope_mismatch_eV_A": 3.721296082675809,
+        "inner_monotone_outward": false,
+        "inner_minimum_eV": 0.6584606914877507,
+        "connected_last_anchor_A": 0.36,
+        "n_grid": 8999,
+        "h_A": 0.001,
+        "rmax_A": 9.0,
+        "energy_cutoff_eV": 8.0,
+        "levels": 117,
+        "match_height_eV": 0.15,
+        "ode_rtol": 2e-09,
+        "ground_match_A": 2.124,
+        "maximum_last_100_grid_probability": 1.6853111035788354e-32
+      },
+      "observables": [
+        {
+          "preparation": "thermal_77K",
+          "log10_contact_A_minus3": -110.79772927939251,
+          "contact_peak_energy_eV": 0.019952928164220014,
+          "contact_last_1eV_fraction": 0.0,
+          "partition_last_1eV_fraction": 0.0,
+          "contact_weighted_mean_energy_eV": 0.02399110996601125
+        },
+        {
+          "preparation": "thermal_300K",
+          "log10_contact_A_minus3": -105.58171695120487,
+          "contact_peak_energy_eV": 1.3190679035723631,
+          "contact_last_1eV_fraction": 6.954271115522836e-79,
+          "partition_last_1eV_fraction": 2.2487578404694484e-118,
+          "contact_weighted_mean_energy_eV": 0.8883364993556304
+        },
+        {
+          "preparation": "cold_ground",
+          "log10_contact_A_minus3": -110.83916726858327
+        }
+      ]
+    }
+  ],
+  "historical_refinement": {
+    "path": "g11_cmns/collective/contact/results.json",
+    "sha256": "ed4ec3bcd24bccd654ff42e9e6e2aabcbbfc3d65823fcb6761bcddf4147a5bef",
+    "inputs_sha256": "7e561e530cc5a375099340abb00546da8f87cb9dab30106d032fd220b21e3272",
+    "scope": "Historical bulk operator only. Original input hash retained; not a Ti refinement or relabelled new-descriptor run.",
+    "maximum_final_log10_contact_change": 2.867074670120928e-06
+  }
+}

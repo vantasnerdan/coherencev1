@@ -1,0 +1,195 @@
+{
+  "schema": "g11-site-pair-v1",
+  "pair_id": "cubic-fluorite-tid2-D8-D19-100",
+  "R0_A": 2.211551631258434,
+  "axis": [
+    1.0,
+    0.0,
+    0.0
+  ],
+  "sites": [
+    {
+      "id": "D8",
+      "well": "A"
+    },
+    {
+      "id": "D19",
+      "well": "B"
+    }
+  ],
+  "wells": {
+    "A": {
+      "inward": {
+        "K_eV_A2": 5.628254148964331,
+        "K4_eV_A4": 0.0,
+        "origin_cut_A": 0.0,
+        "dE_dq_at_zero_eV_A": 0.0,
+        "q_A": [
+          0.12,
+          0.24,
+          0.48,
+          0.6,
+          0.8
+        ],
+        "E_eV": [
+          0.04000324604398031,
+          0.15697135531632966,
+          0.5819357031373045,
+          0.8598829758556548,
+          1.3610440096250898
+        ],
+        "dE_dq_eV_A": [
+          0.6623859021616478,
+          1.2746040346912244,
+          2.1821631825318635,
+          2.4261997611132458,
+          2.526882052270772
+        ]
+      },
+      "outward": {
+        "K_eV_A2": 5.626592977883783,
+        "K4_eV_A4": 0.0,
+        "origin_cut_A": 0.0,
+        "dE_dq_at_zero_eV_A": 0.0,
+        "q_A": [
+          0.12,
+          0.24,
+          0.48,
+          0.8
+        ],
+        "E_eV": [
+          0.04000256307153904,
+          0.15697060782039784,
+          0.5819360789761419,
+          1.3610405662681302
+        ],
+        "dE_dq_eV_A": [
+          0.662468498115449,
+          1.274648152249984,
+          2.1815615449618506,
+          2.526942663614787
+        ]
+      }
+    },
+    "B": {
+      "inward": {
+        "K_eV_A2": 5.627486431727396,
+        "K4_eV_A4": 0.0,
+        "origin_cut_A": 0.0,
+        "dE_dq_at_zero_eV_A": 0.0,
+        "q_A": [
+          0.12,
+          0.24,
+          0.48,
+          0.6,
+          0.8
+        ],
+        "E_eV": [
+          0.040003146214516505,
+          0.1569715671200811,
+          0.5819361900359752,
+          0.8598833201886436,
+          1.3610440096250898
+        ],
+        "dE_dq_eV_A": [
+          0.6624294694592688,
+          1.274666111439376,
+          2.1821814248387175,
+          2.4261597712238236,
+          2.526882052270772
+        ]
+      },
+      "outward": {
+        "K_eV_A2": 5.626592977883783,
+        "K4_eV_A4": 0.0,
+        "origin_cut_A": 0.0,
+        "dE_dq_at_zero_eV_A": 0.0,
+        "q_A": [
+          0.12,
+          0.24,
+          0.48,
+          0.8
+        ],
+        "E_eV": [
+          0.04000256307153904,
+          0.15697060782039784,
+          0.5819360789761419,
+          1.3610405662681302
+        ],
+        "dE_dq_eV_A": [
+          0.662468498115449,
+          1.274648152249984,
+          2.1815615449618506,
+          2.526942663614787
+        ]
+      }
+    }
+  },
+  "connected": {
+    "u_A": [
+      0.12,
+      0.24,
+      0.48,
+      0.6
+    ],
+    "W_eV": [
+      0.005776484691494943,
+      0.0282947563808591,
+      0.15722380750572995,
+      0.29697155012378573
+    ],
+    "dW_du_eV_A": [
+      0.10681710554548951,
+      0.28008706049468124,
+      0.8495284750111058,
+      1.6861255330639464
+    ],
+    "flagged": [
+      false,
+      false,
+      true,
+      true
+    ],
+    "source_sha256": "4b6b3b13fa774710cf4884d97e99d306dc62f844a4d50ad3fa16346dd6832c67",
+    "flag_meaning": "Qualification marker ONLY: shortest two pair rows have no PAW-overlap check. Overlap is unknown, not asserted. All rows are primary; false treatment omits only these connected knots."
+  },
+  "inner": {
+    "R_A": [
+      0.1,
+      0.2,
+      0.3,
+      0.4,
+      0.5,
+      1.0,
+      1.6
+    ],
+    "V_total_eV": [
+      103.44665507070361,
+      36.089410526086795,
+      15.58104333679571,
+      8.462165156778855,
+      4.817774529690019,
+      0.6608556272195389,
+      -0.18119548138581432
+    ],
+    "source": "Borrowed bulk PdD G6 occupied/vacant total interaction; NOT a Ti electronic cut."
+  },
+  "joins_A": [
+    1.28782409436586,
+    1.6
+  ],
+  "preparation": {
+    "thermal_K": [
+      77.0,
+      300.0
+    ]
+  },
+  "assumptions": {
+    "energy_zero": "Native material-specific frozen reference: Ulat(R0)=0; no cross-material absolute electronic energy comparison.",
+    "origin": "Zero slopes imposed by ideal crystal symmetry; native residual forces retained in result.",
+    "one_body_B": "Independent B(-[100]) .12/.24/.48/.60 knots used. B inward .80 and every B outward knot use the explicitly geometry-checked midpoint inversion of A, not independent B SCFs.",
+    "exterior": "W=0 for R>R0; distinct signed A rays and symmetry-derived B outward ray. Endpoint quadratic one-body confinement is modeled.",
+    "nearest_pair": "W Hermite on one path only, W(0)=W'(0)=0; tangent continuation after last retained knot. No additional J, coupling matrix or lattice graph.",
+    "contact": "Common Coulomb plus borrowed PdD electronic remainder, energy-continuous joins, no force matching or Ti G12 readout."
+  }
+}

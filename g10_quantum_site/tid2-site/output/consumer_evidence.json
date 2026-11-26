@@ -1,0 +1,111 @@
+{
+  "g8": {
+    "reader": "g8_why/collision/source/bound_forward.py:BoundSpectatorKernel.fold",
+    "state_measure": "D_300K_g8_joint.json",
+    "parser_model_exercised": true,
+    "interface_profile": "existing TiD ONLY, not a new TiD2 profile",
+    "nominal_cm_keV": 0.25,
+    "finite_positive_fold": true,
+    "result_scope": "numerical schema/interface smoke only; not a TiD2 rate",
+    "isotope_scope": "H/T retain their own Fourier/kinetic masses; equal-mass D-D consumer executed only for D",
+    "rows": [
+      {
+        "isotope": "H",
+        "temperature_K": 77,
+        "joint_normalization": 1.0,
+        "mean_kinetic_eV": 0.11420497832813287,
+        "maximum_excitation_eV": 0.14670926792480454,
+        "maximum_kinetic_node_eV": 6.385699851551828,
+        "state_file": "g10_quantum_site/tid2-site/output/H_77K_g8_joint.json"
+      },
+      {
+        "isotope": "H",
+        "temperature_K": 300,
+        "joint_normalization": 1.0,
+        "mean_kinetic_eV": 0.11493255469463094,
+        "maximum_excitation_eV": 0.771339923110141,
+        "maximum_kinetic_node_eV": 9.17794759654519,
+        "state_file": "g10_quantum_site/tid2-site/output/H_300K_g8_joint.json"
+      },
+      {
+        "isotope": "D",
+        "temperature_K": 77,
+        "joint_normalization": 1.0000000000000002,
+        "mean_kinetic_eV": 0.08080348225345348,
+        "maximum_excitation_eV": 0.10500417291273137,
+        "maximum_kinetic_node_eV": 4.749116909269595,
+        "state_file": "g10_quantum_site/tid2-site/output/D_77K_g8_joint.json"
+      },
+      {
+        "isotope": "D",
+        "temperature_K": 300,
+        "joint_normalization": 0.9999999999999993,
+        "mean_kinetic_eV": 0.08349765176685146,
+        "maximum_excitation_eV": 0.770510330220608,
+        "maximum_kinetic_node_eV": 6.848673882834854,
+        "state_file": "g10_quantum_site/tid2-site/output/D_300K_g8_joint.json"
+      },
+      {
+        "isotope": "T",
+        "temperature_K": 77,
+        "joint_normalization": 1.0,
+        "mean_kinetic_eV": 0.06603410086832277,
+        "maximum_excitation_eV": 0.1746338235435138,
+        "maximum_kinetic_node_eV": 3.8814106126420542,
+        "state_file": "g10_quantum_site/tid2-site/output/T_77K_g8_joint.json"
+      },
+      {
+        "isotope": "T",
+        "temperature_K": 300,
+        "joint_normalization": 0.9999999999999993,
+        "mean_kinetic_eV": 0.07072513061787984,
+        "maximum_excitation_eV": 0.7710206826622827,
+        "maximum_kinetic_node_eV": 5.5966668553030425,
+        "state_file": "g10_quantum_site/tid2-site/output/T_300K_g8_joint.json"
+      }
+    ],
+    "spectator_envelope": "The retained TiD2 conditional excitation nodes are far below the existing G8 spectator envelope excitation cap of 100 eV; the envelope is distribution-free in momentum, so this site table supplies a shape inside that assumption, not a new envelope or Ti foil yield."
+  },
+  "g9": {
+    "source": "g9_edge/edge.py:History, MATCH and MD",
+    "convention": "registered n=+[111]/sqrt(3); s=displacement dot n; z_target=Z0+s; arrival_shift=s/v",
+    "opposite_normal": "n -> -n gives s -> -s, reflected density, z_target=Z0-s and arrival_shift=-s/v for the same crystal displacement",
+    "normalized_plane_marginal": 0.9999999999999476,
+    "speed_A_fs": 2.1887911135680893,
+    "registered_example_Z0_A": 1.0,
+    "scope": "actual table import and applicable G9 ballistic coordinate semantics; no crystallographic density API, slab target or Ti foil surface assigned",
+    "distinct_observables": "marginal_A_inverse is an integral over the entire transverse plane; on_axis_line_density_A_minus3 is only rho(s*n), not normalized as a 1D probability"
+  },
+  "external_accepted_base_bindings": [
+    {
+      "path": "g8_why/collision/source/bound_forward.py",
+      "sha256": "ed469313fdcc0f725565fba068cee7d096c8132406d60835c99c753e518a26ba",
+      "bytes": 5980
+    },
+    {
+      "path": "g8_why/collision/source/yield_kernel.py",
+      "sha256": "4d301bce0420431e67705676bfce7880ce30c015a4c3dcff95fb779f5c66de97",
+      "bytes": 7382
+    },
+    {
+      "path": "g8_why/common.py",
+      "sha256": "00ce55ad546191d9db198a09236d5691674ce525ebdc98faa678c24dec82de42",
+      "bytes": 5715
+    },
+    {
+      "path": "g8_why/collision/evidence/envelope.json",
+      "sha256": "4c16ca5698bcaa827390d426c3d31ba75466434690b8e4e6cded991dadc1fa70",
+      "bytes": 27736
+    },
+    {
+      "path": "g9_edge/edge.py",
+      "sha256": "3cae9e04be53d863bd8aa8438ceff4a5c3ecc1e57a8f0786baf8588c68fb7f6d",
+      "bytes": 32969
+    },
+    {
+      "path": "g13_rogue/run.py",
+      "sha256": "f95bb41dedd209eb78a80763b798975be0f13c2b9a51aa2844ea36032dde6684",
+      "bytes": 40320
+    }
+  ]
+}
