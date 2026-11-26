@@ -1,0 +1,11 @@
+# G10 — Covered PdD(111) nearest-pair cut
+
+The frozen reference is the previously admitted covered PdD(111) relaxation. D26 (A, subsurface) and D28 (B, adsorbed) start 2.4370398315 Å apart. The minimum-image unit vector points A→B. At displacement u, A moves +u along this vector in A and AB, and B moves −u in B and AB. No inversion, re-relaxation, or substitution of the earlier single-ion normal-ray data. The original 29-atom order and both in-plane periodic directions are retained.
+
+`native/m2-zero-0.json` is the independently reconverged portable anchor, matching the originally admitted coarse zero without resaving it. The adopted relaxation is linked by byte count and SHA-256, not by a machine path. `native/m{2,3,4}-*.json` contain force-consistent electronic free energies and all raw Cartesian forces. In `pair.json`, the main `triplets` are the 3×3×1 curve; the `coarse` branch retains all 2×2×1 rows. Missing registered samples, if any, are explicit.
+
+- The connected energy is E(AB)−E(A)−E(B)+E(0). The coordinate derivative uses the A/B force changes along their own equal/opposite directions. The full mixed-force array is a separate quantity.
+- The initial 2×2×1→3×3×1 check failed both registered target tolerances at u=0.36 Å. It measured the total AB rise, not the connected term. The 4×4×1 quartet at the same separation compares the connected energy against the 3×3×1 curve, reporting the signed shift and the fraction of |W₃|. This only tests one separation; it does not certify the curve or the PAW setup at every point.
+- The overlap flag compares tagged D26/D28–Pd separations to the summed nominal PAW partial-wave radii. An SCF-converged flagged point is still labelled overlap-sensitive; no PAW-overlap accuracy bound follows from the mesh check. These frozen-ion energies do not determine a reaction rate or describe transient screening during impact.
+
+From the capsule directory run `sha256sum -c SHA256SUMS`, then `python replay/readout_slab_pair.py native --refined`. The reader requires NumPy, not GPAW, original PAW files, or machine-specific paths. Compare scientific floats to 1e-9 absolute on a different NumPy build and require exact hashes, indices, missing rows, and flags.
