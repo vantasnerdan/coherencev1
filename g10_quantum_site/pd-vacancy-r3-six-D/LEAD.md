@@ -18,7 +18,7 @@ Six pairs rest closer than 2.0 A. For comparison, neighbours rest 2.89 A apart i
 
 ## Assumptions and limits
 
-One relaxed arrangement from one starting arrangement in the small cell; not shown to be the lowest one. The larger-cell repeat that says whether these distances survive is still to come, and the pair cut waits for it.
+One relaxed arrangement from one starting arrangement in the small cell; not shown to be the lowest one. The larger-cell repeat is in `../pd-vacancy-r4-six-D/`: the distances survive to within 0.012 A.
 
 ## Lead's check
 
