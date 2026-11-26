@@ -1,0 +1,14 @@
+{
+  "python": "3.12.3",
+  "numpy": "2.5.5",
+  "scipy": "1.18.1",
+  "float": "IEEE binary64",
+  "blas_threads": 1,
+  "steering": ["entry_4097", "entry_4103", "entry_4104", "entry_4109"],
+  "producer_command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 PYTHONDONTWRITEBYTECODE=1 python g13_rogue/pass2/coarse.py --live --exposure 0.0001 --realizations 2 --output g13_rogue/pass2/output",
+  "producer_exit": "natural success; 48 live cases, 576 impact rows, 6912 signed-tail rows",
+  "height_consumer_command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 PYTHONDONTWRITEBYTECODE=1 python g13_rogue/pass2/coarse.py --live-impact-heights --eta-band 0.01 --output g13_rogue/pass2/output",
+  "height_consumer_exit": "natural success; identical selected parent counts; maximum source-work difference 0 J; frozen convergence labels and regional tails reused",
+  "readout_consumer": "live.postprocess consumed actual frozen CSVs; added matched point thermal observer, all tested commonness cases and clipped/structured wavelength-neighborhood timing counts without wave replay",
+  "claim": "finite model and scoped behavioral evidence, not a continuum/material certificate"
+}

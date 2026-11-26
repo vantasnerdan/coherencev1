@@ -1,0 +1,77 @@
+{
+  "schema": "g13-pass2-whole-foil-v1",
+  "base": "9c26f8cb688918ae18b63dbd187fdf99793c1e90",
+  "sources": {
+    "g4_beam/merit/profiles.json": {
+      "bytes": 1523730,
+      "sha256": "e2e91077595de602b815ae86f45c1a675d6a553153272d0e1295b72e2a5a9943"
+    },
+    "g4_beam/forward/model.py": {
+      "bytes": 16303,
+      "sha256": "76604acd39c1e47995a1290281e737076e8c01235a706e93c20be37fb4d1e84b"
+    },
+    "g11_cmns/collective/part1/stopping.json": {
+      "bytes": 222637,
+      "sha256": "e0f54ed8776e792afdb1bbb727d628df3c936aee6ce11e44462d55f602b7b51e"
+    },
+    "g13_rogue/depth.py": {
+      "bytes": 11792,
+      "sha256": "1518a994bda97d7904085a3845e464f1cfd1f9ab1143e6336740899bbfd74073"
+    },
+    "g12_residual/inputs_ledger.md": {
+      "bytes": 11808,
+      "sha256": "120f99b3cb3b252c940e546436e82bee9546fb8608a69e2b097efd2aa9352ab9"
+    }
+  },
+  "elasticity": {
+    "C11_Pa": 227100000000.0,
+    "C12_Pa": 176040000000.0,
+    "C44_Pa": 71730000000.0,
+    "density_kg_m3": 12007.0,
+    "citation": "J. A. Rayne, Phys. Rev. 118, 1545 (1960), DOI 10.1103/PhysRev.118.1545",
+    "semantics": "pure Pd near-300 K secondary transcription; S7 does not itself label temperature; not measured foil/PdDx tensor",
+    "transcription": "Fukuda et al., Phys. Rev. Applied 20, 034048 (2023), supplemental Table S7; consistent with Malica/Dal Corso arXiv:2109.00459 Fig.1 near 300 K",
+    "density_semantics": "Arblaster, DOI 10.1595/147106712X646113, assessed pure Pd at 293.15 K",
+    "alternative": "Schwarz et al. DOI 10.1016/j.actamat.2004.10.009 and Bach et al. OSTI 977845; 300 K RUS PdDx measured 0.58<x<0.75; figure envelope at x~.6-.65: B165-180,Cprime25-26.5,C4463-65.5 GPa; no full-profile tensor assumed"
+  },
+  "model": {
+    "dimensions_m": [
+      0.02126944621086619,
+      0.02126944621086619,
+      0.00025
+    ],
+    "degree": [
+      5,
+      5,
+      2
+    ],
+    "boundary": "all six faces natural traction-free; rigid motions projected out",
+    "geometry": "equal-area free square surrogate for 24-mm disk; central 10-mm square beam; mounting/shape not measured operator inputs",
+    "requested_band_Hz": [
+      5000.0,
+      250000.0
+    ],
+    "grain_maps": "synthetic columnar piecewise rotated cubic; no measured grain map",
+    "time_step_s": 5e-08,
+    "sampled_exposure_s": 0.0003,
+    "realizations": 6,
+    "total_receiver_exposure_s": 0.0018,
+    "burn_in_s": 0.00025,
+    "source": "independent Poisson positive/negative parents in 36 equal-area sites; electrical fractions .85/.15; D2 two recoil energies share one parent sign",
+    "packet": "effective z-traction point at host-deposition weighted mean depth; fixed retained-band energy per parent; terminal_depth_A is stored in METRES despite key",
+    "source_time": "bin-boundary impulse approximation; no conditioning/window reweighting; no time compression",
+    "localization": "positive quartic of center epsilon_xx at depth 30um couples retained foil modes; localized receiver sensitivity, not measured full-foil nonlinearity",
+    "thermal": "classical same-band strain quadratic form; mean kBT Tr(A)/2; sd kBT sqrt(Tr(A\u00b2)/2); finite modal correlations retained",
+    "source_fraction": 0.01,
+    "damping_energy_lifetime_s": 5e-05
+  },
+  "result": {
+    "max_scanned_nonlinear_peak_ratio": 1.0220415032068142,
+    "statistical_scope": "fixed center receivers plus explicit 16-receiver union; union amplitudes normalized to its own mean; no extrapolated spatial event count",
+    "first_refinement": "band-resolved launch and acoustic loss/transfer; nonlinear coefficient is not measured"
+  },
+  "units": {
+    "energy_density": "J/m3",
+    "reference": "eV per D; contextual full-loading reference, not x<1 material threshold"
+  }
+}

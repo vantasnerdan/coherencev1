@@ -1,0 +1,45 @@
+{
+  "schema": "g13-live-4109-v1",
+  "steering": [
+    "entry_4097",
+    "entry_4103",
+    "entry_4104",
+    "entry_4109"
+  ],
+  "damage": "omitted by direct corrected steering; no damage/dose interpretation of rogue holes",
+  "model": "same 53-mode rotated-cubic-grain/free-face finite variational operator as fixed-source baseline",
+  "causal_source": "pre-bin wave state conditions every physical parent mark; no new event qualifies itself; within 50ns bin state frozen",
+  "source_spread": "three conditional energy-fraction marks and independent signed counts; exact Poisson parent counts and conditional multinomial marks",
+  "energy": "each raw self-energy fraction <=1; coherent kinetic cross work accounted once, batch new work capped by total incoming host energy; negative work returns to outgoing reservoir",
+  "source_identity": "disjoint spatial parent sectors; identities sector/site/bin/species/sign/ordinal; echoes retain original sector",
+  "convergence": "two different origin sectors have inward flux on receiver faces with >=90-degree inward-normal separation; each exceeds 5% total inward power; total strain energy >1.1 sum separate sector energies",
+  "receiver_center_m": [
+    0.017134723105433094,
+    0.010634723105433095,
+    0.000125
+  ],
+  "receiver_size_m": [
+    0.001,
+    0.001,
+    0.0001
+  ],
+  "A": "pre-impact |epsilon_xx| or |u_z| > .25 fixed quiet canonical rms in 2.5mm-square, depth0-50um neighborhood centered at source",
+  "C": "pre-impact signed epsilon_xx or u_z beyond +/-3 causal-prior rms; positive and negative identical thresholds; ensemble zero reference",
+  "rms": "prior EWMA squared field, time scale 5*max modal lifetime, initialized from quiet same-band covariance; score then update; no future/current launch enters predicate",
+  "lifetime_range": "mode lifetime^-1=tau_intrinsic^-1+v_group_mode/L_energy; energy survival exp(-path/L_energy); thin-plate flexural group proxy and Hill bulk speed mapping, not optical lifetime",
+  "beam": "uniform/peaked/peaked+hotspot space arms; steady/ripple/random-burst Cox time arms; shared Poisson charge totals and normalized intensity paths make matched charge exact",
+  "sample": {
+    "dt_s": 5e-08,
+    "exposure_s": 0.0001,
+    "independent_records": 2,
+    "burn": "5*max modal lifetime",
+    "conditioned_windows": false,
+    "charge_conditioning": "shared Poisson record totals, not selected wave events"
+  },
+  "common": "50% among physical impacts for A/C; 50% of off-impact receiving time windows for B; not an additive shared event denominator",
+  "covariance_relative_residual": 1.0622407059279676e-15,
+  "omitted_projectors": [],
+  "lateral_edges": "free variational lateral reflections retained; separate edge=.1 arm adds modal round-trip leakage -log(R_E)*v_group/model_side; boundary shape remains the equal-area square, not measured flange",
+  "local_conversion": "positive quadratic-loss lifetime proxy using median modal lifetime, not a calibrated spatial acoustic-to-D dissipator; per-mode actual total damping is separately budgeted",
+  "limits": "finite-band coarse influx convergence, not resolved atomistic splash fronts; new source law is a bounded parameterized hypothesis, not calibrated acoustic yield"
+}

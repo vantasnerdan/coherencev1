@@ -1,0 +1,12 @@
+{
+  "python": "3.12.3",
+  "numpy": "2.5.5",
+  "scipy": "1.18.1",
+  "float": "IEEE binary64",
+  "blas_threads": 1,
+  "poisson_seed": 20261126,
+  "grain_rotation_seed": 173,
+  "conservation_witness_seed": 13,
+  "command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 PYTHONDONTWRITEBYTECODE=1 python g13_rogue/pass2/coarse.py --output g13_rogue/pass2/output",
+  "exit": "natural success; all scientific tables produced; packaging is separate"
+}
