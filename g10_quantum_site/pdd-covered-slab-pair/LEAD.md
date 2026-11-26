@@ -23,3 +23,5 @@ This pair closes far more cheaply than a pair in the bulk. Bringing it to 1.72 A
 ## Lead's check
 
 Archive SHA-256 2734ee7808f3a3ce6f452292fc017dfdd804d4e63adeb1e4d0e3ceb0fb321049, all 49 file sums checked. The delivered reader (NumPy only) runs on the lead's machine, and the lead also recomputed every total, single-deuteron and mutual energy at all three meshes from the per-point records with a separate short script: they match `pair.json`. The first-principles runs themselves were not rerun.
+
+Later change by the lead: in the two copies of `replay/producer-*/surface_vacancy.py`, a default input folder that named a location on the machine that ran it is now the current folder. Their lines in `SHA256SUMS` were regenerated; `SHA256SUMS.delivered` is the delivered list, and the native records still cite the delivered file's hash.

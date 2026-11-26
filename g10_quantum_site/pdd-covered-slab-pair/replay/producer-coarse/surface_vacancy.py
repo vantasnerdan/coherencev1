@@ -14,7 +14,7 @@ from ase.constraints import FixAtoms
 from ase.geometry import find_mic
 
 MANIFEST_SHA = 'ee38e402445cbeb5afceceea2e4345c2980b16ecca78df05b9d965bae0f537f5'
-DEFAULT_ROOT = Path('/home/administrator')
+DEFAULT_ROOT = Path('.')
 MANIFEST_PATH = Path('coherence-g10-wide/sources/slab-vacancy/source-manifest.json')
 DEUTERIUM_U = 2.014101778
 SURFACE_FMAX = 0.05
