@@ -9,7 +9,7 @@ Giuliano's capsule. In the relaxed 64-site cell of `../pd-vacancy-r4-six-D/` (on
 | 1.726 | 0.061 | 0.055 | 0.005 | 1.688 |
 | 1.486 | 0.231 | 0.207 | 0.024 | 1.632 |
 
-- **Two deuterons 1.49 A apart cost 0.23 eV in the vacancy.** In bulk PdD (`../pdd-nearest-pair/LEAD.md`) the pair rests at 2.89 A, and reaching 1.93 A already costs 0.32 eV and 1.29 A costs 1.39 eV. The vacancy pair starts where the bulk pair has paid 0.3 eV, and from there the next 0.48 A costs less than the first 0.5 A did in the bulk.
+- **Two deuterons 1.49 A apart cost 0.23 eV in the vacancy.** In bulk PdD (`../pdd-nearest-pair/LEAD.md`) the pair rests at 2.89 A, and reaching 1.93 A already costs 0.32 eV and 1.29 A costs 1.39 eV. The vacancy pair rests, at no cost, at a distance the bulk pair reaches only by paying 0.3 eV, and it then reaches 1.49 A for 0.23 eV more, where the bulk pair pays roughly 0.7 eV for the same step (read between its 1.93 and 1.29 A points).
 - **The two barely act on each other.** The pair term is 0.024 eV at 1.49 A, a tenth of the total; in the bulk it was 0.074 eV at 1.93 A, about a quarter of the total. Nearly all the cost in the vacancy is each deuteron leaving its own resting place.
 - **The pair term is repulsive at every distance computed** and grows steadily, as in the bulk. Nothing in this range lowers the cost of approach.
 
