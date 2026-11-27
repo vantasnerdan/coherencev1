@@ -16,7 +16,7 @@ The stiffness here is the collective one: all deuterons displaced together again
 | 10,000 K | 0.83 | 0.5793 | +228 % |
 | 30,000 K | 7.4 | 1.8846 | +967 % |
 
-- **Hot electrons stiffen the deuterium's collective motion strongly.** Between 0.07 and 7 eV per site the stiffness rises by roughly 1 eV/Å² for the first eV and 0.23 eV/Å² per eV after that. Against the collective stiffness that is several hundred percent per eV; against the on-site stiffness of about 1.5 eV/Å² used in `g15_track` it is about 70 percent per eV near 0.07 eV per site. Pass 3 of `g15_track` carried 10 percent per eV at most.
+- **Hot electrons stiffen the deuterium's collective motion strongly.** The rise is about 1 eV/Å² per eV of electron energy up to 0.07 eV per site, 0.4 from there to 0.8 eV per site, and 0.2 from there to 7 eV per site. Against the collective stiffness that is several hundred percent per eV; against the on-site stiffness of about 1.5 eV/Å² used in `g15_track` it is about 70 percent per eV near 0.07 eV per site. Pass 3 of `g15_track` carried 10 percent per eV at most.
 - **Mildly heated electrons soften it slightly.** At 0.004 eV per site the stiffness is down by 1 to 2 percent on both meshes. Somewhere between 0.004 and 0.07 eV per site the change turns from softening to stiffening.
 - **Below about 0.001 eV per site the change is too small for these meshes.** At the electron energies of the coarse cells of `g15_track` pass 1 (2e-5 to 2e-4 eV per site) the two meshes give opposite signs. Near a track the electron energy per site is far higher than in those cells.
 - **No directed force.** A deuteron at the centre of its site feels no net force from heating the electrons, by symmetry. This says nothing about a vacancy cage or uneven heating.
