@@ -1,0 +1,20 @@
+{
+  "delivery_base": "650a2ebd57c35f371ecd23c4db975ebd6e3cc55a",
+  "consumed_driver_sha256": "f6e408a107fd24c767eaba4ab67983f7d3439a76d718e480f6b397dcc3c4e891",
+  "primary_beams": [
+    "even_steady",
+    "hot_steady",
+    "hot_bursts"
+  ],
+  "physical_source_arms": 30,
+  "logical_beta_source_arms": 36,
+  "independent_records": 16,
+  "raw_core_record_rows": 480,
+  "built_only_beta": "inactive; one shared propagation, never pooled as independent beta replicates",
+  "same_parent_totals": true,
+  "built_random_work_and_budget_zero": true,
+  "max_relative_energy_residual": 1.3465811421792951e-14,
+  "thermal_reference": "same actual modes, spatial quadratics/projectors and 2000x50-ns window; analytic stationary mean/fluctuations, not sampled thermal maxima",
+  "source_scenarios": "not rigorous physical lower/upper bounds",
+  "ripple_status": "previously authorized results retained as adjuncts only; no built-only ripple propagation"
+}

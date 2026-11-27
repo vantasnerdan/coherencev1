@@ -4,6 +4,8 @@ In pass 2 and in step 1 each impact was given a push of random direction, so the
 
 `README.md` is the technical page, `inputs_ledger.md` the inputs and their sources, `signed.py` the single script.
 
+Step 2 (`../rung2/LEAD.md`) runs the built sources alone, without the assumed random launch. There an uneven beam does matter: bursts make the tallest events 5.9 times the typical level against 1.7 for a steady beam.
+
 ## What was added
 
 - **Momentum.** Each deuteron stops in the foil and hands over its momentum, inward. At 138 uA that is a steady force of 2.1 millionths of a newton on the beam spot.

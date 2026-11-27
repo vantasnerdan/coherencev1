@@ -1,0 +1,286 @@
+{
+  "unpublished": true,
+  "stage": "local readback only",
+  "dependency": {
+    "delivery_base": "650a2ebd57c35f371ecd23c4db975ebd6e3cc55a",
+    "input_epoch_base": "fe514a174214b01558c228fc9f8982ef3791fb06",
+    "required_shared_files": [
+      {
+        "path": "g13_rogue/pass3/rung1b/signed.py",
+        "sha256": "f6e408a107fd24c767eaba4ab67983f7d3439a76d718e480f6b397dcc3c4e891"
+      },
+      {
+        "path": "g13_rogue/pass3/rung1b/frequencies.json",
+        "sha256": "0b4661cdaed7c2c84e2af7bbc82507edd950dc2b139673454a725be77631381c"
+      }
+    ],
+    "meaning": "installed accepted driver is consumed unchanged; no full rung1b history archive is needed"
+  },
+  "files": [
+    {
+      "path": "g13_rogue/pass3/rung2/branch_comparison.npz",
+      "bytes": 6598,
+      "sha256": "eb959d10bb16ef193bad5cbb18449cb45ae2db0d4a9230754b62fb561d7d2fe6"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/clip_r2_hot_bursts_b035_Cu_proxy.png",
+      "bytes": 14204654,
+      "sha256": "3176f9d6dc2a3f2384e0fd3a273447170d39e20676cf487bce50f2805fc5e369"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/clip_r2_hot_bursts_b035_retained.png",
+      "bytes": 14447267,
+      "sha256": "552253238d4015e669f37c62ddb95d58c783daee4c11d61990d2bf7bf3988eeb"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/extraction.npz",
+      "bytes": 2810,
+      "sha256": "68f2d75630605477cbc6cea00d92a17fb3584e3b50b0c6b474631f87d5193f0a"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/mass.npz",
+      "bytes": 5510438,
+      "sha256": "8b86afeed779a48b03fe5a2880ab9c41123fae95ff8e6ababff2771d4e53f3b9"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/mode_metrics.npz",
+      "bytes": 8864,
+      "sha256": "150f5c095bf3a27e466ec0857dcabe15cb5fe3bd1f4f1c3a10c92a8e75093a67"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/model.npz",
+      "bytes": 148987593,
+      "sha256": "59697212d397a6233f7aee9a4d02bd07ac773c8d3d380d50eaba116dffbcef8d"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_between_b0.0_Cu_proxy_combined_records0-15_histories.npz",
+      "bytes": 14550213,
+      "sha256": "6560c8bcf8fa0f1db6a6921b5d75993b8c210e5b51c0cc4e9d5654350d4ea79c"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_between_b0.0_Cu_proxy_random_records0-15_histories.npz",
+      "bytes": 14549956,
+      "sha256": "6c0de012cae7a91551c0c1748856d5b613ec01e46139bb65d818444ae21a2ba0"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_between_b0.0_retained_combined_records0-15_histories.npz",
+      "bytes": 14511346,
+      "sha256": "6cff33089f5d2948d611171fd4eaa2fcbee563ae36121eca8e1e3b3adef0f9b8"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_between_b0.0_retained_random_records0-15_histories.npz",
+      "bytes": 14511570,
+      "sha256": "42cf389da60ee879a2abb15dbc6615ca0e1ebf6926022eb4ea579ff8fc33a9ea"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_between_b0.35_Cu_proxy_random_records0-15_histories.npz",
+      "bytes": 14607002,
+      "sha256": "c47f7d1488c7bd9170bcbe72a828d5102f9b6389d37856e0577ac06981f20d93"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_between_b0.35_retained_combined_records0-15_histories.npz",
+      "bytes": 14550863,
+      "sha256": "29b6e02618712cbb7f96e18a2dd3dcc4bf27fbd1d92810e7cd9bca2a4e64cc1f"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_between_b0.35_retained_random_records0-15_histories.npz",
+      "bytes": 14550644,
+      "sha256": "061ee63e1160b41004b5de9bb949f7c04b3b20599b913ecbc9f75c7956a844e8"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_steady__built_only_b0.0_Cu_proxy_combined_records0-15_histories.npz",
+      "bytes": 14179952,
+      "sha256": "52dbbaaab84696d340d04ff8ddbcd93920cd4383706d81d98430d36535e6dae3"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_steady__built_only_b0.0_retained_combined_records0-15_histories.npz",
+      "bytes": 14035957,
+      "sha256": "51e00d27b7a67f416b091c52ea7fe1e82509410068e9a56326d1ceb844af1e13"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_steady_b0.0_Cu_proxy_combined_records0-15_histories.npz",
+      "bytes": 14550215,
+      "sha256": "fd47a3320c83205d7ca53e8df30d4992f2e555f5e214cb51a5f66fdec491b191"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_steady_b0.0_Cu_proxy_random_records0-15_histories.npz",
+      "bytes": 14550337,
+      "sha256": "9c45b20126d944818a609dd51ce952e7cbece55ed29240235a7cb06f8cbde407"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_steady_b0.0_retained_combined_records0-15_histories.npz",
+      "bytes": 14510858,
+      "sha256": "2fa8f0b57a179029a5a483a50d29ebbdc736a7cc0002c9c8f49cacc9d98d371a"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_steady_b0.0_retained_random_records0-15_histories.npz",
+      "bytes": 14510982,
+      "sha256": "5133d2f18c7a408cdf20d225fbbf9f79988d4435cf721af4e72fbd416118e202"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_steady_b0.35_Cu_proxy_combined_records0-15_histories.npz",
+      "bytes": 14607152,
+      "sha256": "a2be03580964fa64f644f0ed2a79135fe6c9deeb4f0c0dc0ede32d8476f7a247"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_steady_b0.35_Cu_proxy_random_records0-15_histories.npz",
+      "bytes": 14606842,
+      "sha256": "68623a909bb1067a8f0fa9232ac9413f4dea83ee8a7eb4c841449cf9e5e8cdc8"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_steady_b0.35_retained_combined_records0-15_histories.npz",
+      "bytes": 14551524,
+      "sha256": "29c29b57db8352896414586b5c6bf7622a0aa576448f172c1ded7c4e6f721355"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_steady_b0.35_retained_random_records0-15_histories.npz",
+      "bytes": 14550881,
+      "sha256": "c2d1862409be6ca0b0dc9357dbd355d6537092dce8711f90e943088b4c441349"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_tuned_b0.0_Cu_proxy_combined_records0-15_histories.npz",
+      "bytes": 14550098,
+      "sha256": "44079cddf9dcc0b6b615fc4af42ae498ca5361c30a0b108003c546b27a934bed"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_tuned_b0.0_Cu_proxy_random_records0-15_histories.npz",
+      "bytes": 14550107,
+      "sha256": "4aa42aea83955e098d4c7eb386a286752763540902ab02bbd51f04012e8a8059"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_tuned_b0.0_retained_combined_records0-15_histories.npz",
+      "bytes": 14511202,
+      "sha256": "5548a7528c1a568e452bc5764fc079418caa8b3e06ad68a6822462034f3ab3dd"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_tuned_b0.0_retained_random_records0-15_histories.npz",
+      "bytes": 14510867,
+      "sha256": "1d8b7bc5d47befcd7bf4bc3d7442a60d4de531b6d3603430e21864dac8df6452"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_tuned_b0.35_Cu_proxy_random_records0-15_histories.npz",
+      "bytes": 14607063,
+      "sha256": "2a5ea12908e4bd3d98dd209a312ebdfe8c91af40a89fdac231104b43340e29fb"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_tuned_b0.35_retained_combined_records0-15_histories.npz",
+      "bytes": 14553883,
+      "sha256": "cf4cca91657b3dba049a17f312dd8a085c35f16fb1ad4029240cc659cae8e404"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_tuned_b0.35_retained_random_records0-15_histories.npz",
+      "bytes": 14553281,
+      "sha256": "ca23dae9a8331789da5d1c21dbb03d2c91ef570e1d12941cc99ecf3d5ed70245"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_bursts__built_only_b0.0_Cu_proxy_combined_records0-15_histories.npz",
+      "bytes": 14513565,
+      "sha256": "4bbe0abc88b25c0bb6fc88722496cf83f673b48e3bd626e88b7808c813d04369"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_bursts__built_only_b0.0_retained_combined_records0-15_histories.npz",
+      "bytes": 14520753,
+      "sha256": "999a8991ce2af1dbcd8bcd6fd1aa9889529a7749f696b8e4a5eef6af991558e1"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_bursts_b0.0_Cu_proxy_combined_records0-15_histories.npz",
+      "bytes": 14552639,
+      "sha256": "44a3193cce68cdd9e46ebd4472a97cfb21bad12835292f7e676e64824927bc21"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_bursts_b0.0_Cu_proxy_random_records0-15_histories.npz",
+      "bytes": 14552349,
+      "sha256": "48afbe08f3b50bcc0303a44f6faf2be939776b532ff2710bb016921bbc823c96"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_bursts_b0.0_retained_combined_records0-15_histories.npz",
+      "bytes": 14515562,
+      "sha256": "3d4e1a6d04d50bb41f42a275ff005725daaa8e76f5924fd55e0e328d7b27f89f"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_bursts_b0.0_retained_random_records0-15_histories.npz",
+      "bytes": 14515589,
+      "sha256": "dd8bfe2a81ba386590b14e4f8d995533d43e8c802ad85407402d5a1ae7f70638"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_bursts_b0.35_Cu_proxy_combined_records0-15_histories.npz",
+      "bytes": 14607867,
+      "sha256": "689f3698b99d88cabdd15e0ca58658852f082b65dd4776e5c7496527f8cb38a9"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_bursts_b0.35_Cu_proxy_random_records0-15_histories.npz",
+      "bytes": 14607336,
+      "sha256": "8c8a65b65c36b2f3a1886b560d49f813cd99c46abc5d2681d93de5f128cd5bc4"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_bursts_b0.35_retained_combined_records0-15_histories.npz",
+      "bytes": 14562862,
+      "sha256": "2a86d5f1e2286f4f5c4d2ab96d0416cd35ae7df59238d4a719eefab353a29763"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_bursts_b0.35_retained_random_records0-15_histories.npz",
+      "bytes": 14562609,
+      "sha256": "7ecca248e83bab92a87c245a261ae9bc6153d6cc6e641e15f9e03791645643bb"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_steady__built_only_b0.0_Cu_proxy_combined_records0-15_histories.npz",
+      "bytes": 14086215,
+      "sha256": "0062d3f0bb500232a06c4c4799e1d2d09f68d313746b881ab04d7a9c4745bb3a"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_steady__built_only_b0.0_retained_combined_records0-15_histories.npz",
+      "bytes": 13985190,
+      "sha256": "13303dd350d078b8c3ea8852e0884f6414f82f2d7affa152b58db032b9ba9089"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_steady_b0.0_Cu_proxy_combined_records0-15_histories.npz",
+      "bytes": 14551008,
+      "sha256": "90a57073f7be8b6f05815d17aa47300f1daf6f9678b4180761f228d8f88cd8f4"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_steady_b0.0_Cu_proxy_random_records0-15_histories.npz",
+      "bytes": 14551391,
+      "sha256": "c84f3d860c95b8a8e776f5af50e1340dbbd427b6cdcc1ac8a19cdc3443a0810e"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_steady_b0.0_retained_combined_records0-15_histories.npz",
+      "bytes": 14512402,
+      "sha256": "a1500624af1d6d88e4111f6ba0ede4e9c29638bf3f3e2c4cd0ea8bf0e1f67d6c"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_steady_b0.0_retained_random_records0-15_histories.npz",
+      "bytes": 14512084,
+      "sha256": "e49b47a028bfe3399087da465a44a06ead59cae69ca94ee47b7d6c3b85f9385f"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_steady_b0.35_Cu_proxy_combined_records0-15_histories.npz",
+      "bytes": 14606863,
+      "sha256": "facd6544f17b05067418a579e8c96c90d666dbc2f0ba97e15b9db6e0caaca8e2"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_steady_b0.35_Cu_proxy_random_records0-15_histories.npz",
+      "bytes": 14607060,
+      "sha256": "4a8b42fee8a835751196f48debe4e2981183a009529a5d5f6a977c735cd93935"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_steady_b0.35_retained_combined_records0-15_histories.npz",
+      "bytes": 14556933,
+      "sha256": "54a571aa60d4689fc97c005113c1e4faaa40032fb022330f266e05b295c32d49"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_steady_b0.35_retained_random_records0-15_histories.npz",
+      "bytes": 14557152,
+      "sha256": "c48f8cfe93ceca9fe3f248a7a9c1fc020b288254d483d2f463db68414326f33a"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/signed_r2.npz",
+      "bytes": 15836122,
+      "sha256": "55d3d2b85f66d12d77bee585e1dcb385e7e4f307fb2372646f85426ec7849548"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/stiffness.npz",
+      "bytes": 177430611,
+      "sha256": "986f22d8eb26c2bee1ded3beee79216a010e1d4c430f2776308e1e07bd68d41c"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "decision": "closed covariance formulas agree with independently exponentiated viscous state transfer on three actual retained modes; no extra bath is inserted into beam trajectories",
+  "modes": [
+    0,
+    151,
+    302
+  ],
+  "rows": [
+    {
+      "loss": "retained",
+      "lag_s": 0.0,
+      "regional_relative_difference": 1.4327707131098143e-16,
+      "global_relative_difference": 0.0
+    },
+    {
+      "loss": "retained",
+      "lag_s": 3.5e-07,
+      "regional_relative_difference": 0.0,
+      "global_relative_difference": 0.0
+    },
+    {
+      "loss": "retained",
+      "lag_s": 9.999999999999999e-05,
+      "regional_relative_difference": 5.054608348998359e-14,
+      "global_relative_difference": 6.906076639260263e-14
+    },
+    {
+      "loss": "Cu_proxy",
+      "lag_s": 0.0,
+      "regional_relative_difference": 1.4327707131098143e-16,
+      "global_relative_difference": 0.0
+    },
+    {
+      "loss": "Cu_proxy",
+      "lag_s": 3.5e-07,
+      "regional_relative_difference": 1.5949281104043867e-16,
+      "global_relative_difference": 0.0
+    },
+    {
+      "loss": "Cu_proxy",
+      "lag_s": 9.999999999999999e-05,
+      "regional_relative_difference": 4.658542957674314e-14,
+      "global_relative_difference": 6.416515941471313e-14
+    }
+  ],
+  "scope": "three-mode transfer witness, not Monte Carlo thermal extreme statistics or a universal physical damping validation"
+}

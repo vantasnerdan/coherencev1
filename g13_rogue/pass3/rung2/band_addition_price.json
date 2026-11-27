@@ -1,0 +1,51 @@
+{
+  "status": "priced proposal only; not propagated or launched",
+  "current_frequency_Hz": [
+    5286.546365969112,
+    249218.8470186
+  ],
+  "current_modes": 303,
+  "vertical_mass_above_half_modes": 263,
+  "out_of_plane_component_RMS_lateral_wavelength_m": [
+    0.0023048724975745474,
+    0.013331192431640446
+  ],
+  "wavelength_scope": "actual grained-mode component RMS, not a unique Bloch wavelength or hard spatial cutoff",
+  "projection_screen_m": 0.001525718888888889,
+  "target_uniform_reference_A0_Hz": [
+    491424.27691095,
+    588157.570569
+  ],
+  "candidate_disjoint_Hz": [
+    475000.0,
+    625000.0
+  ],
+  "fixed_source": {
+    "spatial_sigma_m": 2e-08,
+    "duration_sigma_s": 5e-13,
+    "bulk_proxy_speed_m_s": 4460.0,
+    "law": "normalized f^2 Gaussian recoil envelope; illustrative, not measured launch",
+    "original_5_250kHz_host_fraction": 0.01,
+    "extra_host_fraction": 2.324312185646161e-15,
+    "extra_nominal_power_W": 2.0250105055005052e-16,
+    "remaining_energy": "outside the old band, never rescaled into the candidate band"
+  },
+  "estimated_added_modes": 289,
+  "estimated_total_modes": 592,
+  "modal_step_cost_factor": 1.953795379537954,
+  "dense_regional_readout_cost_factor": 3.817316385103857,
+  "price_limits": "two-direction uniform-reference Weyl estimate, not an actual grained spectrum or runtime benchmark; requires a bracketed new spectral window and a band-edge phase check. Existing Q4 errors near the upper new edge are not a general accuracy guarantee. No job or later transport model is authorized by this estimate.",
+  "priced_global_space": {
+    "lateral_degree": 5,
+    "lateral_cells": 16,
+    "thickness_degree": 4,
+    "ndof": 98415,
+    "estimated_stiffness_entries": 70812225,
+    "minimum_raw_CSC_bytes": 850534028,
+    "full_modal_vector_bytes": 466093440,
+    "projection": "Q4 subspace is nested in Q5 at the same cells: existing mass capture cannot decrease in exact arithmetic"
+  },
+  "time_price": "At 625 kHz a 50-ns left-bin phase scale is 0.098 rad. Validate actual averaged-thermal-force transfer; conservative 10-ns nested parent bins would cost 5x steps, or use a verified higher-order/exact thermal convolution. Neither is implemented here.",
+  "source_budget_note": "Old 5\u2013250-kHz 1% packet remains unchanged as a separate component; candidate Gaussian share comes only from the remaining host reservoir, with no electronic stopping reclassified as extra acoustic launch. Built-only keeps zero random launch in all bands.",
+  "resource_limits": "Weyl counts and raw storage are estimates, not measured runtime/peak factor memory. A new bracketed global spectral window and controlled band-edge phase are required; a larger direct factorization is not promised affordable. No dense production or later transport model has been run."
+}

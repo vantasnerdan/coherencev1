@@ -1,0 +1,1559 @@
+{
+  "unpublished": true,
+  "stage": "local readback only; remote stage owned by Main",
+  "dependency": {
+    "delivery_base": "650a2ebd57c35f371ecd23c4db975ebd6e3cc55a",
+    "input_epoch_base": "fe514a174214b01558c228fc9f8982ef3791fb06",
+    "required_shared_files": [
+      {
+        "path": "g13_rogue/pass3/rung1b/signed.py",
+        "sha256": "f6e408a107fd24c767eaba4ab67983f7d3439a76d718e480f6b397dcc3c4e891"
+      },
+      {
+        "path": "g13_rogue/pass3/rung1b/frequencies.json",
+        "sha256": "0b4661cdaed7c2c84e2af7bbc82507edd950dc2b139673454a725be77631381c"
+      }
+    ],
+    "meaning": "installed accepted driver is consumed unchanged; no full rung1b history archive is needed"
+  },
+  "required_evidence_asset": {
+    "path": "g13_rogue/pass3/rung2/histories.tar.gz",
+    "sha256": "e61ab2af46343f68cf682cab4ace136e6fdc8fbddbf5f37148605d87e5845638",
+    "bytes": 1007984300,
+    "members": 54,
+    "all_member_hashes_read_back": true
+  },
+  "evidence_manifest_sha256": "72a5f31a8cf422cb7134bca9e0cb09e67deae4ae780159d005893ca3abe0779d",
+  "files": [
+    {
+      "path": "g13_rogue/pass3/rung2/README.md",
+      "bytes": 21525,
+      "sha256": "3e30d2dcaf18c42b9da440dacebf9f97d90ef3b16f7da9c7253ed35c0da896ea"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/actual_band_extent.csv",
+      "bytes": 261,
+      "sha256": "306e0d70eea0fb25618cbe94da8b01b9e535bbdbc09480d1ffd23e6bfaf451a3"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/adjunct_ripple_contrasts.csv",
+      "bytes": 1071,
+      "sha256": "8c0df8b676fa9a4948f078e67cdadbbbfdc69d0325e38e23ae3e63525a1dfc97"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/band_addition_price.json",
+      "bytes": 2818,
+      "sha256": "a00229ec45ef8d2c7dc4bd7d8dfb189df4df5def12e752698e6b4b12e7c6e29d"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/band_upgrade_reference.csv",
+      "bytes": 983,
+      "sha256": "5f948866166fc8d2c78fd4b40446c950bcf86097ffafc59b16b04012858d428a"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/behavior_r2.json",
+      "bytes": 452,
+      "sha256": "2ba6cac40ad2b677228da26a4e972a0ad5555d5a85c4771e18b8adcc5784beba"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/clip_r2_hot_bursts_b035_Cu_proxy_preview.png",
+      "bytes": 82412,
+      "sha256": "07882451d7babf87add33c2d6b4c049bff8465687b0139924d499616eb981a23"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/clip_r2_hot_bursts_b035_retained_preview.png",
+      "bytes": 86766,
+      "sha256": "b692b3af63856cde871c463a4551b94747762b149f6943555d05bb4422710edb"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/clips_r2.json",
+      "bytes": 2604,
+      "sha256": "7a628a925549a23524e10f791081e2ef64c3b8a2bdac2a47fb4bbeb13aba6d91"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/contrasts_sources_r2.csv",
+      "bytes": 52114,
+      "sha256": "7d53de0535416fa37ae7c572c256748b2d0030fdcebfb29a016135ac2a8d7446"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/evaluate.py",
+      "bytes": 24895,
+      "sha256": "04a72ae2859944c55810d03506698334dfee3f52d747b7d82fece4aee6ef21b0"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/evidence_manifest.json",
+      "bytes": 12182,
+      "sha256": "72a5f31a8cf422cb7134bca9e0cb09e67deae4ae780159d005893ca3abe0779d"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/inputs_ledger.md",
+      "bytes": 6305,
+      "sha256": "0feebd8f4add5c6eee6545cf05df6ac85fb3ba5d83c29b35e372757939a91e8f"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/inputs_r2.json",
+      "bytes": 1144,
+      "sha256": "cb2dce273963adbe61a77ce08b9fa83606d2bc90e0e5d0b62b801242409bdb51"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/mapping_witness.json",
+      "bytes": 468,
+      "sha256": "f7f2b1badc3637ae3dea4d28026df48acd9ed63daf9976a41aebb90480e3b3fa"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/phase_Q4_reference.csv",
+      "bytes": 637,
+      "sha256": "234fc186b9d82a34b1f51d8f1835f92579f3683d7ee9f9d326a14eb23f9a050f"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/phase_r2.csv",
+      "bytes": 1149,
+      "sha256": "3b1fd799bafd3a11975e90b72730f2bb53e81b63735807b23f28924de976b2ba"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/phase_space_choice.json",
+      "bytes": 742,
+      "sha256": "64b17d1716e76d011c642c4268859dd23b38ecc6a887565c52155f368465b18b"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/portability_r2.json",
+      "bytes": 771,
+      "sha256": "1353700c9203769e12e519cb54d4aac582b4ec4114a2a36a5bc8eb977ed1b1ca"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/pressure_sampling_r2.csv",
+      "bytes": 1730,
+      "sha256": "70f72863366d4cbd3444b32e13d0edeee139658caee7b4b594838e605b4fefdf"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_between_b0.0_Cu_proxy_combined_records0-15_energy.csv",
+      "bytes": 4780,
+      "sha256": "da5df858610bc2817ba7deb32d5f072c03053552e86dc4573c59a92759297568"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_between_b0.0_Cu_proxy_combined_records0-15_peaks.csv",
+      "bytes": 5348,
+      "sha256": "d51767953261cda7556f8d3054b2bf0cc435e9ed8e160a37bb9d119d22227b37"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_between_b0.0_Cu_proxy_combined_records0-15_records.csv",
+      "bytes": 7613,
+      "sha256": "fd186e03171b3b9819c6c85dff15fb6d645aec70f86b560657de20d80f22d698"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_between_b0.0_Cu_proxy_combined_records0-15_same_event.csv",
+      "bytes": 6949,
+      "sha256": "c7994ac1cae1555dcd657606ae4021a85ca46f3431fcdfedffb09f828436c360"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_between_b0.0_Cu_proxy_combined_records0-15_signed.csv",
+      "bytes": 87304,
+      "sha256": "aea28c0f36c36d5d39c2cfc84a9c355597626ffaacd1e6947f83f1348a678b27"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_between_b0.0_Cu_proxy_combined_records0-15_tails.csv",
+      "bytes": 14310,
+      "sha256": "28db00d647ede6b36990f17fbd2159ec7b1e0cb9238bfac36350a2b568e4b12a"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_between_b0.0_Cu_proxy_random_records0-15_energy.csv",
+      "bytes": 3861,
+      "sha256": "dd7ba5878f33a35c31df0ef0aa6fe465a5d0ab86c32e646b4cb532ea94321cfe"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_between_b0.0_Cu_proxy_random_records0-15_peaks.csv",
+      "bytes": 4329,
+      "sha256": "82868ccca95446986029e706808aea9103add113952bc685403516d7e3d407e0"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_between_b0.0_Cu_proxy_random_records0-15_records.csv",
+      "bytes": 7600,
+      "sha256": "e5f445636bdfa7f8e3d3ced6402b19bf676fa5873155663a04388aab7717446d"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_between_b0.0_Cu_proxy_random_records0-15_same_event.csv",
+      "bytes": 6862,
+      "sha256": "b297ad183609678e2fb8d51b4ce66e815d9592acc993594b8450da10ceab6411"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_between_b0.0_Cu_proxy_random_records0-15_signed.csv",
+      "bytes": 86219,
+      "sha256": "8ef29077be141318f91300448582eaaa9d898940d365c8e4b986cd38a1c2dce5"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_between_b0.0_Cu_proxy_random_records0-15_tails.csv",
+      "bytes": 14231,
+      "sha256": "3a5c5e614feb5c312242154e3a1bfe58025692cfa7a3aa8c8c566fbf57f1f9a5"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_between_b0.0_retained_combined_records0-15_energy.csv",
+      "bytes": 4793,
+      "sha256": "955f03b4703da7c720ea8e918f9986c6d4de5ac12eeec6c6c596c13f85a6420e"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_between_b0.0_retained_combined_records0-15_peaks.csv",
+      "bytes": 5419,
+      "sha256": "bc2b77e9824f5191952d0937d6e817ebb3fb295ab0184d00a26f9fdbeef3faed"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_between_b0.0_retained_combined_records0-15_records.csv",
+      "bytes": 6898,
+      "sha256": "33d37b04c1d8cfedfc74ee4137b4257d0cc37de3279b8b51ab11791b008f6750"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_between_b0.0_retained_combined_records0-15_same_event.csv",
+      "bytes": 6955,
+      "sha256": "9425aff57c279b07cba9914e336cfd457418c166074f45b01d40b901377f4736"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_between_b0.0_retained_combined_records0-15_signed.csv",
+      "bytes": 80749,
+      "sha256": "aed1d602ca8f2f63872d17e20dba66be0b080d652bbf5e001732d000dbb24d10"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_between_b0.0_retained_combined_records0-15_tails.csv",
+      "bytes": 14583,
+      "sha256": "cd2599e81fd3e80f5ccb8e6385dae9a7faafe4784c3ca2868de9a3e9b058142b"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_between_b0.0_retained_random_records0-15_energy.csv",
+      "bytes": 3850,
+      "sha256": "dd3984bbbca1567c3f5bb346b196b06d201a450e7770bab1a914021cefdca7cb"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_between_b0.0_retained_random_records0-15_peaks.csv",
+      "bytes": 4389,
+      "sha256": "656dd4944392bb3990f102d8d341d59b8b4fe4e703fb7941c0010043498c71f8"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_between_b0.0_retained_random_records0-15_records.csv",
+      "bytes": 6884,
+      "sha256": "db6eb7251c3fc2f9591ccc125deed47597bea248dee2495a3904512677dac46e"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_between_b0.0_retained_random_records0-15_same_event.csv",
+      "bytes": 6877,
+      "sha256": "65a5355388ba3fb09f93c748a1725adac66d417e5c60b30f78419be222f498c5"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_between_b0.0_retained_random_records0-15_signed.csv",
+      "bytes": 79637,
+      "sha256": "6f21762da52abde52a54db38e5e265ebda54642dda88a7d00dda6a7492387955"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_between_b0.0_retained_random_records0-15_tails.csv",
+      "bytes": 14480,
+      "sha256": "70d67978b03d2d50a57cb96793018a0ebe06797a95dffcaff1d61cdf2c68ed33"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_between_b0.35_Cu_proxy_random_records0-15_energy.csv",
+      "bytes": 3892,
+      "sha256": "db343bbbab3031fb5b33534c918d78537416270f3d3a44eeb2e22bf009780eec"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_between_b0.35_Cu_proxy_random_records0-15_peaks.csv",
+      "bytes": 4428,
+      "sha256": "6c9d06819e3d781c941f0544d6e27a08856ff1d7ec8f73b70ab7e262107c55ca"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_between_b0.35_Cu_proxy_random_records0-15_records.csv",
+      "bytes": 7656,
+      "sha256": "21b5431174dcfd9842d2447ee3f11f2c58e963a7841b8beb51326bd532d8caeb"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_between_b0.35_Cu_proxy_random_records0-15_same_event.csv",
+      "bytes": 6954,
+      "sha256": "656b755d8dc4540c0bfb7f8bbf94edcc53a6c3f701da28b36832af8450441906"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_between_b0.35_Cu_proxy_random_records0-15_signed.csv",
+      "bytes": 89588,
+      "sha256": "cfd29ded34d34f62138c645f0050cb695d2a3597f72d1eb344cedc758b04fbad"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_between_b0.35_Cu_proxy_random_records0-15_tails.csv",
+      "bytes": 14351,
+      "sha256": "5f39cc1c790ad95c0c05928e73fbeee7da66f3d40d55e0f38ac53c9d219224db"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_between_b0.35_retained_combined_records0-15_energy.csv",
+      "bytes": 4844,
+      "sha256": "b0ef5065f5225c6e1bb9734fcedb5cb01f718fd761d23308f58635a4320ed563"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_between_b0.35_retained_combined_records0-15_peaks.csv",
+      "bytes": 5367,
+      "sha256": "192eae599f7425c8b6616c2182e2de9560a1bc46077f2d4926d9b141e25affb4"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_between_b0.35_retained_combined_records0-15_records.csv",
+      "bytes": 7347,
+      "sha256": "cca6711caf68ee683d4137a189c63c1f6e60f41c652aa2f9ea3138157fbb6d92"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_between_b0.35_retained_combined_records0-15_same_event.csv",
+      "bytes": 6970,
+      "sha256": "094dc92e4d397b9827a7dc0e7f02053086174bd00a395d44132e79c08b035913"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_between_b0.35_retained_combined_records0-15_signed.csv",
+      "bytes": 82507,
+      "sha256": "63896171b7caa382310b4bde78ec6903ffc19323ed5703ea275a770a6c8a9adc"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_between_b0.35_retained_combined_records0-15_tails.csv",
+      "bytes": 14672,
+      "sha256": "5c8af0a79ce3cc01da57af291a59e399723dc74d02bd47f6923af23617e6e98f"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_between_b0.35_retained_random_records0-15_energy.csv",
+      "bytes": 3895,
+      "sha256": "e3c9bea001b66e042004326d5a79583fca06910ae12869653ad03c2b84960952"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_between_b0.35_retained_random_records0-15_peaks.csv",
+      "bytes": 4336,
+      "sha256": "bd381f0ccf31fb40cc3b2ec7697a7cac2a7df17bfdac507233fb0489cf0c12d9"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_between_b0.35_retained_random_records0-15_records.csv",
+      "bytes": 7348,
+      "sha256": "19bf3ccf89bcb260694164d4028ea6c7069a1be97e2be34713df489fe12dc487"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_between_b0.35_retained_random_records0-15_same_event.csv",
+      "bytes": 6884,
+      "sha256": "b5c49d0b50cec297f777f24affe55b72c05fe6333a9c297ccf20208185d164fe"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_between_b0.35_retained_random_records0-15_signed.csv",
+      "bytes": 81184,
+      "sha256": "30eae4b3d96089bcd52e14966834087479e5cb37a080a6f7eb2e69fa0a5010cb"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_between_b0.35_retained_random_records0-15_tails.csv",
+      "bytes": 14552,
+      "sha256": "afc4fb78e9cbce798384418ff4b9f28166bb1f875445e5f34f85e5dc2d287af9"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_steady__built_only_b0.0_Cu_proxy_combined_records0-15_band_energy.csv",
+      "bytes": 2315,
+      "sha256": "d5793d6489db5ed173b6c06b30d95d106ec1b490fcff79a3e768ec9d76fad61a"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_steady__built_only_b0.0_Cu_proxy_combined_records0-15_energy.csv",
+      "bytes": 5304,
+      "sha256": "39a23bde26df508ff8183740720e3a6ac69733c42dbcd916b5724c80a4a7248a"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_steady__built_only_b0.0_Cu_proxy_combined_records0-15_peaks.csv",
+      "bytes": 5463,
+      "sha256": "e90c77dccb08d0398e1c50dc23a6ee487f336bc442fd40973ae4087c9086bfff"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_steady__built_only_b0.0_Cu_proxy_combined_records0-15_records.csv",
+      "bytes": 4354,
+      "sha256": "20d6e013b7b1be682f403fa4ca2579a9552e1698992b9254bfade4c528953fe4"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_steady__built_only_b0.0_Cu_proxy_combined_records0-15_same_event.csv",
+      "bytes": 7474,
+      "sha256": "7bc497f4899fc2ef4536b11412dcd466600a8956c7cac30b1a84725fe0b1b286"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_steady__built_only_b0.0_Cu_proxy_combined_records0-15_signed.csv",
+      "bytes": 86984,
+      "sha256": "2d9c6bbd7460bf35b7c4ac6c0c0a133e20e45ff08e74d772da497196c52a9952"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_steady__built_only_b0.0_Cu_proxy_combined_records0-15_tails.csv",
+      "bytes": 14998,
+      "sha256": "7e7531222cccda6e19ab180cc9517deb740404d0f82d849664f938b8044f02a3"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_steady__built_only_b0.0_retained_combined_records0-15_band_energy.csv",
+      "bytes": 2279,
+      "sha256": "1d4ad7601237a8c8b9138bbcb9d73c007dd276fdda7a4f7bd87a83f16d23f9d9"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_steady__built_only_b0.0_retained_combined_records0-15_energy.csv",
+      "bytes": 5319,
+      "sha256": "d289d0aa85e943876f1d82e5d6f9c3c53c84e9e8949601338b96e7b49721511c"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_steady__built_only_b0.0_retained_combined_records0-15_peaks.csv",
+      "bytes": 5349,
+      "sha256": "518e0d187b5c5c24a070880aaf74156c6e8b92fa526e2fad99bc23954e86f285"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_steady__built_only_b0.0_retained_combined_records0-15_records.csv",
+      "bytes": 4354,
+      "sha256": "e8efbb20373755c981710d0da2bfb13b4af4651a51c0021ec6bd09053d43ec21"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_steady__built_only_b0.0_retained_combined_records0-15_same_event.csv",
+      "bytes": 7323,
+      "sha256": "fe4c6c9ce7182df6a2d9b2994cb81480ddbeae1f9c7e9ad970cb755e4cfc5e14"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_steady__built_only_b0.0_retained_combined_records0-15_signed.csv",
+      "bytes": 86750,
+      "sha256": "21d952ca27c7abfc37389dc10ee590a8233b28023d6df1dd75bf192c40f50dd1"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_steady__built_only_b0.0_retained_combined_records0-15_tails.csv",
+      "bytes": 15062,
+      "sha256": "cf67eaf66ad401aa564807cb90f8840004734015063f736046410355c71a7bcc"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_steady_b0.0_Cu_proxy_combined_records0-15_energy.csv",
+      "bytes": 4783,
+      "sha256": "d0c2dc054713f309f66aafb10bab535269b6199eb0f285db0a66dd52c8d25eca"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_steady_b0.0_Cu_proxy_combined_records0-15_peaks.csv",
+      "bytes": 5432,
+      "sha256": "fc71f3af74688a36162e6e14ca0b76d12df859cf17692d2cbdf119863147af68"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_steady_b0.0_Cu_proxy_combined_records0-15_records.csv",
+      "bytes": 7585,
+      "sha256": "d1a8695477201b03339e2d3090ae82a148b95826fdb50cb97366616fd6868065"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_steady_b0.0_Cu_proxy_combined_records0-15_same_event.csv",
+      "bytes": 6900,
+      "sha256": "97ea6afe856247e87687cc8987fe9c5ef8a3e65c377ae2d36576cb4d34128e37"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_steady_b0.0_Cu_proxy_combined_records0-15_signed.csv",
+      "bytes": 86616,
+      "sha256": "e8cb055ff6b8ddda7262de0ead1432f9f2e27d9721b7938403b7a7f48758ba1d"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_steady_b0.0_Cu_proxy_combined_records0-15_tails.csv",
+      "bytes": 14515,
+      "sha256": "812b16313c480ab6dbef638914d2f5bb19f1d4fb4d2c96ddbac8d1faddb55a5a"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_steady_b0.0_Cu_proxy_random_records0-15_energy.csv",
+      "bytes": 3852,
+      "sha256": "1a8aed332cd583aabd64f8396ed887654a762ad08011d24729a69ded3ff39b88"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_steady_b0.0_Cu_proxy_random_records0-15_peaks.csv",
+      "bytes": 4447,
+      "sha256": "de2621b58eb2988011aef7f67e7084ea4ded77f52abf588af13f853769daf3f6"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_steady_b0.0_Cu_proxy_random_records0-15_records.csv",
+      "bytes": 7579,
+      "sha256": "82d08b56dfb92347c1b4ee386846bd5ce7ca4342ebe53838afb87022626ee76f"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_steady_b0.0_Cu_proxy_random_records0-15_same_event.csv",
+      "bytes": 6811,
+      "sha256": "373a7b04af17b26522548aaa0d87f0b918757a094e8e6ac361e3b905114f7dba"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_steady_b0.0_Cu_proxy_random_records0-15_signed.csv",
+      "bytes": 85521,
+      "sha256": "b9f2c5937c47be69a92b630e6645705b22df632fec4e0cebf281f0c60411b4e2"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_steady_b0.0_Cu_proxy_random_records0-15_tails.csv",
+      "bytes": 14428,
+      "sha256": "bf2701a65c21d29d9047887b9224b00b3cb80807e2f4bd64fef0b333de13cc93"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_steady_b0.0_retained_combined_records0-15_energy.csv",
+      "bytes": 4776,
+      "sha256": "5423b15594525bfbebe1001172560aec02e9d32f66327111334c494e992cb71b"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_steady_b0.0_retained_combined_records0-15_peaks.csv",
+      "bytes": 5420,
+      "sha256": "527de716a115374673a36b02b39603b115ba63c823798cc774703d99a4e1ed69"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_steady_b0.0_retained_combined_records0-15_records.csv",
+      "bytes": 6937,
+      "sha256": "ec4763b4ceb7d50dce8a473114c63d0782720d6eaee10f0280abf983a98467ce"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_steady_b0.0_retained_combined_records0-15_same_event.csv",
+      "bytes": 6931,
+      "sha256": "e810f87b4eb9b611c3178a0e8ce6b9f12d034f40090ffd907559bba6844077dd"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_steady_b0.0_retained_combined_records0-15_signed.csv",
+      "bytes": 80322,
+      "sha256": "50c84c0130b4ee96db57ffa097c9248e821acca3db8b2964701db5d6dfdebb07"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_steady_b0.0_retained_combined_records0-15_tails.csv",
+      "bytes": 14409,
+      "sha256": "8bdf5f4fdcda3ce231e155f6fc5e8735d900221402830e4b1b77f865a2ede610"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_steady_b0.0_retained_random_records0-15_energy.csv",
+      "bytes": 3840,
+      "sha256": "12d704a551fecbe90cbdaeab3532908309279886418523add11de690e34edc3c"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_steady_b0.0_retained_random_records0-15_peaks.csv",
+      "bytes": 4302,
+      "sha256": "4816f28e44f3246ada0f54e01e02c5b2d236ba6429ed52d052550c59d21121e1"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_steady_b0.0_retained_random_records0-15_records.csv",
+      "bytes": 6910,
+      "sha256": "ecba4f3f74c06beb3de5c5a6939cccf18b7f89d32eccdb0708c2436b583637f6"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_steady_b0.0_retained_random_records0-15_same_event.csv",
+      "bytes": 6839,
+      "sha256": "5d9efc3d2d6fa1781f7e83d0ef037fe5bf5d49918f0117be306c3684c7e93644"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_steady_b0.0_retained_random_records0-15_signed.csv",
+      "bytes": 79203,
+      "sha256": "394ec47165a841efc981f7d9a4c668aaa5cdca2b5a8676293032bd55e586372e"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_steady_b0.0_retained_random_records0-15_tails.csv",
+      "bytes": 14319,
+      "sha256": "1c021eb7600b817a6265b663d0d690b3502edc3353ef821dc0abf308d8267af0"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_steady_b0.35_Cu_proxy_combined_records0-15_energy.csv",
+      "bytes": 4828,
+      "sha256": "994a82cf7b3e77597976ad7d2d979adb7e87cf4bb8489c38398d7cdeacdcc463"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_steady_b0.35_Cu_proxy_combined_records0-15_peaks.csv",
+      "bytes": 5461,
+      "sha256": "5a8f2a802253f4902eb5451053621107b305c2a749ca33e4bf40b4ffc33dae55"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_steady_b0.35_Cu_proxy_combined_records0-15_records.csv",
+      "bytes": 7622,
+      "sha256": "a91a0ce189717901442b8eef9d8702fc91d75afa30f35c776ccfa9eece065124"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_steady_b0.35_Cu_proxy_combined_records0-15_same_event.csv",
+      "bytes": 6976,
+      "sha256": "2c653b5688b1fb6eacc36e7cb1f8fa0e1a8849652d347d59f2357012940ea530"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_steady_b0.35_Cu_proxy_combined_records0-15_signed.csv",
+      "bytes": 89870,
+      "sha256": "c24dca659b3032c8e0695658ba80b7ca5c7e960727d96240e540776cb6a4ffd2"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_steady_b0.35_Cu_proxy_combined_records0-15_tails.csv",
+      "bytes": 14455,
+      "sha256": "140c091f8d5255481a79e471a6212853837cb02f8186a2bddf7c1d17c790fc53"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_steady_b0.35_Cu_proxy_random_records0-15_energy.csv",
+      "bytes": 3884,
+      "sha256": "fbfa0fb55bd18f0fee61e12385e87c1c4320019d999b5c398a0dfaaf12269647"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_steady_b0.35_Cu_proxy_random_records0-15_peaks.csv",
+      "bytes": 4456,
+      "sha256": "5e7cfa66739f0a8656abb54b6378ea559e789d124c60034f7f92ebf53f74cb57"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_steady_b0.35_Cu_proxy_random_records0-15_records.csv",
+      "bytes": 7614,
+      "sha256": "acef379fcc03ec56e9043a13f4c2fece7d498b9d9111591b1e654dc7b1633986"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_steady_b0.35_Cu_proxy_random_records0-15_same_event.csv",
+      "bytes": 6876,
+      "sha256": "c952cce3a821e9d1dc370dd6510b738720f32b8544bc7e8fa6b60aa3fe21de06"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_steady_b0.35_Cu_proxy_random_records0-15_signed.csv",
+      "bytes": 88980,
+      "sha256": "7a6cd8b6d45c68bdaa8892a0bdb374757f43ddf606fb39ccee590285f591dac8"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_steady_b0.35_Cu_proxy_random_records0-15_tails.csv",
+      "bytes": 14419,
+      "sha256": "817d88fdef3db91036542e65d6423ece1212738e2c16da3e46ed6c0b9195bdce"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_steady_b0.35_retained_combined_records0-15_energy.csv",
+      "bytes": 4818,
+      "sha256": "d95292bfc28e7255b34f80609d7a9df6d46a216e6d9b4f3104501d57ce666fec"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_steady_b0.35_retained_combined_records0-15_peaks.csv",
+      "bytes": 5424,
+      "sha256": "2393ae9581d9dec0c06a974bf94a111f731e8186bb6fd4e90fa64c18235e4b95"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_steady_b0.35_retained_combined_records0-15_records.csv",
+      "bytes": 7323,
+      "sha256": "e61edc1e248cf454a2401e3d91795aadc6b0bd6c10780a6177705777fcb7ac61"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_steady_b0.35_retained_combined_records0-15_same_event.csv",
+      "bytes": 6935,
+      "sha256": "64233b6e9f5e6ec29e20cb93a4f82d1831fff8adce7f8ebb2b67dbc308bfbd32"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_steady_b0.35_retained_combined_records0-15_signed.csv",
+      "bytes": 81731,
+      "sha256": "8289225e73ff96691a81dc9cd004ad4671d604ccaae129b719db0720eae22dab"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_steady_b0.35_retained_combined_records0-15_tails.csv",
+      "bytes": 14586,
+      "sha256": "5f6d110475a9658625921ebe70f27d90fb8a31cd91f399b933917a49df6ac5c4"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_steady_b0.35_retained_random_records0-15_energy.csv",
+      "bytes": 3892,
+      "sha256": "2535c3b5242e22d97ca425fccff017aef6f7cece1d782db1119bbf62e865a7a3"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_steady_b0.35_retained_random_records0-15_peaks.csv",
+      "bytes": 4379,
+      "sha256": "6ed6e0db689ed4992c09f07879a992bb404fc3cd70ce9d0c07f00f183223d0da"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_steady_b0.35_retained_random_records0-15_records.csv",
+      "bytes": 7307,
+      "sha256": "2c8ad3d624f9ed9a41c73d3cace158419660a85bc16692c39b39fb2cbd56ea61"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_steady_b0.35_retained_random_records0-15_same_event.csv",
+      "bytes": 6837,
+      "sha256": "3effddb477ca73dd45fa4d2071765b38e9da3dcfd354ab6de64ea5ef44b42496"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_steady_b0.35_retained_random_records0-15_signed.csv",
+      "bytes": 80774,
+      "sha256": "b396bfe5fb481c36a0578b4f06adeacc0bb6491b8f3e3fd3b35b9733e3d94792"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_steady_b0.35_retained_random_records0-15_tails.csv",
+      "bytes": 14491,
+      "sha256": "5dcbcf6ef68297644ba8ffda5ef318f4465ac774e0d3756a3f20837d67646042"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_tuned_b0.0_Cu_proxy_combined_records0-15_energy.csv",
+      "bytes": 4777,
+      "sha256": "32404f50e56db84d70cae3832e03ca4e315ed419bc3817f1926a5110a3e07f66"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_tuned_b0.0_Cu_proxy_combined_records0-15_peaks.csv",
+      "bytes": 5410,
+      "sha256": "25d3088fd706aa205825f88ad64bab3e0d81f1dbfc188b840834941979b3abd0"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_tuned_b0.0_Cu_proxy_combined_records0-15_records.csv",
+      "bytes": 7594,
+      "sha256": "d677eeb2e0312d1c97489e7e6afe0bc14bdc09229e981eec193ab5ed1c7de855"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_tuned_b0.0_Cu_proxy_combined_records0-15_same_event.csv",
+      "bytes": 6840,
+      "sha256": "fafe0490459ab2dc8d98f4486bcf05cdd902c9097b7c35c2042625db17a0378a"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_tuned_b0.0_Cu_proxy_combined_records0-15_signed.csv",
+      "bytes": 86240,
+      "sha256": "5a584505df8ae0fee25ec11f57ea349b9fa66f812f629bc753f4a33a2c5b27de"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_tuned_b0.0_Cu_proxy_combined_records0-15_tails.csv",
+      "bytes": 14328,
+      "sha256": "b880c2028a881bc64154a070b3c90ca7cb85b0e67c587fe3a73095fcff04ac0b"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_tuned_b0.0_Cu_proxy_random_records0-15_energy.csv",
+      "bytes": 3837,
+      "sha256": "870d926129c8793c43a3cc280c7634a5221e38536640b1a9e7dae7194d486952"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_tuned_b0.0_Cu_proxy_random_records0-15_peaks.csv",
+      "bytes": 4390,
+      "sha256": "58f288cb7b3362848d06c9cdd670197b33bc914a833099152c1ea927de93eed4"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_tuned_b0.0_Cu_proxy_random_records0-15_records.csv",
+      "bytes": 7581,
+      "sha256": "af47f4373147f5d78196b3a421eb90ff0446dbfc5680f9013fcca53fe35e2f07"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_tuned_b0.0_Cu_proxy_random_records0-15_same_event.csv",
+      "bytes": 6757,
+      "sha256": "4d6fbb0c4d23168e63dcec08a3f7de4b0920f7495fad36b089eae6d9c1ebc813"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_tuned_b0.0_Cu_proxy_random_records0-15_signed.csv",
+      "bytes": 85168,
+      "sha256": "22d1b3928be04cc61d0e44415a4b304a92bdea7efe9fb1097aae30db244efbcc"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_tuned_b0.0_Cu_proxy_random_records0-15_tails.csv",
+      "bytes": 14293,
+      "sha256": "ca93bd5d2eee0ba59cc75a55ba48a0c812342bf6c02a5de7580ef27818cbd4f4"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_tuned_b0.0_retained_combined_records0-15_energy.csv",
+      "bytes": 4771,
+      "sha256": "ea947efa7b9d0937863f7cdc09d043cce93ef32ea46ea6320e1fee0af901115c"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_tuned_b0.0_retained_combined_records0-15_peaks.csv",
+      "bytes": 5393,
+      "sha256": "f57a95825853c5f1d2b66197b2ec9b6913a7d4339a1b17c258a873743fcdd205"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_tuned_b0.0_retained_combined_records0-15_records.csv",
+      "bytes": 6822,
+      "sha256": "3c23912ee54fa2c08512fed80b9813308c454d2bf7cc0abab3d8be6ea379d9bc"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_tuned_b0.0_retained_combined_records0-15_same_event.csv",
+      "bytes": 6881,
+      "sha256": "9e2e92d5da04c358f4d07ffa90cb6c03e01ac1de5e35c8dbc40e8030fbc81ce5"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_tuned_b0.0_retained_combined_records0-15_signed.csv",
+      "bytes": 79739,
+      "sha256": "dcbfc7b1461ae6a9e7ab366880b8ae0a311c8ed10c7d1b30769ac611a3ab5469"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_tuned_b0.0_retained_combined_records0-15_tails.csv",
+      "bytes": 14712,
+      "sha256": "a84ff6ca70b9a6d9a4db0826085de7ad2ee30a536742203609bac5796e1c0b85"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_tuned_b0.0_retained_random_records0-15_energy.csv",
+      "bytes": 3830,
+      "sha256": "322dc6d34d3421bed8cfffb6902413c5fe6b4d26b80eb3cd991787f607831d94"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_tuned_b0.0_retained_random_records0-15_peaks.csv",
+      "bytes": 4335,
+      "sha256": "c49bb571846a28e4b29adadf9aebd5f39cfb202d32f6327d1b6d4ef97fd3e64b"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_tuned_b0.0_retained_random_records0-15_records.csv",
+      "bytes": 6797,
+      "sha256": "0f27f27e6169f6003482791ae110480647f85fc57d868530fa3762e6ba5b22bb"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_tuned_b0.0_retained_random_records0-15_same_event.csv",
+      "bytes": 6788,
+      "sha256": "e03ca22a8046bb5fe6854c81bf19828253fea461ffb451deb0268676ead7a609"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_tuned_b0.0_retained_random_records0-15_signed.csv",
+      "bytes": 78555,
+      "sha256": "53b6a797f3785f2a8d393f97284442f06fceb82afd1565fa03c1af7e96f9de2f"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_tuned_b0.0_retained_random_records0-15_tails.csv",
+      "bytes": 14618,
+      "sha256": "e9876f7ccffc8cc7a226cb7fe3e2d93a135ce83bdd6567e0129fb9cd9f263d28"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_tuned_b0.35_Cu_proxy_random_records0-15_energy.csv",
+      "bytes": 3874,
+      "sha256": "24d83fefeed80591fc09174e5ecb8ee4c1f7d3bab5b17ba099b514b97ef380c9"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_tuned_b0.35_Cu_proxy_random_records0-15_peaks.csv",
+      "bytes": 4422,
+      "sha256": "bdb5ef5e002dddbdccf82760d556fb347a0a02e6f8acf1635cbc0cf730981104"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_tuned_b0.35_Cu_proxy_random_records0-15_records.csv",
+      "bytes": 7585,
+      "sha256": "48aa2bb0beda58c4d9af94a9923bd344a76db715a86fce1b7e31028e71c60264"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_tuned_b0.35_Cu_proxy_random_records0-15_same_event.csv",
+      "bytes": 6846,
+      "sha256": "ccb8847ce6f1f7f3b18cc66ece5919a1dde407e4379fd0ec5852e1bbb7e7b222"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_tuned_b0.35_Cu_proxy_random_records0-15_signed.csv",
+      "bytes": 87862,
+      "sha256": "0f74f674e5b7b5fb2a1f676de95039054b5e2a549199ac82994aca74e5623c2a"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_tuned_b0.35_Cu_proxy_random_records0-15_tails.csv",
+      "bytes": 14338,
+      "sha256": "05c7eb39b90d2d659b29bbc2d2eb97ebba74b209fafe0ece0fbb67aed89a0d90"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_tuned_b0.35_retained_combined_records0-15_energy.csv",
+      "bytes": 4809,
+      "sha256": "02ab4a8b147412cb6aca1d6a75581f94329952615969575c1ea67ae657950ec7"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_tuned_b0.35_retained_combined_records0-15_peaks.csv",
+      "bytes": 5380,
+      "sha256": "a94c5bf68ae53014191e7696da78dea68d918a78a597087bc946ce650ba3b021"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_tuned_b0.35_retained_combined_records0-15_records.csv",
+      "bytes": 7320,
+      "sha256": "7df70feef2d3f18af57a6b1ec2a2cf96f6f0f7474b1d3365cc3ea4bdc618d703"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_tuned_b0.35_retained_combined_records0-15_same_event.csv",
+      "bytes": 6885,
+      "sha256": "e7e0947f58472f52b5d4f23daf0d1f6ecee7d5b6711bc84c93465adb2e3d54b8"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_tuned_b0.35_retained_combined_records0-15_signed.csv",
+      "bytes": 81487,
+      "sha256": "321b15bee4f80beaf60fd8efd9119c0491d1b10362d3b22c1eeb2c3b2434ee6c"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_tuned_b0.35_retained_combined_records0-15_tails.csv",
+      "bytes": 14799,
+      "sha256": "21c0239575446b817496afb1b50e09936330c3023146e9692462febd2ab7d646"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_tuned_b0.35_retained_random_records0-15_energy.csv",
+      "bytes": 3872,
+      "sha256": "6cdc991bfdb86620802c3d4e9337686531fad9125ac6d24dab234d0062f4027b"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_tuned_b0.35_retained_random_records0-15_peaks.csv",
+      "bytes": 4397,
+      "sha256": "81d01bce6a63a01c5e8f4394087432285e465e60f2429504945cec00912315e4"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_tuned_b0.35_retained_random_records0-15_records.csv",
+      "bytes": 7349,
+      "sha256": "3f45a52aad6653c394d02a433830d26ebadc438b49649df31f2376f7b6eef51c"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_tuned_b0.35_retained_random_records0-15_same_event.csv",
+      "bytes": 6774,
+      "sha256": "3e73a7ee86365ac93268f007d0b60a12cba84422cc7749a06f6046b652e79d41"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_tuned_b0.35_retained_random_records0-15_signed.csv",
+      "bytes": 80420,
+      "sha256": "d875ffa984ba386008359220965d428d6b0aa75b237ba157e112bd8214eb3d31"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_tuned_b0.35_retained_random_records0-15_tails.csv",
+      "bytes": 14585,
+      "sha256": "86e5168091fcfb11d127d45c7b5874489ae95b677fded8459bb6d01fce4d6e3b"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_bursts__built_only_b0.0_Cu_proxy_combined_records0-15_band_energy.csv",
+      "bytes": 2299,
+      "sha256": "7f81b60621fa619f086b8252dcf37ced39f568fe267b0ffa89fad4f493324138"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_bursts__built_only_b0.0_Cu_proxy_combined_records0-15_energy.csv",
+      "bytes": 5277,
+      "sha256": "bb53cda0495ab4331c185ecffe0e548c7c7f0a4b5e9d9fe7849ae61433ff3ba4"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_bursts__built_only_b0.0_Cu_proxy_combined_records0-15_peaks.csv",
+      "bytes": 5429,
+      "sha256": "0ad2b818aa779e1067d20d8760ba325b1a5a59e368749c9a5461e3dd2e37b096"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_bursts__built_only_b0.0_Cu_proxy_combined_records0-15_records.csv",
+      "bytes": 4609,
+      "sha256": "538d4a79e143ddfdcc83cb1241fedeb3e57203679cf75735634ee0ced8607ed3"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_bursts__built_only_b0.0_Cu_proxy_combined_records0-15_same_event.csv",
+      "bytes": 7458,
+      "sha256": "ae23f84854b0486886a6ebfec8ce546e8b42e1f82cadbeba56ff03dbf5fd3cf0"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_bursts__built_only_b0.0_Cu_proxy_combined_records0-15_signed.csv",
+      "bytes": 86252,
+      "sha256": "ac09c3d8f29d386acac880014153cc9caddc923e29b21255a3927ced3202664e"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_bursts__built_only_b0.0_Cu_proxy_combined_records0-15_tails.csv",
+      "bytes": 15774,
+      "sha256": "1ce4ffd4bf6465193e8758dc4f3c81fcd8f51724cab160ca03c9ed20088e09ea"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_bursts__built_only_b0.0_retained_combined_records0-15_band_energy.csv",
+      "bytes": 2300,
+      "sha256": "cefec30b4d3856249a32b0efddba2d1535372082aefde2375d17d7e6fd5d3858"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_bursts__built_only_b0.0_retained_combined_records0-15_energy.csv",
+      "bytes": 5273,
+      "sha256": "f7d03ca6ad6ed0b6b03a15dbe3ae11684b8e6c4496b927a941f3e7e822c3d50c"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_bursts__built_only_b0.0_retained_combined_records0-15_peaks.csv",
+      "bytes": 5312,
+      "sha256": "7e6030752606e38bcf14e73ffeb8b756c00731a2c948daea50a9ad14d6daffce"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_bursts__built_only_b0.0_retained_combined_records0-15_records.csv",
+      "bytes": 4589,
+      "sha256": "46c7b53a71f7a1a35195164ea0673952ef2d47a81700b7046f29b2863879e383"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_bursts__built_only_b0.0_retained_combined_records0-15_same_event.csv",
+      "bytes": 7419,
+      "sha256": "102c4f3d36f27070bbd92c490c4eaedbd84c16d816e7d6330732b0aea9babdef"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_bursts__built_only_b0.0_retained_combined_records0-15_signed.csv",
+      "bytes": 86194,
+      "sha256": "f443edc533a4afa56bcaf31761882f16442a477a6295ae74c0300f064a1669a8"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_bursts__built_only_b0.0_retained_combined_records0-15_tails.csv",
+      "bytes": 16498,
+      "sha256": "8b101b752aa6d08045f1db69bec57fefd1ad8e77109e7facf860635959f1308a"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_bursts_b0.0_Cu_proxy_combined_records0-15_energy.csv",
+      "bytes": 4767,
+      "sha256": "4d3efa9746edb032ba375a8e1e6cc94087b64c085129524768d87eb17d062f52"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_bursts_b0.0_Cu_proxy_combined_records0-15_peaks.csv",
+      "bytes": 5336,
+      "sha256": "d1e1b7b358d77611a011b034d16ff68d0c4aaebe49220ae24f4fde1ffc74aa0a"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_bursts_b0.0_Cu_proxy_combined_records0-15_records.csv",
+      "bytes": 7580,
+      "sha256": "9ea0058ba5b8d791ad1fd6563803fcc012d80a1d2639d2b4e5806708c9c81480"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_bursts_b0.0_Cu_proxy_combined_records0-15_same_event.csv",
+      "bytes": 6860,
+      "sha256": "a3ec9a36c09d4159f0d5fb9ac515cae8f878176432f5bf4cf48098793fbfde3b"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_bursts_b0.0_Cu_proxy_combined_records0-15_signed.csv",
+      "bytes": 86319,
+      "sha256": "a67dcb2c7756714ec4a63bf31e477206cfe4e8f999a873fae8a29a3ec95a59fe"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_bursts_b0.0_Cu_proxy_combined_records0-15_tails.csv",
+      "bytes": 14383,
+      "sha256": "65c6680525c8a963433aaa9bd01c5d18c24556ba3c642b134c9fcb1713e22eaf"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_bursts_b0.0_Cu_proxy_random_records0-15_energy.csv",
+      "bytes": 3812,
+      "sha256": "443cb6b756e47c118b2d3bd8e27b0cb6e01109d3c001b4a184d593639f5fefa6"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_bursts_b0.0_Cu_proxy_random_records0-15_peaks.csv",
+      "bytes": 4406,
+      "sha256": "1cdbc3d2c2831cdcc0be8f3682426995847e9e5591ea90f660e66d95bd278bea"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_bursts_b0.0_Cu_proxy_random_records0-15_records.csv",
+      "bytes": 7568,
+      "sha256": "d76d9aca7da993046c81138fee17146de46a806fca37c575e058719491f1d6c6"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_bursts_b0.0_Cu_proxy_random_records0-15_same_event.csv",
+      "bytes": 6775,
+      "sha256": "8ad1b245470c86efe01b9c8bed1ad905f24e5cfa0388f2b90eb7b4d9fc1844d7"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_bursts_b0.0_Cu_proxy_random_records0-15_signed.csv",
+      "bytes": 85061,
+      "sha256": "67def65894c2bad7eed2d1fe29c7a1b99e755b57fc99ba0267c94d70f8d87bca"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_bursts_b0.0_Cu_proxy_random_records0-15_tails.csv",
+      "bytes": 14296,
+      "sha256": "a5d743a705a81fc46375930200fe0eaa639f753dd90a06a1f279b4b7c0ddc30f"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_bursts_b0.0_retained_combined_records0-15_energy.csv",
+      "bytes": 4753,
+      "sha256": "2a0a3a0f36cee608d51fb9699c6f1b48d44b84a3eb06ddec5830621bf293f7ef"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_bursts_b0.0_retained_combined_records0-15_peaks.csv",
+      "bytes": 5487,
+      "sha256": "82364dd88fd6e246c6e2e1200a0065c75827bc59bb53a9ae65cec6b58d132772"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_bursts_b0.0_retained_combined_records0-15_records.csv",
+      "bytes": 6901,
+      "sha256": "eb20be7e4a72b4cf3fc140de4e90c6ef21feeb3a4171303ef7edaec8af425fb9"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_bursts_b0.0_retained_combined_records0-15_same_event.csv",
+      "bytes": 6896,
+      "sha256": "6eea446ee2d241c8d847ac6f7799a1348340cc8b6c296fbc3fc346a8a66208c9"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_bursts_b0.0_retained_combined_records0-15_signed.csv",
+      "bytes": 79776,
+      "sha256": "55d1fdb9fe5acc4a9f293def244383363d9a12a9d107138389ec3f5094d9f7f9"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_bursts_b0.0_retained_combined_records0-15_tails.csv",
+      "bytes": 14882,
+      "sha256": "ae41b6486813a67babc4f725b6b597ce75f77c521f950ab92b4719d36c164c73"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_bursts_b0.0_retained_random_records0-15_energy.csv",
+      "bytes": 3804,
+      "sha256": "66eaa64eb8d5b7a54ab96e21a1f646bda1796b43fb43374f838025970efaea6d"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_bursts_b0.0_retained_random_records0-15_peaks.csv",
+      "bytes": 4444,
+      "sha256": "54a6a03273f5f94ff419a7cbff8eab5b799a9f0b97c3a0a44b8ea69b8eb1cc0c"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_bursts_b0.0_retained_random_records0-15_records.csv",
+      "bytes": 6883,
+      "sha256": "9e5032f5325df3a41ca5b34bd093602024d5a53c70a0d1f0df3f44e80a559433"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_bursts_b0.0_retained_random_records0-15_same_event.csv",
+      "bytes": 6788,
+      "sha256": "5d2e6d1dd9f843f968c5cfccf068477edda1b67c860e196b38043dcde83fc698"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_bursts_b0.0_retained_random_records0-15_signed.csv",
+      "bytes": 78677,
+      "sha256": "84d7c017ee5b2feb0b7b57b91e2e16addab7d8714d6fb6366283a8ae14812432"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_bursts_b0.0_retained_random_records0-15_tails.csv",
+      "bytes": 14784,
+      "sha256": "e1c9f2578782c41cff71c122ec8212d86b22bce69a5fe24920d94037d61fd7ec"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_bursts_b0.35_Cu_proxy_combined_records0-15_energy.csv",
+      "bytes": 4792,
+      "sha256": "b3183d9d97fd904be165759663af63bda397e0b0bbb3adb719fa9cc7eb6dd7ca"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_bursts_b0.35_Cu_proxy_combined_records0-15_peaks.csv",
+      "bytes": 5452,
+      "sha256": "9aed8723bfcfedaab4e98615727b781379b580450df03f22e480c621137ee87a"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_bursts_b0.35_Cu_proxy_combined_records0-15_records.csv",
+      "bytes": 7614,
+      "sha256": "df0d48860f25c18ae0eaf770695afa030d665376a1ef2ddf002926e069321e9a"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_bursts_b0.35_Cu_proxy_combined_records0-15_same_event.csv",
+      "bytes": 6928,
+      "sha256": "fc280983ae2d2057c856f25a883132aceef07f680849f68e44ea01b4a915287f"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_bursts_b0.35_Cu_proxy_combined_records0-15_signed.csv",
+      "bytes": 89678,
+      "sha256": "e781f5ab32e6c8b838822b293dac17b2832dcb0926ed96519f42640b35c88c45"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_bursts_b0.35_Cu_proxy_combined_records0-15_tails.csv",
+      "bytes": 14546,
+      "sha256": "425bb2db4ed2ef1d6e4196c0d1aabadc60340a724e4fbe1940b2932b4d1fcafc"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_bursts_b0.35_Cu_proxy_random_records0-15_energy.csv",
+      "bytes": 3854,
+      "sha256": "64801a550d370f1c415aa888edffb496ae4d6cbb89efbbea621181a2215b5f1a"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_bursts_b0.35_Cu_proxy_random_records0-15_peaks.csv",
+      "bytes": 4468,
+      "sha256": "ffdf2df5d9622d2f2701cb3641a590f776016a5e7db7babd52fd54f80c68759a"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_bursts_b0.35_Cu_proxy_random_records0-15_records.csv",
+      "bytes": 7634,
+      "sha256": "3681cd4367ed6aecf159a6a0a78586b4e7ab8060d41c9ac801149e9e6692e598"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_bursts_b0.35_Cu_proxy_random_records0-15_same_event.csv",
+      "bytes": 6828,
+      "sha256": "ab7a0c7002c4f55f4aa669c0644a68ac3963c044f23b88bdf4030e43f2f76bff"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_bursts_b0.35_Cu_proxy_random_records0-15_signed.csv",
+      "bytes": 88026,
+      "sha256": "cff936fab8bb5207738334f21dea2b8371745f1f4ee81b9c9b37f0b2fa70d3e3"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_bursts_b0.35_Cu_proxy_random_records0-15_tails.csv",
+      "bytes": 14389,
+      "sha256": "04de596396f2e2684c7a8fdd963b58a1ed6a1181913f845e50e1003264cb1fb2"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_bursts_b0.35_retained_combined_records0-15_energy.csv",
+      "bytes": 4795,
+      "sha256": "2b7ab070011d32b3f525d2faa8eecd26f4f028efc087b9818053a089502db067"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_bursts_b0.35_retained_combined_records0-15_peaks.csv",
+      "bytes": 5402,
+      "sha256": "ad39e008cbcf7a9307ab2c693e4bf35ff41d3184ccbac7a21e0b1c566bf1c677"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_bursts_b0.35_retained_combined_records0-15_records.csv",
+      "bytes": 7216,
+      "sha256": "6616214e4f79831bff6513f982d2017c1c4ccde6b93d203efc23ca6d62456082"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_bursts_b0.35_retained_combined_records0-15_same_event.csv",
+      "bytes": 6895,
+      "sha256": "e516f2c5cc07fdb174b080af8b84f37aec57ae591531a94f9a6576fea6ef6f44"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_bursts_b0.35_retained_combined_records0-15_signed.csv",
+      "bytes": 81287,
+      "sha256": "da3848e4c1e9cd78f86f3749ea9c48529395254c2dc5e531c94e19b44c9a5fab"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_bursts_b0.35_retained_combined_records0-15_tails.csv",
+      "bytes": 14786,
+      "sha256": "c5e7e909dc38cff3cbd7ab9e4f739275bcfb2ae7310949a94b0b9646a5d992c8"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_bursts_b0.35_retained_random_records0-15_energy.csv",
+      "bytes": 3837,
+      "sha256": "8f842f8d7d86c06eae303d3dba33b9cce9198c86a653addae118c62134c3e8cf"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_bursts_b0.35_retained_random_records0-15_peaks.csv",
+      "bytes": 4337,
+      "sha256": "08af9e1bcc0174f68a2c18eb666845aaf7910ed47bf2f9dbf9121e3ec44f70f4"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_bursts_b0.35_retained_random_records0-15_records.csv",
+      "bytes": 7173,
+      "sha256": "e7ca510a951d6ee47d1e7c471e1d3923551bfaf6bba2ee333751ad85a2ef2287"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_bursts_b0.35_retained_random_records0-15_same_event.csv",
+      "bytes": 6801,
+      "sha256": "932b47300ba53ebea704beaf6b614f058539e4312c279dd87ae5876bda07c902"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_bursts_b0.35_retained_random_records0-15_signed.csv",
+      "bytes": 80081,
+      "sha256": "93515cfed8280ea3832aa69e807df71a22fc6db5b572f7838c94f154b6f766f3"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_bursts_b0.35_retained_random_records0-15_tails.csv",
+      "bytes": 14882,
+      "sha256": "d0e306494514c20a44ad65e18b31070baa4a199e9228076531b9df074c9085ee"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_steady__built_only_b0.0_Cu_proxy_combined_records0-15_band_energy.csv",
+      "bytes": 2303,
+      "sha256": "9652e4ee09c0e73dbdf288fbeff3305e2003b710aa260695d34d161f41a3b0b8"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_steady__built_only_b0.0_Cu_proxy_combined_records0-15_energy.csv",
+      "bytes": 5300,
+      "sha256": "952b974c799fad68361f6cc1a3c417003fd5eedde2c89836f4b431d2712e84fc"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_steady__built_only_b0.0_Cu_proxy_combined_records0-15_peaks.csv",
+      "bytes": 5480,
+      "sha256": "5667bebd9029dc4f17bb94fe5ebe65b57f88e8302c80d386f81af591caf8b926"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_steady__built_only_b0.0_Cu_proxy_combined_records0-15_records.csv",
+      "bytes": 4448,
+      "sha256": "4189fd971dd6ca3e3c26b9266c4b662fb859a88d65c8e47427c40df15cb3bf5f"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_steady__built_only_b0.0_Cu_proxy_combined_records0-15_same_event.csv",
+      "bytes": 7509,
+      "sha256": "9facf14193defc12436a9b042137fe0d3d9c783f354e3ca396abf56710298743"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_steady__built_only_b0.0_Cu_proxy_combined_records0-15_signed.csv",
+      "bytes": 86414,
+      "sha256": "7247ed5bd46b2f5909d9a05b06fdf66681dc0705d9f510788015a3ce6d23a97d"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_steady__built_only_b0.0_Cu_proxy_combined_records0-15_tails.csv",
+      "bytes": 15593,
+      "sha256": "59caf14904953b209274e6c7a6c96b85e9b2736ebdeff25a2cd69027664d5319"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_steady__built_only_b0.0_retained_combined_records0-15_band_energy.csv",
+      "bytes": 2310,
+      "sha256": "31e4650e9a16961e5bfd04cddaae2c8bbbce7072dbe3a62d956619d2971f3775"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_steady__built_only_b0.0_retained_combined_records0-15_energy.csv",
+      "bytes": 5279,
+      "sha256": "06dcea2635cd5afedfa9909f1840b2418d7cfb45951a0f5d15d7d1caa61617c5"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_steady__built_only_b0.0_retained_combined_records0-15_peaks.csv",
+      "bytes": 5118,
+      "sha256": "97000f91515562341ca5a27d6a86081183b2a63ad8ca55c5f989fb0e0bd6e49a"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_steady__built_only_b0.0_retained_combined_records0-15_records.csv",
+      "bytes": 4338,
+      "sha256": "b80142b859a008212449f86d9307b7daf90fa5ce767963d8787634c6f66766f4"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_steady__built_only_b0.0_retained_combined_records0-15_same_event.csv",
+      "bytes": 7291,
+      "sha256": "3484626124d5dc52df9167bbbd7062cdf1210d0430e01de8620e47756c47130b"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_steady__built_only_b0.0_retained_combined_records0-15_signed.csv",
+      "bytes": 86034,
+      "sha256": "8c642b9f5f50cb6e40bbee638f73ad88b338513cd18f3c6d9754dbc30825f702"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_steady__built_only_b0.0_retained_combined_records0-15_tails.csv",
+      "bytes": 14995,
+      "sha256": "958f8ca33d4711f5af48236203dbfb7af4aedcf8d307ea2dd08bc1343d0dff98"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_steady_b0.0_Cu_proxy_combined_records0-15_energy.csv",
+      "bytes": 4760,
+      "sha256": "88be99561d64c68fb99db63568bafe442154c008a872443a4f908e5c65ef0bfd"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_steady_b0.0_Cu_proxy_combined_records0-15_peaks.csv",
+      "bytes": 5311,
+      "sha256": "338a69137a0780f121e57fe646825e2e6d4a6b8da9581c12c46b4526014678c5"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_steady_b0.0_Cu_proxy_combined_records0-15_records.csv",
+      "bytes": 7536,
+      "sha256": "2fdc637597c821d87c6ca7c19df75a72e0712cfa5178ec71d505aa6d8e0c5d8e"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_steady_b0.0_Cu_proxy_combined_records0-15_same_event.csv",
+      "bytes": 6856,
+      "sha256": "44b2ef9ad608e752de91fd2a281d29fef7016930e6f2fa96f7bb9e387c19d3b1"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_steady_b0.0_Cu_proxy_combined_records0-15_signed.csv",
+      "bytes": 86438,
+      "sha256": "9fe48b189d039250f1b4f12fbfd842de2e61e59cef5b061bf87f3df0ff2affd9"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_steady_b0.0_Cu_proxy_combined_records0-15_tails.csv",
+      "bytes": 14268,
+      "sha256": "96f06c112fad8f22a3ab4b2c5914a7a93879578f9438bd58e927b0fb5a2e923a"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_steady_b0.0_Cu_proxy_random_records0-15_energy.csv",
+      "bytes": 3824,
+      "sha256": "0dcd8b2e6df6e3138e61588e6906b72e6c94854fb3464ae143b92307f965b9da"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_steady_b0.0_Cu_proxy_random_records0-15_peaks.csv",
+      "bytes": 4287,
+      "sha256": "49d3d5f044753c8683201868ad8da8b6a4fe25b9a806415bf7120b1a6b61bf27"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_steady_b0.0_Cu_proxy_random_records0-15_records.csv",
+      "bytes": 7532,
+      "sha256": "5e2ef004d19453dfd1197bf6c53940f65f3bcf6eadbdff5def0e1f83e5842447"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_steady_b0.0_Cu_proxy_random_records0-15_same_event.csv",
+      "bytes": 6751,
+      "sha256": "03bb03ba13d93eaba06c1aaecf1bd596988846a328ff958461f416946fd5ea54"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_steady_b0.0_Cu_proxy_random_records0-15_signed.csv",
+      "bytes": 85123,
+      "sha256": "54190128961684a48abe52bd60adce430b32f256e464cf8eb4a8600878af6349"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_steady_b0.0_Cu_proxy_random_records0-15_tails.csv",
+      "bytes": 14166,
+      "sha256": "49bbbf798a2df78754a07257f1022033bd4752de42ceff15515f3fe6121e9fed"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_steady_b0.0_retained_combined_records0-15_energy.csv",
+      "bytes": 4753,
+      "sha256": "3279064d67dd8c4ce2afca15d52ae707b5464ed4a5bba8648b19bec577e75984"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_steady_b0.0_retained_combined_records0-15_peaks.csv",
+      "bytes": 5362,
+      "sha256": "cde407339722c447e6e0c4862e7b6843e190279001adef65e9d9ad8a74ae2118"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_steady_b0.0_retained_combined_records0-15_records.csv",
+      "bytes": 6831,
+      "sha256": "789087cf9aa7e85f402500d9a720dadd56f5bb1a52458b697124d0a316424769"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_steady_b0.0_retained_combined_records0-15_same_event.csv",
+      "bytes": 6902,
+      "sha256": "1a9f659ef658404ab96867ca8b18393f7af1d069a214a3dcbfbe816d2fd23418"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_steady_b0.0_retained_combined_records0-15_signed.csv",
+      "bytes": 79736,
+      "sha256": "4f651543b4d9bbf237ed81b2e616c990855faaad3fd0451cc216293c32052825"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_steady_b0.0_retained_combined_records0-15_tails.csv",
+      "bytes": 14547,
+      "sha256": "deff961ef4664c70d4460ff113a7423ca0dbf651f8a80f6bb768a26f491c881e"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_steady_b0.0_retained_random_records0-15_energy.csv",
+      "bytes": 3817,
+      "sha256": "b54086cb976008967e0444d1fb25bebdaa1b6b03139d303e2209cd57a1679bb5"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_steady_b0.0_retained_random_records0-15_peaks.csv",
+      "bytes": 4355,
+      "sha256": "1b8f9b7a3ec5ae8b5e1f7517e76497ea45f58134fc9a14a15e409141eead1db0"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_steady_b0.0_retained_random_records0-15_records.csv",
+      "bytes": 6801,
+      "sha256": "31745586751db643ce5cb1fa33df277bf02036ac877f8fc57e7dacf22d9963eb"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_steady_b0.0_retained_random_records0-15_same_event.csv",
+      "bytes": 6782,
+      "sha256": "811a17a63e3c390a4f1fc3b80a2f0cb6ce1057053cb0539457340aafd180df32"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_steady_b0.0_retained_random_records0-15_signed.csv",
+      "bytes": 78544,
+      "sha256": "36c0a862542fc88568ac0985c5c66eb2f11954c4ff0b62a71f482b6bc71afe74"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_steady_b0.0_retained_random_records0-15_tails.csv",
+      "bytes": 14442,
+      "sha256": "4806487edf72ef759998d97e68fca1374512208600c53525322cefa9aea7aa4a"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_steady_b0.35_Cu_proxy_combined_records0-15_energy.csv",
+      "bytes": 4796,
+      "sha256": "288f0e6f9c6613849e788619931727162b8494e48b63c400a37da2d04dc0823b"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_steady_b0.35_Cu_proxy_combined_records0-15_peaks.csv",
+      "bytes": 5452,
+      "sha256": "ad10eb0c6d64ad856b254aecdc1cc67767d6740632674e2c974a38b90160ab81"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_steady_b0.35_Cu_proxy_combined_records0-15_records.csv",
+      "bytes": 7630,
+      "sha256": "09e3c08a59c5be03970ca93cca29d0860a6f2c2fee7b58104323f1b5981987a8"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_steady_b0.35_Cu_proxy_combined_records0-15_same_event.csv",
+      "bytes": 6925,
+      "sha256": "2b1736c882cfc7f6cf9976cc836a30371c941e9cc40efff87262ca79355cc648"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_steady_b0.35_Cu_proxy_combined_records0-15_signed.csv",
+      "bytes": 89174,
+      "sha256": "d02baf64f85e858a16a81db892dcd12fa667a0c83d7689680d4fa525ddf9f0d2"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_steady_b0.35_Cu_proxy_combined_records0-15_tails.csv",
+      "bytes": 14353,
+      "sha256": "41c89669d6d781d3f2fa80f91029a5d90b6f86844d9b682a68cba7a046ce57b1"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_steady_b0.35_Cu_proxy_random_records0-15_energy.csv",
+      "bytes": 3851,
+      "sha256": "f6094427309f3da7e2b09ddf750402de0efe606112550a856ea1c1b7eacb6ff3"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_steady_b0.35_Cu_proxy_random_records0-15_peaks.csv",
+      "bytes": 4438,
+      "sha256": "23bc7774f0728f1ed98a53321b419e6914811e94dbbbd03caec100d0d657e562"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_steady_b0.35_Cu_proxy_random_records0-15_records.csv",
+      "bytes": 7582,
+      "sha256": "89384ab4e333e4b8def7089d2b30725ef1ff4123cfa3f3af4cdc72efbd27c0d1"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_steady_b0.35_Cu_proxy_random_records0-15_same_event.csv",
+      "bytes": 6836,
+      "sha256": "020b9bb0a257d1891faaa32b0d0b3582290f134cad6c9112046ab6926e44c5b6"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_steady_b0.35_Cu_proxy_random_records0-15_signed.csv",
+      "bytes": 88127,
+      "sha256": "aced23d7f4058271f393043a76cccf7fa595be5f395fcf8f07dce3a85e9e5744"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_steady_b0.35_Cu_proxy_random_records0-15_tails.csv",
+      "bytes": 14296,
+      "sha256": "55834531e343cba7ed43dfd5c74ea42671c359afb1be157f984955f0b30f4e5e"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_steady_b0.35_retained_combined_records0-15_energy.csv",
+      "bytes": 4783,
+      "sha256": "814bb9f366c870c63e91345f073c934c35bab666b138bfd0cfae6fbf6501f71d"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_steady_b0.35_retained_combined_records0-15_peaks.csv",
+      "bytes": 5360,
+      "sha256": "3c6c85c18210eb8e5e67ea07c5ba1e13fe244992d37d316a6dddb8c9b31a515e"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_steady_b0.35_retained_combined_records0-15_records.csv",
+      "bytes": 7314,
+      "sha256": "a76a24a1745641ecc04eeabd8a101e53483e5cca836ad6e214296583da289d7a"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_steady_b0.35_retained_combined_records0-15_same_event.csv",
+      "bytes": 6894,
+      "sha256": "388585a94f18690f35fab4ffe1be3a4e3c72f28265b628569b8efe562f889e2f"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_steady_b0.35_retained_combined_records0-15_signed.csv",
+      "bytes": 81240,
+      "sha256": "a7cbc48bfdd70c03d5b91f44f9d217b01816888507ae36d4df72a0f7bd6126cb"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_steady_b0.35_retained_combined_records0-15_tails.csv",
+      "bytes": 14282,
+      "sha256": "af6133888136748008d82edc0566c0f948c44d869abf375e65f1e4f4f4d09a9e"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_steady_b0.35_retained_random_records0-15_energy.csv",
+      "bytes": 3842,
+      "sha256": "53b3f98be5a4149defa1ae0704effe721397e77fc43ada49f4c80da4f972f88d"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_steady_b0.35_retained_random_records0-15_peaks.csv",
+      "bytes": 4334,
+      "sha256": "cbf71ab510aa37274f5479d039a19959abebbfd061552ee23664492ab8528f00"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_steady_b0.35_retained_random_records0-15_records.csv",
+      "bytes": 7273,
+      "sha256": "fd66e0cb4d0c91633d9ac2aacf05e4c5aad5dafe18e6c463018e38452e23f09d"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_steady_b0.35_retained_random_records0-15_same_event.csv",
+      "bytes": 6800,
+      "sha256": "639f4009134ba8f8698d500fb98fa0f901e88eb6a59c079f70089dc766728253"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_steady_b0.35_retained_random_records0-15_signed.csv",
+      "bytes": 79871,
+      "sha256": "d3a5bd6789f13ff71691325739bcccb956c985aaa5d3e366918e64f6b1d56dfc"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_steady_b0.35_retained_random_records0-15_tails.csv",
+      "bytes": 14300,
+      "sha256": "476c5fd655b6df68e10c91fca5d273fa56931502ecfb3abd21bb97fa9edbe528"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/spatial.py",
+      "bytes": 17443,
+      "sha256": "9a3f905742e665a6fdf8e7bc9487b5614654d2345fe57a26cf2300de3da4563c"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/static_r2.csv",
+      "bytes": 1358,
+      "sha256": "a970fd7178d7a9139d430885ca3bca9b4e0406b428f26c57243c28eb99f31cef"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/summary_sources_r2.csv",
+      "bytes": 174654,
+      "sha256": "aef379ddd4eddfedf6d03e2093626f2e7287c466bc1a4cfdb7a877cdda014fb4"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/support.json",
+      "bytes": 561,
+      "sha256": "633980f21202573ac6392dc6c8c646ac5f9d275292b2d07ddcb0cbbff5a1ff36"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/thermal_300K.json",
+      "bytes": 685,
+      "sha256": "63062c7b38ea44b0b41251024d6dc5e40cc268c8de1aec1dbf0c7bf7796a83a2"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/thermal_300K_behavior.json",
+      "bytes": 1402,
+      "sha256": "a99a289bb0af92972fb01bc5b627eda3b51bc298bb38ecbd546ac336824bd9a0"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/thermal_300K_global.csv",
+      "bytes": 479,
+      "sha256": "4c60e1afcd8787adb5d96da147f94b8ad2673e7cbe388adcfe408458577d484c"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/thermal_300K_local.csv",
+      "bytes": 1214,
+      "sha256": "37584b050b415e7924e9f0dc3cc3bf0a2f30d5c64c86f45d23651c7d5adcd3fe"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/thermal_300K_projections.csv",
+      "bytes": 4258,
+      "sha256": "43ed2fb58d4966db09d1d40290c145bb08119cc418e3d2c46de610a3fa8eac7d"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/thermal_300K_regions.csv",
+      "bytes": 1538,
+      "sha256": "04ff6822df2d89dfaf94164c39453ca2aa01231ee9945516913634cf3cf89c24"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/thermal_level_comparisons.csv",
+      "bytes": 38616,
+      "sha256": "060b1e3f1c8c9ad81cb3d76874543236e66f440621290c33ec71e0aa32becd5e"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/thermal_projection_r2.csv",
+      "bytes": 2144,
+      "sha256": "cce1d2aae54e7d2e75fa7d3d338574df7af7fafb4cf8465a44dd988f070176c7"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/thickness_r2.csv",
+      "bytes": 1265,
+      "sha256": "67f983f735b91a9b5f6ad8e738d773dc941fe46b4a7728bc300fe24a2849d704"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/transfer_r2.csv",
+      "bytes": 3721,
+      "sha256": "307e04943fbe05617d6ec4ea0e67093723eb0e8ee3fa503a06a0be7242b05f29"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/verification_sources_r2.json",
+      "bytes": 943,
+      "sha256": "b9167ce4d16abd453df64271a50fa4bf7921911bb4f7dff9a2238cd0b588c838"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/width_censoring_sources_r2.csv",
+      "bytes": 7814,
+      "sha256": "655a68ea0343cc48d16188ebd094254a34d8c45df6b31ef829c5ca44cffaaefd"
+    }
+  ]
+}
