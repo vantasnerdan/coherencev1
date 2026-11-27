@@ -1,0 +1,146 @@
+{
+  "model": "finite conditional positive carrier network plus finite-geometry thermal Green; self-review, not independent experimental validation",
+  "scenarios": [
+    {
+      "name": "fast_acoustic",
+      "opt_share": 0.25,
+      "tau_ne": 1.5e-14,
+      "tau_opt": 8.02e-14,
+      "tau_pdlo": 3e-13,
+      "tau_pdhi": 1.5e-13,
+      "tau_te": 3e-13,
+      "tau_recoil": 5e-14,
+      "tau_end": 1e-13,
+      "tau_struct": 1.3e-09,
+      "radius": 8e-09,
+      "De": 0.001
+    },
+    {
+      "name": "nominal_mixed",
+      "opt_share": 0.5,
+      "tau_ne": 1e-13,
+      "tau_opt": 5e-13,
+      "tau_pdlo": 2e-12,
+      "tau_pdhi": 1e-12,
+      "tau_te": 6e-13,
+      "tau_recoil": 2e-13,
+      "tau_end": 5e-13,
+      "tau_struct": 1e-07,
+      "radius": 2e-08,
+      "De": 0.001
+    },
+    {
+      "name": "optical_moment_long",
+      "opt_share": 0.92,
+      "tau_ne": 5e-13,
+      "tau_opt": 2.068018471814257e-12,
+      "tau_pdlo": 1e-11,
+      "tau_pdhi": 5e-12,
+      "tau_te": 3e-13,
+      "tau_recoil": 1e-12,
+      "tau_end": 2e-12,
+      "tau_struct": 1e-06,
+      "radius": 6e-08,
+      "De": 0.001
+    }
+  ],
+  "boundaries": [
+    {
+      "name": "weak_mount_faces",
+      "edge": 100.0,
+      "face": 2.0,
+      "emissivity": 0.05
+    },
+    {
+      "name": "nominal_mount",
+      "edge": 10000.0,
+      "face": 5.0,
+      "emissivity": 0.1
+    },
+    {
+      "name": "strong_mount_faces",
+      "edge": 1000000.0,
+      "face": 100.0,
+      "emissivity": 0.3
+    }
+  ],
+  "channels": [
+    "moving_cutoff_D",
+    "moving_Pd_recoil",
+    "moving_struck_D",
+    "nonthermal_electrons",
+    "D_optical",
+    "Pd_incoherent_low",
+    "Pd_incoherent_high",
+    "Pd_coherent",
+    "thermal_electrons",
+    "local_lattice",
+    "stopped_structural"
+  ],
+  "conservation_max_relative": 9.438099368708208e-11,
+  "steady_exit_max_defect_W": 4.419276167233477e-09,
+  "remaining_tolerance_fraction": 1e-08,
+  "all_cases": 6,
+  "thermal_cases": 54,
+  "yield_cases": 432,
+  "pair_conditional_cases": 15552,
+  "finite_receiver_seconds_per_case": [
+    0.14782280058401992,
+    0.14782280058401992,
+    0.14782280058401992,
+    0.15448054377088893,
+    0.031019507876576737,
+    1.6184849338196974,
+    0.15448054377088893,
+    0.031019507876576737,
+    1.6184849338196974,
+    0.02365164809344319,
+    0.02365164809344319,
+    0.02365164809344319,
+    0.024716887003342236,
+    0.004963121260252278,
+    0.2589575894111516,
+    0.024716887003342236,
+    0.004963121260252278,
+    0.2589575894111516,
+    0.0026279608992714663,
+    0.0026279608992714663,
+    0.0026279608992714663,
+    0.0027463207781491376,
+    0.0005514579178058088,
+    0.028773065490127963,
+    0.0027463207781491376,
+    0.0005514579178058088,
+    0.028773065490127963
+  ],
+  "source_first_step_max_fs": 0.25,
+  "thermal_conductivity_split": {
+    "electron_W_m_K": 67.8,
+    "lattice_W_m_K": 4.0,
+    "total_W_m_K": 71.8
+  },
+  "prompt_rule": "uniform causal injection within accepted row interval; no deposit before source row begins",
+  "spatial_resolution": {
+    "whole_foil_xy_m": 0.0012511438947568347,
+    "whole_foil_z_edges_m": [
+      0,
+      2.5e-07,
+      1e-06,
+      5e-06,
+      2e-05,
+      6e-05,
+      0.000125,
+      0.00019,
+      0.00023,
+      0.00025
+    ],
+    "local_packet_radii_m": [
+      8e-09,
+      2e-08,
+      6e-08
+    ]
+  },
+  "interpretation": "carrier energy and optical occupancy not phase-locked pump; named pair contact efficiencies and vacancy abundance remain conditional",
+  "runtime_s": 60.44014404574409,
+  "consumer_refinement": "consumer_refinement.json"
+}

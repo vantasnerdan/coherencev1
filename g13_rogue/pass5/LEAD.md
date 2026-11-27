@@ -1,5 +1,7 @@
 # g13_rogue pass 5: the launch rebuilt from the recorded impact track (lead's summary)
 
+The energy this pass filed as heat is followed through every carrier in `../../g15_track/pass1/LEAD.md`.
+
 Pass 4 carried the whole foil up to the fast, short waves and found its levels decided by two unmeasured inputs: the size and duration of what an impact launches, and the loss of fast sound in palladium. This pass (Marvin) keeps the same foil, beam, bands and loss rules and replaces the assumed round heated spot with the impact's own recorded track: energy laid down row by row along the 80 to 130 nm path in 0.3 to 0.4 ps, with each recoiling palladium atom treated as a push with its own direction and range. It also lets an impact's launch depend on the motion already present where it lands, in the two bands that hold the energy.
 
 `SUMMARY.md` is Marvin's readout, `README.md` the construction, `inputs_ledger.md` the inputs and their sources, `source.py`, `refine.py`, `feedback.py`, `readout.py` and `run.py` the scripts.
