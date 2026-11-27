@@ -18,7 +18,7 @@ No distance moves by more than 0.012 A between the two cells. Six pairs rest clo
 
 ## What follows
 
-The two-deuteron vacancy is not repeated in the larger cell (the six-deuteron distances moved by less than 0.05 A). The energy cut for the closest pair in this cell is next.
+The two-deuteron vacancy is not repeated in the larger cell (the six-deuteron distances moved by less than 0.05 A). The energy cut for the closest pair in this cell is in `../pd-vacancy-r4-six-D-pair/LEAD.md`.
 
 ## Assumptions and limits
 

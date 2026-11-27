@@ -1,6 +1,6 @@
 # Bulk quantum-site result
 
-Update: the PdD well has been refitted with computed points out to 0.48 A and then to 0.8 A; see [bulk-refit-080](bulk-refit-080/README.md) and its [lead's note](bulk-refit-080/LEAD.md) (the 0.48 A step is in [bulk-refit-048](bulk-refit-048/README.md)). The numbers below change by under 2 percent. The energy of two neighbouring deuterons pushed together is in [pdd-nearest-pair](pdd-nearest-pair/LEAD.md).
+Update: the PdD well has been refitted with computed points out to 0.48 A and then to 0.8 A; see [bulk-refit-080](bulk-refit-080/README.md) and its [lead's note](bulk-refit-080/LEAD.md) (the 0.48 A step is in [bulk-refit-048](bulk-refit-048/README.md)). The numbers below change by under 2 percent. The energy of two neighbouring deuterons pushed together is in [pdd-nearest-pair](pdd-nearest-pair/LEAD.md). The same cut for the closest pair inside a palladium vacancy is in [pd-vacancy-r4-six-D-pair](pd-vacancy-r4-six-D-pair/LEAD.md): 0.23 eV to reach 1.49 A, with the two deuterons barely acting on each other.
 
 Surface and vacancy sites: [pdd-surface-vacancy](pdd-surface-vacancy/README.md) and its [lead's note](pdd-surface-vacancy/LEAD.md). On a covered PdD(111) slab the adsorbed deuteron and the one below it are 2.44 A apart (2.89 A in the bulk), and the subsurface one is held about half as firmly along the normal. The single deuteron in a palladium vacancy is not at a resting position.
 

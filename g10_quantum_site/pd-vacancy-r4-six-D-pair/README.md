@@ -1,0 +1,7 @@
+# D0–D3 approach in the relaxed six-D Pd monovacancy
+
+This frozen-ion cut uses the exact relaxed 64-site record (`native/reference.json`), with D0 and D3 at original atom indices 63 and 66 and initial separation 1.966075 Å. At each positive displacement `u`, D0 moves toward D3 in A, D3 toward D0 in B, and both move in AB; the other 67 atoms are fixed. Each mesh uses its own zero. The 2×2×2 zero is the original rest record; the 3×3×3 zero and the three shortest-point controls are independent. The finer mesh reduces by time reversal, not by spatial symmetry.
+
+`pair.json` gives the independent single-ion changes, the total AB energy rise, and the connected part `W = E_AB − E_A − E_B + E_0`, all in eV. `connected_dE_du_eV_A` differentiates with respect to each ion's displacement `u`; it is not a projection of the mixed all-atom force array. At the shortest separation, 1.486075 Å, W changes from 23.6370 to 24.5426 meV on the finer mesh (+0.9056 meV, 3.83%); the total AB rise separately changes by +12.079 meV. This checks the connected energy at one separation only. The rest geometry and all three sampled approaches cross nominal Pd–H PAW partial-wave radii, so the mesh result does not bound the PAW representation error.
+
+Verify the archive with `sha256sum -c SHA256SUMS`. `python replay/readout_pd_vac_pair.py native native/reference.json` reconstructs the saved observable from the native records using NumPy, without rerunning GPAW.
