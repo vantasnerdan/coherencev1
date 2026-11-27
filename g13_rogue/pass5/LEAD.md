@@ -47,6 +47,23 @@ In the two bands that hold the energy, each impact was launched into the motion 
 
 A search of published work found no usable figure for the loss of GHz sound in palladium or its hydride (Tanigaki 2011 shows echoes without a fitted loss; Leisure 1983 covers 10 to 270 MHz without a number we could reach). The copper and aluminium rules both stay.
 
+## How the launch depends on the heat's width and timing
+
+Launch only, same model (`width/`, rerun by the lead; agrees to 1e-11). One input varied at a time from 2 nm and immediate.
+
+| Heat width | Handover time | Sound launched |
+|---:|---:|---:|
+| 0.5 nm | immediate | 654 µW |
+| 1 nm | immediate | 444 µW |
+| 2 nm | immediate | 260 µW |
+| 5 nm | immediate | 93 µW |
+| 10 nm | immediate | 31 µW |
+| 2 nm | 0.1 ps | 255 µW |
+| 2 nm | 1 ps | 127 µW |
+| 2 nm | 10 ps | 15 µW |
+
+Across the whole range the launch stays between 15 and 654 µW, that is between 2 and 95 parts in 100,000 of the beam. All of the change is above 2.5 GHz; the slower waves do not move. The assumed share of passes 2 to 4 (8,600 µW) lies outside this range by a factor of thirteen or more.
+
 ## What the result rests on
 
 1. **The width over which the track's heat appears as lattice heat**, taken as 2 nm and immediate. It sets the launch.
