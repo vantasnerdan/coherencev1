@@ -1,0 +1,52 @@
+{
+  "plan_id": "coherencev1-g15-pass3-direct-stiffness-squeeze-20261127",
+  "scientific_review_revision": "d0506bb55ce9829e2a7a911a75b5b56213f0040cdf7bb8e5a6883558b7e32aae",
+  "pinned_template": "research-evaluation",
+  "pinned_template_revision": "14c5716f18cd5b1b8ee77624079ed31a0879c64388a625f4db88162dda02faf4",
+  "work_item": "squeeze-chain",
+  "requirements_reviewed": ["semantics", "discrimination", "interpretable-result"],
+  "science_writer": "SqueezeTrack",
+  "independent_grounding": "SqueezeBasis",
+  "authority": ["Axiom g15_track entry_4233", "parent keep/drop entry_4239", "g15-pass3-scope.md"],
+  "accepted_base": "2d85230f2580efbee4d7de5e8aece2c9540b3c1c",
+  "additive_scope": "g15_track/pass3/",
+  "frozen_pass1_inputs_sha256": "c5e1f885a78cbedc2c75a68ff5d4b86cdf0957ab796e72105f854b4f05341f88",
+  "applied_result": {
+    "source_rows": 1008,
+    "energies_keV": [0.25, 0.5, 1, 1.5, 2, 2.5],
+    "coefficient_per_eV_formula": [0, 0.001, -0.001, 0.01, -0.01, 0.1, -0.1],
+    "closures": 3,
+    "accepted_beams_consumed": 3,
+    "environments": ["bulk", "original_six_D_cage_native_axial_transfer"],
+    "maximum_matched_variance_ratio": 1.002241417552865,
+    "maximum_event_energy_defect_eV": 2.436989498236203e-7,
+    "maximum_p_static40_joined_fraction_of_fixed_G12_residual": 1.1166606628218061e-14,
+    "maximum_conditional_propagating_volume_strain": 2.848075250633521e-10,
+    "retained_global_mode_count": 4,
+    "retained_global_footprints": 4,
+    "maximum_retained_band_energy_defect_eV": 2.1760371282653068e-14,
+    "minimum_retained_quantum_uncertainty_eigenvalue": 0.026342046755023142,
+    "interpretation": "Direct finite even curvature produces small matched breathing in this scan, not a residual-yield explanation or maintained gain. Local anomalous-field projections and actual retained global normal-mode covariance are distinct outputs."
+  },
+  "decisive_evidence": ["controls.json", "results.json", "phase_summary.csv", "phase_evolution.csv", "pair_instantaneous.csv", "pair_trajectory_minima.csv", "yield_mixture.csv", "whole_foil.csv", "acoustic_join.csv", "acoustic_transmission.csv", "whole_mode_summary.csv", "whole_mode_pairs.csv"],
+  "executed_scientific_consumers": [
+    {"operation": "settled corrected source and joined consumers", "natural_exit": 0, "wall_seconds": 1846.75, "maximum_physical_threads": 3},
+    {"operation": "causal empty-support readout repair only", "natural_exit": 0, "wall_seconds": 312.71, "physical_threads": 1},
+    {"operation": "bounded four-mode consumer plus field-schema naming only", "natural_exit": 0, "wall_seconds": 43.08, "physical_threads": 1}
+  ],
+  "limitations": [
+    "No applicable G16 q/occupation/temperature/internal-energy curvature slice supplied at source freeze.",
+    "Cage quantum covariance and transverse Hessian are conditional native axial transfers; no cage abundance inferred.",
+    "Native finite-shell support censors trajectories; no continuation or reaction probability to nuclear contact is inferred.",
+    "Four global modes use a conditional joint Gaussian/global quiet clock and do not reconstruct local-age IVPs or bound omitted spectrum; reported crossings are not forcing-free decay constants.",
+    "Reciprocal elastic output is a conditional Born readout; clamped-ion electronic pressure remains unmeasured."
+  ],
+  "delivery": {
+    "authorized_tag": "g15-pass3-direct-stiffness-squeeze-20261127",
+    "state_at_packaging": "scientific evidence applied and reviewed; actual draft readback and final plan closure are recorded externally after transport",
+    "receipt_files": ["delivery.json", "remote_delivery.json"],
+    "manifests": "Each independently extractable group has per-file hashes and a common frozen-source-epoch digest.",
+    "final_addressed_Fleet_handoff_owner": "Main"
+  },
+  "preserved_boundaries": ["G13 paused; no producer rerun", "No DFT", "No science-repository commit or push", "No merge or publication", "No source/pair/yield replay for final readout or transport fixes"]
+}

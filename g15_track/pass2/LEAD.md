@@ -1,5 +1,7 @@
 # g15_track pass 2: does an impact set its patch of deuterons moving in step? (lead's summary)
 
+Continued in `../pass3/LEAD.md`, which builds the direct stiffness change from hot electrons.
+
 Pass 1 (`../pass1/LEAD.md`) showed that a quarter to nine tenths of the beam's power passes through the deuterium vibration, and that the patch an impact pumps would be above the lattice layer's pump threshold if its deuterons moved in step. This pass (Marvin) builds the in-step part. It keeps pass 1's energy budgets, tracks, profiles, three sets of rates and three beam shapes, and works out for each deuteron in a patch the push it actually receives, then lets the patch move in the lattice layer's own equations (`g3_lattice/coherence/`) with the computed pair energies of `g10_quantum_site/` for the closest pair, in bulk PdD and in the six-deuteron vacancy cage.
 
 `README.md` is Marvin's technical page, `inputs_ledger.md` the inputs and the force laws, `run.py` the script, `phase_map.png` and `phase_evolution.png` the pictures.

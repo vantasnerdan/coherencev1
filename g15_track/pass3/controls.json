@@ -1,0 +1,232 @@
+{
+  "finite_pulse": [
+    {
+      "rise_fs": 0.01,
+      "decay_fs": 100.0,
+      "exact_beta": 2.4953812928464466e-05,
+      "weak_beta": 2.4955044101640618e-05,
+      "sudden_step_beta": 2.5e-05,
+      "relative_weak_error": 4.933564417419767e-05,
+      "symplectic_det": 0.9999999914715074
+    },
+    {
+      "rise_fs": 15.0,
+      "decay_fs": 100.0,
+      "exact_beta": 8.859503966944473e-06,
+      "weak_beta": 8.859804965634972e-06,
+      "sudden_step_beta": 2.5e-05,
+      "relative_weak_error": 3.397351202050203e-05,
+      "symplectic_det": 0.9999999914713982
+    },
+    {
+      "rise_fs": 100.0,
+      "decay_fs": 100.0,
+      "exact_beta": 1.445999606431833e-06,
+      "weak_beta": 1.4460043386694411e-06,
+      "sudden_step_beta": 2.5e-05,
+      "relative_weak_error": 3.2726302968688614e-06,
+      "symplectic_det": 0.999999991471408
+    },
+    {
+      "rise_fs": 500.0,
+      "decay_fs": 100.0,
+      "exact_beta": 2.9045144972213103e-07,
+      "weak_beta": 2.904515705699355e-07,
+      "sudden_step_beta": 2.5e-05,
+      "relative_weak_error": 4.1606868994570334e-07,
+      "symplectic_det": 0.999999991471423
+    }
+  ],
+  "quantum": {
+    "position_axis_A2": 0.026927653434225846,
+    "momentum_axis_hbar2_Aminus2": 16.639611037354005,
+    "velocity_axis_A2_fs2": 0.00016543798748958763,
+    "symmetrized_qp_eV_fs": 0.0,
+    "uncertainty_over_hbar2": 0.4480656792941879,
+    "exact_tail_source": "g10_quantum_site/output/exact/PdD_300K_joint.npz",
+    "coupled_axis_A2": 0.027807080106595605,
+    "coupled_axis_SE_A2": 0.00152500981181425,
+    "coupled_kinetic_eV": 0.051614635038227934,
+    "no_extra_zero_point_quantum": true
+  },
+  "clock_period_fs": 73.30144648258471,
+  "reference": "matched same initial quantum covariance under exactly the same quiet operator; no extra half quantum",
+  "bath": "C -> exp(-dt/T1) C + (1-exp(-dt/T1)) Cquiet(t); Gaussian CP noise is explicit; pure dephasing is zero unless separately displayed",
+  "first_moment": "identically zero under even K and zero-mean Gaussian bath; not coherent displacement or evidence of entanglement",
+  "source_clock_comparison": {
+    "E_cm_keV": 2.5,
+    "species": 2,
+    "scenario": "fast_acoustic",
+    "radius_A": 80.0,
+    "selected_position_A": [
+      0.5656854249492381,
+      0.0,
+      51.169378425578756
+    ],
+    "cohort_formula_sites": 12.082944339168488,
+    "electron_deposit_eV_formula_unchanged": 0.015713909304247656,
+    "coarse_local_duration_fs": 21.941816466818963,
+    "native_record_duration_fs": 1.0606336225301813,
+    "actual_fine_local_duration_fs": 1.0606336225301813,
+    "actual_retarded_start_fs": 10.760456979655094,
+    "coarse_2omega_integral_eV_fs": 0.08638458448292415,
+    "fine_2omega_integral_eV_fs": 0.1703677922860879,
+    "coarse_weak_beta_at_0p1_per_eV": 0.0003702316789334277,
+    "fine_weak_beta_at_0p1_per_eV": 0.0007301714090750543,
+    "coarse_whole_footprint_beta": 2.7426707497579985e-06,
+    "fine_whole_footprint_beta": 1.7615924926632185e-05,
+    "per_parent_source_integral_error_eV": 4.547473508864641e-13,
+    "rule": "same cohort energy/formula and cylinder area; original local row clock capped by accepted2nm local kernel/speed; no coarse energy divided by native-row volume"
+  },
+  "normalization_endpoints": [
+    {
+      "E_cm_keV": 0.25,
+      "species": 1,
+      "scenario": "fast_acoustic",
+      "weighted_D": 266.86833911399157,
+      "accepted_profile_D": 266.86833911399157,
+      "relative_error": 0.0,
+      "formula_sites": 277498.3805570983,
+      "source_integral_error_eV": 5.684341886080802e-14,
+      "earliest_local_source_fs": 6.882064206261614
+    },
+    {
+      "E_cm_keV": 0.25,
+      "species": 1,
+      "scenario": "nominal_mixed",
+      "weighted_D": 1667.9271194624473,
+      "accepted_profile_D": 1667.9271194624475,
+      "relative_error": -1.1102230246251565e-16,
+      "formula_sites": 1734364.8784818645,
+      "source_integral_error_eV": 1.4210854715202004e-14,
+      "earliest_local_source_fs": 6.882064206261614
+    },
+    {
+      "E_cm_keV": 0.25,
+      "species": 1,
+      "scenario": "optical_moment_long",
+      "weighted_D": 15011.344075162024,
+      "accepted_profile_D": 15011.344075162024,
+      "relative_error": 0.0,
+      "formula_sites": 15609283.90633678,
+      "source_integral_error_eV": 1.1368683772161603e-13,
+      "earliest_local_source_fs": 6.882064206261614
+    },
+    {
+      "E_cm_keV": 0.25,
+      "species": 2,
+      "scenario": "fast_acoustic",
+      "weighted_D": 258.71365274923266,
+      "accepted_profile_D": 258.7136527492327,
+      "relative_error": -2.220446049250313e-16,
+      "formula_sites": 127141.19157996448,
+      "source_integral_error_eV": 4.263256414560601e-14,
+      "earliest_local_source_fs": 4.456415338596204
+    },
+    {
+      "E_cm_keV": 0.25,
+      "species": 2,
+      "scenario": "nominal_mixed",
+      "weighted_D": 1616.9603296827045,
+      "accepted_profile_D": 1616.9603296827045,
+      "relative_error": 0.0,
+      "formula_sites": 794632.4473747781,
+      "source_integral_error_eV": 2.842170943040401e-14,
+      "earliest_local_source_fs": 4.456415338596204
+    },
+    {
+      "E_cm_keV": 0.25,
+      "species": 2,
+      "scenario": "optical_moment_long",
+      "weighted_D": 14552.642967144338,
+      "accepted_profile_D": 14552.642967144337,
+      "relative_error": 2.220446049250313e-16,
+      "formula_sites": 7151692.026373003,
+      "source_integral_error_eV": 2.842170943040401e-14,
+      "earliest_local_source_fs": 4.456415338596204
+    },
+    {
+      "E_cm_keV": 2.5,
+      "species": 1,
+      "scenario": "fast_acoustic",
+      "weighted_D": 20492.58920732212,
+      "accepted_profile_D": 20492.589207322126,
+      "relative_error": -3.3306690738754696e-16,
+      "formula_sites": 1522422.9667210248,
+      "source_integral_error_eV": 1.8189894035458565e-12,
+      "earliest_local_source_fs": 11.996727458652972
+    },
+    {
+      "E_cm_keV": 2.5,
+      "species": 1,
+      "scenario": "nominal_mixed",
+      "weighted_D": 128078.68254576327,
+      "accepted_profile_D": 128078.6825457633,
+      "relative_error": -2.220446049250313e-16,
+      "formula_sites": 9515143.542006405,
+      "source_integral_error_eV": 9.094947017729282e-13,
+      "earliest_local_source_fs": 11.996727458652972
+    },
+    {
+      "E_cm_keV": 2.5,
+      "species": 1,
+      "scenario": "optical_moment_long",
+      "weighted_D": 1152708.1429118696,
+      "accepted_profile_D": 1152708.1429118693,
+      "relative_error": 2.220446049250313e-16,
+      "formula_sites": 85636291.87805764,
+      "source_integral_error_eV": 9.094947017729282e-13,
+      "earliest_local_source_fs": 11.996727458652972
+    },
+    {
+      "E_cm_keV": 2.5,
+      "species": 2,
+      "scenario": "fast_acoustic",
+      "weighted_D": 18379.69088511791,
+      "accepted_profile_D": 18379.690885117918,
+      "relative_error": -4.440892098500626e-16,
+      "formula_sites": 966635.5471334788,
+      "source_integral_error_eV": 4.547473508864641e-13,
+      "earliest_local_source_fs": 10.760456979655094
+    },
+    {
+      "E_cm_keV": 2.5,
+      "species": 2,
+      "scenario": "nominal_mixed",
+      "weighted_D": 114873.06803198697,
+      "accepted_profile_D": 114873.06803198699,
+      "relative_error": -1.1102230246251565e-16,
+      "formula_sites": 6041472.169584243,
+      "source_integral_error_eV": 1.8189894035458565e-12,
+      "earliest_local_source_fs": 10.760456979655094
+    },
+    {
+      "E_cm_keV": 2.5,
+      "species": 2,
+      "scenario": "optical_moment_long",
+      "weighted_D": 1033857.6122878827,
+      "accepted_profile_D": 1033857.6122878826,
+      "relative_error": 2.220446049250313e-16,
+      "formula_sites": 54373249.526258186,
+      "source_integral_error_eV": 9.094947017729282e-13,
+      "earliest_local_source_fs": 10.760456979655094
+    }
+  ],
+  "whole_retarded_witness": {
+    "case": "0.25keV D+ fast_acoustic bulk neighbors_off",
+    "source_archive": "cov_0.25_1_fast_acoustic_bulk_0.npz",
+    "receiver_archive": "field_pairs_0.25_1_fast_acoustic_bulk_0.npz",
+    "physical_D": 266.86833911399157,
+    "retarded_weight_D": 266.86833911399157,
+    "retarded_quadrature_points": 1656,
+    "first_arrival_fs": 0.16585288257280162,
+    "complete_window_end_fs": 940.0,
+    "maximum_prearrival_anomaly": 0.0,
+    "maximum_zero_drive_anomaly": 0.0,
+    "constant_phase_triangle_defect": 0.0,
+    "anomalous_field_projection_symmetry_error": 3.0171499062295327e-19,
+    "minus_0p1_ordered_field_peak": 6.520884773125184e-05,
+    "minus_0p1_constant_phase_peak": 6.910048452545697e-05,
+    "method": "Read actual frozen local-field projection arrays; identical causal weights, complex symmetric field cross-projections, no new dynamics or precision sweep"
+  }
+}
