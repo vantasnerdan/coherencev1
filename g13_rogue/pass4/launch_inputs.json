@@ -1,0 +1,58 @@
+{
+  "shapes": [
+    [
+      2e-08,
+      5e-13
+    ],
+    [
+      6e-08,
+      2e-12
+    ]
+  ],
+  "thermal_diffusivity_m2_s": 2.4575338648695428e-05,
+  "thermal_high_k": "D k^2 capped at wavelength 20 nm; conditional mesoscopic relaxation continuation, not atomic Fourier measurement",
+  "caps_Hz": [
+    3400000000000.0,
+    4700000000000.0,
+    6800000000000.0
+  ],
+  "cap_model": "omega=omega_cap sin(c0 k/omega_cap); approximate interpolation to visually read pure-Pd branches, not a fitted PdD dispersion",
+  "grain_samples": [
+    9,
+    12,
+    18,
+    23,
+    40,
+    45,
+    51,
+    54
+  ],
+  "plate_degree": 14,
+  "plate_k_nodes": 120,
+  "angular_nodes": 8,
+  "bulk_frequency_nodes_per_decade": 12,
+  "bulk_mu_nodes": 64,
+  "bulk_azimuth_nodes": 12,
+  "track": [
+    {
+      "terminal_m": 1.2894446042495198e-07,
+      "transit_s": 4.081532662244062e-13,
+      "energy_J": [
+        6.874382752357548e-16,
+        9.734168903814617e-17,
+        2.865864524289031e-19,
+        1.6021766273669986e-17
+      ]
+    },
+    {
+      "terminal_m": 8.187100548092601e-08,
+      "transit_s": 3.272179268461528e-13,
+      "energy_J": [
+        6.452929703491022e-16,
+        1.2272629755260341e-16,
+        1.025516042424152e-18,
+        3.2043533055870046e-17
+      ]
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "common_band_Hz": [
+    5000,
+    250000
+  ],
+  "normalized_forcing": "one D+ normal surface impulse; exact accepted source column",
+  "matched_comparison": "exact guided Green versus unmodified accepted signed.transition; same phase, dt, free-face operator and spatial quadratic",
+  "bulk_illustration": "finite front/rear bulk-image sum only, not a matched all-face or converged resonance calculation; its disagreement is not a universal transport no-go",
+  "decision": "retain exact resolved kernel below 250 kHz and free-face guided thickness branches; do not replace by uncontrolled bulk kernel",
+  "ratios": [
+    0.0662410202486992,
+    0.0869482731087206,
+    0.08674098855446026,
+    0.05135103470658677,
+    0.06769239051198497,
+    0.06794840838936518
+  ]
+}

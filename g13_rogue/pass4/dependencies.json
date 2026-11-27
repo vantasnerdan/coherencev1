@@ -1,0 +1,247 @@
+{
+  "base": "650a2ebd57c35f371ecd23c4db975ebd6e3cc55a",
+  "accepted_dependency_commit": "2afd47ffb85df8e373abb30dde577620e450c251",
+  "files": [
+    {
+      "path": "g13_rogue/pass3/rung2/model.npz",
+      "sha256": "59697212d397a6233f7aee9a4d02bd07ac773c8d3d380d50eaba116dffbcef8d"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/signed_r2.npz",
+      "sha256": "55d3d2b85f66d12d77bee585e1dcb385e7e4f307fb2372646f85426ec7849548"
+    }
+  ],
+  "access": "Use exact accepted dependency commit 2afd47ffb85df8e373abb30dde577620e450c251 and its rung2 evidence recipe: draft 460035582 evidence asset 798321285, SHA e61ab2af46343f68cf682cab4ace136e6fdc8fbddbf5f37148605d87e5845638. Extract into repository root or pass --reference-dir to a verified read-only extraction. No dependency bytes are duplicated here.",
+  "numeric_basis_shape": [
+    63375,
+    303
+  ],
+  "base_consumers": [
+    {
+      "path": "g13_rogue/pass2/coarse.py",
+      "sha256": "e72da402f53ffaab5081404548d0528429f7458359b6f238f07678cf6f7f6569"
+    },
+    {
+      "path": "g13_rogue/pass2/replication/replicate.py",
+      "sha256": "a5a99d15a5ab0b7169946781afedb2f11cab66bc5e87cb4f01d832d3dec7e162"
+    },
+    {
+      "path": "g13_rogue/pass2/replication/portable.c",
+      "sha256": "ae66202260fbbc011c920385c63965a70899b5de13d8320985c713c2b23260b4"
+    },
+    {
+      "path": "g13_rogue/pass2/replication/inputs.npz",
+      "sha256": "4ca83f716d56cf76d6c416571fdd01f3d0bc7e70b9b39a2eb4adf485e6f7a9b1"
+    },
+    {
+      "path": "g13_rogue/pass3/rung1b/signed.py",
+      "sha256": "f6e408a107fd24c767eaba4ab67983f7d3439a76d718e480f6b397dcc3c4e891"
+    },
+    {
+      "path": "g13_rogue/pass3/rung1/rungs.py",
+      "sha256": "dae231dd12bf0ad3ba51bf16d3c08b70de357e14c2f23fa58549e96f9a61487b"
+    },
+    {
+      "path": "g4_beam/merit/profiles.json",
+      "sha256": "e2e91077595de602b815ae86f45c1a675d6a553153272d0e1295b72e2a5a9943"
+    },
+    {
+      "path": "g11_cmns/collective/part1/stopping.json",
+      "sha256": "e0f54ed8776e792afdb1bbb727d628df3c936aee6ce11e44462d55f602b7b51e"
+    }
+  ],
+  "accepted_readout_files": [
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_steady_b0.0_retained_combined_records0-15_histories.npz",
+      "sha256": "2fa8f0b57a179029a5a483a50d29ebbdc736a7cc0002c9c8f49cacc9d98d371a"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_steady_b0.0_retained_combined_records0-15_energy.csv",
+      "sha256": "5423b15594525bfbebe1001172560aec02e9d32f66327111334c494e992cb71b"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_steady_b0.0_retained_combined_records0-15_same_event.csv",
+      "sha256": "e810f87b4eb9b611c3178a0e8ce6b9f12d034f40090ffd907559bba6844077dd"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_steady_b0.0_retained_combined_records0-15_tails.csv",
+      "sha256": "8bdf5f4fdcda3ce231e155f6fc5e8735d900221402830e4b1b77f865a2ede610"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_steady__built_only_b0.0_retained_combined_records0-15_histories.npz",
+      "sha256": "51e00d27b7a67f416b091c52ea7fe1e82509410068e9a56326d1ceb844af1e13"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_steady__built_only_b0.0_retained_combined_records0-15_energy.csv",
+      "sha256": "d289d0aa85e943876f1d82e5d6f9c3c53c84e9e8949601338b96e7b49721511c"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_steady__built_only_b0.0_retained_combined_records0-15_same_event.csv",
+      "sha256": "fe4c6c9ce7182df6a2d9b2994cb81480ddbeae1f9c7e9ad970cb755e4cfc5e14"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_steady__built_only_b0.0_retained_combined_records0-15_tails.csv",
+      "sha256": "cf67eaf66ad401aa564807cb90f8840004734015063f736046410355c71a7bcc"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_steady_b0.0_Cu_proxy_combined_records0-15_histories.npz",
+      "sha256": "fd47a3320c83205d7ca53e8df30d4992f2e555f5e214cb51a5f66fdec491b191"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_steady_b0.0_Cu_proxy_combined_records0-15_energy.csv",
+      "sha256": "d0c2dc054713f309f66aafb10bab535269b6199eb0f285db0a66dd52c8d25eca"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_steady_b0.0_Cu_proxy_combined_records0-15_same_event.csv",
+      "sha256": "97ea6afe856247e87687cc8987fe9c5ef8a3e65c377ae2d36576cb4d34128e37"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_steady_b0.0_Cu_proxy_combined_records0-15_tails.csv",
+      "sha256": "812b16313c480ab6dbef638914d2f5bb19f1d4fb4d2c96ddbac8d1faddb55a5a"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_steady__built_only_b0.0_Cu_proxy_combined_records0-15_histories.npz",
+      "sha256": "52dbbaaab84696d340d04ff8ddbcd93920cd4383706d81d98430d36535e6dae3"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_steady__built_only_b0.0_Cu_proxy_combined_records0-15_energy.csv",
+      "sha256": "39a23bde26df508ff8183740720e3a6ac69733c42dbcd916b5724c80a4a7248a"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_steady__built_only_b0.0_Cu_proxy_combined_records0-15_same_event.csv",
+      "sha256": "7bc497f4899fc2ef4536b11412dcd466600a8956c7cac30b1a84725fe0b1b286"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_even_steady__built_only_b0.0_Cu_proxy_combined_records0-15_tails.csv",
+      "sha256": "7e7531222cccda6e19ab180cc9517deb740404d0f82d849664f938b8044f02a3"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_steady_b0.0_retained_combined_records0-15_histories.npz",
+      "sha256": "a1500624af1d6d88e4111f6ba0ede4e9c29638bf3f3e2c4cd0ea8bf0e1f67d6c"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_steady_b0.0_retained_combined_records0-15_energy.csv",
+      "sha256": "3279064d67dd8c4ce2afca15d52ae707b5464ed4a5bba8648b19bec577e75984"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_steady_b0.0_retained_combined_records0-15_same_event.csv",
+      "sha256": "1a9f659ef658404ab96867ca8b18393f7af1d069a214a3dcbfbe816d2fd23418"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_steady_b0.0_retained_combined_records0-15_tails.csv",
+      "sha256": "deff961ef4664c70d4460ff113a7423ca0dbf651f8a80f6bb768a26f491c881e"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_steady__built_only_b0.0_retained_combined_records0-15_histories.npz",
+      "sha256": "13303dd350d078b8c3ea8852e0884f6414f82f2d7affa152b58db032b9ba9089"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_steady__built_only_b0.0_retained_combined_records0-15_energy.csv",
+      "sha256": "06dcea2635cd5afedfa9909f1840b2418d7cfb45951a0f5d15d7d1caa61617c5"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_steady__built_only_b0.0_retained_combined_records0-15_same_event.csv",
+      "sha256": "3484626124d5dc52df9167bbbd7062cdf1210d0430e01de8620e47756c47130b"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_steady__built_only_b0.0_retained_combined_records0-15_tails.csv",
+      "sha256": "958f8ca33d4711f5af48236203dbfb7af4aedcf8d307ea2dd08bc1343d0dff98"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_steady_b0.0_Cu_proxy_combined_records0-15_histories.npz",
+      "sha256": "90a57073f7be8b6f05815d17aa47300f1daf6f9678b4180761f228d8f88cd8f4"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_steady_b0.0_Cu_proxy_combined_records0-15_energy.csv",
+      "sha256": "88be99561d64c68fb99db63568bafe442154c008a872443a4f908e5c65ef0bfd"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_steady_b0.0_Cu_proxy_combined_records0-15_same_event.csv",
+      "sha256": "44b2ef9ad608e752de91fd2a281d29fef7016930e6f2fa96f7bb9e387c19d3b1"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_steady_b0.0_Cu_proxy_combined_records0-15_tails.csv",
+      "sha256": "96f06c112fad8f22a3ab4b2c5914a7a93879578f9438bd58e927b0fb5a2e923a"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_steady__built_only_b0.0_Cu_proxy_combined_records0-15_histories.npz",
+      "sha256": "0062d3f0bb500232a06c4c4799e1d2d09f68d313746b881ab04d7a9c4745bb3a"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_steady__built_only_b0.0_Cu_proxy_combined_records0-15_energy.csv",
+      "sha256": "952b974c799fad68361f6cc1a3c417003fd5eedde2c89836f4b431d2712e84fc"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_steady__built_only_b0.0_Cu_proxy_combined_records0-15_same_event.csv",
+      "sha256": "9facf14193defc12436a9b042137fe0d3d9c783f354e3ca396abf56710298743"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_steady__built_only_b0.0_Cu_proxy_combined_records0-15_tails.csv",
+      "sha256": "59caf14904953b209274e6c7a6c96b85e9b2736ebdeff25a2cd69027664d5319"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_bursts_b0.0_retained_combined_records0-15_histories.npz",
+      "sha256": "3d4e1a6d04d50bb41f42a275ff005725daaa8e76f5924fd55e0e328d7b27f89f"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_bursts_b0.0_retained_combined_records0-15_energy.csv",
+      "sha256": "2a0a3a0f36cee608d51fb9699c6f1b48d44b84a3eb06ddec5830621bf293f7ef"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_bursts_b0.0_retained_combined_records0-15_same_event.csv",
+      "sha256": "6eea446ee2d241c8d847ac6f7799a1348340cc8b6c296fbc3fc346a8a66208c9"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_bursts_b0.0_retained_combined_records0-15_tails.csv",
+      "sha256": "ae41b6486813a67babc4f725b6b597ce75f77c521f950ab92b4719d36c164c73"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_bursts__built_only_b0.0_retained_combined_records0-15_histories.npz",
+      "sha256": "999a8991ce2af1dbcd8bcd6fd1aa9889529a7749f696b8e4a5eef6af991558e1"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_bursts__built_only_b0.0_retained_combined_records0-15_energy.csv",
+      "sha256": "f7d03ca6ad6ed0b6b03a15dbe3ae11684b8e6c4496b927a941f3e7e822c3d50c"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_bursts__built_only_b0.0_retained_combined_records0-15_same_event.csv",
+      "sha256": "102c4f3d36f27070bbd92c490c4eaedbd84c16d816e7d6330732b0aea9babdef"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_bursts__built_only_b0.0_retained_combined_records0-15_tails.csv",
+      "sha256": "8b101b752aa6d08045f1db69bec57fefd1ad8e77109e7facf860635959f1308a"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_bursts_b0.0_Cu_proxy_combined_records0-15_histories.npz",
+      "sha256": "44a3193cce68cdd9e46ebd4472a97cfb21bad12835292f7e676e64824927bc21"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_bursts_b0.0_Cu_proxy_combined_records0-15_energy.csv",
+      "sha256": "4d3efa9746edb032ba375a8e1e6cc94087b64c085129524768d87eb17d062f52"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_bursts_b0.0_Cu_proxy_combined_records0-15_same_event.csv",
+      "sha256": "a3ec9a36c09d4159f0d5fb9ac515cae8f878176432f5bf4cf48098793fbfde3b"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_bursts_b0.0_Cu_proxy_combined_records0-15_tails.csv",
+      "sha256": "65c6680525c8a963433aaa9bd01c5d18c24556ba3c642b134c9fcb1713e22eaf"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_bursts__built_only_b0.0_Cu_proxy_combined_records0-15_histories.npz",
+      "sha256": "4bbe0abc88b25c0bb6fc88722496cf83f673b48e3bd626e88b7808c813d04369"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_bursts__built_only_b0.0_Cu_proxy_combined_records0-15_energy.csv",
+      "sha256": "bb53cda0495ab4331c185ecffe0e548c7c7f0a4b5e9d9fe7849ae61433ff3ba4"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_bursts__built_only_b0.0_Cu_proxy_combined_records0-15_same_event.csv",
+      "sha256": "ae23f84854b0486886a6ebfec8ce546e8b42e1f82cadbeba56ff03dbf5fd3cf0"
+    },
+    {
+      "path": "g13_rogue/pass3/rung2/r2_hot_bursts__built_only_b0.0_Cu_proxy_combined_records0-15_tails.csv",
+      "sha256": "1ce4ffd4bf6465193e8758dc4f3c81fcd8f51724cab160ca03c9ed20088e09ea"
+    }
+  ]
+}

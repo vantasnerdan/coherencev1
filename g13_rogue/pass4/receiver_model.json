@@ -1,0 +1,19 @@
+{
+  "source_points": 4088,
+  "source_area_quadrature_m2": 9.767859711918423e-05,
+  "parent_rate_s": 861328252275585.2,
+  "support": "four Gaussian sigma; twelve conditional energy lengths",
+  "count_model": "one marked Poisson measure across all28 band/depth cells in band_depth_joint.npz",
+  "sparse_model": "complete signed catalog selected by actual parent count, never by participation; shared neighbours and shuffled parent phases",
+  "dense_model": "positive parent-packet compound-Poisson marginals when weights are rare; correlated first/second packet moments and large-participation central approximation otherwise; no universal Rayleigh",
+  "burst": "accepted Cox intensity at emission time after burn; energy marginals and full joint count census preserve its delay",
+  "interface_model": "scalar same-branch impedance R+T=1; grain-reflected redistribution is a distinct receiver remainder, not extra heat",
+  "edge_model": "conditional ten-percent escape per mean half-foil traverse; finite image receiver versus residence remainder kept distinct",
+  "phase_model": "wave-vector carrier phase; group-velocity envelope transit; stress-echo pi sign",
+  "limitations": [
+    "guided/bulk and late lateral cavity receiver remainders are conditional, not resonance reproduction",
+    "energy jump marginals do not claim a reconstructed cross-depth signed field",
+    "spatial widths are shared-neighbour finite/censored measurements",
+    "selected frequency transfer refinement supersedes false band-centre tail exclusions"
+  ]
+}

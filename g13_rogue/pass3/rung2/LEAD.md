@@ -1,5 +1,7 @@
 # g13_rogue pass 3, step 2: the same whole foil at three times finer still (lead's summary)
 
+Continued in `../../pass4/SUMMARY.md`, which carries the same whole foil from 0.25 MHz up to 2.5 THz.
+
 Step 1 let the whole-foil model hold waves down to 4.6 mm, and step 1b added the push every impact shares. This step (Marvin) refines the model again, to hold waves down to 1.5 mm, and runs each case three ways: with the assumed random launch alone, with the built sources (deuteron momentum and heating of the face) added, and with the built sources alone.
 
 `README.md` is the technical page, `inputs_ledger.md` the inputs and their sources, `evaluate.py` and `spatial.py` the scripts (the driver of step 1b is reused unchanged).
