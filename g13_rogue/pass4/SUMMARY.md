@@ -1,5 +1,7 @@
 # g13_rogue pass 4: the same whole foil carried up to the fast, short waves (lead's summary)
 
+Continued in `../pass5/LEAD.md`, which rebuilds the launch from the recorded impact track (260 µW against the 1 to 9.5 µW here).
+
 Pass 3 finished the foil's slow vibrations (5 to 250 kHz) and showed that every energy level in them rested on an assumed launch. An impact's energy starts in much faster, shorter waves. This pass (Marvin) keeps the whole foil, the same beam and the same three beam shapes, and carries the waves upward in seven steps of ten, from 0.25 MHz to 2.5 THz. In each step it counts how many impacts' waves are present at one point at one time, and what energy they hold at four depths (the stopping depth of 63 nm, then 30, 50 and 200 µm).
 
 `README.md` is the technical page, `READOUT.md` the full readout, `LEAD.md` Marvin's own short readout, `inputs_ledger.md` the inputs and their sources, `transport.py`, `receiver.py`, `joint.py` and `readout.py` the scripts.

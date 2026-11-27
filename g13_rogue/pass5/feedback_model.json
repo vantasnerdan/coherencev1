@@ -1,0 +1,27 @@
+{
+  "bands": [
+    5,
+    6
+  ],
+  "arms": [
+    "quiet",
+    "beta035",
+    "shuffled035",
+    "relative_speed",
+    "no_background035",
+    "zero_prior035",
+    "zero_prior0"
+  ],
+  "patch_radius_m": 3e-05,
+  "exposure_s": 2e-08,
+  "parent_rate": "physical electrical current times illuminated-area probability; no compressed time or superparents",
+  "ordering": "all track-row states are pre-existing earlier-parent-only at impact+t_row; no same-parent source feedback",
+  "inherited_driver": "Pass2 live.py426-435/live_method9-21: conditional low/mid/high probability sensitivity, not a velocity law; here signed velocity/displacement source projections replace unavailable exact tensor state",
+  "marks": "p_low=.25, p_high=.01+.35 signal, self-energy factors(.1,1,10)/.865; fixed quiet built-wave source covariance reference",
+  "background": "four signed directions times three branch channels with fixed random phases; diagonal covariance from full-foil mean OUTSIDE the explicit 30-um source-history patch; no_background035 sensitivity; no duplicate paid parents",
+  "projection": "same bulk Green local limit, row-weighted host deposition; V=4pi(a_readout^2+k^-2)vg sqrt(2pi)sigma normalizes source footprint mode; a_pre=sqrt(V)A_pre",
+  "work": "DeltaE=2 Re(a_pre* deltaa)+|deltaa|^2; host remainder debited once, negative work returns to reservoir; no extra paid source for cross work",
+  "relative_speed": "separate physical delta p/p=-v_z/v_D row projection, without arbitrary gain",
+  "B_C": "C is source-parent |pre_vz|>2 fixed quiet RMS; feedback_receiver.csv gives actual finite-catalog retarded receiver B above3 times the fixed quiet same-record mean, initiations/exposure and absolute eV/D; positive-source-cross-work is separately named",
+  "uncertainty": "finite source-footprint modal closure and unresolved signed background covariance, not a measured atomistic feedback coefficient; paired phase shuffle and zero-prior physical null included"
+}
