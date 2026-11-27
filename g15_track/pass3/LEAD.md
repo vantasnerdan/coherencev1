@@ -6,7 +6,7 @@ Pass 2 (`../pass2/LEAD.md`) showed that an impact hardly pushes its patch of deu
 
 ## The one open number
 
-How much the stiffness changes per eV of electron energy held in a site has not been measured or computed for PdD (node `g16_hot_electrons` is computing it). It is carried here as 0.1, 1 and 10 percent per eV, stiffer or softer, beside no change.
+How much the stiffness changes per eV of electron energy held in a site has not been measured or computed for PdD (since computed in `../../g16_hot_electrons/LEAD.md`: about 70 percent per eV near 0.07 eV per site, stiffer, so above the range carried here). It is carried here as 0.1, 1 and 10 percent per eV, stiffer or softer, beside no change.
 
 ## What came out
 

@@ -1,0 +1,115 @@
+{
+  "schema": "g16-pdd-thermal-point-v1",
+  "specification": {
+    "temperature_K": 10000,
+    "smearing_eV": 0.8617330337217213,
+    "kmesh": [
+      16,
+      16,
+      16
+    ],
+    "gamma": true,
+    "cutoff_eV": 500,
+    "PAW": {
+      "Pd.10.PBE.gz": {
+        "bytes": 106793,
+        "sha256": "3c6cfd1de7e6d6815d58c9521b2bc7cec27ede8e83554ed1f0151f979761bbb4"
+      },
+      "H.PBE.gz": {
+        "bytes": 12501,
+        "sha256": "3136ad73c02d471f99dd5f82e451b2061952970556a260d38b53b5020dc94ae7"
+      }
+    },
+    "xc": "PBE",
+    "nbands": 32,
+    "charge": 0,
+    "spinpol": false,
+    "symmetry": "actual displaced structure",
+    "convergence": {
+      "energy": 1e-08,
+      "density": 2e-07,
+      "eigenstates": 1e-08,
+      "forces": 2e-06,
+      "bands": "occupied"
+    },
+    "producer_sha256": "b4bb1d8ee1d65222cb2fd4dc88cd5733258ddd360bedd1fddd64cf244b03d1a9"
+  },
+  "cell_A": [
+    [
+      0.0,
+      2.042,
+      2.042
+    ],
+    [
+      2.042,
+      0.0,
+      2.042
+    ],
+    [
+      2.042,
+      2.042,
+      0.0
+    ]
+  ],
+  "symbols": [
+    "Pd",
+    "H"
+  ],
+  "masses_u": [
+    106.42,
+    2.01410177812
+  ],
+  "positions_A": [
+    [
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      2.042,
+      0.0,
+      0.0
+    ]
+  ],
+  "volume_A3": 17.029316176,
+  "direction": "zero",
+  "displacement_A": 0.0,
+  "energy_free_eV": -7.90201810624848,
+  "minus_T_S_eV": -1.650531095471281,
+  "energy_internal_eV": -6.251487010777199,
+  "energy_extrapolated_eV": -7.0767525585128395,
+  "forces_eV_A": [
+    [
+      0.0,
+      0.0,
+      -1.6225943357332865e-28
+    ],
+    [
+      0.0,
+      3.380404866111013e-30,
+      -2.3451558758645156e-29
+    ]
+  ],
+  "stress_eV_A3": [
+    [
+      -0.09942100093979792,
+      -4.790692385250813e-17,
+      -1.8146562065343988e-18
+    ],
+    [
+      -4.790692385250813e-17,
+      -0.09942100093979789,
+      2.0220454872811874e-18
+    ],
+    [
+      -1.8146562065343988e-18,
+      2.0220454872811874e-18,
+      -0.09942100093979789
+    ]
+  ],
+  "pressure_GPa": 15.9290003322279,
+  "electron_count": 10.999999999999929,
+  "maximum_last_band_occupation": 6.491240134788911e-29,
+  "n_ibz_kpoints": 145,
+  "scf_iterations": 18
+}

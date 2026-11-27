@@ -1,0 +1,99 @@
+{
+  "schema": "g16-pdd-thermal-point-v1",
+  "specification": {
+    "temperature_K": 3000,
+    "smearing_eV": 0.25851991011651637,
+    "kmesh": [
+      16,
+      16,
+      16
+    ],
+    "gamma": true,
+    "cutoff_eV": 500,
+    "PAW": {
+      "Pd.10.PBE.gz": {
+        "bytes": 106793,
+        "sha256": "3c6cfd1de7e6d6815d58c9521b2bc7cec27ede8e83554ed1f0151f979761bbb4"
+      },
+      "H.PBE.gz": {
+        "bytes": 12501,
+        "sha256": "3136ad73c02d471f99dd5f82e451b2061952970556a260d38b53b5020dc94ae7"
+      }
+    },
+    "xc": "PBE",
+    "nbands": 32,
+    "charge": 0,
+    "spinpol": false,
+    "symmetry": "actual displaced structure",
+    "convergence": {
+      "energy": 1e-08,
+      "density": 2e-07,
+      "eigenstates": 1e-08,
+      "forces": 2e-06,
+      "bands": "occupied"
+    },
+    "producer_sha256": "b4bb1d8ee1d65222cb2fd4dc88cd5733258ddd360bedd1fddd64cf244b03d1a9"
+  },
+  "cell_A": [
+    [
+      0.0,
+      2.042,
+      2.042
+    ],
+    [
+      2.042,
+      0.0,
+      2.042
+    ],
+    [
+      2.042,
+      2.042,
+      0.0
+    ]
+  ],
+  "symbols": [
+    "Pd",
+    "H"
+  ],
+  "masses_u": [
+    106.42,
+    2.01410177812
+  ],
+  "positions_A": [
+    [
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      2.0519999999999996,
+      0.0,
+      0.0
+    ]
+  ],
+  "volume_A3": 17.029316176,
+  "direction": "100",
+  "displacement_A": 0.01,
+  "energy_free_eV": -7.145661265700741,
+  "minus_T_S_eV": -0.1375664297695481,
+  "energy_internal_eV": -7.0080948359311925,
+  "energy_extrapolated_eV": -7.076878050815966,
+  "forces_eV_A": [
+    [
+      0.002537016101827045,
+      0.0,
+      -6.96898960664931e-19
+    ],
+    [
+      -0.0025275219228780106,
+      0.0,
+      -1.7422474016623274e-19
+    ]
+  ],
+  "stress_eV_A3": null,
+  "pressure_GPa": null,
+  "electron_count": 10.999999999999998,
+  "maximum_last_band_occupation": 3.7200759760208356e-44,
+  "n_ibz_kpoints": 349,
+  "scf_iterations": 13
+}

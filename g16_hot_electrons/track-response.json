@@ -1,0 +1,94 @@
+{
+  "schema": "g16-pdd-track-join-v1",
+  "track_source": {
+    "bytes": 299176,
+    "sha256": "73fa1794047daf82b3dc25247e280b281dba8c6a6421c74ce87694926df18bed"
+  },
+  "electron_energy_reference_K": 300,
+  "volume_A3_per_D_site": 17.029316176,
+  "modelled_peaks": {
+    "thermal_only": {
+      "excitation_eV_per_D_site": 2.3381893876217554e-05,
+      "excess_eV_m3": 1.373037744708179e+24,
+      "peak_sample": {
+        "scenario": "fast_acoustic",
+        "species": "2",
+        "time_s": "1e-13",
+        "radius_m": "0.0"
+      },
+      "mesh12": {
+        "status": "bracketed",
+        "temperature_K": [
+          310,
+          350
+        ],
+        "electronic_excitation_bracket_eV_per_D_site": [
+          7.846053957649701e-06,
+          4.646695987009508e-05
+        ],
+        "interpolated_delta_K_eV_A2": 0.0001509933266563952,
+        "interpolated_fractional_K_change": 0.0008252350059758193,
+        "interpolated_force_energy_difference_eV_A2": 1.6603966692967282e-06
+      },
+      "mesh16": {
+        "status": "bracketed",
+        "temperature_K": [
+          300,
+          310
+        ],
+        "electronic_excitation_bracket_eV_per_D_site": [
+          0.0,
+          2.9451348523501508e-05
+        ],
+        "interpolated_delta_K_eV_A2": -0.0002874976914585737,
+        "interpolated_fractional_K_change": -0.0016269993893740225,
+        "interpolated_force_energy_difference_eV_A2": 5.277854802391497e-05
+      },
+      "mesh_spread_eV_A2": 0.0004384910181149689,
+      "numerical_comparison_floor_eV_A2": 0.0004384910181149689,
+      "sign_above_floor_on_both_meshes": false
+    },
+    "thermal_plus_nonthermal": {
+      "excitation_eV_per_D_site": 0.0001763542769039633,
+      "excess_eV_m3": 1.035592240353758e+25,
+      "peak_sample": {
+        "scenario": "optical_moment_long",
+        "species": "2",
+        "time_s": "1e-14",
+        "radius_m": "0.0"
+      },
+      "mesh12": {
+        "status": "bracketed",
+        "temperature_K": [
+          350,
+          1000
+        ],
+        "electronic_excitation_bracket_eV_per_D_site": [
+          4.646695987009508e-05,
+          0.004532372068168478
+        ],
+        "interpolated_delta_K_eV_A2": 0.00022000605040700257,
+        "interpolated_fractional_K_change": 0.0012024153539943847,
+        "interpolated_force_energy_difference_eV_A2": 4.153925911414203e-06
+      },
+      "mesh16": {
+        "status": "bracketed",
+        "temperature_K": [
+          350,
+          1000
+        ],
+        "electronic_excitation_bracket_eV_per_D_site": [
+          0.0001475565398276757,
+          0.004051502821777575
+        ],
+        "interpolated_delta_K_eV_A2": -0.0013878128808923191,
+        "interpolated_fractional_K_change": -0.007853874228769462,
+        "interpolated_force_energy_difference_eV_A2": 6.165691825444903e-05
+      },
+      "mesh_spread_eV_A2": 0.0016078189312993217,
+      "numerical_comparison_floor_eV_A2": 0.0016078189312993217,
+      "sign_above_floor_on_both_meshes": false
+    }
+  },
+  "readout_sha256": "f19aaffe9b34b331b2031a8b62713a14e290e2a155d5fc9a04bf567c431e6383"
+}

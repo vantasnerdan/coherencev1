@@ -1,0 +1,34 @@
+{
+  "temperature_K": 30000,
+  "smearing_eV": 2.5851991011651636,
+  "kmesh": [
+    16,
+    16,
+    16
+  ],
+  "gamma": true,
+  "cutoff_eV": 500,
+  "PAW": {
+    "Pd.10.PBE.gz": {
+      "bytes": 106793,
+      "sha256": "3c6cfd1de7e6d6815d58c9521b2bc7cec27ede8e83554ed1f0151f979761bbb4"
+    },
+    "H.PBE.gz": {
+      "bytes": 12501,
+      "sha256": "3136ad73c02d471f99dd5f82e451b2061952970556a260d38b53b5020dc94ae7"
+    }
+  },
+  "xc": "PBE",
+  "nbands": 32,
+  "charge": 0,
+  "spinpol": false,
+  "symmetry": "actual displaced structure",
+  "convergence": {
+    "energy": 1e-08,
+    "density": 2e-07,
+    "eigenstates": 1e-08,
+    "forces": 2e-06,
+    "bands": "occupied"
+  },
+  "producer_sha256": "b4bb1d8ee1d65222cb2fd4dc88cd5733258ddd360bedd1fddd64cf244b03d1a9"
+}

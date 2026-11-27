@@ -1,0 +1,99 @@
+{
+  "schema": "g16-pdd-thermal-point-v1",
+  "specification": {
+    "temperature_K": 1000,
+    "smearing_eV": 0.08617330337217213,
+    "kmesh": [
+      12,
+      12,
+      12
+    ],
+    "gamma": true,
+    "cutoff_eV": 500,
+    "PAW": {
+      "Pd.10.PBE.gz": {
+        "bytes": 106793,
+        "sha256": "3c6cfd1de7e6d6815d58c9521b2bc7cec27ede8e83554ed1f0151f979761bbb4"
+      },
+      "H.PBE.gz": {
+        "bytes": 12501,
+        "sha256": "3136ad73c02d471f99dd5f82e451b2061952970556a260d38b53b5020dc94ae7"
+      }
+    },
+    "xc": "PBE",
+    "nbands": 32,
+    "charge": 0,
+    "spinpol": false,
+    "symmetry": "actual displaced structure",
+    "convergence": {
+      "energy": 1e-08,
+      "density": 2e-07,
+      "eigenstates": 1e-08,
+      "forces": 2e-06,
+      "bands": "occupied"
+    },
+    "producer_sha256": "b4bb1d8ee1d65222cb2fd4dc88cd5733258ddd360bedd1fddd64cf244b03d1a9"
+  },
+  "cell_A": [
+    [
+      0.0,
+      2.042,
+      2.042
+    ],
+    [
+      2.042,
+      0.0,
+      2.042
+    ],
+    [
+      2.042,
+      2.042,
+      0.0
+    ]
+  ],
+  "symbols": [
+    "Pd",
+    "H"
+  ],
+  "masses_u": [
+    106.42,
+    2.01410177812
+  ],
+  "positions_A": [
+    [
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      1.9727179676972448,
+      -0.06928203230275509,
+      -0.06928203230275509
+    ]
+  ],
+  "volume_A3": 17.029316176,
+  "direction": "111",
+  "displacement_A": -0.12,
+  "energy_free_eV": -7.090458828438538,
+  "minus_T_S_eV": -0.011979111647082215,
+  "energy_internal_eV": -7.078479716791456,
+  "energy_extrapolated_eV": -7.084469272614997,
+  "forces_eV_A": [
+    [
+      -0.016146444723365,
+      -0.016146444723365,
+      -0.016146444723365
+    ],
+    [
+      0.01614725160858826,
+      0.016147251608588258,
+      0.016147251608588258
+    ]
+  ],
+  "stress_eV_A3": null,
+  "pressure_GPa": null,
+  "electron_count": 11.0,
+  "maximum_last_band_occupation": 3.7200759760208356e-44,
+  "n_ibz_kpoints": 189,
+  "scf_iterations": 28
+}
