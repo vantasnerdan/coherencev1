@@ -1,5 +1,7 @@
 # g15_track pass 1: where an impact's energy goes (lead's summary)
 
+Continued in `../pass2/LEAD.md`, which builds how much of the pump arrives in step.
+
 `g13_rogue` followed only the orderly push an impact gives the palladium and filed the rest as heat. This pass (Marvin) follows all 5 keV of an impact through every carrier it passes, from the first quarter femtosecond until the last of it has left the foil about 45 seconds later, and then does the same for the whole foil under the continuous beam. Nothing is binned as heat: the run accounts for the energy to 1 part in 1e10.
 
 `README.md` is the technical page, `inputs_ledger.md` the inputs with their sources, `run.py` the script, `single_impact_channels.png` the picture of one impact.

@@ -1,0 +1,22 @@
+{
+  "masked_three_component_operator_defect_eV_A": 2.6020852139652106e-18,
+  "axial_force_over_chi_eV_A": -7.2581450407629e-05,
+  "axial_fixed_time_difference_eV_A": -7.258145041087218e-05,
+  "axial_relative_difference": 4.4683234357286985e-11,
+  "source_position_A": [
+    26.666666666666668,
+    11.428571428571429,
+    192.65464428863874
+  ],
+  "observation_time_fs": 38.525952911112206,
+  "finite_difference_step_A": 0.001,
+  "actual_row_clock_derivative_fs_A": 0.16410628190566368,
+  "uniform_scalar_force_max_eV_A": 0.0,
+  "causal_kernel_at_onset": 0.0,
+  "interface": "continuous log-linear source coordinate; one-sided derivatives at row-centre knots; accepted piecewise-linear arrival clock",
+  "force": "chi[grad(u0)f - u0 grad(t0)fprime]; f(0)=0, no onset impulse",
+  "boundary": "same physical periodic eight-site G3 motif and mask; dense matrix sampled from authoritative function",
+  "physics_fingerprint": "ee23c736c4521ae34b8692a5b63d4f8a144940e65542eb7a8a901898984c817b",
+  "force_contract": "a9ec1e728938763140bf0360bdf2277270ed85d4ad32ba154c293631c95b4cb5",
+  "reuse": "gradient and sampled convolution functions unchanged by native/curvature/consumer repairs"
+}
