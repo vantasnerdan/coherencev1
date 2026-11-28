@@ -23,10 +23,29 @@ The stiffness here is the collective one: all deuterons displaced together again
 - **Pressure.** At fixed volume the pressure rises by 0.8, 8.8 and 64.7 GPa at 3,000, 10,000 and 30,000 K.
 - **Shape of the well.** Along the cube edge the quartic term rises from 11.2 to 14.3 eV/Å⁴ between 300 and 30,000 K; along the cube diagonal it falls from 3.4 to about zero (12³ mesh only).
 
+## Follow-up: is the stiffening in the site or in the neighbour coupling?
+
+`followup/` (Giuliano; `followup/README.md` is his page) repeats the calculation in a four-atom cell, which also holds the motion where the two deuterium sublattices move against each other along the cube edge. The difference between that and the collective motion gives the coupling between the two sublattices. 16³-equivalent mesh, motion along the wave direction:
+
+| Electrons at | Collective stiffness | Opposite-phase stiffness | Diagonal part | Coupling between sublattices |
+|---:|---:|---:|---:|---:|
+| 300 K | 0.177 | 0.674 | 0.426 | 0.249 |
+| 3,000 K | 0.253 | 0.841 | 0.547 (+29 %) | 0.294 (+18 %) |
+| 10,000 K | 0.579 | 1.600 | 1.090 (+156 %) | 0.510 (+105 %) |
+
+All in eV/Å².
+
+- **Both rise.** Hot electrons stiffen the site and strengthen the coupling between neighbours. The vibration runs faster at every wavelength, and the spread of frequencies between long and short waves widens, so a deuterium wave also travels faster where the electrons are hot. Pass 4 of `g15_track` carried the two extremes (all in the site, all in the coupling); the computed answer lies between, about three parts diagonal to one part coupling at 3,000 K.
+- **Where the softening turns to stiffening.** Two more electron temperatures place the turn between 1,000 and 1,500 K (0.004 eV per site at the lower end). At 2,000 K both meshes show stiffening (+9 to +13 percent).
+- **Not yet a wave speed.** Two wavelengths do not fix how the coupling is shared among the neighbour shells, and the "diagonal part" still contains couplings to neighbours that move in the same phase in this cell. The speed of long deuterium waves is therefore not pinned by this.
+- **Sideways motion.** For motion across the wave direction the room-temperature values differ between the two meshes (opposite-phase stiffness 0.065 and 0.129), so only the rise with heating is used: about the same size as along the wave.
+
+Archive SHA-256 b79eb13a390b4d0b3e8b9407c722a71cb33af7e4f4ad6bb5e440a224b5d0c2f1, all 105 file hashes checked, no machine paths. The lead checked the table against `followup/folded-response.json` by hand; the replay scripts need ASE and were not run here.
+
 ## What it rests on
 
 1. Electrons with a thermal distribution stand in for the non-thermal electrons of the first femtoseconds.
-2. The collective stiffness, not the on-site stiffness and neighbour coupling separately.
+2. Two wavelengths only (all in step, and neighbouring sublattices opposed); the sharing among neighbour shells and the long-wave speed are open.
 3. Fixed volume and fixed palladium; fully loaded PdD.
 
 ## Lead's note
