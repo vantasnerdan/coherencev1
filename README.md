@@ -6,6 +6,8 @@ The aim is a model that maps apparatus-level inputs to measured outputs, so ther
 
 ## Method
 
+Since 2026-11-28 the base model is the full atomistic simulation of the real material: a large 3D block of Pd and D at the loading in question, with a checked interatomic potential, quantum deuterium motion and coupled electrons, in a standard code (`g17_pdd_block/`, `AGENTS.md`). The earlier chain, which reduced PdD to a few numbers from small DFT cells and built reduced models on them, is kept below as the record.
+
 Model the whole chain in its cheapest form first, then add resolution where the end-to-end output is most sensitive. Passes are sized by compute.
 
 - **Pass 0, negligible compute:** a minimal domain model (matter coupled to one field mode, a few ODEs), looked-up material scales, and one-line placeholders for the rest of the chain.
