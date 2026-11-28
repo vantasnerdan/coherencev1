@@ -1,0 +1,152 @@
+{
+  "schema": "g16-pdd-size-sensitivity-v1",
+  "primitive_mesh_n": 16,
+  "smaller": "primitive2",
+  "larger": "conventional2",
+  "temperature_K": 3000,
+  "sources": [
+    {
+      "cell": "primitive2",
+      "temperature_K": 300,
+      "files": [
+        {
+          "file": "dispersion.json",
+          "bytes": 8621,
+          "sha256": "6761064203210b14a0dc4b557460078d979d1c9838fec7c93d88aa1b5547d4d3"
+        },
+        {
+          "file": "force_constants.hdf5",
+          "bytes": 20480,
+          "sha256": "3dd6b8ade98ed9f32c08a2532fc579f973d520f6ab99a73a3f9aeffebb623289"
+        },
+        {
+          "file": "mesh.npz",
+          "bytes": 6802783,
+          "sha256": "15e30a5e4b88ac589b657235f76624e3b848f93aa4c2613622e6e9709029ccc1"
+        },
+        {
+          "file": "phonopy.yaml",
+          "bytes": 7928,
+          "sha256": "b8a4a253988d918f3d6edc5d7b56aed416079aeb3b9ffe40dccb9bd83e69898a"
+        }
+      ]
+    },
+    {
+      "cell": "primitive2",
+      "temperature_K": 3000,
+      "files": [
+        {
+          "file": "dispersion.json",
+          "bytes": 8295,
+          "sha256": "9438be2e300f8d928c0ee87e59680a39d92d213ee8c222d78054fb272681b8e1"
+        },
+        {
+          "file": "force_constants.hdf5",
+          "bytes": 20480,
+          "sha256": "58d0830b0d501e048fb1bc82e2865e9622979bdf3242c2123185ceac9d03ffe8"
+        },
+        {
+          "file": "mesh.npz",
+          "bytes": 6773512,
+          "sha256": "53f8130c8c5543f0af106d83b3d9738a95702762aaf0e394eae11518e78f1a0b"
+        },
+        {
+          "file": "phonopy.yaml",
+          "bytes": 7878,
+          "sha256": "741b2a22ae501f360a72a7ee3f9767d5dfd59cb20a18f7a6fb56aaba172da532"
+        }
+      ]
+    },
+    {
+      "cell": "conventional2",
+      "temperature_K": 300,
+      "files": [
+        {
+          "file": "dispersion.json",
+          "bytes": 8238,
+          "sha256": "098ef8401264bd3ec285130990b6c000b0a191742096ee4f2e42e9b1dd56dccc"
+        },
+        {
+          "file": "force_constants.hdf5",
+          "bytes": 296960,
+          "sha256": "9e32faa13ccdcd09489ed1d6020695a56f2398dcf5402ba62aa38f3142814a73"
+        },
+        {
+          "file": "mesh.npz",
+          "bytes": 6796657,
+          "sha256": "d7f2dbec5b8d1bf70ce7d70ee7635fd7d85fa92c8d21cb4efcc2d5b6957051ee"
+        },
+        {
+          "file": "phonopy.yaml",
+          "bytes": 26117,
+          "sha256": "0cd19684c0fe67fe377431c32bb533580fd758bc35bd56e18fbc9595de14ee19"
+        }
+      ]
+    },
+    {
+      "cell": "conventional2",
+      "temperature_K": 3000,
+      "files": [
+        {
+          "file": "dispersion.json",
+          "bytes": 8141,
+          "sha256": "d70ba12a48075571f7426a934a38c7b730a0638cc1f204f477488c196ea187af"
+        },
+        {
+          "file": "force_constants.hdf5",
+          "bytes": 296960,
+          "sha256": "6a198d14693baace7a97a8304eb62b0332524c0223debea2caeda314bae947a7"
+        },
+        {
+          "file": "mesh.npz",
+          "bytes": 6798320,
+          "sha256": "bf913190a5e824776cef7007440f59ffb801a683cb461935474545aaee6ab8f8"
+        },
+        {
+          "file": "phonopy.yaml",
+          "bytes": 25985,
+          "sha256": "953be4a42d5fd42bdc20f6def56352ef1b16597fbe06f057df85b68c3a042f84"
+        }
+      ]
+    }
+  ],
+  "q_sensitivity_file": {
+    "file": "q_sensitivity.npz",
+    "bytes": 165721,
+    "sha256": "6a2a48bd91b8d9a84d262ca33c6a56658c52307a8236bb65cd1c088c6222956b"
+  },
+  "delta_K_operator_norm_error_eV_A2": {
+    "max_abs": 0.31415812810563826,
+    "rms": 0.16002062815328807
+  },
+  "larger_delta_K_operator_norm_eV_A2": {
+    "max_abs": 0.32381175172244714,
+    "rms": 0.22043760663482656
+  },
+  "cold_absolute_sorted_shift_THz": {
+    "max_abs": 2.3524602553769505,
+    "rms": 0.6404181993762778
+  },
+  "hot_absolute_sorted_shift_THz": {
+    "max_abs": 2.1754331766484087,
+    "rms": 0.4908133255474913
+  },
+  "thermal_sorted_shift_difference_THz": {
+    "max_abs": 1.146057175386943,
+    "rms": 0.27790603452125834
+  },
+  "q_count": 13824,
+  "worst_absolute_error_q": [
+    -0.25,
+    0.25,
+    -0.5
+  ],
+  "worst_relative_error_q": [
+    -0.29166666666666663,
+    -0.29166666666666663,
+    0.041666666666666664
+  ],
+  "worst_relative_error_to_tolerance": 11.41078384518032,
+  "outside_tolerance_q_count": 13618,
+  "size_screen_passed": false
+}

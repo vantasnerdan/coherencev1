@@ -42,6 +42,8 @@ All in eV/Å².
 
 Archive SHA-256 b79eb13a390b4d0b3e8b9407c722a71cb33af7e4f4ad6bb5e440a224b5d0c2f1, all 105 file hashes checked, no machine paths. The lead checked the table against `followup/folded-response.json` by hand; the replay scripts need ASE and were not run here.
 
+**Cell size, 2026-11-28 (`size-check/`, replayed by the lead).** Only the collective rise holds as the cell grows. Between 300 and 3,000 K it is +43.3 percent in both 16- and 64-atom cells, against +43.2 percent in the two-atom cell. The split between the site and the coupling to other deuterons does not hold. From 16 to 64 atoms the site part falls from +0.043 to +0.025 eV/Å² and the coupling part rises from +0.034 to +0.052 eV/Å². Away from Γ, the heating change moves by almost its own size (0.31 against 0.32 eV/Å²). The split in the table above is therefore a small-cell result. It still lies between the two extremes that pass 4 of `g15_track` carried. The next step is a 128-atom cell. No thermal force constants enter the `g17_pdd_block` MD until a larger cell and a second k mesh agree.
+
 ## What it rests on
 
 1. Electrons with a thermal distribution stand in for the non-thermal electrons of the first femtoseconds.

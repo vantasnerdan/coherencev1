@@ -1,5 +1,7 @@
 # Electronic heating changes both folded PdD stiffness and coupling
 
+> Superseded in part, 2026-11-28: `../size-check/` shows that the collective Γ change holds from 16 to 64 atoms, but its split between the diagonal and the coupling, and every off-Γ change, moves with cell size. The split below is a small-cell result.
+
 In ideal rocksalt PdD, heating the electrons raises both the diagonal stiffness of the four-atom projected model and the coupling between its two deuterium sublattices. The latter subtracts from the diagonal change for collective motion. The diagonal includes interactions with same-phase periodic images: it is not the isolated on-site stiffness. These are fixed-volume, fixed-Pd electronic free-energy curvatures, not lattice-temperature measurements.
 
 | Electronic T (K) | ΔU (eV/D site) | ΔKΓ (eV/Å²) | X[100] Δfolded diagonal | X[100] Δcross coupling | X[010] Δfolded diagonal | X[010] Δcross coupling |

@@ -1,0 +1,192 @@
+{
+  "schema": "g16-matched-tight-band-control-v1",
+  "temperature_K": 3000,
+  "primitive_mesh_n": 16,
+  "band_counts": [
+    80,
+    56
+  ],
+  "force_stop_eV_A": 2e-08,
+  "operator_limit_eV_A2": 0.0005,
+  "tail_limit": 1e-10,
+  "passed": true,
+  "q_count": 13824,
+  "summary": {
+    "loose_band_difference": {
+      "max_eV_A2": 0.002129535501122164,
+      "rms_eV_A2": 0.0012926179329487378,
+      "worst_q": [
+        -0.5,
+        -0.5,
+        0.0
+      ]
+    },
+    "full_band_force_stopping": {
+      "max_eV_A2": 0.0009896569401413775,
+      "rms_eV_A2": 0.0007513650680362026,
+      "worst_q": [
+        0.0,
+        0.0,
+        -0.5
+      ]
+    },
+    "compact_band_force_stopping": {
+      "max_eV_A2": 0.0011540673389533458,
+      "rms_eV_A2": 0.0005734914591114447,
+      "worst_q": [
+        -0.5,
+        -0.5,
+        0.0
+      ]
+    },
+    "tight_band_difference": {
+      "max_eV_A2": 9.743378159991305e-06,
+      "rms_eV_A2": 6.8216689501860115e-06,
+      "worst_q": [
+        -0.5,
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "native_rows": {
+    "primitive2": {
+      "pd-p": {
+        "file": "native-phonons/primitive2/k16/3000/pd-p/point.json",
+        "sha256": "73a3547bf4b1c925c0d678d397d670e5b866b77cbf5ca77a5ab8329954f5ea37",
+        "occupation_tail": 4.853950851309968e-31
+      },
+      "d-p": {
+        "file": "native-phonons/primitive2/k16/3000/d-p/point.json",
+        "sha256": "8aebce4d755e0045a2b2b40ff057aa6fe0a96e2ccd2831e714cc5831420a7106",
+        "occupation_tail": 5.485927022519876e-31
+      }
+    },
+    "primitive2-band-control": {
+      "pd-p": {
+        "file": "native-phonons/primitive2-band-control/k16/3000/pd-p/point.json",
+        "sha256": "45228a9960b938d28ceda15c804dd4fb4d1d2ecf76b95b850fb7f2d4e8dcab37",
+        "occupation_tail": 3.4433669964170617e-11
+      },
+      "d-p": {
+        "file": "native-phonons/primitive2-band-control/k16/3000/d-p/point.json",
+        "sha256": "62aa6168cf03314f59ef1548da47bfd2dc5d1b8c587a2f0b04bd13ca4b4ee95c",
+        "occupation_tail": 3.3885035762506736e-11
+      }
+    },
+    "primitive2-tight-reference": {
+      "pd-p": {
+        "file": "native-phonons/primitive2-tight-reference/k16/3000/pd-p/point.json",
+        "sha256": "d15ff5c1acb6b004513c6d88896fc774bedb1281c01be306068bed985020bca2",
+        "occupation_tail": 5.097238849535066e-31
+      },
+      "d-p": {
+        "file": "native-phonons/primitive2-tight-reference/k16/3000/d-p/point.json",
+        "sha256": "9863913078baa034f55a4cc5adfa198deaae8463cd6beef1c236dcb5729306d0",
+        "occupation_tail": 5.549234185921504e-31
+      }
+    },
+    "primitive2-tight-band-control": {
+      "pd-p": {
+        "file": "native-phonons/primitive2-tight-band-control/k16/3000/pd-p/point.json",
+        "sha256": "6fcbe4c717b2a0736b61dc9815235f7e5f62d9ab817f8a9b1742231da17fd22c",
+        "occupation_tail": 3.44336508394832e-11
+      },
+      "d-p": {
+        "file": "native-phonons/primitive2-tight-band-control/k16/3000/d-p/point.json",
+        "sha256": "4afe2309fe3a5aa87a7c8c9a49a5bc5e18fa009effe5bba53752b53f39429e3f",
+        "occupation_tail": 3.388503859656745e-11
+      }
+    }
+  },
+  "dispersion_sources": {
+    "dispersion": [
+      {
+        "file": "dispersion.json",
+        "bytes": 8295,
+        "sha256": "9438be2e300f8d928c0ee87e59680a39d92d213ee8c222d78054fb272681b8e1"
+      },
+      {
+        "file": "force_constants.hdf5",
+        "bytes": 20480,
+        "sha256": "58d0830b0d501e048fb1bc82e2865e9622979bdf3242c2123185ceac9d03ffe8"
+      },
+      {
+        "file": "mesh.npz",
+        "bytes": 6773512,
+        "sha256": "53f8130c8c5543f0af106d83b3d9738a95702762aaf0e394eae11518e78f1a0b"
+      },
+      {
+        "file": "phonopy.yaml",
+        "bytes": 7878,
+        "sha256": "741b2a22ae501f360a72a7ee3f9767d5dfd59cb20a18f7a6fb56aaba172da532"
+      }
+    ],
+    "dispersion-band-control": [
+      {
+        "file": "dispersion.json",
+        "bytes": 8136,
+        "sha256": "076c4ab143b93133ad1d463907b9911daca7a2b6996d4046e03d7b72d343e88c"
+      },
+      {
+        "file": "force_constants.hdf5",
+        "bytes": 20480,
+        "sha256": "574e246488d511764a701015b67f69198fa349ac67960d5fb1f0f2f891f28c2a"
+      },
+      {
+        "file": "mesh.npz",
+        "bytes": 6794296,
+        "sha256": "eedb0e3e0139b9eb04c5c84e513d59621525c014e1116d6ef580ffcbcff5ffdf"
+      },
+      {
+        "file": "phonopy.yaml",
+        "bytes": 7880,
+        "sha256": "93ab36548ffb1534de7080ee63dbf8c1afbde6bdbcb61f8a458db74d76fbcfc7"
+      }
+    ],
+    "dispersion-tight-reference": [
+      {
+        "file": "dispersion.json",
+        "bytes": 8128,
+        "sha256": "81efea74d8440103051e70eaf4c74fe06bfcabcc53d49a0573f054d0703459d3"
+      },
+      {
+        "file": "force_constants.hdf5",
+        "bytes": 20480,
+        "sha256": "eb2f390d86608e4d0a040fdd375d5e9a6f42b37b234be9d20bd323dddecb98a9"
+      },
+      {
+        "file": "mesh.npz",
+        "bytes": 6802281,
+        "sha256": "d36dc205ef723e8d873dbefdf1571087f9db83c9334db332fbd1d1e01b831e38"
+      },
+      {
+        "file": "phonopy.yaml",
+        "bytes": 7852,
+        "sha256": "440c0fc85efec2fbd160dd55763b959dd33b5f099d6f71fae071fbde32161595"
+      }
+    ],
+    "dispersion-tight-band-control": [
+      {
+        "file": "dispersion.json",
+        "bytes": 8138,
+        "sha256": "31be87c5aac44f70edd0045ae312626cada67015c378d294844152527609fd5a"
+      },
+      {
+        "file": "force_constants.hdf5",
+        "bytes": 20480,
+        "sha256": "315e4c53b8029eb7c3af305b0123652ee23ff19385553afd0685cc8d1a96e8f6"
+      },
+      {
+        "file": "mesh.npz",
+        "bytes": 6784001,
+        "sha256": "48ce48c83c38ce4c114bee451af829ea332061db6549bf6a36ba2a3a5e657d04"
+      },
+      {
+        "file": "phonopy.yaml",
+        "bytes": 7862,
+        "sha256": "faaef85a5bce62e76de6c03c280bd8d0090a04c3f50e527e9d0279fb94dbacaa"
+      }
+    ]
+  }
+}

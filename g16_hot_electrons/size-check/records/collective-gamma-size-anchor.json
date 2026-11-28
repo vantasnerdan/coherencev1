@@ -1,0 +1,119 @@
+{
+  "schema": "g16-gamma-size-anchor-v1",
+  "reference_grid": 16,
+  "temperatures_K": [
+    300,
+    3000
+  ],
+  "observable": "q=0 clamped-Pd relative collective D displacement per D; raw HDF5 row summed over D sublattice and cross-checked against Phonopy",
+  "original_primitive_excitation_rows": {
+    "300": {
+      "K_Gamma_eV_A2": 0.17670424054011882,
+      "electronic_excitation_eV_per_D_site": 0.0
+    },
+    "3000": {
+      "K_Gamma_eV_A2": 0.2530550898564657,
+      "electronic_excitation_eV_per_D_site": 0.07367958069278391
+    }
+  },
+  "original_sources": [
+    {
+      "file": "delivery-001/g16_hot_electrons/response.csv",
+      "bytes": 5373,
+      "sha256": "33be6cc9fc683767bb0f47f5c60a15213ea9bdeb0877a6b87055d03f7441e4f8"
+    },
+    {
+      "file": "delivery-001/g16_hot_electrons/response.json",
+      "bytes": 86457,
+      "sha256": "f19aaffe9b34b331b2031a8b62713a14e290e2a155d5fc9a04bf567c431e6383"
+    }
+  ],
+  "supercell_rows": {
+    "primitive2": {
+      "300": {
+        "K_Gamma_eV_A2": 0.17643661958176776,
+        "K_onsite_eV_A2": 0.5827107643768131,
+        "K_sum_other_D_eV_A2": -0.4062741447950453,
+        "inputs": [
+          {
+            "file": "dispersion/primitive2/k16/300/force_constants_raw.hdf5",
+            "bytes": 20480,
+            "sha256": "5d0cfe6298a0de80d1dfe957762efe2fc733eee3ed87f8010e71183c792a2415"
+          },
+          {
+            "file": "dispersion/primitive2/k16/300/dispersion.json",
+            "bytes": 8621,
+            "sha256": "6761064203210b14a0dc4b557460078d979d1c9838fec7c93d88aa1b5547d4d3"
+          }
+        ]
+      },
+      "3000": {
+        "K_Gamma_eV_A2": 0.2528726271409707,
+        "K_onsite_eV_A2": 0.6254271811063413,
+        "K_sum_other_D_eV_A2": -0.37255455396537074,
+        "inputs": [
+          {
+            "file": "dispersion/primitive2/k16/3000/force_constants_raw.hdf5",
+            "bytes": 20480,
+            "sha256": "c4e61f9f0bb9864ca25d28de780486a19c0135f637d013ca5529694c2508c4c0"
+          },
+          {
+            "file": "dispersion/primitive2/k16/3000/dispersion.json",
+            "bytes": 8295,
+            "sha256": "9438be2e300f8d928c0ee87e59680a39d92d213ee8c222d78054fb272681b8e1"
+          }
+        ]
+      }
+    },
+    "conventional2": {
+      "300": {
+        "K_Gamma_eV_A2": 0.1762517815584062,
+        "K_onsite_eV_A2": 0.5912160957203526,
+        "K_sum_other_D_eV_A2": -0.41496431416194635,
+        "inputs": [
+          {
+            "file": "dispersion/conventional2/k16/300/force_constants_raw.hdf5",
+            "bytes": 296960,
+            "sha256": "d280aa381411335e9e44ffc3a0cbae10ec1af2f0371f19189968bd8368866d05"
+          },
+          {
+            "file": "dispersion/conventional2/k16/300/dispersion.json",
+            "bytes": 8238,
+            "sha256": "098ef8401264bd3ec285130990b6c000b0a191742096ee4f2e42e9b1dd56dccc"
+          }
+        ]
+      },
+      "3000": {
+        "K_Gamma_eV_A2": 0.25259082264320176,
+        "K_onsite_eV_A2": 0.6158753464240828,
+        "K_sum_other_D_eV_A2": -0.36328452378088105,
+        "inputs": [
+          {
+            "file": "dispersion/conventional2/k16/3000/force_constants_raw.hdf5",
+            "bytes": 296960,
+            "sha256": "9e698c95c6c84ada651915a902125ff0c45f8f8f80b7b38a77f38459c2803851"
+          },
+          {
+            "file": "dispersion/conventional2/k16/3000/dispersion.json",
+            "bytes": 8141,
+            "sha256": "d70ba12a48075571f7426a934a38c7b730a0638cc1f204f477488c196ea187af"
+          }
+        ]
+      }
+    }
+  },
+  "contrast": {
+    "original_primitive": {
+      "delta_K_Gamma_eV_A2": 0.07635084931634686,
+      "percent_change": 43.208272242347356
+    },
+    "primitive2": {
+      "delta_K_Gamma_eV_A2": 0.07643600755920293,
+      "percent_change": 43.32207664168007
+    },
+    "conventional2": {
+      "delta_K_Gamma_eV_A2": 0.07633904108479556,
+      "percent_change": 43.31249330350648
+    }
+  }
+}

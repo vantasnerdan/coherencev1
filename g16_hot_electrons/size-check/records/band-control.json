@@ -1,0 +1,60 @@
+{
+  "schema": "g16-seven-band-anchor-control-v1",
+  "reference_bands": 80,
+  "test_bands": 56,
+  "temperature_K": 3000,
+  "primitive_mesh_n": 16,
+  "q_count": 13824,
+  "largest_operator_difference_eV_A2": 0.002129535501122164,
+  "q_at_max": [
+    -0.5,
+    -0.5,
+    0.0
+  ],
+  "operator_tolerance_eV_A2": 0.0005,
+  "passed": false,
+  "reference": [
+    {
+      "file": "dispersion.json",
+      "bytes": 8295,
+      "sha256": "9438be2e300f8d928c0ee87e59680a39d92d213ee8c222d78054fb272681b8e1"
+    },
+    {
+      "file": "force_constants.hdf5",
+      "bytes": 20480,
+      "sha256": "58d0830b0d501e048fb1bc82e2865e9622979bdf3242c2123185ceac9d03ffe8"
+    },
+    {
+      "file": "mesh.npz",
+      "bytes": 6773512,
+      "sha256": "53f8130c8c5543f0af106d83b3d9738a95702762aaf0e394eae11518e78f1a0b"
+    },
+    {
+      "file": "phonopy.yaml",
+      "bytes": 7878,
+      "sha256": "741b2a22ae501f360a72a7ee3f9767d5dfd59cb20a18f7a6fb56aaba172da532"
+    }
+  ],
+  "test": [
+    {
+      "file": "dispersion.json",
+      "bytes": 8136,
+      "sha256": "076c4ab143b93133ad1d463907b9911daca7a2b6996d4046e03d7b72d343e88c"
+    },
+    {
+      "file": "force_constants.hdf5",
+      "bytes": 20480,
+      "sha256": "574e246488d511764a701015b67f69198fa349ac67960d5fb1f0f2f891f28c2a"
+    },
+    {
+      "file": "mesh.npz",
+      "bytes": 6794296,
+      "sha256": "eedb0e3e0139b9eb04c5c84e513d59621525c014e1116d6ef580ffcbcff5ffdf"
+    },
+    {
+      "file": "phonopy.yaml",
+      "bytes": 7880,
+      "sha256": "93ab36548ffb1534de7080ee63dbf8c1afbde6bdbcb61f8a458db74d76fbcfc7"
+    }
+  ]
+}
