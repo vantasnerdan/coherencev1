@@ -1,0 +1,44 @@
+{
+  "model": "joined whole-foil conservative FV enthalpy, reciprocal 303-mode Hamiltonian, retarded directional carriers and seven-band ports, physical conditioned phase windows",
+  "seconds": 2.0,
+  "beams": [
+    "even_steady",
+    "hot_steady",
+    "hot_bursts"
+  ],
+  "arms": [
+    "fast_Cu_onsite",
+    "fast_Cu_coupling",
+    "nominal_retained_onsite",
+    "nominal_retained_coupling",
+    "long_retained_onsite",
+    "long_retained_coupling"
+  ],
+  "energies_keV": [
+    0.25,
+    0.5,
+    1.0,
+    1.5,
+    2.0,
+    2.5
+  ],
+  "conditioned_Poisson_phase_window_E_cm_keV": 2.5,
+  "source_covariance_histories_E_cm_keV": [
+    0.25,
+    0.5,
+    1.0,
+    1.5,
+    2.0,
+    2.5
+  ],
+  "maximum_relative_macro_energy_defect": 4.833255008339826e-13,
+  "minimum_signed_wave_strain": -1.804601274974468e-08,
+  "maximum_signed_wave_strain": 1.4020192714254785e-08,
+  "maximum_primary40_fraction_of_residual": 2.8291390649397497e-07,
+  "cold_consume": "run.py --consume reads only shipped projections, source covariances and built whole-foil fields",
+  "primary_omissions": [
+    "native q calibration, onsite/neighbour partition and Gaussian/focus closure",
+    "measured loaded-PdD transport/dephasing and microscopic launch phase",
+    "native neighbour-shell to nuclear contact continuation"
+  ]
+}

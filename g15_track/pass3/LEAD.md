@@ -1,5 +1,7 @@
 # g15_track pass 3: hot electrons changing the stiffness of every site at once (lead's summary)
 
+Continued in `../pass4/LEAD.md`, which replaces the single patch with travelling fields over the whole foil.
+
 Pass 2 (`../pass2/LEAD.md`) showed that an impact hardly pushes its patch of deuterons in step. It left one handle: while the electrons around a site are hot, the stiffness of the site itself may change. That acts on every deuteron of the patch at nearly the same moment and needs no lopsided site. A common, sudden stiffness change makes the spread of each deuteron's existing zero-point and thermal motion breathe in step, at twice the vibration frequency. This pass (Marvin) builds that on the same whole model: pass 1's energy budgets, tracks, fixed profiles, three sets of rates and three beam shapes.
 
 `README.md` is Marvin's technical page, `inputs_ledger.md` the inputs, `run.py` the script.
