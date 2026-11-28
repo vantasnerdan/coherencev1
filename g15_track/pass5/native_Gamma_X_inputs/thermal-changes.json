@@ -1,0 +1,224 @@
+{
+  "schema": "g16-pdd-folded-thermal-contrast-v1",
+  "electronic_temperature_reference_K": 300,
+  "sign_and_units": "F=-Kii*u+sum(J*u_neighbour), projected per D site",
+  "rows": [
+    {
+      "temperature_K": 300,
+      "mesh12": {
+        "electronic_excitation_eV_per_D_site": 0.0,
+        "mode_K_change_eV_A2": {
+          "gamma_100": 0.0,
+          "x_100": 0.0,
+          "x_010": 0.0
+        },
+        "energy_stencil_mode_K_change_eV_A2": {
+          "gamma_100": 0.0,
+          "x_100": 0.0,
+          "x_010": 0.0
+        },
+        "all_Gamma_agree_with_primitive": true,
+        "split_change": {
+          "100": {
+            "K_diagonal_folded_eV_A2": 0.0,
+            "J_cross_folded_eV_A2": 0.0,
+            "J_shell1_plus_shell3_scalar_projection_eV_A2": 0.0
+          },
+          "010": {
+            "K_diagonal_folded_eV_A2": 0.0,
+            "J_cross_folded_eV_A2": 0.0,
+            "J_shell1_plus_shell3_scalar_projection_eV_A2": 0.0
+          }
+        }
+      },
+      "mesh16": {
+        "electronic_excitation_eV_per_D_site": 0.0,
+        "mode_K_change_eV_A2": {
+          "gamma_100": 0.0,
+          "x_100": 0.0,
+          "x_010": 0.0
+        },
+        "energy_stencil_mode_K_change_eV_A2": {
+          "gamma_100": 0.0,
+          "x_100": 0.0,
+          "x_010": 0.0
+        },
+        "all_Gamma_agree_with_primitive": true,
+        "split_change": {
+          "100": {
+            "K_diagonal_folded_eV_A2": 0.0,
+            "J_cross_folded_eV_A2": 0.0,
+            "J_shell1_plus_shell3_scalar_projection_eV_A2": 0.0
+          },
+          "010": {
+            "K_diagonal_folded_eV_A2": 0.0,
+            "J_cross_folded_eV_A2": 0.0,
+            "J_shell1_plus_shell3_scalar_projection_eV_A2": 0.0
+          }
+        }
+      },
+      "delta_K_mesh_difference_eV_A2": {
+        "gamma_100": 0.0,
+        "x_100": 0.0,
+        "x_010": 0.0
+      },
+      "split_mesh_difference": {
+        "100": {
+          "K_diagonal_folded_eV_A2": 0.0,
+          "J_cross_folded_eV_A2": 0.0,
+          "J_shell1_plus_shell3_scalar_projection_eV_A2": 0.0
+        },
+        "010": {
+          "K_diagonal_folded_eV_A2": 0.0,
+          "J_cross_folded_eV_A2": 0.0,
+          "J_shell1_plus_shell3_scalar_projection_eV_A2": 0.0
+        }
+      }
+    },
+    {
+      "temperature_K": 3000,
+      "mesh12": {
+        "electronic_excitation_eV_per_D_site": 0.07439519320876542,
+        "mode_K_change_eV_A2": {
+          "gamma_100": 0.068695900021021,
+          "x_100": 0.1444804216616975,
+          "x_010": 0.23631631040556667
+        },
+        "energy_stencil_mode_K_change_eV_A2": {
+          "gamma_100": 0.06884333211942817,
+          "x_100": 0.1442929682404781,
+          "x_010": 0.23670401166242527
+        },
+        "all_Gamma_agree_with_primitive": true,
+        "split_change": {
+          "100": {
+            "K_diagonal_folded_eV_A2": 0.10658816084135925,
+            "J_cross_folded_eV_A2": 0.03789226082033825,
+            "J_shell1_plus_shell3_scalar_projection_eV_A2": 0.05683839123050738
+          },
+          "010": {
+            "K_diagonal_folded_eV_A2": 0.15250610521329386,
+            "J_cross_folded_eV_A2": 0.08381020519227284,
+            "J_shell1_plus_shell3_scalar_projection_eV_A2": 0.12571530778840928
+          }
+        }
+      },
+      "mesh16": {
+        "electronic_excitation_eV_per_D_site": 0.07367988296696293,
+        "mode_K_change_eV_A2": {
+          "gamma_100": 0.07645348954987596,
+          "x_100": 0.1667003955083708,
+          "x_010": 0.1728669565515678
+        },
+        "energy_stencil_mode_K_change_eV_A2": {
+          "gamma_100": 0.07634403203837792,
+          "x_100": 0.166490806225994,
+          "x_010": 0.17259712606687572
+        },
+        "all_Gamma_agree_with_primitive": true,
+        "split_change": {
+          "100": {
+            "K_diagonal_folded_eV_A2": 0.12157694252912332,
+            "J_cross_folded_eV_A2": 0.045123452979247414,
+            "J_shell1_plus_shell3_scalar_projection_eV_A2": 0.06768517946887109
+          },
+          "010": {
+            "K_diagonal_folded_eV_A2": 0.12466022305072186,
+            "J_cross_folded_eV_A2": 0.04820673350084592,
+            "J_shell1_plus_shell3_scalar_projection_eV_A2": 0.07231010025126888
+          }
+        }
+      },
+      "delta_K_mesh_difference_eV_A2": {
+        "gamma_100": 0.007757589528854969,
+        "x_100": 0.02221997384667329,
+        "x_010": 0.06344935385399886
+      },
+      "split_mesh_difference": {
+        "100": {
+          "K_diagonal_folded_eV_A2": 0.014988781687764074,
+          "J_cross_folded_eV_A2": 0.007231192158909161,
+          "J_shell1_plus_shell3_scalar_projection_eV_A2": 0.010846788238363714
+        },
+        "010": {
+          "K_diagonal_folded_eV_A2": 0.027845882162572,
+          "J_cross_folded_eV_A2": 0.03560347169142691,
+          "J_shell1_plus_shell3_scalar_projection_eV_A2": 0.0534052075371404
+        }
+      }
+    },
+    {
+      "temperature_K": 10000,
+      "mesh12": {
+        "electronic_excitation_eV_per_D_site": 0.833008483303046,
+        "mode_K_change_eV_A2": {
+          "gamma_100": 0.3958779733763103,
+          "x_100": 0.9036258428521153,
+          "x_010": 0.9163647928027272
+        },
+        "energy_stencil_mode_K_change_eV_A2": {
+          "gamma_100": 0.39597972760319067,
+          "x_100": 0.9034662372897628,
+          "x_010": 0.9168612735699355
+        },
+        "all_Gamma_agree_with_primitive": true,
+        "split_change": {
+          "100": {
+            "K_diagonal_folded_eV_A2": 0.6497519081142127,
+            "J_cross_folded_eV_A2": 0.25387393473790254,
+            "J_shell1_plus_shell3_scalar_projection_eV_A2": 0.38081090210685375
+          },
+          "010": {
+            "K_diagonal_folded_eV_A2": 0.6561213830895188,
+            "J_cross_folded_eV_A2": 0.2602434097132085,
+            "J_shell1_plus_shell3_scalar_projection_eV_A2": 0.39036511456981265
+          }
+        }
+      },
+      "mesh16": {
+        "electronic_excitation_eV_per_D_site": 0.83029123961572,
+        "mode_K_change_eV_A2": {
+          "gamma_100": 0.40254009741277985,
+          "x_100": 0.9255702960539205,
+          "x_010": 0.8523910121715699
+        },
+        "energy_stencil_mode_K_change_eV_A2": {
+          "gamma_100": 0.40237441709223276,
+          "x_100": 0.9250418306727681,
+          "x_010": 0.852106687343479
+        },
+        "all_Gamma_agree_with_primitive": true,
+        "split_change": {
+          "100": {
+            "K_diagonal_folded_eV_A2": 0.6640551967333501,
+            "J_cross_folded_eV_A2": 0.2615150993205704,
+            "J_shell1_plus_shell3_scalar_projection_eV_A2": 0.39227264898085556
+          },
+          "010": {
+            "K_diagonal_folded_eV_A2": 0.6274655547921748,
+            "J_cross_folded_eV_A2": 0.22492545737939498,
+            "J_shell1_plus_shell3_scalar_projection_eV_A2": 0.33738818606909243
+          }
+        }
+      },
+      "delta_K_mesh_difference_eV_A2": {
+        "gamma_100": 0.006662124036469541,
+        "x_100": 0.02194445320180516,
+        "x_010": 0.06397378063115733
+      },
+      "split_mesh_difference": {
+        "100": {
+          "K_diagonal_folded_eV_A2": 0.014303288619137433,
+          "J_cross_folded_eV_A2": 0.0076411645826678365,
+          "J_shell1_plus_shell3_scalar_projection_eV_A2": 0.01146174687400181
+        },
+        "010": {
+          "K_diagonal_folded_eV_A2": 0.028655828297344033,
+          "J_cross_folded_eV_A2": 0.03531795233381349,
+          "J_shell1_plus_shell3_scalar_projection_eV_A2": 0.05297692850072022
+        }
+      }
+    }
+  ],
+  "folded_response_sha256": "34ff5148c979266230f95db3b00b9eb56a552dc0de9e91fe79e0913f58d8750a"
+}

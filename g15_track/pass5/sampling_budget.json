@@ -1,0 +1,18 @@
+{
+  "narrow_seconds": 158.9828883772716,
+  "live_probe_samples_per_case": 16,
+  "live_event_response_samples_per_case": 16,
+  "geometry_samples_per_case": 1536,
+  "receiver_PDF_samples_per_case": 256,
+  "physical_cores": 6,
+  "threads_per_job": 1,
+  "corrected_pilot_fraction_of_residual_range": [
+    9.193908670072318e-08,
+    1.0851151148295082e-07
+  ],
+  "corrected_pilot_maximum_fraction_MC_standard_error": 5.4643270135651514e-08,
+  "decision": "The corrected narrow 0\u20132s incident-probe consumer reaches G12; its conditional scale is far below the residual despite visible thermal sampling error. Preserve physical weights and report that error, rather than enlarging samples to imply source/phase closure.",
+  "retired_endpoint_pilot": "2.83e-7 used heat at 2s, not the incident-probe exposure mean; it is not delivered as the exposure result.",
+  "refinement_variance_relative_change": -0.34600670136116907,
+  "scope": "conditional operator sensitivity, not source/phase completeness or a physical tail enclosure"
+}

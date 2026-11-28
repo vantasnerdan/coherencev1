@@ -1,0 +1,2012 @@
+{
+  "thermal_exit_order": [
+    "mount",
+    "face conductance",
+    "radiation"
+  ],
+  "front_250nm_exit_order": [
+    "rim mount",
+    "illuminated face conduction plus radiation",
+    "into deeper foil"
+  ],
+  "cases": [
+    {
+      "E_cm_keV": 0.25,
+      "beam": "even_steady",
+      "mount": "weak_edge",
+      "incident_W": 0.018999999999999996,
+      "short_heat_W": 0.01899992209472497,
+      "acoustic_thermalized_W": 7.770677774645772e-08,
+      "outgoing_acoustic_W": 1.9849728089089877e-10,
+      "max_carrier_or_acoustic_delay_s": 0.0010047272300442004,
+      "inherited_acoustic_bath_Ue_max_eV_formula": 2.476846942326373e-22,
+      "total_heat_W": 0.018999999801502708,
+      "input_partition_defect_W": 7.159981859151001e-18,
+      "thermal_sink_W": [
+        0.015058613134432373,
+        0.003511319899059433,
+        0.00043006676830312896
+      ],
+      "steady_balance_W": -2.9222804731610097e-13,
+      "deposited_to_heat_2s_J": 0.03799999958746736,
+      "front_250nm_source_W": 0.018743615561293024,
+      "front_250nm_exits_W": [
+        1.5058559527299197e-05,
+        0.001970786124655878,
+        0.016757776253507817
+      ],
+      "front_250nm_steady_balance_W": -5.376397969186764e-09,
+      "front_250nm_transient_balance_J": -7.519365269326173e-10,
+      "thermal_sink_2s_J": [
+        0.00124905311122918,
+        0.0005060333819880568,
+        6.197901287871887e-05
+      ],
+      "stored_heat_2s_J": 0.03618293408193234,
+      "transient_balance_J": -5.609401831918603e-13,
+      "maximum_T_2s_K": 300.20494061518974,
+      "maximum_T_steady_K": 300.9045633099831
+    },
+    {
+      "E_cm_keV": 0.25,
+      "beam": "even_steady",
+      "mount": "nominal",
+      "incident_W": 0.018999999999999996,
+      "short_heat_W": 0.01899992209472497,
+      "acoustic_thermalized_W": 7.770677774645772e-08,
+      "outgoing_acoustic_W": 1.9849728089089877e-10,
+      "max_carrier_or_acoustic_delay_s": 0.0010047272300442004,
+      "inherited_acoustic_bath_Ue_max_eV_formula": 2.476846942326373e-22,
+      "total_heat_W": 0.018999999801502708,
+      "input_partition_defect_W": 7.159981859151001e-18,
+      "thermal_sink_W": [
+        0.018198569630874985,
+        0.000713981637507792,
+        8.744853339993416e-05
+      ],
+      "steady_balance_W": -2.800051857043684e-13,
+      "deposited_to_heat_2s_J": 0.03799999958746736,
+      "front_250nm_source_W": 0.018743615561293024,
+      "front_250nm_exits_W": [
+        1.8198504845767144e-05,
+        0.0004008078764150391,
+        0.018324610175087002
+      ],
+      "front_250nm_steady_balance_W": -9.950547850967606e-10,
+      "front_250nm_transient_balance_J": -6.110066341769027e-10,
+      "thermal_sink_2s_J": [
+        0.007846597802948043,
+        0.00045303062637316014,
+        5.548723073589415e-05
+      ],
+      "stored_heat_2s_J": 0.029644883927964313,
+      "transient_balance_J": -5.540498615452805e-13,
+      "maximum_T_2s_K": 300.1965203708005,
+      "maximum_T_steady_K": 300.2916859665514
+    },
+    {
+      "E_cm_keV": 0.25,
+      "beam": "even_steady",
+      "mount": "strong_edge",
+      "incident_W": 0.018999999999999996,
+      "short_heat_W": 0.01899992209472497,
+      "acoustic_thermalized_W": 7.770677774645772e-08,
+      "outgoing_acoustic_W": 1.9849728089089877e-10,
+      "max_carrier_or_acoustic_delay_s": 0.0010047272300442004,
+      "inherited_acoustic_bath_Ue_max_eV_formula": 2.476846942326373e-22,
+      "total_heat_W": 0.018999999801502708,
+      "input_partition_defect_W": 7.159981859151001e-18,
+      "thermal_sink_W": [
+        0.01860743224567298,
+        0.00034973231195570097,
+        4.283524415256482e-05
+      ],
+      "steady_balance_W": -2.7853414019674005e-13,
+      "deposited_to_heat_2s_J": 0.03799999958746736,
+      "front_250nm_source_W": 0.018743615561293024,
+      "front_250nm_exits_W": [
+        1.8607366004789315e-05,
+        0.00019637656901356216,
+        0.018528632106088554
+      ],
+      "front_250nm_steady_balance_W": -4.798138830697241e-10,
+      "front_250nm_transient_balance_J": -4.941406103742274e-10,
+      "thermal_sink_2s_J": [
+        0.01606785921042105,
+        0.0003728343032716278,
+        4.566477806921792e-05
+      ],
+      "stored_heat_2s_J": 0.02151364129626533,
+      "transient_balance_J": -5.598681240837067e-13,
+      "maximum_T_2s_K": 300.18300873295124,
+      "maximum_T_steady_K": 300.20959646673
+    },
+    {
+      "E_cm_keV": 0.25,
+      "beam": "hot_steady",
+      "mount": "weak_edge",
+      "incident_W": 0.018999999999999996,
+      "short_heat_W": 0.01899992209472497,
+      "acoustic_thermalized_W": 7.770908788338516e-08,
+      "outgoing_acoustic_W": 1.9618714396347383e-10,
+      "max_carrier_or_acoustic_delay_s": 0.0010047272300442004,
+      "inherited_acoustic_bath_Ue_max_eV_formula": 1.0830384333357438e-21,
+      "total_heat_W": 0.018999999803812846,
+      "input_partition_defect_W": 5.895554582928814e-18,
+      "thermal_sink_W": [
+        0.015050232449518055,
+        0.0035187861225748256,
+        0.0004309812320122186
+      ],
+      "steady_balance_W": -2.9225233344476464e-13,
+      "deposited_to_heat_2s_J": 0.03799999959208789,
+      "front_250nm_source_W": 0.018743615561293024,
+      "front_250nm_exits_W": [
+        1.5050178872220472e-05,
+        0.001974976468268146,
+        0.016753594226433084
+      ],
+      "front_250nm_steady_balance_W": -5.31228042804921e-09,
+      "front_250nm_transient_balance_J": -6.730962939793805e-10,
+      "thermal_sink_2s_J": [
+        0.0011947297724565387,
+        0.000506594045880505,
+        6.20476830412962e-05
+      ],
+      "stored_heat_2s_J": 0.036236628091269665,
+      "transient_balance_J": -5.601144548172954e-13,
+      "maximum_T_2s_K": 300.24381634016316,
+      "maximum_T_steady_K": 300.9416128815671
+    },
+    {
+      "E_cm_keV": 0.25,
+      "beam": "hot_steady",
+      "mount": "nominal",
+      "incident_W": 0.018999999999999996,
+      "short_heat_W": 0.01899992209472497,
+      "acoustic_thermalized_W": 7.770908788338516e-08,
+      "outgoing_acoustic_W": 1.9618714396347383e-10,
+      "max_carrier_or_acoustic_delay_s": 0.0010047272300442004,
+      "inherited_acoustic_bath_Ue_max_eV_formula": 1.0830384333357438e-21,
+      "total_heat_W": 0.018999999803812846,
+      "input_partition_defect_W": 5.895554582928814e-18,
+      "thermal_sink_W": [
+        0.01818854033041634,
+        0.0007229165868943812,
+        8.854288678216851e-05
+      ],
+      "steady_balance_W": -2.800433496208399e-13,
+      "deposited_to_heat_2s_J": 0.03799999959208789,
+      "front_250nm_source_W": 0.018743615561293024,
+      "front_250nm_exits_W": [
+        1.8188475581023e-05,
+        0.00040582252779948583,
+        0.018319605550829683
+      ],
+      "front_250nm_steady_balance_W": -9.929171686240412e-10,
+      "front_250nm_transient_balance_J": -6.083942793999597e-10,
+      "thermal_sink_2s_J": [
+        0.007540494078159396,
+        0.0004565624272765651,
+        5.591980601940058e-05
+      ],
+      "stored_heat_2s_J": 0.029947023281186813,
+      "transient_balance_J": -5.542823144910614e-13,
+      "maximum_T_2s_K": 300.2332956805082,
+      "maximum_T_steady_K": 300.32541830023916
+    },
+    {
+      "E_cm_keV": 0.25,
+      "beam": "hot_steady",
+      "mount": "strong_edge",
+      "incident_W": 0.018999999999999996,
+      "short_heat_W": 0.01899992209472497,
+      "acoustic_thermalized_W": 7.770908788338516e-08,
+      "outgoing_acoustic_W": 1.9618714396347383e-10,
+      "max_carrier_or_acoustic_delay_s": 0.0010047272300442004,
+      "inherited_acoustic_bath_Ue_max_eV_formula": 1.0830384333357438e-21,
+      "total_heat_W": 0.018999999803812846,
+      "input_partition_defect_W": 5.895554582928814e-18,
+      "thermal_sink_W": [
+        0.018597315502628314,
+        0.0003587451625781246,
+        4.3939138884976674e-05
+      ],
+      "steady_balance_W": -2.785688346662596e-13,
+      "deposited_to_heat_2s_J": 0.03799999959208789,
+      "front_250nm_source_W": 0.018743615561293024,
+      "front_250nm_exits_W": [
+        1.8597249297823875e-05,
+        0.0002014349416910149,
+        0.018523583836277047
+      ],
+      "front_250nm_steady_balance_W": -4.659728609912595e-10,
+      "front_250nm_transient_balance_J": -5.605631583915915e-10,
+      "thermal_sink_2s_J": [
+        0.015545690162754805,
+        0.0003800846821944434,
+        4.655280511373291e-05
+      ],
+      "stored_heat_2s_J": 0.022027671942585092,
+      "transient_balance_J": -5.601838437563345e-13,
+      "maximum_T_2s_K": 300.2171249085687,
+      "maximum_T_steady_K": 300.24224807995665
+    },
+    {
+      "E_cm_keV": 0.25,
+      "beam": "hot_bursts",
+      "mount": "weak_edge",
+      "incident_W": 0.018999999999999996,
+      "short_heat_W": 0.01899992209472497,
+      "acoustic_thermalized_W": 7.770908788338516e-08,
+      "outgoing_acoustic_W": 1.9618714396347383e-10,
+      "max_carrier_or_acoustic_delay_s": 0.0010047272300442004,
+      "inherited_acoustic_bath_Ue_max_eV_formula": 1.0830384333357438e-21,
+      "total_heat_W": 0.018999999803812846,
+      "input_partition_defect_W": 5.895554582928814e-18,
+      "thermal_sink_W": [
+        0.015050232449518055,
+        0.0035187861225748256,
+        0.0004309812320122186
+      ],
+      "steady_balance_W": -2.9225233344476464e-13,
+      "deposited_to_heat_2s_J": 0.037999999587932494,
+      "front_250nm_source_W": 0.018743615561293024,
+      "front_250nm_exits_W": [
+        1.5050178872220472e-05,
+        0.001974976468268146,
+        0.016753594226433084
+      ],
+      "front_250nm_steady_balance_W": -5.31228042804921e-09,
+      "front_250nm_transient_balance_J": -6.784444672724987e-10,
+      "thermal_sink_2s_J": [
+        0.0011944068213675778,
+        0.0005064721336944397,
+        6.203275122608567e-05
+      ],
+      "stored_heat_2s_J": 0.03623708788220334,
+      "transient_balance_J": -5.58948720641439e-13,
+      "maximum_T_2s_K": 300.24389687197714,
+      "maximum_T_steady_K": 300.9416128815671
+    },
+    {
+      "E_cm_keV": 0.25,
+      "beam": "hot_bursts",
+      "mount": "nominal",
+      "incident_W": 0.018999999999999996,
+      "short_heat_W": 0.01899992209472497,
+      "acoustic_thermalized_W": 7.770908788338516e-08,
+      "outgoing_acoustic_W": 1.9618714396347383e-10,
+      "max_carrier_or_acoustic_delay_s": 0.0010047272300442004,
+      "inherited_acoustic_bath_Ue_max_eV_formula": 1.0830384333357438e-21,
+      "total_heat_W": 0.018999999803812846,
+      "input_partition_defect_W": 5.895554582928814e-18,
+      "thermal_sink_W": [
+        0.01818854033041634,
+        0.0007229165868943812,
+        8.854288678216851e-05
+      ],
+      "steady_balance_W": -2.800433496208399e-13,
+      "deposited_to_heat_2s_J": 0.037999999587932494,
+      "front_250nm_source_W": 0.018743615561293024,
+      "front_250nm_exits_W": [
+        1.8188475581023e-05,
+        0.00040582252779948583,
+        0.018319605550829683
+      ],
+      "front_250nm_steady_balance_W": -9.929171686240412e-10,
+      "front_250nm_transient_balance_J": -6.066387253644834e-10,
+      "thermal_sink_2s_J": [
+        0.007538515000161495,
+        0.0004564549774644439,
+        5.590664555701545e-05
+      ],
+      "stored_heat_2s_J": 0.02994912296530384,
+      "transient_balance_J": -5.542996617258211e-13,
+      "maximum_T_2s_K": 300.23337937928795,
+      "maximum_T_steady_K": 300.32541830023916
+    },
+    {
+      "E_cm_keV": 0.25,
+      "beam": "hot_bursts",
+      "mount": "strong_edge",
+      "incident_W": 0.018999999999999996,
+      "short_heat_W": 0.01899992209472497,
+      "acoustic_thermalized_W": 7.770908788338516e-08,
+      "outgoing_acoustic_W": 1.9618714396347383e-10,
+      "max_carrier_or_acoustic_delay_s": 0.0010047272300442004,
+      "inherited_acoustic_bath_Ue_max_eV_formula": 1.0830384333357438e-21,
+      "total_heat_W": 0.018999999803812846,
+      "input_partition_defect_W": 5.895554582928814e-18,
+      "thermal_sink_W": [
+        0.018597315502628314,
+        0.0003587451625781246,
+        4.3939138884976674e-05
+      ],
+      "steady_balance_W": -2.785688346662596e-13,
+      "deposited_to_heat_2s_J": 0.037999999587932494,
+      "front_250nm_source_W": 0.018743615561293024,
+      "front_250nm_exits_W": [
+        1.8597249297823875e-05,
+        0.0002014349416910149,
+        0.018523583836277047
+      ],
+      "front_250nm_steady_balance_W": -4.659728609912595e-10,
+      "front_250nm_transient_balance_J": -5.782927470221466e-10,
+      "thermal_sink_2s_J": [
+        0.015541964338113137,
+        0.0003799990239421024,
+        4.654231368349534e-05
+      ],
+      "stored_heat_2s_J": 0.022031493912753594,
+      "transient_balance_J": -5.598334296141871e-13,
+      "maximum_T_2s_K": 300.21721343591383,
+      "maximum_T_steady_K": 300.24224807995665
+    },
+    {
+      "E_cm_keV": 0.5,
+      "beam": "even_steady",
+      "mount": "weak_edge",
+      "incident_W": 0.068,
+      "short_heat_W": 0.06799959563666626,
+      "acoustic_thermalized_W": 4.032166507325063e-07,
+      "outgoing_acoustic_W": 1.1466830142167875e-09,
+      "max_carrier_or_acoustic_delay_s": 0.001004727230039517,
+      "inherited_acoustic_bath_Ue_max_eV_formula": 4.846948918969955e-21,
+      "total_heat_W": 0.06799999885331698,
+      "input_partition_defect_W": 1.2092815384371738e-17,
+      "thermal_sink_W": [
+        0.05389398353081356,
+        0.012566829007710676,
+        0.0015391863158386268
+      ],
+      "steady_balance_W": -1.0458856003481287e-12,
+      "deposited_to_heat_2s_J": 0.1359999976787002,
+      "front_250nm_source_W": 0.06753500462923263,
+      "front_250nm_exits_W": [
+        5.389379167368497e-05,
+        0.007053339757123262,
+        0.06042778731115605
+      ],
+      "front_250nm_steady_balance_W": -1.6230720364940332e-08,
+      "front_250nm_transient_balance_J": -2.56538201792722e-09,
+      "thermal_sink_2s_J": [
+        0.004470295526354675,
+        0.0018110668322272314,
+        0.0002218196239897102
+      ],
+      "stored_heat_2s_J": 0.12949681569813587,
+      "transient_balance_J": -2.007283228522283e-12,
+      "maximum_T_2s_K": 300.7334716530443,
+      "maximum_T_steady_K": 303.2373844336539
+    },
+    {
+      "E_cm_keV": 0.5,
+      "beam": "even_steady",
+      "mount": "nominal",
+      "incident_W": 0.068,
+      "short_heat_W": 0.06799959563666626,
+      "acoustic_thermalized_W": 4.032166507325063e-07,
+      "outgoing_acoustic_W": 1.1466830142167875e-09,
+      "max_carrier_or_acoustic_delay_s": 0.001004727230039517,
+      "inherited_acoustic_bath_Ue_max_eV_formula": 4.846948918969955e-21,
+      "total_heat_W": 0.06799999885331698,
+      "input_partition_defect_W": 1.2092815384371738e-17,
+      "thermal_sink_W": [
+        0.0651317225033868,
+        0.002555302657927158,
+        0.00031297369300515784
+      ],
+      "steady_balance_W": -1.0021289353900897e-12,
+      "deposited_to_heat_2s_J": 0.1359999976787002,
+      "front_250nm_source_W": 0.06753500462923263,
+      "front_250nm_exits_W": [
+        6.513149064069746e-05,
+        0.0014344702707667363,
+        0.0660354063243522
+      ],
+      "front_250nm_steady_balance_W": -3.456527009060295e-09,
+      "front_250nm_transient_balance_J": -2.315924896301169e-09,
+      "thermal_sink_2s_J": [
+        0.02808256151229453,
+        0.0016213727487684824,
+        0.00019858587605885915
+      ],
+      "stored_heat_2s_J": 0.10609747754355917,
+      "transient_balance_J": -1.9808460427483965e-12,
+      "maximum_T_2s_K": 300.7033360400572,
+      "maximum_T_steady_K": 301.0439286914578
+    },
+    {
+      "E_cm_keV": 0.5,
+      "beam": "even_steady",
+      "mount": "strong_edge",
+      "incident_W": 0.068,
+      "short_heat_W": 0.06799959563666626,
+      "acoustic_thermalized_W": 4.032166507325063e-07,
+      "outgoing_acoustic_W": 1.1466830142167875e-09,
+      "max_carrier_or_acoustic_delay_s": 0.001004727230039517,
+      "inherited_acoustic_bath_Ue_max_eV_formula": 4.846948918969955e-21,
+      "total_heat_W": 0.06799999885331698,
+      "input_partition_defect_W": 1.2092815384371738e-17,
+      "thermal_sink_W": [
+        0.0665950202727473,
+        0.001251673501627865,
+        0.00015330507993872928
+      ],
+      "steady_balance_W": -9.969108871743515e-13,
+      "deposited_to_heat_2s_J": 0.1359999976787002,
+      "front_250nm_source_W": 0.06753500462923263,
+      "front_250nm_exits_W": [
+        6.659478319895872e-05,
+        0.0007028213860776265,
+        0.06676559015410763
+      ],
+      "front_250nm_steady_balance_W": -1.69415158290942e-09,
+      "front_250nm_transient_balance_J": -1.8532848033991911e-09,
+      "thermal_sink_2s_J": [
+        0.05750602390159134,
+        0.0013343543174891637,
+        0.00016343183349589157
+      ],
+      "stored_heat_2s_J": 0.07699618762813332,
+      "transient_balance_J": -2.009517552359341e-12,
+      "maximum_T_2s_K": 300.65497859782965,
+      "maximum_T_steady_K": 300.750134694235
+    },
+    {
+      "E_cm_keV": 0.5,
+      "beam": "hot_steady",
+      "mount": "weak_edge",
+      "incident_W": 0.068,
+      "short_heat_W": 0.06799959563666626,
+      "acoustic_thermalized_W": 4.032315428603561e-07,
+      "outgoing_acoustic_W": 1.1317908863670686e-09,
+      "max_carrier_or_acoustic_delay_s": 0.001004727230039517,
+      "inherited_acoustic_bath_Ue_max_eV_formula": 2.119401031187288e-20,
+      "total_heat_W": 0.0679999988682091,
+      "input_partition_defect_W": 2.4623846655446e-17,
+      "thermal_sink_W": [
+        0.0538639894629054,
+        0.012593550268190682,
+        0.0015424591381590028
+      ],
+      "steady_balance_W": -1.0459966226505912e-12,
+      "deposited_to_heat_2s_J": 0.13599999770848795,
+      "front_250nm_source_W": 0.06753500462923263,
+      "front_250nm_exits_W": [
+        5.3863797712560296e-05,
+        0.007068336798523527,
+        0.06041282161077964
+      ],
+      "front_250nm_steady_balance_W": -1.7577783090194643e-08,
+      "front_250nm_transient_balance_J": -2.6752742521285455e-09,
+      "thermal_sink_2s_J": [
+        0.004275874873636444,
+        0.0018130734219242877,
+        0.00022206539127128273
+      ],
+      "stored_heat_2s_J": 0.12968898402365253,
+      "transient_balance_J": -1.996597331910266e-12,
+      "maximum_T_2s_K": 300.87260599024796,
+      "maximum_T_steady_K": 303.36998305941296
+    },
+    {
+      "E_cm_keV": 0.5,
+      "beam": "hot_steady",
+      "mount": "nominal",
+      "incident_W": 0.068,
+      "short_heat_W": 0.06799959563666626,
+      "acoustic_thermalized_W": 4.032315428603561e-07,
+      "outgoing_acoustic_W": 1.1317908863670686e-09,
+      "max_carrier_or_acoustic_delay_s": 0.001004727230039517,
+      "inherited_acoustic_bath_Ue_max_eV_formula": 2.119401031187288e-20,
+      "total_heat_W": 0.0679999988682091,
+      "input_partition_defect_W": 2.4623846655446e-17,
+      "thermal_sink_W": [
+        0.06509582811991406,
+        0.002587280417502874,
+        0.00031689033179445943
+      ],
+      "steady_balance_W": -1.0022954688437835e-12,
+      "deposited_to_heat_2s_J": 0.13599999770848795,
+      "front_250nm_source_W": 0.06753500462923263,
+      "front_250nm_exits_W": [
+        6.509559638507598e-05,
+        0.0014524174699493426,
+        0.06601749512136199
+      ],
+      "front_250nm_steady_balance_W": -3.558463773645215e-09,
+      "front_250nm_transient_balance_J": -2.1926586935006043e-09,
+      "thermal_sink_2s_J": [
+        0.02698703081007756,
+        0.0016340128970177795,
+        0.0002001340425218191
+      ],
+      "stored_heat_2s_J": 0.10717881996085013,
+      "transient_balance_J": -1.9793472416651525e-12,
+      "maximum_T_2s_K": 300.83495310922507,
+      "maximum_T_steady_K": 301.1646551138801
+    },
+    {
+      "E_cm_keV": 0.5,
+      "beam": "hot_steady",
+      "mount": "strong_edge",
+      "incident_W": 0.068,
+      "short_heat_W": 0.06799959563666626,
+      "acoustic_thermalized_W": 4.032315428603561e-07,
+      "outgoing_acoustic_W": 1.1317908863670686e-09,
+      "max_carrier_or_acoustic_delay_s": 0.001004727230039517,
+      "inherited_acoustic_bath_Ue_max_eV_formula": 2.119401031187288e-20,
+      "total_heat_W": 0.0679999988682091,
+      "input_partition_defect_W": 2.4623846655446e-17,
+      "thermal_sink_W": [
+        0.06655881293664652,
+        0.0012839300658180075,
+        0.00015725586674158738
+      ],
+      "steady_balance_W": -9.97021909476814e-13,
+      "deposited_to_heat_2s_J": 0.13599999770848795,
+      "front_250nm_source_W": 0.06753500462923263,
+      "front_250nm_exits_W": [
+        6.65585759921611e-05,
+        0.0007209250615742251,
+        0.06674752260632456
+      ],
+      "front_250nm_steady_balance_W": -1.6146583098342049e-09,
+      "front_250nm_transient_balance_J": -1.906873992041369e-09,
+      "thermal_sink_2s_J": [
+        0.05563720568443855,
+        0.0013603030799659913,
+        0.00016661004019328306
+      ],
+      "stored_heat_2s_J": 0.07883587890589037,
+      "transient_balance_J": -2.000247190103721e-12,
+      "maximum_T_2s_K": 300.7770787758183,
+      "maximum_T_steady_K": 300.8669932289123
+    },
+    {
+      "E_cm_keV": 0.5,
+      "beam": "hot_bursts",
+      "mount": "weak_edge",
+      "incident_W": 0.068,
+      "short_heat_W": 0.06799959563666626,
+      "acoustic_thermalized_W": 4.032315428603561e-07,
+      "outgoing_acoustic_W": 1.1317908863670686e-09,
+      "max_carrier_or_acoustic_delay_s": 0.001004727230039517,
+      "inherited_acoustic_bath_Ue_max_eV_formula": 2.119401031187288e-20,
+      "total_heat_W": 0.0679999988682091,
+      "input_partition_defect_W": 2.4623846655446e-17,
+      "thermal_sink_W": [
+        0.0538639894629054,
+        0.012593550268190682,
+        0.0015424591381590028
+      ],
+      "steady_balance_W": -1.0459966226505912e-12,
+      "deposited_to_heat_2s_J": 0.13599999770101673,
+      "front_250nm_source_W": 0.06753500462923263,
+      "front_250nm_exits_W": [
+        5.3863797712560296e-05,
+        0.007068336798523527,
+        0.06041282161077964
+      ],
+      "front_250nm_steady_balance_W": -1.7577783090194643e-08,
+      "front_250nm_transient_balance_J": -2.6752476900426814e-09,
+      "thermal_sink_2s_J": [
+        0.004274719048702807,
+        0.001812637104629155,
+        0.00022201195109081874
+      ],
+      "stored_heat_2s_J": 0.12969062959859445,
+      "transient_balance_J": -2.0005108680720696e-12,
+      "maximum_T_2s_K": 300.8728942093392,
+      "maximum_T_steady_K": 303.36998305941296
+    },
+    {
+      "E_cm_keV": 0.5,
+      "beam": "hot_bursts",
+      "mount": "nominal",
+      "incident_W": 0.068,
+      "short_heat_W": 0.06799959563666626,
+      "acoustic_thermalized_W": 4.032315428603561e-07,
+      "outgoing_acoustic_W": 1.1317908863670686e-09,
+      "max_carrier_or_acoustic_delay_s": 0.001004727230039517,
+      "inherited_acoustic_bath_Ue_max_eV_formula": 2.119401031187288e-20,
+      "total_heat_W": 0.0679999988682091,
+      "input_partition_defect_W": 2.4623846655446e-17,
+      "thermal_sink_W": [
+        0.06509582811991406,
+        0.002587280417502874,
+        0.00031689033179445943
+      ],
+      "steady_balance_W": -1.0022954688437835e-12,
+      "deposited_to_heat_2s_J": 0.13599999770101673,
+      "front_250nm_source_W": 0.06753500462923263,
+      "front_250nm_exits_W": [
+        6.509559638507598e-05,
+        0.0014524174699493426,
+        0.06601749512136199
+      ],
+      "front_250nm_steady_balance_W": -3.558463773645215e-09,
+      "front_250nm_transient_balance_J": -2.2754195472263206e-09,
+      "thermal_sink_2s_J": [
+        0.0269799477941969,
+        0.0016336283397971117,
+        0.00020008694191980204
+      ],
+      "stored_heat_2s_J": 0.10718633462708593,
+      "transient_balance_J": -1.9830248554342234e-12,
+      "maximum_T_2s_K": 300.8352526627185,
+      "maximum_T_steady_K": 301.1646551138801
+    },
+    {
+      "E_cm_keV": 0.5,
+      "beam": "hot_bursts",
+      "mount": "strong_edge",
+      "incident_W": 0.068,
+      "short_heat_W": 0.06799959563666626,
+      "acoustic_thermalized_W": 4.032315428603561e-07,
+      "outgoing_acoustic_W": 1.1317908863670686e-09,
+      "max_carrier_or_acoustic_delay_s": 0.001004727230039517,
+      "inherited_acoustic_bath_Ue_max_eV_formula": 2.119401031187288e-20,
+      "total_heat_W": 0.0679999988682091,
+      "input_partition_defect_W": 2.4623846655446e-17,
+      "thermal_sink_W": [
+        0.06655881293664652,
+        0.0012839300658180075,
+        0.00015725586674158738
+      ],
+      "steady_balance_W": -9.97021909476814e-13,
+      "deposited_to_heat_2s_J": 0.13599999770101673,
+      "front_250nm_source_W": 0.06753500462923263,
+      "front_250nm_exits_W": [
+        6.65585759921611e-05,
+        0.0007209250615742251,
+        0.06674752260632456
+      ],
+      "front_250nm_steady_balance_W": -1.6146583098342049e-09,
+      "front_250nm_transient_balance_J": -1.925276743586224e-09,
+      "thermal_sink_2s_J": [
+        0.05562387115458329,
+        0.0013599965135899803,
+        0.00016657249191673988
+      ],
+      "stored_heat_2s_J": 0.07884955754293037,
+      "transient_balance_J": -2.0036472481166356e-12,
+      "maximum_T_2s_K": 300.77739561049185,
+      "maximum_T_steady_K": 300.8669932289123
+    },
+    {
+      "E_cm_keV": 1.0,
+      "beam": "even_steady",
+      "mount": "weak_edge",
+      "incident_W": 0.21999999999999997,
+      "short_heat_W": 0.2199980570298207,
+      "acoustic_thermalized_W": 1.937342546860054e-06,
+      "outgoing_acoustic_W": 5.627632404084839e-09,
+      "max_carrier_or_acoustic_delay_s": 0.0010047272300328276,
+      "inherited_acoustic_bath_Ue_max_eV_formula": 3.623840844231964e-20,
+      "total_heat_W": 0.21999999437236753,
+      "input_partition_defect_W": 3.9298651107596125e-17,
+      "thermal_sink_W": [
+        0.17436288658687063,
+        0.04065738742193681,
+        0.0049797203669436135
+      ],
+      "steady_balance_W": -3.383515689847627e-12,
+      "deposited_to_heat_2s_J": 0.43999998869899765,
+      "front_250nm_source_W": 0.21913317451874206,
+      "front_250nm_exits_W": [
+        0.00017436226587252726,
+        0.022819628270216927,
+        0.19613924106551087
+      ],
+      "front_250nm_steady_balance_W": -5.7082858245793844e-08,
+      "front_250nm_transient_balance_J": -7.807009705373957e-09,
+      "thermal_sink_2s_J": [
+        0.014462721662543492,
+        0.005859333632608135,
+        0.0007176516957229142
+      ],
+      "stored_heat_2s_J": 0.4189602817145895,
+      "transient_balance_J": -6.466382984626762e-12,
+      "maximum_T_2s_K": 302.3729962286452,
+      "maximum_T_steady_K": 310.4738904262988
+    },
+    {
+      "E_cm_keV": 1.0,
+      "beam": "even_steady",
+      "mount": "nominal",
+      "incident_W": 0.21999999999999997,
+      "short_heat_W": 0.2199980570298207,
+      "acoustic_thermalized_W": 1.937342546860054e-06,
+      "outgoing_acoustic_W": 5.627632404084839e-09,
+      "max_carrier_or_acoustic_delay_s": 0.0010047272300328276,
+      "inherited_acoustic_bath_Ue_max_eV_formula": 3.623840844231964e-20,
+      "total_heat_W": 0.21999999437236753,
+      "input_partition_defect_W": 3.9298651107596125e-17,
+      "thermal_sink_W": [
+        0.21072027710421318,
+        0.008267155359944387,
+        0.0010125619114520316
+      ],
+      "steady_balance_W": -3.2420455209347665e-12,
+      "deposited_to_heat_2s_J": 0.43999998869899765,
+      "front_250nm_source_W": 0.21913317451874206,
+      "front_250nm_exits_W": [
+        0.0002107195269592183,
+        0.0046409330113195355,
+        0.2142815327465695
+      ],
+      "front_250nm_steady_balance_W": -1.0766106200987835e-08,
+      "front_250nm_transient_balance_J": -7.316389438738469e-09,
+      "thermal_sink_2s_J": [
+        0.09085535052101432,
+        0.005245617430245607,
+        0.0006424836815878244
+      ],
+      "stored_heat_2s_J": 0.3432565370725743,
+      "transient_balance_J": -6.424416554295931e-12,
+      "maximum_T_2s_K": 302.2754986502583,
+      "maximum_T_steady_K": 303.37741602061925
+    },
+    {
+      "E_cm_keV": 1.0,
+      "beam": "even_steady",
+      "mount": "strong_edge",
+      "incident_W": 0.21999999999999997,
+      "short_heat_W": 0.2199980570298207,
+      "acoustic_thermalized_W": 1.937342546860054e-06,
+      "outgoing_acoustic_W": 5.627632404084839e-09,
+      "max_carrier_or_acoustic_delay_s": 0.0010047272300328276,
+      "inherited_acoustic_bath_Ue_max_eV_formula": 3.623840844231964e-20,
+      "total_heat_W": 0.21999999437236753,
+      "input_partition_defect_W": 3.9298651107596125e-17,
+      "thermal_sink_W": [
+        0.2154544757288152,
+        0.004049531655480724,
+        0.0004959869912964421
+      ],
+      "steady_balance_W": -3.2248370640530766e-12,
+      "deposited_to_heat_2s_J": 0.43999998869899765,
+      "front_250nm_source_W": 0.21913317451874206,
+      "front_250nm_exits_W": [
+        0.0002154537087195723,
+        0.0022738336989897023,
+        0.21664389291490005
+      ],
+      "front_250nm_steady_balance_W": -5.803867247911043e-09,
+      "front_250nm_transient_balance_J": -6.52716503068973e-09,
+      "thermal_sink_2s_J": [
+        0.18604890772615088,
+        0.004317028332848925,
+        0.0005287500077331909
+      ],
+      "stored_heat_2s_J": 0.24910530263874614,
+      "transient_balance_J": -6.481482017761664e-12,
+      "maximum_T_2s_K": 302.11904809479375,
+      "maximum_T_steady_K": 302.42690603846495
+    },
+    {
+      "E_cm_keV": 1.0,
+      "beam": "hot_steady",
+      "mount": "weak_edge",
+      "incident_W": 0.21999999999999997,
+      "short_heat_W": 0.2199980570298207,
+      "acoustic_thermalized_W": 1.937421934059366e-06,
+      "outgoing_acoustic_W": 5.548245204773579e-09,
+      "max_carrier_or_acoustic_delay_s": 0.0010047272300328276,
+      "inherited_acoustic_bath_Ue_max_eV_formula": 1.58457870105964e-19,
+      "total_heat_W": 0.21999999445175478,
+      "input_partition_defect_W": -8.16645226681246e-18,
+      "thermal_sink_W": [
+        0.1742658469639969,
+        0.040743838578929485,
+        0.004990308912212265
+      ],
+      "steady_balance_W": -3.383904267906246e-12,
+      "deposited_to_heat_2s_J": 0.439999988857763,
+      "front_250nm_source_W": 0.21913317451874206,
+      "front_250nm_exits_W": [
+        0.00017426522659514296,
+        0.022868148121347704,
+        0.1960908172318972
+      ],
+      "front_250nm_steady_balance_W": -5.606109798605985e-08,
+      "front_250nm_transient_balance_J": -8.018517627661481e-09,
+      "thermal_sink_2s_J": [
+        0.01383371355657691,
+        0.005865825542546612,
+        0.0007184468254198991
+      ],
+      "stored_heat_2s_J": 0.41958200293969594,
+      "transient_balance_J": -6.476374991848388e-12,
+      "maximum_T_2s_K": 302.8231359624126,
+      "maximum_T_steady_K": 310.9028851947674
+    },
+    {
+      "E_cm_keV": 1.0,
+      "beam": "hot_steady",
+      "mount": "nominal",
+      "incident_W": 0.21999999999999997,
+      "short_heat_W": 0.2199980570298207,
+      "acoustic_thermalized_W": 1.937421934059366e-06,
+      "outgoing_acoustic_W": 5.548245204773579e-09,
+      "max_carrier_or_acoustic_delay_s": 0.0010047272300328276,
+      "inherited_acoustic_bath_Ue_max_eV_formula": 1.58457870105964e-19,
+      "total_heat_W": 0.21999999445175478,
+      "input_partition_defect_W": -8.16645226681246e-18,
+      "thermal_sink_W": [
+        0.21060414822825144,
+        0.008370612834734144,
+        0.0010252333920116785
+      ],
+      "steady_balance_W": -3.2424896101446166e-12,
+      "deposited_to_heat_2s_J": 0.439999988857763,
+      "front_250nm_source_W": 0.21913317451874206,
+      "front_250nm_exits_W": [
+        0.00021060339849701828,
+        0.004698997488994428,
+        0.21422358531050784
+      ],
+      "front_250nm_steady_balance_W": -1.1679257228003337e-08,
+      "front_250nm_transient_balance_J": -6.835754517986459e-09,
+      "thermal_sink_2s_J": [
+        0.0873109859058375,
+        0.005286512035671359,
+        0.0006474924564366202
+      ],
+      "stored_heat_2s_J": 0.34675499846626257,
+      "transient_balance_J": -6.445066702553959e-12,
+      "maximum_T_2s_K": 302.70131781961925,
+      "maximum_T_steady_K": 303.76800074330987
+    },
+    {
+      "E_cm_keV": 1.0,
+      "beam": "hot_steady",
+      "mount": "strong_edge",
+      "incident_W": 0.21999999999999997,
+      "short_heat_W": 0.2199980570298207,
+      "acoustic_thermalized_W": 1.937421934059366e-06,
+      "outgoing_acoustic_W": 5.548245204773579e-09,
+      "max_carrier_or_acoustic_delay_s": 0.0010047272300328276,
+      "inherited_acoustic_bath_Ue_max_eV_formula": 1.58457870105964e-19,
+      "total_heat_W": 0.21999999445175478,
+      "input_partition_defect_W": -8.16645226681246e-18,
+      "thermal_sink_W": [
+        0.21533733436129893,
+        0.004153891143202302,
+        0.00050876895047886
+      ],
+      "steady_balance_W": -3.2253089088385423e-12,
+      "deposited_to_heat_2s_J": 0.439999988857763,
+      "front_250nm_source_W": 0.21913317451874206,
+      "front_250nm_exits_W": [
+        0.00021533656777111216,
+        0.0023324044224418933,
+        0.21658543922423376
+      ],
+      "front_250nm_steady_balance_W": -5.695704713426508e-09,
+      "front_250nm_transient_balance_J": -5.877140274446191e-09,
+      "thermal_sink_2s_J": [
+        0.18000273028110408,
+        0.004400980225467194,
+        0.000539032442882703
+      ],
+      "stored_heat_2s_J": 0.25505724591479484,
+      "transient_balance_J": -6.485811887557702e-12,
+      "maximum_T_2s_K": 302.5140773338874,
+      "maximum_T_steady_K": 302.8049775449894
+    },
+    {
+      "E_cm_keV": 1.0,
+      "beam": "hot_bursts",
+      "mount": "weak_edge",
+      "incident_W": 0.21999999999999997,
+      "short_heat_W": 0.2199980570298207,
+      "acoustic_thermalized_W": 1.937421934059366e-06,
+      "outgoing_acoustic_W": 5.548245204773579e-09,
+      "max_carrier_or_acoustic_delay_s": 0.0010047272300328276,
+      "inherited_acoustic_bath_Ue_max_eV_formula": 1.58457870105964e-19,
+      "total_heat_W": 0.21999999445175478,
+      "input_partition_defect_W": -8.16645226681246e-18,
+      "thermal_sink_W": [
+        0.1742658469639969,
+        0.040743838578929485,
+        0.004990308912212265
+      ],
+      "steady_balance_W": -3.383904267906246e-12,
+      "deposited_to_heat_2s_J": 0.4399999888455496,
+      "front_250nm_source_W": 0.21913317451874206,
+      "front_250nm_exits_W": [
+        0.00017426522659514296,
+        0.022868148121347704,
+        0.1960908172318972
+      ],
+      "front_250nm_steady_balance_W": -5.606109798605985e-08,
+      "front_250nm_transient_balance_J": -8.072898627364822e-09,
+      "thermal_sink_2s_J": [
+        0.013829974122805825,
+        0.0058644139277817375,
+        0.0007182739307200509
+      ],
+      "stored_heat_2s_J": 0.41958732687071454,
+      "transient_balance_J": -6.472544722413431e-12,
+      "maximum_T_2s_K": 302.82406844562445,
+      "maximum_T_steady_K": 310.9028851947674
+    },
+    {
+      "E_cm_keV": 1.0,
+      "beam": "hot_bursts",
+      "mount": "nominal",
+      "incident_W": 0.21999999999999997,
+      "short_heat_W": 0.2199980570298207,
+      "acoustic_thermalized_W": 1.937421934059366e-06,
+      "outgoing_acoustic_W": 5.548245204773579e-09,
+      "max_carrier_or_acoustic_delay_s": 0.0010047272300328276,
+      "inherited_acoustic_bath_Ue_max_eV_formula": 1.58457870105964e-19,
+      "total_heat_W": 0.21999999445175478,
+      "input_partition_defect_W": -8.16645226681246e-18,
+      "thermal_sink_W": [
+        0.21060414822825144,
+        0.008370612834734144,
+        0.0010252333920116785
+      ],
+      "steady_balance_W": -3.2424896101446166e-12,
+      "deposited_to_heat_2s_J": 0.4399999888455496,
+      "front_250nm_source_W": 0.21913317451874206,
+      "front_250nm_exits_W": [
+        0.00021060339849701828,
+        0.004698997488994428,
+        0.21422358531050784
+      ],
+      "front_250nm_steady_balance_W": -1.1679257228003337e-08,
+      "front_250nm_transient_balance_J": -7.309442051628423e-09,
+      "thermal_sink_2s_J": [
+        0.08728807026547054,
+        0.00528526787998318,
+        0.00064734007213913
+      ],
+      "stored_heat_2s_J": 0.34677931063437284,
+      "transient_balance_J": -6.416089881611242e-12,
+      "maximum_T_2s_K": 302.70228697295494,
+      "maximum_T_steady_K": 303.76800074330987
+    },
+    {
+      "E_cm_keV": 1.0,
+      "beam": "hot_bursts",
+      "mount": "strong_edge",
+      "incident_W": 0.21999999999999997,
+      "short_heat_W": 0.2199980570298207,
+      "acoustic_thermalized_W": 1.937421934059366e-06,
+      "outgoing_acoustic_W": 5.548245204773579e-09,
+      "max_carrier_or_acoustic_delay_s": 0.0010047272300328276,
+      "inherited_acoustic_bath_Ue_max_eV_formula": 1.58457870105964e-19,
+      "total_heat_W": 0.21999999445175478,
+      "input_partition_defect_W": -8.16645226681246e-18,
+      "thermal_sink_W": [
+        0.21533733436129893,
+        0.004153891143202302,
+        0.00050876895047886
+      ],
+      "steady_balance_W": -3.2253089088385423e-12,
+      "deposited_to_heat_2s_J": 0.4399999888455496,
+      "front_250nm_source_W": 0.21913317451874206,
+      "front_250nm_exits_W": [
+        0.00021533656777111216,
+        0.0023324044224418933,
+        0.21658543922423376
+      ],
+      "front_250nm_steady_balance_W": -5.695704713426508e-09,
+      "front_250nm_transient_balance_J": -6.061435797732884e-09,
+      "thermal_sink_2s_J": [
+        0.17995958915431448,
+        0.0043999883931117425,
+        0.0005389109631690711
+      ],
+      "stored_heat_2s_J": 0.25510150034143475,
+      "transient_balance_J": -6.480482817039501e-12,
+      "maximum_T_2s_K": 302.5151023969213,
+      "maximum_T_steady_K": 302.8049775449894
+    },
+    {
+      "E_cm_keV": 1.5,
+      "beam": "even_steady",
+      "mount": "weak_edge",
+      "incident_W": 0.36899999999999994,
+      "short_heat_W": 0.36899577119386034,
+      "acoustic_thermalized_W": 4.216883338742447e-06,
+      "outgoing_acoustic_W": 1.1922800815586868e-08,
+      "max_carrier_or_acoustic_delay_s": 0.0010047272300281386,
+      "inherited_acoustic_bath_Ue_max_eV_formula": 9.689097406419327e-20,
+      "total_heat_W": 0.36899998807719914,
+      "input_partition_defect_W": -1.3386995080607144e-17,
+      "thermal_sink_W": [
+        0.29245411265112814,
+        0.06819352635966304,
+        0.008352349072082687
+      ],
+      "steady_balance_W": -5.674738456917794e-12,
+      "deposited_to_heat_2s_J": 0.73799997610252,
+      "front_250nm_source_W": 0.3675301139346002,
+      "front_250nm_exits_W": [
+        0.0002924530715437858,
+        0.03827473965089581,
+        0.32896300345566587
+      ],
+      "front_250nm_steady_balance_W": -8.224350522834101e-08,
+      "front_250nm_transient_balance_J": -1.4400534542602372e-08,
+      "thermal_sink_2s_J": [
+        0.024257929621933474,
+        0.009827700122651998,
+        0.0012036975704587235
+      ],
+      "stored_heat_2s_J": 0.7027106487983052,
+      "transient_balance_J": -1.0829448449101164e-11,
+      "maximum_T_2s_K": 303.9801614011546,
+      "maximum_T_steady_K": 317.56757018904847
+    },
+    {
+      "E_cm_keV": 1.5,
+      "beam": "even_steady",
+      "mount": "nominal",
+      "incident_W": 0.36899999999999994,
+      "short_heat_W": 0.36899577119386034,
+      "acoustic_thermalized_W": 4.216883338742447e-06,
+      "outgoing_acoustic_W": 1.1922800815586868e-08,
+      "max_carrier_or_acoustic_delay_s": 0.0010047272300281386,
+      "inherited_acoustic_bath_Ue_max_eV_formula": 9.689097406419327e-20,
+      "total_heat_W": 0.36899998807719914,
+      "input_partition_defect_W": -1.3386995080607144e-17,
+      "thermal_sink_W": [
+        0.3534353718487305,
+        0.013866273805586646,
+        0.0016983424283194433
+      ],
+      "steady_balance_W": -5.437428285404167e-12,
+      "deposited_to_heat_2s_J": 0.73799997610252,
+      "front_250nm_source_W": 0.3675301139346002,
+      "front_250nm_exits_W": [
+        0.00035343411364998793,
+        0.00778411005171535,
+        0.3593925841496703
+      ],
+      "front_250nm_steady_balance_W": -1.4380435398031466e-08,
+      "front_250nm_transient_balance_J": -1.331882659716399e-08,
+      "thermal_sink_2s_J": [
+        0.15238920694507718,
+        0.008798330613580362,
+        0.0010776203029688543
+      ],
+      "stored_heat_2s_J": 0.5757348182516541,
+      "transient_balance_J": -1.0760503599271942e-11,
+      "maximum_T_2s_K": 303.81663136343354,
+      "maximum_T_steady_K": 305.6648472777543
+    },
+    {
+      "E_cm_keV": 1.5,
+      "beam": "even_steady",
+      "mount": "strong_edge",
+      "incident_W": 0.36899999999999994,
+      "short_heat_W": 0.36899577119386034,
+      "acoustic_thermalized_W": 4.216883338742447e-06,
+      "outgoing_acoustic_W": 1.1922800815586868e-08,
+      "max_carrier_or_acoustic_delay_s": 0.0010047272300281386,
+      "inherited_acoustic_bath_Ue_max_eV_formula": 9.689097406419327e-20,
+      "total_heat_W": 0.36899998807719914,
+      "input_partition_defect_W": -1.3386995080607144e-17,
+      "thermal_sink_W": [
+        0.3613759140363775,
+        0.0067921686375285095,
+        0.000831905408702356
+      ],
+      "steady_balance_W": -5.409228620578688e-12,
+      "deposited_to_heat_2s_J": 0.73799997610252,
+      "front_250nm_source_W": 0.3675301139346002,
+      "front_250nm_exits_W": [
+        0.0003613746275468696,
+        0.0038138389578438597,
+        0.3633549095202151
+      ],
+      "front_250nm_steady_balance_W": -9.17100562158879e-09,
+      "front_250nm_transient_balance_J": -9.758117869296257e-09,
+      "thermal_sink_2s_J": [
+        0.3120547672344018,
+        0.007240833378145772,
+        0.0008868579053690694
+      ],
+      "stored_heat_2s_J": 0.41781751759548447,
+      "transient_balance_J": -1.0881129330897465e-11,
+      "maximum_T_2s_K": 303.55422110474245,
+      "maximum_T_steady_K": 304.07058281854637
+    },
+    {
+      "E_cm_keV": 1.5,
+      "beam": "hot_steady",
+      "mount": "weak_edge",
+      "incident_W": 0.36899999999999994,
+      "short_heat_W": 0.36899577119386034,
+      "acoustic_thermalized_W": 4.2170513291753364e-06,
+      "outgoing_acoustic_W": 1.1754810382699192e-08,
+      "max_carrier_or_acoustic_delay_s": 0.0010047272300281386,
+      "inherited_acoustic_bath_Ue_max_eV_formula": 4.236703001772751e-19,
+      "total_heat_W": 0.36899998824518954,
+      "input_partition_defect_W": 2.0131691792105298e-17,
+      "thermal_sink_W": [
+        0.29229135081193636,
+        0.0683385284928879,
+        0.008370108946040561
+      ],
+      "steady_balance_W": -5.6752935684301065e-12,
+      "deposited_to_heat_2s_J": 0.7379999764384773,
+      "front_250nm_source_W": 0.3675301139346003,
+      "front_250nm_exits_W": [
+        0.00029229031028408874,
+        0.03835612065448722,
+        0.3288817915995697
+      ],
+      "front_250nm_steady_balance_W": -8.862974071321972e-08,
+      "front_250nm_transient_balance_J": -1.3503718365726058e-08,
+      "thermal_sink_2s_J": [
+        0.02320291177667562,
+        0.009838588824088943,
+        0.001205031219562942
+      ],
+      "stored_heat_2s_J": 0.7037534446290119,
+      "transient_balance_J": -1.0862200028327607e-11,
+      "maximum_T_2s_K": 304.7351669099472,
+      "maximum_T_steady_K": 318.2871098014105
+    },
+    {
+      "E_cm_keV": 1.5,
+      "beam": "hot_steady",
+      "mount": "nominal",
+      "incident_W": 0.36899999999999994,
+      "short_heat_W": 0.36899577119386034,
+      "acoustic_thermalized_W": 4.2170513291753364e-06,
+      "outgoing_acoustic_W": 1.1754810382699192e-08,
+      "max_carrier_or_acoustic_delay_s": 0.0010047272300281386,
+      "inherited_acoustic_bath_Ue_max_eV_formula": 4.236703001772751e-19,
+      "total_heat_W": 0.36899998824518954,
+      "input_partition_defect_W": 2.0131691792105298e-17,
+      "thermal_sink_W": [
+        0.3532405921423713,
+        0.014039800157214724,
+        0.0017195959510417991
+      ],
+      "steady_balance_W": -5.438316463823867e-12,
+      "deposited_to_heat_2s_J": 0.7379999764384773,
+      "front_250nm_source_W": 0.3675301139346003,
+      "front_250nm_exits_W": [
+        0.0003532393346377579,
+        0.00788149998889077,
+        0.3592953921908792
+      ],
+      "front_250nm_steady_balance_W": -1.757980744310217e-08,
+      "front_250nm_transient_balance_J": -1.1389802212491418e-08,
+      "thermal_sink_2s_J": [
+        0.14644434256655306,
+        0.008866922001396925,
+        0.0010860213821469711
+      ],
+      "stored_heat_2s_J": 0.5816026904991168,
+      "transient_balance_J": -1.0736522781940039e-11,
+      "maximum_T_2s_K": 304.53084465504713,
+      "maximum_T_steady_K": 306.3199627826649
+    },
+    {
+      "E_cm_keV": 1.5,
+      "beam": "hot_steady",
+      "mount": "strong_edge",
+      "incident_W": 0.36899999999999994,
+      "short_heat_W": 0.36899577119386034,
+      "acoustic_thermalized_W": 4.2170513291753364e-06,
+      "outgoing_acoustic_W": 1.1754810382699192e-08,
+      "max_carrier_or_acoustic_delay_s": 0.0010047272300281386,
+      "inherited_acoustic_bath_Ue_max_eV_formula": 4.236703001772751e-19,
+      "total_heat_W": 0.36899998824518954,
+      "input_partition_defect_W": 2.0131691792105298e-17,
+      "thermal_sink_W": [
+        0.3611794361091166,
+        0.006967207907666426,
+        0.0008533442338161022
+      ],
+      "steady_balance_W": -5.4096171986373065e-12,
+      "deposited_to_heat_2s_J": 0.7379999764384773,
+      "front_250nm_source_W": 0.3675301139346003,
+      "front_250nm_exits_W": [
+        0.0003611781503232785,
+        0.003912078005469893,
+        0.3632568673674654
+      ],
+      "front_250nm_steady_balance_W": -9.58865825628763e-09,
+      "front_250nm_transient_balance_J": -1.0801323946374453e-08,
+      "thermal_sink_2s_J": [
+        0.3019136817909223,
+        0.00738164355687894,
+        0.0009041043483742143
+      ],
+      "stored_heat_2s_J": 0.42780054675319235,
+      "transient_balance_J": -1.089056622660678e-11,
+      "maximum_T_2s_K": 304.21679129023,
+      "maximum_T_steady_K": 304.7047112563047
+    },
+    {
+      "E_cm_keV": 1.5,
+      "beam": "hot_bursts",
+      "mount": "weak_edge",
+      "incident_W": 0.36899999999999994,
+      "short_heat_W": 0.36899577119386034,
+      "acoustic_thermalized_W": 4.2170513291753364e-06,
+      "outgoing_acoustic_W": 1.1754810382699192e-08,
+      "max_carrier_or_acoustic_delay_s": 0.0010047272300281386,
+      "inherited_acoustic_bath_Ue_max_eV_formula": 4.236703001772751e-19,
+      "total_heat_W": 0.36899998824518954,
+      "input_partition_defect_W": 2.0131691792105298e-17,
+      "thermal_sink_W": [
+        0.29229135081193636,
+        0.0683385284928879,
+        0.008370108946040561
+      ],
+      "steady_balance_W": -5.6752935684301065e-12,
+      "deposited_to_heat_2s_J": 0.7379999764246009,
+      "front_250nm_source_W": 0.3675301139346003,
+      "front_250nm_exits_W": [
+        0.00029229031028408874,
+        0.03835612065448722,
+        0.3288817915995697
+      ],
+      "front_250nm_steady_balance_W": -8.862974071321972e-08,
+      "front_250nm_transient_balance_J": -1.2956344441761303e-08,
+      "thermal_sink_2s_J": [
+        0.02319663972611314,
+        0.009836221161160704,
+        0.001204741228000438
+      ],
+      "stored_heat_2s_J": 0.7037623743201755,
+      "transient_balance_J": -1.0848877352032105e-11,
+      "maximum_T_2s_K": 304.736730954726,
+      "maximum_T_steady_K": 318.2871098014105
+    },
+    {
+      "E_cm_keV": 1.5,
+      "beam": "hot_bursts",
+      "mount": "nominal",
+      "incident_W": 0.36899999999999994,
+      "short_heat_W": 0.36899577119386034,
+      "acoustic_thermalized_W": 4.2170513291753364e-06,
+      "outgoing_acoustic_W": 1.1754810382699192e-08,
+      "max_carrier_or_acoustic_delay_s": 0.0010047272300281386,
+      "inherited_acoustic_bath_Ue_max_eV_formula": 4.236703001772751e-19,
+      "total_heat_W": 0.36899998824518954,
+      "input_partition_defect_W": 2.0131691792105298e-17,
+      "thermal_sink_W": [
+        0.3532405921423713,
+        0.014039800157214724,
+        0.0017195959510417991
+      ],
+      "steady_balance_W": -5.438316463823867e-12,
+      "deposited_to_heat_2s_J": 0.7379999764246009,
+      "front_250nm_source_W": 0.3675301139346003,
+      "front_250nm_exits_W": [
+        0.0003532393346377579,
+        0.00788149998889077,
+        0.3592953921908792
+      ],
+      "front_250nm_steady_balance_W": -1.757980744310217e-08,
+      "front_250nm_transient_balance_J": -1.177275443797754e-08,
+      "thermal_sink_2s_J": [
+        0.1464059067865793,
+        0.008864835213031831,
+        0.001085765792125524
+      ],
+      "stored_heat_2s_J": 0.5816434686436227,
+      "transient_balance_J": -1.0758505197827617e-11,
+      "maximum_T_2s_K": 304.5324702056256,
+      "maximum_T_steady_K": 306.3199627826649
+    },
+    {
+      "E_cm_keV": 1.5,
+      "beam": "hot_bursts",
+      "mount": "strong_edge",
+      "incident_W": 0.36899999999999994,
+      "short_heat_W": 0.36899577119386034,
+      "acoustic_thermalized_W": 4.2170513291753364e-06,
+      "outgoing_acoustic_W": 1.1754810382699192e-08,
+      "max_carrier_or_acoustic_delay_s": 0.0010047272300281386,
+      "inherited_acoustic_bath_Ue_max_eV_formula": 4.236703001772751e-19,
+      "total_heat_W": 0.36899998824518954,
+      "input_partition_defect_W": 2.0131691792105298e-17,
+      "thermal_sink_W": [
+        0.3611794361091166,
+        0.006967207907666426,
+        0.0008533442338161022
+      ],
+      "steady_balance_W": -5.4096171986373065e-12,
+      "deposited_to_heat_2s_J": 0.7379999764246009,
+      "front_250nm_source_W": 0.3675301139346003,
+      "front_250nm_exits_W": [
+        0.0003611781503232785,
+        0.003912078005469893,
+        0.3632568673674654
+      ],
+      "front_250nm_steady_balance_W": -9.58865825628763e-09,
+      "front_250nm_transient_balance_J": -1.0318158993882776e-08,
+      "thermal_sink_2s_J": [
+        0.3018413223534893,
+        0.007379979983577857,
+        0.0009039005937708176
+      ],
+      "stored_heat_2s_J": 0.42787477350463343,
+      "transient_balance_J": -1.0870526701012295e-11,
+      "maximum_T_2s_K": 304.2185106166185,
+      "maximum_T_steady_K": 304.7047112563047
+    },
+    {
+      "E_cm_keV": 2.0,
+      "beam": "even_steady",
+      "mount": "weak_edge",
+      "incident_W": 0.536,
+      "short_heat_W": 0.5359926496196353,
+      "acoustic_thermalized_W": 7.3300116145543315e-06,
+      "outgoing_acoustic_W": 2.036875009874672e-08,
+      "max_carrier_or_acoustic_delay_s": 0.0010047272300238639,
+      "inherited_acoustic_bath_Ue_max_eV_formula": 1.727351191750454e-19,
+      "total_heat_W": 0.5359999796312499,
+      "input_partition_defect_W": 3.225897848093911e-17,
+      "thermal_sink_W": [
+        0.42481139195937695,
+        0.0990561782994914,
+        0.012132409380624121
+      ],
+      "steady_balance_W": -8.242517779422087e-12,
+      "deposited_to_heat_2s_J": 1.0719999592049863,
+      "front_250nm_source_W": 0.5333617804136603,
+      "front_250nm_exits_W": [
+        0.00042480987967327325,
+        0.0555969111638542,
+        0.4773401979749656
+      ],
+      "front_250nm_steady_balance_W": -1.3860483272232216e-07,
+      "front_250nm_transient_balance_J": -1.785180470115222e-08,
+      "thermal_sink_2s_J": [
+        0.03523645184973508,
+        0.014275466326015873,
+        0.0017484603640056644
+      ],
+      "stored_heat_2s_J": 1.020739580680968,
+      "transient_balance_J": -1.573852159708622e-11,
+      "maximum_T_2s_K": 305.781480441905,
+      "maximum_T_steady_K": 325.5182041764407
+    },
+    {
+      "E_cm_keV": 2.0,
+      "beam": "even_steady",
+      "mount": "nominal",
+      "incident_W": 0.536,
+      "short_heat_W": 0.5359926496196353,
+      "acoustic_thermalized_W": 7.3300116145543315e-06,
+      "outgoing_acoustic_W": 2.036875009874672e-08,
+      "max_carrier_or_acoustic_delay_s": 0.0010047272300238639,
+      "inherited_acoustic_bath_Ue_max_eV_formula": 1.727351191750454e-19,
+      "total_heat_W": 0.5359999796312499,
+      "input_partition_defect_W": 3.225897848093911e-17,
+      "thermal_sink_W": [
+        0.5133912151922289,
+        0.020141795564741164,
+        0.002466968882177576
+      ],
+      "steady_balance_W": -7.897682507973514e-12,
+      "deposited_to_heat_2s_J": 1.0719999592049863,
+      "front_250nm_source_W": 0.5333617804136603,
+      "front_250nm_exits_W": [
+        0.000513389387563806,
+        0.011306999546877198,
+        0.5215414185199462
+      ],
+      "front_250nm_steady_balance_W": -2.7040726879867805e-08,
+      "front_250nm_transient_balance_J": -1.7925421369469063e-08,
+      "thermal_sink_2s_J": [
+        0.22135668662589528,
+        0.012780230325613727,
+        0.0015653237279174234
+      ],
+      "stored_heat_2s_J": 0.8362977185412419,
+      "transient_balance_J": -1.568212226743526e-11,
+      "maximum_T_2s_K": 305.543940864281,
+      "maximum_T_steady_K": 308.2286121718573
+    },
+    {
+      "E_cm_keV": 2.0,
+      "beam": "even_steady",
+      "mount": "strong_edge",
+      "incident_W": 0.536,
+      "short_heat_W": 0.5359926496196353,
+      "acoustic_thermalized_W": 7.3300116145543315e-06,
+      "outgoing_acoustic_W": 2.036875009874672e-08,
+      "max_carrier_or_acoustic_delay_s": 0.0010047272300238639,
+      "inherited_acoustic_bath_Ue_max_eV_formula": 1.727351191750454e-19,
+      "total_heat_W": 0.5359999796312499,
+      "input_partition_defect_W": 3.225897848093911e-17,
+      "thermal_sink_W": [
+        0.5249254444355155,
+        0.009866130657823387,
+        0.0012084045457672811
+      ],
+      "steady_balance_W": -7.856271189154995e-12,
+      "deposited_to_heat_2s_J": 1.0719999592049863,
+      "front_250nm_source_W": 0.5333617804136603,
+      "front_250nm_exits_W": [
+        0.0005249235757079141,
+        0.005539884925163966,
+        0.5272969857011823
+      ],
+      "front_250nm_steady_balance_W": -1.3788393871116966e-08,
+      "front_250nm_transient_balance_J": -1.5803671482572668e-08,
+      "thermal_sink_2s_J": [
+        0.45328281597785297,
+        0.010517849432623598,
+        0.0012882271182978783
+      ],
+      "stored_heat_2s_J": 0.606911066691987,
+      "transient_balance_J": -1.577515895689885e-11,
+      "maximum_T_2s_K": 305.1627703956731,
+      "maximum_T_steady_K": 305.91282424343973
+    },
+    {
+      "E_cm_keV": 2.0,
+      "beam": "hot_steady",
+      "mount": "weak_edge",
+      "incident_W": 0.536,
+      "short_heat_W": 0.5359926496196353,
+      "acoustic_thermalized_W": 7.3302884792449214e-06,
+      "outgoing_acoustic_W": 2.0091885408156995e-08,
+      "max_carrier_or_acoustic_delay_s": 0.0010047272300238639,
+      "inherited_acoustic_bath_Ue_max_eV_formula": 7.553101875471191e-19,
+      "total_heat_W": 0.5359999799081144,
+      "input_partition_defect_W": 1.915475443098873e-16,
+      "thermal_sink_W": [
+        0.4245749683523139,
+        0.09926680464963494,
+        0.012158206914409062
+      ],
+      "steady_balance_W": -8.24351698014425e-12,
+      "deposited_to_heat_2s_J": 1.0719999597587253,
+      "front_250nm_source_W": 0.5333617804136602,
+      "front_250nm_exits_W": [
+        0.0004245734569079802,
+        0.05571512310581844,
+        0.4772222337711693
+      ],
+      "front_250nm_steady_balance_W": -1.4992023544824207e-07,
+      "front_250nm_transient_balance_J": -1.7102264271429135e-08,
+      "thermal_sink_2s_J": [
+        0.03370396023985729,
+        0.01429128297282224,
+        0.0017503975882896803
+      ],
+      "stored_heat_2s_J": 1.0222543189735407,
+      "transient_balance_J": -1.5784706874910626e-11,
+      "maximum_T_2s_K": 306.87817994099373,
+      "maximum_T_steady_K": 326.5633867896139
+    },
+    {
+      "E_cm_keV": 2.0,
+      "beam": "hot_steady",
+      "mount": "nominal",
+      "incident_W": 0.536,
+      "short_heat_W": 0.5359926496196353,
+      "acoustic_thermalized_W": 7.3302884792449214e-06,
+      "outgoing_acoustic_W": 2.0091885408156995e-08,
+      "max_carrier_or_acoustic_delay_s": 0.0010047272300238639,
+      "inherited_acoustic_bath_Ue_max_eV_formula": 7.553101875471191e-19,
+      "total_heat_W": 0.5359999799081144,
+      "input_partition_defect_W": 1.915475443098873e-16,
+      "thermal_sink_W": [
+        0.5131082832671781,
+        0.020393855449883102,
+        0.002497841198952499
+      ],
+      "steady_balance_W": -7.899236820207989e-12,
+      "deposited_to_heat_2s_J": 1.0719999597587253,
+      "front_250nm_source_W": 0.5333617804136602,
+      "front_250nm_exits_W": [
+        0.0005131064566471311,
+        0.011448465647835845,
+        0.5214002375349672
+      ],
+      "front_250nm_steady_balance_W": -2.922579001030101e-08,
+      "front_250nm_transient_balance_J": -1.6080504039450716e-08,
+      "thermal_sink_2s_J": [
+        0.2127213305844673,
+        0.012879864400771856,
+        0.0015775269181558305
+      ],
+      "stored_heat_2s_J": 0.8448212378709892,
+      "transient_balance_J": -1.5658807583918133e-11,
+      "maximum_T_2s_K": 306.5813866284603,
+      "maximum_T_steady_K": 309.1802139825331
+    },
+    {
+      "E_cm_keV": 2.0,
+      "beam": "hot_steady",
+      "mount": "strong_edge",
+      "incident_W": 0.536,
+      "short_heat_W": 0.5359926496196353,
+      "acoustic_thermalized_W": 7.3302884792449214e-06,
+      "outgoing_acoustic_W": 2.0091885408156995e-08,
+      "max_carrier_or_acoustic_delay_s": 0.0010047272300238639,
+      "inherited_acoustic_bath_Ue_max_eV_formula": 7.553101875471191e-19,
+      "total_heat_W": 0.5359999799081144,
+      "input_partition_defect_W": 1.915475443098873e-16,
+      "thermal_sink_W": [
+        0.5246400457214566,
+        0.010120388166812211,
+        0.001239546027703153
+      ],
+      "steady_balance_W": -7.857492434482083e-12,
+      "deposited_to_heat_2s_J": 1.0719999597587253,
+      "front_250nm_source_W": 0.5333617804136602,
+      "front_250nm_exits_W": [
+        0.000524638178016574,
+        0.005682584420626527,
+        0.5271545721135565
+      ],
+      "front_250nm_steady_balance_W": -1.4298539463553084e-08,
+      "front_250nm_transient_balance_J": -1.630324897305968e-08,
+      "thermal_sink_2s_J": [
+        0.438552138024014,
+        0.01072238665200146,
+        0.0013132788548141405
+      ],
+      "stored_heat_2s_J": 0.6214121562436576,
+      "transient_balance_J": -1.576194730290581e-11,
+      "maximum_T_2s_K": 306.12520070216334,
+      "maximum_T_steady_K": 306.8339422096964
+    },
+    {
+      "E_cm_keV": 2.0,
+      "beam": "hot_bursts",
+      "mount": "weak_edge",
+      "incident_W": 0.536,
+      "short_heat_W": 0.5359926496196353,
+      "acoustic_thermalized_W": 7.3302884792449214e-06,
+      "outgoing_acoustic_W": 2.0091885408156995e-08,
+      "max_carrier_or_acoustic_delay_s": 0.0010047272300238639,
+      "inherited_acoustic_bath_Ue_max_eV_formula": 7.553101875471191e-19,
+      "total_heat_W": 0.5359999799081144,
+      "input_partition_defect_W": 1.915475443098873e-16,
+      "thermal_sink_W": [
+        0.4245749683523139,
+        0.09926680464963494,
+        0.012158206914409062
+      ],
+      "steady_balance_W": -8.24351698014425e-12,
+      "deposited_to_heat_2s_J": 1.071999959743353,
+      "front_250nm_source_W": 0.5333617804136602,
+      "front_250nm_exits_W": [
+        0.0004245734569079802,
+        0.05571512310581844,
+        0.4772222337711693
+      ],
+      "front_250nm_steady_balance_W": -1.4992023544824207e-07,
+      "front_250nm_transient_balance_J": -1.775177937979322e-08,
+      "thermal_sink_2s_J": [
+        0.03369484961862894,
+        0.014287843765990309,
+        0.0017499763539361457
+      ],
+      "stored_heat_2s_J": 1.0222672900205567,
+      "transient_balance_J": -1.5759171745344247e-11,
+      "maximum_T_2s_K": 306.88045185506144,
+      "maximum_T_steady_K": 326.5633867896139
+    },
+    {
+      "E_cm_keV": 2.0,
+      "beam": "hot_bursts",
+      "mount": "nominal",
+      "incident_W": 0.536,
+      "short_heat_W": 0.5359926496196353,
+      "acoustic_thermalized_W": 7.3302884792449214e-06,
+      "outgoing_acoustic_W": 2.0091885408156995e-08,
+      "max_carrier_or_acoustic_delay_s": 0.0010047272300238639,
+      "inherited_acoustic_bath_Ue_max_eV_formula": 7.553101875471191e-19,
+      "total_heat_W": 0.5359999799081144,
+      "input_partition_defect_W": 1.915475443098873e-16,
+      "thermal_sink_W": [
+        0.5131082832671781,
+        0.020393855449883102,
+        0.002497841198952499
+      ],
+      "steady_balance_W": -7.899236820207989e-12,
+      "deposited_to_heat_2s_J": 1.071999959743353,
+      "front_250nm_source_W": 0.5333617804136602,
+      "front_250nm_exits_W": [
+        0.0005131064566471311,
+        0.011448465647835845,
+        0.5214002375349672
+      ],
+      "front_250nm_steady_balance_W": -2.922579001030101e-08,
+      "front_250nm_transient_balance_J": -1.862307907884997e-08,
+      "thermal_sink_2s_J": [
+        0.21266549974780982,
+        0.012876833185200167,
+        0.0015771556546075294
+      ],
+      "stored_heat_2s_J": 0.8448804711713662,
+      "transient_balance_J": -1.563082996369758e-11,
+      "maximum_T_2s_K": 306.5837478842872,
+      "maximum_T_steady_K": 309.1802139825331
+    },
+    {
+      "E_cm_keV": 2.0,
+      "beam": "hot_bursts",
+      "mount": "strong_edge",
+      "incident_W": 0.536,
+      "short_heat_W": 0.5359926496196353,
+      "acoustic_thermalized_W": 7.3302884792449214e-06,
+      "outgoing_acoustic_W": 2.0091885408156995e-08,
+      "max_carrier_or_acoustic_delay_s": 0.0010047272300238639,
+      "inherited_acoustic_bath_Ue_max_eV_formula": 7.553101875471191e-19,
+      "total_heat_W": 0.5359999799081144,
+      "input_partition_defect_W": 1.915475443098873e-16,
+      "thermal_sink_W": [
+        0.5246400457214566,
+        0.010120388166812211,
+        0.001239546027703153
+      ],
+      "steady_balance_W": -7.857492434482083e-12,
+      "deposited_to_heat_2s_J": 1.071999959743353,
+      "front_250nm_source_W": 0.5333617804136602,
+      "front_250nm_exits_W": [
+        0.000524638178016574,
+        0.005682584420626527,
+        0.5271545721135565
+      ],
+      "front_250nm_steady_balance_W": -1.4298539463553084e-08,
+      "front_250nm_transient_balance_J": -1.6604948527287888e-08,
+      "thermal_sink_2s_J": [
+        0.43844703054560424,
+        0.010719970187877044,
+        0.0013129828860768613
+      ],
+      "stored_heat_2s_J": 0.6215199761395827,
+      "transient_balance_J": -1.5787815499379576e-11,
+      "maximum_T_2s_K": 306.12769817434156,
+      "maximum_T_steady_K": 306.8339422096964
+    },
+    {
+      "E_cm_keV": 2.5,
+      "beam": "even_steady",
+      "mount": "weak_edge",
+      "incident_W": 0.69,
+      "short_heat_W": 0.6899890284183088,
+      "acoustic_thermalized_W": 1.0941593201181494e-05,
+      "outgoing_acoustic_W": 2.9988490039349605e-08,
+      "max_carrier_or_acoustic_delay_s": 0.0010047272300202142,
+      "inherited_acoustic_bath_Ue_max_eV_formula": 3.322247345166842e-19,
+      "total_heat_W": 0.6899999700115098,
+      "input_partition_defect_W": 9.622997715201767e-17,
+      "thermal_sink_W": [
+        0.5468654087064132,
+        0.1275163478764444,
+        0.015618213439262538
+      ],
+      "steady_balance_W": -1.0610290424040159e-11,
+      "deposited_to_heat_2s_J": 1.3799999399626548,
+      "front_250nm_source_W": 0.6858939842569602,
+      "front_250nm_exits_W": [
+        0.0005468634619200203,
+        0.07157064982875044,
+        0.6137766520541305
+      ],
+      "front_250nm_steady_balance_W": -1.8108784072268236e-07,
+      "front_250nm_transient_balance_J": -2.3322396236480358e-08,
+      "thermal_sink_2s_J": [
+        0.04536035881955782,
+        0.018376998941872967,
+        0.002250816437476509
+      ],
+      "stored_heat_2s_J": 1.3140117657840262,
+      "transient_balance_J": -2.0278667633988334e-11,
+      "maximum_T_2s_K": 307.4425767638641,
+      "maximum_T_steady_K": 332.8499261864207
+    },
+    {
+      "E_cm_keV": 2.5,
+      "beam": "even_steady",
+      "mount": "nominal",
+      "incident_W": 0.69,
+      "short_heat_W": 0.6899890284183088,
+      "acoustic_thermalized_W": 1.0941593201181494e-05,
+      "outgoing_acoustic_W": 2.9988490039349605e-08,
+      "max_carrier_or_acoustic_delay_s": 0.0010047272300202142,
+      "inherited_acoustic_bath_Ue_max_eV_formula": 3.322247345166842e-19,
+      "total_heat_W": 0.6899999700115098,
+      "input_partition_defect_W": 9.622997715201767e-17,
+      "thermal_sink_W": [
+        0.6608954044925558,
+        0.025928803418890735,
+        0.0031757621102299675
+      ],
+      "steady_balance_W": -1.0166645303399946e-11,
+      "deposited_to_heat_2s_J": 1.3799999399626548,
+      "front_250nm_source_W": 0.6858939842569602,
+      "front_250nm_exits_W": [
+        0.0006608930517602167,
+        0.014555651934969958,
+        0.6706774792551953
+      ],
+      "front_250nm_steady_balance_W": -3.998496522772399e-08,
+      "front_250nm_transient_balance_J": -2.116584107980657e-08,
+      "thermal_sink_2s_J": [
+        0.28495544160784003,
+        0.01645216148912866,
+        0.002015062177936582
+      ],
+      "stored_heat_2s_J": 1.076577274707867,
+      "transient_balance_J": -2.011746325081276e-11,
+      "maximum_T_2s_K": 307.1367888654453,
+      "maximum_T_steady_K": 310.59280225610036
+    },
+    {
+      "E_cm_keV": 2.5,
+      "beam": "even_steady",
+      "mount": "strong_edge",
+      "incident_W": 0.69,
+      "short_heat_W": 0.6899890284183088,
+      "acoustic_thermalized_W": 1.0941593201181494e-05,
+      "outgoing_acoustic_W": 2.9988490039349605e-08,
+      "max_carrier_or_acoustic_delay_s": 0.0010047272300202142,
+      "inherited_acoustic_bath_Ue_max_eV_formula": 3.322247345166842e-19,
+      "total_heat_W": 0.6899999700115098,
+      "input_partition_defect_W": 9.622997715201767e-17,
+      "thermal_sink_W": [
+        0.6757435726634565,
+        0.012700802016495783,
+        0.0015555953416706203
+      ],
+      "steady_balance_W": -1.0113132553613013e-11,
+      "deposited_to_heat_2s_J": 1.3799999399626548,
+      "front_250nm_source_W": 0.6858939842569602,
+      "front_250nm_exits_W": [
+        0.000675741167015289,
+        0.0071315678494294835,
+        0.6780866933332996
+      ],
+      "front_250nm_steady_balance_W": -1.8092784159762232e-08,
+      "front_250nm_transient_balance_J": -1.8610958774090136e-08,
+      "thermal_sink_2s_J": [
+        0.5835170663731684,
+        0.013539768101854907,
+        0.0016583519811733253
+      ],
+      "stored_heat_2s_J": 0.7812847535267626,
+      "transient_balance_J": -2.0304424808159638e-11,
+      "maximum_T_2s_K": 306.64610299096705,
+      "maximum_T_steady_K": 307.6116573626901
+    },
+    {
+      "E_cm_keV": 2.5,
+      "beam": "hot_steady",
+      "mount": "weak_edge",
+      "incident_W": 0.69,
+      "short_heat_W": 0.6899890284183088,
+      "acoustic_thermalized_W": 1.0941979148108433e-05,
+      "outgoing_acoustic_W": 2.960254311241137e-08,
+      "max_carrier_or_acoustic_delay_s": 0.0010047272300202142,
+      "inherited_acoustic_bath_Ue_max_eV_formula": 1.4527024251582546e-18,
+      "total_heat_W": 0.689999970397457,
+      "input_partition_defect_W": -1.3994913935574005e-16,
+      "thermal_sink_W": [
+        0.5465610575311705,
+        0.12778748993463632,
+        0.015651422942261364
+      ],
+      "steady_balance_W": -1.0611178602459859e-11,
+      "deposited_to_heat_2s_J": 1.3799999407345356,
+      "front_250nm_source_W": 0.6858939842569604,
+      "front_250nm_exits_W": [
+        0.0005465591118283949,
+        0.0717228256093458,
+        0.6136247727564184
+      ],
+      "front_250nm_steady_balance_W": -1.7322063217140027e-07,
+      "front_250nm_transient_balance_J": -2.494449735657156e-08,
+      "thermal_sink_2s_J": [
+        0.043387562334340345,
+        0.018397359919032637,
+        0.0022533102517396015
+      ],
+      "stored_heat_2s_J": 1.3159617082497124,
+      "transient_balance_J": -2.0289325775024736e-11,
+      "maximum_T_2s_K": 308.854370380044,
+      "maximum_T_steady_K": 334.19540140603004
+    },
+    {
+      "E_cm_keV": 2.5,
+      "beam": "hot_steady",
+      "mount": "nominal",
+      "incident_W": 0.69,
+      "short_heat_W": 0.6899890284183088,
+      "acoustic_thermalized_W": 1.0941979148108433e-05,
+      "outgoing_acoustic_W": 2.960254311241137e-08,
+      "max_carrier_or_acoustic_delay_s": 0.0010047272300202142,
+      "inherited_acoustic_bath_Ue_max_eV_formula": 1.4527024251582546e-18,
+      "total_heat_W": 0.689999970397457,
+      "input_partition_defect_W": -1.3994913935574005e-16,
+      "thermal_sink_W": [
+        0.6605311825571732,
+        0.026253283403349294,
+        0.0032155044471023565
+      ],
+      "steady_balance_W": -1.0167977571029496e-11,
+      "deposited_to_heat_2s_J": 1.3799999407345356,
+      "front_250nm_source_W": 0.6858939842569604,
+      "front_250nm_exits_W": [
+        0.000660528831122895,
+        0.0147377630956357,
+        0.670495727606527
+      ],
+      "front_250nm_steady_balance_W": -3.5276325194288916e-08,
+      "front_250nm_transient_balance_J": -2.269785581709982e-08,
+      "thermal_sink_2s_J": [
+        0.27383903491146255,
+        0.016580421738036418,
+        0.0020307715044392137
+      ],
+      "stored_heat_2s_J": 1.087549712600722,
+      "transient_balance_J": -2.0124790722775288e-11,
+      "maximum_T_2s_K": 308.4723043470864,
+      "maximum_T_steady_K": 311.8178096498339
+    },
+    {
+      "E_cm_keV": 2.5,
+      "beam": "hot_steady",
+      "mount": "strong_edge",
+      "incident_W": 0.69,
+      "short_heat_W": 0.6899890284183088,
+      "acoustic_thermalized_W": 1.0941979148108433e-05,
+      "outgoing_acoustic_W": 2.960254311241137e-08,
+      "max_carrier_or_acoustic_delay_s": 0.0010047272300202142,
+      "inherited_acoustic_bath_Ue_max_eV_formula": 1.4527024251582546e-18,
+      "total_heat_W": 0.689999970397457,
+      "input_partition_defect_W": -1.3994913935574005e-16,
+      "thermal_sink_W": [
+        0.6753761751996178,
+        0.013028111029719838,
+        0.0015956841782336065
+      ],
+      "steady_balance_W": -1.0114242776637639e-11,
+      "deposited_to_heat_2s_J": 1.3799999407345356,
+      "front_250nm_source_W": 0.6858939842569604,
+      "front_250nm_exits_W": [
+        0.0006753737708678068,
+        0.007315266774323271,
+        0.6779033623855896
+      ],
+      "front_250nm_steady_balance_W": -1.8673820267878227e-08,
+      "front_250nm_transient_balance_J": -1.759429602010698e-08,
+      "thermal_sink_2s_J": [
+        0.5645540721924749,
+        0.01380307153936195,
+        0.0016906014092251788
+      ],
+      "stored_heat_2s_J": 0.7999521956137945,
+      "transient_balance_J": -2.0320967131226553e-11,
+      "maximum_T_2s_K": 307.88505006081306,
+      "maximum_T_steady_K": 308.79742391939476
+    },
+    {
+      "E_cm_keV": 2.5,
+      "beam": "hot_bursts",
+      "mount": "weak_edge",
+      "incident_W": 0.69,
+      "short_heat_W": 0.6899890284183088,
+      "acoustic_thermalized_W": 1.0941979148108433e-05,
+      "outgoing_acoustic_W": 2.960254311241137e-08,
+      "max_carrier_or_acoustic_delay_s": 0.0010047272300202142,
+      "inherited_acoustic_bath_Ue_max_eV_formula": 1.4527024251582546e-18,
+      "total_heat_W": 0.689999970397457,
+      "input_partition_defect_W": -1.3994913935574005e-16,
+      "thermal_sink_W": [
+        0.5465610575311705,
+        0.12778748993463632,
+        0.015651422942261364
+      ],
+      "steady_balance_W": -1.0611178602459859e-11,
+      "deposited_to_heat_2s_J": 1.3799999407184032,
+      "front_250nm_source_W": 0.6858939842569604,
+      "front_250nm_exits_W": [
+        0.0005465591118283949,
+        0.0717228256093458,
+        0.6136247727564184
+      ],
+      "front_250nm_steady_balance_W": -1.7322063217140027e-07,
+      "front_250nm_transient_balance_J": -2.4886156246850533e-08,
+      "thermal_sink_2s_J": [
+        0.04337583410891524,
+        0.018392932581906885,
+        0.0022527679911012667
+      ],
+      "stored_heat_2s_J": 1.3159784060567672,
+      "transient_balance_J": -2.028732737358041e-11,
+      "maximum_T_2s_K": 308.8572950720281,
+      "maximum_T_steady_K": 334.19540140603004
+    },
+    {
+      "E_cm_keV": 2.5,
+      "beam": "hot_bursts",
+      "mount": "nominal",
+      "incident_W": 0.69,
+      "short_heat_W": 0.6899890284183088,
+      "acoustic_thermalized_W": 1.0941979148108433e-05,
+      "outgoing_acoustic_W": 2.960254311241137e-08,
+      "max_carrier_or_acoustic_delay_s": 0.0010047272300202142,
+      "inherited_acoustic_bath_Ue_max_eV_formula": 1.4527024251582546e-18,
+      "total_heat_W": 0.689999970397457,
+      "input_partition_defect_W": -1.3994913935574005e-16,
+      "thermal_sink_W": [
+        0.6605311825571732,
+        0.026253283403349294,
+        0.0032155044471023565
+      ],
+      "steady_balance_W": -1.0167977571029496e-11,
+      "deposited_to_heat_2s_J": 1.3799999407184032,
+      "front_250nm_source_W": 0.6858939842569604,
+      "front_250nm_exits_W": [
+        0.000660528831122895,
+        0.0147377630956357,
+        0.670495727606527
+      ],
+      "front_250nm_steady_balance_W": -3.5276325194288916e-08,
+      "front_250nm_transient_balance_J": -2.294277146042134e-08,
+      "thermal_sink_2s_J": [
+        0.2737671631238178,
+        0.01657651961356489,
+        0.002030293571892699
+      ],
+      "stored_heat_2s_J": 1.0876259644292507,
+      "transient_balance_J": -2.0123014365935887e-11,
+      "maximum_T_2s_K": 308.47534404992007,
+      "maximum_T_steady_K": 311.8178096498339
+    },
+    {
+      "E_cm_keV": 2.5,
+      "beam": "hot_bursts",
+      "mount": "strong_edge",
+      "incident_W": 0.69,
+      "short_heat_W": 0.6899890284183088,
+      "acoustic_thermalized_W": 1.0941979148108433e-05,
+      "outgoing_acoustic_W": 2.960254311241137e-08,
+      "max_carrier_or_acoustic_delay_s": 0.0010047272300202142,
+      "inherited_acoustic_bath_Ue_max_eV_formula": 1.4527024251582546e-18,
+      "total_heat_W": 0.689999970397457,
+      "input_partition_defect_W": -1.3994913935574005e-16,
+      "thermal_sink_W": [
+        0.6753761751996178,
+        0.013028111029719838,
+        0.0015956841782336065
+      ],
+      "steady_balance_W": -1.0114242776637639e-11,
+      "deposited_to_heat_2s_J": 1.3799999407184032,
+      "front_250nm_source_W": 0.6858939842569604,
+      "front_250nm_exits_W": [
+        0.0006753737708678068,
+        0.007315266774323271,
+        0.6779033623855896
+      ],
+      "front_250nm_steady_balance_W": -1.8673820267878227e-08,
+      "front_250nm_transient_balance_J": -1.7317018263796058e-08,
+      "thermal_sink_2s_J": [
+        0.5644187659209309,
+        0.013799960792710248,
+        0.0016902204047032428
+      ],
+      "stored_heat_2s_J": 0.8000909936203808,
+      "transient_balance_J": -2.0322077354251178e-11,
+      "maximum_T_2s_K": 307.8882651167848,
+      "maximum_T_steady_K": 308.79742391939476
+    }
+  ]
+}

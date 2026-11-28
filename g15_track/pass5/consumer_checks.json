@@ -1,0 +1,46 @@
+{
+  "checks": [
+    {
+      "check": "true_relative_kernel_zero_drift_matches_original",
+      "maximum_relative_error": 1.354472090042691e-14
+    },
+    {
+      "check": "connected_difference_matches_accepted_Kernel",
+      "relative_error": 4.479237763662095e-13
+    }
+  ],
+  "case_rows": 648,
+  "meeting_sha256": "812dc15d8e486a631df24407d0917f1b79848d6aaacf4690a6cd45a2afd35258",
+  "medium_sha256": "783a25af4a2d0ed617111fd09e04f959d288b2cf8fe01cb4355259dff17e08ec",
+  "kernel": "same 8x8 BH/Maxwell quadrature, stable expm1 connected differences, original incoming speed flux denominator",
+  "fixed_sheet_once": true,
+  "Pass4_native_addition_replaced_not_added": true,
+  "nuclear_contact": "unknown",
+  "phase_controls": "matched one-parent subtraction for frozen/shuffled/strain_off; phase-only at the same transported population/work, not all-force removal",
+  "below_0p5keV": "accepted conditional BH continuation, not new measured cross section",
+  "native_projected_meetings_sha256": "2e1d34a54f2540b85cd6640dff828cfc25ed1235293f7127c446a8053c432157",
+  "native_projected_source_alias_sha256": "d645d75065aa67b743ea711a390e20ec0faa50fffb39ffb71b871794e91129ba",
+  "native_projected_checks": {
+    "checks": [
+      {
+        "check": "true_relative_kernel_zero_drift_matches_original",
+        "maximum_relative_error": 1.354472090042691e-14
+      },
+      {
+        "check": "connected_difference_matches_accepted_Kernel",
+        "relative_error": 4.479237763662095e-13
+      }
+    ],
+    "case_rows": 432,
+    "meeting_sha256": "2e1d34a54f2540b85cd6640dff828cfc25ed1235293f7127c446a8053c432157",
+    "medium_sha256": "783a25af4a2d0ed617111fd09e04f959d288b2cf8fe01cb4355259dff17e08ec",
+    "kernel": "same 8x8 BH/Maxwell quadrature, stable expm1 connected differences, original incoming speed flux denominator",
+    "fixed_sheet_once": true,
+    "Pass4_native_addition_replaced_not_added": true,
+    "nuclear_contact": "unknown",
+    "phase_controls": "matched one-parent subtraction for frozen/shuffled/strain_off; phase-only at the same transported population/work, not all-force removal",
+    "below_0p5keV": "accepted conditional BH continuation, not new measured cross section"
+  },
+  "native_source": "frozen incoming onsite states and original pressure; source feedback is a separate tagged-map sensitivity",
+  "new_native_input_commit": "f3114eb77af3343d6203a00efbd59e588cdbeb7f"
+}

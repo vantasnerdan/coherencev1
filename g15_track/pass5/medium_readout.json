@@ -1,0 +1,49 @@
+{
+  "nominal_hot_Cox_2p5keV": {
+    "two_seconds": {
+      "surface_T_K": 308.47467693519485,
+      "delta_T_0_to_250nm_K": -7.72708456224791e-05,
+      "front_flux_into_foil_W_m2": -47.56330378188729,
+      "passing_flux_at_250nm_W_m2": 29536.511283882683,
+      "peak_profile_mean_Ue_eV_formula": 1.8826859100081223e-11,
+      "peak_profile_abs_electron_depth_gradient_eV_formula_m": 0.00020364294630337333
+    },
+    "mean_steady": {
+      "surface_T_K": 311.8173712736389,
+      "delta_T_0_to_250nm_K": -7.809713434880905e-05,
+      "front_flux_into_foil_W_m2": -66.32383303444199,
+      "passing_flux_at_250nm_W_m2": 29858.916365905294,
+      "peak_profile_mean_Ue_eV_formula": 3.7500992549886705e-12,
+      "peak_profile_abs_electron_depth_gradient_eV_formula_m": 4.056339019902917e-05
+    }
+  },
+  "tagged_parent_peaks": [
+    {
+      "species": 1,
+      "allocation": "onsite",
+      "peak_eV_formula": 0.02721452885293119
+    },
+    {
+      "species": 2,
+      "allocation": "onsite",
+      "peak_eV_formula": 0.029349550895898326
+    },
+    {
+      "species": 1,
+      "allocation": "coupling",
+      "peak_eV_formula": 0.027214017059722585
+    },
+    {
+      "species": 2,
+      "allocation": "coupling",
+      "peak_eV_formula": 0.029349578387030773
+    }
+  ],
+  "maximum_observed_refraction_relative_dq_5tau": 2.059616369254272e-06,
+  "maximum_ray_integration_frequency_fraction_residual": 4.1207953832913326e-14,
+  "local_1D_zero_normal_q_barrier_candidates": 0,
+  "observed_normal_group_reversals": 0,
+  "ray_scope": "genuine retained path q marks, nominal two-second and mean static fields; fixed linear strain=0, not a statement about moving acoustic strain or conditional cloud; 1D slice criterion is heuristic outside locally axial propagation and does not establish trapping",
+  "frozen_control": "unbridged frozen G3 q curvature with 300-K equilibrium covariance, no spatial gradients or carrier work; differences in speed include native bridge, whereas force and scan span isolate spatial variation",
+  "limitations": "5-nm endpoint histogram and 17\u00d717 xy finite volumes; no subcell steady electronic structure or inferred temperature; dynamic strain is a separate actuator. The native q projection is not measured and G16 low-U curvature sign is mesh-sensitive (16\u00b3 retained here). No crossing probability inferred."
+}

@@ -1,5 +1,7 @@
 # g15_track pass 4: travelling fields on the whole foil (lead's summary)
 
+Continued in `../pass5/LEAD.md`, which gives sound above 250 kHz its wave shape and builds the meetings.
+
 Passes 2 and 3 (`../pass2/LEAD.md`, `../pass3/LEAD.md`) had narrowed to one patch around one impact, with every carrier except sound held as a stock in one place. This pass (Marvin) replaces that with one model of the whole foil in space and time, in which each carrier travels and each loss is the source of the next field where and when it happens. It takes the hot-electron stiffening and pressure of `../../g16_hot_electrons/LEAD.md` as its electron-to-deuterium and electron-to-sound coupling, carried two ways (all in the site stiffness, or all in the neighbour coupling).
 
 `README.md` is Marvin's technical page, `inputs_ledger.md` the inputs, `run.py` the script. Pictures: `maps_*.png` (temperature, strain and deuterium stiffness over the foil at 0.01, 0.5 and 2 s), `first_travel.png` (one impact's sound arriving 5 mm away and coming back from the edge), `carriers_*.png`, `acoustic_*.png`, `medium_*.png`, `yield_comparison.png`.

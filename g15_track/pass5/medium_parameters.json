@@ -1,0 +1,232 @@
+{
+  "baseline_commit": "f6010129f11ba8010815b78a67b3b6bed1db7194",
+  "consumed_sha256": {
+    "manifest_core.json": "47f2c543f484419248afa5989d9cb4edbd4ccce9384c1c44d5f9b8e30a495883",
+    "manifest_evidence.json": "fad2f67b94f706dc14a77bfb0d36e561b556d3a8dd9a77c4e3c383d1c1fbcdf6",
+    "sources.py": "1a1701fa0fd42b1f4c1ca2ef38f9af9e2db867f60a150aaff0004b4915216561",
+    "fields.py": "f9a487d111258013cc3b0f7e3844d132314985f160ee3b4b5355be81219658ac",
+    "run.py": "17c4c1d7dbf10009966a3c56ae069751a9a324f063a3b2e3f2c03c135f1cae9e",
+    "carriers.py": "6bdd3fb888a444d35b83d43a8c5f09bcab426eee96fe1a6fffdad1ccf93f1e03",
+    "native.py": "5247cfa7d9fcc1cc4abbb903006f4a7df6136d70c0e344677d42ca3d632f8369",
+    "acoustic.py": "68fb6d82078609476e78c4998a8caf33b5012880379b788b27fd7603178394d2",
+    "launch.py": "b1174ba05553627580e7b8150cbab202aea7039ec9a8ec52c86bbef51719fb14",
+    "response.py": "dbb3a1d9c1e284c1efb720864d11d6a07d597ce7890ba906660f1c948f6af4f6",
+    "retarded.py": "9a92b8b4b6e7f2a8dbda413a3b80d08981d3f6fc4d5d767eddde1abe903bf66f",
+    "calendar.npz": "f3361b3b33271597b20315ae80ff5c9370c8cf1c4a03cd672ab0098470734ed1",
+    "native_summary.json": "e06bc1deb5940f3d15639b19306b3198d56d75014c4d01f2b526ef316243cbc3",
+    "paths_nominal_retained_onsite.npz": "cc71cb0e0147bf78e5387c8280b2904e929b1849cda2d17320356d48f9f410cc",
+    "frozen/pass1_inputs.json": "c5e1f885a78cbedc2c75a68ff5d4b86cdf0957ab796e72105f854b4f05341f88",
+    "frozen/tracks.json": "688122b117a349eb9c220496fcfbde75419e2a249b4100af304720ad74d2e196",
+    "frozen/g16_response.csv": "33be6cc9fc683767bb0f47f5c60a15213ea9bdeb0877a6b87055d03f7441e4f8",
+    "frozen/guided_branches.csv": "68960bdffe4211863cdbf40fbda7aa286c121f8c16c996b33557ef62acb8b36b",
+    "source_E0.25_nominal_retained_sp0.npz": "5aa9918df226fedbc3be67156d3b3612fcdaa1a34b78ac1a9fc029c40487b439",
+    "source_E0.25_nominal_retained_sp1.npz": "25844f06adeb4d333df5936484c3994c8a0b6976548e6e472502683ce51a1bd4",
+    "source_E0.5_nominal_retained_sp0.npz": "3dbea85eb0d2157713aa4138f8813d167b0a6004b143fe2afc65ba51bee50333",
+    "source_E0.5_nominal_retained_sp1.npz": "248d1140ed7c305ca8fa0517fb5fc95b2f0a7e629a8ef32997578f0912518936",
+    "source_E1_nominal_retained_sp0.npz": "bc3237364011cecc9ab25581692b976fd154a70ebcf20b6df2e0899ff41299fb",
+    "source_E1_nominal_retained_sp1.npz": "0c6f5727febd51f9f20d2633c8fccc5b15a13d11effd43ed686267149c1a84ee",
+    "source_E1.5_nominal_retained_sp0.npz": "109f2d6a825df2a5f9b52aa0eac7f4190484a39d0e6abbfc579e26d9399178b2",
+    "source_E1.5_nominal_retained_sp1.npz": "1e928143d64c900a8eb5d7542104917141432a7667718f0664c5cff00ef313e7",
+    "source_E2_nominal_retained_sp0.npz": "4e918b1323b001470a26d79d276b40f0df4e240c6b3449d4b9b67d80cecc04af",
+    "source_E2_nominal_retained_sp1.npz": "ed786eeba66bfeec222804de6820a4026676da75ce53a31be48c541c5f2d1ad3",
+    "source_E2.5_nominal_retained_sp0.npz": "1ebf48550270617eb9161942ca2ac3c5aaa60fdc72a602fed64c9c6ac9e9709e",
+    "source_E2.5_nominal_retained_sp1.npz": "6216c2e95752d1a688c7391d156484a34247a98ccd13fcf4ad034afb1b1845b2",
+    "native_E0.25_nominal_retained_onsite_sp0_m16.npz": "64e4d33e01be2c5430442f7369e32314e185a3374e222455c0f06324d48d893a",
+    "native_E0.25_nominal_retained_onsite_sp1_m16.npz": "14ceeb7508ed03cd6b1b7f390a624bf4f0dc74a2203c604016bae0b0334162a1",
+    "native_E0.25_nominal_retained_coupling_sp0_m16.npz": "38352044af010805a6cc592d1bebbed5f7b0d5824ca3f35b735222ff71ee40ff",
+    "native_E0.25_nominal_retained_coupling_sp1_m16.npz": "774b1272e67997bcf2e4549adecd959ede6e9e42fabe42a6037e7cb01a551691",
+    "native_E0.5_nominal_retained_onsite_sp0_m16.npz": "8f60802a96593fc124665cb059ae9c723dfb260c5ad6ae8dccf8a1484de5d356",
+    "native_E0.5_nominal_retained_onsite_sp1_m16.npz": "3b5b625d54294338e5cd5260f4d42ac9761441bbb7b7def2e4506c9dee9864c3",
+    "native_E0.5_nominal_retained_coupling_sp0_m16.npz": "3a3230fcf0da00b3cfdabfd9d1100e312de4c4c62eeeca6df9bc1359c24869d8",
+    "native_E0.5_nominal_retained_coupling_sp1_m16.npz": "4ad0f4533f33bf7cf9ad706bf5861dd2205bed886e76f3768abaffe73876d932",
+    "native_E1_nominal_retained_onsite_sp0_m16.npz": "270226b438479da781ecd3fd6ae6216dc4f642f83e01d021ec0866348e305265",
+    "native_E1_nominal_retained_onsite_sp1_m16.npz": "c988379feadbaa9631f0bbd3f4db850be9e482cd6672a5248c920782a13be0a9",
+    "native_E1_nominal_retained_coupling_sp0_m16.npz": "3b5850de6fe58854be06f974712a37f5d7113b5649d149572abd546aeee492a8",
+    "native_E1_nominal_retained_coupling_sp1_m16.npz": "93783a2e2cffd84cd6bc4778bbcf450148bf512c1f565ac647143f9edd79f80f",
+    "native_E1.5_nominal_retained_onsite_sp0_m16.npz": "4529d8fe726659cabea231da10a203858ff3f6a637067955e935680b714612e4",
+    "native_E1.5_nominal_retained_onsite_sp1_m16.npz": "47692b4c9400a5a8d84230dd4f931c704f101f5783d77406e5a30bf427bc7e3f",
+    "native_E1.5_nominal_retained_coupling_sp0_m16.npz": "7bede19102ef1a71cf4f1882b00e3574894931942880728fe775d1589e06bb15",
+    "native_E1.5_nominal_retained_coupling_sp1_m16.npz": "6b6e82691e30197cb483827beddbe3ebb4803831f8a8e821ad2b2e7d1391ba6f",
+    "native_E2_nominal_retained_onsite_sp0_m16.npz": "d462a653375bad8b831df3ca48b3f81c1a84db8f4dad3486a86a800f101ac49c",
+    "native_E2_nominal_retained_onsite_sp1_m16.npz": "6adc231d735d287de841e2ba1a49dfd569e4b226f8f19edbdff8eeaccccd2662",
+    "native_E2_nominal_retained_coupling_sp0_m16.npz": "43a921d330a64ffef99ca1926e971488813c582e59fd793f05053a5ed8878f27",
+    "native_E2_nominal_retained_coupling_sp1_m16.npz": "04c6279b32a068f1966b9970f9d5d4826e7bbbf730dda6be6aa91fa74a6e6a0d",
+    "native_E2.5_nominal_retained_onsite_sp0_m16.npz": "184e29223c6f3900ad28dc1e14dc9308ffb0d24dcd323e42ef0555694fe5caf1",
+    "native_E2.5_nominal_retained_onsite_sp1_m16.npz": "1f1fc9c3abe81df35aefc5e5f4f118f6a6f88e71c3d4decfc7729c03ad40fcaa",
+    "native_E2.5_nominal_retained_coupling_sp0_m16.npz": "b096c08171c91c43b3f53a7c94ad236672cb8ae1967a873d7f21498fd77193bb",
+    "native_E2.5_nominal_retained_coupling_sp1_m16.npz": "38475bdb06a8c5cb6da4097123e0993d80582e95b4c6273b423d67373ba11321"
+  },
+  "geometry": {
+    "foil_side_m": 0.02126944621086619,
+    "thickness_m": 0.00025,
+    "beam_area_m2": 0.0001,
+    "n_lateral": 17,
+    "front_resolved_cell_depth_m": 5e-09,
+    "front_resolved_depth_m": 2.5e-07
+  },
+  "transport": {
+    "k_total_W_m_K": 71.8,
+    "k_e_Pd_reference_W_m_K": 67.77777777777779,
+    "k_e_note": "pure Pd, 300 K, Wiedemann\u2013Franz with inherited 10.80 \u00b5\u03a9 cm; not measured loaded PdD and not added to total",
+    "rho_kg_m3": 12007.0,
+    "cv_J_m3_K": 2921628.101503759,
+    "bath_K": 300.0,
+    "edge_mount_W_m2_K": {
+      "weak_edge": 1000.0,
+      "nominal": 10000.0,
+      "strong_edge": 100000.0
+    },
+    "face_W_m2_K": 5.0,
+    "radiation_linearized_W_m2_K": 0.612400437252,
+    "electronic_formula_volume_m3": 1.7029316176e-29
+  },
+  "conventions": {
+    "heat": "whole-foil conservative Cartesian FV, shared faces/edges, path thermalization endpoints; signed outgoing acoustic power is not thermalized",
+    "finite_clock": "actual normalized archived Cox schedule integrated in 1 ms conditioned-mean backward Euler heat steps; endpoint lags projected to 50 \u00b5s positive moment-preserving bins; off-grid heat samples interpolate retained thermal snapshots, no claim of sub-ms temperature",
+    "mean_clock": "unit-rate steady intensity mean, each beam and named mount",
+    "electronic": "retarded short-path normalized hot + thermal excess, P4 birth GL2/molecule clock with specular folds; tiny distributed acoustic bath evaluated at its residence-weighted mean delay; not electron temperature",
+    "conditional": "single-parent archived native age histories for six energies, both allocations; 2.5-keV archived space/age nodes only, not added to mean",
+    "mechanical": "dynamic linear strain and its gradient supplied separately by the signed-wave consumer; no independent static clamp strain law assumed",
+    "below_resolution": "no nonlinear pressure from the ensemble mean assumed; no sub-5-nm steady thermal resolution or sub-ms conditioned temperature fluctuations inferred"
+  },
+  "sources": [
+    {
+      "E_cm_keV": 0.25,
+      "parent_rate_s": 237177344829508.97,
+      "current_A": 3.7999999999999995e-05,
+      "short_heat_W": 0.01899992209472497,
+      "short_source_map_defect_W": [
+        -6.938893903907228e-18,
+        -6.938893903907228e-18
+      ],
+      "deepest_short_endpoint_m": 1.9110671812355663e-06,
+      "electron_residence_eV_population_by_parent_hot_then_thermal": [
+        [
+          6787.238746401811,
+          4790.131582328998
+        ],
+        [
+          1007.6495717691434,
+          834.6253851349601
+        ]
+      ],
+      "maximum_short_age_s": 1.9946135821536786e-07,
+      "maximum_e_age_s": 2.841473346607769e-12
+    },
+    {
+      "E_cm_keV": 0.5,
+      "parent_rate_s": 424422617063331.9,
+      "current_A": 6.8e-05,
+      "short_heat_W": 0.06799959563666626,
+      "short_source_map_defect_W": [
+        -1.3877787807814457e-17,
+        0.0
+      ],
+      "deepest_short_endpoint_m": 1.8983763090455168e-06,
+      "electron_residence_eV_population_by_parent_hot_then_thermal": [
+        [
+          26893.12363570846,
+          17628.570257876887
+        ],
+        [
+          4283.085871090468,
+          3029.3937151131236
+        ]
+      ],
+      "maximum_short_age_s": 1.9946143021919194e-07,
+      "maximum_e_age_s": 2.9134771706869613e-12
+    },
+    {
+      "E_cm_keV": 1.0,
+      "parent_rate_s": 686565998190683.9,
+      "current_A": 0.00010999999999999999,
+      "short_heat_W": 0.2199980570298207,
+      "short_source_map_defect_W": [
+        2.7755575615628914e-17,
+        0.0
+      ],
+      "deepest_short_endpoint_m": 1.8795566715721062e-06,
+      "electron_residence_eV_population_by_parent_hot_then_thermal": [
+        [
+          93586.62920423683,
+          59078.35652523016
+        ],
+        [
+          15344.415838965913,
+          10074.402621612518
+        ]
+      ],
+      "maximum_short_age_s": 1.994615057895722e-07,
+      "maximum_e_age_s": 2.9890475509710497e-12
+    },
+    {
+      "E_cm_keV": 1.5,
+      "parent_rate_s": 767705616158673.8,
+      "current_A": 0.00012299999999999998,
+      "short_heat_W": 0.36899577119386034,
+      "short_source_map_defect_W": [
+        -5.551115123125783e-17,
+        0.0
+      ],
+      "deepest_short_endpoint_m": 1.8645461358354157e-06,
+      "electron_residence_eV_population_by_parent_hot_then_thermal": [
+        [
+          162644.20804659982,
+          101299.21473688893
+        ],
+        [
+          26923.034746861493,
+          17235.02573648095
+        ]
+      ],
+      "maximum_short_age_s": 1.994615516672914e-07,
+      "maximum_e_age_s": 3.0349252701512647e-12
+    },
+    {
+      "E_cm_keV": 2.0,
+      "parent_rate_s": 836362215977742.2,
+      "current_A": 0.000134,
+      "short_heat_W": 0.5359926496196353,
+      "short_source_map_defect_W": [
+        1.1102230246251565e-16,
+        0.0
+      ],
+      "deepest_short_endpoint_m": 1.8515827549644894e-06,
+      "electron_residence_eV_population_by_parent_hot_then_thermal": [
+        [
+          241719.00368691966,
+          149466.60709789168
+        ],
+        [
+          40222.40593270065,
+          25414.168670580744
+        ]
+      ],
+      "maximum_short_age_s": 1.9946158494859507e-07,
+      "maximum_e_age_s": 3.068206573839366e-12
+    },
+    {
+      "E_cm_keV": 2.5,
+      "parent_rate_s": 861328252275585.2,
+      "current_A": 0.000138,
+      "short_heat_W": 0.6899890284183088,
+      "short_source_map_defect_W": [
+        0.0,
+        0.0
+      ],
+      "deepest_short_endpoint_m": 1.8399646367569817e-06,
+      "electron_residence_eV_population_by_parent_hot_then_thermal": [
+        [
+          316353.00764783716,
+          194727.8861576032
+        ],
+        [
+          52830.97497502299,
+          33110.14483835937
+        ]
+      ],
+      "maximum_short_age_s": 1.99461611053793e-07,
+      "maximum_e_age_s": 3.0943117717706212e-12
+    }
+  ]
+}

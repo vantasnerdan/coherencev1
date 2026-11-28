@@ -1,0 +1,878 @@
+{
+  "schema": "g16-pdd-crossover-v1",
+  "comparison_temperature_K": 300,
+  "item1_response_sha256": "f19aaffe9b34b331b2031a8b62713a14e290e2a155d5fc9a04bf567c431e6383",
+  "native_sources": {
+    "k12/1500/zero/u+0.0000.json": {
+      "bytes": 2181,
+      "sha256": "38a724ed2f7a7cea3f84af88937a430da3d2548d274206ae259fa4d15a3bf959"
+    },
+    "k12/1500/100-fd/u-0.0100.json": {
+      "bytes": 1906,
+      "sha256": "3d807f0e34e91549107edc635dafd1c76052e8067ef32d9e91690882ffbac369"
+    },
+    "k12/1500/100-fd/u+0.0100.json": {
+      "bytes": 1904,
+      "sha256": "6daf7d90928f31d5d7fb8762254e950da9148cf0ca21e6c51e9aa397e46486f1"
+    },
+    "k16/1500/zero/u+0.0000.json": {
+      "bytes": 2228,
+      "sha256": "b67c90274f75ad45e6187c7754286942287bb18e56e6cf70755a60223e598727"
+    },
+    "k16/1500/100-fd/u-0.0100.json": {
+      "bytes": 1929,
+      "sha256": "e30324e245b648094e2fb174a41a40e8953394d7422c8cd7687ec422a368f6b0"
+    },
+    "k16/1500/100-fd/u+0.0100.json": {
+      "bytes": 1902,
+      "sha256": "97466a5275cac07a371200b685086b28476c131af8c5cc974e9a3474accb20a5"
+    },
+    "k12/2000/zero/u+0.0000.json": {
+      "bytes": 2226,
+      "sha256": "65f513dc141f7906074d5ab31beb842be9bd5cb8888dc72096defc7d03392874"
+    },
+    "k12/2000/100-fd/u-0.0100.json": {
+      "bytes": 1907,
+      "sha256": "cb6083416c5fdfb74b974c49b48e3a45f46d86bd279d8a7d3c6d4787acd245e7"
+    },
+    "k12/2000/100-fd/u+0.0100.json": {
+      "bytes": 1940,
+      "sha256": "4fd15bdb996bca738735996a080f35fc5edbce9661fa5a8bf1a1ea13e4a1612d"
+    },
+    "k16/2000/zero/u+0.0000.json": {
+      "bytes": 2235,
+      "sha256": "3d7366192ab8b2c57724c31cbe94ee4212ad26ac8857581819345c6a46745e71"
+    },
+    "k16/2000/100-fd/u-0.0100.json": {
+      "bytes": 1888,
+      "sha256": "555fa7a72054fa9867a5099e9fd17ead3530c9942073df6572a7efbde9aa8020"
+    },
+    "k16/2000/100-fd/u+0.0100.json": {
+      "bytes": 1905,
+      "sha256": "aede1789be71fa0220d81ad0c02e8252ee1c2bb07b9f4f0374a5dd4c77abb6f1"
+    }
+  },
+  "rows": [
+    {
+      "temperature_K": 1000,
+      "mesh12": {
+        "zero": {
+          "volume_A3": 17.029316176,
+          "energy_internal_eV": -7.0799997487973405,
+          "energy_free_eV": -7.091948026577725,
+          "minus_T_S_eV": -0.011948277780384918,
+          "pressure_GPa": 7.075835488125631,
+          "stress_eV_A3": [
+            [
+              -0.04416389177238474,
+              -1.7835478144223805e-17,
+              -1.0110227436405937e-18
+            ],
+            [
+              -1.7835478144223805e-17,
+              -0.04416389177238474,
+              3.1108392112018265e-19
+            ],
+            [
+              -1.0110227436405937e-18,
+              3.1108392112018265e-19,
+              -0.04416389177238472
+            ]
+          ],
+          "forces_eV_A": [
+            [
+              3.245188671466573e-28,
+              -7.5721069000886705e-28,
+              -3.245188671466573e-28
+            ],
+            [
+              0.0,
+              6.760809732222027e-30,
+              0.0
+            ]
+          ]
+        },
+        "harmonic": {
+          "step_A": 0.01,
+          "raw_D_parallel_forces_eV_A": [
+            0.0018164402551523072,
+            -0.0018087214733740415
+          ],
+          "even_free_energy_change_eV": 8.9844120569893e-06,
+          "odd_restoring_force_eV_A": 0.0018125808642631743,
+          "K_force_eV_A2": 0.18125808642631744,
+          "K_free_energy_eV_A2": 0.179688241139786,
+          "inversion_force_residual_eV_A": 7.718781778265696e-06,
+          "inversion_energy_residual_eV": 1.056044141023449e-12,
+          "total_force_residual_eV_A": 1.7371246781370695e-05
+        },
+        "step_control": null,
+        "quartic": {
+          "100": {
+            "samples": [
+              {
+                "step_A": 0.12,
+                "raw_D_parallel_forces_eV_A": [
+                  0.03956077524599873,
+                  -0.03955778730531682
+                ],
+                "even_free_energy_change_eV": 0.0018303422205159237,
+                "odd_restoring_force_eV_A": 0.039559281275657776,
+                "K_force_eV_A2": 0.32966067729714815,
+                "K_free_energy_eV_A2": 0.2542141972938783,
+                "inversion_force_residual_eV_A": 2.9879406819102727e-06,
+                "inversion_energy_residual_eV": 8.046896482483135e-12,
+                "total_force_residual_eV_A": 2.5523552702536034e-06
+              },
+              {
+                "step_A": 0.24,
+                "raw_D_parallel_forces_eV_A": [
+                  0.19854285517858525,
+                  -0.19854195992237764
+                ],
+                "even_free_energy_change_eV": 0.014202843340806126,
+                "odd_restoring_force_eV_A": 0.19854240755048144,
+                "K_force_eV_A2": 0.8272600314603393,
+                "K_free_energy_eV_A2": 0.4931542826668794,
+                "inversion_force_residual_eV_A": 8.95256207611439e-07,
+                "inversion_energy_residual_eV": 2.034816759532987e-12,
+                "total_force_residual_eV_A": 1.9940910606641715e-06
+              }
+            ],
+            "fit": {
+              "K4_force_fit_eV_A4": 11.201318067751263,
+              "K4_per_amplitude_force_eV_A4": [
+                10.305735477141022,
+                11.215311545729548
+              ],
+              "K4_per_amplitude_free_energy_eV_A4": [
+                10.132793176050118,
+                10.829729036130626
+              ],
+              "force_residual_eV_A": [
+                -0.0015475667165744944,
+                0.00019344583957181527
+              ],
+              "free_energy_holdout_residual_eV": [
+                -5.539233038578733e-05,
+                -0.00030821080638742185
+              ],
+              "max_force_residual_eV_A": 0.0015475667165744944,
+              "max_free_energy_holdout_residual_eV": 0.00030821080638742185
+            }
+          },
+          "111": {
+            "samples": [
+              {
+                "step_A": 0.12,
+                "raw_D_parallel_forces_eV_A": [
+                  0.02796786018867315,
+                  -0.027966488649262405
+                ],
+                "even_free_energy_change_eV": 0.001489198139141834,
+                "odd_restoring_force_eV_A": 0.027967174418967778,
+                "K_force_eV_A2": 0.2330597868247315,
+                "K_free_energy_eV_A2": 0.2068330748808103,
+                "inversion_force_residual_eV_A": 1.3715394107446374e-06,
+                "inversion_energy_residual_eV": 8.970602038971265e-14,
+                "total_force_residual_eV_A": 1.3975662025619492e-06
+              },
+              {
+                "step_A": 0.24,
+                "raw_D_parallel_forces_eV_A": [
+                  0.08908000792541648,
+                  -0.08907602595832945
+                ],
+                "even_free_energy_change_eV": 0.008066103631811927,
+                "odd_restoring_force_eV_A": 0.08907801694187296,
+                "K_force_eV_A2": 0.3711584039244707,
+                "K_free_energy_eV_A2": 0.2800730427712475,
+                "inversion_force_residual_eV_A": 3.981967087035808e-06,
+                "inversion_energy_residual_eV": 6.298073174093588e-12,
+                "total_force_residual_eV_A": 3.532238495108597e-06
+              }
+            ],
+            "fit": {
+              "K4_force_fit_eV_A4": 3.301502970479558,
+              "K4_per_amplitude_force_eV_A4": [
+                3.597340305445421,
+                3.2968805121207168
+              ],
+              "K4_per_amplitude_free_energy_eV_A4": [
+                3.5520817297906735,
+                3.431074873087849
+              ],
+              "force_residual_eV_A": [
+                0.0005112069148210108,
+                -6.390086435262288e-05
+              ],
+              "free_energy_holdout_residual_eV": [
+                1.2990002882688279e-05,
+                0.00010747211889942064
+              ],
+              "max_force_residual_eV_A": 0.0005112069148210108,
+              "max_free_energy_holdout_residual_eV": 0.00010747211889942064
+            }
+          }
+        },
+        "contrast": {
+          "electronic_excitation_eV_per_D_site": 0.004532372068168478,
+          "electronic_free_energy_change_eV_per_D_site": -0.005756214882450372,
+          "pressure_change_GPa": 0.08045766292532175,
+          "K_change_eV_A2": -0.001712007623255074,
+          "K_free_energy_change_eV_A2": -0.001783666032650899,
+          "fractional_K_change": -0.00935676200063184,
+          "fractional_K_secant_per_eV": -2.0644293672061416,
+          "centered_D_force_change_eV_A": [
+            0.0,
+            5.915708515694273e-30,
+            -2.53530364958326e-30
+          ]
+        }
+      },
+      "mesh16": {
+        "zero": {
+          "volume_A3": 17.029316176,
+          "energy_internal_eV": -7.077726184430761,
+          "energy_free_eV": -7.090186169249421,
+          "minus_T_S_eV": -0.01245998481866005,
+          "pressure_GPa": 7.195652974674438,
+          "stress_eV_A3": [
+            [
+              -0.04491173370811952,
+              -1.866503526721096e-17,
+              -1.769289801371039e-18
+            ],
+            [
+              -1.866503526721096e-17,
+              -0.04491173370811952,
+              3.1108392112018265e-19
+            ],
+            [
+              -1.769289801371039e-18,
+              3.1108392112018265e-19,
+              -0.04491173370811952
+            ]
+          ],
+          "forces_eV_A": [
+            [
+              -1.2980754685866292e-27,
+              4.326918228622097e-28,
+              -1.2980754685866292e-27
+            ],
+            [
+              -2.7043238928888107e-29,
+              0.0,
+              8.451012165277533e-31
+            ]
+          ]
+        },
+        "harmonic": {
+          "step_A": 0.01,
+          "raw_D_parallel_forces_eV_A": [
+            0.0017343361405204479,
+            -0.001729292767246099
+          ],
+          "even_free_energy_change_eV": 8.593054297456604e-06,
+          "odd_restoring_force_eV_A": 0.0017318144538832733,
+          "K_force_eV_A2": 0.17318144538832733,
+          "K_free_energy_eV_A2": 0.17186108594913208,
+          "inversion_force_residual_eV_A": 5.043373274348862e-06,
+          "inversion_energy_residual_eV": 4.389733021525899e-11,
+          "total_force_residual_eV_A": 9.085752082383606e-06
+        },
+        "step_control": null,
+        "quartic": {},
+        "contrast": {
+          "electronic_excitation_eV_per_D_site": 0.004051502821777575,
+          "electronic_free_energy_change_eV_per_D_site": -0.006487713129001094,
+          "pressure_change_GPa": 0.05138967603528943,
+          "K_change_eV_A2": -0.0035227951517914913,
+          "K_free_energy_change_eV_A2": -0.0035154082489441407,
+          "fractional_K_change": -0.019936109858052206,
+          "fractional_K_secant_per_eV": -4.920670362338622,
+          "centered_D_force_change_eV_A": [
+            -3.3804048661110135e-29,
+            5.07060729916652e-30,
+            2.5353036495832598e-30
+          ]
+        }
+      },
+      "mesh_check": {
+        "delta_K_mesh_sensitivity_eV_A2": 0.0018107875285364172,
+        "delta_K_force_energy_difference_eV_A2": 7.386902847350552e-06,
+        "delta_K_tolerance_eV_A2": 0.00035227951517914917,
+        "delta_K_mesh_agrees": false,
+        "delta_K_force_energy_agrees": true,
+        "delta_K_sign_larger_than_sensitivities": true
+      },
+      "sign_status": "not_resolved",
+      "raw_both_mesh_sign": "softer_than_300K",
+      "origin": "accepted_item_1"
+    },
+    {
+      "temperature_K": 1500,
+      "mesh12": {
+        "zero": {
+          "volume_A3": 17.029316176,
+          "energy_internal_eV": -7.071963252020318,
+          "energy_free_eV": -7.099451921404068,
+          "minus_T_S_eV": -0.027488669383750147,
+          "pressure_GPa": 7.18693614709324,
+          "stress_eV_A3": [
+            [
+              -0.04485732754922272,
+              -1.866503526721096e-17,
+              -1.736885226254353e-18
+            ],
+            [
+              -1.866503526721096e-17,
+              -0.04485732754922272,
+              4.044090974562375e-18
+            ],
+            [
+              -1.736885226254353e-18,
+              4.044090974562375e-18,
+              -0.04485732754922272
+            ]
+          ],
+          "forces_eV_A": [
+            [
+              -4.326918228622097e-28,
+              0.0,
+              4.326918228622097e-28
+            ],
+            [
+              0.0,
+              0.0,
+              2.7043238928888107e-29
+            ]
+          ]
+        },
+        "harmonic": {
+          "step_A": 0.01,
+          "raw_D_parallel_forces_eV_A": [
+            0.001847033627635841,
+            -0.0018408274866306006
+          ],
+          "even_free_energy_change_eV": 9.14647117866707e-06,
+          "odd_restoring_force_eV_A": 0.0018439305571332208,
+          "K_force_eV_A2": 0.18439305571332207,
+          "K_free_energy_eV_A2": 0.1829294235733414,
+          "inversion_force_residual_eV_A": 6.20614100524039e-06,
+          "inversion_energy_residual_eV": 3.5198510772715963e-12,
+          "total_force_residual_eV_A": 9.431669859630721e-06
+        },
+        "step_control": null,
+        "quartic": {},
+        "contrast": {
+          "electronic_excitation_eV_per_D_site": 0.012568868845191261,
+          "electronic_free_energy_change_eV_per_D_site": -0.013260109708792989,
+          "pressure_change_GPa": 0.19155832189293065,
+          "K_change_eV_A2": 0.0014229616637495557,
+          "K_free_energy_change_eV_A2": 0.0014575164009045238,
+          "fractional_K_change": 0.0077770177205244775,
+          "fractional_K_secant_per_eV": 0.6187523966008999,
+          "centered_D_force_change_eV_A": [
+            0.0,
+            -8.451012165277533e-31,
+            2.4507935279304846e-29
+          ]
+        }
+      },
+      "mesh16": {
+        "zero": {
+          "volume_A3": 17.029316176,
+          "energy_internal_eV": -7.069613500634525,
+          "energy_free_eV": -7.097940422987913,
+          "minus_T_S_eV": -0.028326922353386998,
+          "pressure_GPa": 7.2791248433059375,
+          "stress_eV_A3": [
+            [
+              -0.04543272413793755,
+              -1.742069958273023e-17,
+              -1.957236337047816e-18
+            ],
+            [
+              -1.742069958273023e-17,
+              -0.045432724137937565,
+              -3.6293124130687975e-18
+            ],
+            [
+              -1.957236337047816e-18,
+              -3.6293124130687975e-18,
+              -0.045432724137937544
+            ]
+          ],
+          "forces_eV_A": [
+            [
+              -3.380404866111013e-30,
+              3.042364379499912e-29,
+              2.133880571732577e-29
+            ],
+            [
+              0.0,
+              -4.225506082638767e-30,
+              -6.760809732222027e-30
+            ]
+          ]
+        },
+        "harmonic": {
+          "step_A": 0.01,
+          "raw_D_parallel_forces_eV_A": [
+            0.0018222029067620797,
+            -0.0018150976836688352
+          ],
+          "even_free_energy_change_eV": 9.022229745525578e-06,
+          "odd_restoring_force_eV_A": 0.0018186502952154573,
+          "K_force_eV_A2": 0.18186502952154573,
+          "K_free_energy_eV_A2": 0.18044459491051157,
+          "inversion_force_residual_eV_A": 7.1052230932444876e-06,
+          "inversion_energy_residual_eV": 1.7327472789929743e-11,
+          "total_force_residual_eV_A": 1.4248126026181803e-05
+        },
+        "step_control": null,
+        "quartic": {},
+        "contrast": {
+          "electronic_excitation_eV_per_D_site": 0.012164186618012884,
+          "electronic_free_energy_change_eV_per_D_site": -0.014241966867492906,
+          "pressure_change_GPa": 0.1348615446667889,
+          "K_change_eV_A2": 0.0051607889814269114,
+          "K_free_energy_change_eV_A2": 0.005068100712435353,
+          "fractional_K_change": 0.029205801545295736,
+          "fractional_K_secant_per_eV": 2.4009662513765946,
+          "centered_D_force_change_eV_A": [
+            -6.760809732222027e-30,
+            8.451012165277535e-31,
+            -5.0706072991665196e-30
+          ]
+        }
+      },
+      "mesh_check": {
+        "delta_K_mesh_sensitivity_eV_A2": 0.0037378273176773558,
+        "delta_K_force_energy_difference_eV_A2": 9.268826899155869e-05,
+        "delta_K_tolerance_eV_A2": 0.0005160788981426912,
+        "delta_K_mesh_agrees": false,
+        "delta_K_force_energy_agrees": true,
+        "delta_K_sign_larger_than_sensitivities": true
+      },
+      "sign_status": "not_resolved",
+      "raw_both_mesh_sign": "stiffer_than_300K",
+      "origin": "new_native"
+    },
+    {
+      "temperature_K": 2000,
+      "mesh12": {
+        "zero": {
+          "volume_A3": 17.029316176,
+          "energy_internal_eV": -7.0577625403943145,
+          "energy_free_eV": -7.110568301509922,
+          "minus_T_S_eV": -0.0528057611156076,
+          "pressure_GPa": 7.351311112844052,
+          "stress_eV_A3": [
+            [
+              -0.04588327539802316,
+              -1.700592102123665e-17,
+              -1.5554196056009132e-18
+            ],
+            [
+              -1.700592102123665e-17,
+              -0.04588327539802316,
+              7.258624826137595e-19
+            ],
+            [
+              -1.5554196056009132e-18,
+              7.258624826137595e-19,
+              -0.04588327539802317
+            ]
+          ],
+          "forces_eV_A": [
+            [
+              -1.6225943357332865e-28,
+              1.6225943357332865e-28,
+              1.6225943357332865e-28
+            ],
+            [
+              3.380404866111013e-30,
+              -3.380404866111013e-30,
+              -1.26765182479163e-30
+            ]
+          ]
+        },
+        "harmonic": {
+          "step_A": 0.01,
+          "raw_D_parallel_forces_eV_A": [
+            0.001992908585137597,
+            -0.0019863760918098048
+          ],
+          "even_free_energy_change_eV": 9.875933200120812e-06,
+          "odd_restoring_force_eV_A": 0.001989642338473701,
+          "K_force_eV_A2": 0.1989642338473701,
+          "K_free_energy_eV_A2": 0.19751866400241624,
+          "inversion_force_residual_eV_A": 6.532493327792311e-06,
+          "inversion_energy_residual_eV": 3.7125857943465235e-12,
+          "total_force_residual_eV_A": 9.759984665977037e-06
+        },
+        "step_control": null,
+        "quartic": {},
+        "contrast": {
+          "electronic_excitation_eV_per_D_site": 0.026769580471194487,
+          "electronic_free_energy_change_eV_per_D_site": -0.024376489814646796,
+          "pressure_change_GPa": 0.3559332876437429,
+          "K_change_eV_A2": 0.015994139797797596,
+          "K_free_energy_change_eV_A2": 0.01604675682997936,
+          "fractional_K_change": 0.08741395625814274,
+          "fractional_K_secant_per_eV": 3.265421225117998,
+          "centered_D_force_change_eV_A": [
+            3.380404866111013e-30,
+            -4.225506082638767e-30,
+            -3.80295547437489e-30
+          ]
+        }
+      },
+      "mesh16": {
+        "zero": {
+          "volume_A3": 17.029316176,
+          "energy_internal_eV": -7.0552780782797075,
+          "energy_free_eV": -7.109362862283567,
+          "minus_T_S_eV": -0.05408478400385923,
+          "pressure_GPa": 7.422499541686653,
+          "stress_eV_A3": [
+            [
+              -0.04632759862630154,
+              -1.7835478144223805e-17,
+              -1.9831599971411645e-18
+            ],
+            [
+              -1.7835478144223805e-17,
+              -0.046327598626301536,
+              -1.7628088863477018e-18
+            ],
+            [
+              -1.9831599971411645e-18,
+              -1.7628088863477018e-18,
+              -0.04632759862630156
+            ]
+          ],
+          "forces_eV_A": [
+            [
+              -6.760809732222027e-30,
+              -2.6198137712360356e-29,
+              -1.6902024330555067e-29
+            ],
+            [
+              0.0,
+              -1.0563765206596917e-31,
+              -1.0563765206596917e-31
+            ]
+          ]
+        },
+        "harmonic": {
+          "step_A": 0.01,
+          "raw_D_parallel_forces_eV_A": [
+            0.00199330534619418,
+            -0.001987505460002386
+          ],
+          "even_free_energy_change_eV": 9.884236789048373e-06,
+          "odd_restoring_force_eV_A": 0.001990405403098283,
+          "K_force_eV_A2": 0.1990405403098283,
+          "K_free_energy_eV_A2": 0.19768473578096746,
+          "inversion_force_residual_eV_A": 5.799886191793901e-06,
+          "inversion_energy_residual_eV": 2.1458390619955026e-12,
+          "total_force_residual_eV_A": 9.207447558957568e-06
+        },
+        "step_control": null,
+        "quartic": {},
+        "contrast": {
+          "electronic_excitation_eV_per_D_site": 0.026499608972830657,
+          "electronic_free_energy_change_eV_per_D_site": -0.02566440616314747,
+          "pressure_change_GPa": 0.2782362430475045,
+          "K_change_eV_A2": 0.022336299769709467,
+          "K_free_energy_change_eV_A2": 0.02230824158289124,
+          "fractional_K_change": 0.12640500138217253,
+          "fractional_K_secant_per_eV": 4.770070438087301,
+          "centered_D_force_change_eV_A": [
+            -6.760809732222027e-30,
+            4.9649696471005515e-30,
+            1.5845647809895375e-30
+          ]
+        }
+      },
+      "mesh_check": {
+        "delta_K_mesh_sensitivity_eV_A2": 0.00634215997191187,
+        "delta_K_force_energy_difference_eV_A2": 2.8058186818225028e-05,
+        "delta_K_tolerance_eV_A2": 0.002233629976970947,
+        "delta_K_mesh_agrees": false,
+        "delta_K_force_energy_agrees": true,
+        "delta_K_sign_larger_than_sensitivities": true
+      },
+      "sign_status": "stiffer_than_300K",
+      "raw_both_mesh_sign": "stiffer_than_300K",
+      "origin": "new_native"
+    },
+    {
+      "temperature_K": 3000,
+      "mesh12": {
+        "zero": {
+          "volume_A3": 17.029316176,
+          "energy_internal_eV": -7.0101372698656075,
+          "energy_free_eV": -7.1463030559703205,
+          "minus_T_S_eV": -0.1361657861047132,
+          "pressure_GPa": 7.859773825965688,
+          "stress_eV_A3": [
+            [
+              -0.04905685006214322,
+              -2.5301492251108186e-17,
+              -2.1581447027712672e-18
+            ],
+            [
+              -2.5301492251108186e-17,
+              -0.04905685006214323,
+              2.7997552900816438e-18
+            ],
+            [
+              -2.1581447027712672e-18,
+              2.7997552900816438e-18,
+              -0.0490568500621432
+            ]
+          ],
+          "forces_eV_A": [
+            [
+              0.0,
+              1.3521619464444053e-29,
+              6.760809732222027e-30
+            ],
+            [
+              0.0,
+              0.0,
+              3.380404866111013e-30
+            ]
+          ]
+        },
+        "harmonic": {
+          "step_A": 0.01,
+          "raw_D_parallel_forces_eV_A": [
+            0.0025213334778601995,
+            -0.002515139223386322
+          ],
+          "even_free_energy_change_eV": 1.2522130858449998e-05,
+          "odd_restoring_force_eV_A": 0.0025182363506232605,
+          "K_force_eV_A2": 0.251823635062326,
+          "K_free_energy_eV_A2": 0.25044261716899996,
+          "inversion_force_residual_eV_A": 6.194254473877465e-06,
+          "inversion_energy_residual_eV": 2.1679547046460357e-11,
+          "total_force_residual_eV_A": 9.748313368000347e-06
+        },
+        "step_control": null,
+        "quartic": {
+          "100": {
+            "samples": [
+              {
+                "step_A": 0.12,
+                "raw_D_parallel_forces_eV_A": [
+                  0.04767692399583165,
+                  -0.04767813545601609
+                ],
+                "even_free_energy_change_eV": 0.002329242604667492,
+                "odd_restoring_force_eV_A": 0.04767752972592387,
+                "K_force_eV_A2": 0.3973127477160323,
+                "K_free_energy_eV_A2": 0.32350591731492945,
+                "inversion_force_residual_eV_A": 1.2114601844401274e-06,
+                "inversion_energy_residual_eV": 4.837019673686882e-12,
+                "total_force_residual_eV_A": 7.0284588840618945e-06
+              },
+              {
+                "step_A": 0.24,
+                "raw_D_parallel_forces_eV_A": [
+                  0.2121224922152616,
+                  -0.2121237715208143
+                ],
+                "even_free_energy_change_eV": 0.016038871285368295,
+                "odd_restoring_force_eV_A": 0.21212313186803794,
+                "K_force_eV_A2": 0.8838463827834915,
+                "K_free_energy_eV_A2": 0.5569052529641769,
+                "inversion_force_residual_eV_A": 1.2793055526871822e-06,
+                "inversion_energy_residual_eV": 3.3857361358968774e-12,
+                "total_force_residual_eV_A": 8.78746150120846e-06
+              }
+            ],
+            "fit": {
+              "K4_force_fit_eV_A4": 10.959244739521747,
+              "K4_per_amplitude_force_eV_A4": [
+                10.103410600951824,
+                10.972617147936901
+              ],
+              "K4_per_amplitude_free_energy_eV_A4": [
+                9.955872535083808,
+                10.593111732703155
+              ],
+              "force_residual_eV_A": [
+                -0.001478881391448826,
+                0.00018486017393110066
+              ],
+              "free_energy_holdout_residual_eV": [
+                -5.2014815078062736e-05,
+                -0.0003036853611756117
+              ],
+              "max_force_residual_eV_A": 0.001478881391448826,
+              "max_free_energy_holdout_residual_eV": 0.0003036853611756117
+            }
+          },
+          "111": {
+            "samples": [
+              {
+                "step_A": 0.12,
+                "raw_D_parallel_forces_eV_A": [
+                  0.03579351371296494,
+                  -0.03579123609060909
+                ],
+                "even_free_energy_change_eV": 0.001978240211586879,
+                "odd_restoring_force_eV_A": 0.035792374901787015,
+                "K_force_eV_A2": 0.29826979084822514,
+                "K_free_energy_eV_A2": 0.2747555849426221,
+                "inversion_force_residual_eV_A": 2.27762235585484e-06,
+                "inversion_energy_residual_eV": 2.573941060290963e-12,
+                "total_force_residual_eV_A": 2.256407746088791e-06
+              },
+              {
+                "step_A": 0.24,
+                "raw_D_parallel_forces_eV_A": [
+                  0.10118705673813164,
+                  -0.1011887951905615
+                ],
+                "even_free_energy_change_eV": 0.009799858666468708,
+                "odd_restoring_force_eV_A": 0.10118792596434656,
+                "K_force_eV_A2": 0.42161635818477733,
+                "K_free_energy_eV_A2": 0.34027287036349685,
+                "inversion_force_residual_eV_A": 1.7384524298480567e-06,
+                "inversion_energy_residual_eV": 7.212008767965017e-13,
+                "total_force_residual_eV_A": 5.476457921205332e-06
+              }
+            ],
+            "fit": {
+              "K4_force_fit_eV_A4": 2.952061672804616,
+              "K4_per_amplitude_force_eV_A4": [
+                3.2254274851318825,
+                2.9477903319870022
+              ],
+              "K4_per_amplitude_free_energy_eV_A4": [
+                3.184993038930011,
+                3.0711540035128753
+              ],
+              "force_residual_eV_A": [
+                0.0004723761237015161,
+                -5.90470154626932e-05
+              ],
+              "free_energy_holdout_residual_eV": [
+                1.2075162019940279e-05,
+                9.877994278265773e-05
+              ],
+              "max_force_residual_eV_A": 0.0004723761237015161,
+              "max_free_energy_holdout_residual_eV": 9.877994278265773e-05
+            }
+          }
+        },
+        "contrast": {
+          "electronic_excitation_eV_per_D_site": 0.07439485099990151,
+          "electronic_free_energy_change_eV_per_D_site": -0.06011124427504555,
+          "pressure_change_GPa": 0.864396000765379,
+          "K_change_eV_A2": 0.06885354101275351,
+          "K_free_energy_change_eV_A2": 0.06897070999656307,
+          "fractional_K_change": 0.37631035481732256,
+          "fractional_K_secant_per_eV": 5.058284945255428,
+          "centered_D_force_change_eV_A": [
+            0.0,
+            -8.451012165277533e-31,
+            8.451012165277532e-31
+          ]
+        }
+      },
+      "mesh16": {
+        "zero": {
+          "volume_A3": 17.029316176,
+          "energy_internal_eV": -7.008098106559754,
+          "energy_free_eV": -7.1456738512032745,
+          "minus_T_S_eV": -0.1375757446435202,
+          "pressure_GPa": 7.899776599130019,
+          "stress_eV_A3": [
+            [
+              -0.04930652773590901,
+              -1.742069958273023e-17,
+              -1.6072669257876105e-18
+            ],
+            [
+              -1.742069958273023e-17,
+              -0.04930652773590903,
+              -2.1775874478412787e-18
+            ],
+            [
+              -1.6072669257876105e-18,
+              -2.1775874478412787e-18,
+              -0.04930652773590901
+            ]
+          ],
+          "forces_eV_A": [
+            [
+              -2.1634591143110485e-28,
+              1.2169457517999648e-28,
+              7.5721069000886705e-28
+            ],
+            [
+              -1.3521619464444053e-29,
+              3.042364379499912e-29,
+              2.7043238928888107e-29
+            ]
+          ]
+        },
+        "harmonic": {
+          "step_A": 0.01,
+          "raw_D_parallel_forces_eV_A": [
+            0.002533579874251303,
+            -0.0025275219228780106
+          ],
+          "even_free_energy_change_eV": 1.2585501052875259e-05,
+          "odd_restoring_force_eV_A": 0.002530550898564657,
+          "K_force_eV_A2": 0.2530550898564657,
+          "K_free_energy_eV_A2": 0.2517100210575052,
+          "inversion_force_residual_eV_A": 6.0579513732924965e-06,
+          "inversion_energy_residual_eV": 2.9620750296999176e-12,
+          "total_force_residual_eV_A": 9.494178949034492e-06
+        },
+        "step_control": null,
+        "quartic": {},
+        "contrast": {
+          "electronic_excitation_eV_per_D_site": 0.07367958069278391,
+          "electronic_free_energy_change_eV_per_D_site": -0.06197539508285477,
+          "pressure_change_GPa": 0.7555133004908701,
+          "K_change_eV_A2": 0.07635084931634686,
+          "K_free_energy_change_eV_A2": 0.07633352685942896,
+          "fractional_K_change": 0.43208272242347356,
+          "fractional_K_secant_per_eV": 5.864348281582868,
+          "centered_D_force_change_eV_A": [
+            -2.0282429196666079e-29,
+            3.549425109416564e-29,
+            2.8733441361943614e-29
+          ]
+        }
+      },
+      "mesh_check": {
+        "delta_K_mesh_sensitivity_eV_A2": 0.007497308303593353,
+        "delta_K_force_energy_difference_eV_A2": 1.732245691790646e-05,
+        "delta_K_tolerance_eV_A2": 0.007635084931634686,
+        "delta_K_mesh_agrees": true,
+        "delta_K_force_energy_agrees": true,
+        "delta_K_sign_larger_than_sensitivities": true
+      },
+      "sign_status": "stiffer_than_300K",
+      "raw_both_mesh_sign": "stiffer_than_300K",
+      "origin": "accepted_item_1"
+    }
+  ],
+  "sampled_sign_change_brackets_K": [],
+  "raw_same_sign_brackets_K": [
+    [
+      1000,
+      1500
+    ]
+  ]
+}

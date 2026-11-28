@@ -1,0 +1,54 @@
+{
+  "bandwidth_scale_alternatives": [
+    0.5,
+    1.0,
+    2.0
+  ],
+  "bandwidth_reference": "old track integrated-frequency energy variance only, current native pressure phase fixed at each accepted port center",
+  "source_grain": "accepted rotated Christoffel grain 27",
+  "recoil_catalog_realizations": 64,
+  "propagation_susceptibility_reference_T_K": [
+    300.0,
+    312.0,
+    335.0
+  ],
+  "production_reference_T_K": 300.0,
+  "bulk_reference": "isotropized per-branch sine dispersion using accepted angular speeds; exact anisotropic group-ray caustics are not represented",
+  "guide_radial_reference": "outgoing Hankel radiative asymptotic; kr<10, finite-source interiors and nonradiative terms remain unclosed, not excluded",
+  "guide_source_phase": "normal-impulse modal phase anchor; residual pressure/recoil/LTE phase is an energy-preserving scenario, not a calibrated modal force projection",
+  "force_to_strain": "unconjugated +iwt source coefficients, outgoing +ikR-iwt; bulk +i strain derivative, outgoing guide +pi/4 with receiver derivative already present",
+  "screening_rate_endpoints_keV": [
+    0.0,
+    0.04
+  ],
+  "source_spectral_allocation": "same accepted physical-closure source for matched target-native allocation scenarios",
+  "low_field": "prompt and fast-pressure mean/covariance plus separate static elastic beam load; full low thermoelastic continuation unresolved",
+  "acoustic_intrinsic_laws": [
+    "Cu 32 dB/(cm MHz), energy rate vg ln(10)/10*32*f/MHz",
+    "retained 1/(50us)+vg/0.2m"
+  ],
+  "mount_edge_W_m2_K": [
+    1000.0,
+    10000.0,
+    100000.0
+  ],
+  "native_allocations": [
+    "onsite",
+    "coupling",
+    "native_Gamma_X"
+  ],
+  "physical_closures": [
+    "fast_Cu",
+    "nominal_retained",
+    "long_retained"
+  ],
+  "native_Gamma_X": "f3114eb exact longitudinal increments; DeltaK=DeltaGamma+A(1-F1), shell-1 representative, linear low-A closure; frozen onsite incoming source, original pressure, no unique material vg",
+  "native_source_feedback": "Only 2.5-keV spatial U snapshots retained; source regeneration and full U(t,r) donor-work history remain unresolved, not inferred from Umax or projected DeltaK",
+  "passive_source": "same accepted mechanical + late LTE + G16 pressure port; projection is not another acoustic carrier",
+  "omissions": [
+    "Resolved-primary line contrast does not reconstruct native pressure/recoil/LTE source interiors or unknown angular/within-band phase; finite recoil catalog and low thermoelastic continuation are not physical tail bounds.",
+    "First-order retained acoustic operator uses reference susceptibility and a finite Gaussian exterior phase closure. Mean/direct variance use actual retarded Cox times; full-parent marginal quadrature retains first returns, but exterior cross-band/return covariance, mode conversion and full warm-path phase are not closed.",
+    "Optical meetings are finite Gaussian RWA/eikonal support and leading pair factorial order; strain gradients over ps rays, close-k exchange, microscopic covariance/contact and ray-work backreaction are unretained."
+  ],
+  "probability_policy": "random-time fractions, conditional event Palm rates and per-incident-probe occupations have distinct denominators; no absence/realized nuclear probability inferred"
+}

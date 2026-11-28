@@ -1,0 +1,72 @@
+{
+  "isolated_Hann_L2": 1.0000000000000002,
+  "isolated_Hann_zero_DC_quadrature_abs": 5.2170172044084314e-11,
+  "isolated_Hann_real_flux_quadratures": [
+    1.0000000000000002,
+    1.0000000000000004
+  ],
+  "isolated_Hann_pseudocovariance_abs": 2.153573784974063e-16,
+  "normalization_evidence": "Observed bg_571 unchanged Hann filter, omega=7 rad/s, bandwidth=2/s, N=4, 200001 time nodes on [0,15] s, real quadratures 0 and pi/2. Analytic normalization is valid for every integer N>=2. This is reused filter evidence; former force-to-strain phase and endpoint-yield readouts are retired.",
+  "scope": "same isolated actual port/path; no claim that cross-port or reflected interference vanishes",
+  "bulk_radiative_unit_impulse_phase_rad": 1.5707963267948966,
+  "guided_actual_operator_gauge_relative_error": 3.4908844294393734e-16,
+  "guide_source_scope": {
+    "0_0_0": {
+      "known_normal_impulse_angular_nodes": 4,
+      "residual": "same modal gauge, but residual pressure/recoil/LTE force phase remains an explicitly uncalibrated scenario"
+    },
+    "0_0_1": {
+      "known_normal_impulse_angular_nodes": 4,
+      "residual": "same modal gauge, but residual pressure/recoil/LTE force phase remains an explicitly uncalibrated scenario"
+    },
+    "0_1_0": {
+      "known_normal_impulse_angular_nodes": 4,
+      "residual": "same modal gauge, but residual pressure/recoil/LTE force phase remains an explicitly uncalibrated scenario"
+    },
+    "0_1_1": {
+      "known_normal_impulse_angular_nodes": 4,
+      "residual": "same modal gauge, but residual pressure/recoil/LTE force phase remains an explicitly uncalibrated scenario"
+    },
+    "0_2_0": {
+      "known_normal_impulse_angular_nodes": 4,
+      "residual": "same modal gauge, but residual pressure/recoil/LTE force phase remains an explicitly uncalibrated scenario"
+    },
+    "0_2_1": {
+      "known_normal_impulse_angular_nodes": 4,
+      "residual": "same modal gauge, but residual pressure/recoil/LTE force phase remains an explicitly uncalibrated scenario"
+    },
+    "1_0_0": {
+      "known_normal_impulse_angular_nodes": 4,
+      "residual": "same modal gauge, but residual pressure/recoil/LTE force phase remains an explicitly uncalibrated scenario"
+    },
+    "1_0_1": {
+      "known_normal_impulse_angular_nodes": 4,
+      "residual": "same modal gauge, but residual pressure/recoil/LTE force phase remains an explicitly uncalibrated scenario"
+    },
+    "1_1_0": {
+      "known_normal_impulse_angular_nodes": 4,
+      "residual": "same modal gauge, but residual pressure/recoil/LTE force phase remains an explicitly uncalibrated scenario"
+    },
+    "1_1_1": {
+      "known_normal_impulse_angular_nodes": 4,
+      "residual": "same modal gauge, but residual pressure/recoil/LTE force phase remains an explicitly uncalibrated scenario"
+    },
+    "1_2_0": {
+      "known_normal_impulse_angular_nodes": 4,
+      "residual": "same modal gauge, but residual pressure/recoil/LTE force phase remains an explicitly uncalibrated scenario"
+    },
+    "1_2_1": {
+      "known_normal_impulse_angular_nodes": 4,
+      "residual": "same modal gauge, but residual pressure/recoil/LTE force phase remains an explicitly uncalibrated scenario"
+    }
+  },
+  "source_modal_phase_map_unitarity_defect": 3.3306690738754696e-16,
+  "residual_guide_source": "normal-impulse phase anchor where supported, gauge-covariant residual source-force scenario otherwise; not a calibrated pressure/recoil/LTE modal projection",
+  "phase_scope": "isolated radiative branch, not an exact source-interior or kR~1 Green; cross-port and reflected interference is retained, not removed",
+  "uniform_guided_loading_relative_error": 2.220446049250313e-16,
+  "guided_h_Pa_inverse": 6.507115410603706e-13,
+  "guided_uniform_density_m_inverse3": 1.23e+28,
+  "guided_loading": "15-node Gauss on every actual D(z) layer; h=integral |div(u)/omega|\u00b2 dz with no /H; effective density applied once",
+  "zero_real_retained_loss_max_phase_rad": 0.0,
+  "zero_real_retained_loss_max_amplitude_ratio": 0.9998168082697926
+}
